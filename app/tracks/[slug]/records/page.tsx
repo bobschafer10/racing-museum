@@ -27,13 +27,11 @@ export default async function TrackRecordsPage({
     .order('race_date', { ascending: false })
     .limit(500)
 
-  const groupedResultsArray = Array.isArray(groupedResults)
-  ? groupedResults
-  : []
+  const resultsArray = Array.isArray(results) ? results : []
 
-const groupedByDecade = Object.values(
-  groupedResultsArray.reduce((acc: any, group: any) => {
-      const date = r.race_date
+    const groupedResults: any[] = Object.values(
+    resultsArray.reduce((acc: any, r: any) => {
+      const date = r.race_date || 'Unknown Date'
 
       if (!acc[date]) {
         acc[date] = {
@@ -46,28 +44,41 @@ const groupedByDecade = Object.values(
       return acc
     }, {})
   )
-const groupedByDecade = Object.values(
-  (groupedResults || []).reduce((acc: any, group: any) => {
-    const year = new Date(group.date).getFullYear()
-    const decade = `${Math.floor(year / 10) * 10}s`
 
-    if (!acc[decade]) {
-      acc[decade] = {
-        decade,
-        nights: [],
+  const groupedByDecade = Object.values(
+    groupedResults.reduce((acc: any, group: any) => {
+      const year = new Date(group.date).getFullYear()
+      const decade = Number.isNaN(year)
+        ? 'Unknown'
+        : `${Math.floor(year / 10) * 10}s`
+
+      if (!acc[decade]) {
+        acc[decade] = {
+          decade,
+          nights: [],
+        }
       }
-    }
 
-    acc[decade].nights.push(group)
-    return acc
-  }, {})
-).sort((a: any, b: any) => {
-  const aYear = parseInt(a.decade)
-  const bYear = parseInt(b.decade)
-  return bYear - aYear
-})
+      acc[decade].nights.push(group)
+      return acc
+    }, {})
+  ).sort((a: any, b: any) => {
+    if (a.decade === 'Unknown') return 1
+    if (b.decade === 'Unknown') return -1
+
+    const aYear = parseInt(a.decade)
+    const bYear = parseInt(b.decade)
+
+    return bYear - aYear
+  })
+
   function formatDate(dateStr: string) {
+    if (!dateStr || dateStr === 'Unknown Date') return 'Date Unknown'
+
     const d = new Date(dateStr)
+
+    if (Number.isNaN(d.getTime())) return 'Date Unknown'
+
     return d.toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
@@ -80,9 +91,13 @@ const groupedByDecade = Object.values(
       <section style={heroSection}>
         <div style={heroInner}>
           <div style={breadcrumbRow}>
-            <Link href="/" style={breadcrumbLink}>Home</Link>
+            <Link href="/" style={breadcrumbLink}>
+              Home
+            </Link>
             <span style={breadcrumbSep}>/</span>
-            <Link href="/tracks" style={breadcrumbLink}>Tracks</Link>
+            <Link href="/tracks" style={breadcrumbLink}>
+              Tracks
+            </Link>
             <span style={breadcrumbSep}>/</span>
             <Link href={`/tracks/${track.slug}`} style={breadcrumbLink}>
               {track.track_name}
@@ -92,11 +107,13 @@ const groupedByDecade = Object.values(
           </div>
 
           <div style={eyebrow}>Track Archive</div>
+
           <h1 style={pageTitle}>{track.track_name} Full Records</h1>
 
           <p style={pageIntro}>
-            Race-by-race results archive for this venue. Records are grouped by race date
-            and will continue to expand as additional historical material is added.
+            Race-by-race results archive for this venue. Records are grouped by
+            race date and will continue to expand as additional historical
+            material is added.
           </p>
 
           <div style={buttonRow}>
@@ -113,6 +130,7 @@ const groupedByDecade = Object.values(
             <div style={summaryItemLabel}>Track</div>
             <div style={summaryItemValue}>{track.track_name}</div>
           </div>
+
           <div style={summaryItem}>
             <div style={summaryItemLabel}>Location</div>
             <div style={summaryItemValue}>
@@ -120,6 +138,7 @@ const groupedByDecade = Object.values(
               {track.state ? `, ${track.state}` : ''}
             </div>
           </div>
+
           <div style={summaryItem}>
             <div style={summaryItemLabel}>Race Nights Shown</div>
             <div style={summaryItemValue}>{groupedResults.length}</div>
@@ -127,59 +146,70 @@ const groupedByDecade = Object.values(
         </div>
 
         <div style={recordsPanel}>
-<div style={decadeNav}>
-    <span style={decadeNavLabel}>Jump to:</span>
-    {groupedByDecade.map((d: any) => (
-      <a
-        key={d.decade}
-        href={`#decade-${d.decade}`}
-        style={decadeNavLink}
-      >
-        {d.decade}
-      </a>
-    ))}
-  </div>
+          {groupedByDecade.length > 0 ? (
+            <div style={decadeNav}>
+              <span style={decadeNavLabel}>Jump to:</span>
+
+              {groupedByDecade.map((d: any) => (
+                <a
+                  key={d.decade}
+                  href={`#decade-${d.decade}`}
+                  style={decadeNavLink}
+                >
+                  {d.decade}
+                </a>
+              ))}
+            </div>
+          ) : null}
+
           <div style={recordsPanelHeader}>Full Results Archive</div>
+
           <div style={recordsPanelBody}>
             {groupedByDecade.length > 0 ? (
-  groupedByDecade.map((decadeGroup: any) => (
-    <div
-  key={decadeGroup.decade}
-  id={`decade-${decadeGroup.decade}`}
-  style={decadeBlock}
->
-      <div style={decadeHeader}>{decadeGroup.decade}</div>
+              groupedByDecade.map((decadeGroup: any) => (
+                <div
+                  key={decadeGroup.decade}
+                  id={`decade-${decadeGroup.decade}`}
+                  style={decadeBlock}
+                >
+                  <div style={decadeHeader}>{decadeGroup.decade}</div>
 
-      {decadeGroup.nights.map((group: any) => (
-        <div key={group.date} style={nightBlock}>
-          <div style={nightHeader}>
-            {formatDate(group.date)} ({group.races.length} classes)
-          </div>
+                  {decadeGroup.nights.map((group: any) => (
+                    <div key={group.date} style={nightBlock}>
+                      <div style={nightHeader}>
+                        {formatDate(group.date)} ({group.races.length} classes)
+                      </div>
 
-          {group.races.map((r: any, i: number) => (
-            <div
-              key={`${group.date}-${r.class_name}-${r.driver_name}-${i}`}
-              style={resultRow}
-            >
-              <span style={resultLabel}>{r.class_name}</span>
-              <span style={resultValue}>
-                {r.driver_slug ? (
-                  <Link href={`/drivers/${r.driver_slug}`} style={inlineLink}>
-                    {r.driver_name}
-                  </Link>
-                ) : (
-                  r.driver_name
-                )}
-              </span>
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
-  ))
-) : (
-  <p style={panelText}>No full records available yet.</p>
-)}
+                      {group.races.map((r: any, i: number) => (
+                        <div
+                          key={`${group.date}-${r.class_name}-${r.driver_name}-${i}`}
+                          style={resultRow}
+                        >
+                          <span style={resultLabel}>
+                            {r.class_name || 'Class Unknown'}
+                          </span>
+
+                          <span style={resultValue}>
+                            {r.driver_slug ? (
+                              <Link
+                                href={`/drivers/${r.driver_slug}`}
+                                style={inlineLink}
+                              >
+                                {r.driver_name || 'Driver Unknown'}
+                              </Link>
+                            ) : (
+                              r.driver_name || 'Driver Unknown'
+                            )}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              ))
+            ) : (
+              <p style={panelText}>No full records available yet.</p>
+            )}
           </div>
         </div>
       </section>
@@ -357,6 +387,7 @@ const panelText: CSSProperties = {
   lineHeight: 1.7,
   margin: 0,
 }
+
 const decadeBlock: CSSProperties = {
   marginBottom: '30px',
 }
@@ -369,6 +400,7 @@ const decadeHeader: CSSProperties = {
   borderBottom: '3px solid #a8844f',
   paddingBottom: '6px',
 }
+
 const decadeNav: CSSProperties = {
   marginBottom: '14px',
   display: 'flex',

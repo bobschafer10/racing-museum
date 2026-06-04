@@ -106,7 +106,7 @@ export async function getRacePrograms(): Promise<RaceProgram[]> {
     return []
   }
 
-  const programs = await Promise.all(
+   const programs: Array<RaceProgram | null> = await Promise.all(
     entries.map(async (slug) => {
       const folderPath = path.join(PROGRAMS_DIR, slug)
       const stat = await fs.stat(folderPath).catch(() => null)
@@ -152,17 +152,23 @@ const isNew = daysOld <= 30
     })
   )
 
-  return programs
-    .filter((p): p is RaceProgram => p !== null)
-    .sort((a, b) => {
-      const aYear = typeof a.year === "number" ? a.year : extractYearFromSlug(a.slug)
-      const bYear = typeof b.year === "number" ? b.year : extractYearFromSlug(b.slug)
+    const validPrograms: RaceProgram[] = programs.filter(
+    (p): p is RaceProgram => p !== null
+  )
 
-      if (aYear !== null && bYear !== null) return aYear - bYear
-      if (aYear !== null) return -1
-      if (bYear !== null) return 1
-      return a.title.localeCompare(b.title)
-    })
+  return validPrograms.sort((a, b) => {
+    const aYear =
+      typeof a.year === "number" ? a.year : extractYearFromSlug(a.slug)
+
+    const bYear =
+      typeof b.year === "number" ? b.year : extractYearFromSlug(b.slug)
+
+    if (aYear !== null && bYear !== null) return aYear - bYear
+    if (aYear !== null) return -1
+    if (bYear !== null) return 1
+
+    return a.title.localeCompare(b.title)
+  })
 }
 
 export async function getRaceProgramBySlug(
