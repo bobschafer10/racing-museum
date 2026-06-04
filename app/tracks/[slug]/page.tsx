@@ -119,7 +119,7 @@ const { data: archiveQuality } = await supabase
 
   const relatedPrograms = allPrograms
     .filter((program) => program.track_slug === slug)
-    .sort((a, b) => (a.year ?? 0) - (b.year ?? 0))
+    .sort((a, b) => Number(a.year ?? 0) - Number(b.year ?? 0))
 
   function formatSlugName(value?: string | null) {
     if (
