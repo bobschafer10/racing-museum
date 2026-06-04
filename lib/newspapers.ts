@@ -20,6 +20,7 @@ export type NewspaperPublication = {
   slug: string
   name: string
   logo: string
+  status?: "active" | "coming-soon"
 }
 
 export const newspaperPublications: NewspaperPublication[] = [
