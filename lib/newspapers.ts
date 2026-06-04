@@ -14,6 +14,8 @@ export type NewspaperIssue = {
   coverImage: string
   pages: string[]
   featured?: boolean
+  volume?: string | number
+  number?: string | number
 }
 
 export type NewspaperPublication = {
@@ -53,6 +55,8 @@ type NewspaperMeta = {
   date?: string
   year?: number
   issue?: number
+  volume?: string | number
+  number?: string | number
   description?: string
   featured?: boolean
 }
@@ -182,6 +186,8 @@ export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
         publicationSlug,
         year,
         issueDate,
+        volume: meta.volume,
+        number: meta.number,
         description: meta.description,
         coverImage,
         pages,
