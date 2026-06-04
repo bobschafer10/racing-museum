@@ -127,7 +127,7 @@ export default async function NewspapersPage({
                   </div>
 
                   <div style={issueBody}>
-                    <div style={publicationLine}>{issue.publicationTitle}</div>
+                    <div style={publicationLine}>{issue.publication}</div>
                     <h2 style={issueTitle}>{issue.issueDate}</h2>
 
                     {(issue.volume || issue.number) && (
