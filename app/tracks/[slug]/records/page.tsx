@@ -27,8 +27,12 @@ export default async function TrackRecordsPage({
     .order('race_date', { ascending: false })
     .limit(500)
 
-  const groupedResults = Object.values(
-    (results || []).reduce((acc: any, r: any) => {
+  const groupedResultsArray = Array.isArray(groupedResults)
+  ? groupedResults
+  : []
+
+const groupedByDecade = Object.values(
+  groupedResultsArray.reduce((acc: any, group: any) => {
       const date = r.race_date
 
       if (!acc[date]) {
