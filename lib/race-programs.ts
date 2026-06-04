@@ -10,12 +10,13 @@ export type RaceProgram = {
   series?: string | null
   series_slug?: string | null
   type?: string | null
+  subtitle?: string | null
+  description?: string | null
+  trackLogo?: string | null
+  isNew?: boolean
   images: string[]
   coverImage?: string | null
   backCoverImage?: string | null
-  addedAt?: string | null
-  updatedAt?: string | null
-  isNew?: boolean
 }
 
 type RaceProgramMeta = {
