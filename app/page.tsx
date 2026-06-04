@@ -109,6 +109,17 @@ export default async function Home() {
       .limit(4),
   ])
 
+  console.log('HOMEPAGE DEBUG', {
+    hasStats: !!stats,
+    stats,
+    driverPoolCount: driverPool?.length ?? 0,
+    trackPoolCount: trackPool?.length ?? 0,
+    seriesPoolCount: seriesPool?.length ?? 0,
+    eventPoolCount: eventPool?.length ?? 0,
+    photoPoolCount: photoPool?.length ?? 0,
+    recentPhotosCount: recentPhotos?.length ?? 0,
+  })
+
   let driver = null
   let driverPhoto = null
 
