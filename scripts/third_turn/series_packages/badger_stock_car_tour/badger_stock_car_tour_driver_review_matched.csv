@@ -1,0 +1,21 @@
+﻿standings_driver_name,museum_driver_name,driver_id,driver_slug,match_status,review_action,notes
+Rod Snellenberger,Rod Snellenberger,43691,rod-snellenberger,matched_exact,use_existing_driver,
+Dan Michonski,Dan Michonski,29403,dan-michonski,matched_exact,use_existing_driver,
+Scott Stewart,Scott Stewart,44940,scott-stewart,matched_exact,use_existing_driver,
+Justin Jacobson,Austin Jacobson,24979,austin-jacobson,possible_match,,score=0.933
+Kyle Frederick,Kyle Frederick,38803,kyle-frederick,matched_exact,use_existing_driver,
+Dustin Loberger,Dustin Loberger,31823,dustin-loberger,matched_exact,use_existing_driver,
+John Heinz,John Heinz,37013,john-heinz,matched_exact,use_existing_driver,
+Tyler Smith,Tyler Smith,47489,tyler-smith,matched_exact,use_existing_driver,
+Devin Snellenberger,Devin Snellenberger,30863,devin-snellenberger,matched_exact,use_existing_driver,
+"Larry Karcz, Jr.","Larry Karcz, Jr",39044,larry-karcz-jr,matched_exact,use_existing_driver,
+Mark Schunemann,Mark Schuenemann,40079,mark-schuenemann,matched_fuzzy_review,,score=0.968
+Dave DeGrave,Dave Degrave,29862,dave-degrave,matched_exact,use_existing_driver,
+Mike Schmidt,Mike Schmidt,41237,mike-schmidt,matched_exact,use_existing_driver,
+Luke Lemmens,Luke Lemmens,39714,luke-lemmens,matched_exact,use_existing_driver,
+David Bouche,Dave Bouche,29817,dave-bouche,possible_match,,score=0.870
+Jamie Suchocki,Jamie Suchoski,34467,jamie-suchoski,possible_match,,score=0.929
+Jerry Leary,Jerry Leary,35502,jerry-leary,matched_exact,use_existing_driver,
+Scott Reinhardt,Scott Reinhardt,44894,scott-reinhardt,matched_exact,use_existing_driver,
+Eric Arneson,Eric Arneson,32253,eric-arneson,matched_exact,use_existing_driver,
+David Hoerning,David Hoerning,30335,david-hoerning,matched_exact,use_existing_driver,

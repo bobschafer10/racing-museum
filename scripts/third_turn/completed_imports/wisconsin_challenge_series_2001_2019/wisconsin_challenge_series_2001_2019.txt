@@ -1,0 +1,34 @@
+Wisconsin Challenge Series Import Package
+
+Series: Wisconsin Challenge Series
+Series ID: 3
+Seasons imported: 2001-2009, 2017-2019
+Race pages parsed: 81
+SeriesEvents imported: 81
+SeriesEventResults imported: 1,823
+Missing drivers after alias/new-driver cleanup: 0
+Missing tracks after alias cleanup: 0
+Missing seasons: 0
+
+Final verification:
+SeriesEventResults joined to SeriesEvents where series_id = 3 returned 1,823 rows.
+
+Important files:
+- wisconsin_challenge_series_race_listings.csv = parsed event/race listing source
+- wisconsin_challenge_series_raw_tables.csv = raw extracted tables from source pages
+- wisconsin_challenge_series_tables_with_links.csv = source tables with Third Turn links
+- wisconsin_challenge_series_supabase_review.csv = review file used before import
+- wisconsin_challenge_series_standings.csv = standings export/review file
+- series_event_results_staging.csv = parsed raw staging output
+- series_events_import.csv = SeriesEvents source import rows
+- series_events_lookup.csv = Supabase-generated SeriesEvents IDs
+- series_event_results_stage.csv = staged result rows before SeriesEvent ID fill
+- series_event_results_import.csv = final SeriesEventResults import rows
+- insert_series_events.sql = SQL used to insert SeriesEvents
+- insert_series_event_results.sql = SQL used to insert SeriesEventResults
+- driver_aliases.csv = Third Turn driver name aliases
+- drivers_to_create.csv = new drivers reviewed/created
+- drivers_lookup.csv = Supabase Drivers lookup used for matching
+- track_aliases.csv = Third Turn track name aliases
+- tracks_lookup.csv = Supabase Tracks lookup used for matching
+- series_seasons_lookup.csv = Supabase SeriesSeasons IDs

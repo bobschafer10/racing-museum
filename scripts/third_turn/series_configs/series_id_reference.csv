@@ -1,0 +1,61 @@
+id,series_name,slug,first_year,last_year,is_published
+3,ACC Championship,acc-championship,null,null,TRUE
+60,Advantage RV Modified Series,advantage-rv-modified-series,null,null,TRUE
+4,Alive For Five Series,alive-for-five-series,null,null,TRUE
+5,AllStar Late Model Association,allstar-late-model-association,null,null,TRUE
+61,American Automobile Association,american-automobile-association,null,null,TRUE
+6,ARTGO Challenge Series,artgo-challenge-series,1979,1985,TRUE
+7,Badger Midget Auto Racing Association,badger-midget-auto-racing-association,null,null,TRUE
+8,Big Eight Late Model Series,big-eight-late-model-series,null,null,TRUE
+9,Central Wisconsin Racing Association,central-wisconsin-racing-association,null,null,TRUE
+10,Dairyland Midget Association,dairyland-midget-association,null,null,TRUE
+11,Dells-LaCrosse Combined Champ,dells-lacrosse-combined-champ,null,null,TRUE
+12,Eastern Wisconsin Stock Car Association,eastern-wisconsin-stock-car-association,null,null,TRUE
+13,Fox River Racing Club,fox-river-racing-club,null,null,TRUE
+14,Interstate Racing Association,interstate-racing-association,null,null,TRUE
+59,ISS Enduro Series,iss-enduro-series,null,null,TRUE
+15,Junior Motorsports,junior-motorsports,null,null,TRUE
+16,MARS Late Model Series,mars-late-model-series,null,null,TRUE
+17,"Metro Circuit (Elko, Raceway Park MN)",metro-circuit-(elko-raceway-park-mn),null,null,TRUE
+18,Mid American Stock Car Series,mid-american-stock-car-series,null,null,TRUE
+19,Mid American Truck Series,mid-american-truck-series,null,null,TRUE
+58,Midwest Dash Series,midwest-dash-series,null,null,TRUE
+20,Midwest Enduro Series,midwest-enduro-series,null,null,TRUE
+21,Midwest Grand National Series,midwest-grand-national-series,null,null,TRUE
+22,Midwest Mini Champ Association,midwest-mini-champ-association,null,null,TRUE
+23,Midwest Mini Champ Racing Association,midwest-mini-champ-racing-association,null,null,TRUE
+28,Midwest Sprintcar Association,msa-sprint-car-series,null,null,TRUE
+24,Midwest SprintCar Association,midwest-sprintcar-association,null,null,TRUE
+25,Midwest Truck Series,midwest-truck-series,null,null,TRUE
+26,Milwaukee Stock Car Racing Association,milwaukee-stock-car-racing-association,null,null,TRUE
+27,Modified Racing Association,modified-racing-association,null,null,TRUE
+29,NASCAR Northern Series,nascar-northern-series,null,null,TRUE
+30,NASCAR Remax Challenge Series,nascar-remax-challenge-series,null,null,TRUE
+31,North American Sportsman Series,north-american-sportsman-series,null,null,TRUE
+32,Northeastern Wisconsin Driving Champ,northeastern-wisconsin-driving-champ,null,null,TRUE
+33,Northern Stock Car Club,northern-stock-car-club,null,null,TRUE
+34,Pro-Star Drivers Association,pro-star-drivers-association,null,null,TRUE
+35,Rascal Outlaw Series,rascal-outlaw-series,null,null,TRUE
+36,"Red, White & Blue State Championship (WIR)",red-white-blue-state-championship-series,null,null,TRUE
+37,Short Track Super Truck Series,short-track-super-truck-series,null,null,TRUE
+38,Slinger Nationals,slinger-nationals,null,null,TRUE
+56,Stock Car Connection,stock-car-connection,null,null,TRUE
+39,Tri-City Championship,tri-city-championship,null,null,TRUE
+40,TUNDRA Late Model Series,tundra-super-late-model-series,null,null,TRUE
+55,United Auto Racing Alliance,united-auto-racing-alliance,null,null,TRUE
+54,United Midwestern Promoters,united-midwestern-promoters,null,null,TRUE
+53,United Speed Alliance Racing,united-speed-alliance-racing,null,null,TRUE
+52,United States Auto Club,united-states-auto-club,null,null,TRUE
+51,United States Modified Touring Series,united-states-modified-touring-series,null,null,TRUE
+41,WIN Legend Car Series,win-legend-car-series,null,null,TRUE
+42,Wisconsin Association of Mini Stocks,wisconsin-association-of-mini-stocks,null,null,TRUE
+43,Wisconsin Challenge Series,wisconsin-challenge-series,2001,2019,TRUE
+44,Wisconsin LM Championship Series,wisconsin-lm-championship-series,null,null,TRUE
+45,Wisconsin Mini Sprint Association,wisconsin-mini-sprint-association,null,null,TRUE
+46,Wisconsin Short Track Series,wisconsin-short-track-series,1993,1994,TRUE
+50,Wisconsin Sport Truck Series,wisconsin-sport-truck,null,null,TRUE
+49,Wisconsin Wingless Sprint Car Series,wisconsin-wingless-sprint-car-series,null,null,TRUE
+48,WISSOTA Challenge Series,wissota-challenge-series,null,null,TRUE
+47,WISSOTA National Championship,wissota-national-championship,null,null,TRUE
+57,World of Outlaws,world-of-outlaws,null,null,TRUE
+64,Badger Modified Tour,badger-modified-tour,null,null,TRUE

@@ -1,0 +1,65 @@
+{
+  "series_slug": "badger_modified_tour",
+  "series_name": "Badger Modified Tour",
+
+  "supabase_series_id": 64,
+  "supabase_series_name": "Badger Modified Tour",
+  "supabase_series_slug": "badger-modified-tour",
+
+  "third_turn_series_name": "Custom Windows Plus Badger Mod Tour presented by Gandrud Chevrolet",
+  "third_turn_series_url": "https://www.thethirdturn.com/wiki/Custom_Windows_Plus_Badger_Mod_Tour_presented_by_Gandrud_Chevrolet",
+
+  "years": [],
+
+  "manual_race_links": [
+    {
+      "season_year": 2012,
+      "race_number": 2,
+      "title": "2012 Clash at the Creek",
+      "url": "https://www.thethirdturn.com/wiki/2012_Clash_at_the_Creek"
+    }
+  ],
+
+"track_name_overrides": {
+  "Dodge County Fairgrounds Speedway": "Dodge County Fairgrounds",
+  "Oshkosh Speedzone Raceway": "Oshkosh Speed Zone",
+  "Manitowoc Speedway": "Manitowoc Expo Speedway",
+  "Shawano Fairgrounds": "Shawano Speedway",
+  "Outagamie Speedway": "Seymour Speedway"
+},
+
+"standings_parse_rules": {
+  "2012": {
+  "numeric_fields_after_driver": ["starts", "wins", "top5", "top10"],
+  "position_mode": "carry_forward"
+},
+  "2013": {
+    "numeric_fields_after_driver": ["points", "starts", "wins", "top5", "top10"]
+  }
+},
+
+ "track_slug_overrides": {
+  "Dodge County Fairgrounds Speedway": "dodge-county-fairgrounds-wi",
+  "Oshkosh Speedzone Raceway": "oshkosh-speed-zone-wi",
+  "Manitowoc Speedway": "manitowoc-expo-speedway-wi",
+  "Shawano Fairgrounds": "shawano-speedway-wi",
+  "Outagamie Speedway": "seymour-speedway-wi",
+
+  "Wilmot Raceway": "wilmot-raceway-wi",
+  "141 Speedway": "141-speedway-wi",
+  "Beaver Dam Raceway": "beaver-dam-raceway-wi",
+  "Eagle River Speedway": "eagle-river-speedway-wi",
+
+  "Rockford Speedway": "rockford-speedway-il"
+},
+
+  "driver_name_overrides": {},
+
+  "notes": [
+    "Do not assume supabase_series_id.",
+    "Confirm Series.id from Supabase Series table before import.",
+    "Series table uses series_name, not name.",
+    "Museum display name can remain Badger Modified Tour while Third Turn source name is longer.",
+    "Keep manual fixes inside this config instead of spreadsheet formulas."
+  ]
+}

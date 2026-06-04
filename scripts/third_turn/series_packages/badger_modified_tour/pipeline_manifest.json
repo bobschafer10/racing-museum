@@ -1,0 +1,22 @@
+{
+  "series_slug": "badger_modified_tour",
+  "series_name": "Badger Modified Tour",
+  "supabase_series_id": 64,
+  "supabase_series_name": "Badger Modified Tour",
+  "supabase_series_slug": "badger-modified-tour",
+  "third_turn_series_url": "https://www.thethirdturn.com/wiki/Custom_Windows_Plus_Badger_Mod_Tour_presented_by_Gandrud_Chevrolet",
+  "reference_series_row": {
+    "id": "64",
+    "series_name": "Badger Modified Tour",
+    "slug": "badger-modified-tour",
+    "first_year": "null",
+    "last_year": "null",
+    "is_published": "TRUE"
+  },
+  "folders": {
+    "package_dir": "C:\\Users\\schaf\\racing-museum\\scripts\\third_turn\\series_packages\\badger_modified_tour",
+    "completed_dir": "C:\\Users\\schaf\\racing-museum\\scripts\\third_turn\\completed_imports\\badger_modified_tour",
+    "cache_dir": "C:\\Users\\schaf\\racing-museum\\scripts\\third_turn\\cache\\badger_modified_tour",
+    "race_cache_dir": "C:\\Users\\schaf\\racing-museum\\scripts\\third_turn\\cache\\badger_modified_tour\\races"
+  }
+}
