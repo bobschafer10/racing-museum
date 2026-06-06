@@ -41,7 +41,7 @@ function main() {
         year: Number(issueSlug.slice(0, 4)),
         issueDate: issueSlug,
         description: null,
-        coverImage: pages[0] ?? null,
+        coverImage: pages[0] ?? "",
         pages,
         featured: false,
       }

@@ -10,7 +10,7 @@ export type NewspaperIssue = {
   issueDate: string
   description?: string | null
   summary?: string | null
-  coverImage: string | null
+  coverImage: string
   pages: string[]
   featured?: boolean
   volume?: string | number
