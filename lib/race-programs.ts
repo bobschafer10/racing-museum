@@ -118,7 +118,10 @@ export async function getRacePrograms(): Promise<RaceProgram[]> {
       const images = files
         .filter((file) => /\.(jpg|jpeg|png|webp)$/i.test(file))
         .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-        .map((file) => `/media/programs/${slug}/${file}`)
+        .map(
+  (file) =>
+    `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/${slug}/${file}`
+)
 
       const meta = await readProgramMeta(folderPath)
       const coverImage = findCoverImage(images)
