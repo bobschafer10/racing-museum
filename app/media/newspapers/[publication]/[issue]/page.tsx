@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { CSSProperties } from "react"
@@ -38,14 +38,11 @@ export default async function NewspaperIssuePage({
       <section style={heroWrap}>
         <div style={heroGrid}>
           <div style={coverWrap}>
-            <Image
-              src={issue.coverImage}
-              alt={`${issue.publication} ${issue.title}`}
-              width={420}
-              height={560}
-              style={coverImage}
-              priority
-            />
+            <img
+  src={issue.coverImage}
+  alt={`${issue.publication} ${issue.title}`}
+  style={coverImage}
+/>
           </div>
 
           <div style={heroText}>
