@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
-import { getPhotoUrl } from '@/lib/photos' // 1. IMPORT YOUR HELPER METHOD HERE
 
 export default async function DriversPage({
   searchParams,
@@ -54,7 +53,6 @@ export default async function DriversPage({
 
     const { data, error: photoError } = await supabase
       .from('photos')
-      // Make sure we pull the storage_path or construct the path using file records
       .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
       .in('driver_slug', chunk)
       .neq('credit_type', 'unknown')
@@ -91,12 +89,11 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
-  // 2. PATH CONSTRUCTION LOGIC FOR SUPABASE ROOT MEDIA FOLDERS
-  // Based on your bucket tree layout: master -> track-slug -> year -> file_name
-  const getCDNPath = (photoObj: any) => {
+  // PATH CONSTRUCTION LOGIC FOR SUPABASE PUBLIC BUCKET
+  const getCDNUrl = (photoObj: any) => {
     const track = photoObj.track_slug || 'unknown-track'
     const yr = photoObj.year || 'unknown-year'
-    return `master/${track}/${yr}/${photoObj.file_name}`
+    return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${track}/${yr}/${photoObj.file_name}`
   }
 
   return (
@@ -162,9 +159,8 @@ export default async function DriversPage({
           <div style={heroGallery}>
             {galleryPhoto ? (
               <>
-                {/* 3. UPDATED HERO GALLERY PHOTO PATHWAY */}
                 <img
-                  src={getPhotoUrl(getCDNPath(galleryPhoto))}
+                  src={getCDNUrl(galleryPhoto)}
                   alt="Vintage racing archive"
                   style={heroGalleryPhoto}
                 />
@@ -197,9 +193,8 @@ export default async function DriversPage({
                     <div style={cardInner}>
                       {driverPhoto ? (
                         <>
-                          {/* 4. UPDATED GRID DRIVER PHOTO CARD PATHWAY */}
                           <img
-                            src={getPhotoUrl(getCDNPath(driverPhoto))}
+                            src={getCDNUrl(driverPhoto)}
                             alt={driver.driver_name}
                             style={cardPhoto}
                           />
@@ -287,4 +282,27 @@ function getCreditLabel(type: string | null) {
   }
 }
 
-// ... Keep your exact styling declarations unchanged at the bottom ...
+// INLINE LAYOUT STYLE VARIABLES
+const pageStyle: CSSProperties = {
+  backgroundColor: '#fbfbfd',
+  minHeight: '100vh',
+  paddingBottom: '4rem',
+}
+
+const heroSection: CSSProperties = {
+  backgroundColor: '#1a1a1a',
+  color: '#ffffff',
+  padding: '4rem 2rem',
+  borderBottom: '4px solid #cf2e2e',
+}
+
+const heroSplit: CSSProperties = {
+  maxWidth: '1200px',
+  margin: '0 auto',
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
+  gap: '4rem',
+  alignItems: 'center',
+}
+
+const
