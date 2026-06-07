@@ -79,7 +79,7 @@ export default async function DriversPage({
                   <div style={cardInner}>
                     {p ? (
                       <img 
-  src={`https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${p.track_slug}/${p.year}/${p.file_name}`} 
+  src={`https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${p.track_slug || 'unknown-track'}/${p.year || 'unknown-year'}/${p.file_name}`} 
   alt={driver.driver_name} 
   style={cardPhoto} 
 />
