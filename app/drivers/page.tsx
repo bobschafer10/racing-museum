@@ -58,7 +58,7 @@ export default async function DriversPage({
       .order('sequence', { ascending: true })
       .order('file_name', { ascending: true })
 
-    if (photoError) console.log('Driver photo query error:', JSON.stringify(photoError, null, 2))
+    if (photoError) console.log('Driver photo query error:', photoError)
     if (data) driverPhotos = [...driverPhotos, ...data]
   }
 
@@ -82,8 +82,7 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
-  // PATH CONSTRUCTION FOR THE PUBLIC BUCKET MEDIA DIRECTORY
-  const getCDNUrl = (photoObj: any) => {
+  const getCDNPath = (photoObj: any) => {
     const track = photoObj.track_slug || 'unknown-track'
     const yr = photoObj.year || 'unknown-year'
     return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${track}/${yr}/${photoObj.file_name}`
@@ -91,6 +90,7 @@ export default async function DriversPage({
 
   return (
     <main style={pageStyle}>
+      {/* RESTORED BLACK HERO BRANDING SECTION */}
       <section style={heroSection}>
         <div style={heroSplit}>
           <div style={heroLeft}>
@@ -137,7 +137,7 @@ export default async function DriversPage({
               {letter ? (
                 <>Showing drivers with last names starting with <strong>{letter}</strong></>
               ) : query ? (
-                <>Showing results for <strong>{query}</strong></></>
+                <>Showing results for <strong>{query}</strong></>
               ) : (
                 <>Showing driver directory</>
               )}
@@ -148,7 +148,7 @@ export default async function DriversPage({
             {galleryPhoto ? (
               <>
                 <img
-                  src={getCDNUrl(galleryPhoto)}
+                  src={getCDNPath(galleryPhoto)}
                   alt="Vintage racing archive"
                   style={heroGalleryPhoto}
                 />
@@ -161,6 +161,7 @@ export default async function DriversPage({
         </div>
       </section>
 
+      {/* CORE CONTENT CARDS GRID LAYOUT */}
       <section style={contentWrap}>
         {error ? (
           <div style={errorBox}>Unable to load drivers right now.</div>
@@ -181,7 +182,7 @@ export default async function DriversPage({
                       {driverPhoto ? (
                         <>
                           <img
-                            src={getCDNUrl(driverPhoto)}
+                            src={getCDNPath(driverPhoto)}
                             alt={driver.driver_name}
                             style={cardPhoto}
                           />
@@ -242,16 +243,12 @@ function formatSlugName(value: string | null) {
 }
 
 function getCreditLabel(type: string | null) {
-  switch (type) {
-    case 'post': return 'Post'
-    case 'program': return 'Program'
-    case 'flyer': return 'Flyer'
-    case 'photo': return 'Photo'
-    default: return 'Credit'
-  }
+  return type && ['post', 'program', 'flyer', 'photo'].includes(type)
+    ? type.charAt(0).toUpperCase() + type.slice(1)
+    : 'Credit'
 }
 
-// ORIGINAL HIGH-FIDELITY LAYOUT STYLING
+// ORIGINAL BRAND STYLING DEFINITIONS
 const pageStyle: CSSProperties = { backgroundColor: '#fbfbfd', minHeight: '100vh', paddingBottom: '4rem' }
 const heroSection: CSSProperties = { backgroundColor: '#1a1a1a', color: '#ffffff', padding: '4rem 2rem', borderBottom: '4px solid #cf2e2e' }
 const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
