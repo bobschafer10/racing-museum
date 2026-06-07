@@ -64,15 +64,11 @@ export default async function DriversPage({
     driverPhotoMap.set(photo.driver_slug, photo)
   }
 
-  const galleryPhoto = driverPhotos.length > 0 ? driverPhotos : null
-
-  // DIRECT URL BUILDER: Uses your Project ID and your exact bucket path
   const buildUrl = (p: any) => 
     `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${p.track_slug || 'unknown-track'}/${p.year || 'unknown-year'}/${p.file_name}`
 
   return (
     <main style={pageStyle}>
-      {/* ... (Hero section code remains the same as your original) ... */}
       <section style={contentWrap}>
         <div style={grid}>
           {filteredDrivers.map((driver) => {
@@ -97,4 +93,15 @@ export default async function DriversPage({
     </main>
   )
 }
-// ... (Include your existing CSSProperties and helper functions here)
+
+// STYLES REQUIRED FOR BUILD
+const pageStyle: CSSProperties = { padding: '2rem' }
+const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '0 auto' }
+const grid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }
+const cardLink: CSSProperties = { textDecoration: 'none' }
+const card: CSSProperties = { border: '1px solid #ccc', borderRadius: '8px', overflow: 'hidden' }
+const cardInner: CSSProperties = { padding: '1rem' }
+const cardPhoto: CSSProperties = { width: '100%', height: '200px', objectFit: 'cover' }
+const driverName: CSSProperties = { fontSize: '1rem', marginTop: '0.5rem' }
+const driverSignaturePlaceholder: CSSProperties = { width: '100%', height: '200px', backgroundColor: '#eee', display: 'flex', alignItems: 'center', justifyContent: 'center' }
+const driverSignatureName: CSSProperties = { textAlign: 'center', padding: '1rem' }
