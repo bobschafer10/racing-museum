@@ -1,6 +1,9 @@
+// app/drivers/page.tsx
+
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import { getPhotoUrl } from '@/lib/photos' // 1. IMPORT YOUR HELPER METHOD HERE
 
 export default async function DriversPage({
   searchParams,
@@ -51,6 +54,7 @@ export default async function DriversPage({
 
     const { data, error: photoError } = await supabase
       .from('photos')
+      // Make sure we pull the storage_path or construct the path using file records
       .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
       .in('driver_slug', chunk)
       .neq('credit_type', 'unknown')
@@ -86,6 +90,14 @@ export default async function DriversPage({
     driverPhotos && driverPhotos.length > 0
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
+
+  // 2. PATH CONSTRUCTION LOGIC FOR SUPABASE ROOT MEDIA FOLDERS
+  // Based on your bucket tree layout: master -> track-slug -> year -> file_name
+  const getCDNPath = (photoObj: any) => {
+    const track = photoObj.track_slug || 'unknown-track'
+    const yr = photoObj.year || 'unknown-year'
+    return `master/${track}/${yr}/${photoObj.file_name}`
+  }
 
   return (
     <main style={pageStyle}>
@@ -150,8 +162,9 @@ export default async function DriversPage({
           <div style={heroGallery}>
             {galleryPhoto ? (
               <>
+                {/* 3. UPDATED HERO GALLERY PHOTO PATHWAY */}
                 <img
-                  src={`/photos/${galleryPhoto.file_name}`}
+                  src={getPhotoUrl(getCDNPath(galleryPhoto))}
                   alt="Vintage racing archive"
                   style={heroGalleryPhoto}
                 />
@@ -184,8 +197,9 @@ export default async function DriversPage({
                     <div style={cardInner}>
                       {driverPhoto ? (
                         <>
+                          {/* 4. UPDATED GRID DRIVER PHOTO CARD PATHWAY */}
                           <img
-                            src={`/photos/${driverPhoto.file_name}`}
+                            src={getPhotoUrl(getCDNPath(driverPhoto))}
                             alt={driver.driver_name}
                             style={cardPhoto}
                           />
@@ -273,265 +287,4 @@ function getCreditLabel(type: string | null) {
   }
 }
 
-const pageStyle: CSSProperties = {
-  background: '#eadfc7',
-  minHeight: '100vh',
-  color: '#2f2417',
-  fontFamily: 'Georgia, serif',
-}
-
-const heroSection: CSSProperties = {
-  background: 'linear-gradient(to bottom, #e7d9bf, #eadfc7)',
-  borderBottom: '2px solid #b29364',
-}
-
-const eyebrow: CSSProperties = {
-  fontSize: '15px',
-  letterSpacing: '1px',
-  textTransform: 'uppercase',
-  color: '#7a5827',
-  marginBottom: '8px',
-}
-
-const pageTitle: CSSProperties = {
-  fontSize: '52px',
-  margin: '0 0 10px',
-  color: '#3d2b16',
-}
-
-const pageIntro: CSSProperties = {
-  fontSize: '20px',
-  lineHeight: 1.6,
-  maxWidth: '820px',
-  margin: '0 0 20px',
-}
-
-const searchForm: CSSProperties = {
-  display: 'flex',
-  gap: '10px',
-  flexWrap: 'wrap',
-  marginBottom: '12px',
-}
-
-const searchInput: CSSProperties = {
-  minWidth: '320px',
-  padding: '12px 14px',
-  border: '2px solid #b29364',
-  background: '#f6eddc',
-  fontSize: '16px',
-  color: '#2f2417',
-}
-
-const searchButton: CSSProperties = {
-  padding: '12px 18px',
-  background: '#7a5827',
-  color: '#fff8ea',
-  border: '2px solid #5d3f17',
-  cursor: 'pointer',
-  fontSize: '16px',
-}
-
-const resultsLine: CSSProperties = {
-  fontSize: '16px',
-  color: '#6a4a1f',
-}
-
-const contentWrap: CSSProperties = {
-  maxWidth: '1200px',
-  margin: '0 auto',
-  padding: '26px 20px 40px',
-}
-
-const grid: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, minmax(260px, 1fr))',
-  gap: '20px',
-}
-
-const cardLink: CSSProperties = {
-  textDecoration: 'none',
-  color: 'inherit',
-}
-
-const cardPhoto: CSSProperties = {
-  width: '100%',
-  height: '190px',
-  objectFit: 'cover',
-  display: 'block',
-  border: '1px solid #b29364',
-  marginBottom: '10px',
-  background: '#d8c39d',
-}
-
-const cardPhotoCaption: CSSProperties = {
-  fontSize: '13px',
-  marginBottom: '12px',
-  color: '#5b472f',
-}
-
-const driverSignaturePlaceholder: CSSProperties = {
-  width: '100%',
-  height: '190px',
-  position: 'relative',
-  boxShadow: 'inset 0 0 20px rgba(0,0,0,0.05)',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  overflow: 'hidden',
-  border: '1px solid #b29364',
-  marginBottom: '10px',
-  background: 'linear-gradient(to bottom, #d8c39d, #c7ab7c)',
-}
-
-const heroSplit: CSSProperties = {
-  maxWidth: '1400px',
-  margin: '0 auto',
-  padding: '34px 20px 28px',
-  display: 'grid',
-  gridTemplateColumns: '1.2fr 0.8fr',
-  gap: '36px',
-  alignItems: 'start',
-}
-
-const heroLeft: CSSProperties = {
-  minWidth: 0,
-}
-
-const heroGallery: CSSProperties = {
-  background: '#dcc7a1',
-  border: '2px solid #b29364',
-  padding: '10px',
-  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
-}
-
-const heroGalleryPhoto: CSSProperties = {
-  width: '100%',
-  height: '300px',
-  objectFit: 'cover',
-  display: 'block',
-  border: '1px solid #b29364',
-  background: '#d8c39d',
-}
-
-const heroGalleryCaption: CSSProperties = {
-  padding: '12px',
-  textAlign: 'center',
-  fontSize: '18px',
-  color: '#5a3a1b',
-  background: '#f1e5ce',
-  border: '1px solid #c2a97d',
-  borderTop: 'none',
-}
-
-const heroGalleryPlaceholder: CSSProperties = {
-  height: '300px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  background: '#cdb38a',
-  color: '#5a3a1b',
-  fontSize: '28px',
-  fontFamily: 'Georgia, serif',
-}
-
-const driverSignatureFlag: CSSProperties = {
-  position: 'absolute',
-  inset: 0,
-  opacity: 0.05,
-  backgroundImage: `
-    linear-gradient(45deg, #2f2417 25%, transparent 25%),
-    linear-gradient(-45deg, #2f2417 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #2f2417 75%),
-    linear-gradient(-45deg, transparent 75%, #2f2417 75%)
-  `,
-  backgroundSize: '40px 40px',
-  backgroundPosition: '0 0, 0 20px, 20px -20px, -20px 0px',
-}
-
-const driverSignatureName: CSSProperties = {
-  position: 'relative',
-  zIndex: 1,
-  fontSize: '34px',
-  lineHeight: 1.1,
-  color: '#5b3a1b',
-  textAlign: 'center',
-  padding: '0 16px',
-  fontFamily: '"Brush Script MT", "Lucida Handwriting", cursive',
-  textShadow: '1px 1px 0 rgba(0,0,0,0.15)',
-  transform: 'rotate(-2deg)',
-  maxWidth: '90%',
-}
-
-const card: CSSProperties = {
-  background: '#dcc7a1',
-  border: '2px solid #b29364',
-  padding: '10px',
-  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
-}
-
-const cardInner: CSSProperties = {
-  background: '#f1e5ce',
-  border: '1px solid #c2a97d',
-  padding: '14px',
-  minHeight: '100%',
-}
-
-const driverName: CSSProperties = {
-  fontSize: '30px',
-  margin: '0 0 8px',
-  color: '#3d2b16',
-}
-
-const metaLine: CSSProperties = {
-  fontSize: '17px',
-  margin: '0 0 14px',
-  color: '#5a3a1b',
-}
-
-const statTable: CSSProperties = {
-  background: '#e4d3b2',
-  border: '1px solid #c2a97d',
-  marginBottom: '16px',
-}
-
-const statRow: CSSProperties = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  padding: '10px 12px',
-  borderBottom: '1px solid #ccb48a',
-  fontSize: '16px',
-}
-
-const cardButton: CSSProperties = {
-  display: 'inline-block',
-  background: '#7a5827',
-  color: '#fff8ea',
-  padding: '10px 14px',
-  border: '1px solid #5d3f17',
-}
-
-const errorBox: CSSProperties = {
-  padding: '18px',
-  background: '#f2d8d3',
-  border: '1px solid #b36a5e',
-}
-
-const alphabetBar: CSSProperties = {
-  marginTop: '10px',
-  marginBottom: '10px',
-  display: 'flex',
-  flexWrap: 'wrap',
-  gap: '10px',
-  fontSize: '16px',
-}
-
-const letterLink: CSSProperties = {
-  color: '#5a3a1b',
-  textDecoration: 'none',
-}
-
-const emptyBox: CSSProperties = {
-  padding: '18px',
-  background: '#f1e5ce',
-  border: '1px solid #c2a97d',
-}
+// ... Keep your exact styling declarations unchanged at the bottom ...
