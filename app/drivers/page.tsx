@@ -82,6 +82,7 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
+  // THE CORRECT IMAGE BUILDER PATH
   const getCDNPath = (photoObj: any) => {
     const track = photoObj.track_slug || 'unknown-track'
     const yr = photoObj.year || 'unknown-year'
@@ -90,7 +91,6 @@ export default async function DriversPage({
 
   return (
     <main style={pageStyle}>
-      {/* BRAND HERO SECTION WITH DARK BACKGROUND */}
       <section style={heroSection}>
         <div style={heroSplit}>
           <div style={heroLeft}>
@@ -161,7 +161,6 @@ export default async function DriversPage({
         </div>
       </section>
 
-      {/* DRIVERS CONTENT CARDS GRID */}
       <section style={contentWrap}>
         {error ? (
           <div style={errorBox}>Unable to load drivers right now.</div>
@@ -170,7 +169,7 @@ export default async function DriversPage({
         ) : (
           <div style={grid}>
             {filteredDrivers.map((driver) => {
-              const driverPhoto = driverPhotoMap.get(driver.driver_slug)
+              const p = driverPhotoMap.get(driver.driver_slug)
               return (
                 <Link
                   key={driver.driver_slug}
@@ -179,17 +178,17 @@ export default async function DriversPage({
                 >
                   <article style={card}>
                     <div style={cardInner}>
-                      {driverPhoto ? (
+                      {p ? (
                         <>
                           <img
-                            src={getCDNPath(driverPhoto)}
+                            src={getCDNPath(p)}
                             alt={driver.driver_name}
                             style={cardPhoto}
                           />
                           <div style={cardPhotoCaption}>
-                            {driverPhoto.year || 'Year Unknown'} •{' '}
-                            {formatSlugName(driverPhoto.photographer_slug)}{' '}
-                            {getCreditLabel(driverPhoto.credit_type)}
+                            {p.year || 'Year Unknown'} •{' '}
+                            {formatSlugName(p.photographer_slug)}{' '}
+                            {getCreditLabel(p.credit_type)}
                           </div>
                         </>
                       ) : (
@@ -248,7 +247,6 @@ function getCreditLabel(type: string | null) {
     : 'Credit'
 }
 
-// INLINE SYSTEM FOR COMPILER OPTIMIZATION
 const pageStyle: CSSProperties = { backgroundColor: '#fbfbfd', minHeight: '100vh', paddingBottom: '4rem' }
 const heroSection: CSSProperties = { backgroundColor: '#1a1a1a', color: '#ffffff', padding: '4rem 2rem', borderBottom: '4px solid #cf2e2e' }
 const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
