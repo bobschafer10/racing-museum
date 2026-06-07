@@ -88,9 +88,11 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
-  const getCDNPath = (photoObj: any) => {
-  return photoObj.file_name
-}
+const getCDNPath = (photoObj: any) => {
+    const track = photoObj.track_slug || 'unknown-track'
+    const yr = photoObj.year || 'unknown-year'
+    return `media/${track}/${yr}/${photoObj.file_name}`
+  }
 
   return (
     <main style={pageStyle}>
