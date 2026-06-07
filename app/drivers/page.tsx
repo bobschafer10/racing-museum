@@ -1,5 +1,3 @@
-// app/drivers/page.tsx
-
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
@@ -265,22 +263,22 @@ function formatSlugName(value: string | null) {
     .split('-')
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ')
+}
+
+function getCreditLabel(type: string | null) {
+  switch (type) {
+    case 'post':
+      return 'Post'
+    case 'program':
+      return 'Program'
+    case 'flyer':
+      return 'Flyer'
+    case 'photo':
+      return 'Photo'
+    default:
+      return 'Credit'
   }
-  
-  function getCreditLabel(type: string | null) {
-    switch (type) {
-      case 'post':
-        return 'Post'
-      case 'program':
-        return 'Program'
-      case 'flyer':
-        return 'Flyer'
-      case 'photo':
-        return 'Photo'
-      default:
-        return 'Credit'
-    }
-  }
+}
 
 const pageStyle: CSSProperties = {
   background: '#eadfc7',
