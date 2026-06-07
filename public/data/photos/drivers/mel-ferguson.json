@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_mel-ferguson_rats-racing_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_mel-ferguson_rats-racing_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_mel-ferguson_rats-racing_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mel-ferguson",
+    "photographerSlug": "rats-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "red-cedar-speedway_unknown-year_mel-ferguson_jerry-zimmer_photo_333.jpg",
+    "storagePath": "photos/master/red-cedar-speedway/unknown-year/red-cedar-speedway_unknown-year_mel-ferguson_jerry-zimmer_photo_333.jpg",
+    "publicPath": "/photos/red-cedar-speedway_unknown-year_mel-ferguson_jerry-zimmer_photo_333.jpg",
+    "trackSlug": "red-cedar-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mel-ferguson",
+    "photographerSlug": "jerry-zimmer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_mel-ferguson_old-skool_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_mel-ferguson_old-skool_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_mel-ferguson_old-skool_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mel-ferguson",
+    "photographerSlug": "old-skool",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mel-ferguson_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mel-ferguson_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mel-ferguson_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mel-ferguson",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mel-ferguson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mel-ferguson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mel-ferguson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mel-ferguson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mel-ferguson_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mel-ferguson_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mel-ferguson_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mel-ferguson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

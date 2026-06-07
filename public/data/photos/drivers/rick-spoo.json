@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_rick-spoo_gary-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-spoo_gary-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-spoo_gary-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "gary-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-spoo_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-spoo_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-spoo_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-internatiional-raceway_1998_rick-spoo_chuck-look_photo_001.jpeg",
+    "storagePath": "photos/master/wisconsin-internatiional-raceway/1998/wisconsin-internatiional-raceway_1998_rick-spoo_chuck-look_photo_001.jpeg",
+    "publicPath": "/photos/wisconsin-internatiional-raceway_1998_rick-spoo_chuck-look_photo_001.jpeg",
+    "trackSlug": "wisconsin-internatiional-raceway",
+    "year": "1998",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "chuck-look",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_13528.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_13528.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_13528.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13528"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_13858.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_13858.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_13858.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13858"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_199.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_199.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-spoo_bob-schafer_photo_199.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "199"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-spoo_kurt-luoma_photo_1289.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-spoo_kurt-luoma_photo_1289.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-spoo_kurt-luoma_photo_1289.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1289"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-spoo_kurt-luoma_photo_1313.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-spoo_kurt-luoma_photo_1313.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-spoo_kurt-luoma_photo_1313.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1313"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-spoo_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-spoo_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-spoo_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-spoo_unknown-photographer_photo_1317.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-spoo_unknown-photographer_photo_1317.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-spoo_unknown-photographer_photo_1317.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1317"
+  }
+]

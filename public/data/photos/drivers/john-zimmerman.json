@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-zimmerman_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-zimmerman_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-zimmerman_pat-heaney_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-zimmerman",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_john-zimmerman_bob-schafer_photo_13283.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_john-zimmerman_bob-schafer_photo_13283.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_john-zimmerman_bob-schafer_photo_13283.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-zimmerman",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13283"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-zimmerman_bob-schafer_photo_12713.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-zimmerman_bob-schafer_photo_12713.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-zimmerman_bob-schafer_photo_12713.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-zimmerman",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12713"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-zimmerman_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-zimmerman_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-zimmerman_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-zimmerman",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-zimmerman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-zimmerman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-zimmerman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-zimmerman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-zimmerman_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-zimmerman_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-zimmerman_unknown-photographer_photo_003.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-zimmerman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

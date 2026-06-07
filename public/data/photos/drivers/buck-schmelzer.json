@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "door-county-speedway_unknown-year_buck-schmelzer_dan-lewis_photo_001.jpg",
+    "storagePath": "photos/master/door-county-speedway/unknown-year/door-county-speedway_unknown-year_buck-schmelzer_dan-lewis_photo_001.jpg",
+    "publicPath": "/photos/door-county-speedway_unknown-year_buck-schmelzer_dan-lewis_photo_001.jpg",
+    "trackSlug": "door-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "buck-schmelzer",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_buck-schmelzer_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_buck-schmelzer_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_buck-schmelzer_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "buck-schmelzer",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_buck-schmelzer_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_buck-schmelzer_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_buck-schmelzer_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "buck-schmelzer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_buck-schmelzer_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_buck-schmelzer_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_buck-schmelzer_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "buck-schmelzer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

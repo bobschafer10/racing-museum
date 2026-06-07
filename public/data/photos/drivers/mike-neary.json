@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_1983_mike-neary_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/1983/141-speedway_1983_mike-neary_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_1983_mike-neary_weber-brothers_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1983",
+    "driverSlug": "mike-neary",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-neary_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-neary_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-neary_weber-brothers_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-neary",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_1983_mike-neary_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1983/wilmot-raceway_1983_mike-neary_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1983_mike-neary_weber-brothers_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1983",
+    "driverSlug": "mike-neary",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "rockford-speedway_1981_mike-simon_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_mike-simon_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_mike-simon_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "mike-simon",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1987_mike-simon_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_mike-simon_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_mike-simon_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "mike-simon",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_mike-simon_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_mike-simon_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_mike-simon_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-simon",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

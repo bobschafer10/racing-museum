@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_dan-peterman_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_dan-peterman_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_dan-peterman_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-peterman",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_dan-peterman_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_dan-peterman_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_dan-peterman_joe-verdegan_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-peterman",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

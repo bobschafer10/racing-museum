@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "rockford-speedway_1982_burt-weitemeyer_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_burt-weitemeyer_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_burt-weitemeyer_weber-brothers_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "burt-weitemeyer",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_burt-weitemeyer_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_burt-weitemeyer_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_burt-weitemeyer_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "burt-weitemeyer",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

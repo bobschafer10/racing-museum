@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_brent-laursen_mod-christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brent-laursen_mod-christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brent-laursen_mod-christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brent-laursen",
+    "photographerSlug": "mod-christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "mod-christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-brightbill",
+    "photographerSlug": "mod-christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-bruggeman_mod-christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-bruggeman_mod-christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-bruggeman_mod-christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-bruggeman",
+    "photographerSlug": "mod-christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-kallenbach_mod-christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-kallenbach_mod-christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-kallenbach_mod-christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "mod-christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "state-park-speedway_unknown-year_jim-sala_ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jim-sala_ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_jim-sala_ken-koppa_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-sala",
+    "photographerSlug": "ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-sala_ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-sala_ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-sala_ken-koppa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-sala",
+    "photographerSlug": "ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

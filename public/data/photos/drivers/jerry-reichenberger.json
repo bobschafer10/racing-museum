@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-reichenberger",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_002.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_002.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_002.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-reichenberger",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_027.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_027.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_027.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-reichenberger",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "027"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_jerry-reichenberger_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_jerry-reichenberger_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_jerry-reichenberger_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-reichenberger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1979_jerry-reichenberger_rpm_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1979/wisconsin-international-raceway_1979_jerry-reichenberger_rpm_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1979_jerry-reichenberger_rpm_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1979",
+    "driverSlug": "jerry-reichenberger",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

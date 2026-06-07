@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "seymour-speedway_1990_tom-ort_bob-schafer_photo_064.jpg",
+    "storagePath": "photos/master/seymour-speedway/1990/seymour-speedway_1990_tom-ort_bob-schafer_photo_064.jpg",
+    "publicPath": "/photos/seymour-speedway_1990_tom-ort_bob-schafer_photo_064.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1990",
+    "driverSlug": "tom-ort",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "064"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_tom-ort_bob-schafer_photo_091.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_tom-ort_bob-schafer_photo_091.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_tom-ort_bob-schafer_photo_091.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-ort",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "091"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-ort_brad-luepke_post_446.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-ort_brad-luepke_post_446.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-ort_brad-luepke_post_446.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-ort",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "446"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-ort_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-ort_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-ort_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-ort",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-ort_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-ort_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-ort_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-ort",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-ort_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-ort_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-ort_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-ort",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-ort_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-ort_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-ort_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-ort",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

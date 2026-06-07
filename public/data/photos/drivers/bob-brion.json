@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_bob-brion_bob-schafer_photo_002.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_bob-brion_bob-schafer_photo_002.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_bob-brion_bob-schafer_photo_002.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brion",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_bob-brion_bob-schafer_photo_13198.png",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_bob-brion_bob-schafer_photo_13198.png",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_bob-brion_bob-schafer_photo_13198.png",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brion",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13198"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_bob-brion_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_bob-brion_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_bob-brion_unknown-photographer_photo_222.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brion",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

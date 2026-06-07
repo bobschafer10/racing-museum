@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_cliff-leach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_cliff-leach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_cliff-leach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cliff-leach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_cliff-leach_blaser_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_cliff-leach_blaser_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_cliff-leach_blaser_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cliff-leach",
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1990_cliff-leach_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_cliff-leach_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_cliff-leach_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "cliff-leach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_cliff-leach_bob-schafer_photo_13160.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_cliff-leach_bob-schafer_photo_13160.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_cliff-leach_bob-schafer_photo_13160.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cliff-leach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13160"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_cliff-leach_bob-schafer_photo_13944.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_cliff-leach_bob-schafer_photo_13944.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_cliff-leach_bob-schafer_photo_13944.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cliff-leach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13944"
+  }
+]

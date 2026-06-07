@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_dave-bennett_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_dave-bennett_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_dave-bennett_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-bennett",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2026_dave-bennett_dave-bennett_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2026/unknown-track_2026_dave-bennett_dave-bennett_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2026_dave-bennett_dave-bennett_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2026",
+    "driverSlug": "dave-bennett",
+    "photographerSlug": "dave-bennett",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

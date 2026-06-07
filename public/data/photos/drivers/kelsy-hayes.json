@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "141-speedway_2015_kelsy-hayes_dave-panske_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/2015/141-speedway_2015_kelsy-hayes_dave-panske_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_2015_kelsy-hayes_dave-panske_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2015",
+    "driverSlug": "kelsy-hayes",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_kelsy-hayes_unknown-photographer_post_001.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_kelsy-hayes_unknown-photographer_post_001.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_kelsy-hayes_unknown-photographer_post_001.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kelsy-hayes",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

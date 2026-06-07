@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "shawano-speedway_2000_bill-lemmens_dan-mary-lewis_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2000/shawano-speedway_2000_bill-lemmens_dan-mary-lewis_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2000_bill-lemmens_dan-mary-lewis_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2000",
+    "driverSlug": "bill-lemmens",
+    "photographerSlug": "dan-mary-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2000_tom-naeyaert_dan-mary-lewis_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2000/shawano-speedway_2000_tom-naeyaert_dan-mary-lewis_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2000_tom-naeyaert_dan-mary-lewis_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2000",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "dan-mary-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

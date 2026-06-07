@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_mike-stremkowski_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-stremkowski_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-stremkowski_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-stremkowski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-stremkowski_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-stremkowski_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-stremkowski_kurt-luoma_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-stremkowski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-stremkowski_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-stremkowski_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-stremkowski_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-stremkowski",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

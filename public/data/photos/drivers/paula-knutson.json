@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_paula-knutson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_paula-knutson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_paula-knutson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paula-knutson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1980_paula-knutson_jeff-gilhart_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1980/lacrosse-interstate-speedway_1980_paula-knutson_jeff-gilhart_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1980_paula-knutson_jeff-gilhart_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1980",
+    "driverSlug": "paula-knutson",
+    "photographerSlug": "jeff-gilhart",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1987_paula-knutson_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1987/lacrosse-interstate-speedway_1987_paula-knutson_don-besch_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1987_paula-knutson_don-besch_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1987",
+    "driverSlug": "paula-knutson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_paula-knutson_bob-schafer_photo_073.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_paula-knutson_bob-schafer_photo_073.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_paula-knutson_bob-schafer_photo_073.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paula-knutson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "073"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_paula-knutson_don-besch_photo_333.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_paula-knutson_don-besch_photo_333.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_paula-knutson_don-besch_photo_333.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paula-knutson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_paula-knutson_john-lafrenz_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_paula-knutson_john-lafrenz_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_paula-knutson_john-lafrenz_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paula-knutson",
+    "photographerSlug": "john-lafrenz",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

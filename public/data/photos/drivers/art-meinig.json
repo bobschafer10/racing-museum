@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_art-meinig_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_art-meinig_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_art-meinig_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "art-meinig",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_art-meinig_weber-brothers_photo_6958.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_art-meinig_weber-brothers_photo_6958.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_art-meinig_weber-brothers_photo_6958.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "art-meinig",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "6958"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-meinig_unknown-photographer_photo_091.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-meinig_unknown-photographer_photo_091.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-meinig_unknown-photographer_photo_091.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-meinig",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "091"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-meinig_unknown-photographer_photo_093.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-meinig_unknown-photographer_photo_093.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-meinig_unknown-photographer_photo_093.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-meinig",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "093"
+  }
+]

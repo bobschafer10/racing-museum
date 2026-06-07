@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "plymouth-dirt-track_2011_brandon-mcmullen_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2011/plymouth-dirt-track_2011_brandon-mcmullen_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2011_brandon-mcmullen_bob-greuel_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2011",
+    "driverSlug": "brandon-mcmullen",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brandon-mcmullen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-mcmullen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brandon-mcmullen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brandon-mcmullen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

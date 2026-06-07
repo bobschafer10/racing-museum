@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_tim-carlson_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_tim-carlson_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_tim-carlson_kurt-luoma_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-carlson",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-carlson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-carlson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tim-carlson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

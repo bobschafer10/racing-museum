@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_arnie-gardner_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_arnie-gardner_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_arnie-gardner_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "arnie-gardner",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hibbing-raceway_unknown-year_arnie-gardner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hibbing-raceway/unknown-year/hibbing-raceway_unknown-year_arnie-gardner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hibbing-raceway_unknown-year_arnie-gardner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "unknown-year",
+    "driverSlug": "arnie-gardner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_arnie-gardner_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_arnie-gardner_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_arnie-gardner_ron-thruman_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "arnie-gardner",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_dave-marcis_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_dave-marcis_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_dave-marcis_joe-verdegan_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_dave-marcis_tony-chapa_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_dave-marcis_tony-chapa_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_dave-marcis_tony-chapa_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "tony-chapa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-marcis_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-marcis_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-marcis_ken-koppa_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_344.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_344.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-marcis_unknown-photographer_photo_344.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "344"
+  }
+]

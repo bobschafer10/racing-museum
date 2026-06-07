@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "superior-speedway_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1977_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "publicPath": "/photos/unknown-track_1977_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1977",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_1979_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "publicPath": "/photos/unknown-track_1979_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1979",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_1982_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "storagePath": "photos/master/unknown-track/1982/unknown-track_1982_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "publicPath": "/photos/unknown-track_1982_jeff-hinkemeyer_troy-powers_photo_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1982",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_2020_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-hinkemeyer_keith-nason_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-hinkemeyer_keith-nason_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-hinkemeyer_keith-nason_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "keith-nason",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_028.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_028.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-hinkemeyer_unknown-photographer_photo_028.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-hinkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "028"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bob-dotter_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bob-dotter_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bob-dotter_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_bob-dotter_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_bob-dotter_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_bob-dotter_geoff-mckarns_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

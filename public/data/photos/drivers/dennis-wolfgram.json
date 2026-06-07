@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "shawano-speedway_1985_dennis-wolfgram_bob-schafer_photo_044.jpg",
+    "storagePath": "photos/master/shawano-speedway/1985/shawano-speedway_1985_dennis-wolfgram_bob-schafer_photo_044.jpg",
+    "publicPath": "/photos/shawano-speedway_1985_dennis-wolfgram_bob-schafer_photo_044.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1985",
+    "driverSlug": "dennis-wolfgram",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "044"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-wolfgram_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-wolfgram_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-wolfgram_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-wolfgram",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "impact-speedway_1988_todd-anderson_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/impact-speedway/1988/impact-speedway_1988_todd-anderson_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/impact-speedway_1988_todd-anderson_pat-heaney_post_001.jpg",
+    "trackSlug": "impact-speedway",
+    "year": "1988",
+    "driverSlug": "todd-anderson",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-anderson_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-anderson_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-anderson_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-anderson",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-anderson_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-anderson_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-anderson_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-anderson",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-anderson_ryan-aho_post_016.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-anderson_ryan-aho_post_016.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-anderson_ryan-aho_post_016.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-anderson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "016"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-anderson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-anderson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-anderson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_todd-anderson_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_todd-anderson_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_todd-anderson_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-anderson",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

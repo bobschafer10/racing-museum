@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_chris-kolross_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_chris-kolross_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_chris-kolross_joe-slack_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chris-kolross",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-kolross_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-kolross_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-kolross_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-kolross",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-kolross_unknown-photographer_photo_1793.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-kolross_unknown-photographer_photo_1793.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-kolross_unknown-photographer_photo_1793.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-kolross",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1793"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_chris-kolross_kurt-luoma_photo_441.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_chris-kolross_kurt-luoma_photo_441.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_chris-kolross_kurt-luoma_photo_441.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chris-kolross",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "441"
+  }
+]

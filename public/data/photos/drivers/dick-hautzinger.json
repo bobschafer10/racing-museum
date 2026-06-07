@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_dick-hautzinger_wfar_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_dick-hautzinger_wfar_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_dick-hautzinger_wfar_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dick-hautzinger",
+    "photographerSlug": "wfar",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_dick-hautzinger_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_dick-hautzinger_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_dick-hautzinger_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dick-hautzinger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1982_dick-hautzinger_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1982/slinger-speedway_1982_dick-hautzinger_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1982_dick-hautzinger_weber-brothers_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1982",
+    "driverSlug": "dick-hautzinger",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dick-hautzinger_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dick-hautzinger_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dick-hautzinger_weber-brothers_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dick-hautzinger",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

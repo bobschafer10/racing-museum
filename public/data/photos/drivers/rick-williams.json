@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1990_rick-williams_bob-schafer_photo_300.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1990/milwaukee-mile_1990_rick-williams_bob-schafer_photo_300.jpg",
+    "publicPath": "/photos/milwaukee-mile_1990_rick-williams_bob-schafer_photo_300.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1990",
+    "driverSlug": "rick-williams",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "300"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-williams_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-williams_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-williams_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-williams",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "sands-speedway_unknown-year_earl-possi_jim-chartre_post_001.jpg",
+    "storagePath": "photos/master/sands-speedway/unknown-year/sands-speedway_unknown-year_earl-possi_jim-chartre_post_001.jpg",
+    "publicPath": "/photos/sands-speedway_unknown-year_earl-possi_jim-chartre_post_001.jpg",
+    "trackSlug": "sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "earl-possi",
+    "photographerSlug": "jim-chartre",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "sands-speedway_unknown-year_jim-chartre_jim-chartre_post_001.jpg",
+    "storagePath": "photos/master/sands-speedway/unknown-year/sands-speedway_unknown-year_jim-chartre_jim-chartre_post_001.jpg",
+    "publicPath": "/photos/sands-speedway_unknown-year_jim-chartre_jim-chartre_post_001.jpg",
+    "trackSlug": "sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-chartre",
+    "photographerSlug": "jim-chartre",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "sands-speedway_unknown-year_unknown-driver_jim-chartre_post_001.jpg",
+    "storagePath": "photos/master/sands-speedway/unknown-year/sands-speedway_unknown-year_unknown-driver_jim-chartre_post_001.jpg",
+    "publicPath": "/photos/sands-speedway_unknown-year_unknown-driver_jim-chartre_post_001.jpg",
+    "trackSlug": "sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "jim-chartre",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

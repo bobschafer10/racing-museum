@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "lakehead-speedway-canada_unknown-year_barry-kettering_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lakehead-speedway-canada/unknown-year/lakehead-speedway-canada_unknown-year_barry-kettering_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lakehead-speedway-canada_unknown-year_barry-kettering_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lakehead-speedway-canada",
+    "year": "unknown-year",
+    "driverSlug": "barry-kettering",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_barry-kettering_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_barry-kettering_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_barry-kettering_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "barry-kettering",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_barry-kettering_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_barry-kettering_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_barry-kettering_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "barry-kettering",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_barry-kettering_unknown-photographer_photo_2495.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_barry-kettering_unknown-photographer_photo_2495.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_barry-kettering_unknown-photographer_photo_2495.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "barry-kettering",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2495"
+  }
+]

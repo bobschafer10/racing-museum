@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_bernie-binon_putch-bentley_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bernie-binon_putch-bentley_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_bernie-binon_putch-bentley_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bernie-binon",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_bernie-binon_scott-krueger_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bernie-binon_scott-krueger_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_bernie-binon_scott-krueger_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bernie-binon",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_bernie-binon_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_bernie-binon_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_bernie-binon_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bernie-binon",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bernie-binon_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bernie-binon_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bernie-binon_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bernie-binon",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bernie-binon_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bernie-binon_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bernie-binon_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bernie-binon",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

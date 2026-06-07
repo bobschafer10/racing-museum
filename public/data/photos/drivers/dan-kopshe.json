@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1963_dan-kopshe_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1963/hales-corners-speedway_1963_dan-kopshe_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1963_dan-kopshe_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1963",
+    "driverSlug": "dan-kopshe",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_dan-kopshe_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_dan-kopshe_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_dan-kopshe_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-kopshe",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_dan-kopshe_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_dan-kopshe_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_dan-kopshe_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-kopshe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

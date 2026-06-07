@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_1972_red-dantonio_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1972/unknown-track_1972_red-dantonio_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1972_red-dantonio_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1972",
+    "driverSlug": "red-dantonio",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1972_red-dantonio_bill-warrick_photo_700.jpg",
+    "storagePath": "photos/master/unknown-track/1972/unknown-track_1972_red-dantonio_bill-warrick_photo_700.jpg",
+    "publicPath": "/photos/unknown-track_1972_red-dantonio_bill-warrick_photo_700.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1972",
+    "driverSlug": "red-dantonio",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "700"
+  }
+]

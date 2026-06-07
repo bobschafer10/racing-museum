@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "jennerstown-speedway-dave-singer_1990_bob-menor_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/jennerstown-speedway-dave-singer/1990/jennerstown-speedway-dave-singer_1990_bob-menor_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/jennerstown-speedway-dave-singer_1990_bob-menor_unknown-credit_photo_001.jpg",
+    "trackSlug": "jennerstown-speedway-dave-singer",
+    "year": "1990",
+    "driverSlug": "bob-menor",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bob-menor_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bob-menor_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bob-menor_unknown-photographer_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bob-menor",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-menor_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-menor_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-menor_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-menor",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1979_bob-menor_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1979/wisconsin-international-raceway_1979_bob-menor_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1979_bob-menor_joe-verdegan_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1979",
+    "driverSlug": "bob-menor",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bob-menor_bob-schafer_photo_379.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bob-menor_bob-schafer_photo_379.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bob-menor_bob-schafer_photo_379.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-menor",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "379"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bob-menor_joe-slack_photo_144.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bob-menor_joe-slack_photo_144.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bob-menor_joe-slack_photo_144.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-menor",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "144"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bob-menor_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bob-menor_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bob-menor_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-menor",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

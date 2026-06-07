@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_glenn-bessette_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_glenn-bessette_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_glenn-bessette_bob-bergeron_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "glenn-bessette",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1965_glenn-bessette_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1965/wisconsin-international-raceway_1965_glenn-bessette_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1965_glenn-bessette_dennis-satorius_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1965",
+    "driverSlug": "glenn-bessette",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

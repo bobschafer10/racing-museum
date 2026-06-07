@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "shawano-speedway_2000_kevin-lamberies_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2000/shawano-speedway_2000_kevin-lamberies_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2000_kevin-lamberies_jennifer-jach_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2000",
+    "driverSlug": "kevin-lamberies",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-lamberies_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-lamberies_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-lamberies_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-lamberies",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

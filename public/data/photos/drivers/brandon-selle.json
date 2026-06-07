@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "columbus-151-speedway_2004_brandon-selle_don-wendlandt_photo_122.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/2004/columbus-151-speedway_2004_brandon-selle_don-wendlandt_photo_122.jpg",
+    "publicPath": "/photos/columbus-151-speedway_2004_brandon-selle_don-wendlandt_photo_122.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "2004",
+    "driverSlug": "brandon-selle",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "122"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brandon-selle_kurt-luoma_photo_1339.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brandon-selle_kurt-luoma_photo_1339.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brandon-selle_kurt-luoma_photo_1339.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brandon-selle",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1339"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brandon-selle_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brandon-selle_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brandon-selle_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brandon-selle",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

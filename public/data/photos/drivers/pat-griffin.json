@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_pat-griffin_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_pat-griffin_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_pat-griffin_kurt-luoma_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-griffin",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_pat-griffin_john-lafrenz_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_pat-griffin_john-lafrenz_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_pat-griffin_john-lafrenz_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-griffin",
+    "photographerSlug": "john-lafrenz",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-griffin_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-griffin_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-griffin_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-griffin",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-griffin_scott-blanchard_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-griffin_scott-blanchard_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-griffin_scott-blanchard_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-griffin",
+    "photographerSlug": "scott-blanchard",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_pat-griffin_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_pat-griffin_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_pat-griffin_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "pat-griffin",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

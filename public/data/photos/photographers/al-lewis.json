@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "illiana-speedway_unknown-year_billy-kuhn_al-lewis_post_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_billy-kuhn_al-lewis_post_001.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_billy-kuhn_al-lewis_post_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "al-lewis",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_greg-powell_al-lewis_post_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_greg-powell_al-lewis_post_001.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_greg-powell_al-lewis_post_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "greg-powell",
+    "photographerSlug": "al-lewis",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_leon-plank_al-lewis_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_leon-plank_al-lewis_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_leon-plank_al-lewis_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "leon-plank",
+    "photographerSlug": "al-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-cellini_al-lewis_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-cellini_al-lewis_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-cellini_al-lewis_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-cellini",
+    "photographerSlug": "al-lewis",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "woody-pool",
+    "photographerSlug": "al-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

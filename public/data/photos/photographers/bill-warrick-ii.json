@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-reed_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-reed_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-reed_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-roseen_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-roseen_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-roseen_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-roseen",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gus-omundson_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gus-omundson_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gus-omundson_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gus-omundson",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-gulbranson_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-gulbranson_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-gulbranson_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-gulbranson",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-popovich_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-popovich_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-popovich_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-popovich",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ron-jones_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ron-jones_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ron-jones_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ron-jones",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-nesbitt_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-nesbitt_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-nesbitt_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-nesbitt",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-vesel_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-vesel_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-vesel_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-vesel",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-mcmann_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-mcmann_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-mcmann_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-mcmann",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

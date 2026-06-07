@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "141-speedway_2025_johnny-whitman_dan-lewis_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/2025/141-speedway_2025_johnny-whitman_dan-lewis_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_2025_johnny-whitman_dan-lewis_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2025",
+    "driverSlug": "johnny-whitman",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_johnny-whitman_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_johnny-whitman_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_johnny-whitman_bob-greuel_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "johnny-whitman",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

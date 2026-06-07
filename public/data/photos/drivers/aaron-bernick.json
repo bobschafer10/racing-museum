@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "proctor-speedway_2023_aaron-bernick_brian-roseberg_photo_001.jpg",
+    "storagePath": "photos/master/proctor-speedway/2023/proctor-speedway_2023_aaron-bernick_brian-roseberg_photo_001.jpg",
+    "publicPath": "/photos/proctor-speedway_2023_aaron-bernick_brian-roseberg_photo_001.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "2023",
+    "driverSlug": "aaron-bernick",
+    "photographerSlug": "brian-roseberg",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_2023_aaron-bernick_shooterguy-photos_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/2023/superior-speedway_2023_aaron-bernick_shooterguy-photos_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_2023_aaron-bernick_shooterguy-photos_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "2023",
+    "driverSlug": "aaron-bernick",
+    "photographerSlug": "shooterguy-photos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2022_aaron-bernick_aaron-bernick_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2022/unknown-track_2022_aaron-bernick_aaron-bernick_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2022_aaron-bernick_aaron-bernick_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2022",
+    "driverSlug": "aaron-bernick",
+    "photographerSlug": "aaron-bernick",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

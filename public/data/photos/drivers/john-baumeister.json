@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1976_john-baumeister_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_john-baumeister_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_john-baumeister_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "john-baumeister",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_john-baumeister_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_john-baumeister_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_john-baumeister_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "john-baumeister",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

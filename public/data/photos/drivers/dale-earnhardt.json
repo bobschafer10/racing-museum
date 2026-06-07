@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "slinger-speedway_1987_dale-earnhardt_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_dale-earnhardt_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_dale-earnhardt_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "dale-earnhardt",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dale-earnhardt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dale-earnhardt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dale-earnhardt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dale-earnhardt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dale-earnhardt_unknown-photographer_photo_9728.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dale-earnhardt_unknown-photographer_photo_9728.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dale-earnhardt_unknown-photographer_photo_9728.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dale-earnhardt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "9728"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-earnhardt_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-earnhardt_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-earnhardt_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-earnhardt",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

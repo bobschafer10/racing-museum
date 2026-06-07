@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_chris-carlson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-carlson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-carlson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-carlson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_chris-carlson_unknown-photographer_photo_141.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_chris-carlson_unknown-photographer_photo_141.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_chris-carlson_unknown-photographer_photo_141.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "chris-carlson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "141"
+  }
+]

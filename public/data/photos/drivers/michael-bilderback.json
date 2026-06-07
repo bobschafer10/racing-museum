@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2019/rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2019",
+    "driverSlug": "michael-bilderback",
+    "photographerSlug": "hotshot-photography",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_2019_michael-bilderback_big-8-series_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2019/state-park-speedway_2019_michael-bilderback_big-8-series_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2019_michael-bilderback_big-8-series_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2019",
+    "driverSlug": "michael-bilderback",
+    "photographerSlug": "big-8-series",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

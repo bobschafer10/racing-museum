@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_neil-callahan_mall-show-ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_neil-callahan_mall-show-ken-koppa_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_neil-callahan_mall-show-ken-koppa_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "neil-callahan",
+    "photographerSlug": "mall-show-ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_neil-knoblock_mall-show-ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_neil-knoblock_mall-show-ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_neil-knoblock_mall-show-ken-koppa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "mall-show-ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-will_mall-show-ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-will_mall-show-ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-will_mall-show-ken-koppa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "mall-show-ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

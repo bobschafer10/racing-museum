@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_rick-schley_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_rick-schley_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_rick-schley_pat-heaney_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-schley",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-schley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-schley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-schley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-schley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-schley_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-schley_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-schley_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-schley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "wilmot-raceway_1981_rick-schley_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1981/wilmot-raceway_1981_rick-schley_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1981_rick-schley_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1981",
+    "driverSlug": "rick-schley",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_rick-schley_don-besch_photo_002.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_rick-schley_don-besch_photo_002.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_rick-schley_don-besch_photo_002.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-schley",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

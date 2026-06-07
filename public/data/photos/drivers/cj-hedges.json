@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "eagle-river-speedway_unknown-year_cj-hedges_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_cj-hedges_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_cj-hedges_unknown-photographer_photo_222.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cj-hedges",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_cj-hedges_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_cj-hedges_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_cj-hedges_charlie-spry_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cj-hedges",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_cj-hedges_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_cj-hedges_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_cj-hedges_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cj-hedges",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

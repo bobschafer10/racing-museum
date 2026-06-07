@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "state-park-speedway_2003_brian-schmidt_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2003/state-park-speedway_2003_brian-schmidt_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2003_brian-schmidt_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2003",
+    "driverSlug": "brian-schmidt",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-schmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-schmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-schmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_larry-nipple_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_larry-nipple_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_larry-nipple_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-nipple",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-nipple_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-nipple_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-nipple_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-nipple",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-nipple_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-nipple_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-nipple_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-nipple",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-nipple_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-nipple_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-nipple_unknown-photographer_photo_002.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-nipple",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

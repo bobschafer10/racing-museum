@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "hibbing-raceway_1978_jim-oconnor_troy-powers_photo_001.jpg",
+    "storagePath": "photos/master/hibbing-raceway/1978/hibbing-raceway_1978_jim-oconnor_troy-powers_photo_001.jpg",
+    "publicPath": "/photos/hibbing-raceway_1978_jim-oconnor_troy-powers_photo_001.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "1978",
+    "driverSlug": "jim-oconnor",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hibbing-raceway_1978_tom-steuding_troy-powers_photo_001.jpg",
+    "storagePath": "photos/master/hibbing-raceway/1978/hibbing-raceway_1978_tom-steuding_troy-powers_photo_001.jpg",
+    "publicPath": "/photos/hibbing-raceway_1978_tom-steuding_troy-powers_photo_001.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "1978",
+    "driverSlug": "tom-steuding",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hibbing-raceway_unknown-year_arnie-gardner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hibbing-raceway/unknown-year/hibbing-raceway_unknown-year_arnie-gardner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hibbing-raceway_unknown-year_arnie-gardner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "unknown-year",
+    "driverSlug": "arnie-gardner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hibbing-raceway_unknown-year_billy-nelson_don-reilly_post_001.jpg",
+    "storagePath": "photos/master/hibbing-raceway/unknown-year/hibbing-raceway_unknown-year_billy-nelson_don-reilly_post_001.jpg",
+    "publicPath": "/photos/hibbing-raceway_unknown-year_billy-nelson_don-reilly_post_001.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "don-reilly",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hibbing-raceway_unknown-year_ed-bertram_ryan-aho_post_001.jpg",
+    "storagePath": "photos/master/hibbing-raceway/unknown-year/hibbing-raceway_unknown-year_ed-bertram_ryan-aho_post_001.jpg",
+    "publicPath": "/photos/hibbing-raceway_unknown-year_ed-bertram_ryan-aho_post_001.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ed-bertram",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

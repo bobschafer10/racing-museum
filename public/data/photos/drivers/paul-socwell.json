@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "central-state-speedway_1985_paul-socwell_paul-socwell_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/1985/central-state-speedway_1985_paul-socwell_paul-socwell_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_1985_paul-socwell_paul-socwell_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "1985",
+    "driverSlug": "paul-socwell",
+    "photographerSlug": "paul-socwell",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-socwell_paul-socwell_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-socwell_paul-socwell_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-socwell_paul-socwell_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-socwell",
+    "photographerSlug": "paul-socwell",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-socwell_paul-socwell_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-socwell_paul-socwell_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-socwell_paul-socwell_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-socwell",
+    "photographerSlug": "paul-socwell",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

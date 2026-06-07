@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_bob-lamb_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_bob-lamb_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_bob-lamb_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-lamb",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1982_bob-lamb_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1982/wisconsin-international-raceway_1982_bob-lamb_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1982_bob-lamb_weber-brothers_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1982",
+    "driverSlug": "bob-lamb",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

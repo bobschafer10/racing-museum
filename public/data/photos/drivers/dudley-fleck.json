@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_dudley-fleck_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dudley-fleck_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dudley-fleck_unknown-photographer_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dudley-fleck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dudley-fleck_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dudley-fleck_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dudley-fleck_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dudley-fleck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1994_dudley-fleck_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1994/wisconsin-international-raceway_1994_dudley-fleck_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1994_dudley-fleck_pat-heaney_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1994",
+    "driverSlug": "dudley-fleck",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

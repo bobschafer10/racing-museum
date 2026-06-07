@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_dennis-schultz_dave-panske_photo_192.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_dennis-schultz_dave-panske_photo_192.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_dennis-schultz_dave-panske_photo_192.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "dennis-schultz",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "192"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-schultz_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-schultz_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-schultz_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-schultz",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-schultz_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_billy-nelson_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_billy-nelson_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_billy-nelson_bill-warrick_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hibbing-raceway_unknown-year_billy-nelson_don-reilly_post_001.jpg",
+    "storagePath": "photos/master/hibbing-raceway/unknown-year/hibbing-raceway_unknown-year_billy-nelson_don-reilly_post_001.jpg",
+    "publicPath": "/photos/hibbing-raceway_unknown-year_billy-nelson_don-reilly_post_001.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "don-reilly",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_billy-nelson_old-skool_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_billy-nelson_old-skool_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_billy-nelson_old-skool_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "old-skool",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1970_billy-nelson_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1970/unknown-track_1970_billy-nelson_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1970_billy-nelson_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1970",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson_bill-warrick-iii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson_bill-warrick-iii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson_bill-warrick-iii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "bill-warrick-iii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

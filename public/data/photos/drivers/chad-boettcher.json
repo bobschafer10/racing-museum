@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "eagle-river-speedway_unknown-year_chad-boettcher_bob-schafer_photo_004.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_chad-boettcher_bob-schafer_photo_004.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_chad-boettcher_bob-schafer_photo_004.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chad-boettcher",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chad-boettcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chad-boettcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chad-boettcher_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chad-boettcher_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chad-boettcher_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chad-boettcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

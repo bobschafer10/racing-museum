@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "golden-sands-speedway_1990_rene-scheinoha_bob-schafer_photo_13492.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_rene-scheinoha_bob-schafer_photo_13492.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_rene-scheinoha_bob-schafer_photo_13492.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13492"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_222.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_222.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_222.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "fileName": "capital-super-speedway_2021_nick-schmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/2021/capital-super-speedway_2021_nick-schmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_2021_nick-schmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "2021",
+    "driverSlug": "nick-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_2021_casey-johnson_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2021/dells-motor-speedway_2021_casey-johnson_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2021_casey-johnson_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2021",
+    "driverSlug": "casey-johnson",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_2021_aj-kraeger_jeremy-libick_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2021/golden-sands-speedway_2021_aj-kraeger_jeremy-libick_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2021_aj-kraeger_jeremy-libick_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2021",
+    "driverSlug": "aj-kraeger",
+    "photographerSlug": "jeremy-libick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_2021_colton-haasl_qc-willy_photo_333.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2021/golden-sands-speedway_2021_colton-haasl_qc-willy_photo_333.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2021_colton-haasl_qc-willy_photo_333.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2021",
+    "driverSlug": "colton-haasl",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "jefferson-speedway_2021_aj-accardi_aj-accardi_post_333.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2021/jefferson-speedway_2021_aj-accardi_aj-accardi_post_333.jpg",
+    "publicPath": "/photos/jefferson-speedway_2021_aj-accardi_aj-accardi_post_333.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2021",
+    "driverSlug": "aj-accardi",
+    "photographerSlug": "aj-accardi",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "milwaukee-mile_2021_bobby-gutknecht_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2021/milwaukee-mile_2021_bobby-gutknecht_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_2021_bobby-gutknecht_weber-brothers_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2021",
+    "driverSlug": "bobby-gutknecht",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_2021_aaron-marthaler_slinger-speedway_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2021/slinger-speedway_2021_aaron-marthaler_slinger-speedway_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2021_aaron-marthaler_slinger-speedway_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2021",
+    "driverSlug": "aaron-marthaler",
+    "photographerSlug": "slinger-speedway",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2021_jim-hendricks_sara-hendricks_post_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2021/tomah-sparta-speedway_2021_jim-hendricks_sara-hendricks_post_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2021_jim-hendricks_sara-hendricks_post_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2021",
+    "driverSlug": "jim-hendricks",
+    "photographerSlug": "sara-hendricks",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2021_aaron-hendricks_sara-hendricks_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2021/unknown-track_2021_aaron-hendricks_sara-hendricks_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2021_aaron-hendricks_sara-hendricks_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2021",
+    "driverSlug": "aaron-hendricks",
+    "photographerSlug": "sara-hendricks",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2021_aaron-karcz_karcz-racing_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2021/unknown-track_2021_aaron-karcz_karcz-racing_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2021_aaron-karcz_karcz-racing_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2021",
+    "driverSlug": "aaron-karcz",
+    "photographerSlug": "karcz-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2021_aaron-mashlan_aaron-mashlan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2021/unknown-track_2021_aaron-mashlan_aaron-mashlan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2021_aaron-mashlan_aaron-mashlan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2021",
+    "driverSlug": "aaron-mashlan",
+    "photographerSlug": "aaron-mashlan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2021_jason-udelhofen_jason_udelhofen_post_333.jpg",
+    "storagePath": "photos/master/unknown-track/2021/unknown-track_2021_jason-udelhofen_jason_udelhofen_post_333.jpg",
+    "publicPath": "/photos/unknown-track_2021_jason-udelhofen_jason_udelhofen_post_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2021",
+    "driverSlug": "jason-udelhofen",
+    "photographerSlug": "jason",
+    "creditType": "udelhofen",
+    "sequence": "post"
+  }
+]

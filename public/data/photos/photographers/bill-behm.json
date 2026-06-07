@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_1967_bill-johnson-jr_bill-behm_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/1967/beaver-dam-raceway_1967_bill-johnson-jr_bill-behm_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_1967_bill-johnson-jr_bill-behm_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "1967",
+    "driverSlug": "bill-johnson-jr",
+    "photographerSlug": "bill-behm",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_1982_bill-warren_bill-behm_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/1982/beaver-dam-raceway_1982_bill-warren_bill-behm_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_1982_bill-warren_bill-behm_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "1982",
+    "driverSlug": "bill-warren",
+    "photographerSlug": "bill-behm",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_1952_unknown-driver_bill-behm_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/1952/columbus-151-speedway_1952_unknown-driver_bill-behm_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_1952_unknown-driver_bill-behm_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "bill-behm",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

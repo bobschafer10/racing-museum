@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_jimmy-hedges_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jimmy-hedges_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jimmy-hedges_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-hedges",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_1969_jimmy-hedges_michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1969/wilmot-raceway_1969_jimmy-hedges_michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1969_jimmy-hedges_michael-halbherr_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1969",
+    "driverSlug": "jimmy-hedges",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

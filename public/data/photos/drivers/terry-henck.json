@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_terry-henck_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_terry-henck_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_terry-henck_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-henck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_terry-henck_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_terry-henck_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_terry-henck_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "terry-henck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-henck_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-henck_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-henck_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-henck",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-henck_ryan-aho_post_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-henck_ryan-aho_post_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-henck_ryan-aho_post_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-henck",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "006"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-henck_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-henck_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-henck_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-henck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

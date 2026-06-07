@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bob-schneider_66-dave-mccardle-slinger_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schneider_66-dave-mccardle-slinger_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schneider_66-dave-mccardle-slinger_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schneider",
+    "photographerSlug": "66-dave-mccardle-slinger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schneider",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schneider",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schneider",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schneider_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schneider",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

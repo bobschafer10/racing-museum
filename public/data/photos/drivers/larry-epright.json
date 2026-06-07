@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_1986_larry-epright_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1986/slinger-speedway_1986_larry-epright_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1986_larry-epright_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1986",
+    "driverSlug": "larry-epright",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-epright_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-epright_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-epright_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-epright",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

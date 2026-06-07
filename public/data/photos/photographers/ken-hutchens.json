@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1966/unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1966",
+    "driverSlug": "everette-fox",
+    "photographerSlug": "ken-hutchens",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_todd-schoenfeldt_ken-hutchens_post_116.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_todd-schoenfeldt_ken-hutchens_post_116.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_todd-schoenfeldt_ken-hutchens_post_116.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-schoenfeldt",
+    "photographerSlug": "ken-hutchens",
+    "creditType": "post",
+    "sequence": "116"
+  }
+]

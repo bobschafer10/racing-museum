@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "seymour-speedway_1990_art-siefert_bob-schafer_photo_065.jpg",
+    "storagePath": "photos/master/seymour-speedway/1990/seymour-speedway_1990_art-siefert_bob-schafer_photo_065.jpg",
+    "publicPath": "/photos/seymour-speedway_1990_art-siefert_bob-schafer_photo_065.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1990",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "065"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_art-siefert_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_art-siefert_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_art-siefert_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "track-talk-todd-otto-rollover_unknown-year_art-siefert_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/track-talk-todd-otto-rollover/unknown-year/track-talk-todd-otto-rollover_unknown-year_art-siefert_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/track-talk-todd-otto-rollover_unknown-year_art-siefert_unknown-photographer_photo_001.jpg",
+    "trackSlug": "track-talk-todd-otto-rollover",
+    "year": "unknown-year",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-siefert_81-panske_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-siefert_81-panske_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-siefert_81-panske_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "81-panske",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-siefert_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-siefert_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-siefert_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-siefert_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-siefert_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

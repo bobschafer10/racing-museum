@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_roy-schackelford_doug-schoebel_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_roy-schackelford_doug-schoebel_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_roy-schackelford_doug-schoebel_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roy-schackelford",
+    "photographerSlug": "doug-schoebel",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_roy-schackelford_dave-gasner_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roy-schackelford_dave-gasner_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roy-schackelford_dave-gasner_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roy-schackelford",
+    "photographerSlug": "dave-gasner",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

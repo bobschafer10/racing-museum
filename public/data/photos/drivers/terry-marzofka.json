@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-marzofka",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-marzofka",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_1333.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_1333.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_1333.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-marzofka",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1333"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_terry-marzofka_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_terry-marzofka_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_terry-marzofka_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "terry-marzofka",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

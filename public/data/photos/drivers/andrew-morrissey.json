@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_2014_andrew-morrissey_bob-schneider_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2014/slinger-speedway_2014_andrew-morrissey_bob-schneider_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2014_andrew-morrissey_bob-schneider_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2014",
+    "driverSlug": "andrew-morrissey",
+    "photographerSlug": "bob-schneider",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_andrew-morrissey_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_andrew-morrissey_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_andrew-morrissey_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "andrew-morrissey",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

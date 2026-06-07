@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "deer-creek-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/unknown-year/deer-creek-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-paulson",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "fox-ridge-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/fox-ridge-speedway/unknown-year/fox-ridge-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/fox-ridge-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-paulson",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-paulson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-paulson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

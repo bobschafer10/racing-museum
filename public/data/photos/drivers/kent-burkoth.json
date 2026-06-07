@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_kent-burkoth_bob-schafer_photo_011.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_kent-burkoth_bob-schafer_photo_011.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_kent-burkoth_bob-schafer_photo_011.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kent-burkoth",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "011"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_kent-burkoth_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_kent-burkoth_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_kent-burkoth_unknown-photographer_photo_002.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kent-burkoth",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "griffith-park-speedway_1966_dave-fields_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/griffith-park-speedway/1966/griffith-park-speedway_1966_dave-fields_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/griffith-park-speedway_1966_dave-fields_dennis-satorius_post_001.jpg",
+    "trackSlug": "griffith-park-speedway",
+    "year": "1966",
+    "driverSlug": "dave-fields",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "griffith-park-speedway_unknown-year_dick-trickle_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/griffith-park-speedway/unknown-year/griffith-park-speedway_unknown-year_dick-trickle_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/griffith-park-speedway_unknown-year_dick-trickle_pat-heaney_post_001.jpg",
+    "trackSlug": "griffith-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "griffith-park-speedway_unknown-year_marv-marzofka_kirby-kurth_post_001.jpg",
+    "storagePath": "photos/master/griffith-park-speedway/unknown-year/griffith-park-speedway_unknown-year_marv-marzofka_kirby-kurth_post_001.jpg",
+    "publicPath": "/photos/griffith-park-speedway_unknown-year_marv-marzofka_kirby-kurth_post_001.jpg",
+    "trackSlug": "griffith-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "marv-marzofka",
+    "photographerSlug": "kirby-kurth",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "griffith-park-speedway_unknown-year_unknown-driver_charlie-spry_post_100.jpg",
+    "storagePath": "photos/master/griffith-park-speedway/unknown-year/griffith-park-speedway_unknown-year_unknown-driver_charlie-spry_post_100.jpg",
+    "publicPath": "/photos/griffith-park-speedway_unknown-year_unknown-driver_charlie-spry_post_100.jpg",
+    "trackSlug": "griffith-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "griffith-park-speedway_unknown-year_unknown-driver_john-alft_post_200.jpg",
+    "storagePath": "photos/master/griffith-park-speedway/unknown-year/griffith-park-speedway_unknown-year_unknown-driver_john-alft_post_200.jpg",
+    "publicPath": "/photos/griffith-park-speedway_unknown-year_unknown-driver_john-alft_post_200.jpg",
+    "trackSlug": "griffith-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "200"
+  },
+  {
+    "fileName": "griffith-park-speedway_unknown-year_unknown-driver_john-alft_post_500.jpg",
+    "storagePath": "photos/master/griffith-park-speedway/unknown-year/griffith-park-speedway_unknown-year_unknown-driver_john-alft_post_500.jpg",
+    "publicPath": "/photos/griffith-park-speedway_unknown-year_unknown-driver_john-alft_post_500.jpg",
+    "trackSlug": "griffith-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "500"
+  },
+  {
+    "fileName": "griffith-park-speedway_unknown-year_unknown-driver_unknown-photographer_photo_400.jpg",
+    "storagePath": "photos/master/griffith-park-speedway/unknown-year/griffith-park-speedway_unknown-year_unknown-driver_unknown-photographer_photo_400.jpg",
+    "publicPath": "/photos/griffith-park-speedway_unknown-year_unknown-driver_unknown-photographer_photo_400.jpg",
+    "trackSlug": "griffith-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "400"
+  }
+]

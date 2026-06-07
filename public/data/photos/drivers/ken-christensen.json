@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_1989_ken-christensen_bob-schafer_photo_13777.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1989/dells-motor-speedway_1989_ken-christensen_bob-schafer_photo_13777.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1989_ken-christensen_bob-schafer_photo_13777.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1989",
+    "driverSlug": "ken-christensen",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13777"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1987_ken-christensen_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1987/lacrosse-interstate-speedway_1987_ken-christensen_don-besch_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1987_ken-christensen_don-besch_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1987",
+    "driverSlug": "ken-christensen",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_ken-christensen_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_ken-christensen_joe-slack_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_ken-christensen_joe-slack_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-christensen",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1987_ken-christensen_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1987/milwaukee-mile_1987_ken-christensen_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1987_ken-christensen_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1987",
+    "driverSlug": "ken-christensen",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

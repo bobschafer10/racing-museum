@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "illiana-speedway_unknown-year_bob-strait_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_bob-strait_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_bob-strait_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bob-strait_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bob-strait_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bob-strait_pat-heaney_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_bob-strait_bob-elman_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_bob-strait_bob-elman_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_bob-strait_bob-elman_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_bob-strait_bob-schafer_photo_145.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_bob-strait_bob-schafer_photo_145.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_bob-strait_bob-schafer_photo_145.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "145"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-strait_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-strait_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-strait_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-strait_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-strait_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-strait_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bob-strait_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bob-strait_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bob-strait_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

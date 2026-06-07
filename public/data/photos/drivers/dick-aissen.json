@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1976_dick-aissen_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_dick-aissen_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_dick-aissen_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "dick-aissen",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1976_dick-aissen_pat-heaney_post_002.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_dick-aissen_pat-heaney_post_002.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_dick-aissen_pat-heaney_post_002.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "dick-aissen",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_dick-aissen_dirk-aissen_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_dick-aissen_dirk-aissen_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_dick-aissen_dirk-aissen_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dick-aissen",
+    "photographerSlug": "dirk-aissen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dick-aissen_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dick-aissen_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dick-aissen_bob-bergeron_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dick-aissen",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

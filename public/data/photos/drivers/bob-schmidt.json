@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-schmidt",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_222.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_222.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_222.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-schmidt",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_201.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_201.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_201.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "201"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_301.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_301.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schmidt_unknown-photographer_photo_301.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "301"
+  }
+]

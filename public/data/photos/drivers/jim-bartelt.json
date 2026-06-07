@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bartelt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_002.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bartelt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_1979_jim-bartelt_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_jim-bartelt_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1979_jim-bartelt_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1979",
+    "driverSlug": "jim-bartelt",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-bartelt_paul-socwell_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-bartelt_paul-socwell_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-bartelt_paul-socwell_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-bartelt",
+    "photographerSlug": "paul-socwell",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

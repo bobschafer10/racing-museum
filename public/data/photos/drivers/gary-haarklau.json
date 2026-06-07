@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_gary-haarklau_blaser_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_gary-haarklau_blaser_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_gary-haarklau_blaser_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-haarklau",
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1990/dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1990",
+    "driverSlug": "gary-haarklau",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "dells-motor-speedway-wi_unknown-year_gary-haarklau_Blaser-photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway-wi/unknown-year/dells-motor-speedway-wi_unknown-year_gary-haarklau_Blaser-photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway-wi_unknown-year_gary-haarklau_Blaser-photo_001.jpg",
+    "trackSlug": "dells-motor-speedway-wi",
+    "year": "unknown-year",
+    "driverSlug": "gary-haarklau",
+    "photographerSlug": "Blaser-photo",
+    "creditType": "001",
+    "sequence": "001"
+  }
+]

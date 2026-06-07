@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "minnesota-state-fair_unknown-year_jimmy-pierson_unknown-photographer_photo_332.jpg",
+    "storagePath": "photos/master/minnesota-state-fair/unknown-year/minnesota-state-fair_unknown-year_jimmy-pierson_unknown-photographer_photo_332.jpg",
+    "publicPath": "/photos/minnesota-state-fair_unknown-year_jimmy-pierson_unknown-photographer_photo_332.jpg",
+    "trackSlug": "minnesota-state-fair",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-pierson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "332"
+  },
+  {
+    "fileName": "rockford-speedway_1981_jimmy-pierson_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_jimmy-pierson_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_jimmy-pierson_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "jimmy-pierson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jimmy-pierson_keith-vercauteren_post_002.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jimmy-pierson_keith-vercauteren_post_002.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jimmy-pierson_keith-vercauteren_post_002.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-pierson",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jimmy-pierson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jimmy-pierson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jimmy-pierson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-pierson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

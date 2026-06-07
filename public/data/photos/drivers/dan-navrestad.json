@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_1987_dan-navrestad_jeff-gilhart_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1987/dells-motor-speedway_1987_dan-navrestad_jeff-gilhart_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1987_dan-navrestad_jeff-gilhart_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1987",
+    "driverSlug": "dan-navrestad",
+    "photographerSlug": "jeff-gilhart",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1986_dan-navrestad_jeff-gilhart_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1986/lacrosse-interstate-speedway_1986_dan-navrestad_jeff-gilhart_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1986_dan-navrestad_jeff-gilhart_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1986",
+    "driverSlug": "dan-navrestad",
+    "photographerSlug": "jeff-gilhart",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1987_dan-navrestad_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1987/lacrosse-interstate-speedway_1987_dan-navrestad_don-besch_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1987_dan-navrestad_don-besch_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1987",
+    "driverSlug": "dan-navrestad",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_dan-navrestad_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_dan-navrestad_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_dan-navrestad_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-navrestad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

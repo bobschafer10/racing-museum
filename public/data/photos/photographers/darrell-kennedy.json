@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "grundy-county-speedway_unknown-year_steve-carlson_darrell-kennedy_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_steve-carlson_darrell-kennedy_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_steve-carlson_darrell-kennedy_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-carlson",
+    "photographerSlug": "darrell-kennedy",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_tom-carlson_darrell-kennedy_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_tom-carlson_darrell-kennedy_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_tom-carlson_darrell-kennedy_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-carlson",
+    "photographerSlug": "darrell-kennedy",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_2001_jerry-schneider_jeff-blaser_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2001/dells-motor-speedway_2001_jerry-schneider_jeff-blaser_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2001_jerry-schneider_jeff-blaser_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2001",
+    "driverSlug": "jerry-schneider",
+    "photographerSlug": "jeff-blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-schneider",
+    "photographerSlug": "andy-ernst",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst-ii_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst-ii_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst-ii_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-schneider",
+    "photographerSlug": "andy-ernst-ii",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jerry-schneider_bob-schafer_photo_320.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jerry-schneider_bob-schafer_photo_320.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jerry-schneider_bob-schafer_photo_320.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-schneider",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "320"
+  }
+]

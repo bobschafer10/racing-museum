@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_gary-wosick_kurt-luoma_photo_1325.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_gary-wosick_kurt-luoma_photo_1325.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_gary-wosick_kurt-luoma_photo_1325.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1325"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_gary-wosick_kurt-luoma_photo_222.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_gary-wosick_kurt-luoma_photo_222.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_gary-wosick_kurt-luoma_photo_222.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-wosick_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-wosick_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-wosick_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-wosick_tom-loos_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-wosick_tom-loos_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-wosick_tom-loos_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_gary-wosick_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

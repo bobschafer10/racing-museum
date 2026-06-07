@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "grundy-county-speedway_1997_ken-smart_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1997/grundy-county-speedway_1997_ken-smart_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1997_ken-smart_unknown-credit_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1997",
+    "driverSlug": "ken-smart",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_ken-smart_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_ken-smart_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_ken-smart_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ken-smart",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

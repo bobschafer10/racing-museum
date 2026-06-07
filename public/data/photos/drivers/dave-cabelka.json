@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "state-park-speedway_2023_dave-cabelka_qc-willy_post_333.jpg",
+    "storagePath": "photos/master/state-park-speedway/2023/state-park-speedway_2023_dave-cabelka_qc-willy_post_333.jpg",
+    "publicPath": "/photos/state-park-speedway_2023_dave-cabelka_qc-willy_post_333.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2023",
+    "driverSlug": "dave-cabelka",
+    "photographerSlug": "qc-willy",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_dave-cabelka_dave-cabelka_post_333.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_dave-cabelka_dave-cabelka_post_333.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_dave-cabelka_dave-cabelka_post_333.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-cabelka",
+    "photographerSlug": "dave-cabelka",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

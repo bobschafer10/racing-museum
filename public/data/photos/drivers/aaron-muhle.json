@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_2012_aaron-muhle_wi-dirt-racin_photo_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2012/beaver-dam-raceway_2012_aaron-muhle_wi-dirt-racin_photo_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2012_aaron-muhle_wi-dirt-racin_photo_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2012",
+    "driverSlug": "aaron-muhle",
+    "photographerSlug": "wi-dirt-racin",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_2024_aaron-muhle_derek-sabourin_photo_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2024/beaver-dam-raceway_2024_aaron-muhle_derek-sabourin_photo_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2024_aaron-muhle_derek-sabourin_photo_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2024",
+    "driverSlug": "aaron-muhle",
+    "photographerSlug": "derek-sabourin",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_2015_aaron-muhle_chad-marquardt_photo_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/2015/dodge-county-fairgrounds_2015_aaron-muhle_chad-marquardt_photo_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_2015_aaron-muhle_chad-marquardt_photo_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "2015",
+    "driverSlug": "aaron-muhle",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_2015_aaron-muhle_derek-sabourin_photo_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/2015/dodge-county-fairgrounds_2015_aaron-muhle_derek-sabourin_photo_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_2015_aaron-muhle_derek-sabourin_photo_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "2015",
+    "driverSlug": "aaron-muhle",
+    "photographerSlug": "derek-sabourin",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

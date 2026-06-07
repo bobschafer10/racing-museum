@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1987_gary-st-amant_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1987/milwaukee-mile_1987_gary-st-amant_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1987_gary-st-amant_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1987",
+    "driverSlug": "gary-st-amant",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1990_gary-st-amant_bob-schafer_photo_287.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1990/milwaukee-mile_1990_gary-st-amant_bob-schafer_photo_287.jpg",
+    "publicPath": "/photos/milwaukee-mile_1990_gary-st-amant_bob-schafer_photo_287.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1990",
+    "driverSlug": "gary-st-amant",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "287"
+  }
+]

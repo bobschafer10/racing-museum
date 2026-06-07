@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "53-speedway_1951_lyle-nelson_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/53-speedway/1951/53-speedway_1951_lyle-nelson_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/53-speedway_1951_lyle-nelson_larry-quinn_post_001.jpg",
+    "trackSlug": "53-speedway",
+    "year": "1951",
+    "driverSlug": "lyle-nelson",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "53-speedway_1951_unknown_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/53-speedway/1951/53-speedway_1951_unknown_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/53-speedway_1951_unknown_unknown-photographer_photo_001.jpg",
+    "trackSlug": "53-speedway",
+    "year": "1951",
+    "driverSlug": "unknown",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "53-speedway_1952_lyle-nelson_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/53-speedway/1952/53-speedway_1952_lyle-nelson_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/53-speedway_1952_lyle-nelson_larry-quinn_post_001.jpg",
+    "trackSlug": "53-speedway",
+    "year": "1952",
+    "driverSlug": "lyle-nelson",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "53-speedway_unknown-year_del-koepp_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/53-speedway/unknown-year/53-speedway_unknown-year_del-koepp_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/53-speedway_unknown-year_del-koepp_unknown-photographer_photo_001.jpg",
+    "trackSlug": "53-speedway",
+    "year": "unknown-year",
+    "driverSlug": "del-koepp",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "53-speedway_unknown-year_lyle-nelson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/53-speedway/unknown-year/53-speedway_unknown-year_lyle-nelson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/53-speedway_unknown-year_lyle-nelson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "53-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

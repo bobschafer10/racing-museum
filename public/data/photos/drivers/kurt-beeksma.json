@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_kurt-beeksma_kurt-gaber_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_kurt-beeksma_kurt-gaber_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_kurt-beeksma_kurt-gaber_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kurt-beeksma",
+    "photographerSlug": "kurt-gaber",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "abc-raceway_unknown-year_kurt-beeksma_rats-racing_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_kurt-beeksma_rats-racing_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_kurt-beeksma_rats-racing_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kurt-beeksma",
+    "photographerSlug": "rats-racing",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

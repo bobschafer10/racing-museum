@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2025/gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2025",
+    "driverSlug": "ryan-minster",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "gravity-park-speedway_2026_josh-miller_josh-miller_post_001.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2026/gravity-park-speedway_2026_josh-miller_josh-miller_post_001.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2026_josh-miller_josh-miller_post_001.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2026",
+    "driverSlug": "josh-miller",
+    "photographerSlug": "josh-miller",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "gravity-park-speedway_unknown-year_aaron-streblow_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/unknown-year/gravity-park-speedway_unknown-year_aaron-streblow_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/gravity-park-speedway_unknown-year_aaron-streblow_unknown-photographer_photo_001.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-streblow",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

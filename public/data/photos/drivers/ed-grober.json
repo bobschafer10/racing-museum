@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_ed-grober_bob-schafer_photo_12561.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_ed-grober_bob-schafer_photo_12561.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_ed-grober_bob-schafer_photo_12561.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-grober",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12561"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_ed-grober_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_ed-grober_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_ed-grober_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-grober",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

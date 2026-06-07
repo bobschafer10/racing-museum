@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_jerry-muenster_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_jerry-muenster_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_jerry-muenster_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "luxemburg-speedway_unknown-year_jerry-muenster_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_jerry-muenster_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_jerry-muenster_brad-luepke_post_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_jerry-muenster_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_jerry-muenster_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_jerry-muenster_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_jerry-muenster_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_jerry-muenster_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_jerry-muenster_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-muenster_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-muenster_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-muenster_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-muenster_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-muenster_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-muenster_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-muenster_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-muenster_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-muenster_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-muenster_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-muenster_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-muenster_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-muenster",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

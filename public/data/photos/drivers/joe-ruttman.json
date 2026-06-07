@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "dells-motor-speedway_1973_joe-ruttman_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1973/dells-motor-speedway_1973_joe-ruttman_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1973_joe-ruttman_pat-heaney_post_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1973",
+    "driverSlug": "joe-ruttman",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1979_joe-ruttman_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1979/milwaukee-mile_1979_joe-ruttman_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1979_joe-ruttman_unknown-credit_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1979",
+    "driverSlug": "joe-ruttman",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_joe-ruttman_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-ruttman_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_joe-ruttman_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "joe-ruttman",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

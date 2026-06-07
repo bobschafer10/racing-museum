@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "capital-super-speedway_1982_morie-delmore_al-fortner_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1982/capital-super-speedway_1982_morie-delmore_al-fortner_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1982_morie-delmore_al-fortner_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1982",
+    "driverSlug": "morie-delmore",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_1981_morie-delmore_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1981/dells-motor-speedway_1981_morie-delmore_don-besch_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1981_morie-delmore_don-besch_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1981",
+    "driverSlug": "morie-delmore",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_morie-delmore_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_morie-delmore_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_morie-delmore_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "morie-delmore",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_morie-delmore_unknown-photographer_photo_355.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_morie-delmore_unknown-photographer_photo_355.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_morie-delmore_unknown-photographer_photo_355.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "morie-delmore",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "355"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_morie-delmore_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_morie-delmore_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_morie-delmore_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "morie-delmore",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1979_morie-delmore_rpm_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1979/wisconsin-international-raceway_1979_morie-delmore_rpm_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1979_morie-delmore_rpm_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1979",
+    "driverSlug": "morie-delmore",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

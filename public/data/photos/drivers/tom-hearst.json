@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "wausau-fairgrounds_1978_tom-hearst_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/1978/wausau-fairgrounds_1978_tom-hearst_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_1978_tom-hearst_john-vass_photo_001.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "1978",
+    "driverSlug": "tom-hearst",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wausau-fairgrounds_1978_tom-hearst_john-vass_photo_031.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/1978/wausau-fairgrounds_1978_tom-hearst_john-vass_photo_031.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_1978_tom-hearst_john-vass_photo_031.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "1978",
+    "driverSlug": "tom-hearst",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "031"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_011.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_011.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_011.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "tom-hearst",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "011"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_031.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_031.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_031.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "tom-hearst",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "031"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_201.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_201.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_tom-hearst_john-vass_photo_201.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "tom-hearst",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "201"
+  }
+]

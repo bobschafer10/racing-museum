@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_brian-back_kurt-luoma_photo_222.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_brian-back_kurt-luoma_photo_222.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_brian-back_kurt-luoma_photo_222.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "seymour-speedway_2026_brian-back_grunden-motorsports_photo_333.jpg",
+    "storagePath": "photos/master/seymour-speedway/2026/seymour-speedway_2026_brian-back_grunden-motorsports_photo_333.jpg",
+    "publicPath": "/photos/seymour-speedway_2026_brian-back_grunden-motorsports_photo_333.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2026",
+    "driverSlug": "brian-back",
+    "photographerSlug": "grunden-motorsports",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

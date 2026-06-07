@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "raceway-park-il_unknown-year_james-bond_dennis-burgeson_post_001.jpg",
+    "storagePath": "photos/master/raceway-park-il/unknown-year/raceway-park-il_unknown-year_james-bond_dennis-burgeson_post_001.jpg",
+    "publicPath": "/photos/raceway-park-il_unknown-year_james-bond_dennis-burgeson_post_001.jpg",
+    "trackSlug": "raceway-park-il",
+    "year": "unknown-year",
+    "driverSlug": "james-bond",
+    "photographerSlug": "dennis-burgeson",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1980_james-bond_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_james-bond_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_james-bond_weber-brothers_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "james-bond",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "james-bond",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "james-bond",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

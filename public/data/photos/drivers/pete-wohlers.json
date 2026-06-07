@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "mall-show_unknown-year_pete-wohlers_lem-turnberg_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_pete-wohlers_lem-turnberg_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_pete-wohlers_lem-turnberg_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "lem-turnberg",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_pete-wohlers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_pete-wohlers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_pete-wohlers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_pete-wohlers_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_pete-wohlers_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_pete-wohlers_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_pete-wohlers_neil-miller_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_pete-wohlers_neil-miller_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_1993_pete-wohlers_neil-miller_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_3197.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_3197.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-wohlers_unknown-photographer_photo_3197.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-wohlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3197"
+  }
+]

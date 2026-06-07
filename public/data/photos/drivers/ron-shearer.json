@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "waukegan-speedway_unknown-year_ron-shearer_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_ron-shearer_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_ron-shearer_geoff-mckarns_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-shearer",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_ron-shearer_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_ron-shearer_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_ron-shearer_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ron-shearer",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "tomah-sparta-speedway_2021_jim-hendricks_sara-hendricks_post_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2021/tomah-sparta-speedway_2021_jim-hendricks_sara-hendricks_post_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2021_jim-hendricks_sara-hendricks_post_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2021",
+    "driverSlug": "jim-hendricks",
+    "photographerSlug": "sara-hendricks",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2021_aaron-hendricks_sara-hendricks_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2021/unknown-track_2021_aaron-hendricks_sara-hendricks_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2021_aaron-hendricks_sara-hendricks_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2021",
+    "driverSlug": "aaron-hendricks",
+    "photographerSlug": "sara-hendricks",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

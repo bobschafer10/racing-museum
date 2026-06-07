@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_kelly-hafemann_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_kelly-hafemann_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_kelly-hafemann_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kelly-hafemann",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_kelly-hafemann_unknown-photographer_photo_10033.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_kelly-hafemann_unknown-photographer_photo_10033.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_kelly-hafemann_unknown-photographer_photo_10033.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kelly-hafemann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "10033"
+  },
+  {
+    "fileName": "mall-show_unknown-year_kelly-hafemann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_kelly-hafemann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_kelly-hafemann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "kelly-hafemann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_kelly-hafemann_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_kelly-hafemann_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_kelly-hafemann_unknown-photographer_photo_002.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kelly-hafemann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "rice-lake-speedway_1993_rick-aukland_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/1993/rice-lake-speedway_1993_rick-aukland_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_1993_rick-aukland_neil-miller_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "1993",
+    "driverSlug": "rick-aukland",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-aukland_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-aukland_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-aukland_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-aukland",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-aukland_ryan-aho_post_113.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-aukland_ryan-aho_post_113.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-aukland_ryan-aho_post_113.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-aukland",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "113"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_111.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-aukland",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_400.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_400.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_400.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-aukland",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "400"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_410.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_410.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_410.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-aukland",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "410"
+  }
+]

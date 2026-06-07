@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_rick-coppernoll_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_rick-coppernoll_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_rick-coppernoll_don-wendlandt_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-coppernoll",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "jefferson-speedway_1987_rick-coppernoll_don-wendlandt_photo_114.jpg",
+    "storagePath": "photos/master/jefferson-speedway/1987/jefferson-speedway_1987_rick-coppernoll_don-wendlandt_photo_114.jpg",
+    "publicPath": "/photos/jefferson-speedway_1987_rick-coppernoll_don-wendlandt_photo_114.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "1987",
+    "driverSlug": "rick-coppernoll",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "114"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-coppernoll_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-coppernoll_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-coppernoll_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-coppernoll",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_mike-bauer_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_mike-bauer_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_mike-bauer_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-bauer",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_mike-bauer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_mike-bauer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_mike-bauer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-bauer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

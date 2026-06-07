@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "princeton-speedway_2013_adam-ayotte_b-sens_photo_001.jpg",
+    "storagePath": "photos/master/princeton-speedway/2013/princeton-speedway_2013_adam-ayotte_b-sens_photo_001.jpg",
+    "publicPath": "/photos/princeton-speedway_2013_adam-ayotte_b-sens_photo_001.jpg",
+    "trackSlug": "princeton-speedway",
+    "year": "2013",
+    "driverSlug": "adam-ayotte",
+    "photographerSlug": "b-sens",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "princeton-speedway_2016_aj-viehauser_cricket-prints_photo_001.jpg",
+    "storagePath": "photos/master/princeton-speedway/2016/princeton-speedway_2016_aj-viehauser_cricket-prints_photo_001.jpg",
+    "publicPath": "/photos/princeton-speedway_2016_aj-viehauser_cricket-prints_photo_001.jpg",
+    "trackSlug": "princeton-speedway",
+    "year": "2016",
+    "driverSlug": "aj-viehauser",
+    "photographerSlug": "cricket-prints",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "princeton-speedway_unknown-year_abby-garin_abby-garin_post_001.jpg",
+    "storagePath": "photos/master/princeton-speedway/unknown-year/princeton-speedway_unknown-year_abby-garin_abby-garin_post_001.jpg",
+    "publicPath": "/photos/princeton-speedway_unknown-year_abby-garin_abby-garin_post_001.jpg",
+    "trackSlug": "princeton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "abby-garin",
+    "photographerSlug": "abby-garin",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "princeton-speedway_unknown-year_ron-jones_phil-dullinger_photo_001.jpg",
+    "storagePath": "photos/master/princeton-speedway/unknown-year/princeton-speedway_unknown-year_ron-jones_phil-dullinger_photo_001.jpg",
+    "publicPath": "/photos/princeton-speedway_unknown-year_ron-jones_phil-dullinger_photo_001.jpg",
+    "trackSlug": "princeton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-jones",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_dave-roehrig_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-roehrig_john-vass_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-roehrig_john-vass_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-roehrig",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "minnesota-state-fair_unknown-year_dave-roehrig_unknown-photographer_photo_329.jpg",
+    "storagePath": "photos/master/minnesota-state-fair/unknown-year/minnesota-state-fair_unknown-year_dave-roehrig_unknown-photographer_photo_329.jpg",
+    "publicPath": "/photos/minnesota-state-fair_unknown-year_dave-roehrig_unknown-photographer_photo_329.jpg",
+    "trackSlug": "minnesota-state-fair",
+    "year": "unknown-year",
+    "driverSlug": "dave-roehrig",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "329"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-roehrig_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-roehrig_john-vass_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-roehrig_john-vass_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-roehrig",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

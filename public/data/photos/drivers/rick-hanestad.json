@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_rick-hanestad_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_rick-hanestad_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_rick-hanestad_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-hanestad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-valley-speedway_unknown-year_rick-hanestad_deadra-blaser_photo_001.jpg",
+    "storagePath": "photos/master/eagle-valley-speedway/unknown-year/eagle-valley-speedway_unknown-year_rick-hanestad_deadra-blaser_photo_001.jpg",
+    "publicPath": "/photos/eagle-valley-speedway_unknown-year_rick-hanestad_deadra-blaser_photo_001.jpg",
+    "trackSlug": "eagle-valley-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-hanestad",
+    "photographerSlug": "deadra-blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-hanestad_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-hanestad_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-hanestad_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-hanestad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

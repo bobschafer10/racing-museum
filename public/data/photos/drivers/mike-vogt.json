@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_mike-vogt_weber-brothers_photo_9358.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_mike-vogt_weber-brothers_photo_9358.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_mike-vogt_weber-brothers_photo_9358.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-vogt",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "9358"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-vogt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-vogt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-vogt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

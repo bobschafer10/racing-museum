@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "capital-super-speedway_1992_unknown-driver_john-close_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1992/capital-super-speedway_1992_unknown-driver_john-close_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1992_unknown-driver_john-close_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1992",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_1992_unknown-driver_john-close_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1992/capital-super-speedway_1992_unknown-driver_john-close_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_1992_unknown-driver_john-close_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1992",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "capital-super-speedway_1992_unknown-driver_john-close_photo_003.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1992/capital-super-speedway_1992_unknown-driver_john-close_photo_003.jpg",
+    "publicPath": "/photos/capital-super-speedway_1992_unknown-driver_john-close_photo_003.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1992",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "capital-super-speedway_1992_unknown-driver_john-close_photo_004.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1992/capital-super-speedway_1992_unknown-driver_john-close_photo_004.jpg",
+    "publicPath": "/photos/capital-super-speedway_1992_unknown-driver_john-close_photo_004.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1992",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_wayne-erickson_john-close_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_wayne-erickson_john-close_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_wayne-erickson_john-close_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-erickson",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_barry-wehrs_john-close_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_barry-wehrs_john-close_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_barry-wehrs_john-close_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "barry-wehrs",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "impact-speedway_unknown-year_unknown-driver_john-close_photo_3000.jpg",
+    "storagePath": "photos/master/impact-speedway/unknown-year/impact-speedway_unknown-year_unknown-driver_john-close_photo_3000.jpg",
+    "publicPath": "/photos/impact-speedway_unknown-year_unknown-driver_john-close_photo_3000.jpg",
+    "trackSlug": "impact-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "3000"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_richard-lofy_john-close_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_richard-lofy_john-close_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_richard-lofy_john-close_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "richard-lofy",
+    "photographerSlug": "john-close",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

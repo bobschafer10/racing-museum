@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_chuck-nutzmann_phil-dullinger_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_chuck-nutzmann_phil-dullinger_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_chuck-nutzmann_phil-dullinger_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chuck-nutzmann",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_ron-jones_phil-dullinger_post_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_ron-jones_phil-dullinger_post_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_ron-jones_phil-dullinger_post_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-jones",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "minnesota-state-fair_unknown-year_bill-madsen_phil-dullinger_photo_001.jpg",
+    "storagePath": "photos/master/minnesota-state-fair/unknown-year/minnesota-state-fair_unknown-year_bill-madsen_phil-dullinger_photo_001.jpg",
+    "publicPath": "/photos/minnesota-state-fair_unknown-year_bill-madsen_phil-dullinger_photo_001.jpg",
+    "trackSlug": "minnesota-state-fair",
+    "year": "unknown-year",
+    "driverSlug": "bill-madsen",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "princeton-speedway_unknown-year_ron-jones_phil-dullinger_photo_001.jpg",
+    "storagePath": "photos/master/princeton-speedway/unknown-year/princeton-speedway_unknown-year_ron-jones_phil-dullinger_photo_001.jpg",
+    "publicPath": "/photos/princeton-speedway_unknown-year_ron-jones_phil-dullinger_photo_001.jpg",
+    "trackSlug": "princeton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-jones",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aj-foyt_phil-dullinger_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aj-foyt_phil-dullinger_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_aj-foyt_phil-dullinger_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

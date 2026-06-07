@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_1993_brian-crapser_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_brian-crapser_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_brian-crapser_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "brian-crapser",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_brian-crapser_neil-miller_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_brian-crapser_neil-miller_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_1993_brian-crapser_neil-miller_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "brian-crapser",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-crapser",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_brian-crapser_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_brian-crapser_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_brian-crapser_unknown-credit_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "brian-crapser",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

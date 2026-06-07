@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "putnam-county-speedway_1990_bob-pierce_bob-schafer_photo_13218.jpg",
+    "storagePath": "photos/master/putnam-county-speedway/1990/putnam-county-speedway_1990_bob-pierce_bob-schafer_photo_13218.jpg",
+    "publicPath": "/photos/putnam-county-speedway_1990_bob-pierce_bob-schafer_photo_13218.jpg",
+    "trackSlug": "putnam-county-speedway",
+    "year": "1990",
+    "driverSlug": "bob-pierce",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13218"
+  },
+  {
+    "fileName": "yellow-river-raceway_unknown-year_bob-pierce_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-raceway/unknown-year/yellow-river-raceway_unknown-year_bob-pierce_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-raceway_unknown-year_bob-pierce_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-pierce",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_2009_kelly-bires_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2009/milwaukee-mile_2009_kelly-bires_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_2009_kelly-bires_bob-greuel_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2009",
+    "driverSlug": "kelly-bires",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2009_dave-uttech_dave-uttech_post_333.jpg",
+    "storagePath": "photos/master/unknown-track/2009/unknown-track_2009_dave-uttech_dave-uttech_post_333.jpg",
+    "publicPath": "/photos/unknown-track_2009_dave-uttech_dave-uttech_post_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2009",
+    "driverSlug": "dave-uttech",
+    "photographerSlug": "dave-uttech",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

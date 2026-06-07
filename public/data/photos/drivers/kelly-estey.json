@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_kelly-estey_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_kelly-estey_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_kelly-estey_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kelly-estey",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "proctor-speedway_1998_kelly-estey_unknown-photographer_photo_002.jpeg",
+    "storagePath": "photos/master/proctor-speedway/1998/proctor-speedway_1998_kelly-estey_unknown-photographer_photo_002.jpeg",
+    "publicPath": "/photos/proctor-speedway_1998_kelly-estey_unknown-photographer_photo_002.jpeg",
+    "trackSlug": "proctor-speedway",
+    "year": "1998",
+    "driverSlug": "kelly-estey",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

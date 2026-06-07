@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_1956_carl-kulow_dave-jensen_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1956/slinger-speedway_1956_carl-kulow_dave-jensen_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1956_carl-kulow_dave-jensen_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1956",
+    "driverSlug": "carl-kulow",
+    "photographerSlug": "dave-jensen",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1955_carl-kulow_dave-jensen_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1955/unknown-track_1955_carl-kulow_dave-jensen_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1955_carl-kulow_dave-jensen_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1955",
+    "driverSlug": "carl-kulow",
+    "photographerSlug": "dave-jensen",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "seymour-speedway_unknown-year_tony-berg_bob-schafer_photo_002.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_tony-berg_bob-schafer_photo_002.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_tony-berg_bob-schafer_photo_002.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-berg",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tony-berg_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tony-berg_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tony-berg_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-berg",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tony-berg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tony-berg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tony-berg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tony-berg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

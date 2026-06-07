@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_001 (2).jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_001 (2).jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_001 (2).jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jay-potter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001 (2)"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jay-potter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_jay-potter_unknown-photographer_photo_111.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jay-potter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  }
+]

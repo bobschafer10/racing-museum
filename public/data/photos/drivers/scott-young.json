@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "wilmot-raceway_unknown-year_scott-young_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_scott-young_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_scott-young_bob-schafer_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-young",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_scott-young_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_scott-young_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_scott-young_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-young",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

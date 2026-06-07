@@ -1,0 +1,211 @@
+[
+  {
+    "fileName": "shawano-speedway_2000_tom-naeyaert_dan-mary-lewis_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2000/shawano-speedway_2000_tom-naeyaert_dan-mary-lewis_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2000_tom-naeyaert_dan-mary-lewis_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2000",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "dan-mary-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_444.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_444.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_444.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-naeyaert_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-naeyaert_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-naeyaert_joe-verdegan_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-naeyaert_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-naeyaert_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-naeyaert_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_011.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_011.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_011.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "011"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_012.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_012.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-naeyaert_unknown-photographer_photo_012.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "012"
+  },
+  {
+    "fileName": "yellow-river-speedway_1993_tom-naeyaert_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/1993/yellow-river-speedway_1993_tom-naeyaert_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_1993_tom-naeyaert_neil-miller_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "1993",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_1092.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_1092.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_1092.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1092"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_222.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_222.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_222.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_604.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_604.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_tom-naeyaert_kurt-luoma_photo_604.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-naeyaert",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "604"
+  }
+]

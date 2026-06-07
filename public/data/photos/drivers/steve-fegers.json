@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "impact-speedway_unknown-year_steve-fegers_bob-schafer_photo_12495.jpg",
+    "storagePath": "photos/master/impact-speedway/unknown-year/impact-speedway_unknown-year_steve-fegers_bob-schafer_photo_12495.jpg",
+    "publicPath": "/photos/impact-speedway_unknown-year_steve-fegers_bob-schafer_photo_12495.jpg",
+    "trackSlug": "impact-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12495"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_steve-fegers_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_steve-fegers_mcclain_photo_001.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_steve-fegers_mcclain_photo_001.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_steve-fegers_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_steve-fegers_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_steve-fegers_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1984",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-fegers_ryan-aho_post_017.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-fegers_ryan-aho_post_017.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-fegers_ryan-aho_post_017.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "017"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

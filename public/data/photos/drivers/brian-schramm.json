@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_200.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_200.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_200.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-schramm",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "200"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_301.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_301.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_301.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-schramm",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "301"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_302.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_302.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-schramm_tom-loos_photo_302.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-schramm",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "302"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-schramm_unknown-photographer_photo_303.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-schramm_unknown-photographer_photo_303.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-schramm_unknown-photographer_photo_303.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-schramm",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "303"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_brian-schramm_unknown-phototographer_photo_022.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_brian-schramm_unknown-phototographer_photo_022.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_brian-schramm_unknown-phototographer_photo_022.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-schramm",
+    "photographerSlug": "unknown-phototographer",
+    "creditType": "photo",
+    "sequence": "022"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_blake-horstman_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_blake-horstman_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_blake-horstman_tom-loos_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "blake-horstman",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_blake-horstman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_blake-horstman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_blake-horstman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "blake-horstman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

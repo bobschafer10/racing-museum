@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "rockford-speedway_1982_bobby-hacker_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_bobby-hacker_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_bobby-hacker_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1982_bobby-hacker_weber-brothers_photo_116.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_bobby-hacker_weber-brothers_photo_116.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_bobby-hacker_weber-brothers_photo_116.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "116"
+  },
+  {
+    "fileName": "rockford-speedway_1985_bobby-hacker_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1985/rockford-speedway_1985_bobby-hacker_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1985_bobby-hacker_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1985",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_002.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_004.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bobby-hacker_keith-vercauteren_post_116.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bobby-hacker_keith-vercauteren_post_116.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bobby-hacker_keith-vercauteren_post_116.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "116"
+  }
+]

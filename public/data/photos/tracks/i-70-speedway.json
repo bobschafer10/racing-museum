@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "i-70-speedway_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/i-70-speedway/unknown-year/i-70-speedway_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/i-70-speedway_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
+    "trackSlug": "i-70-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "i-70-speedway_unknown-year_freddy-fryar_unknown-photographer_photo_335.jpg",
+    "storagePath": "photos/master/i-70-speedway/unknown-year/i-70-speedway_unknown-year_freddy-fryar_unknown-photographer_photo_335.jpg",
+    "publicPath": "/photos/i-70-speedway_unknown-year_freddy-fryar_unknown-photographer_photo_335.jpg",
+    "trackSlug": "i-70-speedway",
+    "year": "unknown-year",
+    "driverSlug": "freddy-fryar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "335"
+  },
+  {
+    "fileName": "i-70-speedway_unknown-year_jerry-makara_unknown-photographer_photo_336.jpg",
+    "storagePath": "photos/master/i-70-speedway/unknown-year/i-70-speedway_unknown-year_jerry-makara_unknown-photographer_photo_336.jpg",
+    "publicPath": "/photos/i-70-speedway_unknown-year_jerry-makara_unknown-photographer_photo_336.jpg",
+    "trackSlug": "i-70-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-makara",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "336"
+  },
+  {
+    "fileName": "i-70-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/i-70-speedway/unknown-year/i-70-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/i-70-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_334.jpg",
+    "trackSlug": "i-70-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rusty-wallace",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "i-70-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/i-70-speedway/unknown-year/i-70-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/i-70-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "i-70-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

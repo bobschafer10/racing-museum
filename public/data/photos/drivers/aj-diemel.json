@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_aj-diemel_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_aj-diemel_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_aj-diemel_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aj-diemel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "langlade-county-speedway_2010_aj-diemel_unknown-photographer_photo_001.jpeg",
+    "storagePath": "photos/master/langlade-county-speedway/2010/langlade-county-speedway_2010_aj-diemel_unknown-photographer_photo_001.jpeg",
+    "publicPath": "/photos/langlade-county-speedway_2010_aj-diemel_unknown-photographer_photo_001.jpeg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "2010",
+    "driverSlug": "aj-diemel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aj-diemel_jr-hughes_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aj-diemel_jr-hughes_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_aj-diemel_jr-hughes_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aj-diemel",
+    "photographerSlug": "jr-hughes",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_001.jpeg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_001.jpeg",
+    "publicPath": "/photos/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_001.jpeg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aj-diemel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aj-diemel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aj-diemel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_aj-diemel_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aj-diemel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  }
+]

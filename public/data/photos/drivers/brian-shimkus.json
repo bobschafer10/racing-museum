@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-shimkus_bob-schafer_photo_477.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-shimkus_bob-schafer_photo_477.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-shimkus_bob-schafer_photo_477.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-shimkus",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "477"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-shimkus_bob-schafer_photo_486.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-shimkus_bob-schafer_photo_486.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-shimkus_bob-schafer_photo_486.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-shimkus",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "486"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-shimkus_john-alft_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-shimkus_john-alft_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-shimkus_john-alft_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-shimkus",
+    "photographerSlug": "john-alft",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-shimkus_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-shimkus_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-shimkus_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-shimkus",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

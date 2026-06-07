@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_1984_gil-wagner_al-fortner_photo_333.jpg",
+    "storagePath": "photos/master/141-speedway/1984/141-speedway_1984_gil-wagner_al-fortner_photo_333.jpg",
+    "publicPath": "/photos/141-speedway_1984_gil-wagner_al-fortner_photo_333.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1984",
+    "driverSlug": "gil-wagner",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_gil-wagner_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_gil-wagner_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_gil-wagner_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gil-wagner",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_gil-wagner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_gil-wagner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_gil-wagner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gil-wagner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

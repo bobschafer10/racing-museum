@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "kopellah-speeeway_unknown-year_mike-anderson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/kopellah-speeeway/unknown-year/kopellah-speeeway_unknown-year_mike-anderson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/kopellah-speeeway_unknown-year_mike-anderson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "kopellah-speeeway",
+    "year": "unknown-year",
+    "driverSlug": "mike-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rice-lake-speedway_2026_mike-anderson_chris-burback_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/2026/rice-lake-speedway_2026_mike-anderson_chris-burback_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_2026_mike-anderson_chris-burback_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "2026",
+    "driverSlug": "mike-anderson",
+    "photographerSlug": "chris-burback",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-anderson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-anderson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-anderson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-anderson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-anderson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-anderson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

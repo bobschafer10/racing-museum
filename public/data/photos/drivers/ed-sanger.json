@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "rockford-speedway_unknown-year_ed-sanger_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_ed-sanger_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_ed-sanger_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_1984_ed-sanger_lee-johnson_photo_115.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds_1984_ed-sanger_lee-johnson_photo_115.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_1984_ed-sanger_lee-johnson_photo_115.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "115"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_tony-chapa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_tony-chapa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_tony-chapa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "tony-chapa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_ken-olson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ken-olson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_ken-olson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_ken-olson_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_ken-olson_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_ken-olson_don-wendlandt_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-olson",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1981_ken-olson_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1981/lake-geneva-raceway_1981_ken-olson_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1981_ken-olson_unknown-credit_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1981",
+    "driverSlug": "ken-olson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

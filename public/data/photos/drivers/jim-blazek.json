@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-blazek_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-blazek_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-blazek_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-blazek",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-blazek_scott-krueger_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-blazek_scott-krueger_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-blazek_scott-krueger_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-blazek",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-blazek_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-blazek_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-blazek_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-blazek",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-blazek_weber-brothers_photo_222.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-blazek_weber-brothers_photo_222.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-blazek_weber-brothers_photo_222.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-blazek",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-blazek_pat-heaney_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-blazek_pat-heaney_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-blazek_pat-heaney_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-blazek",
+    "photographerSlug": "pat-heaney",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-blazek_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-blazek_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-blazek_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-blazek",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

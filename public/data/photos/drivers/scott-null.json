@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_scott-null_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_scott-null_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_scott-null_bob-schafer_photo_222.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-null",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-null_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-null_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-null_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-null",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

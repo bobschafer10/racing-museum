@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_kevin-tober_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_kevin-tober_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_kevin-tober_joe-verdegan_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-tober",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-tober",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_002.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-tober",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-tober_bert-lehman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-tober_bert-lehman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-tober_bert-lehman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-tober",
+    "photographerSlug": "bert-lehman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-tober_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-tober_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-tober_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-tober",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

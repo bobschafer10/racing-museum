@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "slinger-speedway_1990_tom-hromadka_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/slinger-speedway/1990/slinger-speedway_1990_tom-hromadka_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/slinger-speedway_1990_tom-hromadka_bob-schafer_photo_222.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1990",
+    "driverSlug": "tom-hromadka",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_tom-hromadka_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_tom-hromadka_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_tom-hromadka_bob-schafer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-hromadka",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_tom-hromadka_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_tom-hromadka_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_tom-hromadka_unknown-photographer_photo_003.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-hromadka",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_tom-hromadka_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_tom-hromadka_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_tom-hromadka_unknown-photographer_photo_004.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-hromadka",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

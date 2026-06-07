@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "141-speedway_1985_dave-zeitler_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/141-speedway/1985/141-speedway_1985_dave-zeitler_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/141-speedway_1985_dave-zeitler_pat-heaney_post_333.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1985",
+    "driverSlug": "dave-zeitler",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "luxemburg-speedway_unknown-year_dave-zeitler_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_dave-zeitler_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_dave-zeitler_unknown-photographer_photo_002.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-zeitler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-zeitler_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-zeitler_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-zeitler_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-zeitler",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-zeitler_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-zeitler_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-zeitler_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-zeitler",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-zeitler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-zeitler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-zeitler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-zeitler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

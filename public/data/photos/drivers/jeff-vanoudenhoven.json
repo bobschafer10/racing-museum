@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_jeff-vanoudenhoven_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-vanoudenhoven_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-vanoudenhoven_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-vanoudenhoven",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-vanoudenhoven_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-vanoudenhoven_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-vanoudenhoven_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-vanoudenhoven",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2003_jeff-vanoudenhoven_corey-juelich_photo_112.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2003/wisconsin-international-raceway_2003_jeff-vanoudenhoven_corey-juelich_photo_112.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2003_jeff-vanoudenhoven_corey-juelich_photo_112.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2003",
+    "driverSlug": "jeff-vanoudenhoven",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2013_jeff-vanoudenhoven_corey-juelich_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2013/wisconsin-international-raceway_2013_jeff-vanoudenhoven_corey-juelich_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2013_jeff-vanoudenhoven_corey-juelich_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2013",
+    "driverSlug": "jeff-vanoudenhoven",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

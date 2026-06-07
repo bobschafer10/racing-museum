@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_don-anderson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_don-anderson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_don-anderson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "escanaba-speedway_unknown-year_don-anderson_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/escanaba-speedway/unknown-year/escanaba-speedway_unknown-year_don-anderson_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/escanaba-speedway_unknown-year_don-anderson_joe-verdegan_post_001.jpg",
+    "trackSlug": "escanaba-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-anderson",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-anderson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-anderson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-anderson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

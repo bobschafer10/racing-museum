@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_dave-klein_lowell-dalsoren_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-klein_lowell-dalsoren_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-klein_lowell-dalsoren_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "lowell-dalsoren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_dave-klein_unknown-photographer_photo_8886.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-klein_unknown-photographer_photo_8886.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-klein_unknown-photographer_photo_8886.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8886"
+  },
+  {
+    "fileName": "slinger-speedway_1990_dave-klein_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/slinger-speedway/1990/slinger-speedway_1990_dave-klein_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/slinger-speedway_1990_dave-klein_bob-schafer_photo_222.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1990",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_13896.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_13896.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_13896.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13896"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_13898.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_13898.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_13898.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13898"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_463.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_463.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_463.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "463"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_472.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_472.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dave-klein_bob-schafer_photo_472.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "472"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-klein_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-klein_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-klein_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

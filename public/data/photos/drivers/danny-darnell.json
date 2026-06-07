@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "capital-super-speedway_1984_danny-darnell_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1984/capital-super-speedway_1984_danny-darnell_don-besch_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1984_danny-darnell_don-besch_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1984",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_danny-darnell_al-fortner_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_danny-darnell_al-fortner_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_danny-darnell_al-fortner_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1978_danny-darnell_mike-dunn_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1978/lake-geneva-raceway_1978_danny-darnell_mike-dunn_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1978_danny-darnell_mike-dunn_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1978",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "mike-dunn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_danny-darnell_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_danny-darnell_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_danny-darnell_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_002.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_danny-darnell_unknown-photographer_photo_003.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_danny-darnell_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_danny-darnell_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_danny-darnell_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_danny-darnell_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_danny-darnell_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_danny-darnell_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_danny-darnell_pat-heaney_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_danny-darnell_pat-heaney_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_danny-darnell_pat-heaney_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "002"
+  }
+]

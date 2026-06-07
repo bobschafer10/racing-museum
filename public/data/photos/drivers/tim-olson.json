@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "dells-motor-speedway_1994_tim-olson_dave-drews_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1994/dells-motor-speedway_1994_tim-olson_dave-drews_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1994_tim-olson_dave-drews_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1994",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "elko-speedway_unknown-year_tim-olson_john-kaufenberg_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_tim-olson_john-kaufenberg_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_tim-olson_john-kaufenberg_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "john-kaufenberg",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_tim-olson_bob-schafer_photo_137.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_tim-olson_bob-schafer_photo_137.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_tim-olson_bob-schafer_photo_137.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "137"
+  },
+  {
+    "fileName": "minnesota-state-fair_unknown-year_tim-olson_bob-schafer_photo_141.jpg",
+    "storagePath": "photos/master/minnesota-state-fair/unknown-year/minnesota-state-fair_unknown-year_tim-olson_bob-schafer_photo_141.jpg",
+    "publicPath": "/photos/minnesota-state-fair_unknown-year_tim-olson_bob-schafer_photo_141.jpg",
+    "trackSlug": "minnesota-state-fair",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "141"
+  },
+  {
+    "fileName": "nashville-speedway_unknown-year_tim-olson_bob-schafer_photo_142.jpg",
+    "storagePath": "photos/master/nashville-speedway/unknown-year/nashville-speedway_unknown-year_tim-olson_bob-schafer_photo_142.jpg",
+    "publicPath": "/photos/nashville-speedway_unknown-year_tim-olson_bob-schafer_photo_142.jpg",
+    "trackSlug": "nashville-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "142"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-olson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-olson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-olson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-olson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-olson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-olson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-olson_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-olson_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-olson_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "proctor-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "nick-lavato",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "nick-lavato",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

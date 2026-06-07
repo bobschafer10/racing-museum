@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "langlade-county-speedway_2008_adam-jahnke_unknown-photographer_photo_009.jpg",
+    "storagePath": "photos/master/langlade-county-speedway/2008/langlade-county-speedway_2008_adam-jahnke_unknown-photographer_photo_009.jpg",
+    "publicPath": "/photos/langlade-county-speedway_2008_adam-jahnke_unknown-photographer_photo_009.jpg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "2008",
+    "driverSlug": "adam-jahnke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "009"
+  },
+  {
+    "fileName": "rice-lake-speedway_2008_unknown-driver_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/2008/rice-lake-speedway_2008_unknown-driver_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/rice-lake-speedway_2008_unknown-driver_unknown-photographer_photo_555.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "2008",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2008_jesse-gracyalny_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2008/wisconsin-international-raceway_2008_jesse-gracyalny_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2008_jesse-gracyalny_bob-greuel_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2008",
+    "driverSlug": "jesse-gracyalny",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

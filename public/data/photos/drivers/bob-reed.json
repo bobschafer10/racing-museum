@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_bob-reed_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_bob-reed_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_bob-reed_unknown-photographer_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_1980_bob-reed_jd-dedina_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/1980/riverview-raceway_1980_bob-reed_jd-dedina_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_1980_bob-reed_jd-dedina_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "1980",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "jd-dedina",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_bob-reed_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_bob-reed_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_bob-reed_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-reed_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-reed_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-reed_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-reed_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-reed_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-reed_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-reed_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-reed_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-reed_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-reed_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-reed_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-reed_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

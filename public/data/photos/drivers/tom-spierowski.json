@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_2004_tom-spierowski_ken-koppa_post_001.jpeg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/2004/lacrosse-interstate-speedway_2004_tom-spierowski_ken-koppa_post_001.jpeg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_2004_tom-spierowski_ken-koppa_post_001.jpeg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "2004",
+    "driverSlug": "tom-spierowski",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1989_tom-spierowski_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/slinger-speedway/1989/slinger-speedway_1989_tom-spierowski_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/slinger-speedway_1989_tom-spierowski_bob-schafer_photo_222.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1989",
+    "driverSlug": "tom-spierowski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-spierowski_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-spierowski_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-spierowski_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-spierowski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_tom-spierowski_bob-schafer_photo_305.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_tom-spierowski_bob-schafer_photo_305.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_tom-spierowski_bob-schafer_photo_305.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "tom-spierowski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "305"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_blackie-bornberg_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_blackie-bornberg_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_blackie-bornberg_ken-koppa_post_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "blackie-bornberg",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "blackie-bornberg",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_blackie-bornberg_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_blackie-bornberg_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_blackie-bornberg_kurt-luoma_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "blackie-bornberg",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_blackie-bornberg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_blackie-bornberg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_blackie-bornberg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "blackie-bornberg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_blackie-bornberg_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_blackie-bornberg_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_blackie-bornberg_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "blackie-bornberg",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

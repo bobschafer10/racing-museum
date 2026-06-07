@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_mike-murgic_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_mike-murgic_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_mike-murgic_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "mike-murgic",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_mike-murgic_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_mike-murgic_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_mike-murgic_pat-heaney_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-murgic",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_2001_paul-menard_jeff-blaser_photo_001.jpeg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/2001/lacrosse-interstate-speedway_2001_paul-menard_jeff-blaser_photo_001.jpeg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_2001_paul-menard_jeff-blaser_photo_001.jpeg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "2001",
+    "driverSlug": "paul-menard",
+    "photographerSlug": "jeff-blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_1997_paul-menard_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/1997/marshfield-super-speedway_1997_paul-menard_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_1997_paul-menard_tom-loos_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "1997",
+    "driverSlug": "paul-menard",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-menard_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-menard_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-menard_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-menard",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

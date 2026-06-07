@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "tomahawk-speedway_unknown-year_mark-listle_unknown-photographer_photo_14564.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_mark-listle_unknown-photographer_photo_14564.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_mark-listle_unknown-photographer_photo_14564.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-listle",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "14564"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-listle_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-listle_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-listle_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-listle",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

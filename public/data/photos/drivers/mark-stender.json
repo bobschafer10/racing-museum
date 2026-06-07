@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_mark-stender_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-stender_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-stender_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-stender",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-stender_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-stender_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-stender_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-stender",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_mark-stender_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_mark-stender_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_mark-stender_kurt-luoma_photo_111.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-stender",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  }
+]

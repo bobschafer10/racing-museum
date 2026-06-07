@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "seymour-speedway_1973_john-leverance_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/1973/seymour-speedway_1973_john-leverance_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_1973_john-leverance_joe-verdegan_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1973",
+    "driverSlug": "john-leverance",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-leverance_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-leverance_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-leverance_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-leverance",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

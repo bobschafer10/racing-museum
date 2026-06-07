@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_butch-oertel_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_butch-oertel_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_butch-oertel_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "butch-oertel",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_butch-oertel_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_butch-oertel_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_butch-oertel_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "butch-oertel",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_butch-oertel_todd-narveson_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_butch-oertel_todd-narveson_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_butch-oertel_todd-narveson_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "butch-oertel",
+    "photographerSlug": "todd-narveson",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_butch-oertel_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_butch-oertel_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_butch-oertel_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "butch-oertel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_rick-smith_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_rick-smith_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_rick-smith_unknown-photographer_photo_002.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_rick-smith_bob-schafer_photo_003.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_rick-smith_bob-schafer_photo_003.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_rick-smith_bob-schafer_photo_003.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-smith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "rick-smith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-smith_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-smith_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-smith_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

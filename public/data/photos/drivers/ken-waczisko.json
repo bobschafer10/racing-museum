@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_ken-waczisko_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_ken-waczisko_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_ken-waczisko_weber-brothers_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-waczisko",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_ken-waczisko_bob-schafer_photo_384.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_ken-waczisko_bob-schafer_photo_384.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_ken-waczisko_bob-schafer_photo_384.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ken-waczisko",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "384"
+  }
+]

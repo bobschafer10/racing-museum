@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "rockford-speedway_unknown-year_jack-landis_bob-schafer_photo_13816.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jack-landis_bob-schafer_photo_13816.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jack-landis_bob-schafer_photo_13816.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-landis",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13816"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jack-landis_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jack-landis_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jack-landis_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jack-landis",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

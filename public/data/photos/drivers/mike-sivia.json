@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "mall-show_unknown-year_mike-sivia_john-curcio_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_mike-sivia_john-curcio_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_mike-sivia_john-curcio_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "mike-sivia",
+    "photographerSlug": "john-curcio",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_1981_mike-sivia_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1981/wilmot-raceway_1981_mike-sivia_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1981_mike-sivia_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1981",
+    "driverSlug": "mike-sivia",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_mike-sivia_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_mike-sivia_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_mike-sivia_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-sivia",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

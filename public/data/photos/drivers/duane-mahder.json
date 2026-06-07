@@ -1,0 +1,134 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_duane-mahder_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_duane-mahder_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_duane-mahder_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rice-lake-speedway_1993_duane-mahder_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/1993/rice-lake-speedway_1993_duane-mahder_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_1993_duane-mahder_neil-miller_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "1993",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_duane-mahder_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_duane-mahder_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_duane-mahder_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_duane-mahder_ryan-aho_post_120.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_duane-mahder_ryan-aho_post_120.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_duane-mahder_ryan-aho_post_120.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "120"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_duane-mahder_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_duane-mahder_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_duane-mahder_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_duane-mahder_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_duane-mahder_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_duane-mahder_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "yellow-river-speedway_1990_duane-mahder_bob-schafer_photo_390.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/1990/yellow-river-speedway_1990_duane-mahder_bob-schafer_photo_390.jpg",
+    "publicPath": "/photos/yellow-river-speedway_1990_duane-mahder_bob-schafer_photo_390.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "1990",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "390"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_duane-mahder_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_duane-mahder_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_duane-mahder_bob-schafer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_614.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_614.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_614.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "614"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_624.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_624.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_624.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "624"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_800.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_800.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_800.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "800"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_801.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_801.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_duane-mahder_kurt-luoma_photo_801.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-mahder",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "801"
+  }
+]

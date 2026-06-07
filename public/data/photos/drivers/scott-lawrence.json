@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_scott-lawrence_skip-hunter_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_scott-lawrence_skip-hunter_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_scott-lawrence_skip-hunter_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "skip-hunter",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_004.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_006.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_008.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "008"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_009.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_009.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_009.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "009"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_010.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_010.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_010.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "010"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-lawrence_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-lawrence_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-lawrence_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-lawrence_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-lawrence_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-lawrence_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

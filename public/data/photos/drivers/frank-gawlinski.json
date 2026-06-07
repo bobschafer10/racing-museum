@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "grundy-county-speedway_1987_frank-gawlinski_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1987/grundy-county-speedway_1987_frank-gawlinski_don-besch_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1987_frank-gawlinski_don-besch_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1987",
+    "driverSlug": "frank-gawlinski",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_frank-gawlinski_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_frank-gawlinski_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_frank-gawlinski_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "frank-gawlinski",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

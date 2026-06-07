@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "mall-show_unknown-year_mark-hessler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_mark-hessler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_mark-hessler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "mark-hessler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-hessler_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-hessler_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-hessler_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-hessler",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-hessler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-hessler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-hessler_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-hessler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

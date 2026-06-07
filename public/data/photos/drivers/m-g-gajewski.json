@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_m-g-gajewski_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_m-g-gajewski_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_m-g-gajewski_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "m-g-gajewski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_2011_m-g-gajewski_bob-gruell_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2011/state-park-speedway_2011_m-g-gajewski_bob-gruell_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2011_m-g-gajewski_bob-gruell_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2011",
+    "driverSlug": "m-g-gajewski",
+    "photographerSlug": "bob-gruell",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_m-g-gajewski_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_m-g-gajewski_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_m-g-gajewski_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "m-g-gajewski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

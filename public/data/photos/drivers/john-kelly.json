@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_john-kelly_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kelly_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-kelly_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-kelly",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-kelly_joe-verdegan_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kelly_joe-verdegan_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-kelly_joe-verdegan_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-kelly",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "002"
+  }
+]

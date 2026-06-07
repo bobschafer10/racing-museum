@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_dean-yrjanainen_rats-racing_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_dean-yrjanainen_rats-racing_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_dean-yrjanainen_rats-racing_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dean-yrjanainen",
+    "photographerSlug": "rats-racing",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/2006/superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "2006",
+    "driverSlug": "dean-yrjanainen",
+    "photographerSlug": "in-a-flash",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-yrjanainen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_444.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-yrjanainen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-yrjanainen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-yrjanainen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-yrjanainen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-yrjanainen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

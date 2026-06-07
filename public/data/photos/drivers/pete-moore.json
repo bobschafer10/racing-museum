@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_pete-moore_bob-schafer_photo_078.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_pete-moore_bob-schafer_photo_078.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_pete-moore_bob-schafer_photo_078.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-moore",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "078"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_pete-moore_bob-schafer_photo_13623.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_pete-moore_bob-schafer_photo_13623.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_pete-moore_bob-schafer_photo_13623.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-moore",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13623"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_pete-moore_don-wendlandt_photo_115.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_pete-moore_don-wendlandt_photo_115.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_pete-moore_don-wendlandt_photo_115.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-moore",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "115"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_pete-moore_bob-schafer_photo_079.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_pete-moore_bob-schafer_photo_079.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_pete-moore_bob-schafer_photo_079.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-moore",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "079"
+  },
+  {
+    "fileName": "rockford-speedway_1991_pete-moore_bob-schafer_photo_209.jpg",
+    "storagePath": "photos/master/rockford-speedway/1991/rockford-speedway_1991_pete-moore_bob-schafer_photo_209.jpg",
+    "publicPath": "/photos/rockford-speedway_1991_pete-moore_bob-schafer_photo_209.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1991",
+    "driverSlug": "pete-moore",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "209"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-moore_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-moore_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-moore_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-moore",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-moore_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-moore_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-moore_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-moore",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_randy-ross_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_randy-ross_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_randy-ross_pat-heaney_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-ross",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_randy-ross_bob-schafer_photo_452.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_randy-ross_bob-schafer_photo_452.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_randy-ross_bob-schafer_photo_452.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-ross",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "452"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_randy-ross_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_randy-ross_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_randy-ross_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "randy-ross",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

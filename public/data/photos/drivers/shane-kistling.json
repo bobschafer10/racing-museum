@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "superior-speedway_unknown-year_shane-kistling_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_shane-kistling_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_shane-kistling_unknown-photographer_photo_002.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "shane-kistling",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_shane-kistling_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_shane-kistling_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_shane-kistling_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "shane-kistling",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "state-park-speedway_unknown-year_jesse-haese_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jesse-haese_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_jesse-haese_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jesse-haese",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_jesse-haese_unknown-phototographer_photo_022.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_jesse-haese_unknown-phototographer_photo_022.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_jesse-haese_unknown-phototographer_photo_022.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jesse-haese",
+    "photographerSlug": "unknown-phototographer",
+    "creditType": "photo",
+    "sequence": "022"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "manitowoc-expo-speedway_2016_mitchell-yurmanovich_bill-schmidt_photo_112.jpg",
+    "storagePath": "photos/master/manitowoc-expo-speedway/2016/manitowoc-expo-speedway_2016_mitchell-yurmanovich_bill-schmidt_photo_112.jpg",
+    "publicPath": "/photos/manitowoc-expo-speedway_2016_mitchell-yurmanovich_bill-schmidt_photo_112.jpg",
+    "trackSlug": "manitowoc-expo-speedway",
+    "year": "2016",
+    "driverSlug": "mitchell-yurmanovich",
+    "photographerSlug": "bill-schmidt",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2017_mitchell-yurmanovich_unknown-photographer_photo_112.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2017/plymouth-dirt-track_2017_mitchell-yurmanovich_unknown-photographer_photo_112.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2017_mitchell-yurmanovich_unknown-photographer_photo_112.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2017",
+    "driverSlug": "mitchell-yurmanovich",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2019_mitchell-yurmanovich_unknown-photographer_photo_113.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2019/plymouth-dirt-track_2019_mitchell-yurmanovich_unknown-photographer_photo_113.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2019_mitchell-yurmanovich_unknown-photographer_photo_113.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2019",
+    "driverSlug": "mitchell-yurmanovich",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "113"
+  }
+]

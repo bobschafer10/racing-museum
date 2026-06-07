@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_2026_al-strobel_brian-bjerk_photo_768.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_al-strobel_brian-bjerk_photo_768.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_al-strobel_brian-bjerk_photo_768.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "al-strobel",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "photo",
+    "sequence": "768"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_al-strobel_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-strobel_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_al-strobel_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "al-strobel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

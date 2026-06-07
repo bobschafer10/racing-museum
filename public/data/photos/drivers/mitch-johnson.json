@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1988_mitch-johnson_keith-nason_post_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1988/cedar-lake-speedway_1988_mitch-johnson_keith-nason_post_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1988_mitch-johnson_keith-nason_post_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1988",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "keith-nason",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "red-cedar-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/red-cedar-speedway/unknown-year/red-cedar-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/red-cedar-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "red-cedar-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mitch-johnson_ryan-aho_post_060.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mitch-johnson_ryan-aho_post_060.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mitch-johnson_ryan-aho_post_060.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "060"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_10681.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_10681.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mitch-johnson_unknown-photographer_photo_10681.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "10681"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mitch-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

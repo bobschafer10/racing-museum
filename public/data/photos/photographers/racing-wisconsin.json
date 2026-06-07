@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_2002_dale-averkamp_racing-wisconsin_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2002/beaver-dam-raceway_2002_dale-averkamp_racing-wisconsin_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2002_dale-averkamp_racing-wisconsin_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2002",
+    "driverSlug": "dale-averkamp",
+    "photographerSlug": "racing-wisconsin",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_2002_turk-letizia_racing-wisconsin_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2002/beaver-dam-raceway_2002_turk-letizia_racing-wisconsin_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2002_turk-letizia_racing-wisconsin_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2002",
+    "driverSlug": "turk-letizia",
+    "photographerSlug": "racing-wisconsin",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_2002_unknown-driver_racing-wisconsin_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2002/beaver-dam-raceway_2002_unknown-driver_racing-wisconsin_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2002_unknown-driver_racing-wisconsin_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2002",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "racing-wisconsin",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_eddie-loomis_racing-wisconsin_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_eddie-loomis_racing-wisconsin_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_eddie-loomis_racing-wisconsin_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "eddie-loomis",
+    "photographerSlug": "racing-wisconsin",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

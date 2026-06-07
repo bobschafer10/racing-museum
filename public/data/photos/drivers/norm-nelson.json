@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "milwaukee-mile_1976_norm-nelson_wally-kroncke_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1976/milwaukee-mile_1976_norm-nelson_wally-kroncke_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1976_norm-nelson_wally-kroncke_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1976",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_norm-nelson_dan-radig_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_norm-nelson_dan-radig_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_norm-nelson_dan-radig_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "dan-radig",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1959",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "john-surges",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_norm-nelson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_norm-nelson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_norm-nelson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1971_norm-nelson_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1971/wisconsin-international-raceway_1971_norm-nelson_joe-slack_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1971_norm-nelson_joe-slack_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1971",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

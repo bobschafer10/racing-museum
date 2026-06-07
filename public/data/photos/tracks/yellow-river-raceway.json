@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "yellow-river-raceway_unknown-year_bob-pierce_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-raceway/unknown-year/yellow-river-raceway_unknown-year_bob-pierce_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-raceway_unknown-year_bob-pierce_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-pierce",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-raceway_unknown-year_doug-blashe_todd-handrich_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-raceway/unknown-year/yellow-river-raceway_unknown-year_doug-blashe_todd-handrich_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-raceway_unknown-year_doug-blashe_todd-handrich_photo_001.jpg",
+    "trackSlug": "yellow-river-raceway",
+    "year": "unknown-year",
+    "driverSlug": "doug-blashe",
+    "photographerSlug": "todd-handrich",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

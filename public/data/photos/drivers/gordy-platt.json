@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_1987_gordy-platt_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1987/lacrosse-interstate-speedway_1987_gordy-platt_don-besch_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1987_gordy-platt_don-besch_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1987",
+    "driverSlug": "gordy-platt",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1969_gordy-platt_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1969/unknown-track_1969_gordy-platt_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1969_gordy-platt_ron-thruman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1969",
+    "driverSlug": "gordy-platt",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gordy-platt_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordy-platt_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gordy-platt_dennis-satorius_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gordy-platt",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_neil-knoblock_don-wendlandt_photo_117.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_neil-knoblock_don-wendlandt_photo_117.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_neil-knoblock_don-wendlandt_photo_117.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "117"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_neil-knoblock_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_neil-knoblock_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_neil-knoblock_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_neil-knoblock_mall-show-ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_neil-knoblock_mall-show-ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_neil-knoblock_mall-show-ken-koppa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "mall-show-ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_neil-knoblock_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_neil-knoblock_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_neil-knoblock_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_neil-knoblock_tom-loos_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_neil-knoblock_tom-loos_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_neil-knoblock_tom-loos_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_neil-knoblock_tom-loos_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_neil-knoblock_tom-loos_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_neil-knoblock_tom-loos_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

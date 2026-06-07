@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mark-van_don-wendlandt_photo_116.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mark-van_don-wendlandt_photo_116.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mark-van_don-wendlandt_photo_116.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-van",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "116"
+  },
+  {
+    "fileName": "unknown-track_2000_mark-van_matt-osowski_post_114.jpg",
+    "storagePath": "photos/master/unknown-track/2000/unknown-track_2000_mark-van_matt-osowski_post_114.jpg",
+    "publicPath": "/photos/unknown-track_2000_mark-van_matt-osowski_post_114.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2000",
+    "driverSlug": "mark-van",
+    "photographerSlug": "matt-osowski",
+    "creditType": "post",
+    "sequence": "114"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-van_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-van_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-van_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-van",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

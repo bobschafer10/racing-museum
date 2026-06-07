@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_stan-horton_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_stan-horton_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_stan-horton_dave-olson_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "stan-horton",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_stan-horton_randy-boehles_post_100.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_stan-horton_randy-boehles_post_100.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_stan-horton_randy-boehles_post_100.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "stan-horton",
+    "photographerSlug": "randy-boehles",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_stan-horton_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_stan-horton_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_stan-horton_pat-heaney_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "stan-horton",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

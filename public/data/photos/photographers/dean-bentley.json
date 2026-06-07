@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_dale-erdmann_dean-bentley_post_100.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_dale-erdmann_dean-bentley_post_100.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_dale-erdmann_dean-bentley_post_100.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-erdmann",
+    "photographerSlug": "dean-bentley",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "pontiac-silverdome_1983_don-collins_dean-bentley_post_001.jpg",
+    "storagePath": "photos/master/pontiac-silverdome/1983/pontiac-silverdome_1983_don-collins_dean-bentley_post_001.jpg",
+    "publicPath": "/photos/pontiac-silverdome_1983_don-collins_dean-bentley_post_001.jpg",
+    "trackSlug": "pontiac-silverdome",
+    "year": "1983",
+    "driverSlug": "don-collins",
+    "photographerSlug": "dean-bentley",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_don-collins_dean-bentley_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_don-collins_dean-bentley_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_don-collins_dean-bentley_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-collins",
+    "photographerSlug": "dean-bentley",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

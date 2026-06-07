@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "unknown-track_1979_river-speedway_troy-powers_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_river-speedway_troy-powers_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1979_river-speedway_troy-powers_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1979",
+    "driverSlug": "river-speedway",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_river-speedway_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "river-speedway",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_river-speedway_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "river-speedway",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_river-speedway_kurt-luoma_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "river-speedway",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_river-speedway_kurt-luoma_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_river-speedway_kurt-luoma_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "river-speedway",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_river-speedway_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_river-speedway_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_river-speedway_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "river-speedway",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_river-speedway_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_river-speedway_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_river-speedway_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "river-speedway",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

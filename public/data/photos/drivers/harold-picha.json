@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "darlington-speedway_1968_harold-picha_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/darlington-speedway/1968/darlington-speedway_1968_harold-picha_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/darlington-speedway_1968_harold-picha_ron-thruman_post_001.jpg",
+    "trackSlug": "darlington-speedway",
+    "year": "1968",
+    "driverSlug": "harold-picha",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_harold-picha_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-picha_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_harold-picha_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "harold-picha",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_harold-picha_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-picha_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_harold-picha_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "harold-picha",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

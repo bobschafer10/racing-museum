@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_jim-bomsach_kurt-luoma_photo_112.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_jim-bomsach_kurt-luoma_photo_112.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_jim-bomsach_kurt-luoma_photo_112.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_444.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jim-bomsach_john-alft_post_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jim-bomsach_john-alft_post_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jim-bomsach_john-alft_post_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_002.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-bomsach_father-grubba_photo_113.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-bomsach_father-grubba_photo_113.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-bomsach_father-grubba_photo_113.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-bomsach",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "113"
+  }
+]

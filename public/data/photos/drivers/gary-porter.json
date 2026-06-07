@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_gary-porter_kurt-luoma_photo_1327.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-porter_kurt-luoma_photo_1327.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-porter_kurt-luoma_photo_1327.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-porter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1327"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_gary-porter_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_gary-porter_john-vass_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_gary-porter_john-vass_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-porter",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-porter_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-porter_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-porter_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-porter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-porter_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-porter_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-porter_kurt-luoma_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-porter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

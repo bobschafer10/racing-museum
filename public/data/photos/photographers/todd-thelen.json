@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_2003_scott-wimmer_todd-thelen_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2003/slinger-speedway_2003_scott-wimmer_todd-thelen_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2003_scott-wimmer_todd-thelen_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2003",
+    "driverSlug": "scott-wimmer",
+    "photographerSlug": "todd-thelen",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_jeff-wilke_todd-thelen_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_jeff-wilke_todd-thelen_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_jeff-wilke_todd-thelen_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-wilke",
+    "photographerSlug": "todd-thelen",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

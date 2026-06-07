@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1984_jim-zwirgzdas_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_jim-zwirgzdas_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_jim-zwirgzdas_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "jim-zwirgzdas",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1990_jim-zwirgzdas_bob-schafer_photo_022.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1990/hales-corners-speedway_1990_jim-zwirgzdas_bob-schafer_photo_022.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1990_jim-zwirgzdas_bob-schafer_photo_022.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1990",
+    "driverSlug": "jim-zwirgzdas",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "022"
+  },
+  {
+    "fileName": "hales-corners-speedway_1990_jim-zwirgzdas_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1990/hales-corners-speedway_1990_jim-zwirgzdas_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1990_jim-zwirgzdas_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1990",
+    "driverSlug": "jim-zwirgzdas",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-zwirgzdas_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-zwirgzdas_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-zwirgzdas_pat-heaney_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zwirgzdas",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-zwirgzdas",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "054"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_jim-zwirgzdas_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_jim-zwirgzdas_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_jim-zwirgzdas_dave-olson_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zwirgzdas",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_jim-zwirgzdas_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_jim-zwirgzdas_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_jim-zwirgzdas_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zwirgzdas",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

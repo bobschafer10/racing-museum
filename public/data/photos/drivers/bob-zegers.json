@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "manitowoc-expo-speedway_unknown-year_bob-zegers_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/manitowoc-expo-speedway/unknown-year/manitowoc-expo-speedway_unknown-year_bob-zegers_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/manitowoc-expo-speedway_unknown-year_bob-zegers_brad-luepke_post_001.jpg",
+    "trackSlug": "manitowoc-expo-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-zegers",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-zegers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-zegers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-zegers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-zegers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

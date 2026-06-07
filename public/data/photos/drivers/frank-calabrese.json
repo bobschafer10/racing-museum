@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_frank-calabrese_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_frank-calabrese_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_frank-calabrese_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "frank-calabrese",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_1997_frank-calabrese_diane-mech_photo_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/1997/dodge-county-fairgrounds_1997_frank-calabrese_diane-mech_photo_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_1997_frank-calabrese_diane-mech_photo_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "1997",
+    "driverSlug": "frank-calabrese",
+    "photographerSlug": "diane-mech",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

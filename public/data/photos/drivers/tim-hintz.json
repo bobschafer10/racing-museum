@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_tim-hintz_don-wendlandt_photo_116.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_tim-hintz_don-wendlandt_photo_116.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_tim-hintz_don-wendlandt_photo_116.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-hintz",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "116"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2006_tim-hintz_don-wendlandt_photo_117.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_tim-hintz_don-wendlandt_photo_117.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_tim-hintz_don-wendlandt_photo_117.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "tim-hintz",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "117"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_tim-hintz_kurt-luoma_photo_113.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_tim-hintz_kurt-luoma_photo_113.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_tim-hintz_kurt-luoma_photo_113.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-hintz",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "113"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "milwaukee-mile_1983_gary-balough_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1983/milwaukee-mile_1983_gary-balough_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1983_gary-balough_weber-brothers_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1983",
+    "driverSlug": "gary-balough",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_gary-balough_kim-kemperman_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_gary-balough_kim-kemperman_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_gary-balough_kim-kemperman_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "gary-balough",
+    "photographerSlug": "kim-kemperman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "nashville-speedway_unknown-year_gary-balough_bob-schafer_photo_12822.jpg",
+    "storagePath": "photos/master/nashville-speedway/unknown-year/nashville-speedway_unknown-year_gary-balough_bob-schafer_photo_12822.jpg",
+    "publicPath": "/photos/nashville-speedway_unknown-year_gary-balough_bob-schafer_photo_12822.jpg",
+    "trackSlug": "nashville-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-balough",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12822"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_gary-balough_father-grubba_photo_333.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_gary-balough_father-grubba_photo_333.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_gary-balough_father-grubba_photo_333.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-balough",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

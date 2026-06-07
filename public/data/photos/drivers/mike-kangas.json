@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "norway-speedway_unknown-year_mike-kangas_unknown-photographer_post_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_mike-kangas_unknown-photographer_post_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_mike-kangas_unknown-photographer_post_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-kangas",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_mike-kangas_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_mike-kangas_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_mike-kangas_bob-schafer_photo_222.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "mike-kangas",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mike-kangas_bob-schafer_photo_13874.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mike-kangas_bob-schafer_photo_13874.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mike-kangas_bob-schafer_photo_13874.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-kangas",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13874"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1983_terry-senneker_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1983/milwaukee-mile_1983_terry-senneker_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1983_terry-senneker_ken-koppa_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1983",
+    "driverSlug": "terry-senneker",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_terry-senneker_unknown-photographer_photo_357.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_terry-senneker_unknown-photographer_photo_357.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_terry-senneker_unknown-photographer_photo_357.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "terry-senneker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "357"
+  }
+]

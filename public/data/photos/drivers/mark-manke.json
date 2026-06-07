@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_mark-manke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_mark-manke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_mark-manke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_mark-manke_bob-schafer_photo_13732.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_mark-manke_bob-schafer_photo_13732.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_mark-manke_bob-schafer_photo_13732.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13732"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mark-manke_bob-schafer_photo_13591.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mark-manke_bob-schafer_photo_13591.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mark-manke_bob-schafer_photo_13591.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13591"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1995_mark-manke_neil-manke_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1995/lacrosse-interstate-speedway_1995_mark-manke_neil-manke_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1995_mark-manke_neil-manke_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1995",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "neil-manke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_mark-manke_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_mark-manke_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_mark-manke_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-manke_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-manke_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-manke_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-manke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-manke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-manke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-manke_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-manke_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-manke_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-manke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

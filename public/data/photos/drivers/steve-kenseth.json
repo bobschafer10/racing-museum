@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_steve-kenseth_bob-schafer_photo_13668.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_steve-kenseth_bob-schafer_photo_13668.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_steve-kenseth_bob-schafer_photo_13668.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-kenseth",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13668"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-kenseth_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-kenseth_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-kenseth_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-kenseth",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

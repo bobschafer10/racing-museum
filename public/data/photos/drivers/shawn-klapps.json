@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_shawn-klapps_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_shawn-klapps_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_shawn-klapps_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "shawn-klapps",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1985_shawn-klapps_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1985/wisconsin-international-raceway_1985_shawn-klapps_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1985_shawn-klapps_pat-heaney_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1985",
+    "driverSlug": "shawn-klapps",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_shawn-klapps_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_shawn-klapps_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_shawn-klapps_joe-slack_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "shawn-klapps",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

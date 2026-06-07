@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_jim-belling_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_jim-belling_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_jim-belling_dennis-satorius_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-belling",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-belling_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-belling_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-belling_unknown-photographer_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-belling",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-belling_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-belling_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-belling_unknown-photographer_photo_334.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-belling",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  }
+]

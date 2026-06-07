@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_paul-christensen_bob-bergeron_photo_0201.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_paul-christensen_bob-bergeron_photo_0201.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_paul-christensen_bob-bergeron_photo_0201.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-christensen",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "0201"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-christensen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_333.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-christensen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_paul-christensen_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_paul-christensen_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_paul-christensen_kurt-luoma_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-christensen",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-christensen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "paul-christensen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

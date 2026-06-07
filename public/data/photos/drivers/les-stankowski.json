@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_les-stankowski_unknown-photographer_photo_1350.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_les-stankowski_unknown-photographer_photo_1350.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_les-stankowski_unknown-photographer_photo_1350.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-stankowski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1350"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_les-stankowski_bob-schafer_photo_327.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_les-stankowski_bob-schafer_photo_327.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_les-stankowski_bob-schafer_photo_327.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-stankowski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "327"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_les-stankowski_john-alft_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_les-stankowski_john-alft_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_les-stankowski_john-alft_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-stankowski",
+    "photographerSlug": "john-alft",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-stankowski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_002.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-stankowski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_les-stankowski_unknown-photographer_photo_003.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-stankowski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_les-stankowski_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_les-stankowski_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_les-stankowski_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "les-stankowski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

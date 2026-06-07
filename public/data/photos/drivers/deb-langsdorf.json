@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "angell-park-speedway_unknown-year_deb-langsdorf_art-anderson_photo_001.jpg",
+    "storagePath": "photos/master/angell-park-speedway/unknown-year/angell-park-speedway_unknown-year_deb-langsdorf_art-anderson_photo_001.jpg",
+    "publicPath": "/photos/angell-park-speedway_unknown-year_deb-langsdorf_art-anderson_photo_001.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "deb-langsdorf",
+    "photographerSlug": "art-anderson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_deb-langsdorf_joy-reininger_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_deb-langsdorf_joy-reininger_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_deb-langsdorf_joy-reininger_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "deb-langsdorf",
+    "photographerSlug": "joy-reininger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_deb-langsdorf_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_deb-langsdorf_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_deb-langsdorf_unknown-photographer_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "deb-langsdorf",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_deb-langsdorf_john-fahey_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_deb-langsdorf_john-fahey_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_deb-langsdorf_john-fahey_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "deb-langsdorf",
+    "photographerSlug": "john-fahey",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_deb-langsdorf_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_deb-langsdorf_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_deb-langsdorf_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "deb-langsdorf",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

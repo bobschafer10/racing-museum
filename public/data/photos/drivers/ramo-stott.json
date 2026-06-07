@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1975/milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1975",
+    "driverSlug": "ramo-stott",
+    "photographerSlug": "mike-dunn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_ramo-stott_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_ramo-stott_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_ramo-stott_unknown-photographer_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "ramo-stott",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ramo-stott",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ramo-stott",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-myers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "fox-ridge-speedway_unknown-year_curt-myers_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/fox-ridge-speedway/unknown-year/fox-ridge-speedway_unknown-year_curt-myers_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/fox-ridge-speedway_unknown-year_curt-myers_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-myers",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "mississippi-thunder-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/mississippi-thunder-speedway/unknown-year/mississippi-thunder-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/mississippi-thunder-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "mississippi-thunder-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-myers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rice-lake-speedway_unknown-year_curt-myers_1-fry-pan_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/unknown-year/rice-lake-speedway_unknown-year_curt-myers_1-fry-pan_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_unknown-year_curt-myers_1-fry-pan_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-myers",
+    "photographerSlug": "1-fry-pan",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

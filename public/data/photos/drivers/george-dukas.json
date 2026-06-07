@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_1981_george-dukas_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1981/dells-motor-speedway_1981_george-dukas_don-besch_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1981_george-dukas_don-besch_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1981",
+    "driverSlug": "george-dukas",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_george-dukas_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_george-dukas_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_george-dukas_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "george-dukas",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_george-dukas_weber-brothers_photo_002.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_george-dukas_weber-brothers_photo_002.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_george-dukas_weber-brothers_photo_002.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "george-dukas",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "rockford-speedway_1981_george-dukas_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_george-dukas_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_george-dukas_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "george-dukas",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

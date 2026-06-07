@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_duane-amundson_don-reilly_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_duane-amundson_don-reilly_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_duane-amundson_don-reilly_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "duane-amundson",
+    "photographerSlug": "don-reilly",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "duane-amundson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "032"
+  }
+]

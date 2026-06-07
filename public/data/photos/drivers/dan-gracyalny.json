@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_dan-gracyalny_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_dan-gracyalny_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_dan-gracyalny_pat-heaney_post_333.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "luxemburg-speedway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "luxemburg-speedway_unknown-year_dan-gracyalny_joe-slack_photo_002.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_dan-gracyalny_joe-slack_photo_002.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_dan-gracyalny_joe-slack_photo_002.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_dan-gracyalny_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_dan-gracyalny_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_dan-gracyalny_pat-heaney_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2000_dan-gracyalny_jeff-sachse_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2000/wisconsin-international-raceway_2000_dan-gracyalny_jeff-sachse_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2000_dan-gracyalny_jeff-sachse_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2000",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "jeff-sachse",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dan-gracyalny_joe-slack_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dan-gracyalny_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dan-gracyalny_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dan-gracyalny_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dan-gracyalny_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dan-gracyalny_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dan-gracyalny_unknown-photographer_photo_002.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dan-gracyalny",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/1978gary-roehborn/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "1978gary-roehborn",
+    "driverSlug": "john-vass",
+    "photographerSlug": "photo",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_alan-kulwicki-mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_alan-kulwicki-mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_alan-kulwicki-mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "alan-kulwicki-mike-napierala",
+    "photographerSlug": "photo",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year-russ-scheffler_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year-russ-scheffler/hales-corners-speedway_unknown-year-russ-scheffler_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year-russ-scheffler_unknown-photographer_photo_333.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year-russ-scheffler",
+    "driverSlug": "unknown-photographer",
+    "photographerSlug": "photo",
+    "creditType": "333",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_billy-kuhn_photo_004.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_billy-kuhn_photo_004.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_billy-kuhn_photo_004.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "photo",
+    "creditType": "004",
+    "sequence": "001"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "tom-steuding-lee-johnson",
+    "photographerSlug": "photo",
+    "creditType": "222",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen-bob-wedlund_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen-bob-wedlund_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen-bob-wedlund_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen-bob-wedlund",
+    "photographerSlug": "photo",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen-bob-wedlund_photo_032.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen-bob-wedlund_photo_032.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen-bob-wedlund_photo_032.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen-bob-wedlund",
+    "photographerSlug": "photo",
+    "creditType": "032",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_eugene-krueger-bob-wedlund-_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_eugene-krueger-bob-wedlund-_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_eugene-krueger-bob-wedlund-_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "eugene-krueger-bob-wedlund-",
+    "photographerSlug": "photo",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_junior-hanley-bob-elman_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_junior-hanley-bob-elman_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_junior-hanley-bob-elman_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "junior-hanley-bob-elman",
+    "photographerSlug": "photo",
+    "creditType": "001",
+    "sequence": "001"
+  }
+]

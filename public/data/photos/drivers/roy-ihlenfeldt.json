@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_roy-ihlenfeldt_chad-tessman_post_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_roy-ihlenfeldt_chad-tessman_post_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_roy-ihlenfeldt_chad-tessman_post_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "roy-ihlenfeldt",
+    "photographerSlug": "chad-tessman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_roy-ihlenfeldt_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roy-ihlenfeldt_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roy-ihlenfeldt_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roy-ihlenfeldt",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_roy-ihlenfeldt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roy-ihlenfeldt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roy-ihlenfeldt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roy-ihlenfeldt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

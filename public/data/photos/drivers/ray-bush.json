@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_ray-bush_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_ray-bush_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_ray-bush_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ray-bush",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1976_ray-bush_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_ray-bush_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_ray-bush_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "ray-bush",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

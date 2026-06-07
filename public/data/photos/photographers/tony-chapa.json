@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "seymour-speedway_unknown-year_dave-marcis_tony-chapa_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_dave-marcis_tony-chapa_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_dave-marcis_tony-chapa_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-marcis",
+    "photographerSlug": "tony-chapa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-teschke_tony-chapa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-teschke_tony-chapa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-teschke_tony-chapa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-teschke",
+    "photographerSlug": "tony-chapa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_tony-chapa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_tony-chapa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_tony-chapa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "tony-chapa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_leon-plank_tony-chapa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_leon-plank_tony-chapa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_leon-plank_tony-chapa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "leon-plank",
+    "photographerSlug": "tony-chapa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-steuding_tony-chapa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-steuding_tony-chapa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-steuding_tony-chapa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-steuding",
+    "photographerSlug": "tony-chapa",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

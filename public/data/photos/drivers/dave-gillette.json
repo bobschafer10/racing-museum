@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_dave-gillette_don-reilly_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_dave-gillette_don-reilly_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_dave-gillette_don-reilly_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dave-gillette",
+    "photographerSlug": "don-reilly",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1982_dave-gillette_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1982/unknown-track_1982_dave-gillette_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1982_dave-gillette_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1982",
+    "driverSlug": "dave-gillette",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-gillette_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-gillette_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-gillette_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-gillette",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-gillette_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-gillette_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-gillette_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-gillette",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

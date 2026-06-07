@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_mike-martin_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_mike-martin_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_mike-martin_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-martin",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mike-martin_bob-schafer_photo_279.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mike-martin_bob-schafer_photo_279.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mike-martin_bob-schafer_photo_279.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-martin",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "279"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_terry-sauer_bob-schafer_photo_355.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_terry-sauer_bob-schafer_photo_355.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_terry-sauer_bob-schafer_photo_355.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "355"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_terry-sauer_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_terry-sauer_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_terry-sauer_don-wendlandt_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_terry-sauer_unknown-photographer_photo_3292.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_terry-sauer_unknown-photographer_photo_3292.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_terry-sauer_unknown-photographer_photo_3292.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3292"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1981_terry-sauer_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1981/lake-geneva-raceway_1981_terry-sauer_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1981_terry-sauer_don-wendlandt_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1981",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1976_terry-sauer_dale-weyer_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1976/slinger-speedway_1976_terry-sauer_dale-weyer_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1976_terry-sauer_dale-weyer_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1976",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "dale-weyer",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  }
+]

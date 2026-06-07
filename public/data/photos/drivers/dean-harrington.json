@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "rice-lake-speedway_unknown-year_dean-harrington_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/unknown-year/rice-lake-speedway_unknown-year_dean-harrington_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_unknown-year_dean-harrington_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-harrington_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-harrington_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-harrington_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-harrington_troy-powers_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-harrington_troy-powers_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-harrington_troy-powers_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-harrington_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-harrington",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

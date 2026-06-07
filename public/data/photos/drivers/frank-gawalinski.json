@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_14128.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_14128.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_14128.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawalinski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "14128"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1990_frank-gawalinski_bob-schafer_photo_13459.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1990/lake-geneva-raceway_1990_frank-gawalinski_bob-schafer_photo_13459.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1990_frank-gawalinski_bob-schafer_photo_13459.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1990",
+    "driverSlug": "frank-gawalinski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13459"
+  }
+]

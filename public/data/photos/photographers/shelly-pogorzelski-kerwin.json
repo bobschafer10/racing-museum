@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "seymour-speedway_unknown-year_bob-saelens_shelly-pogorzelski-kerwin_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_bob-saelens_shelly-pogorzelski-kerwin_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_bob-saelens_shelly-pogorzelski-kerwin_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-saelens",
+    "photographerSlug": "shelly-pogorzelski-kerwin",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-boorse_shelly-pogorzelski-kerwin_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-boorse_shelly-pogorzelski-kerwin_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-boorse_shelly-pogorzelski-kerwin_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-boorse",
+    "photographerSlug": "shelly-pogorzelski-kerwin",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

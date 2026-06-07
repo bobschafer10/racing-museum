@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_dewey-gustafson_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dewey-gustafson_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dewey-gustafson_joe-slack_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_dewey-gustafson_joe-slack_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dewey-gustafson_joe-slack_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dewey-gustafson_joe-slack_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_dewey-gustafson_jeff-gilhart_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_dewey-gustafson_jeff-gilhart_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_dewey-gustafson_jeff-gilhart_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "jeff-gilhart",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "elko-speedway_unknown-year_dewey-gustafson_dan-plan_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_dewey-gustafson_dan-plan_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_dewey-gustafson_dan-plan_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dewey-gustafson_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

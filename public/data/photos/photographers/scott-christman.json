@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "unknown-track_1970_billy-nelson_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1970/unknown-track_1970_billy-nelson_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1970_billy-nelson_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1970",
+    "driverSlug": "billy-nelson",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1983_jim-bruggeman_scott-christman_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1983/unknown-track_1983_jim-bruggeman_scott-christman_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1983_jim-bruggeman_scott-christman_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1983",
+    "driverSlug": "jim-bruggeman",
+    "photographerSlug": "scott-christman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-mcmann_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-mcmann_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-mcmann_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-mcmann",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-copp_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-copp_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-copp_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-copp",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-roseen_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-roseen_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-roseen_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-roseen",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-legatt_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-legatt_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-legatt_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-legatt",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-hunker_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-hunker_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-hunker_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-hunker",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-rudiger_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-rudiger_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-rudiger_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-rudiger",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

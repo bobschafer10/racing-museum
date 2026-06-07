@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "rockford-speedway_1981_fred-campbell_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_fred-campbell_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_fred-campbell_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "fred-campbell",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1985_fred-campbell_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1985/rockford-speedway_1985_fred-campbell_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1985_fred-campbell_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1985",
+    "driverSlug": "fred-campbell",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_fred-campbell_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_fred-campbell_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_fred-campbell_bob-schafer_photo_222.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "fred-campbell",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

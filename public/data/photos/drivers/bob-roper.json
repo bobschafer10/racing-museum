@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bob-roper_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-roper_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-roper_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-roper",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_bob-roper_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_bob-roper_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_bob-roper_geoff-mckarns_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-roper",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

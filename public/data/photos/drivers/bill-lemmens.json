@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "seymour-speedway_1990_bill-lemmens_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/1990/seymour-speedway_1990_bill-lemmens_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_1990_bill-lemmens_unknown-photographer_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1990",
+    "driverSlug": "bill-lemmens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2000_bill-lemmens_dan-mary-lewis_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2000/shawano-speedway_2000_bill-lemmens_dan-mary-lewis_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2000_bill-lemmens_dan-mary-lewis_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2000",
+    "driverSlug": "bill-lemmens",
+    "photographerSlug": "dan-mary-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_bill-lemmens_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bill-lemmens_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bill-lemmens_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-lemmens",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lemmens_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lemmens_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lemmens_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lemmens",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lemmens_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lemmens_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lemmens_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lemmens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lemmens_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lemmens_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lemmens_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lemmens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

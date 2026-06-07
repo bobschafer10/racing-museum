@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_tj-smith_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_tj-smith_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_tj-smith_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "tj-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_tj-smith_unknown-photographer_photo_1.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_tj-smith_unknown-photographer_photo_1.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_tj-smith_unknown-photographer_photo_1.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tj-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  }
+]

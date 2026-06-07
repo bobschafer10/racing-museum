@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "bret-swedberg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_bret-swedberg_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bret-swedberg_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bret-swedberg_bob-greuel_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bret-swedberg",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bret-swedberg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bret-swedberg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1979/milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1979",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_randy-sweet_russ-lake_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_randy-sweet_russ-lake_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_randy-sweet_russ-lake_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "100"
+  }
+]

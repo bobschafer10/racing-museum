@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_jack-harder_greg-parent_post_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_jack-harder_greg-parent_post_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_jack-harder_greg-parent_post_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-harder",
+    "photographerSlug": "greg-parent",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1981_tom-nesbitt_greg-parent_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_tom-nesbitt_greg-parent_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1981_tom-nesbitt_greg-parent_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1981",
+    "driverSlug": "tom-nesbitt",
+    "photographerSlug": "greg-parent",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

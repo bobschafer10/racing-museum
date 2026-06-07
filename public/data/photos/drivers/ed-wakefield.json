@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_ed-wakefield_david-frank_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-wakefield_david-frank_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-wakefield_david-frank_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-wakefield",
+    "photographerSlug": "david-frank",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-wakefield_rats-racing_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-wakefield_rats-racing_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-wakefield_rats-racing_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-wakefield",
+    "photographerSlug": "rats-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-wakefield_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-wakefield_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-wakefield_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-wakefield",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-wakefield_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-wakefield_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-wakefield_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-wakefield",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_ed-wakefield_kurt-luoma_photo_1321.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_ed-wakefield_kurt-luoma_photo_1321.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_ed-wakefield_kurt-luoma_photo_1321.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ed-wakefield",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1321"
+  }
+]

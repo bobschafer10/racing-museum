@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_curt-grant_chad-tessman_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_curt-grant_chad-tessman_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_curt-grant_chad-tessman_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "curt-grant",
+    "photographerSlug": "chad-tessman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "curt-grant",
+    "photographerSlug": "travis-zuelsdorf",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "curt-grant",
+    "photographerSlug": "travis-zuelsdorf",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

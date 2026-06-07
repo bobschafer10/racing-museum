@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2014/shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2014",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "weisnicht",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2015/shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2015",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "weisnicht",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-weisnicht_weisnicht_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-weisnicht_weisnicht_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-weisnicht_weisnicht_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "weisnicht",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

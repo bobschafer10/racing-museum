@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_scott-will_bob-schafer_photo_311.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_scott-will_bob-schafer_photo_311.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_scott-will_bob-schafer_photo_311.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "311"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_scott-will_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_scott-will_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_scott-will_bob-schafer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_scott-will_bob-schafer_photo_121.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_scott-will_bob-schafer_photo_121.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_scott-will_bob-schafer_photo_121.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "121"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_scott-will_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_scott-will_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_scott-will_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-will_mall-show-ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-will_mall-show-ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-will_mall-show-ken-koppa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "mall-show-ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-will_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-will_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-will_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-will",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

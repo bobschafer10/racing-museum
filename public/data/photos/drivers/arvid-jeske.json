@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_arvid-jeske_ryan-aho_post_015.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_arvid-jeske_ryan-aho_post_015.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_arvid-jeske_ryan-aho_post_015.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "arvid-jeske",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "015"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_arvid-jeske_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_arvid-jeske_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_arvid-jeske_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "arvid-jeske",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

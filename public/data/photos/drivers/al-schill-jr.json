@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_6873.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_6873.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_6873.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill-jr",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6873"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill-jr",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_al-schill-jr_clintman_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_al-schill-jr_clintman_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_al-schill-jr_clintman_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill-jr",
+    "photographerSlug": "clintman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_al-schill-jr_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill-jr_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_al-schill-jr_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "al-schill-jr",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

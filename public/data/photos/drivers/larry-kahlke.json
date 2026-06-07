@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1978_larry-kahlke_mike-dunn_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1978/lake-geneva-raceway_1978_larry-kahlke_mike-dunn_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1978_larry-kahlke_mike-dunn_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1978",
+    "driverSlug": "larry-kahlke",
+    "photographerSlug": "mike-dunn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1989_larry-kahlke_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1989/lake-geneva-raceway_1989_larry-kahlke_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1989_larry-kahlke_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1989",
+    "driverSlug": "larry-kahlke",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

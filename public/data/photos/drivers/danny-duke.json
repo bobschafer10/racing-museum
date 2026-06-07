@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "rockford-speedway_1982_danny-duke_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_danny-duke_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_danny-duke_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "danny-duke",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_danny-duke_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_danny-duke_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_danny-duke_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "danny-duke",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_danny-duke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_danny-duke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_danny-duke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "danny-duke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

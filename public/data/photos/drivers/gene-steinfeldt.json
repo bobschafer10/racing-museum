@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_1982_gene-steinfeldt_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_gene-steinfeldt_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_1982_gene-steinfeldt_weber-brothers_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "gene-steinfeldt",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_gene-steinfeldt_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_gene-steinfeldt_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_gene-steinfeldt_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gene-steinfeldt",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_gene-steinfeldt_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_gene-steinfeldt_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_gene-steinfeldt_joe-slack_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "gene-steinfeldt",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

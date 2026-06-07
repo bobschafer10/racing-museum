@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "brown-county-speedway_1978_tom-greenlee_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/1978/brown-county-speedway_1978_tom-greenlee_john-vass_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_1978_tom-greenlee_john-vass_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "1978",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "freeport-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/freeport-speedway/unknown-year/freeport-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/freeport-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "trackSlug": "freeport-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "raceway-park-il_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/raceway-park-il/unknown-year/raceway-park-il_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/raceway-park-il_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "trackSlug": "raceway-park-il",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_002.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_002.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_002.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_003.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_003.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_003.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_tom-greenlee_paul-socwell_post_001.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_tom-greenlee_paul-socwell_post_001.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_tom-greenlee_paul-socwell_post_001.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "tom-greenlee",
+    "photographerSlug": "paul-socwell",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

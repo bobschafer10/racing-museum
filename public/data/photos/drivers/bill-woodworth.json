@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_bill-woodworth_bob-schafer_photo_14414.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_bill-woodworth_bob-schafer_photo_14414.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_bill-woodworth_bob-schafer_photo_14414.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14414"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bill-woodworth_bob-schafer_photo_484.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bill-woodworth_bob-schafer_photo_484.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bill-woodworth_bob-schafer_photo_484.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "484"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-woodworth_greg-steffen_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-woodworth_greg-steffen_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-woodworth_greg-steffen_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "greg-steffen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-woodworth_jason-schneider-fb_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-woodworth_jason-schneider-fb_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-woodworth_jason-schneider-fb_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "jason-schneider-fb",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-woodworth_jon-crest_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-woodworth_jon-crest_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-woodworth_jon-crest_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "jon-crest",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-woodworth_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-woodworth_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-woodworth_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-woodworth_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-woodworth_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-woodworth_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

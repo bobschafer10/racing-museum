@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_ray-bohlander_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_ray-bohlander_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_ray-bohlander_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ray-bohlander",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_ray-bohlander_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_ray-bohlander_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_ray-bohlander_unknown-photographer_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ray-bohlander",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_ray-bohlander_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_ray-bohlander_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_ray-bohlander_bob-bergeron_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ray-bohlander",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

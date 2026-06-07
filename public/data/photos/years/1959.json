@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1959_unknown-driver_dick-demoulpied_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1959/hales-corners-speedway_1959_unknown-driver_dick-demoulpied_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1959_unknown-driver_dick-demoulpied_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1959",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dick-demoulpied",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1959",
+    "driverSlug": "homer-ansel",
+    "photographerSlug": "john-surges",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1959",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "john-surges",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1959_russ-knapton_dick-demoulpied_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_russ-knapton_dick-demoulpied_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1959_russ-knapton_dick-demoulpied_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1959",
+    "driverSlug": "russ-knapton",
+    "photographerSlug": "dick-demoulpied",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

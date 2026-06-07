@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_003.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_003.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_003.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "kasson-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/kasson-speedway/unknown-year/kasson-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/kasson-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-brightbill_missy-lushinsky_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-brightbill_missy-lushinsky_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-brightbill_missy-lushinsky_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-brightbill_mod-christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "mod-christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-brightbill_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

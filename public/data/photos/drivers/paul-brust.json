@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "superior-speedway_2004_paul-brust_unknown-photographer_photo_001.jpeg",
+    "storagePath": "photos/master/superior-speedway/2004/superior-speedway_2004_paul-brust_unknown-photographer_photo_001.jpeg",
+    "publicPath": "/photos/superior-speedway_2004_paul-brust_unknown-photographer_photo_001.jpeg",
+    "trackSlug": "superior-speedway",
+    "year": "2004",
+    "driverSlug": "paul-brust",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-brust_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-brust_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-brust_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-brust",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-brust_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-brust_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-brust_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-brust",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-brust_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-brust_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-brust_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-brust",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

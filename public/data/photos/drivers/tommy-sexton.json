@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "wilmot-raceway_1994_tommy-sexton_priscilla-pawlik-sexton_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1994/wilmot-raceway_1994_tommy-sexton_priscilla-pawlik-sexton_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1994_tommy-sexton_priscilla-pawlik-sexton_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1994",
+    "driverSlug": "tommy-sexton",
+    "photographerSlug": "priscilla-pawlik-sexton",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_1996_tommy-sexton_priscilla-pawlik-sexton_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1996/wilmot-raceway_1996_tommy-sexton_priscilla-pawlik-sexton_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1996_tommy-sexton_priscilla-pawlik-sexton_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1996",
+    "driverSlug": "tommy-sexton",
+    "photographerSlug": "priscilla-pawlik-sexton",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_2011_tommy-sexton_charlie-lancour_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2011/wilmot-raceway_2011_tommy-sexton_charlie-lancour_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_2011_tommy-sexton_charlie-lancour_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2011",
+    "driverSlug": "tommy-sexton",
+    "photographerSlug": "charlie-lancour",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

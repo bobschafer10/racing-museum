@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1987_russ-urlin_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1987/milwaukee-mile_1987_russ-urlin_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1987_russ-urlin_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1987",
+    "driverSlug": "russ-urlin",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_russ-urlin_bob-schafer_photo_176.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_russ-urlin_bob-schafer_photo_176.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_russ-urlin_bob-schafer_photo_176.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "russ-urlin",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "176"
+  }
+]

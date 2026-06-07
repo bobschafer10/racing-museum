@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "illiana-speedway_unknown-year_jr-hanley_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_jr-hanley_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_jr-hanley_pat-heaney_post_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jr-hanley",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_jr-hanley_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_jr-hanley_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_jr-hanley_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "jr-hanley",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_jr-hanley_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_jr-hanley_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_jr-hanley_pat-heaney_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "jr-hanley",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1982_jr-hanley_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_jr-hanley_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_jr-hanley_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "jr-hanley",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_jr-hanley_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jr-hanley_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jr-hanley_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jr-hanley",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

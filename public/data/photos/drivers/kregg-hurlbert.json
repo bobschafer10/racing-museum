@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "dells-motor-speedway_1994_kregg-hurlbert_dave-drews_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1994/dells-motor-speedway_1994_kregg-hurlbert_dave-drews_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1994_kregg-hurlbert_dave-drews_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1994",
+    "driverSlug": "kregg-hurlbert",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_kregg-hurlbert_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_kregg-hurlbert_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_kregg-hurlbert_bob-schafer_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kregg-hurlbert",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1989_kregg-hurlbert_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1989/wisconsin-international-raceway_1989_kregg-hurlbert_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1989_kregg-hurlbert_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1989",
+    "driverSlug": "kregg-hurlbert",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_kregg-hurlbert_bob-schafer_photo_14030.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_kregg-hurlbert_bob-schafer_photo_14030.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_kregg-hurlbert_bob-schafer_photo_14030.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kregg-hurlbert",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14030"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_kregg-hurlbert_bob-schafer_photo_386.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_kregg-hurlbert_bob-schafer_photo_386.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_kregg-hurlbert_bob-schafer_photo_386.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kregg-hurlbert",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "386"
+  }
+]

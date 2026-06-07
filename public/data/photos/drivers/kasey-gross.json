@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kasey-gross",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kasey-gross",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

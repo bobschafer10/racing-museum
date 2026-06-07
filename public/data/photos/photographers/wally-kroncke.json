@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "milwaukee-mile_1953_marshall-teague_wally-kroncke_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1953/milwaukee-mile_1953_marshall-teague_wally-kroncke_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1953_marshall-teague_wally-kroncke_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1953",
+    "driverSlug": "marshall-teague",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1953_unknown-driver_wally-kroncke_post_323.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1953/milwaukee-mile_1953_unknown-driver_wally-kroncke_post_323.jpg",
+    "publicPath": "/photos/milwaukee-mile_1953_unknown-driver_wally-kroncke_post_323.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1953",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "323"
+  },
+  {
+    "fileName": "milwaukee-mile_1976_norm-nelson_wally-kroncke_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1976/milwaukee-mile_1976_norm-nelson_wally-kroncke_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1976_norm-nelson_wally-kroncke_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1976",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_larry-moore_wally-kroncke_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_larry-moore_wally-kroncke_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_larry-moore_wally-kroncke_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "larry-moore",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

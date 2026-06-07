@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "brown-county-speedway_1978_roger-plautz_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/1978/brown-county-speedway_1978_roger-plautz_john-vass_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_1978_roger-plautz_john-vass_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "1978",
+    "driverSlug": "roger-plautz",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_roger-plautz_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roger-plautz_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roger-plautz_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roger-plautz",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_roger-plautz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roger-plautz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roger-plautz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roger-plautz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

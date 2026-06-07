@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_mark-emerson_ryan-aho_post_066.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-emerson_ryan-aho_post_066.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-emerson_ryan-aho_post_066.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-emerson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "066"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-emerson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-emerson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-emerson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-emerson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_mark-emerson_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_mark-emerson_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_mark-emerson_john-vass_photo_001.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "mark-emerson",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

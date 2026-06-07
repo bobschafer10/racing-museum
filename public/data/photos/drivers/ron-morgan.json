@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_ron-morgan_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ron-morgan_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ron-morgan_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ron-morgan",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ron-morgan_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ron-morgan_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ron-morgan_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ron-morgan",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

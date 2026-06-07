@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "nick-carlson",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "nick-carlson",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_nick-carlson_bob-schafer_photo_13584.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_nick-carlson_bob-schafer_photo_13584.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_nick-carlson_bob-schafer_photo_13584.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "nick-carlson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13584"
+  }
+]

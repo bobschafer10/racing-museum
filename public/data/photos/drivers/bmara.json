@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "cedar-lake-arena_unknown-year_bmara_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-arena/unknown-year/cedar-lake-arena_unknown-year_bmara_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-arena_unknown-year_bmara_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-arena",
+    "year": "unknown-year",
+    "driverSlug": "bmara",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-arena_unknown-year_bmara_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/cedar-lake-arena/unknown-year/cedar-lake-arena_unknown-year_bmara_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/cedar-lake-arena_unknown-year_bmara_unknown-photographer_photo_002.jpg",
+    "trackSlug": "cedar-lake-arena",
+    "year": "unknown-year",
+    "driverSlug": "bmara",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

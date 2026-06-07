@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_aj-smith_bob-schafer_photo_171.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_aj-smith_bob-schafer_photo_171.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_aj-smith_bob-schafer_photo_171.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "aj-smith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "171"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_aj-smith_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_aj-smith_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_aj-smith_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "aj-smith",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

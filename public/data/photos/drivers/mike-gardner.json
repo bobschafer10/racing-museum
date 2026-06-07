@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "norway-speedway_1999_mike-gardner_lee-lawrence_photo_001.jpg",
+    "storagePath": "photos/master/norway-speedway/1999/norway-speedway_1999_mike-gardner_lee-lawrence_photo_001.jpg",
+    "publicPath": "/photos/norway-speedway_1999_mike-gardner_lee-lawrence_photo_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "1999",
+    "driverSlug": "mike-gardner",
+    "photographerSlug": "lee-lawrence",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-gardner_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-gardner_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-gardner_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-gardner",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-gardner_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-gardner_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-gardner_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-gardner",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-gardner_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-gardner_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-gardner_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-gardner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2002_mike-gardner_corey-juelich_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2002/wisconsin-international-raceway_2002_mike-gardner_corey-juelich_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2002_mike-gardner_corey-juelich_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2002",
+    "driverSlug": "mike-gardner",
+    "photographerSlug": "corey-juelich",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2003_mike-gardner_corey-juelich_photo_112.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2003/wisconsin-international-raceway_2003_mike-gardner_corey-juelich_photo_112.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2003_mike-gardner_corey-juelich_photo_112.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2003",
+    "driverSlug": "mike-gardner",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "112"
+  }
+]

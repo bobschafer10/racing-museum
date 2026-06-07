@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_bob-campbell_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_bob-campbell_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_bob-campbell_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-campbell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_1990_bob-campbell_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1990/dells-motor-speedway_1990_bob-campbell_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1990_bob-campbell_bob-schafer_photo_222.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1990",
+    "driverSlug": "bob-campbell",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-campbell_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-campbell_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-campbell_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-campbell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-campbell_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-campbell_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-campbell_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-campbell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_donnie-woller_bob-schafer_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_donnie-woller_bob-schafer_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_donnie-woller_bob-schafer_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_donnie-woller_tom-loos_photo_003.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_donnie-woller_tom-loos_photo_003.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_donnie-woller_tom-loos_photo_003.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_donnie-woller_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_donnie-woller_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_donnie-woller_unknown-photographer_photo_002.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_donnie-woller_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_donnie-woller_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_donnie-woller_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_donnie-woller_mall-ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_donnie-woller_mall-ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_donnie-woller_mall-ken-koppa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "mall-ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_donnie-woller_kurt-luoma_photo_5432.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_donnie-woller_kurt-luoma_photo_5432.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_donnie-woller_kurt-luoma_photo_5432.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "5432"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_donnie-woller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "donnie-woller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

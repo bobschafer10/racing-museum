@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_tony-wudstrack_tony-wudstrak_post_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_tony-wudstrack_tony-wudstrak_post_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_tony-wudstrack_tony-wudstrak_post_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "tony-wudstrack",
+    "photographerSlug": "tony-wudstrak",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2003_tony-wudstrack_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2003/shawano-speedway_2003_tony-wudstrack_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2003_tony-wudstrack_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2003",
+    "driverSlug": "tony-wudstrack",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001 (2).jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001 (2).jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001 (2).jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-wudstrack",
+    "photographerSlug": "tony-wudstruck",
+    "creditType": "post",
+    "sequence": "001 (2)"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-wudstrack",
+    "photographerSlug": "tony-wudstruck",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

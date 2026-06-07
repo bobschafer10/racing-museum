@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_charlie-eldridge_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_charlie-eldridge_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_charlie-eldridge_charlie-spry_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "charlie-eldridge",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_charlie-eldridge_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_charlie-eldridge_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_charlie-eldridge_charlie-spry_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "charlie-eldridge",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

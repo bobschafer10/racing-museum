@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_dennis-prunty_dale-weyer_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dennis-prunty_dale-weyer_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dennis-prunty_dale-weyer_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-prunty",
+    "photographerSlug": "dale-weyer",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dennis-prunty_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dennis-prunty_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dennis-prunty_unknown-photographer_photo_002.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-prunty",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dennis-prunty_bob-schneider_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dennis-prunty_bob-schneider_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dennis-prunty_bob-schneider_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-prunty",
+    "photographerSlug": "bob-schneider",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

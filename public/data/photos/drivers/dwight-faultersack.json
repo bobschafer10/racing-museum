@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dwight-faultersack",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dwight-faultersack",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dwight-faultersack_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dwight-faultersack_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dwight-faultersack_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dwight-faultersack",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dwight-faultersack",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_400.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_400.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_400.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dwight-faultersack",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "400"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_439.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_439.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_dwight-faultersack_kurt-luoma_photo_439.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dwight-faultersack",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "439"
+  }
+]

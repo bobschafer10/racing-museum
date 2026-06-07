@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "outagamie-speedway_unknown-year_erv-schmude_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_erv-schmude_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_erv-schmude_dennis-satorius_post_001.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "erv-schmude",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_george-giesen_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_george-giesen_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_george-giesen_joe-verdegan_post_001.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "george-giesen",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_unknown-driver_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_unknown-driver_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_unknown-driver_unknown-photographer_photo_333.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_unknown-driver_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_unknown-driver_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_unknown-driver_unknown-photographer_photo_444.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
+  }
+]

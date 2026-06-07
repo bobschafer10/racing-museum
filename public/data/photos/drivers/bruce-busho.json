@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bruce-busho_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-busho_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-busho_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-busho",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-busho",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "063"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1982_gordie-may_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1982/lake-geneva-raceway_1982_gordie-may_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1982_gordie-may_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1982",
+    "driverSlug": "gordie-may",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1983_gordie-may_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1983/lake-geneva-raceway_1983_gordie-may_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1983_gordie-may_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1983",
+    "driverSlug": "gordie-may",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_gordie-may_bob-schafer_photo_203.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_gordie-may_bob-schafer_photo_203.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_gordie-may_bob-schafer_photo_203.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-may",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "203"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_gordie-may_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_gordie-may_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_gordie-may_bob-schafer_photo_222.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-may",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_gordie-may_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_gordie-may_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_gordie-may_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-may",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

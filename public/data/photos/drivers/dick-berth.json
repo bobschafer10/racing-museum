@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1973_dick-berth_michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1973/hales-corners-speedway_1973_dick-berth_michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1973_dick-berth_michael-halbherr_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1973",
+    "driverSlug": "dick-berth",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_dick-berth_dave-drews_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_dick-berth_dave-drews_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_dick-berth_dave-drews_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-berth",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_dick-berth_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_dick-berth_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_dick-berth_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-berth",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-berth_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-berth_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-berth_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-berth",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_art-wachs_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_art-wachs_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_art-wachs_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "art-wachs",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1981_art-wachs_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_art-wachs_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_art-wachs_weber-brothers_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "art-wachs",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1981_art-wachs_weber-brothers_photo_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_art-wachs_weber-brothers_photo_002.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_art-wachs_weber-brothers_photo_002.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "art-wachs",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_art-wachs_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_art-wachs_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_art-wachs_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "art-wachs",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-wachs_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-wachs_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-wachs_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-wachs",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

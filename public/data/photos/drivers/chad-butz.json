@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "marshfield-super-speedway_2022_chad-butz_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2022/marshfield-super-speedway_2022_chad-butz_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2022_chad-butz_weber-brothers_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2022",
+    "driverSlug": "chad-butz",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "norway-speedway_unknown-year_chad-butz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_chad-butz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_chad-butz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chad-butz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chad-butz",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

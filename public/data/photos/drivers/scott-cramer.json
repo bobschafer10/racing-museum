@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_scott-cramer_unknown-photographer_photo_2019.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_scott-cramer_unknown-photographer_photo_2019.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_scott-cramer_unknown-photographer_photo_2019.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-cramer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2019"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-cramer_missy-lushinsky_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-cramer_missy-lushinsky_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-cramer_missy-lushinsky_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-cramer",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-cramer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-cramer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-cramer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-cramer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-cramer_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-cramer_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-cramer_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-cramer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

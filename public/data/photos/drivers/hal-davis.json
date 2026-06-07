@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "illiana-speedway_1985_hal-davis_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/1985/illiana-speedway_1985_hal-davis_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_1985_hal-davis_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "1985",
+    "driverSlug": "hal-davis",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_1975_hal-davis_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/1975/waukegan-speedway_1975_hal-davis_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_1975_hal-davis_mike-napierala_photo_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "1975",
+    "driverSlug": "hal-davis",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_hal-davis_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_hal-davis_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_hal-davis_geoff-mckarns_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "hal-davis",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_hal-davis_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_hal-davis_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_hal-davis_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "hal-davis",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

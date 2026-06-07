@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_bob-obermueller_bob-schafer_photo_12640.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_bob-obermueller_bob-schafer_photo_12640.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_bob-obermueller_bob-schafer_photo_12640.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12640"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_nason_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_nason_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_nason_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "nason",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "018"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "047"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "storagePath": "photos/master/unknown-track/Unknown-year/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "trackSlug": "unknown-track",
+    "year": "Unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "079"
+  }
+]

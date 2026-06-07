@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_dan-tafelski_weber-brothers_photo_222.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_dan-tafelski_weber-brothers_photo_222.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_dan-tafelski_weber-brothers_photo_222.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-tafelski",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_dan-tafelski_weber-brothers_photo_6976.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_dan-tafelski_weber-brothers_photo_6976.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_dan-tafelski_weber-brothers_photo_6976.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-tafelski",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "6976"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-tafelski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-tafelski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-tafelski_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-tafelski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

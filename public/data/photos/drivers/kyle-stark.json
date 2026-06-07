@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_2023_kyle-stark_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2023/milwaukee-mile_2023_kyle-stark_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_2023_kyle-stark_weber-brothers_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2023",
+    "driverSlug": "kyle-stark",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kyle-stark_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kyle-stark_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kyle-stark_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kyle-stark",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

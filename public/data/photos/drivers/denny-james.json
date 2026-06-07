@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "illiana-speedway_unknown-year_denny-james_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_denny-james_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_denny-james_pat-heaney_post_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "denny-james",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1982_denny-james_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_denny-james_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_denny-james_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "denny-james",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

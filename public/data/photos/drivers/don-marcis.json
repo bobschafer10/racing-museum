@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_don-marcis_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_don-marcis_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_don-marcis_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_don-marcis_kurt-luoma_photo_112.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_don-marcis_kurt-luoma_photo_112.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_don-marcis_kurt-luoma_photo_112.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_don-marcis_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_don-marcis_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_don-marcis_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_don-marcis_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_don-marcis_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_don-marcis_kurt-luoma_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_1975_don-marcis_bob-graveen_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/1975/state-park-speedway_1975_don-marcis_bob-graveen_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_1975_don-marcis_bob-graveen_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "1975",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "bob-graveen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_don-marcis_bob-schafer_photo_482.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_don-marcis_bob-schafer_photo_482.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_don-marcis_bob-schafer_photo_482.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "482"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_don-marcis_john-alft_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_don-marcis_john-alft_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_don-marcis_john-alft_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-marcis_john-alft_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-marcis_john-alft_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-marcis_john-alft_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-marcis_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-marcis_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-marcis_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_don-marcis_bob-wedlund_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_don-marcis_bob-wedlund_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_don-marcis_bob-wedlund_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "don-marcis",
+    "photographerSlug": "bob-wedlund",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

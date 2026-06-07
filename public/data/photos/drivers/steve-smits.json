@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_steve-smits_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-smits_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-smits_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-smits",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_steve-smits_bob-schafer_photo_12930.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_steve-smits_bob-schafer_photo_12930.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_steve-smits_bob-schafer_photo_12930.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "steve-smits",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12930"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-smits_bob-schafer_photo_13654.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-smits_bob-schafer_photo_13654.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-smits_bob-schafer_photo_13654.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-smits",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13654"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-smits_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-smits_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-smits_joe-verdegan_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-smits",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-smits",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_002.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-smits",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-smits_unknown-photographer_photo_005.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-smits",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

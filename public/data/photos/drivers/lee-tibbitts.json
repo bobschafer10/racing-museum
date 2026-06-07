@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1989_lee-tibbitts_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1989/lake-geneva-raceway_1989_lee-tibbitts_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1989_lee-tibbitts_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1989",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1987_lee-tibbitts_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_lee-tibbitts_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_lee-tibbitts_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1989_lee-tibbitts_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/unknown-track/1989/unknown-track_1989_lee-tibbitts_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/unknown-track_1989_lee-tibbitts_bob-schafer_photo_222.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1989",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-tibbitts_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-tibbitts_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-tibbitts_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_lee-tibbitts_tom-furlan_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_lee-tibbitts_tom-furlan_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_lee-tibbitts_tom-furlan_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-tibbitts",
+    "photographerSlug": "tom-furlan",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

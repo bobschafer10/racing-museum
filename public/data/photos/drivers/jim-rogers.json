@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1981_jim-rogers_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1981/lake-geneva-raceway_1981_jim-rogers_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1981_jim-rogers_don-wendlandt_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1981",
+    "driverSlug": "jim-rogers",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_jim-rogers_al-fortner_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_jim-rogers_al-fortner_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_jim-rogers_al-fortner_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "jim-rogers",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

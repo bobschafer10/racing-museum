@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "tnt-speedway_2017_luke-uttecht_447-photography_photo_333.jpg",
+    "storagePath": "photos/master/tnt-speedway/2017/tnt-speedway_2017_luke-uttecht_447-photography_photo_333.jpg",
+    "publicPath": "/photos/tnt-speedway_2017_luke-uttecht_447-photography_photo_333.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "2017",
+    "driverSlug": "luke-uttecht",
+    "photographerSlug": "447-photography",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_rod-snellenberger_447-photography_photo_001.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_rod-snellenberger_447-photography_photo_001.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_rod-snellenberger_447-photography_photo_001.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rod-snellenberger",
+    "photographerSlug": "447-photography",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_troy-springborn_447-photography_photo_013.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_troy-springborn_447-photography_photo_013.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_troy-springborn_447-photography_photo_013.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "447-photography",
+    "creditType": "photo",
+    "sequence": "013"
+  }
+]

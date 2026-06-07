@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "yellow-river-speedway_1988_russ-trachte_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/1988/yellow-river-speedway_1988_russ-trachte_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_1988_russ-trachte_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "1988",
+    "driverSlug": "russ-trachte",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_1989_russ-trachte_dave-panske_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/1989/yellow-river-speedway_1989_russ-trachte_dave-panske_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_1989_russ-trachte_dave-panske_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "1989",
+    "driverSlug": "russ-trachte",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_1990_russ-trachte_dave-panske_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/1990/yellow-river-speedway_1990_russ-trachte_dave-panske_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_1990_russ-trachte_dave-panske_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "1990",
+    "driverSlug": "russ-trachte",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

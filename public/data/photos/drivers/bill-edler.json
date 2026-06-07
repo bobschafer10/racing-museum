@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "shawano-speedway_2026_bill-edler_bill-edler_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2026/shawano-speedway_2026_bill-edler_bill-edler_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2026_bill-edler_bill-edler_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2026",
+    "driverSlug": "bill-edler",
+    "photographerSlug": "bill-edler",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-edler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-edler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-edler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-edler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-edler_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-edler_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-edler_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-edler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "mall-show_unknown-year_dave-tomczak_unknown-photgrapher_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_dave-tomczak_unknown-photgrapher_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_dave-tomczak_unknown-photgrapher_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "dave-tomczak",
+    "photographerSlug": "unknown-photgrapher",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-johnson-jr_unknown-photgrapher_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-johnson-jr_unknown-photgrapher_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-johnson-jr_unknown-photgrapher_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-johnson-jr",
+    "photographerSlug": "unknown-photgrapher",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

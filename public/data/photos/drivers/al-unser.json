@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1970_al-unser_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1970/milwaukee-mile_1970_al-unser_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_1970_al-unser_unknown-photographer_photo_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1970",
+    "driverSlug": "al-unser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "milwaukee-mile_1971_al-unser_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1971/milwaukee-mile_1971_al-unser_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_1971_al-unser_pat-heaney_post_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1971",
+    "driverSlug": "al-unser",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_eddie-hoffman_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_eddie-hoffman_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_eddie-hoffman_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "eddie-hoffman",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_eddie-hoffman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_eddie-hoffman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_eddie-hoffman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "eddie-hoffman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2003_eddie-hoffman_cory-juelich_post_116.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2003/wisconsin-international-raceway_2003_eddie-hoffman_cory-juelich_post_116.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2003_eddie-hoffman_cory-juelich_post_116.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2003",
+    "driverSlug": "eddie-hoffman",
+    "photographerSlug": "cory-juelich",
+    "creditType": "post",
+    "sequence": "116"
+  }
+]

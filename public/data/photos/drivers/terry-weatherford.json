@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_terry-weatherford_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_terry-weatherford_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_terry-weatherford_pat-heaney_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-weatherford",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_terry-weatherford_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_terry-weatherford_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_terry-weatherford_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-weatherford",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_terry-weatherford_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_terry-weatherford_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_terry-weatherford_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "terry-weatherford",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1983_terry-weatherford_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1983/rockford-speedway_1983_terry-weatherford_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1983_terry-weatherford_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1983",
+    "driverSlug": "terry-weatherford",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-weatherford_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-weatherford_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-weatherford_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-weatherford",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-weatherford_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-weatherford_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-weatherford_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-weatherford",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

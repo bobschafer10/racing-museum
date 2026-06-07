@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_2015_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2015/cedar-lake-speedway_2015_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2015_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2015",
+    "driverSlug": "adam-ayotte",
+    "photographerSlug": "fotos-by-fizzle",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_2016_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2016/cedar-lake-speedway_2016_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2016_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2016",
+    "driverSlug": "adam-ayotte",
+    "photographerSlug": "fotos-by-fizzle",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_2019_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2019/cedar-lake-speedway_2019_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2019_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2019",
+    "driverSlug": "adam-ayotte",
+    "photographerSlug": "fotos-by-fizzle",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_2020_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2020/cedar-lake-speedway_2020_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2020_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2020",
+    "driverSlug": "adam-ayotte",
+    "photographerSlug": "fotos-by-fizzle",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "princeton-speedway_2013_adam-ayotte_b-sens_photo_001.jpg",
+    "storagePath": "photos/master/princeton-speedway/2013/princeton-speedway_2013_adam-ayotte_b-sens_photo_001.jpg",
+    "publicPath": "/photos/princeton-speedway_2013_adam-ayotte_b-sens_photo_001.jpg",
+    "trackSlug": "princeton-speedway",
+    "year": "2013",
+    "driverSlug": "adam-ayotte",
+    "photographerSlug": "b-sens",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "red-cedar-speedway_2014_adam-ayotte_jacy-norgaard_photo_001.jpg",
+    "storagePath": "photos/master/red-cedar-speedway/2014/red-cedar-speedway_2014_adam-ayotte_jacy-norgaard_photo_001.jpg",
+    "publicPath": "/photos/red-cedar-speedway_2014_adam-ayotte_jacy-norgaard_photo_001.jpg",
+    "trackSlug": "red-cedar-speedway",
+    "year": "2014",
+    "driverSlug": "adam-ayotte",
+    "photographerSlug": "jacy-norgaard",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

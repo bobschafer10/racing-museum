@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_jimbo-schleis_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_jimbo-schleis_joe-slack_post_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_jimbo-schleis_joe-slack_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimbo-schleis",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_jimbo-schleis_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_jimbo-schleis_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_jimbo-schleis_joe-verdegan_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimbo-schleis",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_jimbo-schleis_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_jimbo-schleis_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_jimbo-schleis_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimbo-schleis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

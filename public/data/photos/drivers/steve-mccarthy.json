@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1990_steve-mccarthy_bob-schafer_photo_13237.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1990/lake-geneva-raceway_1990_steve-mccarthy_bob-schafer_photo_13237.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1990_steve-mccarthy_bob-schafer_photo_13237.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1990",
+    "driverSlug": "steve-mccarthy",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13237"
+  },
+  {
+    "fileName": "slinger-speedway_1986_steve-mccarthy_pat-heaney_post_999.jpg",
+    "storagePath": "photos/master/slinger-speedway/1986/slinger-speedway_1986_steve-mccarthy_pat-heaney_post_999.jpg",
+    "publicPath": "/photos/slinger-speedway_1986_steve-mccarthy_pat-heaney_post_999.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1986",
+    "driverSlug": "steve-mccarthy",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "999"
+  },
+  {
+    "fileName": "slinger-speedway_1987_steve-mccarthy_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_steve-mccarthy_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_steve-mccarthy_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "steve-mccarthy",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

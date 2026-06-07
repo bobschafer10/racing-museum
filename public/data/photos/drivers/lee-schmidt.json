@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "impact-speedway_1988_lee-schmidt_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/impact-speedway/1988/impact-speedway_1988_lee-schmidt_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/impact-speedway_1988_lee-schmidt_pat-heaney_post_001.jpg",
+    "trackSlug": "impact-speedway",
+    "year": "1988",
+    "driverSlug": "lee-schmidt",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-schmidt_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-schmidt_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-schmidt_dave-olson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-schmidt",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-schmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-schmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-schmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-schmidt_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-schmidt_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-schmidt_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "shiocton-speedway_1961_shiocton-speedway_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shiocton-speedway/1961/shiocton-speedway_1961_shiocton-speedway_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shiocton-speedway_1961_shiocton-speedway_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shiocton-speedway",
+    "year": "1961",
+    "driverSlug": "shiocton-speedway",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shiocton-speedway_unknown-year_clyde-schumacher_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shiocton-speedway/unknown-year/shiocton-speedway_unknown-year_clyde-schumacher_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shiocton-speedway_unknown-year_clyde-schumacher_joe-verdegan_post_001.jpg",
+    "trackSlug": "shiocton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "clyde-schumacher",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shiocton-speedway_unknown-year_lyle-diemel_bob-bergeron_photo_077.jpg",
+    "storagePath": "photos/master/shiocton-speedway/unknown-year/shiocton-speedway_unknown-year_lyle-diemel_bob-bergeron_photo_077.jpg",
+    "publicPath": "/photos/shiocton-speedway_unknown-year_lyle-diemel_bob-bergeron_photo_077.jpg",
+    "trackSlug": "shiocton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-diemel",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "077"
+  },
+  {
+    "fileName": "shiocton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shiocton-speedway/unknown-year/shiocton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shiocton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shiocton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

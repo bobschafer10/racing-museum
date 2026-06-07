@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_herb-iverson_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_herb-iverson_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_herb-iverson_bob-bergeron_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "herb-iverson",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "escanaba-speedway_unknown-year_herb-iverson_unknown-photographer_photo_278.jpg",
+    "storagePath": "photos/master/escanaba-speedway/unknown-year/escanaba-speedway_unknown-year_herb-iverson_unknown-photographer_photo_278.jpg",
+    "publicPath": "/photos/escanaba-speedway_unknown-year_herb-iverson_unknown-photographer_photo_278.jpg",
+    "trackSlug": "escanaba-speedway",
+    "year": "unknown-year",
+    "driverSlug": "herb-iverson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "278"
+  },
+  {
+    "fileName": "norway-speedway_unknown-year_herb-iverson_up-vintage-modified-racing_post_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_herb-iverson_up-vintage-modified-racing_post_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_herb-iverson_up-vintage-modified-racing_post_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "herb-iverson",
+    "photographerSlug": "up-vintage-modified-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_herb-iverson_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_herb-iverson_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_herb-iverson_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "herb-iverson",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

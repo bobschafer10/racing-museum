@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_nason_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_nason_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_nason_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "nason",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-hesch_nason_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-hesch_nason_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-hesch_nason_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-hesch",
+    "photographerSlug": "nason",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-hanson_nason_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-hanson_nason_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-hanson_nason_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-hanson",
+    "photographerSlug": "nason",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-anvelink_nason_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-anvelink_nason_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-anvelink_nason_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-anvelink",
+    "photographerSlug": "nason",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

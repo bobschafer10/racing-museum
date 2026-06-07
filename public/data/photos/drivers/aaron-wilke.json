@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_aaron-wilke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_aaron-wilke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_aaron-wilke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-wilke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_aaron-wilke_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_aaron-wilke_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_aaron-wilke_charlie-spry_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-wilke",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_aaron-wilke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_aaron-wilke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_aaron-wilke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-wilke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

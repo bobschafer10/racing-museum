@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "141-speedway_2001_brad-dahmer_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/2001/141-speedway_2001_brad-dahmer_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/141-speedway_2001_brad-dahmer_keith-vercauteren_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2001",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1990_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1990/plymouth-dirt-track_1990_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1990_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1990",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_222.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_223.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_223.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_brad-dahmer_unknown-photographer_photo_223.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "223"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-dahmer_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-dahmer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

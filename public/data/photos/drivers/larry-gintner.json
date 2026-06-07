@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-gintner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_070.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_070.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_070.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-gintner",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "070"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_071.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_071.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_071.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-gintner",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "071"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-gintner_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-gintner_joe-verdegan_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-gintner",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-gintner_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-gintner_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-gintner",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-gintner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

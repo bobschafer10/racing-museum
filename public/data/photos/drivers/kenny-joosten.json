@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_kenny-joosten_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_kenny-joosten_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_kenny-joosten_unknown-photographer_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kenny-joosten",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_kenny-joosten_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_kenny-joosten_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_kenny-joosten_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kenny-joosten",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

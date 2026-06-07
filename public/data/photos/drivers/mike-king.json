@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_mike-king_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_mike-king_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_mike-king_joe-verdegan_post_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-king",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_mike-king_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_mike-king_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_mike-king_pat-heaney_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "mike-king",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

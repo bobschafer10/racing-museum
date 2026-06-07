@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "seymour-speedway_unknown-year_mike-fletcher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_mike-fletcher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_mike-fletcher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-fletcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_1985_mike-fletcher_bob-schafer_photo_046.jpg",
+    "storagePath": "photos/master/shawano-speedway/1985/shawano-speedway_1985_mike-fletcher_bob-schafer_photo_046.jpg",
+    "publicPath": "/photos/shawano-speedway_1985_mike-fletcher_bob-schafer_photo_046.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1985",
+    "driverSlug": "mike-fletcher",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "046"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_mike-fletcher_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_mike-fletcher_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_mike-fletcher_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-fletcher",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-fletcher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-fletcher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-fletcher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-fletcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

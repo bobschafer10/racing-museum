@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "rockford-speedway_1984_jim-helland_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1984/rockford-speedway_1984_jim-helland_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1984_jim-helland_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1984",
+    "driverSlug": "jim-helland",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1985_jim-helland_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1985/rockford-speedway_1985_jim-helland_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1985_jim-helland_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1985",
+    "driverSlug": "jim-helland",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_jim-helland_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jim-helland_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jim-helland_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-helland",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

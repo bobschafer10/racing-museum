@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_2000_randy-hoff_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2000/unknown-track_2000_randy-hoff_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2000_randy-hoff_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2000",
+    "driverSlug": "randy-hoff",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_randy-hoff_randall-hoff_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_randy-hoff_randall-hoff_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_randy-hoff_randall-hoff_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "randy-hoff",
+    "photographerSlug": "randall-hoff",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-dotter_bob-schafer_photo_143.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-dotter_bob-schafer_photo_143.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-dotter_bob-schafer_photo_143.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "143"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bobby-dotter_don-besch_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bobby-dotter_don-besch_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bobby-dotter_don-besch_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bobby-dotter_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bobby-dotter_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bobby-dotter_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bobby-dotter_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bobby-dotter_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bobby-dotter_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bobby-dotter_ralph-hibbard_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bobby-dotter_ralph-hibbard_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bobby-dotter_ralph-hibbard_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "ralph-hibbard",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

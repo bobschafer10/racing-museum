@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1982_jody-ridley_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1982/milwaukee-mile_1982_jody-ridley_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1982_jody-ridley_ken-koppa_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1982",
+    "driverSlug": "jody-ridley",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jody-ridley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jody-ridley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jody-ridley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jody-ridley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

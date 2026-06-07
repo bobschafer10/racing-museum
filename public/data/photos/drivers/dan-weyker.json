@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_002.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_002.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_002.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_dan-weyker_unknown-photographer_photo_3042.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_dan-weyker_unknown-photographer_photo_3042.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_dan-weyker_unknown-photographer_photo_3042.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3042"
+  },
+  {
+    "fileName": "hales-corners-speedway_1973_dan-weyker_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1973/hales-corners-speedway_1973_dan-weyker_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1973_dan-weyker_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1973",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_dan-weyker_eugene-schmitz_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_dan-weyker_eugene-schmitz_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_dan-weyker_eugene-schmitz_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "eugene-schmitz",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-weyker_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-weyker_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-weyker_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-weyker_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-weyker_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-weyker_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-weyker_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-weyker_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-weyker_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-weyker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

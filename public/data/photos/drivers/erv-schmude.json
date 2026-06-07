@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "erv-schmude",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_002.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_002.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_002.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "erv-schmude",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_erv-schmude_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_erv-schmude_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_erv-schmude_dennis-satorius_post_001.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "erv-schmude",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1967_erv-schmude_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1967/unknown-track_1967_erv-schmude_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1967_erv-schmude_dennis-satorius_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1967",
+    "driverSlug": "erv-schmude",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_erv-schmude_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_erv-schmude_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_erv-schmude_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "erv-schmude",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bill-retallick_ron-thruman_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-retallick_ron-thruman_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-retallick_ron-thruman_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-retallick",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-retallick",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_1165.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_1165.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_1165.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-retallick",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1165"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bill-retallick_unknown-photographer_photo_1157.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bill-retallick_unknown-photographer_photo_1157.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bill-retallick_unknown-photographer_photo_1157.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-retallick",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1157"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_dave-hanna_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-hanna_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-hanna_dave-olson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-hanna",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-hanna_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-hanna_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-hanna_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-hanna",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_dave-hanna_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_dave-hanna_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_dave-hanna_bob-schafer_photo_222.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dave-hanna",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

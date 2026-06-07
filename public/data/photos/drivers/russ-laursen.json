@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "riverview-raceway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "russ-laursen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "russ-laursen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_russ-laursen_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_russ-laursen_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_russ-laursen_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "russ-laursen",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_russ-laursen_unknown-photographer_photo_009.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_russ-laursen_unknown-photographer_photo_009.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_russ-laursen_unknown-photographer_photo_009.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "russ-laursen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "009"
+  }
+]

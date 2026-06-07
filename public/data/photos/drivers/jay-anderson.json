@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_jay-anderson_track-master_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_jay-anderson_track-master_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_jay-anderson_track-master_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jay-anderson",
+    "photographerSlug": "track-master",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_jay-anderson_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_jay-anderson_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_jay-anderson_todd-narveson_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jay-anderson",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "tomahawk-speedway_1997_tod-brown_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/1997/tomahawk-speedway_1997_tod-brown_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_1997_tod-brown_tom-loos_photo_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "1997",
+    "driverSlug": "tod-brown",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_tod-brown_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_tod-brown_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_tod-brown_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tod-brown",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

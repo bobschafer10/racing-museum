@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_spike-lindley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_spike-lindley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_spike-lindley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "spike-lindley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1983_spike-lindley_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1983/rockford-speedway_1983_spike-lindley_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1983_spike-lindley_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1983",
+    "driverSlug": "spike-lindley",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_spike-lindley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_spike-lindley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_spike-lindley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "spike-lindley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_2002_james-swan_charlie-doerr_photo_001.jpeg",
+    "storagePath": "photos/master/lake-geneva-raceway/2002/lake-geneva-raceway_2002_james-swan_charlie-doerr_photo_001.jpeg",
+    "publicPath": "/photos/lake-geneva-raceway_2002_james-swan_charlie-doerr_photo_001.jpeg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "2002",
+    "driverSlug": "james-swan",
+    "photographerSlug": "charlie-doerr",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_2014_james-swan_bob-schneider_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2014/slinger-speedway_2014_james-swan_bob-schneider_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2014_james-swan_bob-schneider_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2014",
+    "driverSlug": "james-swan",
+    "photographerSlug": "bob-schneider",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_james-swan_ron-erstad_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_james-swan_ron-erstad_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_james-swan_ron-erstad_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "james-swan",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_james-swan_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_james-swan_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_james-swan_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "james-swan",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

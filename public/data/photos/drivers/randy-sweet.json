@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_randy-sweet_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_randy-sweet_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_randy-sweet_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_randy-sweet_unknown-photographer_photo_359.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_randy-sweet_unknown-photographer_photo_359.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_randy-sweet_unknown-photographer_photo_359.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "359"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_randy-sweet_weber-brothers_photo_222.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_randy-sweet_weber-brothers_photo_222.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_randy-sweet_weber-brothers_photo_222.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_randy-sweet_russ-lake_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_randy-sweet_russ-lake_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_randy-sweet_russ-lake_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_randy-sweet_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_randy-sweet_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_randy-sweet_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_randy-sweet_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_randy-sweet_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_randy-sweet_weber-brothers_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_randy-sweet_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_randy-sweet_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_randy-sweet_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

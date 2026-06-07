@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_1976_bill-johnson-iii_michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/1976/beaver-dam-raceway_1976_bill-johnson-iii_michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_1976_bill-johnson-iii_michael-halbherr_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "1976",
+    "driverSlug": "bill-johnson-iii",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_bill-johnson-iii_bob-schafer_photo_093.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_bill-johnson-iii_bob-schafer_photo_093.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_bill-johnson-iii_bob-schafer_photo_093.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-johnson-iii",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "093"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_bill-johnson-iii_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_bill-johnson-iii_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_bill-johnson-iii_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-johnson-iii",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bill-johnson-iii_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bill-johnson-iii_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bill-johnson-iii_bob-bergeron_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-johnson-iii",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import { getPhotoUrl } from '@/lib/photos'
 
 export const dynamic = 'force-dynamic'
 
@@ -145,10 +146,12 @@ export default async function PhotosPage({
     <article key={photo.id || photo.file_name} style={photoCard}>
       <Link href={`/photo/${encodeURIComponent(photo.file_name)}`}>
         <img
-          src={`/photos/${photo.file_name}`}
-          alt={formatSlugName(photo.driver_slug)}
-          style={photoImage}
-        />
+  src={getPhotoUrl(
+    `photos/master/${photo.track_slug}/${photo.year || 'unknown-year'}/${photo.file_name}`
+  )}
+  alt={formatSlugName(photo.driver_slug)}
+  style={photoImage}
+/>
       </Link>
 
       <div style={photoBody}>

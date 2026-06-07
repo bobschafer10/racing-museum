@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "norway-speedway_unknown-year_dale-peterson_unknown-photographer_post_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_dale-peterson_unknown-photographer_post_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_dale-peterson_unknown-photographer_post_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dale-peterson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_dale-peterson_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_dale-peterson_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_dale-peterson_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "dale-peterson",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-peterson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "12529"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-peterson_bob-schafer_photo_271.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-peterson_bob-schafer_photo_271.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-peterson_bob-schafer_photo_271.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-peterson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "271"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_dale-peterson_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_dale-peterson_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_dale-peterson_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dale-peterson",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

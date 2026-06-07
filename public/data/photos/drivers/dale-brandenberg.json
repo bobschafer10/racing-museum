@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1977_dale-brandenberg_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1977/lake-geneva-raceway_1977_dale-brandenberg_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1977_dale-brandenberg_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1977",
+    "driverSlug": "dale-brandenberg",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1978_dale-brandenberg_mike-dunn_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1978/lake-geneva-raceway_1978_dale-brandenberg_mike-dunn_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1978_dale-brandenberg_mike-dunn_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1978",
+    "driverSlug": "dale-brandenberg",
+    "photographerSlug": "mike-dunn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1982_dale-brandenberg_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1982/lake-geneva-raceway_1982_dale-brandenberg_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1982_dale-brandenberg_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1982",
+    "driverSlug": "dale-brandenberg",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-brandenberg",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

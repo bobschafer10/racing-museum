@@ -1,0 +1,134 @@
+[
+  {
+    "fileName": "golden-sands-speedway_1990_gary-back_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_gary-back_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_gary-back_bob-schafer_photo_222.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "gary-back",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_gary-back_bob-schafer_photo_13866.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-back_bob-schafer_photo_13866.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-back_bob-schafer_photo_13866.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13866"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_gary-back_kurt-luoma_photo_113.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_gary-back_kurt-luoma_photo_113.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_gary-back_kurt-luoma_photo_113.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "113"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_gary-back_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_gary-back_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_gary-back_unknown-photographer_photo_002.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-back_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-back_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-back_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-back_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-back_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-back_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

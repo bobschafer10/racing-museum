@@ -1,0 +1,200 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_2022_pat-doar_cody-papke_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2022/cedar-lake-speedway_2022_pat-doar_cody-papke_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2022_pat-doar_cody-papke_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2022",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "cody-papke",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_003.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_004.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "fox-ridge-speedway_2002_pat-doar_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/fox-ridge-speedway/2002/fox-ridge-speedway_2002_pat-doar_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/fox-ridge-speedway_2002_pat-doar_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "2002",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_pat-doar_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_pat-doar_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_pat-doar_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-doar_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-doar_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-doar_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-doar_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-doar_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-doar_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-doar_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_pat-doar_kurt-luoma_photo_101.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_pat-doar_kurt-luoma_photo_101.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_pat-doar_kurt-luoma_photo_101.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "101"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-doar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "angell-park-speedway_2022_trinity-uttech_trinity_uttech_post_333.jpg",
+    "storagePath": "photos/master/angell-park-speedway/2022/angell-park-speedway_2022_trinity-uttech_trinity_uttech_post_333.jpg",
+    "publicPath": "/photos/angell-park-speedway_2022_trinity-uttech_trinity_uttech_post_333.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "2022",
+    "driverSlug": "trinity-uttech",
+    "photographerSlug": "trinity",
+    "creditType": "uttech",
+    "sequence": "post"
+  },
+  {
+    "fileName": "unknown-track_2019_trinity-uttech_trinity-uttech_post_333.jpg",
+    "storagePath": "photos/master/unknown-track/2019/unknown-track_2019_trinity-uttech_trinity-uttech_post_333.jpg",
+    "publicPath": "/photos/unknown-track_2019_trinity-uttech_trinity-uttech_post_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2019",
+    "driverSlug": "trinity-uttech",
+    "photographerSlug": "trinity-uttech",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

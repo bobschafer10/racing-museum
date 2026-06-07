@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_terry-bivins_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_terry-bivins_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_terry-bivins_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-bivins",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "minnesota-state-fair_unknown-year_terry-bivins_unknown-photographer_photo_316.jpg",
+    "storagePath": "photos/master/minnesota-state-fair/unknown-year/minnesota-state-fair_unknown-year_terry-bivins_unknown-photographer_photo_316.jpg",
+    "publicPath": "/photos/minnesota-state-fair_unknown-year_terry-bivins_unknown-photographer_photo_316.jpg",
+    "trackSlug": "minnesota-state-fair",
+    "year": "unknown-year",
+    "driverSlug": "terry-bivins",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "316"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-bivins_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-bivins_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-bivins_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-bivins",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-bivins_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-bivins_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-bivins_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-bivins",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

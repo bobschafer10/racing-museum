@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_rick-gulbranson_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-gulbranson_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-gulbranson_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-gulbranson",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-gulbranson_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-gulbranson_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-gulbranson_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-gulbranson",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-gulbranson_ryan-aho_post_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-gulbranson_ryan-aho_post_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-gulbranson_ryan-aho_post_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-gulbranson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-gulbranson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-gulbranson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-gulbranson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-gulbranson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

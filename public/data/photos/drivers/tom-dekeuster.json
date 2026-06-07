@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1983_tom-dekeuster_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1983/lake-geneva-raceway_1983_tom-dekeuster_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1983_tom-dekeuster_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1983",
+    "driverSlug": "tom-dekeuster",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_tom-dekeuster_unknown-photographer_photo_13004.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_tom-dekeuster_unknown-photographer_photo_13004.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_tom-dekeuster_unknown-photographer_photo_13004.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-dekeuster",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "13004"
+  },
+  {
+    "fileName": "slinger-speedway_1987_tom-dekeuster_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_tom-dekeuster_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_tom-dekeuster_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "tom-dekeuster",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_tom-dekeuster_bob-schafer_photo_13580.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_tom-dekeuster_bob-schafer_photo_13580.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_tom-dekeuster_bob-schafer_photo_13580.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-dekeuster",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13580"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-dekeuster_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-dekeuster_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-dekeuster_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-dekeuster",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

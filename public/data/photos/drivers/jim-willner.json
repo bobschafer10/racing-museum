@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "central-state-speedway_unknown-year_jim-willner_paul-socwell_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/unknown-year/central-state-speedway_unknown-year_jim-willner_paul-socwell_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_unknown-year_jim-willner_paul-socwell_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-willner",
+    "photographerSlug": "paul-socwell",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_jim-willner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_jim-willner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_jim-willner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-willner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

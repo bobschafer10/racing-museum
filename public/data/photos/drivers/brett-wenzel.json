@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "door-county-speedway_unknown-year_brett-wenzel_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/door-county-speedway/unknown-year/door-county-speedway_unknown-year_brett-wenzel_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/door-county-speedway_unknown-year_brett-wenzel_unknown-photographer_photo_001.jpg",
+    "trackSlug": "door-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brett-wenzel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brett-wenzel_brett-wenzel_photo_3188.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brett-wenzel_brett-wenzel_photo_3188.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brett-wenzel_brett-wenzel_photo_3188.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brett-wenzel",
+    "photographerSlug": "brett-wenzel",
+    "creditType": "photo",
+    "sequence": "3188"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2013_brett-wenzel_corey-juelich_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2013/wisconsin-international-raceway_2013_brett-wenzel_corey-juelich_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2013_brett-wenzel_corey-juelich_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2013",
+    "driverSlug": "brett-wenzel",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

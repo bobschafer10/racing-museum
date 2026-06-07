@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "fox-ridge-speedway_unknown-year_steve-speltz_missy-lushinsky_photo_002.jpg",
+    "storagePath": "photos/master/fox-ridge-speedway/unknown-year/fox-ridge-speedway_unknown-year_steve-speltz_missy-lushinsky_photo_002.jpg",
+    "publicPath": "/photos/fox-ridge-speedway_unknown-year_steve-speltz_missy-lushinsky_photo_002.jpg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-speltz",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-speltz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-speltz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-speltz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-speltz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_steve-speltz_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_steve-speltz_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_steve-speltz_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-speltz",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

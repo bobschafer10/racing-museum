@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "fox-ridge-speedway_unknown-year_paul-hammernik_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/fox-ridge-speedway/unknown-year/fox-ridge-speedway_unknown-year_paul-hammernik_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/fox-ridge-speedway_unknown-year_paul-hammernik_unknown-photographer_photo_004.jpg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-hammernik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-hammernik",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-hammernik",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-hammernik",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-hammernik_missy-lushinsky_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-hammernik",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-hammernik_ryan-aho_post_102.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-hammernik_ryan-aho_post_102.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-hammernik_ryan-aho_post_102.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-hammernik",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "102"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-hammernik_todd-narvelson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-hammernik_todd-narvelson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-hammernik_todd-narvelson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-hammernik",
+    "photographerSlug": "todd-narvelson",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

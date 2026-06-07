@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_derek-baselt_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_derek-baselt_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_derek-baselt_larry-quinn_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "derek-baselt",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_derek-baselt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_derek-baselt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_derek-baselt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "derek-baselt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

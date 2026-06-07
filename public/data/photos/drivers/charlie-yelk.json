@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_charlie-yelk_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_charlie-yelk_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_charlie-yelk_ron-thruman_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "charlie-yelk",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1976_charlie-yelk_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_charlie-yelk_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_charlie-yelk_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "charlie-yelk",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_charlie-yelk_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_charlie-yelk_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_charlie-yelk_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "charlie-yelk",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

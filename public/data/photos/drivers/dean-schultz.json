@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "columbus-151-speedway_2004_dean-schultz_don-wendlandt_photo_122.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/2004/columbus-151-speedway_2004_dean-schultz_don-wendlandt_photo_122.jpg",
+    "publicPath": "/photos/columbus-151-speedway_2004_dean-schultz_don-wendlandt_photo_122.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "2004",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "122"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "j&d",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_021.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_021.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_021.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "j&d",
+    "creditType": "photo",
+    "sequence": "021"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-schultz_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-schultz_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-schultz_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

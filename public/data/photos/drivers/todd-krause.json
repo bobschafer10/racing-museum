@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_todd-krause_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_todd-krause_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_todd-krause_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-krause",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "luxemburg-speedway_1995_todd-krause_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/1995/luxemburg-speedway_1995_todd-krause_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_1995_todd-krause_joe-slack_photo_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "1995",
+    "driverSlug": "todd-krause",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_todd-krause_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_todd-krause_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_todd-krause_joe-slack_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-krause",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

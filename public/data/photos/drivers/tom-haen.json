@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_tom-haen_bob-schafer_photo_323.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_tom-haen_bob-schafer_photo_323.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_tom-haen_bob-schafer_photo_323.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "323"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-haen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-haen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-haen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tom-haen_joe-slack_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tom-haen_joe-slack_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_222.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_222.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_222.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "222"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tom-haen_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tom-haen_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tom-haen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tom-haen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tom-haen_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tom-haen_unknown-photographer_photo_002.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-haen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

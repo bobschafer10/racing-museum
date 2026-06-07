@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_1981_ron-prochnow_old-town-eau-claire_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_ron-prochnow_old-town-eau-claire_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1981_ron-prochnow_old-town-eau-claire_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1981",
+    "driverSlug": "ron-prochnow",
+    "photographerSlug": "old-town-eau-claire",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1982_steve-rudiger_old-town-eau-claire_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1982/unknown-track_1982_steve-rudiger_old-town-eau-claire_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1982_steve-rudiger_old-town-eau-claire_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1982",
+    "driverSlug": "steve-rudiger",
+    "photographerSlug": "old-town-eau-claire",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-gherardi_old-town-eau-claire_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-gherardi_old-town-eau-claire_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-gherardi_old-town-eau-claire_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-gherardi",
+    "photographerSlug": "old-town-eau-claire",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

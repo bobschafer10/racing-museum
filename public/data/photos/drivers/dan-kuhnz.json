@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_dan-kuhnz_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_dan-kuhnz_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_dan-kuhnz_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_dan-kuhnz_dan-radig_post_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_dan-kuhnz_dan-radig_post_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_dan-kuhnz_dan-radig_post_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "dan-radig",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1972_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1972/unknown-track_1972_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1972_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1972",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-kuhnz_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-kuhnz_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-kuhnz_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-kuhnz_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-kuhnz_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-kuhnz_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1971_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1971/wisconsin-international-raceway_1971_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1971_dan-kuhnz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1971",
+    "driverSlug": "dan-kuhnz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

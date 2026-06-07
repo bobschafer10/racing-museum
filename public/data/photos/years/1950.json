@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "antigo-fairgrounds_1950_unknown-driver_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/antigo-fairgrounds/1950/antigo-fairgrounds_1950_unknown-driver_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/antigo-fairgrounds_1950_unknown-driver_unknown-photographer_photo_001.jpg",
+    "trackSlug": "antigo-fairgrounds",
+    "year": "1950",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "manitowoc-fairgrounds_1950_unknown-driver_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/manitowoc-fairgrounds/1950/manitowoc-fairgrounds_1950_unknown-driver_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/manitowoc-fairgrounds_1950_unknown-driver_joe-verdegan_post_001.jpg",
+    "trackSlug": "manitowoc-fairgrounds",
+    "year": "1950",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1950_unknown-driver_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1950/milwaukee-mile_1950_unknown-driver_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/milwaukee-mile_1950_unknown-driver_unknown-photographer_photo_222.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1950",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "waushara-county-fairgrounds_1950_james-wendlandt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/waushara-county-fairgrounds/1950/waushara-county-fairgrounds_1950_james-wendlandt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/waushara-county-fairgrounds_1950_james-wendlandt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "waushara-county-fairgrounds",
+    "year": "1950",
+    "driverSlug": "james-wendlandt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

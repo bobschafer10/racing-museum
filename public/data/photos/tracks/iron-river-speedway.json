@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "iron-river-speedway_1981_jerry-bridge_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/iron-river-speedway/1981/iron-river-speedway_1981_jerry-bridge_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/iron-river-speedway_1981_jerry-bridge_unknown-photographer_photo_001.jpg",
+    "trackSlug": "iron-river-speedway",
+    "year": "1981",
+    "driverSlug": "jerry-bridge",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "iron-river-speedway_unknown-year_ed-becker_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/iron-river-speedway/unknown-year/iron-river-speedway_unknown-year_ed-becker_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/iron-river-speedway_unknown-year_ed-becker_unknown-photographer_photo_001.jpg",
+    "trackSlug": "iron-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ed-becker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

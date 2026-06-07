@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "central-state-speedway_1985_ray-tenut_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/1985/central-state-speedway_1985_ray-tenut_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_1985_ray-tenut_bob-schafer_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "1985",
+    "driverSlug": "ray-tenut",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ray-tenut_david-frank_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-tenut_david-frank_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ray-tenut_david-frank_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ray-tenut",
+    "photographerSlug": "david-frank",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ray-tenut_david-frank-ii_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-tenut_david-frank-ii_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ray-tenut_david-frank-ii_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ray-tenut",
+    "photographerSlug": "david-frank-ii",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ray-tenut_ryan-aho_post_055.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-tenut_ryan-aho_post_055.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ray-tenut_ryan-aho_post_055.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ray-tenut",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "055"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ray-tenut_ryan-aho_post_086.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-tenut_ryan-aho_post_086.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ray-tenut_ryan-aho_post_086.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ray-tenut",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "086"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ray-tenut_ryan-aho_post_127.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-tenut_ryan-aho_post_127.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ray-tenut_ryan-aho_post_127.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ray-tenut",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "127"
+  }
+]

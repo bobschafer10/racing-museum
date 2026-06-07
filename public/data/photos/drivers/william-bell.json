@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "yellow-river-speedway_unknown-year_william-bell_unknown-credit_photo_3332.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_william-bell_unknown-credit_photo_3332.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_william-bell_unknown-credit_photo_3332.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "william-bell",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "3332"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_william-bell_unknown-photographer_photo_3333.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_william-bell_unknown-photographer_photo_3333.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_william-bell_unknown-photographer_photo_3333.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "william-bell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3333"
+  }
+]

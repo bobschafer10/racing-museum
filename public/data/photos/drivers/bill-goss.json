@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bill-goss_john-alft_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-goss_john-alft_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-goss_john-alft_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-goss",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-goss_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-goss_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-goss_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-goss",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-goss_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-goss_john-vass_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-goss_john-vass_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-goss",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-goss_paul-socwell_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-goss_paul-socwell_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-goss_paul-socwell_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-goss",
+    "photographerSlug": "paul-socwell",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-goss_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-goss_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-goss_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-goss",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-goss_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-goss_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-goss_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-goss",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1979_bill-goss_andrew-rosandick_photo_112.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1979/wisconsin-international-raceway_1979_bill-goss_andrew-rosandick_photo_112.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1979_bill-goss_andrew-rosandick_photo_112.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1979",
+    "driverSlug": "bill-goss",
+    "photographerSlug": "andrew-rosandick",
+    "creditType": "photo",
+    "sequence": "112"
+  }
+]

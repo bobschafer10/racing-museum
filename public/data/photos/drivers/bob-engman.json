@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "state-park-speedway_unknown-year_bob-engman_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_bob-engman_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_bob-engman_kurt-luoma_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-engman",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_bob-engman_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_bob-engman_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_bob-engman_pat-heaney_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-engman",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

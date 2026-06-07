@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "elko-speedway_2020_aaron-marthaler_aaron-marthaler_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/2020/elko-speedway_2020_aaron-marthaler_aaron-marthaler_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_2020_aaron-marthaler_aaron-marthaler_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "2020",
+    "driverSlug": "aaron-marthaler",
+    "photographerSlug": "aaron-marthaler",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_2021_aaron-marthaler_slinger-speedway_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2021/slinger-speedway_2021_aaron-marthaler_slinger-speedway_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2021_aaron-marthaler_slinger-speedway_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2021",
+    "driverSlug": "aaron-marthaler",
+    "photographerSlug": "slinger-speedway",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_2020_aaron-marthaler_qc-willy_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2020/state-park-speedway_2020_aaron-marthaler_qc-willy_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2020_aaron-marthaler_qc-willy_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2020",
+    "driverSlug": "aaron-marthaler",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

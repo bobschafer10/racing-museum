@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_kevin-rogers_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-rogers_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-rogers_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-rogers",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-rogers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-rogers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-rogers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-rogers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_kevin-rogers_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_kevin-rogers_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_kevin-rogers_kurt-luoma_photo_111.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-rogers",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_kevin-rogers_kurt-luoma_photo_620.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_kevin-rogers_kurt-luoma_photo_620.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_kevin-rogers_kurt-luoma_photo_620.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-rogers",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "620"
+  }
+]

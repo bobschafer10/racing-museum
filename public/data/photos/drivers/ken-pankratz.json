@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_ken-pankratz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_ken-pankratz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_ken-pankratz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_ken-pankratz_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_ken-pankratz_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_ken-pankratz_dennis-satorius_post_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-pankratz_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_don-wendlandt_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-pankratz_john-fahey_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_john-fahey_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_john-fahey_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "john-fahey",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-pankratz_tom-loos_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_tom-loos_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_tom-loos_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "tom-loos",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-pankratz_tom-loos_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_tom-loos_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_tom-loos_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "tom-loos",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-pankratz_tom-loos_post_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_tom-loos_post_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_tom-loos_post_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "tom-loos",
+    "creditType": "post",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-pankratz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-pankratz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1973_art-scholl_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1973/hales-corners-speedway_1973_art-scholl_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1973_art-scholl_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1973",
+    "driverSlug": "art-scholl",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_art-scholl_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_art-scholl_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_art-scholl_pat-heaney_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "art-scholl",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-scholl_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-scholl_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-scholl_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-scholl",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_art-scholl_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-scholl_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_art-scholl_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "art-scholl",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

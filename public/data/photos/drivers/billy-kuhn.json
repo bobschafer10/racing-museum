@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "dells-motor-speedway_1981_billy-kuhn_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1981/dells-motor-speedway_1981_billy-kuhn_don-besch_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1981_billy-kuhn_don-besch_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1981",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "illiana-speedway_1979_billy-kuhn_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/1979/illiana-speedway_1979_billy-kuhn_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_1979_billy-kuhn_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "1979",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_billy-kuhn_al-lewis_post_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_billy-kuhn_al-lewis_post_001.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_billy-kuhn_al-lewis_post_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "al-lewis",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_billy-kuhn_photo_004.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_billy-kuhn_photo_004.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_billy-kuhn_photo_004.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "photo",
+    "creditType": "004",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-kuhn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-kuhn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-kuhn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-kuhn_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-kuhn_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-kuhn_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-kuhn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/state-fair-park/1963/state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "publicPath": "/photos/state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1963",
+    "driverSlug": "carl-schultz",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1961_carl-schultz_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1961/unknown-track_1961_carl-schultz_glen-harper_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1961_carl-schultz_glen-harper_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1961",
+    "driverSlug": "carl-schultz",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_carl-schultz_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_carl-schultz_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_carl-schultz_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "carl-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_carl-schultz_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_carl-schultz_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_carl-schultz_geoff-mckarns_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "carl-schultz",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

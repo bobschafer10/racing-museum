@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_lee-weber_11-ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_lee-weber_11-ron-thruman_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_lee-weber_11-ron-thruman_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-weber",
+    "photographerSlug": "11-ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_lee-weber_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_lee-weber_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_lee-weber_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-weber",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_lee-weber_jeff-weber_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_lee-weber_jeff-weber_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_lee-weber_jeff-weber_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-weber",
+    "photographerSlug": "jeff-weber",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-weber_john-fahey_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-weber_john-fahey_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-weber_john-fahey_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-weber",
+    "photographerSlug": "john-fahey",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-weber_legend-car-jeff-weber_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-weber_legend-car-jeff-weber_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-weber_legend-car-jeff-weber_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-weber",
+    "photographerSlug": "legend-car-jeff-weber",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

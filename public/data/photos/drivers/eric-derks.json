@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "chilton-speedway_unknown-year_eric-derks_dan-lewis_photo_175.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_eric-derks_dan-lewis_photo_175.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_eric-derks_dan-lewis_photo_175.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "eric-derks",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "175"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_eric-derks_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_eric-derks_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_eric-derks_unknown-photographer_photo_001.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "eric-derks",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_eric-derks_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_eric-derks_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_eric-derks_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "eric-derks",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

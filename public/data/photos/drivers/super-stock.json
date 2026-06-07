@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_super-stock_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_super-stock_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_super-stock_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "super-stock",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_super-stock_joe-slack_photo_002.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_super-stock_joe-slack_photo_002.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_super-stock_joe-slack_photo_002.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "super-stock",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

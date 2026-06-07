@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "brown-county-speedway_1961_bill-fitzgerald_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/1961/brown-county-speedway_1961_bill-fitzgerald_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_1961_bill-fitzgerald_bob-bergeron_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "1961",
+    "driverSlug": "bill-fitzgerald",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1961_roger-regeth_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1961/hales-corners-speedway_1961_roger-regeth_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1961_roger-regeth_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1961",
+    "driverSlug": "roger-regeth",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shiocton-speedway_1961_shiocton-speedway_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shiocton-speedway/1961/shiocton-speedway_1961_shiocton-speedway_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shiocton-speedway_1961_shiocton-speedway_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shiocton-speedway",
+    "year": "1961",
+    "driverSlug": "shiocton-speedway",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-fair-park_1961_bill-johnson-jr_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/state-fair-park/1961/state-fair-park_1961_bill-johnson-jr_glen-harper_post_001.jpg",
+    "publicPath": "/photos/state-fair-park_1961_bill-johnson-jr_glen-harper_post_001.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1961",
+    "driverSlug": "bill-johnson-jr",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1961_carl-schultz_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1961/unknown-track_1961_carl-schultz_glen-harper_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1961_carl-schultz_glen-harper_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1961",
+    "driverSlug": "carl-schultz",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

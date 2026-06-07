@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_bob-brownell_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_bob-brownell_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_bob-brownell_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-brownell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1991_bob-brownell_bob-schafer_photo_208.jpg",
+    "storagePath": "photos/master/rockford-speedway/1991/rockford-speedway_1991_bob-brownell_bob-schafer_photo_208.jpg",
+    "publicPath": "/photos/rockford-speedway_1991_bob-brownell_bob-schafer_photo_208.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1991",
+    "driverSlug": "bob-brownell",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "208"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_bob-brownell_steve-zimmerman_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_bob-brownell_steve-zimmerman_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_bob-brownell_steve-zimmerman_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-brownell",
+    "photographerSlug": "steve-zimmerman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-brownell_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-brownell_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-brownell_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brownell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bob-brownell_bob-schafer_photo_235.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bob-brownell_bob-schafer_photo_235.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bob-brownell_bob-schafer_photo_235.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-brownell",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "235"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bob-brownell_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bob-brownell_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bob-brownell_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-brownell",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bob-brownell_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bob-brownell_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bob-brownell_kurt-luoma_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-brownell",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

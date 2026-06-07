@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "grundy-county-speedway_1987_rich-bickle_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1987/grundy-county-speedway_1987_rich-bickle_don-besch_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1987_rich-bickle_don-besch_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1987",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_rich-bickle_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_rich-bickle_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_rich-bickle_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_rich-bickle_don-besch_photo_002.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_rich-bickle_don-besch_photo_002.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_rich-bickle_don-besch_photo_002.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "slinger-speedway_1982_rich-bickle_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1982/slinger-speedway_1982_rich-bickle_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1982_rich-bickle_ken-koppa_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1982",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1989_rich-bickle_al-fortner_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1989/slinger-speedway_1989_rich-bickle_al-fortner_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1989_rich-bickle_al-fortner_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1989",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1992_rich-bickle_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1992/slinger-speedway_1992_rich-bickle_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1992_rich-bickle_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1992",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_rich-bickle_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_rich-bickle_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_rich-bickle_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rich-bickle_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rich-bickle_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rich-bickle_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rich-bickle",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

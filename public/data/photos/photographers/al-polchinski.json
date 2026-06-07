@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_bill-schwister_al-polchinski_photo_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_bill-schwister_al-polchinski_photo_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_bill-schwister_al-polchinski_photo_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-schwister",
+    "photographerSlug": "al-polchinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_don-schuppel_al-polchinski_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_don-schuppel_al-polchinski_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_don-schuppel_al-polchinski_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "don-schuppel",
+    "photographerSlug": "al-polchinski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_rick-lemanski_al-polchinski_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_rick-lemanski_al-polchinski_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_rick-lemanski_al-polchinski_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "al-polchinski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_etchie-biertzer_al-polchinski_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_etchie-biertzer_al-polchinski_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_etchie-biertzer_al-polchinski_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "etchie-biertzer",
+    "photographerSlug": "al-polchinski",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

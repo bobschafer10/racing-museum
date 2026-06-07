@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_dennis-wesener_bob-schafer_photo_094.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_dennis-wesener_bob-schafer_photo_094.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_dennis-wesener_bob-schafer_photo_094.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-wesener",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "094"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_dennis-wesener_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_dennis-wesener_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_dennis-wesener_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-wesener",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

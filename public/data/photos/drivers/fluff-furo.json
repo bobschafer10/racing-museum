@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_fluff-furo_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_fluff-furo_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_fluff-furo_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_fluff-furo_john-alft_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_fluff-furo_john-alft_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_fluff-furo_john-alft_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_fluff-furo_kevin-wisniewski_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_fluff-furo_kevin-wisniewski_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_fluff-furo_kevin-wisniewski_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "kevin-wisniewski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_fluff-furo_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_fluff-furo_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_fluff-furo_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "fluff-furo",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

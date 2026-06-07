@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_dave-dubnicka_bob-schafer_photo_063.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-dubnicka_bob-schafer_photo_063.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dave-dubnicka_bob-schafer_photo_063.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-dubnicka",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "063"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-dubnicka_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-dubnicka_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-dubnicka_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-dubnicka",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

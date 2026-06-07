@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_rick-lemanski_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_rick-lemanski_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_rick-lemanski_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "angell-park-speedway_unknown-year_rick-lemanski_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/angell-park-speedway/unknown-year/angell-park-speedway_unknown-year_rick-lemanski_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/angell-park-speedway_unknown-year_rick-lemanski_dave-olson_photo_001.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_1976_rick-lemanski_michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/1976/beaver-dam-raceway_1976_rick-lemanski_michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_1976_rick-lemanski_michael-halbherr_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "1976",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_rick-lemanski_al-polchinski_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_rick-lemanski_al-polchinski_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_rick-lemanski_al-polchinski_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "al-polchinski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_rick-lemanski_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_rick-lemanski_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_rick-lemanski_dave-olson_photo_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-lemanski_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-lemanski_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-lemanski_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-lemanski_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-lemanski_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-lemanski_bob-bergeron_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-lemanski",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

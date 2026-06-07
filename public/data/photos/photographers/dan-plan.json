@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "elko-speedway_unknown-year_dewey-gustafson_dan-plan_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_dewey-gustafson_dan-plan_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_dewey-gustafson_dan-plan_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dewey-gustafson",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kopellah-speedway_1990_craig-thatcher_dan-plan_post_001.jpg",
+    "storagePath": "photos/master/kopellah-speedway/1990/kopellah-speedway_1990_craig-thatcher_dan-plan_post_001.jpg",
+    "publicPath": "/photos/kopellah-speedway_1990_craig-thatcher_dan-plan_post_001.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "1990",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kopellah-speedway_1990_craig-thatcher_dan-plan_post_101.jpg",
+    "storagePath": "photos/master/kopellah-speedway/1990/kopellah-speedway_1990_craig-thatcher_dan-plan_post_101.jpg",
+    "publicPath": "/photos/kopellah-speedway_1990_craig-thatcher_dan-plan_post_101.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "1990",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "101"
+  },
+  {
+    "fileName": "kopellah-speedway_1990_gary-ladd_dan-plan_post_001.jpg",
+    "storagePath": "photos/master/kopellah-speedway/1990/kopellah-speedway_1990_gary-ladd_dan-plan_post_001.jpg",
+    "publicPath": "/photos/kopellah-speedway_1990_gary-ladd_dan-plan_post_001.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "1990",
+    "driverSlug": "gary-ladd",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kopellah-speedway_1990_unknown-driver_dan-plan_post_001.jpg",
+    "storagePath": "photos/master/kopellah-speedway/1990/kopellah-speedway_1990_unknown-driver_dan-plan_post_001.jpg",
+    "publicPath": "/photos/kopellah-speedway_1990_unknown-driver_dan-plan_post_001.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "1990",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kopellah-speedway_1990_unknown-driver_dan-plan_post_300.jpg",
+    "storagePath": "photos/master/kopellah-speedway/1990/kopellah-speedway_1990_unknown-driver_dan-plan_post_300.jpg",
+    "publicPath": "/photos/kopellah-speedway_1990_unknown-driver_dan-plan_post_300.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "1990",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "300"
+  },
+  {
+    "fileName": "kopellah-speedway_1990_unknown-driver_dan-plan_post_301.jpg",
+    "storagePath": "photos/master/kopellah-speedway/1990/kopellah-speedway_1990_unknown-driver_dan-plan_post_301.jpg",
+    "publicPath": "/photos/kopellah-speedway_1990_unknown-driver_dan-plan_post_301.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "1990",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "301"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1978/lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1978",
+    "driverSlug": "larry-detjens",
+    "photographerSlug": "dan-plan",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-martin_dan-plan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-martin_dan-plan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-martin_dan-plan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-martin",
+    "photographerSlug": "dan-plan",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

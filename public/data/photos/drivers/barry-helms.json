@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "leos-speedway_unknown-year_barry-helms_bob-bergeron_photo_021.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_barry-helms_bob-bergeron_photo_021.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_barry-helms_bob-bergeron_photo_021.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "barry-helms",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "021"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_barry-helms_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_barry-helms_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_barry-helms_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "barry-helms",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

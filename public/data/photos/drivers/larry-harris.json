@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1987_larry-harris_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1987/milwaukee-mile_1987_larry-harris_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1987_larry-harris_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1987",
+    "driverSlug": "larry-harris",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "new-smyrna-speedway_1990_larry-harris_bob-schafer_photo_13472.jpg",
+    "storagePath": "photos/master/new-smyrna-speedway/1990/new-smyrna-speedway_1990_larry-harris_bob-schafer_photo_13472.jpg",
+    "publicPath": "/photos/new-smyrna-speedway_1990_larry-harris_bob-schafer_photo_13472.jpg",
+    "trackSlug": "new-smyrna-speedway",
+    "year": "1990",
+    "driverSlug": "larry-harris",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13472"
+  }
+]

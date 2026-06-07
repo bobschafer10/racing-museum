@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "golden-sands-speedway_1990_mark-holmes_bob-schafer_photo_13466.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_mark-holmes_bob-schafer_photo_13466.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_mark-holmes_bob-schafer_photo_13466.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "mark-holmes",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13466"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mark-holmes_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mark-holmes_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mark-holmes_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-holmes",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

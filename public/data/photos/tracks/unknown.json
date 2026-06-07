@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown_1990_jeanie-kind_charlie-spry-post_001.jpg",
+    "storagePath": "photos/master/unknown/1990/unknown_1990_jeanie-kind_charlie-spry-post_001.jpg",
+    "publicPath": "/photos/unknown_1990_jeanie-kind_charlie-spry-post_001.jpg",
+    "trackSlug": "unknown",
+    "year": "1990",
+    "driverSlug": "jeanie-kind",
+    "photographerSlug": "charlie-spry-post",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown_track_2013_aj-kania_aj-kania_post_201.jpg",
+    "storagePath": "photos/master/unknown/track/unknown_track_2013_aj-kania_aj-kania_post_201.jpg",
+    "publicPath": "/photos/unknown_track_2013_aj-kania_aj-kania_post_201.jpg",
+    "trackSlug": "unknown",
+    "year": "track",
+    "driverSlug": "2013",
+    "photographerSlug": "aj-kania",
+    "creditType": "aj-kania",
+    "sequence": "post"
+  },
+  {
+    "fileName": "unknown_track_unknown_year_aaron-holiday_post_001.jpg",
+    "storagePath": "photos/master/unknown/track/unknown_track_unknown_year_aaron-holiday_post_001.jpg",
+    "publicPath": "/photos/unknown_track_unknown_year_aaron-holiday_post_001.jpg",
+    "trackSlug": "unknown",
+    "year": "track",
+    "driverSlug": "unknown",
+    "photographerSlug": "year",
+    "creditType": "aaron-holiday",
+    "sequence": "post"
+  },
+  {
+    "fileName": "unknown_unknown-year_dave-drost_charlie-spry-post_001.jpg",
+    "storagePath": "photos/master/unknown/unknown-year/unknown_unknown-year_dave-drost_charlie-spry-post_001.jpg",
+    "publicPath": "/photos/unknown_unknown-year_dave-drost_charlie-spry-post_001.jpg",
+    "trackSlug": "unknown",
+    "year": "unknown-year",
+    "driverSlug": "dave-drost",
+    "photographerSlug": "charlie-spry-post",
+    "creditType": "001",
+    "sequence": "001"
+  }
+]

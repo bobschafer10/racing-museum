@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_terry-kralovetz_joe-slack_photo_002.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_terry-kralovetz_joe-slack_photo_002.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_terry-kralovetz_joe-slack_photo_002.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-kralovetz",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "shawano-speedway_1987_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/1987/shawano-speedway_1987_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_1987_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1987",
+    "driverSlug": "terry-kralovetz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_terry-kralovetz_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_terry-kralovetz_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_terry-kralovetz_joe-verdegan_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-kralovetz",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-kralovetz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_terry-kralovetz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "terry-kralovetz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

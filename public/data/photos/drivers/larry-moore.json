@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_larry-moore_unknown-photographer_photo_115.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_larry-moore_unknown-photographer_photo_115.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_larry-moore_unknown-photographer_photo_115.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "larry-moore",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "115"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_larry-moore_wally-kroncke_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_larry-moore_wally-kroncke_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_larry-moore_wally-kroncke_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "larry-moore",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

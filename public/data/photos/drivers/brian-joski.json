@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "luxemburg-speedway_2005_brian-joski_john-garniss_photo_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2005/luxemburg-speedway_2005_brian-joski_john-garniss_photo_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2005_brian-joski_john-garniss_photo_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2005",
+    "driverSlug": "brian-joski",
+    "photographerSlug": "john-garniss",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_brian-joski_bob-schafer_photo_220.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_brian-joski_bob-schafer_photo_220.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_brian-joski_bob-schafer_photo_220.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "brian-joski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "220"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_brian-joski_kurt-luoma_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_brian-joski_kurt-luoma_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_brian-joski_kurt-luoma_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "brian-joski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_everett-dewitt_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_everett-dewitt_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_everett-dewitt_charlie-spry_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "everett-dewitt",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_everett-dewitt_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_everett-dewitt_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_everett-dewitt_john-vass_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "everett-dewitt",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_everett-dewitt_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_everett-dewitt_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_everett-dewitt_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "everett-dewitt",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_everett-dewitt_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_everett-dewitt_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_everett-dewitt_kurt-luoma_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "everett-dewitt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_everett-dewitt_kurt-luoma_photo_1329.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_everett-dewitt_kurt-luoma_photo_1329.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_everett-dewitt_kurt-luoma_photo_1329.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "everett-dewitt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1329"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_everett-dewitt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_everett-dewitt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_everett-dewitt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "everett-dewitt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

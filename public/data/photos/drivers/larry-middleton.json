@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "rockford-speedway_unknown-year_larry-middleton_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_larry-middleton_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_larry-middleton_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-middleton",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-middleton_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-middleton_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-middleton_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-middleton",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-middleton_bob-schafer_photo_13960.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-middleton_bob-schafer_photo_13960.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-middleton_bob-schafer_photo_13960.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-middleton",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13960"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-middleton_bob-schafer_photo_234.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-middleton_bob-schafer_photo_234.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-middleton_bob-schafer_photo_234.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-middleton",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "234"
+  }
+]

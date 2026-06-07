@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "central-state-speedway_unknown-year_dan-duellman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/unknown-year/central-state-speedway_unknown-year_dan-duellman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_unknown-year_dan-duellman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-duellman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-duellman_doug-duellman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-duellman_doug-duellman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-duellman_doug-duellman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-duellman",
+    "photographerSlug": "doug-duellman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-duellman_ii-doug-duellman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-duellman_ii-doug-duellman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-duellman_ii-doug-duellman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-duellman",
+    "photographerSlug": "ii-doug-duellman",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

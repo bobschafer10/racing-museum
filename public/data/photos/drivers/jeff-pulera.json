@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1982_jeff-pulera_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1982/lake-geneva-raceway_1982_jeff-pulera_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1982_jeff-pulera_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1982",
+    "driverSlug": "jeff-pulera",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-pulera_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-pulera_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-pulera_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-pulera",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-pulera_pat-heaney_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-pulera_pat-heaney_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-pulera_pat-heaney_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-pulera",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "002"
+  }
+]

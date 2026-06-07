@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_keith-witt_bob-schafer_photo_13607.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_keith-witt_bob-schafer_photo_13607.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_keith-witt_bob-schafer_photo_13607.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13607"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_keith-witt_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_keith-witt_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_keith-witt_bob-schafer_photo_222.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_1998_keith-witt_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/1998/marshfield-super-speedway_1998_keith-witt_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_1998_keith-witt_tom-loos_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "1998",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_keith-witt_kurt-luoma_photo_222.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_keith-witt_kurt-luoma_photo_222.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_keith-witt_kurt-luoma_photo_222.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_keith-witt_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_keith-witt_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_keith-witt_unknown-photographer_photo_333.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_keith-witt_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_keith-witt_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_keith-witt_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_keith-witt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "keith-witt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

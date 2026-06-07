@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "rockford-speedway_1984_dennis-miller_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1984/rockford-speedway_1984_dennis-miller_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1984_dennis-miller_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1984",
+    "driverSlug": "dennis-miller",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dennis-miller_gary-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dennis-miller_gary-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dennis-miller_gary-vercauteren_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-miller",
+    "photographerSlug": "gary-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

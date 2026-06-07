@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "columbus-151-speedway_2007_aaron-falbe_aaron-falbe_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/2007/columbus-151-speedway_2007_aaron-falbe_aaron-falbe_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_2007_aaron-falbe_aaron-falbe_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "2007",
+    "driverSlug": "aaron-falbe",
+    "photographerSlug": "aaron-falbe",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_2007_mike-gwindt_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2007/golden-sands-speedway_2007_mike-gwindt_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2007_mike-gwindt_tom-loos_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2007",
+    "driverSlug": "mike-gwindt",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2007_terry-van-roy_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2007/unknown-track_2007_terry-van-roy_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2007_terry-van-roy_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2007",
+    "driverSlug": "terry-van-roy",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2007_joe-jaekels_clintman_Post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2007/wisconsin-international-raceway_2007_joe-jaekels_clintman_Post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2007_joe-jaekels_clintman_Post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2007",
+    "driverSlug": "joe-jaekels",
+    "photographerSlug": "clintman",
+    "creditType": "Post",
+    "sequence": "001"
+  }
+]

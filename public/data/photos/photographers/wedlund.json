@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_don-collins_wedlund_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_don-collins_wedlund_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_don-collins_wedlund_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "don-collins",
+    "photographerSlug": "wedlund",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brent-laursen_wedlund_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brent-laursen_wedlund_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brent-laursen_wedlund_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brent-laursen",
+    "photographerSlug": "wedlund",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-parker_wedlund_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-parker_wedlund_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-parker_wedlund_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-parker",
+    "photographerSlug": "wedlund",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

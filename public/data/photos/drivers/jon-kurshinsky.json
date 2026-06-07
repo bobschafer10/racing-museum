@@ -1,0 +1,134 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_jon-kurshinsky_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_jon-kurshinsky_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_jon-kurshinsky_todd-narveson_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_ryan-aho_post_095.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_jon-kurshinsky_ryan-aho_post_095.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_jon-kurshinsky_ryan-aho_post_095.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "095"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_002.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "fox-ridge-speedway_unknown-year_jon-kurshinsky_missy-lushinsky_photo_004.jpg",
+    "storagePath": "photos/master/fox-ridge-speedway/unknown-year/fox-ridge-speedway_unknown-year_jon-kurshinsky_missy-lushinsky_photo_004.jpg",
+    "publicPath": "/photos/fox-ridge-speedway_unknown-year_jon-kurshinsky_missy-lushinsky_photo_004.jpg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "red-cedar-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/red-cedar-speedway/unknown-year/red-cedar-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/red-cedar-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "trackSlug": "red-cedar-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_jon-kurshinsky_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_jon-kurshinsky_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_jon-kurshinsky_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jon-kurshinsky_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jon-kurshinsky_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jon-kurshinsky_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jon-kurshinsky_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jon-kurshinsky_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jon-kurshinsky_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_jon-kurshinsky_kurt-luoma_photo_222.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_jon-kurshinsky_kurt-luoma_photo_222.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_jon-kurshinsky_kurt-luoma_photo_222.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_jon-kurshinsky_kurt-luoma_photo_614.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_jon-kurshinsky_kurt-luoma_photo_614.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_jon-kurshinsky_kurt-luoma_photo_614.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "614"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

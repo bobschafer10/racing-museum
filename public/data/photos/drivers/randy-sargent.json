@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_1985_randy-sargent_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1985/capital-super-speedway_1985_randy-sargent_don-besch_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1985_randy-sargent_don-besch_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1985",
+    "driverSlug": "randy-sargent",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1984_randy-sargent_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1984/rockford-speedway_1984_randy-sargent_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1984_randy-sargent_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1984",
+    "driverSlug": "randy-sargent",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_randy-sargent_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_randy-sargent_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_randy-sargent_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "randy-sargent",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

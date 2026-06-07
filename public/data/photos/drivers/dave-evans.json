@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "capital-super-speedway_1975_dave-evans_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_dave-evans_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_dave-evans_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "dave-evans",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "illiana-speedway_1975_dave-evans_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/1975/illiana-speedway_1975_dave-evans_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_1975_dave-evans_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "1975",
+    "driverSlug": "dave-evans",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1976_dave-evans_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_dave-evans_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_dave-evans_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "dave-evans",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dave-evans_unknown-photographer_photo_9380.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-evans_unknown-photographer_photo_9380.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dave-evans_unknown-photographer_photo_9380.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-evans",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "9380"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-evans_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-evans_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-evans_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-evans",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-evans_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-evans_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-evans_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-evans",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1979_dave-evans_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1979/wisconsin-international-raceway_1979_dave-evans_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1979_dave-evans_geoff-mckarns_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1979",
+    "driverSlug": "dave-evans",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -20,13 +20,8 @@ export default async function DriversPage({
     .order('driver_name', { ascending: true })
     .limit(100000)
 
-  if (query) {
-    supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
-  }
-
-  if (letter) {
-    supabaseQuery = supabaseQuery.eq('last_initial', letter)
-  }
+  if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
+  if (letter) supabaseQuery = supabaseQuery.eq('last_initial', letter)
 
   const { data: drivers, error } = await supabaseQuery
 
@@ -44,13 +39,10 @@ export default async function DriversPage({
   })
 
   const filteredDrivers = letter
-    ? sortedDrivers.filter((d) =>
-        getLast(d.driver_name).startsWith(letter.toLowerCase())
-      )
+    ? sortedDrivers.filter((d) => getLast(d.driver_name).startsWith(letter.toLowerCase()))
     : sortedDrivers
 
-  const driverSlugs =
-    filteredDrivers?.map((d) => d.driver_slug).filter(Boolean) ?? []
+  const driverSlugs = filteredDrivers?.map((d) => d.driver_slug).filter(Boolean) ?? []
 
   let driverPhotos: any[] = []
 
@@ -59,20 +51,15 @@ export default async function DriversPage({
 
     const { data, error: photoError } = await supabase
       .from('photos')
-      .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug')
+      .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
       .in('driver_slug', chunk)
       .neq('credit_type', 'unknown')
       .order('year', { ascending: false, nullsFirst: false })
       .order('sequence', { ascending: true })
       .order('file_name', { ascending: true })
 
-    if (photoError) {
-      console.log('Driver photo query error:', JSON.stringify(photoError, null, 2))
-    }
-
-    if (data) {
-      driverPhotos = [...driverPhotos, ...data]
-    }
+    if (photoError) console.log('Driver photo query error:', JSON.stringify(photoError, null, 2))
+    if (data) driverPhotos = [...driverPhotos, ...data]
   }
 
   const driverPhotoMap = new Map<string, any>()
@@ -95,88 +82,87 @@ export default async function DriversPage({
     }
   }
 
-const galleryPhoto =
-  driverPhotos && driverPhotos.length > 0
-    ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
-    : null
+  const galleryPhoto =
+    driverPhotos && driverPhotos.length > 0
+      ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
+      : null
 
   return (
     <main style={pageStyle}>
-     <section style={heroSection}>
-  <div style={heroSplit}>
-    <div style={heroLeft}>
-      <div style={eyebrow}>Museum Collection</div>
-      <h1 style={pageTitle}>Drivers</h1>
-      <p style={pageIntro}>
-        Browse driver profiles, recorded wins, top 3 finishes, and historical race results
-        from across the Upper Midwest.
-      </p>
+      <section style={heroSection}>
+        <div style={heroSplit}>
+          <div style={heroLeft}>
+            <div style={eyebrow}>Museum Collection</div>
+            <h1 style={pageTitle}>Drivers</h1>
+            <p style={pageIntro}>
+              Browse driver profiles, recorded wins, top 3 finishes, and historical race results
+              from across the Upper Midwest.
+            </p>
 
-      <form action="/drivers" method="get" style={searchForm}>
-        <input
-          type="text"
-          name="q"
-          defaultValue={query}
-          placeholder="Search drivers"
-          style={searchInput}
-        />
-        <button type="submit" style={searchButton}>
-          Search
-        </button>
-      </form>
+            <form action="/drivers" method="get" style={searchForm}>
+              <input
+                type="text"
+                name="q"
+                defaultValue={query}
+                placeholder="Search drivers"
+                style={searchInput}
+              />
+              <button type="submit" style={searchButton}>
+                Search
+              </button>
+            </form>
 
-      <div style={alphabetBar}>
-        <Link href="/drivers" style={letterLink}>
-          All
-        </Link>
+            <div style={alphabetBar}>
+              <Link href="/drivers" style={letterLink}>
+                All
+              </Link>
 
-        {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => (
-          <Link
-            key={l}
-            href={`/drivers?letter=${l}`}
-            style={{
-              ...letterLink,
-              fontWeight: letter === l ? 'bold' : 'normal',
-              textDecoration: letter === l ? 'underline' : 'none',
-            }}
-          >
-            {l}
-          </Link>
-        ))}
-      </div>
+              {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => (
+                <Link
+                  key={l}
+                  href={`/drivers?letter=${l}`}
+                  style={{
+                    ...letterLink,
+                    fontWeight: letter === l ? 'bold' : 'normal',
+                    textDecoration: letter === l ? 'underline' : 'none',
+                  }}
+                >
+                  {l}
+                </Link>
+              ))}
+            </div>
 
-      <div style={resultsLine}>
-        {letter ? (
-          <>
-            Showing drivers with last names starting with <strong>{letter}</strong>
-          </>
-        ) : query ? (
-          <>
-            Showing results for <strong>{query}</strong>
-          </>
-        ) : (
-          <>Showing driver directory</>
-        )}
-      </div>
-    </div>
+            <div style={resultsLine}>
+              {letter ? (
+                <>
+                  Showing drivers with last names starting with <strong>{letter}</strong>
+                </>
+              ) : query ? (
+                <>
+                  Showing results for <strong>{query}</strong>
+                </>
+              ) : (
+                <>Showing driver directory</>
+              )}
+            </div>
+          </div>
 
-    <div style={heroGallery}>
-      {galleryPhoto ? (
-        <>
-          <img
-            src={`/photos/${galleryPhoto.file_name}`}
-            alt="Vintage racing archive"
-            style={heroGalleryPhoto}
-          />
-
-          <div style={heroGalleryCaption}>From the Museum Archive</div>
-        </>
-      ) : (
-        <div style={heroGalleryPlaceholder}>Midwest Racing Archive</div>
-      )}
-    </div>
-  </div>
-</section>
+          <div style={heroGallery}>
+            {galleryPhoto ? (
+              <>
+                <img
+                  src={`/photos/${galleryPhoto.file_name}`}
+                  alt="Vintage racing archive"
+                  style={heroGalleryPhoto}
+                />
+                <div style={heroGalleryCaption}>From the Museum Archive</div>
+              </>
+            ) : (
+              <div style={heroGalleryPlaceholder}>Midwest Racing Archive</div>
+            )}
+          </div>
+        </div>
+      </section>
 
       <section style={contentWrap}>
         {error ? (
@@ -297,12 +283,6 @@ const pageStyle: CSSProperties = {
 const heroSection: CSSProperties = {
   background: 'linear-gradient(to bottom, #e7d9bf, #eadfc7)',
   borderBottom: '2px solid #b29364',
-}
-
-const heroInner: CSSProperties = {
-  maxWidth: '1200px',
-  margin: '0 auto',
-  padding: '34px 20px 28px',
 }
 
 const eyebrow: CSSProperties = {

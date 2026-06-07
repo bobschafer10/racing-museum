@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_jeff-meulemans_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_jeff-meulemans_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_jeff-meulemans_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-meulemans",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "grundy-county-speedway_1997_jeff-meulemans_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1997/grundy-county-speedway_1997_jeff-meulemans_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1997_jeff-meulemans_unknown-credit_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1997",
+    "driverSlug": "jeff-meulemans",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1996_jeff-meulemans_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1996/lake-geneva-raceway_1996_jeff-meulemans_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1996_jeff-meulemans_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1996",
+    "driverSlug": "jeff-meulemans",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

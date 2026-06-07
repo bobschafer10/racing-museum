@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_mike-balcaen_ryan-aho_post_126.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-balcaen_ryan-aho_post_126.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-balcaen_ryan-aho_post_126.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-balcaen",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "126"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-balcaen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-balcaen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-balcaen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-balcaen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

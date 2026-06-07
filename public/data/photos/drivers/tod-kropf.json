@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "wisconsin-international-raceway_1990_tod-kropf_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_tod-kropf_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_tod-kropf_bob-schafer_photo_222.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "tod-kropf",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tod-kropf_bob-schafer_photo_315.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tod-kropf_bob-schafer_photo_315.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tod-kropf_bob-schafer_photo_315.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tod-kropf",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "315"
+  }
+]

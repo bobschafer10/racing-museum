@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_matt-wisz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_matt-wisz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_matt-wisz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "matt-wisz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "matt-wisz",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_117.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_117.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_117.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "matt-wisz",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "117"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_matt-wisz_kurt-luoma_photo_113.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_matt-wisz_kurt-luoma_photo_113.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_matt-wisz_kurt-luoma_photo_113.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "matt-wisz",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "113"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_matt-wisz_kurt-luoma_photo_1311.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_matt-wisz_kurt-luoma_photo_1311.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_matt-wisz_kurt-luoma_photo_1311.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "matt-wisz",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1311"
+  }
+]

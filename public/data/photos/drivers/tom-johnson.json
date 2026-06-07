@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_tom-johnson_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_tom-johnson_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_tom-johnson_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-johnson",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_099.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_099.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_099.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-johnson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "099"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_12575.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_12575.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_12575.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-johnson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12575"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-johnson_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-johnson_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-johnson_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-johnson",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

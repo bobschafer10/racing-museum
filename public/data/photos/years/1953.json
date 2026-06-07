@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "milwaukee-mile_1953_marshall-teague_wally-kroncke_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1953/milwaukee-mile_1953_marshall-teague_wally-kroncke_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1953_marshall-teague_wally-kroncke_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1953",
+    "driverSlug": "marshall-teague",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1953_unknown-driver_wally-kroncke_post_323.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1953/milwaukee-mile_1953_unknown-driver_wally-kroncke_post_323.jpg",
+    "publicPath": "/photos/milwaukee-mile_1953_unknown-driver_wally-kroncke_post_323.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1953",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "wally-kroncke",
+    "creditType": "post",
+    "sequence": "323"
+  },
+  {
+    "fileName": "oakfield-speedway_1953_oakfield-speedway_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oakfield-speedway/1953/oakfield-speedway_1953_oakfield-speedway_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oakfield-speedway_1953_oakfield-speedway_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oakfield-speedway",
+    "year": "1953",
+    "driverSlug": "oakfield-speedway",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

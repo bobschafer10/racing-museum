@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_paul-bessel_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_paul-bessel_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_paul-bessel_pat-heaney_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-bessel",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "jefferson-speedway_1982_paul-bessel_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/jefferson-speedway/1982/jefferson-speedway_1982_paul-bessel_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/jefferson-speedway_1982_paul-bessel_unknown-photographer_photo_001.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "1982",
+    "driverSlug": "paul-bessel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_paul-bessel_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_paul-bessel_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_paul-bessel_weber-brothers_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-bessel",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

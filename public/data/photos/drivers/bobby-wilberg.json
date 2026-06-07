@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_bobby-wilberg_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_bobby-wilberg_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_bobby-wilberg_unknown-photographer_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-wilberg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "rockford-speedway_1993_bobby-wilberg_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1993/rockford-speedway_1993_bobby-wilberg_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1993_bobby-wilberg_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1993",
+    "driverSlug": "bobby-wilberg",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bobby-wilberg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bobby-wilberg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bobby-wilberg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bobby-wilberg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

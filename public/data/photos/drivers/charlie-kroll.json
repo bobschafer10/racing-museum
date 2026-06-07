@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "charlie-kroll",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "charlie-kroll",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_charlie-kroll_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "charlie-kroll",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

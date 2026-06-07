@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "golden-sands-speedway_1990_mike-cox_bob-schafer_photo_13473.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_mike-cox_bob-schafer_photo_13473.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_mike-cox_bob-schafer_photo_13473.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "mike-cox",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13473"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-cox",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_1334.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_1334.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_1334.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-cox",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1334"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mike-cox_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mike-cox_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mike-cox_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-cox",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_mike-cox_tom-loos_photo_004.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_mike-cox_tom-loos_photo_004.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_mike-cox_tom-loos_photo_004.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-cox",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-cox_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-cox_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-cox_ken-koppa_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-cox",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-cox",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

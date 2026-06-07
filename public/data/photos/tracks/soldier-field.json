@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "soldier-field_1968_ed-hoffman_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/soldier-field/1968/soldier-field_1968_ed-hoffman_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/soldier-field_1968_ed-hoffman_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "soldier-field",
+    "year": "1968",
+    "driverSlug": "ed-hoffman",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "soldier-field_unknown-year_johnny-roberts_dan-radig_post_001.jpg",
+    "storagePath": "photos/master/soldier-field/unknown-year/soldier-field_unknown-year_johnny-roberts_dan-radig_post_001.jpg",
+    "publicPath": "/photos/soldier-field_unknown-year_johnny-roberts_dan-radig_post_001.jpg",
+    "trackSlug": "soldier-field",
+    "year": "unknown-year",
+    "driverSlug": "johnny-roberts",
+    "photographerSlug": "dan-radig",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "soldier-field_unknown-year_unknown-driver_dan-radig_post_001.jpg",
+    "storagePath": "photos/master/soldier-field/unknown-year/soldier-field_unknown-year_unknown-driver_dan-radig_post_001.jpg",
+    "publicPath": "/photos/soldier-field_unknown-year_unknown-driver_dan-radig_post_001.jpg",
+    "trackSlug": "soldier-field",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dan-radig",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_scott-brandt_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_scott-brandt_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_scott-brandt_kurt-luoma_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-brandt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_1996_scott-brandt_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/1996/state-park-speedway_1996_scott-brandt_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_1996_scott-brandt_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "1996",
+    "driverSlug": "scott-brandt",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

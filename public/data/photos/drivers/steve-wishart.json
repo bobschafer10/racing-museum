@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_steve-wishart_brad-luepke_post_443.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_steve-wishart_brad-luepke_post_443.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_steve-wishart_brad-luepke_post_443.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-wishart",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "443"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_steve-wishart_unknown-photographer_photo_901.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_steve-wishart_unknown-photographer_photo_901.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_steve-wishart_unknown-photographer_photo_901.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-wishart",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "901"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-wishart_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-wishart_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-wishart_brad-luepke_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-wishart",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-wishart_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-wishart_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-wishart_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-wishart",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-wishart_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-wishart_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-wishart_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-wishart",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

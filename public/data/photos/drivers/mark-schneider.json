@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1977_mark-schneider_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1977/lake-geneva-raceway_1977_mark-schneider_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1977_mark-schneider_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1977",
+    "driverSlug": "mark-schneider",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_mark-schneider_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_mark-schneider_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_mark-schneider_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-schneider",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

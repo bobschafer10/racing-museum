@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "penn-sauter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "penn-sauter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2025_penn-sauter_derek-sabourin_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2025/wisconsin-international-raceway_2025_penn-sauter_derek-sabourin_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2025_penn-sauter_derek-sabourin_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2025",
+    "driverSlug": "penn-sauter",
+    "photographerSlug": "derek-sabourin",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

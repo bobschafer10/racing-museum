@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_1983_axel-dahlberg_patrick-heaney_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1983/capital-super-speedway_1983_axel-dahlberg_patrick-heaney_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1983_axel-dahlberg_patrick-heaney_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1983",
+    "driverSlug": "axel-dahlberg",
+    "photographerSlug": "patrick-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-boehles_patrick-heaney_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-boehles_patrick-heaney_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-boehles_patrick-heaney_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-boehles",
+    "photographerSlug": "patrick-heaney",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

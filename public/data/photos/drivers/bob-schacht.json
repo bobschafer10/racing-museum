@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "illiana-speedway_unknown-year_bob-schacht_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_bob-schacht_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_bob-schacht_pete-fileca_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bob-schacht_don-besch_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bob-schacht_don-besch_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bob-schacht_don-besch_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bob-schacht_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bob-schacht_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bob-schacht_unknown-photographer_photo_222.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

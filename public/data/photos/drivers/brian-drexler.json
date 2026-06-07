@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "door-county-speedway_unknown-year_brian-drexler_dave-panske_photo_006.jpg",
+    "storagePath": "photos/master/door-county-speedway/unknown-year/door-county-speedway_unknown-year_brian-drexler_dave-panske_photo_006.jpg",
+    "publicPath": "/photos/door-county-speedway_unknown-year_brian-drexler_dave-panske_photo_006.jpg",
+    "trackSlug": "door-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "mall-show_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "mall-show_unknown-year_brian-drexler_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_brian-drexler_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_brian-drexler_unknown-photographer_photo_002.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_002.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-drexler_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-drexler_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-drexler_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

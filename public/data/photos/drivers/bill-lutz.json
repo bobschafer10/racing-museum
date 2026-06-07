@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_bill-lutz_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bill-lutz_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bill-lutz_pat-heaney_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bill-lutz",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lutz_don-besch_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lutz_don-besch_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lutz_don-besch_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lutz",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

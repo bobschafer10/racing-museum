@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "illiana-speedway_1976_woody-pool_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/1976/illiana-speedway_1976_woody-pool_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_1976_woody-pool_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "1976",
+    "driverSlug": "woody-pool",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "woody-pool",
+    "photographerSlug": "al-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

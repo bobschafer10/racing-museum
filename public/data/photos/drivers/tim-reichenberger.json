@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "oshkosh-speed-zone_2016_tim-reichenberger_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_tim-reichenberger_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_tim-reichenberger_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "tim-reichenberger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-reichenberger_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-reichenberger_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-reichenberger_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-reichenberger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

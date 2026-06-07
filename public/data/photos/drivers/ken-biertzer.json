@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_ken-biertzer_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_ken-biertzer_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_ken-biertzer_unknown-photographer_photo_002.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-biertzer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_ken-biertzer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_ken-biertzer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_ken-biertzer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-biertzer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-biertzer_75-db_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-biertzer_75-db_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-biertzer_75-db_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-biertzer",
+    "photographerSlug": "75-db",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-biertzer_brian-crass_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-biertzer_brian-crass_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-biertzer_brian-crass_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-biertzer",
+    "photographerSlug": "brian-crass",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-biertzer_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-biertzer_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-biertzer_dave-olson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-biertzer",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-biertzer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-biertzer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-biertzer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-biertzer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

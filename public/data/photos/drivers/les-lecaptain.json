@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_les-lecaptain_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_les-lecaptain_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_les-lecaptain_joe-verdegan_post_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-lecaptain",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_1976_les-lecaptain_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/1976/seymour-speedway_1976_les-lecaptain_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_1976_les-lecaptain_unknown-photographer_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1976",
+    "driverSlug": "les-lecaptain",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_rick-hanley_father-grubba_photo_333.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_rick-hanley_father-grubba_photo_333.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_rick-hanley_father-grubba_photo_333.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-hanley",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "rockford-speedway_1982_rick-hanley_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_rick-hanley_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_rick-hanley_weber-brothers_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "rick-hanley",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-hanley_unknown-photographer_photo_5358.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-hanley_unknown-photographer_photo_5358.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-hanley_unknown-photographer_photo_5358.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-hanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5358"
+  }
+]

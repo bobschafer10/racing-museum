@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_unknown-driver-don-reilly_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_unknown-driver-don-reilly_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_unknown-driver-don-reilly_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver-don-reilly",
+    "photographerSlug": "post",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monroe-speedway_1952_unknown-driver-ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/monroe-speedway/1952/monroe-speedway_1952_unknown-driver-ron-thruman_post_001.jpg",
+    "publicPath": "/photos/monroe-speedway_1952_unknown-driver-ron-thruman_post_001.jpg",
+    "trackSlug": "monroe-speedway",
+    "year": "1952",
+    "driverSlug": "unknown-driver-ron-thruman",
+    "photographerSlug": "post",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-mackesy-john-alft_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-mackesy-john-alft_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-mackesy-john-alft_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-mackesy-john-alft",
+    "photographerSlug": "post",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year-dick-lucht_dennis-satorius_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year-dick-lucht/wisconsin-international-raceway_unknown-year-dick-lucht_dennis-satorius_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year-dick-lucht_dennis-satorius_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year-dick-lucht",
+    "driverSlug": "dennis-satorius",
+    "photographerSlug": "post",
+    "creditType": "333",
+    "sequence": "001"
+  }
+]

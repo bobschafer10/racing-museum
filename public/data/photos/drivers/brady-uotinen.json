@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "thunder-city-speedway_2025_brady-uotinen_ace-photography_photo_333.jpg",
+    "storagePath": "photos/master/thunder-city-speedway/2025/thunder-city-speedway_2025_brady-uotinen_ace-photography_photo_333.jpg",
+    "publicPath": "/photos/thunder-city-speedway_2025_brady-uotinen_ace-photography_photo_333.jpg",
+    "trackSlug": "thunder-city-speedway",
+    "year": "2025",
+    "driverSlug": "brady-uotinen",
+    "photographerSlug": "ace-photography",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_2023_brady-uotinen_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_brady-uotinen_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_2023_brady-uotinen_unknown-photographer_photo_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2023",
+    "driverSlug": "brady-uotinen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

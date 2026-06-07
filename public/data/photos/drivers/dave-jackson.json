@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "milwaukee-mile_1987_dave-jackson_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1987/milwaukee-mile_1987_dave-jackson_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1987_dave-jackson_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1987",
+    "driverSlug": "dave-jackson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dave-jackson_bob-schafer_photo_13906.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dave-jackson_bob-schafer_photo_13906.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dave-jackson_bob-schafer_photo_13906.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dave-jackson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13906"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dave-jackson_bob-schafer_photo_248.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dave-jackson_bob-schafer_photo_248.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dave-jackson_bob-schafer_photo_248.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dave-jackson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "248"
+  }
+]

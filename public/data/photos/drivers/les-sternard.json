@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "door-county-speedway_unknown-year_les-sternard_tim-crass_post_001.jpg",
+    "storagePath": "photos/master/door-county-speedway/unknown-year/door-county-speedway_unknown-year_les-sternard_tim-crass_post_001.jpg",
+    "publicPath": "/photos/door-county-speedway_unknown-year_les-sternard_tim-crass_post_001.jpg",
+    "trackSlug": "door-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-sternard",
+    "photographerSlug": "tim-crass",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_les-sternard_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_les-sternard_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_les-sternard_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "les-sternard",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

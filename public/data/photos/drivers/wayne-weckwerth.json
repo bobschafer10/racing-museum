@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "seymour-speedway_unknown-year_wayne-weckwerth_bob-bergeron_photo_078.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_wayne-weckwerth_bob-bergeron_photo_078.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_wayne-weckwerth_bob-bergeron_photo_078.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-weckwerth",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "078"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_wayne-weckwerth_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wayne-weckwerth_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_wayne-weckwerth_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "wayne-weckwerth",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

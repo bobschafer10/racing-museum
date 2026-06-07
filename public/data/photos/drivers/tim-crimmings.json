@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_1976_tim-crimmings_michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/1976/beaver-dam-raceway_1976_tim-crimmings_michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_1976_tim-crimmings_michael-halbherr_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "1976",
+    "driverSlug": "tim-crimmings",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1982_tim-crimmings_jim-kraemer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1982/plymouth-dirt-track_1982_tim-crimmings_jim-kraemer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1982_tim-crimmings_jim-kraemer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1982",
+    "driverSlug": "tim-crimmings",
+    "photographerSlug": "jim-kraemer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-crimmings",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-crimmings",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-crimmings",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-crimmings",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

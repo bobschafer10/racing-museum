@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_brian-thielke_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_brian-thielke_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_brian-thielke_joe-verdegan_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_002.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_003.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-thielke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-thielke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-thielke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-thielke_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-thielke_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-thielke_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_brian-thielke_kurt-luoma_photo_604.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_brian-thielke_kurt-luoma_photo_604.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_brian-thielke_kurt-luoma_photo_604.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "604"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_brian-thielke_kurt-luoma_photo_614.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_brian-thielke_kurt-luoma_photo_614.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_brian-thielke_kurt-luoma_photo_614.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "614"
+  }
+]

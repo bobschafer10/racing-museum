@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "marshfield-super-speedway_1997_scott-dixon_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/1997/marshfield-super-speedway_1997_scott-dixon_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_1997_scott-dixon_unknown-credit_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "1997",
+    "driverSlug": "scott-dixon",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-dixon_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-dixon_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-dixon_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-dixon",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

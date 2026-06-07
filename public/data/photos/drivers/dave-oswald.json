@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_dave-oswald_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_dave-oswald_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_dave-oswald_don-wendlandt_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-oswald",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_dave-oswald_bob-schafer_photo_13033.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_dave-oswald_bob-schafer_photo_13033.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_dave-oswald_bob-schafer_photo_13033.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-oswald",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13033"
+  }
+]

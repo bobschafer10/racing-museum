@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_jeremy-christians_joe-slack_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_jeremy-christians_joe-slack_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_jeremy-christians_joe-slack_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-christians",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-christians",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-christians",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-christians",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeremy-christians_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-christians_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeremy-christians_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-christians",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

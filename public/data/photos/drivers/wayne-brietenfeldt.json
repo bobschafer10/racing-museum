@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "golden-sands-speedway_1990_wayne-brietenfeldt_bob-schafer_photo_13460.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_wayne-brietenfeldt_bob-schafer_photo_13460.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_wayne-brietenfeldt_bob-schafer_photo_13460.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13460"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13828"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_14129.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_14129.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_14129.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14129"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_3838.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_3838.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_3838.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3838"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

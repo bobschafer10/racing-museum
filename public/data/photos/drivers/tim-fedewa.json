@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_tim-fedewa_bob-schafer_photo_238.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tim-fedewa_bob-schafer_photo_238.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tim-fedewa_bob-schafer_photo_238.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "238"
+  },
+  {
+    "fileName": "rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_tim-fedewa_bob-schafer_photo_13148.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_tim-fedewa_bob-schafer_photo_13148.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_tim-fedewa_bob-schafer_photo_13148.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13148"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-fedewa_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-fedewa_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-fedewa_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "volusia-county-speedway_1990_tim-fedewa_bob-schafer_photo_13164.jpg",
+    "storagePath": "photos/master/volusia-county-speedway/1990/volusia-county-speedway_1990_tim-fedewa_bob-schafer_photo_13164.jpg",
+    "publicPath": "/photos/volusia-county-speedway_1990_tim-fedewa_bob-schafer_photo_13164.jpg",
+    "trackSlug": "volusia-county-speedway",
+    "year": "1990",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13164"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

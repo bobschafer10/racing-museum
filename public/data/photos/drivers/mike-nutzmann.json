@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_mike-nutzmann_bob-schafer_photo_002.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_mike-nutzmann_bob-schafer_photo_002.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_mike-nutzmann_bob-schafer_photo_002.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_mike-nutzmann_ryan-aho_post_097.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_mike-nutzmann_ryan-aho_post_097.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_mike-nutzmann_ryan-aho_post_097.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "097"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "red-cedar-speedway_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/red-cedar-speedway/unknown-year/red-cedar-speedway_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/red-cedar-speedway_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "red-cedar-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rice-lake-speedway_1993_mike-nutzmann_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/1993/rice-lake-speedway_1993_mike-nutzmann_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_1993_mike-nutzmann_neil-miller_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "1993",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-nutzmann_unknown-photographer_photo_10679.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-nutzmann_unknown-photographer_photo_10679.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-nutzmann_unknown-photographer_photo_10679.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "10679"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_mike-nutzmann_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_mike-nutzmann_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_mike-nutzmann_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_mike-nutzmann_kurt-luoma_photo_501.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_mike-nutzmann_kurt-luoma_photo_501.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_mike-nutzmann_kurt-luoma_photo_501.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-nutzmann",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "501"
+  }
+]

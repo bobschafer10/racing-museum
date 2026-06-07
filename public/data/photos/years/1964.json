@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_1964_bill-johnson-jr_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1964/unknown-track_1964_bill-johnson-jr_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1964_bill-johnson-jr_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1964",
+    "driverSlug": "bill-johnson-jr",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1964_dave-morgan_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1964/unknown-track_1964_dave-morgan_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1964_dave-morgan_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1964",
+    "driverSlug": "dave-morgan",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1964_unknown-driver_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1964/unknown-track_1964_unknown-driver_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1964_unknown-driver_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1964",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

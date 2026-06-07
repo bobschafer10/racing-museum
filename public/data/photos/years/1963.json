@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1963_dan-kopshe_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1963/hales-corners-speedway_1963_dan-kopshe_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1963_dan-kopshe_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1963",
+    "driverSlug": "dan-kopshe",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "luxemburg-speedway_1963_unknown-driver_marv-bins_photo_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/1963/luxemburg-speedway_1963_unknown-driver_marv-bins_photo_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_1963_unknown-driver_marv-bins_photo_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "1963",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "marv-bins",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/state-fair-park/1963/state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "publicPath": "/photos/state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1963",
+    "driverSlug": "carl-schultz",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

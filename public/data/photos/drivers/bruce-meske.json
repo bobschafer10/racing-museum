@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1976_bruce-meske_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_bruce-meske_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_bruce-meske_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "bruce-meske",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1975_bruce-meske_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1975/rockford-speedway_1975_bruce-meske_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1975_bruce-meske_geoff-mckarns_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1975",
+    "driverSlug": "bruce-meske",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-meske_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-meske_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-meske_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-meske",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

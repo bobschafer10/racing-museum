@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "rockford-speedway_1983_robert-hixon_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1983/rockford-speedway_1983_robert-hixon_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1983_robert-hixon_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1983",
+    "driverSlug": "robert-hixon",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1983_robert-hixon_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1983/rockford-speedway_1983_robert-hixon_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1983_robert-hixon_pat-heaney_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1983",
+    "driverSlug": "robert-hixon",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1983_robert-hixon_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/rockford-speedway/1983/rockford-speedway_1983_robert-hixon_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/rockford-speedway_1983_robert-hixon_pat-heaney_post_333.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1983",
+    "driverSlug": "robert-hixon",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robert-hixon_don-besch_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robert-hixon_don-besch_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robert-hixon_don-besch_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robert-hixon",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_rich-hauser_chris-loberg_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rich-hauser_chris-loberg_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rich-hauser_chris-loberg_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rich-hauser",
+    "photographerSlug": "chris-loberg",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rich-hauser_missy-lushinsky_photo_001.png",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rich-hauser_missy-lushinsky_photo_001.png",
+    "publicPath": "/photos/unknown-track_unknown-year_rich-hauser_missy-lushinsky_photo_001.png",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rich-hauser",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rich-hauser_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rich-hauser_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rich-hauser_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rich-hauser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

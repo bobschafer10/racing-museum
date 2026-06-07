@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "monster-hall-raceway_2002_danny-schlafer_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2002/monster-hall-raceway_2002_danny-schlafer_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2002_danny-schlafer_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2002",
+    "driverSlug": "danny-schlafer",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_2022_danny-schlafer_weber-brothers_photo_111.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2022/wilmot-raceway_2022_danny-schlafer_weber-brothers_photo_111.jpg",
+    "publicPath": "/photos/wilmot-raceway_2022_danny-schlafer_weber-brothers_photo_111.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2022",
+    "driverSlug": "danny-schlafer",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "111"
+  }
+]

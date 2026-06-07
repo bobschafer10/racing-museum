@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "door-county-speedway_2019_aaron-butterbrodt_dan-lewis_photo_001.jpg",
+    "storagePath": "photos/master/door-county-speedway/2019/door-county-speedway_2019_aaron-butterbrodt_dan-lewis_photo_001.jpg",
+    "publicPath": "/photos/door-county-speedway_2019_aaron-butterbrodt_dan-lewis_photo_001.jpg",
+    "trackSlug": "door-county-speedway",
+    "year": "2019",
+    "driverSlug": "aaron-butterbrodt",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_aaron-butterbrodt_aaron-butterbrodt_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_aaron-butterbrodt_aaron-butterbrodt_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_aaron-butterbrodt_aaron-butterbrodt_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "aaron-butterbrodt",
+    "photographerSlug": "aaron-butterbrodt",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2023_aaron-butterbrodt_wi-dirt-racin_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_aaron-butterbrodt_wi-dirt-racin_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2023_aaron-butterbrodt_wi-dirt-racin_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2023",
+    "driverSlug": "aaron-butterbrodt",
+    "photographerSlug": "wi-dirt-racin",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

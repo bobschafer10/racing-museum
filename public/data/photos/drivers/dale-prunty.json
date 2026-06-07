@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "slinger-speedway_2014_dale-prunty_bob-schneider_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2014/slinger-speedway_2014_dale-prunty_bob-schneider_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2014_dale-prunty_bob-schneider_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2014",
+    "driverSlug": "dale-prunty",
+    "photographerSlug": "bob-schneider",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dale-prunty_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dale-prunty_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dale-prunty_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dale-prunty",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-prunty_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-prunty_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-prunty_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-prunty",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

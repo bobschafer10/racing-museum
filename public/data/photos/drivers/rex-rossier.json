@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rex-rossier_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rex-rossier_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rex-rossier_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rex-rossier_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rex-rossier_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rex-rossier_tom-loos_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_rex-rossier_father-grubba_photo_114.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_rex-rossier_father-grubba_photo_114.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_rex-rossier_father-grubba_photo_114.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "114"
+  },
+  {
+    "fileName": "unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1980",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rex-rossier_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rex-rossier_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rex-rossier_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rex-rossier_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

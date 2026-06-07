@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_red-firari_bob-schafer_photo_13094.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_red-firari_bob-schafer_photo_13094.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_red-firari_bob-schafer_photo_13094.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "red-firari",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13094"
+  },
+  {
+    "fileName": "jefferson-speedway_1982_red-firari_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/jefferson-speedway/1982/jefferson-speedway_1982_red-firari_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/jefferson-speedway_1982_red-firari_unknown-photographer_photo_001.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "1982",
+    "driverSlug": "red-firari",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_red-firari_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_red-firari_joe-slack_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_red-firari_joe-slack_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "red-firari",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-firari_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-firari_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-firari_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-firari",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-firari_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-firari_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-firari_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-firari",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-firari_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-firari_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-firari_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-firari",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-firari_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-firari_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-firari_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-firari",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-firari_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-firari_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-firari_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-firari",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  }
+]

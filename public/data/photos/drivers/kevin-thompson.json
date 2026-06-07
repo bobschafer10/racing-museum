@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_kevin-thompson_bob-schafer_photo_12639.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_kevin-thompson_bob-schafer_photo_12639.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_kevin-thompson_bob-schafer_photo_12639.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "kevin-thompson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12639"
+  },
+  {
+    "fileName": "cedar-lake-speedway_1990_kevin-thompson_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_kevin-thompson_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_kevin-thompson_todd-narveson_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "kevin-thompson",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-thompson_ryan-aho_post_052.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-thompson_ryan-aho_post_052.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-thompson_ryan-aho_post_052.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-thompson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "052"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-thompson_ryan-aho_post_057.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-thompson_ryan-aho_post_057.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-thompson_ryan-aho_post_057.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-thompson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "057"
+  }
+]

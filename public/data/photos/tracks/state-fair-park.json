@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "state-fair-park_1961_bill-johnson-jr_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/state-fair-park/1961/state-fair-park_1961_bill-johnson-jr_glen-harper_post_001.jpg",
+    "publicPath": "/photos/state-fair-park_1961_bill-johnson-jr_glen-harper_post_001.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1961",
+    "driverSlug": "bill-johnson-jr",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/state-fair-park/1963/state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "publicPath": "/photos/state-fair-park_1963_carl-schultz_glen-harper_post_001.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1963",
+    "driverSlug": "carl-schultz",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-fair-park_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-fair-park/unknown-year/state-fair-park_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-fair-park_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

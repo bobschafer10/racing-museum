@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "slinger-speedway_1986_kevin-rein_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1986/slinger-speedway_1986_kevin-rein_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1986_kevin-rein_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1986",
+    "driverSlug": "kevin-rein",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1987_kevin-rein_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_kevin-rein_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_kevin-rein_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "kevin-rein",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1987_kevin-rein_pat-heaney_post_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_kevin-rein_pat-heaney_post_002.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_kevin-rein_pat-heaney_post_002.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "kevin-rein",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-rein_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-rein_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-rein_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-rein",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

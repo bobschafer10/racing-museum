@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_randy-neumann_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_randy-neumann_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_randy-neumann_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-neumann",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_randy-neumann_bob-schafer_photo_13533.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_randy-neumann_bob-schafer_photo_13533.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_randy-neumann_bob-schafer_photo_13533.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "randy-neumann",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13533"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_randy-neumann_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_randy-neumann_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_randy-neumann_bob-schafer_photo_222.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "randy-neumann",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_randy-neumann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_randy-neumann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_randy-neumann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "randy-neumann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

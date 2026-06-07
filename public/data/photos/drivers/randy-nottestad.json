@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_randy-nottestad_bob-schafer_photo_13740.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_randy-nottestad_bob-schafer_photo_13740.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_randy-nottestad_bob-schafer_photo_13740.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-nottestad",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13740"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_randy-nottestad_scott-krueger_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_randy-nottestad_scott-krueger_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_randy-nottestad_scott-krueger_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-nottestad",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "jefferson-speedway_1991_randy-nottestad_jeff-gilhart_photo_001.jpg",
+    "storagePath": "photos/master/jefferson-speedway/1991/jefferson-speedway_1991_randy-nottestad_jeff-gilhart_photo_001.jpg",
+    "publicPath": "/photos/jefferson-speedway_1991_randy-nottestad_jeff-gilhart_photo_001.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "1991",
+    "driverSlug": "randy-nottestad",
+    "photographerSlug": "jeff-gilhart",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

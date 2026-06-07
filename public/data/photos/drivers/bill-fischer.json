@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "wisconsin-international-raceway_1990_bill-fischer_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_bill-fischer_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_bill-fischer_bob-schafer_photo_222.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "bill-fischer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bill-fischer_bob-schafer_photo_13903.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bill-fischer_bob-schafer_photo_13903.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bill-fischer_bob-schafer_photo_13903.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-fischer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13903"
+  }
+]

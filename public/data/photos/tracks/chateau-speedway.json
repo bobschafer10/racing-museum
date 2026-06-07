@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "chateau-speedway_2019_aj-zvorak_aj-zvorak_post_001.jpg",
+    "storagePath": "photos/master/chateau-speedway/2019/chateau-speedway_2019_aj-zvorak_aj-zvorak_post_001.jpg",
+    "publicPath": "/photos/chateau-speedway_2019_aj-zvorak_aj-zvorak_post_001.jpg",
+    "trackSlug": "chateau-speedway",
+    "year": "2019",
+    "driverSlug": "aj-zvorak",
+    "photographerSlug": "aj-zvorak",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "chateau-speedway_2020_aaron-hoff_hoff-racing_post_001.jpg",
+    "storagePath": "photos/master/chateau-speedway/2020/chateau-speedway_2020_aaron-hoff_hoff-racing_post_001.jpg",
+    "publicPath": "/photos/chateau-speedway_2020_aaron-hoff_hoff-racing_post_001.jpg",
+    "trackSlug": "chateau-speedway",
+    "year": "2020",
+    "driverSlug": "aaron-hoff",
+    "photographerSlug": "hoff-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "chateau-speedway_2024_aaron-benson_stoen-racing-engines_post_001.jpg",
+    "storagePath": "photos/master/chateau-speedway/2024/chateau-speedway_2024_aaron-benson_stoen-racing-engines_post_001.jpg",
+    "publicPath": "/photos/chateau-speedway_2024_aaron-benson_stoen-racing-engines_post_001.jpg",
+    "trackSlug": "chateau-speedway",
+    "year": "2024",
+    "driverSlug": "aaron-benson",
+    "photographerSlug": "stoen-racing-engines",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "chateau-speedway_unknown-year_dave-noble_grage-myron_post_100.jpg",
+    "storagePath": "photos/master/chateau-speedway/unknown-year/chateau-speedway_unknown-year_dave-noble_grage-myron_post_100.jpg",
+    "publicPath": "/photos/chateau-speedway_unknown-year_dave-noble_grage-myron_post_100.jpg",
+    "trackSlug": "chateau-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-noble",
+    "photographerSlug": "grage-myron",
+    "creditType": "post",
+    "sequence": "100"
+  }
+]

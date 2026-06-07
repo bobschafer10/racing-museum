@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1981_bill-tandetzke_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1981/hales-corners-speedway_1981_bill-tandetzke_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1981_bill-tandetzke_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1981",
+    "driverSlug": "bill-tandetzke",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1981_bill-tandetzke_weber-brothers_photo_002.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1981/hales-corners-speedway_1981_bill-tandetzke_weber-brothers_photo_002.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1981_bill-tandetzke_weber-brothers_photo_002.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1981",
+    "driverSlug": "bill-tandetzke",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "hales-corners-speedway_1983_bill-tandetzke_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1983/hales-corners-speedway_1983_bill-tandetzke_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1983_bill-tandetzke_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1983",
+    "driverSlug": "bill-tandetzke",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1990_bill-tandetzke_bob-schafer_photo_017.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1990/hales-corners-speedway_1990_bill-tandetzke_bob-schafer_photo_017.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1990_bill-tandetzke_bob-schafer_photo_017.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1990",
+    "driverSlug": "bill-tandetzke",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "017"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-tandetzke_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-tandetzke_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-tandetzke_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-tandetzke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

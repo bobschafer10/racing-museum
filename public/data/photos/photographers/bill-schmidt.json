@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "manitowoc-expo-speedway_2016_mitchell-yurmanovich_bill-schmidt_photo_112.jpg",
+    "storagePath": "photos/master/manitowoc-expo-speedway/2016/manitowoc-expo-speedway_2016_mitchell-yurmanovich_bill-schmidt_photo_112.jpg",
+    "publicPath": "/photos/manitowoc-expo-speedway_2016_mitchell-yurmanovich_bill-schmidt_photo_112.jpg",
+    "trackSlug": "manitowoc-expo-speedway",
+    "year": "2016",
+    "driverSlug": "mitchell-yurmanovich",
+    "photographerSlug": "bill-schmidt",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "shawano-speedway_2016_luke-uttecht_bill-schmidt_photo_333.jpg",
+    "storagePath": "photos/master/shawano-speedway/2016/shawano-speedway_2016_luke-uttecht_bill-schmidt_photo_333.jpg",
+    "publicPath": "/photos/shawano-speedway_2016_luke-uttecht_bill-schmidt_photo_333.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2016",
+    "driverSlug": "luke-uttecht",
+    "photographerSlug": "bill-schmidt",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "shawano-speedway_2016_ray-depew_bill-schmidt_photo_333.jpg",
+    "storagePath": "photos/master/shawano-speedway/2016/shawano-speedway_2016_ray-depew_bill-schmidt_photo_333.jpg",
+    "publicPath": "/photos/shawano-speedway_2016_ray-depew_bill-schmidt_photo_333.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2016",
+    "driverSlug": "ray-depew",
+    "photographerSlug": "bill-schmidt",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ray-dietzen",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_200.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_200.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_200.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ray-dietzen",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "200"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_ray-dietzen_dennis-satorius_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_ray-dietzen_dennis-satorius_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_ray-dietzen_dennis-satorius_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ray-dietzen",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

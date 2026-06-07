@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_leroy-ostrowski_brandon-ostrowski_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_leroy-ostrowski_brandon-ostrowski_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_leroy-ostrowski_brandon-ostrowski_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "leroy-ostrowski",
+    "photographerSlug": "brandon-ostrowski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_pete-ostrowski_brandon-ostrowski_post_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_pete-ostrowski_brandon-ostrowski_post_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_pete-ostrowski_brandon-ostrowski_post_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-ostrowski",
+    "photographerSlug": "brandon-ostrowski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2026_brandon-ostrowski_brandon-ostrowski_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2026/unknown-track_2026_brandon-ostrowski_brandon-ostrowski_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2026_brandon-ostrowski_brandon-ostrowski_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2026",
+    "driverSlug": "brandon-ostrowski",
+    "photographerSlug": "brandon-ostrowski",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

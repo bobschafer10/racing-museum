@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_steve-kracht_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_steve-kracht_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_steve-kracht_joe-verdegan_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-kracht",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_steve-kracht_dan-lewis_photo_001.png",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_steve-kracht_dan-lewis_photo_001.png",
+    "publicPath": "/photos/chilton-speedway_unknown-year_steve-kracht_dan-lewis_photo_001.png",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-kracht",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-kracht_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-kracht_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-kracht_joe-verdegan_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-kracht",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "eagle-valley-speedway_unknown-year_paul-harelstad_deadra-blaser_photo_001.jpg",
+    "storagePath": "photos/master/eagle-valley-speedway/unknown-year/eagle-valley-speedway_unknown-year_paul-harelstad_deadra-blaser_photo_001.jpg",
+    "publicPath": "/photos/eagle-valley-speedway_unknown-year_paul-harelstad_deadra-blaser_photo_001.jpg",
+    "trackSlug": "eagle-valley-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-harelstad",
+    "photographerSlug": "deadra-blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rice-lake-speedway_unknown-year_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/unknown-year/rice-lake-speedway_unknown-year_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_unknown-year_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-harelstad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1994_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1994/unknown-track_1994_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1994_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1994",
+    "driverSlug": "paul-harelstad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-harelstad_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-harelstad_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-harelstad_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-harelstad",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-harelstad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-harelstad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-harelstad_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-harelstad",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

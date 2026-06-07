@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "leroy-arnold",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_002.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_002.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_002.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "leroy-arnold",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_leroy-arnold_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_leroy-arnold_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_leroy-arnold_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "leroy-arnold",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_leroy-arnold_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_leroy-arnold_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_leroy-arnold_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "leroy-arnold",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_leroy-arnold_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_leroy-arnold_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_leroy-arnold_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "leroy-arnold",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

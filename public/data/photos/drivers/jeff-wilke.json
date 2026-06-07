@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "manitowoc-expo-speedway_2011_jeff-wilke_jamie-hanson_photo_001.jpg",
+    "storagePath": "photos/master/manitowoc-expo-speedway/2011/manitowoc-expo-speedway_2011_jeff-wilke_jamie-hanson_photo_001.jpg",
+    "publicPath": "/photos/manitowoc-expo-speedway_2011_jeff-wilke_jamie-hanson_photo_001.jpg",
+    "trackSlug": "manitowoc-expo-speedway",
+    "year": "2011",
+    "driverSlug": "jeff-wilke",
+    "photographerSlug": "jamie-hanson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_jeff-wilke_todd-thelen_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_jeff-wilke_todd-thelen_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_jeff-wilke_todd-thelen_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-wilke",
+    "photographerSlug": "todd-thelen",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_002.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_002.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_002.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-kemperman_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-kemperman_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-kemperman_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_4444.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_4444.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_4444.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "4444"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "tom-furlan",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

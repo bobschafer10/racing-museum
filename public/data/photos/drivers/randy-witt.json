@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_1985_randy-witt_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1985/capital-super-speedway_1985_randy-witt_don-besch_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1985_randy-witt_don-besch_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1985",
+    "driverSlug": "randy-witt",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_randy-witt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_randy-witt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_randy-witt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-witt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_randy-witt_bob-schafer_photo_483.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_randy-witt_bob-schafer_photo_483.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_randy-witt_bob-schafer_photo_483.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "randy-witt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "483"
+  }
+]

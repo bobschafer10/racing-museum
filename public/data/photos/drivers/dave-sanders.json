@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "141-speedway_1984_dave-sanders_al-fortner_photo_333.jpg",
+    "storagePath": "photos/master/141-speedway/1984/141-speedway_1984_dave-sanders_al-fortner_photo_333.jpg",
+    "publicPath": "/photos/141-speedway_1984_dave-sanders_al-fortner_photo_333.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1984",
+    "driverSlug": "dave-sanders",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "141-speedway_1985_dave-sanders_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/141-speedway/1985/141-speedway_1985_dave-sanders_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/141-speedway_1985_dave-sanders_pat-heaney_post_333.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1985",
+    "driverSlug": "dave-sanders",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

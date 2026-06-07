@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "langlade-county-speedway_unknown-year_gordie-seegert_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/langlade-county-speedway/unknown-year/langlade-county-speedway_unknown-year_gordie-seegert_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/langlade-county-speedway_unknown-year_gordie-seegert_jennifer-jach_photo_001.jpg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-seegert",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "langlade-county-speedway_unknown-year_herb-dettman_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/langlade-county-speedway/unknown-year/langlade-county-speedway_unknown-year_herb-dettman_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/langlade-county-speedway_unknown-year_herb-dettman_jennifer-jach_photo_001.jpg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "herb-dettman",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_1999_rm-van-pay_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/1999/oshkosh-speed-zone_1999_rm-van-pay_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_1999_rm-van-pay_jennifer-jach_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "1999",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_bob-voigt_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_bob-voigt_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_bob-voigt_jennifer-jach_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "bob-voigt",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_gary-doehling_jennifer-jach_photo_164.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_gary-doehling_jennifer-jach_photo_164.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_gary-doehling_jennifer-jach_photo_164.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "gary-doehling",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "164"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_scott-sohrweide_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_scott-sohrweide_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_scott-sohrweide_jennifer-jach_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "scott-sohrweide",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2000_kevin-lamberies_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2000/shawano-speedway_2000_kevin-lamberies_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2000_kevin-lamberies_jennifer-jach_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2000",
+    "driverSlug": "kevin-lamberies",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

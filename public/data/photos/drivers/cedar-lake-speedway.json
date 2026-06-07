@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_cedar-lake-speedway_bob-wedlund_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_cedar-lake-speedway_bob-wedlund_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_cedar-lake-speedway_bob-wedlund_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cedar-lake-speedway",
+    "photographerSlug": "bob-wedlund",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_cedar-lake-speedway_kurt-gaber_photo_222.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_cedar-lake-speedway_kurt-gaber_photo_222.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_cedar-lake-speedway_kurt-gaber_photo_222.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cedar-lake-speedway",
+    "photographerSlug": "kurt-gaber",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1976_ron-schuyler_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_ron-schuyler_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_ron-schuyler_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "ron-schuyler",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1978_ron-schuyler_mike-dunn_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1978/lake-geneva-raceway_1978_ron-schuyler_mike-dunn_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1978_ron-schuyler_mike-dunn_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1978",
+    "driverSlug": "ron-schuyler",
+    "photographerSlug": "mike-dunn",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

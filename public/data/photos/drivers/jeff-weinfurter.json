@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "columbus-151-speedway_2004_jeff-weinfurter_don-wendlandt_photo_122.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/2004/columbus-151-speedway_2004_jeff-weinfurter_don-wendlandt_photo_122.jpg",
+    "publicPath": "/photos/columbus-151-speedway_2004_jeff-weinfurter_don-wendlandt_photo_122.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "2004",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "122"
+  },
+  {
+    "fileName": "dells-motor-speedway_2001_jeff-weinfurter_jeff-blaser_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2001/dells-motor-speedway_2001_jeff-weinfurter_jeff-blaser_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2001_jeff-weinfurter_jeff-blaser_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2001",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "jeff-blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_2019_jeff-weinfurter_blaser_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2019/golden-sands-speedway_2019_jeff-weinfurter_blaser_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2019_jeff-weinfurter_blaser_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2019",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jeff-weinfurter_don-wendlandt_photo_116.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jeff-weinfurter_don-wendlandt_photo_116.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jeff-weinfurter_don-wendlandt_photo_116.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "116"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-weinfurter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

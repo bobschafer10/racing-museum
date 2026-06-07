@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_2024_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2024/beaver-dam-raceway_2024_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2024_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2024",
+    "driverSlug": "jerry-winkler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_jerry-winkler_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_jerry-winkler_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_jerry-winkler_unknown-credit_post_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "jerry-winkler",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_2014_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/2014/seymour-speedway_2014_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_2014_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2014",
+    "driverSlug": "jerry-winkler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-winkler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-winkler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

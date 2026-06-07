@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "141-speedway_2010_jared-siefert_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/2010/141-speedway_2010_jared-siefert_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_2010_jared-siefert_bob-greuel_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2010",
+    "driverSlug": "jared-siefert",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jared-siefert",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jared-siefert",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jared-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jared-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jared-siefert_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jared-siefert",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  }
+]

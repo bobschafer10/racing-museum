@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_1990_robear-dielke_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1990/unknown-track_1990_robear-dielke_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1990_robear-dielke_todd-narveson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1990",
+    "driverSlug": "robear-dielke",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robear-dielke_missy-lushinsky_photo_007.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robear-dielke_missy-lushinsky_photo_007.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robear-dielke_missy-lushinsky_photo_007.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robear-dielke",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "007"
+  }
+]

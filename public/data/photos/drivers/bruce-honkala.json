@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "norway-speedway_1999_bruce-honkala_lee-lawrence_photo_001.jpg",
+    "storagePath": "photos/master/norway-speedway/1999/norway-speedway_1999_bruce-honkala_lee-lawrence_photo_001.jpg",
+    "publicPath": "/photos/norway-speedway_1999_bruce-honkala_lee-lawrence_photo_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "1999",
+    "driverSlug": "bruce-honkala",
+    "photographerSlug": "lee-lawrence",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-honkala_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-honkala_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-honkala_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-honkala",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_531.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_531.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_531.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-honkala",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "531"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_532.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_532.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_532.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-honkala",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "532"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_533.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_533.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bruce-honkala_bob-schafer_photo_533.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-honkala",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "533"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bruce-honkala_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bruce-honkala_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bruce-honkala_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-honkala",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

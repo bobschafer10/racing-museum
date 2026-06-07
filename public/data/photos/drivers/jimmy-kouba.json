@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "fox-ridge-speedway_2002_jimmy-kouba_missy-lushinsky_photo_001.jpeg",
+    "storagePath": "photos/master/fox-ridge-speedway/2002/fox-ridge-speedway_2002_jimmy-kouba_missy-lushinsky_photo_001.jpeg",
+    "publicPath": "/photos/fox-ridge-speedway_2002_jimmy-kouba_missy-lushinsky_photo_001.jpeg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "2002",
+    "driverSlug": "jimmy-kouba",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jimmy-kouba_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jimmy-kouba_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jimmy-kouba_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-kouba",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

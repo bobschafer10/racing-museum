@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_002.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_333.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_333.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_333.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jack-greenwood_bob-schafer_photo_256.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jack-greenwood_bob-schafer_photo_256.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jack-greenwood_bob-schafer_photo_256.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "256"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jack-greenwood_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jack-greenwood_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jack-greenwood_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_jack-greenwood_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jack-greenwood_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_jack-greenwood_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jack-greenwood_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-greenwood_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jack-greenwood_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jack-greenwood",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

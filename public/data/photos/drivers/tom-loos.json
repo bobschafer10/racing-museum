@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_tom-loos_tom-loos_photo_002.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_tom-loos_tom-loos_photo_002.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_tom-loos_tom-loos_photo_002.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_tom-loos_tom-loos_photo_608.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_tom-loos_tom-loos_photo_608.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_tom-loos_tom-loos_photo_608.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "608"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-loos_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-loos_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-loos_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-loos_paul-socwell_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-loos_paul-socwell_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-loos_paul-socwell_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "paul-socwell",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-loos_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-loos_tom-loos_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-loos_tom-loos_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-loos_tom-loos_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "tom-loos",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wausau-fairgrounds-john_unknown-year_tom-loos_john-vass_photo_021.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds-john/unknown-year/wausau-fairgrounds-john_unknown-year_tom-loos_john-vass_photo_021.jpg",
+    "publicPath": "/photos/wausau-fairgrounds-john_unknown-year_tom-loos_john-vass_photo_021.jpg",
+    "trackSlug": "wausau-fairgrounds-john",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "021"
+  },
+  {
+    "fileName": "wausau-fairgroundsi-john_unknown-year_tom-loos_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wausau-fairgroundsi-john/unknown-year/wausau-fairgroundsi-john_unknown-year_tom-loos_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wausau-fairgroundsi-john_unknown-year_tom-loos_john-vass_photo_001.jpg",
+    "trackSlug": "wausau-fairgroundsi-john",
+    "year": "unknown-year",
+    "driverSlug": "tom-loos",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

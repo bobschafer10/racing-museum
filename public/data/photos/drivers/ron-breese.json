@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_ron-breese_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ron-breese_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_ron-breese_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-breese",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_1994_ron-breese_dave-drews_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1994/dells-motor-speedway_1994_ron-breese_dave-drews_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1994_ron-breese_dave-drews_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1994",
+    "driverSlug": "ron-breese",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_ron-breese_bob-schafer_photo_13674.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_ron-breese_bob-schafer_photo_13674.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_ron-breese_bob-schafer_photo_13674.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-breese",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13674"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1997_ron-breese_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1997/wisconsin-international-raceway_1997_ron-breese_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1997_ron-breese_pat-heaney_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1997",
+    "driverSlug": "ron-breese",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

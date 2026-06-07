@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_troy-hyde_kurt-gaber_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_troy-hyde_kurt-gaber_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_troy-hyde_kurt-gaber_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "troy-hyde",
+    "photographerSlug": "kurt-gaber",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "abc-raceway_unknown-year_troy-hyde_kurt-gaber-ii_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_troy-hyde_kurt-gaber-ii_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_troy-hyde_kurt-gaber-ii_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "troy-hyde",
+    "photographerSlug": "kurt-gaber-ii",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

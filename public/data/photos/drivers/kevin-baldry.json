@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_kevin-baldry_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-baldry_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-baldry_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-baldry",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-baldry_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-baldry_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-baldry_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-baldry",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2013_kevin-baldry_corey-juelich_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2013/wisconsin-international-raceway_2013_kevin-baldry_corey-juelich_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2013_kevin-baldry_corey-juelich_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2013",
+    "driverSlug": "kevin-baldry",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "proctor-speedway_unknown-year_darrell-nelson_in-a-flash_photo_14612.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_darrell-nelson_in-a-flash_photo_14612.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_darrell-nelson_in-a-flash_photo_14612.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "darrell-nelson",
+    "photographerSlug": "in-a-flash",
+    "creditType": "photo",
+    "sequence": "14612"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14610.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14610.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14610.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "in-a-flash",
+    "creditType": "photo",
+    "sequence": "14610"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14611.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14611.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14611.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "in-a-flash",
+    "creditType": "photo",
+    "sequence": "14611"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14613.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14613.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14613.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "in-a-flash",
+    "creditType": "photo",
+    "sequence": "14613"
+  },
+  {
+    "fileName": "superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/2006/superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "2006",
+    "driverSlug": "dean-yrjanainen",
+    "photographerSlug": "in-a-flash",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

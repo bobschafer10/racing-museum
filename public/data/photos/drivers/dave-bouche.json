@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "luxemburg-speedway_2005_dave-bouche_john-garniss_photo_001.jpeg",
+    "storagePath": "photos/master/luxemburg-speedway/2005/luxemburg-speedway_2005_dave-bouche_john-garniss_photo_001.jpeg",
+    "publicPath": "/photos/luxemburg-speedway_2005_dave-bouche_john-garniss_photo_001.jpeg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2005",
+    "driverSlug": "dave-bouche",
+    "photographerSlug": "john-garniss",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-bouche_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-bouche_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-bouche_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-bouche",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-bouche_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-bouche_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-bouche_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-bouche",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-bouche_unknown-photographer_photo_001.jpeg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-bouche_unknown-photographer_photo_001.jpeg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-bouche_unknown-photographer_photo_001.jpeg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-bouche",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

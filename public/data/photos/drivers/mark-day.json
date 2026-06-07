@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "nashville-speedway_unknown-year_mark-day_bob-schafer_photo_14135.jpg",
+    "storagePath": "photos/master/nashville-speedway/unknown-year/nashville-speedway_unknown-year_mark-day_bob-schafer_photo_14135.jpg",
+    "publicPath": "/photos/nashville-speedway_unknown-year_mark-day_bob-schafer_photo_14135.jpg",
+    "trackSlug": "nashville-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-day",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14135"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_mark-day_bob-schafer_photo_13833.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_mark-day_bob-schafer_photo_13833.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_mark-day_bob-schafer_photo_13833.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-day",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13833"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_mark-day_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_mark-day_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_mark-day_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-day",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "norway-speedway_1999_kris-kelly_lee-lawrence_photo_001.jpeg",
+    "storagePath": "photos/master/norway-speedway/1999/norway-speedway_1999_kris-kelly_lee-lawrence_photo_001.jpeg",
+    "publicPath": "/photos/norway-speedway_1999_kris-kelly_lee-lawrence_photo_001.jpeg",
+    "trackSlug": "norway-speedway",
+    "year": "1999",
+    "driverSlug": "kris-kelly",
+    "photographerSlug": "lee-lawrence",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "norway-speedway_2011_kris-kelly_bob-greuel_photo_001.jpeg",
+    "storagePath": "photos/master/norway-speedway/2011/norway-speedway_2011_kris-kelly_bob-greuel_photo_001.jpeg",
+    "publicPath": "/photos/norway-speedway_2011_kris-kelly_bob-greuel_photo_001.jpeg",
+    "trackSlug": "norway-speedway",
+    "year": "2011",
+    "driverSlug": "kris-kelly",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kris-kelly_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kris-kelly_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kris-kelly_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kris-kelly",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

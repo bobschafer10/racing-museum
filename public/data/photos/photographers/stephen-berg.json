@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_doug-drost_stephen-berg_post_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_doug-drost_stephen-berg_post_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_doug-drost_stephen-berg_post_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-drost",
+    "photographerSlug": "stephen-berg",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rich-somers_stephen-berg_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rich-somers_stephen-berg_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rich-somers_stephen-berg_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rich-somers",
+    "photographerSlug": "stephen-berg",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

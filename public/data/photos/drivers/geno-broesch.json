@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_398.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_398.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_398.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "geno-broesch",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "398"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_400.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_400.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_400.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "geno-broesch",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "400"
+  },
+  {
+    "fileName": "golden-sands-speedway_1990_geno-broesch_bob-schafer_photo_13518.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_geno-broesch_bob-schafer_photo_13518.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_geno-broesch_bob-schafer_photo_13518.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "geno-broesch",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13518"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_geno-broesch_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_geno-broesch_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_geno-broesch_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "geno-broesch",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

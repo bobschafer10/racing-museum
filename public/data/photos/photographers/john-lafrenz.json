@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_1984_rick-wateski_john-lafrenz_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1984/lacrosse-interstate-speedway_1984_rick-wateski_john-lafrenz_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1984_rick-wateski_john-lafrenz_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1984",
+    "driverSlug": "rick-wateski",
+    "photographerSlug": "john-lafrenz",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_pat-griffin_john-lafrenz_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_pat-griffin_john-lafrenz_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_pat-griffin_john-lafrenz_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-griffin",
+    "photographerSlug": "john-lafrenz",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_paula-knutson_john-lafrenz_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_paula-knutson_john-lafrenz_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_paula-knutson_john-lafrenz_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paula-knutson",
+    "photographerSlug": "john-lafrenz",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_ralph-bakewell_john-lafrenz_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_ralph-bakewell_john-lafrenz_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_ralph-bakewell_john-lafrenz_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ralph-bakewell",
+    "photographerSlug": "john-lafrenz",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1981_tom-nesbitt_john-lafrenz_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_tom-nesbitt_john-lafrenz_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1981_tom-nesbitt_john-lafrenz_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1981",
+    "driverSlug": "tom-nesbitt",
+    "photographerSlug": "john-lafrenz",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

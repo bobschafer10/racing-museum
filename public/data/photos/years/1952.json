@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "53-speedway_1952_lyle-nelson_larry-quinn_post_001.jpg",
+    "storagePath": "photos/master/53-speedway/1952/53-speedway_1952_lyle-nelson_larry-quinn_post_001.jpg",
+    "publicPath": "/photos/53-speedway_1952_lyle-nelson_larry-quinn_post_001.jpg",
+    "trackSlug": "53-speedway",
+    "year": "1952",
+    "driverSlug": "lyle-nelson",
+    "photographerSlug": "larry-quinn",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_1952_unknown-driver_bill-behm_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/1952/columbus-151-speedway_1952_unknown-driver_bill-behm_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_1952_unknown-driver_bill-behm_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "bill-behm",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monroe-speedway_1952_unknown-driver-ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/monroe-speedway/1952/monroe-speedway_1952_unknown-driver-ron-thruman_post_001.jpg",
+    "publicPath": "/photos/monroe-speedway_1952_unknown-driver-ron-thruman_post_001.jpg",
+    "trackSlug": "monroe-speedway",
+    "year": "1952",
+    "driverSlug": "unknown-driver-ron-thruman",
+    "photographerSlug": "post",
+    "creditType": "001",
+    "sequence": "001"
+  }
+]

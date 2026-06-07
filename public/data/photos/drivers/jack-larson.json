@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "monster-hall-raceway_2003_jack-larson_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2003/monster-hall-raceway_2003_jack-larson_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2003_jack-larson_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2003",
+    "driverSlug": "jack-larson",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_jack-larson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_jack-larson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_jack-larson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jack-larson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_jack-larson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_jack-larson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_jack-larson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-larson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

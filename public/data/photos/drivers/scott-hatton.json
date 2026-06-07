@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_scott-hatton_chad-tessman_post_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_scott-hatton_chad-tessman_post_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_scott-hatton_chad-tessman_post_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "scott-hatton",
+    "photographerSlug": "chad-tessman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_scott-hatton_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_scott-hatton_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_scott-hatton_unknown-photographer_photo_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "scott-hatton",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_scott-hatton_unknown-photographer_post_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_scott-hatton_unknown-photographer_post_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_scott-hatton_unknown-photographer_post_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "scott-hatton",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "mall-show_unknown-year_scott-hatton_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_scott-hatton_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_scott-hatton_charlie-spry_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "scott-hatton",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-hatton_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-hatton_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-hatton_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-hatton",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "luxemburg-speedway_unknown-year_josh-massart_dave-panske_photo_002.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_josh-massart_dave-panske_photo_002.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_josh-massart_dave-panske_photo_002.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "josh-massart",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "luxemburg-speedway_unknown-year_josh-massart_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_josh-massart_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_josh-massart_joe-slack_photo_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "josh-massart",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

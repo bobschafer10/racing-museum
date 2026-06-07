@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "john-kaufenberg",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "elko-speedway_unknown-year_tim-olson_john-kaufenberg_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_tim-olson_john-kaufenberg_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_tim-olson_john-kaufenberg_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-olson",
+    "photographerSlug": "john-kaufenberg",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

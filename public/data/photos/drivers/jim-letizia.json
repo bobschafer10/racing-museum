@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-letizia_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-letizia_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-letizia_pat-heaney_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_jim-letizia_unknown-photographer_photo_101.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_jim-letizia_unknown-photographer_photo_101.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_jim-letizia_unknown-photographer_photo_101.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "101"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-letizia_charles-searing_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-letizia_charles-searing_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-letizia_charles-searing_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "charles-searing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-letizia_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-letizia_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-letizia_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-letizia_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-letizia_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-letizia_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-letizia_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-letizia_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-letizia_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

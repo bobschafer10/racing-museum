@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "impact-speedway_1988_rick-lawrence_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/impact-speedway/1988/impact-speedway_1988_rick-lawrence_don-besch_photo_001.jpg",
+    "publicPath": "/photos/impact-speedway_1988_rick-lawrence_don-besch_photo_001.jpg",
+    "trackSlug": "impact-speedway",
+    "year": "1988",
+    "driverSlug": "rick-lawrence",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-lawrence_allan-lawrence_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-lawrence_allan-lawrence_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-lawrence_allan-lawrence_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-lawrence",
+    "photographerSlug": "allan-lawrence",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-lawrence_dave-olson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-lawrence_dave-olson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-lawrence_dave-olson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-lawrence",
+    "photographerSlug": "dave-olson",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

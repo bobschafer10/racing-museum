@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_larry-prochnow_ryan-aho_post_014.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-prochnow_ryan-aho_post_014.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-prochnow_ryan-aho_post_014.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-prochnow",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "014"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-prochnow_ryan-aho_post_030.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-prochnow_ryan-aho_post_030.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-prochnow_ryan-aho_post_030.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-prochnow",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "030"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-prochnow_ryan-aho_post_124.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-prochnow_ryan-aho_post_124.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-prochnow_ryan-aho_post_124.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-prochnow",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "124"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-prochnow_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-prochnow_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-prochnow_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-prochnow",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-prochnow_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-prochnow_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-prochnow_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-prochnow",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "yellow-river-speedway_1990_larry-prochnow_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/1990/yellow-river-speedway_1990_larry-prochnow_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_1990_larry-prochnow_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "1990",
+    "driverSlug": "larry-prochnow",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_larry-prochnow_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_larry-prochnow_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_larry-prochnow_bob-schafer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-prochnow",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

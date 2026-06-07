@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_jim-kemkes_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_jim-kemkes_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_jim-kemkes_joe-verdegan_post_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-kemkes",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-kemkes_bob-schafer_photo_061.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-kemkes_bob-schafer_photo_061.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-kemkes_bob-schafer_photo_061.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-kemkes",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "061"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-kemkes_bob-schafer_photo_14010.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-kemkes_bob-schafer_photo_14010.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-kemkes_bob-schafer_photo_14010.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-kemkes",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14010"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-kemkes_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-kemkes_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-kemkes_joe-slack_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-kemkes",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-kemkes_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-kemkes_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-kemkes_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-kemkes",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

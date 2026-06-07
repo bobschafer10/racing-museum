@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_gary-krueger_charlie-spry-post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_gary-krueger_charlie-spry-post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_gary-krueger_charlie-spry-post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "gary-krueger",
+    "photographerSlug": "charlie-spry-post",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_gary-krueger_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_gary-krueger_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_gary-krueger_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "gary-krueger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-krueger_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-krueger_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-krueger_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-krueger",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-krueger_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-krueger_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-krueger_don-wendlandt_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-krueger",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-krueger_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-krueger_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-krueger_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-krueger",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-krueger_pat-heaney_unknown_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-krueger_pat-heaney_unknown_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-krueger_pat-heaney_unknown_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-krueger",
+    "photographerSlug": "pat-heaney",
+    "creditType": "unknown",
+    "sequence": "001"
+  }
+]

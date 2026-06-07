@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "superior-speedway_unknown-year_johnny-johnson_old-skool_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_johnny-johnson_old-skool_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_johnny-johnson_old-skool_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "johnny-johnson",
+    "photographerSlug": "old-skool",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1975_johnny-johnson_bob-wedlund_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1975/unknown-track_1975_johnny-johnson_bob-wedlund_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1975_johnny-johnson_bob-wedlund_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1975",
+    "driverSlug": "johnny-johnson",
+    "photographerSlug": "bob-wedlund",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1976_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1976/unknown-track_1976_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1976_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1976",
+    "driverSlug": "johnny-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "johnny-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_johnny-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "johnny-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

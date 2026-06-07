@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_kenny-richards_don-wendlandt_photo_116.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_kenny-richards_don-wendlandt_photo_116.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_kenny-richards_don-wendlandt_photo_116.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "116"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_kenny-richards_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_kenny-richards_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_kenny-richards_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_1997_kenny-richards_mary-lewis_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/1997/shawano-speedway_1997_kenny-richards_mary-lewis_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_1997_kenny-richards_mary-lewis_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1997",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "mary-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

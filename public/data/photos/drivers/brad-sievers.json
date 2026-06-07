@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "eagle-river-speedway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brad-sievers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "brad-sievers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

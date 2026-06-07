@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "norway-speedway_unknown-year_mark-miller_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_mark-miller_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_mark-miller_unknown-credit_post_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-miller",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mark-miller_bob-schafer_photo_474.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mark-miller_bob-schafer_photo_474.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mark-miller_bob-schafer_photo_474.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-miller",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "474"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-miller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_002.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-miller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_332.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_332.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mark-miller_unknown-photographer_photo_332.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-miller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "332"
+  }
+]

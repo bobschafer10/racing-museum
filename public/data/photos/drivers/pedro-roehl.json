@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_pedro-roehl_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_pedro-roehl_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_pedro-roehl_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pedro-roehl",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pedro-roehl_scott-krueger_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pedro-roehl_scott-krueger_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pedro-roehl_scott-krueger_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pedro-roehl",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pedro-roehl_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pedro-roehl_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pedro-roehl_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pedro-roehl",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

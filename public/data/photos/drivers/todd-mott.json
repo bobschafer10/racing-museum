@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_todd-mott_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_todd-mott_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_todd-mott_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-mott",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-mott_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-mott_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-mott_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-mott",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

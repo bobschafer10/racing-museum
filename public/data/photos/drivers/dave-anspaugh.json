@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "grundy-county-speedway_unknown-year_dave-anspaugh_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_dave-anspaugh_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_dave-anspaugh_unknown-photographer_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-anspaugh",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_dave-anspaugh_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_dave-anspaugh_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_dave-anspaugh_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-anspaugh",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

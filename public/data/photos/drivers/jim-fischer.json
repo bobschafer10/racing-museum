@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_jim-fischer_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_jim-fischer_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_jim-fischer_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-fischer",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-fischer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_1972_jim-fischer_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/1972/seymour-speedway_1972_jim-fischer_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_1972_jim-fischer_joe-verdegan_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1972",
+    "driverSlug": "jim-fischer",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_jim-fischer_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_jim-fischer_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_jim-fischer_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-fischer",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-fischer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1971_jim-fischer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1971/unknown-track_1971_jim-fischer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1971_jim-fischer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1971",
+    "driverSlug": "jim-fischer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

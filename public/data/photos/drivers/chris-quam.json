@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "jefferson-speedway_unknown-year_chris-quam_unknown-photographer_post_001.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_chris-quam_unknown-photographer_post_001.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_chris-quam_unknown-photographer_post_001.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chris-quam",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "jefferson-speedway_unknown-year_chris-quam_unknown-photographer_post_2221.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_chris-quam_unknown-photographer_post_2221.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_chris-quam_unknown-photographer_post_2221.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chris-quam",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "2221"
+  },
+  {
+    "fileName": "lake-geneva-raceway_2002_chris-quam_charlie-doerr_photo_001.jpeg",
+    "storagePath": "photos/master/lake-geneva-raceway/2002/lake-geneva-raceway_2002_chris-quam_charlie-doerr_photo_001.jpeg",
+    "publicPath": "/photos/lake-geneva-raceway_2002_chris-quam_charlie-doerr_photo_001.jpeg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "2002",
+    "driverSlug": "chris-quam",
+    "photographerSlug": "charlie-doerr",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

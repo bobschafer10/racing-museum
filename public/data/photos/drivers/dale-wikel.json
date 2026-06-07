@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_dale-wikel_michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_dale-wikel_michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_dale-wikel_michael-halbherr_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-wikel",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-wikel_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-wikel_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-wikel_bob-bergeron_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-wikel",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

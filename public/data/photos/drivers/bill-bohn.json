@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bill-bohn_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-bohn_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-bohn_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-bohn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-bohn_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-bohn_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-bohn_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-bohn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_bill-bohn_tom-furlan_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_bill-bohn_tom-furlan_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_bill-bohn_tom-furlan_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-bohn",
+    "photographerSlug": "tom-furlan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_bill-bohn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_bill-bohn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_bill-bohn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-bohn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

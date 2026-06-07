@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_don-white_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_don-white_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_don-white_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "don-white",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_don-white_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_don-white_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_don-white_mike-napierala_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "don-white",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_don-white_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_don-white_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_don-white_unknown-photographer_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "don-white",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-white_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-white_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-white_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-white",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-white_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-white_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-white_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-white",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-white_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-white_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-white_weber-brothers_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-white",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jeff-fritz_blaser_photo_001.png",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jeff-fritz_blaser_photo_001.png",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jeff-fritz_blaser_photo_001.png",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-fritz",
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_442.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_442.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_442.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-fritz",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "442"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_476.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_476.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_476.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-fritz",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "476"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_485.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_485.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jeff-fritz_bob-schafer_photo_485.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-fritz",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "485"
+  },
+  {
+    "fileName": "golden-sands-speedway_1990_jeff-fritz_bob-schafer_photo_13328.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_jeff-fritz_bob-schafer_photo_13328.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_jeff-fritz_bob-schafer_photo_13328.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "jeff-fritz",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13328"
+  }
+]

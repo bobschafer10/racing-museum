@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_larry-walter_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_larry-walter_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_larry-walter_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-walter",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_larry-walter_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_larry-walter_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_larry-walter_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "larry-walter",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_larry-walter_bob-schafer_photo_099.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_larry-walter_bob-schafer_photo_099.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_larry-walter_bob-schafer_photo_099.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-walter",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "099"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-walter_99-car-show-weber_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-walter_99-car-show-weber_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-walter_99-car-show-weber_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-walter",
+    "photographerSlug": "99-car-show-weber",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-walter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-walter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-walter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-walter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-walter_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-walter_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-walter_weber-brothers_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-walter",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

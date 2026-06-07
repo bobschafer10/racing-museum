@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_doug-vandenlangenberg_bob-schafer_photo_069.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_doug-vandenlangenberg_bob-schafer_photo_069.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_doug-vandenlangenberg_bob-schafer_photo_069.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-vandenlangenberg",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "069"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_doug-vandenlangenberg_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_doug-vandenlangenberg_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_doug-vandenlangenberg_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-vandenlangenberg",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_doug-vandenlangenberg_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_doug-vandenlangenberg_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_doug-vandenlangenberg_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "doug-vandenlangenberg",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_doug-vandenlangenberg_ryan-aho_post_011.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_doug-vandenlangenberg_ryan-aho_post_011.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_doug-vandenlangenberg_ryan-aho_post_011.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "doug-vandenlangenberg",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "011"
+  }
+]

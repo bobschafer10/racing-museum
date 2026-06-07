@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-stanley_street-stock-jv_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-stanley_street-stock-jv_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-stanley_street-stock-jv_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "street-stock-jv",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-stanley_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-stanley_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-stanley_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-stanley_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-stanley_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-stanley_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "yellow-river-speedway_1989_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/1989/yellow-river-speedway_1989_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_1989_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "1989",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

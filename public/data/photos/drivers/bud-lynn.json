@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_bud-lynn_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bud-lynn_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bud-lynn_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_002.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_101.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_101.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_101.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "101"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bud-lynn_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bud-lynn_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bud-lynn_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bud-lynn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bud-lynn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bud-lynn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_bud-lynn_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_bud-lynn_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_bud-lynn_john-vass_photo_001.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_bud-lynn_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_bud-lynn_john-vass_photo_002.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_bud-lynn_john-vass_photo_002.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "bud-lynn",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

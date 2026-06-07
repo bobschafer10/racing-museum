@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_rick-tackman_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_rick-tackman_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_rick-tackman_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-tackman",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_2014_rick-tackman_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2014/state-park-speedway_2014_rick-tackman_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2014_rick-tackman_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2014",
+    "driverSlug": "rick-tackman",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-tackman_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-tackman_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-tackman_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-tackman",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

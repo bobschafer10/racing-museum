@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_004.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "fond-du-lac-fairgrounds_1971_bob-kleinschmidt_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/fond-du-lac-fairgrounds/1971/fond-du-lac-fairgrounds_1971_bob-kleinschmidt_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/fond-du-lac-fairgrounds_1971_bob-kleinschmidt_joe-verdegan_post_001.jpg",
+    "trackSlug": "fond-du-lac-fairgrounds",
+    "year": "1971",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "008"
+  }
+]

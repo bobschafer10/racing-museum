@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "rangeline-speedway_1969_unknown-driver_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rangeline-speedway/1969/rangeline-speedway_1969_unknown-driver_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rangeline-speedway_1969_unknown-driver_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rangeline-speedway",
+    "year": "1969",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rangeline-speedway_unknown-year_unknown-driver_kevin-ress_photo_001.jpg",
+    "storagePath": "photos/master/rangeline-speedway/unknown-year/rangeline-speedway_unknown-year_unknown-driver_kevin-ress_photo_001.jpg",
+    "publicPath": "/photos/rangeline-speedway_unknown-year_unknown-driver_kevin-ress_photo_001.jpg",
+    "trackSlug": "rangeline-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "kevin-ress",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rangeline-speedway_unknown-year_unknown-driver_unknown-photographer_photo_3444.jpg",
+    "storagePath": "photos/master/rangeline-speedway/unknown-year/rangeline-speedway_unknown-year_unknown-driver_unknown-photographer_photo_3444.jpg",
+    "publicPath": "/photos/rangeline-speedway_unknown-year_unknown-driver_unknown-photographer_photo_3444.jpg",
+    "trackSlug": "rangeline-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3444"
+  }
+]

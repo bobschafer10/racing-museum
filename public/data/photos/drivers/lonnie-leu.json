@@ -1,0 +1,134 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_lonnie-leu_rats-racing_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_lonnie-leu_rats-racing_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_lonnie-leu_rats-racing_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "rats-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_lonnie-leu_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_lonnie-leu_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_lonnie-leu_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lonnie-leu_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lonnie-leu_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lonnie-leu_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lonnie-leu_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lonnie-leu_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lonnie-leu_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_duane-leu_post_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_duane-leu_post_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_duane-leu_post_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "duane-leu",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_duane-leu_post_021.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_duane-leu_post_021.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_duane-leu_post_021.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "duane-leu",
+    "creditType": "post",
+    "sequence": "021"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_014.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_014.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_014.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "014"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_300.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_300.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_300.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "300"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_400.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_400.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_400.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "400"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_504.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_504.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_504.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "504"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_614.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_614.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_lonnie-leu_kurt-luoma_photo_614.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "614"
+  }
+]

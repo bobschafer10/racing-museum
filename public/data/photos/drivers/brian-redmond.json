@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "golden-sands-speedway_1990_brian-redmond_bob-schafer_photo_286.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_brian-redmond_bob-schafer_photo_286.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_brian-redmond_bob-schafer_photo_286.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "brian-redmond",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "286"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brian-redmond_bob-schafer_photo_13803.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brian-redmond_bob-schafer_photo_13803.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brian-redmond_bob-schafer_photo_13803.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-redmond",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13803"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_brian-redmond_bob-schafer_photo_326.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brian-redmond_bob-schafer_photo_326.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_brian-redmond_bob-schafer_photo_326.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-redmond",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "326"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-redmond_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-redmond_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-redmond_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-redmond",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

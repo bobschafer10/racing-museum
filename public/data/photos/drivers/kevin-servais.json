@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_kevin-servais_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_kevin-servais_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_kevin-servais_weber-brothers_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1993_kevin-servais_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1993/rockford-speedway_1993_kevin-servais_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1993_kevin-servais_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1993",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_kevin-servais_bob-schafer_photo_341.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_kevin-servais_bob-schafer_photo_341.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_kevin-servais_bob-schafer_photo_341.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "341"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_kevin-servais_bob-schafer_photo_349.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_kevin-servais_bob-schafer_photo_349.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_kevin-servais_bob-schafer_photo_349.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "349"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_kevin-servais_kurt-luoma_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_kevin-servais_kurt-luoma_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_kevin-servais_kurt-luoma_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

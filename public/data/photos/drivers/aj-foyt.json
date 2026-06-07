@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "daytona-international-speedway_1988_aj-foyt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/daytona-international-speedway/1988/daytona-international-speedway_1988_aj-foyt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/daytona-international-speedway_1988_aj-foyt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "daytona-international-speedway",
+    "year": "1988",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1962/milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1962",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1979/milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1979",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_aj-foyt_dan-radig_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_aj-foyt_dan-radig_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_aj-foyt_dan-radig_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "dan-radig",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_aj-foyt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_aj-foyt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_aj-foyt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_aj-foyt_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_aj-foyt_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_aj-foyt_weber-brothers_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "southern-illinois-fairgrounds_unknown-year_aj-foyt_al-consoli_photo_001.jpg",
+    "storagePath": "photos/master/southern-illinois-fairgrounds/unknown-year/southern-illinois-fairgrounds_unknown-year_aj-foyt_al-consoli_photo_001.jpg",
+    "publicPath": "/photos/southern-illinois-fairgrounds_unknown-year_aj-foyt_al-consoli_photo_001.jpg",
+    "trackSlug": "southern-illinois-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "al-consoli",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aj-foyt_phil-dullinger_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aj-foyt_phil-dullinger_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_aj-foyt_phil-dullinger_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

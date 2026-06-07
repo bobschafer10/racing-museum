@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "austin-fairgrounds_unknown-year_mert-williams_conrad-nelson_post_001.jpg",
+    "storagePath": "photos/master/austin-fairgrounds/unknown-year/austin-fairgrounds_unknown-year_mert-williams_conrad-nelson_post_001.jpg",
+    "publicPath": "/photos/austin-fairgrounds_unknown-year_mert-williams_conrad-nelson_post_001.jpg",
+    "trackSlug": "austin-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "conrad-nelson",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-fairgrounds_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-fairgrounds/unknown-year/lacrosse-fairgrounds_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-fairgrounds_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lacrosse-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mert-williams_missy-lushinsky_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mert-williams_owatonna-mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mert-williams_owatonna-mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mert-williams_owatonna-mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "owatonna-mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mert-williams_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mert-williams_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mert-williams_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mert-williams_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mert-williams_unknown-photographer_photo_11972.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mert-williams_unknown-photographer_photo_11972.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mert-williams_unknown-photographer_photo_11972.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mert-williams",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "11972"
+  }
+]

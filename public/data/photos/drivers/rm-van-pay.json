@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "141-speedway_2015_rm-van-pay_dave-panske_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/2015/141-speedway_2015_rm-van-pay_dave-panske_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_2015_rm-van-pay_dave-panske_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2015",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "luxemburg-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_1999_rm-van-pay_jennifer-jach_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/1999/oshkosh-speed-zone_1999_rm-van-pay_jennifer-jach_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_1999_rm-van-pay_jennifer-jach_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "1999",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "jennifer-jach",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_2002_rm-van-pay_dave-panske_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/2002/seymour-speedway_2002_rm-van-pay_dave-panske_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_2002_rm-van-pay_dave-panske_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2002",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_rm-van-pay_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_rm-van-pay_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_rm-van-pay_joe-slack_photo_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_rm-van-pay_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_rm-van-pay_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_rm-van-pay_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_555.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rm-van-pay",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

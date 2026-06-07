@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "lance-leu",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_002.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_002.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_002.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "lance-leu",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lance-leu_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lance-leu_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lance-leu_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lance-leu",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

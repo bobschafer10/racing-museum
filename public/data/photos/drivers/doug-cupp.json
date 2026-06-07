@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_1985_doug-cupp_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1985/capital-super-speedway_1985_doug-cupp_don-besch_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1985_doug-cupp_don-besch_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1985",
+    "driverSlug": "doug-cupp",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_doug-cupp_bob-schafer_photo_14352.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_doug-cupp_bob-schafer_photo_14352.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_doug-cupp_bob-schafer_photo_14352.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-cupp",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14352"
+  }
+]

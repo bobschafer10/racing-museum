@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "state-park-speedway_unknown-year_randy-buelow_bob-schafer_photo_123.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_randy-buelow_bob-schafer_photo_123.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_randy-buelow_bob-schafer_photo_123.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-buelow",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "123"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_randy-buelow_bob-schafer_photo_12717.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_randy-buelow_bob-schafer_photo_12717.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_randy-buelow_bob-schafer_photo_12717.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-buelow",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12717"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_randy-buelow_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_randy-buelow_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_randy-buelow_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-buelow",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_randy-buelow_john-alft_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_randy-buelow_john-alft_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_randy-buelow_john-alft_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "randy-buelow",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

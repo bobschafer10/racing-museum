@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_dan-mills_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dan-mills_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dan-mills_unknown-photographer_photo_002.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-mills",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dan-mills_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dan-mills_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dan-mills_unknown-photographer_photo_003.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-mills",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dan-mills_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dan-mills_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dan-mills_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dan-mills",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

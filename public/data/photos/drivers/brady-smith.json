@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "proctor-speedway_1998_brady-smith_unknown-photographer_photo_002.jpeg",
+    "storagePath": "photos/master/proctor-speedway/1998/proctor-speedway_1998_brady-smith_unknown-photographer_photo_002.jpeg",
+    "publicPath": "/photos/proctor-speedway_1998_brady-smith_unknown-photographer_photo_002.jpeg",
+    "trackSlug": "proctor-speedway",
+    "year": "1998",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_003.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_004.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_005.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brady-smith_unknown-photographer_photo_10660.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brady-smith_unknown-photographer_photo_10660.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brady-smith_unknown-photographer_photo_10660.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "10660"
+  }
+]

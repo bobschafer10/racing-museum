@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import { getPhotoUrl } from '@/lib/photos'
 import TrackLogo from './tracks/[slug]/TrackLogo'
 
 export const dynamic = 'force-dynamic'
@@ -54,6 +55,12 @@ function publicFileExists(publicPath: string) {
   const cleanPath = publicPath.startsWith('/') ? publicPath.slice(1) : publicPath
   const fullPath = path.join(process.cwd(), 'public', cleanPath)
   return fs.existsSync(fullPath)
+}
+
+function photoStorageUrl(photo: any) {
+  return getPhotoUrl(
+    `photos/master/${photo.track_slug}/${photo.year || 'unknown-year'}/${photo.file_name}`
+  )
 }
 
 export default async function Home() {
@@ -673,7 +680,7 @@ const track =
           style={{ display: 'block' }}
         >
           <img
-            src={`/photos/${leftSpotlightPhoto.file_name}`}
+            src={photoStorageUrl(leftSpotlightPhoto)}
             alt={formatSlugName(leftSpotlightPhoto.driver_slug)}
             style={spotlightSideImage}
           />
@@ -806,7 +813,7 @@ rightSpotlightPhoto.photographer_slug !== 'unknown'
           style={{ display: 'block' }}
         >
           <img
-            src={`/photos/${rightSpotlightPhoto.file_name}`}
+            src={photoStorageUrl(rightSpotlightPhoto)}
             alt={formatSlugName(rightSpotlightPhoto.driver_slug)}
             style={spotlightSideImage}
           />
@@ -827,7 +834,7 @@ rightSpotlightPhoto.photographer_slug !== 'unknown'
           style={{ display: 'block' }}
         >
           <img
-            src={`/photos/${spotlightPhoto.file_name}`}
+           src={photoStorageUrl(spotlightPhoto)}
             alt={formatSlugName(spotlightPhoto.driver_slug)}
             style={spotlightImage}
           />
@@ -1036,14 +1043,14 @@ function FeatureDriverCard({
         {photo && driver ? (
   <Link href={`/drivers/${driver.driver_slug}`}>
     <img
-      src={`/photos/${photo.file_name}`}
+      src={photoStorageUrl(photo)}
       alt={driver.driver_name || 'Featured driver'}
       style={featureImage}
     />
   </Link>
 ) : photo ? (
   <img
-    src={`/photos/${photo.file_name}`}
+    src={photoStorageUrl(photo)}
     alt="Featured driver"
     style={featureImage}
   />

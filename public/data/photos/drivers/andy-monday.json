@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "norway-speedway_unknown-year_andy-monday_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_andy-monday_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_andy-monday_unknown-photographer_photo_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "andy-monday",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_andy-monday_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_andy-monday_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_andy-monday_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "andy-monday",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2002_andy-monday_corey-juelich_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2002/wisconsin-international-raceway_2002_andy-monday_corey-juelich_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2002_andy-monday_corey-juelich_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2002",
+    "driverSlug": "andy-monday",
+    "photographerSlug": "corey-juelich",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2013_andy-monday_corey-juelich_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2013/wisconsin-international-raceway_2013_andy-monday_corey-juelich_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2013_andy-monday_corey-juelich_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2013",
+    "driverSlug": "andy-monday",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2025_andy-monday_derek-sabourin_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2025/wisconsin-international-raceway_2025_andy-monday_derek-sabourin_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2025_andy-monday_derek-sabourin_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2025",
+    "driverSlug": "andy-monday",
+    "photographerSlug": "derek-sabourin",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2026_andy-monday_lorsports_photo_111.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2026/wisconsin-international-raceway_2026_andy-monday_lorsports_photo_111.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2026_andy-monday_lorsports_photo_111.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2026",
+    "driverSlug": "andy-monday",
+    "photographerSlug": "lorsports",
+    "creditType": "photo",
+    "sequence": "111"
+  }
+]

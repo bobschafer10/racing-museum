@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_ken-blaine_bob-schafer_photo_12870.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_ken-blaine_bob-schafer_photo_12870.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_ken-blaine_bob-schafer_photo_12870.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-blaine",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12870"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_ken-blaine_bob-schafer_photo_601.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_ken-blaine_bob-schafer_photo_601.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_ken-blaine_bob-schafer_photo_601.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-blaine",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "601"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_ken-blaine_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_ken-blaine_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_ken-blaine_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-blaine",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_ken-blaine_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_ken-blaine_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_ken-blaine_unknown-photographer_photo_002.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-blaine",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-blaine_plymouth-shelly-kerwin_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-blaine_plymouth-shelly-kerwin_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-blaine_plymouth-shelly-kerwin_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-blaine",
+    "photographerSlug": "plymouth-shelly-kerwin",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

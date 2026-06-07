@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_charlie-cottam_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_charlie-cottam_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_charlie-cottam_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "charlie-cottam",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_charlie-cottam_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_charlie-cottam_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_charlie-cottam_unknown-photographer_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "charlie-cottam",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

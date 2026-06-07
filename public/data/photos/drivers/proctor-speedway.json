@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "proctor-speedway_unknown-year_proctor-speedway_don-reilly_post_100.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_proctor-speedway_don-reilly_post_100.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_proctor-speedway_don-reilly_post_100.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "proctor-speedway",
+    "photographerSlug": "don-reilly",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_proctor-speedway_troy-powers_post_404.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_proctor-speedway_troy-powers_post_404.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_proctor-speedway_troy-powers_post_404.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "proctor-speedway",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "404"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_proctor-speedway_unknown-photographer_photo_202.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_proctor-speedway_unknown-photographer_photo_202.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_proctor-speedway_unknown-photographer_photo_202.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "proctor-speedway",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "202"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_proctor-speedway_unknown-photographer_photo_303.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_proctor-speedway_unknown-photographer_photo_303.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_proctor-speedway_unknown-photographer_photo_303.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "proctor-speedway",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "303"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "mall-show_unknown-year_ed-dunne_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_ed-dunne_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_ed-dunne_geoff-mckarns_post_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "ed-dunne",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-dunne_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-dunne_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-dunne_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-dunne",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_1975_ed-dunne_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/1975/waukegan-speedway_1975_ed-dunne_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_1975_ed-dunne_mike-napierala_photo_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "1975",
+    "driverSlug": "ed-dunne",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

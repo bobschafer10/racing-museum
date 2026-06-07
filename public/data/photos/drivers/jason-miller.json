@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "proctor-speedway_1998_jason-miller_unknown-photographer_photo_002.jpeg",
+    "storagePath": "photos/master/proctor-speedway/1998/proctor-speedway_1998_jason-miller_unknown-photographer_photo_002.jpeg",
+    "publicPath": "/photos/proctor-speedway_1998_jason-miller_unknown-photographer_photo_002.jpeg",
+    "trackSlug": "proctor-speedway",
+    "year": "1998",
+    "driverSlug": "jason-miller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_jason-miller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_jason-miller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_jason-miller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jason-miller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

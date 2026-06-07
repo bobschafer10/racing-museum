@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_Unknown-year_bruce-johnson_kenneth-edmundson_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/Unknown-year/unknown-track_Unknown-year_bruce-johnson_kenneth-edmundson_post_001.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_bruce-johnson_kenneth-edmundson_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "Unknown-year",
+    "driverSlug": "bruce-johnson",
+    "photographerSlug": "kenneth-edmundson",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_Unknown-year_bruce-johnson_kenneth-edmundson_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/Unknown-year/unknown-track_Unknown-year_bruce-johnson_kenneth-edmundson_post_002.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_bruce-johnson_kenneth-edmundson_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "Unknown-year",
+    "driverSlug": "bruce-johnson",
+    "photographerSlug": "kenneth-edmundson",
+    "creditType": "post",
+    "sequence": "002"
+  }
+]

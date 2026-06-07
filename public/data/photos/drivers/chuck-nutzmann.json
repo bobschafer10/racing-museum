@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_chuck-nutzmann_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_chuck-nutzmann_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_chuck-nutzmann_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chuck-nutzmann",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_chuck-nutzmann_phil-dullinger_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_chuck-nutzmann_phil-dullinger_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_chuck-nutzmann_phil-dullinger_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chuck-nutzmann",
+    "photographerSlug": "phil-dullinger",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_chuck-nutzmann_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_chuck-nutzmann_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_chuck-nutzmann_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "chuck-nutzmann",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-nutzmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-nutzmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-nutzmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-nutzmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

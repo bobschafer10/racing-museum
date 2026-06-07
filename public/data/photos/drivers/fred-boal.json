@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1983_fred-boal_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1983/lake-geneva-raceway_1983_fred-boal_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1983_fred-boal_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1983",
+    "driverSlug": "fred-boal",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1987_fred-boal_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1987/slinger-speedway_1987_fred-boal_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1987_fred-boal_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1987",
+    "driverSlug": "fred-boal",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

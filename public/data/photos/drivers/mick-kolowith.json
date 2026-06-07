@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "slinger-speedway_1981_mick-kolowith_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_mick-kolowith_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_mick-kolowith_weber-brothers_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "mick-kolowith",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1981_mick-kolowith_weber-brothers_photo_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_mick-kolowith_weber-brothers_photo_002.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_mick-kolowith_weber-brothers_photo_002.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "mick-kolowith",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "slinger-speedway_1990_mick-kolowith_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/slinger-speedway/1990/slinger-speedway_1990_mick-kolowith_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/slinger-speedway_1990_mick-kolowith_bob-schafer_photo_222.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1990",
+    "driverSlug": "mick-kolowith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_mick-kolowith_bob-schafer_photo_514.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_mick-kolowith_bob-schafer_photo_514.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_mick-kolowith_bob-schafer_photo_514.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mick-kolowith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "514"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_mick-kolowith_bob-schafer_photo_515.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_mick-kolowith_bob-schafer_photo_515.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_mick-kolowith_bob-schafer_photo_515.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mick-kolowith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "515"
+  }
+]

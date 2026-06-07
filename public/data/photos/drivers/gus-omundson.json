@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_gus-omundson_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gus-omundson_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gus-omundson_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gus-omundson",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gus-omundson_bill-warrick-ii_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gus-omundson_bill-warrick-ii_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gus-omundson_bill-warrick-ii_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gus-omundson",
+    "photographerSlug": "bill-warrick-ii",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gus-omundson_rats-racing_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gus-omundson_rats-racing_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gus-omundson_rats-racing_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gus-omundson",
+    "photographerSlug": "rats-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gus-omundson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gus-omundson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gus-omundson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gus-omundson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

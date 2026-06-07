@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_dale-richter_j&d_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_dale-richter_j&d_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_dale-richter_j&d_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dale-richter",
+    "photographerSlug": "j&d",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_1997_dale-richter_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1997/golden-sands-speedway_1997_dale-richter_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1997_dale-richter_tom-loos_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1997",
+    "driverSlug": "dale-richter",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_rick-corso_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_rick-corso_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_rick-corso_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-corso",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_rick-corso_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_rick-corso_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_rick-corso_unknown-photographer_photo_002.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-corso",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

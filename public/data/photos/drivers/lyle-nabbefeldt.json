@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "capital-super-speedway_1965_lyle-nabbefeldt_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1965/capital-super-speedway_1965_lyle-nabbefeldt_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1965_lyle-nabbefeldt_pat-heaney_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1965",
+    "driverSlug": "lyle-nabbefeldt",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nabbefeldt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nabbefeldt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lyle-nabbefeldt_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nabbefeldt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

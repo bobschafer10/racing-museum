@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/1972/141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1972",
+    "driverSlug": "ron-van-roy",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_ron-van-roy_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_ron-van-roy_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_ron-van-roy_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-van-roy",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_ron-van-roy_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_ron-van-roy_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_ron-van-roy_unknown-photographer_photo_002.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-van-roy",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_ron-van-roy_bob-bergeron_photo_031.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_ron-van-roy_bob-bergeron_photo_031.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_ron-van-roy_bob-bergeron_photo_031.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-van-roy",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "031"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ron-van-roy_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ron-van-roy_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ron-van-roy_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ron-van-roy",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_ron-van-roy_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_ron-van-roy_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_ron-van-roy_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ron-van-roy",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

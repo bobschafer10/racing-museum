@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "red-cedar-speedway_unknown-year_mike-baer_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/red-cedar-speedway/unknown-year/red-cedar-speedway_unknown-year_mike-baer_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/red-cedar-speedway_unknown-year_mike-baer_todd-narveson_photo_001.jpg",
+    "trackSlug": "red-cedar-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-baer",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rice-lake-speedway_1993_mike-baer_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/1993/rice-lake-speedway_1993_mike-baer_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_1993_mike-baer_neil-miller_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "1993",
+    "driverSlug": "mike-baer",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_mike-baer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_mike-baer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_mike-baer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "mike-baer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

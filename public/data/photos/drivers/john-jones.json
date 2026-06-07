@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "riverview-raceway_unknown-year_john-jones_keith-nason_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_john-jones_keith-nason_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_john-jones_keith-nason_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "keith-nason",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-jones_thunder-bay_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-jones_thunder-bay_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-jones_thunder-bay_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "thunder-bay",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-jones_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-jones_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-jones_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-jones_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-jones_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-jones_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-jones_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-jones_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-jones_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-jones_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-jones_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-jones_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-jones_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-jones_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-jones_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_john-jones_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-jones_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_john-jones_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  }
+]

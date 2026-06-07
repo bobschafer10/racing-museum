@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_scott-riedner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_scott-riedner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_scott-riedner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-riedner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_scott-riedner_don-wendlandt_photo_115.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_scott-riedner_don-wendlandt_photo_115.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_scott-riedner_don-wendlandt_photo_115.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-riedner",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "115"
+  },
+  {
+    "fileName": "lake-geneva-raceway_2002_scott-riedner_charlie-doerr_photo_001.jpeg",
+    "storagePath": "photos/master/lake-geneva-raceway/2002/lake-geneva-raceway_2002_scott-riedner_charlie-doerr_photo_001.jpeg",
+    "publicPath": "/photos/lake-geneva-raceway_2002_scott-riedner_charlie-doerr_photo_001.jpeg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "2002",
+    "driverSlug": "scott-riedner",
+    "photographerSlug": "charlie-doerr",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-riedner_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-riedner_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-riedner_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-riedner",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

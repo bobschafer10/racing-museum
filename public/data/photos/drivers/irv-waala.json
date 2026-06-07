@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_irv-waala_bob-schafer_photo_082.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_irv-waala_bob-schafer_photo_082.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_irv-waala_bob-schafer_photo_082.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "irv-waala",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "082"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_irv-waala_bob-schafer_photo_601.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_irv-waala_bob-schafer_photo_601.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_irv-waala_bob-schafer_photo_601.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "irv-waala",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "601"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_irv-waala_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_irv-waala_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_irv-waala_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "irv-waala",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

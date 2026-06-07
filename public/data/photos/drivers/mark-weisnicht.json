@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "rice-lake-speedway_1993_mark-weisnicht_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/1993/rice-lake-speedway_1993_mark-weisnicht_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_1993_mark-weisnicht_neil-miller_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "1993",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_1990_mark-weisnicht_bob-schafer_photo_061.jpg",
+    "storagePath": "photos/master/seymour-speedway/1990/seymour-speedway_1990_mark-weisnicht_bob-schafer_photo_061.jpg",
+    "publicPath": "/photos/seymour-speedway_1990_mark-weisnicht_bob-schafer_photo_061.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1990",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "061"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_mark-weisnicht_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_mark-weisnicht_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_mark-weisnicht_brad-luepke_post_001.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2014/shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2014",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "weisnicht",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2015/shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2015",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "weisnicht",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_2017_mark-weisnicht_randy-van-hoof_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2017/shawano-speedway_2017_mark-weisnicht_randy-van-hoof_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2017_mark-weisnicht_randy-van-hoof_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2017",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "randy-van-hoof",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_mark-weisnicht_derek-sabourin_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_mark-weisnicht_derek-sabourin_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_mark-weisnicht_derek-sabourin_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "derek-sabourin",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mark-weisnicht_weisnicht_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-weisnicht_weisnicht_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mark-weisnicht_weisnicht_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mark-weisnicht",
+    "photographerSlug": "weisnicht",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

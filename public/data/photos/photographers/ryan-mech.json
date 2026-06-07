@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_ryan-sullivan_ryan-mech_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_ryan-sullivan_ryan-mech_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_ryan-sullivan_ryan-mech_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ryan-sullivan",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_steve-printz_ryan-mech_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_steve-printz_ryan-mech_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_steve-printz_ryan-mech_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-printz",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

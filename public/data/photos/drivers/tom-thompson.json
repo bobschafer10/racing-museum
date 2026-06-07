@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_tom-thompson_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_tom-thompson_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_tom-thompson_todd-narveson_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "tom-thompson",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_tom-thompson_ryan-aho_post_090.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_tom-thompson_ryan-aho_post_090.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_tom-thompson_ryan-aho_post_090.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-thompson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "090"
+  },
+  {
+    "fileName": "unknown-track_1993_tom-thompson_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_tom-thompson_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_tom-thompson_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "tom-thompson",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-thompson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-thompson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-thompson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-thompson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

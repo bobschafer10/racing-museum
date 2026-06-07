@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1965/milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1965",
+    "driverSlug": "sal-tovella",
+    "photographerSlug": "wayne-bryant",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1970_ed-hoffman_wayne-bryant_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1970/wisconsin-international-raceway_1970_ed-hoffman_wayne-bryant_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1970_ed-hoffman_wayne-bryant_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1970",
+    "driverSlug": "ed-hoffman",
+    "photographerSlug": "wayne-bryant",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

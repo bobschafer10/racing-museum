@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_jeremy-switlick_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_jeremy-switlick_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_jeremy-switlick_charlie-spry_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-switlick",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_2002_jeremy-switlick_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2002/state-park-speedway_2002_jeremy-switlick_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2002_jeremy-switlick_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2002",
+    "driverSlug": "jeremy-switlick",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_jeremy-switlick_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jeremy-switlick_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_jeremy-switlick_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-switlick",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeremy-switlick_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-switlick_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeremy-switlick_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-switlick",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "wisconsin-internatiional-raceway_1998_jason-schuler_chuck-look_photo_001.jpeg",
+    "storagePath": "photos/master/wisconsin-internatiional-raceway/1998/wisconsin-internatiional-raceway_1998_jason-schuler_chuck-look_photo_001.jpeg",
+    "publicPath": "/photos/wisconsin-internatiional-raceway_1998_jason-schuler_chuck-look_photo_001.jpeg",
+    "trackSlug": "wisconsin-internatiional-raceway",
+    "year": "1998",
+    "driverSlug": "jason-schuler",
+    "photographerSlug": "chuck-look",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-internatiional-raceway_1998_mike-monroe_chuck-look_photo_001.jpeg",
+    "storagePath": "photos/master/wisconsin-internatiional-raceway/1998/wisconsin-internatiional-raceway_1998_mike-monroe_chuck-look_photo_001.jpeg",
+    "publicPath": "/photos/wisconsin-internatiional-raceway_1998_mike-monroe_chuck-look_photo_001.jpeg",
+    "trackSlug": "wisconsin-internatiional-raceway",
+    "year": "1998",
+    "driverSlug": "mike-monroe",
+    "photographerSlug": "chuck-look",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-internatiional-raceway_1998_rick-spoo_chuck-look_photo_001.jpeg",
+    "storagePath": "photos/master/wisconsin-internatiional-raceway/1998/wisconsin-internatiional-raceway_1998_rick-spoo_chuck-look_photo_001.jpeg",
+    "publicPath": "/photos/wisconsin-internatiional-raceway_1998_rick-spoo_chuck-look_photo_001.jpeg",
+    "trackSlug": "wisconsin-internatiional-raceway",
+    "year": "1998",
+    "driverSlug": "rick-spoo",
+    "photographerSlug": "chuck-look",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

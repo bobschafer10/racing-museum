@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_002.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_002.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_002.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-white-sr",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "002"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_003.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_003.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_003.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-white-sr",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-white-sr_dr_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-white-sr_dr_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-white-sr_dr_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-white-sr",
+    "photographerSlug": "dr",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

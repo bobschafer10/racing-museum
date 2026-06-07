@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "leos-speedway_unknown-year_marcus-brei_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_marcus-brei_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_marcus-brei_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "marcus-brei",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marcus-brei_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marcus-brei_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marcus-brei_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marcus-brei",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marcus-brei_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marcus-brei_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marcus-brei_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marcus-brei",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marcus-brei_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marcus-brei_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marcus-brei_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marcus-brei",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1975_marcus-brei_dennis-satorius_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1975/wisconsin-international-raceway_1975_marcus-brei_dennis-satorius_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1975_marcus-brei_dennis-satorius_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1975",
+    "driverSlug": "marcus-brei",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

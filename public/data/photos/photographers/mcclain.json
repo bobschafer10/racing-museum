@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "steele-county-faigrounds_unknown-year_tom-steuding_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/steele-county-faigrounds/unknown-year/steele-county-faigrounds_unknown-year_tom-steuding_mcclain_photo_001.jpg",
+    "publicPath": "/photos/steele-county-faigrounds_unknown-year_tom-steuding_mcclain_photo_001.jpg",
+    "trackSlug": "steele-county-faigrounds",
+    "year": "unknown-year",
+    "driverSlug": "tom-steuding",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_les-duellman_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_les-duellman_mcclain_photo_001.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_les-duellman_mcclain_photo_001.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "les-duellman",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_steve-fegers_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_steve-fegers_mcclain_photo_001.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_steve-fegers_mcclain_photo_001.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "steve-fegers",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_tom-nesbitt_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_tom-nesbitt_mcclain_photo_001.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_tom-nesbitt_mcclain_photo_001.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "tom-nesbitt",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-crawford_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-crawford_mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-crawford_mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-crawford",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

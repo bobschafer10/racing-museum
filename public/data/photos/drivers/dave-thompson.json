@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "leos-speedway_unknown-year_dave-thompson_bob-bergeron_photo_301.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_dave-thompson_bob-bergeron_photo_301.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_dave-thompson_bob-bergeron_photo_301.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-thompson",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "301"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_dave-thompson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_dave-thompson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_dave-thompson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-thompson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-thompson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-thompson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-thompson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-thompson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

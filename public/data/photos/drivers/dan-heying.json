@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_dan-heying_bob-schafer_photo_13239.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dan-heying_bob-schafer_photo_13239.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dan-heying_bob-schafer_photo_13239.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-heying",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13239"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dan-heying_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dan-heying_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dan-heying_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-heying",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dan-heying_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dan-heying_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dan-heying_unknown-photographer_photo_002.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-heying",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

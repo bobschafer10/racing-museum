@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_090.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_090.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_090.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-lichtfeld",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "090"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_13976.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_13976.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_13976.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-lichtfeld",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13976"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_13991.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_13991.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_tom-lichtfeld_bob-schafer_photo_13991.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-lichtfeld",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13991"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_tom-lichtfeld_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_tom-lichtfeld_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_tom-lichtfeld_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-lichtfeld",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

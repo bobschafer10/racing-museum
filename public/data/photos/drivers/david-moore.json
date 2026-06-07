@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_david-moore_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_david-moore_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_david-moore_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "david-moore",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_david-moore_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_david-moore_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_david-moore_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "david-moore",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "central-state-speedway_1985_mike-hanson_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/1985/central-state-speedway_1985_mike-hanson_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_1985_mike-hanson_bob-schafer_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "1985",
+    "driverSlug": "mike-hanson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-hanson_nason_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-hanson_nason_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-hanson_nason_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-hanson",
+    "photographerSlug": "nason",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-hanson_ryan-aho_post_007.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-hanson_ryan-aho_post_007.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-hanson_ryan-aho_post_007.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-hanson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "007"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-hanson_ryan-aho_post_033.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-hanson_ryan-aho_post_033.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-hanson_ryan-aho_post_033.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-hanson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "033"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-hanson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-hanson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-hanson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-hanson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

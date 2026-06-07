@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "shawano-speedway_2013_pat-zdroik_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2013/shawano-speedway_2013_pat-zdroik_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2013_pat-zdroik_bob-greuel_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2013",
+    "driverSlug": "pat-zdroik",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pat-zdroik_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pat-zdroik_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pat-zdroik_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pat-zdroik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_pat-zdroik_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_pat-zdroik_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_pat-zdroik_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-zdroik",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_pat-zdroik_kurt-luoma_photo_002.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_pat-zdroik_kurt-luoma_photo_002.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_pat-zdroik_kurt-luoma_photo_002.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pat-zdroik",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

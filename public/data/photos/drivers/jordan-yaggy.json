@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "mississippi-thunder-speedway_2026_jordan-yaggy_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/mississippi-thunder-speedway/2026/mississippi-thunder-speedway_2026_jordan-yaggy_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/mississippi-thunder-speedway_2026_jordan-yaggy_unknown-photographer_photo_111.jpg",
+    "trackSlug": "mississippi-thunder-speedway",
+    "year": "2026",
+    "driverSlug": "jordan-yaggy",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_2019_jordan-yaggy_jordan-yaggy_post_112.jpg",
+    "storagePath": "photos/master/unknown-track/2019/unknown-track_2019_jordan-yaggy_jordan-yaggy_post_112.jpg",
+    "publicPath": "/photos/unknown-track_2019_jordan-yaggy_jordan-yaggy_post_112.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2019",
+    "driverSlug": "jordan-yaggy",
+    "photographerSlug": "jordan-yaggy",
+    "creditType": "post",
+    "sequence": "112"
+  }
+]

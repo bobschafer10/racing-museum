@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "neillsville-speedway_1977_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/neillsville-speedway/1977/neillsville-speedway_1977_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/neillsville-speedway_1977_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "trackSlug": "neillsville-speedway",
+    "year": "1977",
+    "driverSlug": "ken-hutchens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-hutchens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-hutchens_bill-mickelson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-hutchens_bill-mickelson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-hutchens_bill-mickelson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-hutchens",
+    "photographerSlug": "bill-mickelson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-hutchens_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-hutchens_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-hutchens_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-hutchens",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-hutchens_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-hutchens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_ken-hutchens_unknown-photographer_photo_305.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_ken-hutchens_unknown-photographer_photo_305.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_ken-hutchens_unknown-photographer_photo_305.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-hutchens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "305"
+  }
+]

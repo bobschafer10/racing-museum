@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mike-chase_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mike-chase_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mike-chase_john-vass_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-chase",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mike-chase_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mike-chase_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mike-chase_kurt-luoma_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-chase",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

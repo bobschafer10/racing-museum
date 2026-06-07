@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_2026_nick-egan_doug-corcoran_photo_111.jpg",
+    "storagePath": "photos/master/capital-super-speedway/2026/capital-super-speedway_2026_nick-egan_doug-corcoran_photo_111.jpg",
+    "publicPath": "/photos/capital-super-speedway_2026_nick-egan_doug-corcoran_photo_111.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "2026",
+    "driverSlug": "nick-egan",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "jake-hassler",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

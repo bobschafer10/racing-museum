@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "black-river-falls-speedway_unknown-year_everette-fox_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/black-river-falls-speedway/unknown-year/black-river-falls-speedway_unknown-year_everette-fox_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/black-river-falls-speedway_unknown-year_everette-fox_unknown-photographer_photo_001.jpg",
+    "trackSlug": "black-river-falls-speedway",
+    "year": "unknown-year",
+    "driverSlug": "everette-fox",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1966/unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1966",
+    "driverSlug": "everette-fox",
+    "photographerSlug": "ken-hutchens",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

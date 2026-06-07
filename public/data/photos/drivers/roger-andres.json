@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_roger-andres_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roger-andres_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roger-andres_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roger-andres",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_roger-andres_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_roger-andres_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_roger-andres_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-andres",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_roger-andres_kurt-luoma_photo_400.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_roger-andres_kurt-luoma_photo_400.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_roger-andres_kurt-luoma_photo_400.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-andres",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "400"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_roger-andres_unknown-photographer_photo_1306.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_roger-andres_unknown-photographer_photo_1306.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_roger-andres_unknown-photographer_photo_1306.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-andres",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1306"
+  }
+]

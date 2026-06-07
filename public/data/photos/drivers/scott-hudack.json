@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_scott-hudack_john-kimmes_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_scott-hudack_john-kimmes_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_scott-hudack_john-kimmes_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-hudack",
+    "photographerSlug": "john-kimmes",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "abc-raceway_unknown-year_scott-hudack_rats-racing_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_scott-hudack_rats-racing_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_scott-hudack_rats-racing_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-hudack",
+    "photographerSlug": "rats-racing",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_scott-hudack_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_scott-hudack_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_scott-hudack_unknown-photographer_photo_002.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-hudack",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

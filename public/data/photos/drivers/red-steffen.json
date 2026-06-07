@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "proctor-speedway_unknown-year_red-steffen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_red-steffen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_red-steffen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1983_red-steffen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1983/unknown-track_1983_red-steffen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1983_red-steffen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1983",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_mark-steffen_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_mark-steffen_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_mark-steffen_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "mark-steffen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_old-mark-steffen_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_old-mark-steffen_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_old-mark-steffen_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "old-mark-steffen",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_ryan-aho_post_024.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_ryan-aho_post_024.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_ryan-aho_post_024.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "024"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-steffen_unknown-photographer_photo_011.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_011.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-steffen_unknown-photographer_photo_011.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-steffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "011"
+  }
+]

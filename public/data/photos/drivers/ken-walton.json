@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_ken-walton_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_ken-walton_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_ken-walton_joe-verdegan_post_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-walton",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_ken-walton_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_ken-walton_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_ken-walton_unknown-photographer_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-walton",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

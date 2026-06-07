@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_larry-kallenbach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_larry-kallenbach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_larry-kallenbach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-kallenbach_mod-christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-kallenbach_mod-christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-kallenbach_mod-christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "mod-christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-kallenbach_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-kallenbach_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-kallenbach_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-kallenbach_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "volusia-county-speedway_unknown-year_larry-kallenbach_bob-schafer_photo_527.jpg",
+    "storagePath": "photos/master/volusia-county-speedway/unknown-year/volusia-county-speedway_unknown-year_larry-kallenbach_bob-schafer_photo_527.jpg",
+    "publicPath": "/photos/volusia-county-speedway_unknown-year_larry-kallenbach_bob-schafer_photo_527.jpg",
+    "trackSlug": "volusia-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "527"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_larry-kallenbach_kurt-luoma_photo_604.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_larry-kallenbach_kurt-luoma_photo_604.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_larry-kallenbach_kurt-luoma_photo_604.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "604"
+  }
+]

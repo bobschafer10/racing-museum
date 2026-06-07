@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "tnt-speedway_2013_ison_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/tnt-speedway/2013/tnt-speedway_2013_ison_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/tnt-speedway_2013_ison_bob-greuel_photo_001.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "2013",
+    "driverSlug": "ison",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tnt-speedway_2017_luke-uttecht_447-photography_photo_333.jpg",
+    "storagePath": "photos/master/tnt-speedway/2017/tnt-speedway_2017_luke-uttecht_447-photography_photo_333.jpg",
+    "publicPath": "/photos/tnt-speedway_2017_luke-uttecht_447-photography_photo_333.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "2017",
+    "driverSlug": "luke-uttecht",
+    "photographerSlug": "447-photography",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "tnt-speedway_2025_adam-abbey_adam-abbey_post_001.jpg",
+    "storagePath": "photos/master/tnt-speedway/2025/tnt-speedway_2025_adam-abbey_adam-abbey_post_001.jpg",
+    "publicPath": "/photos/tnt-speedway_2025_adam-abbey_adam-abbey_post_001.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "2025",
+    "driverSlug": "adam-abbey",
+    "photographerSlug": "adam-abbey",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_aaron-moesch_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_aaron-moesch_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_aaron-moesch_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-moesch",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bret-swedberg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_rod-snellenberger_447-photography_photo_001.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_rod-snellenberger_447-photography_photo_001.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_rod-snellenberger_447-photography_photo_001.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rod-snellenberger",
+    "photographerSlug": "447-photography",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_tj-smith_unknown-photographer_photo_1.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_tj-smith_unknown-photographer_photo_1.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_tj-smith_unknown-photographer_photo_1.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tj-smith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_unknown-driver_unknown-photographer_photo_233.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_unknown-driver_unknown-photographer_photo_233.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_unknown-driver_unknown-photographer_photo_233.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "233"
+  },
+  {
+    "fileName": "tnt-speedway_unknown-year_unknown-driver_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/tnt-speedway/unknown-year/tnt-speedway_unknown-year_unknown-driver_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/tnt-speedway_unknown-year_unknown-driver_unknown-photographer_photo_333.jpg",
+    "trackSlug": "tnt-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

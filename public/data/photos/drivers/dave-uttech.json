@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "plymouth-dirt-track_2024_dave-uttech_r-custom-photography_photo_333.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_dave-uttech_r-custom-photography_photo_333.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_dave-uttech_r-custom-photography_photo_333.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "dave-uttech",
+    "photographerSlug": "r-custom-photography",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_2009_dave-uttech_dave-uttech_post_333.jpg",
+    "storagePath": "photos/master/unknown-track/2009/unknown-track_2009_dave-uttech_dave-uttech_post_333.jpg",
+    "publicPath": "/photos/unknown-track_2009_dave-uttech_dave-uttech_post_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2009",
+    "driverSlug": "dave-uttech",
+    "photographerSlug": "dave-uttech",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

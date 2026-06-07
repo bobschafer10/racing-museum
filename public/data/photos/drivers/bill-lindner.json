@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "central-state-speedway_1985_bill-lindner_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/1985/central-state-speedway_1985_bill-lindner_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_1985_bill-lindner_bob-schafer_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "1985",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "central-state-speedway_unknown-year_bill-lindner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/unknown-year/central-state-speedway_unknown-year_bill-lindner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_unknown-year_bill-lindner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_2001_bill-lindner_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2001/monster-hall-raceway_2001_bill-lindner_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2001_bill-lindner_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2001",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lindner_ryan-aho_post_039.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lindner_ryan-aho_post_039.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lindner_ryan-aho_post_039.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "039"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-lindner_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_bill-lindner_kurt-luoma_photo_1297.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_bill-lindner_kurt-luoma_photo_1297.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_bill-lindner_kurt-luoma_photo_1297.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-lindner",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1297"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "slinger-speedway_unknown-year_dale-koehler_bob-schafer_photo_450.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dale-koehler_bob-schafer_photo_450.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dale-koehler_bob-schafer_photo_450.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dale-koehler",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "450"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-koehler_gary-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-koehler_gary-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-koehler_gary-vercauteren_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-koehler",
+    "photographerSlug": "gary-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-koehler_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-koehler_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-koehler_joe-verdegan_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-koehler",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-koehler_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-koehler_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-koehler_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-koehler",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-koehler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-koehler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-koehler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-koehler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-koehler_unknown-photographer_photo_4455.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-koehler_unknown-photographer_photo_4455.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-koehler_unknown-photographer_photo_4455.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-koehler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4455"
+  }
+]

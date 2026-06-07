@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_2011_alex-prunty_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/slinger-speedway/2011/slinger-speedway_2011_alex-prunty_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/slinger-speedway_2011_alex-prunty_unknown-photographer_photo_006.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2011",
+    "driverSlug": "alex-prunty",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "slinger-speedway_2026_alex-prunty_unknown-photographer_jwcrp_767.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_alex-prunty_unknown-photographer_jwcrp_767.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_alex-prunty_unknown-photographer_jwcrp_767.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "alex-prunty",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "jwcrp",
+    "sequence": "767"
+  }
+]

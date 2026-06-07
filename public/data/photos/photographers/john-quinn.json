@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "capital-super-speedway_1980_bob-senneker_john-quinn_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1980/capital-super-speedway_1980_bob-senneker_john-quinn_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1980_bob-senneker_john-quinn_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1980",
+    "driverSlug": "bob-senneker",
+    "photographerSlug": "john-quinn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_brian-karow_john-quinn_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_brian-karow_john-quinn_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_brian-karow_john-quinn_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-karow",
+    "photographerSlug": "john-quinn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_1982_dick-trickle_john-quinn_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1982/dells-motor-speedway_1982_dick-trickle_john-quinn_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1982_dick-trickle_john-quinn_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1982",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "john-quinn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_dave-tushoski_john-quinn_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_dave-tushoski_john-quinn_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_dave-tushoski_john-quinn_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-tushoski",
+    "photographerSlug": "john-quinn",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

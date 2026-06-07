@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "141-speedway_unknown-year_greg-herrmann_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_greg-herrmann_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_greg-herrmann_joe-slack_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "greg-herrmann",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_greg-herrmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_greg-herrmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_greg-herrmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "greg-herrmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_greg-herrmann_bob-schafer_photo_011.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_greg-herrmann_bob-schafer_photo_011.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_greg-herrmann_bob-schafer_photo_011.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "greg-herrmann",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "011"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_greg-herrmann_al-fortner_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_greg-herrmann_al-fortner_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_greg-herrmann_al-fortner_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "greg-herrmann",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

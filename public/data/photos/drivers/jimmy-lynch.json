@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "slinger-speedway_1990_jimmy-lynch_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/slinger-speedway/1990/slinger-speedway_1990_jimmy-lynch_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/slinger-speedway_1990_jimmy-lynch_bob-schafer_photo_222.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1990",
+    "driverSlug": "jimmy-lynch",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jimmy-lynch_bob-schafer_photo_13300.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jimmy-lynch_bob-schafer_photo_13300.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jimmy-lynch_bob-schafer_photo_13300.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-lynch",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13300"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jimmy-lynch_bob-schafer_photo_13353.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jimmy-lynch_bob-schafer_photo_13353.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jimmy-lynch_bob-schafer_photo_13353.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-lynch",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13353"
+  }
+]

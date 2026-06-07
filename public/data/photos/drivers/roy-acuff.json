@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1978_roy-acuff_mike-dunn_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1978/lake-geneva-raceway_1978_roy-acuff_mike-dunn_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1978_roy-acuff_mike-dunn_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1978",
+    "driverSlug": "roy-acuff",
+    "photographerSlug": "mike-dunn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_1970_roy-acuff_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/1970/waukegan-speedway_1970_roy-acuff_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_1970_roy-acuff_ron-thruman_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "1970",
+    "driverSlug": "roy-acuff",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

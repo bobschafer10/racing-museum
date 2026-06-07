@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_brian-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_brian-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_brian-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_brian-johnson_bob-schafer_photo_14165.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_brian-johnson_bob-schafer_photo_14165.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_brian-johnson_bob-schafer_photo_14165.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14165"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_brian-johnson_bob-schafer_photo_14166.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_brian-johnson_bob-schafer_photo_14166.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_brian-johnson_bob-schafer_photo_14166.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14166"
+  },
+  {
+    "fileName": "elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "john-kaufenberg",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_brian-johnson_bob-schafer_photo_012.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_brian-johnson_bob-schafer_photo_012.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_brian-johnson_bob-schafer_photo_012.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "012"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_brian-johnson_bob-schafer_photo_13843.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_brian-johnson_bob-schafer_photo_13843.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_brian-johnson_bob-schafer_photo_13843.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13843"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-johnson_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-johnson_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-johnson_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-johnson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-johnson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-johnson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

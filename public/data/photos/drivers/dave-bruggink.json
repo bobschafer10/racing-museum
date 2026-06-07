@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "brown-county-speedway_1978_dave-bruggink_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/1978/brown-county-speedway_1978_dave-bruggink_john-vass_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_1978_dave-bruggink_john-vass_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "1978",
+    "driverSlug": "dave-bruggink",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "leos-speedway_unknown-year_dave-bruggink_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_dave-bruggink_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/leos-speedway_unknown-year_dave-bruggink_unknown-photographer_photo_001.jpg",
+    "trackSlug": "leos-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-bruggink",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-bruggink_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-bruggink_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-bruggink_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-bruggink",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dave-bruggink_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dave-bruggink_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dave-bruggink_john-vass_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dave-bruggink",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

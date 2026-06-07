@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "dells-motor-speedway_2001_frank-kreyer_jeff-blaser_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2001/dells-motor-speedway_2001_frank-kreyer_jeff-blaser_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2001_frank-kreyer_jeff-blaser_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2001",
+    "driverSlug": "frank-kreyer",
+    "photographerSlug": "jeff-blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_frank-kreyer_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frank-kreyer_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_frank-kreyer_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "frank-kreyer",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_frank-kreyer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frank-kreyer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_frank-kreyer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "frank-kreyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2013_frank-kreyer_corey-juelich_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2013/wisconsin-international-raceway_2013_frank-kreyer_corey-juelich_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2013_frank-kreyer_corey-juelich_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2013",
+    "driverSlug": "frank-kreyer",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

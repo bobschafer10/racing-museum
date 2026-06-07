@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1962/milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1962",
+    "driverSlug": "aj-foyt",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1962_karl-schultz_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1962/unknown-track_1962_karl-schultz_glen-harper_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1962_karl-schultz_glen-harper_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1962",
+    "driverSlug": "karl-schultz",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_1962_larry-leach_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/1962/waukegan-speedway_1962_larry-leach_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_1962_larry-leach_pat-heaney_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "1962",
+    "driverSlug": "larry-leach",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

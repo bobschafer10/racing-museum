@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_steve-murgic_bob-schafer_photo_087.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_steve-murgic_bob-schafer_photo_087.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_steve-murgic_bob-schafer_photo_087.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-murgic",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "087"
+  },
+  {
+    "fileName": "rockford-speedway_1981_steve-murgic_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_steve-murgic_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_steve-murgic_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "steve-murgic",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1985_steve-murgic_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1985/rockford-speedway_1985_steve-murgic_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1985_steve-murgic_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1985",
+    "driverSlug": "steve-murgic",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_steve-murgic_bob-schafer_photo_14055.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-murgic_bob-schafer_photo_14055.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_steve-murgic_bob-schafer_photo_14055.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-murgic",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14055"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_steve-murgic_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-murgic_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_steve-murgic_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-murgic",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-murgic_mcclain-racing_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-murgic_mcclain-racing_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-murgic_mcclain-racing_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-murgic",
+    "photographerSlug": "mcclain-racing",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-murgic_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-murgic_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-murgic_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-murgic",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_bob-houston_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_bob-houston_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_bob-houston_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-houston",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_chuck-nutzmann_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_chuck-nutzmann_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_chuck-nutzmann_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chuck-nutzmann",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_john-bystryzki_christopher-kolstad_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_john-bystryzki_christopher-kolstad_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_john-bystryzki_christopher-kolstad_unknown-credit_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-bystryzki",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "unknown-credit",
+    "sequence": "photo"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_kevin-viebrock_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_kevin-viebrock_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_kevin-viebrock_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-viebrock",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_mark-steinke_christopher-kolstad_post_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_mark-steinke_christopher-kolstad_post_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_mark-steinke_christopher-kolstad_post_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-steinke",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_rick-egersdorf_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_rick-egersdorf_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-egersdorf",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_ron-jones_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_ron-jones_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_ron-jones_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-jones",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_unknown_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_unknown_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_unknown_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-kelley_christopher-kolstad_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-kelley_christopher-kolstad_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-kelley_christopher-kolstad_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-kelley",
+    "photographerSlug": "christopher-kolstad",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

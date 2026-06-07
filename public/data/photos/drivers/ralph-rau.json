@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_1976_ralph-rau_michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/1976/beaver-dam-raceway_1976_ralph-rau_michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_1976_ralph-rau_michael-halbherr_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "1976",
+    "driverSlug": "ralph-rau",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1976_ralph-rau_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_ralph-rau_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_ralph-rau_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "ralph-rau",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ralph-rau_glen-harper_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ralph-rau_glen-harper_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ralph-rau_glen-harper_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ralph-rau",
+    "photographerSlug": "glen-harper",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

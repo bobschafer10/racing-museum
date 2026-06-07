@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "don-collins",
+    "photographerSlug": "robert-robison",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-collins",
+    "photographerSlug": "robert-robison",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_don-collins_robert-robison_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "don-collins",
+    "photographerSlug": "robert-robison",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

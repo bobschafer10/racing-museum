@@ -5,3 +5,17 @@ newspaper_staging
 .next
 node_modules
 .env.local
+
+# Museum Data Pipeline & Local Assets Exclusions
+public/photos 4.29.2026/
+public/label_bob_schafer_photos/
+public/dupe/
+public/duplicate_review_v1/
+public/clippings/
+migration/
+*.csv
+black_and_white_results.csv
+list[dict]
+py
+AGENTS.md
+CLAUDE.md

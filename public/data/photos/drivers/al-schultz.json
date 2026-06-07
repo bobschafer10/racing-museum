@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "shawano-speedway_1977_al-schultz_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/1977/shawano-speedway_1977_al-schultz_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_1977_al-schultz_joe-verdegan_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1977",
+    "driverSlug": "al-schultz",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_al-schultz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_al-schultz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_al-schultz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_al-schultz_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schultz_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_al-schultz_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "al-schultz",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_al-schultz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schultz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_al-schultz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "al-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_al-schultz_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schultz_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_al-schultz_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "al-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wausau-fairgrounds_unknown-year_al-schultz_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/unknown-year/wausau-fairgrounds_unknown-year_al-schultz_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_unknown-year_al-schultz_john-vass_photo_001.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "al-schultz",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

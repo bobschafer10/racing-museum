@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_mike-brown_bob-schafer_photo_2222.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_mike-brown_bob-schafer_photo_2222.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_mike-brown_bob-schafer_photo_2222.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "mike-brown",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "2222"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-brown_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-brown_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-brown_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-brown",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-brown_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-brown_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-brown_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-brown",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

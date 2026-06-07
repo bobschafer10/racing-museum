@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
+    "storagePath": "photos/master/chilton-speedway/1999/chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
+    "publicPath": "/photos/chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
+    "trackSlug": "chilton-speedway",
+    "year": "1999",
+    "driverSlug": "mike-kertscher",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_mike-kertscher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_mike-kertscher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_mike-kertscher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "mike-kertscher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-kertscher_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-kertscher_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-kertscher_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-kertscher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

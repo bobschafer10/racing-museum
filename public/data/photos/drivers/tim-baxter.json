@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "kopellah-speedway_unknown-year_tim-baxter_chris-loberg_post_001.jpg",
+    "storagePath": "photos/master/kopellah-speedway/unknown-year/kopellah-speedway_unknown-year_tim-baxter_chris-loberg_post_001.jpg",
+    "publicPath": "/photos/kopellah-speedway_unknown-year_tim-baxter_chris-loberg_post_001.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-baxter",
+    "photographerSlug": "chris-loberg",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-baxter_bill-taylor_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-baxter_bill-taylor_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-baxter_bill-taylor_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-baxter",
+    "photographerSlug": "bill-taylor",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

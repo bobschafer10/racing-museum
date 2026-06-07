@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "shawano-speedway_unknown-year_scott-clements_bob-schafer_photo_999.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_scott-clements_bob-schafer_photo_999.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_scott-clements_bob-schafer_photo_999.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-clements",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "999"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_scott-clements_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_scott-clements_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_scott-clements_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-clements",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

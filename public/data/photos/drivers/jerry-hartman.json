@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_jerry-hartman_rats-racing_photo_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_jerry-hartman_rats-racing_photo_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_jerry-hartman_rats-racing_photo_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-hartman",
+    "photographerSlug": "rats-racing",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-hartman_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-hartman_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-hartman_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-hartman",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-hartman_rats-racing_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-hartman_rats-racing_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-hartman_rats-racing_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-hartman",
+    "photographerSlug": "rats-racing",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

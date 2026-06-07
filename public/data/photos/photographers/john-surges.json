@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "angell-park-speedway_unknown-year_bill-johnson-jr_john-surges_photo_001.jpg",
+    "storagePath": "photos/master/angell-park-speedway/unknown-year/angell-park-speedway_unknown-year_bill-johnson-jr_john-surges_photo_001.jpg",
+    "publicPath": "/photos/angell-park-speedway_unknown-year_bill-johnson-jr_john-surges_photo_001.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-johnson-jr",
+    "photographerSlug": "john-surges",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_bob-robel_john-surges_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bob-robel_john-surges_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_bob-robel_john-surges_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-robel",
+    "photographerSlug": "john-surges",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1959",
+    "driverSlug": "homer-ansel",
+    "photographerSlug": "john-surges",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1959",
+    "driverSlug": "norm-nelson",
+    "photographerSlug": "john-surges",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

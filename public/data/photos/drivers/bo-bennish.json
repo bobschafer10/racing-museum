@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "state-park-speedway_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_022.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_022.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_022.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-phototographer",
+    "creditType": "photo",
+    "sequence": "022"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_023.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_023.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_023.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-phototographer",
+    "creditType": "photo",
+    "sequence": "023"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_024.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_024.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_024.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-phototographer",
+    "creditType": "photo",
+    "sequence": "024"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_025.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_025.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_025.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-phototographer",
+    "creditType": "photo",
+    "sequence": "025"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

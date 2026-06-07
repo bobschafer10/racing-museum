@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "karl-genett",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_002.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "karl-genett",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_karl-genett_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_karl-genett_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_karl-genett_unknown-credit_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "karl-genett",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1981_tom-dowd_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1981/hales-corners-speedway_1981_tom-dowd_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1981_tom-dowd_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1981",
+    "driverSlug": "tom-dowd",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_1986_tom-dowd_weber-brothers_photo_111.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1986/hales-corners-speedway_1986_tom-dowd_weber-brothers_photo_111.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1986_tom-dowd_weber-brothers_photo_111.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1986",
+    "driverSlug": "tom-dowd",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_tom-dowd_weber-brothers_photo_222.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_tom-dowd_weber-brothers_photo_222.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_tom-dowd_weber-brothers_photo_222.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-dowd",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

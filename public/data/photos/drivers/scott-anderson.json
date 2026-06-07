@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "monster-hall-raceway_2002_scott-anderson_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2002/monster-hall-raceway_2002_scott-anderson_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2002_scott-anderson_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2002",
+    "driverSlug": "scott-anderson",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_scott-anderson_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_scott-anderson_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_scott-anderson_tom-loos_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-anderson",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "monster-hall-raceway_unknown-year_scott-anderson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_scott-anderson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/monster-hall-raceway_unknown-year_scott-anderson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

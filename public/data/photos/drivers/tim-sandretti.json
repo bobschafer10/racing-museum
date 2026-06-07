@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "rockford-speedway_unknown-year_tim-sandretti_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_tim-sandretti_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_tim-sandretti_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-sandretti",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1981_tim-sandretti_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_tim-sandretti_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_tim-sandretti_weber-brothers_photo_444.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "tim-sandretti",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
+  }
+]

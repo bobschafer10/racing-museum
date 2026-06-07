@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "stratford-speedway_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/stratford-speedway/unknown-year/stratford-speedway_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/stratford-speedway_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
+    "trackSlug": "stratford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "stratford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/stratford-speedway/unknown-year/stratford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/stratford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_444.jpg",
+    "trackSlug": "stratford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
+  }
+]

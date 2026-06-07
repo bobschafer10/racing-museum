@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "evergreen-speedway_unknown-year_mike-miller_doyce-eaton_photo_001.jpg",
+    "storagePath": "photos/master/evergreen-speedway/unknown-year/evergreen-speedway_unknown-year_mike-miller_doyce-eaton_photo_001.jpg",
+    "publicPath": "/photos/evergreen-speedway_unknown-year_mike-miller_doyce-eaton_photo_001.jpg",
+    "trackSlug": "evergreen-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-miller",
+    "photographerSlug": "doyce-eaton",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "evergreen-speedway_unknown-year_mike-miller_doyce-eaton_photo_002.jpg",
+    "storagePath": "photos/master/evergreen-speedway/unknown-year/evergreen-speedway_unknown-year_mike-miller_doyce-eaton_photo_002.jpg",
+    "publicPath": "/photos/evergreen-speedway_unknown-year_mike-miller_doyce-eaton_photo_002.jpg",
+    "trackSlug": "evergreen-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-miller",
+    "photographerSlug": "doyce-eaton",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

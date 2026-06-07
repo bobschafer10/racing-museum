@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_2002_sonny-schoffen_charlie-doerr_photo_001.jpeg",
+    "storagePath": "photos/master/lake-geneva-raceway/2002/lake-geneva-raceway_2002_sonny-schoffen_charlie-doerr_photo_001.jpeg",
+    "publicPath": "/photos/lake-geneva-raceway_2002_sonny-schoffen_charlie-doerr_photo_001.jpeg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "2002",
+    "driverSlug": "sonny-schoffen",
+    "photographerSlug": "charlie-doerr",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_sonny-schoffen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_sonny-schoffen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_sonny-schoffen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "sonny-schoffen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "riverview-raceway_1974_jim-eliason_kevin-lukanen_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/1974/riverview-raceway_1974_jim-eliason_kevin-lukanen_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_1974_jim-eliason_kevin-lukanen_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "1974",
+    "driverSlug": "jim-eliason",
+    "photographerSlug": "kevin-lukanen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_1977_unknown-driver_troy-powers_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/1977/riverview-raceway_1977_unknown-driver_troy-powers_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_1977_unknown-driver_troy-powers_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "1977",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_1980_bob-reed_jd-dedina_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/1980/riverview-raceway_1980_bob-reed_jd-dedina_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_1980_bob-reed_jd-dedina_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "1980",
+    "driverSlug": "bob-reed",
+    "photographerSlug": "jd-dedina",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_unknown-year_bill-herr_troy-powers_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_bill-herr_troy-powers_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_bill-herr_troy-powers_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-herr",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_unknown-year_jj-smith_troy-powers_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_jj-smith_troy-powers_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_jj-smith_troy-powers_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jj-smith",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_unknown-year_john-jones_keith-nason_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_john-jones_keith-nason_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_john-jones_keith-nason_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "john-jones",
+    "photographerSlug": "keith-nason",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_russ-laursen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "russ-laursen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "riverview-raceway_unknown-year_tom-nesbitt_keith-nason_post_222.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_tom-nesbitt_keith-nason_post_222.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_tom-nesbitt_keith-nason_post_222.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-nesbitt",
+    "photographerSlug": "keith-nason",
+    "creditType": "post",
+    "sequence": "222"
+  },
+  {
+    "fileName": "riverview-raceway_unknown-year_unknown-driver_troy-powers_post_333.jpg",
+    "storagePath": "photos/master/riverview-raceway/unknown-year/riverview-raceway_unknown-year_unknown-driver_troy-powers_post_333.jpg",
+    "publicPath": "/photos/riverview-raceway_unknown-year_unknown-driver_troy-powers_post_333.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "riverview-raceway_1974_jim-eliason_kevin-lukanen_post_001.jpg",
+    "storagePath": "photos/master/riverview-raceway/1974/riverview-raceway_1974_jim-eliason_kevin-lukanen_post_001.jpg",
+    "publicPath": "/photos/riverview-raceway_1974_jim-eliason_kevin-lukanen_post_001.jpg",
+    "trackSlug": "riverview-raceway",
+    "year": "1974",
+    "driverSlug": "jim-eliason",
+    "photographerSlug": "kevin-lukanen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jim-eliason_kevin-lukanen_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-eliason_kevin-lukanen_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jim-eliason_kevin-lukanen_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jim-eliason",
+    "photographerSlug": "kevin-lukanen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-eliason_kevin-lukanen_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-eliason_kevin-lukanen_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-eliason_kevin-lukanen_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "kevin-lukanen",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

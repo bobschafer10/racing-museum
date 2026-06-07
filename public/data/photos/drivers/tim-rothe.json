@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_117.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_117.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_117.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "117"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1997_tim-rothe_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1997/wisconsin-international-raceway_1997_tim-rothe_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1997_tim-rothe_pat-heaney_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1997",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2003_tim-rothe_corey-juelich_photo_112.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2003/wisconsin-international-raceway_2003_tim-rothe_corey-juelich_photo_112.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2003_tim-rothe_corey-juelich_photo_112.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2003",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "corey-juelich",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2006_tim-rothe_clintman_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2006/wisconsin-international-raceway_2006_tim-rothe_clintman_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2006_tim-rothe_clintman_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2006",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "clintman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tim-rothe_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tim-rothe_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tim-rothe_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

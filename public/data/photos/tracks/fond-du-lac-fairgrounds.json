@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "fond-du-lac-fairgrounds_1971_bob-kleinschmidt_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/fond-du-lac-fairgrounds/1971/fond-du-lac-fairgrounds_1971_bob-kleinschmidt_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/fond-du-lac-fairgrounds_1971_bob-kleinschmidt_joe-verdegan_post_001.jpg",
+    "trackSlug": "fond-du-lac-fairgrounds",
+    "year": "1971",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "fond-du-lac-fairgrounds_unknown-year_fond-du-lac-fairground_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/fond-du-lac-fairgrounds/unknown-year/fond-du-lac-fairgrounds_unknown-year_fond-du-lac-fairground_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/fond-du-lac-fairgrounds_unknown-year_fond-du-lac-fairground_unknown-photographer_photo_001.jpg",
+    "trackSlug": "fond-du-lac-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "fond-du-lac-fairground",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "north-central-speedway_2025_aj-viehauser_aj-viehauser_post_001.jpg",
+    "storagePath": "photos/master/north-central-speedway/2025/north-central-speedway_2025_aj-viehauser_aj-viehauser_post_001.jpg",
+    "publicPath": "/photos/north-central-speedway_2025_aj-viehauser_aj-viehauser_post_001.jpg",
+    "trackSlug": "north-central-speedway",
+    "year": "2025",
+    "driverSlug": "aj-viehauser",
+    "photographerSlug": "aj-viehauser",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "north-central-speedway_unknown-year_wes-heins_russell-heins_post_001.jpg",
+    "storagePath": "photos/master/north-central-speedway/unknown-year/north-central-speedway_unknown-year_wes-heins_russell-heins_post_001.jpg",
+    "publicPath": "/photos/north-central-speedway_unknown-year_wes-heins_russell-heins_post_001.jpg",
+    "trackSlug": "north-central-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wes-heins",
+    "photographerSlug": "russell-heins",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

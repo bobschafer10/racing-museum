@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_mark-schultz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_mark-schultz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_mark-schultz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mark-schultz_john-alft_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mark-schultz_john-alft_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mark-schultz_john-alft_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-schultz",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mark-schultz_john-alft_post_579.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mark-schultz_john-alft_post_579.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mark-schultz_john-alft_post_579.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-schultz",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "579"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mark-schultz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mark-schultz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mark-schultz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

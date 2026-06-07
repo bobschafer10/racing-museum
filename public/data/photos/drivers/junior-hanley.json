@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_junior-hanley_bob-schafer_photo_13969.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_junior-hanley_bob-schafer_photo_13969.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_junior-hanley_bob-schafer_photo_13969.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "junior-hanley",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13969"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_junior-hanley_bob-schafer_photo_232.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_junior-hanley_bob-schafer_photo_232.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_junior-hanley_bob-schafer_photo_232.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "junior-hanley",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "232"
+  },
+  {
+    "fileName": "new-smyrna-speedway_unknown-year_junior-hanley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/new-smyrna-speedway/unknown-year/new-smyrna-speedway_unknown-year_junior-hanley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/new-smyrna-speedway_unknown-year_junior-hanley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "new-smyrna-speedway",
+    "year": "unknown-year",
+    "driverSlug": "junior-hanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1982_junior-hanley_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_junior-hanley_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_junior-hanley_weber-brothers_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "junior-hanley",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

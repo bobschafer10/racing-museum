@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "sands-speedway_1978_allen-yelle_dan-duquette_post_001.jpg",
+    "storagePath": "photos/master/sands-speedway/1978/sands-speedway_1978_allen-yelle_dan-duquette_post_001.jpg",
+    "publicPath": "/photos/sands-speedway_1978_allen-yelle_dan-duquette_post_001.jpg",
+    "trackSlug": "sands-speedway",
+    "year": "1978",
+    "driverSlug": "allen-yelle",
+    "photographerSlug": "dan-duquette",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "sands-speedway_unknown-year_allen-yelle_rich-kositzky_photo_001.jpg",
+    "storagePath": "photos/master/sands-speedway/unknown-year/sands-speedway_unknown-year_allen-yelle_rich-kositzky_photo_001.jpg",
+    "publicPath": "/photos/sands-speedway_unknown-year_allen-yelle_rich-kositzky_photo_001.jpg",
+    "trackSlug": "sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "allen-yelle",
+    "photographerSlug": "rich-kositzky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_allen-yelle_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_allen-yelle_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_allen-yelle_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "allen-yelle",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_allen-yelle_bob-schafer_photo_221.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_allen-yelle_bob-schafer_photo_221.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_allen-yelle_bob-schafer_photo_221.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "allen-yelle",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "221"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "elko-speedway_1978_mike-demars_mcclain-racing_photo_001.jpg",
+    "storagePath": "photos/master/elko-speedway/1978/elko-speedway_1978_mike-demars_mcclain-racing_photo_001.jpg",
+    "publicPath": "/photos/elko-speedway_1978_mike-demars_mcclain-racing_photo_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "1978",
+    "driverSlug": "mike-demars",
+    "photographerSlug": "mcclain-racing",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_mike-demars_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_mike-demars_john-vass_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_mike-demars_john-vass_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-demars",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-demars_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-demars_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-demars_kurt-luoma_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-demars",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

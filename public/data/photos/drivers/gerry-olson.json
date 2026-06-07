@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_gerry-olson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_gerry-olson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_gerry-olson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gerry-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gerry-olson_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gerry-olson_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gerry-olson_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gerry-olson",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gerry-olson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gerry-olson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gerry-olson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gerry-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "wilmot-raceway_1980_gerry-olson_scott-krueger_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1980/wilmot-raceway_1980_gerry-olson_scott-krueger_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1980_gerry-olson_scott-krueger_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1980",
+    "driverSlug": "gerry-olson",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

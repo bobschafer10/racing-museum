@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_chuck-abraham_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_chuck-abraham_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_chuck-abraham_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chuck-abraham",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-abraham",
+    "photographerSlug": "doyce-eaton",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wausau-fairgrounds_1978_chuck-abraham_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/wausau-fairgrounds/1978/wausau-fairgrounds_1978_chuck-abraham_john-vass_photo_001.jpg",
+    "publicPath": "/photos/wausau-fairgrounds_1978_chuck-abraham_john-vass_photo_001.jpg",
+    "trackSlug": "wausau-fairgrounds",
+    "year": "1978",
+    "driverSlug": "chuck-abraham",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

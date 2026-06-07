@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "golden-sands-speedway_1967_ed-nichols_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1967/golden-sands-speedway_1967_ed-nichols_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1967_ed-nichols_dennis-satorius_post_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1967",
+    "driverSlug": "ed-nichols",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_ed-nichols_john-alft_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_ed-nichols_john-alft_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_ed-nichols_john-alft_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ed-nichols",
+    "photographerSlug": "john-alft",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

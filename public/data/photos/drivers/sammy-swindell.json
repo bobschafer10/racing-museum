@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_sammy-swindell_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_sammy-swindell_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_sammy-swindell_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "sammy-swindell",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "impact-speedway_1988_sammy-swindell_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/impact-speedway/1988/impact-speedway_1988_sammy-swindell_don-besch_photo_001.jpg",
+    "publicPath": "/photos/impact-speedway_1988_sammy-swindell_don-besch_photo_001.jpg",
+    "trackSlug": "impact-speedway",
+    "year": "1988",
+    "driverSlug": "sammy-swindell",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1990_sammy-swindell_bob-schafer_photo_301.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1990/milwaukee-mile_1990_sammy-swindell_bob-schafer_photo_301.jpg",
+    "publicPath": "/photos/milwaukee-mile_1990_sammy-swindell_bob-schafer_photo_301.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1990",
+    "driverSlug": "sammy-swindell",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "301"
+  }
+]

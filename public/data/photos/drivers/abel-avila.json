@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_abel-avila_william-avila_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_abel-avila_william-avila_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_abel-avila_william-avila_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "abel-avila",
+    "photographerSlug": "william-avila",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_abel-avila_william-avila_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_abel-avila_william-avila_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_abel-avila_william-avila_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "abel-avila",
+    "photographerSlug": "william-avila",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

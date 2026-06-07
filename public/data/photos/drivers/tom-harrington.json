@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1987_tom-harrington_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1987/milwaukee-mile_1987_tom-harrington_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1987_tom-harrington_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1987",
+    "driverSlug": "tom-harrington",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_tom-harrington_bob-schafer_photo_14037.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tom-harrington_bob-schafer_photo_14037.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tom-harrington_bob-schafer_photo_14037.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tom-harrington",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14037"
+  }
+]

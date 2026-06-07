@@ -1,0 +1,178 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_2018_troy-springborn_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/2018/dodge-county-fairgrounds_2018_troy-springborn_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_2018_troy-springborn_bob-greuel_photo_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "2018",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/langlade-county-speedway/unknown-year/langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_005.jpg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_007.jpg",
+    "storagePath": "photos/master/langlade-county-speedway/unknown-year/langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_007.jpg",
+    "publicPath": "/photos/langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_007.jpg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "007"
+  },
+  {
+    "fileName": "langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/langlade-county-speedway/unknown-year/langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/langlade-county-speedway_unknown-year_troy-springborn_unknown-photographer_photo_008.jpg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "008"
+  },
+  {
+    "fileName": "mall-show_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_troy-springborn_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_troy-springborn_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_troy-springborn_joe-verdegan_post_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_troy-springborn_dave-panske_photo_005.jpeg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_troy-springborn_dave-panske_photo_005.jpeg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_troy-springborn_dave-panske_photo_005.jpeg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "shawano-speedway_2026_troy-springborn_hoofer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2026/shawano-speedway_2026_troy-springborn_hoofer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2026_troy-springborn_hoofer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2026",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "hoofer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_troy-springborn_brad-luepke_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_troy-springborn_brad-luepke_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_troy-springborn_brad-luepke_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "brad-luepke",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_021.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_021.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_021.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "021"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_troy-springborn_447-photography_photo_013.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_troy-springborn_447-photography_photo_013.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_troy-springborn_447-photography_photo_013.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "447-photography",
+    "creditType": "photo",
+    "sequence": "013"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_troy-springborn_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_troy-springborn_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_troy-springborn_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_troy-springborn_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_troy-springborn_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_troy-springborn_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_troy-springborn_kurt-luoma_photo_504.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_troy-springborn_kurt-luoma_photo_504.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_troy-springborn_kurt-luoma_photo_504.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-springborn",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "504"
+  }
+]

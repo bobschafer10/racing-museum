@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "norway-speedway_unknown-year_kent-pearson_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_kent-pearson_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_kent-pearson_unknown-credit_post_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kent-pearson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "norway-speedway_unknown-year_kent-pearson_unknown-photographer_post_001.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_kent-pearson_unknown-photographer_post_001.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_kent-pearson_unknown-photographer_post_001.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kent-pearson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1986_kent-pearson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1986/wisconsin-international-raceway_1986_kent-pearson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1986_kent-pearson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1986",
+    "driverSlug": "kent-pearson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_kent-pearson_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_kent-pearson_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_kent-pearson_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kent-pearson",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

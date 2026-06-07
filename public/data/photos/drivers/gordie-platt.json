@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_gordie-platt_bob-schafer_photo_14125.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_gordie-platt_bob-schafer_photo_14125.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_gordie-platt_bob-schafer_photo_14125.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-platt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14125"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_gordie-platt_bob-schafer_photo_14126.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_gordie-platt_bob-schafer_photo_14126.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_gordie-platt_bob-schafer_photo_14126.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-platt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14126"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_gordie-platt_john-alft_post_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_gordie-platt_john-alft_post_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_gordie-platt_john-alft_post_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-platt",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_gordie-platt_unknown-photographer_44.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_gordie-platt_unknown-photographer_44.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_gordie-platt_unknown-photographer_44.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-platt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "44",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_gordie-platt_john-alft_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_gordie-platt_john-alft_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_gordie-platt_john-alft_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gordie-platt",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gordie-platt_unknown-photographer_photo_344.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordie-platt_unknown-photographer_photo_344.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gordie-platt_unknown-photographer_photo_344.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gordie-platt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "344"
+  }
+]

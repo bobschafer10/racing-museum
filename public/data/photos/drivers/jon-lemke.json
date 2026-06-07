@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_jon-lemke_bob-schafer_photo_014.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_jon-lemke_bob-schafer_photo_014.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_jon-lemke_bob-schafer_photo_014.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-lemke",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "014"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1994_jon-lemke_pat-heaney_post_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1994/wisconsin-international-raceway_1994_jon-lemke_pat-heaney_post_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1994_jon-lemke_pat-heaney_post_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1994",
+    "driverSlug": "jon-lemke",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2003_jon-lemke_cory-juelich_post_116.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2003/wisconsin-international-raceway_2003_jon-lemke_cory-juelich_post_116.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2003_jon-lemke_cory-juelich_post_116.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2003",
+    "driverSlug": "jon-lemke",
+    "photographerSlug": "cory-juelich",
+    "creditType": "post",
+    "sequence": "116"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "wisconsin-international-raceway_1989_dan-stillman_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1989/wisconsin-international-raceway_1989_dan-stillman_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1989_dan-stillman_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1989",
+    "driverSlug": "dan-stillman",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_dan-stillman_bob-schafer_photo_302.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_dan-stillman_bob-schafer_photo_302.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_dan-stillman_bob-schafer_photo_302.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "dan-stillman",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "302"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dan-stillman_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dan-stillman_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dan-stillman_joe-slack_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dan-stillman",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dan-stillman_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dan-stillman_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dan-stillman_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dan-stillman",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

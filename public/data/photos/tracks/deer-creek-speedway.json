@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "deer-creek-speedway_2010_todd-sharkey_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/2010/deer-creek-speedway_2010_todd-sharkey_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_2010_todd-sharkey_unknown-photographer_photo_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "2010",
+    "driverSlug": "todd-sharkey",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "deer-creek-speedway_2011_aj-wiste_aj-wiste_post_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/2011/deer-creek-speedway_2011_aj-wiste_aj-wiste_post_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_2011_aj-wiste_aj-wiste_post_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "2011",
+    "driverSlug": "aj-wiste",
+    "photographerSlug": "aj-wiste",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "deer-creek-speedway_2012_aj-wiste_aj-wiste_post_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/2012/deer-creek-speedway_2012_aj-wiste_aj-wiste_post_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_2012_aj-wiste_aj-wiste_post_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "2012",
+    "driverSlug": "aj-wiste",
+    "photographerSlug": "aj-wiste",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/unknown-year/deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-foss",
+    "photographerSlug": "buck-monson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "deer-creek-speedway_unknown-year_kevin-adams_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/unknown-year/deer-creek-speedway_unknown-year_kevin-adams_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_unknown-year_kevin-adams_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-adams",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "deer-creek-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/unknown-year/deer-creek-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_unknown-year_scott-paulson_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-paulson",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

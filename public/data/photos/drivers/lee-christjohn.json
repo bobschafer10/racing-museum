@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "langlade-county-speedway_unknown-year_lee-christjohn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/langlade-county-speedway/unknown-year/langlade-county-speedway_unknown-year_lee-christjohn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/langlade-county-speedway_unknown-year_lee-christjohn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "langlade-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-christjohn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-christjohn_93-adj_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-christjohn_93-adj_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-christjohn_93-adj_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-christjohn",
+    "photographerSlug": "93-adj",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-christjohn_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-christjohn_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-christjohn_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-christjohn",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_lee-christjohn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lee-christjohn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_lee-christjohn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "lee-christjohn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

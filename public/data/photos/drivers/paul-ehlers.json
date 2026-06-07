@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_paul-ehlers_chad-tessman_post_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_paul-ehlers_chad-tessman_post_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_paul-ehlers_chad-tessman_post_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "paul-ehlers",
+    "photographerSlug": "chad-tessman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_paul-ehlers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_paul-ehlers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_paul-ehlers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "paul-ehlers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

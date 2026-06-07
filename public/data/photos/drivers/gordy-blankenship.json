@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_gordy-blankenship_don-besch_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_gordy-blankenship_don-besch_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_gordy-blankenship_don-besch_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "gordy-blankenship",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "gordy-blankenship",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_002.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_002.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_002.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "gordy-blankenship",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

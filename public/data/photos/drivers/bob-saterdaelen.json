@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "keith-nason",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_021.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_021.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_021.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "021"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_301.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_301.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_missy-lushinsky_photo_301.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "301"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "072"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

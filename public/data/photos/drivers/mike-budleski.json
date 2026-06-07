@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_mike-budleski_blaser_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_mike-budleski_blaser_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_mike-budleski_blaser_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_1990_mike-budleski_bob-schafer_photo_13367.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_mike-budleski_bob-schafer_photo_13367.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1990_mike-budleski_bob-schafer_photo_13367.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1990",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13367"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mike-budleski_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mike-budleski_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mike-budleski_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mike-budleski_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mike-budleski_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mike-budleski_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-budleski_bob-schafer_photo_14468.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-budleski_bob-schafer_photo_14468.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-budleski_bob-schafer_photo_14468.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14468"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-budleski_bob-schafer_photo_510.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-budleski_bob-schafer_photo_510.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-budleski_bob-schafer_photo_510.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "510"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-budleski_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-budleski_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-budleski_kurt-luoma_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_mike-budleski_mall-ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-budleski_mall-ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mike-budleski_mall-ken-koppa_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mike-budleski",
+    "photographerSlug": "mall-ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

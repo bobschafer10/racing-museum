@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "milwaukee-mile_1960_darrell-dake_stan-kalwasinski_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1960/milwaukee-mile_1960_darrell-dake_stan-kalwasinski_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1960_darrell-dake_stan-kalwasinski_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1960",
+    "driverSlug": "darrell-dake",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1968_darrell-dake_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1968/rockford-speedway_1968_darrell-dake_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1968_darrell-dake_ron-thruman_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1968",
+    "driverSlug": "darrell-dake",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-dake_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-dake_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-dake_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-dake",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-dake_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-dake_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-dake_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-dake",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

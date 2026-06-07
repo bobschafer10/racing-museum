@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "oshkosh-speed-zone_unknown-year_bill-balog_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_bill-balog_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_bill-balog_unknown-photographer_photo_001.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "bill-balog",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-balog_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-balog_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-balog_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-balog",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-balog_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-balog",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-balog_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-balog",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-balog_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-balog",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-balog_unknown-photographer_photo_007.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_007.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_007.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-balog",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "007"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bill-balog_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-balog_unknown-photographer_photo_008.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-balog",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "008"
+  }
+]

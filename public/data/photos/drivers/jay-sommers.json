@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1990_jay-sommers_bob-schafer_photo_282.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1990/milwaukee-mile_1990_jay-sommers_bob-schafer_photo_282.jpg",
+    "publicPath": "/photos/milwaukee-mile_1990_jay-sommers_bob-schafer_photo_282.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1990",
+    "driverSlug": "jay-sommers",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "282"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jay-sommers_kurt-luoma_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jay-sommers_kurt-luoma_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jay-sommers_kurt-luoma_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jay-sommers",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_pete-seitz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_pete-seitz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_pete-seitz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-seitz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_pete-seitz_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_pete-seitz_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_pete-seitz_unknown-photographer_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-seitz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "jefferson-speedway_unknown-year_pete-seitz_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_pete-seitz_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_pete-seitz_don-wendlandt_photo_001.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-seitz",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1978_pete-seitz_jeff-gilhart_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_pete-seitz_jeff-gilhart_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1978_pete-seitz_jeff-gilhart_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1978",
+    "driverSlug": "pete-seitz",
+    "photographerSlug": "jeff-gilhart",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-seitz_57-freddy-paulson_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-seitz_57-freddy-paulson_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-seitz_57-freddy-paulson_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-seitz",
+    "photographerSlug": "57-freddy-paulson",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "kasson-speedway_2020_dave-nobel_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/kasson-speedway/2020/kasson-speedway_2020_dave-nobel_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/kasson-speedway_2020_dave-nobel_unknown-photographer_photo_001.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "2020",
+    "driverSlug": "dave-nobel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kasson-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/kasson-speedway/unknown-year/kasson-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/kasson-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "craig-brightbill",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kasson-speedway_unknown-year_don-brightbill_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/kasson-speedway/unknown-year/kasson-speedway_unknown-year_don-brightbill_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/kasson-speedway_unknown-year_don-brightbill_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-brightbill",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kasson-speedway_unknown-year_karl-fenske_missy-lushinsky_photo_009.jpg",
+    "storagePath": "photos/master/kasson-speedway/unknown-year/kasson-speedway_unknown-year_karl-fenske_missy-lushinsky_photo_009.jpg",
+    "publicPath": "/photos/kasson-speedway_unknown-year_karl-fenske_missy-lushinsky_photo_009.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "karl-fenske",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "009"
+  },
+  {
+    "fileName": "kasson-speedway_unknown-year_karl-fenske_missy-lushinsky_photo_010.jpg",
+    "storagePath": "photos/master/kasson-speedway/unknown-year/kasson-speedway_unknown-year_karl-fenske_missy-lushinsky_photo_010.jpg",
+    "publicPath": "/photos/kasson-speedway_unknown-year_karl-fenske_missy-lushinsky_photo_010.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "karl-fenske",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "010"
+  },
+  {
+    "fileName": "kasson-speedway_unknown-year_kasson-speedway-troy-powers-pos_troy-powers_post_001.jpg",
+    "storagePath": "photos/master/kasson-speedway/unknown-year/kasson-speedway_unknown-year_kasson-speedway-troy-powers-pos_troy-powers_post_001.jpg",
+    "publicPath": "/photos/kasson-speedway_unknown-year_kasson-speedway-troy-powers-pos_troy-powers_post_001.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kasson-speedway-troy-powers-pos",
+    "photographerSlug": "troy-powers",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "kasson-speedway_unknown-year_ron-jones_missy-lushinsky_photo_009.jpg",
+    "storagePath": "photos/master/kasson-speedway/unknown-year/kasson-speedway_unknown-year_ron-jones_missy-lushinsky_photo_009.jpg",
+    "publicPath": "/photos/kasson-speedway_unknown-year_ron-jones_missy-lushinsky_photo_009.jpg",
+    "trackSlug": "kasson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-jones",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "009"
+  }
+]

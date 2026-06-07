@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "jefferson-speedway_1982_randy-lindemann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/jefferson-speedway/1982/jefferson-speedway_1982_randy-lindemann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/jefferson-speedway_1982_randy-lindemann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "1982",
+    "driverSlug": "randy-lindemann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "jefferson-speedway_unknown-year_randy-lindemann_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_randy-lindemann_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_randy-lindemann_don-wendlandt_photo_001.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-lindemann",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

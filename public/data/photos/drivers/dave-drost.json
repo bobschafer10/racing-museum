@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "unknown_unknown-year_dave-drost_charlie-spry-post_001.jpg",
+    "storagePath": "photos/master/unknown/unknown-year/unknown_unknown-year_dave-drost_charlie-spry-post_001.jpg",
+    "publicPath": "/photos/unknown_unknown-year_dave-drost_charlie-spry-post_001.jpg",
+    "trackSlug": "unknown",
+    "year": "unknown-year",
+    "driverSlug": "dave-drost",
+    "photographerSlug": "charlie-spry-post",
+    "creditType": "001",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-drost_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-drost_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-drost_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-drost",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-drost_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-drost_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-drost_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-drost",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-drost_john-waters_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-drost_john-waters_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-drost_john-waters_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-drost",
+    "photographerSlug": "john-waters",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "princeton-speedway_unknown-year_abby-garin_abby-garin_post_001.jpg",
+    "storagePath": "photos/master/princeton-speedway/unknown-year/princeton-speedway_unknown-year_abby-garin_abby-garin_post_001.jpg",
+    "publicPath": "/photos/princeton-speedway_unknown-year_abby-garin_abby-garin_post_001.jpg",
+    "trackSlug": "princeton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "abby-garin",
+    "photographerSlug": "abby-garin",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2018_abby-garin_speedshop-north_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2018/unknown-track_2018_abby-garin_speedshop-north_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2018_abby-garin_speedshop-north_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2018",
+    "driverSlug": "abby-garin",
+    "photographerSlug": "speedshop-north",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "elko-speedway_2019_adam-bendzick_adam-bendzick_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/2019/elko-speedway_2019_adam-bendzick_adam-bendzick_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_2019_adam-bendzick_adam-bendzick_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "2019",
+    "driverSlug": "adam-bendzick",
+    "photographerSlug": "adam-bendzick",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_2016_adam-bendzick_adam-bendzick_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/2016/lacrosse-interstate-speedway_2016_adam-bendzick_adam-bendzick_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_2016_adam-bendzick_adam-bendzick_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "2016",
+    "driverSlug": "adam-bendzick",
+    "photographerSlug": "adam-bendzick",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2022_adam-bendzick_adam-bendzick_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2022/unknown-track_2022_adam-bendzick_adam-bendzick_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2022_adam-bendzick_adam-bendzick_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2022",
+    "driverSlug": "adam-bendzick",
+    "photographerSlug": "adam-bendzick",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

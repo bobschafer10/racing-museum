@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_billy-moyer_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_billy-moyer_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_billy-moyer_bob-schafer_photo_222.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "billy-moyer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-moyer_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-moyer_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-moyer_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-moyer",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_billy-moyer_kurt-luoma_photo_504.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_billy-moyer_kurt-luoma_photo_504.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_billy-moyer_kurt-luoma_photo_504.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "billy-moyer",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "504"
+  }
+]

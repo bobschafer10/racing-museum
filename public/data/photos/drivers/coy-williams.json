@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "grundy-county-speedway_1987_coy-williams_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1987/grundy-county-speedway_1987_coy-williams_don-besch_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1987_coy-williams_don-besch_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1987",
+    "driverSlug": "coy-williams",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_coy-williams_bob-schafer_photo_454.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_coy-williams_bob-schafer_photo_454.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_coy-williams_bob-schafer_photo_454.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "coy-williams",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "454"
+  }
+]

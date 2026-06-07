@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_todd-eliason_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_todd-eliason_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_todd-eliason_unknown-photographer_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rice-lake-speedway_1990_todd-eliason_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/1990/rice-lake-speedway_1990_todd-eliason_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/rice-lake-speedway_1990_todd-eliason_todd-narveson_photo_001.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "1990",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_todd-eliason_unknown-photographer_photo_1.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_todd-eliason_unknown-photographer_photo_1.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_todd-eliason_unknown-photographer_photo_1.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-eliason_kevin-lukanen_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-eliason_kevin-lukanen_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-eliason_kevin-lukanen_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "kevin-lukanen",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-eliason_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-eliason",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

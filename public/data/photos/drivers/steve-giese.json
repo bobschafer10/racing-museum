@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-giese_bob-schafer_photo_196.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-giese_bob-schafer_photo_196.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-giese_bob-schafer_photo_196.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-giese",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "196"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-giese",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_111.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_111.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_111.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "steve-giese",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "111"
+  }
+]

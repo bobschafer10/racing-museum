@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1976_jerry-straube_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_jerry-straube_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1976_jerry-straube_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1976",
+    "driverSlug": "jerry-straube",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1983_jerry-straube_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1983/lake-geneva-raceway_1983_jerry-straube_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1983_jerry-straube_pat-heaney_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1983",
+    "driverSlug": "jerry-straube",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_jerry-straube_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jerry-straube_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jerry-straube_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-straube",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jerry-straube_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-straube_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-straube_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jerry-straube",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

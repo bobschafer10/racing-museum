@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_todd-tetzlaff_dennis-satorius_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-tetzlaff_dennis-satorius_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-tetzlaff_dennis-satorius_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1989_todd-tetzlaff_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1989/wisconsin-international-raceway_1989_todd-tetzlaff_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1989_todd-tetzlaff_pat-heaney_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1989",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1990_todd-tetzlaff_bob-schafer_photo_285.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_todd-tetzlaff_bob-schafer_photo_285.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1990_todd-tetzlaff_bob-schafer_photo_285.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1990",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "285"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_todd-tetzlaff_bob-schafer_photo_420.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_todd-tetzlaff_bob-schafer_photo_420.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_todd-tetzlaff_bob-schafer_photo_420.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "420"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_todd-tetzlaff_bob-schafer_photo_421.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_todd-tetzlaff_bob-schafer_photo_421.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_todd-tetzlaff_bob-schafer_photo_421.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "421"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_todd-tetzlaff_kurt-luoma_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_todd-tetzlaff_kurt-luoma_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_todd-tetzlaff_kurt-luoma_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_todd-tetzlaff_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_todd-tetzlaff_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_todd-tetzlaff_unknown-photographer_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_todd-tetzlaff_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_todd-tetzlaff_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_todd-tetzlaff_unknown-photographer_photo_002.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "todd-tetzlaff",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

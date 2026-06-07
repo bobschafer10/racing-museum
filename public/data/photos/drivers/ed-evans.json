@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "nashville-speedway_unknown-year_ed-evans_bob-schafer_photo_12802.jpg",
+    "storagePath": "photos/master/nashville-speedway/unknown-year/nashville-speedway_unknown-year_ed-evans_bob-schafer_photo_12802.jpg",
+    "publicPath": "/photos/nashville-speedway_unknown-year_ed-evans_bob-schafer_photo_12802.jpg",
+    "trackSlug": "nashville-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12802"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-evans_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-evans_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-evans_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-evans_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-evans_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_ed-evans_al-fortner_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_ed-evans_al-fortner_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_ed-evans_al-fortner_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

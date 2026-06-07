@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/2010/shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2010",
+    "driverSlug": "aaron-wickersheim",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_aaron-wickersheim_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aaron-wickersheim_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_aaron-wickersheim_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "aaron-wickersheim",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

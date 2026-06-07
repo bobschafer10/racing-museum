@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "mall-show_unknown-year_jim-sullivan_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_jim-sullivan_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_jim-sullivan_geoff-mckarns_post_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "jim-sullivan",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_jim-sullivan_stan-kalwasinski_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jim-sullivan_stan-kalwasinski_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_jim-sullivan_stan-kalwasinski_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-sullivan",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

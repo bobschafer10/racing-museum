@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_roy-schmidtke_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_roy-schmidtke_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_roy-schmidtke_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roy-schmidtke",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_roy-schmidtke_unknown-photographer_photo_1183.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roy-schmidtke_unknown-photographer_photo_1183.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roy-schmidtke_unknown-photographer_photo_1183.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roy-schmidtke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1183"
+  }
+]

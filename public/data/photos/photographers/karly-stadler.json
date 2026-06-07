@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_2013_aaron-falbe_karly-stadler_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2013/beaver-dam-raceway_2013_aaron-falbe_karly-stadler_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2013_aaron-falbe_karly-stadler_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2013",
+    "driverSlug": "aaron-falbe",
+    "photographerSlug": "karly-stadler",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2026_karly-stadler_karly-stadler_post_112.jpg",
+    "storagePath": "photos/master/unknown-track/2026/unknown-track_2026_karly-stadler_karly-stadler_post_112.jpg",
+    "publicPath": "/photos/unknown-track_2026_karly-stadler_karly-stadler_post_112.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2026",
+    "driverSlug": "karly-stadler",
+    "photographerSlug": "karly-stadler",
+    "creditType": "post",
+    "sequence": "112"
+  }
+]

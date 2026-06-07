@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_jim-dunn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_jim-dunn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_jim-dunn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-dunn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_jim-dunn_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_jim-dunn_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_jim-dunn_unknown-photographer_photo_003.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-dunn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "columbus-151-speedway_1996_jim-dunn_jeff-gilhart_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/1996/columbus-151-speedway_1996_jim-dunn_jeff-gilhart_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_1996_jim-dunn_jeff-gilhart_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "1996",
+    "driverSlug": "jim-dunn",
+    "photographerSlug": "jeff-gilhart",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

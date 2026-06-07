@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_2014_nathan-haseleau_bob-schneider_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/2014/slinger-speedway_2014_nathan-haseleau_bob-schneider_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_2014_nathan-haseleau_bob-schneider_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2014",
+    "driverSlug": "nathan-haseleau",
+    "photographerSlug": "bob-schneider",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_nathan-haseleau_unknown-photographer_photo_68686.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_nathan-haseleau_unknown-photographer_photo_68686.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_nathan-haseleau_unknown-photographer_photo_68686.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "nathan-haseleau",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "68686"
+  }
+]

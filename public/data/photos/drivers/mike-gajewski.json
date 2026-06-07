@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mike-gajewski_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mike-gajewski_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mike-gajewski_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-gajewski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "mall-show_unknown-year_mike-gajewski_ken-koppa_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_mike-gajewski_ken-koppa_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_mike-gajewski_ken-koppa_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "mike-gajewski",
+    "photographerSlug": "ken-koppa",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-gajewski_bob-schafer_photo_093.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-gajewski_bob-schafer_photo_093.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-gajewski_bob-schafer_photo_093.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-gajewski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "093"
+  }
+]

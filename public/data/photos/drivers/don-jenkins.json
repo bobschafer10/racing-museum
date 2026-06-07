@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "rockford-speedway_unknown-year_don-jenkins_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_don-jenkins_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_don-jenkins_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-jenkins",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "senoia-speedway_1990_don-jenkins_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/senoia-speedway/1990/senoia-speedway_1990_don-jenkins_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/senoia-speedway_1990_don-jenkins_bob-schafer_photo_001.jpg",
+    "trackSlug": "senoia-speedway",
+    "year": "1990",
+    "driverSlug": "don-jenkins",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_don-jenkins_bob-schafer_photo_168.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_don-jenkins_bob-schafer_photo_168.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_don-jenkins_bob-schafer_photo_168.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "don-jenkins",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "168"
+  }
+]

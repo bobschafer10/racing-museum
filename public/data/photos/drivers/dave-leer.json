@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "hales-corners-speedway_unknown-year_dave-leer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_dave-leer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_dave-leer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-leer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1996_dave-leer_david-leer_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1996/unknown-track_1996_dave-leer_david-leer_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1996_dave-leer_david-leer_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1996",
+    "driverSlug": "dave-leer",
+    "photographerSlug": "david-leer",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

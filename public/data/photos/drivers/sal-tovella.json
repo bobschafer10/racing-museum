@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "illiana-speedway_1979_sal-tovella_stan-kalwasinski_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/1979/illiana-speedway_1979_sal-tovella_stan-kalwasinski_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_1979_sal-tovella_stan-kalwasinski_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "1979",
+    "driverSlug": "sal-tovella",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1965/milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1965",
+    "driverSlug": "sal-tovella",
+    "photographerSlug": "wayne-bryant",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_sal-tovella_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_sal-tovella_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_sal-tovella_unknown-photographer_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "sal-tovella",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_sal-tovella_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_sal-tovella_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_sal-tovella_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "sal-tovella",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_sal-tovella_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_sal-tovella_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_sal-tovella_weber-brothers_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "sal-tovella",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

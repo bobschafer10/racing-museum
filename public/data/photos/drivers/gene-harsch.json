@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_1983_gene-harsch_weber-brothers_photo_115.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1983/milwaukee-mile_1983_gene-harsch_weber-brothers_photo_115.jpg",
+    "publicPath": "/photos/milwaukee-mile_1983_gene-harsch_weber-brothers_photo_115.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1983",
+    "driverSlug": "gene-harsch",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "115"
+  },
+  {
+    "fileName": "milwaukee-mile_1987_gene-harsch_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1987/milwaukee-mile_1987_gene-harsch_don-besch_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1987_gene-harsch_don-besch_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1987",
+    "driverSlug": "gene-harsch",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

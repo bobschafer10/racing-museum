@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "columbus-151-speedway_2013_jimmy-robinson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/2013/columbus-151-speedway_2013_jimmy-robinson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_2013_jimmy-robinson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "2013",
+    "driverSlug": "jimmy-robinson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_jimmy-robinson_j&d_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_jimmy-robinson_j&d_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_jimmy-robinson_j&d_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-robinson",
+    "photographerSlug": "j&d",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jimmy-robinson_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jimmy-robinson_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jimmy-robinson_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-robinson",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

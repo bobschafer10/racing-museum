@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_1990_dan-mcmann_todd-narveson_photo_001.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_dan-mcmann_todd-narveson_photo_001.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_dan-mcmann_todd-narveson_photo_001.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "dan-mcmann",
+    "photographerSlug": "todd-narveson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_dan-mcmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dan-mcmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_dan-mcmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "dan-mcmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-mcmann_scott-christman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-mcmann_scott-christman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-mcmann_scott-christman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-mcmann",
+    "photographerSlug": "scott-christman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-mcmann_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-mcmann_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-mcmann_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-mcmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

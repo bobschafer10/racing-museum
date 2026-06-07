@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "state-park-speedway_2011_travis-sauter_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2011/state-park-speedway_2011_travis-sauter_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2011_travis-sauter_tom-loos_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2011",
+    "driverSlug": "travis-sauter",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_travis-sauter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_travis-sauter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_travis-sauter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "travis-sauter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

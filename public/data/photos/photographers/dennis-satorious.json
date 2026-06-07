@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_fred-goetz_dennis-satorious_post_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_fred-goetz_dennis-satorious_post_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_fred-goetz_dennis-satorious_post_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "fred-goetz",
+    "photographerSlug": "dennis-satorious",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_kyle-munro_dennis-satorious_post_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_kyle-munro_dennis-satorious_post_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_kyle-munro_dennis-satorious_post_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kyle-munro",
+    "photographerSlug": "dennis-satorious",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_chuck-stevens_dennis-satorious_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_chuck-stevens_dennis-satorious_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_chuck-stevens_dennis-satorious_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chuck-stevens",
+    "photographerSlug": "dennis-satorious",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

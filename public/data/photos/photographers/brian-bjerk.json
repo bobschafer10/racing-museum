@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "dells-motor-speedway_2026_tristan-swanson_brian-bjerk_post_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2026/dells-motor-speedway_2026_tristan-swanson_brian-bjerk_post_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2026_tristan-swanson_brian-bjerk_post_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2026",
+    "driverSlug": "tristan-swanson",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_2026_al-strobel_brian-bjerk_photo_768.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_al-strobel_brian-bjerk_photo_768.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_al-strobel_brian-bjerk_photo_768.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "al-strobel",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "photo",
+    "sequence": "768"
+  },
+  {
+    "fileName": "slinger-speedway_2026_lincoln-cain_brian-bjerk_post_773.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_lincoln-cain_brian-bjerk_post_773.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_lincoln-cain_brian-bjerk_post_773.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "lincoln-cain",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "post",
+    "sequence": "773"
+  }
+]

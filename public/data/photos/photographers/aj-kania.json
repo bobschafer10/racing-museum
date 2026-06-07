@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "state-park-speedway_2014_aj-kania_aj-kania_post_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2014/state-park-speedway_2014_aj-kania_aj-kania_post_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2014_aj-kania_aj-kania_post_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2014",
+    "driverSlug": "aj-kania",
+    "photographerSlug": "aj-kania",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomahawk-speedway_2012_aj-kania_aj-kania_post_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/2012/tomahawk-speedway_2012_aj-kania_aj-kania_post_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_2012_aj-kania_aj-kania_post_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "2012",
+    "driverSlug": "aj-kania",
+    "photographerSlug": "aj-kania",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown_track_2013_aj-kania_aj-kania_post_201.jpg",
+    "storagePath": "photos/master/unknown/track/unknown_track_2013_aj-kania_aj-kania_post_201.jpg",
+    "publicPath": "/photos/unknown_track_2013_aj-kania_aj-kania_post_201.jpg",
+    "trackSlug": "unknown",
+    "year": "track",
+    "driverSlug": "2013",
+    "photographerSlug": "aj-kania",
+    "creditType": "aj-kania",
+    "sequence": "post"
+  }
+]

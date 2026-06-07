@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_paul-gilberts_ryan-aho_post_093.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_paul-gilberts_ryan-aho_post_093.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_paul-gilberts_ryan-aho_post_093.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-gilberts",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "093"
+  },
+  {
+    "fileName": "central-state-speedway_1985_paul-gilberts_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/central-state-speedway/1985/central-state-speedway_1985_paul-gilberts_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/central-state-speedway_1985_paul-gilberts_bob-schafer_photo_001.jpg",
+    "trackSlug": "central-state-speedway",
+    "year": "1985",
+    "driverSlug": "paul-gilberts",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1993_paul-gilberts_neil-miller_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_paul-gilberts_neil-miller_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1993_paul-gilberts_neil-miller_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1993",
+    "driverSlug": "paul-gilberts",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-gilberts_ryan-aho_post_070.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-gilberts_ryan-aho_post_070.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-gilberts_ryan-aho_post_070.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-gilberts",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "070"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-gilberts",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "paul-gilberts",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_555.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_555.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_555.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-bolster",
+    "photographerSlug": "bessie-kmiecik",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_556.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_556.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_556.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-bolster",
+    "photographerSlug": "bessie-kmiecik",
+    "creditType": "post",
+    "sequence": "556"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_557.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_557.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_larry-bolster_bessie-kmiecik_post_557.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-bolster",
+    "photographerSlug": "bessie-kmiecik",
+    "creditType": "post",
+    "sequence": "557"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-bolster_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-bolster_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-bolster_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-bolster",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-bolster_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-bolster_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-bolster_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-bolster",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

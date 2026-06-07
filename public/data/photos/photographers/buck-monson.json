@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/unknown-year/deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-foss",
+    "photographerSlug": "buck-monson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_shane-sabraski_buck-monson_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_shane-sabraski_buck-monson_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_shane-sabraski_buck-monson_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "shane-sabraski",
+    "photographerSlug": "buck-monson",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "amherst-speedway_2013_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/amherst-speedway/2013/amherst-speedway_2013_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/amherst-speedway_2013_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "amherst-speedway",
+    "year": "2013",
+    "driverSlug": "jesse-krahn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "luxemburg-speedway_unknown-year_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/unknown-year/luxemburg-speedway_unknown-year_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/luxemburg-speedway_unknown-year_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jesse-krahn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_jesse-krahn_turn-2_photo_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_jesse-krahn_turn-2_photo_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_jesse-krahn_turn-2_photo_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jesse-krahn",
+    "photographerSlug": "turn-2",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jesse-krahn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jesse-krahn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jesse-krahn_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jesse-krahn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

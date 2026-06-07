@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001 (2).jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001 (2).jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001 (2).jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-frazier",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001 (2)"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-frazier",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

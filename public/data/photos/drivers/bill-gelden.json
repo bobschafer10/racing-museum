@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_bill-gelden_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-gelden_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bill-gelden_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bill-gelden",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_1981_bill-gelden_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1981/wilmot-raceway_1981_bill-gelden_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1981_bill-gelden_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1981",
+    "driverSlug": "bill-gelden",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

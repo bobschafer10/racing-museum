@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "storagePath": "photos/master/deer-creek-speedway/unknown-year/deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "publicPath": "/photos/deer-creek-speedway_unknown-year_keith-foss_buck-monson_photo_001.jpg",
+    "trackSlug": "deer-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-foss",
+    "photographerSlug": "buck-monson",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "fox-ridge-speedway_unknown-year_keith-foss_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/fox-ridge-speedway/unknown-year/fox-ridge-speedway_unknown-year_keith-foss_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/fox-ridge-speedway_unknown-year_keith-foss_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "fox-ridge-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-foss",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "mississippi-thunder-speedway_2026_keith-foss_rydeware-inc_post_001.jpg",
+    "storagePath": "photos/master/mississippi-thunder-speedway/2026/mississippi-thunder-speedway_2026_keith-foss_rydeware-inc_post_001.jpg",
+    "publicPath": "/photos/mississippi-thunder-speedway_2026_keith-foss_rydeware-inc_post_001.jpg",
+    "trackSlug": "mississippi-thunder-speedway",
+    "year": "2026",
+    "driverSlug": "keith-foss",
+    "photographerSlug": "rydeware-inc",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

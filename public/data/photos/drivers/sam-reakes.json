@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "rockford-speedway_1973_sam-reakes_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1973/rockford-speedway_1973_sam-reakes_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1973_sam-reakes_geoff-mckarns_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1973",
+    "driverSlug": "sam-reakes",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_sam-reakes_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_sam-reakes_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_sam-reakes_joe-verdegan_post_001.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "sam-reakes",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_sam-reakes_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_sam-reakes_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_sam-reakes_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "sam-reakes",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_sam-reakes_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_sam-reakes_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_sam-reakes_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "sam-reakes",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

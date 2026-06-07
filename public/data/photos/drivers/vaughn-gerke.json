@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_1978_vaughn-gerke_mike-dunn_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1978/lake-geneva-raceway_1978_vaughn-gerke_mike-dunn_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1978_vaughn-gerke_mike-dunn_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1978",
+    "driverSlug": "vaughn-gerke",
+    "photographerSlug": "mike-dunn",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1970_vaughn-gerke_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1970/rockford-speedway_1970_vaughn-gerke_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1970_vaughn-gerke_ron-thruman_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1970",
+    "driverSlug": "vaughn-gerke",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

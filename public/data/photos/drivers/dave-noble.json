@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "chateau-speedway_unknown-year_dave-noble_grage-myron_post_100.jpg",
+    "storagePath": "photos/master/chateau-speedway/unknown-year/chateau-speedway_unknown-year_dave-noble_grage-myron_post_100.jpg",
+    "publicPath": "/photos/chateau-speedway_unknown-year_dave-noble_grage-myron_post_100.jpg",
+    "trackSlug": "chateau-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-noble",
+    "photographerSlug": "grage-myron",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "fairmont-speedway_1972_dave-noble_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/fairmont-speedway/1972/fairmont-speedway_1972_dave-noble_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/fairmont-speedway_1972_dave-noble_unknown-photographer_photo_001.jpg",
+    "trackSlug": "fairmont-speedway",
+    "year": "1972",
+    "driverSlug": "dave-noble",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_dave-noble_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_dave-noble_joe-slack_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_dave-noble_joe-slack_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-noble",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-noble_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-noble_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-noble_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-noble",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-noble_unknown-photographer_photo_1358.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-noble_unknown-photographer_photo_1358.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-noble_unknown-photographer_photo_1358.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-noble",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1358"
+  }
+]

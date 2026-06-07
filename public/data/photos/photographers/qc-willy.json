@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "golden-sands-speedway_2021_colton-haasl_qc-willy_photo_333.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2021/golden-sands-speedway_2021_colton-haasl_qc-willy_photo_333.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2021_colton-haasl_qc-willy_photo_333.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2021",
+    "driverSlug": "colton-haasl",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-park-speedway_2020_aaron-marthaler_qc-willy_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2020/state-park-speedway_2020_aaron-marthaler_qc-willy_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2020_aaron-marthaler_qc-willy_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2020",
+    "driverSlug": "aaron-marthaler",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_2020_mondel-peters_qc-willy_photo_333.jpg",
+    "storagePath": "photos/master/state-park-speedway/2020/state-park-speedway_2020_mondel-peters_qc-willy_photo_333.jpg",
+    "publicPath": "/photos/state-park-speedway_2020_mondel-peters_qc-willy_photo_333.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2020",
+    "driverSlug": "mondel-peters",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-park-speedway_2022_aaron-hendricks_qc-willy_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/2022/state-park-speedway_2022_aaron-hendricks_qc-willy_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_2022_aaron-hendricks_qc-willy_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2022",
+    "driverSlug": "aaron-hendricks",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "state-park-speedway_2023_dave-cabelka_qc-willy_post_333.jpg",
+    "storagePath": "photos/master/state-park-speedway/2023/state-park-speedway_2023_dave-cabelka_qc-willy_post_333.jpg",
+    "publicPath": "/photos/state-park-speedway_2023_dave-cabelka_qc-willy_post_333.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2023",
+    "driverSlug": "dave-cabelka",
+    "photographerSlug": "qc-willy",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_dave-trute_qc-willy_photo_222.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_dave-trute_qc-willy_photo_222.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_dave-trute_qc-willy_photo_222.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-trute",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_derek-doerr_qc-willy_photo_001.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_derek-doerr_qc-willy_photo_001.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_derek-doerr_qc-willy_photo_001.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "derek-doerr",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomahawk-speedway_2023_abby-kohn_qc-willy_photo_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/2023/tomahawk-speedway_2023_abby-kohn_qc-willy_photo_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_2023_abby-kohn_qc-willy_photo_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "2023",
+    "driverSlug": "abby-kohn",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_kevin-adams_qc-willy_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-adams_qc-willy_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_kevin-adams_qc-willy_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "kevin-adams",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

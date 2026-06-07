@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "hales-corners-speedway_1960_carl-teschendorf_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1960/hales-corners-speedway_1960_carl-teschendorf_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1960_carl-teschendorf_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1960",
+    "driverSlug": "carl-teschendorf",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1960_darrell-dake_stan-kalwasinski_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1960/milwaukee-mile_1960_darrell-dake_stan-kalwasinski_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1960_darrell-dake_stan-kalwasinski_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1960",
+    "driverSlug": "darrell-dake",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_1960_ed-snow_stan-kalwasinski_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1960/milwaukee-mile_1960_ed-snow_stan-kalwasinski_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1960_ed-snow_stan-kalwasinski_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1960",
+    "driverSlug": "ed-snow",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "nashville-speedway_1960_aj-shepherd_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/nashville-speedway/1960/nashville-speedway_1960_aj-shepherd_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/nashville-speedway_1960_aj-shepherd_unknown-photographer_photo_001.jpg",
+    "trackSlug": "nashville-speedway",
+    "year": "1960",
+    "driverSlug": "aj-shepherd",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1960_buzz-gleason_keith-toman_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1960/unknown-track_1960_buzz-gleason_keith-toman_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1960_buzz-gleason_keith-toman_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1960",
+    "driverSlug": "buzz-gleason",
+    "photographerSlug": "keith-toman",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

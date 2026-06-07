@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_keith-busekros_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_keith-busekros_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_keith-busekros_unknown-photographer_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-busekros",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "mall-show_unknown-year_keith-busekros_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_keith-busekros_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_keith-busekros_charlie-spry_photo_001.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "keith-busekros",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

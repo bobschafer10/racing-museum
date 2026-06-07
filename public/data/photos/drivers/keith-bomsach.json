@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_keith-bomsach_kurt-luoma_photo_1265.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_keith-bomsach_kurt-luoma_photo_1265.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_keith-bomsach_kurt-luoma_photo_1265.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-bomsach",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1265"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_keith-bomsach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_keith-bomsach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_keith-bomsach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-speedway-speedway_unknown-year_keith-bomsach_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-speedway-speedway/unknown-year/marshfield-speedway-speedway_unknown-year_keith-bomsach_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/marshfield-speedway-speedway_unknown-year_keith-bomsach_tom-loos_photo_001.jpg",
+    "trackSlug": "marshfield-speedway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-bomsach",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "keith-bomsach",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_117.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_117.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_117.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "keith-bomsach",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "117"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_keith-bomsach_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_keith-bomsach_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_keith-bomsach_unknown-photographer_photo_001.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-bomsach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

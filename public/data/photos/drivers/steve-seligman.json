@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "illiana-speedway_1976_steve-seligman_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/illiana-speedway/1976/illiana-speedway_1976_steve-seligman_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/illiana-speedway_1976_steve-seligman_pete-fileca_photo_001.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "1976",
+    "driverSlug": "steve-seligman",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1985_steve-seligman_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1985/rockford-speedway_1985_steve-seligman_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1985_steve-seligman_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1985",
+    "driverSlug": "steve-seligman",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_steve-seligman_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_steve-seligman_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_steve-seligman_geoff-mckarns_post_001.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-seligman",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1979_steve-seligman_rpm_photo_333.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1979/wisconsin-international-raceway_1979_steve-seligman_rpm_photo_333.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1979_steve-seligman_rpm_photo_333.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1979",
+    "driverSlug": "steve-seligman",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

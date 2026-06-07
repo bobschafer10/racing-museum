@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "wilmot-raceway_1981_mike-nissen_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1981/wilmot-raceway_1981_mike-nissen_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1981_mike-nissen_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1981",
+    "driverSlug": "mike-nissen",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_mike-nissen_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_mike-nissen_don-besch_photo_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_mike-nissen_don-besch_photo_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-nissen",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_mike-nissen_lonny-koene_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_mike-nissen_lonny-koene_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_mike-nissen_lonny-koene_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-nissen",
+    "photographerSlug": "lonny-koene",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

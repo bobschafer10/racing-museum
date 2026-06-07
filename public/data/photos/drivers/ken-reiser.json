@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "dells-motor-speedway_2001_ken-reiser_jeff-blaser_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2001/dells-motor-speedway_2001_ken-reiser_jeff-blaser_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2001_ken-reiser_jeff-blaser_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2001",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "jeff-blaser",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1985_ken-reiser_paul-zezulka_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1985/lacrosse-interstate-speedway_1985_ken-reiser_paul-zezulka_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1985_ken-reiser_paul-zezulka_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1985",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "paul-zezulka",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1987_ken-reiser_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1987/lacrosse-interstate-speedway_1987_ken-reiser_don-besch_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1987_ken-reiser_don-besch_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1987",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-reiser_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-reiser_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-reiser_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ken-reiser_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_ken-reiser_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_ken-reiser_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_ken-reiser_unknown-photographer_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

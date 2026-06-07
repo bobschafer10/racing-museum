@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "kopellah-speedway_unknown-year_sid-kittleson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/kopellah-speedway/unknown-year/kopellah-speedway_unknown-year_sid-kittleson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/kopellah-speedway_unknown-year_sid-kittleson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "kopellah-speedway",
+    "year": "unknown-year",
+    "driverSlug": "sid-kittleson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_025.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_sid-kittleson_ryan-aho_post_025.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_sid-kittleson_ryan-aho_post_025.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "sid-kittleson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "025"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_027.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_sid-kittleson_ryan-aho_post_027.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_sid-kittleson_ryan-aho_post_027.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "sid-kittleson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "027"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_061.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_sid-kittleson_ryan-aho_post_061.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_sid-kittleson_ryan-aho_post_061.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "sid-kittleson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "061"
+  }
+]

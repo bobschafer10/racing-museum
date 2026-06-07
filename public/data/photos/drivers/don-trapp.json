@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "columbus-151-speedway_unknown-year_don-trapp_dennis-satorius_photo_001.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_don-trapp_dennis-satorius_photo_001.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_don-trapp_dennis-satorius_photo_001.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-trapp",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_don-trapp_bob-schafer_photo_13637.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_don-trapp_bob-schafer_photo_13637.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_don-trapp_bob-schafer_photo_13637.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-trapp",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13637"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-trapp",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-trapp",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-trapp_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-trapp_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-trapp_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-trapp",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

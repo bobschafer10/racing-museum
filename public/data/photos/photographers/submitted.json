@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "superior-speedway_unknown-year_les-mackyol_submitted_photo_001.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_les-mackyol_submitted_photo_001.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_les-mackyol_submitted_photo_001.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "les-mackyol",
+    "photographerSlug": "submitted",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jack-brewer_submitted_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-brewer_submitted_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jack-brewer_submitted_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jack-brewer",
+    "photographerSlug": "submitted",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

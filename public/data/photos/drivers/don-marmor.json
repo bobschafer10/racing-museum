@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_don-marmor_don-besch_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_don-marmor_don-besch_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_don-marmor_don-besch_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "don-marmor",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_don-marmor_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_don-marmor_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_don-marmor_pat-heaney_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "don-marmor",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1975_don-marmor_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1975/rockford-speedway_1975_don-marmor_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1975_don-marmor_geoff-mckarns_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1975",
+    "driverSlug": "don-marmor",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

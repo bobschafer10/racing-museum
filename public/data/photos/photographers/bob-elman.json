@@ -1,0 +1,112 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_jim-sauter_bob-elman_photo_010.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_jim-sauter_bob-elman_photo_010.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_jim-sauter_bob-elman_photo_010.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-sauter",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "010"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "007"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-hansen",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_jim-back_bob-elman_photo_002.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_jim-back_bob-elman_photo_002.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_jim-back_bob-elman_photo_002.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-back",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_butch-miller_bob-elman_photo_006.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_butch-miller_bob-elman_photo_006.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_butch-miller_bob-elman_photo_006.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "butch-miller",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "006"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_tony-izzo_bob-elman_photo_003.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tony-izzo_bob-elman_photo_003.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tony-izzo_bob-elman_photo_003.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tony-izzo",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "queen-city-speedway_1984_joe-shear_bob-elman_photo_333.jpg",
+    "storagePath": "photos/master/queen-city-speedway/1984/queen-city-speedway_1984_joe-shear_bob-elman_photo_333.jpg",
+    "publicPath": "/photos/queen-city-speedway_1984_joe-shear_bob-elman_photo_333.jpg",
+    "trackSlug": "queen-city-speedway",
+    "year": "1984",
+    "driverSlug": "joe-shear",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "rockford-speedway_1981_bob-strait_bob-elman_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_bob-strait_bob-elman_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_bob-strait_bob-elman_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "bob-strait",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_conrad-morgan_bob-elman_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_conrad-morgan_bob-elman_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_conrad-morgan_bob-elman_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "conrad-morgan",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rich-bickle-jr",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "005"
+  }
+]

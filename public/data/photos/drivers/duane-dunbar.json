@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "abc-raceway_unknown-year_duane-dunbar_rats-racing_post_001.jpg",
+    "storagePath": "photos/master/abc-raceway/unknown-year/abc-raceway_unknown-year_duane-dunbar_rats-racing_post_001.jpg",
+    "publicPath": "/photos/abc-raceway_unknown-year_duane-dunbar_rats-racing_post_001.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "unknown-year",
+    "driverSlug": "duane-dunbar",
+    "photographerSlug": "rats-racing",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_222.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-dunbar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_223.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_223.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_223.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-dunbar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "223"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_duane-dunbar_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_duane-dunbar_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_duane-dunbar_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-dunbar",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

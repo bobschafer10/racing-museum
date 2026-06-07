@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_ray-genzler_bob-schafer_photo_081.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_ray-genzler_bob-schafer_photo_081.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_ray-genzler_bob-schafer_photo_081.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "ray-genzler",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "081"
+  },
+  {
+    "fileName": "rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1989/rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1989",
+    "driverSlug": "ray-genzler",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ray-genzler_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-genzler_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ray-genzler_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ray-genzler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

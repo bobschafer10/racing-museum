@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_2002_bobby-gutknecht_charlie-doerr_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/2002/lake-geneva-raceway_2002_bobby-gutknecht_charlie-doerr_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_2002_bobby-gutknecht_charlie-doerr_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "2002",
+    "driverSlug": "bobby-gutknecht",
+    "photographerSlug": "charlie-doerr",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_2021_bobby-gutknecht_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2021/milwaukee-mile_2021_bobby-gutknecht_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_2021_bobby-gutknecht_weber-brothers_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2021",
+    "driverSlug": "bobby-gutknecht",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bobby-gutknecht_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bobby-gutknecht_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bobby-gutknecht_unknown-photographer_photo_222.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bobby-gutknecht",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

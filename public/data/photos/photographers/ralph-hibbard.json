@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "milwaukee-mile_1976_fred-zack_ralph-hibbard_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1976/milwaukee-mile_1976_fred-zack_ralph-hibbard_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1976_fred-zack_ralph-hibbard_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1976",
+    "driverSlug": "fred-zack",
+    "photographerSlug": "ralph-hibbard",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_john-olsen_ralph-hibbard_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_john-olsen_ralph-hibbard_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_john-olsen_ralph-hibbard_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "john-olsen",
+    "photographerSlug": "ralph-hibbard",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_bobby-dotter_ralph-hibbard_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bobby-dotter_ralph-hibbard_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bobby-dotter_ralph-hibbard_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "ralph-hibbard",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_larry-schuler_ralph-hibbard_post_654.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-schuler_ralph-hibbard_post_654.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-schuler_ralph-hibbard_post_654.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "larry-schuler",
+    "photographerSlug": "ralph-hibbard",
+    "creditType": "post",
+    "sequence": "654"
+  }
+]

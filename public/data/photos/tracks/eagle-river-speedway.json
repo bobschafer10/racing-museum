@@ -1,0 +1,178 @@
+[
+  {
+    "fileName": "eagle-river-speedway_2017_unknown-driver_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2017/eagle-river-speedway_2017_unknown-driver_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2017_unknown-driver_unknown-photographer_photo_005.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2017",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "005"
+  },
+  {
+    "fileName": "eagle-river-speedway_2020_ollie-schoonover_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2020/eagle-river-speedway_2020_ollie-schoonover_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2020_ollie-schoonover_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2020",
+    "driverSlug": "ollie-schoonover",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_guy-carley_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_guy-carley_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_guy-carley_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "guy-carley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brad-sievers",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-stanley",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_chad-boettcher_bob-schafer_photo_004.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_chad-boettcher_bob-schafer_photo_004.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_chad-boettcher_bob-schafer_photo_004.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chad-boettcher",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chad-boettcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_cj-hedges_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_cj-hedges_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_cj-hedges_unknown-photographer_photo_222.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "cj-hedges",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_222.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-dunbar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_223.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_223.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_duane-dunbar_unknown-photographer_photo_223.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-dunbar",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "223"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_jason-zdroik_unknown-photographer_photo_140.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_jason-zdroik_unknown-photographer_photo_140.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_jason-zdroik_unknown-photographer_photo_140.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jason-zdroik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "140"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_john-johnson-ldf_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_john-johnson-ldf_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_john-johnson-ldf_bob-schafer_photo_001.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-johnson-ldf",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "eagle-river-speedway_unknown-year_vic-bodamer_unknown-photographer_photo_8765.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/unknown-year/eagle-river-speedway_unknown-year_vic-bodamer_unknown-photographer_photo_8765.jpg",
+    "publicPath": "/photos/eagle-river-speedway_unknown-year_vic-bodamer_unknown-photographer_photo_8765.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "vic-bodamer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8765"
+  }
+]

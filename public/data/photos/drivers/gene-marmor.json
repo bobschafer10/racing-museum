@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_gene-marmor_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_gene-marmor_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_gene-marmor_pete-fileca_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "gene-marmor",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_gene-marmor_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_gene-marmor_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_gene-marmor_unknown-credit_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "gene-marmor",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

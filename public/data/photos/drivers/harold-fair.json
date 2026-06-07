@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "milwaukee-mile_unknown-year_harold-fair_bob-schafer_photo_12749.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_harold-fair_bob-schafer_photo_12749.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_harold-fair_bob-schafer_photo_12749.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "harold-fair",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12749"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_harold-fair_bob-schafer_photo_14008.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_harold-fair_bob-schafer_photo_14008.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_harold-fair_bob-schafer_photo_14008.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "harold-fair",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14008"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_harold-fair_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-fair_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_harold-fair_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "harold-fair",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

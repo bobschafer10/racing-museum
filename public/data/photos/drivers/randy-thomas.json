@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "unknown-track_1977_randy-thomas_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_randy-thomas_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1977_randy-thomas_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1977",
+    "driverSlug": "randy-thomas",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1978_randy-thomas_bill-warrick_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_randy-thomas_bill-warrick_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1978_randy-thomas_bill-warrick_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1978",
+    "driverSlug": "randy-thomas",
+    "photographerSlug": "bill-warrick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_randy-thomas_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_randy-thomas_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_randy-thomas_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "randy-thomas",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

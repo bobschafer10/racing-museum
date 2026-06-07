@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_2020_aj-kraeger_aj-kraeger_post_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2020/golden-sands-speedway_2020_aj-kraeger_aj-kraeger_post_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2020_aj-kraeger_aj-kraeger_post_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2020",
+    "driverSlug": "aj-kraeger",
+    "photographerSlug": "aj-kraeger",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_2021_aj-kraeger_jeremy-libick_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2021/golden-sands-speedway_2021_aj-kraeger_jeremy-libick_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2021_aj-kraeger_jeremy-libick_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2021",
+    "driverSlug": "aj-kraeger",
+    "photographerSlug": "jeremy-libick",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_2020_aj-kraeger_aj-krager_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_aj-kraeger_aj-krager_post_001.jpg",
+    "publicPath": "/photos/unknown-track_2020_aj-kraeger_aj-krager_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "aj-kraeger",
+    "photographerSlug": "aj-krager",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

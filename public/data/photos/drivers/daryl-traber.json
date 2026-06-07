@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "dodge-county-fairgrounds_1997_daryl-traber_diane-mech_photo_001.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/1997/dodge-county-fairgrounds_1997_daryl-traber_diane-mech_photo_001.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_1997_daryl-traber_diane-mech_photo_001.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "1997",
+    "driverSlug": "daryl-traber",
+    "photographerSlug": "diane-mech",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "grundy-county-speedway_1997_daryl-traber_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1997/grundy-county-speedway_1997_daryl-traber_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1997_daryl-traber_unknown-credit_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1997",
+    "driverSlug": "daryl-traber",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

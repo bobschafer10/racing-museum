@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_marlin-walbeck_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_marlin-walbeck_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_marlin-walbeck_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "marlin-walbeck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marlin-walbeck_john-alft_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marlin-walbeck_john-alft_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marlin-walbeck_john-alft_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marlin-walbeck",
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marlin-walbeck_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marlin-walbeck_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marlin-walbeck_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marlin-walbeck",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marlin-walbeck_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marlin-walbeck_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marlin-walbeck_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marlin-walbeck",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marlin-walbeck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marlin-walbeck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_marlin-walbeck_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "marlin-walbeck",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  }
+]

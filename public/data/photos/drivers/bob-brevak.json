@@ -1,0 +1,90 @@
+[
+  {
+    "fileName": "milwaukee-mile_1982_bob-brevak_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1982/milwaukee-mile_1982_bob-brevak_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_1982_bob-brevak_ken-koppa_post_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1982",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_001.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_002.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_002.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_002.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "minnesota-state-fair_unknown-year_bob-brevak_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/minnesota-state-fair/unknown-year/minnesota-state-fair_unknown-year_bob-brevak_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/minnesota-state-fair_unknown-year_bob-brevak_unknown-photographer_photo_001.jpg",
+    "trackSlug": "minnesota-state-fair",
+    "year": "unknown-year",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-brevak_don-besch_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-brevak_don-besch_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-brevak_don-besch_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-brevak_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-brevak_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-brevak_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-brevak_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-brevak_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-brevak_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-brevak_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-brevak_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-brevak_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  }
+]

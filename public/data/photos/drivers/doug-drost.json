@@ -1,0 +1,68 @@
+[
+  {
+    "fileName": "golden-sands-speedway_unknown-year_doug-drost_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_doug-drost_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_doug-drost_kurt-luoma_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-drost",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_doug-drost_stephen-berg_post_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_doug-drost_stephen-berg_post_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_doug-drost_stephen-berg_post_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-drost",
+    "photographerSlug": "stephen-berg",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_doug-drost_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_doug-drost_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_doug-drost_unknown-photographer_photo_001.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-drost",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2006_doug-drost_don-wendlandt_photo_117.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_doug-drost_don-wendlandt_photo_117.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2006_doug-drost_don-wendlandt_photo_117.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2006",
+    "driverSlug": "doug-drost",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "117"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_doug-drost_don-wendlandt_photo_117.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_doug-drost_don-wendlandt_photo_117.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_doug-drost_don-wendlandt_photo_117.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "doug-drost",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "117"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_doug-drost_ken-koppa_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_doug-drost_ken-koppa_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_doug-drost_ken-koppa_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "doug-drost",
+    "photographerSlug": "ken-koppa",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

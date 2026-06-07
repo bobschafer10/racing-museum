@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_bob-anzinger_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_bob-anzinger_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_bob-anzinger_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bob-anzinger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wilmot-raceway_1966_bob-anzinger_priscilla-pawlik-sexton_post_001.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1966/wilmot-raceway_1966_bob-anzinger_priscilla-pawlik-sexton_post_001.jpg",
+    "publicPath": "/photos/wilmot-raceway_1966_bob-anzinger_priscilla-pawlik-sexton_post_001.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1966",
+    "driverSlug": "bob-anzinger",
+    "photographerSlug": "priscilla-pawlik-sexton",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

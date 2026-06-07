@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_joe-provinzino_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_joe-provinzino_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_joe-provinzino_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "joe-provinzino",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_048.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_048.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_048.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "048"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_069.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_069.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_069.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "069"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "003"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "004"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_jeff-henkemeyer_kurt-luoma_photo_415.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_jeff-henkemeyer_kurt-luoma_photo_415.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_jeff-henkemeyer_kurt-luoma_photo_415.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-henkemeyer",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "415"
+  }
+]

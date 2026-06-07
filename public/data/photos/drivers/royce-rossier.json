@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "dells-motor-speedway_unknown-year_royce-rossier_bob-schafer_photo_337.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_royce-rossier_bob-schafer_photo_337.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_royce-rossier_bob-schafer_photo_337.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "royce-rossier",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "337"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_royce-rossier_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_royce-rossier_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_royce-rossier_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "royce-rossier",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_royce-rossier_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_royce-rossier_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_royce-rossier_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "royce-rossier",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

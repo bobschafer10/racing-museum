@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_rick-johnson_bob-schafer_photo_13552.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_rick-johnson_bob-schafer_photo_13552.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_rick-johnson_bob-schafer_photo_13552.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-johnson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13552"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_rick-johnson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_rick-johnson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_rick-johnson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

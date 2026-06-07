@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "cedarburg-speedway_1956_etchie-biertzer_dave-jensen_photo_001.jpg",
+    "storagePath": "photos/master/cedarburg-speedway/1956/cedarburg-speedway_1956_etchie-biertzer_dave-jensen_photo_001.jpg",
+    "publicPath": "/photos/cedarburg-speedway_1956_etchie-biertzer_dave-jensen_photo_001.jpg",
+    "trackSlug": "cedarburg-speedway",
+    "year": "1956",
+    "driverSlug": "etchie-biertzer",
+    "photographerSlug": "dave-jensen",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "cedarburg-speedway_1956_miles-melius_dave-jensen_photo_001.jpg",
+    "storagePath": "photos/master/cedarburg-speedway/1956/cedarburg-speedway_1956_miles-melius_dave-jensen_photo_001.jpg",
+    "publicPath": "/photos/cedarburg-speedway_1956_miles-melius_dave-jensen_photo_001.jpg",
+    "trackSlug": "cedarburg-speedway",
+    "year": "1956",
+    "driverSlug": "miles-melius",
+    "photographerSlug": "dave-jensen",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "slinger-speedway_1956_carl-kulow_dave-jensen_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/1956/slinger-speedway_1956_carl-kulow_dave-jensen_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_1956_carl-kulow_dave-jensen_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1956",
+    "driverSlug": "carl-kulow",
+    "photographerSlug": "dave-jensen",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_1956_hal-kulow_dave-jensen_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/1956/unknown-track_1956_hal-kulow_dave-jensen_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_1956_hal-kulow_dave-jensen_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1956",
+    "driverSlug": "hal-kulow",
+    "photographerSlug": "dave-jensen",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "unknown-track_1983_kevin-stepan_allen-stepan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/1983/unknown-track_1983_kevin-stepan_allen-stepan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_1983_kevin-stepan_allen-stepan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1983",
+    "driverSlug": "kevin-stepan",
+    "photographerSlug": "allen-stepan",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1971_dick-trickle_allen-stepan_post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1971/wisconsin-international-raceway_1971_dick-trickle_allen-stepan_post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1971_dick-trickle_allen-stepan_post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1971",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "allen-stepan",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "tomah-sparta-speedway_1987_roger-burrows_bessie-kmiecik_post_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/1987/tomah-sparta-speedway_1987_roger-burrows_bessie-kmiecik_post_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_1987_roger-burrows_bessie-kmiecik_post_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "1987",
+    "driverSlug": "roger-burrows",
+    "photographerSlug": "bessie-kmiecik",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_unknown-year_roger-burrows_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/unknown-year/tomah-sparta-speedway_unknown-year_roger-burrows_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_unknown-year_roger-burrows_unknown-credit_post_001.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-burrows",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_roger-burrows_bessie-kmiecik_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_roger-burrows_bessie-kmiecik_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_roger-burrows_bessie-kmiecik_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "roger-burrows",
+    "photographerSlug": "bessie-kmiecik",
+    "creditType": "photo",
+    "sequence": "001"
+  }
+]

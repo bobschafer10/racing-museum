@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "beaver-dam-raceway_unknown-year_joe-symoens_91-michael-halbherr_post_001.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_joe-symoens_91-michael-halbherr_post_001.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_joe-symoens_91-michael-halbherr_post_001.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "joe-symoens",
+    "photographerSlug": "91-michael-halbherr",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-symoens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "impact-speedway_1988_joe-symoens_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/impact-speedway/1988/impact-speedway_1988_joe-symoens_don-besch_photo_001.jpg",
+    "publicPath": "/photos/impact-speedway_1988_joe-symoens_don-besch_photo_001.jpg",
+    "trackSlug": "impact-speedway",
+    "year": "1988",
+    "driverSlug": "joe-symoens",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "joe-symoens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "joe-symoens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "002"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_001.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-symoens",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_101.jpg",
+    "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_101.jpg",
+    "publicPath": "/photos/yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_101.jpg",
+    "trackSlug": "yellow-river-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-symoens",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "101"
+  }
+]

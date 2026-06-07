@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "grundy-county-speedway_1989_tony-raines_kim-kemperman_photo_001.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1989/grundy-county-speedway_1989_tony-raines_kim-kemperman_photo_001.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1989_tony-raines_kim-kemperman_photo_001.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1989",
+    "driverSlug": "tony-raines",
+    "photographerSlug": "kim-kemperman",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_tony-raines_bob-schafer_photo_13863.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tony-raines_bob-schafer_photo_13863.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tony-raines_bob-schafer_photo_13863.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tony-raines",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13863"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_tony-raines_bob-schafer_photo_264.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tony-raines_bob-schafer_photo_264.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tony-raines_bob-schafer_photo_264.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tony-raines",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "264"
+  },
+  {
+    "fileName": "rockford-speedway_1990_tony-raines_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_tony-raines_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_tony-raines_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "tony-raines",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tony-raines_bob-schafer_photo_263.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tony-raines_bob-schafer_photo_263.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tony-raines_bob-schafer_photo_263.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tony-raines",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "263"
+  }
+]

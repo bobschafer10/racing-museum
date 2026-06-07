@@ -1,0 +1,79 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_don-james_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_don-james_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_don-james_ron-thruman_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-james",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_don-james_kurt-luoma_photo_112.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_don-james_kurt-luoma_photo_112.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_don-james_kurt-luoma_photo_112.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-james",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "112"
+  },
+  {
+    "fileName": "rockford-speedway_1975_don-james_geoff-mckarns_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1975/rockford-speedway_1975_don-james_geoff-mckarns_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1975_don-james_geoff-mckarns_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1975",
+    "driverSlug": "don-james",
+    "photographerSlug": "geoff-mckarns",
+    "creditType": "post",
+    "sequence": "001"
+  },
+  {
+    "fileName": "rockford-speedway_1981_don-james_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1981/rockford-speedway_1981_don-james_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1981_don-james_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1981",
+    "driverSlug": "don-james",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-james_cal-wood_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-james_cal-wood_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-james_cal-wood_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-james",
+    "photographerSlug": "cal-wood",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-james_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-james_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-james_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-james",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "001"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-james_woodworth_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-james_woodworth_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-james_woodworth_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-james",
+    "photographerSlug": "woodworth",
+    "creditType": "post",
+    "sequence": "001"
+  }
+]
