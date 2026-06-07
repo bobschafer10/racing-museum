@@ -90,7 +90,7 @@ export default async function DriversPage({
 
   return (
     <main style={pageStyle}>
-      {/* RESTORED BLACK HERO BRANDING SECTION */}
+      {/* BRAND HERO SECTION WITH DARK BACKGROUND */}
       <section style={heroSection}>
         <div style={heroSplit}>
           <div style={heroLeft}>
@@ -161,7 +161,7 @@ export default async function DriversPage({
         </div>
       </section>
 
-      {/* CORE CONTENT CARDS GRID LAYOUT */}
+      {/* DRIVERS CONTENT CARDS GRID */}
       <section style={contentWrap}>
         {error ? (
           <div style={errorBox}>Unable to load drivers right now.</div>
@@ -248,7 +248,7 @@ function getCreditLabel(type: string | null) {
     : 'Credit'
 }
 
-// ORIGINAL BRAND STYLING DEFINITIONS
+// INLINE SYSTEM FOR COMPILER OPTIMIZATION
 const pageStyle: CSSProperties = { backgroundColor: '#fbfbfd', minHeight: '100vh', paddingBottom: '4rem' }
 const heroSection: CSSProperties = { backgroundColor: '#1a1a1a', color: '#ffffff', padding: '4rem 2rem', borderBottom: '4px solid #cf2e2e' }
 const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
@@ -274,7 +274,7 @@ const cardInner: CSSProperties = { padding: '1.25rem', display: 'flex', flexDire
 const cardPhoto: CSSProperties = { width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px' }
 const cardPhotoCaption: CSSProperties = { fontSize: '0.75rem', color: '#777', marginTop: '0.5rem', fontStyle: 'italic' }
 const driverSignaturePlaceholder: CSSProperties = { height: '200px', backgroundColor: '#f0f2f5', borderRadius: '4px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px dashed #cbd5e1' }
-const driverSignatureName: CSSProperties = { fontFamily: 'cursive', fontSize: '1.5rem', color: '#475569', opacity: 0.6, textAlign: 'center', padding: '0 1rem' }
+const driverSignatureName: CSSProperties = { fontFamily: 'serif', fontSize: '1.35rem', color: '#475569', opacity: 0.6, textAlign: 'center', padding: '0 1rem' }
 const driverName: CSSProperties = { fontSize: '1.35rem', margin: '1rem 0 0.25rem 0', color: '#1a1a1a', fontFamily: 'serif' }
 const metaLine: CSSProperties = { fontSize: '0.85rem', color: '#666', margin: '0 0 1.25rem 0' }
 const statTable: CSSProperties = { backgroundColor: '#f8f9fa', borderRadius: '6px', padding: '0.75rem', marginBottom: '1.5rem', marginTop: 'auto' }
