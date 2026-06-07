@@ -82,8 +82,9 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
-  // THE CORRECT IMAGE BUILDER PATH
-  const getCDNPath = (photoObj: any) => {
+  // FIXED URL PATH CONSTRUCTION
+  const buildUrl = (photoObj: any) => {
+    if (!photoObj) return ''
     const track = photoObj.track_slug || 'unknown-track'
     const yr = photoObj.year || 'unknown-year'
     return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${track}/${yr}/${photoObj.file_name}`
@@ -148,7 +149,7 @@ export default async function DriversPage({
             {galleryPhoto ? (
               <>
                 <img
-                  src={getCDNPath(galleryPhoto)}
+                  src={buildUrl(galleryPhoto)}
                   alt="Vintage racing archive"
                   style={heroGalleryPhoto}
                 />
@@ -181,7 +182,7 @@ export default async function DriversPage({
                       {p ? (
                         <>
                           <img
-                            src={getCDNPath(p)}
+                            src={buildUrl(p)}
                             alt={driver.driver_name}
                             style={cardPhoto}
                           />
@@ -247,6 +248,7 @@ function getCreditLabel(type: string | null) {
     : 'Credit'
 }
 
+// PREMIUM BRAND PLATFORM VISUAL SYSTEM
 const pageStyle: CSSProperties = { backgroundColor: '#fbfbfd', minHeight: '100vh', paddingBottom: '4rem' }
 const heroSection: CSSProperties = { backgroundColor: '#1a1a1a', color: '#ffffff', padding: '4rem 2rem', borderBottom: '4px solid #cf2e2e' }
 const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
