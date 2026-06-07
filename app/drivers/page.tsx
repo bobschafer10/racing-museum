@@ -97,7 +97,7 @@ export default async function DriversPage({
   }
 
   return (
-    <main style={page}>
+    <main style={pageStyle}>
       <section style={heroSection}>
         <div style={heroSplit}>
           <div style={heroLeft}>
@@ -265,197 +265,210 @@ function formatSlugName(value: string | null) {
     .split('-')
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ')
-}
-
-function getCreditLabel(type: string | null) {
-  switch (type) {
-    case 'post':
-      return 'Post'
-    case 'program':
-      return 'Program'
-    case 'flyer':
-      return 'Flyer'
-    case 'photo':
-      return 'Photo'
-    default:
-      return 'Credit'
   }
-}
+  
+  function getCreditLabel(type: string | null) {
+    switch (type) {
+      case 'post':
+        return 'Post'
+      case 'program':
+        return 'Program'
+      case 'flyer':
+        return 'Flyer'
+      case 'photo':
+        return 'Photo'
+      default:
+        return 'Credit'
+    }
+  }
 
-// ==========================================
-// MUSEUM DESIGN LAYOUT STYLE SPECIFICATIONS
-// ==========================================
-
-// ==========================================
-// MUSEUM DESIGN LAYOUT STYLE SPECIFICATIONS
-// ==========================================
-
-const page: CSSProperties = {
-  background: '#ebdcb9',
-  backgroundImage: 'radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0)',
-  backgroundSize: '24px 24px',
+const pageStyle: CSSProperties = {
+  background: '#eadfc7',
   minHeight: '100vh',
-  color: '#3d2b16',
-  paddingBottom: '80px',
-  fontFamily: 'serif',
+  color: '#2f2417',
+  fontFamily: 'Georgia, serif',
 }
 
 const heroSection: CSSProperties = {
-  background: '#3d2b16',
-  color: '#ebdcb9',
-  padding: '60px 20px',
-  borderBottom: '6px double #ebdcb9',
-  boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
-}
-
-const heroSplit: CSSProperties = {
-  maxWidth: '1200px',
-  margin: '0 auto',
-  display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
-  gap: '40px',
-  alignItems: 'center',
-}
-
-const heroLeft: CSSProperties = {
-  display: 'flex',
-  flexDirection: 'column',
+  background: 'linear-gradient(to bottom, #e7d9bf, #eadfc7)',
+  borderBottom: '2px solid #b29364',
 }
 
 const eyebrow: CSSProperties = {
-  fontFamily: 'sans-serif',
+  fontSize: '15px',
+  letterSpacing: '1px',
   textTransform: 'uppercase',
-  letterSpacing: '3px',
-  fontSize: '13px',
-  color: '#b29364',
-  marginBottom: '10px',
-  fontWeight: 700,
+  color: '#7a5827',
+  marginBottom: '8px',
 }
 
 const pageTitle: CSSProperties = {
-  fontSize: '56px',
-  margin: '0 0 16px',
-  fontFamily: 'serif',
-  fontWeight: 900,
-  letterSpacing: '-1px',
+  fontSize: '52px',
+  margin: '0 0 10px',
+  color: '#3d2b16',
 }
 
 const pageIntro: CSSProperties = {
-  fontSize: '19px',
-  lineHeight: '1.6',
-  margin: '0 0 30px',
-  color: '#dfcfab',
-  maxWidth: '540px',
+  fontSize: '20px',
+  lineHeight: 1.6,
+  maxWidth: '820px',
+  margin: '0 0 20px',
 }
 
 const searchForm: CSSProperties = {
   display: 'flex',
-  gap: '12px',
-  marginBottom: '30px',
-  maxWidth: '500px',
+  gap: '10px',
+  flexWrap: 'wrap',
+  marginBottom: '12px',
 }
 
 const searchInput: CSSProperties = {
-  flex: 1,
-  padding: '14px 18px',
-  fontSize: '16px',
-  background: '#fcf6e8',
+  minWidth: '320px',
+  padding: '12px 14px',
   border: '2px solid #b29364',
-  color: '#3d2b16',
-  fontFamily: 'serif',
-  borderRadius: '0px',
+  background: '#f6eddc',
+  fontSize: '16px',
+  color: '#2f2417',
 }
 
 const searchButton: CSSProperties = {
-  background: '#b29364',
-  color: '#3d2b16',
-  border: 'none',
-  padding: '0 28px',
-  fontSize: '16px',
-  fontWeight: 700,
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-  letterSpacing: '1px',
+  padding: '12px 18px',
+  background: '#7a5827',
+  color: '#fff8ea',
+  border: '2px solid #5d3f17',
   cursor: 'pointer',
-}
-
-const alphabetBar: CSSProperties = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  gap: '6px',
-  alignItems: 'center',
-  background: 'rgba(0,0,0,0.2)',
-  padding: '12px',
-  border: '1px solid #5a4225',
-}
-
-const letterLink: CSSProperties = {
-  color: '#dfcfab',
-  textDecoration: 'none',
-  padding: '4px 8px',
-  fontSize: '15px',
-  fontFamily: 'sans-serif',
-  fontWeight: 600,
+  fontSize: '16px',
 }
 
 const resultsLine: CSSProperties = {
-  marginTop: '14px',
-  fontSize: '14px',
-  fontFamily: 'sans-serif',
-  color: '#b29364',
-}
-
-const heroGallery: CSSProperties = {
-  position: 'relative',
-  background: '#2b1e0f',
-  border: '4px double #b29364',
-  padding: '12px',
-  boxShadow: 'inset 0 0 20px rgba(0,0,0,0.4)',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  minHeight: '300px',
-}
-
-const heroGalleryPhoto: CSSProperties = {
-  width: '100%',
-  maxHeight: '320px',
-  objectFit: 'contain',
-  filter: 'sepia(0.15) contrast(1.05)',
-}
-
-const heroGalleryCaption: CSSProperties = {
-  marginTop: '10px',
-  fontSize: '12px',
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-  letterSpacing: '1px',
-  color: '#b29364',
-}
-
-const heroGalleryPlaceholder: CSSProperties = {
-  color: '#5a4225',
-  fontFamily: 'serif',
-  fontStyle: 'italic',
-  fontSize: '24px',
+  fontSize: '16px',
+  color: '#6a4a1f',
 }
 
 const contentWrap: CSSProperties = {
   maxWidth: '1200px',
   margin: '0 auto',
-  padding: '50px 20px',
+  padding: '26px 20px 40px',
 }
 
 const grid: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))',
-  gap: '30px',
+  gridTemplateColumns: 'repeat(3, minmax(260px, 1fr))',
+  gap: '20px',
 }
 
 const cardLink: CSSProperties = {
   textDecoration: 'none',
   color: 'inherit',
+}
+
+const cardPhoto: CSSProperties = {
+  width: '100%',
+  height: '190px',
+  objectFit: 'cover',
+  display: 'block',
+  border: '1px solid #b29364',
+  marginBottom: '10px',
+  background: '#d8c39d',
+}
+
+const cardPhotoCaption: CSSProperties = {
+  fontSize: '13px',
+  marginBottom: '12px',
+  color: '#5b472f',
+}
+
+const driverSignaturePlaceholder: CSSProperties = {
+  width: '100%',
+  height: '190px',
+  position: 'relative',
+  boxShadow: 'inset 0 0 20px rgba(0,0,0,0.05)',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  overflow: 'hidden',
+  border: '1px solid #b29364',
+  marginBottom: '10px',
+  background: 'linear-gradient(to bottom, #d8c39d, #c7ab7c)',
+}
+
+const heroSplit: CSSProperties = {
+  maxWidth: '1400px',
+  margin: '0 auto',
+  padding: '34px 20px 28px',
+  display: 'grid',
+  gridTemplateColumns: '1.2fr 0.8fr',
+  gap: '36px',
+  alignItems: 'start',
+}
+
+const heroLeft: CSSProperties = {
+  minWidth: 0,
+}
+
+const heroGallery: CSSProperties = {
+  background: '#dcc7a1',
+  border: '2px solid #b29364',
+  padding: '10px',
+  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+}
+
+const heroGalleryPhoto: CSSProperties = {
+  width: '100%',
+  height: '300px',
+  objectFit: 'cover',
+  display: 'block',
+  border: '1px solid #b29364',
+  background: '#d8c39d',
+}
+
+const heroGalleryCaption: CSSProperties = {
+  padding: '12px',
+  textAlign: 'center',
+  fontSize: '18px',
+  color: '#5a3a1b',
+  background: '#f1e5ce',
+  border: '1px solid #c2a97d',
+  borderTop: 'none',
+}
+
+const heroGalleryPlaceholder: CSSProperties = {
+  height: '300px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  background: '#cdb38a',
+  color: '#5a3a1b',
+  fontSize: '28px',
+  fontFamily: 'Georgia, serif',
+}
+
+const driverSignatureFlag: CSSProperties = {
+  position: 'absolute',
+  inset: 0,
+  opacity: 0.05,
+  backgroundImage: `
+    linear-gradient(45deg, #2f2417 25%, transparent 25%),
+    linear-gradient(-45deg, #2f2417 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #2f2417 75%),
+    linear-gradient(-45deg, transparent 75%, #2f2417 75%)
+  `,
+  backgroundSize: '40px 40px',
+  backgroundPosition: '0 0, 0 20px, 20px -20px, -20px 0px',
+}
+
+const driverSignatureName: CSSProperties = {
+  position: 'relative',
+  zIndex: 1,
+  fontSize: '34px',
+  lineHeight: 1.1,
+  color: '#5b3a1b',
+  textAlign: 'center',
+  padding: '0 16px',
+  fontFamily: '"Brush Script MT", "Lucida Handwriting", cursive',
+  textShadow: '1px 1px 0 rgba(0,0,0,0.15)',
+  transform: 'rotate(-2deg)',
+  maxWidth: '90%',
 }
 
 const card: CSSProperties = {
@@ -472,60 +485,9 @@ const cardInner: CSSProperties = {
   minHeight: '100%',
 }
 
-const cardPhoto: CSSProperties = {
-  width: '100%',
-  height: '240px',
-  objectFit: 'cover',
-  border: '1px solid #b29364',
-  marginBottom: '6px',
-}
-
-const cardPhotoCaption: CSSProperties = {
-  fontSize: '11px',
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-  letterSpacing: '0.5px',
-  color: '#7a5a35',
-  marginBottom: '12px',
-  textAlign: 'right',
-}
-
-const driverSignaturePlaceholder: CSSProperties = {
-  height: '240px',
-  background: '#e4d3b2',
-  border: '1px solid #c2a97d',
-  marginBottom: '18px',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  position: 'relative',
-  overflow: 'hidden',
-}
-
-const driverSignatureFlag: CSSProperties = {
-  position: 'absolute',
-  width: '140%',
-  height: '40px',
-  background: 'rgba(178,147,100,0.15)',
-  transform: 'rotate(-12deg)',
-}
-
-const driverSignatureName: CSSProperties = {
-  fontFamily: 'serif',
-  fontStyle: 'italic',
-  fontSize: '28px',
-  color: '#8a714e',
-  zIndex: 1,
-  padding: '0 20px',
-  textAlign: 'center',
-}
-
 const driverName: CSSProperties = {
   fontSize: '30px',
   margin: '0 0 8px',
-  fontFamily: 'serif',
-  fontWeight: 900,
   color: '#3d2b16',
 }
 
@@ -546,35 +508,39 @@ const statRow: CSSProperties = {
   justifyContent: 'space-between',
   padding: '10px 12px',
   borderBottom: '1px solid #ccb48a',
-  fontSize: '14px',
-  fontFamily: 'sans-serif',
+  fontSize: '16px',
 }
 
 const cardButton: CSSProperties = {
-  background: '#3d2b16',
-  color: '#ebdcb9',
-  textAlign: 'center',
-  padding: '12px',
-  fontWeight: 700,
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-  letterSpacing: '1px',
-  fontSize: '13px',
+  display: 'inline-block',
+  background: '#7a5827',
+  color: '#fff8ea',
+  padding: '10px 14px',
+  border: '1px solid #5d3f17',
 }
 
 const errorBox: CSSProperties = {
-  padding: '20px',
-  background: '#f2dede',
-  color: '#a94442',
-  border: '1px solid #ebccd1',
-  fontFamily: 'sans-serif',
+  padding: '18px',
+  background: '#f2d8d3',
+  border: '1px solid #b36a5e',
+}
+
+const alphabetBar: CSSProperties = {
+  marginTop: '10px',
+  marginBottom: '10px',
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '10px',
+  fontSize: '16px',
+}
+
+const letterLink: CSSProperties = {
+  color: '#5a3a1b',
+  textDecoration: 'none',
 }
 
 const emptyBox: CSSProperties = {
-  padding: '40px',
-  background: '#ebdcb9',
-  border: '2px dashed #b29364',
-  textAlign: 'center',
-  color: '#7a5a35',
-  fontSize: '18px',
+  padding: '18px',
+  background: '#f1e5ce',
+  border: '1px solid #c2a97d',
 }
