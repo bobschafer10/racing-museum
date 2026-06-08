@@ -182,7 +182,7 @@ export default async function DriversPage({
                 >
                   <article style={card}>
                     <div style={cardInner}>
-                      {p ? (
+                      {p && p.file_name ? (
                         <>
                           <img
                             src={buildUrl(p)}
