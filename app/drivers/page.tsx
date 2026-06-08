@@ -82,11 +82,14 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
-  // ADJUSTED WITH THE CHOSEN MASTER SUBFOLDER PREFIX
+  // BULLETPROOF URL BUILDER WITH OPTIONAL CHAINING (?.)
   const buildUrl = (photoObj: any) => {
-    if (!photoObj) return ''
+    // If photoObj is undefined, null, or has no file_name, safely exit
+    if (!photoObj || !photoObj.file_name) return ''
+    
     const track = photoObj.track_slug || 'unknown-track'
     const yr = photoObj.year || 'unknown-year'
+    
     return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/${track}/${yr}/${photoObj.file_name}`
   }
 
