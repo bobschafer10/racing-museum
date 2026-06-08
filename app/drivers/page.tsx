@@ -13,19 +13,29 @@ export default async function DriversPage({
   const query = (params.q ?? '').trim()
   const letter = (params.letter ?? '').toUpperCase()
 
-  let supabaseQuery = supabase
-    .from('driver_directory_alpha_view')
-    .select('*')
-    .not('driver_name', 'ilike', '%rainout%')
-    .not('driver_name', 'ilike', '%unknown%')
-    .not('driver_name', 'ilike', '%no name%')
-    .order('driver_name', { ascending: true })
-    .limit(100000)
+  let drivers: any[] = []
+  let error = false
 
-  if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
-  if (letter) supabaseQuery = supabaseQuery.eq('last_initial', letter)
+  try {
+    let supabaseQuery = supabase
+      .from('driver_directory_alpha_view')
+      .select('*')
+      .not('driver_name', 'ilike', '%rainout%')
+      .not('driver_name', 'ilike', '%unknown%')
+      .not('driver_name', 'ilike', '%no name%')
+      .order('driver_name', { ascending: true })
+      .limit(100000)
 
-  const { data: drivers, error } = await supabaseQuery
+    if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
+    if (letter) supabaseQuery = supabaseQuery.eq('last_initial', letter)
+
+    const { data: driversData, error: fetchError } = await supabaseQuery
+    if (fetchError) throw fetchError
+    drivers = driversData || []
+  } catch (e) {
+    console.error('Driver fetch error:', e)
+    error = true
+  }
 
   const getLast = (name: string) => {
     if (!name) return ''
@@ -47,19 +57,26 @@ export default async function DriversPage({
   const driverSlugs = filteredDrivers?.map((d) => d.driver_slug).filter(Boolean) ?? []
   let driverPhotos: any[] = []
 
-  for (let i = 0; i < driverSlugs.length; i += 300) {
-    const chunk = driverSlugs.slice(i, i + 300)
-    const { data, error: photoError } = await supabase
-      .from('photos')
-      .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
-      .in('driver_slug', chunk)
-      .neq('credit_type', 'unknown')
-      .order('year', { ascending: false, nullsFirst: false })
-      .order('sequence', { ascending: true })
-      .order('file_name', { ascending: true })
+  // Wrap query loops safely to avoid blocking thread execution
+  try {
+    if (driverSlugs.length > 0) {
+      for (let i = 0; i < driverSlugs.length; i += 300) {
+        const chunk = driverSlugs.slice(i, i + 300)
+        const { data, error: photoError } = await supabase
+          .from('photos')
+          .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
+          .in('driver_slug', chunk)
+          .neq('credit_type', 'unknown')
+          .order('year', { ascending: false, nullsFirst: false })
+          .order('sequence', { ascending: true })
+          .order('file_name', { ascending: true })
 
-    if (photoError) console.log('Driver photo query error:', photoError)
-    if (data) driverPhotos = [...driverPhotos, ...data]
+        if (photoError) console.log('Driver photo query error:', photoError)
+        if (data) driverPhotos = [...driverPhotos, ...data]
+      }
+    }
+  } catch (photoEx) {
+    console.error('Photo fetch execution failed:', photoEx)
   }
 
   const driverPhotoMap = new Map<string, any>()
@@ -82,14 +99,11 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
-  // BULLETPROOF URL BUILDER WITH OPTIONAL CHAINING (?.)
+  // BULLETPROOF URL BUILDER WITH OPTIONAL CHAINING
   const buildUrl = (photoObj: any) => {
-    // If photoObj is undefined, null, or has no file_name, safely exit
     if (!photoObj || !photoObj.file_name) return ''
-    
     const track = photoObj.track_slug || 'unknown-track'
     const yr = photoObj.year || 'unknown-year'
-    
     return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/${track}/${yr}/${photoObj.file_name}`
   }
 
@@ -149,7 +163,7 @@ export default async function DriversPage({
           </div>
 
           <div style={heroGallery}>
-            {galleryPhoto ? (
+            {galleryPhoto && galleryPhoto.file_name ? (
               <>
                 <img
                   src={buildUrl(galleryPhoto)}
@@ -168,7 +182,7 @@ export default async function DriversPage({
       <section style={contentWrap}>
         {error ? (
           <div style={errorBox}>Unable to load drivers right now.</div>
-        ) : !drivers || filteredDrivers.length === 0 ? (
+        ) : filteredDrivers.length === 0 ? (
           <div style={emptyBox}>No drivers found.</div>
         ) : (
           <div style={grid}>
@@ -251,7 +265,7 @@ function getCreditLabel(type: string | null) {
     : 'Credit'
 }
 
-// PREMIUM BRAND PLATFORM VISUAL SYSTEM
+// PREMIUM BRAND PLATFORM VISUAL SYSTEM Styles
 const pageStyle: CSSProperties = { backgroundColor: '#fbfbfd', minHeight: '100vh', paddingBottom: '4rem' }
 const heroSection: CSSProperties = { backgroundColor: '#1a1a1a', color: '#ffffff', padding: '4rem 2rem', borderBottom: '4px solid #cf2e2e' }
 const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
@@ -265,10 +279,10 @@ const searchButton: CSSProperties = { padding: '0.75rem 1.5rem', backgroundColor
 const alphabetBar: CSSProperties = { display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1.5rem' }
 const letterLink: CSSProperties = { color: '#aaa', textDecoration: 'none', padding: '0.25rem 0.5rem', fontSize: '0.9rem' }
 const resultsLine: CSSProperties = { color: '#888', fontSize: '0.9rem' }
-const heroGallery: CSSProperties = { position: 'relative', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', backgroundColor: '#2a2a2a', height: '350px' }
+const heroGallery: CSSProperties = { position: 'relative', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', backgroundColor: '#2a2a2a', height: '350px', width: '100%' }
 const heroGalleryPhoto: CSSProperties = { width: '100%', height: '100%', objectFit: 'cover' }
 const heroGalleryCaption: CSSProperties = { position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.8))', color: '#fff', fontSize: '0.85rem' }
-const heroGalleryPlaceholder: CSSProperties = { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#555', fontStyle: 'italic' }
+const heroGalleryPlaceholder: CSSProperties = { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#555', fontStyle: 'italic', width: '100%' }
 const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '3rem auto 0 auto', padding: '0 2rem' }
 const grid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '2rem' }
 const cardLink: CSSProperties = { textDecoration: 'none', color: 'inherit' }
