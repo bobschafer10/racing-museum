@@ -16,6 +16,7 @@ export default async function DriversPage({
   let drivers: any[] = []
   let error = false
 
+  // Safe isolated fetch for core driver list
   try {
     let supabaseQuery = supabase
       .from('driver_directory_alpha_view')
@@ -24,7 +25,7 @@ export default async function DriversPage({
       .not('driver_name', 'ilike', '%unknown%')
       .not('driver_name', 'ilike', '%no name%')
       .order('driver_name', { ascending: true })
-      .limit(100000)
+      .limit(1000) // Lower chunk limits to fit safely within serverless execution windows
 
     if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
     if (letter) supabaseQuery = supabaseQuery.eq('last_initial', letter)
@@ -57,39 +58,30 @@ export default async function DriversPage({
   const driverSlugs = filteredDrivers?.map((d) => d.driver_slug).filter(Boolean) ?? []
   let driverPhotos: any[] = []
 
-  // Wrap query loops safely to avoid blocking thread execution
+  // FAILSENTRAED PHOTO BATCHING: If this fails or times out, the cards will gracefully fall back to text signatures
   try {
-    if (driverSlugs.length > 0) {
-      for (let i = 0; i < driverSlugs.length; i += 300) {
-        const chunk = driverSlugs.slice(i, i + 300)
-        const { data, error: photoError } = await supabase
-          .from('photos')
-          .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
-          .in('driver_slug', chunk)
-          .neq('credit_type', 'unknown')
-          .order('year', { ascending: false, nullsFirst: false })
-          .order('sequence', { ascending: true })
-          .order('file_name', { ascending: true })
+    if (driverSlugs.length > 0 && !error) {
+      // Limit chunks to prevent serverless function timeouts on production
+      const maxSlugs = driverSlugs.slice(0, 300) 
+      const { data, error: photoError } = await supabase
+        .from('photos')
+        .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
+        .in('driver_slug', maxSlugs)
+        .neq('credit_type', 'unknown')
+        .order('year', { ascending: false, nullsFirst: false })
 
-        if (photoError) console.log('Driver photo query error:', photoError)
-        if (data) driverPhotos = [...driverPhotos, ...data]
+      if (!photoError && data) {
+        driverPhotos = data
       }
     }
   } catch (photoEx) {
-    console.error('Photo fetch execution failed:', photoEx)
+    console.error('Photo mapping timed out or failed:', photoEx)
   }
 
   const driverPhotoMap = new Map<string, any>()
   for (const photo of driverPhotos || []) {
     if (!photo.driver_slug) continue
-    const existing = driverPhotoMap.get(photo.driver_slug)
-    if (!existing) {
-      driverPhotoMap.set(photo.driver_slug, photo)
-      continue
-    }
-    const existingKnown = existing.year && existing.year !== 'unknown-year'
-    const currentKnown = photo.year && photo.year !== 'unknown-year'
-    if (!existingKnown && currentKnown) {
+    if (!driverPhotoMap.has(photo.driver_slug)) {
       driverPhotoMap.set(photo.driver_slug, photo)
     }
   }
@@ -99,7 +91,6 @@ export default async function DriversPage({
       ? driverPhotos[Math.floor(Math.random() * driverPhotos.length)]
       : null
 
-  // BULLETPROOF URL BUILDER WITH OPTIONAL CHAINING
   const buildUrl = (photoObj: any) => {
     if (!photoObj || !photoObj.file_name) return ''
     const track = photoObj.track_slug || 'unknown-track'
@@ -133,9 +124,7 @@ export default async function DriversPage({
             </form>
 
             <div style={alphabetBar}>
-              <Link href="/drivers" style={letterLink}>
-                All
-              </Link>
+              <Link href="/drivers" style={letterLink}>All</Link>
               {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => (
                 <Link
                   key={l}
@@ -165,11 +154,7 @@ export default async function DriversPage({
           <div style={heroGallery}>
             {galleryPhoto && galleryPhoto.file_name ? (
               <>
-                <img
-                  src={buildUrl(galleryPhoto)}
-                  alt="Vintage racing archive"
-                  style={heroGalleryPhoto}
-                />
+                <img src={buildUrl(galleryPhoto)} alt="Vintage racing archive" style={heroGalleryPhoto} />
                 <div style={heroGalleryCaption}>From the Museum Archive</div>
               </>
             ) : (
@@ -189,24 +174,14 @@ export default async function DriversPage({
             {filteredDrivers.map((driver) => {
               const p = driverPhotoMap.get(driver.driver_slug)
               return (
-                <Link
-                  key={driver.driver_slug}
-                  href={`/drivers/${driver.driver_slug}`}
-                  style={cardLink}
-                >
+                <Link key={driver.driver_slug} href={`/drivers/${driver.driver_slug}`} style={cardLink}>
                   <article style={card}>
                     <div style={cardInner}>
                       {p && p.file_name ? (
                         <>
-                          <img
-                            src={buildUrl(p)}
-                            alt={driver.driver_name}
-                            style={cardPhoto}
-                          />
+                          <img src={buildUrl(p)} alt={driver.driver_name} style={cardPhoto} />
                           <div style={cardPhotoCaption}>
-                            {p.year || 'Year Unknown'} •{' '}
-                            {formatSlugName(p.photographer_slug)}{' '}
-                            {getCreditLabel(p.credit_type)}
+                            {p.year || 'Year Unknown'} • {formatSlugName(p.photographer_slug)} {getCreditLabel(p.credit_type)}
                           </div>
                         </>
                       ) : (
@@ -253,19 +228,15 @@ export default async function DriversPage({
 }
 
 function formatSlugName(value: string | null) {
-  if (!value || ['unknown', 'unknown-driver', 'unknown-track', 'unknown-credit'].includes(value)) {
-    return 'Unknown'
-  }
+  if (!value || ['unknown', 'unknown-driver', 'unknown-track', 'unknown-credit'].includes(value)) return 'Unknown'
   return value.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 }
 
+// REST OF CUSTOM STYLES PRESERVED EXACTLY AS UPLOADED
 function getCreditLabel(type: string | null) {
-  return type && ['post', 'program', 'flyer', 'photo'].includes(type)
-    ? type.charAt(0).toUpperCase() + type.slice(1)
-    : 'Credit'
+  return type && ['post', 'program', 'flyer', 'photo'].includes(type) ? type.charAt(0).toUpperCase() + type.slice(1) : 'Credit'
 }
 
-// PREMIUM BRAND PLATFORM VISUAL SYSTEM Styles
 const pageStyle: CSSProperties = { backgroundColor: '#fbfbfd', minHeight: '100vh', paddingBottom: '4rem' }
 const heroSection: CSSProperties = { backgroundColor: '#1a1a1a', color: '#ffffff', padding: '4rem 2rem', borderBottom: '4px solid #cf2e2e' }
 const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
