@@ -110,7 +110,7 @@ const flatResultsByYear = Array.isArray(safeResultsByYear)
       : null
 
  const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year');
-  const heroPhotoItem: Photo | null = foundHero ?? (safePhotos ?? null);
+  const heroPhotoItem: Photo | null = foundHero ?? (safePhotos.length > 0 ? safePhotos : null);
 
   const displayPhotos = safePhotos
     .filter((p) => p.file_name !== heroPhotoItem?.file_name)
