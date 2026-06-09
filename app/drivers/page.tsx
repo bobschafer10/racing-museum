@@ -16,7 +16,6 @@ export default async function DriversPage({
   let drivers: any[] = []
   let error = false
 
-  // Safe isolated fetch for core driver list
   try {
     let supabaseQuery = supabase
       .from('driver_directory_alpha_view')
@@ -25,7 +24,7 @@ export default async function DriversPage({
       .not('driver_name', 'ilike', '%unknown%')
       .not('driver_name', 'ilike', '%no name%')
       .order('driver_name', { ascending: true })
-      .limit(1000) // Lower chunk limits to fit safely within serverless execution windows
+      .limit(1000)
 
     if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
     if (letter) supabaseQuery = supabaseQuery.eq('last_initial', letter)
@@ -58,10 +57,8 @@ export default async function DriversPage({
   const driverSlugs = filteredDrivers?.map((d) => d.driver_slug).filter(Boolean) ?? []
   let driverPhotos: any[] = []
 
-  // FAILSENTRAED PHOTO BATCHING: If this fails or times out, the cards will gracefully fall back to text signatures
   try {
     if (driverSlugs.length > 0 && !error) {
-      // Limit chunks to prevent serverless function timeouts on production
       const maxSlugs = driverSlugs.slice(0, 300) 
       const { data, error: photoError } = await supabase
         .from('photos')
@@ -75,7 +72,7 @@ export default async function DriversPage({
       }
     }
   } catch (photoEx) {
-    console.error('Photo mapping timed out or failed:', photoEx)
+    console.error('Photo mapping failed:', photoEx)
   }
 
   const driverPhotoMap = new Map<string, any>()
@@ -115,7 +112,7 @@ export default async function DriversPage({
                 type="text"
                 name="q"
                 defaultValue={query}
-                placeholder="Search drivers"
+                placeholder="Search drivers..."
                 style={searchInput}
               />
               <button type="submit" style={searchButton}>
@@ -131,8 +128,9 @@ export default async function DriversPage({
                   href={`/drivers?letter=${l}`}
                   style={{
                     ...letterLink,
+                    color: letter === l ? '#cf2e2e' : '#aaa',
                     fontWeight: letter === l ? 'bold' : 'normal',
-                    textDecoration: letter === l ? 'underline' : 'none',
+                    borderBottom: letter === l ? '2px solid #cf2e2e' : 'none',
                   }}
                 >
                   {l}
@@ -178,12 +176,12 @@ export default async function DriversPage({
                   <article style={card}>
                     <div style={cardInner}>
                       {p && p.file_name ? (
-                        <>
+                        <div style={cardImageWrapper}>
                           <img src={buildUrl(p)} alt={driver.driver_name} style={cardPhoto} />
                           <div style={cardPhotoCaption}>
                             {p.year || 'Year Unknown'} • {formatSlugName(p.photographer_slug)} {getCreditLabel(p.credit_type)}
                           </div>
-                        </>
+                        </div>
                       ) : (
                         <div style={driverSignaturePlaceholder}>
                           <div style={driverSignatureName}>{driver.driver_name}</div>
@@ -199,19 +197,19 @@ export default async function DriversPage({
                       <div style={statTable}>
                         <div style={statRow}>
                           <span>Recorded Feature Wins</span>
-                          <strong>{driver.recorded_wins ?? 0}</strong>
+                          <strong style={statBadge}>{driver.recorded_wins ?? 0}</strong>
                         </div>
                         <div style={statRow}>
                           <span>Wisconsin Feature Wins</span>
-                          <strong>{driver.wisconsin_feature_wins ?? 0}</strong>
+                          <strong style={statBadge}>{driver.wisconsin_feature_wins ?? 0}</strong>
                         </div>
                         <div style={statRow}>
                           <span>Recorded Top-3 Finishes</span>
-                          <strong>{driver.recorded_top_3_finishes ?? 0}</strong>
+                          <strong style={statBadge}>{driver.recorded_top_3_finishes ?? 0}</strong>
                         </div>
                         <div style={{ ...statRow, borderBottom: 'none' }}>
                           <span>Recorded Results</span>
-                          <strong>{driver.recorded_results ?? 0}</strong>
+                          <strong style={statBadge}>{driver.recorded_results ?? 0}</strong>
                         </div>
                       </div>
                       <div style={cardButton}>View Profile</div>
@@ -232,41 +230,43 @@ function formatSlugName(value: string | null) {
   return value.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 }
 
-// REST OF CUSTOM STYLES PRESERVED EXACTLY AS UPLOADED
 function getCreditLabel(type: string | null) {
   return type && ['post', 'program', 'flyer', 'photo'].includes(type) ? type.charAt(0).toUpperCase() + type.slice(1) : 'Credit'
 }
 
-const pageStyle: CSSProperties = { backgroundColor: '#fbfbfd', minHeight: '100vh', paddingBottom: '4rem' }
-const heroSection: CSSProperties = { backgroundColor: '#1a1a1a', color: '#ffffff', padding: '4rem 2rem', borderBottom: '4px solid #cf2e2e' }
+// PREMIUM BRAND PLATFORM VISUAL SYSTEM - DEEP MATTE EDITIONS
+const pageStyle: CSSProperties = { backgroundColor: '#f8f9fa', minHeight: '100vh', paddingBottom: '5rem' }
+const heroSection: CSSProperties = { backgroundColor: '#111111', color: '#ffffff', padding: '4.5rem 2rem', borderBottom: '4px solid #cf2e2e' }
 const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
 const heroLeft: CSSProperties = { display: 'flex', flexDirection: 'column' }
-const eyebrow: CSSProperties = { color: '#cf2e2e', textTransform: 'uppercase', fontWeight: 'bold', letterSpacing: '1px', marginBottom: '0.5rem' }
-const pageTitle: CSSProperties = { fontSize: '3rem', margin: '0 0 1rem 0', fontFamily: 'serif' }
-const pageIntro: CSSProperties = { fontSize: '1.1rem', color: '#cccccc', margin: '0 0 2rem 0', lineHeight: '1.6' }
-const searchForm: CSSProperties = { display: 'flex', gap: '0.5rem', marginBottom: '2rem' }
-const searchInput: CSSProperties = { flex: 1, padding: '0.75rem 1rem', fontSize: '1rem', border: '1px solid #444', backgroundColor: '#2a2a2a', color: '#fff', borderRadius: '4px' }
-const searchButton: CSSProperties = { padding: '0.75rem 1.5rem', backgroundColor: '#cf2e2e', color: '#fff', border: 'none', borderRadius: '4px', fontWeight: 'bold', cursor: 'pointer' }
-const alphabetBar: CSSProperties = { display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1.5rem' }
-const letterLink: CSSProperties = { color: '#aaa', textDecoration: 'none', padding: '0.25rem 0.5rem', fontSize: '0.9rem' }
-const resultsLine: CSSProperties = { color: '#888', fontSize: '0.9rem' }
-const heroGallery: CSSProperties = { position: 'relative', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', backgroundColor: '#2a2a2a', height: '350px', width: '100%' }
+const eyebrow: CSSProperties = { color: '#cf2e2e', textTransform: 'uppercase', fontWeight: 'bold', letterSpacing: '1.5px', marginBottom: '0.75rem', fontSize: '0.85rem' }
+const pageTitle: CSSProperties = { fontSize: '3.25rem', margin: '0 0 1rem 0', fontFamily: 'Georgia, serif', fontWeight: 'bold', letterSpacing: '-0.5px' }
+const pageIntro: CSSProperties = { fontSize: '1.15rem', color: '#aaaaaa', margin: '0 0 2.25rem 0', lineHeight: '1.6' }
+const searchForm: CSSProperties = { display: 'flex', gap: '0.5rem', marginBottom: '2rem', maxWidth: '450px' }
+const searchInput: CSSProperties = { flex: 1, padding: '0.85rem 1.25rem', fontSize: '1rem', border: '1px solid #333', backgroundColor: '#222', color: '#fff', borderRadius: '6px', outline: 'none' }
+const searchButton: CSSProperties = { padding: '0.85rem 1.75rem', backgroundColor: '#cf2e2e', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', transition: 'background-color 0.2s' }
+const alphabetBar: CSSProperties = { display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1.75rem', maxWidth: '500px' }
+const letterLink: CSSProperties = { textDecoration: 'none', padding: '0.35rem 0.5rem', fontSize: '0.95rem', transition: 'color 0.2s' }
+const resultsLine: CSSProperties = { color: '#666', fontSize: '0.9rem', marginTop: '0.5rem' }
+const heroGallery: CSSProperties = { position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)', backgroundColor: '#222', height: '380px', width: '100%' }
 const heroGalleryPhoto: CSSProperties = { width: '100%', height: '100%', objectFit: 'cover' }
-const heroGalleryCaption: CSSProperties = { position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.8))', color: '#fff', fontSize: '0.85rem' }
-const heroGalleryPlaceholder: CSSProperties = { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#555', fontStyle: 'italic', width: '100%' }
-const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '3rem auto 0 auto', padding: '0 2rem' }
-const grid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '2rem' }
+const heroGalleryCaption: CSSProperties = { position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1.25rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.9))', color: '#fff', fontSize: '0.85rem', letterSpacing: '0.5px' }
+const heroGalleryPlaceholder: CSSProperties = { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#444', fontStyle: 'italic', width: '100%' }
+const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '3.5rem auto 0 auto', padding: '0 2rem' }
+const grid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '2.5rem' }
 const cardLink: CSSProperties = { textDecoration: 'none', color: 'inherit' }
-const card: CSSProperties = { backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e1e4e6', overflow: 'hidden', transition: 'transform 0.2s ease, box-shadow 0.2s ease', height: '100%', display: 'flex', flexDirection: 'column' }
-const cardInner: CSSProperties = { padding: '1.25rem', display: 'flex', flexDirection: 'column', flex: 1 }
-const cardPhoto: CSSProperties = { width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px' }
-const cardPhotoCaption: CSSProperties = { fontSize: '0.75rem', color: '#777', marginTop: '0.5rem', fontStyle: 'italic' }
-const driverSignaturePlaceholder: CSSProperties = { height: '200px', backgroundColor: '#f0f2f5', borderRadius: '4px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px dashed #cbd5e1' }
-const driverSignatureName: CSSProperties = { fontFamily: 'serif', fontSize: '1.35rem', color: '#475569', opacity: 0.6, textAlign: 'center', padding: '0 1rem' }
-const driverName: CSSProperties = { fontSize: '1.35rem', margin: '1rem 0 0.25rem 0', color: '#1a1a1a', fontFamily: 'serif' }
-const metaLine: CSSProperties = { fontSize: '0.85rem', color: '#666', margin: '0 0 1.25rem 0' }
-const statTable: CSSProperties = { backgroundColor: '#f8f9fa', borderRadius: '6px', padding: '0.75rem', marginBottom: '1.5rem', marginTop: 'auto' }
-const statRow: CSSProperties = { display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', padding: '0.35rem 0', borderBottom: '1px solid #edf0f2', color: '#444' }
-const cardButton: CSSProperties = { textAlign: 'center', padding: '0.65rem', backgroundColor: '#f1f3f5', color: '#1a1a1a', borderRadius: '4px', fontWeight: 'bold', fontSize: '0.85rem' }
-const errorBox: CSSProperties = { padding: '2rem', backgroundColor: '#fff5f5', color: '#c92a2a', borderRadius: '6px', textAlign: 'center' }
-const emptyBox: CSSProperties = { padding: '4rem', textAlign: 'center', color: '#666', backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e1e4e6' }
+const card: CSSProperties = { backgroundColor: '#ffffff', borderRadius: '12px', border: '1px solid #e9ecef', overflow: 'hidden', transition: 'transform 0.2s ease, box-shadow 0.2s ease', height: '100%', display: 'flex', flexDirection: 'column', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }
+const cardInner: CSSProperties = { padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1 }
+const cardImageWrapper: CSSProperties = { margin: '-1.5rem -1.5rem 1.25rem -1.5rem', position: 'relative' }
+const cardPhoto: CSSProperties = { width: '100%', height: '220px', objectFit: 'cover' }
+const cardPhotoCaption: CSSProperties = { position: 'absolute', bottom: 0, left: 0, right: 0, padding: '0.5rem 1rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.85))', color: '#eee', fontSize: '0.75rem', fontStyle: 'italic' }
+const driverSignaturePlaceholder: CSSProperties = { height: '220px', backgroundColor: '#f1f3f5', borderRadius: '8px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px dashed #dee2e6', margin: '-1.5rem -1.5rem 1.25rem -1.5rem' }
+const driverSignatureName: CSSProperties = { fontFamily: 'Georgia, serif', fontSize: '1.4rem', color: '#495057', opacity: 0.5, textAlign: 'center', padding: '0 1.5rem', fontWeight: 'bold' }
+const driverName: CSSProperties = { fontSize: '1.45rem', margin: '0.25rem 0 0.35rem 0', color: '#111111', fontFamily: 'Georgia, serif', fontWeight: 'bold' }
+const metaLine: CSSProperties = { fontSize: '0.9rem', color: '#6c757d', margin: '0 0 1.5rem 0', letterSpacing: '0.2px' }
+const statTable: CSSProperties = { backgroundColor: '#f8f9fa', borderRadius: '8px', padding: '1rem', marginBottom: '1.5rem', marginTop: 'auto', border: '1px solid #f1f3f5' }
+const statRow: CSSProperties = { display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.85rem', padding: '0.5rem 0', borderBottom: '1px solid #f1f3f5', color: '#343a40' }
+const statBadge: CSSProperties = { backgroundColor: '#e9ecef', padding: '0.15rem 0.5rem', borderRadius: '4px', color: '#111', fontSize: '0.8rem', fontFamily: 'monospace' }
+const cardButton: CSSProperties = { textAlign: 'center', padding: '0.75rem', backgroundColor: '#111', color: '#fff', borderRadius: '6px', fontWeight: 'bold', fontSize: '0.9rem', transition: 'background-color 0.2s' }
+const errorBox: CSSProperties = { padding: '2.5rem', backgroundColor: '#fff5f5', color: '#c92a2a', borderRadius: '8px', textAlign: 'center', fontWeight: 'bold', border: '1px solid #ffe3e3' }
+const emptyBox: CSSProperties = { padding: '5rem', textAlign: 'center', color: '#6c757d', backgroundColor: '#ffffff', borderRadius: '12px', border: '1px solid #dee2e6' }
