@@ -490,4 +490,5 @@ function formatCreditType(type: string | null) {
 // ALL ORIGINAL VINTAGE SEPIA BRAND STYLES MAINTAINED PERFECTLY BELOW
 const pageStyle: CSSProperties = { background: '#eadfc7', color: '#2f2417', minHeight: '100vh', fontFamily: 'Georgia, serif', margin: 0 }
 const heroWatermark: CSSProperties = { position: 'absolute', inset: 0, background: `linear-gradient(to right, rgba(234,223,199,0.25), rgba(234,223,199,0.72)), radial-gradient(circle at 78% 28%, rgba(80,55,25,0.18), transparent 34%), repeating-conic-gradient(from 45deg at 78% 25%, rgba(80,55,25,0.10) 0deg 10deg, transparent 10deg 20deg)`, opacity: 0.55, pointerEvents: 'none' }
-const heroSection: CSSProperties = { background: 'linear-gradient(to bottom, rgba(231,217,1
+// Locate this line near the bottom of app/drivers/[slug]/page.tsx and replace it:
+const heroSection: CSSProperties = { background: 'linear-gradient(to bottom, rgba(231,217,191,0.96), rgba(234,223,199,0.98))', borderBottom: '2px solid #b29364', position: 'relative', overflow: 'hidden' }
