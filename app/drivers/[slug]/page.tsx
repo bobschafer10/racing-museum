@@ -109,8 +109,8 @@ const flatResultsByYear = Array.isArray(safeResultsByYear)
       ? parseInt(String(flatResultsByYear[flatResultsByYear.length - 1]?.result_year || 0), 10)
       : null
 
-const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year')
-  const heroPhotoItem: Photo | null = foundHero ?? (safePhotos.length > 0 ? safePhotos : null)
+const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year');
+const heroPhotoItem: Photo | null = foundHero ?? (safePhotos || null);
 
   const displayPhotos = safePhotos
     .filter((p) => p.file_name !== heroPhotoItem?.file_name)
