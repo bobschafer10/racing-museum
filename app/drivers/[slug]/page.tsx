@@ -143,11 +143,20 @@ export default async function DriverProfilePage({
   ].filter(Boolean)
 
   // FIX: CDN Storage Bucket Router Links
+  // FIX: Match flat Supabase storage pathing schema
   const buildPhotoUrl = (photoObj: any) => {
     if (!photoObj || !photoObj.file_name) return ''
-    const track = photoObj.track_slug || 'unknown-track'
-    const yr = photoObj.year || 'unknown-year'
-    return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/${track}/${yr}/${photoObj.file_name}`
+    
+    // The database column already holds the fully structured string name.
+    // We stream directly out of the root public media/photos bucket directory.
+    return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/${photoObj.file_name}`
+  }
+
+  const buildLogoUrl = (trackSlug: string | null | undefined) => {
+    if (!trackSlug) return ''
+    
+    // Tracks logos route seamlessly from the flat tracks bucket directory.
+    return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/logos/tracks/${trackSlug}.jpg`
   }
 
   const buildLogoUrl = (trackSlug: string | null | undefined) => {
