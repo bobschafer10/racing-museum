@@ -110,11 +110,11 @@ const flatResultsByYear = Array.isArray(safeResultsByYear)
       : null
 
 const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year');
-const heroPhotoItem: Photo | null = foundHero ?? (safePhotos || null);
+  const heroPhotoItem: Photo | null = foundHero ?? (safePhotos || null);
 
   const displayPhotos = safePhotos
     .filter((p) => p.file_name !== heroPhotoItem?.file_name)
-    .slice(0, 50)
+    .slice(0, 50);
 
   const bestYear = flatResultsByYear.reduce<any | null>((best, row: any) => {
     if (!best || (row.wins ?? 0) > (best.wins ?? 0)) return row
