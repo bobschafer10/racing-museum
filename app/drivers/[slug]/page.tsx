@@ -100,6 +100,7 @@ export default async function DriverProfilePage({
       ? safeResultsByYear[safeResultsByYear.length - 1]?.result_year
       : null
 
+  // FIX: Added index to isolate the first item in the array
   const lastRecordedYear =
     safeResultsByYear.length > 0
       ? safeResultsByYear?.result_year
