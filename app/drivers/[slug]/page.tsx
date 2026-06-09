@@ -100,12 +100,13 @@ export default async function DriverProfilePage({
       ? safeResultsByYear[safeResultsByYear.length - 1]?.result_year
       : null
 
-  // FIX: Added index to isolate the first item in the array
+ // FIX 1: Explicitly target index to extract the single year value
   const lastRecordedYear =
     safeResultsByYear.length > 0
       ? safeResultsByYear?.result_year
       : null
 
+  // FIX 2: Target index on the array fallback to isolate a single photo object
   const heroPhotoItem =
     safePhotos.find((p) => p.year !== null) ?? safePhotos ?? null
 
