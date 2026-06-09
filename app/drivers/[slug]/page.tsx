@@ -21,7 +21,7 @@ type Driver = {
 type Photo = {
   photo_id: string | number
   file_name: string
-  year: number | null
+  year: string | number | null // Updated to handle text strings from Supabase
   photographer_slug: string | null
   credit_type: string | null
   sequence: number | null
@@ -95,16 +95,21 @@ export default async function DriverProfilePage({
   const safeResultsByYear = resultsByYear ?? []
   const safeRecentResults = recentResults ?? []
 
+  // Grab the oldest year from the last item in the list
   const firstRecordedYear =
     safeResultsByYear.length > 0
       ? safeResultsByYear[safeResultsByYear.length - 1]?.result_year
       : null
 
- // FIX 1: Explicitly target index to extract the single year value
+  // FIX: Explicitly target the first array item before reading the property
   const lastRecordedYear =
     safeResultsByYear.length > 0
       ? safeResultsByYear?.result_year
       : null
+
+  // FIX: Match database text values like 'unknown-year' instead of strictly checking for null
+  const heroPhotoItem =
+    safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year') ?? safePhotos ?? null
 
   // FIX 2: Target index on the array fallback to isolate a single photo object
   const heroPhotoItem =
