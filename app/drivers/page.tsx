@@ -27,7 +27,8 @@ export default async function DriversPage({
       .limit(1000)
 
     if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
-    if (letter) supabaseQuery = supabaseQuery.eq('last_initial', letter)
+   // Letter filtering happens after last-name sorting below.
+// Do not filter in Supabase because last_initial may not exist on the view.
 
     const { data: driversData, error: fetchError } = await supabaseQuery
     if (fetchError) throw fetchError
