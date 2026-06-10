@@ -28,6 +28,11 @@ type Photo = {
   track_slug?: string | null
 }
 
+export const revalidate = 3600
+
+const SUPABASE_PHOTO_BASE =
+  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
+
 export default async function DriverProfilePage({
   params,
 }: {
@@ -47,11 +52,10 @@ export default async function DriverProfilePage({
 
   const { data: photos } = await supabase
     .from('photos')
-    .select('*')
+    .select('photo_id, file_name, year, photographer_slug, credit_type, sequence, track_slug')
     .eq('driver_slug', slug)
     .order('year', { ascending: true, nullsFirst: false })
     .order('sequence', { ascending: true })
-    .returns<Photo[]>()
 
   const { data: topTracks } = await supabase
     .from('driver_wins_by_track_view')
@@ -74,8 +78,6 @@ export default async function DriverProfilePage({
     .order('wins', { ascending: false })
     .limit(10)
 
-  const safeWinsByClass = winsByClass ?? []
-
   const { data: recentResults } = await supabase
     .from('driver_recent_results_view')
     .select('race_date, track_name, track_slug, class_name, finishing_position')
@@ -89,19 +91,20 @@ export default async function DriverProfilePage({
     .eq('driver_slug', slug)
     .order('year', { ascending: false })
 
-  const safeChampionships = championships ?? []
   const safePhotos = photos ?? []
   const safeTopTracks = topTracks ?? []
   const safeResultsByYear = resultsByYear ?? []
+  const safeWinsByClass = winsByClass ?? []
   const safeRecentResults = recentResults ?? []
+  const safeChampionships = championships ?? []
 
-  const flatResultsByYear = Array.isArray(safeResultsByYear) 
-    ? (safeResultsByYear as any[])
-    : safeResultsByYear;
+  const flatResultsByYear = Array.isArray(safeResultsByYear)
+    ? safeResultsByYear
+    : []
 
   const lastRecordedYear =
     flatResultsByYear.length > 0
-      ? parseInt(String(flatResultsByYear?.result_year || 0), 10)
+      ? parseInt(String(flatResultsByYear[0]?.result_year || 0), 10)
       : null
 
   const firstRecordedYear =
@@ -109,12 +112,15 @@ export default async function DriverProfilePage({
       ? parseInt(String(flatResultsByYear[flatResultsByYear.length - 1]?.result_year || 0), 10)
       : null
 
-  const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year');
-  const heroPhotoItem: Photo | null = foundHero ?? (safePhotos || null);
+  const foundHero = safePhotos.find(
+    (p) => p.year !== null && String(p.year) !== 'unknown-year'
+  )
+
+  const heroPhotoItem: Photo | null = foundHero ?? safePhotos[0] ?? null
 
   const displayPhotos = safePhotos
     .filter((p) => p.file_name !== heroPhotoItem?.file_name)
-    .slice(0, 50);
+    .slice(0, 50)
 
   const bestYear = flatResultsByYear.reduce<any | null>((best, row: any) => {
     if (!best || (row.wins ?? 0) > (best.wins ?? 0)) return row
@@ -146,11 +152,14 @@ export default async function DriverProfilePage({
       : null,
   ].filter(Boolean)
 
-  const buildPhotoUrl = (photoObj: any) => {
-    if (!photoObj || !photoObj.file_name) return ''
-    const track = photoObj.track_slug || 'unknown-track'
-    const yr = photoObj.year || 'unknown-year'
-    return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/${track}/${yr}/${photoObj.file_name}`
+  const buildPhotoUrl = (photoObj: Photo | null | undefined) => {
+    if (!photoObj?.file_name) return ''
+
+    const track = String(photoObj.track_slug || 'unknown-track')
+    const year = String(photoObj.year || 'unknown-year')
+    const file = String(photoObj.file_name)
+
+    return `${SUPABASE_PHOTO_BASE}/${track}/${year}/${encodeURIComponent(file)}`
   }
 
   const buildLogoUrl = (trackSlug: string | null | undefined) => {
@@ -162,6 +171,7 @@ export default async function DriverProfilePage({
     <main style={{ background: '#eadfc7', color: '#2f2417', minHeight: '100vh', fontFamily: 'Georgia, serif', margin: 0 }}>
       <section style={{ background: 'linear-gradient(to bottom, rgba(231,217,191,0.96), rgba(234,223,199,0.98))', borderBottom: '2px solid #b29364', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to right, rgba(234,223,199,0.25), rgba(234,223,199,0.72)), radial-gradient(circle at 78% 28%, rgba(80,55,25,0.18), transparent 34%), repeating-conic-gradient(from 45deg at 78% 25%, rgba(80,55,25,0.10) 0deg 10deg, transparent 10deg 20deg)`, opacity: 0.55, pointerEvents: 'none' }} />
+
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '28px 20px 20px', position: 'relative', zIndex: 1 }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '15px', marginBottom: '22px', color: '#6b4a22' }}>
             <Link href="/" style={{ color: '#7a5827', textDecoration: 'none' }}>Home</Link>
@@ -174,7 +184,9 @@ export default async function DriverProfilePage({
           <div style={{ display: 'grid', gridTemplateColumns: '420px 1fr', gap: '34px', alignItems: 'start', position: 'relative' }}>
             <div style={{ border: '2px solid #bda87a', padding: '10px', background: '#f4ead7', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
               {!heroPhotoItem || !heroPhotoItem.file_name ? (
-                <div style={{ background: 'linear-gradient(to bottom, #d8c39d, #c7ab7c)', border: '1px solid #b29364', height: '280px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5a3a1b', fontSize: '20px', textAlign: 'center', padding: '12px', fontWeight: 'bold' }}>Photo Coming Soon</div>
+                <div style={{ background: 'linear-gradient(to bottom, #d8c39d, #c7ab7c)', border: '1px solid #b29364', height: '280px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5a3a1b', fontSize: '20px', textAlign: 'center', padding: '12px', fontWeight: 'bold' }}>
+                  Photo Coming Soon
+                </div>
               ) : (
                 <div>
                   <img
@@ -212,6 +224,7 @@ export default async function DriverProfilePage({
                     {driver.hometown || 'Unknown hometown'}
                     {driver.state ? `, ${driver.state}` : ''}
                   </p>
+
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '22px 0 24px', maxWidth: '520px' }}>
                     <span style={{ height: '1px', flex: 1, background: '#b29364' }} />
                     <span style={{ color: '#9a743d', fontSize: '18px' }}>★</span>
@@ -250,6 +263,7 @@ export default async function DriverProfilePage({
       <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '28px 20px 40px' }}>
         <section style={{ marginTop: '12px', marginBottom: '24px' }}>
           <h2 style={{ fontSize: '28px', margin: '0 0 10px', color: '#3d2b16' }}>Photo Archive</h2>
+
           {displayPhotos.length === 0 ? (
             <div style={{ padding: '18px', background: '#f1e5ce', border: '1px solid #c2a97d' }}>No photos available yet.</div>
           ) : (
@@ -261,7 +275,9 @@ export default async function DriverProfilePage({
                     alt={driver.driver_name}
                     style={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', display: 'block', border: '1px solid #b29364', background: '#efe7d6' }}
                   />
-                  <div style={{ marginTop: '8px', fontSize: '13px', color: '#5a3a1b', lineHeight: 1.5 }}>{buildPhotoCaption(photo)}</div>
+                  <div style={{ marginTop: '8px', fontSize: '13px', color: '#5a3a1b', lineHeight: 1.5 }}>
+                    {buildPhotoCaption(photo)}
+                  </div>
                 </div>
               ))}
             </div>
@@ -278,7 +294,7 @@ export default async function DriverProfilePage({
 
             <Panel title="Recent Feature Results">
               {safeRecentResults.length === 0 ? (
-                <p style={{ fontSize: '17px', lineHeight: 1.7, margin: '0 0 14px' }}>No recent results available yet.</p>
+                <p>No recent results available yet.</p>
               ) : (
                 <div>
                   {safeRecentResults.map((result, index) => (
@@ -294,7 +310,7 @@ export default async function DriverProfilePage({
                         {result.track_slug && (
                           <img
                             src={buildLogoUrl(result.track_slug)}
-                            alt={result.track_name}
+                            alt={result.track_name || 'Track logo'}
                             style={{ width: '24px', height: '24px', objectFit: 'contain' }}
                           />
                         )}
@@ -412,6 +428,7 @@ function Panel({ title, children }: { title: string; children: ReactNode }) {
 
 function CareerHighlights({ highlights }: { highlights: { year: number | string; text: string }[] }) {
   if (highlights.length === 0) return null
+
   return (
     <div style={{ background: 'rgba(244, 234, 215, 0.76)', border: '1px solid #b29364', padding: '14px 16px', boxShadow: '0 5px 16px rgba(0,0,0,0.08)' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px', color: '#5b3a1b', fontSize: '16px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
@@ -432,7 +449,9 @@ function CareerHighlights({ highlights }: { highlights: { year: number | string;
 function HeroStat({ label, value, format = true }: { label: string; value: number; format?: boolean }) {
   return (
     <div style={{ background: '#76511f', padding: '22px 14px', textAlign: 'center', color: '#fff7e7', borderRight: '1px solid rgba(255, 247, 231, 0.35)' }}>
-      <div style={{ fontSize: '34px', fontWeight: 700, color: '#fff7e7', lineHeight: 1, marginBottom: '6px' }}>{format ? value.toLocaleString() : value}</div>
+      <div style={{ fontSize: '34px', fontWeight: 700, color: '#fff7e7', lineHeight: 1, marginBottom: '6px' }}>
+        {format ? value.toLocaleString() : value}
+      </div>
       <div style={{ fontSize: '13px', color: '#f1dfbf', textTransform: 'uppercase', letterSpacing: '0.06em', lineHeight: 1.4 }}>{label}</div>
     </div>
   )
@@ -449,32 +468,54 @@ function SummaryRow({ label, value }: { label: string; value: string }) {
 
 function buildPhotoCaption(photo: Photo) {
   const trackLabel = formatTrackSlug(photo.track_slug)
-  const photographer = photo.photographer_slug && photo.photographer_slug !== 'unknown'
-    ? formatName(photo.photographer_slug)
-    : 'Unknown Credit'
-  const creditType = photo.credit_type && photo.credit_type !== 'unknown'
-    ? formatCreditType(photo.credit_type)
-    : 'Photo'
+
+  const photographer =
+    photo.photographer_slug && photo.photographer_slug !== 'unknown'
+      ? formatName(photo.photographer_slug)
+      : 'Unknown Credit'
+
+  const creditType =
+    photo.credit_type && photo.credit_type !== 'unknown'
+      ? formatCreditType(photo.credit_type)
+      : 'Photo'
 
   return [
     trackLabel,
-    photo.year && photo.year !== 'unknown-year' ? photo.year : 'Year Unknown',
+    photo.year && String(photo.year) !== 'unknown-year' ? photo.year : 'Year Unknown',
     photographer !== 'Unknown Credit' ? `${photographer}${creditType !== 'Photo' ? ` ${creditType}` : ''}` : null,
-  ].filter(Boolean).join(' • ')
+  ]
+    .filter(Boolean)
+    .join(' • ')
 }
 
 function formatRaceDate(dateString: string) {
-  return new Date(dateString).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+  return new Date(dateString).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  })
 }
 
 function formatTrackSlug(trackSlug: string | null | undefined) {
   if (!trackSlug || ['unknown', 'unknown-track'].includes(trackSlug)) return null
-  return trackSlug.replace(/-(wi|il|mn|mi)$/i, '').split('-').filter(Boolean).map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+
+  return trackSlug
+    .replace(/-(wi|il|mn|mi)$/i, '')
+    .split('-')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
 }
 
 function formatName(name: string | null) {
   if (!name) return 'Unknown'
-  return name.replace(/[-_]/g, ' ').split(' ').filter(Boolean).map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+
+  return name
+    .replace(/[-_]/g, ' ')
+    .split(' ')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
 }
 
 function formatCreditType(type: string | null) {
