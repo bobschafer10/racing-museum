@@ -2,6 +2,8 @@ import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
 export default async function ResultsPage() {
   const { data: results, error } = await supabase
   .from('global_results_view')
