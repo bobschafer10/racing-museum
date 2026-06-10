@@ -95,13 +95,13 @@ export default async function DriverProfilePage({
   const safeResultsByYear = resultsByYear ?? []
   const safeRecentResults = recentResults ?? []
 
-const flatResultsByYear = Array.isArray(safeResultsByYear) 
+  const flatResultsByYear = Array.isArray(safeResultsByYear) 
     ? (safeResultsByYear as any[])
     : safeResultsByYear;
 
   const lastRecordedYear =
     flatResultsByYear.length > 0
-      ? parseInt(String(flatResultsByYear[0]?.result_year || 0), 10)
+      ? parseInt(String(flatResultsByYear?.result_year || 0), 10)
       : null
 
   const firstRecordedYear =
@@ -109,7 +109,7 @@ const flatResultsByYear = Array.isArray(safeResultsByYear)
       ? parseInt(String(flatResultsByYear[flatResultsByYear.length - 1]?.result_year || 0), 10)
       : null
 
-const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year');
+  const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-year');
   const heroPhotoItem: Photo | null = foundHero ?? (safePhotos || null);
 
   const displayPhotos = safePhotos
@@ -147,18 +147,10 @@ const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-
   ].filter(Boolean)
 
   const buildPhotoUrl = (photoObj: any) => {
-    if (!photoObj) return ''
-    let rawFileName = photoObj.file_name || ''
-    if (!rawFileName && photoObj.driver_slug) {
-      rawFileName = `${photoObj.driver_slug}.jpg`
-    }
-    if (!rawFileName) return ''
-
-    if (!rawFileName.toLowerCase().endsWith('.jpg') && !rawFileName.toLowerCase().endsWith('.png')) {
-      rawFileName = `${rawFileName}.jpg`
-    }
-
-    return `/photos/${rawFileName}`
+    if (!photoObj || !photoObj.file_name) return ''
+    const track = photoObj.track_slug || 'unknown-track'
+    const yr = photoObj.year || 'unknown-year'
+    return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/${track}/${yr}/${photoObj.file_name}`
   }
 
   const buildLogoUrl = (trackSlug: string | null | undefined) => {
@@ -185,7 +177,6 @@ const foundHero = safePhotos.find((p) => p.year !== null && p.year !== 'unknown-
                 <div style={{ background: 'linear-gradient(to bottom, #d8c39d, #c7ab7c)', border: '1px solid #b29364', height: '280px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5a3a1b', fontSize: '20px', textAlign: 'center', padding: '12px', fontWeight: 'bold' }}>Photo Coming Soon</div>
               ) : (
                 <div>
-                  {/* Clean standard server-rendered fallback mechanism */}
                   <img
                     src={buildPhotoUrl(heroPhotoItem)}
                     alt={driver.driver_name}
