@@ -7,9 +7,7 @@ import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 import TrackLogo from './tracks/[slug]/TrackLogo'
 
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
-export const fetchCache = 'force-no-store'
+export const revalidate = 3600
 export const runtime = 'nodejs'
 
 const featuredSpecialEvents = [
