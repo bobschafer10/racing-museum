@@ -3,6 +3,10 @@ import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 import SeriesLogo from './[slug]/SeriesLogo'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+export const runtime = 'nodejs'
+
 type SeriesRow = {
   slug: string
   series_name: string

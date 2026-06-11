@@ -2,6 +2,10 @@ import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+export const runtime = 'nodejs'
+
 export default async function PhotographersPage() {
   const { data, error } = await supabase
   .from('photographer_directory_view')
