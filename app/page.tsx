@@ -286,9 +286,12 @@ const track =
         Midwest racing history alive for future generations.
       </p>
 
-      <Link href="/contact" style={supportButton}>
-        Submit Information
-      </Link>
+      <a
+  href="mailto:info@uppermidwestautoracingmuseum.org?subject=Upper%20Midwest%20Auto%20Racing%20Museum%20Submission"
+  style={supportButton}
+>
+  Submit Information
+</a>
     </div>
   </div>
 </section>
