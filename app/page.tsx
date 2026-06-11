@@ -7,8 +7,7 @@ import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 import TrackLogo from './tracks/[slug]/TrackLogo'
 
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
+export const revalidate = 3600
 export const runtime = 'nodejs'
 
 const featuredSpecialEvents = [
@@ -81,19 +80,19 @@ export default async function Home() {
       .not('driver_slug', 'in', '("unknown-driver","unknown")')
       .not('photographer_slug', 'in', '("unknown-credit","unknown")')
       .not('track_slug', 'in', '("unknown-track","unknown")')
-      .limit(500),
+      .limit(50),
 
     supabase
       .from('Tracks')
       .select('track_id, track_name, slug, city, state, first_year, last_year')
       .not('track_name', 'is', null)
-      .limit(250),
+      .limit(50),
 
     supabase
       .from('Series')
       .select('*')
       .eq('is_published', true)
-      .limit(100),
+      .limit(50),
 
     supabase
       .from('Events')
@@ -254,11 +253,11 @@ const track =
       {/* STATS */}
       <section style={statsStrip}>
         <div style={statsInner}>
-          <StatItem label="Drivers" value={stats?.drivers_count ?? 0} />
-          <StatItem label="Tracks" value={stats?.tracks_count ?? 0} />
-          <StatItem label="Race Events" value={stats?.events_count ?? 0} />
-          <StatItem label="Results" value={stats?.results_count ?? 0} />
-          <StatItem label="Photos" value={38000} isLast />
+          <StatItem label="Drivers" value={24000} />
+<StatItem label="Tracks" value={250} />
+<StatItem label="Race Events" value={150000} />
+<StatItem label="Results" value={360000} />
+<StatItem label="Photos" value={38000} isLast />
         </div>
       </section>
 
@@ -468,21 +467,21 @@ const track =
         <div style={statsLabNumbersGrid}>
           <div style={statsLabNumberCard}>
             <div style={statsLabNumberValue}>
-              {stats?.results_count?.toLocaleString() || '0'}
+              {'360,000+'}
             </div>
             <div style={statsLabNumberLabel}>Results</div>
           </div>
 
           <div style={statsLabNumberCard}>
             <div style={statsLabNumberValue}>
-              {stats?.drivers_count?.toLocaleString() || '0'}
+              {'24,000+'}
             </div>
             <div style={statsLabNumberLabel}>Drivers</div>
           </div>
 
           <div style={statsLabNumberCard}>
             <div style={statsLabNumberValue}>
-              {stats?.tracks_count?.toLocaleString() || '0'}
+              {'250+'}
             </div>
             <div style={statsLabNumberLabel}>Tracks</div>
           </div>
