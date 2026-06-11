@@ -80,19 +80,19 @@ export default async function Home() {
       .not('driver_slug', 'in', '("unknown-driver","unknown")')
       .not('photographer_slug', 'in', '("unknown-credit","unknown")')
       .not('track_slug', 'in', '("unknown-track","unknown")')
-      .limit(50),
+      .limit(500),
 
     supabase
       .from('Tracks')
       .select('track_id, track_name, slug, city, state, first_year, last_year')
       .not('track_name', 'is', null)
-      .limit(50),
+      .limit(250),
 
     supabase
       .from('Series')
       .select('*')
       .eq('is_published', true)
-      .limit(50),
+      .limit(100),
 
     supabase
       .from('Events')
@@ -253,11 +253,11 @@ const track =
       {/* STATS */}
       <section style={statsStrip}>
         <div style={statsInner}>
-          <StatItem label="Drivers" value={24000} />
-<StatItem label="Tracks" value={250} />
-<StatItem label="Race Events" value={150000} />
-<StatItem label="Results" value={360000} />
-<StatItem label="Photos" value={38000} isLast />
+          <StatItem label="Drivers" value={stats?.drivers_count ?? 0} />
+          <StatItem label="Tracks" value={stats?.tracks_count ?? 0} />
+          <StatItem label="Race Events" value={stats?.events_count ?? 0} />
+          <StatItem label="Results" value={stats?.results_count ?? 0} />
+          <StatItem label="Photos" value={38000} isLast />
         </div>
       </section>
 
@@ -286,12 +286,9 @@ const track =
         Midwest racing history alive for future generations.
       </p>
 
-      <a
-  href="mailto:info@uppermidwestautoracingmuseum.org?subject=Upper%20Midwest%20Auto%20Racing%20Museum%20Submission"
-  style={supportButton}
->
-  Submit Information
-</a>
+      <Link href="/contact" style={supportButton}>
+        Submit Information
+      </Link>
     </div>
   </div>
 </section>
@@ -467,21 +464,21 @@ const track =
         <div style={statsLabNumbersGrid}>
           <div style={statsLabNumberCard}>
             <div style={statsLabNumberValue}>
-              {'360,000+'}
+              {stats?.results_count?.toLocaleString() || '0'}
             </div>
             <div style={statsLabNumberLabel}>Results</div>
           </div>
 
           <div style={statsLabNumberCard}>
             <div style={statsLabNumberValue}>
-              {'24,000+'}
+              {stats?.drivers_count?.toLocaleString() || '0'}
             </div>
             <div style={statsLabNumberLabel}>Drivers</div>
           </div>
 
           <div style={statsLabNumberCard}>
             <div style={statsLabNumberValue}>
-              {'250+'}
+              {stats?.tracks_count?.toLocaleString() || '0'}
             </div>
             <div style={statsLabNumberLabel}>Tracks</div>
           </div>
@@ -956,12 +953,9 @@ spotlightPhoto.year !== 'unknown-year'
 </div>
 
         <div style={{ marginTop: '14px' }}>
-          <a
-  href="mailto:info@uppermidwestautoracingmuseum.org?subject=Upper%20Midwest%20Auto%20Racing%20Museum%20Submission"
-  style={supportButton}
->
-  Submit Information
-</a>
+          <Link href="/contact" style={panelButtonLink}>
+            Submit Information
+          </Link>
         </div>
       </div>
     </div>
