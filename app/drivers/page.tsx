@@ -27,14 +27,13 @@ export default async function DriversPage({
       .limit(1000)
 
     if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
-   // Letter filtering happens after last-name sorting below.
-// Do not filter in Supabase because last_initial may not exist on the view.
+    if (letter) supabaseQuery = supabaseQuery.eq('last_initial', letter)
 
     const { data: driversData, error: fetchError } = await supabaseQuery
     if (fetchError) throw fetchError
     drivers = driversData || []
-  } catch (e) {
-    console.error('Driver fetch error:', e)
+  } catch (e: any) {
+    console.error('Driver fetch error:', JSON.stringify(e, null, 2))
     error = true
   }
 
@@ -235,39 +234,267 @@ function getCreditLabel(type: string | null) {
   return type && ['post', 'program', 'flyer', 'photo'].includes(type) ? type.charAt(0).toUpperCase() + type.slice(1) : 'Credit'
 }
 
-// PREMIUM BRAND PLATFORM VISUAL SYSTEM - DEEP MATTE EDITIONS
-const pageStyle: CSSProperties = { backgroundColor: '#f8f9fa', minHeight: '100vh', paddingBottom: '5rem' }
-const heroSection: CSSProperties = { backgroundColor: '#111111', color: '#ffffff', padding: '4.5rem 2rem', borderBottom: '4px solid #cf2e2e' }
-const heroSplit: CSSProperties = { maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }
-const heroLeft: CSSProperties = { display: 'flex', flexDirection: 'column' }
-const eyebrow: CSSProperties = { color: '#cf2e2e', textTransform: 'uppercase', fontWeight: 'bold', letterSpacing: '1.5px', marginBottom: '0.75rem', fontSize: '0.85rem' }
-const pageTitle: CSSProperties = { fontSize: '3.25rem', margin: '0 0 1rem 0', fontFamily: 'Georgia, serif', fontWeight: 'bold', letterSpacing: '-0.5px' }
-const pageIntro: CSSProperties = { fontSize: '1.15rem', color: '#aaaaaa', margin: '0 0 2.25rem 0', lineHeight: '1.6' }
-const searchForm: CSSProperties = { display: 'flex', gap: '0.5rem', marginBottom: '2rem', maxWidth: '450px' }
-const searchInput: CSSProperties = { flex: 1, padding: '0.85rem 1.25rem', fontSize: '1rem', border: '1px solid #333', backgroundColor: '#222', color: '#fff', borderRadius: '6px', outline: 'none' }
-const searchButton: CSSProperties = { padding: '0.85rem 1.75rem', backgroundColor: '#cf2e2e', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', transition: 'background-color 0.2s' }
-const alphabetBar: CSSProperties = { display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1.75rem', maxWidth: '500px' }
-const letterLink: CSSProperties = { textDecoration: 'none', padding: '0.35rem 0.5rem', fontSize: '0.95rem', transition: 'color 0.2s' }
-const resultsLine: CSSProperties = { color: '#666', fontSize: '0.9rem', marginTop: '0.5rem' }
-const heroGallery: CSSProperties = { position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)', backgroundColor: '#222', height: '380px', width: '100%' }
-const heroGalleryPhoto: CSSProperties = { width: '100%', height: '100%', objectFit: 'cover' }
-const heroGalleryCaption: CSSProperties = { position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1.25rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.9))', color: '#fff', fontSize: '0.85rem', letterSpacing: '0.5px' }
-const heroGalleryPlaceholder: CSSProperties = { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#444', fontStyle: 'italic', width: '100%' }
-const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '3.5rem auto 0 auto', padding: '0 2rem' }
-const grid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '2.5rem' }
-const cardLink: CSSProperties = { textDecoration: 'none', color: 'inherit' }
-const card: CSSProperties = { backgroundColor: '#ffffff', borderRadius: '12px', border: '1px solid #e9ecef', overflow: 'hidden', transition: 'transform 0.2s ease, box-shadow 0.2s ease', height: '100%', display: 'flex', flexDirection: 'column', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }
-const cardInner: CSSProperties = { padding: '1.5rem', display: 'flex', flexDirection: 'column', flex: 1 }
-const cardImageWrapper: CSSProperties = { margin: '-1.5rem -1.5rem 1.25rem -1.5rem', position: 'relative' }
-const cardPhoto: CSSProperties = { width: '100%', height: '220px', objectFit: 'cover' }
-const cardPhotoCaption: CSSProperties = { position: 'absolute', bottom: 0, left: 0, right: 0, padding: '0.5rem 1rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.85))', color: '#eee', fontSize: '0.75rem', fontStyle: 'italic' }
-const driverSignaturePlaceholder: CSSProperties = { height: '220px', backgroundColor: '#f1f3f5', borderRadius: '8px', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '1px dashed #dee2e6', margin: '-1.5rem -1.5rem 1.25rem -1.5rem' }
-const driverSignatureName: CSSProperties = { fontFamily: 'Georgia, serif', fontSize: '1.4rem', color: '#495057', opacity: 0.5, textAlign: 'center', padding: '0 1.5rem', fontWeight: 'bold' }
-const driverName: CSSProperties = { fontSize: '1.45rem', margin: '0.25rem 0 0.35rem 0', color: '#111111', fontFamily: 'Georgia, serif', fontWeight: 'bold' }
-const metaLine: CSSProperties = { fontSize: '0.9rem', color: '#6c757d', margin: '0 0 1.5rem 0', letterSpacing: '0.2px' }
-const statTable: CSSProperties = { backgroundColor: '#f8f9fa', borderRadius: '8px', padding: '1rem', marginBottom: '1.5rem', marginTop: 'auto', border: '1px solid #f1f3f5' }
-const statRow: CSSProperties = { display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.85rem', padding: '0.5rem 0', borderBottom: '1px solid #f1f3f5', color: '#343a40' }
-const statBadge: CSSProperties = { backgroundColor: '#e9ecef', padding: '0.15rem 0.5rem', borderRadius: '4px', color: '#111', fontSize: '0.8rem', fontFamily: 'monospace' }
-const cardButton: CSSProperties = { textAlign: 'center', padding: '0.75rem', backgroundColor: '#111', color: '#fff', borderRadius: '6px', fontWeight: 'bold', fontSize: '0.9rem', transition: 'background-color 0.2s' }
-const errorBox: CSSProperties = { padding: '2.5rem', backgroundColor: '#fff5f5', color: '#c92a2a', borderRadius: '8px', textAlign: 'center', fontWeight: 'bold', border: '1px solid #ffe3e3' }
-const emptyBox: CSSProperties = { padding: '5rem', textAlign: 'center', color: '#6c757d', backgroundColor: '#ffffff', borderRadius: '12px', border: '1px solid #dee2e6' }
+// UPPER MIDWEST AUTO RACING MUSEUM VISUAL SYSTEM
+
+const pageStyle: CSSProperties = {
+  background: '#eadfc7',
+  minHeight: '100vh',
+  paddingBottom: '60px',
+  color: '#2f2417',
+}
+
+const heroSection: CSSProperties = {
+  background:
+    'linear-gradient(to bottom, rgba(231,217,191,0.96), rgba(234,223,199,0.98))',
+  borderBottom: '2px solid #b29364',
+  padding: '42px 20px 34px',
+}
+
+const heroSplit: CSSProperties = {
+  maxWidth: '1280px',
+  margin: '0 auto',
+  display: 'grid',
+  gridTemplateColumns: '1.15fr 0.85fr',
+  gap: '36px',
+  alignItems: 'center',
+}
+
+const heroLeft: CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column',
+}
+
+const eyebrow: CSSProperties = {
+  color: '#7a5827',
+  textTransform: 'uppercase',
+  letterSpacing: '1px',
+  fontSize: '15px',
+  marginBottom: '10px',
+}
+
+const pageTitle: CSSProperties = {
+  fontSize: '64px',
+  margin: '0 0 14px',
+  color: '#3d2b16',
+  lineHeight: 1,
+  fontFamily: 'Georgia, serif',
+}
+
+const pageIntro: CSSProperties = {
+  fontSize: '21px',
+  lineHeight: 1.8,
+  color: '#4b351d',
+  maxWidth: '760px',
+  margin: '0 0 28px',
+}
+
+const searchForm: CSSProperties = {
+  display: 'flex',
+  gap: '10px',
+  marginBottom: '24px',
+  maxWidth: '520px',
+}
+
+const searchInput: CSSProperties = {
+  flex: 1,
+  padding: '14px 16px',
+  fontSize: '16px',
+  border: '1px solid #b29364',
+  background: '#f4ead7',
+  color: '#2f2417',
+  outline: 'none',
+  fontFamily: 'Georgia, serif',
+}
+
+const searchButton: CSSProperties = {
+  padding: '14px 24px',
+  background: '#6e4d21',
+  color: '#fff8ea',
+  border: '1px solid #4d3413',
+  fontWeight: 700,
+  cursor: 'pointer',
+  fontFamily: 'Georgia, serif',
+}
+
+const alphabetBar: CSSProperties = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '8px',
+  marginBottom: '18px',
+}
+
+const letterLink: CSSProperties = {
+  textDecoration: 'none',
+  color: '#7a5827',
+  padding: '4px 6px',
+  fontSize: '15px',
+}
+
+const resultsLine: CSSProperties = {
+  color: '#5a3a1b',
+  fontSize: '15px',
+}
+
+const heroGallery: CSSProperties = {
+  border: '2px solid #b29364',
+  background: '#f4ead7',
+  padding: '10px',
+  boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
+}
+
+const heroGalleryPhoto: CSSProperties = {
+  width: '100%',
+  height: '420px',
+  objectFit: 'cover',
+  display: 'block',
+  border: '1px solid #a78654',
+}
+
+const heroGalleryCaption: CSSProperties = {
+  marginTop: '8px',
+  textAlign: 'center',
+  fontSize: '14px',
+  color: '#5a3a1b',
+}
+
+const heroGalleryPlaceholder: CSSProperties = {
+  height: '420px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  background: '#d8c39d',
+  color: '#5a3a1b',
+  fontSize: '24px',
+  border: '1px solid #a78654',
+}
+
+const contentWrap: CSSProperties = {
+  maxWidth: '1280px',
+  margin: '34px auto 0',
+  padding: '0 20px',
+}
+
+const grid: CSSProperties = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+  gap: '24px',
+}
+
+const cardLink: CSSProperties = {
+  textDecoration: 'none',
+  color: 'inherit',
+}
+
+const card: CSSProperties = {
+  background: '#f1e5ce',
+  border: '1px solid #c2a97d',
+  transition: 'all 0.2s ease',
+  height: '100%',
+}
+
+const cardInner: CSSProperties = {
+  padding: '12px',
+  display: 'flex',
+  flexDirection: 'column',
+  height: '100%',
+}
+
+const cardImageWrapper: CSSProperties = {
+  marginBottom: '12px',
+}
+
+const cardPhoto: CSSProperties = {
+  width: '100%',
+  aspectRatio: '4 / 3',
+  objectFit: 'cover',
+  display: 'block',
+  border: '1px solid #b29364',
+  background: '#efe7d6',
+}
+
+const cardPhotoCaption: CSSProperties = {
+  marginTop: '6px',
+  fontSize: '12px',
+  color: '#6b4a22',
+  lineHeight: 1.5,
+}
+
+const driverSignaturePlaceholder: CSSProperties = {
+  aspectRatio: '4 / 3',
+  background: '#ddc8a2',
+  border: '1px dashed #a78654',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginBottom: '12px',
+}
+
+const driverSignatureName: CSSProperties = {
+  fontSize: '28px',
+  color: '#7a5827',
+  fontFamily: 'Georgia, serif',
+  textAlign: 'center',
+  padding: '12px',
+}
+
+const driverName: CSSProperties = {
+  fontSize: '32px',
+  margin: '0 0 8px',
+  color: '#3d2b16',
+  fontFamily: 'Georgia, serif',
+  lineHeight: 1.1,
+}
+
+const metaLine: CSSProperties = {
+  fontSize: '15px',
+  color: '#5a3a1b',
+  margin: '0 0 16px',
+}
+
+const statTable: CSSProperties = {
+  background: '#eadfc7',
+  border: '1px solid #ccb48a',
+  marginTop: 'auto',
+}
+
+const statRow: CSSProperties = {
+  display: 'flex',
+  justifyContent: 'space-between',
+  gap: '12px',
+  padding: '10px 12px',
+  borderBottom: '1px solid #ccb48a',
+  fontSize: '14px',
+  color: '#4b351d',
+}
+
+const statBadge: CSSProperties = {
+  color: '#3d2b16',
+  fontWeight: 700,
+}
+
+const cardButton: CSSProperties = {
+  marginTop: '14px',
+  background: '#6e4d21',
+  color: '#fff8ea',
+  padding: '12px',
+  textAlign: 'center',
+  border: '1px solid #4d3413',
+  fontWeight: 700,
+}
+
+const errorBox: CSSProperties = {
+  padding: '30px',
+  background: '#f1e5ce',
+  border: '1px solid #b29364',
+  color: '#7a1f1f',
+  textAlign: 'center',
+  fontWeight: 700,
+}
+
+const emptyBox: CSSProperties = {
+  padding: '50px',
+  background: '#f1e5ce',
+  border: '1px solid #b29364',
+  textAlign: 'center',
+  color: '#5a3a1b',
+}
