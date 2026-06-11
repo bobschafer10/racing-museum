@@ -916,14 +916,41 @@ spotlightPhoto.year !== 'unknown-year'
         <div style={museumHeader}>Contact / Follow</div>
 
         <div style={museumText}>
-          <div><strong>Email:</strong> museum@email.com</div>
-          <div><strong>Facebook:</strong> Upper Midwest Auto Racing Museum</div>
+  <div>
+    <strong>Email:</strong>{' '}
+    <a
+      href="mailto:info@uppermidwestautoracingmuseum.org"
+      style={{
+        color: '#5a3b1c',
+        fontWeight: 600,
+        textDecoration: 'none',
+      }}
+    >
+      info@uppermidwestautoracingmuseum.org
+    </a>
+  </div>
 
-          <p style={{ marginTop: '12px' }}>
-            Have photos, programs, newspapers, or race results to share?
-            Help keep Upper Midwest racing history alive.
-          </p>
-        </div>
+  <div style={{ marginTop: '6px' }}>
+    <strong>Facebook:</strong>{' '}
+    <a
+      href="https://www.facebook.com/uppermidwestautoracingmuseum"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        color: '#5a3b1c',
+        fontWeight: 600,
+        textDecoration: 'none',
+      }}
+    >
+      Upper Midwest Auto Racing Museum
+    </a>
+  </div>
+
+  <p style={{ marginTop: '12px' }}>
+    Have photos, programs, newspapers, or race results to share?
+    Help keep Upper Midwest racing history alive.
+  </p>
+</div>
 
         <div style={{ marginTop: '14px' }}>
           <Link href="/contact" style={panelButtonLink}>
