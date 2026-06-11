@@ -956,9 +956,12 @@ spotlightPhoto.year !== 'unknown-year'
 </div>
 
         <div style={{ marginTop: '14px' }}>
-          <Link href="/contact" style={panelButtonLink}>
-            Submit Information
-          </Link>
+          <a
+  href="mailto:info@uppermidwestautoracingmuseum.org?subject=Upper%20Midwest%20Auto%20Racing%20Museum%20Submission"
+  style={supportButton}
+>
+  Submit Information
+</a>
         </div>
       </div>
     </div>
