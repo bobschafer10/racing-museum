@@ -3,6 +3,19 @@ import { notFound } from "next/navigation"
 import type { CSSProperties } from "react"
 import { supabase } from "@/lib/supabase"
 
+function getPhotoUrl(photo: any) {
+  if (!photo?.file_name) return ""
+
+  const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+
+  const rawTrackSlug = photo.track_slug || photo.file_name.split("_")[0]
+  const trackSlug = rawTrackSlug.replace(/-(wi|il|mn|mi)$/i, "")
+
+  const year = photo.year || photo.file_name.split("_")[1] || "unknown-year"
+
+  return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
+}
+
 export default async function TrackPhotosPage({
   params,
 }: {
@@ -69,9 +82,7 @@ export default async function TrackPhotosPage({
             {[track.city, track.state].filter(Boolean).join(", ") || "Location unknown"}
           </p>
 
-          <p style={introText}>
-            Full photo archive connected to this racing venue.
-          </p>
+          <p style={introText}>Full photo archive connected to this racing venue.</p>
 
           <div style={{ marginTop: "14px" }}>
             <Link href={`/tracks/${slug}`} style={backButton}>
@@ -94,31 +105,28 @@ export default async function TrackPhotosPage({
 
             <div style={photoGrid}>
               {photos.map((photo) => {
-                const driverName =
-                  formatSlugName(photo.driver_slug) || "Unknown Driver"
+                const driverName = formatSlugName(photo.driver_slug) || "Unknown Driver"
 
                 const hasDriver =
                   !!photo.driver_slug &&
                   photo.driver_slug !== "unknown-driver" &&
                   photo.driver_slug !== "unknown"
 
-                const driverHref = hasDriver
-                  ? `/drivers/${photo.driver_slug}`
-                  : null
+                const driverHref = hasDriver ? `/drivers/${photo.driver_slug}` : null
 
                 return (
                   <div key={photo.photo_id} style={photoCard}>
                     {driverHref ? (
                       <Link href={driverHref} style={{ display: "block" }}>
                         <img
-                          src={`/photos/${photo.file_name}`}
+                          src={getPhotoUrl(photo)}
                           alt={driverName}
                           style={{ ...photoImage, cursor: "pointer" }}
                         />
                       </Link>
                     ) : (
                       <img
-                        src={`/photos/${photo.file_name}`}
+                        src={getPhotoUrl(photo)}
                         alt={driverName}
                         style={photoImage}
                       />
