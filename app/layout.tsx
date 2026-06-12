@@ -73,20 +73,20 @@ const navInner: React.CSSProperties = {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  gap: '16px',
-  flexWrap: 'wrap',
+  gap: '24px',
+  flexWrap: 'nowrap',
 }
 
 const navTagline: React.CSSProperties = {
   color: '#f0dfbf',
-  fontSize: 'clamp(13px, 2vw, 25px)',
+  fontSize: '25px',
   fontWeight: 600,
   lineHeight: 1.15,
-  flex: '1 1 360px',
-  minWidth: 0,
-  whiteSpace: 'nowrap',
+  flex: '0 1 820px',
+  minWidth: '320px',
+  maxWidth: '820px',
+  whiteSpace: 'normal',
   overflow: 'hidden',
-  textOverflow: 'ellipsis',
   textShadow: '0 1px 2px rgba(0,0,0,0.45)',
   letterSpacing: '0.01em',
 }
