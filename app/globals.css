@@ -341,3 +341,32 @@ img {
     overflow: visible !important;
   }
 }
+
+@media (max-width: 768px) {
+  a,
+  p,
+  li,
+  div {
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  [style*="minHeight: 360px"],
+  [style*="min-height: 360px"] {
+    min-height: auto !important;
+  }
+
+  [style*="padding: 18px"] {
+    padding: 14px !important;
+  }
+
+  [style*="font-size: 24px"],
+  [style*="font-size: 28px"],
+  [style*="font-size: 34px"] {
+    font-size: 22px !important;
+  }
+
+  [style*="display: flex"] {
+    min-width: 0 !important;
+  }
+}
