@@ -73,19 +73,20 @@ const navInner: React.CSSProperties = {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  gap: '30px',
+  gap: '16px',
+  flexWrap: 'wrap',
 }
 
 const navTagline: React.CSSProperties = {
   color: '#f0dfbf',
-  fontSize: '25px',
+  fontSize: 'clamp(13px, 2vw, 25px)',
   fontWeight: 600,
   lineHeight: 1.15,
-  flex: 1,
+  flex: '1 1 360px',
   minWidth: 0,
-  whiteSpace: 'nowrap',
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
+  whiteSpace: 'normal',
+  overflow: 'visible',
+  textOverflow: 'clip',
   textShadow: '0 1px 2px rgba(0,0,0,0.45)',
   letterSpacing: '0.01em',
 }
@@ -99,9 +100,11 @@ const navLogo: React.CSSProperties = {
 
 const navLinks: React.CSSProperties = {
   display: 'flex',
-  gap: '22px',
-  fontSize: '15px',
-  flexShrink: 0,
+  gap: 'clamp(8px, 2vw, 22px)',
+  fontSize: 'clamp(12px, 1.8vw, 15px)',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+  flex: '1 1 360px',
 }
 
 const navLink: React.CSSProperties = {
