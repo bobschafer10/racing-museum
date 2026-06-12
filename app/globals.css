@@ -22,3 +22,66 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Mobile-friendly base */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Phone screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  main,
+  section,
+  .page-wrap,
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .grid,
+  .cards,
+  .feature-grid,
+  .media-grid,
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  .hero,
+  .hero-section,
+  .feature-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
