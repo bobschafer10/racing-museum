@@ -16,7 +16,7 @@ const featuredSpecialEvents = [
     years: '1970s–2000s',
     description:
       'A signature short-track event with strong regional identity and a long place in Wisconsin racing history.',
-    image: '/media/home/special-events/red-white-blue-championship-series.jpg',
+    image: '/media/home/special-events/red-white-blue-state-championship-series.jpg',
     href: '/events',
   },
   {
