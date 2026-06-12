@@ -164,8 +164,9 @@ export default async function DriverProfilePage({
 
   const buildLogoUrl = (trackSlug: string | null | undefined) => {
     if (!trackSlug) return ''
-    return `/photos/logos/tracks/${trackSlug}.jpg`
+    return `/logos/tracks/${trackSlug}.jpg`
   }
+
 
   return (
     <main style={{ background: '#eadfc7', color: '#2f2417', minHeight: '100vh', fontFamily: 'Georgia, serif', margin: 0 }}>
