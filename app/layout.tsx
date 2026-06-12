@@ -84,9 +84,9 @@ const navTagline: React.CSSProperties = {
   lineHeight: 1.15,
   flex: '1 1 360px',
   minWidth: 0,
-  whiteSpace: 'normal',
-  overflow: 'visible',
-  textOverflow: 'clip',
+  whiteSpace: 'nowrap',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
   textShadow: '0 1px 2px rgba(0,0,0,0.45)',
   letterSpacing: '0.01em',
 }

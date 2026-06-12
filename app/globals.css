@@ -290,6 +290,14 @@ img {
 }
 
 @media (max-width: 768px) {
+  body [style*="text-overflow: ellipsis"] {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+}
+
+@media (max-width: 768px) {
   header {
     width: 100% !important;
     overflow: visible !important;
