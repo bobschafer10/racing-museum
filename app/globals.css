@@ -119,3 +119,44 @@ img {
     width: 100% !important;
   }
 }
+
+@media (max-width: 768px) {
+  nav,
+  header,
+  [style*="justify-content: space-between"] {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+
+  nav a,
+  header a {
+    font-size: 14px !important;
+    padding: 8px 10px !important;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 12vw, 3.25rem) !important;
+    line-height: 1.05 !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  [style*="font-size: 64px"],
+  [style*="font-size: 52px"] {
+    font-size: clamp(2rem, 11vw, 3.25rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  [style*="height: 720px"],
+  [style*="height: 680px"],
+  [style*="height: 620px"] {
+    height: auto !important;
+    min-height: 520px !important;
+  }
+
+  [style*="padding: 80px"],
+  [style*="padding: 70px"],
+  [style*="padding: 60px"] {
+    padding: 32px 16px !important;
+  }
+}
