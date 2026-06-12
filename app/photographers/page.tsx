@@ -6,78 +6,89 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 0
 export const runtime = 'nodejs'
 
+function getPhotoUrl(photo: any) {
+  if (!photo?.file_name) return ''
+
+  const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const rawTrackSlug = photo.track_slug || photo.file_name.split('_')[0]
+  const trackSlug = rawTrackSlug.replace(/-(wi|il|mn|mi)$/i, '')
+  const year = photo.year || photo.file_name.split('_')[1] || 'unknown-year'
+
+  return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
+}
+
 export default async function PhotographersPage() {
   const { data, error } = await supabase
-  .from('photographer_directory_view')
-  .select('photographer_slug, photographer_name, total_items, photo_count, post_count')
-  .order('total_items', { ascending: false })
+    .from('photographer_directory_view')
+    .select('photographer_slug, photographer_name, total_items, photo_count, post_count')
+    .order('total_items', { ascending: false })
+    .limit(300)
 
-const { data: samplePhotos } = await supabase
-  .from('photos')
-  .select('photographer_slug, file_name, credit_type, year')
-  .neq('credit_type', 'unknown')
-  .not('photographer_slug', 'is', null)
-  .order('sequence', { ascending: true })
-  .order('year', { ascending: false, nullsFirst: false })
-  .limit(5000)
+  const { data: samplePhotos } = await supabase
+    .from('photos')
+    .select('photographer_slug, track_slug, file_name, credit_type, year')
+    .neq('credit_type', 'unknown')
+    .not('photographer_slug', 'is', null)
+    .not('file_name', 'is', null)
+    .order('year', { ascending: false, nullsFirst: false })
+    .order('sequence', { ascending: true })
+    .limit(1200)
 
-const samplePhotoMap = new Map<string, any>()
+  const samplePhotoMap = new Map<string, any>()
 
-for (const photo of samplePhotos || []) {
-  if (!photo.photographer_slug || samplePhotoMap.has(photo.photographer_slug)) continue
-  samplePhotoMap.set(photo.photographer_slug, photo)
-}
+  for (const photo of samplePhotos || []) {
+    if (!photo.photographer_slug || samplePhotoMap.has(photo.photographer_slug)) continue
+    samplePhotoMap.set(photo.photographer_slug, photo)
+  }
 
   if (error) {
     return <div style={{ padding: '40px' }}>Error loading photographers</div>
   }
 
-  // Group + count
- const photographers = (data || [])
-  .filter((p) => {
-    const slug = p.photographer_slug
+  const photographers = (data || [])
+    .filter((p) => {
+      const slug = p.photographer_slug
 
-    return (
-      slug &&
-      !slug.includes('#') &&
-      !/^\d/.test(slug) &&
-      slug.length >= 3 &&
-      ![
-        'unknown',
-        'unknown-credit',
-        'unknown-photographer',
-        'photo',
-      ].includes(slug)
-    )
-  })
-  .map((p) => ({
-  slug: p.photographer_slug,
-  name: p.photographer_name || formatSlugName(p.photographer_slug),
-  total: Number(p.total_items ?? 0),
-  photos: Number(p.photo_count ?? 0),
-  posts: Number(p.post_count ?? 0),
-  samplePhoto: samplePhotoMap.get(p.photographer_slug),
-}))
+      return (
+        slug &&
+        !slug.includes('#') &&
+        !/^\d/.test(slug) &&
+        slug.length >= 3 &&
+        ![
+          'unknown',
+          'unknown-credit',
+          'unknown-photographer',
+          'photo',
+        ].includes(slug)
+      )
+    })
+    .map((p) => ({
+      slug: p.photographer_slug,
+      name: p.photographer_name || formatSlugName(p.photographer_slug),
+      total: Number(p.total_items ?? 0),
+      photos: Number(p.photo_count ?? 0),
+      posts: Number(p.post_count ?? 0),
+      samplePhoto: samplePhotoMap.get(p.photographer_slug),
+    }))
 
-const topContributors = photographers.slice(0, 20)
+  const topContributors = photographers.slice(0, 24)
 
-const fullDirectory = [...photographers].sort((a, b) =>
-  a.name.localeCompare(b.name)
-)
-
+  const fullDirectory = [...photographers].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  )
 
   return (
     <main style={pageStyle}>
       <div style={{ ...container, position: 'relative' }}>
         <div style={titleRow}>
-  <h1 style={title}>Photographers & Sources</h1>
+          <h1 style={title}>Photographers & Sources</h1>
 
-  <img
-  src="/images/camera-accent.jpg"
-  alt="Camera"
-  style={cameraImage}
-/>
-</div>
+          <img
+            src="/images/camera-accent.jpg"
+            alt="Camera"
+            style={cameraImage}
+          />
+        </div>
 
         <p style={subtitle}>
           Historic racing images captured by photographers and contributors across the Upper Midwest.
@@ -85,82 +96,53 @@ const fullDirectory = [...photographers].sort((a, b) =>
 
         <h2 style={sectionTitle}>Top Contributors</h2>
 
-<div style={grid}>
-  {topContributors.map((p) => (
-    <div key={p.slug} style={card}>
-      <div style={cardInner}>
-        <div style={contributorRow}>
-  {p.samplePhoto ? (
-    <img
-      src={`/photos/${p.samplePhoto.file_name}`}
-      alt={p.name}
-      style={contributorThumb}
-    />
-  ) : (
-    <div style={contributorThumbFallback}>No Image</div>
-  )}
+        <div style={grid}>
+          {topContributors.map((p) => (
+            <div key={p.slug} style={card}>
+              <div style={cardInner}>
+                <div style={contributorRow}>
+                  {p.samplePhoto ? (
+                    <img
+                      src={getPhotoUrl(p.samplePhoto)}
+                      alt={p.name}
+                      style={contributorThumb}
+                    />
+                  ) : (
+                    <div style={contributorThumbFallback}>No Image</div>
+                  )}
 
-  <div>
-    <div style={scriptName}>{p.name}</div>
-    <h3 style={name}>{p.name}</h3>
+                  <div>
+                    <div style={scriptName}>{p.name}</div>
+                    <h3 style={name}>{p.name}</h3>
 
-    <div style={meta}>
-      {p.total.toLocaleString()} archive items
-    </div>
+                    <div style={meta}>
+                      {p.total.toLocaleString()} archive items
+                    </div>
 
-    <div style={metaSmall}>
-      Photos: {p.photos.toLocaleString()} | Posts: {p.posts.toLocaleString()}
-    </div>
+                    <div style={metaSmall}>
+                      Photos: {p.photos.toLocaleString()} | Posts: {p.posts.toLocaleString()}
+                    </div>
 
-    <Link href={`/photos?photographer=${p.slug}`} style={button}>
-      View Collection
-    </Link>
-  </div>
-</div>
-      </div>
-    </div>
-  ))}
-</div>
+                    <Link href={`/photos?photographer=${p.slug}`} style={button}>
+                      View Collection
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
-<h2 style={sectionTitle}>Full Photographers & Sources Directory</h2>
+        <h2 style={sectionTitle}>Full Photographers & Sources Directory</h2>
 
-<div style={grid}>
-  {fullDirectory.map((p) => (
-    <div key={p.slug} style={card}>
-      <div style={cardInner}>
-        <div style={contributorRow}>
-  {p.samplePhoto ? (
-    <img
-      src={`/photos/${p.samplePhoto.file_name}`}
-      alt={p.name}
-      style={contributorThumb}
-    />
-  ) : (
-    <div style={contributorThumbFallback}>No Image</div>
-  )}
-
-  <div>
-    <div style={scriptName}>{p.name}</div>
-    <h3 style={name}>{p.name}</h3>
-
-    <div style={meta}>
-      {p.total.toLocaleString()} archive items
-    </div>
-
-    <div style={metaSmall}>
-      Photos: {p.photos.toLocaleString()} | Posts: {p.posts.toLocaleString()}
-    </div>
-
-    <Link href={`/photos?photographer=${p.slug}`} style={button}>
-      View Collection
-    </Link>
-  </div>
-</div>
-      </div>
-    </div>
-  ))}
-</div>
-
+        <div style={directoryGrid}>
+          {fullDirectory.map((p) => (
+            <Link key={p.slug} href={`/photos?photographer=${p.slug}`} style={directoryItem}>
+              <strong>{p.name}</strong>
+              <span>{p.total.toLocaleString()} items</span>
+            </Link>
+          ))}
+        </div>
       </div>
     </main>
   )
@@ -194,12 +176,30 @@ const title: CSSProperties = {
 const subtitle: CSSProperties = {
   fontSize: '18px',
   marginBottom: '30px',
+  maxWidth: '760px',
 }
 
 const grid: CSSProperties = {
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
   gap: '20px',
+}
+
+const directoryGrid: CSSProperties = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gap: '12px',
+}
+
+const directoryItem: CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '4px',
+  background: '#f1e5ce',
+  border: '1px solid #c2a97d',
+  padding: '12px 14px',
+  color: '#2f2417',
+  textDecoration: 'none',
 }
 
 const card: CSSProperties = {
@@ -248,13 +248,6 @@ const titleRow: CSSProperties = {
   alignItems: 'center',
 }
 
-const cameraIcon: CSSProperties = {
-  width: '60px',
-  height: '60px',
-  opacity: 0.8,
-  filter: 'sepia(60%) contrast(90%)',
-  transform: 'rotate(-5deg)',
-}
 const contributorThumb: CSSProperties = {
   width: '110px',
   height: '90px',
