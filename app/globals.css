@@ -316,3 +316,28 @@ img {
     white-space: nowrap !important;
   }
 }
+
+@media (max-width: 768px) {
+  body > div:first-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  body > div:first-child a {
+    font-size: 11px !important;
+    padding: 4px 5px !important;
+    white-space: nowrap !important;
+  }
+
+  body > div:first-child > div {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    height: auto !important;
+    min-height: 46px !important;
+    padding: 8px 4px !important;
+    overflow: visible !important;
+  }
+}
