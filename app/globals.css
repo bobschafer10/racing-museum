@@ -250,3 +250,21 @@ img {
     width: 100% !important;
   }
 }
+
+@media (max-width: 768px) {
+  header > div,
+  nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+
+  nav a,
+  header a {
+    font-size: 12px !important;
+    padding: 6px 7px !important;
+  }
+}
