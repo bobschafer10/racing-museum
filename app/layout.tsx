@@ -36,7 +36,7 @@ export default function RootLayout({
 
             
   <div style={navTagline}>
-  With every click, a new door opens to another piece of auto racing history.
+  Every click opens a new door to another piece of auto racing history.
 </div>
 
             <div style={navLinks}>
