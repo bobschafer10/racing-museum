@@ -85,3 +85,37 @@ img {
     overflow-x: auto;
   }
 }
+
+@media (max-width: 768px) {
+  [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  [style*="max-width: 1200px"],
+  [style*="max-width: 1280px"] {
+    max-width: 100% !important;
+  }
+
+  [style*="min-width: 320px"] {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  [style*="width: 420px"],
+  [style*="width: 240px"] {
+    width: 100% !important;
+  }
+
+  [style*="grid-template-columns: repeat"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  form {
+    flex-direction: column !important;
+  }
+
+  input,
+  button {
+    width: 100% !important;
+  }
+}

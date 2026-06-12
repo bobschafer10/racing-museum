@@ -4,6 +4,11 @@ import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+export const runtime = 'nodejs'
+export const fetchCache = 'force-no-store'
+
 export default async function DriversPage({
   searchParams,
 }: {
