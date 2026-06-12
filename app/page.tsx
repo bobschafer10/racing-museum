@@ -16,7 +16,7 @@ const featuredSpecialEvents = [
     years: '1970s–2000s',
     description:
       'A signature short-track event with strong regional identity and a long place in Wisconsin racing history.',
-    image: '/media/home/special-events/red-white-blue-state-championship-series.jpg',
+    image: '/logos/series/red-white-blue-state-championship-series.jpg',
     href: '/events',
   },
   {
@@ -25,7 +25,7 @@ const featuredSpecialEvents = [
     years: '1969–Today',
     description:
       'One of the Upper Midwest’s most recognizable annual race weekends, drawing generations of drivers and fans.',
-    image: '/media/home/special-events/oktoberfest-race-weekend.jpg',
+    image: '/logos/series/oktoberfest-race-weekend.jpg',
     href: '/events',
   },
   {
@@ -34,7 +34,7 @@ const featuredSpecialEvents = [
     years: 'Historic marquee event',
     description:
       'A major special-event name in Upper Midwest racing history, tied to championship-level competition and tradition.',
-    image: '/media/home/special-events/wissota-100.jpg',
+    image: '/logos/series/wissota-promoters-association.jpg',
     href: '/events',
   },
 ]
