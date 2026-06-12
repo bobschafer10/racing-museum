@@ -1,5 +1,4 @@
-import fs from 'node:fs'
-import path from 'node:path'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
@@ -47,12 +46,6 @@ function getFeaturedSpecialEvent() {
   const dayOfYear = Math.floor(diff / 86400000)
 
   return featuredSpecialEvents[dayOfYear % featuredSpecialEvents.length]
-}
-
-function publicFileExists(publicPath: string) {
-  const cleanPath = publicPath.startsWith('/') ? publicPath.slice(1) : publicPath
-  const fullPath = path.join(process.cwd(), 'public', cleanPath)
-  return fs.existsSync(fullPath)
 }
 
 function photoStorageUrl(photo: any) {
@@ -165,7 +158,7 @@ const track =
       : null
 
   const featuredSpecialEvent = getFeaturedSpecialEvent()
-  const featuredSpecialEventHasImage = publicFileExists(featuredSpecialEvent.image)
+  const featuredSpecialEventHasImage = true
 
   const randomizedPhotoPool = [...(photoPool || [])].sort(
     () => Math.random() - 0.5

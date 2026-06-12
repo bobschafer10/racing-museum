@@ -4,6 +4,14 @@ import type { CSSProperties } from "react"
 import { supabase } from "@/lib/supabase"
 import { getRacePrograms } from "@/lib/race-programs"
 
+function getPhotoUrl(fileName?: string | null) {
+  if (!fileName) return ''
+
+  const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+
+  return `${baseUrl}/storage/v1/object/public/media/photos/${fileName}`
+}
+
 export default async function TrackProfilePage({
   params,
 }: {
@@ -298,10 +306,10 @@ archiveQuality?.coverage_status
             ) : (
               <div>
                 <img
-                  src={`/photos/${heroPhotoItem.file_name}`}
-                  alt={track.track_name}
-                  style={heroPhoto}
-                />
+  src={getPhotoUrl(heroPhotoItem.file_name)}
+  alt={track.track_name}
+  style={heroPhoto}
+/>
 
                 <div style={heroCaption}>
                   {[
@@ -439,17 +447,17 @@ archiveQuality?.coverage_status
                     {driverHref ? (
                       <Link href={driverHref} style={{ display: "block" }}>
                         <img
-                          src={`/photos/${photo.file_name}`}
-                          alt={driverName}
-                          style={{ ...photoImage, cursor: "pointer" }}
-                        />
+  src={getPhotoUrl(photo.file_name)}
+  alt={driverName}
+  style={{ ...photoImage, cursor: "pointer" }}
+/>
                       </Link>
                     ) : (
                       <img
-                        src={`/photos/${photo.file_name}`}
-                        alt={driverName}
-                        style={photoImage}
-                      />
+  src={getPhotoUrl(photo.file_name)}
+  alt={driverName}
+  style={photoImage}
+/>
                     )}
 
                     <div style={photoMeta}>
