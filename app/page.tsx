@@ -1580,14 +1580,15 @@ const heroSubtitle: CSSProperties = {
   lineHeight: 1.5,
   maxWidth: '760px',
   margin: '0 auto 10px',
-  color: '#f3e4c7',
-  textShadow: '0 2px 5px rgba(0,0,0,0.5)',
+  color: '#9b6b2d',
+  textShadow: '0 1px 3px rgba(0,0,0,0.15)',
 }
+
 const heroRegion: CSSProperties = {
   fontSize: '25px',
   margin: '0 0 6px',
-  color: '#e7d3a8',
-  textShadow: '0 2px 5px rgba(0,0,0,0.5)',
+  color: '#a88349',
+  textShadow: '0 1px 3px rgba(0,0,0,0.12)',
 }
 
 const statsStrip: CSSProperties = {
