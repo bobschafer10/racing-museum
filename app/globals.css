@@ -569,7 +569,6 @@ img {
   .track-result-race-card > div:last-child {
     grid-template-columns: 1fr !important;
   }
-}
 
 .track-logo-wrap-mobile img {
   max-width: 220px;
