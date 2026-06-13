@@ -217,7 +217,7 @@ const heroInner: CSSProperties = {
 }
 
 const featureLogoWrap: CSSProperties = {
-  height: '300px',
+  height: '120px',
   width: '100%',
   display: 'flex',
   alignItems: 'center',
@@ -381,7 +381,7 @@ const trackCard: CSSProperties = {
 }
 
 const trackLogoWrap: CSSProperties = {
-  height: '140px',
+  height: '90px',
   width: '100%',
   display: 'flex',
   alignItems: 'center',
@@ -390,7 +390,7 @@ const trackLogoWrap: CSSProperties = {
   border: '1px solid #b29364',
   marginBottom: '12px',
   overflow: 'hidden',
-  padding: '8px',
+  padding: '12px',
 }
 
 const trackNameStyle: CSSProperties = {
