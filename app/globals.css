@@ -734,3 +734,34 @@ img {
     box-sizing: border-box !important;
   }
 }
+
+@keyframes museumTickerScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.museum-ticker-track {
+  animation: museumTickerScroll 38s linear infinite;
+}
+
+.museum-ticker:hover .museum-ticker-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .museum-ticker {
+    grid-template-columns: 1fr !important;
+    margin: 14px 10px 24px !important;
+    padding: 15px !important;
+    gap: 12px !important;
+  }
+
+  .museum-ticker-track {
+    animation-duration: 48s !important;
+  }
+}

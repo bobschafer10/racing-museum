@@ -256,16 +256,20 @@ const track =
 
 
 {/* MUSEUM DESK RIBBON */}
-<section style={museumDeskRibbon} className="museum-desk-ribbon">
-  <div style={museumDeskRibbonLabel}>Museum Desk</div>
+<section style={museumTicker} className="museum-ticker">
+  <div style={museumTickerLabel}>Museum Desk</div>
 
-  <div style={museumDeskRibbonItems} className="museum-desk-ribbon-items">
-    {recentMuseumAdditions.slice(0, 4).map((item) => (
-      <span key={item}>• {item}</span>
-    ))}
+  <div style={museumTickerWindow}>
+    <div style={museumTickerTrack} className="museum-ticker-track">
+      {[...recentMuseumAdditions, ...recentMuseumAdditions].map((item, index) => (
+        <span key={`${item}-${index}`} style={museumTickerItem}>
+          {item}
+        </span>
+      ))}
+    </div>
   </div>
 
-  <Link href="#museum-desk" style={museumDeskRibbonButton}>
+  <Link href="/photos" style={museumTickerButton}>
     View Latest Additions
   </Link>
 </section>
@@ -387,7 +391,7 @@ const track =
           href="/stats/feature-winners"
           style={statsLabButton}
         >
-          Open Feature Win Archive →
+          Open the Stat Builder →
         </Link>
       </div>
     </div>
@@ -1382,6 +1386,14 @@ function MediaTile({
 )
 
   if (href) {
+
+const recentMuseumAdditions = [
+  '• 1,200+ new race results added',
+  '• Midwest Racing News 1960 archive expanded',
+  '• New Beaver Dam Raceway photos uploaded',
+  '• Additional driver profile records added',
+  '• Race program collection updates',
+]
     return (
       <Link
         href={href}
@@ -2739,4 +2751,58 @@ const featureGrid: CSSProperties = {
   gridTemplateColumns: 'repeat(3, minmax(260px, 1fr))',
   gap: '18px',
   alignItems: 'stretch',
+}
+
+const museumTicker: CSSProperties = {
+  maxWidth: '1320px',
+  margin: '22px auto 30px',
+  display: 'grid',
+  gridTemplateColumns: '190px 1fr auto',
+  alignItems: 'center',
+  gap: '18px',
+  background: '#3a2a1a',
+  color: '#f6e8c8',
+  border: '3px solid #8a6938',
+  boxShadow: '6px 6px 0 rgba(58,42,26,.18)',
+  padding: '16px 20px',
+  overflow: 'hidden',
+}
+
+const museumTickerLabel: CSSProperties = {
+  fontSize: '17px',
+  fontWeight: 900,
+  letterSpacing: '.22em',
+  textTransform: 'uppercase',
+  color: '#f3d79d',
+  whiteSpace: 'nowrap',
+}
+
+const museumTickerWindow: CSSProperties = {
+  overflow: 'hidden',
+  position: 'relative',
+  minWidth: 0,
+}
+
+const museumTickerTrack: CSSProperties = {
+  display: 'flex',
+  width: 'max-content',
+  gap: '34px',
+  whiteSpace: 'nowrap',
+}
+
+const museumTickerItem: CSSProperties = {
+  fontSize: '17px',
+  fontWeight: 700,
+  color: '#fff4dc',
+}
+
+const museumTickerButton: CSSProperties = {
+  background: '#f1e1bd',
+  color: '#2f2113',
+  padding: '13px 18px',
+  textDecoration: 'none',
+  fontWeight: 900,
+  fontSize: '15px',
+  border: '2px solid #b29364',
+  whiteSpace: 'nowrap',
 }
