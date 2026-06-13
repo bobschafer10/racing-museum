@@ -1400,7 +1400,8 @@ const heroBackground: CSSProperties = {
 const heroOverlay: CSSProperties = {
   position: 'absolute',
   inset: 0,
-  background: 'rgba(86, 56, 25, 0.10)',
+  background:
+  'linear-gradient(to bottom, rgba(0,0,0,0.42), rgba(0,0,0,0.10), rgba(0,0,0,0.48))',
 }
 
 const heroGrain: CSSProperties = {
@@ -1433,9 +1434,9 @@ const heroLogo: CSSProperties = {
 const heroTitle: CSSProperties = {
   fontSize: '64px',
   fontWeight: 700,
-  lineHeight: 1.1,
-  color: '#8a6230',
-  textShadow: '0 2px 6px rgba(255,255,255,0.18)',
+  lineHeight: 1.08,
+  color: '#f2e4c5',
+  textShadow: '0 4px 18px rgba(0,0,0,0.72)',
 }
 
 const spotlightPanel: CSSProperties = {
@@ -1577,18 +1578,18 @@ const specialEventFallbackTitle: CSSProperties = {
 
 const heroSubtitle: CSSProperties = {
   fontSize: '40px',
-  lineHeight: 1.5,
+  lineHeight: 1.45,
   maxWidth: '760px',
   margin: '0 auto 10px',
-  color: '#9b6b2d',
-  textShadow: '0 1px 3px rgba(0,0,0,0.15)',
+  color: '#e8d3a6',
+  textShadow: '0 3px 10px rgba(0,0,0,0.68)',
 }
 
 const heroRegion: CSSProperties = {
   fontSize: '25px',
   margin: '0 0 6px',
-  color: '#a88349',
-  textShadow: '0 1px 3px rgba(0,0,0,0.12)',
+  color: 'rgba(242,228,197,0.88)',
+  textShadow: '0 2px 8px rgba(0,0,0,0.62)',
 }
 
 const statsStrip: CSSProperties = {
