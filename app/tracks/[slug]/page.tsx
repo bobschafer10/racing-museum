@@ -1,3 +1,5 @@
+// app/track/[slug]/page.tsx
+
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { CSSProperties } from "react"
@@ -5,22 +7,12 @@ import { supabase } from "@/lib/supabase"
 import { getRacePrograms } from "@/lib/race-programs"
 
 function getPhotoUrl(photo: any) {
-  if (!photo?.file_name) return ''
+  if (!photo?.file_name) return ""
 
   const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-
-  const rawTrackSlug =
-    photo.track_slug || photo.file_name.split('_')[0]
-
-  const trackSlug = rawTrackSlug.replace(
-    /-(wi|il|mn|mi)$/i,
-    ''
-  )
-
-  const year =
-    photo.year ||
-    photo.file_name.split('_')[1] ||
-    'unknown-year'
+  const rawTrackSlug = photo.track_slug || photo.file_name.split("_")[0]
+  const trackSlug = rawTrackSlug.replace(/-(wi|il|mn|mi)$/i, "")
+  const year = photo.year || photo.file_name.split("_")[1] || "unknown-year"
 
   return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
 }
@@ -31,7 +23,6 @@ export default async function TrackProfilePage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-
   const baseSlug = slug.replace(/-(wi|il|mn|mi)$/i, "")
   const logoPath = `/logos/tracks/${slug}.jpg`
 
@@ -41,77 +32,79 @@ export default async function TrackProfilePage({
     .eq("slug", slug)
     .maybeSingle()
 
-const { data: archiveQuality } = await supabase
-  .from("track_archive_quality_with_coverage_view")
-  .select("*")
-  .eq("track_slug", slug)
-  .maybeSingle()
+  if (!track) notFound()
 
-  const { data: photos } = await supabase
-    .from("photos")
-    .select("*")
-    .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
-    .order("year", { ascending: true, nullsFirst: false })
-    .order("sequence", { ascending: true })
+  const [
+    { data: archiveQuality },
+    { data: photos },
+    { data: winners },
+    { data: champions },
+    { data: classes },
+    { data: results },
+    { data: resultYears },
+    { count: resultsCount },
+  ] = await Promise.all([
+    supabase
+      .from("track_archive_quality_with_coverage_view")
+      .select("*")
+      .eq("track_slug", slug)
+      .maybeSingle(),
 
-  if (!track) {
-    notFound()
-  }
+    supabase
+      .from("photos")
+      .select("*")
+      .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
+      .order("year", { ascending: true, nullsFirst: false })
+      .order("sequence", { ascending: true }),
 
-  const { data: winners } = await supabase
-    .from("track_top_winners_view")
-    .select("track_slug, track_name, driver_name, driver_slug, win_count")
-    .eq("track_slug", slug)
-    .order("win_count", { ascending: false })
-    .limit(10)
+    supabase
+      .from("track_top_winners_view")
+      .select("track_slug, track_name, driver_name, driver_slug, win_count")
+      .eq("track_slug", slug)
+      .order("win_count", { ascending: false })
+      .limit(10),
 
-  const { data: champions } = await supabase
-    .from("track_top_champions_view")
-    .select("track_slug, track_name, driver_name, driver_slug, title_count")
-    .eq("track_slug", slug)
-    .order("title_count", { ascending: false })
-    .limit(10)
+    supabase
+      .from("track_top_champions_view")
+      .select("track_slug, track_name, driver_name, driver_slug, title_count")
+      .eq("track_slug", slug)
+      .order("title_count", { ascending: false })
+      .limit(10),
 
-  const { data: classes } = await supabase
-    .from("track_top_classes_view")
-    .select("*")
-    .eq("track_slug", slug)
-    .limit(10)
+    supabase
+      .from("track_top_classes_view")
+      .select("*")
+      .eq("track_slug", slug)
+      .limit(10),
 
-  const sortedClasses = [...(classes || [])].sort((a: any, b: any) => {
-    return (b.race_count || 0) - (a.race_count || 0)
-  })
+    supabase
+      .from("track_recent_results_summary_view")
+      .select("*")
+      .eq("track_slug", slug)
+      .order("race_date", { ascending: true })
+      .order("class_name", { ascending: true })
+      .limit(60),
 
-  const { data: results } = await supabase
-    .from("track_recent_results_summary_view")
-    .select("*")
-    .eq("track_slug", slug)
-    .order("race_date", { ascending: true })
-    .order("class_name", { ascending: true })
-    .limit(60)
+    supabase
+      .from("track_results_by_year_view")
+      .select("result_year")
+      .eq("track_slug", slug)
+      .order("result_year", { ascending: true }),
 
-  const { data: resultYears } = await supabase
-    .from("track_results_by_year_view")
-    .select("result_year")
-    .eq("track_slug", slug)
-    .order("result_year", { ascending: true })
+    supabase
+      .from("global_results_view")
+      .select("*", { count: "exact", head: true })
+      .eq("track_slug", slug),
+  ])
 
-  const { count: resultsCount } = await supabase
-    .from("global_results_view")
-    .select("*", { count: "exact", head: true })
-    .eq("track_slug", slug)
+  const sortedClasses = [...(classes || [])].sort(
+    (a: any, b: any) => (b.race_count || 0) - (a.race_count || 0)
+  )
 
   const groupedResults = Object.values(
     (results || []).reduce((acc: Record<string, any>, r: any) => {
       const date = r.race_date || "Unknown date"
-
-      if (!acc[date]) {
-        acc[date] = {
-          date,
-          races: [],
-        }
-      }
-
+      if (!acc[date]) acc[date] = { date, races: [] }
       acc[date].races.push(r)
       return acc
     }, {})
@@ -125,22 +118,23 @@ const { data: archiveQuality } = await supabase
     .map((row: any) => row.result_year)
     .filter(Boolean)
 
+  const allPrograms = await getRacePrograms()
+
+  const relatedPrograms = allPrograms
+    .filter((program) => program.track_slug === slug)
+    .sort((a, b) => Number(a.year ?? 0) - Number(b.year ?? 0))
+
   function formatDate(dateStr: string) {
     if (!dateStr || dateStr === "Unknown date") return "Unknown date"
     const d = new Date(dateStr)
     if (Number.isNaN(d.getTime())) return dateStr
+
     return d.toLocaleDateString("en-US", {
       month: "short",
       day: "numeric",
       year: "numeric",
     })
   }
-
-  const allPrograms = await getRacePrograms()
-
-  const relatedPrograms = allPrograms
-    .filter((program) => program.track_slug === slug)
-    .sort((a, b) => Number(a.year ?? 0) - Number(b.year ?? 0))
 
   function formatSlugName(value?: string | null) {
     if (
@@ -159,11 +153,19 @@ const { data: archiveQuality } = await supabase
   }
 
   function formatPhotoYear(value?: string | number | null) {
-    if (!value || value === "unknown-year") {
-      return "Year Unknown"
-    }
-
+    if (!value || value === "unknown-year") return "Year Unknown"
     return String(value)
+  }
+
+  function displayDriver(name?: string | null, slug?: string | null) {
+    if (!name) return "-"
+    if (!slug) return name
+
+    return (
+      <Link href={`/drivers/${slug}`} style={inlineLink}>
+        {name}
+      </Link>
+    )
   }
 
   const maxProfilePhotos = 30
@@ -172,8 +174,7 @@ const { data: archiveQuality } = await supabase
   function getDayOfYear(date = new Date()) {
     const start = new Date(date.getFullYear(), 0, 0)
     const diff = date.getTime() - start.getTime()
-    const oneDay = 1000 * 60 * 60 * 24
-    return Math.floor(diff / oneDay)
+    return Math.floor(diff / (1000 * 60 * 60 * 24))
   }
 
   const profilePhotos =
@@ -182,12 +183,10 @@ const { data: archiveQuality } = await supabase
       : (() => {
           const dayIndex = getDayOfYear()
           const startIndex = (dayIndex * maxProfilePhotos) % allPhotos.length
-
           const rotated = [
             ...allPhotos.slice(startIndex),
             ...allPhotos.slice(0, startIndex),
           ]
-
           return rotated.slice(0, maxProfilePhotos)
         })()
 
@@ -196,47 +195,44 @@ const { data: archiveQuality } = await supabase
       ? profilePhotos[getDayOfYear() % profilePhotos.length]
       : null
 
-const archiveBadges = [
-  archiveQuality?.results_status
-    ? { icon: "📚", label: archiveQuality.results_status }
-    : null,
-
-  archiveQuality?.photo_status
-    ? { icon: "📷", label: archiveQuality.photo_status }
-    : null,
-
-archiveQuality?.coverage_status
-  ? { icon: "📋", label: archiveQuality.coverage_status }
-  : null,
-
-  archiveQuality?.has_recent_results
-    ? { icon: "🔥", label: "Active Track" }
-    : null,
-
-  archiveQuality?.historic_track
-    ? { icon: "🏛", label: "Historic Track" }
-    : null,
-
-  {
-    icon: "📊",
-    label: archiveQuality?.standings_status || "Standings Coming Soon",
-  },
-].filter(Boolean) as Array<{ icon: string; label: string }>
+  const archiveBadges = [
+    archiveQuality?.results_status
+      ? { icon: "📚", label: archiveQuality.results_status }
+      : null,
+    archiveQuality?.photo_status
+      ? { icon: "📷", label: archiveQuality.photo_status }
+      : null,
+    archiveQuality?.coverage_status
+      ? { icon: "📋", label: archiveQuality.coverage_status }
+      : null,
+    archiveQuality?.has_recent_results
+      ? { icon: "🔥", label: "Active Track" }
+      : null,
+    archiveQuality?.historic_track
+      ? { icon: "🏛", label: "Historic Track" }
+      : null,
+    {
+      icon: "📊",
+      label: archiveQuality?.standings_status || "Standings Coming Soon",
+    },
+  ].filter(Boolean) as Array<{ icon: string; label: string }>
 
   return (
-    <main style={pageStyle}>
+    <main style={pageStyle} className="track-profile-page">
       <section style={heroSection}>
-        <div style={heroInner}>
+        <div style={heroInner} className="track-profile-hero-inner">
           <div style={heroText}>
             <div style={eyebrow}>Track Profile</div>
 
             <div style={logoWrap}>
-  <img
-    src={logoPath}
-    alt={`${track.track_name} logo`}
-    style={logoImg}
-  />
-</div>
+              <img
+                src={logoPath}
+                alt={`${track.track_name} logo`}
+                style={logoImg}
+              />
+            </div>
+
+            <h1 style={pageTitle}>{track.track_name}</h1>
 
             <div style={locationLine}>
               {[track.city, track.state].filter(Boolean).join(", ") ||
@@ -244,63 +240,60 @@ archiveQuality?.coverage_status
             </div>
 
             {track.track_status ? (
-  <div style={statusLine}>Status: {track.track_status}</div>
-) : null}
+              <div style={statusLine}>Status: {track.track_status}</div>
+            ) : null}
 
-{archiveBadges.length > 0 ? (
-  <div style={archiveBadgesWrap}>
-    {archiveBadges.map((badge, index) => (
-      <span
-        key={`${badge.icon}-${badge.label}`}
-        style={{
-          ...archiveBadge,
-          gridColumn:
-            index < 3
-              ? "span 2"
-              : index === 3
-                ? "2 / span 2"
-                : "4 / span 2",
-        }}
-      >
-        <span>{badge.icon}</span>
-        <span>{badge.label}</span>
-      </span>
-    ))}
-  </div>
-) : null}
+            {archiveBadges.length > 0 ? (
+              <div style={archiveBadgesWrap} className="track-archive-badges">
+                {archiveBadges.map((badge) => (
+                  <span
+                    key={`${badge.icon}-${badge.label}`}
+                    style={archiveBadge}
+                  >
+                    <span>{badge.icon}</span>
+                    <span>{badge.label}</span>
+                  </span>
+                ))}
+              </div>
+            ) : null}
 
-{track.description ? (
-  <p style={introText}>{track.description}</p>
-) : (
+            {track.description ? (
+              <p style={introText}>{track.description}</p>
+            ) : (
               <p style={introText}>
-                Historic racing venue with deep regional significance. Full records and
-                archives continue to be expanded.
+                Historic racing venue with deep regional significance. Full
+                records and archives continue to be expanded.
               </p>
             )}
 
-            <div style={metaGrid}>
+            <div style={metaGrid} className="track-meta-grid">
               <div style={metaCard}>
                 <div style={metaLabel}>Surface</div>
                 <div style={metaValue}>{track.surface_type || "Unknown"}</div>
               </div>
 
               <div style={metaCard}>
-  <div style={metaLabel}>Configuration</div>
-  <div style={metaValue}>
-    {(track.configuration || "Unknown")
-      .replace(/_/g, " ")
-      .replace(/\b\w/g, (c: string) => c.toUpperCase())}
-  </div>
-</div>
+                <div style={metaLabel}>Configuration</div>
+                <div style={metaValue}>
+                  {(track.configuration || "Unknown")
+                    .replace(/_/g, " ")
+                    .replace(/\b\w/g, (c: string) => c.toUpperCase())}
+                </div>
+              </div>
 
-<div style={metaCard}>
+              <div style={metaCard}>
                 <div style={metaLabel}>Years Active</div>
                 <div style={metaValue}>
-                  {track.first_year || track.last_year || archiveQuality?.first_result_year || archiveQuality?.last_result_year
-  ? `${track.first_year || archiveQuality?.first_result_year || "?"}–${
-      track.last_year || archiveQuality?.last_result_year || "Present"
-    }`
-  : "Unknown"}
+                  {track.first_year ||
+                  track.last_year ||
+                  archiveQuality?.first_result_year ||
+                  archiveQuality?.last_result_year
+                    ? `${track.first_year || archiveQuality?.first_result_year || "?"}–${
+                        track.last_year ||
+                        archiveQuality?.last_result_year ||
+                        "Present"
+                      }`
+                    : "Unknown"}
                 </div>
               </div>
 
@@ -319,10 +312,10 @@ archiveQuality?.coverage_status
             ) : (
               <div>
                 <img
-  src={getPhotoUrl(heroPhotoItem)}
-  alt={track.track_name}
-  style={heroPhoto}
-/>
+                  src={getPhotoUrl(heroPhotoItem)}
+                  alt={track.track_name}
+                  style={heroPhoto}
+                />
 
                 <div style={heroCaption}>
                   {[
@@ -342,10 +335,8 @@ archiveQuality?.coverage_status
       </section>
 
       <section style={sectionStyle}>
-        <div style={threeColGrid}>
-          <div style={panelCard}>
-            <h2 style={panelTitle}>Top Winners</h2>
-
+        <div style={threeColGrid} className="track-three-col-grid">
+          <InfoPanel title="Top Winners">
             {winners && winners.length > 0 ? (
               <div style={listWrap}>
                 {winners.map((w: any, idx: number) => (
@@ -362,7 +353,6 @@ archiveQuality?.coverage_status
                         w.driver_name
                       )}
                     </div>
-
                     <div style={listValue}>{w.win_count}</div>
                   </div>
                 ))}
@@ -370,11 +360,9 @@ archiveQuality?.coverage_status
             ) : (
               <div style={emptyText}>No winner data available yet.</div>
             )}
-          </div>
+          </InfoPanel>
 
-          <div style={panelCard}>
-            <h2 style={panelTitle}>Top Champions</h2>
-
+          <InfoPanel title="Top Champions">
             {champions && champions.length > 0 ? (
               <div style={listWrap}>
                 {champions.map((c: any, idx: number) => (
@@ -391,7 +379,6 @@ archiveQuality?.coverage_status
                         c.driver_name
                       )}
                     </div>
-
                     <div style={listValue}>{c.title_count}</div>
                   </div>
                 ))}
@@ -399,11 +386,9 @@ archiveQuality?.coverage_status
             ) : (
               <div style={emptyText}>No championship data available yet.</div>
             )}
-          </div>
+          </InfoPanel>
 
-          <div style={panelCard}>
-            <h2 style={panelTitle}>Top Classes</h2>
-
+          <InfoPanel title="Top Classes">
             {sortedClasses.length > 0 ? (
               <div style={listWrap}>
                 {sortedClasses.map((cl: any, idx: number) => (
@@ -414,15 +399,15 @@ archiveQuality?.coverage_status
                     style={listRow}
                   >
                     <div>
-  <Link
-    href={`/tracks/${slug}/classes/${encodeURIComponent(
-      cl.class_name || cl.division_name || "Unknown Class"
-    )}`}
-    style={inlineLink}
-  >
-    {cl.class_name || cl.division_name || "Unknown Class"}
-  </Link>
-</div>
+                      <Link
+                        href={`/tracks/${slug}/classes/${encodeURIComponent(
+                          cl.class_name || cl.division_name || "Unknown Class"
+                        )}`}
+                        style={inlineLink}
+                      >
+                        {cl.class_name || cl.division_name || "Unknown Class"}
+                      </Link>
+                    </div>
                     <div style={listValue}>{cl.race_count || 0}</div>
                   </div>
                 ))}
@@ -430,7 +415,7 @@ archiveQuality?.coverage_status
             ) : (
               <div style={emptyText}>No class data available yet.</div>
             )}
-          </div>
+          </InfoPanel>
         </div>
       </section>
 
@@ -441,7 +426,7 @@ archiveQuality?.coverage_status
           <div style={emptyArchiveBox}>No photos available yet.</div>
         ) : (
           <>
-            <div style={photoGrid}>
+            <div style={photoGrid} className="track-photo-grid">
               {profilePhotos.map((photo) => {
                 const driverName =
                   formatSlugName(photo.driver_slug) || "Unknown Driver"
@@ -460,17 +445,17 @@ archiveQuality?.coverage_status
                     {driverHref ? (
                       <Link href={driverHref} style={{ display: "block" }}>
                         <img
-  src={getPhotoUrl(photo)}
-  alt={driverName}
-  style={{ ...photoImage, cursor: "pointer" }}
-/>
+                          src={getPhotoUrl(photo)}
+                          alt={driverName}
+                          style={{ ...photoImage, cursor: "pointer" }}
+                        />
                       </Link>
                     ) : (
                       <img
-  src={getPhotoUrl(photo)}
-  alt={driverName}
-  style={photoImage}
-/>
+                        src={getPhotoUrl(photo)}
+                        alt={driverName}
+                        style={photoImage}
+                      />
                     )}
 
                     <div style={photoMeta}>
@@ -513,7 +498,8 @@ archiveQuality?.coverage_status
         <h2 style={sectionTitle}>Feature Results by Year</h2>
 
         <p style={sectionIntro}>
-          Recent grouped results from this track. Full records continue to be expanded.
+          Recent grouped results from this track. Full records continue to be
+          expanded.
         </p>
 
         <div style={yearChipsWrap}>
@@ -535,44 +521,57 @@ archiveQuality?.coverage_status
                 <h3 style={resultDate}>{formatDate(day.date)}</h3>
 
                 <div style={resultList}>
-                  <div
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "180px repeat(4, 1fr)",
-                      gap: "10px",
-                      fontSize: 12,
-                      opacity: 0.6,
-                      marginBottom: 6,
-                      paddingBottom: 6,
-                      borderBottom: "1px solid rgba(0,0,0,0.2)",
-                    }}
-                  >
-                    <div></div>
-                    <div>Winner</div>
-                    <div>2nd</div>
-                    <div>3rd</div>
-                    <div>4th</div>
-                  </div>
-
                   {day.races.map((r: any, idx: number) => (
                     <div
                       key={`${r.class_name}-${r.race_date}-${idx}`}
-                      style={{
-                        display: "grid",
-                        gridTemplateColumns: "180px repeat(4, 1fr)",
-                        gap: "10px",
-                        alignItems: "center",
-                        padding: "4px 0",
-                        borderTop: "1px solid rgba(0,0,0,0.1)",
-                      }}
+                      style={resultRaceCard}
+                      className="track-result-race-card"
                     >
-                      <div style={{ fontWeight: 700 }}>{r.class_name}</div>
-                      <div style={{ fontWeight: 700 }}>
-                        {r.first_place_name || "-"}
+                      <div style={resultClassName}>
+                        {r.class_name || "Unknown Class"}
                       </div>
-                      <div>{r.second_place_name || "-"}</div>
-                      <div>{r.third_place_name || "-"}</div>
-                      <div>{r.fourth_place_name || "-"}</div>
+
+                      <div style={resultFinishGrid}>
+                        <div style={resultFinishItem}>
+                          <span style={resultFinishLabel}>Winner</span>
+                          <span style={resultFinishName}>
+                            {displayDriver(
+                              r.first_place_name,
+                              r.first_place_driver_slug
+                            )}
+                          </span>
+                        </div>
+
+                        <div style={resultFinishItem}>
+                          <span style={resultFinishLabel}>2nd</span>
+                          <span style={resultFinishName}>
+                            {displayDriver(
+                              r.second_place_name,
+                              r.second_place_driver_slug
+                            )}
+                          </span>
+                        </div>
+
+                        <div style={resultFinishItem}>
+                          <span style={resultFinishLabel}>3rd</span>
+                          <span style={resultFinishName}>
+                            {displayDriver(
+                              r.third_place_name,
+                              r.third_place_driver_slug
+                            )}
+                          </span>
+                        </div>
+
+                        <div style={resultFinishItem}>
+                          <span style={resultFinishLabel}>4th</span>
+                          <span style={resultFinishName}>
+                            {displayDriver(
+                              r.fourth_place_name,
+                              r.fourth_place_driver_slug
+                            )}
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -602,7 +601,7 @@ archiveQuality?.coverage_status
             No related race programs have been linked to this track yet.
           </div>
         ) : (
-          <div style={relatedProgramsGrid}>
+          <div style={relatedProgramsGrid} className="track-related-programs-grid">
             {relatedPrograms.map((program) => (
               <article key={program.slug} style={relatedProgramCard}>
                 <div style={relatedProgramImageWrap}>
@@ -634,6 +633,21 @@ archiveQuality?.coverage_status
         )}
       </section>
     </main>
+  )
+}
+
+function InfoPanel({
+  title,
+  children,
+}: {
+  title: string
+  children: React.ReactNode
+}) {
+  return (
+    <div style={panelCard}>
+      <h2 style={panelTitle}>{title}</h2>
+      {children}
+    </div>
   )
 }
 
@@ -670,26 +684,6 @@ const eyebrow: CSSProperties = {
   marginBottom: 10,
 }
 
-const viewAllLink: CSSProperties = {
-  display: "inline-block",
-  marginTop: "14px",
-  padding: "10px 16px",
-  borderRadius: "999px",
-  background: "#7b5c34",
-  color: "#fff8ee",
-  textDecoration: "none",
-  fontWeight: 700,
-  border: "1px solid #7b5c34",
-  boxShadow: "0 4px 12px rgba(60, 40, 20, 0.08)",
-}
-
-const pageTitle: CSSProperties = {
-  margin: "8px 0 0",
-  fontSize: "clamp(2rem, 4vw, 3.2rem)",
-  lineHeight: 1.05,
-  color: "#2f2419",
-}
-
 const logoWrap: CSSProperties = {
   marginBottom: 18,
   maxWidth: "520px",
@@ -703,31 +697,11 @@ const logoImg: CSSProperties = {
   mixBlendMode: "multiply",
 }
 
-const yearChipsWrap: CSSProperties = {
-  display: "flex",
-  flexWrap: "wrap",
-  gap: "8px",
-  marginBottom: "14px",
-}
-
-const yearChip: CSSProperties = {
-  display: "inline-block",
-  padding: "6px 12px",
-  borderRadius: "999px",
-  background: "#efe4cd",
-  color: "#6c4d22",
-  textDecoration: "none",
-  fontSize: "13px",
-  fontWeight: 700,
-  border: "1px solid rgba(115, 88, 52, 0.28)",
-}
-
-const archiveBadgesWrap: CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(6, 1fr)",
-  gap: "10px",
-  marginTop: "14px",
-  maxWidth: "760px",
+const pageTitle: CSSProperties = {
+  margin: "8px 0 0",
+  fontSize: "clamp(2rem, 4vw, 3.2rem)",
+  lineHeight: 1.05,
+  color: "#2f2419",
 }
 
 const locationLine: CSSProperties = {
@@ -735,6 +709,20 @@ const locationLine: CSSProperties = {
   fontSize: 18,
   color: "#5f4935",
   fontWeight: 600,
+}
+
+const statusLine: CSSProperties = {
+  marginTop: 8,
+  fontSize: 15,
+  color: "#755736",
+}
+
+const archiveBadgesWrap: CSSProperties = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "10px",
+  marginTop: "14px",
+  maxWidth: "760px",
 }
 
 const archiveBadge: CSSProperties = {
@@ -750,13 +738,7 @@ const archiveBadge: CSSProperties = {
   fontSize: "13px",
   fontWeight: 800,
   boxShadow: "0 3px 10px rgba(60, 40, 20, 0.06)",
-  whiteSpace: "nowrap",
-}
-
-const statusLine: CSSProperties = {
-  marginTop: 8,
-  fontSize: 15,
-  color: "#755736",
+  whiteSpace: "normal",
 }
 
 const introText: CSSProperties = {
@@ -951,6 +933,25 @@ const photoMeta: CSSProperties = {
   lineHeight: 1.5,
 }
 
+const yearChipsWrap: CSSProperties = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "8px",
+  marginBottom: "14px",
+}
+
+const yearChip: CSSProperties = {
+  display: "inline-block",
+  padding: "6px 12px",
+  borderRadius: "999px",
+  background: "#efe4cd",
+  color: "#6c4d22",
+  textDecoration: "none",
+  fontSize: "13px",
+  fontWeight: 700,
+  border: "1px solid rgba(115, 88, 52, 0.28)",
+}
+
 const resultsWrap: CSSProperties = {
   display: "grid",
   gap: 18,
@@ -975,6 +976,45 @@ const resultList: CSSProperties = {
   gap: 10,
 }
 
+const resultRaceCard: CSSProperties = {
+  borderTop: "1px solid rgba(0,0,0,0.12)",
+  padding: "12px 0",
+}
+
+const resultClassName: CSSProperties = {
+  fontWeight: 800,
+  marginBottom: "10px",
+  color: "#2f2419",
+  fontSize: "18px",
+}
+
+const resultFinishGrid: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+  gap: "12px",
+}
+
+const resultFinishItem: CSSProperties = {
+  display: "grid",
+  gap: "3px",
+  minWidth: 0,
+}
+
+const resultFinishLabel: CSSProperties = {
+  fontSize: "12px",
+  textTransform: "uppercase",
+  letterSpacing: "0.08em",
+  color: "#7f684e",
+  fontWeight: 700,
+}
+
+const resultFinishName: CSSProperties = {
+  fontSize: "15px",
+  lineHeight: 1.35,
+  color: "#2f2419",
+  minWidth: 0,
+}
+
 const inlineLink: CSSProperties = {
   textDecoration: "none",
   color: "#6c4d22",
@@ -989,6 +1029,19 @@ const emptyPanel: CSSProperties = {
   fontSize: "17px",
   lineHeight: 1.7,
   color: "#5a3a1b",
+}
+
+const viewAllLink: CSSProperties = {
+  display: "inline-block",
+  marginTop: "14px",
+  padding: "10px 16px",
+  borderRadius: "999px",
+  background: "#7b5c34",
+  color: "#fff8ee",
+  textDecoration: "none",
+  fontWeight: 700,
+  border: "1px solid #7b5c34",
+  boxShadow: "0 4px 12px rgba(60, 40, 20, 0.08)",
 }
 
 const relatedProgramsGrid: CSSProperties = {

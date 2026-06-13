@@ -543,3 +543,46 @@ img {
     object-fit: contain !important;
   }
 }
+
+.track-logo-wrap-mobile img {
+  max-width: 100% !important;
+  max-height: 76px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .track-profile-page {
+    max-width: 100vw !important;
+    padding: 18px 12px 64px !important;
+    overflow-x: hidden !important;
+  }
+
+  .track-profile-hero-inner,
+  .track-three-col-grid,
+  .track-meta-grid,
+  .track-photo-grid,
+  .track-related-programs-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .track-archive-badges {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .track-archive-badges span {
+    white-space: normal !important;
+  }
+
+  .track-result-race-card {
+    display: block !important;
+  }
+
+  .track-result-race-card > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+}

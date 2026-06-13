@@ -381,7 +381,7 @@ const trackCard: CSSProperties = {
 }
 
 const trackLogoWrap: CSSProperties = {
-  height: '90px',
+  height: '92px',
   width: '100%',
   display: 'flex',
   alignItems: 'center',
@@ -390,7 +390,7 @@ const trackLogoWrap: CSSProperties = {
   border: '1px solid #b29364',
   marginBottom: '12px',
   overflow: 'hidden',
-  padding: '12px',
+  padding: '8px',
 }
 
 const trackNameStyle: CSSProperties = {
@@ -406,3 +406,5 @@ const trackMetaStyle: CSSProperties = {
   fontSize: '14px',
   color: '#5a3a1b',
 }
+
+
