@@ -622,3 +622,33 @@ img {
     min-width: 0 !important;
   }
 }
+
+@media (max-width: 768px) {
+  body main,
+  body main section,
+  body main article,
+  body main > div,
+  body main section > div,
+  body main article > div {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  body main section,
+  body main article,
+  body main > div {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  body main [style*="max-width"],
+  body main [style*="width"] {
+    max-width: 100% !important;
+  }
+
+  body main [style*="display: grid"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
