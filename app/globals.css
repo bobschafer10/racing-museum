@@ -430,4 +430,33 @@ img {
     line-height: 1.05 !important;
   }
 }
+
+@media (max-width: 768px) {
+  [style*="repeat(3, minmax(260px, 1fr))"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  [style*="minHeight: 360px"],
+  [style*="min-height: 360px"] {
+    min-height: auto !important;
+  }
+
+  [style*="padding: 18px"] {
+    padding: 14px !important;
+  }
+
+  [style*="font-size: 24px"] {
+    font-size: 21px !important;
+    line-height: 1.15 !important;
+  }
+
+  [style*="font-size: 34px"] {
+    font-size: 26px !important;
+    line-height: 1.1 !important;
+  }
+
+  [style*="border: 2px solid"] {
+    max-width: calc(100vw - 32px) !important;
+  }
+}
   
