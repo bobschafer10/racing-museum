@@ -254,36 +254,20 @@ const track =
         </div>
       </section>
 
-{/* MISSION / SUPPORT */}
-<section style={missionSection}>
-  <div style={missionInner}>
-    <div style={missionEyebrow}>Preserving Racing History</div>
 
-    <h2 style={missionTitle}>
-      A Living Archive for Upper Midwest Auto Racing
-    </h2>
+{/* MUSEUM DESK RIBBON */}
+<section style={museumDeskRibbon} className="museum-desk-ribbon">
+  <div style={museumDeskRibbonLabel}>Museum Desk</div>
 
-    <p style={missionText}>
-      The Virtual Upper Midwest Auto Racing Museum is dedicated to preserving
-      the history of short track auto racing across Wisconsin, Northern
-      Illinois, Eastern Minnesota, and the Upper Midwest through photographs,
-      newspapers, race programs, statistics, and historical archives.
-    </p>
-
-    <div style={supportBox}>
-      <h3 style={supportTitle}>Support the Cause</h3>
-
-      <p style={supportText}>
-        Have photos, race programs, newspapers, flyers, results, corrections,
-        or historical information to share? Your contributions help keep Upper
-        Midwest racing history alive for future generations.
-      </p>
-
-      <Link href="/contact" style={supportButton}>
-        Submit Information
-      </Link>
-    </div>
+  <div style={museumDeskRibbonItems} className="museum-desk-ribbon-items">
+    {recentMuseumAdditions.slice(0, 4).map((item) => (
+      <span key={item}>• {item}</span>
+    ))}
   </div>
+
+  <Link href="#museum-desk" style={museumDeskRibbonButton}>
+    View Latest Additions
+  </Link>
 </section>
 
 {/* SEARCH + ERA + STATUS */}
@@ -357,47 +341,7 @@ const track =
   </div>
 </section>
 
-      {/* FEATURED THREE-UP */}
-      <section style={sectionWrap}>
-        <div style={featureGrid}>
-          <FeatureDriverCard driver={driver} photo={driverPhoto} />
-          <FeatureTrackCard track={track} />
-           <FeatureSeriesCard series={series} />
-        </div>
-      </section>
-
-      {/* BROWSE STRIP */}
-      <section style={sectionWrapTight}>
-        <div style={browseBand}>
-         <BrowseMini
-  title="Drivers"
-  lines={['Browse Alphabetically', 'View Top Drivers']}
-  href="/drivers"
-/>
-<BrowseMini
-  title="Tracks"
-  lines={['Map View', 'Regional Browse']}
-  href="/tracks"
-/>
-<BrowseMini
-  title="Series"
-  lines={['Browse Major Series', 'Touring and Weekly Divisions']}
-  href="/series"
-/>
-<BrowseMini
-  title="Results"
-  lines={['Browse by Year', 'Browse by Track']}
-  href="/results"
-/>
-<BrowseMini
-  title="Photos"
-  lines={['Browse Full Archive', 'Search by Driver, Track, Year']}
-  href="/photos"
-  isLast
-/>
-        </div>
-      </section>
-
+      
 {/* STATS LAB FEATURE */}
 <section style={sectionWrap}>
   <div style={statsLabPanel}>
@@ -486,6 +430,83 @@ const track =
   </div>
 </section>
 
+
+{/* MISSION / SUPPORT */}
+<section style={missionSection}>
+  <div style={missionInner}>
+    <div style={missionEyebrow}>Preserving Racing History</div>
+
+    <h2 style={missionTitle}>
+      A Living Archive for Upper Midwest Auto Racing
+    </h2>
+
+    <p style={missionText}>
+      The Virtual Upper Midwest Auto Racing Museum is dedicated to preserving
+      the history of short track auto racing across Wisconsin, Northern
+      Illinois, Eastern Minnesota, and the Upper Midwest through photographs,
+      newspapers, race programs, statistics, and historical archives.
+    </p>
+
+    <div style={supportBox}>
+      <h3 style={supportTitle}>Support the Cause</h3>
+
+      <p style={supportText}>
+        Have photos, race programs, newspapers, flyers, results, corrections,
+        or historical information to share? Your contributions help keep Upper
+        Midwest racing history alive for future generations.
+      </p>
+
+      <Link href="/contact" style={supportButton}>
+        Submit Information
+      </Link>
+    </div>
+  </div>
+</section>
+
+
+{/* FEATURED THREE-UP */}
+      <section style={sectionWrap}>
+        <div style={featureGrid}>
+          <FeatureDriverCard driver={driver} photo={driverPhoto} />
+          <FeatureTrackCard track={track} />
+           <FeatureSeriesCard series={series} />
+        </div>
+      </section>
+
+      
+{/* BROWSE STRIP */}
+      <section style={sectionWrapTight}>
+        <div style={browseBand}>
+         <BrowseMini
+  title="Drivers"
+  lines={['Browse Alphabetically', 'View Top Drivers']}
+  href="/drivers"
+/>
+<BrowseMini
+  title="Tracks"
+  lines={['Map View', 'Regional Browse']}
+  href="/tracks"
+/>
+<BrowseMini
+  title="Series"
+  lines={['Browse Major Series', 'Touring and Weekly Divisions']}
+  href="/series"
+/>
+<BrowseMini
+  title="Results"
+  lines={['Browse by Year', 'Browse by Track']}
+  href="/results"
+/>
+<BrowseMini
+  title="Photos"
+  lines={['Browse Full Archive', 'Search by Driver, Track, Year']}
+  href="/photos"
+  isLast
+/>
+        </div>
+      </section>
+
+
 {/* FEATURED NEWSPAPER WOW SPOT */}
 <section style={sectionWrap}>
   <div style={newspaperWowPanel}>
@@ -534,7 +555,8 @@ const track =
   </div>
 </section>
 
-      {/* MEDIA + PHOTOGRAPHERS */}
+      
+{/* MEDIA + PHOTOGRAPHERS */}
 <section style={sectionWrap}>
   <div style={mediaGrid}>
     <div style={mediaPanel}>
@@ -640,7 +662,8 @@ const track =
   </div>
 </section>
 
-    {/* PHOTO SPOTLIGHT */}
+    
+{/* PHOTO SPOTLIGHT */}
 <section style={sectionWrap}>
   <div style={spotlightTitle}>Photo Spotlight</div>
 
@@ -898,8 +921,9 @@ spotlightPhoto.year !== 'unknown-year'
 </section>
 
 
+
 {/* MUSEUM DESK */}
-<section style={sectionWrap}>
+<section id="museum-desk" style={sectionWrap}>
   <div style={spotlightTitle}>Museum Desk</div>
 
   <div style={museumDeskGrid} className="museum-desk-grid">
@@ -1375,6 +1399,54 @@ function MediaTile({
 
   return tile
 }
+
+const museumDeskRibbon: CSSProperties = {
+  maxWidth: '1320px',
+  margin: '18px auto 28px',
+  padding: '14px 18px',
+  background: '#efe2bf',
+  borderTop: '1px solid #8a6938',
+  borderBottom: '1px solid #8a6938',
+  borderLeft: '1px solid #b29364',
+  borderRight: '1px solid #b29364',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  gap: '18px',
+  flexWrap: 'wrap',
+  boxShadow: '0 3px 10px rgba(58,42,26,.08)',
+}
+
+const museumDeskRibbonLabel: CSSProperties = {
+  fontSize: '13px',
+  fontWeight: 900,
+  letterSpacing: '.16em',
+  textTransform: 'uppercase',
+  color: '#5f4528',
+  whiteSpace: 'nowrap',
+}
+
+const museumDeskRibbonItems: CSSProperties = {
+  display: 'flex',
+  gap: '18px',
+  flexWrap: 'wrap',
+  fontSize: '14px',
+  lineHeight: 1.45,
+  color: '#4a3724',
+  flex: 1,
+  minWidth: 0,
+}
+
+const museumDeskRibbonButton: CSSProperties = {
+  background: '#6f512b',
+  color: '#fff8e8',
+  padding: '10px 14px',
+  textDecoration: 'none',
+  fontWeight: 700,
+  whiteSpace: 'nowrap',
+  border: '1px solid #5d3f17',
+}
+
 const pageStyle: CSSProperties = {
   background: '#eadfc7',
   color: '#2f2417',
@@ -2215,7 +2287,7 @@ const statsLabEyebrow: CSSProperties = {
 }
 
 const statsLabTitle: CSSProperties = {
-  fontSize: 'px72',
+  fontSize: '72px',
   lineHeight: '.95',
   margin: '0 0 24px',
   color: '#24180f',
