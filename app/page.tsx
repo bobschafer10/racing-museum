@@ -1431,10 +1431,11 @@ const heroLogo: CSSProperties = {
 }
 
 const heroTitle: CSSProperties = {
-  fontSize: '64px',   // bump if not already here
+  fontSize: '64px',
   fontWeight: 700,
   lineHeight: 1.1,
-  color: '#f3e4c7',
+  color: '#8a6230',
+  textShadow: '0 2px 6px rgba(255,255,255,0.18)',
 }
 
 const spotlightPanel: CSSProperties = {
