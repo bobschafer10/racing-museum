@@ -1393,7 +1393,7 @@ const heroSection: CSSProperties = {
 const heroBackground: CSSProperties = {
   objectFit: 'cover',
   objectPosition: 'center',
-  filter: 'sepia(42%) brightness(88%) contrast(103%)',
+  filter: 'sepia(42%) brightness(58%) contrast(112%)',
   transform: 'scale(1.04)',
 }
 
@@ -1435,7 +1435,7 @@ const heroTitle: CSSProperties = {
   fontSize: '64px',
   fontWeight: 700,
   lineHeight: 1.08,
-  color: '#f2e4c5',
+  color: '#f7ead0',
   textShadow: '0 4px 18px rgba(0,0,0,0.72)',
 }
 
