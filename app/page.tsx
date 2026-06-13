@@ -287,7 +287,7 @@ const track =
 </section>
 
 {/* SEARCH + ERA + STATUS */}
-<section style={sectionWrap}>
+<section style={sectionWrap} className="museum-desk-section">
   <div style={explorePanel}>
     <div style={exploreTop}>
       {/* SEARCH */}
@@ -902,7 +902,7 @@ spotlightPhoto.year !== 'unknown-year'
 <section style={sectionWrap}>
   <div style={spotlightTitle}>Museum Desk</div>
 
-  <div style={museumDeskGrid}>
+  <div style={museumDeskGrid} className="museum-desk-grid">
     {/* 1. Contact / Follow */}
     <div style={museumPanel}>
       <div style={museumPanelInner}>
