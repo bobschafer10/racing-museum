@@ -521,4 +521,10 @@ img {
     overflow-wrap: anywhere !important;
   }
 }
+
+@media (max-width: 768px) {
+  .track-logo-wrap-mobile img {
+    object-fit: contain !important;
+  }
+}
   

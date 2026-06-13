@@ -133,7 +133,7 @@ const featuredTrack =
 
       {featuredTrack && (
   <>
-    <div style={featureLogoWrap}>
+    <div style={featureLogoWrap} className="track-logo-wrap-mobile">
   <TrackLogo
     slug={featuredTrack.slug}
     trackName={featuredTrack.track_name}
@@ -172,9 +172,9 @@ const featuredTrack =
                 href={`/tracks/${t.slug}`}
                 style={trackCard}
               >
-                <div style={trackLogoWrap}>
-                  <TrackLogo slug={t.slug} trackName={t.track_name} />
-                </div>
+                <div style={trackLogoWrap} className="track-logo-wrap-mobile">
+  <TrackLogo slug={t.slug} trackName={t.track_name} />
+</div>
 
                 <div style={trackNameStyle}>{t.track_name}</div>
 
@@ -379,8 +379,9 @@ const trackCard: CSSProperties = {
   boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
   height: '100%',
 }
+
 const trackLogoWrap: CSSProperties = {
-  height: '180px',
+  height: '140px',
   width: '100%',
   display: 'flex',
   alignItems: 'center',
@@ -389,6 +390,7 @@ const trackLogoWrap: CSSProperties = {
   border: '1px solid #b29364',
   marginBottom: '12px',
   overflow: 'hidden',
+  padding: '8px',
 }
 
 const trackNameStyle: CSSProperties = {
