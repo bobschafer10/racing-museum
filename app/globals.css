@@ -664,3 +664,73 @@ img {
     box-sizing: border-box;
   }
 }
+
+@media (max-width: 768px) {
+  .feature-win-filters,
+  .feature-winner-filters,
+  .stats-lab-filters,
+  .report-filters {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 18px 14px !important;
+  }
+
+  .feature-win-filters > *,
+  .feature-winner-filters > *,
+  .stats-lab-filters > *,
+  .report-filters > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .feature-win-filters select,
+  .feature-win-filters input,
+  .feature-win-filters button,
+  .feature-winner-filters select,
+  .feature-winner-filters input,
+  .feature-winner-filters button,
+  .stats-lab-filters select,
+  .stats-lab-filters input,
+  .stats-lab-filters button,
+  .report-filters select,
+  .report-filters input,
+  .report-filters button {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 56px !important;
+    font-size: 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  .feature-win-filters label,
+  .feature-winner-filters label,
+  .stats-lab-filters label,
+  .report-filters label {
+    display: block !important;
+    margin-bottom: 8px !important;
+    font-size: 14px !important;
+    letter-spacing: 0.12em !important;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr !important;
+  }
+
+  form label {
+    width: 100% !important;
+  }
+
+  form input,
+  form select,
+  form button {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
