@@ -395,4 +395,39 @@ img {
     line-height: 1.12 !important;
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    max-width: 100vw !important;
+  }
+
+  main * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  div[style*="minmax(260px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  div[style*="display: flex"] {
+    flex-wrap: wrap !important;
+  }
+
+  img {
+    object-fit: contain !important;
+  }
+
+  a[style*="background"] {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  div[style*="font-size: 54px"],
+  div[style*="font-size: 52px"],
+  div[style*="font-size: 64px"] {
+    font-size: 34px !important;
+    line-height: 1.05 !important;
+  }
+}
   
