@@ -341,11 +341,13 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
           </select>
         </label>
 
-        <button style={styles.button}>Run Report</button>
+        <div style={styles.actionRow} className="stats-action-row">
+  <button style={styles.button}>Run Report</button>
 
-<Link href="/stats/feature-winners" style={styles.clearButton}>
-  Clear Filters
-</Link>
+  <Link href="/stats/feature-winners" style={styles.clearButton}>
+    Clear Filters
+  </Link>
+</div>
       </form>
 
       {error && <div style={styles.error}>Supabase error: {error.message}</div>}
@@ -654,8 +656,8 @@ heroUpdateNote: {
   },
 filters: {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-  gap: '16px',
+  gridTemplateColumns: 'repeat(5, minmax(0, 1fr))',
+  gap: '22px 18px',
   border: '1px solid #7a5c32',
   background: '#fff8e8',
   padding: '18px',
@@ -874,6 +876,18 @@ cardWatermark: {
     textAlign: 'center',
     fontWeight: 800,
   },
+
+button: {
+  padding: '12px 20px',
+  border: '1px solid #2f2113',
+  background: '#3a2a1a',
+  color: '#fff8e8',
+  fontWeight: 900,
+  fontSize: '14px',
+  cursor: 'pointer',
+  minHeight: '42px',
+},
+
 clearButton: {
   display: 'flex',
   alignItems: 'center',
@@ -886,5 +900,14 @@ clearButton: {
   fontSize: '14px',
   textDecoration: 'none',
   minHeight: '42px',
+},
+
+actionRow: {
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
+  gap: '14px',
+  width: '100%',
+  gridColumn: '4 / span 2',
+  alignSelf: 'end',
 },
 }

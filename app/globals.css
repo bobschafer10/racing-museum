@@ -765,3 +765,10 @@ img {
     animation-duration: 24s !important;
   }
 }
+
+@media (max-width: 768px) {
+  .stats-action-row {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+}
