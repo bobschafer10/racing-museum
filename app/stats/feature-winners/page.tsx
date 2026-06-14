@@ -656,7 +656,7 @@ heroUpdateNote: {
   },
 filters: {
   display: 'grid',
-  gridTemplateColumns: 'repeat(5, minmax(0, 1fr))',
+  gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
   gap: '22px 18px',
   border: '1px solid #7a5c32',
   background: '#fff8e8',
@@ -671,6 +671,7 @@ filters: {
     fontSize: '13px',
     textTransform: 'uppercase',
     letterSpacing: '.06em',
+    gridColumn: 'span 2',
   },
  labelWide: {
   display: 'grid',
@@ -679,7 +680,7 @@ filters: {
   fontSize: '13px',
   textTransform: 'uppercase',
   letterSpacing: '.06em',
-  gridColumn: 'span 2',
+  gridColumn: 'span 5',
 },
   labelSmall: {
     display: 'grid',
@@ -688,6 +689,7 @@ filters: {
     fontSize: '13px',
     textTransform: 'uppercase',
     letterSpacing: '.06em',
+    gridColumn: 'span 2',
   },
 archiveUpdateRow: {
   display: 'flex',
@@ -723,7 +725,8 @@ activeLegendBadge: {
   lineHeight: 1,
 },
   select: {
-    minWidth: '170px',
+    width: '100%',
+    minWidth: 0,
     padding: '11px',
     border: '1px solid #6f512b',
     background: '#fffdf6',
@@ -733,14 +736,16 @@ trAlt: {
   background: 'rgba(234, 215, 170, 0.28)',
 },
   selectWide: {
-    minWidth: '280px',
+    width: '100%',
+    minWidth: 0,
     padding: '11px',
     border: '1px solid #6f512b',
     background: '#fffdf6',
     fontSize: '14px',
   },
   selectSmall: {
-    minWidth: '110px',
+    width: '100%',
+    minWidth: 0,
     padding: '11px',
     border: '1px solid #6f512b',
     background: '#fffdf6',
@@ -748,21 +753,11 @@ trAlt: {
   },
   input: {
     width: '100%',
-    minWidth: '280px',
+    minWidth: 0,
     padding: '11px',
     border: '1px solid #6f512b',
     background: '#fffdf6',
     fontSize: '14px',
-  },
-  button: {
-    padding: '12px 20px',
-    border: '1px solid #2f2113',
-    background: '#3a2a1a',
-    color: '#fff8e8',
-    fontWeight: 900,
-    fontSize: '14px',
-    cursor: 'pointer',
-    minHeight: '42px',
   },
 cardWatermark: {
   position: 'absolute',
@@ -907,7 +902,7 @@ actionRow: {
   gridTemplateColumns: '1fr 1fr',
   gap: '14px',
   width: '100%',
-  gridColumn: '4 / span 2',
+  gridColumn: 'span 4',
   alignSelf: 'end',
 },
 }
