@@ -342,13 +342,15 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
         </label>
 
         <div style={styles.actionRow} className="stats-action-row">
-  <button style={styles.button}>Run Report</button>
+  <button type="submit" style={styles.button}>
+    Run Report
+  </button>
 
-  <Link href="/stats/feature-winners" style={styles.clearButton}>
+  <a href="/stats/feature-winners" style={styles.clearButton}>
     Clear Filters
-  </Link>
+  </a>
 </div>
-      </form>
+</form>
 
       {error && <div style={styles.error}>Supabase error: {error.message}</div>}
       {yearsError && <div style={styles.error}>Years error: {yearsError.message}</div>}
