@@ -342,6 +342,10 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
         </label>
 
         <button style={styles.button}>Run Report</button>
+
+<Link href="/stats/feature-winners" style={styles.clearButton}>
+  Clear Filters
+</Link>
       </form>
 
       {error && <div style={styles.error}>Supabase error: {error.message}</div>}
@@ -870,4 +874,17 @@ cardWatermark: {
     textAlign: 'center',
     fontWeight: 800,
   },
+clearButton: {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: '12px 20px',
+  border: '1px solid #7a5c32',
+  background: '#efe4ca',
+  color: '#3a2a1a',
+  fontWeight: 900,
+  fontSize: '14px',
+  textDecoration: 'none',
+  minHeight: '42px',
+},
 }
