@@ -292,3 +292,143 @@ img {
     overflow-x: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .feature-winners-page {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .feature-winners-page * {
+    box-sizing: border-box;
+  }
+
+  .feature-winners-hero,
+  .feature-winners-panel,
+  .feature-winners-board {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden !important;
+  }
+
+  .feature-winners-hero h1 {
+    font-size: 42px !important;
+    line-height: 1.05 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .feature-winners-hero p,
+  .feature-winners-panel p {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  .feature-winners-board {
+    padding: 14px !important;
+  }
+
+  .feature-winners-board table,
+  .feature-winners-board tbody,
+  .feature-winners-board tr,
+  .feature-winners-board td,
+  .feature-winners-board th {
+    max-width: 100% !important;
+  }
+
+  .feature-winners-board tr {
+    display: grid !important;
+    grid-template-columns: 52px 1fr !important;
+    gap: 10px !important;
+    align-items: center !important;
+  }
+
+  .feature-winners-board th:nth-child(n+3),
+  .feature-winners-board td:nth-child(n+3) {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .feature-winners-page {
+    padding: 12px !important;
+    overflow-x: hidden;
+  }
+
+  .feature-winners-hero {
+    display: block !important;
+    padding: 20px !important;
+  }
+
+  .feature-winners-hero h1 {
+    font-size: 54px !important;
+    line-height: 0.95 !important;
+  }
+
+  .feature-winners-hero p {
+    max-width: 100% !important;
+  }
+
+  .feature-winners-filters {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .feature-winners-filters label {
+    grid-column: auto !important;
+    width: 100% !important;
+  }
+
+  .feature-winners-filters input,
+  .feature-winners-filters select {
+    width: 100% !important;
+  }
+
+  .stats-action-row {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .feature-winners-board {
+    overflow-x: hidden !important;
+  }
+
+  .feature-winners-board table {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .feature-winners-board thead {
+    display: none !important;
+  }
+
+  .feature-winners-board tbody {
+    display: block !important;
+  }
+
+  .feature-winners-board tr {
+    display: block !important;
+    margin-bottom: 16px !important;
+    border: 1px solid #d4bf91 !important;
+    padding: 14px !important;
+  }
+
+  .feature-winners-board td {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    padding: 4px 0 !important;
+    white-space: normal !important;
+  }
+
+  .feature-winners-board td:nth-child(n+3) {
+    display: none !important;
+  }
+}

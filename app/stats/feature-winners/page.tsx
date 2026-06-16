@@ -157,8 +157,8 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
   : 'Update date unavailable'
 
   return (
-    <main style={styles.page}>
-      <section style={styles.hero}>
+    <main className="feature-winners-page" style={styles.page}>
+      <section className="feature-winners-hero" style={styles.hero}>
         <div style={styles.checkerWatermark} />
 
         <div style={styles.heroLeft}>
@@ -252,7 +252,7 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
         </aside>
       </section>
 
-      <form style={styles.filters}>
+      <form className="feature-winners-filters" style={styles.filters}>
         <label style={styles.label}>
           <span>Scope</span>
           <select name="scope" defaultValue={scope} style={styles.select}>
@@ -357,7 +357,7 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
       {trackError && <div style={styles.error}>Track error: {trackError.message}</div>}
       {classError && <div style={styles.error}>Class error: {classError.message}</div>}
 
-      <section style={styles.card}>
+      <section className="feature-winners-board" style={styles.card}>
 <div style={styles.cardWatermark} />
         <div style={styles.cardHeader}>
           <div>
