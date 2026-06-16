@@ -350,16 +350,16 @@ const track =
 <section style={sectionWrap}>
   <div style={statsLabPanel}>
     <div style={statsLabLeft}>
-      <div style={statsLabEyebrow}>Stats Lab</div>
+      <div style={statsLabEyebrow}>Build a Museum Room</div>
 
       <h2 style={statsLabTitle}>
-        Feature Win Archive
+        Victory Lane Research Center
       </h2>
 
       <p style={statsLabDescription}>
         Explore more than a century of feature race victories across
         Wisconsin and the Upper Midwest. Filter by year, track,
-        surface, class, and driver to uncover the sport’s winningest
+        surface, class, or driver to uncover the sport’s winningest
         competitors.
       </p>
 
