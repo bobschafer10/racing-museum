@@ -111,20 +111,21 @@ export default async function DriversPage({
         }
 
         .driver-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 24px;
-}
+          --driver-grid-columns: repeat(auto-fill, minmax(320px, 1fr));
+        }
 
-          @media (max-width: 1024px), (pointer: coarse) {
+        @media (max-width: 900px), (max-device-width: 900px), (pointer: coarse) {
           .driver-hero-split {
             grid-template-columns: 1fr !important;
             gap: 22px !important;
           }
 
-.driver-grid {
-    border: 8px solid red !important;
-  }
+          .driver-grid {
+            --driver-grid-columns: 1fr;
+            max-width: 430px;
+            margin-left: auto;
+            margin-right: auto;
+          }
 
           .driver-page-title {
             font-size: 44px !important;
@@ -144,15 +145,10 @@ export default async function DriversPage({
             aspect-ratio: 4 / 3 !important;
           }
 
-          .driver-grid {
-            grid-template-columns: 1fr !important;
-            gap: 22px !important;
-          }
-
           .driver-name {
-            font-size: 38px !important;
+            font-size: 36px !important;
             line-height: 1.05 !important;
-            overflow-wrap: normal !important;
+            overflow-wrap: break-word !important;
             word-break: normal !important;
             hyphens: none !important;
           }
@@ -253,7 +249,7 @@ export default async function DriversPage({
         ) : filteredDrivers.length === 0 ? (
           <div style={emptyBox}>No drivers found.</div>
         ) : (
-          <div className="driver-grid">
+          <div className="driver-grid" style={grid}>
             {filteredDrivers.map((driver) => {
               const p = driverPhotoMap.get(driver.driver_slug)
 
@@ -460,6 +456,12 @@ const contentWrap: CSSProperties = {
   padding: '0 16px',
 }
 
+const grid: CSSProperties = {
+  display: 'grid',
+  gridTemplateColumns: 'var(--driver-grid-columns, repeat(auto-fill, minmax(320px, 1fr)))',
+  gap: '24px',
+}
+
 const cardLink: CSSProperties = {
   textDecoration: 'none',
   color: 'inherit',
@@ -470,6 +472,8 @@ const card: CSSProperties = {
   border: '1px solid #c2a97d',
   transition: 'all 0.2s ease',
   height: '100%',
+  maxWidth: '100%',
+  overflow: 'hidden',
 }
 
 const cardInner: CSSProperties = {
