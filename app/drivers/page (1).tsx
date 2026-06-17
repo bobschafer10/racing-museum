@@ -102,6 +102,114 @@ export default async function DriversPage({
 
   return (
     <main style={pageStyle}>
+      <style>{`
+  .driver-hero-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    align-items: center;
+  }
+
+  .driver-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .driver-page-title {
+    font-size: 44px !important;
+  }
+
+  .driver-page-intro {
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+  }
+
+  .driver-search-form {
+    flex-direction: column !important;
+  }
+
+  .driver-hero-photo {
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  .driver-name {
+    font-size: 36px !important;
+    line-height: 1.05 !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  .driver-placeholder-name {
+    font-size: 30px !important;
+  }
+
+  .driver-meta {
+    font-size: 18px !important;
+  }
+
+  .driver-stat-row {
+    font-size: 17px !important;
+    padding: 14px 16px !important;
+  }
+
+  .driver-button {
+    font-size: 18px !important;
+    padding: 14px !important;
+  }
+
+  @media (min-width: 768px) {
+    .driver-hero-split {
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+    }
+
+    .driver-grid {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .driver-page-title {
+      font-size: 64px !important;
+    }
+
+    .driver-page-intro {
+      font-size: 21px !important;
+      line-height: 1.8 !important;
+    }
+
+    .driver-search-form {
+      flex-direction: row !important;
+    }
+
+    .driver-hero-photo {
+      height: 420px !important;
+      aspect-ratio: auto !important;
+    }
+
+    .driver-name {
+      font-size: 32px !important;
+    }
+
+    .driver-meta {
+      font-size: 15px !important;
+    }
+
+    .driver-stat-row {
+      font-size: 14px !important;
+      padding: 10px 12px !important;
+    }
+
+    .driver-button {
+      font-size: inherit !important;
+      padding: 12px !important;
+    }
+  }
+`}</style>
 
       <section style={heroSection}>
         <div className="driver-hero-split" style={heroSplit}>
@@ -179,7 +287,7 @@ export default async function DriversPage({
         ) : filteredDrivers.length === 0 ? (
           <div style={emptyBox}>No drivers found.</div>
         ) : (
-          <div style={grid}>
+          <div className="driver-grid" style={grid}>
             {filteredDrivers.map((driver) => {
               const p = driverPhotoMap.get(driver.driver_slug)
 
@@ -269,10 +377,6 @@ const heroSection: CSSProperties = {
 const heroSplit: CSSProperties = {
   maxWidth: '1280px',
   margin: '0 auto',
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
-  gap: '36px',
-  alignItems: 'center',
 }
 
 const heroLeft: CSSProperties = {
@@ -392,7 +496,7 @@ const contentWrap: CSSProperties = {
 
 const grid: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))',
+  // gridTemplateColumns controlled by .driver-grid CSS class
   gap: '24px',
 }
 
