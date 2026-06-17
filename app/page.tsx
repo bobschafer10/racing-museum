@@ -206,9 +206,9 @@ const track =
         ]
 
   return(
-    <main style={pageStyle}>
+    <main style={pageStyle} className="home-page">
       {/* HERO */}
-      <section style={heroSection}>
+      <section style={heroSection} className="home-hero">
         <Image
           src="/museum-bg.png"
           alt="Museum hallway"
@@ -219,8 +219,9 @@ const track =
         <div style={heroOverlay} />
 <div style={heroGrain} />
 
-        <div style={heroContent}>
+        <div style={heroContent} className="home-hero-content">
           <Image
+            className="home-hero-logo"
             src="/museum-logo.png"
             alt="Upper Midwest Auto Racing Museum logo"
             width={520}
@@ -229,23 +230,23 @@ const track =
             style={heroLogo}
           />
 
-          <h1 style={heroTitle}>
+          <h1 style={heroTitle} className="home-hero-title">
             Preserving the History of Upper Midwest Auto Racing
           </h1>
 
-          <p style={heroSubtitle}>
+          <p style={heroSubtitle} className="home-hero-subtitle">
             Explore drivers, tracks, race results, and historic photos
           </p>
 
-          <p style={heroRegion}>
+          <p style={heroRegion} className="home-hero-region">
             from WI • MN • UP MI • IL • Chicagoland
           </p>
         </div>
       </section>
 
       {/* STATS */}
-      <section style={statsStrip}>
-        <div style={statsInner}>
+      <section style={statsStrip} className="home-stats">
+        <div style={statsInner} className="home-stats-inner">
           <StatItem label="Drivers" value={stats?.drivers_count ?? 0} />
           <StatItem label="Tracks" value={stats?.tracks_count ?? 0} />
           <StatItem label="Race Events" value={stats?.events_count ?? 0} />
@@ -256,10 +257,10 @@ const track =
 
 
 {/* MUSEUM DESK RIBBON */}
-<section style={museumTicker} className="museum-ticker">
-  <div style={museumTickerLabel}>Museum Desk</div>
+<section style={museumTicker} className="museum-ticker home-ticker">
+  <div style={museumTickerLabel} className="home-ticker-label">Museum Desk</div>
 
-  <div style={museumTickerWindow}>
+  <div style={museumTickerWindow} className="home-ticker-window">
     <div style={museumTickerTrack} className="museum-ticker-track">
       {[...recentMuseumAdditions, ...recentMuseumAdditions].map((item, index) => (
         <span key={`${item}-${index}`} style={museumTickerItem}>
@@ -269,38 +270,39 @@ const track =
     </div>
   </div>
 
-  <Link href="/photos" style={museumTickerButton}>
+  <Link href="/photos" style={museumTickerButton} className="home-ticker-button">
     View Latest Additions
   </Link>
 </section>
 
 {/* SEARCH + ERA + STATUS */}
-<section style={sectionWrap} className="museum-desk-section">
-  <div style={explorePanel}>
-    <div style={exploreTop}>
+<section style={sectionWrap} className="museum-desk-section home-section home-archive-search-section">
+  <div style={explorePanel} className="home-explore-panel">
+    <div style={exploreTop} className="home-explore-top">
       {/* SEARCH */}
-      <div style={searchArea}>
+      <div style={searchArea} className="home-search-area">
         <div style={exploreEyebrow}>Search the Archive</div>
 
-        <h2 style={exploreTitle}>
+        <h2 style={exploreTitle} className="home-explore-title">
           Explore More Than a Century of Racing History
         </h2>
 
-        <div style={searchBarWrap}>
+        <div style={searchBarWrap} className="home-search-bar-wrap">
           <input
+            className="home-search-input"
             type="text"
             placeholder="Search drivers, tracks, series, years..."
             style={searchInput}
           />
 
-          <button style={searchButton}>
+          <button style={searchButton} className="home-search-button">
             Search
           </button>
         </div>
       </div>
 
       {/* ARCHIVE STATUS */}
-      <div style={archiveStatus}>
+      <div style={archiveStatus} className="home-archive-status">
         <div style={archiveStatusHeader}>
           Current Archive Coverage
         </div>
@@ -320,7 +322,7 @@ const track =
     <div style={eraSection}>
       <div style={exploreEyebrow}>Explore by Era</div>
 
-      <div style={eraGrid}>
+      <div style={eraGrid} className="home-era-grid">
         <Link href="/results/year?decade=1930" style={eraCard}>
           <span style={eraYear}>1930s</span>
         </Link>
@@ -347,23 +349,23 @@ const track =
 
       
 {/* STATS LAB FEATURE */}
-<section style={sectionWrap}>
-  <div style={statsLabPanel}>
+<section style={sectionWrap} className="home-section">
+  <div style={statsLabPanel} className="home-stats-lab">
     <div style={statsLabLeft}>
       <div style={statsLabEyebrow}>Build a Museum Room</div>
 
-      <h2 style={statsLabTitle}>
+      <h2 style={statsLabTitle} className="home-stats-lab-title">
         Victory Lane Research Center
       </h2>
 
-      <p style={statsLabDescription}>
+      <p style={statsLabDescription} className="home-stats-lab-description">
         Explore more than a century of feature race victories across
         Wisconsin and the Upper Midwest. Filter by year, track,
         surface, class, or driver to uncover the sport’s winningest
         competitors.
       </p>
 
-      <div style={statsLabHighlights}>
+      <div style={statsLabHighlights} className="home-stats-lab-highlights">
         <div style={statsLabHighlight}>
           <div style={statsLabHighlightValue}>1000s upon 1000s</div>
           <div style={statsLabHighlightLabel}>
@@ -402,7 +404,7 @@ const track =
           Museum by Numbers
         </div>
 
-        <div style={statsLabNumbersGrid}>
+        <div style={statsLabNumbersGrid} className="home-stats-lab-numbers">
           <div style={statsLabNumberCard}>
             <div style={statsLabNumberValue}>
               {stats?.results_count?.toLocaleString() || '0'}
@@ -436,25 +438,25 @@ const track =
 
 
 {/* MISSION / SUPPORT */}
-<section style={missionSection}>
-  <div style={missionInner}>
+<section style={missionSection} className="home-mission-section">
+  <div style={missionInner} className="home-mission-inner">
     <div style={missionEyebrow}>Preserving Racing History</div>
 
-    <h2 style={missionTitle}>
+    <h2 style={missionTitle} className="home-mission-title">
       A Living Archive for Upper Midwest Auto Racing
     </h2>
 
-    <p style={missionText}>
+    <p style={missionText} className="home-mission-text">
       The Virtual Upper Midwest Auto Racing Museum is dedicated to preserving
       the history of short track auto racing across Wisconsin, Northern
       Illinois, Eastern Minnesota, and the Upper Midwest through photographs,
       newspapers, race programs, statistics, and historical archives.
     </p>
 
-    <div style={supportBox}>
-      <h3 style={supportTitle}>Support the Cause</h3>
+    <div style={supportBox} className="home-support-box">
+      <h3 style={supportTitle} className="home-support-title">Support the Cause</h3>
 
-      <p style={supportText}>
+      <p style={supportText} className="home-support-text">
         Have photos, race programs, newspapers, flyers, results, corrections,
         or historical information to share? Your contributions help keep Upper
         Midwest racing history alive for future generations.
@@ -469,8 +471,8 @@ const track =
 
 
 {/* FEATURED THREE-UP */}
-      <section style={sectionWrap}>
-        <div style={featureGrid}>
+      <section style={sectionWrap} className="home-section">
+        <div style={featureGrid} className="home-feature-grid">
           <FeatureDriverCard driver={driver} photo={driverPhoto} />
           <FeatureTrackCard track={track} />
            <FeatureSeriesCard series={series} />
@@ -479,8 +481,8 @@ const track =
 
       
 {/* BROWSE STRIP */}
-      <section style={sectionWrapTight}>
-        <div style={browseBand}>
+      <section style={sectionWrapTight} className="home-section home-section-tight">
+        <div style={browseBand} className="home-browse-band">
          <BrowseMini
   title="Drivers"
   lines={['Browse Alphabetically', 'View Top Drivers']}
@@ -512,8 +514,8 @@ const track =
 
 
 {/* FEATURED NEWSPAPER WOW SPOT */}
-<section style={sectionWrap}>
-  <div style={newspaperWowPanel}>
+<section style={sectionWrap} className="home-section">
+  <div style={newspaperWowPanel} className="home-newspaper-wow">
     <div style={newspaperWowImageWrap}>
       <img
         src="/media/home/featured-newspaper.jpg"
@@ -525,7 +527,7 @@ const track =
     <div style={newspaperWowContent}>
       <div style={newspaperWowEyebrow}>From the Newspaper Archive</div>
 
-      <h2 style={newspaperWowTitle}>
+      <h2 style={newspaperWowTitle} className="home-newspaper-wow-title">
         Racing History, Preserved One Page at a Time
       </h2>
 
@@ -540,7 +542,7 @@ const track =
         decades of regional racing history.
       </p>
 
-      <div style={newspaperWowMetaGrid}>
+      <div style={newspaperWowMetaGrid} className="home-newspaper-wow-meta-grid">
         <div style={newspaperWowMetaCard}>
           <strong>Midwest Racing News</strong>
           <span>Historic issues now being added</span>
@@ -561,11 +563,11 @@ const track =
 
       
 {/* MEDIA + PHOTOGRAPHERS */}
-<section style={sectionWrap}>
-  <div style={mediaGrid}>
+<section style={sectionWrap} className="home-section">
+  <div style={mediaGrid} className="home-media-grid">
     <div style={mediaPanel}>
       <div style={panelHeader}>Media Archive</div>
-      <div style={mediaTiles}>
+      <div style={mediaTiles} className="home-media-tiles">
         <MediaTile
           title="Newspapers"
           href="/media/newspapers"
@@ -586,7 +588,7 @@ const track =
 
     <div style={mediaPanel}>
       <div style={panelHeader}>Photographers</div>
-      <div style={photographerRow}>
+      <div style={photographerRow} className="home-photographer-row">
         <img
           src="/media/home/photographers.jpg"
           alt="Photographers"
@@ -616,7 +618,7 @@ const track =
 
     <div style={mediaPanel}>
       <div style={panelHeader}>Special Events</div>
-      <div style={photographerRow}>
+      <div style={photographerRow} className="home-photographer-row">
         <div style={specialEventPosterWrap}>
   {featuredSpecialEventHasImage ? (
     <img
@@ -668,13 +670,13 @@ const track =
 
     
 {/* PHOTO SPOTLIGHT */}
-<section style={sectionWrap}>
-  <div style={spotlightTitle}>Photo Spotlight</div>
+<section style={sectionWrap} className="home-section">
+  <div style={spotlightTitle} className="home-section-title">Photo Spotlight</div>
 
   {!spotlightPhoto ? (
     <div style={spotlightPanel}>Photo spotlight coming soon.</div>
   ) : hasTwoSpotlightPhotos && leftSpotlightPhoto && rightSpotlightPhoto ? (
-    <div style={spotlightPanelThreeUp}>
+    <div style={spotlightPanelThreeUp} className="home-spotlight-three">
       <div style={spotlightSideImageWrap}>
         <Link
           href={
@@ -828,7 +830,7 @@ rightSpotlightPhoto.photographer_slug !== 'unknown'
       </div>
     </div>
   ) : (
-    <div style={spotlightPanelFilled}>
+    <div style={spotlightPanelFilled} className="home-spotlight-filled">
       <div style={spotlightImageWrap}>
         <Link
           href={
@@ -927,10 +929,10 @@ spotlightPhoto.year !== 'unknown-year'
 
 
 {/* MUSEUM DESK */}
-<section id="museum-desk" style={sectionWrap}>
-  <div style={spotlightTitle}>Museum Desk</div>
+<section id="museum-desk" style={sectionWrap} className="home-section">
+  <div style={spotlightTitle} className="home-section-title">Museum Desk</div>
 
-  <div style={museumDeskGrid} className="museum-desk-grid">
+  <div style={museumDeskGrid} className="museum-desk-grid home-museum-desk-grid">
     {/* 1. Contact / Follow */}
     <div style={museumPanel}>
       <div style={museumPanelInner}>
@@ -1022,10 +1024,324 @@ spotlightPhoto.year !== 'unknown-year'
   </div>
 </section>
 
+<MobileHomepageFix />
 </main>
  
   )
 }
+
+
+function MobileHomepageFix() {
+  return (
+    <style
+      dangerouslySetInnerHTML={{
+        __html: `
+@media (max-width: 768px) {
+  .home-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .home-page,
+  .home-page * {
+    box-sizing: border-box !important;
+  }
+
+  .home-page img {
+    max-width: 100% !important;
+  }
+
+  .home-hero {
+    min-height: auto !important;
+    max-width: 100% !important;
+  }
+
+  .home-hero-content {
+    padding: 20px 14px 18px !important;
+  }
+
+  .home-hero-logo {
+    width: min(270px, 76vw) !important;
+    height: auto !important;
+    margin-bottom: 12px !important;
+  }
+
+  .home-hero-title {
+    font-size: clamp(34px, 12vw, 48px) !important;
+    line-height: 1 !important;
+    margin: 0 auto 14px !important;
+    max-width: 100% !important;
+  }
+
+  .home-hero-subtitle {
+    font-size: clamp(23px, 7.2vw, 32px) !important;
+    line-height: 1.18 !important;
+    max-width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .home-hero-region {
+    font-size: 17px !important;
+    line-height: 1.25 !important;
+  }
+
+  .home-stats {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .home-stats-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    padding: 12px 8px !important;
+    max-width: 100% !important;
+  }
+
+  .home-stats-inner > div {
+    border-right: none !important;
+    padding: 10px 4px !important;
+    min-width: 0 !important;
+  }
+
+  .home-stats-inner > div:last-child {
+    grid-column: 1 / -1 !important;
+  }
+
+  .home-stats-inner div {
+    overflow-wrap: break-word !important;
+  }
+
+  .home-ticker {
+    grid-template-columns: 1fr !important;
+    margin: 14px 10px 18px !important;
+    padding: 14px !important;
+    gap: 12px !important;
+    max-width: calc(100% - 20px) !important;
+    overflow: hidden !important;
+  }
+
+  .home-ticker-label,
+  .home-ticker-button {
+    justify-self: start !important;
+    white-space: normal !important;
+  }
+
+  .home-ticker-window {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .museum-ticker-track {
+    gap: 18px !important;
+  }
+
+  .home-section,
+  .museum-desk-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 22px 12px 32px !important;
+    overflow: hidden !important;
+  }
+
+  .home-section-tight {
+    padding-top: 12px !important;
+  }
+
+  .home-explore-panel,
+  .home-explore-top,
+  .home-stats-lab,
+  .home-feature-grid,
+  .home-browse-band,
+  .home-newspaper-wow,
+  .home-media-grid,
+  .home-spotlight-three,
+  .home-spotlight-filled,
+  .home-museum-desk-grid,
+  .museum-desk-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 16px !important;
+    overflow: hidden !important;
+  }
+
+  .home-explore-panel,
+  .home-stats-lab,
+  .home-newspaper-wow {
+    padding: 18px !important;
+    box-shadow: 4px 4px 0 rgba(58,42,26,.14) !important;
+  }
+
+  .home-explore-title,
+  .home-stats-lab-title,
+  .home-newspaper-wow-title,
+  .home-mission-title {
+    font-size: clamp(34px, 11vw, 46px) !important;
+    line-height: 1 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .home-stats-lab-description,
+  .home-newspaper-wow p,
+  .home-mission-text,
+  .home-support-text {
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    max-width: 100% !important;
+  }
+
+  .home-search-bar-wrap {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .home-search-input,
+  .home-search-button {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 48px !important;
+    font-size: 16px !important;
+  }
+
+  .home-archive-status {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .home-era-grid,
+  .home-stats-lab-highlights,
+  .home-stats-lab-numbers,
+  .home-newspaper-wow-meta-grid,
+  .home-media-tiles {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .home-era-grid a {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 96px !important;
+  }
+
+  .home-mission-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px 12px !important;
+    overflow: hidden !important;
+  }
+
+  .home-mission-inner,
+  .home-support-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 14px !important;
+  }
+
+  .home-support-title {
+    font-size: clamp(34px, 10vw, 44px) !important;
+    line-height: 1.05 !important;
+  }
+
+  .home-feature-card,
+  .home-feature-card-inner,
+  .home-media-grid > div,
+  .home-museum-desk-grid > div,
+  .museum-desk-grid > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: auto !important;
+  }
+
+  .home-feature-image,
+  .home-feature-series-image,
+  .home-feature-logo-frame img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 260px !important;
+    object-fit: contain !important;
+  }
+
+  .home-browse-band > div {
+    border-right: none !important;
+    border-bottom: 1px solid #b29364 !important;
+    min-height: auto !important;
+  }
+
+  .home-browse-band > div:last-child {
+    border-bottom: none !important;
+  }
+
+  .home-newspaper-wow img,
+  .home-spotlight-three img,
+  .home-spotlight-filled img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 420px !important;
+    object-fit: contain !important;
+  }
+
+  .home-newspaper-wow > div,
+  .home-spotlight-three > div,
+  .home-spotlight-filled > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .home-photographer-row {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .home-photographer-row img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 280px !important;
+    object-fit: contain !important;
+  }
+
+  .home-section-title {
+    font-size: clamp(36px, 12vw, 54px) !important;
+    line-height: 1.05 !important;
+    margin: 8px 0 14px !important;
+  }
+
+  .museum-desk-grid a,
+  .home-museum-desk-grid a,
+  .home-page a,
+  .home-page p,
+  .home-page li,
+  .home-page span,
+  .home-page div {
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .home-page {
+    overflow-x: hidden;
+  }
+}
+        `,
+      }}
+    />
+  )
+}
+
 
 function formatStat(value: number) {
   if (!value) return '0+'
@@ -1071,13 +1387,14 @@ function FeatureDriverCard({
   photo: any
 }) {
   return (
-    <div style={featureCard}>
-      <div style={featureCardInner}>
+    <div style={featureCard} className="home-feature-card">
+      <div style={featureCardInner} className="home-feature-card-inner">
         <div style={featureHeader}>Featured Driver</div>
 
         {photo && driver ? (
   <Link href={`/drivers/${driver.driver_slug}`}>
     <img
+      className="home-feature-image"
       src={photoStorageUrl(photo)}
       alt={driver.driver_name || 'Featured driver'}
       style={featureImage}
@@ -1085,6 +1402,7 @@ function FeatureDriverCard({
   </Link>
 ) : photo ? (
   <img
+    className="home-feature-image"
     src={photoStorageUrl(photo)}
     alt="Featured driver"
     style={featureImage}
@@ -1139,11 +1457,11 @@ function FeatureDriverCard({
 
 function FeatureTrackCard({ track }: { track: any }) {
   return (
-    <div style={featureCard}>
-      <div style={featureCardInner}>
+    <div style={featureCard} className="home-feature-card">
+      <div style={featureCardInner} className="home-feature-card-inner">
         <div style={featureHeader}>Featured Track</div>
 
-        <div style={featureLogoFrame}>
+        <div style={featureLogoFrame} className="home-feature-logo-frame">
           {track?.slug ? (
             <TrackLogo slug={track.slug} trackName={track.track_name} />
           ) : (
@@ -1208,13 +1526,14 @@ function FeatureSeriesCard({ series }: { series: any }) {
   : null
 
   return (
-    <div style={featureCard}>
-      <div style={featureCardInner}>
+    <div style={featureCard} className="home-feature-card">
+      <div style={featureCardInner} className="home-feature-card-inner">
         <div style={featureHeader}>Featured Series</div>
 
-        <div style={featureLogoFrame}>
+        <div style={featureLogoFrame} className="home-feature-logo-frame">
           {seriesImage ? (
             <img
+              className="home-feature-series-image"
               src={seriesImage}
               alt={series?.series_name || 'Featured series'}
               style={featureSeriesImage}
@@ -1271,8 +1590,8 @@ function FeatureSeriesCard({ series }: { series: any }) {
   )
 }function FeatureEventCard({ event }: { event: any }) {
   return (
-    <div style={featureCard}>
-      <div style={featureCardInner}>
+    <div style={featureCard} className="home-feature-card">
+      <div style={featureCardInner} className="home-feature-card-inner">
         <div style={featureHeader}>Featured Event</div>
 
         <div style={featureImagePanel} />
@@ -1327,7 +1646,7 @@ function BrowseMini({
       {href === '#' ? (
         <span style={miniButton}>Coming Soon</span>
       ) : (
-        <Link href={href} style={miniButtonLink}>
+        <Link href={href} style={miniButtonLink} className="home-mini-button-link">
           Open
         </Link>
       )}

@@ -550,3 +550,125 @@ img {
     max-width: 100% !important;
   }
 }
+
+/* =========================
+   EMERGENCY HOMEPAGE MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  main {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  main section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    overflow-x: hidden !important;
+  }
+
+  main section > div {
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  main * {
+    box-sizing: border-box !important;
+  }
+
+  main img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  main h1 {
+    font-size: clamp(38px, 12vw, 58px) !important;
+    line-height: 1.02 !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+  }
+
+  main h2 {
+    font-size: clamp(32px, 10vw, 48px) !important;
+    line-height: 1.05 !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+  }
+
+  main h3 {
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+  }
+
+  main p,
+  main li,
+  main a,
+  main span,
+  main div {
+    overflow-wrap: break-word !important;
+  }
+
+  input,
+  button,
+  select {
+    max-width: 100% !important;
+  }
+
+  /* collapse all homepage desktop grids */
+  main div[style*="grid-template-columns"],
+  main div[style*="gridTemplateColumns"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  /* force common homepage panels to one column */
+  .museum-desk-grid,
+  .museum-desk-grid > div,
+  .museum-ticker,
+  .museum-ticker-track {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .museum-desk-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+
+  .museum-desk-grid > div {
+    min-width: 0 !important;
+    min-height: auto !important;
+  }
+
+  .museum-desk-grid a {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+
+  /* stop fixed-height image blowouts */
+  main img {
+    object-fit: contain;
+  }
+
+  /* stats strip should not be five-wide on mobile */
+  main section:nth-of-type(2) > div {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  main section:nth-of-type(2) > div > div {
+    border-right: none !important;
+  }
+
+  /* buttons */
+  main a {
+    max-width: 100% !important;
+  }
+}
