@@ -102,6 +102,17 @@ export default async function DriversPage({
 
   return (
     <main style={pageStyle}>
+<style>{`
+  .driver-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  @media (max-width: 700px) {
+    .driver-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+`}</style>
       <section style={heroSection}>
         <div style={heroSplit}>
           <div style={heroLeft}>
@@ -173,7 +184,7 @@ export default async function DriversPage({
         ) : filteredDrivers.length === 0 ? (
           <div style={emptyBox}>No drivers found.</div>
         ) : (
-          <div style={grid}>
+          <div className="driver-grid" style={grid}>
             {filteredDrivers.map((driver) => {
               const p = driverPhotoMap.get(driver.driver_slug)
               return (
@@ -381,7 +392,6 @@ const contentWrap: CSSProperties = {
 
 const grid: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: '1fr',
   gap: '24px',
 }
 
@@ -443,11 +453,12 @@ const driverSignatureName: CSSProperties = {
 }
 
 const driverName: CSSProperties = {
-  fontSize: '32px',
+  fontSize: 'clamp(30px, 7vw, 42px)',
   margin: '0 0 8px',
   color: '#3d2b16',
   fontFamily: 'Georgia, serif',
-  lineHeight: 1.1,
+  lineHeight: 1.05,
+  overflowWrap: 'break-word',
 }
 
 const metaLine: CSSProperties = {
