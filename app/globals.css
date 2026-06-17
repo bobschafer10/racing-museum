@@ -672,3 +672,62 @@ img {
     max-width: 100% !important;
   }
 }
+
+/* Feature Winners - mobile table */
+@media (max-width: 768px) {
+  .feature-winners-page {
+    overflow-x: hidden !important;
+  }
+
+  .feature-winners-board {
+    width: 100% !important;
+    overflow-x: auto !important;
+    padding: 0 !important;
+  }
+
+  .feature-winners-board table {
+    display: table !important;
+    width: 760px !important;
+    min-width: 760px !important;
+    border-collapse: collapse !important;
+  }
+
+  .feature-winners-board thead {
+    display: table-header-group !important;
+  }
+
+  .feature-winners-board tbody {
+    display: table-row-group !important;
+  }
+
+  .feature-winners-board tr {
+    display: table-row !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .feature-winners-board th,
+  .feature-winners-board td {
+    display: table-cell !important;
+    white-space: nowrap !important;
+    padding: 12px 10px !important;
+    text-align: left !important;
+    width: auto !important;
+  }
+
+  .feature-winners-board th:nth-child(n),
+  .feature-winners-board td:nth-child(n) {
+    display: table-cell !important;
+  }
+
+  .feature-winners-board td div,
+  .feature-winners-board td span {
+    white-space: nowrap !important;
+  }
+
+  .feature-winners-board h2 {
+    font-size: 30px !important;
+    line-height: 1.05 !important;
+  }
+}
