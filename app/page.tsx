@@ -275,79 +275,7 @@ const track =
   </Link>
 </section>
 
-{/* SEARCH + ERA + STATUS */}
-<section style={sectionWrap} className="museum-desk-section home-section home-archive-search-section">
-  <div style={explorePanel} className="home-explore-panel">
-    <div style={exploreTop} className="home-explore-top">
-      {/* SEARCH */}
-      <div style={searchArea} className="home-search-area">
-        <div style={exploreEyebrow}>Search the Archive</div>
-
-        <h2 style={exploreTitle} className="home-explore-title">
-          Explore More Than a Century of Racing History
-        </h2>
-
-        <div style={searchBarWrap} className="home-search-bar-wrap">
-          <input
-            className="home-search-input"
-            type="text"
-            placeholder="Search drivers, tracks, series, years..."
-            style={searchInput}
-          />
-
-          <button style={searchButton} className="home-search-button">
-            Search
-          </button>
-        </div>
-      </div>
-
-      {/* ARCHIVE STATUS */}
-      <div style={archiveStatus} className="home-archive-status">
-        <div style={archiveStatusHeader}>
-          Current Archive Coverage
-        </div>
-
-        <ul style={archiveList}>
-          <li>Results Archive: 1903–2026</li>
-          <li>Photo Archive: 38,000+ Images</li>
-          <li>Drivers Documented: 24,000+</li>
-          <li>Tracks Covered: 250+</li>
-          <li>Newspapers: 1959–1978</li>
-          <li>Programs & Flyers Expanding Weekly</li>
-        </ul>
-      </div>
-    </div>
-
-    {/* EXPLORE BY ERA */}
-    <div style={eraSection}>
-      <div style={exploreEyebrow}>Explore by Era</div>
-
-      <div style={eraGrid} className="home-era-grid">
-        <Link href="/results/year?decade=1930" style={eraCard}>
-          <span style={eraYear}>1930s</span>
-        </Link>
-
-        <Link href="/results/year?decade=1950" style={eraCard}>
-          <span style={eraYear}>1950s</span>
-        </Link>
-
-        <Link href="/results/year?decade=1970" style={eraCard}>
-          <span style={eraYear}>1970s</span>
-        </Link>
-
-        <Link href="/results/year?decade=1990" style={eraCard}>
-          <span style={eraYear}>1990s</span>
-        </Link>
-
-        <Link href="/results/year?decade=2020" style={eraCard}>
-          <span style={eraYear}>Modern Era</span>
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-
-      
+     
 {/* STATS LAB FEATURE */}
 <section style={sectionWrap} className="home-section">
   <div style={statsLabPanel} className="home-stats-lab">
@@ -436,6 +364,93 @@ const track =
   </div>
 </section>
 
+{/* SEARCH + ERA + STATUS */}
+<section style={sectionWrap} className="museum-desk-section home-section home-archive-search-section">
+  <div style={explorePanel} className="home-explore-panel">
+    <div style={exploreTop} className="home-explore-top">
+      {/* SEARCH */}
+      <div style={searchArea} className="home-search-area">
+        <div style={exploreEyebrow}>Search the Archive</div>
+
+        <h2 style={exploreTitle} className="home-explore-title">
+          Explore More Than a Century of Racing History
+        </h2>
+
+        <div style={searchBarWrap} className="home-search-bar-wrap">
+          <input
+            className="home-search-input"
+            type="text"
+            placeholder="Search drivers, tracks, series, years..."
+            style={searchInput}
+          />
+
+          <button style={searchButton} className="home-search-button">
+            Search
+          </button>
+        </div>
+      </div>
+
+      {/* ARCHIVE STATUS */}
+      <div style={archiveStatus} className="home-archive-status">
+        <div style={archiveStatusHeader}>
+          Current Archive Coverage
+        </div>
+
+        <ul style={archiveList}>
+          <li>Results Archive: 1903–2026</li>
+          <li>Photo Archive: 38,000+ Images</li>
+          <li>Drivers Documented: 24,000+</li>
+          <li>Tracks Covered: 250+</li>
+          <li>Newspapers: 1959–1978</li>
+          <li>Programs & Flyers Expanding Weekly</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* EXPLORE BY ERA */}
+    <div style={eraSection}>
+      <div style={exploreEyebrow}>Explore by Era</div>
+
+      <div style={eraGrid} className="home-era-grid">
+        <Link href="/results/year?decade=1940" style={eraCard}>
+          <span style={eraYear}>1940s</span>
+        </Link>
+
+        <Link href="/results/year?decade=1950" style={eraCard}>
+          <span style={eraYear}>1950s</span>
+        </Link>
+
+<Link href="/results/year?decade=1960" style={eraCard}>
+          <span style={eraYear}>1960s</span>
+        </Link>
+
+        <Link href="/results/year?decade=1970" style={eraCard}>
+          <span style={eraYear}>1970s</span>
+        </Link>
+
+<Link href="/results/year?decade=1980" style={eraCard}>
+          <span style={eraYear}>1980s</span>
+        </Link>
+
+        <Link href="/results/year?decade=1990" style={eraCard}>
+          <span style={eraYear}>1990s</span>
+        </Link>
+
+<Link href="/results/year?decade=2000" style={eraCard}>
+          <span style={eraYear}>2000s</span>
+        </Link>
+
+<Link href="/results/year?decade=2010" style={eraCard}>
+          <span style={eraYear}>2010s</span>
+        </Link>
+
+        <Link href="/results/year?decade=2020" style={eraCard}>
+          <span style={eraYear}>2020S</span>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
 
 {/* MISSION / SUPPORT */}
 <section style={missionSection} className="home-mission-section">
