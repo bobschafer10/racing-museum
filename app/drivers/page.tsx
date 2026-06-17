@@ -381,8 +381,8 @@ const contentWrap: CSSProperties = {
 
 const grid: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
   gap: '24px',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))',
 }
 
 const cardLink: CSSProperties = {
