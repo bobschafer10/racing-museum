@@ -116,11 +116,15 @@ export default async function DriversPage({
   gap: 24px;
 }
 
-          @media (max-width: 700px) {
+          @media (max-width: 1024px), (pointer: coarse) {
           .driver-hero-split {
             grid-template-columns: 1fr !important;
             gap: 22px !important;
           }
+
+.driver-grid {
+    border: 8px solid red !important;
+  }
 
           .driver-page-title {
             font-size: 44px !important;
