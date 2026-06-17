@@ -111,18 +111,12 @@ export default async function DriversPage({
         }
 
         .driver-grid {
-          display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-          gap: 24px;
-        }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 24px;
+}
 
-        @media (max-width: 1000px) {
-          .driver-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-          }
-        }
-
-        @media (max-width: 700px) {
+          @media (max-width: 700px) {
           .driver-hero-split {
             grid-template-columns: 1fr !important;
             gap: 22px !important;
