@@ -376,13 +376,13 @@ const heroGalleryPlaceholder: CSSProperties = {
 const contentWrap: CSSProperties = {
   maxWidth: '1280px',
   margin: '34px auto 0',
-  padding: '0 20px',
+  padding: '0 16px',
 }
 
 const grid: CSSProperties = {
   display: 'grid',
   gap: '24px',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))',
 }
 
 const cardLink: CSSProperties = {
