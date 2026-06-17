@@ -409,44 +409,44 @@ const track =
 
     {/* EXPLORE BY ERA */}
     <div style={eraSection}>
-      <div style={exploreEyebrow}>Explore by Era</div>
+      <div style={exploreEyebrow}>Explore Racing History by Decade</div>
 
       <div style={eraGrid} className="home-era-grid">
-        <Link href="/results/year?decade=1940" style={eraCard}>
-          <span style={eraYear}>1940s</span>
-        </Link>
+        <Link href="/results/year#1940s" style={eraCard}>
+  <span style={eraYear}>1940s</span>
+</Link>
 
-        <Link href="/results/year?decade=1950" style={eraCard}>
-          <span style={eraYear}>1950s</span>
-        </Link>
+<Link href="/results/year#1950s" style={eraCard}>
+  <span style={eraYear}>1950s</span>
+</Link>
 
-<Link href="/results/year?decade=1960" style={eraCard}>
-          <span style={eraYear}>1960s</span>
-        </Link>
+<Link href="/results/year#1960s" style={eraCard}>
+  <span style={eraYear}>1960s</span>
+</Link>
 
-        <Link href="/results/year?decade=1970" style={eraCard}>
-          <span style={eraYear}>1970s</span>
-        </Link>
+<Link href="/results/year#1970s" style={eraCard}>
+  <span style={eraYear}>1970s</span>
+</Link>
 
-<Link href="/results/year?decade=1980" style={eraCard}>
-          <span style={eraYear}>1980s</span>
-        </Link>
+<Link href="/results/year#1980s" style={eraCard}>
+  <span style={eraYear}>1980s</span>
+</Link>
 
-        <Link href="/results/year?decade=1990" style={eraCard}>
-          <span style={eraYear}>1990s</span>
-        </Link>
+<Link href="/results/year#1990s" style={eraCard}>
+  <span style={eraYear}>1990s</span>
+</Link>
 
-<Link href="/results/year?decade=2000" style={eraCard}>
-          <span style={eraYear}>2000s</span>
-        </Link>
+<Link href="/results/year#2000s" style={eraCard}>
+  <span style={eraYear}>2000s</span>
+</Link>
 
-<Link href="/results/year?decade=2010" style={eraCard}>
-          <span style={eraYear}>2010s</span>
-        </Link>
+<Link href="/results/year#2010s" style={eraCard}>
+  <span style={eraYear}>2010s</span>
+</Link>
 
-        <Link href="/results/year?decade=2020" style={eraCard}>
-          <span style={eraYear}>2020s</span>
-        </Link>
+<Link href="/results/year#2020s" style={eraCard}>
+  <span style={eraYear}>2020s</span>
+</Link>
       </div>
     </div>
   </div>

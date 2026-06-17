@@ -235,14 +235,15 @@ export default async function ResultsYearPage() {
             {orderedDecades.length > 0 ? (
               <div style={decadeStack}>
                 {orderedDecades.map((decade, decadeIndex) => (
-                  <div
-                    key={decade}
-                    style={{
-                      ...decadeBlock,
-                      background:
-                        decadeIndex % 2 === 0 ? '#f3e7cf' : '#efe1c7',
-                    }}
-                  >
+  <div
+    id={decade}
+    key={decade}
+    style={{
+      ...decadeBlock,
+      background:
+        decadeIndex % 2 === 0 ? '#f3e7cf' : '#efe1c7',
+    }}
+  >
                     <div style={decadeWatermark}>
                       {decade.replace('s', '')}
                     </div>
@@ -577,6 +578,7 @@ const decadeStack: CSSProperties = {
 
 const decadeBlock: CSSProperties = {
   position: 'relative',
+scrollMarginTop: '100px',
   display: 'grid',
   gap: '12px',
   padding: '18px 18px 20px',
