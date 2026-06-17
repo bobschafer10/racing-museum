@@ -103,75 +103,114 @@ export default async function DriversPage({
   return (
     <main style={pageStyle}>
       <style>{`
-        .driver-hero-split {
-          display: grid;
-          grid-template-columns: 1.15fr 0.85fr;
-          gap: 36px;
-          align-items: center;
-        }
+        <style>{`
+  .driver-hero-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    align-items: center;
+  }
 
-        .driver-grid {
-          --driver-grid-columns: repeat(auto-fill, minmax(320px, 1fr));
-        }
+  .driver-grid {
+    --driver-grid-columns: 1fr;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        @media (max-width: 900px), (max-device-width: 900px), (pointer: coarse) {
-          .driver-hero-split {
-            grid-template-columns: 1fr !important;
-            gap: 22px !important;
-          }
+  .driver-page-title {
+    font-size: 44px !important;
+  }
 
-          .driver-grid {
-            --driver-grid-columns: 1fr;
-            max-width: 430px;
-            margin-left: auto;
-            margin-right: auto;
-          }
+  .driver-page-intro {
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+  }
 
-          .driver-page-title {
-            font-size: 44px !important;
-          }
+  .driver-search-form {
+    flex-direction: column !important;
+  }
 
-          .driver-page-intro {
-            font-size: 17px !important;
-            line-height: 1.5 !important;
-          }
+  .driver-hero-photo {
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
+  }
 
-          .driver-search-form {
-            flex-direction: column !important;
-          }
+  .driver-name {
+    font-size: 36px !important;
+    line-height: 1.05 !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
 
-          .driver-hero-photo {
-            height: auto !important;
-            aspect-ratio: 4 / 3 !important;
-          }
+  .driver-placeholder-name {
+    font-size: 30px !important;
+  }
 
-          .driver-name {
-            font-size: 36px !important;
-            line-height: 1.05 !important;
-            overflow-wrap: break-word !important;
-            word-break: normal !important;
-            hyphens: none !important;
-          }
+  .driver-meta {
+    font-size: 18px !important;
+  }
 
-          .driver-placeholder-name {
-            font-size: 30px !important;
-          }
+  .driver-stat-row {
+    font-size: 17px !important;
+    padding: 14px 16px !important;
+  }
 
-          .driver-meta {
-            font-size: 18px !important;
-          }
+  .driver-button {
+    font-size: 18px !important;
+    padding: 14px !important;
+  }
 
-          .driver-stat-row {
-            font-size: 17px !important;
-            padding: 14px 16px !important;
-          }
+  @media (min-width: 901px) and (hover: hover) and (pointer: fine) {
+    .driver-hero-split {
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+    }
 
-          .driver-button {
-            font-size: 18px !important;
-            padding: 14px !important;
-          }
-        }
-      `}</style>
+    .driver-grid {
+      --driver-grid-columns: repeat(auto-fill, minmax(320px, 1fr));
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .driver-page-title {
+      font-size: 64px !important;
+    }
+
+    .driver-page-intro {
+      font-size: 21px !important;
+      line-height: 1.8 !important;
+    }
+
+    .driver-search-form {
+      flex-direction: row !important;
+    }
+
+    .driver-hero-photo {
+      height: 420px !important;
+      aspect-ratio: auto !important;
+    }
+
+    .driver-name {
+      font-size: 32px !important;
+    }
+
+    .driver-meta {
+      font-size: 15px !important;
+    }
+
+    .driver-stat-row {
+      font-size: 14px !important;
+      padding: 10px 12px !important;
+    }
+
+    .driver-button {
+      font-size: inherit !important;
+      padding: 12px !important;
+    }
+  }
+`}</style>
 
       <section style={heroSection}>
         <div className="driver-hero-split" style={heroSplit}>
@@ -458,7 +497,7 @@ const contentWrap: CSSProperties = {
 
 const grid: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: 'var(--driver-grid-columns, repeat(auto-fill, minmax(320px, 1fr)))',
+  gridTemplateColumns: 'var(--driver-grid-columns)',
   gap: '24px',
 }
 
