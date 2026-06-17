@@ -64,7 +64,7 @@ export default async function DriversPage({
 
   try {
     if (driverSlugs.length > 0 && !error) {
-      const maxSlugs = driverSlugs.slice(0, 300) 
+      const maxSlugs = driverSlugs.slice(0, 300)
       const { data, error: photoError } = await supabase
         .from('photos')
         .select('driver_slug,file_name,year,photographer_slug,credit_type,track_slug,sequence')
@@ -102,28 +102,94 @@ export default async function DriversPage({
 
   return (
     <main style={pageStyle}>
-<style>{`
-  .driver-grid {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  }
+      <style>{`
+        .driver-hero-split {
+          display: grid;
+          grid-template-columns: 1.15fr 0.85fr;
+          gap: 36px;
+          align-items: center;
+        }
 
-  @media (max-width: 700px) {
-    .driver-grid {
-      grid-template-columns: 1fr !important;
-    }
-  }
-`}</style>
+        .driver-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 24px;
+        }
+
+        @media (max-width: 1000px) {
+          .driver-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
+        @media (max-width: 700px) {
+          .driver-hero-split {
+            grid-template-columns: 1fr !important;
+            gap: 22px !important;
+          }
+
+          .driver-page-title {
+            font-size: 44px !important;
+          }
+
+          .driver-page-intro {
+            font-size: 17px !important;
+            line-height: 1.5 !important;
+          }
+
+          .driver-search-form {
+            flex-direction: column !important;
+          }
+
+          .driver-hero-photo {
+            height: auto !important;
+            aspect-ratio: 4 / 3 !important;
+          }
+
+          .driver-grid {
+            grid-template-columns: 1fr !important;
+            gap: 22px !important;
+          }
+
+          .driver-name {
+            font-size: 38px !important;
+            line-height: 1.05 !important;
+            overflow-wrap: normal !important;
+            word-break: normal !important;
+            hyphens: none !important;
+          }
+
+          .driver-placeholder-name {
+            font-size: 30px !important;
+          }
+
+          .driver-meta {
+            font-size: 18px !important;
+          }
+
+          .driver-stat-row {
+            font-size: 17px !important;
+            padding: 14px 16px !important;
+          }
+
+          .driver-button {
+            font-size: 18px !important;
+            padding: 14px !important;
+          }
+        }
+      `}</style>
+
       <section style={heroSection}>
-        <div style={heroSplit}>
+        <div className="driver-hero-split" style={heroSplit}>
           <div style={heroLeft}>
             <div style={eyebrow}>Museum Collection</div>
-            <h1 style={pageTitle}>Drivers</h1>
-            <p style={pageIntro}>
+            <h1 className="driver-page-title" style={pageTitle}>Drivers</h1>
+            <p className="driver-page-intro" style={pageIntro}>
               Browse driver profiles, recorded wins, top 3 finishes, and historical race results
               from across the Upper Midwest.
             </p>
 
-            <form action="/drivers" method="get" style={searchForm}>
+            <form className="driver-search-form" action="/drivers" method="get" style={searchForm}>
               <input
                 type="text"
                 name="q"
@@ -144,7 +210,7 @@ export default async function DriversPage({
                   href={`/drivers?letter=${l}`}
                   style={{
                     ...letterLink,
-                    color: letter === l ? '#cf2e2e' : '#aaa',
+                    color: letter === l ? '#cf2e2e' : '#7a5827',
                     fontWeight: letter === l ? 'bold' : 'normal',
                     borderBottom: letter === l ? '2px solid #cf2e2e' : 'none',
                   }}
@@ -168,7 +234,12 @@ export default async function DriversPage({
           <div style={heroGallery}>
             {galleryPhoto && galleryPhoto.file_name ? (
               <>
-                <img src={buildUrl(galleryPhoto)} alt="Vintage racing archive" style={heroGalleryPhoto} />
+                <img
+                  className="driver-hero-photo"
+                  src={buildUrl(galleryPhoto)}
+                  alt="Vintage racing archive"
+                  style={heroGalleryPhoto}
+                />
                 <div style={heroGalleryCaption}>From the Museum Archive</div>
               </>
             ) : (
@@ -184,9 +255,10 @@ export default async function DriversPage({
         ) : filteredDrivers.length === 0 ? (
           <div style={emptyBox}>No drivers found.</div>
         ) : (
-          <div className="driver-grid" style={grid}>
+          <div className="driver-grid">
             {filteredDrivers.map((driver) => {
               const p = driverPhotoMap.get(driver.driver_slug)
+
               return (
                 <Link key={driver.driver_slug} href={`/drivers/${driver.driver_slug}`} style={cardLink}>
                   <article style={card}>
@@ -200,35 +272,39 @@ export default async function DriversPage({
                         </div>
                       ) : (
                         <div style={driverSignaturePlaceholder}>
-                          <div style={driverSignatureName}>{driver.driver_name}</div>
+                          <div className="driver-placeholder-name" style={driverSignatureName}>
+                            {driver.driver_name}
+                          </div>
                         </div>
                       )}
 
-                      <h2 style={driverName}>{driver.driver_name}</h2>
-                      <p style={metaLine}>
+                      <h2 className="driver-name" style={driverName}>{driver.driver_name}</h2>
+
+                      <p className="driver-meta" style={metaLine}>
                         {driver.hometown || 'Unknown hometown'}
                         {driver.state ? `, ${driver.state}` : ''}
                       </p>
 
                       <div style={statTable}>
-                        <div style={statRow}>
+                        <div className="driver-stat-row" style={statRow}>
                           <span>Recorded Feature Wins</span>
                           <strong style={statBadge}>{driver.recorded_wins ?? 0}</strong>
                         </div>
-                        <div style={statRow}>
+                        <div className="driver-stat-row" style={statRow}>
                           <span>Wisconsin Feature Wins</span>
                           <strong style={statBadge}>{driver.wisconsin_feature_wins ?? 0}</strong>
                         </div>
-                        <div style={statRow}>
+                        <div className="driver-stat-row" style={statRow}>
                           <span>Recorded Top-3 Finishes</span>
                           <strong style={statBadge}>{driver.recorded_top_3_finishes ?? 0}</strong>
                         </div>
-                        <div style={{ ...statRow, borderBottom: 'none' }}>
+                        <div className="driver-stat-row" style={{ ...statRow, borderBottom: 'none' }}>
                           <span>Recorded Results</span>
                           <strong style={statBadge}>{driver.recorded_results ?? 0}</strong>
                         </div>
                       </div>
-                      <div style={cardButton}>View Profile</div>
+
+                      <div className="driver-button" style={cardButton}>View Profile</div>
                     </div>
                   </article>
                 </Link>
@@ -247,10 +323,10 @@ function formatSlugName(value: string | null) {
 }
 
 function getCreditLabel(type: string | null) {
-  return type && ['post', 'program', 'flyer', 'photo'].includes(type) ? type.charAt(0).toUpperCase() + type.slice(1) : 'Credit'
+  return type && ['post', 'program', 'flyer', 'photo'].includes(type)
+    ? type.charAt(0).toUpperCase() + type.slice(1)
+    : 'Credit'
 }
-
-// UPPER MIDWEST AUTO RACING MUSEUM VISUAL SYSTEM
 
 const pageStyle: CSSProperties = {
   background: '#eadfc7',
@@ -269,10 +345,6 @@ const heroSection: CSSProperties = {
 const heroSplit: CSSProperties = {
   maxWidth: '1280px',
   margin: '0 auto',
-  display: 'grid',
-  gridTemplateColumns: '1.15fr 0.85fr',
-  gap: '36px',
-  alignItems: 'center',
 }
 
 const heroLeft: CSSProperties = {
@@ -390,11 +462,6 @@ const contentWrap: CSSProperties = {
   padding: '0 16px',
 }
 
-const grid: CSSProperties = {
-  display: 'grid',
-  gap: '24px',
-}
-
 const cardLink: CSSProperties = {
   textDecoration: 'none',
   color: 'inherit',
@@ -453,12 +520,11 @@ const driverSignatureName: CSSProperties = {
 }
 
 const driverName: CSSProperties = {
-  fontSize: 'clamp(30px, 7vw, 42px)',
+  fontSize: '32px',
   margin: '0 0 8px',
   color: '#3d2b16',
   fontFamily: 'Georgia, serif',
-  lineHeight: 1.05,
-  overflowWrap: 'break-word',
+  lineHeight: 1.08,
 }
 
 const metaLine: CSSProperties = {
