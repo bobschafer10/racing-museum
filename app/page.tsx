@@ -445,7 +445,7 @@ const track =
         </Link>
 
         <Link href="/results/year?decade=2020" style={eraCard}>
-          <span style={eraYear}>2020S</span>
+          <span style={eraYear}>2020s</span>
         </Link>
       </div>
     </div>
@@ -1051,6 +1051,15 @@ function MobileHomepageFix() {
     <style
       dangerouslySetInnerHTML={{
         __html: `
+@keyframes museumTickerScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 768px) {
   .home-page {
     width: 100% !important;
@@ -3112,9 +3121,9 @@ const museumTickerLabel: CSSProperties = {
 }
 
 const museumTickerWindow: CSSProperties = {
-  overflow: 'hidden',
-  position: 'relative',
+  flex: 1,
   minWidth: 0,
+  overflow: 'hidden',
 }
 
 const museumTickerTrack: CSSProperties = {
@@ -3122,6 +3131,7 @@ const museumTickerTrack: CSSProperties = {
   width: 'max-content',
   gap: '34px',
   whiteSpace: 'nowrap',
+  animation: 'museumTickerScroll 30s linear infinite',
 }
 
 const museumTickerItem: CSSProperties = {
