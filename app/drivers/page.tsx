@@ -174,7 +174,7 @@ export default async function DriversPage({
         </div>
       </section>
 
-      <section style={contentWrap}>
+      <section className="driver-content-section" style={contentWrap}>
         {error ? (
           <div style={errorBox}>Unable to load drivers right now.</div>
         ) : filteredDrivers.length === 0 ? (

@@ -37,3 +37,18 @@
     gap: 36px !important;
   }
 }
+
+main section.driver-content-section > div.driver-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  max-width: 430px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (min-width: 901px) and (hover: hover) and (pointer: fine) {
+  main section.driver-content-section > div.driver-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    max-width: none !important;
+  }
+}

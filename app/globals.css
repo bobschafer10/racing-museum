@@ -657,17 +657,7 @@ img {
     object-fit: contain;
   }
 
-  /* stats strip should not be five-wide on mobile */
-  main section:nth-of-type(2) > div {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-
-  main section:nth-of-type(2) > div > div {
-    border-right: none !important;
-  }
-
-  /* buttons */
+    /* buttons */
   main a {
     max-width: 100% !important;
   }
