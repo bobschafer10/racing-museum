@@ -231,8 +231,10 @@ const track =
           />
 
           <h1 style={heroTitle} className="home-hero-title">
-            Preserving the History of Upper Midwest Auto Racing
-          </h1>
+  Preserving the History of
+  <br />
+  Upper Midwest Auto Racing
+</h1>
 
           <p style={heroSubtitle} className="home-hero-subtitle">
             Explore drivers, tracks, race results, and historic photos
