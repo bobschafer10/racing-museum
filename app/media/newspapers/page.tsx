@@ -26,6 +26,17 @@ export default async function NewspapersPage({
 
   return (
     <main style={pageStyle} className="newspapers-page">
+<style>
+{`
+  @media (max-width: 768px) {
+    .newspapers-title {
+      font-size: 34px !important;
+      line-height: 1 !important;
+    }
+  }
+`}
+</style>
+
       <section style={heroWrap} className="newspapers-hero-wrap">
         <div style={heroInner} className="newspapers-hero-inner">
   <div style={newspaperArtifact}>
