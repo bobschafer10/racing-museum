@@ -744,4 +744,21 @@ img {
   }
 }
 
+@media (max-width: 1200px) {
+  .program-masonry {
+    column-count: 3 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .program-masonry {
+    column-count: 2 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .program-masonry {
+    column-count: 1 !important;
+  }
+}
 

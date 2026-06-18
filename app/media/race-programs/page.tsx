@@ -126,17 +126,30 @@ export default async function RaceProgramsPage({
   return (
     <main style={styles.pageWrap}>
       <style>
-        {`
-          .program-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 18px 38px rgba(45, 31, 18, 0.18) !important;
-          }
+{`
+  .program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(45, 31, 18, 0.18) !important;
+  }
 
-          .program-card:hover .program-cover {
-            transform: scale(1.025);
-          }
-        `}
-      </style>
+  .program-card:hover .program-cover {
+    transform: scale(1.025);
+  }
+
+  @media (max-width: 768px) {
+    .program-masonry {
+      column-count: 1 !important;
+      column-gap: 0 !important;
+    }
+
+    .program-card {
+      width: 100% !important;
+      display: block !important;
+      margin-bottom: 18px !important;
+    }
+  }
+`}
+</style>
 
       <section style={styles.heroPanel}>
         <div style={styles.heroWatermark}>PRINTED ARCHIVE</div>
@@ -336,7 +349,10 @@ export default async function RaceProgramsPage({
             No race programs matched that filter.
           </div>
         ) : (
-          <div style={styles.masonryGrid}>
+          <div
+  style={styles.masonryGrid}
+  className="program-masonry"
+>
             {filteredPrograms.map((program) => (
               <article
                 key={program.slug}
