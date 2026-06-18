@@ -1,28 +1,39 @@
-/* drivers page – responsive layout */
+/* app/drivers/drivers.css */
 
-/* Mobile: always exactly 1 column */
+/* DEFAULT: phone / mobile = one card per row */
 .driver-grid {
+  display: grid !important;
   grid-template-columns: 1fr !important;
+  gap: 24px !important;
+  width: 100% !important;
+  max-width: 430px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .driver-hero-split {
+  display: grid !important;
   grid-template-columns: 1fr !important;
+  gap: 22px !important;
 }
 
-/* Tablet and up: 2 columns */
-@media (min-width: 640px) {
+/* force phones/tablets with touch screens to one column no matter what width Chrome reports */
+@media (pointer: coarse), (max-device-width: 900px) {
   .driver-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: 1fr !important;
+    max-width: 430px !important;
   }
 }
 
-/* Desktop: 3 columns */
-@media (min-width: 1024px) {
+/* desktop/laptop only */
+@media (min-width: 901px) and (hover: hover) and (pointer: fine) {
   .driver-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    max-width: none !important;
   }
 
   .driver-hero-split {
     grid-template-columns: 1.15fr 0.85fr !important;
+    gap: 36px !important;
   }
 }

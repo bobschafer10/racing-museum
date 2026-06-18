@@ -753,16 +753,5 @@ img {
     transform: translateX(-50%);
   }
 }
-/* =========================
-   DRIVERS PAGE MOBILE
-========================= */
 
-.driver-grid {
-  grid-template-columns: 1fr !important;
-}
 
-@media (min-width: 768px) {
-  .driver-grid {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
-  }
-}
