@@ -1,0 +1,21 @@
+/* drivers page – responsive layout */
+
+/* Mobile default: 1 column */
+.driver-grid {
+  grid-template-columns: 1fr !important;
+}
+
+.driver-hero-split {
+  grid-template-columns: 1fr !important;
+}
+
+/* Desktop: multi-column at 768px and up */
+@media (min-width: 768px) {
+  .driver-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+  }
+
+  .driver-hero-split {
+    grid-template-columns: 1.15fr 0.85fr !important;
+  }
+}

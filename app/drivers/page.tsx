@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import './drivers.css'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
@@ -179,7 +180,7 @@ export default async function DriversPage({
         ) : filteredDrivers.length === 0 ? (
           <div style={emptyBox}>No drivers found.</div>
         ) : (
-          <div style={grid}>
+          <div className="driver-grid" style={grid}>
             {filteredDrivers.map((driver) => {
               const p = driverPhotoMap.get(driver.driver_slug)
 
@@ -392,7 +393,7 @@ const contentWrap: CSSProperties = {
 
 const grid: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))',
+  gridTemplateColumns: '1fr',
   gap: '24px',
 }
 
