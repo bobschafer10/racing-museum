@@ -1,6 +1,6 @@
 /* drivers page – responsive layout */
 
-/* Mobile default: 1 column */
+/* Mobile: always exactly 1 column */
 .driver-grid {
   grid-template-columns: 1fr !important;
 }
@@ -9,10 +9,17 @@
   grid-template-columns: 1fr !important;
 }
 
-/* Desktop: multi-column at 768px and up */
-@media (min-width: 768px) {
+/* Tablet and up: 2 columns */
+@media (min-width: 640px) {
   .driver-grid {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .driver-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 
   .driver-hero-split {
