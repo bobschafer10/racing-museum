@@ -271,6 +271,7 @@ const heroSplit: CSSProperties = {
   maxWidth: '1280px',
   margin: '0 auto',
   display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
   gap: '36px',
   alignItems: 'center',
 }
