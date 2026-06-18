@@ -25,9 +25,9 @@ export default async function NewspapersPage({
       : issues.filter((issue) => issue.publicationSlug === selectedPublication)
 
   return (
-    <main style={pageStyle}>
-      <section style={heroWrap}>
-        <div style={heroInner}>
+    <main style={pageStyle} className="newspapers-page">
+      <section style={heroWrap} className="newspapers-hero-wrap">
+        <div style={heroInner} className="newspapers-hero-inner">
   <div style={newspaperArtifact}>
     <img
       src="/media/newspapers/nssn-corner.png"
@@ -39,7 +39,7 @@ export default async function NewspapersPage({
   <div style={heroTopGrid}>
     <div>
       <div style={eyebrow}>Media Archive</div>
-      <h1 style={pageTitle}>Newspapers</h1>
+      <h1 style={pageTitle} className="newspapers-title">Newspapers</h1>
       <p style={introText}>
         Browse historic newspaper issues featuring race coverage,
         results, photos, standings, and archived reporting from tracks
@@ -50,7 +50,7 @@ export default async function NewspapersPage({
     <div style={logoPanel}>
               <div style={logoStripTitle}>Newspaper Publications</div>
 
-              <div style={logoStrip}>
+              <div style={logoStrip} className="newspapers-logo-strip">
                 {newspaperPublications.map((pub) => {
                   const isSelected = selectedPublication === pub.slug
                   const isComingSoon = pub.status === "coming-soon"
@@ -107,7 +107,7 @@ export default async function NewspapersPage({
             No newspaper issues found for this publication yet.
           </div>
         ) : (
-          <div style={issuesGrid}>
+          <div style={issuesGrid} className="newspapers-issues-grid">
             {filteredIssues.map((issue) => (
               <Link
                 key={issue.slug}
@@ -145,6 +145,7 @@ export default async function NewspapersPage({
           </div>
         )}
       </section>
+
     </main>
   )
 }
