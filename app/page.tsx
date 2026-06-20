@@ -959,14 +959,14 @@ spotlightPhoto.year !== 'unknown-year'
   <div>
     <strong>Email:</strong>{' '}
     <a
-      href="mailto:info@uppermidwestautoracingmuseum.org"
+      href="mailto:autoracinghistory@gmail.com"
       style={{
         color: '#5a3b1c',
         fontWeight: 600,
         textDecoration: 'none',
       }}
     >
-      info@uppermidwestautoracingmuseum.org
+      autoracinghistory@gmail.com
     </a>
   </div>
 
