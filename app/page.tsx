@@ -479,9 +479,12 @@ const track =
         Midwest racing history alive for future generations.
       </p>
 
-      <Link href="/contact" style={supportButton}>
-        Submit Information
-      </Link>
+      <a
+  href="mailto:autoracinghistory@gmail.com?subject=Museum Information Submission"
+  style={panelButtonLink}
+>
+  Submit Information
+</a>
     </div>
   </div>
 </section>
@@ -993,9 +996,12 @@ spotlightPhoto.year !== 'unknown-year'
 </div>
 
         <div style={{ marginTop: '14px' }}>
-          <Link href="/contact" style={panelButtonLink}>
-            Submit Information
-          </Link>
+          <a
+  href="mailto:autoracinghistory@gmail.com?subject=Museum Information Submission"
+  style={supportButton}
+>
+  Submit Information
+</a>
         </div>
       </div>
     </div>
