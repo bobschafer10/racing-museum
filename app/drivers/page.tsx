@@ -29,7 +29,8 @@ export default async function DriversPage({
       .not('driver_name', 'ilike', '%rainout%')
       .not('driver_name', 'ilike', '%unknown%')
       .not('driver_name', 'ilike', '%no name%')
-      .order('driver_name', { ascending: true })
+     .order('last_initial', { ascending: true })
+.order('driver_name', { ascending: true })
       .limit(1000)
 
     if (query) supabaseQuery = supabaseQuery.ilike('driver_name', `%${query}%`)
@@ -151,7 +152,7 @@ export default async function DriversPage({
               ) : query ? (
                 <>Showing results for <strong>{query}</strong></>
               ) : (
-                <>Showing driver directory</>
+               <>Showing driver directory</>
               )}
             </div>
           </div>
@@ -185,7 +186,11 @@ export default async function DriversPage({
               const p = driverPhotoMap.get(driver.driver_slug)
 
               return (
-                <Link key={driver.driver_slug} href={`/drivers/${driver.driver_slug}`} style={cardLink}>
+                <Link
+  key={`${letter || 'all'}-${driver.driver_slug}-${driver.driver_name}`}
+  href={`/drivers/${driver.driver_slug}`}
+  style={cardLink}
+>
                   <article style={card}>
                     <div style={cardInner}>
                       {p && p.file_name ? (
