@@ -796,7 +796,7 @@ leftSpotlightPhoto.photographer_slug !== 'unknown'
 rightSpotlightPhoto.photographer_slug !== 'unknown-photographer' &&
 rightSpotlightPhoto.photographer_slug !== 'unknown-credit' &&
 rightSpotlightPhoto.photographer_slug !== 'unknown'
-  ? `${formatSlugName(leftSpotlightPhoto.photographer_slug)} ${getCreditLabel(rightSpotlightPhoto.credit_type)}`
+  ? `${formatSlugName(rightSpotlightPhoto.photographer_slug)} ${getCreditLabel(rightSpotlightPhoto.credit_type)}`
   : 'Unknown Photographer Photo'}
 </div>
             <div style={spotlightCalloutTrack}>
