@@ -412,7 +412,7 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
     {row.driver_name}
   </Link>
 
-  {isRecentWinner(row.overall_last_win_date) && (
+  {isRecentWinner(row.last_win_date) && (
     <span style={styles.recentBadge}>Active</span>
   )}
 </div>
