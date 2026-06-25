@@ -34,7 +34,8 @@ type WinnerRow = {
   tracks_won_at: number
   classes_won_in: number
   first_win_date: string | null
-  last_win_date: string | null
+  last_win_date: string |null
+  overall_last_win_date: string | null
 }
 
 type StatsSummary = {
@@ -411,7 +412,7 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
     {row.driver_name}
   </Link>
 
-  {isRecentWinner(row.last_win_date) && (
+  {isRecentWinner(row.overall_last_win_date) && (
     <span style={styles.recentBadge}>Active</span>
   )}
 </div>
