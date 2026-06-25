@@ -6,7 +6,7 @@ import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 import TrackLogo from './tracks/[slug]/TrackLogo'
 
-export const revalidate = 3600
+export const revalidate = 300
 export const runtime = 'nodejs'
 
 const featuredSpecialEvents = [
@@ -97,7 +97,7 @@ export default async function Home() {
       .select('*')
       .neq('credit_type', 'unknown')
       .not('driver_slug', 'in', '("unknown-driver","unknown")')
-      .limit(250),
+      .limit(3000),
 
     supabase
       .from('photos')
@@ -173,19 +173,6 @@ const track =
       uniqueTrackMap.set(key, photo)
     }
   }
-
-  const shuffledSpotlightPhotos = Array.from(uniqueTrackMap.values()).sort(
-    () => Math.random() - 0.5
-  )
-
-  const leftSpotlightPhoto = shuffledSpotlightPhotos[0] || null
-
-  const rightSpotlightPhoto =
-    shuffledSpotlightPhotos.find(
-      (p) =>
-        p.file_name !== leftSpotlightPhoto?.file_name &&
-        p.track_slug !== leftSpotlightPhoto?.track_slug
-    ) || null
 
   const hasTwoSpotlightPhotos = !!leftSpotlightPhoto && !!rightSpotlightPhoto
 
