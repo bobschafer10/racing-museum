@@ -22,9 +22,10 @@ export default async function PhotosPage({
   const params = await searchParams
 
   let query = supabase
-    .from('photos')
-    .select('*')
-    .order('year', { ascending: false, nullsFirst: false })
+  .from('photos')
+  .select('*')
+  .eq('needs_review', false)
+  .order('year', { ascending: false, nullsFirst: false })
     .order('file_name', { ascending: true })
     .limit(500)
 
