@@ -209,7 +209,7 @@ const hasTwoSpotlightPhotos =
 <div style={heroGrain} />
 
         <div style={heroContent} className="home-hero-content">
-<div style={heroOpeningBadge}>NOW OPEN • SOFT OPENING</div>
+<div style={heroOpeningBadge}>WELCOME TO A SOFT OPENING</div>
           <Image
             className="home-hero-logo"
             src="/museum-logo.png"
