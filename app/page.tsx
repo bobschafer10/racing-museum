@@ -160,21 +160,19 @@ const track =
   const featuredSpecialEvent = getFeaturedSpecialEvent()
   const featuredSpecialEventHasImage = true
 
-  const randomizedPhotoPool = [...(photoPool || [])].sort(
-    () => Math.random() - 0.5
-  )
+  const shuffledSpotlightPhotos = [...(photoPool || [])].sort(
+  () => Math.random() - 0.5
+)
 
-  const uniqueTrackMap = new Map<string, any>()
+const leftSpotlightPhoto = shuffledSpotlightPhotos[0] || null
 
-  for (const photo of randomizedPhotoPool) {
-    const key = photo.track_slug || photo.file_name
+const rightSpotlightPhoto =
+  shuffledSpotlightPhotos.find(
+    (p) => p.file_name !== leftSpotlightPhoto?.file_name
+  ) || null
 
-    if (!uniqueTrackMap.has(key)) {
-      uniqueTrackMap.set(key, photo)
-    }
-  }
-
-  const hasTwoSpotlightPhotos = !!leftSpotlightPhoto && !!rightSpotlightPhoto
+const hasTwoSpotlightPhotos =
+  !!leftSpotlightPhoto && !!rightSpotlightPhoto
 
   const recentMuseumAdditions =
     recentPhotos && recentPhotos.length > 0
