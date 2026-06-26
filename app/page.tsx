@@ -209,6 +209,7 @@ const hasTwoSpotlightPhotos =
 <div style={heroGrain} />
 
         <div style={heroContent} className="home-hero-content">
+<div style={heroOpeningBadge}>NOW OPEN • SOFT OPENING</div>
           <Image
             className="home-hero-logo"
             src="/museum-logo.png"
@@ -3373,6 +3374,20 @@ const softOpeningMiniButton: CSSProperties = {
   fontSize: '14px',
   borderRadius: '4px',
   whiteSpace: 'nowrap',
+}
+
+const heroOpeningBadge: CSSProperties = {
+  display: "inline-block",
+  marginBottom: "12px",
+  padding: "6px 12px",
+  background: "#d6b76a",
+  color: "#2b1d10",
+  fontSize: "12px",
+  fontWeight: 800,
+  letterSpacing: "0.12em",
+  textTransform: "uppercase",
+  borderRadius: "999px",
+  border: "1px solid #f3df9f",
 }
 
 const museumTickerButton: CSSProperties = {
