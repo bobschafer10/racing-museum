@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image'
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
@@ -55,6 +56,9 @@ function photoStorageUrl(photo: any) {
 }
 
 export default async function Home() {
+
+const SOFT_OPENING_END = new Date("2026-07-10T23:59:59");
+const showSoftOpeningNotice = new Date() <= SOFT_OPENING_END;
   const [
     { data: stats },
     { data: driverPool },
@@ -231,8 +235,97 @@ const hasTwoSpotlightPhotos =
         </div>
       </section>
 
-      {/* STATS */}
-      <section style={statsStrip} className="home-stats">
+      {/* SOFT OPENING / MUSEUM WELCOME */}
+      {showSoftOpeningNotice ? (
+        <section style={softOpeningNotice} className="soft-opening-notice">
+          <div style={softOpeningTopLine}>
+            <span style={softOpeningFlag}>🏁</span>
+            <span style={softOpeningBadge}>Soft Opening • Summer 2026</span>
+          </div>
+
+          <h2 style={softOpeningTitle}>Welcome to the Museum</h2>
+
+          <p style={softOpeningLead}>
+            Welcome to the <strong>Virtual Upper Midwest Auto Racing Museum</strong>.
+          </p>
+
+          <p style={softOpeningText}>
+            Today marks the public opening of a project dedicated to preserving
+            more than a century of short track auto racing history throughout
+            Wisconsin, Upper Michigan, Eastern Minnesota, Northern Illinois,
+            and Chicagoland.
+          </p>
+
+          <p style={softOpeningText}>
+            Although the museum is now open, this is only the beginning. New race
+            results, photographs, driver biographies, track histories, newspapers,
+            and special collections will continue to be added on a regular basis.
+          </p>
+
+          <p style={softOpeningText}>
+            Like any museum with an expanding collection, some exhibits are still
+            being researched, cataloged, identified, and refined. Every update
+            brings another piece of racing history back to life.
+          </p>
+
+          <div style={softOpeningStatsGrid} className="soft-opening-stats-grid">
+            <div style={softOpeningStatCard}>
+              <strong>{formatStat(stats?.drivers_count ?? 0)}</strong>
+              <span>Drivers</span>
+            </div>
+            <div style={softOpeningStatCard}>
+              <strong>{formatStat(stats?.tracks_count ?? 0)}</strong>
+              <span>Tracks</span>
+            </div>
+            <div style={softOpeningStatCard}>
+              <strong>{formatStat(stats?.events_count ?? 0)}</strong>
+              <span>Race Events</span>
+            </div>
+            <div style={softOpeningStatCard}>
+              <strong>{formatStat(stats?.results_count ?? 0)}</strong>
+              <span>Race Results</span>
+            </div>
+            <div style={softOpeningStatCard}>
+              <strong>{formatStat(38000)}</strong>
+              <span>Historic Photos</span>
+            </div>
+            <div style={softOpeningStatCard}>
+              <strong>1903–2026</strong>
+              <span>Coverage</span>
+            </div>
+          </div>
+
+          <p style={softOpeningText}>
+            Have photographs, race programs, newspapers, race results, or
+            historical information to share? Your contributions help preserve
+            the rich history of Upper Midwest auto racing for future generations.
+          </p>
+
+          <a
+            href="mailto:autoracinghistory@gmail.com?subject=Museum Information Submission"
+            style={softOpeningButton}
+          >
+            Submit Historical Information
+          </a>
+        </section>
+      ) : (
+        <section style={softOpeningMiniBanner} className="soft-opening-mini">
+          <div>
+            <strong>New to the Museum?</strong>{' '}
+            <span>
+              Learn how this living archive is preserving more than a century of
+              Upper Midwest auto racing history.
+            </span>
+          </div>
+
+          <a href="#museum-desk" style={softOpeningMiniButton}>
+            Visit Museum Desk →
+          </a>
+        </section>
+      )}
+
+{/* STATS */}
+<section style={statsStrip} className="home-stats">
         <div style={statsInner} className="home-stats-inner">
           <StatItem label="Drivers" value={stats?.drivers_count ?? 0} />
           <StatItem label="Tracks" value={stats?.tracks_count ?? 0} />
@@ -1101,6 +1194,35 @@ function MobileHomepageFix() {
   .home-hero-region {
     font-size: 17px !important;
     line-height: 1.25 !important;
+  }
+
+  .soft-opening-notice,
+  .soft-opening-mini {
+    margin: 14px 10px 18px !important;
+    padding: 18px 14px !important;
+    max-width: calc(100% - 20px) !important;
+    width: calc(100% - 20px) !important;
+    overflow: hidden !important;
+  }
+
+  .soft-opening-notice h2 {
+    font-size: clamp(34px, 11vw, 44px) !important;
+  }
+
+  .soft-opening-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  .soft-opening-mini {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .soft-opening-mini a {
+    justify-self: start !important;
+    white-space: normal !important;
   }
 
   .home-stats {
@@ -3131,6 +3253,126 @@ const museumTickerItem: CSSProperties = {
   fontSize: '17px',
   fontWeight: 700,
   color: '#fff4dc',
+}
+
+const softOpeningNotice: CSSProperties = {
+  maxWidth: '1120px',
+  margin: '24px auto 20px',
+  padding: '28px',
+  background:
+    'linear-gradient(135deg, rgba(58,42,27,.98), rgba(35,25,16,.98))',
+  border: '1px solid #c7a96b',
+  borderTop: '6px solid #d6b76a',
+  borderRadius: '12px',
+  color: '#f5ead0',
+  lineHeight: 1.6,
+  boxShadow: '8px 8px 0 rgba(58,42,26,.18)',
+}
+
+const softOpeningTopLine: CSSProperties = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  gap: '14px',
+  marginBottom: '12px',
+}
+
+const softOpeningFlag: CSSProperties = {
+  fontSize: '28px',
+  lineHeight: 1,
+}
+
+const softOpeningBadge: CSSProperties = {
+  display: 'inline-block',
+  padding: '7px 12px',
+  background: '#f1e1bd',
+  color: '#3a2a1b',
+  border: '1px solid #c7a96b',
+  borderRadius: '999px',
+  fontSize: '13px',
+  fontWeight: 900,
+  textTransform: 'uppercase',
+  letterSpacing: '.08em',
+}
+
+const softOpeningTitle: CSSProperties = {
+  margin: '0 0 12px',
+  color: '#f4d88a',
+  fontSize: 'clamp(34px, 5vw, 58px)',
+  lineHeight: 1,
+  fontFamily: 'Georgia, serif',
+  letterSpacing: '-.02em',
+}
+
+const softOpeningLead: CSSProperties = {
+  margin: '0 0 14px',
+  fontSize: '22px',
+  color: '#fff4dc',
+}
+
+const softOpeningText: CSSProperties = {
+  margin: '12px 0',
+  fontSize: '17px',
+  color: '#f5ead0',
+}
+
+const softOpeningStatsGrid: CSSProperties = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(6, minmax(0, 1fr))',
+  gap: '10px',
+  margin: '22px 0',
+}
+
+const softOpeningStatCard: CSSProperties = {
+  padding: '13px 10px',
+  background: 'rgba(241,225,189,.12)',
+  border: '1px solid rgba(214,183,106,.38)',
+  borderRadius: '8px',
+  textAlign: 'center',
+  color: '#fff4dc',
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '4px',
+}
+
+const softOpeningButton: CSSProperties = {
+  display: 'inline-block',
+  marginTop: '12px',
+  background: '#f1e1bd',
+  color: '#2f2113',
+  padding: '13px 18px',
+  textDecoration: 'none',
+  fontWeight: 900,
+  fontSize: '15px',
+  border: '2px solid #b29364',
+  borderRadius: '4px',
+}
+
+const softOpeningMiniBanner: CSSProperties = {
+  maxWidth: '1120px',
+  margin: '20px auto',
+  padding: '16px 18px',
+  background: '#efe7d6',
+  color: '#2f2417',
+  border: '1px solid #b29364',
+  borderLeft: '6px solid #7b4a21',
+  borderRadius: '8px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  gap: '18px',
+  lineHeight: 1.45,
+}
+
+const softOpeningMiniButton: CSSProperties = {
+  background: '#7b4a21',
+  color: '#fff4dc',
+  padding: '10px 14px',
+  textDecoration: 'none',
+  fontWeight: 900,
+  fontSize: '14px',
+  borderRadius: '4px',
+  whiteSpace: 'nowrap',
 }
 
 const museumTickerButton: CSSProperties = {
