@@ -65,7 +65,7 @@ export default async function PhotosPage({
         </div>
 
         <div style={eyebrow}>Photo Archive</div>
-        <h1 style={title}>Photos</h1>
+        <h1 style={title}>TEST - Photos</h1>
 
         <p style={intro}>
           Browse the growing photo archive from tracks, drivers, photographers, and racing history across the Upper Midwest.
