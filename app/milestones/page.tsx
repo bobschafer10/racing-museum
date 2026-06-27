@@ -84,7 +84,7 @@ export default async function MilestonesPage() {
           <Link href="/drivers">Driver Directory</Link>
           <Link href="/tracks">Track Directory</Link>
           <Link href="/stats">Stats Lab</Link>
-          <Link href="/milestones/tracks">Active Track Watch</Link>
+          <Link href="/milestones">Active Track Watch Coming Soon</Link>
         </div>
       </section>
 
@@ -127,7 +127,13 @@ export default async function MilestonesPage() {
                   <td className="bigNumber">{driver.feature_wins}</td>
                   <td>{driver.next_milestone ?? "—"}</td>
                   <td>{driver.wins_needed ?? "—"}</td>
-                  <td>{driver.is_active ? "Yes" : "No"}</td>
+                  <td>
+  {driver.is_active ? (
+    <span className="activeBadge">ACTIVE</span>
+  ) : (
+    <span className="inactiveBadge">Historic</span>
+  )}
+</td>
                   <td>{formatDate(driver.last_win_date)}</td>
                 </tr>
               ))}
@@ -151,10 +157,15 @@ export default async function MilestonesPage() {
               </span>
 
               <div>
-                <strong>{driver.driver_name}</strong>
-                <p>{driver.feature_wins} Wisconsin feature wins</p>
-                <p>Last win: {formatDate(driver.last_win_date)}</p>
-              </div>
+    <strong>{driver.driver_name}</strong>
+
+    {driver.is_active && (
+        <span className="activeBadge">ACTIVE</span>
+    )}
+
+    <p>{driver.feature_wins} Wisconsin feature wins</p>
+    <p>Last win: {formatDate(driver.last_win_date)}</p>
+</div>
 
               <span className="arrow">›</span>
             </Link>
@@ -333,6 +344,27 @@ export default async function MilestonesPage() {
     .desktopTable {
       display: none;
     }
+
+.activeBadge {
+  display: inline-block;
+  background: #2f7d32;
+  color: white;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 5px 8px;
+  border-radius: 999px;
+  letter-spacing: .5px;
+}
+
+.inactiveBadge {
+  display: inline-block;
+  background: #d9cfbf;
+  color: #4b3a26;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px 8px;
+  border-radius: 999px;
+}
 
     .mobileCards {
       display: grid;
