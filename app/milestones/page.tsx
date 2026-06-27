@@ -56,11 +56,7 @@ function milestoneClass(level: number | null) {
 export default async function MilestonesPage() {
   const rows = await getMilestones();
 
-  const achieved = [500, 400, 300, 200, 100].flatMap((level) =>
-  rows
-    .filter((r) => r.milestone_status === "achieved" && r.achieved_milestone === level)
-    .slice(0, level === 100 ? 12 : 8)
-);
+  const achieved = rows.filter((r) => r.milestone_status === "achieved");
   const withinFive = rows.filter((r) => r.milestone_status === "within_5");
 
   const groups = [500, 400, 300, 200, 100];
