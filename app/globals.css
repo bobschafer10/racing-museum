@@ -762,3 +762,254 @@ img {
   }
 }
 
+.milestonesPage {
+  background: #f4efe5;
+  color: #151515;
+}
+
+.milestoneHero {
+  min-height: 300px;
+  padding: 70px 5vw;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.92), rgba(0,0,0,.45)),
+    url("/images/museum-racing-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 5px solid #a20f12;
+}
+
+.milestoneHero h1 {
+  max-width: 900px;
+  margin: 8px 0;
+  font-size: clamp(2.7rem, 7vw, 5.5rem);
+  line-height: .95;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.milestoneHero p {
+  max-width: 720px;
+  font-size: 1.2rem;
+}
+
+.eyebrow {
+  color: #f2b632;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.milestoneIntro,
+.milestoneSection,
+.trackWatchCallout {
+  width: min(1180px, calc(100% - 32px));
+  margin: 28px auto;
+}
+
+.milestoneActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.milestoneActions a,
+.trackWatchCallout a {
+  background: #111;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: .85rem;
+}
+
+.milestoneSection h2 {
+  color: #8f1111;
+  text-transform: uppercase;
+  font-size: 1.55rem;
+  margin-bottom: 14px;
+}
+
+.desktopTable {
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #d6cbb8;
+  border-radius: 10px;
+}
+
+.desktopTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.desktopTable th {
+  background: #111;
+  color: white;
+  padding: 13px;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.desktopTable td {
+  padding: 14px;
+  border-bottom: 1px solid #e4dccf;
+}
+
+.driverLink {
+  color: #9f1111;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.bigNumber {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.milestoneBadge {
+  display: inline-flex;
+  min-width: 76px;
+  justify-content: center;
+  padding: 10px 12px;
+  color: white;
+  border-radius: 6px;
+  font-weight: 1000;
+  font-size: 1.25rem;
+}
+
+.m500 { background: #681515; }
+.m400 { background: #b91414; }
+.m300 { background: #d55a00; }
+.m200 { background: #c69010; }
+.m100 { background: #3f7d33; }
+
+.withinGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.withinCard {
+  background: white;
+  border: 1px solid #d6cbb8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.withinCard h3 {
+  margin: 0;
+  padding: 12px;
+  background: #111;
+  color: white;
+  text-transform: uppercase;
+}
+
+.withinCard .range {
+  margin: 12px;
+  font-weight: 800;
+  color: #6d5b45;
+}
+
+.withinCard ol {
+  margin: 0;
+  padding: 0 14px 14px 34px;
+}
+
+.withinCard li {
+  margin: 8px 0;
+}
+
+.withinCard li span {
+  float: right;
+  font-weight: 900;
+}
+
+.withinCard a {
+  color: #8f1111;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.empty {
+  margin: 14px;
+  color: #777;
+}
+
+.trackWatchCallout {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  background: #101820;
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 6px solid #a20f12;
+}
+
+.mobileCards {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .milestoneHero {
+    min-height: 260px;
+    padding: 48px 22px;
+  }
+
+  .desktopTable {
+    display: none;
+  }
+
+  .mobileCards {
+    display: grid;
+    gap: 12px;
+  }
+
+  .mobileMilestoneCard {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    align-items: center;
+    background: white;
+    border: 1px solid #d6cbb8;
+    border-radius: 10px;
+    padding: 12px;
+    text-decoration: none;
+    color: #111;
+  }
+
+  .mobileMilestoneCard strong {
+    color: #9f1111;
+    font-size: 1.05rem;
+  }
+
+  .mobileMilestoneCard p {
+    margin: 2px 0;
+    font-size: .9rem;
+  }
+
+  .arrow {
+    font-size: 2rem;
+    color: #9f1111;
+  }
+
+  .withinGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .trackWatchCallout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .milestoneActions a,
+  .trackWatchCallout a {
+    width: 100%;
+    text-align: center;
+  }
+}
+

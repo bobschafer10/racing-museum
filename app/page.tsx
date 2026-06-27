@@ -611,6 +611,48 @@ const hasTwoSpotlightPhotos =
         </div>
       </section>
 
+{/* MUSEUM MILESTONES TEASER */}
+<section style={sectionWrap} className="home-section">
+  <div style={milestoneTeaserPanel}>
+    <div style={milestoneTeaserEyebrow}>Museum Milestones</div>
+
+    <h2 style={milestoneTeaserTitle}>
+      Career Feature Win Milestones
+    </h2>
+
+    <p style={milestoneTeaserText}>
+      Follow the drivers who have reached major recorded Wisconsin feature win
+      milestones — and those closing in on racing history.
+    </p>
+
+    <div style={milestoneTeaserGrid}>
+      <div style={milestoneTeaserCard}>
+        <strong>500+</strong>
+        <span>Elite Feature Winners</span>
+      </div>
+
+      <div style={milestoneTeaserCard}>
+        <strong>300+</strong>
+        <span>Historic Career Marks</span>
+      </div>
+
+      <div style={milestoneTeaserCard}>
+        <strong>100+</strong>
+        <span>Major Win Club</span>
+      </div>
+
+      <div style={milestoneTeaserCard}>
+        <strong>Within 5</strong>
+        <span>Drivers Closing In</span>
+      </div>
+    </div>
+
+    <Link href="/milestones" style={milestoneTeaserButton}>
+      View Milestone Watch →
+    </Link>
+  </div>
+</section>
+
 
 {/* FEATURED NEWSPAPER WOW SPOT */}
 <section style={sectionWrap} className="home-section">
@@ -3388,6 +3430,65 @@ const heroOpeningBadge: CSSProperties = {
   textTransform: "uppercase",
   borderRadius: "999px",
   border: "1px solid #f3df9f",
+}
+
+const milestoneTeaserPanel: CSSProperties = {
+  background: 'linear-gradient(135deg, #16120d, #3a2414)',
+  border: '1px solid #b29364',
+  borderRadius: 18,
+  padding: '34px',
+  color: '#f7efe0',
+  boxShadow: '8px 8px 0 rgba(58,42,26,.18)',
+}
+
+const milestoneTeaserEyebrow: CSSProperties = {
+  color: '#d6a642',
+  fontWeight: 900,
+  textTransform: 'uppercase',
+  letterSpacing: '2px',
+  marginBottom: 10,
+}
+
+const milestoneTeaserTitle: CSSProperties = {
+  fontSize: 'clamp(38px, 6vw, 68px)',
+  lineHeight: 0.95,
+  margin: 0,
+  textTransform: 'uppercase',
+  color: '#fff4dc',
+}
+
+const milestoneTeaserText: CSSProperties = {
+  maxWidth: 760,
+  fontSize: 20,
+  lineHeight: 1.45,
+  marginTop: 16,
+  color: '#eadcc4',
+}
+
+const milestoneTeaserGrid: CSSProperties = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
+  gap: 14,
+  marginTop: 24,
+  marginBottom: 26,
+}
+
+const milestoneTeaserCard: CSSProperties = {
+  background: 'rgba(255,255,255,.08)',
+  border: '1px solid rgba(255,255,255,.18)',
+  borderRadius: 12,
+  padding: '18px',
+}
+
+const milestoneTeaserButton: CSSProperties = {
+  display: 'inline-block',
+  background: '#b11218',
+  color: '#fff',
+  padding: '13px 18px',
+  borderRadius: 8,
+  textDecoration: 'none',
+  fontWeight: 900,
+  textTransform: 'uppercase',
 }
 
 const museumTickerButton: CSSProperties = {

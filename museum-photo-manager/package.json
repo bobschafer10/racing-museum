@@ -1,0 +1,17 @@
+{
+  "name": "museum-photo-manager",
+  "version": "2.0.0",
+  "description": "Upper Midwest Auto Racing Museum Photo Manager",
+  "main": "museum-photo-manager.js",
+  "scripts": {
+    "start": "node museum-photo-manager.js",
+    "menu": "node museum-photo-manager.js",
+    "dry-run": "node museum-photo-manager.js upload --dry-run",
+    "upload": "node museum-photo-manager.js upload",
+    "upload-move-done": "node museum-photo-manager.js upload --move-done"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "dotenv": "latest"
+  }
+}
