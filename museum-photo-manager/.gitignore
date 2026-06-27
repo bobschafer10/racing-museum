@@ -1,10 +1,6 @@
 .env
 node_modules/
 photo-upload-batch/*
-!photo-upload-batch/.gitkeep
-upload-reports/*
-!upload-reports/.gitkeep
 uploaded-done/*
-!uploaded-done/.gitkeep
-replace-file/*
-!replace-file/.gitkeep
+upload-reports/*.csv
+!.gitkeep
