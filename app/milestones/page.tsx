@@ -56,7 +56,11 @@ function milestoneClass(level: number | null) {
 export default async function MilestonesPage() {
   const rows = await getMilestones();
 
-  const achieved = rows.filter((r) => r.milestone_status === "achieved");
+  const achieved = [500, 400, 300, 200, 100].flatMap((level) =>
+  rows
+    .filter((r) => r.milestone_status === "achieved" && r.achieved_milestone === level)
+    .slice(0, level === 100 ? 12 : 8)
+);
   const withinFive = rows.filter((r) => r.milestone_status === "within_5");
 
   const groups = [500, 400, 300, 200, 100];
@@ -268,6 +272,14 @@ export default async function MilestonesPage() {
     border: 1px solid #d6cbb8;
   }
 
+.desktopTable tbody tr:nth-child(even) {
+  background: #f7f1e6;
+}
+
+.desktopTable tbody tr:hover {
+  background: #fff2c7;
+}
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -347,13 +359,14 @@ export default async function MilestonesPage() {
 
 .activeBadge {
   display: inline-block;
-  background: #2f7d32;
+  background: #0f8a2a;
   color: white;
-  font-size: 11px;
-  font-weight: 900;
-  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: 1000;
+  padding: 6px 10px;
   border-radius: 999px;
-  letter-spacing: .5px;
+  letter-spacing: .8px;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0f8a2a;
 }
 
 .inactiveBadge {
