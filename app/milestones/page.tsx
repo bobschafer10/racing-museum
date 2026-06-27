@@ -209,6 +209,141 @@ export default async function MilestonesPage() {
 
         <Link href="/milestones/tracks">View Active Track Watch</Link>
       </section>
+
+<style>{`
+  .milestonesPage {
+    background: #f4efe5;
+    color: #18120c;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .milestoneHero {
+    background: linear-gradient(135deg, #15110c, #3a2414);
+    color: white;
+    padding: 70px 6vw;
+    border-bottom: 6px solid #a20f12;
+  }
+
+  .milestoneHero h1 {
+    font-size: clamp(42px, 7vw, 84px);
+    line-height: .9;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+
+  .milestoneHero p {
+    font-size: 20px;
+    max-width: 760px;
+  }
+
+  .milestoneSection,
+  .milestoneIntro,
+  .trackWatchCallout {
+    width: min(1180px, calc(100% - 32px));
+    margin: 30px auto;
+  }
+
+  .milestoneSection h2 {
+    color: #8f1111;
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+
+  .desktopTable {
+    background: white;
+    border-radius: 12px;
+    overflow-x: auto;
+    border: 1px solid #d6cbb8;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    background: #111;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  td {
+    padding: 13px;
+    border-bottom: 1px solid #e1d7c8;
+  }
+
+  .driverLink {
+    color: #a20f12;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .milestoneBadge {
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    font-weight: 900;
+  }
+
+  .m500 { background: #681515; }
+  .m400 { background: #b91414; }
+  .m300 { background: #d55a00; }
+  .m200 { background: #c69010; }
+  .m100 { background: #3f7d33; }
+
+  .withinGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+  }
+
+  .withinCard {
+    background: white;
+    border: 1px solid #d6cbb8;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .withinCard h3 {
+    background: #111;
+    color: white;
+    margin: 0;
+    padding: 12px;
+  }
+
+  .withinCard a {
+    color: #8f1111;
+    font-weight: 800;
+  }
+
+  .trackWatchCallout {
+    background: #101820;
+    color: white;
+    padding: 24px;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 760px) {
+    .desktopTable {
+      display: none;
+    }
+
+    .mobileCards {
+      display: grid;
+      gap: 12px;
+    }
+
+    .withinGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+`}</style>
     </main>
   );
 }
