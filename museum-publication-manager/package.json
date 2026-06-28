@@ -1,0 +1,15 @@
+{
+  "name": "museum-publication-manager",
+  "version": "1.1.0",
+  "description": "Upper Midwest Auto Racing Museum publication/yearbook/program upload manager",
+  "main": "publication-manager.js",
+  "type": "module",
+  "scripts": {
+    "publications-dry-run": "node publication-manager.js --dry-run",
+    "publications-upload": "node publication-manager.js --upload"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "dotenv": "latest"
+  }
+}
