@@ -490,7 +490,7 @@
     "year": 1970,
     "issueDate": "1970-04-30",
     "description": null,
-    "summary": "Checkered Flag Racing News issue from April 30, 1970.",
+    "summary": "This April 30, 1970 issue of Checkered Flag Racing News highlights TEM SEASON OPENER; AT CAPITOL TT 2H Ie; custom Lettering Columbus, Wis. oy esd. The issue preserves period race coverage, photographs, schedules, advertisements, and regional short-track reporting from the Upper Midwest racing scene.",
     "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/front-cover.jpg",
     "thumbnailImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/thumbnail.jpg",
     "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/back-cover.jpg",
@@ -507,7 +507,16 @@
     ],
     "featured": false,
     "volume": null,
-    "number": null
+    "number": null,
+    "highlights": [
+      "TEM SEASON OPENER",
+      "AT CAPITOL TT 2H Ie",
+      "custom Lettering Columbus, Wis. oy esd",
+      "I RACING NEWS 25¢",
+      "O Ag Ls “<\\ nese i yy Hy \" a Es ae eae eee ae ee a a",
+      "w <7 ny 5 Published by J/D ENTERPRISES Vol. 3, No. 2"
+    ],
+    "ocrConfidence": 59
   },
   {
     "slug": "1959-06-03",

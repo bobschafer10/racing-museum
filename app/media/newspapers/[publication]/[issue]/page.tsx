@@ -73,13 +73,37 @@ export default async function NewspaperIssuePage({
           </div>
 
           <div style={insideIssuePanel}>
-            <div style={insideIssueEyebrow}>Inside This Issue</div>
-            <div style={insideIssueEmpty}>
-              Issue pages are available below. Highlights can be added later
-              through the newspaper manifest.
-            </div>
-          </div>
-        </div>
+  <div style={insideIssueEyebrow}>Inside This Issue</div>
+
+  {issue.summary ? (
+    <div style={insideIssueText}>
+      {issue.summary}
+    </div>
+  ) : (
+    <div style={insideIssueEmpty}>
+      Historic racing newspaper issue featuring race coverage,
+      results, photographs, standings and regional reporting.
+    </div>
+  )}
+
+  {issue.highlights && issue.highlights.length > 0 && (
+    <>
+      <hr
+        style={{
+          margin: "16px 0",
+          border: 0,
+          borderTop: "1px solid #c2a97d",
+        }}
+      />
+
+      <ul style={highlightList}>
+        {issue.highlights.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </>
+  )}
+</div>
       </section>
 
       <section style={sectionStyle}>
@@ -206,6 +230,20 @@ const insideIssueEyebrow: CSSProperties = {
   color: "#7a6348",
   fontWeight: 700,
   marginBottom: "14px",
+}
+
+const insideIssueText: CSSProperties = {
+  fontSize: "15px",
+  lineHeight: 1.65,
+  color: "#3d2e1f",
+}
+
+const highlightList: CSSProperties = {
+  margin: "0",
+  paddingLeft: "18px",
+  lineHeight: 1.6,
+  color: "#5b4630",
+  fontSize: "14px",
 }
 
 const insideIssueEmpty: CSSProperties = {

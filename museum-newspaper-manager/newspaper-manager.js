@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /*
-  Museum Newspaper Manager v1.2
+  Museum Newspaper Manager v1.2.1
   - CFRN/MRN/NSSN shortcut folders
   - page spread support
   - ordered upload filenames
   - front/back/thumbnail generation
   - newspaper.json generation
   - newspapers-manifest.json update
-  - OCR selected pages and create museum-style summary
+  - safe OCR from the original first full-size page
 */
 
 const fs = require('fs/promises');
@@ -33,7 +33,10 @@ const MAX_FOLDERS = Number(process.env.MAX_NEWSPAPER_FOLDERS || 25);
 const BATCH_FOLDER = process.env.NEWSPAPER_BATCH_FOLDER || 'newspaper-upload-batch';
 const MANIFEST_PATH = path.resolve(process.cwd(), process.env.MANIFEST_NEWSPAPERS || '../public/data/newspapers-manifest.json');
 const OCR_ENABLED = String(process.env.NEWSPAPER_OCR_ENABLED || 'true').toLowerCase() !== 'false' || FORCE_OCR;
-const OCR_MAX_PAGES = Number(process.env.NEWSPAPER_OCR_MAX_PAGES || 3);
+const OCR_MAX_PAGES = Number(process.env.NEWSPAPER_OCR_MAX_PAGES || 1);
+const OCR_TIMEOUT_MS = Number(process.env.NEWSPAPER_OCR_TIMEOUT_MS || 60000);
+const OCR_MIN_WIDTH = Number(process.env.NEWSPAPER_OCR_MIN_WIDTH || 500);
+const OCR_MIN_HEIGHT = Number(process.env.NEWSPAPER_OCR_MIN_HEIGHT || 500);
 
 const PUBLICATION_MAP = {
   cfrn: { slug: 'checkered-flag-racing-news', name: 'Checkered Flag Racing News' },
@@ -126,8 +129,48 @@ async function generateDerivativeBuffers(firstPath, lastPath) {
   const thumb = await sharp(firstPath).resize({ width: 520, withoutEnlargement: true }).jpeg({ quality: 82 }).toBuffer();
   return { front, back, thumb };
 }
+async function withTimeout(promise, ms, label) {
+  let timer;
+  try {
+    return await Promise.race([
+      promise,
+      new Promise((_, reject) => {
+        timer = setTimeout(() => reject(new Error(`${label} timed out after ${Math.round(ms / 1000)} seconds`)), ms);
+      })
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
+async function buildOcrInput(originalPath) {
+  // OCR only the original, full-size first page. Do not OCR thumbnail/front-cover copies.
+  const meta = await sharp(originalPath).metadata();
+  if (!meta.width || !meta.height || meta.width < OCR_MIN_WIDTH || meta.height < OCR_MIN_HEIGHT) {
+    return { path: null, warning: `OCR skipped: source image too small (${meta.width || '?'}x${meta.height || '?'})` };
+  }
+
+  const tempDir = path.resolve(process.cwd(), '.ocr-temp');
+  await fs.mkdir(tempDir, { recursive: true });
+  const tempPath = path.join(tempDir, `${Date.now()}-${slugify(path.basename(originalPath, path.extname(originalPath)))}.jpg`);
+
+  // Normalize to a clean grayscale JPEG and enlarge if useful. This avoids OCR trying to read tiny generated assets.
+  await sharp(originalPath)
+    .rotate()
+    .grayscale()
+    .resize({ width: Math.max(meta.width, 1800), withoutEnlargement: false })
+    .jpeg({ quality: 92 })
+    .toFile(tempPath);
+
+  return { path: tempPath, warning: null };
+}
+
 async function runOcrOnImages(imagePaths) {
   if (!OCR_ENABLED || imagePaths.length === 0) return { text: '', confidence: null, sourceCount: 0 };
+  if (DRY_RUN && !FORCE_OCR) {
+    return { text: '', confidence: null, sourceCount: 0, warning: 'OCR skipped during dry run; upload will OCR the full-size front page.' };
+  }
+
   let createWorker;
   try {
     ({ createWorker } = require('tesseract.js'));
@@ -136,23 +179,59 @@ async function runOcrOnImages(imagePaths) {
   }
 
   let worker;
-  let texts = [];
-  let confidences = [];
+  const texts = [];
+  const confidences = [];
+  const warnings = [];
+  const tempFiles = [];
+
   try {
-    worker = await createWorker('eng');
-    for (const p of imagePaths.slice(0, OCR_MAX_PAGES)) {
-      const result = await worker.recognize(p);
-      const text = (result?.data?.text || '').trim();
-      if (text) texts.push(`--- ${path.basename(p)} ---\n${text}`);
-      if (typeof result?.data?.confidence === 'number') confidences.push(result.data.confidence);
+    const selected = imagePaths.slice(0, OCR_MAX_PAGES);
+    const ocrInputs = [];
+
+    for (const sourcePath of selected) {
+      try {
+        const input = await buildOcrInput(sourcePath);
+        if (input.warning) warnings.push(input.warning);
+        if (input.path) {
+          ocrInputs.push({ original: sourcePath, ocrPath: input.path });
+          tempFiles.push(input.path);
+        }
+      } catch (err) {
+        warnings.push(`OCR prep failed for ${path.basename(sourcePath)}: ${err.message}`);
+      }
+    }
+
+    if (!ocrInputs.length) {
+      return { text: '', confidence: null, sourceCount: 0, warning: warnings.join(' | ') || 'OCR skipped: no usable OCR source image.' };
+    }
+
+    worker = await withTimeout(createWorker('eng'), OCR_TIMEOUT_MS, 'OCR worker startup');
+
+    for (const item of ocrInputs) {
+      try {
+        const result = await withTimeout(worker.recognize(item.ocrPath), OCR_TIMEOUT_MS, `OCR ${path.basename(item.original)}`);
+        const text = (result?.data?.text || '').trim();
+        if (text) texts.push(`--- ${path.basename(item.original)} ---\n${text}`);
+        if (typeof result?.data?.confidence === 'number') confidences.push(result.data.confidence);
+      } catch (err) {
+        warnings.push(`OCR failed for ${path.basename(item.original)}: ${err.message}`);
+      }
     }
   } catch (err) {
-    return { text: texts.join('\n\n'), confidence: confidences.length ? Math.round(confidences.reduce((a,b)=>a+b,0)/confidences.length) : null, sourceCount: texts.length, warning: `OCR failed: ${err.message}` };
+    warnings.push(`OCR failed: ${err.message}`);
   } finally {
     if (worker) await worker.terminate().catch(() => {});
+    for (const temp of tempFiles) await fs.unlink(temp).catch(() => {});
   }
-  return { text: texts.join('\n\n'), confidence: confidences.length ? Math.round(confidences.reduce((a,b)=>a+b,0)/confidences.length) : null, sourceCount: texts.length };
+
+  return {
+    text: texts.join('\n\n'),
+    confidence: confidences.length ? Math.round(confidences.reduce((a,b)=>a+b,0)/confidences.length) : null,
+    sourceCount: texts.length,
+    warning: warnings.length ? warnings.join(' | ') : undefined
+  };
 }
+
 function cleanOcrLine(line) {
   return line.replace(/\s+/g, ' ').replace(/[|•]+/g, '').trim();
 }
@@ -248,10 +327,10 @@ async function processFolder(supabase, batchPath, folderName, manifest, reportRo
   const lastLocal = path.join(folderPath, images[images.length - 1].name);
   const { front, back, thumb } = await generateDerivativeBuffers(firstLocal, lastLocal);
 
+  // v1.2.1: OCR only the original, full-size first page.
+  // This avoids Tesseract locking up on thumbnails or tiny generated assets.
   const ocrSources = [firstLocal];
-  if (images.length > 2) ocrSources.push(path.join(folderPath, images[1].name));
-  if (images.length > 1) ocrSources.push(lastLocal);
-  const ocr = await runOcrOnImages([...new Set(ocrSources)]);
+  const ocr = await runOcrOnImages(ocrSources);
   const highlights = extractHighlights(ocr.text);
   const topics = buildTopics(ocr.text);
   const summary = buildSummary({ publication: meta.publication, issueDate: meta.issueDate, highlights, text: ocr.text });
@@ -280,7 +359,7 @@ async function processFolder(supabase, batchPath, folderName, manifest, reportRo
     backCoverImage: publicUrl(backPath),
     thumbnail: publicUrl(thumbPath),
     pages: uploadedImageUrls,
-    generatedBy: 'Museum Newspaper Manager v1.2',
+    generatedBy: 'Museum Newspaper Manager v1.2.1',
     generatedAt: new Date().toISOString(),
     originalFolderName: folderName,
     normalizedFolder: `${meta.publicationSlug}/${issueSlug}`
@@ -344,7 +423,7 @@ async function writeReport(rows) {
   return file;
 }
 async function main() {
-  console.log('Museum Newspaper Manager v1.2 - OCR summaries + CFRN/MRN/NSSN shortcuts + page spread support');
+  console.log('Museum Newspaper Manager v1.2.1 - safe front-page OCR summaries + CFRN/MRN/NSSN shortcuts + page spread support');
   console.log(`Bucket: ${BUCKET}`);
   console.log(`Root folder: ${ROOT}`);
   console.log(`Manifest: ${MANIFEST_PATH}`);

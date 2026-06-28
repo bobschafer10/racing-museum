@@ -1,7 +1,7 @@
 {
   "name": "museum-newspaper-manager",
-  "version": "1.2.0",
-  "description": "Upper Midwest Auto Racing Museum Newspaper Manager with OCR summaries",
+  "version": "1.2.1",
+  "description": "Upper Midwest Auto Racing Museum Newspaper Manager with safe OCR summaries",
   "main": "newspaper-manager.js",
   "scripts": {
     "newspapers-dry-run": "node newspaper-manager.js --dry-run",
