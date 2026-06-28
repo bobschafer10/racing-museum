@@ -147,7 +147,10 @@ export default async function NewspapersPage({
                       </div>
                     )}
 
-                    <p style={issueSummary}>{issue.summary}</p>
+                    <p style={issueSummary}>
+  {issue.description ??
+    `${issue.publication} issue from ${issue.issueDate}.`}
+</p>
                     <div style={issueButton}>Open Issue</div>
                   </div>
                 </article>
