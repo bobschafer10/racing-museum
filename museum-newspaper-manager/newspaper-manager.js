@@ -1,547 +1,391 @@
-import 'dotenv/config';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { createClient } from '@supabase/supabase-js';
+#!/usr/bin/env node
+/*
+  Museum Newspaper Manager v1.2
+  - CFRN/MRN/NSSN shortcut folders
+  - page spread support
+  - ordered upload filenames
+  - front/back/thumbnail generation
+  - newspaper.json generation
+  - newspapers-manifest.json update
+  - OCR selected pages and create museum-style summary
+*/
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const fs = require('fs/promises');
+const fss = require('fs');
+const path = require('path');
+const sharp = require('sharp');
+const dotenv = require('dotenv');
+const { createClient } = require('@supabase/supabase-js');
 
-const DRY_RUN = process.argv.includes('--dry-run');
-const UPLOAD = process.argv.includes('--upload');
+const args = process.argv.slice(2);
+const DRY_RUN = args.includes('--dry-run');
+const FORCE_OCR = args.includes('--ocr');
 
-if (!DRY_RUN && !UPLOAD) {
-  console.error('Use npm run newspapers-dry-run or npm run newspapers-upload');
-  process.exit(1);
-}
+dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+
+dotenv.config({ path: path.resolve(process.cwd(), '..', '.env') });
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const BUCKET = process.env.SUPABASE_STORAGE_BUCKET || 'media';
 const ROOT = (process.env.NEWSPAPERS_ROOT_FOLDER || 'newspapers').replace(/^\/+|\/+$/g, '');
-const MAX_FOLDERS = Number(process.env.MAX_NEWSPAPER_FOLDERS || 10);
-const WEBSITE_ROOT = path.resolve(__dirname, process.env.WEBSITE_ROOT || '..');
-const MANIFEST_PATH = path.resolve(
-  WEBSITE_ROOT,
-  process.env.NEWSPAPERS_MANIFEST || path.join('public', 'data', 'newspapers-manifest.json')
-);
-const PAGE_PAD_WIDTH = Number(process.env.NEWSPAPER_PAGE_PAD_WIDTH || 3);
+const MAX_FOLDERS = Number(process.env.MAX_NEWSPAPER_FOLDERS || 25);
+const BATCH_FOLDER = process.env.NEWSPAPER_BATCH_FOLDER || 'newspaper-upload-batch';
+const MANIFEST_PATH = path.resolve(process.cwd(), process.env.MANIFEST_NEWSPAPERS || '../public/data/newspapers-manifest.json');
+const OCR_ENABLED = String(process.env.NEWSPAPER_OCR_ENABLED || 'true').toLowerCase() !== 'false' || FORCE_OCR;
+const OCR_MAX_PAGES = Number(process.env.NEWSPAPER_OCR_MAX_PAGES || 3);
 
-if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
-  console.error('Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in .env file.');
-  process.exit(1);
-}
-
-const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
-  auth: { persistSession: false }
-});
-
-const batchDir = path.join(__dirname, 'newspaper-upload-batch');
-const reportsDir = path.join(__dirname, 'upload-reports');
-const generatedJsonDir = path.join(__dirname, 'generated-json');
-fs.mkdirSync(batchDir, { recursive: true });
-fs.mkdirSync(reportsDir, { recursive: true });
-fs.mkdirSync(generatedJsonDir, { recursive: true });
-
-const PUBLICATIONS = {
-  'checkered-flag-racing-news': 'Checkered Flag Racing News',
-  'midwest-racing-news': 'Midwest Racing News',
-  'national-speed-sport-news': 'National Speed Sport News'
+const PUBLICATION_MAP = {
+  cfrn: { slug: 'checkered-flag-racing-news', name: 'Checkered Flag Racing News' },
+  mrn: { slug: 'midwest-racing-news', name: 'Midwest Racing News' },
+  nssn: { slug: 'national-speed-sport-news', name: 'National Speed Sport News' },
+  'checkered-flag-racing-news': { slug: 'checkered-flag-racing-news', name: 'Checkered Flag Racing News' },
+  'midwest-racing-news': { slug: 'midwest-racing-news', name: 'Midwest Racing News' },
+  'national-speed-sport-news': { slug: 'national-speed-sport-news', name: 'National Speed Sport News' }
 };
 
-const PUBLICATION_ALIASES = {
-  cfrn: 'checkered-flag-racing-news',
-  'checkered-flag': 'checkered-flag-racing-news',
-  'checkered-flag-racing-news': 'checkered-flag-racing-news',
-  mrn: 'midwest-racing-news',
-  'midwest-racing-news': 'midwest-racing-news',
-  nssn: 'national-speed-sport-news',
-  'national-speed-sport-news': 'national-speed-sport-news'
-};
-
-function csvEscape(value) {
-  const s = String(value ?? '');
-  if (s.includes(',') || s.includes('"') || s.includes('\n')) return `"${s.replace(/"/g, '""')}"`;
-  return s;
+function pad(n) { return String(n).padStart(3, '0'); }
+function isoDate(y, m, d) { return `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`; }
+function titleDate(iso) {
+  const dt = new Date(`${iso}T12:00:00`);
+  return dt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 }
-
-function listAllFiles(dir) {
-  const out = [];
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) out.push(...listAllFiles(full));
-    else out.push(full);
-  }
-  return out;
+function slugify(s) {
+  return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
 }
-
-function contentType(file) {
+function mimeType(file) {
   const ext = path.extname(file).toLowerCase();
   if (ext === '.jpg' || ext === '.jpeg') return 'image/jpeg';
   if (ext === '.png') return 'image/png';
   if (ext === '.webp') return 'image/webp';
   if (ext === '.json') return 'application/json';
-  if (ext === '.pdf') return 'application/pdf';
+  if (ext === '.txt') return 'text/plain; charset=utf-8';
   return 'application/octet-stream';
 }
-
-function titleCaseFromSlug(slug) {
-  return String(slug || '')
-    .split('-')
-    .filter(Boolean)
-    .map(part => {
-      const lower = part.toLowerCase();
-      const special = { wi: 'WI', il: 'IL', mn: 'MN', mi: 'MI', nssn: 'NSSN', mrn: 'MRN', cfrn: 'CFRN' };
-      return special[lower] || lower.charAt(0).toUpperCase() + lower.slice(1);
-    })
-    .join(' ');
-}
-
-function normalizePublicationSlug(value) {
-  const key = String(value || '')
-    .trim()
-    .toLowerCase()
-    .replace(/_/g, '-')
-    .replace(/\s+/g, '-');
-  return PUBLICATION_ALIASES[key] || key;
-}
-
-function normalizeYear(twoOrFourDigitYear) {
-  const n = Number(twoOrFourDigitYear);
-  if (!Number.isInteger(n)) return null;
-  if (String(twoOrFourDigitYear).length === 4) return n;
-  // Museum archive assumption: two-digit newspaper years are usually 1900s.
-  // Keep a small future window available for modern uploads.
-  return n <= 29 ? 2000 + n : 1900 + n;
-}
-
-function toIsoDate(year, month, day) {
-  const y = Number(year);
-  const m = Number(month);
-  const d = Number(day);
-  if (!Number.isInteger(y) || !Number.isInteger(m) || !Number.isInteger(d)) return null;
-  if (m < 1 || m > 12 || d < 1 || d > 31) return null;
-  return `${String(y).padStart(4, '0')}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-}
-
-function parseLooseDate(value) {
-  const raw = String(value || '').trim();
-
-  let match = raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
-  if (match) return toIsoDate(match[1], match[2], match[3]);
-
-  match = raw.match(/^(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{2}|\d{4})$/);
-  if (match) {
-    const year = normalizeYear(match[3]);
-    return toIsoDate(year, match[1], match[2]);
+function parseFolderName(name) {
+  // Preferred: publication-slug_YYYY-MM-DD
+  const preferred = name.match(/^(.+?)_(\d{4})-(\d{1,2})-(\d{1,2})$/i);
+  if (preferred) {
+    const pubRaw = slugify(preferred[1]);
+    const pub = PUBLICATION_MAP[pubRaw];
+    if (!pub) throw new Error(`Unknown publication in folder name: ${preferred[1]}`);
+    return { publicationSlug: pub.slug, publication: pub.name, issueDate: isoDate(Number(preferred[2]), Number(preferred[3]), Number(preferred[4])) };
   }
-
+  // Shortcut: CFRN 4.30.70, MRN 4-15-59, NSSN 7_1_61
+  const shortcut = name.match(/^(CFRN|MRN|NSSN)\s+(\d{1,2})[.\-_](\d{1,2})[.\-_](\d{2}|\d{4})$/i);
+  if (shortcut) {
+    const pub = PUBLICATION_MAP[shortcut[1].toLowerCase()];
+    let year = Number(shortcut[4]);
+    if (year < 100) year += year >= 40 ? 1900 : 2000;
+    return { publicationSlug: pub.slug, publication: pub.name, issueDate: isoDate(year, Number(shortcut[2]), Number(shortcut[3])) };
+  }
+  throw new Error(`Folder name must be like CFRN 4.30.70 or checkered-flag-racing-news_1970-04-30`);
+}
+function parsePageFile(file) {
+  const base = path.basename(file, path.extname(file));
+  const normalized = base.toLowerCase().replace(/_/g, ' ').trim();
+  const spread = normalized.match(/(?:page\s*)?(\d{1,4})\s*-\s*(\d{1,4})/i);
+  if (spread) {
+    const a = Number(spread[1]), b = Number(spread[2]);
+    return { start: Math.min(a,b), end: Math.max(a,b), label: `${pad(Math.min(a,b))}-${pad(Math.max(a,b))}` };
+  }
+  const single = normalized.match(/(?:page\s*)?(\d{1,4})$/i) || normalized.match(/(\d{1,4})/);
+  if (single) {
+    const n = Number(single[1]);
+    return { start: n, end: n, label: pad(n) };
+  }
   return null;
 }
-
-function parseIssueFolder(folderName) {
-  // Recommended: publication-slug_YYYY-MM-DD
-  // Optional:    publication-slug_YYYY-MM-DD_custom-issue-slug
-  const underscore = folderName.split('_').filter(Boolean);
-  if (underscore.length >= 2) {
-    const issueDate = parseLooseDate(underscore[1]);
-    if (issueDate) {
-      const publicationSlug = normalizePublicationSlug(underscore[0]);
-      const issueSlug = underscore[2] || issueDate;
-      return { publicationSlug, issueDate, issueSlug, folderName, valid: true, normalizedFrom: folderName };
-    }
-  }
-
-  // Also allow: YYYY-MM-DD_publication-slug
-  if (underscore.length >= 2) {
-    const issueDate = parseLooseDate(underscore[0]);
-    if (issueDate) {
-      const publicationSlug = normalizePublicationSlug(underscore[1]);
-      const issueSlug = underscore[2] || issueDate;
-      return { publicationSlug, issueDate, issueSlug, folderName, valid: true, normalizedFrom: folderName };
-    }
-  }
-
-  // Existing archive-friendly shortcuts:
-  //   CFRN 5.21.70
-  //   CFRN 5-21-1970
-  //   MRN 04.15.59
-  //   NSSN 7-1-1961
-  const shortcut = folderName.trim().match(/^([A-Za-z][A-Za-z0-9-]*)\s+(\d{1,2}[.\-/]\d{1,2}[.\-/](?:\d{2}|\d{4}))$/);
-  if (shortcut) {
-    const publicationSlug = normalizePublicationSlug(shortcut[1]);
-    const issueDate = parseLooseDate(shortcut[2]);
-    if (issueDate) return { publicationSlug, issueDate, issueSlug: issueDate, folderName, valid: true, normalizedFrom: folderName };
-  }
-
-  return { publicationSlug: '', issueDate: '', issueSlug: '', folderName, valid: false };
+async function listIssueFolders(batchPath) {
+  await fs.mkdir(batchPath, { recursive: true });
+  const entries = await fs.readdir(batchPath, { withFileTypes: true });
+  return entries.filter(e => e.isDirectory()).map(e => e.name).slice(0, MAX_FOLDERS);
 }
-
-function formatDisplayDate(isoDate) {
-  const [year, month, day] = isoDate.split('-').map(Number);
-  if (!year || !month || !day) return isoDate;
-  const date = new Date(Date.UTC(year, month - 1, day));
-  return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+async function getImageFiles(folderPath) {
+  const entries = await fs.readdir(folderPath, { withFileTypes: true });
+  return entries
+    .filter(e => e.isFile() && /\.(jpe?g|png|webp)$/i.test(e.name))
+    .map(e => e.name)
+    .map(name => ({ name, parsed: parsePageFile(name) }))
+    .filter(x => x.parsed)
+    .sort((a,b) => a.parsed.start - b.parsed.start || a.parsed.end - b.parsed.end);
 }
-
-function naturalSortFiles(files) {
-  return [...files].sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+function outputNameFor(parsed, ext) {
+  return `${parsed.label}${ext.toLowerCase() === '.jpeg' ? '.jpg' : ext.toLowerCase()}`;
 }
-
-function parsePageRange(file) {
-  const base = path.basename(file, path.extname(file)).toLowerCase();
-
-  // Page 2-3.jpg, pages 2-3.jpg, Page 16.jpg
-  let match = base.match(/pages?\s*(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?/i);
-  if (match) {
-    const start = Number(match[1]);
-    const end = match[2] ? Number(match[2]) : start;
-    return { start, end, label: end === start ? String(start) : `${start}-${end}` };
-  }
-
-  // 2-3.jpg, 04-05.jpg
-  match = base.match(/(^|[^\d])(\d{1,4})\s*[-–]\s*(\d{1,4})([^\d]|$)/);
-  if (match) {
-    const start = Number(match[2]);
-    const end = Number(match[3]);
-    return { start, end, label: `${start}-${end}` };
-  }
-
-  // 001.jpg, issue_001.jpg, Page 1 copy.jpg
-  const matches = base.match(/(\d+)/g);
-  if (!matches) return null;
-  const start = Number(matches[matches.length - 1]);
-  return { start, end: start, label: String(start) };
+async function safeReadJson(file, fallback) {
+  try { return JSON.parse(await fs.readFile(file, 'utf8')); } catch { return fallback; }
 }
-
-function sortPageFiles(files) {
-  return [...files].sort((a, b) => {
-    const pa = parsePageRange(a);
-    const pb = parsePageRange(b);
-    if (pa && pb) {
-      if (pa.start !== pb.start) return pa.start - pb.start;
-      if (pa.end !== pb.end) return pa.end - pb.end;
-    }
-    if (pa && !pb) return -1;
-    if (!pa && pb) return 1;
-    return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
-  });
+async function writeJson(file, data) {
+  await fs.mkdir(path.dirname(file), { recursive: true });
+  await fs.writeFile(file, JSON.stringify(data, null, 2));
 }
-
-function detectPageNumberWarnings(imageFiles) {
-  const ranges = imageFiles.map(parsePageRange).filter(Boolean);
-  if (ranges.length < 2) return [];
-  const warnings = [];
-  let previousEnd = null;
-  const seenStarts = new Set();
-
-  for (const range of ranges) {
-    if (seenStarts.has(range.start)) warnings.push(`Duplicate page start detected: ${range.start}`);
-    seenStarts.add(range.start);
-    if (previousEnd !== null && range.start !== previousEnd + 1) {
-      warnings.push(`Page numbering gap or overlap between ${previousEnd} and ${range.start}`);
-      break;
-    }
-    previousEnd = range.end;
-  }
-
-  if (ranges.length !== imageFiles.length) warnings.push('Some page filenames did not include a clear page number.');
-  return [...new Set(warnings)];
+async function generateDerivativeBuffers(firstPath, lastPath) {
+  const front = await sharp(firstPath).jpeg({ quality: 88 }).toBuffer();
+  const back = await sharp(lastPath).jpeg({ quality: 88 }).toBuffer();
+  const thumb = await sharp(firstPath).resize({ width: 520, withoutEnlargement: true }).jpeg({ quality: 82 }).toBuffer();
+  return { front, back, thumb };
 }
-
-function paddedPageName(originalFile) {
-  const ext = path.extname(originalFile).toLowerCase() || '.jpg';
-  const range = parsePageRange(originalFile);
-  if (!range) return null;
-  const first = String(range.start).padStart(PAGE_PAD_WIDTH, '0');
-  if (range.end && range.end !== range.start) {
-    const last = String(range.end).padStart(PAGE_PAD_WIDTH, '0');
-    return `${first}-${last}${ext}`;
-  }
-  return `${first}${ext}`;
-}
-
-function publicStorageUrl(relPath) {
-  const encoded = relPath.split('/').map(encodeURIComponent).join('/');
-  return `${SUPABASE_URL.replace(/\/$/, '')}/storage/v1/object/public/${BUCKET}/${encoded}`;
-}
-
-function readExistingJson(folderPath, relJsonFiles) {
-  if (relJsonFiles.length !== 1) return null;
+async function runOcrOnImages(imagePaths) {
+  if (!OCR_ENABLED || imagePaths.length === 0) return { text: '', confidence: null, sourceCount: 0 };
+  let createWorker;
   try {
-    return JSON.parse(fs.readFileSync(path.join(folderPath, relJsonFiles[0]), 'utf8'));
-  } catch {
-    return null;
-  }
-}
-
-function generateNewspaperJson(issueMeta, uploadImageNames, existing = null) {
-  const publicationName = PUBLICATIONS[issueMeta.publicationSlug] || titleCaseFromSlug(issueMeta.publicationSlug);
-  const pages = uploadImageNames.map((file, idx) => ({
-    pageNumber: idx + 1,
-    image: file,
-    title: file.includes('-') ? `Pages ${file.replace(/\.[^.]+$/, '').replace('-', '–')}` : `Page ${Number(file.replace(/\D/g, '') || idx + 1)}`
-  }));
-
-  return {
-    ...(existing || {}),
-    slug: existing?.slug || issueMeta.issueSlug,
-    title: existing?.title || formatDisplayDate(issueMeta.issueDate),
-    publication: existing?.publication || publicationName,
-    publicationSlug: existing?.publicationSlug || issueMeta.publicationSlug,
-    year: existing?.year || Number(issueMeta.issueDate.slice(0, 4)),
-    issueDate: existing?.issueDate || issueMeta.issueDate,
-    description: existing?.description || null,
-    summary: existing?.summary || `${publicationName} issue from ${formatDisplayDate(issueMeta.issueDate)}.`,
-    coverImage: 'front-cover.jpg',
-    backCoverImage: 'back-cover.jpg',
-    thumbnailImage: 'thumbnail.jpg',
-    pageCount: pages.length,
-    pages: uploadImageNames,
-    pageObjects: pages,
-    featured: existing?.featured || false,
-    volume: existing?.volume || null,
-    number: existing?.number || null,
-    generatedBy: 'Museum Newspaper Manager v1.1',
-    generatedAt: new Date().toISOString()
-  };
-}
-
-function saveGeneratedJsonBackup(issueMeta, jsonObj) {
-  const folderOut = path.join(generatedJsonDir, issueMeta.publicationSlug, issueMeta.issueSlug);
-  fs.mkdirSync(folderOut, { recursive: true });
-  const outPath = path.join(folderOut, 'newspaper.json');
-  fs.writeFileSync(outPath, JSON.stringify(jsonObj, null, 2), 'utf8');
-  return outPath;
-}
-
-async function storageExists(storagePath) {
-  const parent = storagePath.split('/').slice(0, -1).join('/');
-  const name = storagePath.split('/').pop();
-  const { data, error } = await supabase.storage.from(BUCKET).list(parent, { search: name, limit: 100 });
-  if (error) throw new Error(error.message || 'Storage list failed');
-  return (data || []).some(item => item.name === name);
-}
-
-function loadManifest() {
-  if (!fs.existsSync(MANIFEST_PATH)) return [];
-  try {
-    return JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
+    ({ createWorker } = require('tesseract.js'));
   } catch (err) {
-    throw new Error(`Could not read manifest ${MANIFEST_PATH}: ${err.message}`);
+    return { text: '', confidence: null, sourceCount: 0, warning: `OCR dependency unavailable: ${err.message}` };
   }
-}
 
-function saveManifest(issues) {
-  const sorted = [...issues].sort((a, b) => {
-    if (a.publicationSlug !== b.publicationSlug) return String(a.publicationSlug || '').localeCompare(String(b.publicationSlug || ''));
-    return String(a.issueDate || '').localeCompare(String(b.issueDate || ''));
-  });
-  fs.mkdirSync(path.dirname(MANIFEST_PATH), { recursive: true });
-  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(sorted, null, 2) + '\n', 'utf8');
+  let worker;
+  let texts = [];
+  let confidences = [];
+  try {
+    worker = await createWorker('eng');
+    for (const p of imagePaths.slice(0, OCR_MAX_PAGES)) {
+      const result = await worker.recognize(p);
+      const text = (result?.data?.text || '').trim();
+      if (text) texts.push(`--- ${path.basename(p)} ---\n${text}`);
+      if (typeof result?.data?.confidence === 'number') confidences.push(result.data.confidence);
+    }
+  } catch (err) {
+    return { text: texts.join('\n\n'), confidence: confidences.length ? Math.round(confidences.reduce((a,b)=>a+b,0)/confidences.length) : null, sourceCount: texts.length, warning: `OCR failed: ${err.message}` };
+  } finally {
+    if (worker) await worker.terminate().catch(() => {});
+  }
+  return { text: texts.join('\n\n'), confidence: confidences.length ? Math.round(confidences.reduce((a,b)=>a+b,0)/confidences.length) : null, sourceCount: texts.length };
 }
-
-function makeManifestEntry(issueMeta, newspaperJson, uploadImageNames) {
-  const base = `${ROOT}/${issueMeta.publicationSlug}/${issueMeta.issueSlug}`;
-  const pageUrls = uploadImageNames.map(name => publicStorageUrl(`${base}/${name}`));
-  return {
-    slug: issueMeta.issueSlug,
-    title: newspaperJson.title,
-    publication: newspaperJson.publication,
-    publicationSlug: issueMeta.publicationSlug,
-    year: newspaperJson.year,
-    issueDate: newspaperJson.issueDate,
-    description: newspaperJson.description || null,
-    summary: newspaperJson.summary || null,
-    coverImage: publicStorageUrl(`${base}/front-cover.jpg`),
-    thumbnailImage: publicStorageUrl(`${base}/thumbnail.jpg`),
-    backCoverImage: publicStorageUrl(`${base}/back-cover.jpg`),
-    pages: pageUrls,
-    featured: newspaperJson.featured || false,
-    volume: newspaperJson.volume || null,
-    number: newspaperJson.number || null
-  };
+function cleanOcrLine(line) {
+  return line.replace(/\s+/g, ' ').replace(/[|•]+/g, '').trim();
 }
-
-function upsertManifestEntry(entry) {
-  const manifest = loadManifest();
-  const index = manifest.findIndex(item => item.publicationSlug === entry.publicationSlug && item.slug === entry.slug);
-  if (index >= 0) manifest[index] = { ...manifest[index], ...entry };
+function extractHighlights(text) {
+  const bad = /^(the|and|or|a|an|page|vol\.?|no\.?|phone|advertisement|classifieds?)\b/i;
+  const lines = text.split(/\r?\n/).map(cleanOcrLine).filter(Boolean);
+  const candidates = [];
+  for (const line of lines) {
+    if (line.length < 12 || line.length > 90) continue;
+    if (bad.test(line)) continue;
+    const letters = (line.match(/[A-Za-z]/g) || []).length;
+    if (letters < 8) continue;
+    const digitRatio = ((line.match(/\d/g) || []).length) / Math.max(line.length, 1);
+    if (digitRatio > 0.45) continue;
+    if (!candidates.includes(line)) candidates.push(line);
+    if (candidates.length >= 6) break;
+  }
+  return candidates.slice(0, 5);
+}
+function findMentions(text, list) {
+  const found = [];
+  const lower = text.toLowerCase();
+  for (const item of list) {
+    if (lower.includes(item.toLowerCase())) found.push(item);
+  }
+  return found.slice(0, 12);
+}
+function buildSummary({ publication, issueDate, highlights, text }) {
+  const dateText = titleDate(issueDate);
+  if (highlights.length >= 2) {
+    return `This ${dateText} issue of ${publication} highlights regional short-track racing coverage, led by items such as ${highlights.slice(0,2).join(' and ')}. The issue also preserves period race news, advertisements, schedules, and reporting from the Upper Midwest racing scene.`;
+  }
+  if (text && text.length > 100) {
+    return `This ${dateText} issue of ${publication} preserves racing news, race-night reporting, advertisements, schedules, and other period coverage from the Upper Midwest short-track scene.`;
+  }
+  return `This ${dateText} issue of ${publication} is part of the museum newspaper archive, preserving period racing coverage, advertisements, schedules, and race news from the Upper Midwest.`;
+}
+function buildTopics(text) {
+  const t = text.toLowerCase();
+  const topics = [];
+  if (/result|feature|winner|wins|victory/.test(t)) topics.push('Race Results');
+  if (/schedule|coming|next week|calendar/.test(t)) topics.push('Schedules');
+  if (/classified|for sale|wanted/.test(t)) topics.push('Classified Ads');
+  if (/point|standings/.test(t)) topics.push('Point Standings');
+  if (/photo|picture/.test(t)) topics.push('Photos');
+  return topics.length ? topics : ['Newspaper Coverage'];
+}
+function publicUrl(storagePath) {
+  return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${storagePath}`;
+}
+async function uploadBuffer(supabase, storagePath, buffer, contentType) {
+  if (DRY_RUN) return 'would_upload';
+  const { error } = await supabase.storage.from(BUCKET).upload(storagePath, buffer, { contentType, upsert: true });
+  if (error) throw error;
+  return 'uploaded';
+}
+async function uploadFile(supabase, storagePath, localPath, contentType) {
+  if (DRY_RUN) return 'would_upload';
+  const buffer = await fs.readFile(localPath);
+  const { error } = await supabase.storage.from(BUCKET).upload(storagePath, buffer, { contentType, upsert: true });
+  if (error) throw error;
+  return 'uploaded';
+}
+function upsertManifest(manifest, entry) {
+  const idx = manifest.findIndex(x => x.publicationSlug === entry.publicationSlug && x.slug === entry.slug);
+  if (idx >= 0) manifest[idx] = { ...manifest[idx], ...entry };
   else manifest.push(entry);
-  saveManifest(manifest);
-  return index >= 0 ? 'updated' : 'added';
+  manifest.sort((a,b) => (a.publicationSlug || '').localeCompare(b.publicationSlug || '') || String(a.issueDate).localeCompare(String(b.issueDate)));
+  return idx >= 0 ? 'updated' : 'added';
 }
+async function processFolder(supabase, batchPath, folderName, manifest, reportRows) {
+  const folderPath = path.join(batchPath, folderName);
+  const meta = parseFolderName(folderName);
+  const issueSlug = meta.issueDate;
+  const year = Number(meta.issueDate.slice(0,4));
+  const storageBase = `${ROOT}/${meta.publicationSlug}/${issueSlug}`;
+  const images = await getImageFiles(folderPath);
+  if (!images.length) throw new Error('No image files found');
 
-console.log('Museum Newspaper Manager v1.1 - CFRN/MRN/NSSN shortcuts + page spread support');
-console.log(`Bucket: ${BUCKET}`);
-console.log(`Root folder: ${ROOT}`);
-console.log(`Manifest: ${MANIFEST_PATH}`);
-if (DRY_RUN) console.log('DRY RUN: no files will be uploaded and manifest will not be changed.');
-console.log('');
+  const uploadedImageUrls = [];
+  const uploadedStoragePaths = [];
+  for (const img of images) {
+    const ext = path.extname(img.name).toLowerCase() === '.jpeg' ? '.jpg' : path.extname(img.name).toLowerCase();
+    const outName = outputNameFor(img.parsed, ext);
+    const localPath = path.join(folderPath, img.name);
+    const storagePath = `${storageBase}/${outName}`;
+    uploadedImageUrls.push(publicUrl(storagePath));
+    uploadedStoragePaths.push(storagePath);
+    reportRows.push({ folder: folderName, file: img.name, storagePath, status: DRY_RUN ? 'would_upload' : 'pending' });
+  }
 
-const folderEntries = fs.readdirSync(batchDir, { withFileTypes: true }).filter(d => d.isDirectory());
-if (folderEntries.length === 0) {
-  console.error(`No newspaper folders found in: ${batchDir}`);
-  console.error('Expected examples: midwest-racing-news_1959-04-15 or CFRN 5.21.70');
-  process.exit(1);
+  const firstLocal = path.join(folderPath, images[0].name);
+  const lastLocal = path.join(folderPath, images[images.length - 1].name);
+  const { front, back, thumb } = await generateDerivativeBuffers(firstLocal, lastLocal);
+
+  const ocrSources = [firstLocal];
+  if (images.length > 2) ocrSources.push(path.join(folderPath, images[1].name));
+  if (images.length > 1) ocrSources.push(lastLocal);
+  const ocr = await runOcrOnImages([...new Set(ocrSources)]);
+  const highlights = extractHighlights(ocr.text);
+  const topics = buildTopics(ocr.text);
+  const summary = buildSummary({ publication: meta.publication, issueDate: meta.issueDate, highlights, text: ocr.text });
+
+  const frontPath = `${storageBase}/front-cover.jpg`;
+  const backPath = `${storageBase}/back-cover.jpg`;
+  const thumbPath = `${storageBase}/thumbnail.jpg`;
+  const jsonPath = `${storageBase}/newspaper.json`;
+  const ocrPath = `${storageBase}/ocr.txt`;
+
+  const newspaperJson = {
+    slug: issueSlug,
+    title: titleDate(meta.issueDate),
+    publication: meta.publication,
+    publicationSlug: meta.publicationSlug,
+    year,
+    issueDate: meta.issueDate,
+    description: null,
+    summary,
+    highlights,
+    topics,
+    ocrConfidence: ocr.confidence,
+    ocrSourceCount: ocr.sourceCount,
+    ocrTextPath: publicUrl(ocrPath),
+    coverImage: publicUrl(frontPath),
+    backCoverImage: publicUrl(backPath),
+    thumbnail: publicUrl(thumbPath),
+    pages: uploadedImageUrls,
+    generatedBy: 'Museum Newspaper Manager v1.2',
+    generatedAt: new Date().toISOString(),
+    originalFolderName: folderName,
+    normalizedFolder: `${meta.publicationSlug}/${issueSlug}`
+  };
+
+  const genPath = path.resolve(process.cwd(), 'generated-json', meta.publicationSlug, issueSlug, 'newspaper.json');
+  await writeJson(genPath, newspaperJson);
+  const ocrBackup = path.resolve(process.cwd(), 'generated-json', meta.publicationSlug, issueSlug, 'ocr.txt');
+  await fs.mkdir(path.dirname(ocrBackup), { recursive: true });
+  await fs.writeFile(ocrBackup, ocr.text || '');
+
+  const manifestEntry = {
+    slug: issueSlug,
+    title: titleDate(meta.issueDate),
+    publication: meta.publication,
+    publicationSlug: meta.publicationSlug,
+    year,
+    issueDate: meta.issueDate,
+    description: null,
+    summary,
+    highlights,
+    topics,
+    ocrConfidence: ocr.confidence,
+    coverImage: publicUrl(frontPath),
+    backCoverImage: publicUrl(backPath),
+    thumbnail: publicUrl(thumbPath),
+    pages: uploadedImageUrls
+  };
+
+  if (!DRY_RUN) {
+    for (let i = 0; i < images.length; i++) {
+      const local = path.join(folderPath, images[i].name);
+      await uploadFile(supabase, uploadedStoragePaths[i], local, mimeType(images[i].name));
+      console.log(`  UPLOADED: ${uploadedStoragePaths[i]}`);
+    }
+    await uploadBuffer(supabase, frontPath, front, 'image/jpeg'); console.log(`  UPLOADED: ${frontPath}`);
+    await uploadBuffer(supabase, backPath, back, 'image/jpeg'); console.log(`  UPLOADED: ${backPath}`);
+    await uploadBuffer(supabase, thumbPath, thumb, 'image/jpeg'); console.log(`  UPLOADED: ${thumbPath}`);
+    await uploadBuffer(supabase, jsonPath, Buffer.from(JSON.stringify(newspaperJson, null, 2)), 'application/json'); console.log(`  UPLOADED: ${jsonPath}`);
+    await uploadBuffer(supabase, ocrPath, Buffer.from(ocr.text || ''), 'text/plain; charset=utf-8'); console.log(`  UPLOADED: ${ocrPath}`);
+    const action = upsertManifest(manifest, manifestEntry);
+    console.log(`  MANIFEST: ${action} ${meta.publicationSlug}/${issueSlug}`);
+  }
+
+  console.log(`OK: ${folderName} | publication=${meta.publicationSlug} | issue=${meta.issueDate} | jpg=${images.length} | json=generated_ordered | covers=front/back/thumbnail | ocr=${OCR_ENABLED ? 'summary' : 'off'} | manifest=${DRY_RUN ? 'would_update' : 'updated'}`);
+  console.log(`  WARNING: Folder name normalized to ${meta.publicationSlug}/${issueSlug}`);
+  console.log(`  SUMMARY: ${summary}`);
+  if (highlights.length) console.log(`  HIGHLIGHTS: ${highlights.join(' | ')}`);
+  if (ocr.warning) console.log(`  WARNING: ${ocr.warning}`);
+  if (DRY_RUN) console.log(`  MANIFEST: would add/update ${meta.publicationSlug}/${issueSlug}`);
+
+  return { files: images.length + 5, manifest: 1, ocr: OCR_ENABLED ? 1 : 0 };
 }
-if (folderEntries.length > MAX_FOLDERS) {
-  console.error(`Too many folders. Found ${folderEntries.length}, max allowed is ${MAX_FOLDERS}.`);
-  process.exit(1);
+async function writeReport(rows) {
+  const dir = path.resolve(process.cwd(), 'upload-reports');
+  await fs.mkdir(dir, { recursive: true });
+  const file = path.join(dir, `newspaper-upload-report-${new Date().toISOString().replace(/[:.]/g,'-')}.csv`);
+  const header = 'folder,file,storagePath,status\n';
+  const body = rows.map(r => [r.folder, r.file, r.storagePath, r.status].map(v => `"${String(v || '').replace(/"/g,'""')}"`).join(',')).join('\n');
+  await fs.writeFile(file, header + body);
+  return file;
 }
+async function main() {
+  console.log('Museum Newspaper Manager v1.2 - OCR summaries + CFRN/MRN/NSSN shortcuts + page spread support');
+  console.log(`Bucket: ${BUCKET}`);
+  console.log(`Root folder: ${ROOT}`);
+  console.log(`Manifest: ${MANIFEST_PATH}`);
+  console.log(DRY_RUN ? 'DRY RUN: no files will be uploaded and manifest will not be changed.' : 'LIVE UPLOAD: files will be uploaded and manifest will be changed.');
+  console.log('');
 
-const reportRows = [];
-let okCount = 0;
-let errorCount = 0;
-let uploadCount = 0;
-let skipCount = 0;
-let manifestAdded = 0;
-let manifestUpdated = 0;
-let manifestWouldChange = 0;
-
-for (const folderEntry of folderEntries) {
-  const folderName = folderEntry.name;
-  const folderPath = path.join(batchDir, folderName);
-  const issueMeta = parseIssueFolder(folderName);
-  const files = listAllFiles(folderPath);
-  const relFiles = files.map(f => path.relative(folderPath, f).replace(/\\/g, '/'));
-  const imageFiles = sortPageFiles(relFiles.filter(f => /\.(jpe?g)$/i.test(f))); 
-  const jsonFiles = relFiles.filter(f => /\.json$/i.test(f));
-  const lowerNames = relFiles.map(f => f.toLowerCase());
-  const duplicates = lowerNames.filter((name, i) => lowerNames.indexOf(name) !== i);
-  const problems = [];
-  const warnings = [];
-
-  if (!issueMeta.valid) problems.push('Folder name must be publication-slug_YYYY-MM-DD or shortcut date format such as CFRN 5.21.70.');
-  if (issueMeta.valid && !PUBLICATIONS[issueMeta.publicationSlug]) warnings.push(`Publication slug not in known list; using title case name for ${issueMeta.publicationSlug}.`);
-  if (imageFiles.length === 0) problems.push('No JPG/JPEG page images found.');
-  if (jsonFiles.length > 1) problems.push('More than one JSON file found.');
-  if (duplicates.length) problems.push(`Duplicate local filenames found: ${[...new Set(duplicates)].join('; ')}`);
-  warnings.push(...detectPageNumberWarnings(imageFiles));
-
-  const uploadImageNames = imageFiles.map((file) => paddedPageName(file));
-  if (uploadImageNames.some(name => !name)) problems.push('One or more page files could not be converted into a standard page name.');
-  const duplicateUploadNames = uploadImageNames.filter((name, i) => name && uploadImageNames.indexOf(name) !== i);
-  if (duplicateUploadNames.length) problems.push(`Duplicate standardized upload names would be created: ${[...new Set(duplicateUploadNames)].join('; ')}`);
-
-  const existingJson = readExistingJson(folderPath, jsonFiles);
-  const generatedJson = issueMeta.valid ? generateNewspaperJson(issueMeta, uploadImageNames, existingJson) : null;
-  let generatedJsonPath = '';
-  if (generatedJson) {
-    generatedJsonPath = saveGeneratedJsonBackup(issueMeta, generatedJson);
-    warnings.push(`${jsonFiles.length ? 'Existing JSON found; generated ordered newspaper.json backup' : 'No JSON found; generated ordered newspaper.json backup'} at ${generatedJsonPath}`);
+  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+    console.error('Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in .env file.');
+    process.exit(1);
   }
-  if (imageFiles.some((file, idx) => path.basename(file) !== uploadImageNames[idx])) {
-    warnings.push(`Pages will upload with standardized names, for example: ${path.basename(imageFiles[0] || '')} -> ${uploadImageNames[0]}, ${path.basename(imageFiles[imageFiles.length - 1] || '')} -> ${uploadImageNames[uploadImageNames.length - 1]}`);
+  const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false } });
+  const batchPath = path.resolve(process.cwd(), BATCH_FOLDER);
+  const folders = await listIssueFolders(batchPath);
+  if (!folders.length) {
+    console.log(`No newspaper folders found in: ${batchPath}`);
+    return;
   }
-  if (issueMeta.valid && issueMeta.normalizedFrom !== `${issueMeta.publicationSlug}_${issueMeta.issueDate}`) {
-    warnings.push(`Folder name normalized to ${issueMeta.publicationSlug}/${issueMeta.issueSlug}`);
-  }
-
-  if (problems.length) {
-    errorCount++;
-    console.log(`ERROR: ${folderName} | ${problems.join(' | ')}`);
-    reportRows.push({ folder: folderName, file: '', upload_file: '', status: 'error', storage_path: '', message: problems.join(' | ') });
-    continue;
-  }
-
-  okCount++;
-  console.log(`OK: ${folderName} | publication=${issueMeta.publicationSlug} | issue=${issueMeta.issueSlug} | jpg=${imageFiles.length} | json=generated_ordered | covers=front/back/thumbnail | manifest=${DRY_RUN ? 'would_update' : 'will_update'}`);
-  for (const warning of warnings) console.log(`  WARNING: ${warning}`);
-
-  const uploadItems = [];
-  imageFiles.forEach((rel, index) => {
-    uploadItems.push({
-      rel,
-      uploadRel: uploadImageNames[index],
-      localPath: path.join(folderPath, rel),
-      buffer: null,
-      generated: false,
-      upsert: false
-    });
-  });
-
-  const frontCoverLocal = imageFiles[0] ? path.join(folderPath, imageFiles[0]) : null;
-  const backCoverLocal = imageFiles.length ? path.join(folderPath, imageFiles[imageFiles.length - 1]) : null;
-
-  if (frontCoverLocal) {
-    uploadItems.push({ rel: imageFiles[0], uploadRel: 'front-cover.jpg', localPath: frontCoverLocal, buffer: null, generated: false, upsert: true });
-    uploadItems.push({ rel: imageFiles[0], uploadRel: 'thumbnail.jpg', localPath: frontCoverLocal, buffer: null, generated: false, upsert: true });
-  }
-  if (backCoverLocal) {
-    uploadItems.push({ rel: imageFiles[imageFiles.length - 1], uploadRel: 'back-cover.jpg', localPath: backCoverLocal, buffer: null, generated: false, upsert: true });
-  }
-
-  uploadItems.push({
-    rel: 'newspaper.json',
-    uploadRel: 'newspaper.json',
-    localPath: '',
-    buffer: Buffer.from(JSON.stringify(generatedJson, null, 2), 'utf8'),
-    generated: true,
-    upsert: true
-  });
-
-  for (const item of uploadItems) {
-    const storagePath = `${ROOT}/${issueMeta.publicationSlug}/${issueMeta.issueSlug}/${item.uploadRel}`.replace(/\\/g, '/');
+  const manifest = await safeReadJson(MANIFEST_PATH, []);
+  const reportRows = [];
+  let ok = 0, errors = 0, files = 0, manifestUpdates = 0;
+  for (const folder of folders) {
     try {
-      const exists = await storageExists(storagePath);
-      if (exists && !item.upsert) {
-        skipCount++;
-        console.log(`  SKIP existing: ${storagePath}`);
-        reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: 'skipped_existing', storage_path: storagePath, message: 'Already exists in storage' });
-        continue;
-      }
-      if (DRY_RUN) {
-        reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: exists && item.upsert ? 'would_replace_generated_file' : (item.generated ? 'would_upload_generated_json' : 'would_upload'), storage_path: storagePath, message: warnings.join(' | ') });
-      } else {
-        const buffer = item.generated ? item.buffer : fs.readFileSync(item.localPath);
-        const { error } = await supabase.storage.from(BUCKET).upload(storagePath, buffer, {
-          contentType: contentType(item.uploadRel),
-          upsert: item.upsert
-        });
-        if (error) throw new Error(error.message || 'Upload failed');
-        uploadCount++;
-        console.log(`  ${exists && item.upsert ? 'REPLACED' : 'UPLOADED'}: ${storagePath}`);
-        reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: exists && item.upsert ? 'replaced_generated_file' : (item.generated ? 'uploaded_generated_json' : 'uploaded'), storage_path: storagePath, message: warnings.join(' | ') });
-      }
+      const result = await processFolder(supabase, batchPath, folder, manifest, reportRows);
+      ok++; files += result.files; manifestUpdates += result.manifest;
     } catch (err) {
-      errorCount++;
-      console.log(`  ERROR: ${item.rel} -> ${item.uploadRel} | ${err.message}`);
-      reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: 'error', storage_path: storagePath, message: err.message });
+      errors++;
+      console.log(`ERROR: ${folder} | ${err.message}`);
+      reportRows.push({ folder, file: '', storagePath: '', status: `ERROR: ${err.message}` });
     }
   }
-
-  const manifestEntry = makeManifestEntry(issueMeta, generatedJson, uploadImageNames);
-  if (DRY_RUN) {
-    manifestWouldChange++;
-    console.log(`  MANIFEST: would add/update ${issueMeta.publicationSlug}/${issueMeta.issueSlug}`);
-  } else {
-    try {
-      const action = upsertManifestEntry(manifestEntry);
-      if (action === 'added') manifestAdded++;
-      else manifestUpdated++;
-      console.log(`  MANIFEST: ${action} ${issueMeta.publicationSlug}/${issueMeta.issueSlug}`);
-    } catch (err) {
-      errorCount++;
-      console.log(`  MANIFEST ERROR: ${err.message}`);
-      reportRows.push({ folder: folderName, file: 'newspapers-manifest.json', upload_file: '', status: 'manifest_error', storage_path: MANIFEST_PATH, message: err.message });
-    }
+  if (!DRY_RUN && ok > 0) {
+    await writeJson(MANIFEST_PATH, manifest);
   }
+  const report = await writeReport(reportRows);
+  console.log('');
+  console.log('Done.');
+  console.log(`Folders OK: ${ok}`);
+  console.log(`Errors: ${errors}`);
+  console.log(`${DRY_RUN ? 'Files ready/would upload' : 'Files uploaded'}: ${files}`);
+  console.log(`Manifest entries ${DRY_RUN ? 'would add/update' : 'added/updated'}: ${manifestUpdates}`);
+  console.log(`Review report created:`);
+  console.log(report);
 }
-
-const stamp = new Date().toISOString().replace(/[:.]/g, '-');
-const reportPath = path.join(reportsDir, `newspaper-upload-report-${stamp}.csv`);
-const header = ['folder', 'file', 'upload_file', 'status', 'storage_path', 'message'];
-const csv = [header.join(','), ...reportRows.map(r => header.map(h => csvEscape(r[h])).join(','))].join('\n');
-fs.writeFileSync(reportPath, csv, 'utf8');
-
-console.log('');
-console.log('Done.');
-console.log(`Folders OK: ${okCount}`);
-console.log(`Errors: ${errorCount}`);
-if (DRY_RUN) console.log(`Files ready/would upload: ${reportRows.filter(r => r.status.startsWith('would_upload') || r.status === 'would_replace_generated_file').length}`);
-else console.log(`Files uploaded/replaced: ${uploadCount}`);
-console.log(`Skipped existing: ${skipCount}`);
-if (DRY_RUN) console.log(`Manifest entries would add/update: ${manifestWouldChange}`);
-else console.log(`Manifest added: ${manifestAdded}; Manifest updated: ${manifestUpdated}`);
-console.log(`Review report created:\n${reportPath}`);
+main().catch(err => { console.error(err); process.exit(1); });

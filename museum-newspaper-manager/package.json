@@ -1,13 +1,17 @@
 {
   "name": "museum-newspaper-manager",
-  "version": "1.1.0",
-  "type": "module",
+  "version": "1.2.0",
+  "description": "Upper Midwest Auto Racing Museum Newspaper Manager with OCR summaries",
+  "main": "newspaper-manager.js",
   "scripts": {
     "newspapers-dry-run": "node newspaper-manager.js --dry-run",
-    "newspapers-upload": "node newspaper-manager.js --upload"
+    "newspapers-upload": "node newspaper-manager.js",
+    "newspapers-ocr-only": "node newspaper-manager.js --dry-run --ocr"
   },
   "dependencies": {
-    "@supabase/supabase-js": "latest",
-    "dotenv": "latest"
+    "@supabase/supabase-js": "^2.45.4",
+    "dotenv": "^16.4.5",
+    "sharp": "^0.33.5",
+    "tesseract.js": "^5.1.1"
   }
 }

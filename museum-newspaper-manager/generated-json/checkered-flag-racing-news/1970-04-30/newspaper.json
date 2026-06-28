@@ -6,72 +6,30 @@
   "year": 1970,
   "issueDate": "1970-04-30",
   "description": null,
-  "summary": "Checkered Flag Racing News issue from April 30, 1970.",
-  "coverImage": "front-cover.jpg",
-  "backCoverImage": "back-cover.jpg",
-  "thumbnailImage": "thumbnail.jpg",
-  "pageCount": 9,
+  "summary": "This April 30, 1970 issue of Checkered Flag Racing News is part of the museum newspaper archive, preserving period racing coverage, advertisements, schedules, and race news from the Upper Midwest.",
+  "highlights": [],
+  "topics": [
+    "Newspaper Coverage"
+  ],
+  "ocrConfidence": null,
+  "ocrSourceCount": 0,
+  "ocrTextPath": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/ocr.txt",
+  "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/front-cover.jpg",
+  "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/back-cover.jpg",
+  "thumbnail": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/thumbnail.jpg",
   "pages": [
-    "001.jpg",
-    "002-003.jpg",
-    "004-005.jpg",
-    "006-007.jpg",
-    "008-009.jpg",
-    "010-011.jpg",
-    "012-013.jpg",
-    "014-015.jpg",
-    "016.jpg"
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/001.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/002-003.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/004-005.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/006-007.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/008-009.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/010-011.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/012-013.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/014-015.jpg",
+    "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/016.jpg"
   ],
-  "pageObjects": [
-    {
-      "pageNumber": 1,
-      "image": "001.jpg",
-      "title": "Page 1"
-    },
-    {
-      "pageNumber": 2,
-      "image": "002-003.jpg",
-      "title": "Pages 002–003"
-    },
-    {
-      "pageNumber": 3,
-      "image": "004-005.jpg",
-      "title": "Pages 004–005"
-    },
-    {
-      "pageNumber": 4,
-      "image": "006-007.jpg",
-      "title": "Pages 006–007"
-    },
-    {
-      "pageNumber": 5,
-      "image": "008-009.jpg",
-      "title": "Pages 008–009"
-    },
-    {
-      "pageNumber": 6,
-      "image": "010-011.jpg",
-      "title": "Pages 010–011"
-    },
-    {
-      "pageNumber": 7,
-      "image": "012-013.jpg",
-      "title": "Pages 012–013"
-    },
-    {
-      "pageNumber": 8,
-      "image": "014-015.jpg",
-      "title": "Pages 014–015"
-    },
-    {
-      "pageNumber": 9,
-      "image": "016.jpg",
-      "title": "Page 16"
-    }
-  ],
-  "featured": false,
-  "volume": null,
-  "number": null,
-  "generatedBy": "Museum Newspaper Manager v1.1",
-  "generatedAt": "2026-06-28T19:06:31.734Z"
+  "generatedBy": "Museum Newspaper Manager v1.2",
+  "generatedAt": "2026-06-28T19:24:49.365Z",
+  "originalFolderName": "CFRN 4.30.70",
+  "normalizedFolder": "checkered-flag-racing-news/1970-04-30"
 }
