@@ -1,0 +1,13 @@
+{
+  "name": "museum-newspaper-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "newspapers-dry-run": "node newspaper-manager.js --dry-run",
+    "newspapers-upload": "node newspaper-manager.js --upload"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "dotenv": "latest"
+  }
+}

@@ -456,6 +456,33 @@
     "featured": false
   },
   {
+    "slug": "1970-04-16",
+    "title": "April 16, 1970",
+    "publication": "Checkered Flag Racing News",
+    "publicationSlug": "checkered-flag-racing-news",
+    "year": 1970,
+    "issueDate": "1970-04-16",
+    "description": null,
+    "summary": "Checkered Flag Racing News issue from April 16, 1970.",
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/front-cover.jpg",
+    "thumbnailImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/thumbnail.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/back-cover.jpg",
+    "pages": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/003.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/004.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/005.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/006.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/007.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/008.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-16/009.jpg"
+    ],
+    "featured": false,
+    "volume": null,
+    "number": null
+  },
+  {
     "slug": "1959-06-03",
     "title": "Midwest Racing News - 1959-06-03",
     "publication": "Midwest Racing News",
