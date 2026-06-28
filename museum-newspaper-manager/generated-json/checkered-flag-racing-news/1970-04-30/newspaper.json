@@ -6,8 +6,9 @@
   "year": 1970,
   "issueDate": "1970-04-30",
   "description": null,
-  "summary": "This April 30, 1970 issue of Checkered Flag Racing News is part of the museum newspaper archive, preserving period racing coverage, advertisements, schedules, and race news from the Upper Midwest.",
+  "summary": "This April 30, 1970 issue of Checkered Flag Racing News preserves regional short-track racing coverage from the Upper Midwest, including race reports, photographs, schedules, advertisements, and period racing news from the season.",
   "highlights": [],
+  "rawOcrHighlights": [],
   "topics": [
     "Newspaper Coverage"
   ],
@@ -28,8 +29,8 @@
     "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/014-015.jpg",
     "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1970-04-30/016.jpg"
   ],
-  "generatedBy": "Museum Newspaper Manager v1.2.1",
-  "generatedAt": "2026-06-28T19:47:52.165Z",
+  "generatedBy": "Museum Newspaper Manager v1.2.2",
+  "generatedAt": "2026-06-28T20:05:38.596Z",
   "originalFolderName": "CFRN 4.30.70",
   "normalizedFolder": "checkered-flag-racing-news/1970-04-30"
 }

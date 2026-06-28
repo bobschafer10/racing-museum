@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 /*
-  Museum Newspaper Manager v1.2.1
+  Museum Newspaper Manager v1.2.2
   - CFRN/MRN/NSSN shortcut folders
   - page spread support
   - ordered upload filenames
   - front/back/thumbnail generation
   - newspaper.json generation
   - newspapers-manifest.json update
-  - safe OCR from the original first full-size page
+  - OCR is saved to ocr.txt for future search
+  - public summary uses a clean museum-style template
+  - OCR highlights are not shown publicly
 */
 
 const fs = require('fs/promises');
@@ -259,15 +261,9 @@ function findMentions(text, list) {
   }
   return found.slice(0, 12);
 }
-function buildSummary({ publication, issueDate, highlights, text }) {
+function buildSummary({ publication, issueDate }) {
   const dateText = titleDate(issueDate);
-  if (highlights.length >= 2) {
-    return `This ${dateText} issue of ${publication} highlights regional short-track racing coverage, led by items such as ${highlights.slice(0,2).join(' and ')}. The issue also preserves period race news, advertisements, schedules, and reporting from the Upper Midwest racing scene.`;
-  }
-  if (text && text.length > 100) {
-    return `This ${dateText} issue of ${publication} preserves racing news, race-night reporting, advertisements, schedules, and other period coverage from the Upper Midwest short-track scene.`;
-  }
-  return `This ${dateText} issue of ${publication} is part of the museum newspaper archive, preserving period racing coverage, advertisements, schedules, and race news from the Upper Midwest.`;
+  return `This ${dateText} issue of ${publication} preserves regional short-track racing coverage from the Upper Midwest, including race reports, photographs, schedules, advertisements, and period racing news from the season.`;
 }
 function buildTopics(text) {
   const t = text.toLowerCase();
@@ -327,13 +323,16 @@ async function processFolder(supabase, batchPath, folderName, manifest, reportRo
   const lastLocal = path.join(folderPath, images[images.length - 1].name);
   const { front, back, thumb } = await generateDerivativeBuffers(firstLocal, lastLocal);
 
-  // v1.2.1: OCR only the original, full-size first page.
+  // v1.2.2: OCR only the original, full-size first page.
   // This avoids Tesseract locking up on thumbnails or tiny generated assets.
   const ocrSources = [firstLocal];
   const ocr = await runOcrOnImages(ocrSources);
-  const highlights = extractHighlights(ocr.text);
+  // OCR is archived for future search, but raw OCR is not used in public display text.
+  // Old newspaper OCR can be messy; public summaries stay clean and museum-ready.
+  const rawOcrHighlights = extractHighlights(ocr.text);
+  const highlights = [];
   const topics = buildTopics(ocr.text);
-  const summary = buildSummary({ publication: meta.publication, issueDate: meta.issueDate, highlights, text: ocr.text });
+  const summary = buildSummary({ publication: meta.publication, issueDate: meta.issueDate });
 
   const frontPath = `${storageBase}/front-cover.jpg`;
   const backPath = `${storageBase}/back-cover.jpg`;
@@ -351,6 +350,7 @@ async function processFolder(supabase, batchPath, folderName, manifest, reportRo
     description: null,
     summary,
     highlights,
+    rawOcrHighlights,
     topics,
     ocrConfidence: ocr.confidence,
     ocrSourceCount: ocr.sourceCount,
@@ -359,7 +359,7 @@ async function processFolder(supabase, batchPath, folderName, manifest, reportRo
     backCoverImage: publicUrl(backPath),
     thumbnail: publicUrl(thumbPath),
     pages: uploadedImageUrls,
-    generatedBy: 'Museum Newspaper Manager v1.2.1',
+    generatedBy: 'Museum Newspaper Manager v1.2.2',
     generatedAt: new Date().toISOString(),
     originalFolderName: folderName,
     normalizedFolder: `${meta.publicationSlug}/${issueSlug}`
@@ -381,6 +381,7 @@ async function processFolder(supabase, batchPath, folderName, manifest, reportRo
     description: null,
     summary,
     highlights,
+    rawOcrHighlights,
     topics,
     ocrConfidence: ocr.confidence,
     coverImage: publicUrl(frontPath),
@@ -407,7 +408,7 @@ async function processFolder(supabase, batchPath, folderName, manifest, reportRo
   console.log(`OK: ${folderName} | publication=${meta.publicationSlug} | issue=${meta.issueDate} | jpg=${images.length} | json=generated_ordered | covers=front/back/thumbnail | ocr=${OCR_ENABLED ? 'summary' : 'off'} | manifest=${DRY_RUN ? 'would_update' : 'updated'}`);
   console.log(`  WARNING: Folder name normalized to ${meta.publicationSlug}/${issueSlug}`);
   console.log(`  SUMMARY: ${summary}`);
-  if (highlights.length) console.log(`  HIGHLIGHTS: ${highlights.join(' | ')}`);
+  if (rawOcrHighlights.length) console.log(`  OCR ARCHIVED HIGHLIGHTS (not public): ${rawOcrHighlights.join(' | ')}`);
   if (ocr.warning) console.log(`  WARNING: ${ocr.warning}`);
   if (DRY_RUN) console.log(`  MANIFEST: would add/update ${meta.publicationSlug}/${issueSlug}`);
 
@@ -423,7 +424,7 @@ async function writeReport(rows) {
   return file;
 }
 async function main() {
-  console.log('Museum Newspaper Manager v1.2.1 - safe front-page OCR summaries + CFRN/MRN/NSSN shortcuts + page spread support');
+  console.log('Museum Newspaper Manager v1.2.2 - clean public summaries + hidden OCR archive + CFRN/MRN/NSSN shortcuts + page spread support');
   console.log(`Bucket: ${BUCKET}`);
   console.log(`Root folder: ${ROOT}`);
   console.log(`Manifest: ${MANIFEST_PATH}`);

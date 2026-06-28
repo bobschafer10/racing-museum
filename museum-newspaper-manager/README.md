@@ -1,4 +1,4 @@
-# Museum Newspaper Manager v1.2.1
+# Museum Newspaper Manager v1.2.2.2
 
 Safe OCR patch for the newspaper uploader.
 
@@ -33,3 +33,8 @@ NEWSPAPER_OCR_TIMEOUT_MS=60000
 NEWSPAPER_OCR_MIN_WIDTH=500
 NEWSPAPER_OCR_MIN_HEIGHT=500
 ```
+
+
+## v1.2.2 update
+
+OCR is saved to `ocr.txt` for future search, but public summaries use a clean museum-style template. Raw OCR highlights are not displayed publicly.
