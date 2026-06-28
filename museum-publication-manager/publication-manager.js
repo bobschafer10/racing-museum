@@ -164,12 +164,13 @@ function generatePublicationJson(folderName, uploadImageNames, existing = null) 
     trackName: existing?.trackName || existing?.track || titleCaseFromSlug(meta.trackSlug),
     state: existing?.state || meta.state || null,
     folder: folderName,
-    coverImage: pages[0]?.image || '',
-    backCoverImage: pages[pages.length - 1]?.image || '',
+    coverImage: 'front-cover.jpg',
+    backCoverImage: 'back-cover.jpg',
+    thumbnailImage: 'thumbnail.jpg',
     pageCount: pages.length,
     images: uploadImageNames,
     pages,
-    generatedBy: 'Museum Publication Manager v1.2',
+    generatedBy: 'Museum Publication Manager v1.3',
     generatedAt: new Date().toISOString()
   };
 }
@@ -224,8 +225,9 @@ function saveManifest(programs) {
 function makeManifestEntry(folderName, programJson, uploadImageNames) {
   const imagePaths = uploadImageNames.map(name => `${ROOT}/${folderName}/${name}`);
   const imageUrls = imagePaths.map(publicStorageUrl);
-  const coverUrl = imageUrls[0] || null;
-  const backCoverUrl = imageUrls[imageUrls.length - 1] || null;
+  const coverUrl = publicStorageUrl(`${ROOT}/${folderName}/front-cover.jpg`);
+  const backCoverUrl = publicStorageUrl(`${ROOT}/${folderName}/back-cover.jpg`);
+  const thumbnailUrl = publicStorageUrl(`${ROOT}/${folderName}/thumbnail.jpg`);
   return {
     slug: folderName,
     title: programJson.title,
@@ -241,7 +243,8 @@ function makeManifestEntry(folderName, programJson, uploadImageNames) {
     isNew: programJson.isNew ?? true,
     images: imageUrls,
     coverImage: coverUrl,
-    backCoverImage: backCoverUrl
+    backCoverImage: backCoverUrl,
+    thumbnailImage: thumbnailUrl
   };
 }
 
@@ -254,7 +257,7 @@ function upsertManifestEntry(entry) {
   return index >= 0 ? 'updated' : 'added';
 }
 
-console.log('Museum Publication Manager v1.2 - ordered pages + manifest update');
+console.log('Museum Publication Manager v1.3 - ordered pages + covers + manifest update');
 console.log(`Bucket: ${BUCKET}`);
 console.log(`Root folder: ${ROOT}`);
 console.log(`Manifest: ${MANIFEST_PATH}`);
@@ -316,7 +319,7 @@ for (const folderEntry of folderEntries) {
   }
 
   okCount++;
-  console.log(`OK: ${folderName} | jpg=${imageFiles.length} | json=generated_ordered | manifest=${DRY_RUN ? 'would_update' : 'will_update'}`);
+  console.log(`OK: ${folderName} | jpg=${imageFiles.length} | json=generated_ordered | covers=front/back/thumbnail | manifest=${DRY_RUN ? 'would_update' : 'will_update'}`);
   for (const warning of warnings) console.log(`  WARNING: ${warning}`);
 
   const uploadItems = [];
@@ -330,6 +333,20 @@ for (const folderEntry of folderEntries) {
       upsert: false
     });
   });
+
+  const frontCoverLocal = imageFiles[0] ? path.join(folderPath, imageFiles[0]) : null;
+  const backCoverLocal = imageFiles.length ? path.join(folderPath, imageFiles[imageFiles.length - 1]) : null;
+
+  // These are generated/copy files used by the website for consistent card and cover display.
+  // Originals remain untouched; numbered pages still upload as 001.jpg, 002.jpg, etc.
+  if (frontCoverLocal) {
+    uploadItems.push({ rel: imageFiles[0], uploadRel: 'front-cover.jpg', localPath: frontCoverLocal, buffer: null, generated: false, upsert: true });
+    uploadItems.push({ rel: imageFiles[0], uploadRel: 'thumbnail.jpg', localPath: frontCoverLocal, buffer: null, generated: false, upsert: true });
+  }
+  if (backCoverLocal) {
+    uploadItems.push({ rel: imageFiles[imageFiles.length - 1], uploadRel: 'back-cover.jpg', localPath: backCoverLocal, buffer: null, generated: false, upsert: true });
+  }
+
   uploadItems.push({
     rel: 'program.json',
     uploadRel: 'program.json',
@@ -350,7 +367,7 @@ for (const folderEntry of folderEntries) {
         continue;
       }
       if (DRY_RUN) {
-        reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: exists && item.upsert ? 'would_replace_generated_json' : (item.generated ? 'would_upload_generated_json' : 'would_upload'), storage_path: storagePath, message: warnings.join(' | ') });
+        reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: exists && item.upsert ? 'would_replace_generated_file' : (item.generated ? 'would_upload_generated_json' : 'would_upload'), storage_path: storagePath, message: warnings.join(' | ') });
       } else {
         const buffer = item.generated ? item.buffer : fs.readFileSync(item.localPath);
         const { error } = await supabase.storage.from(BUCKET).upload(storagePath, buffer, {
@@ -360,7 +377,7 @@ for (const folderEntry of folderEntries) {
         if (error) throw new Error(error.message || 'Upload failed');
         uploadCount++;
         console.log(`  ${exists && item.upsert ? 'REPLACED' : 'UPLOADED'}: ${storagePath}`);
-        reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: exists && item.upsert ? 'replaced_generated_json' : (item.generated ? 'uploaded_generated_json' : 'uploaded'), storage_path: storagePath, message: warnings.join(' | ') });
+        reportRows.push({ folder: folderName, file: item.rel, upload_file: item.uploadRel, status: exists && item.upsert ? 'replaced_generated_file' : (item.generated ? 'uploaded_generated_json' : 'uploaded'), storage_path: storagePath, message: warnings.join(' | ') });
       }
     } catch (err) {
       errorCount++;
@@ -397,7 +414,7 @@ console.log('');
 console.log('Done.');
 console.log(`Folders OK: ${okCount}`);
 console.log(`Errors: ${errorCount}`);
-if (DRY_RUN) console.log(`Files ready/would upload: ${reportRows.filter(r => r.status.startsWith('would_upload') || r.status === 'would_replace_generated_json').length}`);
+if (DRY_RUN) console.log(`Files ready/would upload: ${reportRows.filter(r => r.status.startsWith('would_upload') || r.status === 'would_replace_generated_file').length}`);
 else console.log(`Files uploaded/replaced: ${uploadCount}`);
 console.log(`Skipped existing: ${skipCount}`);
 if (DRY_RUN) console.log(`Manifest entries would add/update: ${manifestWouldChange}`);

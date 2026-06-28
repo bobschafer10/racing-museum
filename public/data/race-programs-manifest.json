@@ -170,8 +170,9 @@
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1964-eastern-wisconsin-stock-car-association-yearbook/043.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1964-eastern-wisconsin-stock-car-association-yearbook/044.jpg"
     ],
-    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1964-eastern-wisconsin-stock-car-association-yearbook/001.jpg",
-    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1964-eastern-wisconsin-stock-car-association-yearbook/044.jpg"
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1964-eastern-wisconsin-stock-car-association-yearbook/front-cover.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1964-eastern-wisconsin-stock-car-association-yearbook/back-cover.jpg",
+    "thumbnailImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1964-eastern-wisconsin-stock-car-association-yearbook/thumbnail.jpg"
   },
   {
     "slug": "1969-wausau-fairgrounds-wi-program",

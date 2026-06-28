@@ -10,8 +10,9 @@
   "trackName": "Eastern Wisconsin Stock Car Association",
   "state": null,
   "folder": "1964-eastern-wisconsin-stock-car-association-yearbook",
-  "coverImage": "001.jpg",
-  "backCoverImage": "044.jpg",
+  "coverImage": "front-cover.jpg",
+  "backCoverImage": "back-cover.jpg",
+  "thumbnailImage": "thumbnail.jpg",
   "pageCount": 44,
   "images": [
     "001.jpg",
@@ -281,6 +282,6 @@
       "title": "Page 44"
     }
   ],
-  "generatedBy": "Museum Publication Manager v1.2",
-  "generatedAt": "2026-06-28T13:15:45.319Z"
+  "generatedBy": "Museum Publication Manager v1.3",
+  "generatedAt": "2026-06-28T15:18:38.581Z"
 }
