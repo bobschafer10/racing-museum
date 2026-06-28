@@ -28,10 +28,9 @@ export default async function NewspaperIssuePage({
     image,
   }))
 
-  const summary =
-    issue.summary ||
-    issue.description ||
-    "Historic racing newspaper issue featuring race coverage, results, photos, standings, and regional reporting."
+ const summary =
+  issue.description ||
+  `This issue of ${issue.publication}, published on ${issue.title}, preserves a snapshot of short-track racing history through race coverage, photographs, schedules, advertising, and period racing news.`
 
   return (
   <main style={pageStyle}>
@@ -66,29 +65,19 @@ export default async function NewspaperIssuePage({
           </div>
         </div>
 
-        <div style={insideIssuePanel}>
-          <div style={insideIssueEyebrow}>Inside This Issue</div>
+        <div style={backCoverPanel}>
+  {issue.backCoverImage ? (
+    <img
+      src={issue.backCoverImage}
+      alt={`${issue.publication} ${issue.title} back cover`}
+      style={backCoverImage}
+    />
+  ) : (
+    <div style={backCoverPlaceholder}>Back Cover</div>
+  )}
 
-          {issue.summary ? (
-            <div style={insideIssueText}>{issue.summary}</div>
-          ) : (
-            <div style={insideIssueEmpty}>
-              Historic racing newspaper issue featuring race coverage, results,
-              photographs, standings and regional reporting.
-            </div>
-          )}
-
-          {issue.highlights && issue.highlights.length > 0 ? (
-            <>
-              <hr style={insideIssueRule} />
-              <ul style={highlightList}>
-                {issue.highlights.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </>
-          ) : null}
-        </div>
+  <div style={backCoverCaption}>Back Cover</div>
+</div>
       </div>
     </section>
 
@@ -207,6 +196,45 @@ const insideIssuePanel: CSSProperties = {
   border: "1px solid #c2a97d",
   padding: "16px",
   alignSelf: "stretch",
+}
+
+const backCoverPanel: CSSProperties = {
+  background: "#eadfc7",
+  border: "1px solid #c2a97d",
+  padding: "14px",
+  alignSelf: "stretch",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+}
+
+const backCoverImage: CSSProperties = {
+  width: "100%",
+  maxWidth: "300px",
+  height: "auto",
+  border: "1px solid #b29364",
+  background: "#efe7d6",
+}
+
+const backCoverCaption: CSSProperties = {
+  marginTop: "10px",
+  fontSize: "14px",
+  fontWeight: 700,
+  color: "#5f4935",
+  textTransform: "uppercase",
+  letterSpacing: "0.08em",
+}
+
+const backCoverPlaceholder: CSSProperties = {
+  width: "100%",
+  maxWidth: "300px",
+  aspectRatio: "3 / 4",
+  border: "1px dashed #b29364",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "#7a6348",
+  fontStyle: "italic",
 }
 
 const insideIssueEyebrow: CSSProperties = {
