@@ -1,237 +1,286 @@
 {
-  "title": "1964 YEARBOOK  1964 yearbook",
-  "slug": "1964 YEARBOOK",
-  "year": "1964 YEARBOOK",
-  "type": "1964 YEARBOOK",
-  "publicationType": "1964 YEARBOOK",
-  "trackSlug": "",
-  "trackName": "",
-  "state": "",
-  "folder": "1964 YEARBOOK",
-  "coverImage": "1.jpg",
+  "title": "1964 Eastern Wisconsin Stock Car Association Yearbook",
+  "slug": "1964-eastern-wisconsin-stock-car-association-yearbook",
+  "year": 1964,
+  "type": "yearbook",
+  "publicationType": "yearbook",
+  "track": "Eastern Wisconsin Stock Car Association",
+  "track_slug": "eastern-wisconsin-stock-car-association",
+  "trackSlug": "eastern-wisconsin-stock-car-association",
+  "trackName": "Eastern Wisconsin Stock Car Association",
+  "state": null,
+  "folder": "1964-eastern-wisconsin-stock-car-association-yearbook",
+  "coverImage": "001.jpg",
+  "backCoverImage": "044.jpg",
   "pageCount": 44,
+  "images": [
+    "001.jpg",
+    "002.jpg",
+    "003.jpg",
+    "004.jpg",
+    "005.jpg",
+    "006.jpg",
+    "007.jpg",
+    "008.jpg",
+    "009.jpg",
+    "010.jpg",
+    "011.jpg",
+    "012.jpg",
+    "013.jpg",
+    "014.jpg",
+    "015.jpg",
+    "016.jpg",
+    "017.jpg",
+    "018.jpg",
+    "019.jpg",
+    "020.jpg",
+    "021.jpg",
+    "022.jpg",
+    "023.jpg",
+    "024.jpg",
+    "025.jpg",
+    "026.jpg",
+    "027.jpg",
+    "028.jpg",
+    "029.jpg",
+    "030.jpg",
+    "031.jpg",
+    "032.jpg",
+    "033.jpg",
+    "034.jpg",
+    "035.jpg",
+    "036.jpg",
+    "037.jpg",
+    "038.jpg",
+    "039.jpg",
+    "040.jpg",
+    "041.jpg",
+    "042.jpg",
+    "043.jpg",
+    "044.jpg"
+  ],
   "pages": [
     {
       "pageNumber": 1,
-      "image": "1.jpg",
+      "image": "001.jpg",
       "title": "Page 1"
     },
     {
       "pageNumber": 2,
-      "image": "2.jpg",
+      "image": "002.jpg",
       "title": "Page 2"
     },
     {
       "pageNumber": 3,
-      "image": "3.jpg",
+      "image": "003.jpg",
       "title": "Page 3"
     },
     {
       "pageNumber": 4,
-      "image": "4.jpg",
+      "image": "004.jpg",
       "title": "Page 4"
     },
     {
       "pageNumber": 5,
-      "image": "5.jpg",
+      "image": "005.jpg",
       "title": "Page 5"
     },
     {
       "pageNumber": 6,
-      "image": "6.jpg",
+      "image": "006.jpg",
       "title": "Page 6"
     },
     {
       "pageNumber": 7,
-      "image": "7.jpg",
+      "image": "007.jpg",
       "title": "Page 7"
     },
     {
       "pageNumber": 8,
-      "image": "8.jpg",
+      "image": "008.jpg",
       "title": "Page 8"
     },
     {
       "pageNumber": 9,
-      "image": "9.jpg",
+      "image": "009.jpg",
       "title": "Page 9"
     },
     {
       "pageNumber": 10,
-      "image": "10.jpg",
+      "image": "010.jpg",
       "title": "Page 10"
     },
     {
       "pageNumber": 11,
-      "image": "11.jpg",
+      "image": "011.jpg",
       "title": "Page 11"
     },
     {
       "pageNumber": 12,
-      "image": "12.jpg",
+      "image": "012.jpg",
       "title": "Page 12"
     },
     {
       "pageNumber": 13,
-      "image": "13.jpg",
+      "image": "013.jpg",
       "title": "Page 13"
     },
     {
       "pageNumber": 14,
-      "image": "14.jpg",
+      "image": "014.jpg",
       "title": "Page 14"
     },
     {
       "pageNumber": 15,
-      "image": "15.jpg",
+      "image": "015.jpg",
       "title": "Page 15"
     },
     {
       "pageNumber": 16,
-      "image": "16.jpg",
+      "image": "016.jpg",
       "title": "Page 16"
     },
     {
       "pageNumber": 17,
-      "image": "17.jpg",
+      "image": "017.jpg",
       "title": "Page 17"
     },
     {
       "pageNumber": 18,
-      "image": "18.jpg",
+      "image": "018.jpg",
       "title": "Page 18"
     },
     {
       "pageNumber": 19,
-      "image": "19.jpg",
+      "image": "019.jpg",
       "title": "Page 19"
     },
     {
       "pageNumber": 20,
-      "image": "20.jpg",
+      "image": "020.jpg",
       "title": "Page 20"
     },
     {
       "pageNumber": 21,
-      "image": "21.jpg",
+      "image": "021.jpg",
       "title": "Page 21"
     },
     {
       "pageNumber": 22,
-      "image": "22.jpg",
+      "image": "022.jpg",
       "title": "Page 22"
     },
     {
       "pageNumber": 23,
-      "image": "23.jpg",
+      "image": "023.jpg",
       "title": "Page 23"
     },
     {
       "pageNumber": 24,
-      "image": "24.jpg",
+      "image": "024.jpg",
       "title": "Page 24"
     },
     {
       "pageNumber": 25,
-      "image": "25.jpg",
+      "image": "025.jpg",
       "title": "Page 25"
     },
     {
       "pageNumber": 26,
-      "image": "26.jpg",
+      "image": "026.jpg",
       "title": "Page 26"
     },
     {
       "pageNumber": 27,
-      "image": "27.jpg",
+      "image": "027.jpg",
       "title": "Page 27"
     },
     {
       "pageNumber": 28,
-      "image": "28.jpg",
+      "image": "028.jpg",
       "title": "Page 28"
     },
     {
       "pageNumber": 29,
-      "image": "29.jpg",
+      "image": "029.jpg",
       "title": "Page 29"
     },
     {
       "pageNumber": 30,
-      "image": "30.jpg",
+      "image": "030.jpg",
       "title": "Page 30"
     },
     {
       "pageNumber": 31,
-      "image": "31.jpg",
+      "image": "031.jpg",
       "title": "Page 31"
     },
     {
       "pageNumber": 32,
-      "image": "32.jpg",
+      "image": "032.jpg",
       "title": "Page 32"
     },
     {
       "pageNumber": 33,
-      "image": "33.jpg",
+      "image": "033.jpg",
       "title": "Page 33"
     },
     {
       "pageNumber": 34,
-      "image": "34.jpg",
+      "image": "034.jpg",
       "title": "Page 34"
     },
     {
       "pageNumber": 35,
-      "image": "35.jpg",
+      "image": "035.jpg",
       "title": "Page 35"
     },
     {
       "pageNumber": 36,
-      "image": "36.jpg",
+      "image": "036.jpg",
       "title": "Page 36"
     },
     {
       "pageNumber": 37,
-      "image": "37.jpg",
+      "image": "037.jpg",
       "title": "Page 37"
     },
     {
       "pageNumber": 38,
-      "image": "38.jpg",
+      "image": "038.jpg",
       "title": "Page 38"
     },
     {
       "pageNumber": 39,
-      "image": "39.jpg",
+      "image": "039.jpg",
       "title": "Page 39"
     },
     {
       "pageNumber": 40,
-      "image": "40.jpg",
+      "image": "040.jpg",
       "title": "Page 40"
     },
     {
       "pageNumber": 41,
-      "image": "41.jpg",
+      "image": "041.jpg",
       "title": "Page 41"
     },
     {
       "pageNumber": 42,
-      "image": "42.jpg",
+      "image": "042.jpg",
       "title": "Page 42"
     },
     {
       "pageNumber": 43,
-      "image": "43.jpg",
+      "image": "043.jpg",
       "title": "Page 43"
     },
     {
       "pageNumber": 44,
-      "image": "44.jpg",
+      "image": "044.jpg",
       "title": "Page 44"
     }
   ],
-  "generatedBy": "Museum Publication Manager v1.1",
-  "generatedAt": "2026-06-28T12:49:58.775Z"
+  "generatedBy": "Museum Publication Manager v1.2",
+  "generatedAt": "2026-06-28T13:10:05.988Z"
 }
