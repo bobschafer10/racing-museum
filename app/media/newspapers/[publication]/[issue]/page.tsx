@@ -34,84 +34,70 @@ export default async function NewspaperIssuePage({
     "Historic racing newspaper issue featuring race coverage, results, photos, standings, and regional reporting."
 
   return (
-    <main style={pageStyle}>
-      <section style={heroWrap}>
-        <div style={heroGrid}>
-          <div style={coverWrap}>
-            <img
-  src={issue.coverImage}
-  alt={`${issue.publication} ${issue.title}`}
-  style={coverImage}
-/>
+  <main style={pageStyle}>
+    <section style={heroWrap}>
+      <div style={heroGrid}>
+        <div style={coverWrap}>
+          <img
+            src={issue.coverImage}
+            alt={`${issue.publication} ${issue.title}`}
+            style={coverImage}
+          />
+        </div>
+
+        <div style={heroText}>
+          <div style={eyebrow}>Newspaper Issue</div>
+          <h1 style={pageTitle}>{issue.publication}</h1>
+          <div style={publicationLine}>{issue.title}</div>
+
+          <div style={issueMeta}>
+            {issue.issueDate}
+            {(issue.volume || issue.number) && (
+              <span> • {issue.volume} {issue.number}</span>
+            )}
           </div>
 
-          <div style={heroText}>
-            <div style={eyebrow}>Newspaper Issue</div>
-            <h1 style={pageTitle}>{issue.publication}</h1>
-            <div style={publicationLine}>{issue.title}</div>
+          <p style={summaryText}>{summary}</p>
 
-            <div style={issueMeta}>
-              {issue.issueDate}
-              {(issue.volume || issue.number) && (
-                <span>
-                  {" "}
-                  • {issue.volume} {issue.number}
-                </span>
-              )}
-            </div>
-
-            <p style={summaryText}>{summary}</p>
-
-            <div style={buttonRow}>
-              <Link
-                href={`/media/newspapers?publication=${publication}`}
-                style={primaryButton}
-              >
-                Back to Newspapers
-              </Link>
-            </div>
+          <div style={buttonRow}>
+            <Link href={`/media/newspapers?publication=${publication}`} style={primaryButton}>
+              Back to Newspapers
+            </Link>
           </div>
+        </div>
 
-          <div style={insideIssuePanel}>
-  <div style={insideIssueEyebrow}>Inside This Issue</div>
+        <div style={insideIssuePanel}>
+          <div style={insideIssueEyebrow}>Inside This Issue</div>
 
-  {issue.summary ? (
-    <div style={insideIssueText}>
-      {issue.summary}
-    </div>
-  ) : (
-    <div style={insideIssueEmpty}>
-      Historic racing newspaper issue featuring race coverage,
-      results, photographs, standings and regional reporting.
-    </div>
-  )}
+          {issue.summary ? (
+            <div style={insideIssueText}>{issue.summary}</div>
+          ) : (
+            <div style={insideIssueEmpty}>
+              Historic racing newspaper issue featuring race coverage, results,
+              photographs, standings and regional reporting.
+            </div>
+          )}
 
-  {issue.highlights && issue.highlights.length > 0 && (
-    <>
-      <hr
-        style={{
-          margin: "16px 0",
-          border: 0,
-          borderTop: "1px solid #c2a97d",
-        }}
-      />
+          {issue.highlights && issue.highlights.length > 0 ? (
+            <>
+              <hr style={insideIssueRule} />
+              <ul style={highlightList}>
+                {issue.highlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+        </div>
+      </div>
+    </section>
 
-      <ul style={highlightList}>
-        {issue.highlights.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-    </>
-  )}
-</div>
-      </section>
-
-      <section style={sectionStyle}>
-        <h2 style={sectionTitle}>Issue Pages</h2>
-        <NewspaperPageViewer pages={pages} />
-      </section>
-    </main>
-  )
+    <section style={sectionStyle}>
+      <h2 style={sectionTitle}>Issue Pages</h2>
+      <NewspaperPageViewer pages={pages} />
+    </section>
+  </main>
+)
 }
 
 const pageStyle: CSSProperties = {
@@ -238,8 +224,14 @@ const insideIssueText: CSSProperties = {
   color: "#3d2e1f",
 }
 
+const insideIssueRule: CSSProperties = {
+  margin: "16px 0",
+  border: 0,
+  borderTop: "1px solid #c2a97d",
+}
+
 const highlightList: CSSProperties = {
-  margin: "0",
+  margin: 0,
   paddingLeft: "18px",
   lineHeight: 1.6,
   color: "#5b4630",
