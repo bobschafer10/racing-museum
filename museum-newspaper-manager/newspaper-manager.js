@@ -49,6 +49,16 @@ const PUBLICATIONS = {
   'national-speed-sport-news': 'National Speed Sport News'
 };
 
+const PUBLICATION_ALIASES = {
+  cfrn: 'checkered-flag-racing-news',
+  'checkered-flag': 'checkered-flag-racing-news',
+  'checkered-flag-racing-news': 'checkered-flag-racing-news',
+  mrn: 'midwest-racing-news',
+  'midwest-racing-news': 'midwest-racing-news',
+  nssn: 'national-speed-sport-news',
+  'national-speed-sport-news': 'national-speed-sport-news'
+};
+
 function csvEscape(value) {
   const s = String(value ?? '');
   if (s.includes(',') || s.includes('"') || s.includes('\n')) return `"${s.replace(/"/g, '""')}"`;
@@ -87,23 +97,81 @@ function titleCaseFromSlug(slug) {
     .join(' ');
 }
 
+function normalizePublicationSlug(value) {
+  const key = String(value || '')
+    .trim()
+    .toLowerCase()
+    .replace(/_/g, '-')
+    .replace(/\s+/g, '-');
+  return PUBLICATION_ALIASES[key] || key;
+}
+
+function normalizeYear(twoOrFourDigitYear) {
+  const n = Number(twoOrFourDigitYear);
+  if (!Number.isInteger(n)) return null;
+  if (String(twoOrFourDigitYear).length === 4) return n;
+  // Museum archive assumption: two-digit newspaper years are usually 1900s.
+  // Keep a small future window available for modern uploads.
+  return n <= 29 ? 2000 + n : 1900 + n;
+}
+
+function toIsoDate(year, month, day) {
+  const y = Number(year);
+  const m = Number(month);
+  const d = Number(day);
+  if (!Number.isInteger(y) || !Number.isInteger(m) || !Number.isInteger(d)) return null;
+  if (m < 1 || m > 12 || d < 1 || d > 31) return null;
+  return `${String(y).padStart(4, '0')}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+}
+
+function parseLooseDate(value) {
+  const raw = String(value || '').trim();
+
+  let match = raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  if (match) return toIsoDate(match[1], match[2], match[3]);
+
+  match = raw.match(/^(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{2}|\d{4})$/);
+  if (match) {
+    const year = normalizeYear(match[3]);
+    return toIsoDate(year, match[1], match[2]);
+  }
+
+  return null;
+}
+
 function parseIssueFolder(folderName) {
   // Recommended: publication-slug_YYYY-MM-DD
   // Optional:    publication-slug_YYYY-MM-DD_custom-issue-slug
   const underscore = folderName.split('_').filter(Boolean);
-  if (underscore.length >= 2 && /^\d{4}-\d{2}-\d{2}$/.test(underscore[1])) {
-    const publicationSlug = underscore[0];
-    const issueDate = underscore[1];
-    const issueSlug = underscore[2] || issueDate;
-    return { publicationSlug, issueDate, issueSlug, folderName, valid: true };
+  if (underscore.length >= 2) {
+    const issueDate = parseLooseDate(underscore[1]);
+    if (issueDate) {
+      const publicationSlug = normalizePublicationSlug(underscore[0]);
+      const issueSlug = underscore[2] || issueDate;
+      return { publicationSlug, issueDate, issueSlug, folderName, valid: true, normalizedFrom: folderName };
+    }
   }
 
   // Also allow: YYYY-MM-DD_publication-slug
-  if (underscore.length >= 2 && /^\d{4}-\d{2}-\d{2}$/.test(underscore[0])) {
-    const issueDate = underscore[0];
-    const publicationSlug = underscore[1];
-    const issueSlug = underscore[2] || issueDate;
-    return { publicationSlug, issueDate, issueSlug, folderName, valid: true };
+  if (underscore.length >= 2) {
+    const issueDate = parseLooseDate(underscore[0]);
+    if (issueDate) {
+      const publicationSlug = normalizePublicationSlug(underscore[1]);
+      const issueSlug = underscore[2] || issueDate;
+      return { publicationSlug, issueDate, issueSlug, folderName, valid: true, normalizedFrom: folderName };
+    }
+  }
+
+  // Existing archive-friendly shortcuts:
+  //   CFRN 5.21.70
+  //   CFRN 5-21-1970
+  //   MRN 04.15.59
+  //   NSSN 7-1-1961
+  const shortcut = folderName.trim().match(/^([A-Za-z][A-Za-z0-9-]*)\s+(\d{1,2}[.\-/]\d{1,2}[.\-/](?:\d{2}|\d{4}))$/);
+  if (shortcut) {
+    const publicationSlug = normalizePublicationSlug(shortcut[1]);
+    const issueDate = parseLooseDate(shortcut[2]);
+    if (issueDate) return { publicationSlug, issueDate, issueSlug: issueDate, folderName, valid: true, normalizedFrom: folderName };
   }
 
   return { publicationSlug: '', issueDate: '', issueSlug: '', folderName, valid: false };
@@ -120,31 +188,77 @@ function naturalSortFiles(files) {
   return [...files].sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
 }
 
-function findPageNumber(file) {
-  const base = path.basename(file, path.extname(file));
+function parsePageRange(file) {
+  const base = path.basename(file, path.extname(file)).toLowerCase();
+
+  // Page 2-3.jpg, pages 2-3.jpg, Page 16.jpg
+  let match = base.match(/pages?\s*(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?/i);
+  if (match) {
+    const start = Number(match[1]);
+    const end = match[2] ? Number(match[2]) : start;
+    return { start, end, label: end === start ? String(start) : `${start}-${end}` };
+  }
+
+  // 2-3.jpg, 04-05.jpg
+  match = base.match(/(^|[^\d])(\d{1,4})\s*[-–]\s*(\d{1,4})([^\d]|$)/);
+  if (match) {
+    const start = Number(match[2]);
+    const end = Number(match[3]);
+    return { start, end, label: `${start}-${end}` };
+  }
+
+  // 001.jpg, issue_001.jpg, Page 1 copy.jpg
   const matches = base.match(/(\d+)/g);
   if (!matches) return null;
-  return Number(matches[matches.length - 1]);
+  const start = Number(matches[matches.length - 1]);
+  return { start, end: start, label: String(start) };
+}
+
+function sortPageFiles(files) {
+  return [...files].sort((a, b) => {
+    const pa = parsePageRange(a);
+    const pb = parsePageRange(b);
+    if (pa && pb) {
+      if (pa.start !== pb.start) return pa.start - pb.start;
+      if (pa.end !== pb.end) return pa.end - pb.end;
+    }
+    if (pa && !pb) return -1;
+    if (!pa && pb) return 1;
+    return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+  });
 }
 
 function detectPageNumberWarnings(imageFiles) {
-  const nums = imageFiles.map(findPageNumber).filter(n => Number.isInteger(n));
-  if (nums.length < 2) return [];
-  const sorted = [...new Set(nums)].sort((a, b) => a - b);
+  const ranges = imageFiles.map(parsePageRange).filter(Boolean);
+  if (ranges.length < 2) return [];
   const warnings = [];
-  for (let i = 1; i < sorted.length; i++) {
-    if (sorted[i] !== sorted[i - 1] + 1) {
-      warnings.push(`Page numbering gap between ${sorted[i - 1]} and ${sorted[i]}`);
+  let previousEnd = null;
+  const seenStarts = new Set();
+
+  for (const range of ranges) {
+    if (seenStarts.has(range.start)) warnings.push(`Duplicate page start detected: ${range.start}`);
+    seenStarts.add(range.start);
+    if (previousEnd !== null && range.start !== previousEnd + 1) {
+      warnings.push(`Page numbering gap or overlap between ${previousEnd} and ${range.start}`);
       break;
     }
+    previousEnd = range.end;
   }
-  if (sorted.length !== nums.length) warnings.push('Duplicate page numbers detected in local filenames.');
-  return warnings;
+
+  if (ranges.length !== imageFiles.length) warnings.push('Some page filenames did not include a clear page number.');
+  return [...new Set(warnings)];
 }
 
-function paddedName(index, originalFile) {
+function paddedPageName(originalFile) {
   const ext = path.extname(originalFile).toLowerCase() || '.jpg';
-  return `${String(index + 1).padStart(PAGE_PAD_WIDTH, '0')}${ext}`;
+  const range = parsePageRange(originalFile);
+  if (!range) return null;
+  const first = String(range.start).padStart(PAGE_PAD_WIDTH, '0');
+  if (range.end && range.end !== range.start) {
+    const last = String(range.end).padStart(PAGE_PAD_WIDTH, '0');
+    return `${first}-${last}${ext}`;
+  }
+  return `${first}${ext}`;
 }
 
 function publicStorageUrl(relPath) {
@@ -166,7 +280,7 @@ function generateNewspaperJson(issueMeta, uploadImageNames, existing = null) {
   const pages = uploadImageNames.map((file, idx) => ({
     pageNumber: idx + 1,
     image: file,
-    title: `Page ${idx + 1}`
+    title: file.includes('-') ? `Pages ${file.replace(/\.[^.]+$/, '').replace('-', '–')}` : `Page ${Number(file.replace(/\D/g, '') || idx + 1)}`
   }));
 
   return {
@@ -188,7 +302,7 @@ function generateNewspaperJson(issueMeta, uploadImageNames, existing = null) {
     featured: existing?.featured || false,
     volume: existing?.volume || null,
     number: existing?.number || null,
-    generatedBy: 'Museum Newspaper Manager v1.0',
+    generatedBy: 'Museum Newspaper Manager v1.1',
     generatedAt: new Date().toISOString()
   };
 }
@@ -258,7 +372,7 @@ function upsertManifestEntry(entry) {
   return index >= 0 ? 'updated' : 'added';
 }
 
-console.log('Museum Newspaper Manager v1.0 - ordered pages + covers + manifest update');
+console.log('Museum Newspaper Manager v1.1 - CFRN/MRN/NSSN shortcuts + page spread support');
 console.log(`Bucket: ${BUCKET}`);
 console.log(`Root folder: ${ROOT}`);
 console.log(`Manifest: ${MANIFEST_PATH}`);
@@ -268,7 +382,7 @@ console.log('');
 const folderEntries = fs.readdirSync(batchDir, { withFileTypes: true }).filter(d => d.isDirectory());
 if (folderEntries.length === 0) {
   console.error(`No newspaper folders found in: ${batchDir}`);
-  console.error('Expected folder format example: midwest-racing-news_1959-04-15');
+  console.error('Expected examples: midwest-racing-news_1959-04-15 or CFRN 5.21.70');
   process.exit(1);
 }
 if (folderEntries.length > MAX_FOLDERS) {
@@ -291,21 +405,25 @@ for (const folderEntry of folderEntries) {
   const issueMeta = parseIssueFolder(folderName);
   const files = listAllFiles(folderPath);
   const relFiles = files.map(f => path.relative(folderPath, f).replace(/\\/g, '/'));
-  const imageFiles = naturalSortFiles(relFiles.filter(f => /\.(jpe?g)$/i.test(f)));
+  const imageFiles = sortPageFiles(relFiles.filter(f => /\.(jpe?g)$/i.test(f))); 
   const jsonFiles = relFiles.filter(f => /\.json$/i.test(f));
   const lowerNames = relFiles.map(f => f.toLowerCase());
   const duplicates = lowerNames.filter((name, i) => lowerNames.indexOf(name) !== i);
   const problems = [];
   const warnings = [];
 
-  if (!issueMeta.valid) problems.push('Folder name must be publication-slug_YYYY-MM-DD, for example midwest-racing-news_1959-04-15.');
+  if (!issueMeta.valid) problems.push('Folder name must be publication-slug_YYYY-MM-DD or shortcut date format such as CFRN 5.21.70.');
   if (issueMeta.valid && !PUBLICATIONS[issueMeta.publicationSlug]) warnings.push(`Publication slug not in known list; using title case name for ${issueMeta.publicationSlug}.`);
   if (imageFiles.length === 0) problems.push('No JPG/JPEG page images found.');
   if (jsonFiles.length > 1) problems.push('More than one JSON file found.');
   if (duplicates.length) problems.push(`Duplicate local filenames found: ${[...new Set(duplicates)].join('; ')}`);
   warnings.push(...detectPageNumberWarnings(imageFiles));
 
-  const uploadImageNames = imageFiles.map((file, index) => paddedName(index, file));
+  const uploadImageNames = imageFiles.map((file) => paddedPageName(file));
+  if (uploadImageNames.some(name => !name)) problems.push('One or more page files could not be converted into a standard page name.');
+  const duplicateUploadNames = uploadImageNames.filter((name, i) => name && uploadImageNames.indexOf(name) !== i);
+  if (duplicateUploadNames.length) problems.push(`Duplicate standardized upload names would be created: ${[...new Set(duplicateUploadNames)].join('; ')}`);
+
   const existingJson = readExistingJson(folderPath, jsonFiles);
   const generatedJson = issueMeta.valid ? generateNewspaperJson(issueMeta, uploadImageNames, existingJson) : null;
   let generatedJsonPath = '';
@@ -314,7 +432,10 @@ for (const folderEntry of folderEntries) {
     warnings.push(`${jsonFiles.length ? 'Existing JSON found; generated ordered newspaper.json backup' : 'No JSON found; generated ordered newspaper.json backup'} at ${generatedJsonPath}`);
   }
   if (imageFiles.some((file, idx) => path.basename(file) !== uploadImageNames[idx])) {
-    warnings.push(`Pages will upload with zero-padded names: ${uploadImageNames[0]} through ${uploadImageNames[uploadImageNames.length - 1]}`);
+    warnings.push(`Pages will upload with standardized names, for example: ${path.basename(imageFiles[0] || '')} -> ${uploadImageNames[0]}, ${path.basename(imageFiles[imageFiles.length - 1] || '')} -> ${uploadImageNames[uploadImageNames.length - 1]}`);
+  }
+  if (issueMeta.valid && issueMeta.normalizedFrom !== `${issueMeta.publicationSlug}_${issueMeta.issueDate}`) {
+    warnings.push(`Folder name normalized to ${issueMeta.publicationSlug}/${issueMeta.issueSlug}`);
   }
 
   if (problems.length) {
