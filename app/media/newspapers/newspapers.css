@@ -331,8 +331,8 @@
 
 .issue-cover-image {
   width: 100%;
-  height: 310px;
-  object-fit: cover;
+  height: 390px;
+  object-fit: contain;
   object-position: top center;
   border: 1px solid #b9a77f;
   background: #efe7d6;
