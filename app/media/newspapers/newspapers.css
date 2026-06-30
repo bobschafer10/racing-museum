@@ -138,7 +138,7 @@
 .publication-card:hover,
 .year-card:hover,
 .issue-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   box-shadow: 0 8px 18px rgba(64, 45, 20, .16);
 }
 
@@ -337,6 +337,7 @@
   border: 1px solid #b9a77f;
   background: #efe7d6;
   margin-bottom: 12px;
+display: block;
 }
 
 .issue-card strong {

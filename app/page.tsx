@@ -188,10 +188,10 @@ const hasTwoSpotlightPhotos =
           return `${creditLabel}: ${driverName} at ${trackName}`
         })
       : [
-          'New photo archive additions',
-          'Race program collection updates',
-          'Additional driver profile records',
-          'Expanded race result history',
+          'Hundreds of new photos added',
+          'Eastern Wisconsin Stock Car yearbooks',
+          '1970 Checkered Flag Racing News collection',
+          'Race results through mid-June 2026',
         ]
 
   return(
