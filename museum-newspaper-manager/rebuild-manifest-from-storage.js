@@ -139,22 +139,29 @@ async function rebuild() {
         rawOcrHighlights: metadata?.rawOcrHighlights || [],
         topics: metadata?.topics || ["Newspaper Coverage"],
         ocrConfidence: metadata?.ocrConfidence ?? null,
-        coverImage:
-          metadata?.coverImage ||
-          (hasFrontCover
-            ? publicUrl(`${issuePath}/front-cover.jpg`)
-            : firstPageUrl),
+               coverImage:
+          metadata?.coverImage?.startsWith("http")
+            ? metadata.coverImage
+            : hasFrontCover
+              ? publicUrl(`${issuePath}/front-cover.jpg`)
+              : firstPageUrl,
+
         backCoverImage:
-          metadata?.backCoverImage ||
-          (hasBackCover
-            ? publicUrl(`${issuePath}/back-cover.jpg`)
-            : lastPageUrl),
+          metadata?.backCoverImage?.startsWith("http")
+            ? metadata.backCoverImage
+            : hasBackCover
+              ? publicUrl(`${issuePath}/back-cover.jpg`)
+              : lastPageUrl,
+
         thumbnail:
-          metadata?.thumbnail ||
-          (hasThumbnail
-            ? publicUrl(`${issuePath}/thumbnail.jpg`)
-            : firstPageUrl),
-        pages: metadata?.pages?.length ? metadata.pages : pages,
+          metadata?.thumbnail?.startsWith("http")
+            ? metadata.thumbnail
+            : hasThumbnail
+              ? publicUrl(`${issuePath}/thumbnail.jpg`)
+              : firstPageUrl,
+
+ 
+          pages,
         featured: metadata?.featured || false,
         volume: metadata?.volume,
         number: metadata?.number,
