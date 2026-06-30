@@ -1,4 +1,3 @@
-
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { CSSProperties } from "react"
@@ -28,65 +27,68 @@ export default async function NewspaperIssuePage({
     image,
   }))
 
- const summary =
-  issue.description ||
-  `This issue of ${issue.publication}, published on ${issue.title}, preserves a snapshot of short-track racing history through race coverage, photographs, schedules, advertising, and period racing news.`
+  const summary =
+    issue.description ||
+    `This issue of ${issue.publication}, published on ${issue.title}, preserves a snapshot of short-track racing history through race coverage, photographs, schedules, advertising, and period racing news.`
 
   return (
-  <main style={pageStyle}>
-    <section style={heroWrap}>
-      <div style={heroGrid}>
-        <div style={coverWrap}>
-          <img
-            src={issue.coverImage}
-            alt={`${issue.publication} ${issue.title}`}
-            style={coverImage}
-          />
-        </div>
+    <main style={pageStyle}>
+      <section style={heroWrap}>
+        <div style={heroGrid}>
+          <div style={coverWrap}>
+            <img
+              src={issue.coverImage}
+              alt={`${issue.publication} ${issue.title}`}
+              style={coverImage}
+            />
+          </div>
 
-        <div style={heroText}>
-          <div style={eyebrow}>Newspaper Issue</div>
-          <h1 style={pageTitle}>{issue.publication}</h1>
-          <div style={publicationLine}>{issue.title}</div>
+          <div style={heroText}>
+            <div style={eyebrow}>Newspaper Issue</div>
+            <h1 style={pageTitle}>{issue.publication}</h1>
+            <div style={publicationLine}>{issue.title}</div>
 
-          <div style={issueMeta}>
-            {issue.issueDate}
-            {(issue.volume || issue.number) && (
-              <span> • {issue.volume} {issue.number}</span>
+            <div style={issueMeta}>
+              {issue.issueDate}
+              {(issue.volume || issue.number) && (
+                <span> • {issue.volume} {issue.number}</span>
+              )}
+            </div>
+
+            <p style={summaryText}>{summary}</p>
+
+            <div style={buttonRow}>
+              <Link
+                href={`/media/newspapers/${publication}`}
+                style={primaryButton}
+              >
+                Back to Newspaper Archive
+              </Link>
+            </div>
+          </div>
+
+          <div style={backCoverPanel}>
+            {issue.backCoverImage ? (
+              <img
+                src={issue.backCoverImage}
+                alt={`${issue.publication} ${issue.title} back cover`}
+                style={backCoverImage}
+              />
+            ) : (
+              <div style={backCoverPlaceholder}>Back Cover</div>
             )}
-          </div>
 
-          <p style={summaryText}>{summary}</p>
-
-          <div style={buttonRow}>
-            <Link href={`/media/newspapers?publication=${publication}`} style={primaryButton}>
-              Back to Newspapers
-            </Link>
+            <div style={backCoverCaption}>Back Cover</div>
           </div>
         </div>
+      </section>
 
-        <div style={backCoverPanel}>
-  {issue.backCoverImage ? (
-    <img
-      src={issue.backCoverImage}
-      alt={`${issue.publication} ${issue.title} back cover`}
-      style={backCoverImage}
-    />
-  ) : (
-    <div style={backCoverPlaceholder}>Back Cover</div>
-  )}
-
-  <div style={backCoverCaption}>Back Cover</div>
-</div>
-      </div>
-    </section>
-
-    <section style={sectionStyle}>
-      <h2 style={sectionTitle}>Issue Pages</h2>
-      <NewspaperPageViewer pages={pages} />
-    </section>
-  </main>
-)
+      <section style={sectionStyle}>
+        <h2 style={sectionTitle}>Issue Pages</h2>
+        <NewspaperPageViewer pages={pages} />
+      </section>
+    </main>
+  )
 }
 
 const pageStyle: CSSProperties = {
@@ -191,13 +193,6 @@ const sectionTitle: CSSProperties = {
   color: "#34271c",
 }
 
-const insideIssuePanel: CSSProperties = {
-  background: "#eadfc7",
-  border: "1px solid #c2a97d",
-  padding: "16px",
-  alignSelf: "stretch",
-}
-
 const backCoverPanel: CSSProperties = {
   background: "#eadfc7",
   border: "1px solid #c2a97d",
@@ -233,42 +228,6 @@ const backCoverPlaceholder: CSSProperties = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  color: "#7a6348",
-  fontStyle: "italic",
-}
-
-const insideIssueEyebrow: CSSProperties = {
-  fontSize: "12px",
-  textTransform: "uppercase",
-  letterSpacing: "0.14em",
-  color: "#7a6348",
-  fontWeight: 700,
-  marginBottom: "14px",
-}
-
-const insideIssueText: CSSProperties = {
-  fontSize: "15px",
-  lineHeight: 1.65,
-  color: "#3d2e1f",
-}
-
-const insideIssueRule: CSSProperties = {
-  margin: "16px 0",
-  border: 0,
-  borderTop: "1px solid #c2a97d",
-}
-
-const highlightList: CSSProperties = {
-  margin: 0,
-  paddingLeft: "18px",
-  lineHeight: 1.6,
-  color: "#5b4630",
-  fontSize: "14px",
-}
-
-const insideIssueEmpty: CSSProperties = {
-  fontSize: "15px",
-  lineHeight: 1.5,
   color: "#7a6348",
   fontStyle: "italic",
 }
