@@ -3,7 +3,9 @@ const fs = require("fs")
 const path = require("path")
 const { createClient } = require("@supabase/supabase-js")
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL
+const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL
+
 const SUPABASE_KEY =
   process.env.SUPABASE_SERVICE_ROLE_KEY ||
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
@@ -45,6 +47,7 @@ function pageSortValue(name) {
 function titleFromDate(slug) {
   const [y, m, d] = slug.split("-").map(Number)
   const date = new Date(y, m - 1, d)
+
   return date.toLocaleDateString("en-US", {
     month: "long",
     day: "numeric",
@@ -86,7 +89,9 @@ async function rebuild() {
     const publicationSlug = pub.name
     const publicationName = PUBLICATION_NAMES[publicationSlug] || publicationSlug
 
-    const issueFolders = (await list(`newspapers/${publicationSlug}`)).filter(isFolder)
+    const issueFolders = (await list(`newspapers/${publicationSlug}`)).filter(
+      isFolder
+    )
 
     for (const issue of issueFolders) {
       const issueSlug = issue.name
@@ -106,8 +111,15 @@ async function rebuild() {
             name !== "back-cover.jpg" &&
             name !== "thumbnail.jpg"
         )
-                .sort((a, b) => pageSortValue(a) - pageSortValue(b))
+        .sort((a, b) => pageSortValue(a) - pageSortValue(b))
         .map((name) => publicUrl(`${issuePath}/${name}`))
+
+      const firstPageUrl = pages[0]
+      const lastPageUrl = pages[pages.length - 1]
+
+      const hasFrontCover = imageFiles.includes("front-cover.jpg")
+      const hasBackCover = imageFiles.includes("back-cover.jpg")
+      const hasThumbnail = imageFiles.includes("thumbnail.jpg")
 
       const issueDate = metadata?.issueDate || issueSlug
       const year = Number(issueDate.substring(0, 4))
@@ -127,10 +139,21 @@ async function rebuild() {
         rawOcrHighlights: metadata?.rawOcrHighlights || [],
         topics: metadata?.topics || ["Newspaper Coverage"],
         ocrConfidence: metadata?.ocrConfidence ?? null,
-        coverImage: metadata?.coverImage || publicUrl(`${issuePath}/front-cover.jpg`),
+        coverImage:
+          metadata?.coverImage ||
+          (hasFrontCover
+            ? publicUrl(`${issuePath}/front-cover.jpg`)
+            : firstPageUrl),
         backCoverImage:
-          metadata?.backCoverImage || publicUrl(`${issuePath}/back-cover.jpg`),
-        thumbnail: metadata?.thumbnail || publicUrl(`${issuePath}/thumbnail.jpg`),
+          metadata?.backCoverImage ||
+          (hasBackCover
+            ? publicUrl(`${issuePath}/back-cover.jpg`)
+            : lastPageUrl),
+        thumbnail:
+          metadata?.thumbnail ||
+          (hasThumbnail
+            ? publicUrl(`${issuePath}/thumbnail.jpg`)
+            : firstPageUrl),
         pages: metadata?.pages?.length ? metadata.pages : pages,
         featured: metadata?.featured || false,
         volume: metadata?.volume,
