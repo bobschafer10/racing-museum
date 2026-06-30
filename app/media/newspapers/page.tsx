@@ -1,119 +1,136 @@
-import Link from "next/link";
-import { supabase } from "@/lib/supabase";
-import "./newspapers.css";
+import Link from "next/link"
+import manifest from "../../../museum-newspaper-manager/public/data/newspapers-manifest.json"
+import "./newspapers.css"
 
-const PUBLICATIONS: Record<string, string> = {
-  "checkered-flag-racing-news": "Checkered Flag Racing News",
-  "midwest-racing-news": "Midwest Racing News",
-  "national-speed-sport-news": "National Speed Sport News",
-};
-
-async function listFolders(path: string) {
-  const { data, error } = await supabase.storage.from("media").list(path, {
-    limit: 1000,
-    sortBy: { column: "name", order: "asc" },
-  });
-
-  if (error || !data) return [];
-  return data.filter((item) => !item.name.includes("."));
+type NewspaperIssue = {
+  slug: string
+  title: string
+  publication: string
+  publicationSlug: string
+  year: number
+  coverImage?: string
+  thumbnail?: string
 }
 
-export default async function NewspapersPage() {
-  const publicationFolders = await listFolders("newspapers");
+const PUBLICATION_LOGOS: Record<string, string> = {
+  "all-the-dirt-racing-news": "/newspaper-assets/all-the-dirt-racing-news.jpg",
+  "checkered-flag-racing-news": "/newspaper-assets/checkered-flag-racing-news.jpg",
+  "hawkeye-racing-news": "/newspaper-assets/hawkeye-racing-news.jpg",
+  "midwest-racing-news": "/newspaper-assets/midwest-racing-news.jpg",
+  "national-speed-sport-news": "/newspaper-assets/national-speed-sport-news.jpg",
+}
 
-  const publications = await Promise.all(
-    publicationFolders.map(async (pub) => {
-      const issueFolders = await listFolders(`newspapers/${pub.name}`);
-      const years: Record<string, number> = {};
+const HERO_PAPERS = [
+  "/newspaper-assets/CFRN 5.2.1984.jpg",
+  "/newspaper-assets/1(1).jpg",
+  "/newspaper-assets/Page 1(2).jpg",
+]
 
-      issueFolders.forEach((issue) => {
-        const year = issue.name.substring(0, 4);
-        if (/^\d{4}$/.test(year)) {
-          years[year] = (years[year] || 0) + 1;
+export default function NewspapersPage() {
+  const issues = manifest as NewspaperIssue[]
+
+  const publications = Object.values(
+    issues.reduce((acc, issue) => {
+      const slug = issue.publicationSlug
+
+      if (!acc[slug]) {
+        acc[slug] = {
+          slug,
+          name: issue.publication,
+          issues: [] as NewspaperIssue[],
+          years: {} as Record<string, number>,
         }
-      });
+      }
 
-      const sortedYears = Object.keys(years).sort();
+      acc[slug].issues.push(issue)
+      acc[slug].years[String(issue.year)] =
+        (acc[slug].years[String(issue.year)] || 0) + 1
 
-      return {
-        slug: pub.name,
-        name: PUBLICATIONS[pub.name] || pub.name,
-        issueCount: issueFolders.length,
-        years,
-        firstYear: sortedYears[0],
-        lastYear: sortedYears[sortedYears.length - 1],
-      };
-    })
-  );
+      return acc
+    }, {} as Record<string, { slug: string; name: string; issues: NewspaperIssue[]; years: Record<string, number> }>)
+  )
 
-  const totalIssues = publications.reduce((sum, pub) => sum + pub.issueCount, 0);
-  const allYears = new Set(publications.flatMap((pub) => Object.keys(pub.years)));
+  const totalIssues = issues.length
+  const allYears = new Set(issues.map((issue) => issue.year))
 
   return (
     <main className="newspapers-page">
       <section className="newspapers-hero">
-        <div>
+        <div className="hero-copy">
           <p className="eyebrow">Media Archive</p>
           <h1>Newspapers</h1>
-          <p className="hero-text">
-            Browse historic racing newspapers by publication, year, and issue.
-          </p>
+          <p>Browse historic racing newspapers by publication, year, and issue.</p>
+
+          <div className="hero-logo-strip">
+            {Object.entries(PUBLICATION_LOGOS).map(([slug, src]) => (
+              <img key={slug} src={src} alt="" />
+            ))}
+          </div>
+        </div>
+
+        <div className="hero-paper-stack">
+          {HERO_PAPERS.map((src, index) => (
+            <img key={src} src={src} alt="" className={`hero-paper paper-${index + 1}`} />
+          ))}
         </div>
       </section>
 
       <div className="newspapers-layout">
         <aside className="publication-sidebar">
-          <h2>Newspaper Publications</h2>
+          <h2>▣ Newspaper Publications</h2>
 
-          {publications.map((pub) => (
-            <Link key={pub.slug} href={`/media/newspapers/${pub.slug}`} className="publication-card">
-              <div className="publication-logo">{pub.name}</div>
-              <h3>{pub.name}</h3>
-              <p>{pub.firstYear} – {pub.lastYear}</p>
-              <strong>{pub.issueCount.toLocaleString()} Issues</strong>
-              <span>Browse Archive →</span>
-            </Link>
-          ))}
+          {publications.map((pub) => {
+            const sortedYears = Object.keys(pub.years).sort()
+            return (
+              <Link key={pub.slug} href={`/media/newspapers/${pub.slug}`} className="publication-card">
+                {PUBLICATION_LOGOS[pub.slug] && (
+                  <img src={PUBLICATION_LOGOS[pub.slug]} alt={pub.name} className="publication-logo-img" />
+                )}
+
+                <h3>{pub.name}</h3>
+                <p>{sortedYears[0]} – {sortedYears[sortedYears.length - 1]}</p>
+                <strong>{pub.issues.length} Issues</strong>
+                <span>Browse Archive →</span>
+              </Link>
+            )
+          })}
 
           <div className="archive-stats">
             <h2>Archive Statistics</h2>
-            <div><strong>{totalIssues.toLocaleString()}</strong><span>Total Issues</span></div>
+            <div><strong>{totalIssues}</strong><span>Total Issues</span></div>
             <div><strong>{publications.length}</strong><span>Publications</span></div>
             <div><strong>{allYears.size}</strong><span>Years Covered</span></div>
           </div>
         </aside>
 
         <section className="archive-main">
-          <section className="year-browser">
-            <div className="section-title">
-              <span>▣</span>
-              <h2>Browse by Year</h2>
-            </div>
+          <div className="section-title">
+            <h2>▣ Browse by Year</h2>
+          </div>
 
-            {publications.map((pub) => (
-              <div key={pub.slug} className="publication-year-group">
-                <div className="publication-year-header">
+          {publications.map((pub, index) => {
+            const sortedYears = Object.keys(pub.years).sort()
+            return (
+              <section key={pub.slug} className="publication-year-group">
+                <div className={`publication-year-header color-${index % 3}`}>
                   <h3>{pub.name}</h3>
-                  <p>{pub.firstYear} – {pub.lastYear} · {pub.issueCount.toLocaleString()} Issues</p>
+                  <p>{sortedYears[0]} – {sortedYears[sortedYears.length - 1]} • {pub.issues.length} Issues</p>
                 </div>
 
                 <div className="year-grid">
-                  {Object.entries(pub.years).map(([year, count]) => (
-                    <Link
-                      key={year}
-                      href={`/media/newspapers/${pub.slug}/year/${year}`}
-                      className="year-card"
-                    >
+                  {sortedYears.map((year) => (
+                    <Link key={year} href={`/media/newspapers/${pub.slug}/year/${year}`} className="year-card">
                       <strong>{year}</strong>
-                      <span>{count} Issues</span>
+                      <em />
+                      <span>{pub.years[year]} Issues</span>
                     </Link>
                   ))}
                 </div>
-              </div>
-            ))}
-          </section>
+              </section>
+            )
+          })}
         </section>
       </div>
     </main>
-  );
+  )
 }
