@@ -1,55 +1,37 @@
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { supabase } from "@/lib/supabase";
-import "../../../newspapers.css";
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import manifest from "../../../../../../museum-newspaper-manager/public/data/newspapers-manifest.json"
+import "../../../newspapers.css"
 
-const PUBLICATIONS: Record<string, string> = {
-  "checkered-flag-racing-news": "Checkered Flag Racing News",
-  "midwest-racing-news": "Midwest Racing News",
-  "national-speed-sport-news": "National Speed Sport News",
-};
-
-async function listFolders(supabase: any, path: string) {
-  const { data, error } = await supabase.storage.from("media").list(path, {
-    limit: 1000,
-    sortBy: { column: "name", order: "asc" },
-  });
-
-  if (error || !data) return [];
-  return data.filter((item: any) => !item.name.includes("."));
-}
-
-function prettyDate(folderName: string) {
-  const [year, month, day] = folderName.split("-");
-  const date = new Date(Number(year), Number(month) - 1, Number(day));
-
-  return date.toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
+type NewspaperIssue = {
+  slug: string
+  title: string
+  publication: string
+  publicationSlug: string
+  year: number
+  issueDate?: string
+  coverImage?: string
+  thumbnail?: string
 }
 
 export default async function NewspaperYearPage({
   params,
 }: {
-  params: Promise<{ publication: string; year: string }>;
+  params: Promise<{ publication: string; year: string }>
 }) {
-  const { publication, year } = await params;
-  
+  const { publication, year } = await params
 
-  const issueFolders = await listFolders(
-    supabase,
-    `newspapers/${publication}`
-  );
+  const issues = (manifest as NewspaperIssue[])
+    .filter(
+      (issue) =>
+        issue.publicationSlug === publication &&
+        String(issue.year) === String(year)
+    )
+    .sort((a, b) => (a.issueDate || a.slug).localeCompare(b.issueDate || b.slug))
 
-  const issues = issueFolders.filter((issue: any) =>
-    issue.name.startsWith(`${year}-`)
-  );
+  if (!issues.length) notFound()
 
-  if (!issues.length) notFound();
-
-  const publicationName = PUBLICATIONS[publication] || publication;
+  const publicationName = issues[0].publication
 
   return (
     <main className="newspapers-page">
@@ -60,16 +42,13 @@ export default async function NewspaperYearPage({
             {publicationName} — {year}
           </h1>
           <p className="hero-text">
-            {issues.length} available issue{issues.length === 1 ? "" : "s"} from{" "}
-            {year}.
+            {issues.length} available issue{issues.length === 1 ? "" : "s"} from {year}.
           </p>
 
           <div className="breadcrumb-links">
             <Link href="/media/newspapers">Newspapers</Link>
             <span>›</span>
-            <Link href={`/media/newspapers/${publication}`}>
-              {publicationName}
-            </Link>
+            <Link href={`/media/newspapers/${publication}`}>{publicationName}</Link>
           </div>
         </div>
       </section>
@@ -81,22 +60,24 @@ export default async function NewspaperYearPage({
         </div>
 
         <div className="issue-grid">
-          {issues.map((issue: any) => (
+          {issues.map((issue) => (
             <Link
-              key={issue.name}
-              href={`/media/newspapers/viewer?publication=${publication}&issue=${issue.name}`}
+              key={issue.slug}
+              href={`/media/newspapers/${issue.publicationSlug}/${issue.slug}`}
               className="issue-card"
             >
-              <div className="issue-cover-placeholder">
-                <span>Newspaper Issue</span>
-              </div>
+              <img
+                src={issue.thumbnail || issue.coverImage}
+                alt={`${issue.publication} ${issue.title}`}
+                className="issue-cover-image"
+              />
 
-              <strong>{prettyDate(issue.name)}</strong>
+              <strong>{issue.title}</strong>
               <span>Open Issue →</span>
             </Link>
           ))}
         </div>
       </section>
     </main>
-  );
+  )
 }
