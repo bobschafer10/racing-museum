@@ -84,6 +84,20 @@ function parseFolderName(name) {
     if (year < 100) year += year >= 40 ? 1900 : 2000;
     return { publicationSlug: pub.slug, publication: pub.name, issueDate: isoDate(year, Number(shortcut[2]), Number(shortcut[3])) };
   }
+  // MRN legacy folder format: 5-17-61-1, 5-24-61-2, etc.
+  // Treat as Midwest Racing News and ignore the trailing edition number.
+  const mrnLegacy = name.match(/^(\d{1,2})[.\-_](\d{1,2})[.\-_](\d{2}|\d{4})[.\-_]\d+$/i);
+  if (mrnLegacy) {
+    const pub = PUBLICATION_MAP.mrn;
+    let year = Number(mrnLegacy[3]);
+    if (year < 100) year += year >= 40 ? 1900 : 2000;
+
+    return {
+      publicationSlug: pub.slug,
+      publication: pub.name,
+      issueDate: isoDate(year, Number(mrnLegacy[1]), Number(mrnLegacy[2])),
+    };
+  }
   throw new Error(`Folder name must be like CFRN 4.30.70 or checkered-flag-racing-news_1970-04-30`);
 }
 function parsePageFile(file) {
