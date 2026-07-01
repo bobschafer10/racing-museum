@@ -361,49 +361,58 @@ const hasTwoSpotlightPhotos =
 <section style={sectionWrap} className="home-section">
   <div style={statsLabPanel} className="home-stats-lab">
     <div style={statsLabLeft}>
-      <div style={statsLabEyebrow}>Build a Museum Room</div>
+      <div style={statsLabWatermark} />
 
-      <h2 style={statsLabTitle} className="home-stats-lab-title">
-        Victory Lane Research Center
-      </h2>
+<div style={statsLabEyebrow}>Museum Research Collection</div>
+
+<h2 style={statsLabTitle} className="home-stats-lab-title">
+  Victory Lane Research Center
+</h2>
+
+<div style={statsLabTitleDivider}>
+  <span />
+  <strong>🏁</strong>
+  <span />
+</div>
 
       <p style={statsLabDescription} className="home-stats-lab-description">
-        Explore more than a century of feature race victories across
-        Wisconsin and the Upper Midwest. Filter by year, track,
-        surface, class, or driver to uncover the sport’s winningest
-        competitors.
-      </p>
+  Explore over 120 years of recorded feature race victories across
+  Wisconsin and the Upper Midwest. Search by driver, track, surface,
+  class, or season to uncover racing history assembled into one
+  powerful research archive.
+</p>
 
       <div style={statsLabHighlights} className="home-stats-lab-highlights">
-        <div style={statsLabHighlight}>
-          <div style={statsLabHighlightValue}>1000s upon 1000s</div>
-          <div style={statsLabHighlightLabel}>
-            of career feature wins tracked
-          </div>
-        </div>
+  <div style={statsLabHighlight}>
+    <div style={statsLabHighlightValue}>Recorded Wins</div>
+    <div style={statsLabHighlightLabel}>
+      Thousands upon thousands of career feature wins tracked
+    </div>
+  </div>
 
-        <div style={statsLabHighlight}>
-          <div style={statsLabHighlightValue}>1903–2026</div>
-          <div style={statsLabHighlightLabel}>
-            Historical coverage range
-          </div>
-        </div>
+  <div style={statsLabHighlight}>
+    <div style={statsLabHighlightValue}>1903–2026</div>
+    <div style={statsLabHighlightLabel}>
+      More than a century of racing history preserved
+    </div>
+  </div>
 
-        <div style={statsLabHighlight}>
-          <div style={statsLabHighlightValue}>Fast Filters</div>
-          <div style={statsLabHighlightLabel}>
-            Track • Surface • Class • Year
-          </div>
-        </div>
-      </div>
+  <div style={statsLabHighlight}>
+    <div style={statsLabHighlightValue}>Fast Filters</div>
+    <div style={statsLabHighlightLabel}>
+      Driver • Track • Class • Surface • Year
+    </div>
+  </div>
+</div>
 
       <div style={{ marginTop: '28px' }}>
         <Link
-          href="/stats/feature-winners"
-          style={statsLabButton}
-        >
-          Open the Stat Builder →
-        </Link>
+  href="/stats/feature-winners"
+  style={statsLabButton}
+  className="stats-lab-button"
+>
+  🏁 Open the Stat Builder →
+</Link>
       </div>
     </div>
 
@@ -2077,6 +2086,36 @@ const spotlightEyebrow: CSSProperties = {
   marginBottom: '10px',
 }
 
+const statsLabWatermark: CSSProperties = {
+  position: 'absolute',
+  inset: 0,
+  pointerEvents: 'none',
+  opacity: 0.055,
+  backgroundImage:
+    'linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(-45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(-45deg, transparent 75%, #000 75%)',
+  backgroundSize: '42px 42px',
+  backgroundPosition: '0 0, 0 21px, 21px -21px, -21px 0px',
+  maskImage: 'linear-gradient(135deg, black 0%, transparent 62%)',
+  WebkitMaskImage: 'linear-gradient(135deg, black 0%, transparent 62%)',
+}
+
+const statsLabTitleDivider: CSSProperties = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '14px',
+  width: '100%',
+  maxWidth: '620px',
+  margin: '-6px 0 26px',
+  color: '#9b732f',
+}
+
+const statsLabFootnote: CSSProperties = {
+  marginTop: '14px',
+  fontSize: '15px',
+  fontStyle: 'italic',
+  color: '#5d4326',
+}
+
 const spotlightDriver: CSSProperties = {
   fontSize: '34px',
   lineHeight: 1.1,
@@ -2771,7 +2810,7 @@ const statsLabPanel: CSSProperties = {
   gridTemplateColumns: '1.6fr 0.8fr',
   gap: '28px',
   background:
-    'linear-gradient(135deg, #e8dcc1 0%, #d7bf91 100%)',
+    'linear-gradient(135deg, #efe4c8 0%, #d7bf91 100%)',
   border: '3px solid #4e3922',
   padding: '28px',
   position: 'relative',
@@ -2783,6 +2822,8 @@ const statsLabLeft: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
+  position: 'relative',
+  zIndex: 2,
 }
 
 const statsLabRight: CSSProperties = {
@@ -2813,17 +2854,11 @@ const statsLabDescription: CSSProperties = {
   color: '#3d2c19',
 }
 
-const statsLabHighlights: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gap: '18px',
-  marginTop: '30px',
-}
-
 const statsLabHighlight: CSSProperties = {
-  background: 'rgba(255,248,234,.45)',
-  border: '1px solid rgba(91,58,27,.22)',
+  background: 'rgba(255,248,234,.68)',
+  border: '1px solid rgba(91,58,27,.28)',
   padding: '18px',
+  boxShadow: '2px 2px 0 rgba(58,42,26,.08)',
 }
 
 const statsLabHighlightValue: CSSProperties = {
@@ -2841,14 +2876,15 @@ const statsLabHighlightLabel: CSSProperties = {
 
 const statsLabButton: CSSProperties = {
   display: 'inline-block',
-  background: '#3a2a1a',
+  background: 'linear-gradient(180deg, #8b2525 0%, #641919 100%)',
   color: '#fff8ea',
-  padding: '14px 22px',
+  padding: '15px 24px',
   textDecoration: 'none',
-  fontWeight: 800,
+  fontWeight: 900,
   fontSize: '15px',
-  border: '2px solid #24170c',
-  boxShadow: '4px 4px 0 rgba(36,23,12,.18)',
+  letterSpacing: '.02em',
+  border: '2px solid #c69a43',
+  boxShadow: '4px 4px 0 rgba(36,23,12,.22)',
 }
 
 const statsLabRightInner: CSSProperties = {
