@@ -2861,6 +2861,13 @@ const statsLabHighlight: CSSProperties = {
   boxShadow: '2px 2px 0 rgba(58,42,26,.08)',
 }
 
+const statsLabHighlights: CSSProperties = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gap: '18px',
+  marginTop: '30px',
+}
+
 const statsLabHighlightValue: CSSProperties = {
   fontSize: '28px',
   fontWeight: 800,
