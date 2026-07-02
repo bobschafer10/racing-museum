@@ -64,8 +64,12 @@ if (params.photographer) {
   const years = uniqueClean(filterRows?.map((p) => p.year)).sort((a, b) => Number(b) - Number(a))
   const credits = uniqueClean(filterRows?.map((p) => p.credit_type))
 
-  const hasFilters =
-    params.q || params.driver || params.photographer || params.track || params.year || params.credit
+ const hasFilters =
+  params.q || params.driver || params.photographer || params.track || params.year || params.credit
+
+const selectedPhotographerName = params.photographer
+  ? formatSlugName(params.photographer)
+  : null
 
   return (
     <main style={pageWrap}>
