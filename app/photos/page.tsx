@@ -47,6 +47,17 @@ export default async function PhotosPage({
     .select('driver_slug, photographer_slug, track_slug, year, credit_type')
     .limit(5000)
 
+let photographerCount = photos?.length || 0
+
+if (params.photographer) {
+  const { count } = await supabase
+    .from('photos')
+    .select('*', { count: 'exact', head: true })
+    .eq('photographer_slug', params.photographer)
+
+  photographerCount = count || 0
+}
+
   const drivers = uniqueClean(filterRows?.map((p) => p.driver_slug))
   const photographers = uniqueClean(filterRows?.map((p) => p.photographer_slug))
   const tracks = uniqueClean(filterRows?.map((p) => p.track_slug))
@@ -67,8 +78,24 @@ export default async function PhotosPage({
         <h1 style={title}>Photos</h1>
 
         <p style={intro}>
-          Browse the growing photo archive from tracks, drivers, photographers, and racing history across the Upper Midwest.
-        </p>
+  Browse the growing photo archive from tracks, drivers, photographers, and racing history across the Upper Midwest.
+</p>
+
+{selectedPhotographerName && (
+  <div style={photographerNamePlate}>
+    <div style={photographerPlateLabel}>
+      Photography Collection of
+    </div>
+
+    <div style={photographerPlateName}>
+      {selectedPhotographerName}
+    </div>
+
+    <div style={photographerPlateCount}>
+  {photographerCount.toLocaleString()} archived photographs
+</div>
+  </div>
+)}
       </section>
 
       <section style={filterPanel}>
@@ -265,6 +292,13 @@ const eyebrow: CSSProperties = {
   marginBottom: '10px',
 }
 
+const photographerPlateCount: CSSProperties = {
+  marginTop: '16px',
+  fontSize: '18px',
+  color: '#6b5738',
+  fontStyle: 'italic',
+  letterSpacing: '0.03em',
+}
 const title: CSSProperties = {
   fontSize: '54px',
   margin: '0 0 18px',
@@ -320,6 +354,31 @@ const clearButton: CSSProperties = {
   textDecoration: 'none',
 }
 
+const photographerNamePlate: CSSProperties = {
+  marginTop: '26px',
+  padding: '24px 34px',
+  border: '4px double #7a5827',
+  borderRadius: '18px',
+  background: '#fff8ea',
+  textAlign: 'center',
+  boxShadow: 'inset 0 0 0 2px rgba(122, 88, 39, 0.18)',
+}
+
+const photographerPlateLabel: CSSProperties = {
+  textTransform: 'uppercase',
+  letterSpacing: '0.42em',
+  fontSize: '13px',
+  color: '#7a6348',
+  marginBottom: '10px',
+}
+
+const photographerPlateName: CSSProperties = {
+  fontFamily: 'Georgia, serif',
+  fontSize: 'clamp(42px, 7vw, 88px)',
+  fontWeight: 800,
+  lineHeight: 1,
+  color: '#2f2417',
+}
 const resultLine: CSSProperties = {
   fontWeight: 700,
   marginBottom: '16px',
