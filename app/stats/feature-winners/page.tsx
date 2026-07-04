@@ -34,7 +34,7 @@ type WinnerRow = {
   tracks_won_at: number
   classes_won_in: number
   first_win_date: string | null
-  last_win_date: string |null
+  last_win_date: string | null
   overall_last_win_date: string | null
 }
 
@@ -42,6 +42,19 @@ type StatsSummary = {
   total_results: number | null
   total_drivers: number | null
   total_tracks: number | null
+  first_year: number | null
+  last_year: number | null
+}
+
+type SelectedTrackSummary = {
+  track_id: number
+  track_name: string
+  track_slug: string
+  city: string | null
+  state: string | null
+  logo_url: string | null
+  feature_results: number
+  feature_winners: number
   first_year: number | null
   last_year: number | null
 }
@@ -105,8 +118,8 @@ export default async function FeatureWinnersPage({
 
   const trackRows = ((trackData || []) as any[]).filter((row) => {
     if (scope === 'wisconsin') return row.track_state === 'WI'
-if (scope === 'non_wisconsin') return row.track_state !== 'WI'
-return true
+    if (scope === 'non_wisconsin') return row.track_state !== 'WI'
+    return true
   })
 
   const trackOptions = Array.isArray(trackRows)
@@ -146,16 +159,66 @@ return true
 
   const winners = (winnerData || []) as WinnerRow[]
 
-const { data: lastUpdateData } = await supabase
-  .from('stats_feature_winners_rollup')
-  .select('last_win_date')
-  .order('last_win_date', { ascending: false })
-  .limit(1)
-  .maybeSingle()
+  let selectedTrackSummary: SelectedTrackSummary | null = null
 
-const lastResultsUpdate = lastUpdateData?.last_win_date
-  ? formatDate(lastUpdateData.last_win_date)
-  : 'Update date unavailable'
+  if (track !== 'all') {
+    const { data: trackInfo } = await supabase
+      .from('Tracks')
+      .select('track_id, track_name, slug, city, state, logo_url')
+      .eq('track_id', Number(track))
+      .maybeSingle()
+
+    let trackSummaryQuery = supabase
+      .from('stats_feature_winners_base_view')
+      .select('driver_id, race_date')
+      .eq('track_id', Number(track))
+
+    if (surface !== 'all') {
+      trackSummaryQuery = trackSummaryQuery.eq('surface', surface)
+    }
+
+    if (classFilter !== 'all') {
+      trackSummaryQuery = trackSummaryQuery.eq('class_id', Number(classFilter))
+    }
+
+    if (year !== 'all') {
+      trackSummaryQuery = trackSummaryQuery
+        .gte('race_date', `${year}-01-01`)
+        .lte('race_date', `${year}-12-31`)
+    }
+
+    const { data: trackSummary } = await trackSummaryQuery
+
+    if (trackInfo && Array.isArray(trackSummary)) {
+      const summaryYears = trackSummary
+        .map((r: any) => (r.race_date ? Number(String(r.race_date).slice(0, 4)) : null))
+        .filter(Boolean) as number[]
+
+      selectedTrackSummary = {
+        track_id: trackInfo.track_id,
+        track_name: trackInfo.track_name,
+        track_slug: trackInfo.slug,
+        city: trackInfo.city,
+        state: trackInfo.state,
+        logo_url: trackInfo.logo_url,
+        feature_results: trackSummary.length,
+        feature_winners: new Set(trackSummary.map((r: any) => r.driver_id)).size,
+        first_year: summaryYears.length ? Math.min(...summaryYears) : null,
+        last_year: summaryYears.length ? Math.max(...summaryYears) : null,
+      }
+    }
+  }
+
+  const { data: lastUpdateData } = await supabase
+    .from('stats_feature_winners_rollup')
+    .select('last_win_date')
+    .order('last_win_date', { ascending: false })
+    .limit(1)
+    .maybeSingle()
+
+  const lastResultsUpdate = lastUpdateData?.last_win_date
+    ? formatDate(lastUpdateData.last_win_date)
+    : 'Update date unavailable'
 
   return (
     <main className="feature-winners-page" style={styles.page}>
@@ -171,23 +234,21 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
               Midwest auto racing history. Filter by year, region, class, surface, track,
               and driver to uncover the sport&apos;s most successful competitors.
             </p>
-<div style={styles.heroNote}>
-  <strong>Built for discovery.</strong> Compare all-time leaders, isolate a single
-  season, study one track, or narrow the archive by surface and class. Each result links
-  back into the driver record for deeper museum research.
-</div>
-<div style={styles.archiveUpdateRow}>
-  <span>
-    Results archive last updated through:{' '}
-    <strong>{lastResultsUpdate}</strong>
-  </span>
+            <div style={styles.heroNote}>
+              <strong>Built for discovery.</strong> Compare all-time leaders, isolate a single
+              season, study one track, or narrow the archive by surface and class. Each result links
+              back into the driver record for deeper museum research.
+            </div>
+            <div style={styles.archiveUpdateRow}>
+              <span>
+                Results archive last updated through: <strong>{lastResultsUpdate}</strong>
+              </span>
 
-  <span style={styles.activeLegend}>
-    <span style={styles.activeLegendBadge}>Active</span>
-    Driver has recorded results within the past 24 months
-  </span>
-</div>
-
+              <span style={styles.activeLegend}>
+                <span style={styles.activeLegendBadge}>Active</span>
+                Driver has recorded results within the past 24 months
+              </span>
+            </div>
           </div>
 
           <div style={styles.heroRibbon}>
@@ -258,8 +319,8 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
           <span>Scope</span>
           <select name="scope" defaultValue={scope} style={styles.select}>
             <option value="wisconsin">Wisconsin Tracks</option>
-<option value="non_wisconsin">Non-Wisconsin Tracks</option>
-<option value="full">Full Coverage Area</option>
+            <option value="non_wisconsin">Non-Wisconsin Tracks</option>
+            <option value="full">Full Coverage Area</option>
           </select>
         </label>
 
@@ -343,15 +404,15 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
         </label>
 
         <div style={styles.actionRow} className="stats-action-row">
-  <button type="submit" style={styles.button}>
-    Run Report
-  </button>
+          <button type="submit" style={styles.button}>
+            Run Report
+          </button>
 
-  <a href="/stats/feature-winners" style={styles.clearButton}>
-    Clear Filters
-  </a>
-</div>
-</form>
+          <a href="/stats/feature-winners" style={styles.clearButton}>
+            Clear Filters
+          </a>
+        </div>
+      </form>
 
       {error && <div style={styles.error}>Supabase error: {error.message}</div>}
       {yearsError && <div style={styles.error}>Years error: {yearsError.message}</div>}
@@ -359,7 +420,8 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
       {classError && <div style={styles.error}>Class error: {classError.message}</div>}
 
       <section className="feature-winners-board" style={styles.card}>
-<div style={styles.cardWatermark} />
+        <div style={styles.cardWatermark} />
+
         <div style={styles.cardHeader}>
           <div>
             <div style={styles.cardKicker}>Leaderboard</div>
@@ -368,16 +430,61 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
             </h2>
             <div style={styles.meta}>
               {scope === 'wisconsin'
-  ? 'Wisconsin tracks'
-  : scope === 'non_wisconsin'
-    ? 'Non-Wisconsin tracks'
-    : 'Full coverage area'} ·{' '}
-              {track === 'all' ? 'all tracks' : 'selected track'} ·{' '}
+                ? 'Wisconsin tracks'
+                : scope === 'non_wisconsin'
+                  ? 'Non-Wisconsin tracks'
+                  : 'Full coverage area'}{' '}
+              · {track === 'all' ? 'all tracks' : 'selected track'} ·{' '}
               {surface === 'all' ? 'all surfaces' : surface} ·{' '}
               {classFilter === 'all' ? 'all classes' : 'selected class'} · minimum {minWins}{' '}
               win{minWins === 1 ? '' : 's'} · showing {winners.length}
             </div>
           </div>
+
+          {selectedTrackSummary && (
+            <div style={styles.trackSummaryCard}>
+              {selectedTrackSummary.logo_url ? (
+                <img
+                  src={selectedTrackSummary.logo_url}
+                  alt={`${selectedTrackSummary.track_name} logo`}
+                  style={styles.trackLogo}
+                />
+              ) : (
+                <div style={styles.trackLogoFallback}>🏁</div>
+              )}
+
+              <div>
+                <Link href={`/tracks/${selectedTrackSummary.track_slug}`} style={styles.trackSummaryName}>
+                  {selectedTrackSummary.track_name}
+                </Link>
+
+                <div style={styles.trackSummaryLocation}>
+                  {[selectedTrackSummary.city, selectedTrackSummary.state].filter(Boolean).join(', ')}
+                </div>
+
+                <div style={styles.trackSummaryStats}>
+                  <div>
+                    <strong>{formatNumber(selectedTrackSummary.feature_results)}</strong>
+                    <span>Feature Results Discovered</span>
+                  </div>
+
+                  <div>
+                    <strong>{formatNumber(selectedTrackSummary.feature_winners)}</strong>
+                    <span>Different Feature Winners</span>
+                  </div>
+
+                  <div>
+                    <strong>
+                      {selectedTrackSummary.first_year && selectedTrackSummary.last_year
+                        ? `${selectedTrackSummary.first_year}–${selectedTrackSummary.last_year}`
+                        : '—'}
+                    </strong>
+                    <span>Years Covered</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         <div style={styles.tableWrap}>
@@ -398,24 +505,24 @@ const lastResultsUpdate = lastUpdateData?.last_win_date
             <tbody>
               {winners.map((row, index) => (
                 <tr
-  key={`${row.driver_id}-${index}`}
-  style={{
-    ...styles.tr,
-    ...(index % 2 === 1 ? styles.trAlt : {}),
-  }}
->
+                  key={`${row.driver_id}-${index}`}
+                  style={{
+                    ...styles.tr,
+                    ...(index % 2 === 1 ? styles.trAlt : {}),
+                  }}
+                >
                   <td style={styles.tdRank}>{index + 1}</td>
 
                   <td style={styles.tdDriver}>
                     <div style={styles.driverNameRow}>
-  <Link href={`/drivers/${row.driver_slug}`} style={styles.driverLink}>
-    {row.driver_name}
-  </Link>
+                      <Link href={`/drivers/${row.driver_slug}`} style={styles.driverLink}>
+                        {row.driver_name}
+                      </Link>
 
-  {isRecentWinner(row.last_win_date) && (
-    <span style={styles.recentBadge}>Active</span>
-  )}
-</div>
+                      {isRecentWinner(row.last_win_date) && (
+                        <span style={styles.recentBadge}>Active</span>
+                      )}
+                    </div>
                     <div style={styles.driverSub}>
                       {[row.driver_hometown, row.driver_state].filter(Boolean).join(', ') ||
                         'Hometown unknown'}
@@ -522,6 +629,49 @@ const styles: Record<string, CSSProperties> = {
     lineHeight: 1.55,
     margin: 0,
   },
+  heroNote: {
+    maxWidth: '760px',
+    marginTop: '28px',
+    padding: '18px 20px',
+    borderLeft: '5px solid #6f512b',
+    background: 'rgba(255, 248, 232, .48)',
+    fontSize: '16px',
+    lineHeight: 1.55,
+    boxShadow: 'inset 0 0 0 1px rgba(111,81,43,.18)',
+  },
+  archiveUpdateRow: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    gap: '18px',
+    marginTop: '14px',
+    color: '#6a4a28',
+    fontSize: '15px',
+    fontWeight: 600,
+  },
+  activeLegend: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+    color: '#7b6540',
+    fontSize: '13px',
+    fontWeight: 500,
+  },
+  activeLegendBadge: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '2px 8px',
+    border: '1px solid rgba(122, 92, 50, 0.45)',
+    background: 'rgba(234, 215, 170, 0.45)',
+    color: '#6a4a28',
+    fontSize: '9px',
+    fontWeight: 700,
+    letterSpacing: '.12em',
+    textTransform: 'uppercase',
+    borderRadius: '999px',
+    lineHeight: 1,
+  },
   heroRibbon: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
@@ -551,16 +701,6 @@ const styles: Record<string, CSSProperties> = {
     color: '#2b2118',
     flex: '0 0 auto',
   },
-heroNote: {
-  maxWidth: '760px',
-  marginTop: '28px',
-  padding: '18px 20px',
-  borderLeft: '5px solid #6f512b',
-  background: 'rgba(255, 248, 232, .48)',
-  fontSize: '16px',
-  lineHeight: 1.55,
-  boxShadow: 'inset 0 0 0 1px rgba(111,81,43,.18)',
-},
   ribbonTitle: {
     display: 'block',
     fontSize: '14px',
@@ -599,34 +739,6 @@ heroNote: {
     opacity: 0.65,
     margin: '16px 0 18px',
   },
-driverNameRow: {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '18px',
-},
-
-recentBadge: {
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  padding: '2px 8px',
-  border: '1px solid rgba(122, 92, 50, 0.45)',
-  background: 'rgba(234, 215, 170, 0.45)',
-  color: '#6a4a28',
-  fontSize: '9px',
-  fontWeight: 700,
-  letterSpacing: '.12em',
-  textTransform: 'uppercase',
-  borderRadius: '999px',
-  lineHeight: 1,
-  transform: 'translateY(1px)',
-},
-heroUpdateNote: {
-  marginTop: '10px',
-  fontSize: '14px',
-  fontWeight: 800,
-  color: '#5f4528',
-},
   statGrid: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
@@ -657,16 +769,16 @@ heroUpdateNote: {
     fontWeight: 900,
     color: '#6f512b',
   },
-filters: {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
-  gap: '22px 18px',
-  border: '1px solid #7a5c32',
-  background: '#fff8e8',
-  padding: '18px',
-  marginBottom: '20px',
-  alignItems: 'end',
-},
+  filters: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
+    gap: '22px 18px',
+    border: '1px solid #7a5c32',
+    background: '#fff8e8',
+    padding: '18px',
+    marginBottom: '20px',
+    alignItems: 'end',
+  },
   label: {
     display: 'grid',
     gap: '7px',
@@ -676,15 +788,15 @@ filters: {
     letterSpacing: '.06em',
     gridColumn: 'span 2',
   },
- labelWide: {
-  display: 'grid',
-  gap: '7px',
-  fontWeight: 900,
-  fontSize: '13px',
-  textTransform: 'uppercase',
-  letterSpacing: '.06em',
-  gridColumn: 'span 5',
-},
+  labelWide: {
+    display: 'grid',
+    gap: '7px',
+    fontWeight: 900,
+    fontSize: '13px',
+    textTransform: 'uppercase',
+    letterSpacing: '.06em',
+    gridColumn: 'span 5',
+  },
   labelSmall: {
     display: 'grid',
     gap: '7px',
@@ -694,39 +806,6 @@ filters: {
     letterSpacing: '.06em',
     gridColumn: 'span 2',
   },
-archiveUpdateRow: {
-  display: 'flex',
-  flexWrap: 'wrap',
-  alignItems: 'center',
-  gap: '18px',
-  marginTop: '14px',
-  color: '#6a4a28',
-  fontSize: '15px',
-  fontWeight: 600,
-},
-activeLegend: {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '10px',
-  color: '#7b6540',
-  fontSize: '13px',
-  fontWeight: 500,
-},
-activeLegendBadge: {
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  padding: '2px 8px',
-  border: '1px solid rgba(122, 92, 50, 0.45)',
-  background: 'rgba(234, 215, 170, 0.45)',
-  color: '#6a4a28',
-  fontSize: '9px',
-  fontWeight: 700,
-  letterSpacing: '.12em',
-  textTransform: 'uppercase',
-  borderRadius: '999px',
-  lineHeight: 1,
-},
   select: {
     width: '100%',
     minWidth: 0,
@@ -735,9 +814,6 @@ activeLegendBadge: {
     background: '#fffdf6',
     fontSize: '14px',
   },
-trAlt: {
-  background: 'rgba(234, 215, 170, 0.28)',
-},
   selectWide: {
     width: '100%',
     minWidth: 0,
@@ -762,27 +838,70 @@ trAlt: {
     background: '#fffdf6',
     fontSize: '14px',
   },
-cardWatermark: {
-  position: 'absolute',
-  right: '-70px',
-  top: '25px',
-  width: '360px',
-  height: '220px',
-  opacity: 0.055,
-  transform: 'rotate(-10deg)',
-  backgroundImage:
-    'linear-gradient(45deg, #2b2118 25%, transparent 25%), linear-gradient(-45deg, #2b2118 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #2b2118 75%), linear-gradient(-45deg, transparent 75%, #2b2118 75%)',
-  backgroundSize: '32px 32px',
-  backgroundPosition: '0 0, 0 16px, 16px -16px, -16px 0',
-  pointerEvents: 'none',
-},
+  actionRow: {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '14px',
+    width: '100%',
+    gridColumn: 'span 4',
+    alignSelf: 'end',
+  },
+  button: {
+    padding: '12px 20px',
+    border: '1px solid #2f2113',
+    background: '#3a2a1a',
+    color: '#fff8e8',
+    fontWeight: 900,
+    fontSize: '14px',
+    cursor: 'pointer',
+    minHeight: '42px',
+  },
+  clearButton: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '12px 20px',
+    border: '1px solid #7a5c32',
+    background: '#efe4ca',
+    color: '#3a2a1a',
+    fontWeight: 900,
+    fontSize: '14px',
+    textDecoration: 'none',
+    minHeight: '42px',
+  },
+  error: {
+    padding: '12px',
+    marginBottom: '16px',
+    background: '#ffe1d8',
+    border: '1px solid #9c3b25',
+  },
   card: {
-  position: 'relative',
-  overflow: 'hidden',
-  background: '#fffaf0',
-  border: '2px solid #3a2a1a',
-},
+    position: 'relative',
+    overflow: 'hidden',
+    background: '#fffaf0',
+    border: '2px solid #3a2a1a',
+  },
+  cardWatermark: {
+    position: 'absolute',
+    right: '-70px',
+    top: '25px',
+    width: '360px',
+    height: '220px',
+    opacity: 0.055,
+    transform: 'rotate(-10deg)',
+    backgroundImage:
+      'linear-gradient(45deg, #2b2118 25%, transparent 25%), linear-gradient(-45deg, #2b2118 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #2b2118 75%), linear-gradient(-45deg, transparent 75%, #2b2118 75%)',
+    backgroundSize: '32px 32px',
+    backgroundPosition: '0 0, 0 16px, 16px -16px, -16px 0',
+    pointerEvents: 'none',
+  },
   cardHeader: {
+    position: 'relative',
+    zIndex: 1,
+    display: 'flex',
+    justifyContent: 'space-between',
+    gap: '20px',
+    alignItems: 'center',
     padding: '20px',
     borderBottom: '2px solid #3a2a1a',
     background: '#ead7aa',
@@ -802,6 +921,54 @@ cardWatermark: {
     marginTop: '6px',
     fontSize: '14px',
     fontWeight: 800,
+  },
+  trackSummaryCard: {
+    display: 'grid',
+    gridTemplateColumns: '86px 1fr',
+    gap: '16px',
+    alignItems: 'center',
+    minWidth: '430px',
+    padding: '14px 16px',
+    border: '1px solid rgba(58,42,26,.45)',
+    background: 'rgba(255,248,232,.62)',
+  },
+  trackLogo: {
+    width: '82px',
+    height: '82px',
+    objectFit: 'contain',
+    background: '#fffaf0',
+    border: '1px solid rgba(58,42,26,.35)',
+    padding: '6px',
+  },
+  trackLogoFallback: {
+    width: '82px',
+    height: '82px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '34px',
+    background: '#fffaf0',
+    border: '1px solid rgba(58,42,26,.35)',
+  },
+  trackSummaryName: {
+    display: 'inline-block',
+    color: '#5f2d12',
+    fontFamily: 'Georgia, serif',
+    fontSize: '24px',
+    fontWeight: 900,
+    textDecoration: 'none',
+  },
+  trackSummaryLocation: {
+    marginTop: '2px',
+    fontSize: '13px',
+    fontWeight: 700,
+    color: '#6f512b',
+  },
+  trackSummaryStats: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+    gap: '10px',
+    marginTop: '12px',
   },
   tableWrap: {
     overflowX: 'auto',
@@ -831,6 +998,9 @@ cardWatermark: {
   tr: {
     borderBottom: '1px solid #d4bf91',
   },
+  trAlt: {
+    background: 'rgba(234, 215, 170, 0.28)',
+  },
   tdRank: {
     padding: '17px 16px',
     textAlign: 'center',
@@ -846,6 +1016,11 @@ cardWatermark: {
   tdDriver: {
     padding: '17px 16px',
     minWidth: '260px',
+  },
+  driverNameRow: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '18px',
   },
   driverLink: {
     color: '#5f2d12',
@@ -863,49 +1038,25 @@ cardWatermark: {
     color: '#7a260f',
     textDecoration: 'underline',
   },
-  error: {
-    padding: '12px',
-    marginBottom: '16px',
-    background: '#ffe1d8',
-    border: '1px solid #9c3b25',
+  recentBadge: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '2px 8px',
+    border: '1px solid rgba(122, 92, 50, 0.45)',
+    background: 'rgba(234, 215, 170, 0.45)',
+    color: '#6a4a28',
+    fontSize: '9px',
+    fontWeight: 700,
+    letterSpacing: '.12em',
+    textTransform: 'uppercase',
+    borderRadius: '999px',
+    lineHeight: 1,
+    transform: 'translateY(1px)',
   },
   empty: {
     padding: '32px',
     textAlign: 'center',
     fontWeight: 800,
   },
-
-button: {
-  padding: '12px 20px',
-  border: '1px solid #2f2113',
-  background: '#3a2a1a',
-  color: '#fff8e8',
-  fontWeight: 900,
-  fontSize: '14px',
-  cursor: 'pointer',
-  minHeight: '42px',
-},
-
-clearButton: {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  padding: '12px 20px',
-  border: '1px solid #7a5c32',
-  background: '#efe4ca',
-  color: '#3a2a1a',
-  fontWeight: 900,
-  fontSize: '14px',
-  textDecoration: 'none',
-  minHeight: '42px',
-},
-
-actionRow: {
-  display: 'grid',
-  gridTemplateColumns: '1fr 1fr',
-  gap: '14px',
-  width: '100%',
-  gridColumn: 'span 4',
-  alignSelf: 'end',
-},
 }
