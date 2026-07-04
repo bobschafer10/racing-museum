@@ -161,53 +161,59 @@ export default async function FeatureWinnersPage({
 
   let selectedTrackSummary: SelectedTrackSummary | null = null
 
-  if (track !== 'all') {
-    const { data: trackInfo } = await supabase
-      .from('Tracks')
-      .select('track_id, track_name, slug, city, state, logo_url')
-      .eq('track_id', Number(track))
-      .maybeSingle()
+if (track !== 'all') {
+  const selectedTrackId = Number(track)
 
-    let trackSummaryQuery = supabase
-      .from('stats_feature_winners_base_view')
-      .select('driver_id, race_date')
-      .eq('track_id', Number(track))
+  const { data: trackInfo } = await supabase
+    .from('Tracks')
+    .select('track_id, track_name, slug, city, state, logo_url')
+    .eq('track_id', selectedTrackId)
+    .maybeSingle()
 
-    if (surface !== 'all') {
-      trackSummaryQuery = trackSummaryQuery.eq('surface', surface)
-    }
+  let summaryQuery = supabase
+    .from('stats_feature_winners_base_view')
+    .select('driver_id, race_date')
+    .eq('track_id', selectedTrackId)
 
-    if (classFilter !== 'all') {
-      trackSummaryQuery = trackSummaryQuery.eq('class_id', Number(classFilter))
-    }
+  if (surface !== 'all') {
+    summaryQuery = summaryQuery.eq('surface', surface)
+  }
 
-    if (year !== 'all') {
-      trackSummaryQuery = trackSummaryQuery
-        .gte('race_date', `${year}-01-01`)
-        .lte('race_date', `${year}-12-31`)
-    }
+  if (classFilter !== 'all') {
+    summaryQuery = summaryQuery.eq('class_id', Number(classFilter))
+  }
 
-    const { data: trackSummary } = await trackSummaryQuery
+  if (year !== 'all') {
+    summaryQuery = summaryQuery
+      .gte('race_date', `${year}-01-01`)
+      .lte('race_date', `${year}-12-31`)
+  }
 
-    if (trackInfo && Array.isArray(trackSummary)) {
-      const summaryYears = trackSummary
-        .map((r: any) => (r.race_date ? Number(String(r.race_date).slice(0, 4)) : null))
-        .filter(Boolean) as number[]
+  const { data: trackSummary, error: trackSummaryError } = await summaryQuery
 
-      selectedTrackSummary = {
-        track_id: trackInfo.track_id,
-        track_name: trackInfo.track_name,
-        track_slug: trackInfo.slug,
-        city: trackInfo.city,
-        state: trackInfo.state,
-        logo_url: trackInfo.logo_url,
-        feature_results: trackSummary.length,
-        feature_winners: new Set(trackSummary.map((r: any) => r.driver_id)).size,
-        first_year: summaryYears.length ? Math.min(...summaryYears) : null,
-        last_year: summaryYears.length ? Math.max(...summaryYears) : null,
-      }
+  if (trackSummaryError) {
+    console.error('Track summary error:', trackSummaryError.message)
+  }
+
+  if (trackInfo && Array.isArray(trackSummary)) {
+    const years = trackSummary
+      .map((r: any) => (r.race_date ? Number(String(r.race_date).slice(0, 4)) : null))
+      .filter(Boolean) as number[]
+
+    selectedTrackSummary = {
+      track_id: trackInfo.track_id,
+      track_name: trackInfo.track_name,
+      track_slug: trackInfo.slug,
+      city: trackInfo.city,
+      state: trackInfo.state,
+      logo_url: trackInfo.logo_url,
+      feature_results: trackSummary.length,
+      feature_winners: new Set(trackSummary.map((r: any) => r.driver_id)).size,
+      first_year: years.length ? Math.min(...years) : null,
+      last_year: years.length ? Math.max(...years) : null,
     }
   }
+}
 
   const { data: lastUpdateData } = await supabase
     .from('stats_feature_winners_rollup')
