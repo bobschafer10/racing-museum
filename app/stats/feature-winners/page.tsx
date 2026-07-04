@@ -112,7 +112,7 @@ export default async function FeatureWinnersPage({
 
   const { data: trackData, error: trackError } = await supabase
     .from('stats_feature_winners_track_options_view')
-    .select('track_id, track_name, track_state')
+   .select('track_id, track_name, track_slug, city, track_state, surface_type')
     .order('track_name', { ascending: true })
     .limit(1000)
 
@@ -164,11 +164,9 @@ export default async function FeatureWinnersPage({
 if (track !== 'all') {
   const selectedTrackId = Number(track)
 
-  const { data: trackInfo } = await supabase
-    .from('Tracks')
-    .select('track_id, track_name, slug, city, state, logo_url')
-    .eq('track_id', selectedTrackId)
-    .maybeSingle()
+  const selectedTrackOption = ((trackRows || []) as any[]).find(
+    (row) => Number(row.track_id) === selectedTrackId
+  )
 
   let summaryQuery = supabase
     .from('stats_feature_winners_base_view')
@@ -189,26 +187,24 @@ if (track !== 'all') {
       .lte('race_date', `${year}-12-31`)
   }
 
-  const { data: trackSummary, error: trackSummaryError } = await summaryQuery
+  const { data: trackSummary } = await summaryQuery
 
-  if (trackSummaryError) {
-    console.error('Track summary error:', trackSummaryError.message)
-  }
+  if (selectedTrackOption) {
+    const summaryRows = Array.isArray(trackSummary) ? trackSummary : []
 
-  if (trackInfo && Array.isArray(trackSummary)) {
-    const years = trackSummary
+    const years = summaryRows
       .map((r: any) => (r.race_date ? Number(String(r.race_date).slice(0, 4)) : null))
       .filter(Boolean) as number[]
 
     selectedTrackSummary = {
-      track_id: trackInfo.track_id,
-      track_name: trackInfo.track_name,
-      track_slug: trackInfo.slug,
-      city: trackInfo.city,
-      state: trackInfo.state,
-      logo_url: trackInfo.logo_url,
-      feature_results: trackSummary.length,
-      feature_winners: new Set(trackSummary.map((r: any) => r.driver_id)).size,
+      track_id: selectedTrackId,
+      track_name: selectedTrackOption.track_name,
+      track_slug: selectedTrackOption.track_slug,
+      city: selectedTrackOption.city,
+      state: selectedTrackOption.track_state,
+      logo_url: null,
+      feature_results: summaryRows.length,
+      feature_winners: new Set(summaryRows.map((r: any) => r.driver_id)).size,
       first_year: years.length ? Math.min(...years) : null,
       last_year: years.length ? Math.max(...years) : null,
     }
