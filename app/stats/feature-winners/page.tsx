@@ -159,57 +159,51 @@ export default async function FeatureWinnersPage({
 
   const winners = (winnerData || []) as WinnerRow[]
 
+const winnerDriverSlugs = winners.map((w) => w.driver_slug)
+
+const { data: activityData } = await supabase
+  .from('driver_activity_status_view')
+  .select('driver_slug, activity_status')
+  .in('driver_slug', winnerDriverSlugs)
+
+const activeDriverSlugs = new Set(
+  (activityData || [])
+    .filter((row) => row.activity_status === 'active')
+    .map((row) => row.driver_slug)
+)
   let selectedTrackSummary: SelectedTrackSummary | null = null
+  let trackSummaryErrorMessage: string | null = null
 
-if (track !== 'all') {
-  const selectedTrackId = Number(track)
+  if (track !== 'all') {
+    const selectedTrackId = Number(track)
 
-  const selectedTrackOption = ((trackRows || []) as any[]).find(
-    (row) => Number(row.track_id) === selectedTrackId
-  )
+    const selectedTrackOption = ((trackData || []) as any[]).find(
+      (row) => Number(row.track_id) === selectedTrackId
+    )
 
-  let summaryQuery = supabase
-    .from('stats_feature_winners_base_view')
-    .select('driver_id, race_date')
-    .eq('track_id', selectedTrackId)
+    const { data: summaryRow, error: trackSummaryError } = await supabase
+      .from('stats_track_feature_summary_mv')
+      .select('track_id, feature_results, feature_winners, first_year, last_year')
+      .eq('track_id', selectedTrackId)
+      .maybeSingle()
 
-  if (surface !== 'all') {
-    summaryQuery = summaryQuery.eq('surface', surface)
-  }
+    trackSummaryErrorMessage = trackSummaryError?.message ?? null
 
-  if (classFilter !== 'all') {
-    summaryQuery = summaryQuery.eq('class_id', Number(classFilter))
-  }
-
-  if (year !== 'all') {
-    summaryQuery = summaryQuery
-      .gte('race_date', `${year}-01-01`)
-      .lte('race_date', `${year}-12-31`)
-  }
-
-  const { data: trackSummary } = await summaryQuery
-
-  if (selectedTrackOption) {
-    const summaryRows = Array.isArray(trackSummary) ? trackSummary : []
-
-    const years = summaryRows
-      .map((r: any) => (r.race_date ? Number(String(r.race_date).slice(0, 4)) : null))
-      .filter(Boolean) as number[]
-
-    selectedTrackSummary = {
-      track_id: selectedTrackId,
-      track_name: selectedTrackOption.track_name,
-      track_slug: selectedTrackOption.track_slug,
-      city: selectedTrackOption.city,
-      state: selectedTrackOption.track_state,
-      logo_url: null,
-      feature_results: summaryRows.length,
-      feature_winners: new Set(summaryRows.map((r: any) => r.driver_id)).size,
-      first_year: years.length ? Math.min(...years) : null,
-      last_year: years.length ? Math.max(...years) : null,
+    if (selectedTrackOption) {
+      selectedTrackSummary = {
+        track_id: selectedTrackId,
+        track_name: selectedTrackOption.track_name,
+        track_slug: selectedTrackOption.track_slug,
+        city: selectedTrackOption.city,
+        state: selectedTrackOption.track_state,
+        logo_url: `/logos/tracks/${selectedTrackOption.track_slug}.jpg`,
+        feature_results: Number(summaryRow?.feature_results || 0),
+        feature_winners: Number(summaryRow?.feature_winners || 0),
+        first_year: summaryRow?.first_year || null,
+        last_year: summaryRow?.last_year || null,
+      }
     }
   }
-}
 
   const { data: lastUpdateData } = await supabase
     .from('stats_feature_winners_rollup')
@@ -424,6 +418,12 @@ if (track !== 'all') {
       <section className="feature-winners-board" style={styles.card}>
         <div style={styles.cardWatermark} />
 
+        {trackSummaryErrorMessage && (
+          <div style={styles.error}>
+            Track Summary RPC Error: {trackSummaryErrorMessage}
+          </div>
+        )}
+
         <div style={styles.cardHeader}>
           <div>
             <div style={styles.cardKicker}>Leaderboard</div>
@@ -465,17 +465,17 @@ if (track !== 'all') {
                 </div>
 
                 <div style={styles.trackSummaryStats}>
-                  <div>
+                  <div style={styles.trackSummaryStat}>
                     <strong>{formatNumber(selectedTrackSummary.feature_results)}</strong>
                     <span>Feature Results Discovered</span>
                   </div>
 
-                  <div>
+                  <div style={styles.trackSummaryStat}>
                     <strong>{formatNumber(selectedTrackSummary.feature_winners)}</strong>
                     <span>Different Feature Winners</span>
                   </div>
 
-                  <div>
+                  <div style={styles.trackSummaryStat}>
                     <strong>
                       {selectedTrackSummary.first_year && selectedTrackSummary.last_year
                         ? `${selectedTrackSummary.first_year}–${selectedTrackSummary.last_year}`
@@ -521,9 +521,9 @@ if (track !== 'all') {
                         {row.driver_name}
                       </Link>
 
-                      {isRecentWinner(row.last_win_date) && (
-                        <span style={styles.recentBadge}>Active</span>
-                      )}
+                      {activeDriverSlugs.has(row.driver_slug) && (
+  <span style={styles.recentBadge}>Active</span>
+)}
                     </div>
                     <div style={styles.driverSub}>
                       {[row.driver_hometown, row.driver_state].filter(Boolean).join(', ') ||
@@ -904,6 +904,7 @@ const styles: Record<string, CSSProperties> = {
     justifyContent: 'space-between',
     gap: '20px',
     alignItems: 'center',
+    flexWrap: 'wrap',
     padding: '20px',
     borderBottom: '2px solid #3a2a1a',
     background: '#ead7aa',
@@ -969,8 +970,13 @@ const styles: Record<string, CSSProperties> = {
   trackSummaryStats: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-    gap: '10px',
+    gap: '18px',
     marginTop: '12px',
+  },
+  trackSummaryStat: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '4px',
   },
   tableWrap: {
     overflowX: 'auto',
