@@ -1,3 +1,5 @@
+import ArchiveAcknowledgmentModal from '@/components/ArchiveAcknowledgmentModal'
+import HistoricalArchiveNotice from '@/components/HistoricalArchiveNotice'
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
@@ -218,6 +220,7 @@ const activeDriverSlugs = new Set(
 
   return (
     <main className="feature-winners-page" style={styles.page}>
+<ArchiveAcknowledgmentModal />
       <section className="feature-winners-hero" style={styles.hero}>
         <div style={styles.checkerWatermark} />
 
@@ -309,6 +312,8 @@ const activeDriverSlugs = new Set(
           </div>
         </aside>
       </section>
+
+<HistoricalArchiveNotice />
 
       <form className="feature-winners-filters" style={styles.filters}>
         <label style={styles.label}>
