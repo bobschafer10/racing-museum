@@ -8,9 +8,7 @@ function getPhotoUrl(photo: any) {
 
   const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 
-  const rawTrackSlug = photo.track_slug || photo.file_name.split("_")[0]
-  const trackSlug = rawTrackSlug.replace(/-(wi|il|mn|mi)$/i, "")
-
+  const trackSlug = photo.track_slug || photo.file_name.split("_")[0]
   const year = photo.year || photo.file_name.split("_")[1] || "unknown-year"
 
   return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
@@ -33,8 +31,7 @@ export default async function TrackPhotosPage({
     notFound()
   }
 
-  const baseSlug = slug.replace(/-(wi|il|mn|mi)$/i, "")
-
+  
   const { data: photos } = await supabase
     .from("photos")
     .select("*")

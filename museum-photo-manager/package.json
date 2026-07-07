@@ -9,7 +9,7 @@
     "upload-and-move-done": "node upload-museum-photos.js --move-done"
   },
   "dependencies": {
-    "@supabase/supabase-js": "latest",
+    "@supabase/supabase-js": "^2.110.1",
     "dotenv": "latest"
   }
 }
