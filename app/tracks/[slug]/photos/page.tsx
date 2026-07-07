@@ -35,7 +35,7 @@ export default async function TrackPhotosPage({
   const { data: photos } = await supabase
     .from("photos")
     .select("*")
-    .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
+    .eq("track_slug", slug)
     .neq("credit_type", "unknown")
     .order("year", { ascending: false, nullsFirst: false })
     .order("sequence", { ascending: true })
