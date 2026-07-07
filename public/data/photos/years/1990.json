@@ -8,18 +8,7 @@
     "driverSlug": "sue-spenser",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "cedar-lake-speedway_1990_ terry-phillips_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_ terry-phillips_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/cedar-lake-speedway_1990_ terry-phillips_bob-schafer_photo_222.jpg",
-    "trackSlug": "cedar-lake-speedway",
-    "year": "1990",
-    "driverSlug": " terry-phillips",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_andy-claiborne_bob-schafer_photo_13213.jpg",
@@ -74,7 +63,7 @@
     "driverSlug": "brent-laursen",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_dan-mcmann_todd-narveson_photo_001.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "dan-mcmann",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_dave-hesch_bob-schafer_photo_007.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "cedar-lake-speedway_1990_dave-hesch_todd-narveson_photo_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_jerry-redetzke_todd-narveson_photo_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "jerry-redetzke",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_jim-curry_bob-schafer_photo_222.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "joel-cryderman",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "cedar-lake-speedway_1990_jon-kurshinsky_todd-narveson_photo_001.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "jon-kurshinsky",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_kevin-thompson_bob-schafer_photo_12639.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "kevin-thompson",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_lance-matthees_todd-narveson_photo_001.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "lance-matthees",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_larry-stockwell_bob-schafer_photo_12605.jpg",
@@ -239,7 +228,7 @@
     "driverSlug": "mike-nutzmann",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_1990_pete-parker_todd-narveson_photo_001.jpg",
@@ -250,7 +239,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_terry-lanphear_bob-schafer_photo_040.jpg",
@@ -261,7 +250,7 @@
     "driverSlug": "terry-lanphear",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "040"
+    "sequence": "40"
   },
   {
     "fileName": "cedar-lake-speedway_1990_terry-lanphear_todd-narveson_photo_001.jpg",
@@ -272,7 +261,18 @@
     "driverSlug": "terry-lanphear",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "cedar-lake-speedway_1990_terry-phillips_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_terry-phillips_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_terry-phillips_bob-schafer_photo_222.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "terry-phillips",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "cedar-lake-speedway_1990_tom-nesbitt_bob-schafer_photo_12599.jpg",
@@ -294,7 +294,7 @@
     "driverSlug": "tom-thompson",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1990_howard-hosley_bob-schafer_photo_13677.jpg",
@@ -336,6 +336,28 @@
     "trackSlug": "dells-motor-speedway",
     "year": "1990",
     "driverSlug": "bob-campbell",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "dells-motor-speedway_1990_bob-campbell_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1990/dells-motor-speedway_1990_bob-campbell_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1990_bob-campbell_bob-schafer_photo_222.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1990",
+    "driverSlug": "bob-campbell",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1990/dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1990",
+    "driverSlug": "gary-haarklau",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -635,7 +657,7 @@
     "driverSlug": "bill-tandetzke",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "017"
+    "sequence": "17"
   },
   {
     "fileName": "hales-corners-speedway_1990_brian-jaeger_bob-schafer_photo_018.jpg",
@@ -646,7 +668,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "018"
+    "sequence": "18"
   },
   {
     "fileName": "hales-corners-speedway_1990_george-coen_bob-schafer_photo_019.jpg",
@@ -657,7 +679,7 @@
     "driverSlug": "george-coen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "019"
+    "sequence": "19"
   },
   {
     "fileName": "hales-corners-speedway_1990_george-scheffler_bob-schafer_photo_012.jpg",
@@ -668,7 +690,7 @@
     "driverSlug": "george-scheffler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "hales-corners-speedway_1990_george-scheffler_bob-schafer_photo_020.jpg",
@@ -679,7 +701,7 @@
     "driverSlug": "george-scheffler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "020"
+    "sequence": "20"
   },
   {
     "fileName": "hales-corners-speedway_1990_gordie-seegert_bob-schafer_photo_021.jpg",
@@ -690,7 +712,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "hales-corners-speedway_1990_jim-zwirgzdas_bob-schafer_photo_022.jpg",
@@ -701,7 +723,7 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "hales-corners-speedway_1990_jim-zwirgzdas_unknown-photographer_photo_001.jpg",
@@ -712,7 +734,7 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1990_mark-eckert_bob-schafer_photo_023.jpg",
@@ -723,7 +745,7 @@
     "driverSlug": "mark-eckert",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "023"
+    "sequence": "23"
   },
   {
     "fileName": "hales-corners-speedway_1990_mike-melius_bob-schafer_photo_013.jpg",
@@ -734,7 +756,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "hales-corners-speedway_1990_ray-guss_bob-schafer_photo_024.jpg",
@@ -745,7 +767,7 @@
     "driverSlug": "ray-guss",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "024"
+    "sequence": "24"
   },
   {
     "fileName": "hales-corners-speedway_1990_russ-egan_bob-schafer_photo_12643.jpg",
@@ -767,7 +789,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "hales-corners-speedway_1990_steve-dei_bob-schafer_photo_025.jpg",
@@ -778,7 +800,7 @@
     "driverSlug": "steve-dei",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "025"
+    "sequence": "25"
   },
   {
     "fileName": "hales-corners-speedway_1990_steve-lurvey_bob-schafer_photo_026.jpg",
@@ -789,7 +811,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "026"
+    "sequence": "26"
   },
   {
     "fileName": "hales-corners-speedway_1990_ted-dolhun_bob-schafer_photo_015.jpg",
@@ -800,7 +822,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "015"
+    "sequence": "15"
   },
   {
     "fileName": "hales-corners-speedway_1990_ted-dolhun_bob-schafer_photo_027.jpg",
@@ -811,7 +833,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "hales-corners-speedway_1990_tim-kezman_bob-schafer_photo_028.jpg",
@@ -822,7 +844,7 @@
     "driverSlug": "tim-kezman",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "028"
+    "sequence": "28"
   },
   {
     "fileName": "hales-corners-speedway_1990_tom-searing_bob-schafer_photo_016.jpg",
@@ -833,7 +855,7 @@
     "driverSlug": "tom-searing",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "016"
+    "sequence": "16"
   },
   {
     "fileName": "hales-corners-speedway_1990_tom-searing_bob-schafer_photo_029.jpg",
@@ -844,7 +866,7 @@
     "driverSlug": "tom-searing",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "029"
+    "sequence": "29"
   },
   {
     "fileName": "jennerstown-speedway-dave-singer_1990_bob-menor_unknown-credit_photo_001.jpg",
@@ -855,7 +877,7 @@
     "driverSlug": "bob-menor",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_1990_craig-thatcher_dan-plan_post_001.jpg",
@@ -866,7 +888,7 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "dan-plan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_1990_craig-thatcher_dan-plan_post_101.jpg",
@@ -888,7 +910,7 @@
     "driverSlug": "gary-ladd",
     "photographerSlug": "dan-plan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_1990_unknown-driver_dan-plan_post_001.jpg",
@@ -899,7 +921,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "dan-plan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_1990_unknown-driver_dan-plan_post_300.jpg",
@@ -935,12 +957,45 @@
     "sequence": "222"
   },
   {
+    "fileName": "lacrosse-interstate-speedway_1990_kurt-walbeck_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_kurt-walbeck_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_kurt-walbeck_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "kurt-walbeck",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "lacrosse-interstate-speedway_1990_mike-belling_bob-schafer_photo_222.jpg",
     "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_mike-belling_bob-schafer_photo_222.jpg",
     "publicPath": "/photos/lacrosse-interstate-speedway_1990_mike-belling_bob-schafer_photo_222.jpg",
     "trackSlug": "lacrosse-interstate-speedway",
     "year": "1990",
     "driverSlug": "mike-belling",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_mike-belling_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_mike-belling_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_mike-belling_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "mike-belling",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_mike-murgic_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_mike-murgic_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_mike-murgic_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "mike-murgic",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -968,12 +1023,45 @@
     "sequence": "222"
   },
   {
+    "fileName": "lacrosse-interstate-speedway_1990_monte-gress_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_monte-gress_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_monte-gress_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "monte-gress",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
     "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
     "publicPath": "/photos/lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
     "trackSlug": "lacrosse-interstate-speedway",
     "year": "1990",
     "driverSlug": "rick-smith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_rick-smith_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "rick-smith",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "steve-carlson",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -1001,6 +1089,17 @@
     "sequence": "222"
   },
   {
+    "fileName": "lacrosse-interstate-speedway_1990_vince-miller_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_vince-miller_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_vince-miller_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "vince-miller",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "lake-geneva-raceway_1990_bill-skinner_jr-pate-heaney_post_001.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/1990/lake-geneva-raceway_1990_bill-skinner_jr-pate-heaney_post_001.jpg",
     "publicPath": "/photos/lake-geneva-raceway_1990_bill-skinner_jr-pate-heaney_post_001.jpg",
@@ -1009,7 +1108,7 @@
     "driverSlug": "bill-skinner",
     "photographerSlug": "jr-pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_brian-harvey_05-pate-heaney_post_001.jpg",
@@ -1020,7 +1119,7 @@
     "driverSlug": "brian-harvey",
     "photographerSlug": "05-pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_butch-edwards-jr_pate-heaney_post_001.jpg",
@@ -1031,7 +1130,7 @@
     "driverSlug": "butch-edwards-jr",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_chris-pulera_pate-heaney_post_001.jpg",
@@ -1042,7 +1141,7 @@
     "driverSlug": "chris-pulera",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_dave-melahn_pate-heaney_post_001.jpg",
@@ -1053,7 +1152,7 @@
     "driverSlug": "dave-melahn",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_dennis-hiffman_pate-heaney_post_001.jpg",
@@ -1064,7 +1163,7 @@
     "driverSlug": "dennis-hiffman",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_eric-dawson_98-pate-heaney_post_001.jpg",
@@ -1075,7 +1174,7 @@
     "driverSlug": "eric-dawson",
     "photographerSlug": "98-pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_frank-gawalinski_bob-schafer_photo_13459.jpg",
@@ -1097,7 +1196,7 @@
     "driverSlug": "jim-schumacher",
     "photographerSlug": "98-pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_jim-taylor_pate-heaney_post_001.jpg",
@@ -1108,7 +1207,7 @@
     "driverSlug": "jim-taylor",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_jon-williams_pate-heaney_post_001.jpg",
@@ -1119,7 +1218,7 @@
     "driverSlug": "jon-williams",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_lynn-rittner_pate-heaney_post_001.jpg",
@@ -1130,7 +1229,7 @@
     "driverSlug": "lynn-rittner",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_mike-rice_pate-heaney_post_001.jpg",
@@ -1141,7 +1240,7 @@
     "driverSlug": "mike-rice",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_mike-yates_pat-heaney_post_001.jpg",
@@ -1152,7 +1251,7 @@
     "driverSlug": "mike-yates",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_ron-erickson_pate-heaney_post_001.jpg",
@@ -1163,7 +1262,7 @@
     "driverSlug": "ron-erickson",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_ronnie-darnell_pate-heaney_post_001.jpg",
@@ -1174,7 +1273,7 @@
     "driverSlug": "ronnie-darnell",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_steve-mccarthy_bob-schafer_photo_13237.jpg",
@@ -1196,7 +1295,7 @@
     "driverSlug": "steve-schafer",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_tony-bentz_pate-heaney_post_001.jpg",
@@ -1207,7 +1306,7 @@
     "driverSlug": "tony-bentz",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1990_vern-bader_pate-heaney_post_001.jpg",
@@ -1218,7 +1317,7 @@
     "driverSlug": "vern-bader",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1990_dick-trickle_bob-schafer_photo_218.jpg",
@@ -1460,7 +1559,7 @@
     "driverSlug": "brad-dahmer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_1990_randy-markwardt_bob-schafer_photo_033.jpg",
@@ -1471,7 +1570,7 @@
     "driverSlug": "randy-markwardt",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "033"
+    "sequence": "33"
   },
   {
     "fileName": "putnam-county-speedway_1990_bob-pierce_bob-schafer_photo_13218.jpg",
@@ -1515,7 +1614,7 @@
     "driverSlug": "jack-fritz",
     "photographerSlug": "todd-narveson",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "red-cedar-speedway_1990_jamie-lemke_todd-narveson_photo_001.jpg",
@@ -1526,7 +1625,7 @@
     "driverSlug": "jamie-lemke",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rice-lake-speedway_1990_todd-eliason_todd-narveson_photo_001.jpg",
@@ -1537,103 +1636,26 @@
     "driverSlug": "todd-eliason",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "rockford-speedway_1990_ al-schill_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ al-schill_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ al-schill_bob-schafer_photo_222.jpg",
+    "fileName": "rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
     "trackSlug": "rockford-speedway",
     "year": "1990",
-    "driverSlug": " al-schill",
+    "driverSlug": "al-schill",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
   },
   {
-    "fileName": "rockford-speedway_1990_ bobby-wilberg_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ bobby-wilberg_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ bobby-wilberg_bob-schafer_photo_222.jpg",
+    "fileName": "rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
     "trackSlug": "rockford-speedway",
     "year": "1990",
-    "driverSlug": " bobby-wilberg",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ carl-schwartz_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ carl-schwartz_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ carl-schwartz_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " carl-schwartz",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ dave-anspaugh_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ dave-anspaugh_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ dave-anspaugh_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " dave-anspaugh",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ doug-herbst_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ doug-herbst_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ doug-herbst_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " doug-herbst",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ ed-holmes_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ ed-holmes_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ ed-holmes_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " ed-holmes",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ jay-sauter_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ jay-sauter_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ jay-sauter_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " jay-sauter",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ scott-fischer_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ scott-fischer_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ scott-fischer_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " scott-fischer",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ todd-coon_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ todd-coon_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ todd-coon_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " todd-coon",
+    "driverSlug": "al-schill",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -1645,6 +1667,50 @@
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "bill-botkin",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "bobby-wilberg",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "bobby-wilberg",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "carl-schwartz",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "carl-schwartz",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -1672,6 +1738,28 @@
     "sequence": "222"
   },
   {
+    "fileName": "rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "dave-anspaugh",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "dave-anspaugh",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "rockford-speedway_1990_dick-trickle_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_dick-trickle_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_1990_dick-trickle_weber-brothers_photo_001.jpg",
@@ -1680,7 +1768,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
@@ -1689,6 +1777,61 @@
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "don-leach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "don-leach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_doug-herbst_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_doug-herbst_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_doug-herbst_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "doug-herbst",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_ed-holmes_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ed-holmes_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_ed-holmes_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "ed-holmes",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_jay-sauter_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_jay-sauter_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_jay-sauter_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "jay-sauter",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_jeff-finley_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_jeff-finley_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_jeff-finley_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "jeff-finley",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -1724,7 +1867,18 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "eff-sandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
@@ -1744,6 +1898,39 @@
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "rick-wateski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "rick-wateski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_scott-fischer_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_scott-fischer_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_scott-fischer_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "scott-fischer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "steve-carlson",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -1771,12 +1958,45 @@
     "sequence": "222"
   },
   {
+    "fileName": "rockford-speedway_1990_steve-erickson_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_steve-erickson_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_steve-erickson_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "steve-erickson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
     "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
     "publicPath": "/photos/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_todd-coon_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_todd-coon_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_todd-coon_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "todd-coon",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -1834,7 +2054,7 @@
     "driverSlug": "don-jenkins",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "senoia-speedway_1990_larry-raines_bob-schafer_photo_13378.jpg",
@@ -1867,7 +2087,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "051"
+    "sequence": "51"
   },
   {
     "fileName": "seymour-speedway_1990_art-siefert_bob-schafer_photo_065.jpg",
@@ -1878,7 +2098,7 @@
     "driverSlug": "art-siefert",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "065"
+    "sequence": "65"
   },
   {
     "fileName": "seymour-speedway_1990_bill-lemmens_unknown-photographer_photo_001.jpg",
@@ -1889,7 +2109,7 @@
     "driverSlug": "bill-lemmens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1990_lyndle-horsens_unknown-photographer_photo_001.jpg",
@@ -1900,7 +2120,7 @@
     "driverSlug": "lyndle-horsens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1990_mark-weisnicht_bob-schafer_photo_061.jpg",
@@ -1911,7 +2131,7 @@
     "driverSlug": "mark-weisnicht",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "061"
+    "sequence": "61"
   },
   {
     "fileName": "seymour-speedway_1990_russ-scheffler_bob-schafer_photo_001.jpg",
@@ -1922,7 +2142,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1990_terry-anvelink_bob-schafer_photo_062.jpg",
@@ -1933,7 +2153,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "062"
+    "sequence": "62"
   },
   {
     "fileName": "seymour-speedway_1990_tm-miller_bob-schafer_photo_063.jpg",
@@ -1944,7 +2164,7 @@
     "driverSlug": "tm-miller",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "063"
+    "sequence": "63"
   },
   {
     "fileName": "seymour-speedway_1990_tom-ort_bob-schafer_photo_064.jpg",
@@ -1955,7 +2175,18 @@
     "driverSlug": "tom-ort",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "064"
+    "sequence": "64"
+  },
+  {
+    "fileName": "shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/1990/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1990",
+    "driverSlug": "dan-grosskreutz",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_1990_pete-parker_bob-schafer_photo_054.jpg",
@@ -1966,7 +2197,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "054"
+    "sequence": "54"
   },
   {
     "fileName": "slinger-speedway_1990_andy-wendt_bob-schafer_photo_222.jpg",
@@ -2065,7 +2296,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1990_keith-nelson_bob-schafer_photo_222.jpg",
@@ -2090,12 +2321,12 @@
     "sequence": "222"
   },
   {
-    "fileName": "slinger-speedway_1990_robbie-reiser'_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/slinger-speedway/1990/slinger-speedway_1990_robbie-reiser'_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/slinger-speedway_1990_robbie-reiser'_bob-schafer_photo_222.jpg",
+    "fileName": "slinger-speedway_1990_robbie-reiser_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/slinger-speedway/1990/slinger-speedway_1990_robbie-reiser_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/slinger-speedway_1990_robbie-reiser_bob-schafer_photo_222.jpg",
     "trackSlug": "slinger-speedway",
     "year": "1990",
-    "driverSlug": "robbie-reiser'",
+    "driverSlug": "robbie-reiser",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -2217,53 +2448,9 @@
     "trackSlug": "unknown",
     "year": "1990",
     "driverSlug": "jeanie-kind",
-    "photographerSlug": "charlie-spry-post",
-    "creditType": "001",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1990_dave-morgan_todd-narveson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1990/unknown-track_1990_dave-morgan_todd-narveson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1990_dave-morgan_todd-narveson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1990",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "todd-narveson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1990_joel-cryderman_todd-narveson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1990/unknown-track_1990_joel-cryderman_todd-narveson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1990_joel-cryderman_todd-narveson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1990",
-    "driverSlug": "joel-cryderman",
-    "photographerSlug": "todd-narveson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1990_paul-hammernick_todd-narveson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1990/unknown-track_1990_paul-hammernick_todd-narveson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1990_paul-hammernick_todd-narveson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1990",
-    "driverSlug": "paul-hammernick",
-    "photographerSlug": "todd-narveson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1990_robear-dielke_todd-narveson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1990/unknown-track_1990_robear-dielke_todd-narveson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1990_robear-dielke_todd-narveson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1990",
-    "driverSlug": "robear-dielke",
-    "photographerSlug": "todd-narveson",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "volusia-county-speedway_1990_jerry-inman_bob-schafer_photo_13223.jpg",
@@ -2296,7 +2483,7 @@
     "driverSlug": "jim-moulis",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "volusia-county-speedway_1990_patrick-johns_bob-schafer_photo_13513.jpg",
@@ -2330,6 +2517,17 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "13208"
+  },
+  {
+    "fileName": "wilmot-raceway_1990_gerry-olson_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1990/wilmot-raceway_1990_gerry-olson_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/wilmot-raceway_1990_gerry-olson_unknown-photographer_photo_111.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1990",
+    "driverSlug": "gerry-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_allen-check_bob-schafer_photo_222.jpg",
@@ -2934,7 +3132,7 @@
     "driverSlug": "clarence-oertel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1990_duane-mahder_bob-schafer_photo_390.jpg",
@@ -2956,7 +3154,7 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1990_larry-prochnow_unknown-photographer_photo_001.jpg",
@@ -2967,7 +3165,7 @@
     "driverSlug": "larry-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1990_russ-trachte_dave-panske_photo_001.jpg",
@@ -2978,7 +3176,7 @@
     "driverSlug": "russ-trachte",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1990_tom-steuding_bob-schafer_photo_391.jpg",

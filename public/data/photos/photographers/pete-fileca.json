@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_unknown-driver_pete-fileca_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_unknown-driver_pete-fileca_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_unknown-driver_pete-fileca_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "pete-fileca",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "dells-motor-speedway_unknown-year_ken-lund_pete-fileca_photo_001.jpg",
     "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_ken-lund_pete-fileca_photo_001.jpg",
     "publicPath": "/photos/dells-motor-speedway_unknown-year_ken-lund_pete-fileca_photo_001.jpg",
@@ -19,7 +8,40 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_duane-pierson_pete-fileca_post'.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_duane-pierson_pete-fileca_post'.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_duane-pierson_pete-fileca_post'.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-pierson",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_larry-schuler_pete-fileca_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_larry-schuler_pete-fileca_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_larry-schuler_pete-fileca_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-schuler",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-hertko",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "333"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_unkown-driver_pete-fileca_post_400.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "steve-seligman",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "illiana-speedway_unknown-year_bob-schacht_pete-fileca_photo_001.jpg",
@@ -52,7 +74,18 @@
     "driverSlug": "bob-schacht",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_brad-minor_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_brad-minor_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_brad-minor_pete-fileca_post_335.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brad-minor",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "335"
   },
   {
     "fileName": "illiana-speedway_unknown-year_brian-muick_pete-fileca_post_001.jpg",
@@ -63,7 +96,18 @@
     "driverSlug": "brian-muick",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_brian-muick_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_brian-muick_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_brian-muick_pete-fileca_post_335.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-muick",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "335"
   },
   {
     "fileName": "illiana-speedway_unknown-year_bud-koehler_pete-fileca_post_001.jpg",
@@ -74,7 +118,51 @@
     "driverSlug": "bud-koehler",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_curt-cheshire_pete-fileca_post_333.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_curt-cheshire_pete-fileca_post_333.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_curt-cheshire_pete-fileca_post_333.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-cheshire",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_dave-weltmeyer_pete-fileca_post_444.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_dave-weltmeyer_pete-fileca_post_444.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_dave-weltmeyer_pete-fileca_post_444.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-weltmeyer",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_jim-sauter_pete-fileca_post_355.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_jim-sauter_pete-fileca_post_355.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_jim-sauter_pete-fileca_post_355.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-sauter",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "355"
+  },
+  {
+    "fileName": "illiana-speedway_unknown_year_tony-hertko_pete-fileca_post_343.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown_year_tony-hertko_pete-fileca_post_343.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown_year_tony-hertko_pete-fileca_post_343.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-hertko",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "343"
   },
   {
     "fileName": "illiana-speedway_unknown-year_tony-izzo_pete-fileca_post_001.jpg",
@@ -85,7 +173,29 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_woody-church_pete-fileca_photo_335.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_woody-church_pete-fileca_photo_335.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_woody-church_pete-fileca_photo_335.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "woody-church",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "335"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_mike-varner_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_mike-varner_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_mike-varner_pete-fileca_post_335.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-varner",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "335"
   },
   {
     "fileName": "milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
@@ -96,7 +206,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1972_ed-hoffman_pete-fileca_post_001.jpg",
@@ -107,7 +217,7 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gene-coleman_pete-fileca_post_001.jpg",
@@ -118,7 +228,7 @@
     "driverSlug": "gene-coleman",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gene-marmor_pete-fileca_post_001.jpg",
@@ -129,7 +239,7 @@
     "driverSlug": "gene-marmor",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_roger-mccluskey_pete-fileca_post_001.jpg",
@@ -140,7 +250,7 @@
     "driverSlug": "roger-mccluskey",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_roger-ward_pete-fileca_post_001.jpg",
@@ -151,7 +261,7 @@
     "driverSlug": "roger-ward",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
@@ -162,7 +272,40 @@
     "driverSlug": "bob-weltmeyer",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-weltmeyer",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_neil-bonnett_pete-fileca_post_444.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_neil-bonnett_pete-fileca_post_444.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_neil-bonnett_pete-fileca_post_444.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "neil-bonnett",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_unknow-year_whitey-johnson_pete-fileca_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/unknow-year/unknown-track_unknow-year_whitey-johnson_pete-fileca_post_444.jpg",
+    "publicPath": "/photos/unknown-track_unknow-year_whitey-johnson_pete-fileca_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknow-year",
+    "driverSlug": "whitey-johnson",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
@@ -173,7 +316,29 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
@@ -184,7 +349,62 @@
     "driverSlug": "bob-schacht",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-hoffman",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-hoffman",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_frank-gawalinski_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frank-gawalinski_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_frank-gawalinski_pete-fileca_post_335.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawalinski",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "335"
   },
   {
     "fileName": "unknown-track_unknown-year_sal-tovella_pete-fileca_post_001.jpg",
@@ -195,18 +415,29 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/Unknown-year/unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
-    "publicPath": "/photos/unknown-track_Unknown-year_ed-hoffman_pete-fileca_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "Unknown-year",
-    "driverSlug": "ed-hoffman",
+    "fileName": "waukegan-speedway_unknown-year_bob-roper_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_bob-roper_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_bob-roper_pete-fileca_post_335.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-roper",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "335"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_pete-fileca_post_222.jpg",
@@ -228,6 +459,6 @@
     "driverSlug": "brian-ross",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

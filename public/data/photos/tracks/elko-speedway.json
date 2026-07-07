@@ -8,7 +8,7 @@
     "driverSlug": "dick-collins",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_harry-bahr_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "harry-bahr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_john-chrest_mcclain-racing_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "john-chrest",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_mike-beamish_mcclain-racing_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "mike-beamish",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_mike-demars_mcclain-racing_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "mike-demars",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_ted-kitzman_mcclain-racing_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "ted-kitzman",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1982_rick-wateski_mcclain-racing_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_2019_adam-bendzick_adam-bendzick_post_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "adam-bendzick",
     "photographerSlug": "adam-bendzick",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_2020_aaron-marthaler_aaron-marthaler_post_001.jpg",
@@ -96,7 +96,18 @@
     "driverSlug": "aaron-marthaler",
     "photographerSlug": "aaron-marthaler",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "elko-speedway_2021_nick-oxborough_nick-oxborough_post_555.jpg",
+    "storagePath": "photos/master/elko-speedway/2021/elko-speedway_2021_nick-oxborough_nick-oxborough_post_555.jpg",
+    "publicPath": "/photos/elko-speedway_2021_nick-oxborough_nick-oxborough_post_555.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "2021",
+    "driverSlug": "nick-oxborough",
+    "photographerSlug": "nick-oxborough",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "elko-speedway_2026_billy-mohn_midwest-racing-connection_photo_112.jpg",
@@ -132,6 +143,17 @@
     "sequence": "112"
   },
   {
+    "fileName": "elko-speedway_2026_nick-oxborough_nick-oxborough_post_333.jpg",
+    "storagePath": "photos/master/elko-speedway/2026/elko-speedway_2026_nick-oxborough_nick-oxborough_post_333.jpg",
+    "publicPath": "/photos/elko-speedway_2026_nick-oxborough_nick-oxborough_post_333.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "2026",
+    "driverSlug": "nick-oxborough",
+    "photographerSlug": "nick-oxborough",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
     "fileName": "elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
     "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
     "publicPath": "/photos/elko-speedway_unknown-year_brian-johnson_john-kaufenberg_post_001.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "brian-johnson",
     "photographerSlug": "john-kaufenberg",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_chris-hansen_chris-hansen_post_001.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "chris-hansen",
     "photographerSlug": "chris-hansen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_dewey-gustafson_dan-plan_post_001.jpg",
@@ -162,7 +184,7 @@
     "driverSlug": "dewey-gustafson",
     "photographerSlug": "dan-plan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_dewey-gustafson-grant-wilson_02-tom-johnson_photo_001.jpg",
@@ -173,7 +195,7 @@
     "driverSlug": "dewey-gustafson-grant-wilson",
     "photographerSlug": "02-tom-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_dick-partington_bill-woodworth_post_001.jpg",
@@ -184,7 +206,7 @@
     "driverSlug": "dick-partington",
     "photographerSlug": "bill-woodworth",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_donny-reuvers_unknown-photographer_photo_001.jpg",
@@ -195,7 +217,7 @@
     "driverSlug": "donny-reuvers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_elko-speedway-l_unknown-photographer_photo_001.jpg",
@@ -206,7 +228,7 @@
     "driverSlug": "elko-speedway-l",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_elko-speedway-troy-powers-pos_troy-powers_post_001.jpg",
@@ -217,7 +239,7 @@
     "driverSlug": "elko-speedway-troy-powers-pos",
     "photographerSlug": "troy-powers",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_john-lemke_unknown-photographer_photo_001.jpg",
@@ -228,7 +250,7 @@
     "driverSlug": "john-lemke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_john-ziegler_dave-mcclain_photo_001.jpg",
@@ -239,7 +261,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "dave-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_ken-halverson_unknown-photographer_photo_001.jpg",
@@ -250,7 +272,18 @@
     "driverSlug": "ken-halverson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "elko-speedway_unknown-year_larry-oxborough_lukas-oxborough_post_433.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_larry-oxborough_lukas-oxborough_post_433.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_larry-oxborough_lukas-oxborough_post_433.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-oxborough",
+    "photographerSlug": "lukas-oxborough",
+    "creditType": "post",
+    "sequence": "433"
   },
   {
     "fileName": "elko-speedway_unknown-year_leroy-genzler_grant-wasgatt_post_001.jpg",
@@ -261,7 +294,18 @@
     "driverSlug": "leroy-genzler",
     "photographerSlug": "grant-wasgatt",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "elko-speedway_unknown-year_mark-tuma_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_unknown-year_mark-tuma_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/elko-speedway_unknown-year_mark-tuma_unknown-photographer_photo_100.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-tuma",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "elko-speedway_unknown-year_marv-marzofka-dick-trickle_unknown-photographer_photo_001.jpg",
@@ -272,7 +316,7 @@
     "driverSlug": "marv-marzofka-dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_paul-nimis_unknown-photographer_photo_001.jpg",
@@ -283,7 +327,7 @@
     "driverSlug": "paul-nimis",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_steve-burgess_unknown-photographer_photo_012.jpg",
@@ -294,7 +338,7 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "elko-speedway_unknown-year_steve-burgess_unknown-photographer_photo_101.jpg",
@@ -316,7 +360,7 @@
     "driverSlug": "tim-olson",
     "photographerSlug": "john-kaufenberg",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_tom-reffner_cal-wood_photo_001.jpg",
@@ -327,7 +371,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_tom-reffner_cal-wood_photo_002.jpg",
@@ -338,7 +382,18 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
+    "publicPath": "/photos/elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
+    "trackSlug": "elko-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-schreiner",
+    "photographerSlug": "grant-wasgatt",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_unknown-driver_unknown-photographer_photo_4392.jpg",
@@ -350,16 +405,5 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "4392"
-  },
-  {
-    "fileName": "elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
-    "storagePath": "photos/master/elko-speedway/Unknown-year/elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
-    "publicPath": "/photos/elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
-    "trackSlug": "elko-speedway",
-    "year": "Unknown-year",
-    "driverSlug": "tom-schreiner",
-    "photographerSlug": "grant-wasgatt",
-    "creditType": "post",
-    "sequence": "001"
   }
 ]

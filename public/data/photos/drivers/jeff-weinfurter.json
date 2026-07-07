@@ -19,7 +19,7 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2019_jeff-weinfurter_blaser_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeff-weinfurter_don-wendlandt_photo_116.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
@@ -63,18 +63,7 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-weinfurter",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_002.jpg",
@@ -85,17 +74,6 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-weinfurter_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-weinfurter",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "2"
   }
 ]

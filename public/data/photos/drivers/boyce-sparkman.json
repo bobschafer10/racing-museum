@@ -1,5 +1,38 @@
 [
   {
+    "fileName": "rockford-speedway_1967_boyce-sparkman_ron-thruman_post_333.jpg",
+    "storagePath": "photos/master/rockford-speedway/1967/rockford-speedway_1967_boyce-sparkman_ron-thruman_post_333.jpg",
+    "publicPath": "/photos/rockford-speedway_1967_boyce-sparkman_ron-thruman_post_333.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1967",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1972/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1972",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1972/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1972",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
@@ -8,7 +41,40 @@
     "driverSlug": "boyce-sparkman",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_boyce-sparkman_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
@@ -19,7 +85,40 @@
     "driverSlug": "boyce-sparkman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_boyce-sparkman_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_boyce-sparkman_bob-bergeron_photo_222.jpg",
@@ -31,5 +130,16 @@
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
     "sequence": "222"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "444"
   }
 ]

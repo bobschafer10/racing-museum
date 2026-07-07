@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "jack-aschenbrenner",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "hales-corners-speedway_1967_ron-werderitsch_russ-lake_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1967/hales-corners-speedway_1967_ron-werderitsch_russ-lake_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1967_ron-werderitsch_russ-lake_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1967",
+    "driverSlug": "ron-werderitsch",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
     "storagePath": "photos/master/milwaukee-mile/1979/milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
     "publicPath": "/photos/milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
@@ -8,7 +30,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "russ-lake",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_randy-sweet_russ-lake_photo_100.jpg",

@@ -8,7 +8,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1979_dick-trickle_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1979_john-speer_john-vass_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "john-speer",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1979_tom-musgrave_john-vass_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "tom-musgrave",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1979_tom-reffner_john-vass_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedarburg-speedway_1979_al-schill_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedarburg-speedway_1979_jim-boehles_glen-harper_post_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "jim-boehles",
     "photographerSlug": "glen-harper",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedarburg-speedway_1979_unknown-driver_glen-harper_post_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "glen-harper",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedarburg-speedway_1979_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1979_dick-trickle_kurt-luoma_photo_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1979_frank-smith_weber-brothers_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "frank-smith",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1979_gary-waterman_joe-slack_post_001.jpg",
@@ -129,7 +129,18 @@
     "driverSlug": "gary-waterman",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1979_gary-waterman_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1979/hales-corners-speedway_1979_gary-waterman_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1979_gary-waterman_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1979",
+    "driverSlug": "gary-waterman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "hales-corners-speedway_1979_skeeter-burrows_glen-harper_post_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "skeeter-burrows",
     "photographerSlug": "glen-harper",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1979_tom-homan_pat-heaney_post_888.jpg",
@@ -173,7 +184,7 @@
     "driverSlug": "billy-kuhn",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "illiana-speedway_1979_sal-tovella_stan-kalwasinski_photo_001.jpg",
@@ -184,18 +195,7 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_1979_leonard-reimer_leonard-reimer_post_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/1979/lacrosse-interstate-speedway_1979_leonard-reimer_leonard-reimer_post_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_1979_leonard-reimer_leonard-reimer_post_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "1979",
-    "driverSlug": "leonard-reimer",
-    "photographerSlug": "leonard-reimer",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1979_marv-marzofka_unknown-photographer_photo_001.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "marv-marzofka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "russ-lake",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1979_joe-ruttman_unknown-credit_post_001.jpg",
@@ -228,7 +228,18 @@
     "driverSlug": "joe-ruttman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "norway-speedway_1979_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/norway-speedway/1979/norway-speedway_1979_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/norway-speedway_1979_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "1979",
+    "driverSlug": "jim-dallapiazza",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "rockford-speedway_1979_dick-trickle_unknown-photographer_photo_001.jpg",
@@ -239,7 +250,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1979_ed-hoffman_unknown-photographer_photo_111.jpg",
@@ -261,7 +272,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1979_dave-valentyne_36-putch-bentley_photo_001.jpg",
@@ -272,139 +283,7 @@
     "driverSlug": "dave-valentyne",
     "photographerSlug": "36-putch-bentley",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_al-schill_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_al-schill_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_al-schill_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_alan-mcgowan_paul-socwell_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_alan-mcgowan_paul-socwell_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_alan-mcgowan_paul-socwell_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "alan-mcgowan",
-    "photographerSlug": "paul-socwell",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_brent-laursen_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_brent-laursen_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_brent-laursen_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "brent-laursen",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_chateau-raceway_troy-powers_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_chateau-raceway_troy-powers_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_chateau-raceway_troy-powers_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "chateau-raceway",
-    "photographerSlug": "troy-powers",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_don-collins_troy-powers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_don-collins_troy-powers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_don-collins_troy-powers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "don-collins",
-    "photographerSlug": "troy-powers",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_don-collins_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_don-collins_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_don-collins_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "don-collins",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_don-sheddler_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_don-sheddler_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_don-sheddler_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "don-sheddler",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_jeff-hinkemeyer_troy-powers_photo_111.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_jeff-hinkemeyer_troy-powers_photo_111.jpg",
-    "publicPath": "/photos/unknown-track_1979_jeff-hinkemeyer_troy-powers_photo_111.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "jeff-hinkemeyer",
-    "photographerSlug": "troy-powers",
-    "creditType": "photo",
-    "sequence": "111"
-  },
-  {
-    "fileName": "unknown-track_1979_jim-bartelt_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_jim-bartelt_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_jim-bartelt_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "jim-bartelt",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_ken-matthews_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_ken-matthews_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_ken-matthews_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "ken-matthews",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_leon-plank_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_leon-plank_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_leon-plank_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "leon-plank",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_mike-melius_pat-heaney_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_mike-melius_pat-heaney_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_mike-melius_pat-heaney_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "mike-melius",
-    "photographerSlug": "pat-heaney",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_1979_river-speedway_troy-powers_post_001.jpg",
@@ -415,73 +294,7 @@
     "driverSlug": "river-speedway",
     "photographerSlug": "troy-powers",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_scott-hansen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_scott-hansen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_scott-hansen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "steve-egersdorf",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_steve-webber_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_steve-webber_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_steve-webber_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "steve-webber",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_thunder-bay_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_thunder-bay_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_thunder-bay_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "thunder-bay",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_thunder-bay_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_thunder-bay_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_1979_thunder-bay_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "thunder-bay",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_1979_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "tom-nesbitt",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1979_bill-goss_andrew-rosandick_photo_112.jpg",
@@ -514,7 +327,7 @@
     "driverSlug": "bob-menor",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1979_dave-evans_geoff-mckarns_post_001.jpg",
@@ -525,7 +338,7 @@
     "driverSlug": "dave-evans",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1979_dennis-lampman_rpm_photo_333.jpg",
@@ -679,7 +492,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1979_wayne-roffers_rpm_photo_333.jpg",
@@ -701,6 +514,6 @@
     "driverSlug": "mike-schmelzer",
     "photographerSlug": "troy-powers",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

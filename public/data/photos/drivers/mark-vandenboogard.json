@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "141-speedway_1982_mark-vandenboogard_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_mark-vandenboogard_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_1982_mark-vandenboogard_weber-brothers_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "mark-vandenboogard",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_1982_mark-vandenboogard_weber-brothers_photo_454.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_mark-vandenboogard_weber-brothers_photo_454.jpg",
+    "publicPath": "/photos/141-speedway_1982_mark-vandenboogard_weber-brothers_photo_454.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "mark-vandenboogard",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "454"
+  },
+  {
     "fileName": "141-speedway_1985_mark-vandenboogard_pat-heaney_post_333.jpg",
     "storagePath": "photos/master/141-speedway/1985/141-speedway_1985_mark-vandenboogard_pat-heaney_post_333.jpg",
     "publicPath": "/photos/141-speedway_1985_mark-vandenboogard_pat-heaney_post_333.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "mark-vandenboogard",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_mark-vandenboogard_joe-slack_post_001.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "mark-vandenboogard",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mark-vandenboogard_bob-schafer_photo_13767.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "mark-vandenboogard",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mark-vandenboogard_unknown-photographer_photo_002.jpg",
@@ -74,7 +96,7 @@
     "driverSlug": "mark-vandenboogard",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mark-vandenboogard_unknown-photographer_photo_003.jpg",
@@ -85,7 +107,7 @@
     "driverSlug": "mark-vandenboogard",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mark-vandenboogard_unknown-photographer_photo_006.jpg",
@@ -96,6 +118,6 @@
     "driverSlug": "mark-vandenboogard",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   }
 ]

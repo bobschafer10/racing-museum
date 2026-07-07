@@ -8,7 +8,7 @@
     "driverSlug": "john-johnson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_john-johnson_kurt-luoma_photo_001.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "john-johnson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-johnson_ryan-aho_post_081.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-johnson_ryan-aho_post_081.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-johnson_ryan-aho_post_081.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-johnson",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "081"
+    "sequence": "1"
   }
 ]

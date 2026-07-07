@@ -30,7 +30,7 @@
     "driverSlug": "dennis-spitz",
     "photographerSlug": "dave-olson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-spitz_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,18 @@
     "driverSlug": "dennis-spitz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-spitz_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-spitz_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-spitz_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-spitz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-spitz_unknown-photographer_photo_003.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "dennis-spitz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-spitz_unknown-photographer_photo_004.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "dennis-spitz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wilmot-raceway_1981_dennis-spitz_don-besch_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "dennis-spitz",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_unknown-year_dennis-spitz_bob-schafer_photo_12537.jpg",
@@ -96,6 +107,6 @@
     "driverSlug": "dennis-spitz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

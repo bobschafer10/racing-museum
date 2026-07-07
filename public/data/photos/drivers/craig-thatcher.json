@@ -8,7 +8,7 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-valley-speedway_unknown-year_craig-thatcher_deadra-blaser_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "deadra-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_1990_craig-thatcher_dan-plan_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "dan-plan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_1990_craig-thatcher_dan-plan_post_101.jpg",
@@ -52,18 +52,7 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "jerry-zimmer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_craig-thatcher_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_craig-thatcher_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_craig-thatcher_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "craig-thatcher",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
@@ -74,7 +63,29 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_002.jpg",
@@ -85,7 +96,29 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_003.jpg",
@@ -96,7 +129,29 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_004.jpg",
@@ -107,7 +162,29 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_006.jpg",
@@ -118,7 +195,29 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-thatcher_western-wanderer_photo_001.jpg",
@@ -129,6 +228,28 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "western-wanderer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_western-wanderer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_western-wanderer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_western-wanderer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "western-wanderer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-thatcher_western-wanderer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-thatcher_western-wanderer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-thatcher_western-wanderer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-thatcher",
+    "photographerSlug": "western-wanderer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

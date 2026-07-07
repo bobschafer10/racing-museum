@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "illiana-speedway_unknown-year_curt-cheshire_pete-fileca_post_333.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_curt-cheshire_pete-fileca_post_333.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_curt-cheshire_pete-fileca_post_333.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-cheshire",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
     "fileName": "rockford-speedway_1982_curt-cheshire_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_curt-cheshire_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_1982_curt-cheshire_weber-brothers_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "curt-cheshire",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

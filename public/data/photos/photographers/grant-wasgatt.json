@@ -8,18 +8,18 @@
     "driverSlug": "leroy-genzler",
     "photographerSlug": "grant-wasgatt",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
-    "storagePath": "photos/master/elko-speedway/Unknown-year/elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
+    "storagePath": "photos/master/elko-speedway/unknown-year/elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
     "publicPath": "/photos/elko-speedway_Unknown-year_tom-schreiner_grant-wasgatt_post_001.jpg",
     "trackSlug": "elko-speedway",
-    "year": "Unknown-year",
+    "year": "unknown-year",
     "driverSlug": "tom-schreiner",
     "photographerSlug": "grant-wasgatt",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "raceway-park-mn_unknown-year_joe-pastorek_grant-wasgatt_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "joe-pastorek",
     "photographerSlug": "grant-wasgatt",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "raceway-park-mn_unknown-year_unknown-driver_grant-wasgatt_photo_2.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "grant-wasgatt",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-heinz_grant-wasgatt_post_001.jpg",
@@ -63,6 +63,6 @@
     "driverSlug": "steve-heinz",
     "photographerSlug": "grant-wasgatt",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "bob-schryock",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "steele-county-fairgrounds_1984_dick-johanneck_lee-johnson_photo_115.jpg",
     "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds_1984_dick-johanneck_lee-johnson_photo_115.jpg",
     "publicPath": "/photos/steele-county-fairgrounds_1984_dick-johanneck_lee-johnson_photo_115.jpg",
@@ -33,6 +44,17 @@
     "sequence": "115"
   },
   {
+    "fileName": "steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "ron-schreiner",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
     "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
     "publicPath": "/photos/steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
@@ -44,37 +66,15 @@
     "sequence": "115"
   },
   {
-    "fileName": "unknown-track_1983_jim-ackerman_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1983/unknown-track_1983_jim-ackerman_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1983_jim-ackerman_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1983",
-    "driverSlug": "jim-ackerman",
-    "photographerSlug": "lee-johnson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
     "year": "1984",
-    "driverSlug": "steve-fegers",
+    "driverSlug": "tom-steuding",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-ackerman_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-ackerman_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-ackerman_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-ackerman",
-    "photographerSlug": "lee-johnson",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_unknown-year_leon-plank_lee-johnson_photo_001.jpg",
@@ -85,18 +85,7 @@
     "driverSlug": "leon-plank",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_les-duellman_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_les-duellman_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_les-duellman_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "les-duellman",
-    "photographerSlug": "lee-johnson",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-olson_lee-johnson_post_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "rich-olson",
     "photographerSlug": "lee-johnson",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-aukurt-luoma-photoand_lee-johnson_photo_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "rick-aukurt-luoma-photoand",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_schreiner_lee-johnson_photo_001.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "schreiner",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_lee-johnson_photo_001.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_terry-anvelink_lee-johnson_photo_001.jpg",
@@ -151,6 +140,6 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

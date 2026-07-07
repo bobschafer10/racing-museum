@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "columbus-151-speedway_unknown-year_tom-dekeuster_charlie-spry_photo_333.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_tom-dekeuster_charlie-spry_photo_333.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_tom-dekeuster_charlie-spry_photo_333.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-dekeuster",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "lake-geneva-raceway_1983_tom-dekeuster_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/1983/lake-geneva-raceway_1983_tom-dekeuster_pat-heaney_post_001.jpg",
     "publicPath": "/photos/lake-geneva-raceway_1983_tom-dekeuster_pat-heaney_post_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "tom-dekeuster",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_tom-dekeuster_unknown-photographer_photo_13004.jpg",
@@ -30,18 +41,7 @@
     "driverSlug": "tom-dekeuster",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "slinger-speedway_unknown-year_tom-dekeuster_bob-schafer_photo_13580.jpg",
-    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_tom-dekeuster_bob-schafer_photo_13580.jpg",
-    "publicPath": "/photos/slinger-speedway_unknown-year_tom-dekeuster_bob-schafer_photo_13580.jpg",
-    "trackSlug": "slinger-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-dekeuster",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13580"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-dekeuster_unknown-photographer_photo_001.jpg",
@@ -52,6 +52,6 @@
     "driverSlug": "tom-dekeuster",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

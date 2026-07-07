@@ -8,7 +8,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_brad-mueller_bob-schneider_photo_001.jpg",
@@ -30,7 +30,18 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "slinger-speedway_unknown-year_brad-mueller_unknown-photographer_photo_004.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
@@ -52,7 +63,40 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
@@ -63,7 +107,40 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
@@ -74,7 +151,40 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-mueller_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5"
   },
   {
     "fileName": "wisconsin-internationa-raceway_unknown-year_brad-mueller_dan-lewis_photo_001.jpg",
@@ -85,7 +195,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1997_brad-mueller_pat-heaney_post_333.jpg",
@@ -107,7 +217,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_brad-mueller_unknown-photographer_photo_001.jpg",
@@ -118,7 +228,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_brad-mueller_unknown-photographer_photo_004.jpg",
@@ -129,6 +239,6 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   }
 ]

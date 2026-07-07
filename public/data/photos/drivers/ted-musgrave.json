@@ -8,7 +8,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "capital-super-speedway_1983_ted-musgrave_al-fortner_photo_001.jpg",
@@ -19,40 +19,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_ted-musgrave_charlie-spry_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ted-musgrave_charlie-spry_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_ted-musgrave_charlie-spry_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ted-musgrave",
-    "photographerSlug": "charlie-spry",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ted-musgrave",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_002.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ted-musgrave",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_ted-musgrave_bob-schafer_photo_13800.jpg",
@@ -85,18 +52,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "dells-motor-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_333.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_333.jpg",
-    "publicPath": "/photos/dells-motor-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_333.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ted-musgrave",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "333"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_1272.jpg",
@@ -118,18 +74,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_ted-musgrave_father-grubba_photo_333.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_ted-musgrave_father-grubba_photo_333.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_ted-musgrave_father-grubba_photo_333.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ted-musgrave",
-    "photographerSlug": "father-grubba",
-    "creditType": "photo",
-    "sequence": "333"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_001.jpg",
@@ -140,18 +85,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_456.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_456.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_456.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ted-musgrave",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "456"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ted-musgrave_bob-schafer_photo_14049.jpg",
@@ -165,6 +99,17 @@
     "sequence": "14049"
   },
   {
+    "fileName": "raceway-park-il-il_unknown-year_ted-musgrave_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_ted-musgrave_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_ted-musgrave_raceway-park-history_post_888.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "ted-musgrave",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
+  },
+  {
     "fileName": "rockford-speedway_1985_ted-musgrave_don-besch_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/1985/rockford-speedway_1985_ted-musgrave_don-besch_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_1985_ted-musgrave_don-besch_photo_001.jpg",
@@ -173,7 +118,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ted-musgrave_bob-schafer_photo_185.jpg",
@@ -195,7 +140,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ted-musgrave_father-grubba_photo_114.jpg",
@@ -217,7 +162,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_ted-musgrave_weber-brothers_photo_002.jpg",
@@ -228,7 +173,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_1990_ted-musgrave_bob-schafer_photo_222.jpg",
@@ -242,17 +187,6 @@
     "sequence": "222"
   },
   {
-    "fileName": "slinger-speedway_unknown-year_ted-musgrave_bob-schafer_photo_186.jpg",
-    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_ted-musgrave_bob-schafer_photo_186.jpg",
-    "publicPath": "/photos/slinger-speedway_unknown-year_ted-musgrave_bob-schafer_photo_186.jpg",
-    "trackSlug": "slinger-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ted-musgrave",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "186"
-  },
-  {
     "fileName": "state-park-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_001.jpg",
@@ -261,7 +195,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_ted-musgrave_kurt-luoma_photo_002.jpg",
@@ -272,7 +206,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "state-park-speedway_unknown-year_ted-musgrave_unknown-photographer_photo_001.jpg",
@@ -283,7 +217,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-musgrave_unknown-photographer_photo_001.jpg",
@@ -294,7 +228,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-musgrave_unknown-photographer_photo_007.jpg",
@@ -305,7 +239,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-musgrave_unknown-photographer_photo_5369.jpg",
@@ -327,7 +261,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ted-musgrave_kurt-luoma_photo_001.jpg",
@@ -338,7 +272,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ted-musgrave_kurt-luoma_photo_002.jpg",
@@ -349,7 +283,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ted-musgrave_kurt-luoma_photo_1258.jpg",
@@ -371,7 +305,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ted-musgrave_unknown-photographer_photo_003.jpg",
@@ -382,7 +316,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ted-musgrave_unknown-photographer_photo_1123.jpg",

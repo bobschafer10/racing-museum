@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "freeport-raceway-park_unknown-year_vaughn-gerke_ron-thruman_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_vaughn-gerke_ron-thruman_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_vaughn-gerke_ron-thruman_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "vaughn-gerke",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "lake-geneva-raceway_1978_vaughn-gerke_mike-dunn_photo_001.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/1978/lake-geneva-raceway_1978_vaughn-gerke_mike-dunn_photo_001.jpg",
     "publicPath": "/photos/lake-geneva-raceway_1978_vaughn-gerke_mike-dunn_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "vaughn-gerke",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1970_vaughn-gerke_ron-thruman_post_001.jpg",
@@ -19,6 +30,17 @@
     "driverSlug": "vaughn-gerke",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_vaughn-gerke_ron-thruman_photo_334.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_vaughn-gerke_ron-thruman_photo_334.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_vaughn-gerke_ron-thruman_photo_334.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "vaughn-gerke",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "334"
   }
 ]

@@ -8,6 +8,28 @@
     "driverSlug": "john-brolick",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_john-brolick_raceway-park-history_post_828.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_john-brolick_raceway-park-history_post_828.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_john-brolick_raceway-park-history_post_828.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "john-brolick",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "828"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_john-brolick_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_john-brolick_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_john-brolick_raceway-park-history_post_888.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "john-brolick",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
   }
 ]

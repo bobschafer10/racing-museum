@@ -19,7 +19,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_fred-bender_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_fred-bender_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_fred-bender_unknown-photographer_photo_352.jpg",
@@ -53,50 +53,6 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "352"
-  },
-  {
-    "fileName": "unknown-track_1978_fred-bender_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_fred-bender_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_fred-bender_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "fred-bender",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fred-bender_john-vass_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fred-bender_john-vass_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fred-bender_john-vass_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fred-bender",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fred-bender_john-vass_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fred-bender_john-vass_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fred-bender_john-vass_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fred-bender",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fred-bender_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fred-bender_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fred-bender_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fred-bender",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
   },
   {
     "fileName": "wisconsin-international-raceway_1979_fred-bender_rpm_photo_333.jpg",
@@ -118,7 +74,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fred-bender_kurt-luoma_photo_001.jpg",
@@ -129,7 +85,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fred-bender_pete-vercauteren_photo_001.jpg",
@@ -140,7 +96,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fred-bender_unknown-photographer_photo_001.jpg",
@@ -151,6 +107,6 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -118,7 +118,7 @@
     "driverSlug": "frank-firari",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1981_frankie-heimerl_al-fortner_photo_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1981_gene-norenberg_al-fortner_photo_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "gene-norenberg",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1981_rick-schmidt_al-fortner_photo_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "rick-schmidt",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1981_steve-moll_al-fortner_photo_001.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "steve-moll",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1982_bobby-weiss_al-fortner_photo_001.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "bobby-weiss",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1982_morie-delmore_al-fortner_photo_001.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "morie-delmore",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1982_willie-goeden_al-fortner_photo_001.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1983_ted-musgrave_al-fortner_photo_001 (2).jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "capital-super-speedway_1983_ted-musgrave_al-fortner_photo_001.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1983_tom-reffner_al-fortner_photo_001.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_bob-gunn_al-fortner_photo_001.jpg",
@@ -239,7 +239,7 @@
     "driverSlug": "bob-gunn",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_bob-iverson_al-fortner_photo_001.jpg",
@@ -250,7 +250,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_bryan-reffner_al-fortner_photo_001.jpg",
@@ -261,7 +261,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_jim-back_al-fortner_photo_001.jpg",
@@ -272,7 +272,7 @@
     "driverSlug": "jim-back",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_john-ziegler_al-fortner_photo_001.jpg",
@@ -283,7 +283,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_steve-holzhausen_al-fortner_photo_001.jpg",
@@ -294,7 +294,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
@@ -305,7 +305,18 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_butch-mierendorf_al-fortner_photo_001.jpg",
@@ -316,7 +327,29 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_butch-mierendorf_al-fortner_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_butch-mierendorf_al-fortner_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_butch-mierendorf_al-fortner_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "butch-mierendorf",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_curt-wendelschafer_al-fortner_photo_111.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_curt-wendelschafer_al-fortner_photo_111.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_curt-wendelschafer_al-fortner_photo_111.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-wendelschafer",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_danny-darnell_al-fortner_photo_002.jpg",
@@ -327,7 +360,18 @@
     "driverSlug": "danny-darnell",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_danny-darnell_al-fortner_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_danny-darnell_al-fortner_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_danny-darnell_al-fortner_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "danny-darnell",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_hub-schulenberg_al-fortner_photo_001.jpg",
@@ -338,7 +382,7 @@
     "driverSlug": "hub-schulenberg",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_mike-langsdorf_al-fortner_photo_001.jpg",
@@ -349,18 +393,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_thom-laimon_al-fortner_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_thom-laimon_al-fortner_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_thom-laimon_al-fortner_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "thom-laimon",
-    "photographerSlug": "al-fortner",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1981_tony-strupp_al-fortner_photo_001.jpg",
@@ -371,7 +404,7 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_1986_pat-heaney_al-fortner_photo_001.jpg",
@@ -382,7 +415,7 @@
     "driverSlug": "pat-heaney",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1979_pat-schauer_al-fortner_photo_001.jpg",
@@ -393,7 +426,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_terry-baldry_al-fortner_photo_001.jpg",
@@ -404,7 +437,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1983_joe-shear_al-fortner_photo_001.jpg",
@@ -415,7 +448,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1983_john-carao_al-fortner_photo_001.jpg",
@@ -426,7 +459,7 @@
     "driverSlug": "john-carao",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1983_mark-martin_al-fortner_photo_001.jpg",
@@ -437,7 +470,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_bobby-allison_al-fortner_photo_777.jpg",
@@ -459,7 +492,7 @@
     "driverSlug": "andy-wendt",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1989_rich-bickle_al-fortner_photo_001.jpg",
@@ -470,7 +503,7 @@
     "driverSlug": "rich-bickle",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1993_robbie-reiser_al-fortner_photo_001.jpg",
@@ -481,7 +514,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_robbie-reiser_al-fortner_photo_001.jpg",
@@ -492,7 +525,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_speedway-enduro_al-fortner_photo_001.jpg",
@@ -503,7 +536,7 @@
     "driverSlug": "speedway-enduro",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_bob-abitz_al-fortner_photo_333.jpg",
@@ -646,7 +679,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_jerry-eckhardt_al-fortner_photo_333.jpg",
@@ -976,7 +1009,7 @@
     "driverSlug": "neil-maas",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_neil-maas_al-fortner_photo_14187.jpg",

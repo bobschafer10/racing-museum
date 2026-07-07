@@ -8,7 +8,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_pete-parker_bob-bergeron_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_002.png",
@@ -30,7 +30,18 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_2928.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_2928.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_2928.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-parker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2928"
   },
   {
     "fileName": "capital-super-speedway_1975_pete-parker_mike-napierala_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_pete-parker_unknown-photographer_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_pete-parker_todd-narveson_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_pete-parker_ryan-aho_post_114.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1978_pete-parker_rpm_photo_001.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_pete-parker_bob-schafer_photo_097.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "097"
+    "sequence": "97"
   },
   {
     "fileName": "leos-speedway_unknown-year_pete-parker_dave-panske_photo_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_pete-parker_tom-loos_photo_001.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1974_pete-parker_pete-vercauteren_photo_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_pete-parker_brad-luepke_post_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1990_pete-parker_bob-schafer_photo_054.jpg",
@@ -162,7 +173,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "054"
+    "sequence": "54"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pete-parker_bob-schafer_photo_12509.jpg",
@@ -184,7 +195,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pete-parker_pete-vercauteren_photo_001.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pete-parker_unknown-photographer_photo_001.jpg",
@@ -206,7 +217,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1976_pete-parker_leonard-reimer_post_001.jpg",
@@ -217,29 +228,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_pete-parker_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_pete-parker_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_pete-parker_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "pete-parker",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_pete-parker_neil-miller_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_pete-parker_neil-miller_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_1993_pete-parker_neil-miller_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "pete-parker",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_bob-schafer_photo_080.jpg",
@@ -250,7 +239,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "080"
+    "sequence": "80"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_brad-luepke_post_001.jpg",
@@ -261,7 +250,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_dennis-satorius_post_001.jpg",
@@ -272,7 +261,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_joe-slack_photo_001.jpg",
@@ -283,7 +272,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_john-vass_photo_001.jpg",
@@ -294,7 +283,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_keith-nason_photo_001.jpg",
@@ -305,7 +294,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_kurt-luoma_photo_001.jpg",
@@ -316,7 +305,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_lj_photo_001.jpg",
@@ -327,7 +316,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "lj",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_missy-lushinsky_photo_001.jpg",
@@ -338,7 +327,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_missy-lushinsky_photo_002.jpg",
@@ -349,7 +338,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_paul-socwell_photo_001.jpg",
@@ -360,7 +349,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "paul-socwell",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_pete-vercauteren_photo_001.jpg",
@@ -371,7 +360,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_stan-kalwasinski_photo_001.jpg",
@@ -382,7 +371,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_tom-loos_post_002.jpg",
@@ -393,7 +382,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "tom-loos",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_troy-powers_photo_001.jpg",
@@ -404,7 +393,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "troy-powers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_troy-powers_photo_020.jpg",
@@ -415,7 +404,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "troy-powers",
     "creditType": "photo",
-    "sequence": "020"
+    "sequence": "20"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-credit_post_001.jpg",
@@ -426,7 +415,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_001.jpg",
@@ -437,7 +426,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_002.jpg",
@@ -448,7 +437,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_003.jpg",
@@ -459,7 +448,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_004.jpg",
@@ -470,7 +459,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_005.jpg",
@@ -481,7 +470,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_008.jpg",
@@ -492,7 +481,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_009.jpg",
@@ -503,7 +492,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_010.jpg",
@@ -514,7 +503,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_011.jpg",
@@ -525,7 +514,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_012.jpg",
@@ -536,7 +525,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_013.jpg",
@@ -547,7 +536,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_015.jpg",
@@ -558,7 +547,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "015"
+    "sequence": "15"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_017.jpg",
@@ -569,7 +558,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "017"
+    "sequence": "17"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_018.jpg",
@@ -580,7 +569,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "018"
+    "sequence": "18"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_020.jpg",
@@ -591,7 +580,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "020"
+    "sequence": "20"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_021.jpg",
@@ -602,7 +591,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_024.jpg",
@@ -613,7 +602,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "024"
+    "sequence": "24"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_025.jpg",
@@ -624,7 +613,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "025"
+    "sequence": "25"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_026.jpg",
@@ -635,7 +624,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "026"
+    "sequence": "26"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_027.jpg",
@@ -646,7 +635,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_029.jpg",
@@ -657,7 +646,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "029"
+    "sequence": "29"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_030.jpg",
@@ -668,7 +657,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "030"
+    "sequence": "30"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_031.jpg",
@@ -679,7 +668,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_032.jpg",
@@ -690,7 +679,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "032"
+    "sequence": "32"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_033.jpg",
@@ -701,7 +690,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "033"
+    "sequence": "33"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_034.jpg",
@@ -712,7 +701,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "034"
+    "sequence": "34"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_035.jpg",
@@ -723,7 +712,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "035"
+    "sequence": "35"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_036.jpg",
@@ -734,7 +723,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "036"
+    "sequence": "36"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_037.jpg",
@@ -745,7 +734,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "037"
+    "sequence": "37"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_038.jpg",
@@ -756,7 +745,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "038"
+    "sequence": "38"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_039.jpg",
@@ -767,7 +756,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "039"
+    "sequence": "39"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_040.jpg",
@@ -778,7 +767,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "040"
+    "sequence": "40"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_041.jpg",
@@ -789,7 +778,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_042.jpg",
@@ -800,7 +789,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "042"
+    "sequence": "42"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_043.jpg",
@@ -811,7 +800,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "043"
+    "sequence": "43"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_044.jpg",
@@ -822,7 +811,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "044"
+    "sequence": "44"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_045.jpg",
@@ -833,7 +822,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "045"
+    "sequence": "45"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_046.jpg",
@@ -844,7 +833,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "046"
+    "sequence": "46"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_047.jpg",
@@ -855,7 +844,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "047"
+    "sequence": "47"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_048.jpg",
@@ -866,7 +855,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "048"
+    "sequence": "48"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_049.jpg",
@@ -877,7 +866,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "049"
+    "sequence": "49"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_050.jpg",
@@ -888,7 +877,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "050"
+    "sequence": "50"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_051.jpg",
@@ -899,7 +888,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "051"
+    "sequence": "51"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_052.jpg",
@@ -910,7 +899,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "052"
+    "sequence": "52"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_053.jpg",
@@ -921,7 +910,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "053"
+    "sequence": "53"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_054.jpg",
@@ -932,7 +921,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "054"
+    "sequence": "54"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_055.jpg",
@@ -943,7 +932,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "055"
+    "sequence": "55"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_058.jpg",
@@ -954,7 +943,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "058"
+    "sequence": "58"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_063.jpg",
@@ -965,7 +954,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "063"
+    "sequence": "63"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_066.jpg",
@@ -976,7 +965,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "066"
+    "sequence": "66"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_067.jpg",
@@ -987,7 +976,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "067"
+    "sequence": "67"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_069.jpg",
@@ -998,7 +987,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "069"
+    "sequence": "69"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_072.jpg",
@@ -1009,7 +998,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "072"
+    "sequence": "72"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_073.jpg",
@@ -1020,7 +1009,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "073"
+    "sequence": "73"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_075.jpg",
@@ -1031,7 +1020,18 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "075"
+    "sequence": "75"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_1790.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_pete-parker_unknown-photographer_photo_1790.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_pete-parker_unknown-photographer_photo_1790.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "pete-parker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1790"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-photographer_photo_321.jpg",
@@ -1053,7 +1053,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_john-vass_photo_001.jpg",
@@ -1064,7 +1064,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_keith-vercauteren_post_1126.jpg",
@@ -1086,7 +1086,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_unknown-credit_post_001.jpg",
@@ -1097,7 +1097,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_unknown-photographer_photo_002.jpg",
@@ -1108,7 +1108,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_unknown-photographer_photo_003.jpg",
@@ -1119,7 +1119,18 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_pete-parker_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_pete-parker_unknown-photographer_photo_100.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "pete-parker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_unknown-photographer_photo_1149.jpg",
@@ -1152,7 +1163,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_pete-parker_kurt-luoma_photo_100.jpg",

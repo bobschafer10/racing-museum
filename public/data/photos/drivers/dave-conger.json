@@ -8,7 +8,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dave-conger_pete-vercauteren_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "leos-speedway_unknown-year_dave-conger_bob-bergeron_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_dave-conger_bruce-beitrick_post_101.jpg",
@@ -44,17 +44,6 @@
     "sequence": "101"
   },
   {
-    "fileName": "unknown-track_1973_dave-conger_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/1973/unknown-track_1973_dave-conger_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_1973_dave-conger_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1973",
-    "driverSlug": "dave-conger",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
     "fileName": "unknown-track_unknown-year_dave-conger_unknown-photographer_photo_004.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-conger_unknown-photographer_photo_004.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_dave-conger_unknown-photographer_photo_004.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-conger_unknown-photographer_photo_006.jpg",
@@ -74,7 +63,18 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-conger_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-conger_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-conger_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-conger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-conger_unknown-photographer_photo_008.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-conger_unknown-photographer_photo_009.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-conger_unknown-photographer_photo_012.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-conger_bob-bergeron_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-conger_bob-bergeron_photo_002.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-conger_kurt-luoma_photo_1229.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-conger_unknown-photographer_photo_002.jpg",
@@ -173,6 +173,6 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

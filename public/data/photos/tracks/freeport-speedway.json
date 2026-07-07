@@ -8,7 +8,29 @@
     "driverSlug": "craig-spetman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_111.jpg",
+    "storagePath": "photos/master/freeport-speedway/unknown-year/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_111.jpg",
+    "publicPath": "/photos/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_111.jpg",
+    "trackSlug": "freeport-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-zanker",
+    "photographerSlug": "teresa-nolan",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_112.jpg",
+    "storagePath": "photos/master/freeport-speedway/unknown-year/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_112.jpg",
+    "publicPath": "/photos/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_112.jpg",
+    "trackSlug": "freeport-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-zanker",
+    "photographerSlug": "teresa-nolan",
+    "creditType": "post",
+    "sequence": "112"
   },
   {
     "fileName": "freeport-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
@@ -19,6 +41,6 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

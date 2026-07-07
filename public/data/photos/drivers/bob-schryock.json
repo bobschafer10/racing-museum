@@ -8,6 +8,17 @@
     "driverSlug": "bob-schryock",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "bob-schryock",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
   }
 ]

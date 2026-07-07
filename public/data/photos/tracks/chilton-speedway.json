@@ -8,7 +8,7 @@
     "driverSlug": "rick-hed",
     "photographerSlug": "dave-drews",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_1997_unknown-driver_joe-verdegan_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_1998_bruce-holz_weber-brothers_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bruce-holz",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_1998_chad-schlenvogt_dan-lewis_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "chad-schlenvogt",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
@@ -52,7 +52,29 @@
     "driverSlug": "mike-kertscher",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_2010_brandon-frank_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/2010/chilton-speedway_2010_brandon-frank_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_2010_brandon-frank_bob-greuel_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "2010",
+    "driverSlug": "brandon-frank",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/2011/chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "2011",
+    "driverSlug": "tom-schneider",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_2012_adam-janke_j-and-s_photo_001.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "adam-janke",
     "photographerSlug": "j-and-s",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_al-goetsch_dan-radig_post_001.jpg",
@@ -74,7 +96,7 @@
     "driverSlug": "al-goetsch",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_chilton-speedwa_unknown-photographer_photo_001.jpg",
@@ -85,7 +107,7 @@
     "driverSlug": "chilton-speedwa",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_chilton-speedwa_unknown-photographer_photo_002.jpg",
@@ -96,7 +118,7 @@
     "driverSlug": "chilton-speedwa",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "chilton-speedway_unknown-year_chilton-speedway-fair-rac_unknown-photographer_photo_001.jpg",
@@ -107,7 +129,7 @@
     "driverSlug": "chilton-speedway-fair-rac",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_chilton-speedway-full-grandstan_unknown-photographer_photo_001.jpg",
@@ -118,7 +140,18 @@
     "driverSlug": "chilton-speedway-full-grandstan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_chris-gross_dan-lewis_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_chris-gross_dan-lewis_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_chris-gross_dan-lewis_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chris-gross",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_unknown-year_eric-derks_dan-lewis_photo_175.jpg",
@@ -140,7 +173,7 @@
     "driverSlug": "eric-derks",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_george-schwalbach_unknown-photographer_photo_001.jpg",
@@ -151,7 +184,18 @@
     "driverSlug": "george-schwalbach",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_gregg-haese_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_gregg-haese_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_gregg-haese_unknown-photographer_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gregg-haese",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_unknown-year_henry-dickman_dan-lewis_post_222.jpg",
@@ -173,7 +217,7 @@
     "driverSlug": "jared-siefert",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_jim-cossman_joe-verdegan_post_001.jpg",
@@ -184,7 +228,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_john-born_unknown-photographer_photo_002.jpg",
@@ -195,7 +239,7 @@
     "driverSlug": "john-born",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "chilton-speedway_unknown-year_karly-stadler_unknown-photographer_photo_001.jpg",
@@ -206,7 +250,7 @@
     "driverSlug": "karly-stadler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_kelsy-hayes_unknown-photographer_post_001.jpg",
@@ -217,7 +261,7 @@
     "driverSlug": "kelsy-hayes",
     "photographerSlug": "unknown-photographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_lance-fassbender_bob-greuel_photo_001.jpg",
@@ -228,7 +272,7 @@
     "driverSlug": "lance-fassbender",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_larry-richards_joe-verdegan_post_001.jpg",
@@ -239,7 +283,7 @@
     "driverSlug": "larry-richards",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_larry-richards_unknown-photographer_photo_001.jpg",
@@ -250,7 +294,18 @@
     "driverSlug": "larry-richards",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_mike-king_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_mike-king_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_mike-king_unknown-photographer_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-king",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_unknown-year_mike-melius_joe-verdegan_post_001.jpg",
@@ -261,7 +316,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_steve-dekerf_dan-lewis_photo_001.jpg",
@@ -272,7 +327,7 @@
     "driverSlug": "steve-dekerf",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_steve-kracht_dan-lewis_photo_001.png",
@@ -283,7 +338,18 @@
     "driverSlug": "steve-kracht",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_tim-simon_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_tim-simon_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_tim-simon_unknown-photographer_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-simon",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001 (2).jpeg",
@@ -294,7 +360,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "chilton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001 (3).jpg",
@@ -305,7 +371,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (3)"
+    "sequence": "13"
   },
   {
     "fileName": "chilton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001 (4).jpg",
@@ -316,7 +382,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (4)"
+    "sequence": "14"
   },
   {
     "fileName": "chilton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001 (5).jpg",
@@ -327,7 +393,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (5)"
+    "sequence": "15"
   },
   {
     "fileName": "chilton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -338,7 +404,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_002.jpg",
@@ -349,7 +415,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "chilton-speedway_unknown-year_wayne-goetsch_unknown-photographer_photo_003.jpg",
@@ -360,6 +426,6 @@
     "driverSlug": "wayne-goetsch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

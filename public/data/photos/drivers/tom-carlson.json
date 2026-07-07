@@ -1,38 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_tom-carlson_don-besch_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-carlson_don-besch_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-carlson_don-besch_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-carlson",
-    "photographerSlug": "don-besch",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_tom-carlson_father-grubba_photo_333.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-carlson_father-grubba_photo_333.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-carlson_father-grubba_photo_333.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-carlson",
-    "photographerSlug": "father-grubba",
-    "creditType": "photo",
-    "sequence": "333"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_tom-carlson_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-carlson_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-carlson_unknown-photographer_photo_007.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-carlson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
-  },
-  {
     "fileName": "dells-motor-speedway_1987_tom-carlson_bob-schneider_photo_001.jpg",
     "storagePath": "photos/master/dells-motor-speedway/1987/dells-motor-speedway_1987_tom-carlson_bob-schneider_photo_001.jpg",
     "publicPath": "/photos/dells-motor-speedway_1987_tom-carlson_bob-schneider_photo_001.jpg",
@@ -41,7 +8,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_tom-carlson_don-besch_photo_001.jpg",
@@ -52,7 +19,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_tom-carlson_darrell-kennedy_photo_001.jpg",
@@ -63,7 +30,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "darrell-kennedy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1987_tom-carlson_don-besch_photo_001.jpg",
@@ -74,7 +41,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_tom-carlson_unknown-photographer_photo_001.jpg",
@@ -85,7 +52,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_tom-carlson_unknown-photographer_photo_002.jpg",
@@ -96,7 +63,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_2022_tom-carlson_weber-brothers_photo_115.jpg",
@@ -108,6 +75,28 @@
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
     "sequence": "115"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2022_tom-carlson_weber-brothers_photo_336.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2022/marshfield-super-speedway_2022_tom-carlson_weber-brothers_photo_336.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2022_tom-carlson_weber-brothers_photo_336.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2022",
+    "driverSlug": "tom-carlson",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "336"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2022_tom-carlson_weber-brothers_photo_336.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2022/marshfield-super-speedway_2022_tom-carlson_weber-brothers_photo_336.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2022_tom-carlson_weber-brothers_photo_336.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2022",
+    "driverSlug": "tom-carlson",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "336"
   },
   {
     "fileName": "rockford-speedway_1990_tom-carlson_bob-schafer_photo_222.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "john-lafrentz",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-carlson_pete-vercauteren_photo_001.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-carlson_steve-heiman_post_001.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "steve-heiman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_pat-heaney_post_001.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_unknown-photographer_photo_001 (2).jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_unknown-photographer_photo_001.jpg",
@@ -195,7 +184,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_unknown-photographer_photo_002.jpg",
@@ -206,7 +195,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_unknown-photographer_photo_003.jpg",
@@ -217,7 +206,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_unknown-photographer_photo_004.jpg",
@@ -228,7 +217,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_unknown-photographer_photo_005.jpg",
@@ -239,7 +228,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-carlson_unknown-photographer_photo_006.jpg",
@@ -250,7 +239,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "wisconsin-international-raceway_1982_tom-carlson_unknown-photographer_photo_001.jpg",
@@ -261,7 +250,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-carlson_bob-schafer_photo_13918.jpg",
@@ -283,6 +272,6 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "columbus-151-speedway_unknown-year_gary-sigmund_dean-bentley_post_444.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_gary-sigmund_dean-bentley_post_444.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_gary-sigmund_dean-bentley_post_444.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-sigmund",
+    "photographerSlug": "dean-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "lake-geneva-raceway_unknown-year_dale-erdmann_dean-bentley_post_100.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_dale-erdmann_dean-bentley_post_100.jpg",
     "publicPath": "/photos/lake-geneva-raceway_unknown-year_dale-erdmann_dean-bentley_post_100.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "dean-bentley",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_don-collins_dean-bentley_post_001.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "don-collins",
     "photographerSlug": "dean-bentley",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

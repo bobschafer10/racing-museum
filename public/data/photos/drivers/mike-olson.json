@@ -8,6 +8,17 @@
     "driverSlug": "mike-olson",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_mike-olson_mike-olson_post_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-olson_mike-olson_post_111.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_mike-olson_mike-olson_post_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-olson",
+    "photographerSlug": "mike-olson",
+    "creditType": "post",
+    "sequence": "111"
   }
 ]

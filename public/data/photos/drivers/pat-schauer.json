@@ -8,7 +8,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_pat-schauer_don-besch_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_pat-schauer_father-grubba-photo_333.jpg",
@@ -28,9 +28,9 @@
     "trackSlug": "golden-sands-speedway",
     "year": "unknown-year",
     "driverSlug": "pat-schauer",
-    "photographerSlug": "father-grubba-photo",
-    "creditType": "333",
-    "sequence": "001"
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_pat-schauer_kurt-luoma_photo_333.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pat-schauer_american-flag-randy-doerr_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "american-flag-randy-doerr",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pat-schauer_john-vass_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pat-schauer_john-vass_photo_002.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_pat-schauer_unknown-photographer_photo_001.jpg",
@@ -107,7 +107,29 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1978_pat-schauer_john-vass_photo_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1978/wisconsin-international-raceway_1978_pat-schauer_john-vass_photo_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1978_pat-schauer_john-vass_photo_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1978",
+    "driverSlug": "pat-schauer",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_pat-schauer_john-vass_photo_112.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_pat-schauer_john-vass_photo_112.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_pat-schauer_john-vass_photo_112.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "pat-schauer",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "112"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pat-schauer_unknown-photographer_photo_001.jpg",
@@ -118,6 +140,6 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

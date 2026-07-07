@@ -11,28 +11,6 @@
     "sequence": "14241"
   },
   {
-    "fileName": "dells-motor-speedway_unknown-year_don-turner_clintman_post_001.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_don-turner_clintman_post_001.jpg",
-    "publicPath": "/photos/dells-motor-speedway_unknown-year_don-turner_clintman_post_001.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "unknown-year",
-    "driverSlug": "don-turner",
-    "photographerSlug": "clintman",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "dells-motor-speedway_unknown-year_don-turner_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_don-turner_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/dells-motor-speedway_unknown-year_don-turner_unknown-photographer_photo_001.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "unknown-year",
-    "driverSlug": "don-turner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "golden-sands-speedway_1990_don-turner_bob-schafer_photo_13481.jpg",
     "storagePath": "photos/master/golden-sands-speedway/1990/golden-sands-speedway_1990_don-turner_bob-schafer_photo_13481.jpg",
     "publicPath": "/photos/golden-sands-speedway_1990_don-turner_bob-schafer_photo_13481.jpg",
@@ -52,7 +30,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "jim-nitka",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-turner_kurt-luoma_photo_001.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-turner_kurt-luoma_photo_002.jpg",
@@ -74,18 +52,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_1987_don-turner_don-besch_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/1987/lacrosse-interstate-speedway_1987_don-turner_don-besch_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_1987_don-turner_don-besch_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "1987",
-    "driverSlug": "don-turner",
-    "photographerSlug": "don-besch",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_don-turner_bob-schafer_photo_422.jpg",
@@ -110,15 +77,15 @@
     "sequence": "423"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_don-turner_father-grubba_photo_114.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_don-turner_father-grubba_photo_114.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_don-turner_father-grubba_photo_114.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
+    "fileName": "marshfield-super-speedway_2013_don-turner_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_don-turner_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_don-turner_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
     "driverSlug": "don-turner",
-    "photographerSlug": "father-grubba",
-    "creditType": "photo",
-    "sequence": "114"
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
   },
   {
     "fileName": "unknown-track_unknown-year_don-turner_john-vass_photo_001.jpg",
@@ -129,7 +96,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-turner_unknown-photographer_photo_001.jpg",
@@ -140,7 +107,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-turner_unknown-photographer_photo_002.jpg",
@@ -151,7 +118,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_don-turner_unknown-photographer_photo_004.jpg",
@@ -162,7 +129,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_don-turner_bob-bergeron_photo_1113.jpg",

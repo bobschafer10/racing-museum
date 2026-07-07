@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "freeport-raceway-park_unknown-year_ed-hume_ron-thruman_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_ed-hume_ron-thruman_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_ed-hume_ron-thruman_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "ed-hume",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "unknown-track_unknown-year_ed-hume_madison-ron-thruman_post_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-hume_madison-ron-thruman_post_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_ed-hume_madison-ron-thruman_post_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "ed-hume",
     "photographerSlug": "madison-ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-hume_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,18 @@
     "driverSlug": "ed-hume",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-hume_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-hume_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-hume_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-hume",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ed-hume_kurt-luoma_photo_001.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "ed-hume",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ed-hume_kurt-luoma_photo_111.jpg",
@@ -63,6 +85,6 @@
     "driverSlug": "ed-hume",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

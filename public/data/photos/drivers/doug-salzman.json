@@ -8,7 +8,7 @@
     "driverSlug": "doug-salzman",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-salzman_tom-loos_photo_001.jpg",
@@ -19,6 +19,17 @@
     "driverSlug": "doug-salzman",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_doug-salzman_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_doug-salzman_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_doug-salzman_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "doug-salzman",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

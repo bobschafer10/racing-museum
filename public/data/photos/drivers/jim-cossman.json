@@ -8,7 +8,62 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1965_jim-cossman_michael-halbherr_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1965/hales-corners-speedway_1965_jim-cossman_michael-halbherr_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1965_jim-cossman_michael-halbherr_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1965",
+    "driverSlug": "jim-cossman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "455"
+  },
+  {
+    "fileName": "hales-corners-speedway_1973_jim-cossman_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1973/hales-corners-speedway_1973_jim-cossman_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1973_jim-cossman_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1973",
+    "driverSlug": "jim-cossman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_jim-cossman_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_jim-cossman_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_jim-cossman_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "jim-cossman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "hales-corners-speedway_1976_jim-cossman_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1976/hales-corners-speedway_1976_jim-cossman_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1976_jim-cossman_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1976",
+    "driverSlug": "jim-cossman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "hales-corners-speedway_1977_jim-cossman_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1977/hales-corners-speedway_1977_jim-cossman_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1977_jim-cossman_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1977",
+    "driverSlug": "jim-cossman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_jim-cossman_unknown-photographer_photo_001.jpg",
@@ -19,7 +74,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_jim-cossman_unknown-photographer_photo_002.jpg",
@@ -30,18 +85,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-cossman_mall-show-tom-furlan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-cossman_mall-show-tom-furlan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-cossman_mall-show-tom-furlan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-cossman",
-    "photographerSlug": "mall-show-tom-furlan",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_geoff-mckarns_post_001.jpg",
@@ -52,7 +96,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_001.jpg",
@@ -63,7 +107,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_002.jpg",
@@ -74,7 +118,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_003.jpg",
@@ -85,7 +129,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_004.jpg",
@@ -96,7 +140,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_005.jpg",
@@ -107,7 +151,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_006.jpg",
@@ -118,7 +162,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_randy-boehles_post_001.jpg",
@@ -129,7 +173,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "randy-boehles",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_tom-furlan_post_001.jpg",
@@ -140,6 +184,6 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

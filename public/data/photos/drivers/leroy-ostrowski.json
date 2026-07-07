@@ -8,7 +8,7 @@
     "driverSlug": "leroy-ostrowski",
     "photographerSlug": "brandon-ostrowski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1987_leroy-ostrowski_2-scott-krueger_photo_001.jpg",
@@ -19,6 +19,28 @@
     "driverSlug": "leroy-ostrowski",
     "photographerSlug": "2-scott-krueger",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2020/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_444.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2020",
+    "driverSlug": "leroy-ostrowski",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_454.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2020/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_454.jpg",
+    "publicPath": "/photos/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_454.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2020",
+    "driverSlug": "leroy-ostrowski",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "454"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "tracy-prissel",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tracy-prissel_bessie-kmiecik_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tracy-prissel",
     "photographerSlug": "bessie-kmiecik",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tracy-prissel_unknown-photographer_photo_002.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "tracy-prissel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

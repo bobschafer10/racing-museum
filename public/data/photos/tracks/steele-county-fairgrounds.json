@@ -8,7 +8,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "troy-powers",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "bob-schryock",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "steele-county-fairgrounds_1984_dick-johanneck_lee-johnson_photo_115.jpg",
@@ -44,6 +55,17 @@
     "sequence": "115"
   },
   {
+    "fileName": "steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "ron-schreiner",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
     "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
     "publicPath": "/photos/steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
@@ -55,6 +77,17 @@
     "sequence": "115"
   },
   {
+    "fileName": "steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "tom-steuding",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "steele-county-fairgrounds_1987_rick-popovich_robert-whalen_photo_001.jpg",
     "storagePath": "photos/master/steele-county-fairgrounds/1987/steele-county-fairgrounds_1987_rick-popovich_robert-whalen_photo_001.jpg",
     "publicPath": "/photos/steele-county-fairgrounds_1987_rick-popovich_robert-whalen_photo_001.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "rick-popovich",
     "photographerSlug": "robert-whalen",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_2003_rick-egersdorf_missy-lushinsky_photo_001.jpg",
@@ -74,7 +107,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_unknown-year_brad-waits_missy-lushinsky_photo_001.jpg",
@@ -85,7 +118,7 @@
     "driverSlug": "brad-waits",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_unknown-year_duane-mahder_missy-lushinsky_photo_001.jpg",
@@ -96,7 +129,29 @@
     "driverSlug": "duane-mahder",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_john-kaanta_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_john-kaanta_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_john-kaanta_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "john-kaanta",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_leon-plank_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_leon-plank_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_leon-plank_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "leon-plank",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "steele-county-fairgrounds_unknown-year_les-duellman_mcclain_photo_001.jpg",
@@ -107,7 +162,18 @@
     "driverSlug": "les-duellman",
     "photographerSlug": "mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_phil-prusak_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_phil-prusak_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_phil-prusak_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "phil-prusak",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "steele-county-fairgrounds_unknown-year_steve-fegers_mcclain_photo_001.jpg",
@@ -118,7 +184,7 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_unknown-year_steve-fegers_missy-lushinsky_photo_001.jpg",
@@ -129,7 +195,18 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_steve-lurvey_unknown-photographer_photo_2885.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_steve-lurvey_unknown-photographer_photo_2885.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_steve-lurvey_unknown-photographer_photo_2885.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "steve-lurvey",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2885"
   },
   {
     "fileName": "steele-county-fairgrounds_unknown-year_tom-nesbitt_mcclain_photo_001.jpg",
@@ -140,17 +217,39 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
-    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
-    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
+    "fileName": "steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_unknown-photographer_photo_222.jpg",
     "trackSlug": "steele-county-fairgrounds",
     "year": "unknown-year",
     "driverSlug": "tom-steuding-lee-johnson",
-    "photographerSlug": "photo",
-    "creditType": "222",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_whitey-harris_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_whitey-harris_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_whitey-harris_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "whitey-harris",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_willy-kraft_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_willy-kraft_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_willy-kraft_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "willy-kraft",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   }
 ]

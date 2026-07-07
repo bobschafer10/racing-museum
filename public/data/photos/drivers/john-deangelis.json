@@ -8,7 +8,7 @@
     "driverSlug": "john-deangelis",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_john-deangelis_bob-schneider_photo_001.jpg",
@@ -19,6 +19,17 @@
     "driverSlug": "john-deangelis",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-deangelis_bob-schneider_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-deangelis_bob-schneider_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-deangelis_bob-schneider_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-deangelis",
+    "photographerSlug": "bob-schneider",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

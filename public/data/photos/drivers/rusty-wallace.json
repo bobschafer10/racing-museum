@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "rusty-wallace",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "i-70-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_334.jpg",
     "storagePath": "photos/master/i-70-speedway/unknown-year/i-70-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_334.jpg",
     "publicPath": "/photos/i-70-speedway_unknown-year_rusty-wallace_unknown-photographer_photo_334.jpg",
@@ -30,7 +19,18 @@
     "driverSlug": "rusty-wallace",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1984/milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "publicPath": "/photos/milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1984",
+    "driverSlug": "rusty-wallace",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "777"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_rusty-wallace_bob-schafer_photo_119.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "rusty-wallace",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rusty-wallace_unknown-photographer_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "rusty-wallace",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rusty-wallace_unknown-photographer_photo_002.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "rusty-wallace",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_rusty-wallace_weber-brothers_photo_001.jpg",
@@ -140,6 +140,6 @@
     "driverSlug": "rusty-wallace",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

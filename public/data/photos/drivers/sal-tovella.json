@@ -8,7 +8,7 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "wayne-bryant",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_sal-tovella_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_sal-tovella_pete-fileca_post_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_sal-tovella_weber-brothers_photo_001.jpg",
@@ -52,6 +52,6 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

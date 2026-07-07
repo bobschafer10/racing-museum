@@ -8,7 +8,18 @@
     "driverSlug": "brian-back",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_543.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_543.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_543.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "543"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "brian-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "brian-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_brian-back_kurt-luoma_photo_222.jpg",
@@ -63,7 +74,40 @@
     "driverSlug": "brian-back",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
@@ -74,7 +118,40 @@
     "driverSlug": "brian-back",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
@@ -85,7 +162,40 @@
     "driverSlug": "brian-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
@@ -96,6 +206,39 @@
     "driverSlug": "brian-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   }
 ]

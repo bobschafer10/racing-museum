@@ -1,14 +1,14 @@
 [
   {
-    "fileName": "unknown-track_2015_dave-schoenberger_dave-schoenberger_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2015/unknown-track_2015_dave-schoenberger_dave-schoenberger_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2015_dave-schoenberger_dave-schoenberger_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2015",
+    "fileName": "dodge-county-fairgrounds_unknown-year_dave-schoenberger_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_dave-schoenberger_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_dave-schoenberger_unknown-photographer_photo_333.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
     "driverSlug": "dave-schoenberger",
-    "photographerSlug": "dave-schoenberger",
-    "creditType": "post",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-schoenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_002.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "dave-schoenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_003.jpg",
@@ -41,7 +41,18 @@
     "driverSlug": "dave-schoenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-schoenberger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_004.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "dave-schoenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-schoenberger_unknown-photographer_photo_005.jpg",
@@ -63,6 +74,6 @@
     "driverSlug": "dave-schoenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   }
 ]

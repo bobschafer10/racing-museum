@@ -8,7 +8,29 @@
     "driverSlug": "paul-block",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_paul-block_charlie-spry_photo_333.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_paul-block_charlie-spry_photo_333.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_paul-block_charlie-spry_photo_333.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-block",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_paul-block_charlie-spry_photo_777.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_paul-block_charlie-spry_photo_777.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_paul-block_charlie-spry_photo_777.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "paul-block",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "777"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_paul-block_unknown-photographer_photo_14581.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "paul-block",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-block_tom-loos_photo_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "paul-block",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-block_unknown-photographer_photo_001.jpg",
@@ -52,6 +74,6 @@
     "driverSlug": "paul-block",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

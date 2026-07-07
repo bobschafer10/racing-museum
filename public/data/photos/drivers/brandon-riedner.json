@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "beaver-dam-raceway_unknown-year_brandon-riedner_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/unknown-year/beaver-dam-raceway_unknown-year_brandon-riedner_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_unknown-year_brandon-riedner_unknown-photographer_photo_333.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "unknown-year",
+    "driverSlug": "brandon-riedner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_brandon-riedner_charlie-spry_photo_443.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_brandon-riedner_charlie-spry_photo_443.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_brandon-riedner_charlie-spry_photo_443.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brandon-riedner",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "443"
+  },
+  {
     "fileName": "unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
@@ -8,6 +30,39 @@
     "driverSlug": "brandon-riedner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brandon-riedner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brandon-riedner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brandon-riedner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brandon-riedner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

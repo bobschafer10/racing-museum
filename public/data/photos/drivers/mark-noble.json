@@ -8,7 +8,7 @@
     "driverSlug": "mark-noble",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-noble_missy-lushinsky_photo_002.jpg",
@@ -19,18 +19,7 @@
     "driverSlug": "mark-noble",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_mark-noble_missy-lushinsky_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mark-noble_missy-lushinsky_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_mark-noble_missy-lushinsky_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "mark-noble",
-    "photographerSlug": "missy-lushinsky",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-noble_unknown-photographer_photo_001.jpg",
@@ -41,6 +30,6 @@
     "driverSlug": "mark-noble",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

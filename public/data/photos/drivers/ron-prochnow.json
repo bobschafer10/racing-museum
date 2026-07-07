@@ -8,7 +8,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eau-claire-speedway_unknown-year_ron-prochnow_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "red-cedar-speedway_unknown-year_ron-prochnow_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/red-cedar-speedway/unknown-year/red-cedar-speedway_unknown-year_ron-prochnow_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/red-cedar-speedway_unknown-year_ron-prochnow_unknown-photographer_photo_333.jpg",
+    "trackSlug": "red-cedar-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ron-prochnow",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "rice-lake-speedway_unknown-year_ron-prochnow_chris-loberg_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "chris-loberg",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rice-lake-speedway_unknown-year_ron-prochnow_unknown-photographer_photo_001.png",
@@ -41,18 +52,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1981_ron-prochnow_old-town-eau-claire_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_ron-prochnow_old-town-eau-claire_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1981_ron-prochnow_old-town-eau-claire_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1981",
-    "driverSlug": "ron-prochnow",
-    "photographerSlug": "old-town-eau-claire",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-prochnow_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-prochnow_unknown-photographer_photo_002.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-prochnow_unknown-photographer_photo_003.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-prochnow_unknown-photographer_photo_009.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-prochnow_unknown-photographer_photo_011.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_ron-prochnow_john-vass_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_ron-prochnow_kurt-luoma_photo_400.jpg",
@@ -151,6 +151,6 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

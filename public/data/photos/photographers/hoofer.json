@@ -8,7 +8,18 @@
     "driverSlug": "andy-karl",
     "photographerSlug": "hoofer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_2026_andy-karl_hoofer_photo_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/2026/shawano-speedway_2026_andy-karl_hoofer_photo_111.jpg",
+    "publicPath": "/photos/shawano-speedway_2026_andy-karl_hoofer_photo_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2026",
+    "driverSlug": "andy-karl",
+    "photographerSlug": "hoofer",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_2026_chris-oertel_hoofer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "chris-oertel",
     "photographerSlug": "hoofer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2026_troy-springborn_hoofer_photo_001.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "hoofer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "hales-corners-speedway_1971_ron-howden_pat-heaney_post_777.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1971/hales-corners-speedway_1971_ron-howden_pat-heaney_post_777.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1971_ron-howden_pat-heaney_post_777.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1971",
+    "driverSlug": "ron-howden",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "777"
+  },
+  {
+    "fileName": "hales-corners-speedway_1972_ron-howden_michael-halbherr_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1972/hales-corners-speedway_1972_ron-howden_michael-halbherr_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1972_ron-howden_michael-halbherr_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1972",
+    "driverSlug": "ron-howden",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "455"
+  },
+  {
     "fileName": "hales-corners-speedway_unknown-year_ron-howden_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_ron-howden_pat-heaney_post_001.jpg",
     "publicPath": "/photos/hales-corners-speedway_unknown-year_ron-howden_pat-heaney_post_001.jpg",
@@ -8,7 +30,7 @@
     "driverSlug": "ron-howden",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_ron-howden_weber-brothers_photo_333.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "ron-howden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

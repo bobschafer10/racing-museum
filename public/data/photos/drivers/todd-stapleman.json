@@ -8,7 +8,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_todd-stapleman_kurt-luoma_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_todd-stapleman_kurt-luoma_photo_111.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_todd-stapleman_tom-loos_photo_005.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "slinger-speedway_1989_todd-stapleman_pat-heaney_post_001.jpg",
@@ -63,18 +63,29 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "slinger-speedway_unknown-year_todd-stapleman_charlie-spry_post_001.jpg",
-    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_todd-stapleman_charlie-spry_post_001.jpg",
-    "publicPath": "/photos/slinger-speedway_unknown-year_todd-stapleman_charlie-spry_post_001.jpg",
+    "fileName": "slinger-speedway_unknown-year_todd-stapleman_charlie-spry_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_todd-stapleman_charlie-spry_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_todd-stapleman_charlie-spry_photo_111.jpg",
     "trackSlug": "slinger-speedway",
     "year": "unknown-year",
     "driverSlug": "todd-stapleman",
     "photographerSlug": "charlie-spry",
-    "creditType": "post",
-    "sequence": "001"
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_todd-stapleman_charlie-spry_photo_777.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_todd-stapleman_charlie-spry_photo_777.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_todd-stapleman_charlie-spry_photo_777.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "todd-stapleman",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "777"
   },
   {
     "fileName": "state-park-speedway_unknown-year_todd-stapleman_ken-koppa_post_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_todd-stapleman_unknown-photographer_photo_876.jpg",
@@ -107,7 +118,18 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-stapleman_charlie-spry_photo_565.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-stapleman_charlie-spry_photo_565.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-stapleman_charlie-spry_photo_565.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-stapleman",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "565"
   },
   {
     "fileName": "unknown-track_unknown-year_todd-stapleman_kurt-luoma_photo_001.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_todd-stapleman_kurt-luoma_photo_002.jpg",
@@ -129,7 +151,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_todd-stapleman_unknown-photographer_photo_001.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_todd-stapleman_unknown-photographer_photo_002.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_todd-stapleman_unknown-photographer_photo_004.jpg",
@@ -162,7 +184,18 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_todd-stapleman_unknown-photographer_photo_1740795393871.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-stapleman_unknown-photographer_photo_1740795393871.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_todd-stapleman_unknown-photographer_photo_1740795393871.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "todd-stapleman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "446"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_todd-stapleman_bob-schafer_photo_13979.jpg",

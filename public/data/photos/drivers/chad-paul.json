@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "seymour-speedway_1988_chad-paul_dave-panske_photo_333.jpg",
+    "storagePath": "photos/master/seymour-speedway/1988/seymour-speedway_1988_chad-paul_dave-panske_photo_333.jpg",
+    "publicPath": "/photos/seymour-speedway_1988_chad-paul_dave-panske_photo_333.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1988",
+    "driverSlug": "chad-paul",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "shawano-speedway_1985_chad-paul_bob-schafer_photo_041.jpg",
     "storagePath": "photos/master/shawano-speedway/1985/shawano-speedway_1985_chad-paul_bob-schafer_photo_041.jpg",
     "publicPath": "/photos/shawano-speedway_1985_chad-paul_bob-schafer_photo_041.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_joe-verdegan_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_pete-vercauteren_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_002.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_003.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_004.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_005.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_006.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_007.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_008.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_009.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_010.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_011.jpg",
@@ -151,6 +162,6 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   }
 ]

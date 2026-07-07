@@ -8,7 +8,7 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_jeff-falbe_bob-schafer_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jeff-falbe_bob-schafer_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jeff-falbe_bob-schafer_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jeff-falbe_bob-schafer_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-falbe",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_jeff-falbe_weber-brothers_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_jeff-falbe_weber-brothers_photo_002.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_1981_jeff-falbe_weber-brothers_photo_003.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jeff-falbe_father-grubba_photo_114.jpg",
@@ -66,28 +77,6 @@
     "sequence": "114"
   },
   {
-    "fileName": "unknown-track_unknown-year_jeff-falbe_brenda-schumacher_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-falbe_brenda-schumacher_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-falbe_brenda-schumacher_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-falbe",
-    "photographerSlug": "brenda-schumacher",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-falbe_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-falbe_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-falbe_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-falbe",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
     "fileName": "unknown-track_unknown-year_jeff-falbe_unknown-photographer_photo_003.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-falbe_unknown-photographer_photo_003.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_jeff-falbe_unknown-photographer_photo_003.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jeff-falbe_bob-schafer_photo_364.jpg",
@@ -129,6 +118,6 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

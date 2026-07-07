@@ -8,7 +8,29 @@
     "driverSlug": "bob-may",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-may_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-may_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-may_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-may",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-may_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-may_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-may_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-may",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-may_geoff-mckarns_post_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "bob-may",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-may_tom-furlan_post_001.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "bob-may",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "john-janssen",
     "photographerSlug": "charlie-doerr",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_john-janssen_unknown-photographer_photo_002.jpg",
@@ -19,6 +19,6 @@
     "driverSlug": "john-janssen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

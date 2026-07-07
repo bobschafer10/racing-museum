@@ -41,7 +41,7 @@
     "driverSlug": "tony-raines",
     "photographerSlug": "kim-kemperman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "jefferson-speedway_1989_dick-peardot_jeff-gilhart_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "dick-peardot",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_dan-johnson_pat-heaney_post_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_dave-melahn_pat-heaney_post_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "dave-melahn",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_jay-crichton_pat-heaney_post_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "jay-crichton",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_jim-gooch_pat-heaney_post_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "jim-gooch",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_jim-gooch_pat-heaney_post_002.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "jim-gooch",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "lake-geneva-raceway_1989_larry-kahlke_pat-heaney_post_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "larry-kahlke",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_lee-tibbitts_pat-heaney_post_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_randy-larsen_pat-heaney_post_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "randy-larsen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_roger-otto_pat-heaney_post_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "roger-otto",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_wayne-kaddatz_pat-heaney_post_001.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "wayne-kaddatz",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1989_jay-sauter_bob-schafer_photo_13785.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "dick-hed",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_1989_jim-pitzen_dave-drews_photo_001.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "jim-pitzen",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_bart-reinen_pat-heaney_post_001.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "bart-reinen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_bob-senneker_pat-heaney_post_001.jpg",
@@ -239,7 +239,7 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_dennis-barta_bob-schafer_photo_13678.jpg",
@@ -261,7 +261,7 @@
     "driverSlug": "jeannie-kind",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_mack-mcclellan_pat-heaney_post_001.jpg",
@@ -272,7 +272,18 @@
     "driverSlug": "mack-mcclellan",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1989/rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1989",
+    "driverSlug": "ray-genzler",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
@@ -294,7 +305,7 @@
     "driverSlug": "daryl-fiene",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1989_dick-trickle_pat-heaney_post_001.jpg",
@@ -305,7 +316,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1989_jeff-bares_pat-heaney_post_001.jpg",
@@ -316,7 +327,7 @@
     "driverSlug": "jeff-bares",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1989_rich-bickle_al-fortner_photo_001.jpg",
@@ -327,7 +338,7 @@
     "driverSlug": "rich-bickle",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1989_ronnie-ragen_bob-schafer_photo_222.jpg",
@@ -349,7 +360,7 @@
     "driverSlug": "scott-anson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1989_todd-stapleman_pat-heaney_post_001.jpg",
@@ -360,7 +371,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1989_tom-spierowski_bob-schafer_photo_222.jpg",
@@ -379,10 +390,10 @@
     "publicPath": "/photos/slinger-speedway_1989_unknown_pat-heaney_post_001.jpg",
     "trackSlug": "slinger-speedway",
     "year": "1989",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_1989_lee-tibbitts_bob-schafer_photo_222.jpg",
@@ -404,7 +415,7 @@
     "driverSlug": "dan-stillman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_gene-coleman_pat-heaney_post_001.jpg",
@@ -415,7 +426,7 @@
     "driverSlug": "gene-coleman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_gordie-sannes_pat-heaney_post_001.jpg",
@@ -426,7 +437,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_jeannie-kind_pat-heaney_post_001.jpg",
@@ -437,7 +448,7 @@
     "driverSlug": "jeannie-kind",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_jeff-fredrickson_pat-heaney_post_001.jpg",
@@ -448,7 +459,7 @@
     "driverSlug": "jeff-fredrickson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_joe-kryzkowski_pat-heaney_post_001.jpg",
@@ -459,7 +470,7 @@
     "driverSlug": "joe-kryzkowski",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_john-olson_pat-heaney_post_001.jpg",
@@ -470,7 +481,7 @@
     "driverSlug": "john-olson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_ken-cole_pat-heaney_post_001.jpg",
@@ -481,7 +492,7 @@
     "driverSlug": "ken-cole",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_kevin-cywinski_pat-heaney_post_001.jpg",
@@ -492,7 +503,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_kregg-hurlbert_pat-heaney_post_001.jpg",
@@ -503,7 +514,7 @@
     "driverSlug": "kregg-hurlbert",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_mike-boerschinger_bob-schafer_photo_13780.jpg",
@@ -525,7 +536,7 @@
     "driverSlug": "rod-wheeler",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_steve-debakker_pat-heaney_post_001.jpg",
@@ -536,7 +547,7 @@
     "driverSlug": "steve-debakker",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_todd-tetzlaff_pat-heaney_post_001.jpg",
@@ -547,7 +558,7 @@
     "driverSlug": "todd-tetzlaff",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_tracy-schuler_pat-heaney_post_001.jpg",
@@ -558,7 +569,7 @@
     "driverSlug": "tracy-schuler",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_wally-blank_bob-schafer_photo_13679.jpg",
@@ -580,7 +591,7 @@
     "driverSlug": "bruce-stanley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1989_russ-trachte_dave-panske_photo_001.jpg",
@@ -591,6 +602,6 @@
     "driverSlug": "russ-trachte",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

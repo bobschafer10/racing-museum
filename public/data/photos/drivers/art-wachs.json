@@ -8,7 +8,7 @@
     "driverSlug": "art-wachs",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_art-wachs_weber-brothers_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "art-wachs",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_art-wachs_weber-brothers_photo_002.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "art-wachs",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_unknown-year_art-wachs_unknown-photographer_photo_001.jpg",
@@ -41,17 +41,6 @@
     "driverSlug": "art-wachs",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_art-wachs_pat-heaney_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_art-wachs_pat-heaney_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_art-wachs_pat-heaney_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "art-wachs",
-    "photographerSlug": "pat-heaney",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

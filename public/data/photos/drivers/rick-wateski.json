@@ -8,7 +8,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "083"
+    "sequence": "83"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_rick-wateski_bob-schafer_photo_084.jpg",
@@ -19,29 +19,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "084"
-  },
-  {
-    "fileName": "dells-motor-speedway_unknown-year_rick-wateski_father-grubba_photo_115.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_rick-wateski_father-grubba_photo_115.jpg",
-    "publicPath": "/photos/dells-motor-speedway_unknown-year_rick-wateski_father-grubba_photo_115.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "unknown-year",
-    "driverSlug": "rick-wateski",
-    "photographerSlug": "father-grubba",
-    "creditType": "photo",
-    "sequence": "115"
-  },
-  {
-    "fileName": "dells-motor-speedway_unknown-year_rick-wateski_guy-walters_post_001.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_rick-wateski_guy-walters_post_001.jpg",
-    "publicPath": "/photos/dells-motor-speedway_unknown-year_rick-wateski_guy-walters_post_001.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "unknown-year",
-    "driverSlug": "rick-wateski",
-    "photographerSlug": "guy-walters",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "84"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_rick-wateski_jerry-kirschbaum_post_001.jpg",
@@ -52,7 +30,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "jerry-kirschbaum",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_rick-wateski_jerry-kirschbaum-ii_post_001.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "jerry-kirschbaum-ii",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_rick-wateski_unknown-photographer_photo_006.jpg",
@@ -74,7 +52,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "elko-speedway_1982_rick-wateski_mcclain-racing_photo_001.jpg",
@@ -85,7 +63,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rick-wateski_mike-howell_post_001.jpg",
@@ -96,7 +74,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "mike-howell",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1984_rick-wateski_john-lafrenz_post_001.jpg",
@@ -107,7 +85,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "john-lafrenz",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_rick-wateski_unknown-photographer_photo_007.jpg",
@@ -118,7 +96,18 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
+  },
+  {
+    "fileName": "rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "rick-wateski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-wateski_unknown-photographer_photo_001.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-wateski_unknown-photographer_photo_008.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_rick-wateski_john-vass_photo_001.jpg",
@@ -173,7 +162,18 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_rick-wateski_john-vass_photo_112.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_rick-wateski_john-vass_photo_112.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_rick-wateski_john-vass_photo_112.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "rick-wateski",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "112"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rick-wateski_joe-slack_post_001.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rick-wateski_unknown-photographer_photo_001.jpg",
@@ -195,6 +195,6 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_002.jpg",
@@ -19,40 +19,51 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
-    "fileName": "unknown-track_unknown-year_jerry-kemperman_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-kemperman_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-kemperman_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
+    "fileName": "raceway-park-il-il_1977_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/1977/raceway-park-il-il_1977_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_1977_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "1977",
     "driverSlug": "jerry-kemperman",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
   },
   {
-    "fileName": "unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_165.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_165.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_165.jpg",
+    "trackSlug": "raceway-park-il-il",
     "year": "unknown-year",
     "driverSlug": "jerry-kemperman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "165"
   },
   {
-    "fileName": "unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-kemperman_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_555.jpg",
+    "trackSlug": "raceway-park-il-il",
     "year": "unknown-year",
     "driverSlug": "jerry-kemperman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_4444.jpg",
@@ -77,6 +88,17 @@
     "sequence": "4444"
   },
   {
+    "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
     "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
     "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
@@ -85,6 +107,6 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -19,7 +19,7 @@
     "driverSlug": "russ-wagner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "141-speedway_unknown-year_russ-wagner_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "russ-wagner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_russ-wagner_unknown-photographer_photo_002.jpg",
@@ -41,18 +41,7 @@
     "driverSlug": "russ-wagner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_russ-wagner_bob-schafer_photo_14207.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_russ-wagner_bob-schafer_photo_14207.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_russ-wagner_bob-schafer_photo_14207.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "russ-wagner",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "14207"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_russ-wagner_al-fortner_photo_333.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "russ-wagner",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_russ-wagner_unknown-photographer_photo_001.jpg",
@@ -107,6 +96,6 @@
     "driverSlug": "russ-wagner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

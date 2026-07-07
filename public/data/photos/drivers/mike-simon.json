@@ -8,7 +8,7 @@
     "driverSlug": "mike-simon",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1987_mike-simon_pat-heaney_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "mike-simon",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_mike-simon_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "mike-simon",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

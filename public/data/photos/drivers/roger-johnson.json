@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "141-speedway_unknown-year_roger-johnson-unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_roger-johnson-unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_roger-johnson-unknown-photographer_photo_333.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "leos-speedway_unknown-year_roger-johnson_bob-bergeron_photo_001.jpg",
     "storagePath": "photos/master/leos-speedway/unknown-year/leos-speedway_unknown-year_roger-johnson_bob-bergeron_photo_001.jpg",
     "publicPath": "/photos/leos-speedway_unknown-year_roger-johnson_bob-bergeron_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "roger-johnson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_roger-johnson_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "roger-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-johnson_joe-verdegan_post_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "roger-johnson",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-johnson_pete-vercauteren_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "roger-johnson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-johnson_unknown-photographer_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "roger-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-johnson_unknown-photographer_photo_003.jpg",
@@ -63,6 +74,6 @@
     "driverSlug": "roger-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

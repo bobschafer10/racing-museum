@@ -8,7 +8,7 @@
     "driverSlug": "john-bell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "central-state-speedway_unknown-year_john-bell_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "john-bell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_1996_john-bell_tom-loos_photo_003.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "john-bell",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_john-bell_kurt-luoma_photo_1101.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "john-bell",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_john-bell_tom-loos_photo_002.jpg",
@@ -63,28 +63,6 @@
     "driverSlug": "john-bell",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-bell_paul-socwell_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-bell_paul-socwell_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-bell_paul-socwell_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-bell",
-    "photographerSlug": "paul-socwell",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-bell_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-bell_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-bell_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-bell",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   }
 ]

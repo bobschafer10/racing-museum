@@ -8,7 +8,7 @@
     "driverSlug": "beaver-dam-raceway",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1980_don-collins_weber-brothers_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1980_gordie-seegert_weber-brothers_photo_111.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "jim-juneau",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1980_joe-torre_weber-brothers_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "joe-torre",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1980_ted-dolhun_weber-brothers_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1980_bob-senneker_john-quinn_photo_001.jpg",
@@ -74,7 +74,29 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "john-quinn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_1980_tom-jones_greg-bauer_post_444.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1980/grundy-county-speedway_1980_tom-jones_greg-bauer_post_444.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1980_tom-jones_greg-bauer_post_444.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1980",
+    "driverSlug": "tom-jones",
+    "photographerSlug": "greg-bauer",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1980_bruce-wesley_rpmi_photo_888.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1980/hales-corners-speedway_1980_bruce-wesley_rpmi_photo_888.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1980_bruce-wesley_rpmi_photo_888.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1980",
+    "driverSlug": "bruce-wesley",
+    "photographerSlug": "rpmi",
+    "creditType": "photo",
+    "sequence": "888"
   },
   {
     "fileName": "hales-corners-speedway_1980_larry-eckes_larry-eckes_post_001.jpg",
@@ -85,7 +107,7 @@
     "driverSlug": "larry-eckes",
     "photographerSlug": "larry-eckes",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1980_steve-langhoff_weber-brothers_photo_001.jpg",
@@ -96,7 +118,7 @@
     "driverSlug": "steve-langhoff",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "jefferson-speedway_1980_don-bishofberger_don-wendlandt_photo_115.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "paula-knutson",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1980_ralph-bakewell_unknown-photographer_photo_001.jpg",
@@ -129,7 +151,7 @@
     "driverSlug": "ralph-bakewell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1980_dick-trickle_stan-kalwasinski_photo_001.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_bill-venturini_weber-brothers_photo_001.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_gene-richards_weber-brothers_photo_001.jpg",
@@ -162,7 +184,7 @@
     "driverSlug": "gene-richards",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_jack-aschnebrenner_weber-brothers_photo_001.jpg",
@@ -173,7 +195,7 @@
     "driverSlug": "jack-aschnebrenner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_mike-wallace_weber-brothers_photo_001.jpg",
@@ -184,7 +206,7 @@
     "driverSlug": "mike-wallace",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "riverview-raceway_1980_bob-reed_jd-dedina_post_001.jpg",
@@ -195,7 +217,7 @@
     "driverSlug": "bob-reed",
     "photographerSlug": "jd-dedina",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_dale-weyer_ken-koppa_post_001.jpg",
@@ -206,7 +228,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_james-bond_weber-brothers_photo_001.jpg",
@@ -217,7 +239,7 @@
     "driverSlug": "james-bond",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_ray-young_weber-brothers_photo_001.jpg",
@@ -228,7 +250,29 @@
     "driverSlug": "ray-young",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "rich-bickle-jr",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
+  },
+  {
+    "fileName": "rockford-speedway_1980_rich-bickle-sr_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_rich-bickle-sr_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_rich-bickle-sr_weber-brothers_photo_999.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "rich-bickle-sr",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
   },
   {
     "fileName": "rockford-speedway_1980_tom-reffner_weber-brothers_photo_001.jpg",
@@ -239,7 +283,51 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1980_unknown-driver_weber-brothers_photo_777.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_unknown-driver_weber-brothers_photo_777.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_unknown-driver_weber-brothers_photo_777.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "777"
+  },
+  {
+    "fileName": "rockford-speedway_1980_wayne-dion_weber-brothers_photo_878.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_wayne-dion_weber-brothers_photo_878.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_wayne-dion_weber-brothers_photo_878.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "wayne-dion",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "878"
+  },
+  {
+    "fileName": "rockford-speedway_1980_wayne-dion_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_wayne-dion_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_wayne-dion_weber-brothers_photo_888.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "wayne-dion",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "rockford-speedway_1980_wayne-dion_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_wayne-dion_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_wayne-dion_weber-brothers_photo_999.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "wayne-dion",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
   },
   {
     "fileName": "sante-fe-speedway_1980_don-collins_todd-healy_photo_001.jpg",
@@ -250,7 +338,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "todd-healy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "sante-fe-speedway_1980_mike-melius_stan-kalwasinski_photo_001.jpg",
@@ -261,7 +349,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1980_lowell-bennett_randy-van-hoof_photo_001.jpg",
@@ -272,7 +360,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "randy-van-hoof",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1980_larry-detjens_pat-heaney_post_001.jpg",
@@ -283,7 +371,18 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "storagePath": "photos/master/state-fair-park/1980/state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "publicPath": "/photos/state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1980",
+    "driverSlug": "bruce-wesley",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "state-park-speedway_1980_steve-burgess_john-vass_photo_001.jpg",
@@ -294,73 +393,7 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_brent-laursen_troy-powers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_brent-laursen_troy-powers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_brent-laursen_troy-powers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "brent-laursen",
-    "photographerSlug": "troy-powers",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_dick-christman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_dick-christman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_dick-christman_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "dick-christman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_mark-kjelstad_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_mark-kjelstad_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_mark-kjelstad_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "mark-kjelstad",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "rex-rossier",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_roger-paul_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_roger-paul_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_roger-paul_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "roger-paul",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_unknown-driver_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_unknown-driver_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_unknown-driver_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1980_gerry-olson_scott-krueger_post_001.jpg",
@@ -371,7 +404,7 @@
     "driverSlug": "gerry-olson",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_bob-senneker_keith-vercauteren_post_001.jpg",
@@ -382,7 +415,7 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_butch-mierendorf_scott-danielson_post_001.jpg",
@@ -393,7 +426,7 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "scott-danielson",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_frankie-heimerl_keith-vercauteren_post_001.jpg",
@@ -404,7 +437,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_larry-schuler_keith-vercauteren_post_001.jpg",
@@ -415,7 +448,7 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_unknown-driver_weber-brothers_photo_001.jpg",
@@ -426,6 +459,6 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

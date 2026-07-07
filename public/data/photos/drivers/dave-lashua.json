@@ -11,6 +11,17 @@
     "sequence": "113"
   },
   {
+    "fileName": "marshfield-super-speedway_unknown-year_dave-lashua_kurt-luoma_photo_113.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_dave-lashua_kurt-luoma_photo_113.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_dave-lashua_kurt-luoma_photo_113.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-lashua",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "113"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_001.jpg",
@@ -19,6 +30,50 @@
     "driverSlug": "dave-lashua",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_747.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_747.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_747.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-lashua",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "747"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_777.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_777.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_dave-lashua_charlie-spry_photo_777.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-lashua",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "777"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_dave-lashua_qc-willy_photo_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_dave-lashua_qc-willy_photo_111.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_dave-lashua_qc-willy_photo_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-lashua",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-lashua_tom-loos_photo_1740795356954.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-lashua_tom-loos_photo_1740795356954.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-lashua_tom-loos_photo_1740795356954.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-lashua",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "451"
   }
 ]

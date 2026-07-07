@@ -8,7 +8,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_tom-steuding_weber-brothers_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hibbing-raceway_1978_tom-steuding_troy-powers_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "troy-powers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tom-steuding_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-faigrounds_unknown-year_tom-steuding_mcclain_photo_001.jpg",
@@ -52,29 +52,18 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
-    "storagePath": "photos/master/steele-county-fairgrounds-mn/1984/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
     "publicPath": "/photos/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
-    "trackSlug": "steele-county-fairgrounds-mn",
+    "trackSlug": "steele-county-fairgrounds",
     "year": "1984",
     "driverSlug": "tom-steuding",
-    "photographerSlug": "lee-johnson-photo",
-    "creditType": "333",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1986_tom-steuding_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1986/unknown-track_1986_tom-steuding_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1986_tom-steuding_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1986",
-    "driverSlug": "tom-steuding",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_ii-tony-chapa_photo_001.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "ii-tony-chapa",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_kurt-luoma_photo_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_pete-vercauteran_photo_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "pete-vercauteran",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_pete-vercauteren_photo_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_roy-hoff-sr_photo_001.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "roy-hoff-sr",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_ryan-aho_post_021.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_ryan-aho_post_028.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "028"
+    "sequence": "28"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_ryan-aho_post_034.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "034"
+    "sequence": "34"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_tony-chapa_photo_001.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "tony-chapa",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_001.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_002.jpg",
@@ -195,7 +184,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_003.jpg",
@@ -206,7 +195,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_004.jpg",
@@ -217,7 +206,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_006.jpg",
@@ -228,7 +217,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_007.jpg",
@@ -239,7 +228,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_008.jpg",
@@ -250,7 +239,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_009.jpg",
@@ -261,7 +250,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_010.jpg",
@@ -272,7 +261,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_011.jpg",
@@ -283,7 +272,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_012.jpg",
@@ -294,7 +283,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_unknown-photographer_photo_019.jpg",
@@ -305,7 +294,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "019"
+    "sequence": "19"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_tom-steuding_john-vass_photo_001.jpg",
@@ -316,7 +305,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_tom-steuding_john-vass_photo_002.jpg",
@@ -327,7 +316,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "yellow-river-speedway_1990_tom-steuding_bob-schafer_photo_391.jpg",
@@ -349,7 +338,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_tom-steuding_kurt-luoma_photo_001.jpg",
@@ -360,7 +349,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_tom-steuding_kurt-luoma_photo_800.jpg",

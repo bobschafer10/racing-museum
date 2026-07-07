@@ -8,7 +8,7 @@
     "driverSlug": "josh-walter",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2018_troy-springborn_bob-greuel_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2018_derek-gress_bob-greuel_photo_001.jpg",
@@ -30,7 +30,18 @@
     "driverSlug": "derek-gress",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "jefferson-speedway_2018_jake-zellmer_tj-harron_photo_111.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2018/jefferson-speedway_2018_jake-zellmer_tj-harron_photo_111.jpg",
+    "publicPath": "/photos/jefferson-speedway_2018_jake-zellmer_tj-harron_photo_111.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2018",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "tj-harron",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "jefferson-speedway_2018_joe-shelby_bob-greuel_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "joe-shelby",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2018_shawn-lockington_shawn-lockington_post_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "shawn-lockington",
     "photographerSlug": "shawn-lockington",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "langlade-county-speedway_2018_unknown-driver_unknown-photographer_photo_008.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "norway-speedway_2018_gregg-haese_joe-verdegan_photo_333.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "ron-bomber",
     "photographerSlug": "chad-marquardt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2018_matt-urban_matt-urban_post_333.jpg",
@@ -99,25 +110,25 @@
     "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2018_aaron-reivitis_eamon-bauman-photography_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2018/unknown-track_2018_aaron-reivitis_eamon-bauman-photography_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2018_aaron-reivitis_eamon-bauman-photography_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "state-park-speedway_2018_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/2018/state-park-speedway_2018_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "publicPath": "/photos/state-park-speedway_2018_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "trackSlug": "state-park-speedway",
     "year": "2018",
-    "driverSlug": "aaron-reivitis",
-    "photographerSlug": "eamon-bauman-photography",
-    "creditType": "photo",
-    "sequence": "001"
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
   },
   {
-    "fileName": "unknown-track_2018_abby-garin_speedshop-north_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2018/unknown-track_2018_abby-garin_speedshop-north_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2018_abby-garin_speedshop-north_post_001.jpg",
+    "fileName": "unknown-track_2018_dan-trautsch_dan-trautsch_post_433.jpg",
+    "storagePath": "photos/master/unknown-track/2018/unknown-track_2018_dan-trautsch_dan-trautsch_post_433.jpg",
+    "publicPath": "/photos/unknown-track_2018_dan-trautsch_dan-trautsch_post_433.jpg",
     "trackSlug": "unknown-track",
     "year": "2018",
-    "driverSlug": "abby-garin",
-    "photographerSlug": "speedshop-north",
+    "driverSlug": "dan-trautsch",
+    "photographerSlug": "dan-trautsch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "433"
   }
 ]

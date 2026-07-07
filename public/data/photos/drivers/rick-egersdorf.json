@@ -8,7 +8,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_missy-lushinsky_photo_005.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_unknown-photographer_photo_003.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_unknown-photographer_photo_004.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rick-egersdorf_unknown-photographer_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_1984_rick-egersdorf_lee-johnson_photo_115.jpg",
@@ -74,40 +74,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1984_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1984_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1984",
-    "driverSlug": "rick-egersdorf",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1987_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1987/unknown-track_1987_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1987_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1987",
-    "driverSlug": "rick-egersdorf",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_rick-egersdorf_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_rick-egersdorf_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_rick-egersdorf_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "rick-egersdorf",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_missy-lushinsky_photo_001.jpg",
@@ -118,7 +85,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_missy-lushinsky_photo_002.jpg",
@@ -129,7 +96,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_missy-lushinsky_photo_003.jpg",
@@ -140,7 +107,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_missy-lushinsky_photo_004.jpg",
@@ -151,7 +118,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_owatonna-mcclain_photo_001.jpg",
@@ -162,7 +129,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_ryan-aho_post_003.jpg",
@@ -173,7 +140,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_ryan-aho_post_076.jpg",
@@ -184,7 +151,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "076"
+    "sequence": "76"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_unknown-photographer_photo_002.jpg",
@@ -195,7 +162,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_unknown-photographer_photo_003.jpg",
@@ -206,7 +173,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_unknown-photographer_photo_004.jpg",
@@ -217,7 +184,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_unknown-photographer_photo_005.jpg",
@@ -228,7 +195,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_unknown-photographer_photo_006.jpg",
@@ -239,7 +206,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_unknown-photographer_photo_10680.jpg",
@@ -261,7 +228,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_rick-egersdorf_kurt-luoma_photo_400.jpg",
@@ -294,6 +261,6 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

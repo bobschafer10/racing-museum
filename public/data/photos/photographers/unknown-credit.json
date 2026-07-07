@@ -8,7 +8,7 @@
     "driverSlug": "roger-lee",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "abc-raceway_unknown-year_lee-englund_unknown-credit_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "lee-englund",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1980_jim-juneau_unknown-credit_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jim-juneau",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1998_dale-weyer_unknown-credit_post_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1966_bill-moore_unknown-credit_post_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "bill-moore",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_dave-watson_unknown-credit_post_001.jpg",
@@ -63,18 +63,18 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "capital-super-speedway_unknown-year_wayne-swartwout_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_wayne-swartwout_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_wayne-swartwout_unknown-credit_photo_001.jpg",
+    "fileName": "capital-super-speedway_unknown-year_dave-watson_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-watson_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-watson_unknown-credit_post_001.jpg",
     "trackSlug": "capital-super-speedway",
     "year": "unknown-year",
-    "driverSlug": "wayne-swartwout",
+    "driverSlug": "dave-watson",
     "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_steve-egersdorf_unknown-credit_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "jared-siefert",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1981_tom-pirkel_unknown-credit_photo_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "tom-pirkel",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2010_dale-weyer_unknown-credit_post_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_bob-sherman_unknown-credit_post_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "bob-sherman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "crandon-speedway_unknown-year_putch-bentley_unknown-credit_post_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "putch-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1997_daryl-traber_unknown-credit_photo_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "daryl-traber",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1997_jeff-meulemans_unknown-credit_photo_001.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "jeff-meulemans",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1997_ken-smart_unknown-credit_photo_001.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "ken-smart",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1997_jared-pinkalla_unknown-credit_photo_001.jpg",
@@ -184,7 +184,18 @@
     "driverSlug": "jared-pinkalla",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1997_jared-pinkalla_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1997/hales-corners-speedway_1997_jared-pinkalla_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1997_jared-pinkalla_unknown-credit_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1997",
+    "driverSlug": "jared-pinkalla",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1997_john-schultz-iii_unknown-credit_photo_001.jpg",
@@ -195,7 +206,18 @@
     "driverSlug": "john-schultz-iii",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1997_john-schultz-iii_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1997/hales-corners-speedway_1997_john-schultz-iii_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1997_john-schultz-iii_unknown-credit_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1997",
+    "driverSlug": "john-schultz-iii",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1997_mike-kasperek_unknown-credit_photo_001.jpg",
@@ -206,7 +228,18 @@
     "driverSlug": "mike-kasperek",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1997_mike-kasperek_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1997/hales-corners-speedway_1997_mike-kasperek_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1997_mike-kasperek_unknown-credit_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1997",
+    "driverSlug": "mike-kasperek",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_aaron-solsrud_unknown-credit_post_001.jpg",
@@ -217,7 +250,18 @@
     "driverSlug": "aaron-solsrud",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_aaron-solsrud_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_aaron-solsrud_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_aaron-solsrud_unknown-credit_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-solsrud",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_larry-nau_unknown-credit_post_001.jpg",
@@ -228,7 +272,7 @@
     "driverSlug": "larry-nau",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "illiana-speedway_unknown-year_rusty-wallace_unknown-credit_post_001.jpg",
@@ -239,7 +283,7 @@
     "driverSlug": "rusty-wallace",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "jennerstown-speedway-dave-singer_1990_bob-menor_unknown-credit_photo_001.jpg",
@@ -250,7 +294,7 @@
     "driverSlug": "bob-menor",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1981_ken-olson_unknown-credit_photo_001.jpg",
@@ -261,7 +305,7 @@
     "driverSlug": "ken-olson",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1997_andy-szymanski_unknown-credit_photo_001.jpg",
@@ -272,7 +316,7 @@
     "driverSlug": "andy-szymanski",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1997_mike-kasperek_unknown-credit_photo_001.jpg",
@@ -283,7 +327,7 @@
     "driverSlug": "mike-kasperek",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1997_steve-just_unknown-credit_photo_001.jpg",
@@ -294,7 +338,7 @@
     "driverSlug": "steve-just",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_jim-dragich_unknown-credit_post_001.jpg",
@@ -305,7 +349,7 @@
     "driverSlug": "jim-dragich",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_2023_putch-bentley_unknown-credit_post_001.jpg",
@@ -316,7 +360,7 @@
     "driverSlug": "putch-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_unknown-year_putch-bentley_unknown-credit_post_001.jpg",
@@ -327,7 +371,7 @@
     "driverSlug": "putch-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_1997_scott-dixon_unknown-credit_photo_001.jpg",
@@ -338,7 +382,7 @@
     "driverSlug": "scott-dixon",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1979_joe-ruttman_unknown-credit_post_001.jpg",
@@ -349,7 +393,7 @@
     "driverSlug": "joe-ruttman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1981_russ-peterson_unknown-credit_post_001.jpg",
@@ -360,7 +404,7 @@
     "driverSlug": "russ-peterson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gene-marmor_unknown-credit_post_001.jpg",
@@ -371,7 +415,7 @@
     "driverSlug": "gene-marmor",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2013_chris-oertel_unknown-credit_post_001.jpg",
@@ -382,7 +426,7 @@
     "driverSlug": "chris-oertel",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1982_putch-bentley_unknown-credit_post_001.jpg",
@@ -393,7 +437,7 @@
     "driverSlug": "putch-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_al-bilski_unknown-credit_post_001.jpg",
@@ -404,7 +448,7 @@
     "driverSlug": "al-bilski",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_bob-iverson_unknown-credit_post_001.jpg",
@@ -415,7 +459,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_ed-hedlund_unknown-credit_post_001.jpg",
@@ -426,7 +470,7 @@
     "driverSlug": "ed-hedlund",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_fred-gignac_unknown-credit_post_001.jpg",
@@ -437,7 +481,7 @@
     "driverSlug": "fred-gignac",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_gene-coleman_unknown-credit_post_001.jpg",
@@ -448,7 +492,7 @@
     "driverSlug": "gene-coleman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_joe-haferkorn_unknown-credit_post_001.jpg",
@@ -459,7 +503,7 @@
     "driverSlug": "joe-haferkorn",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_kent-pearson_unknown-credit_post_001.jpg",
@@ -470,7 +514,7 @@
     "driverSlug": "kent-pearson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_mark-miller_unknown-credit_post_001.jpg",
@@ -481,7 +525,7 @@
     "driverSlug": "mark-miller",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_mike-kelly_unknown-credit_post_001.jpg",
@@ -492,7 +536,7 @@
     "driverSlug": "mike-kelly",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_mike-mattson_unknown-credit_post_001.jpg",
@@ -503,7 +547,7 @@
     "driverSlug": "mike-mattson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_pat-temple_unknown-credit_post_001.jpg",
@@ -514,7 +558,7 @@
     "driverSlug": "pat-temple",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_steve-debakker_unknown-credit_post_001.jpg",
@@ -525,7 +569,7 @@
     "driverSlug": "steve-debakker",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jerry-winkler_unknown-credit_post_001.jpg",
@@ -536,7 +580,7 @@
     "driverSlug": "jerry-winkler",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_bill-johnson-jr_unknown-credit_post_002.jpg",
@@ -547,7 +591,7 @@
     "driverSlug": "bill-johnson-jr",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_1971_tom-reffner_unknown-credit_post_001.jpg",
@@ -558,7 +602,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
@@ -569,7 +613,18 @@
     "driverSlug": "jim-sorrick",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1997/rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1997",
+    "driverSlug": "jim-sorrick",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
@@ -580,7 +635,18 @@
     "driverSlug": "rick-cregger",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1997/rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1997",
+    "driverSlug": "rick-cregger",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_robin-amato_unknown-credit_post_001.jpg",
@@ -591,7 +657,7 @@
     "driverSlug": "robin-amato",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_jared-siefert_unknown-credit_post_001.jpg",
@@ -602,7 +668,7 @@
     "driverSlug": "jared-siefert",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1999_dan-michonski_unknown-credit_post_001.jpg",
@@ -613,7 +679,7 @@
     "driverSlug": "dan-michonski",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_keith-nelson_unknown-credit_post_001.jpg",
@@ -624,7 +690,18 @@
     "driverSlug": "keith-nelson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_keith-nelson_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_keith-nelson_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_keith-nelson_unknown-credit_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "keith-nelson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_karl-genett_unknown-credit_post_001.jpg",
@@ -635,7 +712,7 @@
     "driverSlug": "karl-genett",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_rick-haase_unknown-credit_photo_001.jpg",
@@ -646,7 +723,7 @@
     "driverSlug": "rick-haase",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_roger-burrows_unknown-credit_post_001.jpg",
@@ -657,7 +734,7 @@
     "driverSlug": "roger-burrows",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_tracy-prissel_unknown-credit_post_001.jpg",
@@ -668,7 +745,7 @@
     "driverSlug": "tracy-prissel",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_2002_craig-beck_unknown-credit_post_001.jpg",
@@ -679,216 +756,7 @@
     "driverSlug": "craig-beck",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_don-collins_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_don-collins_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_don-collins_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "don-collins",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_mark-kjelstad_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_mark-kjelstad_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_mark-kjelstad_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "mark-kjelstad",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_rex-rossier_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "rex-rossier",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "billy-nelson",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-adams_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-adams_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-adams_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-adams",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_rick-cox_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_rick-cox_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_rick-cox_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "rick-cox",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_rick-popovich_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_rick-popovich_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_rick-popovich_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "rick-popovich",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_antigo-indian-summer-classic-cars-kimberly-durrant_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_antigo-indian-summer-classic-cars-kimberly-durrant_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_antigo-indian-summer-classic-cars-kimberly-durrant_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "antigo-indian-summer-classic-cars-kimberly-durrant",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_arnie-kristan-dells-john-waters_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_arnie-kristan-dells-john-waters_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_arnie-kristan-dells-john-waters_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "arnie-kristan-dells-john-waters",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_artgo-challenge-series-sticker-ken-koppa_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_artgo-challenge-series-sticker-ken-koppa_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_artgo-challenge-series-sticker-ken-koppa_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "artgo-challenge-series-sticker-ken-koppa",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_artgo-spring-classic-andy-grod_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_artgo-spring-classic-andy-grod_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_artgo-spring-classic-andy-grod_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "artgo-spring-classic-andy-grod",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_badger-midget-auto-file_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_badger-midget-auto-file_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_badger-midget-auto-file_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "badger-midget-auto-file",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ben-ryba_unknown-credit_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ben-ryba_unknown-credit_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ben-ryba_unknown-credit_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ben-ryba",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bernie-vanderhoof-bryon-vanderhoof_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bernie-vanderhoof-bryon-vanderhoof_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bernie-vanderhoof-bryon-vanderhoof_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bernie-vanderhoof-bryon-vanderhoof",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-balog_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-balog_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-balog_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-balog",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-shirey-soldier-field-dan-radig_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-shirey-soldier-field-dan-radig_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-shirey-soldier-field-dan-radig_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-shirey-soldier-field-dan-radig",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_billy-nelson-mike-sorenson_unknown-credit_post_001.jpg",
@@ -899,7 +767,29 @@
     "driverSlug": "billy-nelson-mike-sorenson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson-mike-sorenson_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson-mike-sorenson_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson-mike-sorenson_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson-mike-sorenson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_billy-nelson-mike-sorenson_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_billy-nelson-mike-sorenson_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_billy-nelson-mike-sorenson_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "billy-nelson-mike-sorenson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_001.jpg",
@@ -910,7 +800,29 @@
     "driverSlug": "bob-jusola-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola-bill-woodworth",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola-bill-woodworth",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_002.jpg",
@@ -921,7 +833,29 @@
     "driverSlug": "bob-jusola-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola-bill-woodworth",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola-bill-woodworth_unknown-credit_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola-bill-woodworth",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
@@ -932,7 +866,40 @@
     "driverSlug": "brent-laursen",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brent-laursen",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brent-laursen",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brent-laursen_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brent-laursen",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
@@ -943,7 +910,40 @@
     "driverSlug": "brian-johnson-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson-bill-woodworth",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson-bill-woodworth",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-johnson-bill-woodworth_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-johnson-bill-woodworth",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
@@ -954,7 +954,40 @@
     "driverSlug": "bruce-jardine-danyelle-hope",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-jardine-danyelle-hope",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-jardine-danyelle-hope",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-jardine-danyelle-hope_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-jardine-danyelle-hope",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
@@ -965,7 +998,40 @@
     "driverSlug": "bryan-kuehl-tomah-bessie-kmiecik",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-kuehl-tomah-bessie-kmiecik",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-kuehl-tomah-bessie-kmiecik",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-kuehl-tomah-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-kuehl-tomah-bessie-kmiecik",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
@@ -976,7 +1042,40 @@
     "driverSlug": "buzzy-adams-old-school-rice-lake",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "buzzy-adams-old-school-rice-lake",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "buzzy-adams-old-school-rice-lake",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_buzzy-adams-old-school-rice-lake_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "buzzy-adams-old-school-rice-lake",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
@@ -987,7 +1086,40 @@
     "driverSlug": "cecil-henderson",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cecil-henderson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cecil-henderson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cecil-henderson_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cecil-henderson",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_charlie-ick-ron-thruman_unknown-credit_post_001.jpg",
@@ -998,7 +1130,29 @@
     "driverSlug": "charlie-ick-ron-thruman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_charlie-ick-ron-thruman_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_charlie-ick-ron-thruman_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_charlie-ick-ron-thruman_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "charlie-ick-ron-thruman",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_charlie-ick-ron-thruman_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_charlie-ick-ron-thruman_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_charlie-ick-ron-thruman_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "charlie-ick-ron-thruman",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chris-kollross-seymour-tim-crass_unknown-credit_post_001.jpg",
@@ -1009,7 +1163,29 @@
     "driverSlug": "chris-kollross-seymour-tim-crass",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-kollross-seymour-tim-crass_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-kollross-seymour-tim-crass_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-kollross-seymour-tim-crass_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-kollross-seymour-tim-crass",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-kollross-seymour-tim-crass_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-kollross-seymour-tim-crass_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-kollross-seymour-tim-crass_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-kollross-seymour-tim-crass",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chris-kollross-shawano-tim-crass_unknown-credit_post_001.jpg",
@@ -1020,7 +1196,29 @@
     "driverSlug": "chris-kollross-shawano-tim-crass",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-kollross-shawano-tim-crass_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-kollross-shawano-tim-crass_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-kollross-shawano-tim-crass_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-kollross-shawano-tim-crass",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-kollross-shawano-tim-crass_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-kollross-shawano-tim-crass_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-kollross-shawano-tim-crass_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-kollross-shawano-tim-crass",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-wolf-personal_unknown-credit_post_001.jpg",
@@ -1031,7 +1229,29 @@
     "driverSlug": "chuck-wolf-personal",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-wolf-personal_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-wolf-personal_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-wolf-personal_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-wolf-personal",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-wolf-personal_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-wolf-personal_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-wolf-personal_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-wolf-personal",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_cwra-sign-charles-martin_unknown-credit_post_001.jpg",
@@ -1042,7 +1262,29 @@
     "driverSlug": "cwra-sign-charles-martin",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cwra-sign-charles-martin_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cwra-sign-charles-martin_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cwra-sign-charles-martin_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cwra-sign-charles-martin",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cwra-sign-charles-martin_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cwra-sign-charles-martin_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cwra-sign-charles-martin_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cwra-sign-charles-martin",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dallas-meachum-bessie-kmiecik_unknown-credit_photo_001.jpg",
@@ -1053,7 +1295,18 @@
     "driverSlug": "dallas-meachum-bessie-kmiecik",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dallas-meachum-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dallas-meachum-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dallas-meachum-bessie-kmiecik_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dallas-meachum-bessie-kmiecik",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_darwin-brunow_unknown-credit_photo_001.jpg",
@@ -1064,7 +1317,7 @@
     "driverSlug": "darwin-brunow",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-adams-brian-crapser_unknown-credit_post_001.jpg",
@@ -1075,7 +1328,7 @@
     "driverSlug": "dave-adams-brian-crapser",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-credit_photo_001.jpg",
@@ -1086,7 +1339,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_david-siercks-christopher-kolstad_unknown-credit_photo_001.jpg",
@@ -1097,7 +1350,7 @@
     "driverSlug": "david-siercks-christopher-kolstad",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_david-siercks-mod-christopher-kolstad_unknown-credit_photo_001.jpg",
@@ -1108,7 +1361,7 @@
     "driverSlug": "david-siercks-mod-christopher-kolstad",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_del-kemnitz-ron-thruman_unknown-credit_post_001.jpg",
@@ -1119,7 +1372,7 @@
     "driverSlug": "del-kemnitz-ron-thruman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dells-point-sheet-mcclain_unknown-credit_post_001.jpg",
@@ -1130,7 +1383,7 @@
     "driverSlug": "dells-point-sheet-mcclain",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-kollmansberger-john-alft_unknown-credit_post_001.jpg",
@@ -1141,7 +1394,18 @@
     "driverSlug": "dennis-kollmansberger-john-alft",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-kollmansberger-john-alft_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-kollmansberger-john-alft_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-kollmansberger-john-alft_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-kollmansberger-john-alft",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-bethman-john-alft_unknown-credit_post_001.jpg",
@@ -1152,7 +1416,18 @@
     "driverSlug": "don-bethman-john-alft",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-bethman-john-alft_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-bethman-john-alft_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-bethman-john-alft_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-bethman-john-alft",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-collins-dean-bentley_unknown-credit_post_001.jpg",
@@ -1163,7 +1438,7 @@
     "driverSlug": "don-collins-dean-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-bandl_unknown-credit_photo_001.jpg",
@@ -1174,7 +1449,18 @@
     "driverSlug": "doug-bandl",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_doug-bandl_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_doug-bandl_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_doug-bandl_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "doug-bandl",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-bandl_unknown-credit_photo_002.jpg",
@@ -1185,7 +1471,7 @@
     "driverSlug": "doug-bandl",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_duane-walsh-capital-ron-thruman_unknown-credit_post_001.jpg",
@@ -1196,7 +1482,18 @@
     "driverSlug": "duane-walsh-capital-ron-thruman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_duane-walsh-capital-ron-thruman_unknown-credit_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_duane-walsh-capital-ron-thruman_unknown-credit_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_duane-walsh-capital-ron-thruman_unknown-credit_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "duane-walsh-capital-ron-thruman",
+    "photographerSlug": "unknown-credit",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dwayne-klem-salem-speedway-dwayne-klem_unknown-credit_post_001.jpg",
@@ -1207,7 +1504,7 @@
     "driverSlug": "dwayne-klem-salem-speedway-dwayne-klem",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_egersdorf-greg-parent_unknown-credit_photo_001.jpg",
@@ -1218,106 +1515,18 @@
     "driverSlug": "egersdorf-greg-parent",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_etchie-biertzer-john-norton_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_etchie-biertzer-john-norton_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_etchie-biertzer-john-norton_unknown-credit_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_egersdorf-greg-parent_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_egersdorf-greg-parent_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_egersdorf-greg-parent_unknown-credit_photo_001.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
-    "driverSlug": "etchie-biertzer-john-norton",
+    "driverSlug": "egersdorf-greg-parent",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ewsc-mod-dennis-frings-built-submitted_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ewsc-mod-dennis-frings-built-submitted_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ewsc-mod-dennis-frings-built-submitted_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ewsc-mod-dennis-frings-built-submitted",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fond-du-lac-fair-midgets-dan-radig_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fond-du-lac-fair-midgets-dan-radig_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fond-du-lac-fair-midgets-dan-radig_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fond-du-lac-fair-midgets-dan-radig",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gary-petrash_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-petrash_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gary-petrash_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gary-petrash",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gene-bilke-submitted_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gene-bilke-submitted_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gene-bilke-submitted_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gene-bilke-submitted",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-fischer-john-fahey_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-fischer-john-fahey_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-fischer-john-fahey_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-fischer-john-fahey",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gopher-mcclain_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gopher-mcclain_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gopher-mcclain_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gopher-mcclain",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_griffith-park_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_griffith-park_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_griffith-park_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "griffith-park",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-blonk-old-school-rice-lake-page_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-blonk-old-school-rice-lake-page_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-blonk-old-school-rice-lake-page_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-blonk-old-school-rice-lake-page",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_impace-speedway-world-of-outlaws-john-close_unknown-credit_photo_001.jpg",
@@ -1328,238 +1537,7 @@
     "driverSlug": "impace-speedway-world-of-outlaws-john-close",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-hoogland-rod-hensel_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-hoogland-rod-hensel_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-hoogland-rod-hensel_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-hoogland-rod-hensel",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-amundson_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-amundson_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-amundson_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-amundson",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-cain-ron-thruman_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-cain-ron-thruman_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-cain-ron-thruman_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-cain-ron-thruman",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-gates-darlington-ron-thruman_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-gates-darlington-ron-thruman_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-gates-darlington-ron-thruman_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-gates-darlington-ron-thruman",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-redetzke_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-redetzke_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-redetzke_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-redetzke",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-dahlgren-mike-larrivy_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-dahlgren-mike-larrivy_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-dahlgren-mike-larrivy_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-dahlgren-mike-larrivy",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-muth-charles-searing_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-muth-charles-searing_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-muth-charles-searing_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-muth-charles-searing",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-nielson-john-alft_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-nielson-john-alft_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-nielson-john-alft_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-nielson-john-alft",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-nielson-mall-ken-koppa_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-nielson-mall-ken-koppa_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-nielson-mall-ken-koppa_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-nielson-mall-ken-koppa",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-nielson-old-mall-ken-koppa_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-nielson-old-mall-ken-koppa_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-nielson-old-mall-ken-koppa_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-nielson-old-mall-ken-koppa",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jimmy-randall-modified-doug-zimmer_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jimmy-randall-modified-doug-zimmer_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jimmy-randall-modified-doug-zimmer_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jimmy-randall-modified-doug-zimmer",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-potter-john-watters_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-potter-john-watters_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-potter-john-watters_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-potter-john-watters",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-sharp-kurt-gaber_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-sharp-kurt-gaber_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-sharp-kurt-gaber_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-sharp-kurt-gaber",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-buban-ron-thruman_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-buban-ron-thruman_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-buban-ron-thruman_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-buban-ron-thruman",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_johnny-johnson-anderson_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_johnny-johnson-anderson_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_johnny-johnson-anderson_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "johnny-johnson-anderson",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_johnny-johnson-jeff-caldwell_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_johnny-johnson-jeff-caldwell_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_johnny-johnson-jeff-caldwell_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "johnny-johnson-jeff-caldwell",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_johnny-johnson-kurt-gaber_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_johnny-johnson-kurt-gaber_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_johnny-johnson-kurt-gaber_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "johnny-johnson-kurt-gaber",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_johnny-johnson-scott-christman_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_johnny-johnson-scott-christman_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_johnny-johnson-scott-christman_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "johnny-johnson-scott-christman",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jon-crest-pose-john-waters_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jon-crest-pose-john-waters_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jon-crest-pose-john-waters_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jon-crest-pose-john-waters",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_justin-pogones-sam-fankhauser_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_justin-pogones-sam-fankhauser_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_justin-pogones-sam-fankhauser_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "justin-pogones-sam-fankhauser",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_keith-thell-peterson_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_keith-thell-peterson_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_keith-thell-peterson_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "keith-thell-peterson",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-zellner-tim-crass_unknown-credit_post_001.jpg",
@@ -1570,7 +1548,7 @@
     "driverSlug": "kevin-zellner-tim-crass",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-challoner-bessie-kmiecik_unknown-credit_photo_001.jpg",
@@ -1581,7 +1559,7 @@
     "driverSlug": "larry-challoner-bessie-kmiecik",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-kallenbach_unknown-credit_post_001.jpg",
@@ -1592,7 +1570,7 @@
     "driverSlug": "larry-kallenbach",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-vandevere-mall-show-john-curcio_unknown-credit_photo_001.jpg",
@@ -1603,7 +1581,7 @@
     "driverSlug": "larry-vandevere-mall-show-john-curcio",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-vongilleren-bill-warrick_unknown-credit_photo_001.jpg",
@@ -1614,7 +1592,7 @@
     "driverSlug": "larry-vongilleren-bill-warrick",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_leos-speedway-vintage-dan-radig_unknown-credit_photo_001.jpg",
@@ -1625,7 +1603,7 @@
     "driverSlug": "leos-speedway-vintage-dan-radig",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_les-kasner-john-alft_unknown-credit_post_001.jpg",
@@ -1636,7 +1614,7 @@
     "driverSlug": "les-kasner-john-alft",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_les-pfeiffer-john-fahey_unknown-credit_post_001.jpg",
@@ -1647,7 +1625,7 @@
     "driverSlug": "les-pfeiffer-john-fahey",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_less-duellman-western-wanderer_unknown-credit_photo_001.jpg",
@@ -1658,7 +1636,7 @@
     "driverSlug": "less-duellman-western-wanderer",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_logan-weinke-doug-corcoran_unknown-credit_post_001.jpg",
@@ -1669,7 +1647,7 @@
     "driverSlug": "logan-weinke-doug-corcoran",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lonnie-hoeft-bob-schneider_unknown-credit_post_001.jpg",
@@ -1680,7 +1658,7 @@
     "driverSlug": "lonnie-hoeft-bob-schneider",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lou-fegers-bill-woodworth_unknown-credit_post_001.jpg",
@@ -1691,7 +1669,7 @@
     "driverSlug": "lou-fegers-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lynn-peterson-bill-woodworth_unknown-credit_post_001.jpg",
@@ -1702,7 +1680,7 @@
     "driverSlug": "lynn-peterson-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mall-show-lem-turnberg_unknown-credit_photo_001.jpg",
@@ -1713,7 +1691,7 @@
     "driverSlug": "mall-show-lem-turnberg",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mall-show-lem-turnberg_unknown-credit_photo_002.jpg",
@@ -1724,7 +1702,7 @@
     "driverSlug": "mall-show-lem-turnberg",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_mall-show-lem-turnberg_unknown-credit_photo_003.jpg",
@@ -1735,7 +1713,7 @@
     "driverSlug": "mall-show-lem-turnberg",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_mall-show-lem-turnberg_unknown-credit_photo_004.jpg",
@@ -1746,7 +1724,7 @@
     "driverSlug": "mall-show-lem-turnberg",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_mall-show-lem-turnberg_unknown-credit_photo_006.jpg",
@@ -1757,7 +1735,7 @@
     "driverSlug": "mall-show-lem-turnberg",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_mall-show-lem-turnberg_unknown-credit_photo_007.jpg",
@@ -1768,7 +1746,7 @@
     "driverSlug": "mall-show-lem-turnberg",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_mall-show-mod-lem-turnberg_unknown-credit_photo_001.jpg",
@@ -1779,7 +1757,7 @@
     "driverSlug": "mall-show-mod-lem-turnberg",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-noble-bill-woodworth_unknown-credit_post_001.jpg",
@@ -1790,7 +1768,7 @@
     "driverSlug": "mark-noble-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mcfadden-lost-speedways_unknown-credit_photo_001.jpg",
@@ -1801,7 +1779,7 @@
     "driverSlug": "mcfadden-lost-speedways",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_merle-weinfurter-john-alft_unknown-credit_post_001.jpg",
@@ -1812,7 +1790,7 @@
     "driverSlug": "merle-weinfurter-john-alft",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mg-gajewski-mall-ken-koppa_unknown-credit_photo_001.jpg",
@@ -1823,7 +1801,7 @@
     "driverSlug": "mg-gajewski-mall-ken-koppa",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-rich-george-korich_unknown-credit_post_001.jpg",
@@ -1834,7 +1812,7 @@
     "driverSlug": "mike-rich-george-korich",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mod-john-curcio_unknown-credit_post_001.jpg",
@@ -1845,7 +1823,7 @@
     "driverSlug": "mod-john-curcio",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_myron-harris_unknown-credit_post_001.jpg",
@@ -1856,7 +1834,7 @@
     "driverSlug": "myron-harris",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_oretel-lost-speedways_unknown-credit_photo_001.jpg",
@@ -1867,7 +1845,7 @@
     "driverSlug": "oretel-lost-speedways",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-knoblock-mall-ken-koppa_unknown-credit_photo_001.jpg",
@@ -1878,7 +1856,7 @@
     "driverSlug": "paul-knoblock-mall-ken-koppa",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-smith-joe-verdgegan_unknown-credit_post_001.jpg",
@@ -1889,7 +1867,7 @@
     "driverSlug": "paul-smith-joe-verdgegan",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_unknown-credit_post_001.jpg",
@@ -1900,7 +1878,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_peterson_unknown-credit_photo_001.jpg",
@@ -1911,7 +1889,7 @@
     "driverSlug": "peterson",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_peterson_unknown-credit_photo_002.jpg",
@@ -1922,7 +1900,7 @@
     "driverSlug": "peterson",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-kreyer_unknown-credit_post_001.jpg",
@@ -1933,7 +1911,7 @@
     "driverSlug": "ray-kreyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_red-steffen-john-mikesell_unknown-credit_post_001.jpg",
@@ -1944,7 +1922,7 @@
     "driverSlug": "red-steffen-john-mikesell",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-bickle-dells-fast-lap_unknown-credit_photo_001.jpg",
@@ -1955,7 +1933,7 @@
     "driverSlug": "rich-bickle-dells-fast-lap",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-hauser-bob-bautch_unknown-credit_photo_001.jpg",
@@ -1966,7 +1944,7 @@
     "driverSlug": "rick-hauser-bob-bautch",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-popovich-loren-inman_unknown-credit_post_001.jpg",
@@ -1977,7 +1955,7 @@
     "driverSlug": "rick-popovich-loren-inman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_river-speedway-lost-speedways_unknown-credit_photo_001.jpg",
@@ -1988,7 +1966,7 @@
     "driverSlug": "river-speedway-lost-speedways",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_river-speedway-marc-rauchfuss_unknown-credit_post_001.jpg",
@@ -1999,7 +1977,7 @@
     "driverSlug": "river-speedway-marc-rauchfuss",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-krueger-mall-ken-koppa_unknown-credit_photo_001.jpg",
@@ -2010,7 +1988,7 @@
     "driverSlug": "roger-krueger-mall-ken-koppa",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-otto-bill-skinner_unknown-credit_post_001.jpg",
@@ -2021,7 +1999,7 @@
     "driverSlug": "roger-otto-bill-skinner",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-baciak_unknown-credit_post_001.jpg",
@@ -2032,7 +2010,7 @@
     "driverSlug": "ron-baciak",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-borgardt-ron-thruman_unknown-credit_photo_001.jpg",
@@ -2043,7 +2021,7 @@
     "driverSlug": "ron-borgardt-ron-thruman",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones-bill-woodworth_unknown-credit_post_001.jpg",
@@ -2054,7 +2032,7 @@
     "driverSlug": "ron-jones-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-pankow-ron-thruman_unknown-credit_post_001.jpg",
@@ -2065,7 +2043,7 @@
     "driverSlug": "ron-pankow-ron-thruman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-pearson-paul-finch_unknown-credit_post_001.jpg",
@@ -2076,7 +2054,7 @@
     "driverSlug": "ron-pearson-paul-finch",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-prochnow-mike-smith_unknown-credit_post_001.jpg",
@@ -2087,7 +2065,7 @@
     "driverSlug": "ron-prochnow-mike-smith",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-schreiner_unknown-credit_photo_001.jpg",
@@ -2098,7 +2076,7 @@
     "driverSlug": "ron-schreiner",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roy-schmidtke-dave-trute_unknown-credit_post_001.jpg",
@@ -2109,7 +2087,7 @@
     "driverSlug": "roy-schmidtke-dave-trute",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rudy-grbavicich-bill-warrick_unknown-credit_photo_001.jpg",
@@ -2120,7 +2098,7 @@
     "driverSlug": "rudy-grbavicich-bill-warrick",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_russ-corneliuson-rick-corneliuson_unknown-credit_post_001.jpg",
@@ -2131,7 +2109,7 @@
     "driverSlug": "russ-corneliuson-rick-corneliuson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-miller-kurt-gaber_unknown-credit_post_001.jpg",
@@ -2142,7 +2120,7 @@
     "driverSlug": "scott-miller-kurt-gaber",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-will_unknown-credit_photo_001.jpg",
@@ -2153,7 +2131,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_st-peter-speedway-jon-dummer_unknown-credit_post_001.jpg",
@@ -2164,7 +2142,7 @@
     "driverSlug": "st-peter-speedway-jon-dummer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_sterling-il-unknown-dan-radig_unknown-credit_post_001.jpg",
@@ -2175,7 +2153,7 @@
     "driverSlug": "sterling-il-unknown-dan-radig",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-apel-bob-schneider_unknown-credit_photo_001.jpg",
@@ -2186,7 +2164,7 @@
     "driverSlug": "steve-apel-bob-schneider",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-credit_post_001.jpg",
@@ -2197,7 +2175,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-schaad-eastern-wisconsin-stock_unknown-credit_photo_001.jpg",
@@ -2208,7 +2186,7 @@
     "driverSlug": "steve-schaad-eastern-wisconsin-stock",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_street-stock-lux-jjs_unknown-credit_photo_001.jpg",
@@ -2219,7 +2197,7 @@
     "driverSlug": "street-stock-lux-jjs",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_taplin-outagamie-dan-radig_unknown-credit_post_001.jpg",
@@ -2230,7 +2208,7 @@
     "driverSlug": "taplin-outagamie-dan-radig",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-cox_unknown-credit_post_001.jpg",
@@ -2241,7 +2219,7 @@
     "driverSlug": "tim-cox",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-warner_unknown-credit_photo_001.jpg",
@@ -2252,7 +2230,7 @@
     "driverSlug": "tim-warner",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-jones-dean-bentley_unknown-credit_photo_001.jpg",
@@ -2263,7 +2241,7 @@
     "driverSlug": "tom-jones-dean-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-neisius-bill-woodworth_unknown-credit_post_001.jpg",
@@ -2274,7 +2252,7 @@
     "driverSlug": "tom-neisius-bill-woodworth",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-seefeldt-tony-seefeldt_unknown-credit_post_001.jpg",
@@ -2285,7 +2263,7 @@
     "driverSlug": "tony-seefeldt-tony-seefeldt",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_track-unknown-rj-storm_unknown-credit_post_001.jpg",
@@ -2296,7 +2274,7 @@
     "driverSlug": "track-unknown-rj-storm",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tracy-teske-mall-ken-koppa_unknown-credit_photo_001.jpg",
@@ -2307,7 +2285,7 @@
     "driverSlug": "tracy-teske-mall-ken-koppa",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tri-oval-raceway-corners-submitted_unknown-credit_photo_001.jpg",
@@ -2318,7 +2296,7 @@
     "driverSlug": "tri-oval-raceway-corners-submitted",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tri-oval-raceway-fountain-city-submitted_unknown-credit_photo_001.jpg",
@@ -2329,7 +2307,7 @@
     "driverSlug": "tri-oval-raceway-fountain-city-submitted",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_troy-hyde-kurt-gaber_unknown-credit_post_001.jpg",
@@ -2340,7 +2318,7 @@
     "driverSlug": "troy-hyde-kurt-gaber",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-jeff-ninneman_unknown-credit_post_001.jpg",
@@ -2351,7 +2329,7 @@
     "driverSlug": "unknown-jeff-ninneman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-rj-storm_unknown-credit_post_001.jpg",
@@ -2362,7 +2340,7 @@
     "driverSlug": "unknown-rj-storm",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-ron-thruman_unknown-credit_photo_001.jpg",
@@ -2373,7 +2351,7 @@
     "driverSlug": "unknown-ron-thruman",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_vic-kline_unknown-credit_photo_001.jpg",
@@ -2384,7 +2362,7 @@
     "driverSlug": "vic-kline",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_whitey-johnson-pete-fileca_unknown-credit_post_001.jpg",
@@ -2395,7 +2373,7 @@
     "driverSlug": "whitey-johnson-pete-fileca",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-rako-bill-warrick_unknown-credit_photo_001.jpg",
@@ -2406,7 +2384,7 @@
     "driverSlug": "willie-rako-bill-warrick",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_unknown-year_brian-crapser_unknown-credit_post_001.jpg",
@@ -2417,7 +2395,7 @@
     "driverSlug": "brian-crapser",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1971_steve-arndt_unknown-credit_post_001.jpg",
@@ -2428,7 +2406,7 @@
     "driverSlug": "steve-arndt",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-weyer_unknown-credit_post_001.jpg",
@@ -2439,7 +2417,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-stepan_unknown-credit_post_001.jpg",
@@ -2450,7 +2428,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_unknown-credit_post_001.jpg",
@@ -2461,7 +2439,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_william-bell_unknown-credit_photo_3332.jpg",

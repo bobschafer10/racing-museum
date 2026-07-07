@@ -8,7 +8,7 @@
     "driverSlug": "weber-brothers-cedar-lake-speedway-jerry-zimmy-phot",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway-wi_2006_tim-syvrud_don-trush-post_001.jpg",
@@ -17,9 +17,20 @@
     "trackSlug": "columbus-151-speedway-wi",
     "year": "2006",
     "driverSlug": "tim-syvrud",
-    "photographerSlug": "don-trush-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "don-trush",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2006/dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2006",
+    "driverSlug": "deau-sanden",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "115"
   },
   {
     "fileName": "dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "brett-widdes",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_derek-gress_don-wendlandt_photo_117.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "doug-droste",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_duane-davis_don-wendlandt_photo_001.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "duane-davis",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jake-ryan_don-wendlandt_photo_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "jake-ryan",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jake-ryan_don-wendlandt_photo_117.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "jake-ryan",
     "photographerSlug": "don-wendlandt-ii",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jim-carlson_don-wendlandt_photo_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "jim-carlson",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jim-carlson_don-wendlandt_photo_117.jpg",
@@ -173,7 +184,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jim-duchow_don-wendlandt_photo_117.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "keith-bomsach",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_117.jpg",
@@ -228,7 +239,7 @@
     "driverSlug": "matt-wisz",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_117.jpg",
@@ -261,7 +272,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_002.jpg",
@@ -272,7 +283,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_117.jpg",
@@ -305,7 +316,7 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_117.jpg",
@@ -330,6 +341,17 @@
     "sequence": "200"
   },
   {
+    "fileName": "state-park-speedway_2006_jenny-nitzsche_charlie-spry_post_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/2006/state-park-speedway_2006_jenny-nitzsche_charlie-spry_post_111.jpg",
+    "publicPath": "/photos/state-park-speedway_2006_jenny-nitzsche_charlie-spry_post_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2006",
+    "driverSlug": "jenny-nitzsche",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
     "storagePath": "photos/master/superior-speedway/2006/superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
     "publicPath": "/photos/superior-speedway_2006_dean-yrjanainen_in-a-flash_photo_001.jpg",
@@ -338,7 +360,7 @@
     "driverSlug": "dean-yrjanainen",
     "photographerSlug": "in-a-flash",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2006_tim-rothe_clintman_post_001.jpg",
@@ -349,6 +371,6 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

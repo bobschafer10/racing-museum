@@ -8,7 +8,29 @@
     "driverSlug": "dave-klein",
     "photographerSlug": "lowell-dalsoren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_dave-klein_lowell-dalsoren_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-klein_lowell-dalsoren_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-klein_lowell-dalsoren_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "lowell-dalsoren",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_dave-klein_unknown-photographer_photo_8886.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-klein_unknown-photographer_photo_8886.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-klein_unknown-photographer_photo_8886.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-klein",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8886"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_dave-klein_unknown-photographer_photo_8886.jpg",
@@ -85,6 +107,6 @@
     "driverSlug": "dave-klein",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

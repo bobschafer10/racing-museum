@@ -9,5 +9,16 @@
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
     "sequence": "222"
+  },
+  {
+    "fileName": "unknown-track_1971_don-kudlewski_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/unknown-track/1971/unknown-track_1971_don-kudlewski_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/unknown-track_1971_don-kudlewski_michael-halbherr_post_555.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1971",
+    "driverSlug": "don-kudlewski",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
   }
 ]

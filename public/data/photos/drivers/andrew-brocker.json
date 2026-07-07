@@ -8,6 +8,17 @@
     "driverSlug": "andrew-brocker",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_1996_andrew-brocker_charlie-spry_photo_555.jpg",
+    "storagePath": "photos/master/unknown-track/1996/unknown-track_1996_andrew-brocker_charlie-spry_photo_555.jpg",
+    "publicPath": "/photos/unknown-track_1996_andrew-brocker_charlie-spry_photo_555.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1996",
+    "driverSlug": "andrew-brocker",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "555"
   }
 ]

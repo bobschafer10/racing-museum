@@ -8,7 +8,7 @@
     "driverSlug": "josh-long",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2015_kelsy-hayes_dave-panske_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "kelsy-hayes",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2015_mike-mullen_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "mike-mullen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2015_rm-van-pay_dave-panske_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "rm-van-pay",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2015_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
@@ -52,7 +52,18 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "fotos-by-fizzle",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_2015_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2015/dells-motor-speedway_2015_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2015_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2015",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "dodge-county-fairgrounds_2015_aaron-falbe_leader-photography_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "leader-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2015_aaron-muhle_chad-marquardt_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "aaron-muhle",
     "photographerSlug": "chad-marquardt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2015_aaron-muhle_derek-sabourin_photo_001.jpg",
@@ -85,7 +96,29 @@
     "driverSlug": "aaron-muhle",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2015/golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2015",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "421"
+  },
+  {
+    "fileName": "lasalle-speedway_2015_mike-garland_marcus-mackey_post_222.jpg",
+    "storagePath": "photos/master/lasalle-speedway/2015/lasalle-speedway_2015_mike-garland_marcus-mackey_post_222.jpg",
+    "publicPath": "/photos/lasalle-speedway_2015_mike-garland_marcus-mackey_post_222.jpg",
+    "trackSlug": "lasalle-speedway",
+    "year": "2015",
+    "driverSlug": "mike-garland",
+    "photographerSlug": "marcus-mackey",
+    "creditType": "post",
+    "sequence": "222"
   },
   {
     "fileName": "luxemburg-speedway_2015_aaron-holiday_dan-lewis_photo_001.jpeg",
@@ -96,7 +129,18 @@
     "driverSlug": "aaron-holiday",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "storagePath": "photos/master/oshkosh-speed-zone/2015/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "publicPath": "/photos/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2015",
+    "driverSlug": "mike-wedelstadt",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_2015_brad-lubach_bob-greuel_photo_001.jpg",
@@ -107,18 +151,7 @@
     "driverSlug": "brad-lubach",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "rockford-speedway_2015_matt-urban_matt-urban_post_333.jpg",
-    "storagePath": "photos/master/rockford-speedway/2015/rockford-speedway_2015_matt-urban_matt-urban_post_333.jpg",
-    "publicPath": "/photos/rockford-speedway_2015_matt-urban_matt-urban_post_333.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "2015",
-    "driverSlug": "matt-urban",
-    "photographerSlug": "matt-urban",
-    "creditType": "post",
-    "sequence": "333"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2015_aaron-holiday_andy-springborn_photo_001.jpg",
@@ -129,7 +162,7 @@
     "driverSlug": "aaron-holiday",
     "photographerSlug": "andy-springborn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
@@ -140,7 +173,7 @@
     "driverSlug": "mark-weisnicht",
     "photographerSlug": "weisnicht",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2015_darrell-nelson_unknown-photographer_photo_001.jpg",
@@ -151,7 +184,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_2015_unknown-driver_unknown-photographer_001.jpg",
@@ -161,8 +194,8 @@
     "year": "2015",
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
-    "creditType": "001",
-    "sequence": "001"
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_2015_blaine-habeck_blaine-habeck_post_333.jpg",
@@ -176,14 +209,25 @@
     "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2015_dave-schoenberger_dave-schoenberger_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2015/unknown-track_2015_dave-schoenberger_dave-schoenberger_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2015_dave-schoenberger_dave-schoenberger_post_001.jpg",
+    "fileName": "unknown-track_2015_blaine-habeck_blaine-habeck_post_333.jpg",
+    "storagePath": "photos/master/unknown-track/2015/unknown-track_2015_blaine-habeck_blaine-habeck_post_333.jpg",
+    "publicPath": "/photos/unknown-track_2015_blaine-habeck_blaine-habeck_post_333.jpg",
     "trackSlug": "unknown-track",
     "year": "2015",
-    "driverSlug": "dave-schoenberger",
-    "photographerSlug": "dave-schoenberger",
+    "driverSlug": "blaine-habeck",
+    "photographerSlug": "blaine-habeck",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_2015_blaine-habeck_blaine-habeck_post_333.jpg",
+    "storagePath": "photos/master/unknown-track/2015/unknown-track_2015_blaine-habeck_blaine-habeck_post_333.jpg",
+    "publicPath": "/photos/unknown-track_2015_blaine-habeck_blaine-habeck_post_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2015",
+    "driverSlug": "blaine-habeck",
+    "photographerSlug": "blaine-habeck",
+    "creditType": "post",
+    "sequence": "333"
   }
 ]

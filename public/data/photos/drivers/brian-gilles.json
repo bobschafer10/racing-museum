@@ -8,7 +8,7 @@
     "driverSlug": "brian-gilles",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "065"
+    "sequence": "65"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_brian-gilles_dave-drews_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "brian-gilles",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_brian-gilles_unknown-photographer_photo_371.jpg",
@@ -33,6 +33,17 @@
     "sequence": "371"
   },
   {
+    "fileName": "unknown-track_2004_brian-gilles_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/unknown-track/2004/unknown-track_2004_brian-gilles_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/unknown-track_2004_brian-gilles_unknown-photographer_photo_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2004",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
@@ -41,7 +52,40 @@
     "driverSlug": "brian-gilles",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
@@ -52,6 +96,39 @@
     "driverSlug": "brian-gilles",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-gilles_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   }
 ]

@@ -8,7 +8,18 @@
     "driverSlug": "mike-king",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_mike-king_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_mike-king_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_mike-king_unknown-photographer_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-king",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_mike-king_pat-heaney_post_333.jpg",

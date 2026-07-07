@@ -8,7 +8,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bill-prietzel_tom-loos_photo_001.jpg",
@@ -19,7 +19,40 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1983_bill-prietzel_mark-vanveghel_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1983/hales-corners-speedway_1983_bill-prietzel_mark-vanveghel_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1983_bill-prietzel_mark-vanveghel_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1983",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "mark-vanveghel",
+    "creditType": "post",
+    "sequence": "455"
+  },
+  {
+    "fileName": "hales-corners-speedway_1983_bill-prietzel_mark-vanveghel_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1983/hales-corners-speedway_1983_bill-prietzel_mark-vanveghel_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1983_bill-prietzel_mark-vanveghel_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1983",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "mark-vanveghel",
+    "creditType": "post",
+    "sequence": "455"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_bill-prietzel_bill-prietzel_post_443.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bill-prietzel_bill-prietzel_post_443.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_bill-prietzel_bill-prietzel_post_443.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "bill-prietzel",
+    "creditType": "post",
+    "sequence": "443"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_bill-prietzel_bob-schafer_photo_098.jpg",
@@ -30,7 +63,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "098"
+    "sequence": "98"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_bill-prietzel_bob-schafer_photo_12611.jpg",
@@ -52,7 +85,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "dave-olson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_bill-prietzel_kim-kemperman_post_001.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "kim-kemperman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_bill-prietzel_scott-krueger_post_001.jpg",
@@ -74,7 +107,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_bill-prietzel_weber-brothers_photo_6931.jpg",
@@ -99,6 +132,17 @@
     "sequence": "6968"
   },
   {
+    "fileName": "lake-geneva-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
     "fileName": "lake-geneva-raceway_unknown-year_bill-prietzel_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_bill-prietzel_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/lake-geneva-raceway_unknown-year_bill-prietzel_unknown-photographer_photo_001.jpg",
@@ -107,7 +151,18 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_2022_bill-prietzel_weber-brothers_photo_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2022/milwaukee-mile_2022_bill-prietzel_weber-brothers_photo_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_2022_bill-prietzel_weber-brothers_photo_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2022",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
@@ -118,106 +173,18 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
     "year": "unknown-year",
     "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_006.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_006.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_006.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "006"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_007.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_008.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_008.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_008.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "008"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_009.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_009.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_009.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "009"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_010.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_010.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_010.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "010"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_011.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_011.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-prietzel_unknown-photographer_photo_011.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-prietzel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "011"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
@@ -228,7 +195,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_bill-prietzel_kurt-luoma_photo_400.jpg",
@@ -250,6 +217,6 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "roger-cummings",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-cummings_unknown-photographer_photo_004.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "roger-cummings",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-cummings_unknown-photographer_photo_005.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "roger-cummings",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   }
 ]

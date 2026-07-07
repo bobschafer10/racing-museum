@@ -8,7 +8,7 @@
     "driverSlug": "fred-goetz",
     "photographerSlug": "dennis-satorious",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_kyle-munro_dennis-satorious_post_001.jpg",
@@ -19,17 +19,28 @@
     "driverSlug": "kyle-munro",
     "photographerSlug": "dennis-satorious",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "hales-corners-speedway_unknown-year_chuck-stevens_dennis-satorious_post_001.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_chuck-stevens_dennis-satorious_post_001.jpg",
-    "publicPath": "/photos/hales-corners-speedway_unknown-year_chuck-stevens_dennis-satorious_post_001.jpg",
-    "trackSlug": "hales-corners-speedway",
-    "year": "unknown-year",
-    "driverSlug": "chuck-stevens",
+    "fileName": "shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "storagePath": "photos/master/shawano-speedway/1966/shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "publicPath": "/photos/shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1966",
+    "driverSlug": "pete-kielbasa",
     "photographerSlug": "dennis-satorious",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "888"
+  },
+  {
+    "fileName": "shawano-speedway_1970_jim-hansen-mi_dennis-satorious_post_888.jpg",
+    "storagePath": "photos/master/shawano-speedway/1970/shawano-speedway_1970_jim-hansen-mi_dennis-satorious_post_888.jpg",
+    "publicPath": "/photos/shawano-speedway_1970_jim-hansen-mi_dennis-satorious_post_888.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1970",
+    "driverSlug": "jim-hansen-mi",
+    "photographerSlug": "dennis-satorious",
+    "creditType": "post",
+    "sequence": "888"
   }
 ]

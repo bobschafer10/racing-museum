@@ -8,7 +8,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_ken-lund_capital-wreck-john-waters_post_001.jpg",
@@ -19,7 +19,29 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "capital-wreck-john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_ken-lund_capital-wreck-john-waters_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ken-lund_capital-wreck-john-waters_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_ken-lund_capital-wreck-john-waters_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-lund",
+    "photographerSlug": "capital-wreck-john-waters",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_Unknown-year_ken-lund_doug-schoebel_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_Unknown-year_ken-lund_doug-schoebel_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_Unknown-year_ken-lund_doug-schoebel_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-lund",
+    "photographerSlug": "doug-schoebel",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_ken-lund_john-vass_photo_002.jpg",
@@ -30,7 +52,18 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_ken-lund_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ken-lund_john-vass_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_ken-lund_john-vass_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ken-lund",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_ken-lund_unknown-photographer_photo_001.jpg",
@@ -41,18 +74,18 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "capital-super-speedway_Unknown-year_ken-lund_doug-schoebel_post_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/Unknown-year/capital-super-speedway_Unknown-year_ken-lund_doug-schoebel_post_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_Unknown-year_ken-lund_doug-schoebel_post_001.jpg",
+    "fileName": "capital-super-speedway_unknown-year_ken-lund_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ken-lund_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_ken-lund_unknown-photographer_photo_001.jpg",
     "trackSlug": "capital-super-speedway",
-    "year": "Unknown-year",
+    "year": "unknown-year",
     "driverSlug": "ken-lund",
-    "photographerSlug": "doug-schoebel",
-    "creditType": "post",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_ken-lund_john-vass_photo_001.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_ken-lund_pete-fileca_photo_001.jpg",
@@ -74,7 +107,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_ken-lund_unknown-photographer_photo_003.jpg",
@@ -85,7 +118,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ken-lund_tom-loos_photo_001.jpg",
@@ -96,7 +129,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_ken-lund_don-besch_photo_001.jpg",
@@ -107,7 +140,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ken-lund_bob-schafer_photo_266.jpg",
@@ -129,7 +162,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "nashville-speedway_unknown-year_ken-lund_bob-schafer_photo_14194.jpg",
@@ -151,7 +184,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_ken-lund_pat-heaney_post_001.jpg",
@@ -162,7 +195,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ken-lund_charlie-spry_post_001.jpg",
@@ -173,7 +206,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ken-lund_dan-walker_photo_001.jpg",
@@ -184,29 +217,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "dan-walker",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ken-lund_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-lund_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ken-lund_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ken-lund",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ken-lund_weber-brothers_photo_1185.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-lund_weber-brothers_photo_1185.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ken-lund_weber-brothers_photo_1185.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ken-lund",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "1185"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1985_ken-lund_pat-heaney_post_333.jpg",

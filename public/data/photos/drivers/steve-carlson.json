@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_steve-carlson_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_steve-carlson_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_steve-carlson_kurt-luoma_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "steve-carlson",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "dells-motor-speedway_unknown-year_steve-carlson_bob-schafer_photo_495.jpg",
     "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_steve-carlson_bob-schafer_photo_495.jpg",
     "publicPath": "/photos/dells-motor-speedway_unknown-year_steve-carlson_bob-schafer_photo_495.jpg",
@@ -30,7 +19,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_steve-carlson_unknown-photographer_photo_004.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_steve-carlson_darrell-kennedy_photo_001.jpg",
@@ -52,7 +41,18 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "darrell-kennedy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "steve-carlson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
@@ -74,18 +74,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_steve-carlson_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_steve-carlson_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_steve-carlson_unknown-photographer_photo_002.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "steve-carlson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_steve-carlson_unknown-photographer_photo_003.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_steve-carlson_unknown-photographer_photo_004.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "rockford-speedway_1982_steve-carlson_don-besch_photo_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_steve-carlson_don-besch_photo_001.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
@@ -143,6 +132,28 @@
     "sequence": "222"
   },
   {
+    "fileName": "rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "steve-carlson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_steve-carlson_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-carlson_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_steve-carlson_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-carlson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_steve-carlson_pete-vercauteren_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-carlson_pete-vercauteren_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_steve-carlson_pete-vercauteren_photo_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-carlson_unknown-photographer_photo_11662.jpg",
@@ -173,7 +184,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_dennis-satorius_post_001.jpg",
@@ -184,7 +195,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_pat-heaney_post_001.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_001.jpg",
@@ -206,7 +217,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_003.jpg",
@@ -217,7 +228,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_005.jpg",
@@ -228,7 +239,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_006.jpg",
@@ -239,7 +250,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_007.jpg",
@@ -250,7 +261,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_008.jpg",
@@ -261,7 +272,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_009.jpg",
@@ -272,7 +283,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_011.jpg",
@@ -283,7 +294,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_012.jpg",
@@ -294,7 +305,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_014.jpg",
@@ -305,7 +316,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_021.jpg",
@@ -316,7 +327,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-carlson_unknown-photographer_photo_022.jpg",
@@ -327,7 +338,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_bob-schafer_photo_13915.jpg",
@@ -371,7 +382,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_kurt-luoma_photo_001.jpg",
@@ -382,7 +393,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_kurt-luoma_photo_002.jpg",
@@ -393,7 +404,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_kurt-luoma_photo_003.jpg",
@@ -404,7 +415,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_unknown-photographer_photo_001.jpg",
@@ -415,7 +426,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_unknown-photographer_photo_002.jpg",
@@ -426,7 +437,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_unknown-photographer_photo_1000.jpg",

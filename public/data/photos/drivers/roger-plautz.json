@@ -8,7 +8,7 @@
     "driverSlug": "roger-plautz",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-plautz_joe-verdegan_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "roger-plautz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-plautz_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "roger-plautz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

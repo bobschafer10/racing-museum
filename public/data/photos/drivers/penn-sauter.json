@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "capital-super-speedway_2026_penn-sauter_doug-corcoran_photo_633.jpg",
+    "storagePath": "photos/master/capital-super-speedway/2026/capital-super-speedway_2026_penn-sauter_doug-corcoran_photo_633.jpg",
+    "publicPath": "/photos/capital-super-speedway_2026_penn-sauter_doug-corcoran_photo_633.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "2026",
+    "driverSlug": "penn-sauter",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "633"
+  },
+  {
+    "fileName": "slinger-speedway_2026_penn-sauter_brian-bjerk_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_penn-sauter_brian-bjerk_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_penn-sauter_brian-bjerk_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "penn-sauter",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_001.jpg",
@@ -8,7 +30,7 @@
     "driverSlug": "penn-sauter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_penn-sauter_unknown-photographer_photo_002.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "penn-sauter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_2025_penn-sauter_derek-sabourin_photo_001.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "penn-sauter",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

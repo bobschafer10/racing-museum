@@ -8,7 +8,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "new-smyrna-speedway_1990_denny-anderson_bob-schafer_photo_13434.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "new-smyrna-speedway_unknown-year_dick-trickle_unknown-photographer_photo_031.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "new-smyrna-speedway_unknown-year_dick-trickle_unknown-photographer_photo_101.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "junior-hanley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "new-smyrna-speedway_unknown-year_leonard-reimer_unknown-photographer_photo_333.jpg",
@@ -239,6 +239,6 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "ovaltrackphotos",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

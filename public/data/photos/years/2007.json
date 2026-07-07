@@ -8,7 +8,18 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "aaron-falbe",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "columbus-151-speedway_2007_jarrod-sutherland_charlie-spry_photo_233.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/2007/columbus-151-speedway_2007_jarrod-sutherland_charlie-spry_photo_233.jpg",
+    "publicPath": "/photos/columbus-151-speedway_2007_jarrod-sutherland_charlie-spry_photo_233.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "2007",
+    "driverSlug": "jarrod-sutherland",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "233"
   },
   {
     "fileName": "golden-sands-speedway_2007_mike-gwindt_tom-loos_photo_001.jpg",
@@ -19,18 +30,18 @@
     "driverSlug": "mike-gwindt",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_2007_terry-van-roy_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2007/unknown-track_2007_terry-van-roy_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2007_terry-van-roy_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "road-america_2007_kyle-shear_keith-vercauteren_post-444.jpg",
+    "storagePath": "photos/master/road-america/2007/road-america_2007_kyle-shear_keith-vercauteren_post-444.jpg",
+    "publicPath": "/photos/road-america_2007_kyle-shear_keith-vercauteren_post-444.jpg",
+    "trackSlug": "road-america",
     "year": "2007",
-    "driverSlug": "terry-van-roy",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "driverSlug": "kyle-shear",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_2007_joe-jaekels_clintman_Post_001.jpg",
@@ -40,7 +51,7 @@
     "year": "2007",
     "driverSlug": "joe-jaekels",
     "photographerSlug": "clintman",
-    "creditType": "Post",
-    "sequence": "001"
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-hertko",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "illiana-speedway_unknown_year_tony-hertko_pete-fileca_post_343.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown_year_tony-hertko_pete-fileca_post_343.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown_year_tony-hertko_pete-fileca_post_343.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-hertko",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "343"
+  },
+  {
+    "fileName": "illiana-speedway_unknown-year_tony-hertko_stan-kalwasinski_photo_111.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_tony-hertko_stan-kalwasinski_photo_111.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_tony-hertko_stan-kalwasinski_photo_111.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-hertko",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "111"
+  }
+]

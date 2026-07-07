@@ -11,6 +11,17 @@
     "sequence": "222"
   },
   {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_mel-walen_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_mel-walen_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_mel-walen_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mel-walen",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "rockford-speedway_1982_mel-walen_don-besch_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_mel-walen_don-besch_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_1982_mel-walen_don-besch_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_mel-walen_weber-brothers_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_mel-walen_pat-heaney_post_444.jpg",
@@ -52,18 +63,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_mel-walen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_mel-walen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_mel-walen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "mel-walen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mel-walen_john-vass_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mel-walen_unknown-photographer_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mel-walen_unknown-photographer_photo_002.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_mel-walen_unknown-photographer_photo_003.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_mel-walen_unknown-photographer_photo_004.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_mel-walen_unknown-photographer_photo_005.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_mel-walen_al-fortner_photo_333.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mel-walen_pat-heaney_post_002.jpg",
@@ -162,6 +162,6 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

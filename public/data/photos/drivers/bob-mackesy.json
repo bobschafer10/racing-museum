@@ -8,7 +8,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1990_bob-mackesy_bob-schafer_photo_13464.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bob-mackesy_kurt-luoma_photo_222.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "ken-koppa",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_bob-mackesy_ken-koppa_photo_010.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "ken-koppa",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "state-park-speedway_1970_bob-mackesy_unknown-photographer_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_1998_bob-mackesy_tom-loos_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_bob-mackesy_bob-schafer_photo_14118.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_bob-mackesy_kurt-luoma_photo_001.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_bob-mackesy_unknown-photographer_photo_001.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_bob-mackesy_unknown-photographer_photo_002.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "state-park-speedway_unknown-year_bob-mackesy_unknown-photographer_photo_003.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bob-mackesy_unknown-phototographer_photo_021.jpg",
@@ -206,7 +206,29 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-mackesy_kurt-luoma_photo_1349.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-mackesy_kurt-luoma_photo_1349.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-mackesy_kurt-luoma_photo_1349.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-mackesy",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1349"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-mackesy_kurt-luoma_photo_1349.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-mackesy_kurt-luoma_photo_1349.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-mackesy_kurt-luoma_photo_1349.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-mackesy",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1349"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-mackesy_kurt-luoma_photo_1349.jpg",
@@ -250,7 +272,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-mackesy_unknown-photographer_photo_002.jpg",
@@ -261,6 +283,6 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

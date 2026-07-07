@@ -8,7 +8,7 @@
     "driverSlug": "bert-weitemeyer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "illiana-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_14023.jpg",
@@ -22,6 +22,28 @@
     "sequence": "14023"
   },
   {
+    "fileName": "raceway-park-il-il_unknown-year_bert-weitemeyer_raceway-park-history_post_265.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_bert-weitemeyer_raceway-park-history_post_265.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_bert-weitemeyer_raceway-park-history_post_265.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "bert-weitemeyer",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "265"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_bert-weitemeyer_raceway-park-history_post_465.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_bert-weitemeyer_raceway-park-history_post_465.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_bert-weitemeyer_raceway-park-history_post_465.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "bert-weitemeyer",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "465"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
@@ -31,5 +53,27 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "160"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bert-weitemeyer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "160"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bert-weitemeyer_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bert-weitemeyer_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bert-weitemeyer_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bert-weitemeyer",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   }
 ]

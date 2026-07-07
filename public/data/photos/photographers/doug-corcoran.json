@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "capital-super-speedway_2026_kyle-steckley_doug-corcoran_photo_999.jpg",
+    "storagePath": "photos/master/capital-super-speedway/2026/capital-super-speedway_2026_kyle-steckley_doug-corcoran_photo_999.jpg",
+    "publicPath": "/photos/capital-super-speedway_2026_kyle-steckley_doug-corcoran_photo_999.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "2026",
+    "driverSlug": "kyle-steckley",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "999"
+  },
+  {
     "fileName": "capital-super-speedway_2026_nick-egan_doug-corcoran_photo_111.jpg",
     "storagePath": "photos/master/capital-super-speedway/2026/capital-super-speedway_2026_nick-egan_doug-corcoran_photo_111.jpg",
     "publicPath": "/photos/capital-super-speedway_2026_nick-egan_doug-corcoran_photo_111.jpg",
@@ -11,6 +22,39 @@
     "sequence": "111"
   },
   {
+    "fileName": "capital-super-speedway_2026_penn-sauter_doug-corcoran_photo_633.jpg",
+    "storagePath": "photos/master/capital-super-speedway/2026/capital-super-speedway_2026_penn-sauter_doug-corcoran_photo_633.jpg",
+    "publicPath": "/photos/capital-super-speedway_2026_penn-sauter_doug-corcoran_photo_633.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "2026",
+    "driverSlug": "penn-sauter",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "633"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_mike-corcoran_doug-corcoran_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_mike-corcoran_doug-corcoran_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_mike-corcoran_doug-corcoran_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "mike-corcoran",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "jefferson-speedway_2026_bryce-miller_doug-corcoran_photo_555.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2026/jefferson-speedway_2026_bryce-miller_doug-corcoran_photo_555.jpg",
+    "publicPath": "/photos/jefferson-speedway_2026_bryce-miller_doug-corcoran_photo_555.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2026",
+    "driverSlug": "bryce-miller",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
     "fileName": "slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
     "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
     "publicPath": "/photos/slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
@@ -19,6 +63,50 @@
     "driverSlug": "jake-hassler",
     "photographerSlug": "doug-corcoran",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2026_art-hahn_doug-corcoran_photo_888.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_art-hahn_doug-corcoran_photo_888.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_art-hahn_doug-corcoran_photo_888.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "art-hahn",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "slinger-speedway_2026_chris-pulera_doug-corcoran_photo_988.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_chris-pulera_doug-corcoran_photo_988.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_chris-pulera_doug-corcoran_photo_988.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "chris-pulera",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "988"
+  },
+  {
+    "fileName": "slinger-speedway_2026_jeff-storm_doug-corcoran_photo_344.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_jeff-storm_doug-corcoran_photo_344.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_jeff-storm_doug-corcoran_photo_344.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "jeff-storm",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "344"
+  },
+  {
+    "fileName": "slinger-speedway_2026_jesse-bernhagen_doug-corcoran_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_jesse-bernhagen_doug-corcoran_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_jesse-bernhagen_doug-corcoran_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "jesse-bernhagen",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "111"
   }
 ]

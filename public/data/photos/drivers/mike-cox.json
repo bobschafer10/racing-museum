@@ -19,7 +19,7 @@
     "driverSlug": "mike-cox",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_1334.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "mike-cox",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_mike-cox_tom-loos_photo_004.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "mike-cox",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "state-park-speedway_unknown-year_mike-cox_ken-koppa_post_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "mike-cox",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
@@ -74,6 +74,6 @@
     "driverSlug": "mike-cox",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

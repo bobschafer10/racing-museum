@@ -22,6 +22,17 @@
     "sequence": "222"
   },
   {
+    "fileName": "rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_tim-fedewa_bob-schafer_photo_13148.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_tim-fedewa_bob-schafer_photo_13148.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_tim-fedewa_bob-schafer_photo_13148.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "tim-fedewa",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "volusia-county-speedway_1990_tim-fedewa_bob-schafer_photo_13164.jpg",

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "hales-corners-speedway_1967_pedro-roehl_michael-halbherr_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1967/hales-corners-speedway_1967_pedro-roehl_michael-halbherr_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1967_pedro-roehl_michael-halbherr_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1967",
+    "driverSlug": "pedro-roehl",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_pedro-roehl_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_pedro-roehl_pat-heaney_post_001.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_pedro-roehl_pat-heaney_post_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "pedro-roehl",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pedro-roehl_scott-krueger_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "pedro-roehl",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pedro-roehl_unknown-photographer_photo_001.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "pedro-roehl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

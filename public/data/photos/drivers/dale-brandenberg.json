@@ -8,7 +8,7 @@
     "driverSlug": "dale-brandenberg",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_dale-brandenberg_mike-dunn_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dale-brandenberg",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1982_dale-brandenberg_pat-heaney_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "dale-brandenberg",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
@@ -41,6 +41,28 @@
     "driverSlug": "dale-brandenberg",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-brandenberg",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-brandenberg_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-brandenberg",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

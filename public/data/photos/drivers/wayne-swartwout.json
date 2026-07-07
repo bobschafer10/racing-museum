@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_wayne-swartwout_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_wayne-swartwout_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_wayne-swartwout_unknown-credit_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "wayne-swartwout",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "columbus-151-speedway_unknown-year_wayne-swartwout_john-waters_post_001.jpg",
     "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_wayne-swartwout_john-waters_post_001.jpg",
     "publicPath": "/photos/columbus-151-speedway_unknown-year_wayne-swartwout_john-waters_post_001.jpg",
@@ -19,7 +8,7 @@
     "driverSlug": "wayne-swartwout",
     "photographerSlug": "john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_wayne-swartwout_unknown-photographer_photo_001.jpg",
@@ -30,7 +19,7 @@
     "driverSlug": "wayne-swartwout",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wayne-swartwout_checkered-john-waters_post_001.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "wayne-swartwout",
     "photographerSlug": "checkered-john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wayne-swartwout_john-waters_post_001.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "wayne-swartwout",
     "photographerSlug": "john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wayne-swartwout_unknown-photographer_photo_001.jpg",
@@ -63,6 +52,6 @@
     "driverSlug": "wayne-swartwout",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

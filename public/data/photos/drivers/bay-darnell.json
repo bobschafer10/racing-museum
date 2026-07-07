@@ -8,7 +8,7 @@
     "driverSlug": "bay-darnell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bay-darnell_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bay-darnell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bay-darnell_weber-brothers_photo_001.jpg",
@@ -30,40 +30,7 @@
     "driverSlug": "bay-darnell",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bay-darnell",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bay-darnell",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bay-darnell_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bay-darnell",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bay-darnell_bob-bergeron_photo_001.jpg",
@@ -74,6 +41,6 @@
     "driverSlug": "bay-darnell",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

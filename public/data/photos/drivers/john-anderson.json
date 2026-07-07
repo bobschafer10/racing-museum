@@ -1,13 +1,13 @@
 [
   {
-    "fileName": "unknown-track_unknown-year_john-anderson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-anderson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-anderson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "milwaukee-mile_unknown-year_john-anderson_weber-brothers_photo_100.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_john-anderson_weber-brothers_photo_100.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_john-anderson_weber-brothers_photo_100.jpg",
+    "trackSlug": "milwaukee-mile",
     "year": "unknown-year",
     "driverSlug": "john-anderson",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "100"
   }
 ]

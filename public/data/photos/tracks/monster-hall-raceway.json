@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "monster-hall-raceway_1998-lonnie-leu_tom-loos_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/1998/monster-hall-raceway_1998-lonnie-leu_tom-loos_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_1998-lonnie-leu_tom-loos_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "1998",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "monster-hall-raceway_2001_bill-lindner_tom-loos_photo_001.jpg",
     "storagePath": "photos/master/monster-hall-raceway/2001/monster-hall-raceway_2001_bill-lindner_tom-loos_photo_001.jpg",
     "publicPath": "/photos/monster-hall-raceway_2001_bill-lindner_tom-loos_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "bill-lindner",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2001_mark-may_tom-loos_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "mark-may",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2002_bob-bennett_tom-loos_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "bob-bennett",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2002_danny-schlafer_tom-loos_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "danny-schlafer",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2002_nick-anvelink_tom-loos_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "nick-anvelink",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2002_scott-anderson_tom-loos_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "scott-anderson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2002_terry-anvelink_tom-loos_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2003_jack-larson_tom-loos_photo_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "jack-larson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2010_kevin-adams_tom-loos_photo_001.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "kevin-adams",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2013_chris-oertel_unknown-credit_post_001.jpg",
@@ -107,7 +118,205 @@
     "driverSlug": "chris-oertel",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2016/monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2016",
+    "driverSlug": "geoff-zdroik",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "monster-hall-raceway_2017_chad-selk_tom-loos_photo_455.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2017/monster-hall-raceway_2017_chad-selk_tom-loos_photo_455.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2017_chad-selk_tom-loos_photo_455.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2017",
+    "driverSlug": "chad-selk",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "monster-hall-raceway_2017_cole-varsho_tom-loos_photo_455.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2017/monster-hall-raceway_2017_cole-varsho_tom-loos_photo_455.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2017_cole-varsho_tom-loos_photo_455.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2017",
+    "driverSlug": "cole-varsho",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "monster-hall-raceway_2017_kasey-gross_tom-loos_photo_455.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2017/monster-hall-raceway_2017_kasey-gross_tom-loos_photo_455.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2017_kasey-gross_tom-loos_photo_455.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2017",
+    "driverSlug": "kasey-gross",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "monster-hall-raceway_2017_paul-niznik_tom-loos_photo_455.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2017/monster-hall-raceway_2017_paul-niznik_tom-loos_photo_455.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2017_paul-niznik_tom-loos_photo_455.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2017",
+    "driverSlug": "paul-niznik",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "monster-hall-raceway_2017_randy-spacek_tom-loos_photo_355.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2017/monster-hall-raceway_2017_randy-spacek_tom-loos_photo_355.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2017_randy-spacek_tom-loos_photo_355.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2017",
+    "driverSlug": "randy-spacek",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "355"
+  },
+  {
+    "fileName": "monster-hall-raceway_2017_randy-spacek_tom-loos_photo_455.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2017/monster-hall-raceway_2017_randy-spacek_tom-loos_photo_455.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2017_randy-spacek_tom-loos_photo_455.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2017",
+    "driverSlug": "randy-spacek",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "monster-hall-raceway_2019_chad-selk_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2019/monster-hall-raceway_2019_chad-selk_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2019_chad-selk_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2019",
+    "driverSlug": "chad-selk",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2019_kent-baxter_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2019/monster-hall-raceway_2019_kent-baxter_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2019_kent-baxter_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2019",
+    "driverSlug": "kent-baxter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2019_mike-widman_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2019/monster-hall-raceway_2019_mike-widman_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2019_mike-widman_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2019",
+    "driverSlug": "mike-widman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "aaron-wickersheim",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_chris-oertel_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_chris-oertel_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_chris-oertel_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "chris-oertel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_hunter-anderson_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_hunter-anderson_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_hunter-anderson_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "hunter-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_james-giossi_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_james-giossi_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_james-giossi_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "james-giossi",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "ron-stroika",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "monster-hall-raceway_2021_lance-leu_tom-loos_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2021/monster-hall-raceway_2021_lance-leu_tom-loos_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2021_lance-leu_tom-loos_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2021",
+    "driverSlug": "lance-leu",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "monster-hall-raceway_2021_nate-szymoniak_tom-loos_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2021/monster-hall-raceway_2021_nate-szymoniak_tom-loos_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2021_nate-szymoniak_tom-loos_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2021",
+    "driverSlug": "nate-szymoniak",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "monster-hall-raceway_2021_steve-kasten_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2021/monster-hall-raceway_2021_steve-kasten_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2021_steve-kasten_unknown-photographer_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2021",
+    "driverSlug": "steve-kasten",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "monster-hall-raceway_2022_abby-kohn_abby-kohn_post_001.jpg",
@@ -118,7 +327,7 @@
     "driverSlug": "abby-kohn",
     "photographerSlug": "abby-kohn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2022_abby-kohn_tom-loos_photo_001.jpg",
@@ -129,7 +338,18 @@
     "driverSlug": "abby-kohn",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "monster-hall-raceway_2022_black-lobacz_tom-loos_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2022/monster-hall-raceway_2022_black-lobacz_tom-loos_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2022_black-lobacz_tom-loos_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2022",
+    "driverSlug": "black-lobacz",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_al-schlaefer_tom-loos_photo_001.jpg",
@@ -140,7 +360,7 @@
     "driverSlug": "al-schlaefer",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_allen-winker_unknown-photographer_photo_001.jpg",
@@ -151,7 +371,7 @@
     "driverSlug": "allen-winker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_brad-seavers_unknown-photographer_photo_001.jpg",
@@ -162,7 +382,7 @@
     "driverSlug": "brad-seavers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
@@ -173,7 +393,7 @@
     "driverSlug": "brad-sievers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_brandon-kallenbach_unknown-photographer_photo_001.jpg",
@@ -184,7 +404,7 @@
     "driverSlug": "brandon-kallenbach",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
@@ -195,7 +415,7 @@
     "driverSlug": "brian-drexler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_butch-oertel_tom-loos_photo_001.jpg",
@@ -206,7 +426,7 @@
     "driverSlug": "butch-oertel",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_cal-maule_tom-loos_photo_001.jpg",
@@ -217,7 +437,7 @@
     "driverSlug": "cal-maule",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_cal-maule_unknown-photographer_photo_001.jpg",
@@ -228,7 +448,7 @@
     "driverSlug": "cal-maule",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_carson-sillars_tom-loos_photo_001.jpg",
@@ -239,7 +459,7 @@
     "driverSlug": "carson-sillars",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_chris-oertel_tom-loos_photo_001.jpg",
@@ -250,7 +470,7 @@
     "driverSlug": "chris-oertel",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_chris-oertel_tom-loos_photo_002.jpg",
@@ -261,7 +481,7 @@
     "driverSlug": "chris-oertel",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_cole-varsho_unknown-photographer_photo_001.jpg",
@@ -272,7 +492,7 @@
     "driverSlug": "cole-varsho",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_craig-campton_tom-loos_photo_001.jpg",
@@ -283,7 +503,7 @@
     "driverSlug": "craig-campton",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_dave-teetz_tom-loos_photo_001.jpg",
@@ -294,7 +514,7 @@
     "driverSlug": "dave-teetz",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_david-baxter_tom-loos_photo_001.jpg",
@@ -305,7 +525,7 @@
     "driverSlug": "david-baxter",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_derek-eberl_unknown-photographer_photo_001.jpg",
@@ -316,7 +536,7 @@
     "driverSlug": "derek-eberl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_doug-herbst_unknown-photographer_photo_002.jpg",
@@ -327,7 +547,7 @@
     "driverSlug": "doug-herbst",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_george-richards_tom-loos_photo_001.jpg",
@@ -338,7 +558,7 @@
     "driverSlug": "george-richards",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_george-szeliger_unknown-photographer_photo_001.jpg",
@@ -349,7 +569,7 @@
     "driverSlug": "george-szeliger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jack-larson_unknown-photographer_photo_002.jpg",
@@ -360,7 +580,7 @@
     "driverSlug": "jack-larson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jamie-strebig_tom-loos_photo_001.jpg",
@@ -371,7 +591,7 @@
     "driverSlug": "jamie-strebig",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jared-lindner_unknown-photographer_photo_001.jpg",
@@ -382,7 +602,7 @@
     "driverSlug": "jared-lindner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jared-loos_tom-loos_photo_001.jpg",
@@ -393,7 +613,7 @@
     "driverSlug": "jared-loos",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jason-czarapata_tom-loos_photo_001.jpg",
@@ -404,7 +624,7 @@
     "driverSlug": "jason-czarapata",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jay-kesan_tom-loos_photo_001.jpg",
@@ -415,7 +635,7 @@
     "driverSlug": "jay-kesan",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jed-moore_unknown-photographer_photo_001.jpg",
@@ -426,7 +646,7 @@
     "driverSlug": "jed-moore",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jeff-klopstein_unknown-photographer_photo_001.jpg",
@@ -437,7 +657,7 @@
     "driverSlug": "jeff-klopstein",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_001.jpg",
@@ -448,7 +668,7 @@
     "driverSlug": "jim-bartelt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jim-bartelt_unknown-photographer_photo_002.jpg",
@@ -459,7 +679,7 @@
     "driverSlug": "jim-bartelt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jim-poyda_unknown-photographer_photo_001.jpg",
@@ -470,7 +690,7 @@
     "driverSlug": "jim-poyda",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jim-poyda_unknown-photographer_photo_003.jpg",
@@ -481,7 +701,7 @@
     "driverSlug": "jim-poyda",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jim-thur_unknown-photographer_photo_001.jpg",
@@ -492,7 +712,7 @@
     "driverSlug": "jim-thur",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_jim-willner_unknown-photographer_photo_001.jpg",
@@ -503,7 +723,7 @@
     "driverSlug": "jim-willner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_josh-opper_unknown-photographer_photo_001.jpg",
@@ -514,7 +734,7 @@
     "driverSlug": "josh-opper",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_joshua-vanderleest_unknown-photographer_photo_001.jpg",
@@ -525,7 +745,7 @@
     "driverSlug": "joshua-vanderleest",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_001.jpg",
@@ -536,7 +756,7 @@
     "driverSlug": "karl-genett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_karl-genett_unknown-photographer_photo_002.jpg",
@@ -547,7 +767,7 @@
     "driverSlug": "karl-genett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_karl-gennet_tom-loos_photo_001.jpg",
@@ -558,7 +778,7 @@
     "driverSlug": "karl-gennet",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
@@ -569,7 +789,7 @@
     "driverSlug": "kasey-gross",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_ken-hueser_tom-loos_photo_001.jpg",
@@ -580,7 +800,7 @@
     "driverSlug": "ken-hueser",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_ken-pankratz_unknown-photographer_photo_001.jpg",
@@ -591,7 +811,7 @@
     "driverSlug": "ken-pankratz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kenny-richards_tom-loos_photo_001.jpg",
@@ -602,7 +822,7 @@
     "driverSlug": "kenny-richards",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kevin-adams_tom-loos_photo_001.jpg",
@@ -613,7 +833,7 @@
     "driverSlug": "kevin-adams",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kevin-adams_tom-loos_photo_002.jpg",
@@ -624,7 +844,7 @@
     "driverSlug": "kevin-adams",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kevin-fisher_unknown-photographer_photo_001.jpg",
@@ -635,7 +855,7 @@
     "driverSlug": "kevin-fisher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kirk-bogdanovic_unknown-photographer_photo_001.jpg",
@@ -646,7 +866,7 @@
     "driverSlug": "kirk-bogdanovic",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_konnor-wilinski_unknown-photographer_photo_001.jpg",
@@ -657,7 +877,7 @@
     "driverSlug": "konnor-wilinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kyle-fredrich_tom-loos_photo_001.jpg",
@@ -668,7 +888,7 @@
     "driverSlug": "kyle-fredrich",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_kyle-genett_unknown-photographer_photo_001.jpg",
@@ -679,7 +899,7 @@
     "driverSlug": "kyle-genett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_001.jpg",
@@ -690,7 +910,7 @@
     "driverSlug": "lance-leu",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_lance-leu_tom-loos_photo_002.jpg",
@@ -701,7 +921,7 @@
     "driverSlug": "lance-leu",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_lonnie-leu_unknown-photographer_photo_001.jpg",
@@ -712,7 +932,7 @@
     "driverSlug": "lonnie-leu",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_matt-gilbertson_tom-loos_photo_001.jpg",
@@ -723,7 +943,7 @@
     "driverSlug": "matt-gilbertson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_matt-gilbertson_unknown-photographer_photo_001.jpg",
@@ -734,7 +954,7 @@
     "driverSlug": "matt-gilbertson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_michael-truscott_tom-loos_photo_001.jpg",
@@ -745,7 +965,7 @@
     "driverSlug": "michael-truscott",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_michael-truscott_unknown-photographer_photo_001.jpg",
@@ -756,7 +976,7 @@
     "driverSlug": "michael-truscott",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_mike-bauer_tom-loos_photo_001.jpg",
@@ -767,7 +987,7 @@
     "driverSlug": "mike-bauer",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_mike-blevens_tom-loos_photo_001.jpg",
@@ -778,7 +998,7 @@
     "driverSlug": "mike-blevens",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_mike-paul_tom-loos_photo_001.jpg",
@@ -789,7 +1009,7 @@
     "driverSlug": "mike-paul",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_nick-oreskovich_tom-loos_photo_001.jpg",
@@ -800,7 +1020,7 @@
     "driverSlug": "nick-oreskovich",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_nick-simons_tom-loos_photo_001.jpg",
@@ -811,7 +1031,7 @@
     "driverSlug": "nick-simons",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_paul-diefenthalter_tom-loos_photo_001.jpg",
@@ -822,7 +1042,7 @@
     "driverSlug": "paul-diefenthalter",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_paul-erickson_unknown-photographer_photo_001.jpg",
@@ -833,7 +1053,7 @@
     "driverSlug": "paul-erickson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_paul-knauf_unknown-photographer_photo_001.jpg",
@@ -844,7 +1064,7 @@
     "driverSlug": "paul-knauf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_paul-lieders_unknown-photographer_photo_002.jpg",
@@ -855,7 +1075,7 @@
     "driverSlug": "paul-lieders",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_paul-niznik_unknown-photographer_photo_002.jpg",
@@ -866,7 +1086,7 @@
     "driverSlug": "paul-niznik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_paul-niznik_unknown-photographer_photo_003.jpg",
@@ -877,7 +1097,7 @@
     "driverSlug": "paul-niznik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_pete-parker_tom-loos_photo_001.jpg",
@@ -888,7 +1108,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_randy-luedtke_unknown-photographer_photo_001.jpg",
@@ -899,7 +1119,7 @@
     "driverSlug": "randy-luedtke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_randy-spacek_tom-loos_photo_001.jpg",
@@ -910,7 +1130,7 @@
     "driverSlug": "randy-spacek",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_randy-spacek_unknown-photographer_photo_002.jpg",
@@ -921,7 +1141,7 @@
     "driverSlug": "randy-spacek",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_randy-spacek_unknown-photographer_photo_005.jpg",
@@ -932,7 +1152,7 @@
     "driverSlug": "randy-spacek",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_robbie-bunkelman_unknown-photographer_photo_001.jpg",
@@ -943,7 +1163,7 @@
     "driverSlug": "robbie-bunkelman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_rod-herman_unknown-photographer_photo_002.jpg",
@@ -954,7 +1174,7 @@
     "driverSlug": "rod-herman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_ron-sischo_unknown-photographer_photo_001.jpg",
@@ -965,7 +1185,7 @@
     "driverSlug": "ron-sischo",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_scott-anderson_tom-loos_photo_001.jpg",
@@ -976,7 +1196,7 @@
     "driverSlug": "scott-anderson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_scott-anderson_unknown-photographer_photo_001.jpg",
@@ -987,7 +1207,7 @@
     "driverSlug": "scott-anderson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_scott-duval_unknown-photographer_photo_001.jpg",
@@ -998,7 +1218,7 @@
     "driverSlug": "scott-duval",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_shane-halopka_unknown-photographer_photo_001.jpg",
@@ -1009,7 +1229,7 @@
     "driverSlug": "shane-halopka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_shawn-frehlich_tom-loos_photo_001.jpg",
@@ -1020,7 +1240,7 @@
     "driverSlug": "shawn-frehlich",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_shawn-wagner_unknown-photographer_photo_001.jpg",
@@ -1031,7 +1251,7 @@
     "driverSlug": "shawn-wagner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_steve-isenberg_unknown-photographer_photo_001.jpg",
@@ -1042,7 +1262,7 @@
     "driverSlug": "steve-isenberg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_steve-laursen_unknown-photographer_photo_001.jpg",
@@ -1053,7 +1273,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_steve-surprenant_tom-loos_photo_001.jpg",
@@ -1064,7 +1284,7 @@
     "driverSlug": "steve-surprenant",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_steve-tesch_tom-loos_photo_001.jpg",
@@ -1075,7 +1295,7 @@
     "driverSlug": "steve-tesch",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_talon-laabs_unknown-photographer_photo_001.jpg",
@@ -1086,7 +1306,7 @@
     "driverSlug": "talon-laabs",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_talon-laabs_unknown-photographer_photo_002.jpg",
@@ -1097,7 +1317,7 @@
     "driverSlug": "talon-laabs",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_terry-anvelink_unknown-photographer_photo_333.jpg",
@@ -1119,7 +1339,7 @@
     "driverSlug": "tim-buhler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_todd-heier_unknown-photographer_photo_001.jpg",
@@ -1130,7 +1350,7 @@
     "driverSlug": "todd-heier",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_todd-heier_unknown-photographer_photo_002.jpg",
@@ -1141,7 +1361,7 @@
     "driverSlug": "todd-heier",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_todd-roshell_tom-loos_photo_001.jpg",
@@ -1152,7 +1372,7 @@
     "driverSlug": "todd-roshell",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_tom-loos_tom-loos_photo_001.jpg",
@@ -1163,7 +1383,7 @@
     "driverSlug": "tom-loos",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_tom-martinson_tom-loos_photo_001.jpg",
@@ -1174,7 +1394,7 @@
     "driverSlug": "tom-martinson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_unknown-driver_kurt-luoma_post_001.jpg",
@@ -1185,7 +1405,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "kurt-luoma",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_unknown-driver_paul-socwell_photo_001.jpg",
@@ -1196,7 +1416,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "paul-socwell",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_unknown-driver_paul-socwell_post_002.jpg",
@@ -1207,7 +1427,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "paul-socwell",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_unknown-driver_tom-loos_photo_001.jpg",
@@ -1218,7 +1438,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -1229,7 +1449,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_unknown-driver_unknown-photographer_photo_002.jpg",
@@ -1240,7 +1460,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "monster-hall-raceway_unknown-year_zack-kauth_tom-loos_photo_001.jpg",
@@ -1251,6 +1471,6 @@
     "driverSlug": "zack-kauth",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

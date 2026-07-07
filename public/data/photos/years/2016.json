@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "141-speedway_2016_geoff-zdroik_turn-2_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/2016/141-speedway_2016_geoff-zdroik_turn-2_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_2016_geoff-zdroik_turn-2_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2016",
+    "driverSlug": "geoff-zdroik",
+    "photographerSlug": "turn-2",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "141-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "storagePath": "photos/master/141-speedway/2016/141-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "publicPath": "/photos/141-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2016",
+    "driverSlug": "kyle-frederick",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "cedar-lake-speedway_2016_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
     "storagePath": "photos/master/cedar-lake-speedway/2016/cedar-lake-speedway_2016_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
     "publicPath": "/photos/cedar-lake-speedway_2016_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
@@ -8,7 +30,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "fotos-by-fizzle",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2016_chad-hummelmeier_unknown-photographer_photo_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "chad-hummelmeier",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2016_mike-mueller_unknown-photographer_photo_001.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "mike-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2016_russ-davison_captive-moments_photo_001.jpg",
@@ -41,7 +63,18 @@
     "driverSlug": "russ-davison",
     "photographerSlug": "captive-moments",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2016/golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2016",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "dean-zakrzewski",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "jefferson-speedway_2016_jason-uttech_jason-uttech_post_333.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "adam-bendzick",
     "photographerSlug": "adam-bendzick",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "manitowoc-expo-speedway_2016_mitchell-yurmanovich_bill-schmidt_photo_112.jpg",
@@ -77,6 +110,50 @@
     "sequence": "112"
   },
   {
+    "fileName": "monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2016/monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2016",
+    "driverSlug": "geoff-zdroik",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "tim-doehling",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "oshkosh-speed-zone_2016_tim-reichenberger_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_tim-reichenberger_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/oshkosh-speed-zone_2016_tim-reichenberger_unknown-photographer_photo_001.jpg",
@@ -85,7 +162,7 @@
     "driverSlug": "tim-reichenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "princeton-speedway_2016_aj-viehauser_cricket-prints_photo_001.jpg",
@@ -96,7 +173,40 @@
     "driverSlug": "aj-viehauser",
     "photographerSlug": "cricket-prints",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "seymour-speedway_2016_alan-schlueter_dan-lewis_photo_100.jpg",
+    "storagePath": "photos/master/seymour-speedway/2016/seymour-speedway_2016_alan-schlueter_dan-lewis_photo_100.jpg",
+    "publicPath": "/photos/seymour-speedway_2016_alan-schlueter_dan-lewis_photo_100.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2016",
+    "driverSlug": "alan-schlueter",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "seymour-speedway_2016_dan-nelson_bob-greuel_photo_333.jpg",
+    "storagePath": "photos/master/seymour-speedway/2016/seymour-speedway_2016_dan-nelson_bob-greuel_photo_333.jpg",
+    "publicPath": "/photos/seymour-speedway_2016_dan-nelson_bob-greuel_photo_333.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2016",
+    "driverSlug": "dan-nelson",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "seymour-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "storagePath": "photos/master/seymour-speedway/2016/seymour-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "publicPath": "/photos/seymour-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2016",
+    "driverSlug": "kyle-frederick",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "shawano-speedway_2016_aaron-reivitis_aaron-reivitis_post_001.jpg",
@@ -107,7 +217,18 @@
     "driverSlug": "aaron-reivitis",
     "photographerSlug": "aaron-reivitis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/2016/shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2016",
+    "driverSlug": "jason-zdroik",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_2016_luke-uttecht_bill-schmidt_photo_333.jpg",
@@ -129,7 +250,7 @@
     "driverSlug": "paul-parker",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2016_ray-depew_bill-schmidt_photo_333.jpg",
@@ -151,50 +272,72 @@
     "driverSlug": "ron-berna",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_2016_abe-bires_kbr-performance_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2016/unknown-track_2016_abe-bires_kbr-performance_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2016_abe-bires_kbr-performance_post_001.jpg",
+    "fileName": "tomah-sparta-speedway_2016_amanda-bohn_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2016/tomah-sparta-speedway_2016_amanda-bohn_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2016_amanda-bohn_unknown-photographer_photo_555.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2016",
+    "driverSlug": "amanda-bohn",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2016_nick-schmidt_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2016/tomah-sparta-speedway_2016_nick-schmidt_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2016_nick-schmidt_unknown-photographer_photo_555.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2016",
+    "driverSlug": "nick-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2016_rick-coppernol_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2016/tomah-sparta-speedway_2016_rick-coppernol_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2016_rick-coppernol_unknown-photographer_photo_555.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2016",
+    "driverSlug": "rick-coppernol",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2016_steve-rozek_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2016/tomah-sparta-speedway_2016_steve-rozek_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2016_steve-rozek_unknown-photographer_photo_555.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2016",
+    "driverSlug": "steve-rozek",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "unknown-track_2016_brandon-gagnon_brandon-gagnon_post_432.jpg",
+    "storagePath": "photos/master/unknown-track/2016/unknown-track_2016_brandon-gagnon_brandon-gagnon_post_432.jpg",
+    "publicPath": "/photos/unknown-track_2016_brandon-gagnon_brandon-gagnon_post_432.jpg",
     "trackSlug": "unknown-track",
     "year": "2016",
-    "driverSlug": "abe-bires",
-    "photographerSlug": "kbr-performance",
+    "driverSlug": "brandon-gagnon",
+    "photographerSlug": "brandon-gagnon",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "432"
   },
   {
-    "fileName": "unknown-track_2016_david-hoerning_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2016/unknown-track_2016_david-hoerning_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2016_david-hoerning_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2016_joey-galloway_joey-galloway_post_545.jpg",
+    "storagePath": "photos/master/unknown-track/2016/unknown-track_2016_joey-galloway_joey-galloway_post_545.jpg",
+    "publicPath": "/photos/unknown-track_2016_joey-galloway_joey-galloway_post_545.jpg",
     "trackSlug": "unknown-track",
     "year": "2016",
-    "driverSlug": "david-hoerning",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2016_jeff-schmuhl_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2016/unknown-track_2016_jeff-schmuhl_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2016_jeff-schmuhl_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2016",
-    "driverSlug": "jeff-schmuhl",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2016_joe-prusak_unknown-photographer_photo_006.jpg",
-    "storagePath": "photos/master/unknown-track/2016/unknown-track_2016_joe-prusak_unknown-photographer_photo_006.jpg",
-    "publicPath": "/photos/unknown-track_2016_joe-prusak_unknown-photographer_photo_006.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2016",
-    "driverSlug": "joe-prusak",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "006"
+    "driverSlug": "joey-galloway",
+    "photographerSlug": "joey-galloway",
+    "creditType": "post",
+    "sequence": "545"
   }
 ]

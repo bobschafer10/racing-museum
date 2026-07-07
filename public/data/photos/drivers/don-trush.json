@@ -6,9 +6,9 @@
     "trackSlug": "columbus-151-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "don-trush",
-    "photographerSlug": "charlie-spry-photo",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway-wi_unknown-year_don-trush_don-trush-post_001.jpg",
@@ -17,9 +17,9 @@
     "trackSlug": "columbus-151-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "don-trush",
-    "photographerSlug": "don-trush-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "don-trush",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-trush_charlie-spry_post_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "don-trush",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

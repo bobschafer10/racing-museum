@@ -8,7 +8,7 @@
     "driverSlug": "tim-olson",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_tim-olson_john-kaufenberg_post_001.jpg",
@@ -19,18 +19,7 @@
     "driverSlug": "tim-olson",
     "photographerSlug": "john-kaufenberg",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_tim-olson_bob-schafer_photo_137.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_tim-olson_bob-schafer_photo_137.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_tim-olson_bob-schafer_photo_137.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tim-olson",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "137"
+    "sequence": "1"
   },
   {
     "fileName": "minnesota-state-fair_unknown-year_tim-olson_bob-schafer_photo_141.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "tim-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-olson_unknown-photographer_photo_002.jpg",
@@ -74,7 +63,7 @@
     "driverSlug": "tim-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-olson_unknown-photographer_photo_003.jpg",
@@ -85,6 +74,6 @@
     "driverSlug": "tim-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

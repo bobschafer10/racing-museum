@@ -8,7 +8,7 @@
     "driverSlug": "brad-andregg",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,40 @@
     "driverSlug": "brad-andregg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-andregg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-andregg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-andregg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
@@ -30,6 +63,39 @@
     "driverSlug": "brad-andregg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-andregg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "31"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-andregg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "31"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-andregg_unknown-photographer_photo_031.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-andregg",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "31"
   }
 ]

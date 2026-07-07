@@ -19,7 +19,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "hales-corners-speedway_1984_gordie-seegert_weber-brothers_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_gordie-seegert_weber-brothers_photo_002.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1985_gordie-seegert_bob-schafer_photo_060.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "060"
+    "sequence": "60"
   },
   {
     "fileName": "hales-corners-speedway_1990_gordie-seegert_bob-schafer_photo_021.jpg",
@@ -63,18 +63,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "021"
-  },
-  {
-    "fileName": "hales-corners-speedway_unknown-year_gordie-seegert_weber-brothers_photo_6967.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_gordie-seegert_weber-brothers_photo_6967.jpg",
-    "publicPath": "/photos/hales-corners-speedway_unknown-year_gordie-seegert_weber-brothers_photo_6967.jpg",
-    "trackSlug": "hales-corners-speedway",
-    "year": "unknown-year",
-    "driverSlug": "gordie-seegert",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "6967"
+    "sequence": "21"
   },
   {
     "fileName": "langlade-county-speedway_unknown-year_gordie-seegert_jennifer-jach_photo_001.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "jennifer-jach",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_gordie-seegert_unknown-photographer_photo_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_gordie-seegert_joe-slack_photo_001.jpg",
@@ -107,40 +96,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gordie-seegert_tom-loos_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordie-seegert_tom-loos_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gordie-seegert_tom-loos_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gordie-seegert",
-    "photographerSlug": "tom-loos",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gordie-seegert",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gordie-seegert",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_003.jpg",
@@ -151,18 +107,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gordie-seegert_unknown-photographer_photo_007.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gordie-seegert",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
+    "sequence": "3"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_gordie-seegert_kurt-luoma_photo_762.jpg",

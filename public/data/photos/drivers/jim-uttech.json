@@ -8,7 +8,7 @@
     "driverSlug": "jim-uttech",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_jim-uttech_unknown-photographer_photo_14602.jpg",
@@ -22,17 +22,6 @@
     "sequence": "14602"
   },
   {
-    "fileName": "unknown-track_unknown-year_jim-uttech_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-uttech_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-uttech_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-uttech",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "wilmot-raceway_1981_jim-uttech_don-besch_photo_001.jpg",
     "storagePath": "photos/master/wilmot-raceway/1981/wilmot-raceway_1981_jim-uttech_don-besch_photo_001.jpg",
     "publicPath": "/photos/wilmot-raceway_1981_jim-uttech_don-besch_photo_001.jpg",
@@ -41,6 +30,17 @@
     "driverSlug": "jim-uttech",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_jim-uttech_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_jim-uttech_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_jim-uttech_unknown-photographer_photo_333.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-uttech",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   }
 ]

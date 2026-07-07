@@ -22,17 +22,6 @@
     "sequence": "111"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "wayne-brietenfeldt",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13828"
-  },
-  {
     "fileName": "state-park-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_14129.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_14129.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_14129.jpg",
@@ -52,7 +41,18 @@
     "driverSlug": "wayne-brietenfeldt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-brietenfeldt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "wayne-brietenfeldt",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_002.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "wayne-brietenfeldt",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_wayne-brietenfeldt_unknown-photographer_photo_3838.jpg",
@@ -96,6 +96,6 @@
     "driverSlug": "wayne-brietenfeldt",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

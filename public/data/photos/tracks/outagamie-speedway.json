@@ -8,7 +8,7 @@
     "driverSlug": "erv-schmude",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "outagamie-speedway_unknown-year_george-giesen_joe-verdegan_post_001.jpg",
@@ -19,7 +19,62 @@
     "driverSlug": "george-giesen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_ralph-rosseau_dennis-satorius_post_334.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_ralph-rosseau_dennis-satorius_post_334.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_ralph-rosseau_dennis-satorius_post_334.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "ralph-rosseau",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "334"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_334.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_334.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_334.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "334"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_335.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_335.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_335.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "335"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_336.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_336.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_336.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "336"
+  },
+  {
+    "fileName": "outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_337.jpg",
+    "storagePath": "photos/master/outagamie-speedway/unknown-year/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_337.jpg",
+    "publicPath": "/photos/outagamie-speedway_unknown-year_unknown-driver_dennis-satorius_post_337.jpg",
+    "trackSlug": "outagamie-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dennis-satorius",
+    "creditType": "post",
+    "sequence": "337"
   },
   {
     "fileName": "outagamie-speedway_unknown-year_unknown-driver_unknown-photographer_photo_333.jpg",

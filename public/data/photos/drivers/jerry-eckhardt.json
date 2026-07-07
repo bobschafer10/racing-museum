@@ -8,7 +8,18 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_jerry-eckhardt_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_jerry-eckhardt_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_jerry-eckhardt_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_jerry-eckhardt_don-wendlandt_photo_115.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jerry-eckhardt_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jerry-eckhardt_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jerry-eckhardt_kurt-luoma_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_jerry-eckhardt_john-vass_photo_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_jerry-eckhardt_john-mckarns_photo_001.jpg",
@@ -52,7 +74,18 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_13945.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_13945.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_13945.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13945"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_13945.jpg",
@@ -77,6 +110,28 @@
     "sequence": "239"
   },
   {
+    "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_239.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_239.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_239.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "239"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_250.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_250.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_250.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "250"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_250.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_250.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_jerry-eckhardt_bob-schafer_photo_250.jpg",
@@ -96,7 +151,18 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
@@ -107,7 +173,29 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_463.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_463.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_463.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "463"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jerry-eckhardt_unknown-photographer_photo_463.jpg",
@@ -129,51 +217,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-eckhardt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-eckhardt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-eckhardt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-eckhardt_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-eckhardt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1979_jerry-eckhardt_rpm_photo_333.jpg",
@@ -195,7 +239,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_jerry-eckhardt_al-fortner_photo_333.jpg",
@@ -217,7 +261,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-eckhardt_john-vass_post_100.jpg",
@@ -239,7 +283,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-eckhardt_unknown-photographer_photo_001.jpg",
@@ -250,7 +294,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-eckhardt_unknown-photographer_photo_002.jpg",
@@ -261,7 +305,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-eckhardt_unknown-photographer_photo_003.jpg",
@@ -272,6 +316,6 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

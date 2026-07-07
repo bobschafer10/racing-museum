@@ -8,117 +8,7 @@
     "driverSlug": "bill-herr",
     "photographerSlug": "troy-powers",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_paul-socwell_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_paul-socwell_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_paul-socwell_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "paul-socwell",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_paul-socwell_post_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_paul-socwell_post_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_paul-socwell_post_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "paul-socwell",
-    "creditType": "post",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_ryan-aho_post_038.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_ryan-aho_post_038.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_ryan-aho_post_038.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "038"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_007.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_unknown-photographer_photo_008.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_008.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_unknown-photographer_photo_008.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "008"
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_bill-herr_john-vass_photo_001.jpg",
@@ -129,7 +19,7 @@
     "driverSlug": "bill-herr",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_bill-herr_kurt-luoma_photo_400.jpg",

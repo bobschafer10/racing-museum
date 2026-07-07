@@ -8,7 +8,7 @@
     "driverSlug": "dale-pennel",
     "photographerSlug": "andy-niles",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1982_mike-niles_andy-niles_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "mike-niles",
     "photographerSlug": "andy-niles",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_mike-niles_andy-niles_post_001.jpg",
@@ -30,17 +30,6 @@
     "driverSlug": "mike-niles",
     "photographerSlug": "andy-niles",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1972_mike-niles_andy-niles_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1972/unknown-track_1972_mike-niles_andy-niles_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1972_mike-niles_andy-niles_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1972",
-    "driverSlug": "mike-niles",
-    "photographerSlug": "andy-niles",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

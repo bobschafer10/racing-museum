@@ -8,7 +8,7 @@
     "driverSlug": "shiocton-speedway",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shiocton-speedway_unknown-year_clyde-schumacher_joe-verdegan_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "clyde-schumacher",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shiocton-speedway_unknown-year_lyle-diemel_bob-bergeron_photo_077.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "lyle-diemel",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "077"
+    "sequence": "77"
   },
   {
     "fileName": "shiocton-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

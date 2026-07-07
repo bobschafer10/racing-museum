@@ -8,17 +8,17 @@
     "driverSlug": "al-lundberg",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_al-lundberg_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-lundberg_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-lundberg_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
+    "fileName": "hales-corners-speedway_1976_al-lundberg_joe-slack_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1976/hales-corners-speedway_1976_al-lundberg_joe-slack_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1976_al-lundberg_joe-slack_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1976",
     "driverSlug": "al-lundberg",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "mall-show_1983_brian-gatzow_weber-brothers_photo_777.jpg",
+    "storagePath": "photos/master/mall-show/1983/mall-show_1983_brian-gatzow_weber-brothers_photo_777.jpg",
+    "publicPath": "/photos/mall-show_1983_brian-gatzow_weber-brothers_photo_777.jpg",
+    "trackSlug": "mall-show",
+    "year": "1983",
+    "driverSlug": "brian-gatzow",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "777"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_brian-gatzow_ken-koppa_post_001.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_brian-gatzow_ken-koppa_post_001.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_brian-gatzow_ken-koppa_post_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "brian-gatzow",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_brian-gatzow_unknown-photographer_photo_001.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "brian-gatzow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "george-giesen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_george-giesen_joe-verdegan_post_001.jpg",
@@ -19,29 +19,7 @@
     "driverSlug": "george-giesen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-giesen_pete-vercauteren_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-giesen_pete-vercauteren_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-giesen_pete-vercauteren_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-giesen",
-    "photographerSlug": "pete-vercauteren",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-giesen_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-giesen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_george-giesen_unknown-photographer_photo_005.jpg",
@@ -52,40 +30,7 @@
     "driverSlug": "george-giesen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-giesen_unknown-photographer_photo_006.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_006.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_006.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-giesen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "006"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-giesen_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_007.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-giesen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-giesen_unknown-photographer_photo_008.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_008.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-giesen_unknown-photographer_photo_008.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-giesen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "008"
+    "sequence": "5"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_george-giesen_unknown-photographer_photo_001.jpg",
@@ -96,6 +41,6 @@
     "driverSlug": "george-giesen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

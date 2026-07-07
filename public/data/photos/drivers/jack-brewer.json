@@ -8,7 +8,29 @@
     "driverSlug": "jack-brewer",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "freeport-raceway-park_unknown-year_jack-brewer_ron-thruman_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_jack-brewer_ron-thruman_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_jack-brewer_ron-thruman_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "jack-brewer",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "hales-corners-speedway_1966_jack-brewer_michael-halbherr_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_jack-brewer_michael-halbherr_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_jack-brewer_michael-halbherr_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "jack-brewer",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "455"
   },
   {
     "fileName": "unknown-track_unknown-year_jack-brewer_ron-thruman_post_001.jpg",
@@ -19,51 +41,7 @@
     "driverSlug": "jack-brewer",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jack-brewer_submitted_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-brewer_submitted_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-brewer_submitted_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-brewer",
-    "photographerSlug": "submitted",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jack-brewer_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-brewer_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-brewer_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-brewer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jack-brewer_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-brewer_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-brewer_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-brewer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jack-brewer_weber-brothers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-brewer_weber-brothers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-brewer_weber-brothers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-brewer",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jack-brewer_unknown-photographer_photo_001.jpg",
@@ -74,6 +52,6 @@
     "driverSlug": "jack-brewer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

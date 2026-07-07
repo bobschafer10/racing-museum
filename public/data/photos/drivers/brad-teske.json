@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "columbus-151-speedway_unknown-year_brad-teske_charlie-spry_photo_443.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_brad-teske_charlie-spry_photo_443.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_brad-teske_charlie-spry_photo_443.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brad-teske",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "443"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_brad-teske_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brad-teske_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_brad-teske_unknown-photographer_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "brad-teske",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_brad-teske_unknown-photographer_post_333.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "brad-teske",
     "photographerSlug": "unknown-phototographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
@@ -41,7 +52,40 @@
     "driverSlug": "brad-teske",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-teske",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-teske",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-teske_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-teske",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
@@ -52,6 +96,39 @@
     "driverSlug": "brad-teske",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-teske",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-teske",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brad-teske_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brad-teske",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

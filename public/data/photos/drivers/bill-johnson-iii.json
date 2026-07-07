@@ -8,7 +8,7 @@
     "driverSlug": "bill-johnson-iii",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_bill-johnson-iii_bob-schafer_photo_093.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bill-johnson-iii",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "093"
+    "sequence": "93"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_bill-johnson-iii_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bill-johnson-iii",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-johnson-iii_bob-bergeron_photo_001.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "bill-johnson-iii",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

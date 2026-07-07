@@ -8,7 +8,7 @@
     "driverSlug": "rm-van-pay",
     "photographerSlug": "jennifer-jach",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_1999_rod-snellenberger_dave-panske_photo_001.jpg",
@@ -19,7 +19,62 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2013/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2013",
+    "driverSlug": "mark-rose",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "storagePath": "photos/master/oshkosh-speed-zone/2015/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "publicPath": "/photos/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2015",
+    "driverSlug": "mike-wedelstadt",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "tim-doehling",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "oshkosh-speed-zone_2016_tim-reichenberger_unknown-photographer_photo_001.jpg",
@@ -30,7 +85,7 @@
     "driverSlug": "tim-reichenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_2017_lucas-lamberies_dave-panske_photo_001.jpg",
@@ -41,18 +96,7 @@
     "driverSlug": "lucas-lamberies",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "oshkosh-speed-zone_unknown_year_jeremy-christians_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/oshkosh-speed-zone/unknown/oshkosh-speed-zone_unknown_year_jeremy-christians_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/oshkosh-speed-zone_unknown_year_jeremy-christians_unknown-photographer_photo_003.jpg",
-    "trackSlug": "oshkosh-speed-zone",
-    "year": "unknown",
-    "driverSlug": "year",
-    "photographerSlug": "jeremy-christians",
-    "creditType": "unknown-photographer",
-    "sequence": "photo"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_al-atkinson_unknown-photographer_photo_001.jpg",
@@ -63,7 +107,7 @@
     "driverSlug": "al-atkinson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_alex-crapser_unknown-photographer_photo_001.jpg",
@@ -74,7 +118,7 @@
     "driverSlug": "alex-crapser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_bill-balog_unknown-photographer_photo_001.jpg",
@@ -85,7 +129,7 @@
     "driverSlug": "bill-balog",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_bob-voigt_jennifer-jach_photo_001.jpg",
@@ -96,7 +140,7 @@
     "driverSlug": "bob-voigt",
     "photographerSlug": "jennifer-jach",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_braison-bennett_unknown-photographer_photo_001.jpg",
@@ -107,7 +151,7 @@
     "driverSlug": "braison-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_brandon-berth_unknown-photographer_photo_001.jpg",
@@ -118,7 +162,7 @@
     "driverSlug": "brandon-berth",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
@@ -129,7 +173,7 @@
     "driverSlug": "bret-swedberg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_001.jpg",
@@ -140,7 +184,7 @@
     "driverSlug": "brian-drexler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_brian-drexler_unknown-photographer_photo_002.jpg",
@@ -151,7 +195,7 @@
     "driverSlug": "brian-drexler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_brian-henry_unknown-photographer_photo_001.jpg",
@@ -162,7 +206,7 @@
     "driverSlug": "brian-henry",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_brock-saunders_unknown-photographer_photo_001.jpg",
@@ -173,7 +217,7 @@
     "driverSlug": "brock-saunders",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_colton-vanhierden_unknown-photographer_photo_001.jpg",
@@ -184,7 +228,7 @@
     "driverSlug": "colton-vanhierden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_dan-jusczyzk_unknown-photographer_photo_001.jpg",
@@ -195,7 +239,7 @@
     "driverSlug": "dan-jusczyzk",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_dan-knaus_unknown-photographer_photo_001.jpg",
@@ -206,7 +250,7 @@
     "driverSlug": "dan-knaus",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_dennis-schultz_dave-panske_photo_192.jpg",
@@ -220,6 +264,17 @@
     "sequence": "192"
   },
   {
+    "fileName": "oshkosh-speed-zone_unknown-year_dennis-schultz_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_dennis-schultz_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown-year_dennis-schultz_unknown-photographer_photo_333.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "dennis-schultz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "oshkosh-speed-zone_unknown-year_elijah-koenig_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_elijah-koenig_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/oshkosh-speed-zone_unknown-year_elijah-koenig_unknown-photographer_photo_001.jpg",
@@ -228,7 +283,7 @@
     "driverSlug": "elijah-koenig",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_erik-mahlik_unknown-photographer_photo_001.jpg",
@@ -239,7 +294,7 @@
     "driverSlug": "erik-mahlik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_gary-doehling_jennifer-jach_photo_164.jpg",
@@ -261,7 +316,7 @@
     "driverSlug": "hilary-kreutz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jasper-drengler_unknown-photographer_photo_001.jpg",
@@ -272,7 +327,18 @@
     "driverSlug": "jasper-drengler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_unknown_year_jeremy-christians_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown_year_jeremy-christians_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_unknown_year_jeremy-christians_unknown-photographer_photo_003.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "unknown-year",
+    "driverSlug": "jeremy-christians",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
@@ -283,7 +349,7 @@
     "driverSlug": "jeremy-christians",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jeremy-schultz_unknown-photographer_photo_001.jpg",
@@ -294,7 +360,7 @@
     "driverSlug": "jeremy-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jerry-kope_bob-greuel_photo_001.jpg",
@@ -305,7 +371,7 @@
     "driverSlug": "jerry-kope",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jerry-kope_unknown-photographer_photo_001.jpg",
@@ -316,7 +382,7 @@
     "driverSlug": "jerry-kope",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jerry-winkler_unknown-credit_post_001.jpg",
@@ -327,7 +393,7 @@
     "driverSlug": "jerry-winkler",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jesse-ness_unknown-photographer_photo_001.jpg",
@@ -338,7 +404,7 @@
     "driverSlug": "jesse-ness",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jim-letizia_unknown-photographer_photo_101.jpg",
@@ -360,7 +426,7 @@
     "driverSlug": "joe-white",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_john-schultz_unknown-photographer_photo_001.jpg",
@@ -371,7 +437,7 @@
     "driverSlug": "john-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_karly-stadler_unknown-photographer_photo_001.jpg",
@@ -382,7 +448,7 @@
     "driverSlug": "karly-stadler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_kurt-moeller_unknown-photographer_photo_001.jpg",
@@ -393,7 +459,7 @@
     "driverSlug": "kurt-moeller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_mike-kertscher_unknown-photographer_photo_001.jpg",
@@ -404,7 +470,7 @@
     "driverSlug": "mike-kertscher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_mike-montie_unknown-photographer_photo_001.jpg",
@@ -415,7 +481,7 @@
     "driverSlug": "mike-montie",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_paul-parker_unknown-photographer_photo_007.jpg",
@@ -426,7 +492,7 @@
     "driverSlug": "paul-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_paul-parker_unknown-photographer_photo_008.jpg",
@@ -437,7 +503,7 @@
     "driverSlug": "paul-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_rick-amundson_unknown-photographer_photo_001.jpg",
@@ -448,7 +514,7 @@
     "driverSlug": "rick-amundson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_rod-snellenberger_dave-panske_photo_002.jpg",
@@ -459,7 +525,7 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_rod-snellenberger_unknown-photographer_photo_001.jpg",
@@ -470,7 +536,7 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_roger-lee_unknown-photographer_photo_001.jpg",
@@ -481,7 +547,7 @@
     "driverSlug": "roger-lee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_ron-stroika_mike-esser_photo_001.jpg",
@@ -492,7 +558,7 @@
     "driverSlug": "ron-stroika",
     "photographerSlug": "mike-esser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_russ-scheffler_unknown-photographer_photo_001.jpg",
@@ -503,7 +569,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_scott-sohrweide_jennifer-jach_photo_001.jpg",
@@ -514,7 +580,7 @@
     "driverSlug": "scott-sohrweide",
     "photographerSlug": "jennifer-jach",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_shawn-haydon_unknown-photographer_photo_001.jpg",
@@ -525,7 +591,7 @@
     "driverSlug": "shawn-haydon",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_steve-gawronski_unknown-photographer_photo_001.jpg",
@@ -536,7 +602,7 @@
     "driverSlug": "steve-gawronski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_tim-buhler_unknown-photographer_photo_001.jpg",
@@ -547,7 +613,7 @@
     "driverSlug": "tim-buhler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_tim-lemirande_unknown-photographer_photo_001.jpg",
@@ -558,7 +624,7 @@
     "driverSlug": "tim-lemirande",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_tj-smith_unknown-photographer_photo_001.jpg",
@@ -569,7 +635,7 @@
     "driverSlug": "tj-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_todd-buckley_unknown-photographer_photo_001.jpg",
@@ -580,7 +646,7 @@
     "driverSlug": "todd-buckley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_tony-wudstrack_tony-wudstrak_post_001.jpg",
@@ -591,7 +657,7 @@
     "driverSlug": "tony-wudstrack",
     "photographerSlug": "tony-wudstrak",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_travis-kleindl_unknown-photographer_photo_001.jpg",
@@ -602,7 +668,7 @@
     "driverSlug": "travis-kleindl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_troy-springborn_joe-verdegan_post_001.jpg",
@@ -613,7 +679,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_unknown-driver_bob-greuel_post_001.jpg",
@@ -624,7 +690,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_unknown-driver_northeast-racing-photos_photo_001.jpg",
@@ -635,7 +701,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "northeast-racing-photos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -646,7 +712,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_unknown-driver_unknown-photographer_photo_044.jpg",
@@ -657,7 +723,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "044"
+    "sequence": "44"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_unknown-driver_unknown-photographer_photo_200.jpg",

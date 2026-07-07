@@ -8,7 +8,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
@@ -19,18 +19,51 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
-    "fileName": "capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
     "trackSlug": "capital-super-speedway",
     "year": "unknown-year",
-    "driverSlug": "scott-hansen",
+    "driverSlug": "john-ziegler",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "7"
+  },
+  {
+    "fileName": "grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1978/grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1978",
+    "driverSlug": "mike-miller",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "336"
+  },
+  {
+    "fileName": "grundy-county-speedway_1982_barbara-bosak_bob-elman_photo_433.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1982/grundy-county-speedway_1982_barbara-bosak_bob-elman_photo_433.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1982_barbara-bosak_bob-elman_photo_433.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1982",
+    "driverSlug": "barbara-bosak",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
+    "fileName": "grundy-county-speedway_1983_wayne-para_bob-elman_photo_335.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1983/grundy-county-speedway_1983_wayne-para_bob-elman_photo_335.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1983_wayne-para_bob-elman_photo_335.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1983",
+    "driverSlug": "wayne-para",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "335"
   },
   {
     "fileName": "illiana-speedway_unknown-year_jim-back_bob-elman_photo_002.jpg",
@@ -41,7 +74,7 @@
     "driverSlug": "jim-back",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_butch-miller_bob-elman_photo_006.jpg",
@@ -52,7 +85,7 @@
     "driverSlug": "butch-miller",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tony-izzo_bob-elman_photo_003.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "queen-city-speedway_1984_joe-shear_bob-elman_photo_333.jpg",
@@ -85,7 +118,7 @@
     "driverSlug": "bob-strait",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_conrad-morgan_bob-elman_photo_001.jpg",
@@ -96,7 +129,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
@@ -107,6 +140,6 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   }
 ]

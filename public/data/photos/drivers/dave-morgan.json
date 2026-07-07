@@ -8,7 +8,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rice-lake-speedway_2020_dave-morgan_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_dave-morgan_old-skool_photo_001.jpg",
@@ -30,62 +30,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1964_dave-morgan_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1964/unknown-track_1964_dave-morgan_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1964_dave-morgan_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1964",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1990_dave-morgan_todd-narveson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1990/unknown-track_1990_dave-morgan_todd-narveson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1990_dave-morgan_todd-narveson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1990",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "todd-narveson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-morgan_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-morgan_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-morgan_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-morgan_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-morgan_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-morgan_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_brent-good_photo_001.jpg",
@@ -96,7 +41,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "brent-good",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_larry-quinn_photo_001.jpg",
@@ -107,7 +52,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "larry-quinn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_larry-quinn_post_001.jpg",
@@ -118,7 +63,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_rats-racing_post_001.jpg",
@@ -129,7 +74,18 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "rats-racing",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-morgan_rats-racing_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-morgan_rats-racing_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-morgan_rats-racing_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-morgan",
+    "photographerSlug": "rats-racing",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_rice-lake-chronotype_photo_001.jpg",
@@ -140,7 +96,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "rice-lake-chronotype",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-credit_photo_001.jpg",
@@ -151,7 +107,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-phhotographer_photo_001.jpg",
@@ -162,7 +118,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-phhotographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_001.jpg",
@@ -173,7 +129,18 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-morgan",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_002.jpg",
@@ -184,7 +151,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_003.jpg",
@@ -195,7 +162,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_004.jpg",
@@ -206,7 +173,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_005.jpg",
@@ -217,7 +184,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_006.jpg",
@@ -228,7 +195,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_007.jpg",
@@ -239,7 +206,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_008.jpg",
@@ -250,7 +217,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_009.jpg",
@@ -261,7 +228,18 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_009.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_009.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_009.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-morgan",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_011.jpg",
@@ -272,7 +250,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_014.jpg",
@@ -283,7 +261,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_016.jpg",
@@ -294,7 +272,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "016"
+    "sequence": "16"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_017.jpg",
@@ -305,7 +283,18 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "017"
+    "sequence": "17"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_017.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_017.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_017.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-morgan",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "17"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-morgan_unknown-photographer_photo_018.jpg",
@@ -316,6 +305,6 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "018"
+    "sequence": "18"
   }
 ]

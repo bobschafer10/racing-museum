@@ -19,7 +19,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_rocky-breezer_bob-schafer_photo_328.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rocky-breezer_kurt-luoma_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rocky-breezer_kurt-luoma_photo_112.jpg",
@@ -77,17 +77,6 @@
     "sequence": "112"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_rocky-breezer_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_rocky-breezer_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_rocky-breezer_unknown-photographer_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "rocky-breezer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "unknown-track_unknown-year_rocky-breezer_john-vass_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rocky-breezer_john-vass_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_rocky-breezer_john-vass_photo_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rocky-breezer_unknown-photographer_photo_002.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_rocky-breezer_unknown-photographer_photo_007.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_rocky-breezer_unknown-photographer_photo_008.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_rocky-breezer_white-john-waters_post_001.jpg",
@@ -140,6 +129,6 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "white-john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

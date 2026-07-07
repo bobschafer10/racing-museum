@@ -8,7 +8,7 @@
     "driverSlug": "scott-volbrecht",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1993_scott-volbrecht_pat-heaney_post_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "scott-volbrecht",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1993_scott-volbrecht_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1993/hales-corners-speedway_1993_scott-volbrecht_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1993_scott-volbrecht_pat-heaney_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1993",
+    "driverSlug": "scott-volbrecht",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_scott-volbrecht_weber-brothers_photo_222.jpg",

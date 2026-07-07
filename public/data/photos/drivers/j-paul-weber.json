@@ -8,7 +8,7 @@
     "driverSlug": "j-paul-weber",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_j-paul-weber_weber-brothers_photo_001.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "j-paul-weber",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_j-paul-weber_slinger-jeffrey-weber_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_j-paul-weber_slinger-jeffrey-weber_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_j-paul-weber_slinger-jeffrey-weber_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "j-paul-weber",
-    "photographerSlug": "slinger-jeffrey-weber",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

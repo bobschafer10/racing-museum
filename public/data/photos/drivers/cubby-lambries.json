@@ -8,7 +8,7 @@
     "driverSlug": "cubby-lambries",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_cubby-lambries_unknown-photographer_photo_001.jpg",
@@ -19,6 +19,28 @@
     "driverSlug": "cubby-lambries",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cubby-lambries_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cubby-lambries_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cubby-lambries_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cubby-lambries",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cubby-lambries_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cubby-lambries_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cubby-lambries_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cubby-lambries",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

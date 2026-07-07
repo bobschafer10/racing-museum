@@ -8,7 +8,7 @@
     "driverSlug": "joe-ruttman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1979_joe-ruttman_unknown-credit_post_001.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "joe-ruttman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-ruttman_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-ruttman_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-ruttman_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-ruttman",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

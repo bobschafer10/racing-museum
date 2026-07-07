@@ -8,7 +8,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "043"
+    "sequence": "43"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chuck-buckbee_brad-luepke_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chuck-buckbee_brad-luepke-ii_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "brad-luepke-ii",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
@@ -41,18 +41,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1983_chuck-buckbee_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1983/unknown-track_1983_chuck-buckbee_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1983_chuck-buckbee_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1983",
-    "driverSlug": "chuck-buckbee",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
@@ -63,7 +52,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_pete-vercauteren_photo_001.jpg",
@@ -74,7 +85,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
@@ -85,7 +118,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_002.jpg",
@@ -96,7 +151,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_003.jpg",
@@ -107,7 +184,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_004.jpg",
@@ -118,7 +217,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_005.jpg",
@@ -129,7 +250,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_008.jpg",
@@ -140,7 +283,29 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_008.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-buckbee_unknown-photographer_photo_008.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-buckbee",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_chuck-buckbee_kurt-luoma_photo_001.jpg",
@@ -151,7 +316,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_chuck-buckbee_kurt-luoma_photo_222.jpg",

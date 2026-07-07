@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "state-park-speedway_1996_mike-merriam_tom-loos_photo_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/1996/state-park-speedway_1996_mike-merriam_tom-loos_photo_444.jpg",
+    "publicPath": "/photos/state-park-speedway_1996_mike-merriam_tom-loos_photo_444.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "1996",
+    "driverSlug": "mike-merriam",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_mike-merriam_tom-loos_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_mike-merriam_tom-loos_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_mike-merriam_tom-loos_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "mike-merriam",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_mike-merriam_unknown-photographer_photo_002.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "mike-merriam",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

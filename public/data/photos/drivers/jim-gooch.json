@@ -8,7 +8,7 @@
     "driverSlug": "jim-gooch",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_jim-gooch_pat-heaney_post_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jim-gooch",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_jim-gooch_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jim-gooch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,18 @@
     "driverSlug": "jim-gooch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-gooch",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_002.jpg",
@@ -52,17 +63,17 @@
     "driverSlug": "jim-gooch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
-    "fileName": "unknown-track_unknown-year_jim-gooch_pat-heaney_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-gooch_pat-heaney_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-gooch_pat-heaney_post_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jim-gooch_unknown-photographer_photo_002.jpg",
+    "trackSlug": "slinger-speedway",
     "year": "unknown-year",
     "driverSlug": "jim-gooch",
-    "photographerSlug": "pat-heaney",
-    "creditType": "post",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   }
 ]

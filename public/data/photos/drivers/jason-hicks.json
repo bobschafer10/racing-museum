@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "slinger-speedway_2010_jason-hicks_bob-greuel_photo_335.jpg",
+    "storagePath": "photos/master/slinger-speedway/2010/slinger-speedway_2010_jason-hicks_bob-greuel_photo_335.jpg",
+    "publicPath": "/photos/slinger-speedway_2010_jason-hicks_bob-greuel_photo_335.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2010",
+    "driverSlug": "jason-hicks",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "335"
+  },
+  {
     "fileName": "unknown-track_unknown-year_jason-hicks_tom-loos_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jason-hicks_tom-loos_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_jason-hicks_tom-loos_photo_001.jpg",
@@ -8,17 +19,6 @@
     "driverSlug": "jason-hicks",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jason-hicks_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jason-hicks_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jason-hicks_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jason-hicks",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

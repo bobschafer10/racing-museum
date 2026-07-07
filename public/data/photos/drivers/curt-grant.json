@@ -8,7 +8,7 @@
     "driverSlug": "curt-grant",
     "photographerSlug": "chad-tessman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "curt-grant",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
@@ -30,6 +30,28 @@
     "driverSlug": "curt-grant",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "curt-grant",
+    "photographerSlug": "travis-zuelsdorf",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "curt-grant",
+    "photographerSlug": "travis-zuelsdorf",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

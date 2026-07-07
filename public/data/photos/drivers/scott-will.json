@@ -19,7 +19,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_002.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "state-park-speedway_unknown-year_scott-will_bob-schafer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_scott-will_bob-schafer_photo_121.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-will_mall-show-ken-koppa_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "mall-show-ken-koppa",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-will_unknown-credit_photo_001.jpg",
@@ -85,6 +85,6 @@
     "driverSlug": "scott-will",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

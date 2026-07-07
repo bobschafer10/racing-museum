@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "marshfield-super-speedway_2013_chris-weinkauf_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_chris-weinkauf_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_chris-weinkauf_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "chris-weinkauf",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
     "fileName": "marshfield-super-speedway_unknown-year_chris-weinkauf_don-wendlandt_photo_117.jpg",
     "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_chris-weinkauf_don-wendlandt_photo_117.jpg",
     "publicPath": "/photos/marshfield-super-speedway_unknown-year_chris-weinkauf_don-wendlandt_photo_117.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "chris-weinkauf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_chris-weinkauf_kurt-luoma_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "chris-weinkauf",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chris-weinkauf_tom-loos_photo_001.jpg",
@@ -41,7 +52,29 @@
     "driverSlug": "chris-weinkauf",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-weinkauf_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-weinkauf_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-weinkauf_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-weinkauf",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-weinkauf_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-weinkauf_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-weinkauf_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-weinkauf",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chris-weinkauf_unknown-photographer_photo_001.jpg",
@@ -52,6 +85,28 @@
     "driverSlug": "chris-weinkauf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-weinkauf_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-weinkauf_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-weinkauf_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-weinkauf",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-weinkauf_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-weinkauf_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-weinkauf_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-weinkauf",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

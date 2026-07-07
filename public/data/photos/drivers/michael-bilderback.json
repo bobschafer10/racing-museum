@@ -8,7 +8,29 @@
     "driverSlug": "michael-bilderback",
     "photographerSlug": "hotshot-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2019/rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2019",
+    "driverSlug": "michael-bilderback",
+    "photographerSlug": "hotshot-photography",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2026_michael-bilderback_brian-bjerk_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_michael-bilderback_brian-bjerk_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_michael-bilderback_brian-bjerk_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "michael-bilderback",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "state-park-speedway_2019_michael-bilderback_big-8-series_post_001.jpg",
@@ -19,6 +41,6 @@
     "driverSlug": "michael-bilderback",
     "photographerSlug": "big-8-series",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

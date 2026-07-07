@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "unknown-track_unknown-year_bill-retallick_ron-thruman_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-retallick_ron-thruman_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-retallick_ron-thruman_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-retallick",
-    "photographerSlug": "ron-thruman",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_001.jpg",
@@ -19,7 +8,7 @@
     "driverSlug": "bill-retallick",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-retallick_kurt-luoma_photo_1165.jpg",

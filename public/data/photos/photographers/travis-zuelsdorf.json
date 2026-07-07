@@ -8,7 +8,7 @@
     "driverSlug": "craig-priewe",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_unknown-year_derek-jahnke_travis-zuelsdorf_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "derek-jahnke",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_unknown-year_mark-rose_travis-zuelsdorf_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "mark-rose",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_craig-priewe_travis-zuelsdorf_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "craig-priewe",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "curt-grant",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_lance-fassbender_travis-zuelsdorf_post_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "lance-fassbender",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_rick-strommen_travis-zuelsdorf_post_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "rick-strommen",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_tim-fletcher_travis-zuelsdorf_post_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "tim-fletcher",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_lance-fassbender_travis-zuelsdorf_post_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "lance-fassbender",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_troy-wondra_travis-zuelsdorf_photo_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "troy-wondra",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
@@ -118,6 +118,28 @@
     "driverSlug": "curt-grant",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "curt-grant",
+    "photographerSlug": "travis-zuelsdorf",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_curt-grant_travis-zuelsdorf_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "curt-grant",
+    "photographerSlug": "travis-zuelsdorf",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "karly-stadler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_karly-stadler_unknown-photographer_photo_001.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "karly-stadler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2026_karly-stadler_karly-stadler_post_112.jpg",
-    "storagePath": "photos/master/unknown-track/2026/unknown-track_2026_karly-stadler_karly-stadler_post_112.jpg",
-    "publicPath": "/photos/unknown-track_2026_karly-stadler_karly-stadler_post_112.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2026",
-    "driverSlug": "karly-stadler",
-    "photographerSlug": "karly-stadler",
-    "creditType": "post",
-    "sequence": "112"
+    "sequence": "1"
   }
 ]

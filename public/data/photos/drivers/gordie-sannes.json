@@ -8,7 +8,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_gordie-sannes_pete-vercauteren_photo_001.jpg",
@@ -19,18 +19,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gordie-sannes_pete-vercauteren_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordie-sannes_pete-vercauteren_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gordie-sannes_pete-vercauteren_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gordie-sannes",
-    "photographerSlug": "pete-vercauteren",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1978_gordie-sannes_john-vass_photo_100.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_gordie-sannes_pat-heaney_post_001.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_gordie-sannes_bob-schafer_photo_222.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_joe-verdegan_post_001.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_john-vass_photo_001.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_keith-vercauteren_post_333.jpg",
@@ -206,7 +195,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "pete-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_unknown-photographer_photo_001.jpg",
@@ -217,7 +206,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_unknown-photographer_photo_002.jpg",
@@ -228,7 +217,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_unknown-photographer_photo_003.jpg",
@@ -239,7 +228,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_unknown-photographer_photo_004.jpg",
@@ -250,6 +239,6 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   }
 ]

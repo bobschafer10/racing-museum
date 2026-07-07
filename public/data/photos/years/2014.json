@@ -8,7 +8,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "mike-esser",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2014_aaron-falbe_leader-photography_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "leader-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_2014_beau-sanden_beau-sanden_post_001.jpg",
@@ -30,7 +30,18 @@
     "driverSlug": "beau-sanden",
     "photographerSlug": "beau-sanden",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_2014_beau-sanden_beau-sanden_post_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2014/dells-motor-speedway_2014_beau-sanden_beau-sanden_post_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2014_beau-sanden_beau-sanden_post_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2014",
+    "driverSlug": "beau-sanden",
+    "photographerSlug": "beau-sanden",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2014_aaron-falbe_leader-photography_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "leader-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2014_colton-vonheirden_unknown-photographer_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "colton-vonheirden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2014_roger-lee_unknown-photographer_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "roger-lee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodger-county-fairgrounds_2014_chad-hummelmeier_unknown-photographer_photo_001.jpg",
@@ -74,7 +85,84 @@
     "driverSlug": "chad-hummelmeier",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_ben-pettis_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_ben-pettis_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_ben-pettis_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "ben-pettis",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_brad-conant_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_brad-conant_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_brad-conant_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "brad-conant",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_curt-otterholt_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_curt-otterholt_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_curt-otterholt_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "curt-otterholt",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_dillon-mackesy_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_dillon-mackesy_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_dillon-mackesy_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_kyle-genett_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_kyle-genett_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_kyle-genett_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "kyle-genett",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_reagan-may_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "reagan-may",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_reagan-may_tom-loos_photo_667.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_667.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_667.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "reagan-may",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "667"
   },
   {
     "fileName": "norway-speedway_2014_drew-habeck_tim-soper_photo_333.jpg",
@@ -140,7 +228,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "jacy-norgaard",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_2014_jerry-winkler_unknown-photographer_photo_001.jpg",
@@ -151,7 +239,7 @@
     "driverSlug": "jerry-winkler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
@@ -162,7 +250,7 @@
     "driverSlug": "mark-weisnicht",
     "photographerSlug": "weisnicht",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_andrew-morrissey_bob-schneider_photo_001.jpg",
@@ -173,7 +261,7 @@
     "driverSlug": "andrew-morrissey",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_brad-mueller_bob-schneider_photo_001.jpg",
@@ -184,7 +272,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_dale-prunty_bob-schneider_photo_001.jpg",
@@ -195,7 +283,7 @@
     "driverSlug": "dale-prunty",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_james-swan_bob-schneider_photo_001.jpg",
@@ -206,7 +294,7 @@
     "driverSlug": "james-swan",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_john-deangelis_bob-schneider_photo_001.jpg",
@@ -217,7 +305,7 @@
     "driverSlug": "john-deangelis",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_kyle-shear_bob-schneider_photo_001.jpg",
@@ -228,7 +316,7 @@
     "driverSlug": "kyle-shear",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_matt-urban_matt-urban_post_333.jpg",
@@ -250,7 +338,7 @@
     "driverSlug": "mike-egan",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_nathan-haseleau_bob-schneider_photo_001.jpg",
@@ -261,7 +349,7 @@
     "driverSlug": "nathan-haseleau",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_paige-decker_bob-schneider_photo_001.jpg",
@@ -272,7 +360,7 @@
     "driverSlug": "paige-decker",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_rob-braun_bob-schneider_photo_001.jpg",
@@ -283,7 +371,7 @@
     "driverSlug": "rob-braun",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_rob-maynor_bob-schneider_photo_001.jpg",
@@ -294,7 +382,7 @@
     "driverSlug": "rob-maynor",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2014_steve-doerr_bob-schneider_photo_001.jpg",
@@ -305,7 +393,7 @@
     "driverSlug": "steve-doerr",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2014_aj-kania_aj-kania_post_001.jpg",
@@ -316,7 +404,7 @@
     "driverSlug": "aj-kania",
     "photographerSlug": "aj-kania",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2014_cole-yach_cole-yach_post_112.jpg",
@@ -338,7 +426,18 @@
     "driverSlug": "rick-tackman",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_2014_adam-bohlman_adam-bohlman_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2014/unknown-track_2014_adam-bohlman_adam-bohlman_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2014_adam-bohlman_adam-bohlman_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2014",
+    "driverSlug": "adam-bohlman",
+    "photographerSlug": "adam-bohlman",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "unknown-track_2014_scott-duval_unknown-photographer_photo_222.jpg",

@@ -8,7 +8,7 @@
     "driverSlug": "bruce-halverson",
     "photographerSlug": "don-reilly",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-bruggink_john-vass_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-bruggink",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-campshure_john-vass_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "dave-campshure",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-schneider_john-vass_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "dave-schneider",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-valentyne_joe-verdegan_post_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "dave-valentyne",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_jerry-smith_john-vass_photo_001.jpg",
@@ -63,7 +63,18 @@
     "driverSlug": "jerry-smith",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/1978/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "1978",
+    "driverSlug": "john-vass",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_leon-plank_john-vass_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "leon-plank",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_lowell-bennett_john-vass_photo_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_lowell-bennett_john-vass_photo_111.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "mike-blaser",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_pete-parker_joe-verdegan_post_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_punky-manor_john-vass_photo_001.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "punky-manor",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_rod-wheeler_john-vass_photo_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "rod-wheeler",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_roger-paul_john-vass_photo_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_roger-paul_john-vass_photo_2000.jpg",
@@ -184,7 +195,7 @@
     "driverSlug": "roger-plautz",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_tom-greenlee_john-vass_photo_001.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_unknown-driver_john-vass_photo_001.jpg",
@@ -206,7 +217,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1978_ed-hoffman_john-vass_photo_111.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1978/capital-super-speedway_1978_ed-hoffman_john-vass_photo_111.jpg",
+    "publicPath": "/photos/capital-super-speedway_1978_ed-hoffman_john-vass_photo_111.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1978",
+    "driverSlug": "ed-hoffman",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "capital-super-speedway_1978_ed-hoffman_john-vass_photo_111.jpg",
@@ -228,7 +250,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1978_tom-musgrave_john-vass_photo_001.jpg",
@@ -239,7 +261,7 @@
     "driverSlug": "tom-musgrave",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1978_tom-reffner_john-vass_photo_001.jpg",
@@ -250,7 +272,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1978_jeff-ciano_jeff-gilhart_photo_001.jpg",
@@ -261,7 +283,7 @@
     "driverSlug": "jeff-ciano",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1978_conrad-morgan_john-vass_photo_001.jpg",
@@ -272,7 +294,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1978_tom-musgrave_john-vass_photo_001.jpg",
@@ -283,7 +305,7 @@
     "driverSlug": "tom-musgrave",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_dick-collins_mcclain-racing_photo_001.jpg",
@@ -294,7 +316,7 @@
     "driverSlug": "dick-collins",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_harry-bahr_unknown-photographer_photo_001.jpg",
@@ -305,7 +327,7 @@
     "driverSlug": "harry-bahr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_john-chrest_mcclain-racing_photo_001.jpg",
@@ -316,7 +338,7 @@
     "driverSlug": "john-chrest",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_mike-beamish_mcclain-racing_photo_001.jpg",
@@ -327,7 +349,7 @@
     "driverSlug": "mike-beamish",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_mike-demars_mcclain-racing_photo_001.jpg",
@@ -338,7 +360,7 @@
     "driverSlug": "mike-demars",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_1978_ted-kitzman_mcclain-racing_photo_001.jpg",
@@ -349,7 +371,29 @@
     "driverSlug": "ted-kitzman",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "freeport-raceway-park_1978_terry-huizel_ron-thruman_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/1978/freeport-raceway-park_1978_terry-huizel_ron-thruman_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_1978_terry-huizel_ron-thruman_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "1978",
+    "driverSlug": "terry-huizel",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1978/grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1978",
+    "driverSlug": "mike-miller",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "336"
   },
   {
     "fileName": "grundy-county-speedway_1978_wayne-para_unknown-photographer_photo_001.jpg",
@@ -360,7 +404,7 @@
     "driverSlug": "wayne-para",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1978_al-schill_sean-ninneman_post_001.jpg",
@@ -371,7 +415,73 @@
     "driverSlug": "al-schill",
     "photographerSlug": "sean-ninneman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_charlie-hillyer_michael-halbherr_post_333.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_charlie-hillyer_michael-halbherr_post_333.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_charlie-hillyer_michael-halbherr_post_333.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "charlie-hillyer",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_jeff-mueller_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_jeff-mueller_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_jeff-mueller_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "jeff-mueller",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_jerry-kindler_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_jerry-kindler_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_jerry-kindler_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "jerry-kindler",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_jiggs-lindhorst_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_jiggs-lindhorst_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_jiggs-lindhorst_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "jiggs-lindhorst",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "mike-conn",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_mike-corcoran_doug-corcoran_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_mike-corcoran_doug-corcoran_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_mike-corcoran_doug-corcoran_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "mike-corcoran",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "hales-corners-speedway_1978_pete-parker_rpm_photo_001.jpg",
@@ -382,7 +492,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1978_steve-zuehlke_weber-brothers_photo_111.jpg",
@@ -396,6 +506,17 @@
     "sequence": "111"
   },
   {
+    "fileName": "hales-corners-speedway_1978_whitey-harris_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_whitey-harris_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_whitey-harris_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "whitey-harris",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "hibbing-raceway_1978_jim-oconnor_troy-powers_photo_001.jpg",
     "storagePath": "photos/master/hibbing-raceway/1978/hibbing-raceway_1978_jim-oconnor_troy-powers_photo_001.jpg",
     "publicPath": "/photos/hibbing-raceway_1978_jim-oconnor_troy-powers_photo_001.jpg",
@@ -404,7 +525,7 @@
     "driverSlug": "jim-oconnor",
     "photographerSlug": "troy-powers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hibbing-raceway_1978_tom-steuding_troy-powers_photo_001.jpg",
@@ -415,7 +536,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "troy-powers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1978_greg-holzhausen_unknown-photographer_photo_001.jpg",
@@ -426,18 +547,7 @@
     "driverSlug": "greg-holzhausen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/1978/lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "1978",
-    "driverSlug": "larry-detjens",
-    "photographerSlug": "dan-plan",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1978_marv-marzofka_unknown-photographer_photo_001.jpg",
@@ -448,7 +558,7 @@
     "driverSlug": "marv-marzofka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1978_steve-holzhausen_unknown-photographer_photo_001.jpg",
@@ -459,7 +569,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1978_ted-musgrave_john-vass_photo_001.jpg",
@@ -470,7 +580,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_bill-wilke_mike-dunn_photo_001.jpg",
@@ -481,7 +591,7 @@
     "driverSlug": "bill-wilke",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_dale-brandenberg_mike-dunn_photo_001.jpg",
@@ -492,7 +602,7 @@
     "driverSlug": "dale-brandenberg",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_danny-darnell_mike-dunn_photo_001.jpg",
@@ -503,7 +613,7 @@
     "driverSlug": "danny-darnell",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_larry-kahlke_mike-dunn_photo_001.jpg",
@@ -514,7 +624,7 @@
     "driverSlug": "larry-kahlke",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_ron-schuyler_mike-dunn_photo_001.jpg",
@@ -525,7 +635,7 @@
     "driverSlug": "ron-schuyler",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_roy-acuff_mike-dunn_photo_001.jpg",
@@ -536,7 +646,7 @@
     "driverSlug": "roy-acuff",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_terry-helmbrecht_mike-dunn_photo_001.jpg",
@@ -547,7 +657,7 @@
     "driverSlug": "terry-helmbrecht",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_terry-sireno_mike-dunn_photo_001.jpg",
@@ -558,7 +668,7 @@
     "driverSlug": "terry-sireno",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_vaughn-gerke_mike-dunn_photo_001.jpg",
@@ -569,7 +679,7 @@
     "driverSlug": "vaughn-gerke",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_verne-browne_mike-dunn_photo_001.jpg",
@@ -580,7 +690,7 @@
     "driverSlug": "verne-browne",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1978_walter-holland_mike-dunn_photo_001.jpg",
@@ -591,7 +701,7 @@
     "driverSlug": "walter-holland",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1978_bobby-allison_eugene-bryan_post_001.jpg",
@@ -602,7 +712,7 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "eugene-bryan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1978_tom-reffner_steve-zautke_post_001.jpg",
@@ -613,7 +723,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "steve-zautke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "sands-speedway_1978_allen-yelle_dan-duquette_post_001.jpg",
@@ -624,7 +734,7 @@
     "driverSlug": "allen-yelle",
     "photographerSlug": "dan-duquette",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "sands-speedway_1978_gene-coleman_dan-duquette_post_001.jpg",
@@ -635,7 +745,7 @@
     "driverSlug": "gene-coleman",
     "photographerSlug": "dan-duquette",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1978_jj-smith_joe-verdegan_post_001.jpg",
@@ -646,7 +756,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1978_kevin-stepan_sherman-lafan_post_001.jpg",
@@ -657,7 +767,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "sherman-lafan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1978_bob-loch_pat-heaney_post_001.jpg",
@@ -668,7 +778,7 @@
     "driverSlug": "bob-loch",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1978_dale-weyer_bob-schneider_post_001.jpg",
@@ -679,7 +789,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "bob-schneider",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1978_unknown_pat-heaney_post_001.jpg",
@@ -687,10 +797,10 @@
     "publicPath": "/photos/slinger-speedway_1978_unknown_pat-heaney_post_001.jpg",
     "trackSlug": "slinger-speedway",
     "year": "1978",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_1978_unknown-driver_troy-powers_post_001.jpg",
@@ -701,73 +811,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "troy-powers",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_bob-jusola_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_bob-jusola_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_bob-jusola_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "bob-jusola",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_bob-robel_unknown-photographer_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_bob-robel_unknown-photographer_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_bob-robel_unknown-photographer_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "bob-robel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "001",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_brent-laursen_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_brent-laursen_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_brent-laursen_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "brent-laursen",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_fred-bender_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_fred-bender_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_fred-bender_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "fred-bender",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_grant-wilson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_grant-wilson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_grant-wilson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "grant-wilson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_jim-weber_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_jim-weber_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_jim-weber_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "jim-weber",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_1978_joe-shear_unknown-photographer_photo_001.jpg",
@@ -778,84 +822,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_john-boegemann_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_john-boegemann_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_john-boegemann_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "john-boegemann",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_lance-matthees_unknown-photographer_photo_10645.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_lance-matthees_unknown-photographer_photo_10645.jpg",
-    "publicPath": "/photos/unknown-track_1978_lance-matthees_unknown-photographer_photo_10645.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "lance-matthees",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "10645"
-  },
-  {
-    "fileName": "unknown-track_1978_mel-walen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_mel-walen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_mel-walen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "mel-walen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_pete-seitz_jeff-gilhart_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_pete-seitz_jeff-gilhart_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_pete-seitz_jeff-gilhart_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "pete-seitz",
-    "photographerSlug": "jeff-gilhart",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_randy-thomas_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_randy-thomas_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_randy-thomas_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "randy-thomas",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "tom-nesbitt",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_tom-reffner_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_tom-reffner_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_1978_tom-reffner_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_1978_chuck-abraham_john-vass_photo_001.jpg",
@@ -866,7 +833,7 @@
     "driverSlug": "chuck-abraham",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_1978_tom-hearst_john-vass_photo_001.jpg",
@@ -877,7 +844,7 @@
     "driverSlug": "tom-hearst",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_1978_tom-hearst_john-vass_photo_031.jpg",
@@ -888,7 +855,7 @@
     "driverSlug": "tom-hearst",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "wisconsin-international-raceway_1978_alan-kulwicki_john-vass_photo_1531.jpg",
@@ -965,7 +932,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "father-grubba",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1978_larry-detjens_john-vass_photo_100.jpg",
@@ -988,5 +955,16 @@
     "photographerSlug": "john-vass",
     "creditType": "photo",
     "sequence": "100"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1978_pat-schauer_john-vass_photo_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1978/wisconsin-international-raceway_1978_pat-schauer_john-vass_photo_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1978_pat-schauer_john-vass_photo_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1978",
+    "driverSlug": "pat-schauer",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "444"
   }
 ]

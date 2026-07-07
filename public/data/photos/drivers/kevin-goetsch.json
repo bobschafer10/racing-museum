@@ -8,7 +8,7 @@
     "driverSlug": "kevin-goetsch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_kevin-goetsch_bob-schafer_photo_034.jpg",
@@ -19,39 +19,6 @@
     "driverSlug": "kevin-goetsch",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "034"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-goetsch_dave-drews_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-goetsch_dave-drews_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-goetsch_dave-drews_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-goetsch",
-    "photographerSlug": "dave-drews",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-goetsch_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-goetsch_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-goetsch_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-goetsch",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-goetsch_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-goetsch_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-goetsch_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-goetsch",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "34"
   }
 ]

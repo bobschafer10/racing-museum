@@ -8,7 +8,7 @@
     "driverSlug": "lyle-nelson",
     "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "53-speedway_1951_unknown_unknown-photographer_photo_001.jpg",
@@ -16,9 +16,20 @@
     "publicPath": "/photos/53-speedway_1951_unknown_unknown-photographer_photo_001.jpg",
     "trackSlug": "53-speedway",
     "year": "1951",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "soldier-field_1951_al-shear_ed-coffey_photo_544.jpg",
+    "storagePath": "photos/master/soldier-field/1951/soldier-field_1951_al-shear_ed-coffey_photo_544.jpg",
+    "publicPath": "/photos/soldier-field_1951_al-shear_ed-coffey_photo_544.jpg",
+    "trackSlug": "soldier-field",
+    "year": "1951",
+    "driverSlug": "al-shear",
+    "photographerSlug": "ed-coffey",
+    "creditType": "photo",
+    "sequence": "544"
   }
 ]

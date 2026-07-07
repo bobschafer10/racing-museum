@@ -1,5 +1,49 @@
 [
   {
+    "fileName": "hales-corners-speedway_1978_jeff-mueller_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_jeff-mueller_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_jeff-mueller_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "jeff-mueller",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_jerry-kindler_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_jerry-kindler_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_jerry-kindler_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "jerry-kindler",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_jiggs-lindhorst_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_jiggs-lindhorst_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_jiggs-lindhorst_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "jiggs-lindhorst",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "mike-conn",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "hales-corners-speedway_1978_pete-parker_rpm_photo_001.jpg",
     "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_pete-parker_rpm_photo_001.jpg",
     "publicPath": "/photos/hales-corners-speedway_1978_pete-parker_rpm_photo_001.jpg",
@@ -8,7 +52,18 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_whitey-harris_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_whitey-harris_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_whitey-harris_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "whitey-harris",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-schill_rpm_photo_001.jpg",
@@ -19,7 +74,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dean-roper_rpm_photo_001.jpg",
@@ -30,7 +85,29 @@
     "driverSlug": "dean-roper",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "storagePath": "photos/master/slinger-speedway/1977/slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "publicPath": "/photos/slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1977",
+    "driverSlug": "al-schill",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "344"
+  },
+  {
+    "fileName": "state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "storagePath": "photos/master/state-fair-park/1980/state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "publicPath": "/photos/state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1980",
+    "driverSlug": "bruce-wesley",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_1979_bob-abitz_rpm_photo_333.jpg",

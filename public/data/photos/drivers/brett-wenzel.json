@@ -8,7 +8,18 @@
     "driverSlug": "brett-wenzel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2009_brett-wenzel_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2009/plymouth-dirt-track_2009_brett-wenzel_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2009_brett-wenzel_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2009",
+    "driverSlug": "brett-wenzel",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "unknown-track_unknown-year_brett-wenzel_brett-wenzel_photo_3188.jpg",

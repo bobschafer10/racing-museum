@@ -8,7 +8,7 @@
     "driverSlug": "joe-symoens",
     "photographerSlug": "91-michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "joe-symoens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "impact-speedway_1988_joe-symoens_don-besch_photo_001.jpg",
@@ -30,29 +30,7 @@
     "driverSlug": "joe-symoens",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-symoens",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-symoens_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-symoens",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_001.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "joe-symoens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_joe-symoens_kurt-luoma_photo_101.jpg",

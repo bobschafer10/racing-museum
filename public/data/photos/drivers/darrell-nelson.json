@@ -8,7 +8,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_1998_darrell-nelson_unknown-photographer_photo_002.jpeg",
@@ -19,7 +19,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_unknown-year_darrell-nelson_in-a-flash_photo_14612.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrell-nelson_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrell-nelson_unknown-photographer_photo_004.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrell-nelson_unknown-photographer_photo_005.jpg",
@@ -85,18 +85,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_1993_darrell-nelson_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_darrell-nelson_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_darrell-nelson_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "darrell-nelson",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_002.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_003.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_004.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_006.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_007.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_008.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_009.jpg",
@@ -184,7 +173,18 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_009.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_009.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_009.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_010.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_011.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_012.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_015.jpg",
@@ -228,7 +228,18 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "015"
+    "sequence": "15"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_015.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_015.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_015.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "15"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_016.jpg",
@@ -239,7 +250,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "016"
+    "sequence": "16"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_019.jpg",
@@ -250,7 +261,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "019"
+    "sequence": "19"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_020.jpg",
@@ -261,7 +272,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "020"
+    "sequence": "20"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_024.jpg",
@@ -272,7 +283,18 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "024"
+    "sequence": "24"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_024.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_024.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_024.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "24"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_137.jpg",
@@ -284,5 +306,38 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "137"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_1954.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_1954.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_1954.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1954"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_6617.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_6617.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-nelson_unknown-photographer_photo_6617.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-nelson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6617"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "tim-doehling",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "unknown-track_unknown-year_tim-doehling_joe-slack_photo_002.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-doehling_joe-slack_photo_002.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_tim-doehling_joe-slack_photo_002.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "tim-doehling",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-doehling_unknown-photographer_photo_002.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "tim-doehling",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-doehling_unknown-photographer_photo_004.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "tim-doehling",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   }
 ]

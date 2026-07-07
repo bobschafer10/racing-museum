@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "dells-motor-speedway_unknown-year_kevin nuttleman_bob-schafer_photo_13563.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_kevin nuttleman_bob-schafer_photo_13563.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_kevin nuttleman_bob-schafer_photo_13563.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-nuttleman",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13563"
+  },
+  {
     "fileName": "lacrosse-interstate-speedway_2001_kevin-nuttleman_jeff-blaser_photo_001.jpeg",
     "storagePath": "photos/master/lacrosse-interstate-speedway/2001/lacrosse-interstate-speedway_2001_kevin-nuttleman_jeff-blaser_photo_001.jpeg",
     "publicPath": "/photos/lacrosse-interstate-speedway_2001_kevin-nuttleman_jeff-blaser_photo_001.jpeg",
@@ -8,7 +19,7 @@
     "driverSlug": "kevin-nuttleman",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_kevin-nuttleman_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "kevin-nuttleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_kevin-nuttleman_unknown-photographer_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "kevin-nuttleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_kevin-nuttleman_bob-schafer_photo_13706.jpg",
@@ -52,51 +63,7 @@
     "driverSlug": "kevin-nuttleman",
     "photographerSlug": "bessie-kmiecik",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-nuttleman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-nuttleman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-nuttleman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-nuttleman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_005.jpg",
@@ -107,7 +74,7 @@
     "driverSlug": "kevin-nuttleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-nuttleman_unknown-photographer_photo_006.jpg",
@@ -118,6 +85,6 @@
     "driverSlug": "kevin-nuttleman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   }
 ]

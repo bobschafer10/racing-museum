@@ -8,7 +8,7 @@
     "driverSlug": "steve-benesh",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1988_mitch-johnson_keith-nason_post_001.jpg",
@@ -19,18 +19,7 @@
     "driverSlug": "mitch-johnson",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "cedar-lake-speedway_1990_ terry-phillips_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_ terry-phillips_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/cedar-lake-speedway_1990_ terry-phillips_bob-schafer_photo_222.jpg",
-    "trackSlug": "cedar-lake-speedway",
-    "year": "1990",
-    "driverSlug": " terry-phillips",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_andy-claiborne_bob-schafer_photo_13213.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "brent-laursen",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_dan-mcmann_todd-narveson_photo_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "dan-mcmann",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_dave-hesch_bob-schafer_photo_007.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "cedar-lake-speedway_1990_dave-hesch_todd-narveson_photo_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_jerry-redetzke_todd-narveson_photo_001.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "jerry-redetzke",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_jim-curry_bob-schafer_photo_222.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "joel-cryderman",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "cedar-lake-speedway_1990_jon-kurshinsky_todd-narveson_photo_001.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "jon-kurshinsky",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_kevin-thompson_bob-schafer_photo_12639.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "kevin-thompson",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_lance-matthees_todd-narveson_photo_001.jpg",
@@ -195,7 +184,7 @@
     "driverSlug": "lance-matthees",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_larry-stockwell_bob-schafer_photo_12605.jpg",
@@ -250,7 +239,7 @@
     "driverSlug": "mike-nutzmann",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_1990_pete-parker_todd-narveson_photo_001.jpg",
@@ -261,7 +250,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1990_terry-lanphear_bob-schafer_photo_040.jpg",
@@ -272,7 +261,7 @@
     "driverSlug": "terry-lanphear",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "040"
+    "sequence": "40"
   },
   {
     "fileName": "cedar-lake-speedway_1990_terry-lanphear_todd-narveson_photo_001.jpg",
@@ -283,7 +272,18 @@
     "driverSlug": "terry-lanphear",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "cedar-lake-speedway_1990_terry-phillips_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1990/cedar-lake-speedway_1990_terry-phillips_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1990_terry-phillips_bob-schafer_photo_222.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1990",
+    "driverSlug": "terry-phillips",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "cedar-lake-speedway_1990_tom-nesbitt_bob-schafer_photo_12599.jpg",
@@ -305,7 +305,29 @@
     "driverSlug": "tom-thompson",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "cedar-lake-speedway_1999_brady-smith_pete-woloschuk_post_333.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1999/cedar-lake-speedway_1999_brady-smith_pete-woloschuk_post_333.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1999_brady-smith_pete-woloschuk_post_333.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1999",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "pete-woloschuk",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2004/cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2004",
+    "driverSlug": "chuckie-desmith",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "cedar-lake-speedway_2005_chanda-fiorden_unknown-photographer_photo_001.jpg",
@@ -316,7 +338,7 @@
     "driverSlug": "chanda-fiorden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2006_weber-brothers-cedar-lake-speedway-jerry-zimmy-phot_weber-brothers_photo_001.jpg",
@@ -327,7 +349,7 @@
     "driverSlug": "weber-brothers-cedar-lake-speedway-jerry-zimmy-phot",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2010_adam-hensel_jerry-zimmy_photo_001.jpg",
@@ -338,7 +360,7 @@
     "driverSlug": "adam-hensel",
     "photographerSlug": "jerry-zimmy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2010_darrell-nelson_unknown-photographer_photo_001.jpg",
@@ -349,7 +371,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2015_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
@@ -360,7 +382,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "fotos-by-fizzle",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2016_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
@@ -371,7 +393,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "fotos-by-fizzle",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2019_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
@@ -382,7 +404,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "fotos-by-fizzle",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2020_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
@@ -393,7 +415,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "fotos-by-fizzle",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2020_paul-parker_troy-powers_photo_115.jpg",
@@ -415,7 +437,7 @@
     "driverSlug": "aj-roschen",
     "photographerSlug": "cody-papke",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2022_pat-doar_cody-papke_photo_001.jpg",
@@ -426,7 +448,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "cody-papke",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2022_ron-mahder_cody-papke_photo_001.jpg",
@@ -437,7 +459,7 @@
     "driverSlug": "ron-mahder",
     "photographerSlug": "cody-papke",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2023_nick-anvelink-_nick-anvelink_post_001.jpg",
@@ -448,7 +470,7 @@
     "driverSlug": "nick-anvelink-",
     "photographerSlug": "nick-anvelink",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2026_brad-peterson_unknown-photographer_photo_003.jpg",
@@ -459,7 +481,7 @@
     "driverSlug": "brad-peterson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_aj-diemel_unknown-photographer_photo_001.jpg",
@@ -470,7 +492,7 @@
     "driverSlug": "aj-diemel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_bob-broking_unknown-photographer_photo_001.jpg",
@@ -481,7 +503,7 @@
     "driverSlug": "bob-broking",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_bob-houston_christopher-kolstad_photo_001.jpg",
@@ -492,7 +514,7 @@
     "driverSlug": "bob-houston",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_bob-houston_unknown-photographer_photo_001.jpg",
@@ -503,7 +525,7 @@
     "driverSlug": "bob-houston",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_bob-timm_unknown-photographer_photo_001.jpg",
@@ -514,7 +536,7 @@
     "driverSlug": "bob-timm",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_bob-wold_unknown-photographer_photo_001.jpg",
@@ -525,7 +547,7 @@
     "driverSlug": "bob-wold",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_brad-anderson_unknown-photographer_photo_001.jpg",
@@ -536,7 +558,7 @@
     "driverSlug": "brad-anderson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_brent-larson_unknown-photographer_photo_001.jpg",
@@ -547,7 +569,7 @@
     "driverSlug": "brent-larson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_brooke-tatnell_unknown-photographer_photo_001.jpg",
@@ -558,7 +580,7 @@
     "driverSlug": "brooke-tatnell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_cedar-lake-speedwa_unknown-photographer_photo_003.jpg",
@@ -569,7 +591,7 @@
     "driverSlug": "cedar-lake-speedwa",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_cedar-lake-speedway_bob-wedlund_photo_001.jpg",
@@ -580,7 +602,7 @@
     "driverSlug": "cedar-lake-speedway",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_cedar-lake-speedway_kurt-gaber_photo_222.jpg",
@@ -602,7 +624,7 @@
     "driverSlug": "chanda-fjorden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_charlie-weber_unknown-photographer_photo_001.jpg",
@@ -613,7 +635,7 @@
     "driverSlug": "charlie-weber",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_chuck-nutzmann_christopher-kolstad_photo_001.jpg",
@@ -624,7 +646,7 @@
     "driverSlug": "chuck-nutzmann",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_chuck-nutzmann_phil-dullinger_photo_001.jpg",
@@ -635,7 +657,7 @@
     "driverSlug": "chuck-nutzmann",
     "photographerSlug": "phil-dullinger",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_chuck-swenson_ryan-aho_post_105.jpg",
@@ -657,7 +679,7 @@
     "driverSlug": "cory-rosen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_craig-brightbill_missy-lushinsky_photo_003.jpg",
@@ -668,7 +690,7 @@
     "driverSlug": "craig-brightbill",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_craig-christiansen_unknown-photographer_photo_001.jpg",
@@ -679,7 +701,7 @@
     "driverSlug": "craig-christiansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_craig-scott_unknown-photographer_photo_001.jpg",
@@ -690,7 +712,7 @@
     "driverSlug": "craig-scott",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_craig-thatcher_unknown-photographer_photo_001.jpg",
@@ -701,7 +723,7 @@
     "driverSlug": "craig-thatcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_curt-gelling_unknown-photographer_photo_001.jpg",
@@ -712,7 +734,7 @@
     "driverSlug": "curt-gelling",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
@@ -723,7 +745,7 @@
     "driverSlug": "curt-myers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dale-gangl_unknown-photographer_photo_001.jpg",
@@ -734,7 +756,7 @@
     "driverSlug": "dale-gangl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dan-gulliikson_unknown-photographer_photo_001.jpg",
@@ -745,7 +767,7 @@
     "driverSlug": "dan-gulliikson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dan-lonsky_unknown-photographer_photo_001.jpg",
@@ -756,7 +778,7 @@
     "driverSlug": "dan-lonsky",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dan-olson_unknown-photographer_photo_001.jpg",
@@ -767,7 +789,7 @@
     "driverSlug": "dan-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_danny-olinger_neil-miller_photo_001.jpg",
@@ -778,7 +800,7 @@
     "driverSlug": "danny-olinger",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dave-cain_unknown-photographer_photo_001.jpg",
@@ -789,7 +811,7 @@
     "driverSlug": "dave-cain",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dave-cain_unknown-photographer_photo_002.jpg",
@@ -800,7 +822,7 @@
     "driverSlug": "dave-cain",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dave-lehr_unknown-photographer_photo_001.jpg",
@@ -811,7 +833,7 @@
     "driverSlug": "dave-lehr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dave-maas_unknown-photographer_photo_001.jpg",
@@ -822,7 +844,7 @@
     "driverSlug": "dave-maas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dave-morgan_bob-wedlund_photo_001.jpg",
@@ -833,7 +855,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dennis-bitzan_unknown-photographer_photo_001.jpg",
@@ -844,7 +866,7 @@
     "driverSlug": "dennis-bitzan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dennis-osborne_bob-wedlund_photo_001.jpg",
@@ -855,7 +877,7 @@
     "driverSlug": "dennis-osborne",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_don-copp_unknown-photographer_photo_001.jpg",
@@ -866,7 +888,7 @@
     "driverSlug": "don-copp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_don-drew_unknown-photographer_photo_001.jpg",
@@ -877,7 +899,7 @@
     "driverSlug": "don-drew",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_don-shaw_unknown-photographer_photo_001.jpg",
@@ -888,7 +910,7 @@
     "driverSlug": "don-shaw",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_don-zweifel_todd-narveson_photo_001.jpg",
@@ -899,7 +921,7 @@
     "driverSlug": "don-zweifel",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_duane-mahder_unknown-photographer_photo_001.jpg",
@@ -910,7 +932,7 @@
     "driverSlug": "duane-mahder",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dwayne-clarke_unknown-photographer_photo_001.jpg",
@@ -921,7 +943,7 @@
     "driverSlug": "dwayne-clarke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_eric-pember_unknown-photographer_photo_001.jpg",
@@ -932,7 +954,7 @@
     "driverSlug": "eric-pember",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_eric-pember_unknown-photographer_photo_002.jpg",
@@ -943,7 +965,7 @@
     "driverSlug": "eric-pember",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_gary-loomis_don-reilly_photo_001.jpg",
@@ -954,7 +976,7 @@
     "driverSlug": "gary-loomis",
     "photographerSlug": "don-reilly",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_greg-steffen_steffen_post_001.png",
@@ -965,7 +987,7 @@
     "driverSlug": "greg-steffen",
     "photographerSlug": "steffen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_harold-mueller_unknown-photographer_photo_001.jpg",
@@ -976,7 +998,7 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jack-harder_greg-parent_post_001.jpg",
@@ -987,7 +1009,7 @@
     "driverSlug": "jack-harder",
     "photographerSlug": "greg-parent",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_james-embree_troy-powers_photo_001.jpg",
@@ -998,7 +1020,7 @@
     "driverSlug": "james-embree",
     "photographerSlug": "troy-powers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jamie-lemke_unknown-photographer_photo_001.jpg",
@@ -1009,7 +1031,7 @@
     "driverSlug": "jamie-lemke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jason-mcfadden_unknown-photographer_photo_001.jpg",
@@ -1020,7 +1042,7 @@
     "driverSlug": "jason-mcfadden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jason-vandekamp_unknown-photographer_photo_001.jpg",
@@ -1031,7 +1053,7 @@
     "driverSlug": "jason-vandekamp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jay-anderson_todd-narveson_photo_001.jpg",
@@ -1042,7 +1064,7 @@
     "driverSlug": "jay-anderson",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jeff-patchen_unknown-photographer_photo_001.jpg",
@@ -1053,7 +1075,7 @@
     "driverSlug": "jeff-patchen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jerry-kadinger_chris-loberg_post_001.jpg",
@@ -1064,7 +1086,7 @@
     "driverSlug": "jerry-kadinger",
     "photographerSlug": "chris-loberg",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jerry-legatt_unknown-photographer_photo_001.png",
@@ -1075,7 +1097,7 @@
     "driverSlug": "jerry-legatt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jesse-redetzke_unknown-photographer_photo_001.jpg",
@@ -1086,7 +1108,7 @@
     "driverSlug": "jesse-redetzke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jim-bruggeman_ryan-aho_post_094.jpg",
@@ -1097,7 +1119,7 @@
     "driverSlug": "jim-bruggeman",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "094"
+    "sequence": "94"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jimmy-mars_unknown-photographer_phot_001.jpg",
@@ -1107,8 +1129,8 @@
     "year": "unknown-year",
     "driverSlug": "jimmy-mars",
     "photographerSlug": "unknown-photographer",
-    "creditType": "phot",
-    "sequence": "001"
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_joel-cryderman_bill-taylor_photo_001.jpg",
@@ -1119,7 +1141,7 @@
     "driverSlug": "joel-cryderman",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_john-bystryzki_christopher-kolstad_unknown-credit_photo_001.jpg",
@@ -1128,9 +1150,9 @@
     "trackSlug": "cedar-lake-speedway",
     "year": "unknown-year",
     "driverSlug": "john-bystryzki",
-    "photographerSlug": "christopher-kolstad",
-    "creditType": "unknown-credit",
-    "sequence": "photo"
+    "photographerSlug": "christopher-kolstad_unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_john-henkemeyer_missy-lushinsky_photo_001.jpg",
@@ -1141,7 +1163,7 @@
     "driverSlug": "john-henkemeyer",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_john-kaanta_unknown-photographer_photo_001.jpg",
@@ -1152,7 +1174,7 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jon-crest_unknown-photographer_photo_001.jpg",
@@ -1163,7 +1185,7 @@
     "driverSlug": "jon-crest",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_ryan-aho_post_095.jpg",
@@ -1174,7 +1196,7 @@
     "driverSlug": "jon-kurshinsky",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "095"
+    "sequence": "95"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_001.jpg",
@@ -1185,7 +1207,7 @@
     "driverSlug": "jon-kurshinsky",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_002.jpg",
@@ -1196,7 +1218,18 @@
     "driverSlug": "jon-kurshinsky",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_301.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_301.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_jon-kurshinsky_unknown-photographer_photo_301.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-kurshinsky",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_kelly-estey_unknown-photographer_photo_001.jpg",
@@ -1207,7 +1240,7 @@
     "driverSlug": "kelly-estey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_kenny-davis_chris-loberg_photo_001.jpg",
@@ -1218,7 +1251,7 @@
     "driverSlug": "kenny-davis",
     "photographerSlug": "chris-loberg",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_kenny-mann_unknown-photographer_photo_001.png",
@@ -1229,7 +1262,7 @@
     "driverSlug": "kenny-mann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_kevin-adams_unknown-photographer_photo_001.jpg",
@@ -1240,7 +1273,7 @@
     "driverSlug": "kevin-adams",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_kevin-viebrock_christopher-kolstad_photo_001.jpg",
@@ -1251,7 +1284,7 @@
     "driverSlug": "kevin-viebrock",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_kevin-viebrock_unknown-photographer_photo_001.jpg",
@@ -1262,7 +1295,7 @@
     "driverSlug": "kevin-viebrock",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_krysta-swearingen_unknown-photographer_photo_001.jpg",
@@ -1273,7 +1306,7 @@
     "driverSlug": "krysta-swearingen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_lance-hofer_unknown-photographer_photo_001.jpg",
@@ -1284,7 +1317,7 @@
     "driverSlug": "lance-hofer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_lance-matthees_unknown-photographer_photo_002.jpg",
@@ -1295,7 +1328,7 @@
     "driverSlug": "lance-matthees",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_larry-boumeester_unknown-photographer_photo_001.jpg",
@@ -1306,7 +1339,7 @@
     "driverSlug": "larry-boumeester",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_larry-kallenbach_unknown-photographer_photo_001.jpg",
@@ -1317,7 +1350,18 @@
     "driverSlug": "larry-kallenbach",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_larry-kallenbach_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_larry-kallenbach_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_larry-kallenbach_unknown-photographer_photo_333.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-kallenbach",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_larry-stockwell_unknown-photographer_photo_001.jpg",
@@ -1328,7 +1372,7 @@
     "driverSlug": "larry-stockwell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mark-chamernick_unknown-photographer_photo_001.jpg",
@@ -1339,7 +1383,7 @@
     "driverSlug": "mark-chamernick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mark-steinke_christopher-kolstad_post_001.jpg",
@@ -1350,7 +1394,7 @@
     "driverSlug": "mark-steinke",
     "photographerSlug": "christopher-kolstad",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-baker_chris-loberg_photo_001.jpg",
@@ -1361,7 +1405,7 @@
     "driverSlug": "mike-baker",
     "photographerSlug": "chris-loberg",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-chamernick_ryan-aho_post_091.png",
@@ -1372,7 +1416,7 @@
     "driverSlug": "mike-chamernick",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "091"
+    "sequence": "91"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-krause_unknown-photographer_photo_001.jpg",
@@ -1383,7 +1427,7 @@
     "driverSlug": "mike-krause",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-nutzmann_ryan-aho_post_097.jpg",
@@ -1394,7 +1438,7 @@
     "driverSlug": "mike-nutzmann",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "097"
+    "sequence": "97"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-nutzmann_unknown-photographer_photo_001.jpg",
@@ -1405,7 +1449,7 @@
     "driverSlug": "mike-nutzmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-weber_unknown-photographer_photo_002.jpg",
@@ -1416,18 +1460,7 @@
     "driverSlug": "mike-weber",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "cedar-lake-speedway_unknown-year_nick-anvelink_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_nick-anvelink_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/cedar-lake-speedway_unknown-year_nick-anvelink_unknown-photographer_photo_001.jpg",
-    "trackSlug": "cedar-lake-speedway",
-    "year": "unknown-year",
-    "driverSlug": "nick-anvelink",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_nick-anvelink_unknown-photographer_photo_002.jpg",
@@ -1438,7 +1471,7 @@
     "driverSlug": "nick-anvelink",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_nick-anvelink_unknown-photographer_photo_003.jpg",
@@ -1449,7 +1482,7 @@
     "driverSlug": "nick-anvelink",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_nick-anvelink_unknown-photographer_photo_004.jpg",
@@ -1460,7 +1493,7 @@
     "driverSlug": "nick-anvelink",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
@@ -1471,7 +1504,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
@@ -1482,7 +1515,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_003.jpg",
@@ -1493,7 +1526,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_pat-doar_unknown-photographer_photo_004.jpg",
@@ -1504,7 +1537,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_paul-gilberts_ryan-aho_post_093.jpg",
@@ -1515,7 +1548,7 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "093"
+    "sequence": "93"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_perry-giles_unknown-photographer_photo_001.jpg",
@@ -1526,7 +1559,7 @@
     "driverSlug": "perry-giles",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_pete-parker_ryan-aho_post_114.jpg",
@@ -1548,7 +1581,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_phil-prusak_unknown-photographer_photo_001.jpg",
@@ -1559,7 +1592,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_phil-prusak_unknown-photographer_photo_002.jpg",
@@ -1570,7 +1603,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_punky-manor_unknown-photographer_photo_001.jpg",
@@ -1581,7 +1614,7 @@
     "driverSlug": "punky-manor",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_christopher-kolstad_photo_001.jpg",
@@ -1592,7 +1625,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_missy-lushinsky_photo_005.jpg",
@@ -1603,7 +1636,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_unknown-photographer_photo_003.jpg",
@@ -1614,7 +1647,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-egersdorf_unknown-photographer_photo_004.jpg",
@@ -1625,7 +1658,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-hanestad_unknown-photographer_photo_001.jpg",
@@ -1636,7 +1669,7 @@
     "driverSlug": "rick-hanestad",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-kobs_unknown-photographer_photo_001.jpg",
@@ -1647,7 +1680,7 @@
     "driverSlug": "rick-kobs",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_rick-kobs_unknown-photographer_photo_002.jpg",
@@ -1658,7 +1691,7 @@
     "driverSlug": "rick-kobs",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-jones_christopher-kolstad_photo_001.jpg",
@@ -1669,7 +1702,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-jones_phil-dullinger_post_001.jpg",
@@ -1680,7 +1713,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "phil-dullinger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-mahder_chris-loberg_photo_007.jpg",
@@ -1691,7 +1724,7 @@
     "driverSlug": "ron-mahder",
     "photographerSlug": "chris-loberg",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-mahder_unknown-photographer_photo_001.png",
@@ -1702,7 +1735,7 @@
     "driverSlug": "ron-mahder",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-prochnow_bob-wedlund_photo_001.jpg",
@@ -1713,7 +1746,7 @@
     "driverSlug": "ron-prochnow",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-schreiner_neil-miller_photo_001.jpg",
@@ -1724,7 +1757,7 @@
     "driverSlug": "ron-schreiner",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-schreiner_ryan-aho_post_099.jpg",
@@ -1735,7 +1768,7 @@
     "driverSlug": "ron-schreiner",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "099"
+    "sequence": "99"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ryan-aho_jr-hughes_photo_12245.jpg",
@@ -1768,7 +1801,18 @@
     "driverSlug": "sammy-swindell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "cedar-lake-speedway_unknown-year_scott-lawrence_neil-miller_photo_333.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/unknown-year/cedar-lake-speedway_unknown-year_scott-lawrence_neil-miller_photo_333.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_unknown-year_scott-lawrence_neil-miller_photo_333.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-lawrence",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_steve-egersdorf_unknown-credit_photo_001.jpg",
@@ -1779,7 +1823,7 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_steve-goodenough_unknown-photographer_photo_001.jpg",
@@ -1790,7 +1834,7 @@
     "driverSlug": "steve-goodenough",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_steve-laursen_unknown-photographer_photo_5472.jpg",
@@ -1812,7 +1856,7 @@
     "driverSlug": "steve-wik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_terry-henck_unknown-photographer_photo_001.jpg",
@@ -1823,7 +1867,7 @@
     "driverSlug": "terry-henck",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_terry-lanphear_don-reilly_post_001.jpg",
@@ -1834,7 +1878,7 @@
     "driverSlug": "terry-lanphear",
     "photographerSlug": "don-reilly",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_tim-ludwigson_4-christopher-kolstad_photo_001.png",
@@ -1845,7 +1889,7 @@
     "driverSlug": "tim-ludwigson",
     "photographerSlug": "4-christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_toby-patchen_unknown-photographer_photo_001.jpg",
@@ -1856,7 +1900,7 @@
     "driverSlug": "toby-patchen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_todd-eliason_unknown-photographer_photo_001.jpg",
@@ -1867,7 +1911,7 @@
     "driverSlug": "todd-eliason",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_todd-gehl_unknown-photographer_photo_001.jpg",
@@ -1878,7 +1922,7 @@
     "driverSlug": "todd-gehl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_tom-brust_chris-loberg_post_001.jpg",
@@ -1889,7 +1933,7 @@
     "driverSlug": "tom-brust",
     "photographerSlug": "chris-loberg",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_tom-nesbitt_unknown-photographer_photo_001.png",
@@ -1900,7 +1944,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_tom-nesbitt_unknown-photographer_photo_003.jpg",
@@ -1911,7 +1955,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_tom-thompson_ryan-aho_post_090.jpg",
@@ -1922,7 +1966,7 @@
     "driverSlug": "tom-thompson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "090"
+    "sequence": "90"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_travis-whitney_unknown-photographer_photo_001.jpg",
@@ -1933,7 +1977,7 @@
     "driverSlug": "travis-whitney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_travis-whitney_unknown-photographer_photo_002.jpg",
@@ -1944,7 +1988,7 @@
     "driverSlug": "travis-whitney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
@@ -1955,7 +1999,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown_christopher-kolstad_photo_001.jpg",
@@ -1963,10 +2007,10 @@
     "publicPath": "/photos/cedar-lake-speedway_unknown-year_unknown_christopher-kolstad_photo_001.jpg",
     "trackSlug": "cedar-lake-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_don-reilly_photo_001.jpg",
@@ -1977,7 +2021,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "don-reilly",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_don-reilly_photo_021.png",
@@ -1988,7 +2032,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "don-reilly",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_don-reilly_post_500.jpg",
@@ -2032,7 +2076,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_neil-miller_photo_002.jpg",
@@ -2043,7 +2087,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_neil-miller_photo_003.jpg",
@@ -2054,7 +2098,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_neil-miller_photo_004.jpg",
@@ -2065,7 +2109,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_ryan-aho_post_098.jpg",
@@ -2076,7 +2120,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "098"
+    "sequence": "98"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -2087,7 +2131,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_unknown-photographer_photo_002.jpg",
@@ -2098,7 +2142,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_unknown-photographer_photo_12333.jpg",

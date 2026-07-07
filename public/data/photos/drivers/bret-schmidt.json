@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "jefferson-speedway_unknown-year_bret-schmidt_charlie-spry_photo_222.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_bret-schmidt_charlie-spry_photo_222.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_bret-schmidt_charlie-spry_photo_222.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bret-schmidt",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,39 @@
     "driverSlug": "bret-schmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bret-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bret-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bret-schmidt_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bret-schmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

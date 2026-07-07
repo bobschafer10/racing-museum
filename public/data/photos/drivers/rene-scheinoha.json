@@ -11,6 +11,17 @@
     "sequence": "13492"
   },
   {
+    "fileName": "golden-sands-speedway_1996_rene-scheinoha_charlie-spry_photo_444.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1996/golden-sands-speedway_1996_rene-scheinoha_charlie-spry_photo_444.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1996_rene-scheinoha_charlie-spry_photo_444.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1996",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "rene-scheinoha",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_111.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "rene-scheinoha",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
@@ -63,7 +74,29 @@
     "driverSlug": "rene-scheinoha",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_rene-scheinoha_charlie-spry_photo_333.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_rene-scheinoha_charlie-spry_photo_333.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_rene-scheinoha_charlie-spry_photo_333.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_rene-scheinoha_charlie-spry_photo_536.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_rene-scheinoha_charlie-spry_photo_536.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_rene-scheinoha_charlie-spry_photo_536.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "536"
   },
   {
     "fileName": "unknown-track_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
@@ -74,6 +107,6 @@
     "driverSlug": "rene-scheinoha",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

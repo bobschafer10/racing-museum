@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "marshfield-super-speedway_2014_kyle-genett_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_kyle-genett_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_kyle-genett_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "kyle-genett",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
     "fileName": "monster-hall-raceway_unknown-year_kyle-genett_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/monster-hall-raceway/unknown-year/monster-hall-raceway_unknown-year_kyle-genett_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/monster-hall-raceway_unknown-year_kyle-genett_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "kyle-genett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

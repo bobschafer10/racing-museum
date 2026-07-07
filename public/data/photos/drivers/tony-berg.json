@@ -8,7 +8,7 @@
     "driverSlug": "tony-berg",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tony-berg_brad-luepke_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tony-berg",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-berg_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "tony-berg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

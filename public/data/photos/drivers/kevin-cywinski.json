@@ -8,7 +8,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1994/dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1994",
+    "driverSlug": "kevin-cywinski",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kevin-cywinski_kurt-luoma_photo_111.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_kevin-cywinski_don-besch_photo_222.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "ken-koppa",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_kevin-cywinski_ken-koppa_photo_002.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "ken-koppa",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_kevin-cywinski_kurt-luoma_photo_222.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "eff-sandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1991_kevin-cywinski_bob-schafer_photo_206.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_kevin-cywinski_bob-schafer_photo_331.jpg",
@@ -132,6 +143,17 @@
     "sequence": "331"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_kevin-cywinski_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_kevin-cywinski_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_kevin-cywinski_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-cywinski",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_kevin-cywinski_bob-schafer_photo_329.jpg",
@@ -176,61 +198,6 @@
     "sequence": "101"
   },
   {
-    "fileName": "unknown-track_unknown-year_kevin-cywinski_lacrosse-win-ken-koppa_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-cywinski_lacrosse-win-ken-koppa_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-cywinski_lacrosse-win-ken-koppa_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-cywinski",
-    "photographerSlug": "lacrosse-win-ken-koppa",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-cywinski",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-cywinski",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-cywinski",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-cywinski_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-cywinski",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
     "fileName": "wisconsin-international-raceway_1989_kevin-cywinski_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/1989/wisconsin-international-raceway_1989_kevin-cywinski_pat-heaney_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_1989_kevin-cywinski_pat-heaney_post_001.jpg",
@@ -239,7 +206,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-cywinski_bob-schafer_photo_030.jpeg",
@@ -250,7 +217,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "030"
+    "sequence": "30"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-cywinski_bob-schafer_photo_13294.jpg",
@@ -283,7 +250,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-cywinski_kurt-luoma_photo_001.jpg",
@@ -294,7 +261,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-cywinski_kurt-luoma_photo_002.jpg",
@@ -305,7 +272,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-cywinski_kurt-luoma_photo_003.jpg",
@@ -316,7 +283,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-cywinski_kurt-luoma_photo_1168.jpg",
@@ -338,6 +305,6 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "george-coen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "019"
+    "sequence": "19"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_george-coen_bob-schafer_photo_105.jpg",
@@ -31,16 +31,5 @@
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
     "sequence": "222"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-coen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-coen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-coen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-coen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
   }
 ]

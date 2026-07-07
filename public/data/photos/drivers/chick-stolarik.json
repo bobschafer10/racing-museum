@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "hales-corners-speedway_1981_chick-stolarik_pat-heaney_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1981/hales-corners-speedway_1981_chick-stolarik_pat-heaney_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1981_chick-stolarik_pat-heaney_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1981",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_002.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "sante-fe-speedway_1982_chick-stolarik_weber-brothers_photo_001.jpg",
@@ -52,7 +74,7 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_chick-stolarik_brad-luepke_post_001.jpg",
@@ -63,7 +85,18 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_chick-stolarik_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_chick-stolarik_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_chick-stolarik_unknown-photographer_photo_100.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
@@ -74,7 +107,29 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "owatonna-mcclain",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "owatonna-mcclain",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chick-stolarik_pete-vercauteren_photo_001.jpg",
@@ -85,7 +140,29 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
@@ -96,6 +173,28 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

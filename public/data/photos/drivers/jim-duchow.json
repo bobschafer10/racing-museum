@@ -8,7 +8,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_jim-duchow_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jim-duchow_don-wendlandt_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jim-duchow_don-wendlandt_photo_117.jpg",
@@ -63,40 +63,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-duchow_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-duchow_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-duchow_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-duchow",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-duchow_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-duchow_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-duchow_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-duchow",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-duchow_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-duchow_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-duchow_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-duchow",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_jim-duchow_bob-schafer_photo_283.jpg",
@@ -173,7 +140,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-duchow_unknown-photographer_photo_002.jpg",
@@ -184,7 +151,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-duchow_unknown-photographer_photo_003.jpg",
@@ -195,6 +162,6 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

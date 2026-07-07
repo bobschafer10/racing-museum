@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "eagle-river-speedway_2022_aaron-streblow_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_aaron-streblow_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_aaron-streblow_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "aaron-streblow",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "gravity-park-speedway_unknown-year_aaron-streblow_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/gravity-park-speedway/unknown-year/gravity-park-speedway_unknown-year_aaron-streblow_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/gravity-park-speedway_unknown-year_aaron-streblow_unknown-photographer_photo_001.jpg",
@@ -8,17 +19,6 @@
     "driverSlug": "aaron-streblow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_aaron-streblow_joe-slack_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aaron-streblow_joe-slack_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_aaron-streblow_joe-slack_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "aaron-streblow",
-    "photographerSlug": "joe-slack",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

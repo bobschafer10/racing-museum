@@ -8,7 +8,7 @@
     "driverSlug": "howie-weiss",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_howie-weiss_unknown-photographer_photo_002.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "howie-weiss",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_howie-weiss_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_howie-weiss_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_howie-weiss_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "howie-weiss",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   }
 ]

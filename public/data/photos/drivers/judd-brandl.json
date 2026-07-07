@@ -19,39 +19,6 @@
     "driverSlug": "judd-brandl",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2000_judd-brandl_tom-loos_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2000/unknown-track_2000_judd-brandl_tom-loos_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2000_judd-brandl_tom-loos_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2000",
-    "driverSlug": "judd-brandl",
-    "photographerSlug": "tom-loos",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_judd-brandl_unknown-photographer_photo_001 (2).jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_judd-brandl_unknown-photographer_photo_001 (2).jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_judd-brandl_unknown-photographer_photo_001 (2).jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "judd-brandl",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001 (2)"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_judd-brandl_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_judd-brandl_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_judd-brandl_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "judd-brandl",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

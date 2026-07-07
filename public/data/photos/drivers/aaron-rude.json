@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "columbus-151-speedway_unknown-year_aaron-rude_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_aaron-rude_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_aaron-rude_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-rude",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
     "fileName": "rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/2019/rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
@@ -8,6 +19,17 @@
     "driverSlug": "aaron-rude",
     "photographerSlug": "hotshot-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2019/rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2019",
+    "driverSlug": "aaron-rude",
+    "photographerSlug": "hotshot-photography",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

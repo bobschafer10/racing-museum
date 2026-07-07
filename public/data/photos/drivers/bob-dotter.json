@@ -8,7 +8,29 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-dotter_don-besch_photo_001.jpg",
@@ -19,7 +41,40 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_1981_bob-dotter_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/1981/raceway-park-il-il_1981_bob-dotter_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/raceway-park-il-il_1981_bob-dotter_raceway-park-history_post_888.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "1981",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_bob-dotter_raceway-park-history_post_505.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_bob-dotter_raceway-park-history_post_505.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_bob-dotter_raceway-park-history_post_505.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "505"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_bob-dotter_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_bob-dotter_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_bob-dotter_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
@@ -30,7 +85,29 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
@@ -41,7 +118,29 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
@@ -52,7 +151,29 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_pete-fileca_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
@@ -63,7 +184,29 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-dotter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-dotter_geoff-mckarns_post_001.jpg",
@@ -74,6 +217,6 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

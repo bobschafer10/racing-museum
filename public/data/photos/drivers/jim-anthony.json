@@ -8,18 +8,7 @@
     "driverSlug": "jim-anthony",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-anthony_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-anthony_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-anthony_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-anthony",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_jim-anthony_unknown-photographer_photo_002.jpg",
@@ -30,18 +19,7 @@
     "driverSlug": "jim-anthony",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-anthony_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-anthony_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-anthony_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-anthony",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-anthony_gary-vercauteren_photo_001.jpg",
@@ -52,7 +30,7 @@
     "driverSlug": "jim-anthony",
     "photographerSlug": "gary-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-anthony_keith-vercauteren_post_116.jpg",
@@ -74,6 +52,6 @@
     "driverSlug": "jim-anthony",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

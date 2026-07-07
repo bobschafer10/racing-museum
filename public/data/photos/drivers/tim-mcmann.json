@@ -8,7 +8,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_1998_tim-mcmann_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_1982_tim-mcmann_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_tim-mcmann_unknown-photographer_photo_001.jpeg",
@@ -52,18 +52,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_tim-mcmann_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_tim-mcmann_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_tim-mcmann_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "tim-mcmann",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_2026_tim-mcmann_unknown-photographer_photo_114.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "bill-warrick",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-mcmann_bill-warrick-ii_photo_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "bill-warrick-ii",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-mcmann_bill-warrick-iii_photo_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "bill-warrick-iii",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-mcmann_larry-quinn_post_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
@@ -129,7 +118,29 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-mcmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-mcmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_002.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_003.jpg",
@@ -151,6 +162,39 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_1875.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_1875.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_1875.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-mcmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1875"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_6615.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_6615.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_6615.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-mcmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6615"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_6616.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_6616.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tim-mcmann_unknown-photographer_photo_6616.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tim-mcmann",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6616"
   }
 ]

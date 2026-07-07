@@ -1,5 +1,49 @@
 [
   {
+    "fileName": "lake-geneva-raceway_1971_eddie-loomis_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1971/lake-geneva-raceway_1971_eddie-loomis_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1971_eddie-loomis_michael-halbherr_post_555.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1971",
+    "driverSlug": "eddie-loomis",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "slinger-speedway_1968_eddie-loomis_jim-juneau_photo_333.jpg",
+    "storagePath": "photos/master/slinger-speedway/1968/slinger-speedway_1968_eddie-loomis_jim-juneau_photo_333.jpg",
+    "publicPath": "/photos/slinger-speedway_1968_eddie-loomis_jim-juneau_photo_333.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1968",
+    "driverSlug": "eddie-loomis",
+    "photographerSlug": "jim-juneau",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "state-fair-park_1967_eddie-loomis_michael-halbherr_post_444.jpg",
+    "storagePath": "photos/master/state-fair-park/1967/state-fair-park_1967_eddie-loomis_michael-halbherr_post_444.jpg",
+    "publicPath": "/photos/state-fair-park_1967_eddie-loomis_michael-halbherr_post_444.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1967",
+    "driverSlug": "eddie-loomis",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_1965_eddie-loomis_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/unknown-track/1965/unknown-track_1965_eddie-loomis_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/unknown-track_1965_eddie-loomis_michael-halbherr_post_555.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1965",
+    "driverSlug": "eddie-loomis",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
     "fileName": "unknown-track_unknown-year_eddie-loomis_racing-wisconsin_post_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_eddie-loomis_racing-wisconsin_post_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_eddie-loomis_racing-wisconsin_post_001.jpg",
@@ -8,6 +52,17 @@
     "driverSlug": "eddie-loomis",
     "photographerSlug": "racing-wisconsin",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wilmot-raceway_1969_eddie-loomis_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/wilmot-raceway/1969/wilmot-raceway_1969_eddie-loomis_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/wilmot-raceway_1969_eddie-loomis_michael-halbherr_post_555.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "1969",
+    "driverSlug": "eddie-loomis",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
   }
 ]

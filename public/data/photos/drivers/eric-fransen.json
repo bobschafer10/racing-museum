@@ -8,7 +8,7 @@
     "driverSlug": "eric-fransen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_eric-fransen_tom-loos_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "eric-fransen",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_eric-fransen_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_eric-fransen_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_eric-fransen_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "eric-fransen",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2003_eric-fransen_cory-juelich_post_116.jpg",

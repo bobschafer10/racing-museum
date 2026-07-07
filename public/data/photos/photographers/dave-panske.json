@@ -8,7 +8,7 @@
     "driverSlug": "josh-long",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2015_kelsy-hayes_dave-panske_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "kelsy-hayes",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2015_rm-van-pay_dave-panske_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "rm-van-pay",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "door-county-speedway_unknown-year_brian-drexler_dave-panske_photo_006.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "brian-drexler",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "door-county-speedway_unknown-year_rod-snellenberger_dave-panske_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_pete-parker_dave-panske_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_unknown-year_josh-massart_dave-panske_photo_002.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "josh-massart",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "luxemburg-speedway_unknown-year_rod-snellenberger_dave-panske_photo_002.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "oshkosh-speed-zone_1999_rod-snellenberger_dave-panske_photo_001.jpg",
@@ -96,7 +96,18 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "storagePath": "photos/master/oshkosh-speed-zone/2015/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "publicPath": "/photos/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2015",
+    "driverSlug": "mike-wedelstadt",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_2017_lucas-lamberies_dave-panske_photo_001.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "lucas-lamberies",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_dennis-schultz_dave-panske_photo_192.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "seymour-speedway_1986_wally-wise_dave-panske_photo_001.jpg",
@@ -140,7 +151,18 @@
     "driverSlug": "wally-wise",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "seymour-speedway_1988_chad-paul_dave-panske_photo_333.jpg",
+    "storagePath": "photos/master/seymour-speedway/1988/seymour-speedway_1988_chad-paul_dave-panske_photo_333.jpg",
+    "publicPath": "/photos/seymour-speedway_1988_chad-paul_dave-panske_photo_333.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "1988",
+    "driverSlug": "chad-paul",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "seymour-speedway_2002_rm-van-pay_dave-panske_photo_001.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "rm-van-pay",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_brad-rohloff_dave-panske_photo_001.jpg",
@@ -162,7 +184,7 @@
     "driverSlug": "brad-rohloff",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_jeff-treml_dave-panske_photo_210.jpg",
@@ -184,7 +206,7 @@
     "driverSlug": "mike-czarapata",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_travis-van-straten_dave-panske_photo_001.jpg",
@@ -195,7 +217,7 @@
     "driverSlug": "travis-van-straten",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_troy-springborn_dave-panske_photo_005.jpeg",
@@ -206,7 +228,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
@@ -217,7 +239,40 @@
     "driverSlug": "brian-drexler",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-drexler_dave-panske_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-drexler",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_roy-powless_dave-panske_photo_001.jpg",
@@ -228,7 +283,7 @@
     "driverSlug": "roy-powless",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1989_russ-trachte_dave-panske_photo_001.jpg",
@@ -239,7 +294,7 @@
     "driverSlug": "russ-trachte",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1990_russ-trachte_dave-panske_photo_001.jpg",
@@ -250,7 +305,7 @@
     "driverSlug": "russ-trachte",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1991_clarence-oertel_dave-panske_photo_001.jpg",
@@ -261,7 +316,7 @@
     "driverSlug": "clarence-oertel",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1992_clarence-oertel_dave-panske_photo_001.jpg",
@@ -272,6 +327,6 @@
     "driverSlug": "clarence-oertel",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

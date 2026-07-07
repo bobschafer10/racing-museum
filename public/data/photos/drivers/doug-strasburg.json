@@ -8,7 +8,18 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_doug-strasburg_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_doug-strasburg_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_doug-strasburg_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "doug-strasburg",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1975_doug-strasburg_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_doug-strasburg_unknown-photographer_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_doug-strasburg_pat-heaney_post_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_doug-strasburg_keith-vercauteren_post_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_doug-strasburg_dale-danielski_post_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "dale-danielski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1978_doug-strasburg_john-vass_photo_100.jpg",
@@ -85,6 +96,6 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

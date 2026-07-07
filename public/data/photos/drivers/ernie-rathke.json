@@ -8,7 +8,7 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1974_ernie-rathke_weber-brothers_photo_222 .jpg",
@@ -19,18 +19,18 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "222 "
+    "sequence": "222"
   },
   {
-    "fileName": "hales-corners-speedway_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/hales-corners-speedway_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
+    "fileName": "hales-corners-speedway_1974_ernie-rathke_weber-brothers_photo_222.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1974/hales-corners-speedway_1974_ernie-rathke_weber-brothers_photo_222.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1974_ernie-rathke_weber-brothers_photo_222.jpg",
     "trackSlug": "hales-corners-speedway",
-    "year": "unknown-year",
+    "year": "1974",
     "driverSlug": "ernie-rathke",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "222"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_ernie-rathke_weber-brothers_photo_222.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
@@ -74,28 +74,6 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ernie-rathke_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ernie-rathke_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ernie-rathke_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ernie-rathke",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ernie-rathke",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

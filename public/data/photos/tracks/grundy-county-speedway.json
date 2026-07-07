@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1978/grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1978_mike-miller_bob-elman_photo_336.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1978",
+    "driverSlug": "mike-miller",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "336"
+  },
+  {
     "fileName": "grundy-county-speedway_1978_wayne-para_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/grundy-county-speedway/1978/grundy-county-speedway_1978_wayne-para_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/grundy-county-speedway_1978_wayne-para_unknown-photographer_photo_001.jpg",
@@ -8,7 +19,51 @@
     "driverSlug": "wayne-para",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_1980_tom-jones_greg-bauer_post_444.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1980/grundy-county-speedway_1980_tom-jones_greg-bauer_post_444.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1980_tom-jones_greg-bauer_post_444.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1980",
+    "driverSlug": "tom-jones",
+    "photographerSlug": "greg-bauer",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "grundy-county-speedway_1981_ray-young_greg-bauer_post_444.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1981/grundy-county-speedway_1981_ray-young_greg-bauer_post_444.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1981_ray-young_greg-bauer_post_444.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1981",
+    "driverSlug": "ray-young",
+    "photographerSlug": "greg-bauer",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "grundy-county-speedway_1982_barbara-bosak_bob-elman_photo_433.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1982/grundy-county-speedway_1982_barbara-bosak_bob-elman_photo_433.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1982_barbara-bosak_bob-elman_photo_433.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1982",
+    "driverSlug": "barbara-bosak",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
+    "fileName": "grundy-county-speedway_1982_dick-barker_greg-bauer_post_444.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1982/grundy-county-speedway_1982_dick-barker_greg-bauer_post_444.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1982_dick-barker_greg-bauer_post_444.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1982",
+    "driverSlug": "dick-barker",
+    "photographerSlug": "greg-bauer",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "grundy-county-speedway_1983_ed-hoffman_mark-vanveghel_photo_001.jpg",
@@ -19,7 +74,18 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "mark-vanveghel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_1983_wayne-para_bob-elman_photo_335.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1983/grundy-county-speedway_1983_wayne-para_bob-elman_photo_335.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1983_wayne-para_bob-elman_photo_335.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1983",
+    "driverSlug": "wayne-para",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "335"
   },
   {
     "fileName": "grundy-county-speedway_1985_mark-martin_kim-kemperman_post_001.jpg",
@@ -30,7 +96,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "kim-kemperman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1986_rich-bickle-jr_bob-schafer_photo_100.jpg",
@@ -52,7 +118,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_bert-weitemeyer_don-besch_photo_001.jpg",
@@ -63,7 +129,7 @@
     "driverSlug": "bert-weitemeyer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_butch-miller_don-besch_photo_001.jpg",
@@ -74,7 +140,7 @@
     "driverSlug": "butch-miller",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_coy-williams_don-besch_photo_001.jpg",
@@ -85,7 +151,7 @@
     "driverSlug": "coy-williams",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_dave-watson_don-besch_photo_001.jpg",
@@ -96,7 +162,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_dennis-lampman_don-besch_photo_001.jpg",
@@ -107,7 +173,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_dick-trickle_don-besch_photo_001.jpg",
@@ -118,7 +184,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_doug-herbst_don-besch_photo_001.jpg",
@@ -129,7 +195,7 @@
     "driverSlug": "doug-herbst",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_frank-gawlinski_don-besch_photo_001.jpg",
@@ -140,7 +206,7 @@
     "driverSlug": "frank-gawlinski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_george-prziborowski_don-besch_photo_001.jpg",
@@ -151,7 +217,7 @@
     "driverSlug": "george-prziborowski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_joe-shear_don-besch_photo_001.jpg",
@@ -162,7 +228,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_mike-varner_don-besch_photo_001.jpg",
@@ -173,7 +239,7 @@
     "driverSlug": "mike-varner",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_rich-bickle_don-besch_photo_001.jpg",
@@ -184,7 +250,7 @@
     "driverSlug": "rich-bickle",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_scott-hansen_don-besch_photo_001.jpg",
@@ -195,7 +261,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_steve-holzhausen_don-besch_photo_001.jpg",
@@ -206,7 +272,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_terry-baldry_don-besch_photo_001.jpg",
@@ -217,7 +283,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_terry-baldry_don-besch_photo_002.jpg",
@@ -228,7 +294,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "grundy-county-speedway_1987_tom-carlson_don-besch_photo_001.jpg",
@@ -239,7 +305,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_tracy-schuler_don-besch_photo_001.jpg",
@@ -250,7 +316,7 @@
     "driverSlug": "tracy-schuler",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1989_tony-raines_kim-kemperman_photo_001.jpg",
@@ -261,7 +327,7 @@
     "driverSlug": "tony-raines",
     "photographerSlug": "kim-kemperman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1997_daryl-traber_unknown-credit_photo_001.jpg",
@@ -272,7 +338,7 @@
     "driverSlug": "daryl-traber",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1997_jeff-meulemans_unknown-credit_photo_001.jpg",
@@ -283,7 +349,7 @@
     "driverSlug": "jeff-meulemans",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1997_ken-smart_unknown-credit_photo_001.jpg",
@@ -294,7 +360,18 @@
     "driverSlug": "ken-smart",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_2024_gracie-flanagan_josh-zacharias_post_422.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/2024/grundy-county-speedway_2024_gracie-flanagan_josh-zacharias_post_422.jpg",
+    "publicPath": "/photos/grundy-county-speedway_2024_gracie-flanagan_josh-zacharias_post_422.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "2024",
+    "driverSlug": "gracie-flanagan",
+    "photographerSlug": "josh-zacharias",
+    "creditType": "post",
+    "sequence": "422"
   },
   {
     "fileName": "grundy-county-speedway_2026_kyle-shear_goodaker_photo_111.jpg",
@@ -306,6 +383,17 @@
     "photographerSlug": "goodaker",
     "creditType": "photo",
     "sequence": "111"
+  },
+  {
+    "fileName": "grundy-county-speedway_2026_scotty-gardner_scotty-gardner_post_432.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/2026/grundy-county-speedway_2026_scotty-gardner_scotty-gardner_post_432.jpg",
+    "publicPath": "/photos/grundy-county-speedway_2026_scotty-gardner_scotty-gardner_post_432.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "2026",
+    "driverSlug": "scotty-gardner",
+    "photographerSlug": "scotty-gardner",
+    "creditType": "post",
+    "sequence": "432"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_al-schill_bob-schafer_photo_14132.jpg",
@@ -327,7 +415,40 @@
     "driverSlug": "al-schill",
     "photographerSlug": "kim-kemperman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_brian-kubinski_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_brian-kubinski_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_brian-kubinski_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-kubinski",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_chet-kurzeja_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_chet-kurzeja_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_chet-kurzeja_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chet-kurzeja",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_dave-anspaugh_unknown-photographer_photo_001.jpg",
@@ -338,7 +459,7 @@
     "driverSlug": "dave-anspaugh",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_dave-weltmeyer_bob-schafer_photo_14153.jpg",
@@ -352,6 +473,17 @@
     "sequence": "14153"
   },
   {
+    "fileName": "grundy-county-speedway_unknown-year_dave-weltmeyer_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_dave-weltmeyer_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_dave-weltmeyer_raceway-park-history_post_555.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-weltmeyer",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
     "fileName": "grundy-county-speedway_unknown-year_denny-norton_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_denny-norton_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/grundy-county-speedway_unknown-year_denny-norton_unknown-photographer_photo_001.jpg",
@@ -360,7 +492,7 @@
     "driverSlug": "denny-norton",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
@@ -371,7 +503,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_don-leach_bob-schafer_photo_14203.jpg",
@@ -385,6 +517,28 @@
     "sequence": "14203"
   },
   {
+    "fileName": "grundy-county-speedway_unknown-year_duane-pierson_pete-fileca_post'.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_duane-pierson_pete-fileca_post'.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_duane-pierson_pete-fileca_post'.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "duane-pierson",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_gene-hill_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_gene-hill_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_gene-hill_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gene-hill",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
     "fileName": "grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_001.jpg",
     "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_001.jpg",
     "publicPath": "/photos/grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_001.jpg",
@@ -393,7 +547,7 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_jerry-kemperman_stan-kalwasinski_photo_002.jpg",
@@ -404,7 +558,18 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_jimmy-wilson_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_jimmy-wilson_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_jimmy-wilson_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-wilson",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_kregg-hurlbert_bob-schafer_photo_001.jpg",
@@ -415,7 +580,40 @@
     "driverSlug": "kregg-hurlbert",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_larry-conroy_greg-bauer_post_444.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_larry-conroy_greg-bauer_post_444.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_larry-conroy_greg-bauer_post_444.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-conroy",
+    "photographerSlug": "greg-bauer",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_larry-schuler_pete-fileca_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_larry-schuler_pete-fileca_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_larry-schuler_pete-fileca_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-schuler",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_lee-schuler_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_lee-schuler_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_lee-schuler_raceway-park-history_post_555.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-schuler",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_steve-carlson_darrell-kennedy_photo_001.jpg",
@@ -426,7 +624,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "darrell-kennedy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_tom-carlson_darrell-kennedy_photo_001.jpg",
@@ -437,7 +635,18 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "darrell-kennedy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_tony-hertko_pete-fileca_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-hertko",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "333"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_unknown-driver_bob-schafer_photo_14143.jpg",

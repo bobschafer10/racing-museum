@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "141-speedway_2012_jim-zdroik_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/2012/141-speedway_2012_jim-zdroik_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_2012_jim-zdroik_unknown-photographer_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2012",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_111.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_111.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_111.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_112.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_112.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_112.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "112"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_113.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_113.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_113.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "113"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  }
+]

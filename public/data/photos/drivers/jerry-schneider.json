@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "141-speedway_1982_jerry-schneider_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_jerry-schneider_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/141-speedway_1982_jerry-schneider_weber-brothers_photo_999.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "jerry-schneider",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
+  },
+  {
     "fileName": "dells-motor-speedway_2001_jerry-schneider_jeff-blaser_photo_001.jpg",
     "storagePath": "photos/master/dells-motor-speedway/2001/dells-motor-speedway_2001_jerry-schneider_jeff-blaser_photo_001.jpg",
     "publicPath": "/photos/dells-motor-speedway_2001_jerry-schneider_jeff-blaser_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "jerry-schneider",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "jerry-schneider",
     "photographerSlug": "andy-ernst",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-schneider_andy-ernst-ii_post_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "jerry-schneider",
     "photographerSlug": "andy-ernst-ii",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-schneider_bob-schafer_photo_320.jpg",

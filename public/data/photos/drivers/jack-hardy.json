@@ -8,7 +8,7 @@
     "driverSlug": "jack-hardy",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_jack-hardy_joe-verdegan_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jack-hardy",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_jack-hardy_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jack-hardy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jack-hardy_bob-schafer_photo_371.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "jack-hardy",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jack-hardy_keith-vercauteren_post_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "jack-hardy",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jack-hardy_unknown-photographer_photo_001.jpg",
@@ -74,6 +74,6 @@
     "driverSlug": "jack-hardy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

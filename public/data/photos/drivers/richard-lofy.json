@@ -19,7 +19,7 @@
     "driverSlug": "richard-lofy",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_richard-lofy_bob-schafer_photo_13242.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "richard-lofy",
     "photographerSlug": "john-close",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_richard-lofy_unknown-photographer_photo_001.jpg",
@@ -63,18 +63,7 @@
     "driverSlug": "richard-lofy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_richard-lofy_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_richard-lofy_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_richard-lofy_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "richard-lofy",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_richard-lofy_unknown-photographer_photo_5366.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "richard-lofy",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_richard-lofy_unknown-photographer_photo_001.jpg",
@@ -162,6 +151,6 @@
     "driverSlug": "richard-lofy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

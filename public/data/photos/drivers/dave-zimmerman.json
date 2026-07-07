@@ -8,7 +8,7 @@
     "driverSlug": "dave-zimmerman",
     "photographerSlug": "larry-quinn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-zimmerman_larry-quinn_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-zimmerman",
     "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-zimmerman_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "dave-zimmerman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

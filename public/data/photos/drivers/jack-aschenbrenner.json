@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "jack-aschenbrenner",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "hales-corners-speedway_1968_jack-aschenbrenner_pat-heaney_post_777.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1968/hales-corners-speedway_1968_jack-aschenbrenner_pat-heaney_post_777.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1968_jack-aschenbrenner_pat-heaney_post_777.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1968",
+    "driverSlug": "jack-aschenbrenner",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "777"
+  },
+  {
     "fileName": "hales-corners-speedway_1972_jack-aschenbrenner_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/hales-corners-speedway/1972/hales-corners-speedway_1972_jack-aschenbrenner_pat-heaney_post_001.jpg",
     "publicPath": "/photos/hales-corners-speedway_1972_jack-aschenbrenner_pat-heaney_post_001.jpg",
@@ -8,7 +30,18 @@
     "driverSlug": "jack-aschenbrenner",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1972_jack-aschenbrenner_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1972/hales-corners-speedway_1972_jack-aschenbrenner_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1972_jack-aschenbrenner_pat-heaney_post_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1972",
+    "driverSlug": "jack-aschenbrenner",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1977_jack-aschenbrenner_weber-brothers_photo_001.jpg",
@@ -19,18 +52,7 @@
     "driverSlug": "jack-aschenbrenner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "hales-corners-speedway_unknown-year_jack-aschenbrenner_5-weber_photo_001.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jack-aschenbrenner_5-weber_photo_001.jpg",
-    "publicPath": "/photos/hales-corners-speedway_unknown-year_jack-aschenbrenner_5-weber_photo_001.jpg",
-    "trackSlug": "hales-corners-speedway",
-    "year": "unknown-year",
-    "driverSlug": "jack-aschenbrenner",
-    "photographerSlug": "5-weber",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_jack-aschenbrenner_scott-krueger_post_001.jpg",
@@ -41,18 +63,29 @@
     "driverSlug": "jack-aschenbrenner",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "hales-corners-speedway_unknown-year_jack-aschenbrenner_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jack-aschenbrenner_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/hales-corners-speedway_unknown-year_jack-aschenbrenner_unknown-photographer_photo_001.jpg",
+    "fileName": "hales-corners-speedway_unknown-year_jack-aschenbrenner_weber-brothers_photo_333.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jack-aschenbrenner_weber-brothers_photo_333.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jack-aschenbrenner_weber-brothers_photo_333.jpg",
     "trackSlug": "hales-corners-speedway",
     "year": "unknown-year",
     "driverSlug": "jack-aschenbrenner",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jack-aschenbrenner_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jack-aschenbrenner_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jack-aschenbrenner_weber-brothers_photo_334.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-aschenbrenner",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_jack-aschenbrenner_weber-brothers_photo_6963.jpg",
@@ -66,39 +99,6 @@
     "sequence": "6963"
   },
   {
-    "fileName": "unknown-track_unknown-year_jack-aschenbrenner_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-aschenbrenner_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-aschenbrenner_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-aschenbrenner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jack-aschenbrenner_weber-brothers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-aschenbrenner_weber-brothers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-aschenbrenner_weber-brothers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-aschenbrenner",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jack-aschenbrenner_weber-brothers_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-aschenbrenner_weber-brothers_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-aschenbrenner_weber-brothers_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-aschenbrenner",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
     "fileName": "waukegan-speedway_unknown-year_jack-aschenbrenner_geoff-mckarns_post_001.jpg",
     "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jack-aschenbrenner_geoff-mckarns_post_001.jpg",
     "publicPath": "/photos/waukegan-speedway_unknown-year_jack-aschenbrenner_geoff-mckarns_post_001.jpg",
@@ -107,6 +107,6 @@
     "driverSlug": "jack-aschenbrenner",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,40 +8,7 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1976_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1976/unknown-track_1976_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1976_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1976",
-    "driverSlug": "steve-egersdorf",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "steve-egersdorf",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "steve-egersdorf",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-egersdorf_missy-lushinsky_photo_001.jpg",
@@ -52,7 +19,7 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-egersdorf_missy-lushinsky_photo_002.jpg",
@@ -63,7 +30,7 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-egersdorf_unknown-photographer_photo_002.jpg",
@@ -74,7 +41,7 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-egersdorf_unknown-photographer_photo_004.jpg",
@@ -85,7 +52,7 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_steve-egersdorf_paul-socwell_post_001.jpg",
@@ -96,6 +63,6 @@
     "driverSlug": "steve-egersdorf",
     "photographerSlug": "paul-socwell",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

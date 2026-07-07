@@ -8,7 +8,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "040"
+    "sequence": "40"
   },
   {
     "fileName": "seymour-speedway_unknown-year_doug-blashe_brad-luepke_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_doug-blashe_brad-luepke_post_333.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_doug-blashe_unknown-photographer_photo_002.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_doug-blashe_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-blashe_ryan-aho_post_051.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "051"
+    "sequence": "51"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-blashe_unknown-photographer_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-blashe_unknown-photographer_photo_002.jpg",
@@ -96,7 +96,18 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_doug-blashe_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_doug-blashe_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_doug-blashe_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "doug-blashe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "yellow-river-raceway_unknown-year_doug-blashe_todd-handrich_photo_001.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "todd-handrich",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_doug-blashe_kurt-luoma_photo_1296.jpg",
@@ -129,6 +140,6 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "state-park-speedway_unknown-year_greg-blount_qc-willy_photo_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_greg-blount_qc-willy_photo_111.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_greg-blount_qc-willy_photo_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "greg-blount",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_greg-blount_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_greg-blount_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_greg-blount_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "greg-blount",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -19,7 +19,7 @@
     "driverSlug": "don-jenkins",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "senoia-speedway_1990_larry-raines_bob-schafer_photo_13378.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "051"
+    "sequence": "51"
   },
   {
     "fileName": "senoia-speedway_1991_unknown-driver_bob-schafer_photo_086.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "086"
+    "sequence": "86"
   },
   {
     "fileName": "senoia-speedway_1992_unknown-driver_bob-schafer_photo_13168.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "017"
+    "sequence": "17"
   },
   {
     "fileName": "senoia-speedway_unknown-year_unknown-driver_bob-schafer_photo_065.jpg",
@@ -151,6 +151,6 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "065"
+    "sequence": "65"
   }
 ]

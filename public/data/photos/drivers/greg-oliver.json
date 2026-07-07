@@ -8,7 +8,7 @@
     "driverSlug": "greg-oliver",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_greg-oliver_greg-oliver_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "greg-oliver",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_greg-oliver_greg-oliver_post_002.jpg",
@@ -30,17 +30,6 @@
     "driverSlug": "greg-oliver",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_greg-oliver_charlie-spry_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_greg-oliver_charlie-spry_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_greg-oliver_charlie-spry_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "greg-oliver",
-    "photographerSlug": "charlie-spry",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   }
 ]

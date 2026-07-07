@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2015/golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2015",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "421"
+  },
+  {
+    "fileName": "golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2016/golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2016",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "dean-zakrzewski",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "golden-sands-speedway_2017_dean-zakrzewski_blaeser_photo_432.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2017/golden-sands-speedway_2017_dean-zakrzewski_blaeser_photo_432.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2017_dean-zakrzewski_blaeser_photo_432.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2017",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "blaeser",
+    "creditType": "photo",
+    "sequence": "432"
+  }
+]

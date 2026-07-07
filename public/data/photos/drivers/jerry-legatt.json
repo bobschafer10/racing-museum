@@ -8,7 +8,7 @@
     "driverSlug": "jerry-legatt",
     "photographerSlug": "track-master",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jerry-legatt_unknown-photographer_photo_001.png",
@@ -19,17 +19,17 @@
     "driverSlug": "jerry-legatt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_jerry-legatt_scott-christman_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-legatt_scott-christman_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-legatt_scott-christman_post_001.jpg",
+    "fileName": "unknown-track_unknown-year_jerry-legatt_unknown-photographer_photo_1943.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-legatt_unknown-photographer_photo_1943.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-legatt_unknown-photographer_photo_1943.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
     "driverSlug": "jerry-legatt",
-    "photographerSlug": "scott-christman",
-    "creditType": "post",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1943"
   }
 ]

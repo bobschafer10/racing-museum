@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_100.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawalinski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_14128.jpg",
     "storagePath": "photos/master/illiana-speedway/unknown-year/illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_14128.jpg",
     "publicPath": "/photos/illiana-speedway_unknown-year_frank-gawalinski_unknown-photographer_photo_14128.jpg",
@@ -20,5 +31,27 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "13459"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_frank-gawalinski_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_frank-gawalinski_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_frank-gawalinski_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawalinski",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_frank-gawalinski_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frank-gawalinski_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_frank-gawalinski_pete-fileca_post_335.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawalinski",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "335"
   }
 ]

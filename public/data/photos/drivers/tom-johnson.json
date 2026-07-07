@@ -8,7 +8,7 @@
     "driverSlug": "tom-johnson",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_099.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tom-johnson",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "099"
+    "sequence": "99"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_tom-johnson_bob-schafer_photo_12575.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "tom-johnson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

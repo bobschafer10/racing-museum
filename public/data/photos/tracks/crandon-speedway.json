@@ -8,7 +8,7 @@
     "driverSlug": "jim-conway",
     "photographerSlug": "unknown-photographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "crandon-speedway_unknown-year_north_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "north",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "crandon-speedway_unknown-year_putch-bentley_unknown-credit_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "putch-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "crandon-speedway_unknown-year_unknown-driver_-putch-bentley_post_001.jpg",
@@ -39,9 +39,9 @@
     "trackSlug": "crandon-speedway",
     "year": "unknown-year",
     "driverSlug": "unknown-driver",
-    "photographerSlug": "-putch-bentley",
+    "photographerSlug": "putch-bentley",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "crandon-speedway_unknown-year_unknown-driver_putch-bentley_post_001 (2).jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "putch-bentley",
     "creditType": "post",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "crandon-speedway_unknown-year_unknown-driver_putch-bentley_post_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "putch-bentley",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "crandon-speedway_unknown-year_unknown-driver_putch-bentley_post_002.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "putch-bentley",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "crandon-speedway_unknown-year_unknown-driver_putch-bentley_post_003.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "putch-bentley",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "crandon-speedway_unknown-year_unknown-driver_putch-bentley_post_021.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "putch-bentley",
     "creditType": "post",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "crandon-speedway_unknown-year_unknown-driver_putch-bentley_post_101.jpg",
@@ -118,6 +118,6 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

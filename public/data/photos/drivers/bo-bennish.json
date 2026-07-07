@@ -8,7 +8,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_022.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_023.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "023"
+    "sequence": "23"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_024.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "024"
+    "sequence": "24"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_025.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "025"
+    "sequence": "25"
   },
   {
     "fileName": "unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
@@ -63,6 +63,28 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bo-bennish_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bo-bennish",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

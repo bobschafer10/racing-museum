@@ -8,7 +8,7 @@
     "driverSlug": "gary-laack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_1977_gary-laack_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "gary-laack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_gary-laack_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "gary-laack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_gary-laack_unknown-photographer_photo_003.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "gary-laack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_gary-laack_unknown-photographer_photo_005.jpg",
@@ -52,61 +52,6 @@
     "driverSlug": "gary-laack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gary-laack_dave-drews_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-laack_dave-drews_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gary-laack_dave-drews_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gary-laack",
-    "photographerSlug": "dave-drews",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gary-laack_ewsc-history_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-laack_ewsc-history_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gary-laack_ewsc-history_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gary-laack",
-    "photographerSlug": "ewsc-history",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gary-laack_shirt-scott-stolper_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-laack_shirt-scott-stolper_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gary-laack_shirt-scott-stolper_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gary-laack",
-    "photographerSlug": "shirt-scott-stolper",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gary-laack_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-laack_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gary-laack_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gary-laack",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gary-laack_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-laack_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gary-laack_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gary-laack",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   }
 ]

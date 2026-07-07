@@ -8,7 +8,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_dave-tomczak_unknown-photgrapher_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photgrapher",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-tomczak_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1987_dave-tomczak_keith-vercauteren_post_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_dave-tomczak_unknown-photographer_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_dave-tomczak_unknown-photographer_photo_002.jpg",
@@ -63,7 +63,18 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dave-tomczak_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-tomczak_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dave-tomczak_weber-brothers_photo_444.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-tomczak",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_003.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_004.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_005.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_006.jpg",
@@ -107,7 +118,18 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-tomczak",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-tomczak_unknown-photographer_photo_007.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-tomczak_bob-schafer_photo_395.jpg",
@@ -151,6 +173,6 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

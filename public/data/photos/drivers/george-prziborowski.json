@@ -8,7 +8,7 @@
     "driverSlug": "george-prziborowski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_george-prziborowski_bob-schafer_photo_155.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "george-prziborowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_george-prziborowski_bob-schafer_photo_157.jpg",
@@ -52,29 +52,7 @@
     "driverSlug": "george-prziborowski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-prziborowski_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-prziborowski_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-prziborowski_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-prziborowski",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-prziborowski_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-prziborowski_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-prziborowski_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-prziborowski",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_george-prziborowski_bob-schafer_photo_13259.jpg",
@@ -118,6 +96,6 @@
     "driverSlug": "george-prziborowski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

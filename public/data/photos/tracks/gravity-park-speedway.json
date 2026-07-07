@@ -1,5 +1,49 @@
 [
   {
+    "fileName": "gravity-park-speedway_2020_nick-zdroik_joe-holz_photo_111.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2020/gravity-park-speedway_2020_nick-zdroik_joe-holz_photo_111.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2020_nick-zdroik_joe-holz_photo_111.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2020",
+    "driverSlug": "nick-zdroik",
+    "photographerSlug": "joe-holz",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "gravity-park-speedway_2022_don-singer_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2022/gravity-park-speedway_2022_don-singer_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2022_don-singer_putch-bentley_post_444.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2022",
+    "driverSlug": "don-singer",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2023/gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2023",
+    "driverSlug": "tim-mitchell",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "332"
+  },
+  {
+    "fileName": "gravity-park-speedway_2024_jeff-richards_joe-holz_photo_444.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2024/gravity-park-speedway_2024_jeff-richards_joe-holz_photo_444.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2024_jeff-richards_joe-holz_photo_444.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2024",
+    "driverSlug": "jeff-richards",
+    "photographerSlug": "joe-holz",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
     "storagePath": "photos/master/gravity-park-speedway/2025/gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
     "publicPath": "/photos/gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
@@ -8,7 +52,29 @@
     "driverSlug": "ryan-minster",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2026/gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2026",
+    "driverSlug": "jeff-muehlbauer",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "344"
+  },
+  {
+    "fileName": "gravity-park-speedway_2026_joel-seegert-jr_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2026/gravity-park-speedway_2026_joel-seegert-jr_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2026_joel-seegert-jr_bob-greuel_photo_001.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2026",
+    "driverSlug": "joel-seegert-jr",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "gravity-park-speedway_2026_josh-miller_josh-miller_post_001.jpg",
@@ -19,7 +85,7 @@
     "driverSlug": "josh-miller",
     "photographerSlug": "josh-miller",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "gravity-park-speedway_unknown-year_aaron-streblow_unknown-photographer_photo_001.jpg",
@@ -30,6 +96,6 @@
     "driverSlug": "aaron-streblow",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -9,5 +9,38 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "6405"
+  },
+  {
+    "fileName": "pontiac-silverdome_1982_butch-lindley_gary-peterson_photo_111.jpg",
+    "storagePath": "photos/master/pontiac-silverdome/1982/pontiac-silverdome_1982_butch-lindley_gary-peterson_photo_111.jpg",
+    "publicPath": "/photos/pontiac-silverdome_1982_butch-lindley_gary-peterson_photo_111.jpg",
+    "trackSlug": "pontiac-silverdome",
+    "year": "1982",
+    "driverSlug": "butch-lindley",
+    "photographerSlug": "gary-peterson",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_butch-lindley_weber-brothers_photo_100.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_butch-lindley_weber-brothers_photo_100.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_butch-lindley_weber-brothers_photo_100.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "butch-lindley",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_butch-lindley_weber-brothers_photo_101.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_butch-lindley_weber-brothers_photo_101.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_butch-lindley_weber-brothers_photo_101.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "butch-lindley",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "101"
   }
 ]

@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "dells-motor-speedway_unknown-year_don-turner_clintman_post_001.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_don-turner_clintman_post_001.jpg",
-    "publicPath": "/photos/dells-motor-speedway_unknown-year_don-turner_clintman_post_001.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "unknown-year",
-    "driverSlug": "don-turner",
-    "photographerSlug": "clintman",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
     "fileName": "slinger-speedway_1996_mike-loesch_clintman_post_001.jpg",
     "storagePath": "photos/master/slinger-speedway/1996/slinger-speedway_1996_mike-loesch_clintman_post_001.jpg",
     "publicPath": "/photos/slinger-speedway_1996_mike-loesch_clintman_post_001.jpg",
@@ -19,7 +8,7 @@
     "driverSlug": "mike-loesch",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1996_mike-loesche_clintman_post_001.jpg",
@@ -30,7 +19,7 @@
     "driverSlug": "mike-loesche",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_al-schill-jr_clintman_post_001.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "al-schill-jr",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jerry-bohmer_clintman_post_001.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "jerry-bohmer",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_race-mccomb_clintman_post_001.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "race-mccomb",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2006_tim-rothe_clintman_post_001.jpg",
@@ -74,7 +63,7 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2007_joe-jaekels_clintman_Post_001.jpg",
@@ -84,8 +73,8 @@
     "year": "2007",
     "driverSlug": "joe-jaekels",
     "photographerSlug": "clintman",
-    "creditType": "Post",
-    "sequence": "001"
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-gouleke_clintman_post_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "al-gouleke",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-white_clintman_post_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-white_clintman_post_002.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-white_clintman_post_003.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_cliff-ebben_clintman_post_001.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "cliff-ebben",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-weyer_clintman_post_4333.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "dan-vandaalwyk",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fred-zack_clintman_post_001.jpg",
@@ -173,7 +162,18 @@
     "driverSlug": "fred-zack",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-sauter_clintman_post_111.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-sauter_clintman_post_111.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-sauter_clintman_post_111.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-sauter",
+    "photographerSlug": "clintman",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mark-anthony_clintman_post_333.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-vandermolen_clintman_post_002.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-vandermolen_clintman_post_003.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rich-somers_clintman_post_001.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "rich-somers",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rich-somers_clintman_post_333.jpg",
@@ -240,5 +240,27 @@
     "photographerSlug": "clintman",
     "creditType": "post",
     "sequence": "333"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_wayne-roffers_clintman_post_111.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_wayne-roffers_clintman_post_111.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_wayne-roffers_clintman_post_111.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-roffers",
+    "photographerSlug": "clintman",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_wayne-roffers_clintman_post_112.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_wayne-roffers_clintman_post_112.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_wayne-roffers_clintman_post_112.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "wayne-roffers",
+    "photographerSlug": "clintman",
+    "creditType": "post",
+    "sequence": "112"
   }
 ]

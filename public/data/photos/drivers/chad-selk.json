@@ -1,5 +1,49 @@
 [
   {
+    "fileName": "marshfield-super-speedway_2010_chad-selk_wayne-brevik_photo_444.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2010/marshfield-super-speedway_2010_chad-selk_wayne-brevik_photo_444.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2010_chad-selk_wayne-brevik_photo_444.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2010",
+    "driverSlug": "chad-selk",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_chad-selk_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_chad-selk_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_chad-selk_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "chad-selk",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "monster-hall-raceway_2017_chad-selk_tom-loos_photo_455.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2017/monster-hall-raceway_2017_chad-selk_tom-loos_photo_455.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2017_chad-selk_tom-loos_photo_455.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2017",
+    "driverSlug": "chad-selk",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "monster-hall-raceway_2019_chad-selk_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2019/monster-hall-raceway_2019_chad-selk_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2019_chad-selk_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2019",
+    "driverSlug": "chad-selk",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_chad-selk_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_chad-selk_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_chad-selk_unknown-photographer_photo_001.jpg",
@@ -8,6 +52,6 @@
     "driverSlug": "chad-selk",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

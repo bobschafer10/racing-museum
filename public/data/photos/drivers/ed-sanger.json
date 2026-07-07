@@ -8,7 +8,7 @@
     "driverSlug": "ed-sanger",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_1984_ed-sanger_lee-johnson_photo_115.jpg",
@@ -30,7 +30,18 @@
     "driverSlug": "ed-sanger",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_missy-lushinsky_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_missy-lushinsky_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_missy-lushinsky_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "missy-lushinsky",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-sanger_tony-chapa_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "ed-sanger",
     "photographerSlug": "tony-chapa",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "ed-sanger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_002.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "ed-sanger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_003.jpg",
@@ -74,6 +85,17 @@
     "driverSlug": "ed-sanger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-sanger_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-sanger",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_bryan-reffner_al-fortner_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "al-fortner",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1993_bryan-reffner_unknown-photographer_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_bryan-reffner_bob-schafer_photo_164.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1987_bryan-reffner_don-besch_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_bryan-reffner_unknown-photographer_photo_001.jpg",
@@ -85,7 +96,18 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2010_bryan-reffner_wayne-brevik_photo_444.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2010/marshfield-super-speedway_2010_bryan-reffner_wayne-brevik_photo_444.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2010_bryan-reffner_wayne-brevik_photo_444.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2010",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "marshfield-super-speedway_2011_bryan-reffner_tom-loos_photo_001.jpg",
@@ -96,7 +118,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1991_bryan-reffner_bob-schafer_photo_210.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
@@ -129,7 +151,40 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
@@ -140,7 +195,40 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "old-john-scanlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "old-john-scanlan",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "old-john-scanlan",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_old-john-scanlan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "old-john-scanlan",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
@@ -151,7 +239,40 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bryan-reffner_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bryan-reffner",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1997_bryan-reffner_pat-heaney_post_333.jpg",
@@ -206,7 +327,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
@@ -217,7 +338,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bryan-reffner_kurt-luoma_photo_002.jpg",
@@ -228,7 +349,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bryan-reffner_kurt-luoma_photo_003.jpg",
@@ -239,7 +360,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bryan-reffner_kurt-luoma_photo_004.jpg",
@@ -250,7 +371,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bryan-reffner_kurt-luoma_photo_100.jpg",
@@ -305,7 +426,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bryan-reffner_unknown-photographer_photo_003.jpg",
@@ -316,6 +437,6 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

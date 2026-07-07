@@ -8,6 +8,17 @@
     "driverSlug": "braison-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2017_braison-bennett_bob-greuel_photo_112.jpg",
+    "storagePath": "photos/master/slinger-speedway/2017/slinger-speedway_2017_braison-bennett_bob-greuel_photo_112.jpg",
+    "publicPath": "/photos/slinger-speedway_2017_braison-bennett_bob-greuel_photo_112.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2017",
+    "driverSlug": "braison-bennett",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "112"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-iverson_john-vass_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "new-smyrna-speedway_unknown-year_bob-iverson_unknown-photographer_photo_383.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
@@ -52,7 +52,29 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-iverson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-iverson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_bob-iverson_bob-schafer_photo_222.jpg",
@@ -96,7 +118,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-iverson_keith-vercauteren_post_001.jpg",
@@ -107,7 +129,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-iverson_kurt-luoma_photo_001.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-iverson_kurt-luoma_photo_1104.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-iverson_unknown-photographer_photo_001.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-iverson_unknown-photographer_photo_002.jpg",
@@ -162,7 +184,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-iverson_unknown-photographer_photo_003.jpg",
@@ -173,7 +195,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-iverson_unknown-photographer_photo_1187.jpg",

@@ -8,7 +8,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "jeff-weber",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jeff-weber_jeff-weber_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jeff-weber",
     "photographerSlug": "jeff-weber",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_lee-weber_jeff-weber_post_001.jpg",
@@ -30,6 +30,17 @@
     "driverSlug": "lee-weber",
     "photographerSlug": "jeff-weber",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_lee-weber_jeff-weber_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_lee-weber_jeff-weber_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_lee-weber_jeff-weber_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lee-weber",
+    "photographerSlug": "jeff-weber",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

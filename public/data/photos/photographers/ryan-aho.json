@@ -19,7 +19,7 @@
     "driverSlug": "jim-bruggeman",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "094"
+    "sequence": "94"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_jon-kurshinsky_ryan-aho_post_095.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jon-kurshinsky",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "095"
+    "sequence": "95"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-chamernick_ryan-aho_post_091.png",
@@ -41,7 +41,7 @@
     "driverSlug": "mike-chamernick",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "091"
+    "sequence": "91"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_mike-nutzmann_ryan-aho_post_097.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "mike-nutzmann",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "097"
+    "sequence": "97"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_paul-gilberts_ryan-aho_post_093.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "093"
+    "sequence": "93"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_pete-parker_ryan-aho_post_114.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "ron-schreiner",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "099"
+    "sequence": "99"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_tom-thompson_ryan-aho_post_090.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "tom-thompson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "090"
+    "sequence": "90"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_unknown-driver_ryan-aho_post_098.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "098"
+    "sequence": "98"
   },
   {
     "fileName": "cedar-lake-speedwy_unknown-year_joel-cryderman_ryan-aho_post_092.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "joel-cryderman",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "092"
+    "sequence": "92"
   },
   {
     "fileName": "hibbing-raceway_unknown-year_ed-bertram_ryan-aho_post_001.jpg",
@@ -129,51 +129,7 @@
     "driverSlug": "ed-bertram",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1981_ron-jones_ryan-aho_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_ron-jones_ryan-aho_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1981_ron-jones_ryan-aho_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1981",
-    "driverSlug": "ron-jones",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_arvid-jeske_ryan-aho_post_015.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_arvid-jeske_ryan-aho_post_015.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_arvid-jeske_ryan-aho_post_015.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "arvid-jeske",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "015"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-herr_ryan-aho_post_038.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-herr_ryan-aho_post_038.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-herr_ryan-aho_post_038.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-herr",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "038"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-lindner_ryan-aho_post_039.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-lindner_ryan-aho_post_039.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-lindner_ryan-aho_post_039.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-lindner",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "039"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
@@ -184,7 +140,29 @@
     "driverSlug": "bob-obermueller",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "018"
+    "sequence": "18"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "18"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_018.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "18"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
@@ -195,7 +173,62 @@
     "driverSlug": "bob-obermueller",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "047"
+    "sequence": "47"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "47"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-obermueller_ryan-aho_post_047.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "47"
+  },
+  {
+    "fileName": "unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "79"
+  },
+  {
+    "fileName": "unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "79"
+  },
+  {
+    "fileName": "unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "publicPath": "/photos/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-obermueller",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "79"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-root_ryan-aho_post_058.jpg",
@@ -206,7 +239,29 @@
     "driverSlug": "bob-root",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "058"
+    "sequence": "58"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-root_ryan-aho_post_058.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-root_ryan-aho_post_058.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-root_ryan-aho_post_058.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-root",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "58"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-root_ryan-aho_post_058.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-root_ryan-aho_post_058.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-root_ryan-aho_post_058.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-root",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "58"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
@@ -217,7 +272,51 @@
     "driverSlug": "bob-saterdaelen",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "072"
+    "sequence": "72"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "72"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_ryan-aho_post_072.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "72"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-slater",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "104"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-slater",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "104"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
@@ -239,7 +338,40 @@
     "driverSlug": "bruce-busho",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "063"
+    "sequence": "63"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-busho",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "63"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-busho",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "63"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-busho_ryan-aho_post_063.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-busho",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "63"
   },
   {
     "fileName": "unknown-track_unknown-year_darin-engelstad_ryan-aho_post_020.jpg",
@@ -250,7 +382,7 @@
     "driverSlug": "darin-engelstad",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "020"
+    "sequence": "20"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-adams_ryan-aho_post_044.jpg",
@@ -261,7 +393,7 @@
     "driverSlug": "dave-adams",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "044"
+    "sequence": "44"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-adams_ryan-aho_post_046.jpg",
@@ -272,7 +404,18 @@
     "driverSlug": "dave-adams",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "046"
+    "sequence": "46"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-adams_ryan-aho_post_117.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-adams_ryan-aho_post_117.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-adams_ryan-aho_post_117.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-adams",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "117"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-adams_ryan-aho_post_117.jpg",
@@ -294,7 +437,7 @@
     "driverSlug": "dennis-moser",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "056"
+    "sequence": "56"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_ryan-aho_post_010.jpg",
@@ -305,7 +448,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_ryan-aho_post_103.jpg",
@@ -349,7 +492,7 @@
     "driverSlug": "don-kettering",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "049"
+    "sequence": "49"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-blashe_ryan-aho_post_051.jpg",
@@ -360,7 +503,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "051"
+    "sequence": "51"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-vandenlangenberg_ryan-aho_post_011.jpg",
@@ -371,7 +514,7 @@
     "driverSlug": "doug-vandenlangenberg",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
@@ -382,7 +525,18 @@
     "driverSlug": "duane-amundson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "032"
+    "sequence": "32"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "duane-amundson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "32"
   },
   {
     "fileName": "unknown-track_unknown-year_duane-mahder_ryan-aho_post_120.jpg",
@@ -418,116 +572,6 @@
     "sequence": "129"
   },
   {
-    "fileName": "unknown-track_unknown-year_harry-hanson_ryan-aho_post_130.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harry-hanson_ryan-aho_post_130.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harry-hanson_ryan-aho_post_130.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harry-hanson",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "130"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harry-hanson_ryan-aho_post_131.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harry-hanson_ryan-aho_post_131.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harry-hanson_ryan-aho_post_131.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harry-hanson",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "131"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harry-hanson_ryan-aho_post_132.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harry-hanson_ryan-aho_post_132.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harry-hanson_ryan-aho_post_132.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harry-hanson",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "132"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harry-hanson_ryan-aho_post_133.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harry-hanson_ryan-aho_post_133.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harry-hanson_ryan-aho_post_133.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harry-hanson",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "133"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-helget_ryan-aho_post_082.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-helget_ryan-aho_post_082.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-helget_ryan-aho_post_082.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-helget",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "082"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-helget_ryan-aho_post_125.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-helget_ryan-aho_post_125.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-helget_ryan-aho_post_125.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-helget",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "125"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_048.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_048.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_048.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-henkemeyer",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "048"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_069.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_069.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeff-henkemeyer_ryan-aho_post_069.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-henkemeyer",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "069"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-redetzke_ryan-aho_post_123.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-redetzke_ryan-aho_post_123.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-redetzke_ryan-aho_post_123.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-redetzke",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "123"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-bruggeman_ryan-aho_post_065.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-bruggeman_ryan-aho_post_065.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-bruggeman_ryan-aho_post_065.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-bruggeman",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "065"
-  },
-  {
     "fileName": "unknown-track_unknown-year_jim-bruggeman_ryan-aho_post_108.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-bruggeman_ryan-aho_post_108.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_jim-bruggeman_ryan-aho_post_108.jpg",
@@ -539,83 +583,6 @@
     "sequence": "108"
   },
   {
-    "fileName": "unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-zwirgzdas",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "054"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-johnson_ryan-aho_post_081.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-johnson_ryan-aho_post_081.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-johnson_ryan-aho_post_081.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-johnson",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "081"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_ryan-aho_post_071.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_ryan-aho_post_071.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_ryan-aho_post_071.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "071"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_ryan-aho_post_107.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_ryan-aho_post_107.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_ryan-aho_post_107.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "107"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_k.c.-frand_ryan-aho_post_088.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_k.c.-frand_ryan-aho_post_088.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_k.c.-frand_ryan-aho_post_088.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "k.c.-frand",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "088"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_k.c.-frand_ryan-aho_post_089.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_k.c.-frand_ryan-aho_post_089.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_k.c.-frand_ryan-aho_post_089.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "k.c.-frand",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "089"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_karl-fenske_ryan-aho_post_119.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_karl-fenske_ryan-aho_post_119.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_karl-fenske_ryan-aho_post_119.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "karl-fenske",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "119"
-  },
-  {
     "fileName": "unknown-track_unknown-year_kevin-thompson_ryan-aho_post_052.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-thompson_ryan-aho_post_052.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_kevin-thompson_ryan-aho_post_052.jpg",
@@ -624,7 +591,7 @@
     "driverSlug": "kevin-thompson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "052"
+    "sequence": "52"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-thompson_ryan-aho_post_057.jpg",
@@ -635,7 +602,7 @@
     "driverSlug": "kevin-thompson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "057"
+    "sequence": "57"
   },
   {
     "fileName": "unknown-track_unknown-year_lance-matthees_ryan-aho_post_009.jpg",
@@ -646,18 +613,7 @@
     "driverSlug": "lance-matthees",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "009"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_lance-matthees_ryan-aho_post_042.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lance-matthees_ryan-aho_post_042.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_lance-matthees_ryan-aho_post_042.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "lance-matthees",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "042"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_lance-matthees_ryan-aho_post_043.jpg",
@@ -668,7 +624,7 @@
     "driverSlug": "lance-matthees",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "043"
+    "sequence": "43"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-drefahl_ryan-aho_post_062.jpg",
@@ -679,7 +635,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "062"
+    "sequence": "62"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-prochnow_ryan-aho_post_014.jpg",
@@ -690,7 +646,7 @@
     "driverSlug": "larry-prochnow",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-prochnow_ryan-aho_post_030.jpg",
@@ -701,7 +657,7 @@
     "driverSlug": "larry-prochnow",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "030"
+    "sequence": "30"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-prochnow_ryan-aho_post_124.jpg",
@@ -723,7 +679,7 @@
     "driverSlug": "lou-cianni",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "096"
+    "sequence": "96"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-emerson_ryan-aho_post_066.jpg",
@@ -734,7 +690,7 @@
     "driverSlug": "mark-emerson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "066"
+    "sequence": "66"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-balcaen_ryan-aho_post_126.jpg",
@@ -756,7 +712,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "035"
+    "sequence": "35"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-hanson_ryan-aho_post_007.jpg",
@@ -767,7 +723,7 @@
     "driverSlug": "mike-hanson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-hanson_ryan-aho_post_033.jpg",
@@ -778,7 +734,7 @@
     "driverSlug": "mike-hanson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "033"
+    "sequence": "33"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-jasperson_ryan-aho_post_005.jpg",
@@ -789,7 +745,7 @@
     "driverSlug": "mike-jasperson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-melius_ryan-aho_post_040.jpg",
@@ -800,7 +756,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "040"
+    "sequence": "40"
   },
   {
     "fileName": "unknown-track_unknown-year_mitch-johnson_ryan-aho_post_060.jpg",
@@ -811,7 +767,7 @@
     "driverSlug": "mitch-johnson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "060"
+    "sequence": "60"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-gilberts_ryan-aho_post_070.jpg",
@@ -822,7 +778,7 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "070"
+    "sequence": "70"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-hammernik_ryan-aho_post_102.jpg",
@@ -844,7 +800,7 @@
     "driverSlug": "pete-sievert",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "037"
+    "sequence": "37"
   },
   {
     "fileName": "unknown-track_unknown-year_porky-brust_ryan-aho_post_002.jpg",
@@ -855,7 +811,7 @@
     "driverSlug": "porky-brust",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-tenut_ryan-aho_post_055.jpg",
@@ -866,7 +822,7 @@
     "driverSlug": "ray-tenut",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "055"
+    "sequence": "55"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-tenut_ryan-aho_post_086.jpg",
@@ -877,7 +833,7 @@
     "driverSlug": "ray-tenut",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "086"
+    "sequence": "86"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-tenut_ryan-aho_post_127.jpg",
@@ -899,7 +855,7 @@
     "driverSlug": "red-steffen",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "024"
+    "sequence": "24"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-aukland_ryan-aho_post_113.jpg",
@@ -921,7 +877,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_ryan-aho_post_076.jpg",
@@ -932,7 +888,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "076"
+    "sequence": "76"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-gulbranson_ryan-aho_post_004.jpg",
@@ -943,7 +899,7 @@
     "driverSlug": "rick-gulbranson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-popovich_ryan-aho_post_073.jpg",
@@ -954,7 +910,7 @@
     "driverSlug": "rick-popovich",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "073"
+    "sequence": "73"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-popovich_ryan-aho_post_075.jpg",
@@ -965,7 +921,7 @@
     "driverSlug": "rick-popovich",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "075"
+    "sequence": "75"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-paolo_ryan-aho_post_041.jpg",
@@ -976,7 +932,7 @@
     "driverSlug": "roger-paolo",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-droog_ryan-aho_post_045.jpg",
@@ -987,7 +943,29 @@
     "driverSlug": "ron-droog",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "045"
+    "sequence": "45"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ron-droog_ryan-aho_post_045.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ron-droog_ryan-aho_post_045.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ron-droog_ryan-aho_post_045.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ron-droog",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "45"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ron-droog_ryan-aho_post_045.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ron-droog_ryan-aho_post_045.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ron-droog_ryan-aho_post_045.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ron-droog",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "45"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-schreiner_ryan-aho_post_008.jpg",
@@ -998,7 +976,7 @@
     "driverSlug": "ron-schreiner",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-schreiner_ryan-aho_post_050.jpg",
@@ -1009,7 +987,7 @@
     "driverSlug": "ron-schreiner",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "050"
+    "sequence": "50"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-schreiner_ryan-aho_post_110.jpg",
@@ -1031,7 +1009,7 @@
     "driverSlug": "sid-kittleson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "025"
+    "sequence": "25"
   },
   {
     "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_027.jpg",
@@ -1042,7 +1020,7 @@
     "driverSlug": "sid-kittleson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_061.jpg",
@@ -1053,7 +1031,7 @@
     "driverSlug": "sid-kittleson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "061"
+    "sequence": "61"
   },
   {
     "fileName": "unknown-track_unknown-year_skip-meger_ryan-aho_post_001.jpg",
@@ -1064,7 +1042,29 @@
     "driverSlug": "skip-meger",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_skip-meger_ryan-aho_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_skip-meger_ryan-aho_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_skip-meger_ryan-aho_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "skip-meger",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_skip-meger_ryan-aho_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_skip-meger_ryan-aho_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_skip-meger_ryan-aho_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "skip-meger",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-fegers_ryan-aho_post_017.jpg",
@@ -1075,7 +1075,7 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "017"
+    "sequence": "17"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-haas_ryan-aho_post_067.jpg",
@@ -1086,7 +1086,7 @@
     "driverSlug": "steve-haas",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "067"
+    "sequence": "67"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_ryan-aho_post_053.jpg",
@@ -1097,7 +1097,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "053"
+    "sequence": "53"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_ryan-aho_post_112.jpg",
@@ -1119,7 +1119,7 @@
     "driverSlug": "terry-henck",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_terry-lanphear_ryan-aho_post_064.jpg",
@@ -1130,7 +1130,7 @@
     "driverSlug": "terry-lanphear",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "064"
+    "sequence": "64"
   },
   {
     "fileName": "unknown-track_unknown-year_todd-anderson_ryan-aho_post_016.jpg",
@@ -1141,7 +1141,7 @@
     "driverSlug": "todd-anderson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "016"
+    "sequence": "16"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-nesbitt_ryan-aho_post_029.jpg",
@@ -1152,7 +1152,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "029"
+    "sequence": "29"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_ryan-aho_post_021.jpg",
@@ -1163,7 +1163,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_ryan-aho_post_028.jpg",
@@ -1174,7 +1174,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "028"
+    "sequence": "28"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-steuding_ryan-aho_post_034.jpg",
@@ -1185,7 +1185,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "034"
+    "sequence": "34"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-waseleski_ryan-aho_post_023.jpg",
@@ -1196,7 +1196,7 @@
     "driverSlug": "tom-waseleski",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "023"
+    "sequence": "23"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-waseleski_ryan-aho_post_068.jpg",
@@ -1207,7 +1207,7 @@
     "driverSlug": "tom-waseleski",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "068"
+    "sequence": "68"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_012.jpg",
@@ -1218,7 +1218,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_013.jpg",
@@ -1229,7 +1229,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_019.jpg",
@@ -1240,7 +1240,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "019"
+    "sequence": "19"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_026.jpg",
@@ -1251,7 +1251,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "026"
+    "sequence": "26"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_031.jpg",
@@ -1262,7 +1262,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_036.jpg",
@@ -1273,7 +1273,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "036"
+    "sequence": "36"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_059.jpg",
@@ -1284,7 +1284,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "059"
+    "sequence": "59"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_077.jpg",
@@ -1295,7 +1295,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "077"
+    "sequence": "77"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_078.jpg",
@@ -1306,7 +1306,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "078"
+    "sequence": "78"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_080.jpg",
@@ -1317,7 +1317,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "080"
+    "sequence": "80"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_083.jpg",
@@ -1328,7 +1328,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "083"
+    "sequence": "83"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_085.jpg",
@@ -1339,7 +1339,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "085"
+    "sequence": "85"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_087.jpg",
@@ -1350,7 +1350,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "087"
+    "sequence": "87"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_ryan-aho_post_100.jpg",
@@ -1449,7 +1449,7 @@
     "driverSlug": "unknown-ryan",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "074"
+    "sequence": "74"
   },
   {
     "fileName": "unknown-track_unknown-year_vj-giguere_ryan-aho_post_084.jpg",
@@ -1460,7 +1460,7 @@
     "driverSlug": "vj-giguere",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "084"
+    "sequence": "84"
   },
   {
     "fileName": "unknown-track_unknown-year_willy-kraft_ryan-aho_post_022.jpg",
@@ -1471,17 +1471,6 @@
     "driverSlug": "willy-kraft",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "022"
-  },
-  {
-    "fileName": "unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
-    "storagePath": "photos/master/unknown-track/Unknown-year/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
-    "publicPath": "/photos/unknown-track_Unknown-year_bob-obermueller_ryan-aho_post_079.jpg",
-    "trackSlug": "unknown-track",
-    "year": "Unknown-year",
-    "driverSlug": "bob-obermueller",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "079"
+    "sequence": "22"
   }
 ]

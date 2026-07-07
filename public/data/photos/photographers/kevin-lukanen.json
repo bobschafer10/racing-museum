@@ -8,18 +8,18 @@
     "driverSlug": "jim-eliason",
     "photographerSlug": "kevin-lukanen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_jim-eliason_kevin-lukanen_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-eliason_kevin-lukanen_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-eliason_kevin-lukanen_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
+    "fileName": "superior-speedway_1968_jim-eliason_kevin-lukanen_post_111.jpg",
+    "storagePath": "photos/master/superior-speedway/1968/superior-speedway_1968_jim-eliason_kevin-lukanen_post_111.jpg",
+    "publicPath": "/photos/superior-speedway_1968_jim-eliason_kevin-lukanen_post_111.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "1968",
     "driverSlug": "jim-eliason",
     "photographerSlug": "kevin-lukanen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "111"
   },
   {
     "fileName": "unknown-track_unknown-year_todd-eliason_kevin-lukanen_post_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "todd-eliason",
     "photographerSlug": "kevin-lukanen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

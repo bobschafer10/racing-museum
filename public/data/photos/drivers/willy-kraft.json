@@ -1,14 +1,14 @@
 [
   {
-    "fileName": "unknown-track_2020_willy-kraft_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_willy-kraft_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_willy-kraft_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
+    "fileName": "steele-county-fairgrounds_unknown-year_willy-kraft_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_willy-kraft_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_willy-kraft_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
     "driverSlug": "willy-kraft",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_unknown-year_willy-kraft_ryan-aho_post_022.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "willy-kraft",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "unknown-track_unknown-year_willy-kraft_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "willy-kraft",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

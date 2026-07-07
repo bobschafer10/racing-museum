@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "columbus-151-speedway_unknown-year_larry-gintner_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_larry-gintner_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_larry-gintner_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-gintner",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
     "fileName": "unknown-track_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "larry-gintner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_070.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "larry-gintner",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "070"
+    "sequence": "70"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_bob-schafer_photo_071.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "larry-gintner",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "071"
+    "sequence": "71"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_joe-verdegan_post_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "larry-gintner",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_keith-vercauteren_post_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "larry-gintner",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_unknown-photographer_photo_001.jpg",
@@ -63,6 +74,6 @@
     "driverSlug": "larry-gintner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_ron-jones_phil-dullinger_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "phil-dullinger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kasson-speedway_unknown-year_ron-jones_missy-lushinsky_photo_009.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "princeton-speedway_unknown-year_ron-jones_phil-dullinger_photo_001.jpg",
@@ -41,18 +41,18 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "phil-dullinger",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_1981_ron-jones_ryan-aho_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_ron-jones_ryan-aho_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1981_ron-jones_ryan-aho_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1981",
+    "fileName": "rice-lake-speedway_unknown-year_ron-jones_larry-quinn_post_333.jpg",
+    "storagePath": "photos/master/rice-lake-speedway/unknown-year/rice-lake-speedway_unknown-year_ron-jones_larry-quinn_post_333.jpg",
+    "publicPath": "/photos/rice-lake-speedway_unknown-year_ron-jones_larry-quinn_post_333.jpg",
+    "trackSlug": "rice-lake-speedway",
+    "year": "unknown-year",
     "driverSlug": "ron-jones",
-    "photographerSlug": "ryan-aho",
+    "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_bill-warrick_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "bill-warrick",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_bill-warrick-ii_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "bill-warrick-ii",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_kurt-gaber_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "kurt-gaber",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_missy-lushinsky_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_missy-lushinsky_photo_002.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_unknown-photographer_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_unknown-photographer_photo_002.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_unknown-photographer_photo_003.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_unknown-photographer_photo_004.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_unknown-photographer_photo_005.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_unknown-photographer_photo_007.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-jones_unknown-photographer_photo_008.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "ron-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_ron-jones_kurt-luoma_photo_1300.jpg",

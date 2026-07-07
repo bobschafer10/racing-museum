@@ -8,7 +8,7 @@
     "driverSlug": "dean-roper",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dean-roper_rpm_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dean-roper",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dean-roper_don-besch_post_002.jpg",
@@ -30,6 +30,17 @@
     "driverSlug": "dean-roper",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dean-roper_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dean-roper_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dean-roper_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dean-roper",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "2"
   }
 ]

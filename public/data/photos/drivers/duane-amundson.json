@@ -8,7 +8,7 @@
     "driverSlug": "duane-amundson",
     "photographerSlug": "don-reilly",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
@@ -19,6 +19,17 @@
     "driverSlug": "duane-amundson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "032"
+    "sequence": "32"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_duane-amundson_ryan-aho_post_032.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "duane-amundson",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "32"
   }
 ]

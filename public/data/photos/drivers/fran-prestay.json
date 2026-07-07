@@ -8,7 +8,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "charlie-doerr",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_fran-prestay_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mobile-international-raceway_1985_fran-prestay_unknown-photographer_photo_5902.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_fran-prestay_unknown-photographer_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_fran-prestay_unknown-photographer_photo_4810.jpg",
@@ -66,37 +66,26 @@
     "sequence": "4810"
   },
   {
-    "fileName": "unknown-track_unknown-year_fran-prestay_joe-slack_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fran-prestay_joe-slack_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fran-prestay_joe-slack_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "slinger-speedway_unknown-year_fran-prestay_weber-brothers_photo_100.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_fran-prestay_weber-brothers_photo_100.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_fran-prestay_weber-brothers_photo_100.jpg",
+    "trackSlug": "slinger-speedway",
     "year": "unknown-year",
     "driverSlug": "fran-prestay",
-    "photographerSlug": "joe-slack",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "100"
   },
   {
-    "fileName": "unknown-track_unknown-year_fran-prestay_pat-heaney_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fran-prestay_pat-heaney_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fran-prestay_pat-heaney_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fran-prestay",
-    "photographerSlug": "pat-heaney",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fran-prestay_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fran-prestay_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fran-prestay_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_fran-prestay_unknown-photographer_photo_2878.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fran-prestay_unknown-photographer_photo_2878.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_fran-prestay_unknown-photographer_photo_2878.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
     "driverSlug": "fran-prestay",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2878"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fran-prestay_joe-slack_post_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fran-prestay_john-vass_photo_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fran-prestay_keith-vercauteren_post_001.jpg",
@@ -129,6 +118,6 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

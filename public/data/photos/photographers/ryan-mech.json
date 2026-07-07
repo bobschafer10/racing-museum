@@ -8,7 +8,40 @@
     "driverSlug": "ryan-sullivan",
     "photographerSlug": "ryan-mech",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_111.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_111.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_111.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_112.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_112.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_112.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "112"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_113.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_113.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_jim-zdroik_ryan-mech_post_113.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "ryan-mech",
+    "creditType": "post",
+    "sequence": "113"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_steve-printz_ryan-mech_post_001.jpg",
@@ -19,6 +52,6 @@
     "driverSlug": "steve-printz",
     "photographerSlug": "ryan-mech",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

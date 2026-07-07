@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "jefferson-speedway_unknown-year_scott-null_charlie-spry_photo_224.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_scott-null_charlie-spry_photo_224.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_scott-null_charlie-spry_photo_224.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-null",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "224"
+  },
+  {
     "fileName": "lake-geneva-raceway_unknown-year_scott-null_bob-schafer_photo_222.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_scott-null_bob-schafer_photo_222.jpg",
     "publicPath": "/photos/lake-geneva-raceway_unknown-year_scott-null_bob-schafer_photo_222.jpg",
@@ -11,6 +22,17 @@
     "sequence": "222"
   },
   {
+    "fileName": "lake-geneva-raceway_unknown-year_scott-null_charlie-spry_photo_211.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_scott-null_charlie-spry_photo_211.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_scott-null_charlie-spry_photo_211.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "scott-null",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "211"
+  },
+  {
     "fileName": "unknown-track_unknown-year_scott-null_tom-loos_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-null_tom-loos_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_scott-null_tom-loos_photo_001.jpg",
@@ -19,6 +41,6 @@
     "driverSlug": "scott-null",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

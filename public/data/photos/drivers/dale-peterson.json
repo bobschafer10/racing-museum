@@ -8,18 +8,29 @@
     "driverSlug": "dale-peterson",
     "photographerSlug": "unknown-photographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_1993_dale-peterson_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_dale-peterson_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_dale-peterson_neil-miller_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
     "trackSlug": "unknown-track",
-    "year": "1993",
+    "year": "unknown-year",
     "driverSlug": "dale-peterson",
-    "photographerSlug": "neil-miller",
+    "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "12529"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-peterson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "12529"
   },
   {
     "fileName": "unknown-track_unknown-year_dale-peterson_unknown-photographer_photo_12529.jpg",
@@ -52,6 +63,6 @@
     "driverSlug": "dale-peterson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "jim-courtney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1974_jim-courtney_dennis-satorius_post_001.jpg",
@@ -19,51 +19,7 @@
     "driverSlug": "jim-courtney",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-courtney_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-courtney_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-courtney_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-courtney",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-courtney_pete-vercauteren_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-courtney_pete-vercauteren_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-courtney_pete-vercauteren_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-courtney",
-    "photographerSlug": "pete-vercauteren",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-courtney_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-courtney_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-courtney_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-courtney",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-courtney_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-courtney_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-courtney_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-courtney",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-courtney_joe-verdegan_post_001.jpg",
@@ -74,7 +30,7 @@
     "driverSlug": "jim-courtney",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-courtney_joe-verdegan_post_002.jpg",
@@ -85,7 +41,7 @@
     "driverSlug": "jim-courtney",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-courtney_keith-vercauteren_post_001.jpg",
@@ -96,7 +52,7 @@
     "driverSlug": "jim-courtney",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-courtney_unknown-photographer_photo_001.jpg",
@@ -107,6 +63,6 @@
     "driverSlug": "jim-courtney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

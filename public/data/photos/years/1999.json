@@ -1,5 +1,38 @@
 [
   {
+    "fileName": "capital-super-speedway_1999_doug-ohmert_charlie-spry_photo_444.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1999/capital-super-speedway_1999_doug-ohmert_charlie-spry_photo_444.jpg",
+    "publicPath": "/photos/capital-super-speedway_1999_doug-ohmert_charlie-spry_photo_444.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1999",
+    "driverSlug": "doug-ohmert",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "capital-super-speedway_1999_scott-riedner_brandon-riedner_post_111.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1999/capital-super-speedway_1999_scott-riedner_brandon-riedner_post_111.jpg",
+    "publicPath": "/photos/capital-super-speedway_1999_scott-riedner_brandon-riedner_post_111.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1999",
+    "driverSlug": "scott-riedner",
+    "photographerSlug": "brandon-riedner",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "cedar-lake-speedway_1999_brady-smith_pete-woloschuk_post_333.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/1999/cedar-lake-speedway_1999_brady-smith_pete-woloschuk_post_333.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_1999_brady-smith_pete-woloschuk_post_333.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "1999",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "pete-woloschuk",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
     "fileName": "chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
     "storagePath": "photos/master/chilton-speedway/1999/chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
     "publicPath": "/photos/chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
@@ -8,7 +41,7 @@
     "driverSlug": "mike-kertscher",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1999_frank-nitzke_matt-osowski_post_001.jpg",
@@ -19,7 +52,7 @@
     "driverSlug": "frank-nitzke",
     "photographerSlug": "matt-osowski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1999_mike-ehde_robert-jung_post_001.jpg",
@@ -30,7 +63,7 @@
     "driverSlug": "mike-ehde",
     "photographerSlug": "robert-jung",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_bruce-honkala_lee-lawrence_photo_001.jpg",
@@ -41,7 +74,7 @@
     "driverSlug": "bruce-honkala",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_carl-manninen_lee-lawrence_photo_001.jpeg",
@@ -52,7 +85,7 @@
     "driverSlug": "carl-manninen",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_jim-duchow_lee-lawrence_photo_001.jpeg",
@@ -63,7 +96,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_john-komp_lee-lawrence_photo_001.jpg",
@@ -74,7 +107,7 @@
     "driverSlug": "john-komp",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_kris-kelly_lee-lawrence_photo_001.jpeg",
@@ -85,7 +118,7 @@
     "driverSlug": "kris-kelly",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_mike-gardner_lee-lawrence_photo_001.jpg",
@@ -96,7 +129,7 @@
     "driverSlug": "mike-gardner",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_steve-debakker_ii-lee-lawrence_photo_001.jpg",
@@ -107,7 +140,7 @@
     "driverSlug": "steve-debakker",
     "photographerSlug": "ii-lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_1999_tim-jarvis_lee-lawrence_photo_001.jpg",
@@ -118,7 +151,7 @@
     "driverSlug": "tim-jarvis",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_1999_rm-van-pay_jennifer-jach_photo_001.jpg",
@@ -129,7 +162,7 @@
     "driverSlug": "rm-van-pay",
     "photographerSlug": "jennifer-jach",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_1999_rod-snellenberger_dave-panske_photo_001.jpg",
@@ -140,7 +173,18 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1999/rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1999",
+    "driverSlug": "james-swan",
+    "photographerSlug": "james-swan",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "sands-speedway_1999_dan-duquette_unknown-photographer_photo_115.jpg",
@@ -162,7 +206,7 @@
     "driverSlug": "dan-michonski",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1999_unknown-driver_neil-miller_photo_455.jpg",
@@ -184,6 +228,6 @@
     "driverSlug": "mike-peterson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

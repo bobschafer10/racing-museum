@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "tomah-sparta-speedway_2016_steve-rozek_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2016/tomah-sparta-speedway_2016_steve-rozek_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2016_steve-rozek_unknown-photographer_photo_555.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2016",
+    "driverSlug": "steve-rozek",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
     "fileName": "unknown-track_unknown-year_steve-rozek_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-rozek_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_steve-rozek_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "steve-rozek",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

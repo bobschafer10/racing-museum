@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "adams-friendship-speedway_2013_wayne-geitzen_matt-mclaughlin_post_111.jpg",
+    "storagePath": "photos/master/adams-friendship-speedway/2013/adams-friendship-speedway_2013_wayne-geitzen_matt-mclaughlin_post_111.jpg",
+    "publicPath": "/photos/adams-friendship-speedway_2013_wayne-geitzen_matt-mclaughlin_post_111.jpg",
+    "trackSlug": "adams-friendship-speedway",
+    "year": "2013",
+    "driverSlug": "wayne-geitzen",
+    "photographerSlug": "matt-mclaughlin",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "amherst-speedway_2013_adam-broehm_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/amherst-speedway/2013/amherst-speedway_2013_adam-broehm_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/amherst-speedway_2013_adam-broehm_unknown-photographer_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "adam-broehm",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_chris-hidde_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "chris-hidde",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_corey-stevens_unknown-photographer_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "corey-stevens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_corey-stevens_unknown-photographer_photo_222.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "frank-groeschl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_jay-stone_unknown-photographer_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "jay-stone",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_jay-stone_unknown-photographer_photo_002.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "jay-stone",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "amherst-speedway_2013_jay-stone_unknown-photographer_photo_231.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "jay-stone",
     "photographerSlug": "unknown-photographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_jesse-krahn_unknown-photographer_photo_001.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "jesse-krahn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_john-mahlberg_unknown-photographer_photo_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "john-mahlberg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_lee-schoenick_unknown-photographer_photo_001.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "lee-schoenick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_mike-zitzer_unknown-photographer_photo_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "mike-zitzer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_ralph-legois_carmen-lee_post_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "ralph-legois",
     "photographerSlug": "carmen-lee",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_rick-schlabowsk_unknown-photographer_photo_001.jpg",
@@ -162,7 +173,7 @@
     "driverSlug": "rick-schlabowsk",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_unknown-driver_joe-verdegan_photo_001.jpg",
@@ -173,7 +184,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_unknown-driver_joe-verdegan_photo_226.jpg",
@@ -217,7 +228,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "amherst-speedway_2013_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -228,7 +239,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "amherst-speedway_2013_unknown-driver_unknown-photographer_photo_223.jpg",
@@ -283,7 +294,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "karly-stadler",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2013_eric-barth_unknown-photographer_photo_001.jpg",
@@ -294,7 +305,7 @@
     "driverSlug": "eric-barth",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2013_bryan-monday_unknown-photographer_photo_001.jpg",
@@ -305,7 +316,7 @@
     "driverSlug": "bryan-monday",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2013_cody-buchs_unknown-photographer_photo_001.jpg",
@@ -316,7 +327,7 @@
     "driverSlug": "cody-buchs",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2013_devin-dixon_unknown-photographer_photo_001.jpg",
@@ -327,7 +338,7 @@
     "driverSlug": "devin-dixon",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2013_jimmy-robinson_unknown-photographer_photo_001.jpg",
@@ -338,7 +349,7 @@
     "driverSlug": "jimmy-robinson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2013_john-wasserberger_unknown-photographer_photo_001.jpg",
@@ -349,7 +360,7 @@
     "driverSlug": "john-wasserberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2013_terry-wagnsness_unknown-photographer_photo_001.jpg",
@@ -360,7 +371,7 @@
     "driverSlug": "terry-wagnsness",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2013_jason-zdroik_bob-greuel_photo_001.jpg",
@@ -371,18 +382,205 @@
     "driverSlug": "jason-zdroik",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_2013_skylar-holzhausen_bob-greuel_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/2013/lacrosse-interstate-speedway_2013_skylar-holzhausen_bob-greuel_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_2013_skylar-holzhausen_bob-greuel_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
+    "fileName": "luxemburg-speedway_2013_brad-rohloff_bob-greuel_photo_335.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2013/luxemburg-speedway_2013_brad-rohloff_bob-greuel_photo_335.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2013_brad-rohloff_bob-greuel_photo_335.jpg",
+    "trackSlug": "luxemburg-speedway",
     "year": "2013",
-    "driverSlug": "skylar-holzhausen",
+    "driverSlug": "brad-rohloff",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "335"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_adam-eckes_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_adam-eckes_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_adam-eckes_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "adam-eckes",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_amanda-ferguson_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_amanda-ferguson_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_amanda-ferguson_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "amanda-ferguson",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_brandon-herr_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_brandon-herr_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_brandon-herr_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "brandon-herr",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_chad-selk_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_chad-selk_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_chad-selk_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "chad-selk",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_chris-weinkauf_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_chris-weinkauf_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_chris-weinkauf_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "chris-weinkauf",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_claire-decker_david-kronberger_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_claire-decker_david-kronberger_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_claire-decker_david-kronberger_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "claire-decker",
+    "photographerSlug": "david-kronberger",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_don-turner_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_don-turner_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_don-turner_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "don-turner",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_eric-bucholz_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_eric-bucholz_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_eric-bucholz_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "eric-bucholz",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_eric-robinson_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_eric-robinson_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_eric-robinson_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "eric-robinson",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_eugene-gregorich-jr_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_eugene-gregorich-jr_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_eugene-gregorich-jr_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "eugene-gregorich-jr",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_jeff-storm_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_jeff-storm_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_jeff-storm_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "jeff-storm",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_jim-sauter-jr_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_jim-sauter-jr_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_jim-sauter-jr_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "jim-sauter-jr",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_jonathan-eilen_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_jonathan-eilen_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_jonathan-eilen_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "jonathan-eilen",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_marv-flick_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_marv-flick_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_marv-flick_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "marv-flick",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_paige-decker_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_paige-decker_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_paige-decker_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "paige-decker",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_phil-malouf_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_phil-malouf_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_phil-malouf_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "phil-malouf",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_tim-anderson_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_tim-anderson_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_tim-anderson_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "tim-anderson",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
   },
   {
     "fileName": "monster-hall-raceway_2013_chris-oertel_unknown-credit_post_001.jpg",
@@ -393,7 +591,18 @@
     "driverSlug": "chris-oertel",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2013/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2013",
+    "driverSlug": "mark-rose",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "princeton-speedway_2013_adam-ayotte_b-sens_photo_001.jpg",
@@ -404,7 +613,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "b-sens",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_2013_aaron-holiday_dan-lewis_photo_001.jpg",
@@ -415,7 +624,7 @@
     "driverSlug": "aaron-holiday",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2013_brock-saunders_bob-greuel_photo_001.jpg",
@@ -426,7 +635,7 @@
     "driverSlug": "brock-saunders",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2013_pat-zdroik_bob-greuel_photo_001.jpg",
@@ -437,7 +646,7 @@
     "driverSlug": "pat-zdroik",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2013_cardell-potter_unknown-photographer_photo_001.jpg",
@@ -448,7 +657,7 @@
     "driverSlug": "cardell-potter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2013_cole-yach_cole-yach_post_113.jpg",
@@ -470,7 +679,7 @@
     "driverSlug": "ison",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2013_andy-monday_corey-juelich_photo_333.jpg",
@@ -514,7 +723,7 @@
     "driverSlug": "brandon-conrad",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2013_brandon-reichenberger_corey-juelich_photo_333.jpg",

@@ -8,7 +8,29 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "owatonna-mcclain",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chick-stolarik_owatonna-mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "owatonna-mcclain",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_owatonna-mcclain_photo_001.jpg",
@@ -19,29 +41,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-redetzke_owatonna-mcclain_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-redetzke_owatonna-mcclain_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-redetzke_owatonna-mcclain_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-redetzke",
-    "photographerSlug": "owatonna-mcclain",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-salner_owatonna-mcclain_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-salner_owatonna-mcclain_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-salner_owatonna-mcclain_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-salner",
-    "photographerSlug": "owatonna-mcclain",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mert-williams_owatonna-mcclain_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "mert-williams",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-olson_owatonna-mcclain_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "rich-olson",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-egersdorf_owatonna-mcclain_photo_001.jpg",
@@ -74,6 +74,6 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

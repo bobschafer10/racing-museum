@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "raceway-park-il-il_unknown-year_bob-pronger_raceway-park-history_post_535.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_bob-pronger_raceway-park-history_post_535.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_bob-pronger_raceway-park-history_post_535.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "bob-pronger",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "535"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_bob-pronger_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_bob-pronger_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_bob-pronger_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "bob-pronger",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
+  },
+  {
     "fileName": "unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
@@ -8,6 +30,28 @@
     "driverSlug": "bob-pronger",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-pronger",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-pronger_ron-thruman_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-pronger",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,137 @@
 [
   {
+    "fileName": "marshfield-super-speedway_2014_dillon-mackesy_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_dillon-mackesy_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_dillon-mackesy_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2023_dillon-mackesy_dillon-mackesy_post_334.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2023/marshfield-super-speedway_2023_dillon-mackesy_dillon-mackesy_post_334.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2023_dillon-mackesy_dillon-mackesy_post_334.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2023",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "marshfield-super-speedway_2023_dillon-mackesy_tom-loos_photo_433.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2023/marshfield-super-speedway_2023_dillon-mackesy_tom-loos_photo_433.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2023_dillon-mackesy_tom-loos_photo_433.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2023",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": ""
+  },
+  {
+    "fileName": "rockford-speedway_2021_dillon-mackesy_dillon-mackesy_post_433.jpg",
+    "storagePath": "photos/master/rockford-speedway/2021/rockford-speedway_2021_dillon-mackesy_dillon-mackesy_post_433.jpg",
+    "publicPath": "/photos/rockford-speedway_2021_dillon-mackesy_dillon-mackesy_post_433.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2021",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "state-park-speedway_2017_dillon-mackesy_qc-willy_photo_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/2017/state-park-speedway_2017_dillon-mackesy_qc-willy_photo_444.jpg",
+    "publicPath": "/photos/state-park-speedway_2017_dillon-mackesy_qc-willy_photo_444.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2017",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": ""
+  },
+  {
+    "fileName": "state-park-speedway_2017_dillon-mackesy_tom-loos_photo_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/2017/state-park-speedway_2017_dillon-mackesy_tom-loos_photo_444.jpg",
+    "publicPath": "/photos/state-park-speedway_2017_dillon-mackesy_tom-loos_photo_444.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2017",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": ""
+  },
+  {
+    "fileName": "state-park-speedway_2018_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/2018/state-park-speedway_2018_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "publicPath": "/photos/state-park-speedway_2018_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2018",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "state-park-speedway_2020_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/2020/state-park-speedway_2020_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "publicPath": "/photos/state-park-speedway_2020_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2020",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "state-park-speedway_2021_dillon-mackesy_qc-willy_photo_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/2021/state-park-speedway_2021_dillon-mackesy_qc-willy_photo_111.jpg",
+    "publicPath": "/photos/state-park-speedway_2021_dillon-mackesy_qc-willy_photo_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2021",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": ""
+  },
+  {
+    "fileName": "state-park-speedway_2022_dillon-mackesy_dillon-mackesy_post_422.jpg",
+    "storagePath": "photos/master/state-park-speedway/2022/state-park-speedway_2022_dillon-mackesy_dillon-mackesy_post_422.jpg",
+    "publicPath": "/photos/state-park-speedway_2022_dillon-mackesy_dillon-mackesy_post_422.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2022",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_dillon-mackesy_kurt-luoma_photo_433.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_dillon-mackesy_kurt-luoma_photo_433.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_dillon-mackesy_kurt-luoma_photo_433.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": ""
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2025_dillon-mackesy_cwra_post_444.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2025/tomah-sparta-speedway_2025_dillon-mackesy_cwra_post_444.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2025_dillon-mackesy_cwra_post_444.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2025",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "cwra",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
     "fileName": "unknown-track_unknown-year_dillon-mackesy_charlie-spry_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dillon-mackesy_charlie-spry_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_dillon-mackesy_charlie-spry_photo_001.jpg",
@@ -8,6 +140,28 @@
     "driverSlug": "dillon-mackesy",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dillon-mackesy_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dillon-mackesy_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dillon-mackesy_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dillon-mackesy_unknown-photographer_photo_1740795514103.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dillon-mackesy_unknown-photographer_photo_1740795514103.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dillon-mackesy_unknown-photographer_photo_1740795514103.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "445"
   }
 ]

@@ -8,18 +8,29 @@
     "driverSlug": "bob-slater",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_1993_bob-slater_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_bob-slater_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_bob-slater_neil-miller_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
     "trackSlug": "unknown-track",
-    "year": "1993",
+    "year": "unknown-year",
     "driverSlug": "bob-slater",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "104"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-slater",
+    "photographerSlug": "ryan-aho",
+    "creditType": "post",
+    "sequence": "104"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-slater_ryan-aho_post_104.jpg",

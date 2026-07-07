@@ -8,7 +8,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_willie-goeden_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_willie-goeden_unknown-photographer_photo_002.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_willie-goeden_unknown-photographer_photo_008.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "capital-super-speedway_1982_willie-goeden_al-fortner_photo_001.jpg",
@@ -52,29 +52,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_willie-goeden_john-vass_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_willie-goeden_john-vass_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_willie-goeden_john-vass_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "willie-goeden",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_willie-goeden_john-vass_photo_002.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_willie-goeden_john-vass_photo_002.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_willie-goeden_john-vass_photo_002.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "willie-goeden",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_willie-goeden_unknown-photographer_photo_5548.jpg",
@@ -96,7 +74,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_willie-goeden_bob-bergeron_photo_002.jpg",
@@ -107,7 +85,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_willie-goeden_unknown-photographer_photo_001.jpg",
@@ -118,7 +96,18 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_willie-goeden_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_willie-goeden_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_willie-goeden_unknown-photographer_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "willie-goeden",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_willie-goeden_don-besch_photo_001.jpg",
@@ -129,40 +118,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "slinger-speedway_unknown-year_willie-goeden_bob-schafer_photo_13272.jpg",
-    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_willie-goeden_bob-schafer_photo_13272.jpg",
-    "publicPath": "/photos/slinger-speedway_unknown-year_willie-goeden_bob-schafer_photo_13272.jpg",
-    "trackSlug": "slinger-speedway",
-    "year": "unknown-year",
-    "driverSlug": "willie-goeden",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13272"
-  },
-  {
-    "fileName": "slinger-speedway_unknown-year_willie-goeden_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_willie-goeden_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/slinger-speedway_unknown-year_willie-goeden_unknown-photographer_photo_003.jpg",
-    "trackSlug": "slinger-speedway",
-    "year": "unknown-year",
-    "driverSlug": "willie-goeden",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_1977_willie-goeden_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_willie-goeden_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_willie-goeden_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "willie-goeden",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_john-vass_photo_003.jpg",
@@ -173,7 +129,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_pat-heaney_post_001.jpg",
@@ -184,7 +140,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_002.jpg",
@@ -195,7 +151,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_003.jpg",
@@ -206,7 +162,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_006.jpg",
@@ -217,7 +173,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_007.jpg",
@@ -228,7 +184,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_013.jpg",
@@ -239,7 +195,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_014.jpg",
@@ -250,7 +206,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_016.jpg",
@@ -261,7 +217,18 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "016"
+    "sequence": "16"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_1918.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_1918.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_willie-goeden_unknown-photographer_photo_1918.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "willie-goeden",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1918"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_willie-goeden_bob-bergeron_photo_001.jpg",
@@ -272,7 +239,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_willie-goeden_bob-schafer_photo_13964.jpg",
@@ -338,7 +305,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_willie-goeden_kurt-luoma_photo_1169.jpg",
@@ -360,6 +327,6 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

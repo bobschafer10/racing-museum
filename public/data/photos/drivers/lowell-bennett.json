@@ -8,7 +8,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_lowell-bennett_john-vass_photo_111.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_lowell-bennett_weber-brothers_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1980_lowell-bennett_randy-van-hoof_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "randy-van-hoof",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_lowell-bennett_joe-verdegan_post_001.jpg",
@@ -63,7 +63,18 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_lowell-bennett_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_lowell-bennett_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_lowell-bennett_joe-verdegan_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lowell-bennett",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_lowell-bennett_unknown-photographer_photo_001.jpg",
@@ -74,7 +85,18 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_lowell-bennett_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_lowell-bennett_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_lowell-bennett_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lowell-bennett",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_lowell-bennett_unknown-photographer_photo_004.jpg",
@@ -85,7 +107,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "slinger-speedway_unknown-year_lowell-bennett_unknown-photographer_photo_005.jpg",
@@ -96,7 +118,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "slinger-speedway_unknown-year_lowell-bennett_unknown-photographer_photo_007.jpg",
@@ -107,7 +129,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_lowell-bennett_kurt-luoma_photo_001.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lowell-bennett_pete-vercauteren_photo_001.jpg",
@@ -129,7 +151,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lowell-bennett_unknown-photographer_photo_001.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lowell-bennett_unknown-photographer_photo_002.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_lowell-bennett_unknown-photographer_photo_003.jpg",
@@ -162,7 +184,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_lowell-bennett_unknown-photographer_photo_004.jpg",
@@ -173,7 +195,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_lowell-bennett_unknown-photographer_photo_008.jpg",
@@ -184,7 +206,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_lowell-bennett_bob-schafer_photo_222.jpg",
@@ -217,7 +239,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "gary-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_lowell-bennett_john-vass_photo_001.jpg",
@@ -228,7 +250,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_lowell-bennett_keith-vercauteren_post_100.jpg",
@@ -250,7 +272,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_lowell-bennett_kurt-luoma_photo_002.jpg",
@@ -261,7 +283,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_lowell-bennett_kurt-luoma_photo_1111.jpg",
@@ -283,7 +305,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_lowell-bennett_unknown-photographer_photo_003.jpg",
@@ -294,7 +316,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_lowell-bennett_unknown-photographer_photo_004.jpg",
@@ -305,6 +327,6 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   }
 ]

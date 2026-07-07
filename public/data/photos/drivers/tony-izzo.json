@@ -19,7 +19,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tony-izzo_bob-elman_photo_003.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tony-izzo_unknown-photographer_photo_351.jpg",
@@ -44,6 +44,39 @@
     "sequence": "351"
   },
   {
+    "fileName": "raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_838.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_838.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_838.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "tony-izzo",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "838"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_888.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "tony-izzo",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_889.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_889.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_tony-izzo_raceway-park-history_post_889.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "tony-izzo",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "889"
+  },
+  {
     "fileName": "sante-fe-speedway_unknown-year_tony-izzo_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/sante-fe-speedway/unknown-year/sante-fe-speedway_unknown-year_tony-izzo_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/sante-fe-speedway_unknown-year_tony-izzo_unknown-photographer_photo_001.jpg",
@@ -52,7 +85,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-izzo_john-vass_photo_001.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_002.jpg",
@@ -74,7 +107,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_003.jpg",
@@ -85,7 +118,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_004.jpg",
@@ -96,7 +129,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_005.jpg",
@@ -107,7 +140,29 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_1391.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_1391.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_1391.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tony-izzo",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1391"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_1391.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_1391.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_1391.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tony-izzo",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1391"
   },
   {
     "fileName": "unknown-track_unknown-year_tony-izzo_unknown-photographer_photo_1391.jpg",

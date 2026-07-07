@@ -8,7 +8,29 @@
     "driverSlug": "harold-picha",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "freeport-raceway-park_unknown-year_harold-picha_jeff-picha_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_harold-picha_jeff-picha_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_harold-picha_jeff-picha_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "harold-picha",
+    "photographerSlug": "jeff-picha",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "freeport-raceway-park_unknown-year_harold-picha_ron-thruman_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_harold-picha_ron-thruman_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_harold-picha_ron-thruman_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "harold-picha",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_unknown-year_harold-picha_unknown-photographer_photo_001.jpg",
@@ -19,17 +41,6 @@
     "driverSlug": "harold-picha",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-picha_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-picha_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-picha_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-picha",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   }
 ]

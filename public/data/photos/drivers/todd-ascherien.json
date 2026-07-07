@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "eagle-river-speedway_2022_todd-ascherien_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_todd-ascherien_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_todd-ascherien_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "todd-ascherien",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "unknown-track_unknown-year_todd-ascherien_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_todd-ascherien_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_todd-ascherien_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "todd-ascherien",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

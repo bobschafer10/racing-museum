@@ -8,7 +8,7 @@
     "driverSlug": "dick-cheseboro",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1967_ed-nichols_dennis-satorius_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "ed-nichols",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1973_neil-callahan_kurt-luoma_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "neil-callahan",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1975_bob-mackesy_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1975_wally-jors_unknown-photographer_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "wally-jors",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1989_ron-baunch_bob-schafer_photo_13681.jpg",
@@ -349,7 +349,18 @@
     "driverSlug": "flip-merwin",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_1996_rene-scheinoha_charlie-spry_photo_444.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/1996/golden-sands-speedway_1996_rene-scheinoha_charlie-spry_photo_444.jpg",
+    "publicPath": "/photos/golden-sands-speedway_1996_rene-scheinoha_charlie-spry_photo_444.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "1996",
+    "driverSlug": "rene-scheinoha",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "golden-sands-speedway_1997_dale-richter_tom-loos_photo_001.jpg",
@@ -360,7 +371,7 @@
     "driverSlug": "dale-richter",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1999_frank-nitzke_matt-osowski_post_001.jpg",
@@ -371,7 +382,7 @@
     "driverSlug": "frank-nitzke",
     "photographerSlug": "matt-osowski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2007_mike-gwindt_tom-loos_photo_001.jpg",
@@ -382,7 +393,29 @@
     "driverSlug": "mike-gwindt",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2015/golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2015_dean-zakrzewski_unknown-photographer_photo_421.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2015",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "421"
+  },
+  {
+    "fileName": "golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2016/golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2016_dean-zakrzewski_dean-zakrzewski_post_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2016",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "dean-zakrzewski",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "golden-sands-speedway_2017_dave-neitzke_bob-greuel_photo_001.jpg",
@@ -393,7 +426,18 @@
     "driverSlug": "dave-neitzke",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_2017_dean-zakrzewski_blaeser_photo_432.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2017/golden-sands-speedway_2017_dean-zakrzewski_blaeser_photo_432.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2017_dean-zakrzewski_blaeser_photo_432.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2017",
+    "driverSlug": "dean-zakrzewski",
+    "photographerSlug": "blaeser",
+    "creditType": "photo",
+    "sequence": "432"
   },
   {
     "fileName": "golden-sands-speedway_2018_derek-gress_bob-greuel_photo_001.jpg",
@@ -404,7 +448,18 @@
     "driverSlug": "derek-gress",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_2019_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/2019/golden-sands-speedway_2019_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/golden-sands-speedway_2019_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "2019",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "golden-sands-speedway_2019_jeff-weinfurter_blaser_photo_001.jpg",
@@ -415,7 +470,7 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2020_aj-kraeger_aj-kraeger_post_001.jpg",
@@ -426,7 +481,7 @@
     "driverSlug": "aj-kraeger",
     "photographerSlug": "aj-kraeger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2021_aj-kraeger_jeremy-libick_photo_001.jpg",
@@ -437,7 +492,7 @@
     "driverSlug": "aj-kraeger",
     "photographerSlug": "jeremy-libick",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2021_colton-haasl_qc-willy_photo_333.jpg",
@@ -459,7 +514,7 @@
     "driverSlug": "mark-eswein",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_albert-getzloff_kurt-luoma_photo_001.jpg",
@@ -470,7 +525,7 @@
     "driverSlug": "albert-getzloff",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_allen-check_kurt-luoma_photo_001.jpg",
@@ -481,7 +536,7 @@
     "driverSlug": "allen-check",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_allen-check_kurt-luoma_photo_401.jpg",
@@ -503,7 +558,7 @@
     "driverSlug": "allen-check",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_allen-check_unknown-photographer_photo_002.jpg",
@@ -514,7 +569,7 @@
     "driverSlug": "allen-check",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_allen-sankey_unknown-photographer_photo_001.jpg",
@@ -525,7 +580,7 @@
     "driverSlug": "allen-sankey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_andy-hintz_unknown-photographer_photo_001.jpg",
@@ -536,7 +591,7 @@
     "driverSlug": "andy-hintz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_annie-turzinski_unknown-photographer_photo_001.jpg",
@@ -547,7 +602,7 @@
     "driverSlug": "annie-turzinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_arnie-christen_kurt-luoma_photo_1267.jpg",
@@ -569,7 +624,7 @@
     "driverSlug": "ben-ernst",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_benjamin-brinkman_kurt-luoma_photo_1345.jpg",
@@ -591,7 +646,7 @@
     "driverSlug": "bill-marcis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bill-marcis_unknown-photographer_photo_001.jpg",
@@ -602,7 +657,7 @@
     "driverSlug": "bill-marcis",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bill-prietzel_tom-loos_photo_001.jpg",
@@ -613,7 +668,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bill-voight_kurt-luoma_photo_1356.jpg",
@@ -635,7 +690,7 @@
     "driverSlug": "bill-voigt",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bill-voigt_kurt-luoma_photo_112.jpg",
@@ -657,7 +712,7 @@
     "driverSlug": "billy-voigt",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bob-abitz_kurt-luoma_photo_001.jpg",
@@ -668,7 +723,7 @@
     "driverSlug": "bob-abitz",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bob-cusick_unknown-photographer_photo_001.jpg",
@@ -679,7 +734,7 @@
     "driverSlug": "bob-cusick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bob-mackesy_kurt-luoma_photo_001.jpg",
@@ -690,7 +745,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bob-mackesy_kurt-luoma_photo_222.jpg",
@@ -723,7 +778,7 @@
     "driverSlug": "bob-sparkes",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bob-wisnewski_john-alft_post_001.jpg",
@@ -734,7 +789,7 @@
     "driverSlug": "bob-wisnewski",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bob-wisnewski_kurt-luoma_photo_111.jpg",
@@ -756,7 +811,7 @@
     "driverSlug": "bob-wisnewski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bobby-stolze_kurt-luoma_photo_001.jpg",
@@ -767,7 +822,7 @@
     "driverSlug": "bobby-stolze",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bobby-turzinski_kurt-luoma_photo_001.jpg",
@@ -778,7 +833,7 @@
     "driverSlug": "bobby-turzinski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bobby-turzinski_kurt-luoma_photo_002.jpg",
@@ -789,7 +844,7 @@
     "driverSlug": "bobby-turzinski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bobby-turzinski_kurt-luoma_photo_333.jpg",
@@ -811,7 +866,7 @@
     "driverSlug": "bobby-weiss",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bobby-weiss_kurt-luoma_photo_002.jpg",
@@ -822,7 +877,7 @@
     "driverSlug": "bobby-weiss",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brad-blenker_kurt-luoma_photo_1100.jpg",
@@ -855,7 +910,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brad-scholze_unknown-photographer_photo_001.jpg",
@@ -866,7 +921,7 @@
     "driverSlug": "brad-scholze",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brandon-selle_kurt-luoma_photo_1339.jpg",
@@ -888,7 +943,7 @@
     "driverSlug": "brandon-selle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_001.jpg",
@@ -899,7 +954,18 @@
     "driverSlug": "brian-back",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_543.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_543.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_brian-back_kurt-luoma_photo_543.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-back",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "543"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_001.jpg",
@@ -910,7 +976,7 @@
     "driverSlug": "brian-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brian-back_unknown-photographer_photo_002.jpg",
@@ -921,7 +987,7 @@
     "driverSlug": "brian-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_brian-holzhausen_kurt-luoma_photo_1288.jpg",
@@ -954,7 +1020,7 @@
     "driverSlug": "brian-weinfurter",
     "photographerSlug": "24-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_bryan-reffner_kurt-luoma_photo_001.jpg",
@@ -965,7 +1031,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_buitch-rosso_unknown-photographer_photo_001.jpg",
@@ -976,7 +1042,7 @@
     "driverSlug": "buitch-rosso",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_burton-brown_unknown-photographer_photo_001.jpg",
@@ -987,7 +1053,7 @@
     "driverSlug": "burton-brown",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_butch-rosso_kurt-luoma_photo_200.jpg",
@@ -1009,7 +1075,7 @@
     "driverSlug": "chad-brundidge",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_charlie-schwoch_kurt-luoma_photo_001.jpg",
@@ -1020,7 +1086,7 @@
     "driverSlug": "charlie-schwoch",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_charlie-schwoch_kurt-luoma_photo_111.jpg",
@@ -1042,7 +1108,7 @@
     "driverSlug": "charlie-thon",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_chris-wimmer_kurt-luoma_photo_001.jpg",
@@ -1053,7 +1119,7 @@
     "driverSlug": "chris-wimmer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_chuck-abraham_unknown-photographer_photo_001.jpg",
@@ -1064,7 +1130,18 @@
     "driverSlug": "chuck-abraham",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_chuck-dixon_qc-willy_photo_444.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_chuck-dixon_qc-willy_photo_444.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_chuck-dixon_qc-willy_photo_444.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chuck-dixon",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
@@ -1075,7 +1152,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_clarence-oertel_unknown-photographer_photo_001.jpg",
@@ -1086,7 +1163,7 @@
     "driverSlug": "clarence-oertel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_craig-basseuner_kurt-luoma_photo_001.jpg",
@@ -1097,7 +1174,7 @@
     "driverSlug": "craig-basseuner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_cub-rezin_kurt-luoma_photo_001.jpg",
@@ -1108,7 +1185,7 @@
     "driverSlug": "cub-rezin",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_curt-blenker_unknown-photographer_photo_001.jpg",
@@ -1119,7 +1196,7 @@
     "driverSlug": "curt-blenker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dale-danielski_dale-danielski_photo_001.jpg",
@@ -1130,7 +1207,7 @@
     "driverSlug": "dale-danielski",
     "photographerSlug": "dale-danielski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dan-prziborowski_unknown-photographer_photo_001.jpg",
@@ -1141,7 +1218,7 @@
     "driverSlug": "dan-prziborowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_darrell-paasch_kurt-luoma_photo_001.jpg",
@@ -1152,7 +1229,7 @@
     "driverSlug": "darrell-paasch",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-boodle_unknown-photographer_photo_001.jpg",
@@ -1163,7 +1240,7 @@
     "driverSlug": "dave-boodle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-cox_kurt-luoma_photo_001.jpg",
@@ -1174,7 +1251,7 @@
     "driverSlug": "dave-cox",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-dotter_tom-loos_photo_001.jpg",
@@ -1185,7 +1262,7 @@
     "driverSlug": "dave-dotter",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-fields_kurt-luoma_photo_001.jpg",
@@ -1196,7 +1273,7 @@
     "driverSlug": "dave-fields",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-gruenberg_unknown-photographer_photo_001.jpg",
@@ -1207,7 +1284,7 @@
     "driverSlug": "dave-gruenberg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-marcis_unknown-photographer_photo_001.jpg",
@@ -1218,7 +1295,7 @@
     "driverSlug": "dave-marcis",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-mcclain_bob-schafer_photo_228.jpg",
@@ -1240,7 +1317,7 @@
     "driverSlug": "dave-selck",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dave-tushoski_kurt-luoma_photo_001.jpg",
@@ -1251,7 +1328,7 @@
     "driverSlug": "dave-tushoski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_david-pagels_kurt-luoma_photo_001.jpg",
@@ -1262,7 +1339,7 @@
     "driverSlug": "david-pagels",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_david-pagels_unknown-photographer_photo_001.jpg",
@@ -1273,7 +1350,7 @@
     "driverSlug": "david-pagels",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_david-pagels_unknown-photographer_photo_002.jpg",
@@ -1284,7 +1361,7 @@
     "driverSlug": "david-pagels",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dean-brillowski_kurt-luoma_photo_001.jpg",
@@ -1295,7 +1372,18 @@
     "driverSlug": "dean-brillowski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_dean-brillowski_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_dean-brillowski_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_dean-brillowski_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-brillowski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dean-fisher_unknown-photographer_photo_001.jpg",
@@ -1306,7 +1394,7 @@
     "driverSlug": "dean-fisher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dennis-gaserud_unknown-photographer_photo_001.jpg",
@@ -1317,7 +1405,7 @@
     "driverSlug": "dennis-gaserud",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dennis-gaserude_unknown-photographer_photo_001.jpg",
@@ -1328,7 +1416,7 @@
     "driverSlug": "dennis-gaserude",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_derek-turzinski_unknown-photographer_photo_001.jpg",
@@ -1339,7 +1427,7 @@
     "driverSlug": "derek-turzinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dick-cheeseborough_kurt-luoma_photo_112.jpg",
@@ -1361,7 +1449,7 @@
     "driverSlug": "dick-peardot",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dick-trickle_kurt-luoma_photo_001.jpg",
@@ -1372,7 +1460,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dick-trickle_kurt-luoma_photo_002.jpg",
@@ -1383,7 +1471,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dick-trickle_kurt-luoma_photo_222.jpg",
@@ -1405,7 +1493,7 @@
     "driverSlug": "don-breeson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-cline_unknown-photographer_photo_001.jpg",
@@ -1416,7 +1504,7 @@
     "driverSlug": "don-cline",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-grant_john-alft_post_001.jpg",
@@ -1427,7 +1515,7 @@
     "driverSlug": "don-grant",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-hanneman_kurt-luoma_photo_001.jpg",
@@ -1438,7 +1526,7 @@
     "driverSlug": "don-hanneman",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-hanneman_unknown-photographer_photo_001.jpg",
@@ -1449,7 +1537,7 @@
     "driverSlug": "don-hanneman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-james_kurt-luoma_photo_112.jpg",
@@ -1471,7 +1559,7 @@
     "driverSlug": "don-marcis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-marcis_kurt-luoma_photo_112.jpg",
@@ -1493,7 +1581,7 @@
     "driverSlug": "don-marcis",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_001.jpg",
@@ -1504,7 +1592,7 @@
     "driverSlug": "don-trapp",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-trapp_kurt-luoma_photo_111.jpg",
@@ -1526,7 +1614,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "jim-nitka",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-turner_kurt-luoma_photo_001.jpg",
@@ -1537,7 +1625,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_don-turner_kurt-luoma_photo_002.jpg",
@@ -1548,7 +1636,7 @@
     "driverSlug": "don-turner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_donnie-woller_bob-schafer_photo_002.jpg",
@@ -1559,7 +1647,7 @@
     "driverSlug": "donnie-woller",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_doug-drost_kurt-luoma_photo_001.jpg",
@@ -1570,7 +1658,7 @@
     "driverSlug": "doug-drost",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_doug-drost_stephen-berg_post_001.jpg",
@@ -1581,7 +1669,7 @@
     "driverSlug": "doug-drost",
     "photographerSlug": "stephen-berg",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_doug-drost_unknown-photographer_photo_001.jpg",
@@ -1592,7 +1680,7 @@
     "driverSlug": "doug-drost",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_doug-johnson_unknown-photographer_photo_001.jpg",
@@ -1603,7 +1691,7 @@
     "driverSlug": "doug-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dustin-brillowski_tom-loos_photo_001.jpg",
@@ -1614,7 +1702,7 @@
     "driverSlug": "dustin-brillowski",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dwayne-robinson_unknown-photographer_photo_001.jpg",
@@ -1625,7 +1713,7 @@
     "driverSlug": "dwayne-robinson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_001.jpg",
@@ -1636,7 +1724,7 @@
     "driverSlug": "dwight-faultersack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dwight-faultersack_unknown-photographer_photo_002.jpg",
@@ -1647,7 +1735,7 @@
     "driverSlug": "dwight-faultersack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ed-holmes_bob-schafer_photo_13851.jpg",
@@ -1669,7 +1757,7 @@
     "driverSlug": "eric-getzloff",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_eric-getzloff_kurt-luoma_photo_1280.jpg",
@@ -1691,7 +1779,7 @@
     "driverSlug": "eric-getzloff",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_eric-nelson_unknown-photographer_photo_001.jpg",
@@ -1702,7 +1790,7 @@
     "driverSlug": "eric-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_001.jpg",
@@ -1713,7 +1801,7 @@
     "driverSlug": "fluff-furo",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_fluff-furo_kurt-luoma_photo_002.jpg",
@@ -1724,7 +1812,7 @@
     "driverSlug": "fluff-furo",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_garrett-feit_kurt-luoma_photo_001.jpg",
@@ -1735,7 +1823,7 @@
     "driverSlug": "garrett-feit",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_gary-back_bob-schafer_photo_13866.jpg",
@@ -1757,7 +1845,7 @@
     "driverSlug": "gary-back",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_002.jpg",
@@ -1768,7 +1856,7 @@
     "driverSlug": "gary-back",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_gary-back_kurt-luoma_photo_111.jpg",
@@ -1790,7 +1878,7 @@
     "driverSlug": "gary-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_gary-hemmerling_kurt-luoma_photo_112.jpg",
@@ -1804,6 +1892,17 @@
     "sequence": "112"
   },
   {
+    "fileName": "golden-sands-speedway_unknown-year_gary-hemmerling_kurt-luoma_photo_556.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-hemmerling_kurt-luoma_photo_556.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-hemmerling_kurt-luoma_photo_556.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-hemmerling",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "556"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_gary-porter_kurt-luoma_photo_1327.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-porter_kurt-luoma_photo_1327.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-porter_kurt-luoma_photo_1327.jpg",
@@ -1813,6 +1912,17 @@
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
     "sequence": "1327"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_gary-wosick_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_gary-wosick_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_gary-wosick_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gary-wosick",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_gene-coleman_kurt-luoma_photo_111.jpg",
@@ -1834,7 +1944,7 @@
     "driverSlug": "geno-broesch",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_greg-delapp_kurt-luoma_photo_001.jpg",
@@ -1845,7 +1955,7 @@
     "driverSlug": "greg-delapp",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_greg-weinfurter_unknown-photographer_photo_001.jpg",
@@ -1856,7 +1966,7 @@
     "driverSlug": "greg-weinfurter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_001.jpg",
@@ -1867,7 +1977,7 @@
     "driverSlug": "jack-greenwood",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_002.jpg",
@@ -1878,7 +1988,7 @@
     "driverSlug": "jack-greenwood",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jack-greenwood_kurt-luoma_photo_111.jpg",
@@ -1890,6 +2000,17 @@
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
     "sequence": "111"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_jason-kirstling_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jason-kirstling_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_jason-kirstling_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jason-kirstling",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jason-szymkowiak_kurt-luoma_photo_444.jpg",
@@ -1911,7 +2032,7 @@
     "driverSlug": "jason-szymkowiak",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jason-weinkauf_kurt-luoma_photo_001.jpg",
@@ -1922,7 +2043,7 @@
     "driverSlug": "jason-weinkauf",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeannie-kind_bob-schafer_photo_13963.jpg",
@@ -1944,7 +2065,7 @@
     "driverSlug": "jeannie-kind",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeff-flowerette_tom-loos_photo_001.jpg",
@@ -1955,7 +2076,7 @@
     "driverSlug": "jeff-flowerette",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeff-gosh_unknown-photographer_photo_001.jpg",
@@ -1966,7 +2087,7 @@
     "driverSlug": "jeff-gosh",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeff-stegemeyer_kurt-luoma_photo_001.jpg",
@@ -1977,7 +2098,7 @@
     "driverSlug": "jeff-stegemeyer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeff-storm_tom-loos_photo_001.jpg",
@@ -1988,7 +2109,7 @@
     "driverSlug": "jeff-storm",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeff-weinfurter_don-wendlandt_photo_116.jpg",
@@ -2010,7 +2131,7 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeremy-flees_kurt-luoma_photo_001.jpg",
@@ -2021,7 +2142,7 @@
     "driverSlug": "jeremy-flees",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeremy-kemnetz_tom-loos_photo_001.jpg",
@@ -2032,7 +2153,7 @@
     "driverSlug": "jeremy-kemnetz",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeremy-lepak_kurt-luoma_photo_001.jpg",
@@ -2043,7 +2164,7 @@
     "driverSlug": "jeremy-lepak",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeremy-lepak_unknown-photographer_photo_001.jpg",
@@ -2054,7 +2175,7 @@
     "driverSlug": "jeremy-lepak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeremy-szymkowiak_unknown-photographer_photo_001.jpg",
@@ -2065,7 +2186,7 @@
     "driverSlug": "jeremy-szymkowiak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jerry-bohm_kurt-luoma_photo_001.jpg",
@@ -2076,7 +2197,7 @@
     "driverSlug": "jerry-bohm",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-back_kurt-luoma_photo_001.jpg",
@@ -2087,7 +2208,7 @@
     "driverSlug": "jim-back",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-back_unknown-photographer_photo_001.jpg",
@@ -2098,7 +2219,7 @@
     "driverSlug": "jim-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-bomsach_john-alft_post_001.jpg",
@@ -2109,7 +2230,7 @@
     "driverSlug": "jim-bomsach",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-bomsach_unknown-photographer_photo_001.jpg",
@@ -2120,7 +2241,7 @@
     "driverSlug": "jim-bomsach",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-boomsach_kurt-luoma_photo_001.jpg",
@@ -2131,7 +2252,7 @@
     "driverSlug": "jim-boomsach",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-cormack_unknown-photographer_photo_001.jpg",
@@ -2142,7 +2263,7 @@
     "driverSlug": "jim-cormack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-dumdey_kurt-luoma_photo_001.jpg",
@@ -2153,7 +2274,7 @@
     "driverSlug": "jim-dumdey",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-hornung_kurt-luoma_photo_112.jpg",
@@ -2175,7 +2296,7 @@
     "driverSlug": "jim-hornung",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-nielsen_unknown-photographer_photo_001.jpg",
@@ -2186,7 +2307,7 @@
     "driverSlug": "jim-nielsen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-ross_unknown-photographer_photo_001.jpg",
@@ -2197,7 +2318,7 @@
     "driverSlug": "jim-ross",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-sauter_kurt-luoma_photo_001.jpg",
@@ -2208,7 +2329,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-sauter_kurt-luoma_photo_222.jpg",
@@ -2230,7 +2351,7 @@
     "driverSlug": "jim-stratton",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-stremkowski_unknown-photographer_photo_001.jpg",
@@ -2241,7 +2362,7 @@
     "driverSlug": "jim-stremkowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jim-weber_kurt-luoma_photo_111.jpg",
@@ -2263,7 +2384,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jj-smith_unknown-photographer_photo_001.jpg",
@@ -2274,7 +2395,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jody-benson_bob-schafer_photo_222.jpg",
@@ -2296,7 +2417,7 @@
     "driverSlug": "jody-benson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_joe-kryzkowski_kurt-luoma_photo_001.jpg",
@@ -2307,7 +2428,29 @@
     "driverSlug": "joe-kryzkowski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-milanowski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_556.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_556.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_556.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-milanowski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "556"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_joe-milanowski_unknown-photographer_photo_001.jpg",
@@ -2318,7 +2461,7 @@
     "driverSlug": "joe-milanowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_joe-shear_kurt-luoma_photo_112.jpg",
@@ -2340,7 +2483,7 @@
     "driverSlug": "john-alft",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_john-bovee_unknown-photographer_photo_001 (2).jpg",
@@ -2351,7 +2494,7 @@
     "driverSlug": "john-bovee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_john-bovee_unknown-photographer_photo_001.jpg",
@@ -2362,7 +2505,7 @@
     "driverSlug": "john-bovee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_john-bovee_unknown-photographer_photo_002.jpg",
@@ -2373,7 +2516,29 @@
     "driverSlug": "john-bovee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_556.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_556.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_556.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-brevik",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "556"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_557.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_557.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_557.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-brevik",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "557"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_john-ostermann_kurt-luoma_photo_001.jpg",
@@ -2384,7 +2549,7 @@
     "driverSlug": "john-ostermann",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_john-pankratz_unknown-photographer_photo_001.jpg",
@@ -2395,7 +2560,7 @@
     "driverSlug": "john-pankratz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_john-payne_tom-loos_photo_001.jpg",
@@ -2406,7 +2571,7 @@
     "driverSlug": "john-payne",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_keith-bomsach_kurt-luoma_photo_1265.jpg",
@@ -2428,7 +2593,7 @@
     "driverSlug": "keith-bomsach",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_keith-wirtz_unknown-photographer_photo_001.jpg",
@@ -2439,7 +2604,7 @@
     "driverSlug": "keith-wirtz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_keith-witt_bob-schafer_photo_13607.jpg",
@@ -2472,7 +2637,7 @@
     "driverSlug": "keith-witt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ken-lund_tom-loos_photo_001.jpg",
@@ -2483,7 +2648,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ken-mathews_kurt-luoma_photo_073.jpg",
@@ -2494,7 +2659,7 @@
     "driverSlug": "ken-mathews",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "073"
+    "sequence": "73"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ken-matthews_john-alft_post_001.jpg",
@@ -2505,7 +2670,7 @@
     "driverSlug": "ken-matthews",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kenny-richards_don-wendlandt_photo_116.jpg",
@@ -2571,7 +2736,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kirby-kurth_john-alft_post_001.jpg",
@@ -2582,7 +2747,7 @@
     "driverSlug": "kirby-kurth",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kirby-kurth_kurt-luoma_photo_001.jpg",
@@ -2593,7 +2758,7 @@
     "driverSlug": "kirby-kurth",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kirby-kurth_kurt-luoma_photo_002.jpg",
@@ -2604,7 +2769,7 @@
     "driverSlug": "kirby-kurth",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kirby-kurth_kurt-luoma_photo_003.jpg",
@@ -2615,7 +2780,7 @@
     "driverSlug": "kirby-kurth",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kirby-kurth_kurt-luoma_photo_004.jpg",
@@ -2626,7 +2791,7 @@
     "driverSlug": "kirby-kurth",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kirby-kurth_kurt-luoma_photo_112.jpg",
@@ -2659,7 +2824,7 @@
     "driverSlug": "kirby-kurth",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kurt-walbech_kurt-luoma_photo_001.jpg",
@@ -2670,7 +2835,7 @@
     "driverSlug": "kurt-walbech",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_001.jpg",
@@ -2681,7 +2846,40 @@
     "driverSlug": "kurt-walbeck",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_555.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_555.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_555.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kurt-walbeck",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_556.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_556.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_556.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kurt-walbeck",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "556"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_559.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_559.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_kurt-walbeck_kurt-luoma_photo_559.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kurt-walbeck",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "559"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kurt-walbeck_unknown-photographer_photo_001.jpg",
@@ -2692,7 +2890,7 @@
     "driverSlug": "kurt-walbeck",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-baumell_kurt-luoma_photo_112.jpg",
@@ -2725,7 +2923,7 @@
     "driverSlug": "larry-challoner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-detjens_kurt-luoma_photo_001.jpg",
@@ -2736,7 +2934,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-detjens_kurt-luoma_photo_002.jpg",
@@ -2747,7 +2945,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-detjens_kurt-luoma_photo_222.jpg",
@@ -2769,7 +2967,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-lepak_bob-schafer_photo_13343.jpg",
@@ -2802,7 +3000,7 @@
     "driverSlug": "larry-lepak",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-lepak_kurt-luoma_photo_111.jpg",
@@ -2824,7 +3022,7 @@
     "driverSlug": "laverne-grandall",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_leroy-pettis_kurt-luoma_photo_001.jpg",
@@ -2835,7 +3033,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_leroy-pettis_kurt-luoma_photo_002.jpg",
@@ -2846,7 +3044,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_leroy-pettis_kurt-luoma_photo_003.jpg",
@@ -2857,7 +3055,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_leroy-pettis_unknown-photographer_photo_001.jpg",
@@ -2868,7 +3066,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_les-stankowski_unknown-photographer_photo_1350.jpg",
@@ -2890,7 +3088,7 @@
     "driverSlug": "louie-marriman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_lyle-nowak_kurt-luoma_photo_001.jpg",
@@ -2901,7 +3099,7 @@
     "driverSlug": "lyle-nowak",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_lyle-nowak_kurt-luoma_photo_002.jpg",
@@ -2912,7 +3110,7 @@
     "driverSlug": "lyle-nowak",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_lyle-nowak_kurt-luoma_photo_111.jpg",
@@ -2956,7 +3154,7 @@
     "driverSlug": "lyle-nowak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_lynn-getzloff_unknown-photographer_photo_001.jpg",
@@ -2967,7 +3165,7 @@
     "driverSlug": "lynn-getzloff",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_m-g-gajewski_kurt-luoma_photo_001.jpg",
@@ -2978,7 +3176,7 @@
     "driverSlug": "m-g-gajewski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_marc-alexander_kurt-luoma_photo_001.jpg",
@@ -2989,7 +3187,7 @@
     "driverSlug": "marc-alexander",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-eswein_kurt-luoma_photo_001.jpg",
@@ -3000,7 +3198,7 @@
     "driverSlug": "mark-eswein",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-eswein_kurt-luoma_photo_002.jpg",
@@ -3011,7 +3209,7 @@
     "driverSlug": "mark-eswein",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-eswein_kurt-luoma_photo_003.jpg",
@@ -3022,7 +3220,7 @@
     "driverSlug": "mark-eswein",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-eswein_kurt-luoma_photo_1328.jpg",
@@ -3055,7 +3253,7 @@
     "driverSlug": "mark-eswein",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-eswein_unknown-photographer_photo_001.jpg",
@@ -3066,7 +3264,7 @@
     "driverSlug": "mark-eswein",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-holmes_kurt-luoma_photo_001.jpg",
@@ -3077,7 +3275,7 @@
     "driverSlug": "mark-holmes",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-mackesy_bob-schafer_photo_13823.jpg",
@@ -3110,7 +3308,7 @@
     "driverSlug": "mark-mackesy",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-mackesy_kurt-luoma_photo_222.jpg",
@@ -3165,7 +3363,7 @@
     "driverSlug": "mark-sherfinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mark-van_don-wendlandt_photo_116.jpg",
@@ -3187,7 +3385,7 @@
     "driverSlug": "marty-waldvogel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_marv-flick_unknown-photographer_photo_001.jpg",
@@ -3198,7 +3396,7 @@
     "driverSlug": "marv-flick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_marv-marzofka_father-grubba_photo_333.jpg",
@@ -3220,7 +3418,7 @@
     "driverSlug": "marv-marzofka",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_marv-marzofka_stan-kalwasinski_photo_001.jpg",
@@ -3231,7 +3429,7 @@
     "driverSlug": "marv-marzofka",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_marv-marzofka_unknown-photographer_photo_001.jpg",
@@ -3242,7 +3440,7 @@
     "driverSlug": "marv-marzofka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_matt-pyburn_unknown-photographer_photo_001.jpg",
@@ -3253,7 +3451,7 @@
     "driverSlug": "matt-pyburn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_matt-wisz_unknown-photographer_photo_001.jpg",
@@ -3264,7 +3462,7 @@
     "driverSlug": "matt-wisz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_merle-weinfurter_unknown-photographer_photo_001.jpg",
@@ -3275,7 +3473,7 @@
     "driverSlug": "merle-weinfurter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mg-gajewski_bob-schafer_photo_13770.jpg",
@@ -3297,7 +3495,7 @@
     "driverSlug": "mike-brahmstadt",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-budleski_kurt-luoma_photo_001.jpg",
@@ -3308,7 +3506,7 @@
     "driverSlug": "mike-budleski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-budleski_unknown-photographer_photo_001.jpg",
@@ -3319,7 +3517,7 @@
     "driverSlug": "mike-budleski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_001.jpg",
@@ -3330,7 +3528,7 @@
     "driverSlug": "mike-cox",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-cox_kurt-luoma_photo_1334.jpg",
@@ -3352,7 +3550,7 @@
     "driverSlug": "mike-cox",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-gajewski_kurt-luoma_photo_001.jpg",
@@ -3363,7 +3561,18 @@
     "driverSlug": "mike-gajewski",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_mike-galganski_kurt-luoma_photo_332.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_mike-galganski_kurt-luoma_photo_332.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_mike-galganski_kurt-luoma_photo_332.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-galganski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "332"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-gwidt_unknown-photographer_photo_001.jpg",
@@ -3374,7 +3583,7 @@
     "driverSlug": "mike-gwidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-kasperek_kurt-luoma_photo_001.jpg",
@@ -3385,7 +3594,7 @@
     "driverSlug": "mike-kasperek",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-kasperek_unknown-photographer_photo_001.jpg",
@@ -3396,7 +3605,7 @@
     "driverSlug": "mike-kasperek",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-kasperek_unknown-photographer_photo_002.jpg",
@@ -3407,7 +3616,7 @@
     "driverSlug": "mike-kasperek",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-komatz_unknown-photographer_photo_001.jpg",
@@ -3418,7 +3627,7 @@
     "driverSlug": "mike-komatz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-mattson_kurt-luoma_photo_001.jpg",
@@ -3429,7 +3638,7 @@
     "driverSlug": "mike-mattson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-mattson_kurt-luoma_photo_333.jpg",
@@ -3451,7 +3660,7 @@
     "driverSlug": "mike-miller",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-miller_kurt-luoma_photo_1268.jpg",
@@ -3484,7 +3693,7 @@
     "driverSlug": "mike-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-miller_unknown-photographer_photo_076.jpg",
@@ -3495,7 +3704,7 @@
     "driverSlug": "mike-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "076"
+    "sequence": "76"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_mike-savage_kurt-luoma_photo_777.jpg",
@@ -3517,7 +3726,7 @@
     "driverSlug": "mike-savage",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_monte-gress_kurt-luoma_photo_001.jpg",
@@ -3528,7 +3737,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_monte-gress_kurt-luoma_photo_002.jpg",
@@ -3539,7 +3748,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_neil-callahan_kurt-luoma_photo_001.jpg",
@@ -3550,7 +3759,7 @@
     "driverSlug": "neil-callahan",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_neil-callahan_kurt-luoma_photo_002.jpg",
@@ -3561,7 +3770,7 @@
     "driverSlug": "neil-callahan",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_neil-callahan_kurt-luoma_photo_003.jpg",
@@ -3572,7 +3781,7 @@
     "driverSlug": "neil-callahan",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_neil-callahan_kurt-luoma_photo_222.jpg",
@@ -3608,6 +3817,17 @@
     "sequence": "555"
   },
   {
+    "fileName": "golden-sands-speedway_unknown-year_neil-knoblock_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_neil-knoblock_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_neil-knoblock_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
@@ -3616,7 +3836,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_001.jpg",
@@ -3627,7 +3847,7 @@
     "driverSlug": "nick-carlson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_nick-carlson_kurt-luoma_photo_111.jpg",
@@ -3649,7 +3869,7 @@
     "driverSlug": "nick-erickson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_nick-erickson_unknown-photographer_photo_001.jpg",
@@ -3660,7 +3880,7 @@
     "driverSlug": "nick-erickson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_nick-quinnel_unknown-photographer_photo_001.jpg",
@@ -3671,7 +3891,7 @@
     "driverSlug": "nick-quinnel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_orv-buelow_bob-bergeron_photo_001.jpg",
@@ -3682,7 +3902,7 @@
     "driverSlug": "orv-buelow",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_orv-buelow_kurt-luoma_photo_001.jpg",
@@ -3693,7 +3913,7 @@
     "driverSlug": "orv-buelow",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_pat-heaney_pat-heaney_post_001.jpg",
@@ -3704,7 +3924,7 @@
     "driverSlug": "pat-heaney",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_pat-schauer_don-besch_photo_001.jpg",
@@ -3715,7 +3935,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_pat-schauer_father-grubba-photo_333.jpg",
@@ -3724,9 +3944,9 @@
     "trackSlug": "golden-sands-speedway",
     "year": "unknown-year",
     "driverSlug": "pat-schauer",
-    "photographerSlug": "father-grubba-photo",
-    "creditType": "333",
-    "sequence": "001"
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_pat-schauer_kurt-luoma_photo_333.jpg",
@@ -3748,7 +3968,7 @@
     "driverSlug": "paul-hojnacki",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_paul-hojnacki_unknown-photographer_photo_333.jpg",
@@ -3770,7 +3990,7 @@
     "driverSlug": "pete-mahlum",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_peterson_kurt-luoma_photo_001.jpg",
@@ -3781,7 +4001,7 @@
     "driverSlug": "peterson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_phil-meronk_tom-loos_photo_001.jpg",
@@ -3792,7 +4012,7 @@
     "driverSlug": "phil-meronk",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ralph-bakewell_kurt-luoma_photo_001.jpg",
@@ -3803,7 +4023,7 @@
     "driverSlug": "ralph-bakewell",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_randy-neumann_kurt-luoma_photo_001.jpg",
@@ -3814,7 +4034,7 @@
     "driverSlug": "randy-neumann",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ray-bush_kurt-luoma_photo_001.jpg",
@@ -3825,7 +4045,7 @@
     "driverSlug": "ray-bush",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ray-schmidtke_unknown-photographer_photo_001.jpg",
@@ -3836,7 +4056,7 @@
     "driverSlug": "ray-schmidtke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_red-adair_bob-schafer_photo_13791.jpg",
@@ -3858,7 +4078,7 @@
     "driverSlug": "rene-scheinoha",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_kurt-luoma_photo_111.jpg",
@@ -3891,7 +4111,7 @@
     "driverSlug": "rene-scheinoha",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rene-scheinoha_unknown-photographer_photo_002.jpg",
@@ -3902,7 +4122,7 @@
     "driverSlug": "rene-scheinoha",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rex-rossier_kurt-luoma_photo_001.jpg",
@@ -3913,7 +4133,18 @@
     "driverSlug": "rex-rossier",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_rex-rossier_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_rex-rossier_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_rex-rossier_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rex-rossier",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rex-rossier_tom-loos_photo_001.jpg",
@@ -3924,7 +4155,7 @@
     "driverSlug": "rex-rossier",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rich-somers_kurt-luoma_photo_001.jpg",
@@ -3935,7 +4166,7 @@
     "driverSlug": "rich-somers",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rick-wateski_mike-howell_post_001.jpg",
@@ -3946,7 +4177,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "mike-howell",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rocky-breezer_bob-bergeron_photo_001.jpg",
@@ -3957,7 +4188,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rocky-breezer_kurt-luoma_photo_001.jpg",
@@ -3968,7 +4199,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rocky-breezer_kurt-luoma_photo_112.jpg",
@@ -3990,7 +4221,7 @@
     "driverSlug": "roger-brown",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_roger-lund_kurt-luoma_photo_455.jpg",
@@ -4023,7 +4254,7 @@
     "driverSlug": "roger-peterson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_roger-vanish_kurt-luoma_photo_001.jpg",
@@ -4034,7 +4265,7 @@
     "driverSlug": "roger-vanish",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ron-beyer_kurt-luoma_photo_001.jpg",
@@ -4045,7 +4276,7 @@
     "driverSlug": "ron-beyer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ron-beyer_kurt-luoma_photo_222.jpg",
@@ -4078,7 +4309,7 @@
     "driverSlug": "ron-beyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_ron-beyer_unknown-photographer_photo_002.jpg",
@@ -4089,7 +4320,7 @@
     "driverSlug": "ron-beyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rory-melbinger_kurt-luoma_photo_001.jpg",
@@ -4100,7 +4331,7 @@
     "driverSlug": "rory-melbinger",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_roy-bohm_kurt-luoma_photo_001.jpg",
@@ -4111,7 +4342,7 @@
     "driverSlug": "roy-bohm",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_roy-bohm_kurt-luoma_photo_002.jpg",
@@ -4122,7 +4353,7 @@
     "driverSlug": "roy-bohm",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_roy-bohm_kurt-luoma_photo_2221.jpg",
@@ -4144,7 +4375,7 @@
     "driverSlug": "roy-bohm",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_roy-schmidtke_kurt-luoma_photo_001.jpg",
@@ -4155,7 +4386,7 @@
     "driverSlug": "roy-schmidtke",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_sam-brundidge_unknown-photographer_photo_001.jpg",
@@ -4166,7 +4397,7 @@
     "driverSlug": "sam-brundidge",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_scott-beyer_kurt-luoma_photo_001.jpg",
@@ -4177,7 +4408,7 @@
     "driverSlug": "scott-beyer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_scott-will_bob-schafer_photo_311.jpg",
@@ -4199,7 +4430,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_scott-will_unknown-photographer_photo_002.jpg",
@@ -4210,7 +4441,7 @@
     "driverSlug": "scott-will",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_scott-wimmer_ken-koppa_post_001.jpg",
@@ -4221,7 +4452,7 @@
     "driverSlug": "scott-wimmer",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_scott-wimmer_unknown-photographer_photo_001.jpg",
@@ -4232,7 +4463,7 @@
     "driverSlug": "scott-wimmer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_shane-sparks_kurt-luoma_photo_001.jpg",
@@ -4243,7 +4474,7 @@
     "driverSlug": "shane-sparks",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_shane-sparks_unknown-photographer_photo_001.jpg",
@@ -4254,7 +4485,7 @@
     "driverSlug": "shane-sparks",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_shawn-stelzer_kurt-luoma_photo_001.jpg",
@@ -4265,7 +4496,7 @@
     "driverSlug": "shawn-stelzer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_sonny-immerfall_dennis-satorius_post_001.jpg",
@@ -4276,7 +4507,7 @@
     "driverSlug": "sonny-immerfall",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_sonya-vanderhoff_unknown-photographer_photo_001.jpg",
@@ -4287,7 +4518,7 @@
     "driverSlug": "sonya-vanderhoff",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_steve-burges_kurt-luoma_photo_001.jpg",
@@ -4298,7 +4529,7 @@
     "driverSlug": "steve-burges",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_steve-holzhausen_kurt-luoma_photo_001.jpg",
@@ -4309,7 +4540,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_steve-milllard_unknown-photographer_photo_001.jpg",
@@ -4320,7 +4551,7 @@
     "driverSlug": "steve-milllard",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_steve-moll_kurt-luoma_photo_222.jpg",
@@ -4364,7 +4595,7 @@
     "driverSlug": "ted-reichenberger",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_terry-baldry_kurt-luoma_photo_111.jpg",
@@ -4386,7 +4617,7 @@
     "driverSlug": "terry-marzofka",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_002.jpg",
@@ -4397,7 +4628,7 @@
     "driverSlug": "terry-marzofka",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_terry-marzofka_kurt-luoma_photo_1333.jpg",
@@ -4430,7 +4661,7 @@
     "driverSlug": "tim-jackson",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tim-karlen_bob-schafer_photo_001.jpg",
@@ -4441,7 +4672,7 @@
     "driverSlug": "tim-karlen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tim-plowman_don-wendlandt_photo_116.jpg",
@@ -4463,7 +4694,7 @@
     "driverSlug": "tim-plowman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tim-sauter_kurt-luoma_photo_222.jpg",
@@ -4485,7 +4716,7 @@
     "driverSlug": "todd-peterson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_todd-stapleman_ken-koppa_post_001.jpg",
@@ -4496,7 +4727,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_todd-stapleman_kurt-luoma_photo_001.jpg",
@@ -4507,7 +4738,7 @@
     "driverSlug": "todd-stapleman",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_todd-stapleman_kurt-luoma_photo_111.jpg",
@@ -4529,7 +4760,7 @@
     "driverSlug": "todd-zick",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_todd-zick_kurt-luoma_photo_111.jpg",
@@ -4551,7 +4782,7 @@
     "driverSlug": "todd-zick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_father-grubba_photo_333.jpg",
@@ -4573,7 +4804,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
@@ -4584,7 +4815,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_002.jpg",
@@ -4595,7 +4826,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_003.jpg",
@@ -4606,7 +4837,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_004.jpg",
@@ -4617,7 +4848,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_005.jpg",
@@ -4628,7 +4859,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_006.jpg",
@@ -4639,7 +4870,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_111.jpg",
@@ -4683,7 +4914,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
@@ -4694,7 +4925,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-steuding_kurt-luoma_photo_001.jpg",
@@ -4705,7 +4936,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tony-diano_kurt-luoma_photo_1271.jpg",
@@ -4727,7 +4958,7 @@
     "driverSlug": "troy-kuyoth",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_troy-nelson_kurt-luoma_photo_001.jpg",
@@ -4738,7 +4969,7 @@
     "driverSlug": "troy-nelson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_troy-nelson_kurt-luoma_photo_002.jpg",
@@ -4749,7 +4980,7 @@
     "driverSlug": "troy-nelson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_troy-nelson_kurt-luoma_photo_003.jpg",
@@ -4760,7 +4991,18 @@
     "driverSlug": "troy-nelson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_troy-tuma_qc-willy_photo_444.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_troy-tuma_qc-willy_photo_444.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_troy-tuma_qc-willy_photo_444.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "troy-tuma",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tuffy-burke_unknown-photographer_photo_001.jpg",
@@ -4771,7 +5013,7 @@
     "driverSlug": "tuffy-burke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_bob-schafer_photo_034.jpg",
@@ -4782,7 +5024,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "034"
+    "sequence": "34"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_bob-schafer_photo_043.jpg",
@@ -4793,7 +5035,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "043"
+    "sequence": "43"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_bob-schafer_photo_096.jpg",
@@ -4804,7 +5046,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "096"
+    "sequence": "96"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_bob-schafer_photo_13919.jpg",
@@ -5002,7 +5244,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_tom-loos_photo_002.jpg",
@@ -5013,7 +5255,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -5024,7 +5266,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_unknown-photographer_photo_002.jpg",
@@ -5035,7 +5277,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_unknown-driver_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_unknown-driver_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_unknown-driver_unknown-photographer_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_unknown-driver_unknown-photographer_photo_244.jpg",
@@ -5068,7 +5321,7 @@
     "driverSlug": "vic-getzloff",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_wade-lafave_tom-loos_photo_001.jpg",
@@ -5079,7 +5332,7 @@
     "driverSlug": "wade-lafave",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_wayne-brietenfeld_unknown-photographer_photo_001.jpg",
@@ -5090,7 +5343,7 @@
     "driverSlug": "wayne-brietenfeld",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_wayne-brietenfeldt_kurt-luoma_photo_111.jpg",
@@ -5112,7 +5365,7 @@
     "driverSlug": "wayne-cottrell",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_wayne-cottrell_kurt-luoma_photo_002.jpg",
@@ -5123,7 +5376,7 @@
     "driverSlug": "wayne-cottrell",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_wayne-cottrell_kurt-luoma_photo_003.jpg",
@@ -5134,7 +5387,7 @@
     "driverSlug": "wayne-cottrell",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_wayne-cottrell_kurt-luoma_photo_111.jpg",
@@ -5156,7 +5409,7 @@
     "driverSlug": "wayne-ludholz",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_wayne-ludholz_kurt-luoma_photo_222.jpg",
@@ -5189,6 +5442,6 @@
     "driverSlug": "wcs-first",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5879.jpg",
@@ -31,6 +31,28 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "5879"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5879.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5879.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5879.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-detjens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5879"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5880.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5880.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5880.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "larry-detjens",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5880"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_larry-detjens_unknown-photographer_photo_5880.jpg",
@@ -74,7 +96,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-detjens_kurt-luoma_photo_002.jpg",
@@ -85,7 +107,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_larry-detjens_kurt-luoma_photo_222.jpg",
@@ -107,18 +129,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/1978/lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_1978_larry-detjens_dan-plan_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "1978",
-    "driverSlug": "larry-detjens",
-    "photographerSlug": "dan-plan",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_larry-detjens_kurt-luoma_photo_001.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_larry-detjens_unknown-photographer_photo_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_larry-detjens_unknown-photographer_photo_3433.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_1981_larry-detjens_unknown-photographer_photo_555.jpg",
@@ -217,7 +228,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_larry-detjens_kurt-luoma_photo_002.jpg",
@@ -228,7 +239,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "state-park-speedway_unknown-year_larry-detjens_unknown-photographer_photo_001.jpg",
@@ -239,7 +250,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_larry-detjens_unknown-photographer_photo_004.jpg",
@@ -250,7 +261,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "state-park-speedway_unknown-year_larry-detjens_unknown-photographer_photo_1179.jpg",
@@ -283,7 +294,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_john-alft_photo_001.jpg",
@@ -294,7 +305,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "john-alft",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_john-vass_photo_001.jpg",
@@ -305,7 +316,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_john-vass_photo_002.jpg",
@@ -316,7 +327,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_john-vass_photo_003.jpg",
@@ -327,7 +338,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_kurt-luoma_photo_001.jpg",
@@ -338,7 +349,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_001.jpg",
@@ -349,7 +360,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_002.jpg",
@@ -360,7 +371,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_003.jpg",
@@ -371,7 +382,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_004.jpg",
@@ -382,7 +393,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_005.jpg",
@@ -393,7 +404,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_009.jpg",
@@ -404,7 +415,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_011.jpg",
@@ -415,7 +426,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_012.jpg",
@@ -426,7 +437,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_013.jpg",
@@ -437,7 +448,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-detjens_unknown-photographer_photo_015.jpg",
@@ -448,7 +459,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "015"
+    "sequence": "15"
   },
   {
     "fileName": "wisconsin-international-raceway_1978_larry-detjens_father-grubba_photo_001.jpg",
@@ -459,7 +470,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "father-grubba",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1978_larry-detjens_john-vass_photo_100.jpg",
@@ -481,7 +492,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-detjens_kurt-luoma_photo_002.jpg",
@@ -492,7 +503,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-detjens_kurt-luoma_photo_1134.jpg",
@@ -536,7 +547,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-detjens_unknown-photographer_photo_001.jpg",
@@ -547,7 +558,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-detjens_unknown-photographer_photo_002.jpg",
@@ -558,7 +569,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-detjens_unknown-photographer_photo_003.jpg",
@@ -569,7 +580,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-detjens_unknown-photographer_photo_1338.jpg",

@@ -8,7 +8,7 @@
     "driverSlug": "aj-roschen",
     "photographerSlug": "cody-papke",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2022_pat-doar_cody-papke_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "cody-papke",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2022_ron-mahder_cody-papke_photo_001.jpg",
@@ -30,6 +30,17 @@
     "driverSlug": "ron-mahder",
     "photographerSlug": "cody-papke",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_2023_elijah-zevenbergen_cody-papke_photo_111.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_elijah-zevenbergen_cody-papke_photo_111.jpg",
+    "publicPath": "/photos/unknown-track_2023_elijah-zevenbergen_cody-papke_photo_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2023",
+    "driverSlug": "elijah-zevenbergen",
+    "photographerSlug": "cody-papke",
+    "creditType": "photo",
+    "sequence": "111"
   }
 ]

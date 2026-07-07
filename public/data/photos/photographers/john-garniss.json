@@ -8,7 +8,7 @@
     "driverSlug": "brian-joski",
     "photographerSlug": "john-garniss",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_2005_dave-bouche_john-garniss_photo_001.jpeg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-bouche",
     "photographerSlug": "john-garniss",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_2005_unknown-driver_john-garniss_photo_001.jpeg",
@@ -30,7 +30,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-garniss",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_2005_unknown-driver_john-garniss_photo_002.jpeg",
@@ -41,6 +41,6 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-garniss",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

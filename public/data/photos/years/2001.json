@@ -8,7 +8,7 @@
     "driverSlug": "brad-dahmer",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2001_butch-mierendorf_jeff-gilhart_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2001_jeff-falbe-jim-dunn_jeff-gilhart_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jeff-falbe-jim-dunn",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_2001_frank-kreyer_jeff-blaser_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "frank-kreyer",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_2001_jeff-weinfurter_jeff-blaser_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "jeff-weinfurter",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_2001_jerry-schneider_jeff-blaser_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "jerry-schneider",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_2001_ken-reiser_jeff-blaser_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "ken-reiser",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_2001_rocky-breezer_jeff-blaser_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_2001_terry-shoppenhorst_jeff-blaser_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "terry-shoppenhorst",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "fox-ridge-speedway_2001_don-drew_unknown-photographer_photo_001.jpg",
@@ -107,7 +107,18 @@
     "driverSlug": "don-drew",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "illiana-speedway_2001_peter-hernandez_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/illiana-speedway/2001/illiana-speedway_2001_peter-hernandez_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/illiana-speedway_2001_peter-hernandez_keith-vercauteren_post_444.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "2001",
+    "driverSlug": "peter-hernandez",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2001_cory-jankowski_jeff-blaser_photo_001.jpg",
@@ -118,18 +129,7 @@
     "driverSlug": "cory-jankowski",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_2001_greg-lindvig_jeff-blaser_photo_001.jpeg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/2001/lacrosse-interstate-speedway_2001_greg-lindvig_jeff-blaser_photo_001.jpeg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_2001_greg-lindvig_jeff-blaser_photo_001.jpeg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "2001",
-    "driverSlug": "greg-lindvig",
-    "photographerSlug": "jeff-blaser",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2001_jason-bolster_jeff-blaser_photo_001.jpeg",
@@ -140,7 +140,7 @@
     "driverSlug": "jason-bolster",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2001_kevin-nuttleman_jeff-blaser_photo_001.jpeg",
@@ -151,7 +151,7 @@
     "driverSlug": "kevin-nuttleman",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2001_paul-menard_jeff-blaser_photo_001.jpeg",
@@ -162,7 +162,7 @@
     "driverSlug": "paul-menard",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2001_rich-schermerhorn_jeff-blaser_photo_001.jpeg",
@@ -173,7 +173,7 @@
     "driverSlug": "rich-schermerhorn",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2001_unknown-driver_jeff-blaser_photo_001.jpeg",
@@ -184,7 +184,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2001/milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2001",
+    "driverSlug": "steve-strasburg",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "monster-hall-raceway_2001_bill-lindner_tom-loos_photo_001.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "bill-lindner",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monster-hall-raceway_2001_mark-may_tom-loos_photo_001.jpg",
@@ -206,6 +217,6 @@
     "driverSlug": "mark-may",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

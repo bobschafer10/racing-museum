@@ -8,6 +8,17 @@
     "driverSlug": "tony-wondra",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wilmot-raceway_2023_tony-wondra_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2023/wilmot-raceway_2023_tony-wondra_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/wilmot-raceway_2023_tony-wondra_weber-brothers_photo_444.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2023",
+    "driverSlug": "tony-wondra",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
   }
 ]

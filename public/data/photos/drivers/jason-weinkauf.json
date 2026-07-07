@@ -11,6 +11,28 @@
     "sequence": "122"
   },
   {
+    "fileName": "columbus-151-speedway_unknown-year_jason-weinkauf_charlie-spry_photo_443.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_jason-weinkauf_charlie-spry_photo_443.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_jason-weinkauf_charlie-spry_photo_443.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jason-weinkauf",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "443"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_jason-weinkauf_charlie-spry_post_333.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_jason-weinkauf_charlie-spry_post_333.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_jason-weinkauf_charlie-spry_post_333.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jason-weinkauf",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_jason-weinkauf_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_jason-weinkauf_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_jason-weinkauf_kurt-luoma_photo_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "jason-weinkauf",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_jason-weinkauf_don-wendlandt_photo_117.jpg",
@@ -44,6 +66,17 @@
     "sequence": "113"
   },
   {
+    "fileName": "marshfield-super-speedway_unknown-year_jason-weinkauf_kurt-luoma_photo_113.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_jason-weinkauf_kurt-luoma_photo_113.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_jason-weinkauf_kurt-luoma_photo_113.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jason-weinkauf",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "113"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_jason-weinkauf_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jason-weinkauf_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_jason-weinkauf_unknown-photographer_photo_001.jpg",
@@ -52,28 +85,6 @@
     "driverSlug": "jason-weinkauf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jason-weinkauf_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jason-weinkauf_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jason-weinkauf_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jason-weinkauf",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jason-weinkauf_tom-loos_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jason-weinkauf_tom-loos_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jason-weinkauf_tom-loos_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jason-weinkauf",
-    "photographerSlug": "tom-loos",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

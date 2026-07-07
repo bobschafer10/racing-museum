@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "len-zellner",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_len-zellner_jim-krouse_post_111.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_len-zellner_jim-krouse_post_111.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_len-zellner_jim-krouse_post_111.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "len-zellner",
+    "photographerSlug": "jim-krouse",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_len-zellner_bruce-breitrick_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_len-zellner_bruce-breitrick_post_111.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_len-zellner_bruce-breitrick_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "len-zellner",
+    "photographerSlug": "bruce-breitrick",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_len-zellner_joe-verdegan_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_len-zellner_joe-verdegan_post_111.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_len-zellner_joe-verdegan_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "len-zellner",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "111"
+  }
+]

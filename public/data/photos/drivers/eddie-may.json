@@ -8,7 +8,7 @@
     "driverSlug": "eddie-may",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_eddie-may_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,29 @@
     "driverSlug": "eddie-may",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_eddie-may_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_eddie-may_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_eddie-may_unknown-photographer_photo_333.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "eddie-may",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_eddie-may_unknown-photographer_photo_777.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_eddie-may_unknown-photographer_photo_777.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_eddie-may_unknown-photographer_photo_777.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "eddie-may",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "777"
   },
   {
     "fileName": "unknown-track_unknown-year_eddie-may_kurt-luoma_photo_001.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "eddie-may",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

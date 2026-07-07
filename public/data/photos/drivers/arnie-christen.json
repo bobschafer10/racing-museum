@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "freeport-raceway-park_unknown-year_arnie-christen_doug-haack_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_arnie-christen_doug-haack_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_arnie-christen_doug-haack_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "arnie-christen",
+    "photographerSlug": "doug-haack",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_arnie-christen_kurt-luoma_photo_1267.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_arnie-christen_kurt-luoma_photo_1267.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_arnie-christen_kurt-luoma_photo_1267.jpg",
@@ -19,51 +30,7 @@
     "driverSlug": "arnie-christen",
     "photographerSlug": "77-weber",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1972_arnie-christen_ron-thruman_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1972/unknown-track_1972_arnie-christen_ron-thruman_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1972_arnie-christen_ron-thruman_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1972",
-    "driverSlug": "arnie-christen",
-    "photographerSlug": "ron-thruman",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_arnie-christen_john-vass_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_arnie-christen_john-vass_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_arnie-christen_john-vass_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "arnie-christen",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_arnie-christen_john-vass_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_arnie-christen_john-vass_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_arnie-christen_john-vass_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "arnie-christen",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_arnie-christen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_arnie-christen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_arnie-christen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "arnie-christen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_arnie-christen_keith-vercauteren_post_001.jpg",
@@ -74,7 +41,7 @@
     "driverSlug": "arnie-christen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_arnie-christen_keith-vercauteren_post_116.jpg",
@@ -96,6 +63,6 @@
     "driverSlug": "arnie-christen",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

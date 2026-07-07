@@ -8,7 +8,7 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_117.jpg",
@@ -22,6 +22,17 @@
     "sequence": "117"
   },
   {
+    "fileName": "milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "unknown-track_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1997_tim-rothe_pat-heaney_post_333.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tim-rothe_keith-vercauteren_post_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tim-rothe_unknown-photographer_photo_001.jpg",
@@ -85,6 +96,6 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,14 +1,14 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_zach-riddle_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_zach-riddle_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_zach-riddle_unknown-photographer_photo_002.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
+    "fileName": "milwaukee-mile_2022_zach-riddle_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2022/milwaukee-mile_2022_zach-riddle_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/milwaukee-mile_2022_zach-riddle_weber-brothers_photo_334.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2022",
     "driverSlug": "zach-riddle",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "334"
   },
   {
     "fileName": "unknown-track_unknown-year_zach-riddle_unknown-photographer_photo_001.jpg",
@@ -19,6 +19,6 @@
     "driverSlug": "zach-riddle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

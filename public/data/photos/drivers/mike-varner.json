@@ -8,6 +8,28 @@
     "driverSlug": "mike-varner",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_mike-varner_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_mike-varner_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_mike-varner_pete-fileca_post_335.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-varner",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "335"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_mike-varner_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_mike-varner_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_mike-varner_raceway-park-history_post_888.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "mike-varner",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
   }
 ]

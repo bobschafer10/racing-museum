@@ -8,7 +8,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1981_frankie-heimerl_al-fortner_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_frankie-heimerl_bob-schafer_photo_068.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "068"
+    "sequence": "68"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_frankie-heimerl_bob-schafer_photo_601.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "seymour-speedway_unknown-year_frankie-heimerl_joe-slack_photo_001.jpg",
@@ -74,51 +74,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_frankie-heimerl_dave-nitsch_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frankie-heimerl_dave-nitsch_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_frankie-heimerl_dave-nitsch_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "frankie-heimerl",
-    "photographerSlug": "dave-nitsch",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "frankie-heimerl",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "frankie-heimerl",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_frankie-heimerl_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "frankie-heimerl",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_frankie-heimerl_keith-vercauteren_post_001.jpg",
@@ -129,6 +85,6 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

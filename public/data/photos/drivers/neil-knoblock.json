@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "golden-sands-speedway_unknown-year_neil-knoblock_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_neil-knoblock_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_neil-knoblock_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "neil-knoblock",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_neil-knoblock_don-wendlandt_photo_117.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_neil-knoblock_unknown-photographer_photo_002.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_neil-knoblock_kurt-luoma_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_neil-knoblock_mall-show-ken-koppa_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "mall-show-ken-koppa",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_neil-knoblock_tom-loos_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_neil-knoblock_tom-loos_photo_002.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_neil-knoblock_tom-loos_photo_003.jpg",
@@ -96,6 +107,6 @@
     "driverSlug": "neil-knoblock",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

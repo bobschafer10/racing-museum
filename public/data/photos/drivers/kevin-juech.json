@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "kevin-juech",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "kevin-juech",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "plymouth-dirt-track_unknown-year_kevin-juech_dave-drews_photo_222.jpg",
     "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_kevin-juech_dave-drews_photo_222.jpg",
     "publicPath": "/photos/plymouth-dirt-track_unknown-year_kevin-juech_dave-drews_photo_222.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "kevin-juech",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_kevin-juech_unknown-photographer_photo_444.jpg",

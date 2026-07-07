@@ -8,7 +8,7 @@
     "driverSlug": "donald-dodd",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_donald-dodd_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "donald-dodd",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_donald-dodd_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_donald-dodd_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_donald-dodd_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "donald-dodd",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_donald-dodd_kurt-luoma_photo_001.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "donald-dodd",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_leroy-pettis_kurt-luoma_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_leroy-pettis_kurt-luoma_photo_003.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_leroy-pettis_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_leroy-pettis_tom-loos_photo_001.jpg",
@@ -52,17 +52,6 @@
     "driverSlug": "leroy-pettis",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_leroy-pettis_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_leroy-pettis_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_leroy-pettis_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "leroy-pettis",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

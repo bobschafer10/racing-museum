@@ -8,7 +8,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-fahey",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_deb-langsdorf_john-fahey_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "deb-langsdorf",
     "photographerSlug": "john-fahey",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-duerst_john-fahey_post_001.jpg",
@@ -30,51 +30,7 @@
     "driverSlug": "dick-duerst",
     "photographerSlug": "john-fahey",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fritz-bishofberger_john-fahey_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fritz-bishofberger_john-fahey_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fritz-bishofberger_john-fahey_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fritz-bishofberger",
-    "photographerSlug": "john-fahey",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_george-moore_john-fahey_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-moore_john-fahey_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-moore_john-fahey_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "george-moore",
-    "photographerSlug": "john-fahey",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_johnny-white_john-fahey_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_johnny-white_john-fahey_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_johnny-white_john-fahey_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "johnny-white",
-    "photographerSlug": "john-fahey",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ken-pankratz_john-fahey_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_john-fahey_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_john-fahey_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ken-pankratz",
-    "photographerSlug": "john-fahey",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lee-weber_john-fahey_post_001.jpg",
@@ -85,7 +41,7 @@
     "driverSlug": "lee-weber",
     "photographerSlug": "john-fahey",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_john-fahey_post_001.jpg",
@@ -96,7 +52,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-fahey",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_john-fahey_post_002.jpg",
@@ -107,7 +63,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-fahey",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_unknown-fischer_john-fahey_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_unknown-fischer_john-fahey_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_unknown-fischer_john-fahey_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "unknown-fischer",
+    "photographerSlug": "john-fahey",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_woody-schmutzler_john-fahey_post_001.jpg",
@@ -118,6 +85,6 @@
     "driverSlug": "woody-schmutzler",
     "photographerSlug": "john-fahey",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

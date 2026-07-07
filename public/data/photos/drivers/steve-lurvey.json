@@ -8,7 +8,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_steve-lurvey_weber-brothers_photo_555.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "026"
+    "sequence": "26"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_steve-lurvey_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,18 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "sante-fe-speedway_1981_steve-lurvey_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/sante-fe-speedway/1981/sante-fe-speedway_1981_steve-lurvey_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/sante-fe-speedway_1981_steve-lurvey_weber-brothers_photo_444.jpg",
+    "trackSlug": "sante-fe-speedway",
+    "year": "1981",
+    "driverSlug": "steve-lurvey",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "sante-fe-speedway_unknown-year_steve-lurvey_weber-brothers_photo_001.jpg",
@@ -52,18 +63,18 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "slinger-speedway_unknown-year_steve-lurvey_unknown-photographer_photo_696.jpg",
-    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_steve-lurvey_unknown-photographer_photo_696.jpg",
-    "publicPath": "/photos/slinger-speedway_unknown-year_steve-lurvey_unknown-photographer_photo_696.jpg",
-    "trackSlug": "slinger-speedway",
+    "fileName": "steele-county-fairgrounds_unknown-year_steve-lurvey_unknown-photographer_photo_2885.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_steve-lurvey_unknown-photographer_photo_2885.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_steve-lurvey_unknown-photographer_photo_2885.jpg",
+    "trackSlug": "steele-county-fairgrounds",
     "year": "unknown-year",
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "696"
+    "sequence": "2885"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_scott-krueger_post_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-credit_post_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-photographer_photo_001.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-photographer_photo_002.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-photographer_photo_003.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-photographer_photo_004.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-photographer_photo_005.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-lurvey_unknown-photographer_photo_007.jpg",
@@ -151,6 +162,6 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   }
 ]

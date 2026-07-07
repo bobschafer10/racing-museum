@@ -8,7 +8,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-curcio",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_mike-sivia_john-curcio_photo_001.jpg",
@@ -19,39 +19,6 @@
     "driverSlug": "mike-sivia",
     "photographerSlug": "john-curcio",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-curcio_john-curcio_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-curcio_john-curcio_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-curcio_john-curcio_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-curcio",
-    "photographerSlug": "john-curcio",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-curcio_john-curcio_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-curcio_john-curcio_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-curcio_john-curcio_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-curcio",
-    "photographerSlug": "john-curcio",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-roe_john-curcio_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-roe_john-curcio_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-roe_john-curcio_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-roe",
-    "photographerSlug": "john-curcio",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

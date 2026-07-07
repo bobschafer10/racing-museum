@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "dodge-county-fairgrounds_2010_kenny-richards_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/2010/dodge-county-fairgrounds_2010_kenny-richards_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_2010_kenny-richards_bob-greuel_photo_444.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "2010",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_kenny-richards_don-wendlandt_photo_116.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_kenny-richards_don-wendlandt_photo_116.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_kenny-richards_don-wendlandt_photo_116.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "kenny-richards",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1997_kenny-richards_mary-lewis_photo_001.jpg",
@@ -30,39 +41,6 @@
     "driverSlug": "kenny-richards",
     "photographerSlug": "mary-lewis",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kenny-richards",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kenny-richards",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kenny-richards_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kenny-richards",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
+    "sequence": "1"
   }
 ]

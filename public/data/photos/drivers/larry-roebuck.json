@@ -1,5 +1,38 @@
 [
   {
+    "fileName": "hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1981/hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1981",
+    "driverSlug": "larry-roebuck",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_445.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1981/hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_445.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_445.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1981",
+    "driverSlug": "larry-roebuck",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "445"
+  },
+  {
+    "fileName": "hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_446.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1981/hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_446.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1981_larry-roebuck_weber-brothers_photo_446.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1981",
+    "driverSlug": "larry-roebuck",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "446"
+  },
+  {
     "fileName": "mall-show_unknown-year_larry-roebuck_geoff-mckarns_post_001.jpg",
     "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_larry-roebuck_geoff-mckarns_post_001.jpg",
     "publicPath": "/photos/mall-show_unknown-year_larry-roebuck_geoff-mckarns_post_001.jpg",
@@ -8,7 +41,7 @@
     "driverSlug": "larry-roebuck",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1981_larry-roebuck_don-besch_photo_001.jpg",
@@ -19,6 +52,6 @@
     "driverSlug": "larry-roebuck",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

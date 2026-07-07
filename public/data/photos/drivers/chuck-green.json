@@ -8,7 +8,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1987_chuck-green_don-besch_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_chuck-green_bob-schafer_photo_068.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "068"
+    "sequence": "68"
   },
   {
     "fileName": "state-park-speedway_unknown-year_chuck-green_john-alft_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "john-alft",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-green_kurt-luoma_photo_001.jpg",
@@ -63,7 +63,29 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-green_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-green_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-green_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-green",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-green_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-green_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-green_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-green",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-green_pat-heaney_post_001.jpg",
@@ -74,7 +96,29 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-green_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-green_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-green_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-green",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-green_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-green_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-green_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-green",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
@@ -85,7 +129,29 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-green",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-green",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_chuck-green_john-vass_photo_001.jpg",
@@ -96,7 +162,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1985_chuck-green_pat-heaney_post_333.jpg",
@@ -118,7 +184,7 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_chuck-green_unknown-photographer_photo_001.jpg",
@@ -129,6 +195,6 @@
     "driverSlug": "chuck-green",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

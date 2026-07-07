@@ -8,7 +8,7 @@
     "driverSlug": "dave-cain",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_dave-cain_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dave-cain",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "fox-ridge-speedway_unknown-year_dave-cain_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "dave-cain",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_dave-cain_vince-peterson_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "dave-cain",
     "photographerSlug": "vince-peterson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-cain_cody-popke_photo_001.jpg",
@@ -52,6 +52,6 @@
     "driverSlug": "dave-cain",
     "photographerSlug": "cody-popke",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

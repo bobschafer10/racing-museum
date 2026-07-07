@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "norway-speedway_2026_bruce-white_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/norway-speedway/2026/norway-speedway_2026_bruce-white_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/norway-speedway_2026_bruce-white_unknown-photographer_photo_334.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "2026",
+    "driverSlug": "bruce-white",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
     "fileName": "norway-speedway_unknown-year_bruce-white_unknown-photographer_post_001.jpg",
     "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_bruce-white_unknown-photographer_post_001.jpg",
     "publicPath": "/photos/norway-speedway_unknown-year_bruce-white_unknown-photographer_post_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "unknown-photographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_bruce-white_pat-heaney_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
@@ -30,7 +41,51 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-white",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-white",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-white_kurt-luoma_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-white",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-white_unknown-photographer_photo_335.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-white_unknown-photographer_photo_335.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-white_unknown-photographer_photo_335.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-white",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "335"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_bruce-white_bob-schafer_photo_222.jpg",
@@ -96,7 +151,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-white_clintman_post_002.jpg",
@@ -107,7 +162,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-white_clintman_post_003.jpg",
@@ -118,7 +173,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-white_keith-vercauteren_post_001.jpg",
@@ -129,6 +184,6 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

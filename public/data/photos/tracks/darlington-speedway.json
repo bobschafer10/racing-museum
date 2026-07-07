@@ -8,7 +8,7 @@
     "driverSlug": "jim-thruman",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "darlington-speedway_1968_harold-picha_ron-thruman_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "harold-picha",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "darlington-speedway_1969_jim-blaser_ron-thruman_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jim-blaser",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "darlington-speedway_unknown-year_jonathan-walton_charlie-spry_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "jonathan-walton",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "darlington-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -52,6 +52,6 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

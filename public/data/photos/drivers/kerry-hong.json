@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "unknown-track_unknown-year_kerry-hong_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hong_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hong_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hong",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hong_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_kerry-hong_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/yellow-river-speedway_unknown-year_kerry-hong_kurt-luoma_photo_001.jpg",
@@ -19,7 +8,7 @@
     "driverSlug": "kerry-hong",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hong_kurt-luoma_photo_614.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "kerry-hong",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hong_unknown-photographer_photo_550.jpg",

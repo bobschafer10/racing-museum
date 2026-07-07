@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "grove-creek-speedway_unknown-year_rob-caho_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/grove-creek-speedway/unknown-year/grove-creek-speedway_unknown-year_rob-caho_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/grove-creek-speedway_unknown-year_rob-caho_unknown-photographer_photo_111.jpg",
+    "trackSlug": "grove-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rob-caho",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "jackson-motorplex_unknown-year_rob-caho_unknown-photographer_photo_122.jpg",
+    "storagePath": "photos/master/jackson-motorplex/unknown-year/jackson-motorplex_unknown-year_rob-caho_unknown-photographer_photo_122.jpg",
+    "publicPath": "/photos/jackson-motorplex_unknown-year_rob-caho_unknown-photographer_photo_122.jpg",
+    "trackSlug": "jackson-motorplex",
+    "year": "unknown-year",
+    "driverSlug": "rob-caho",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "122"
+  },
+  {
     "fileName": "unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
@@ -8,6 +30,28 @@
     "driverSlug": "rob-caho",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rob-caho",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rob-caho_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rob-caho",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   }
 ]

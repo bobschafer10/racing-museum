@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "columbus-151-speedway_unknown-year_mike-goeman_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_mike-goeman_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_mike-goeman_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-goeman",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
     "fileName": "unknown-track_unknown-year_mike-goeman_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-goeman_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_mike-goeman_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "mike-goeman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

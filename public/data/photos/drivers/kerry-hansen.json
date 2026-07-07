@@ -8,7 +8,7 @@
     "driverSlug": "kerry-hansen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rice-lake-speedway_1993_kerry-hansen_neil-miller_photo_001.jpg",
@@ -19,95 +19,7 @@
     "driverSlug": "kerry-hansen",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_keith-nason_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_keith-nason_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_keith-nason_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "keith-nason",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_kurt-luoma_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_kurt-luoma_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_kurt-luoma_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hansen_bob-schafer_photo_092.jpg",
@@ -118,7 +30,7 @@
     "driverSlug": "kerry-hansen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "092"
+    "sequence": "92"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hansen_bob-schafer_photo_333.jpg",
@@ -140,7 +52,7 @@
     "driverSlug": "kerry-hansen",
     "photographerSlug": "jimmy-jangles",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hansen_kurt-luoma_photo_1302.jpg",
@@ -173,7 +85,7 @@
     "driverSlug": "kerry-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hansen_unknown-photographer_photo_002.jpg",
@@ -184,7 +96,7 @@
     "driverSlug": "kerry-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_kerry-hansen_unknown-photographer_photo_011.jpg",
@@ -195,6 +107,6 @@
     "driverSlug": "kerry-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   }
 ]

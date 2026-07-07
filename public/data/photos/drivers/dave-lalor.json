@@ -8,7 +8,18 @@
     "driverSlug": "dave-lalor",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_dave-lalor_bob-schafer_photo_003.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-lalor_bob-schafer_photo_003.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-lalor_bob-schafer_photo_003.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-lalor",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_dave-lalor_joe-slack_photo_001.jpg",
@@ -19,7 +30,18 @@
     "driverSlug": "dave-lalor",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_dave-lalor_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-lalor_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-lalor_joe-slack_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-lalor",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_dave-lalor_bob-schafer_photo_136.jpg",
@@ -44,6 +66,17 @@
     "sequence": "14002"
   },
   {
+    "fileName": "dells-motor-speedway_unknown-year_dave-lalor_bob-schafer_photo_14002.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_dave-lalor_bob-schafer_photo_14002.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_dave-lalor_bob-schafer_photo_14002.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-lalor",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14002"
+  },
+  {
     "fileName": "dells-motor-speedway_unknown-year_dave-lalor_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_dave-lalor_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/dells-motor-speedway_unknown-year_dave-lalor_kurt-luoma_photo_001.jpg",
@@ -52,7 +85,7 @@
     "driverSlug": "dave-lalor",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-lalor_john-vass_photo_001.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "dave-lalor",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-lalor_unknown-photographer_photo_001.jpg",
@@ -74,6 +107,6 @@
     "driverSlug": "dave-lalor",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

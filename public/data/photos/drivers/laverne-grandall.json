@@ -8,7 +8,7 @@
     "driverSlug": "laverne-grandall",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_laverne-grandall_bob-schafer_photo_13686.jpg",
@@ -22,17 +22,6 @@
     "sequence": "13686"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_laverne-grandall_brian-anderson_post_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_laverne-grandall_brian-anderson_post_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_laverne-grandall_brian-anderson_post_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "laverne-grandall",
-    "photographerSlug": "brian-anderson",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
     "fileName": "lacrosse-interstate-speedway_unknown-year_laverne-grandall_dennis-szymanski_post_001.jpg",
     "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_laverne-grandall_dennis-szymanski_post_001.jpg",
     "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_laverne-grandall_dennis-szymanski_post_001.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "laverne-grandall",
     "photographerSlug": "dennis-szymanski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_laverne-grandall_dennis-szymanski-ii_post_001.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "laverne-grandall",
     "photographerSlug": "dennis-szymanski-ii",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_laverne-grandall_unknown-photographer_photo_001.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "laverne-grandall",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_laverne-grandall_unknown-photographer_photo_003.jpg",
@@ -74,6 +63,6 @@
     "driverSlug": "laverne-grandall",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

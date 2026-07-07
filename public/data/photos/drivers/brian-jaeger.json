@@ -8,7 +8,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_003.jpg",
@@ -30,18 +30,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_004.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_004.jpg",
-    "publicPath": "/photos/hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_004.jpg",
-    "trackSlug": "hales-corners-speedway",
-    "year": "1984",
-    "driverSlug": "brian-jaeger",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "004"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_031.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_666.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "018"
+    "sequence": "18"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_brian-jaeger_joe-slack_post_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_brian-jaeger_pat-heaney_post_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_brian-jaeger_pat-heaney_post_002.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_brian-jaeger_randy-boehles_post_001.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "randy-boehles",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_brian-jaeger_unknown-photographer_photo_002.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_brian-jaeger_weber-brothers_photo_003.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_brian-jaeger_weber-brothers_photo_101.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_brian-jaeger_unknown-photographer_photo_001.jpg",
@@ -195,6 +184,6 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

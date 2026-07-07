@@ -8,7 +8,7 @@
     "driverSlug": "neil-callahan",
     "photographerSlug": "dennis-satorius",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_1997_tod-brown_tom-loos_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tod-brown",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_2002_craig-beck_unknown-credit_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "craig-beck",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_2012_aj-kania_aj-kania_post_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "aj-kania",
     "photographerSlug": "aj-kania",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_2015_unknown-driver_unknown-photographer_001.jpg",
@@ -51,8 +51,8 @@
     "year": "2015",
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
-    "creditType": "001",
-    "sequence": "001"
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_2023_abby-kohn_qc-willy_photo_001.jpg",
@@ -63,18 +63,7 @@
     "driverSlug": "abby-kohn",
     "photographerSlug": "qc-willy",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "tomahawk-speedway_unknonwn-year_aj-calmes_tom-loos_photo_001.jpg",
-    "storagePath": "photos/master/tomahawk-speedway/unknonwn-year/tomahawk-speedway_unknonwn-year_aj-calmes_tom-loos_photo_001.jpg",
-    "publicPath": "/photos/tomahawk-speedway_unknonwn-year_aj-calmes_tom-loos_photo_001.jpg",
-    "trackSlug": "tomahawk-speedway",
-    "year": "unknonwn-year",
-    "driverSlug": "aj-calmes",
-    "photographerSlug": "tom-loos",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_abe-barr_kurt-luoma_post_001.jpg",
@@ -85,7 +74,18 @@
     "driverSlug": "abe-barr",
     "photographerSlug": "kurt-luoma",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "tomahawk-speedway_unknonwn-year_aj-calmes_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/tomahawk-speedway/unknown-year/tomahawk-speedway_unknonwn-year_aj-calmes_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/tomahawk-speedway_unknonwn-year_aj-calmes_tom-loos_photo_001.jpg",
+    "trackSlug": "tomahawk-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aj-calmes",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_alan-brunker_unknown-phototographer_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "alan-brunker",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_andy-bartelt_unknown-phototographer_photo_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "andy-bartelt",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_022.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_023.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "023"
+    "sequence": "23"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_024.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "024"
+    "sequence": "24"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bo-bennish_unknown-phototographer_photo_025.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "bo-bennish",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "025"
+    "sequence": "25"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_bob-mackesy_unknown-phototographer_photo_021.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_brad-teske_unknown-photographer_post_333.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "brad-teske",
     "photographerSlug": "unknown-phototographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_brian-schramm_unknown-phototographer_photo_022.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "brian-schramm",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_cj-hedges_unknown-photographer_photo_001.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "cj-hedges",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_dave-cabelka_dave-cabelka_post_333.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "don-prisk",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_doug-herbst_unknown-photographer_photo_222.jpg",
@@ -250,7 +250,7 @@
     "driverSlug": "jesse-haese",
     "photographerSlug": "unknown-phototographer",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001 (2).jpg",
@@ -261,7 +261,7 @@
     "driverSlug": "john-frazier",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_john-frazier_unknown-photographer_photo_001.jpg",
@@ -272,7 +272,7 @@
     "driverSlug": "john-frazier",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_ken-pankratz_dennis-satorius_post_001.jpg",
@@ -283,7 +283,7 @@
     "driverSlug": "ken-pankratz",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_mark-listle_unknown-photographer_photo_14564.jpg",
@@ -349,7 +349,7 @@
     "driverSlug": "tim-nawocki",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_toby-sellner_unknown-photographer_photo_14675.jpg",
@@ -371,7 +371,7 @@
     "driverSlug": "tod-brown",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_unknown-year_tom-loos_tom-loos_photo_608.jpg",

@@ -30,7 +30,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-reichenberger_kurt-luoma_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-reichenberger_kurt-luoma_photo_002.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-reichenberger_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_mike-reichenberger_bob-schafer_photo_293.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-reichenberger_keith-vercauteren_post_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-reichenberger_keith-vercauteren_post_111.jpg",
@@ -116,9 +116,9 @@
     "trackSlug": "wisconsin-international-raceway",
     "year": "unknown-year",
     "driverSlug": "mike-reichenberger",
-    "photographerSlug": "keith-vercauteren-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-reichenberger_kurt-luoma_photo_1290.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-reichenberger_unknown-photographer_photo_002.jpg",
@@ -151,6 +151,6 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

@@ -8,7 +8,18 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1982_bill-venturini_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1982/milwaukee-mile_1982_bill-venturini_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_1982_bill-venturini_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1982",
+    "driverSlug": "bill-venturini",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
   },
   {
     "fileName": "milwaukee-mile_1985_bill-venturini_ken-koppa_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bill-venturini_don-besch_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bill-venturini_father-grubba_photo_333.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_bill-venturini_don-besch_photo_002.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
@@ -74,17 +85,17 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_bill-venturini_don-besch_post_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-venturini_don-besch_post_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-venturini_don-besch_post_002.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
+    "trackSlug": "rockford-speedway",
     "year": "unknown-year",
     "driverSlug": "bill-venturini",
-    "photographerSlug": "don-besch",
+    "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "1"
   }
 ]

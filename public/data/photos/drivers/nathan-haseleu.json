@@ -8,7 +8,18 @@
     "driverSlug": "nathan-haseleu",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_nathan-haseleu_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_nathan-haseleu_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_nathan-haseleu_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "nathan-haseleu",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
   },
   {
     "fileName": "rockford-speedway_unknown-year_nathan-haseleu_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "nathan-haseleu",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_nathan-haseleu_unknown-photographer_photo_001.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "nathan-haseleu",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

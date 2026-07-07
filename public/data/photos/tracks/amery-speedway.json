@@ -1,27 +1,5 @@
 [
   {
-    "fileName": "amery-speedway_unknown-year_amery-speedway-action-ii-rob-cah_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/amery-speedway/unknown-year/amery-speedway_unknown-year_amery-speedway-action-ii-rob-cah_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/amery-speedway_unknown-year_amery-speedway-action-ii-rob-cah_unknown-photographer_photo_001.jpg",
-    "trackSlug": "amery-speedway",
-    "year": "unknown-year",
-    "driverSlug": "amery-speedway-action-ii-rob-cah",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "amery-speedway_unknown-year_amery-speedway-action-old-school-rice-lake-pag_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/amery-speedway/unknown-year/amery-speedway_unknown-year_amery-speedway-action-old-school-rice-lake-pag_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/amery-speedway_unknown-year_amery-speedway-action-old-school-rice-lake-pag_unknown-photographer_photo_001.jpg",
-    "trackSlug": "amery-speedway",
-    "year": "unknown-year",
-    "driverSlug": "amery-speedway-action-old-school-rice-lake-pag",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "amery-speedway_unknown-year_joe-prusak_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/amery-speedway/unknown-year/amery-speedway_unknown-year_joe-prusak_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/amery-speedway_unknown-year_joe-prusak_unknown-photographer_photo_001.jpg",
@@ -30,6 +8,28 @@
     "driverSlug": "joe-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "amery-speedway_unknown-year_amery-speedway-action-ii-rob-cah_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/amery-speedway/unknown-year/amery-speedway_unknown-year_amery-speedway-action-ii-rob-cah_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/amery-speedway_unknown-year_amery-speedway-action-ii-rob-cah_unknown-photographer_photo_001.jpg",
+    "trackSlug": "amery-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "amery-speedway_unknown-year_amery-speedway-action-old-school-rice-lake-pag_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/amery-speedway/unknown-year/amery-speedway_unknown-year_amery-speedway-action-old-school-rice-lake-pag_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/amery-speedway_unknown-year_amery-speedway-action-old-school-rice-lake-pag_unknown-photographer_photo_001.jpg",
+    "trackSlug": "amery-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   }
 ]

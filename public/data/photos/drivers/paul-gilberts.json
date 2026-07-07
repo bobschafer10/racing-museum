@@ -8,7 +8,7 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "093"
+    "sequence": "93"
   },
   {
     "fileName": "central-state-speedway_1985_paul-gilberts_bob-schafer_photo_001.jpg",
@@ -19,18 +19,7 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_paul-gilberts_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_paul-gilberts_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_paul-gilberts_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "paul-gilberts",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-gilberts_ryan-aho_post_070.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "070"
+    "sequence": "70"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_001.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-gilberts_unknown-photographer_photo_002.jpg",
@@ -63,6 +52,6 @@
     "driverSlug": "paul-gilberts",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "jefferson-speedway_2002_jon-minor_charlie-spry_photo_222.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2002/jefferson-speedway_2002_jon-minor_charlie-spry_photo_222.jpg",
+    "publicPath": "/photos/jefferson-speedway_2002_jon-minor_charlie-spry_photo_222.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2002",
+    "driverSlug": "jon-minor",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "jefferson-speedway_unknown-year_jon-minor_charlie-spry_photo_222.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_jon-minor_charlie-spry_photo_222.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_jon-minor_charlie-spry_photo_222.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jon-minor",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "222"
+  }
+]

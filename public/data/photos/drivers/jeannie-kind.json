@@ -19,7 +19,7 @@
     "driverSlug": "jeannie-kind",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_jeannie-kind_pat-heaney_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jeannie-kind",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jeannie-kind_bob-schafer_photo_13271.jpg",
@@ -44,17 +44,6 @@
     "sequence": "13271"
   },
   {
-    "fileName": "unknown-track_unknown-year_jeannie-kind_charlie-spry_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeannie-kind_charlie-spry_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeannie-kind_charlie-spry_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeannie-kind",
-    "photographerSlug": "charlie-spry",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "wisconsin-international-raceway_1989_jeannie-kind_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/1989/wisconsin-international-raceway_1989_jeannie-kind_pat-heaney_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_1989_jeannie-kind_pat-heaney_post_001.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "jeannie-kind",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jeannie-kind_bob-schafer_photo_13959.jpg",

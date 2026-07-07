@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "superior-speedway_1968_jim-eliason_kevin-lukanen_post_111.jpg",
+    "storagePath": "photos/master/superior-speedway/1968/superior-speedway_1968_jim-eliason_kevin-lukanen_post_111.jpg",
+    "publicPath": "/photos/superior-speedway_1968_jim-eliason_kevin-lukanen_post_111.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "1968",
+    "driverSlug": "jim-eliason",
+    "photographerSlug": "kevin-lukanen",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "superior-speedway_1968_jim-eliason_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/superior-speedway/1968/superior-speedway_1968_jim-eliason_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/superior-speedway_1968_jim-eliason_unknown-photographer_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "jim-eliason",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_1982_tim-mcmann_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2003_dale-gangl_unknown-photographer_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "dale-gangl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2003_darrell-nelson_unknown-photographer_photo_14569.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "butch-madsen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_eric-pember_unknown-photographer_photo_001.jpeg",
@@ -74,7 +85,7 @@
     "driverSlug": "eric-pember",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_paul-brust_unknown-photographer_photo_001.jpeg",
@@ -85,7 +96,7 @@
     "driverSlug": "paul-brust",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_tim-mcmann_unknown-photographer_photo_001.jpeg",
@@ -96,7 +107,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_unknown-driver_unknown-photographer_photo_020.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "020"
+    "sequence": "20"
   },
   {
     "fileName": "superior-speedway_2005_brian-birkofer_unknown-photographer_photo_001.jpeg",
@@ -118,7 +129,7 @@
     "driverSlug": "brian-birkofer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2005_dale-gangl_unknown-photographer_photo_001.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "dale-gangl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2005_jamie-lautigar_unknown-photographer_photo_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "jamie-lautigar",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2005_nick-baker_unknown-photographer_photo_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "nick-baker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2005_steve-laursen_unknown-photographer_photo_001.jpg",
@@ -162,7 +173,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2005_unknown-driver_unknown-photographer_photo_12325.jpg",
@@ -206,7 +217,7 @@
     "driverSlug": "dean-yrjanainen",
     "photographerSlug": "in-a-flash",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2015_darrell-nelson_unknown-photographer_photo_001.jpg",
@@ -217,7 +228,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2017_al-uotinen-brady-caul_unknown-photographer_photo_001.jpg",
@@ -228,7 +239,7 @@
     "driverSlug": "al-uotinen-brady-caul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2023_aaron-bernick_shooterguy-photos_photo_001.jpg",
@@ -239,7 +250,7 @@
     "driverSlug": "aaron-bernick",
     "photographerSlug": "shooterguy-photos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_adam-hensel_unknown-photographer_photo_001.jpg",
@@ -250,7 +261,7 @@
     "driverSlug": "adam-hensel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_al-rapp_unknown-photographer_photo_002.jpg",
@@ -261,7 +272,7 @@
     "driverSlug": "al-rapp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_al-uotinen_unknown-photographer_photo_002.jpg",
@@ -272,7 +283,7 @@
     "driverSlug": "al-uotinen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_al-uotinen_unknown-photographer_photo_003.jpg",
@@ -283,7 +294,7 @@
     "driverSlug": "al-uotinen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "superior-speedway_unknown-year_al-uotinen_unknown-photographer_photo_004.jpg",
@@ -294,7 +305,7 @@
     "driverSlug": "al-uotinen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "superior-speedway_unknown-year_alex-smith_unknown-photographer_photo_001.jpg",
@@ -305,7 +316,7 @@
     "driverSlug": "alex-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_andy-grymala_unknown-photographer_photo_001.jpg",
@@ -316,7 +327,7 @@
     "driverSlug": "andy-grymala",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_andy-jones_unknown-photographer_photo_001.jpg",
@@ -327,7 +338,7 @@
     "driverSlug": "andy-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_andy-jones_unknown-photographer_photo_002.jpg",
@@ -338,7 +349,7 @@
     "driverSlug": "andy-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_ashley-smith_unknown-photographer_photo_001.jpg",
@@ -349,7 +360,7 @@
     "driverSlug": "ashley-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_bill-byholm_unknown-photographer_photo_002.jpg",
@@ -360,7 +371,7 @@
     "driverSlug": "bill-byholm",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_billy-nelson_old-skool_photo_001.jpg",
@@ -371,7 +382,7 @@
     "driverSlug": "billy-nelson",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_bob-broking_unknown-photographer_photo_001.jpg",
@@ -382,7 +393,7 @@
     "driverSlug": "bob-broking",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_bob-gherardi_kurt-gaber_post_001.jpg",
@@ -393,7 +404,7 @@
     "driverSlug": "bob-gherardi",
     "photographerSlug": "kurt-gaber",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_bob-slater_unknown-photographer_photo_001.jpg",
@@ -404,7 +415,7 @@
     "driverSlug": "bob-slater",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_bob-zambori_unknown-photographer_photo_001.jpg",
@@ -415,7 +426,7 @@
     "driverSlug": "bob-zambori",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_001.jpg",
@@ -426,7 +437,7 @@
     "driverSlug": "brady-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_003.jpg",
@@ -437,7 +448,7 @@
     "driverSlug": "brady-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_004.jpg",
@@ -448,7 +459,7 @@
     "driverSlug": "brady-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "superior-speedway_unknown-year_brady-smith_unknown-photographer_photo_005.jpg",
@@ -459,7 +470,7 @@
     "driverSlug": "brady-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "superior-speedway_unknown-year_brent-larson_unknown-photographer_photo_001.jpg",
@@ -470,7 +481,7 @@
     "driverSlug": "brent-larson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_brent-laursen_unknown-photographer_photo_001.jpg",
@@ -481,7 +492,7 @@
     "driverSlug": "brent-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_brooke-tatnell_unknown-photographer_photo_001.jpg",
@@ -492,7 +503,7 @@
     "driverSlug": "brooke-tatnell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_butch-madsen_unknown-photographer_photo_001.jpg",
@@ -503,7 +514,7 @@
     "driverSlug": "butch-madsen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_butch-madsen_unknown-photographer_photo_002.jpg",
@@ -514,7 +525,7 @@
     "driverSlug": "butch-madsen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_charlie-kurtzal_unknown-photographer_photo_001.jpg",
@@ -525,7 +536,7 @@
     "driverSlug": "charlie-kurtzal",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_cody-carlson_unknown-photographer_photo_001.jpg",
@@ -536,7 +547,7 @@
     "driverSlug": "cody-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_curt-meyers_unknown-photographer_photo_001.jpg",
@@ -547,7 +558,7 @@
     "driverSlug": "curt-meyers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_dale-gangl_unknown-photographer_photo_002.jpg",
@@ -558,7 +569,7 @@
     "driverSlug": "dale-gangl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_danny-young_unknown-photographer_photo_001.jpg",
@@ -569,7 +580,7 @@
     "driverSlug": "danny-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrell-nelson_unknown-photographer_photo_001.jpg",
@@ -580,7 +591,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrell-nelson_unknown-photographer_photo_004.jpg",
@@ -591,7 +602,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrell-nelson_unknown-photographer_photo_005.jpg",
@@ -602,7 +613,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrin-meierotto_unknown-photographer_photo_001.jpg",
@@ -613,7 +624,7 @@
     "driverSlug": "darrin-meierotto",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_darrin-meierotto_unknown-photographer_photo_222.jpg",
@@ -635,7 +646,7 @@
     "driverSlug": "dave-adams",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_dave-morgan_old-skool_photo_001.jpg",
@@ -646,7 +657,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_001.jpg",
@@ -657,7 +668,7 @@
     "driverSlug": "dean-yrjanainen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_dean-yrjanainen_unknown-photographer_photo_444.jpg",
@@ -679,7 +690,7 @@
     "driverSlug": "dennis-osborne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_don-copp_unknown-photographer_photo_001.jpg",
@@ -690,7 +701,7 @@
     "driverSlug": "don-copp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_don-copp_unknown-photographer_photo_002.jpg",
@@ -701,7 +712,7 @@
     "driverSlug": "don-copp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_donny-schatz_unknown-photographer_photo_001.jpg",
@@ -712,7 +723,7 @@
     "driverSlug": "donny-schatz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_duane-dale_unknown-photographer_photo_001.jpg",
@@ -723,7 +734,7 @@
     "driverSlug": "duane-dale",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_dustin-doughty_unknown-photographer_photo_001.jpg",
@@ -734,7 +745,7 @@
     "driverSlug": "dustin-doughty",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_dustin-follett_unknown-photographer_photo_001.jpg",
@@ -745,7 +756,7 @@
     "driverSlug": "dustin-follett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_ej-hietala_unknown-photographer_photo_001.jpg",
@@ -756,7 +767,7 @@
     "driverSlug": "ej-hietala",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_eric-pember_unknown-photographer_photo_14594.jpg",
@@ -778,7 +789,7 @@
     "driverSlug": "greg-chesley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_greg-chesley_unknown-photographer_photo_002.jpg",
@@ -789,7 +800,18 @@
     "driverSlug": "greg-chesley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_harry-hanson_david-frank_post_111.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_harry-hanson_david-frank_post_111.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_harry-hanson_david-frank_post_111.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "harry-hanson",
+    "photographerSlug": "david-frank",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "superior-speedway_unknown-year_harry-hanson_unknown-photographer_photo_001.jpg",
@@ -800,7 +822,7 @@
     "driverSlug": "harry-hanson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jack-hunker_old-skool_photo_001.jpg",
@@ -811,7 +833,18 @@
     "driverSlug": "jack-hunker",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_jack-shimon_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_jack-shimon_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_jack-shimon_unknown-photographer_photo_111.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jack-shimon",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "superior-speedway_unknown-year_jason-miller_unknown-photographer_photo_001.jpg",
@@ -822,7 +855,7 @@
     "driverSlug": "jason-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jeff-helget_old-skool_photo_333.jpg",
@@ -844,7 +877,7 @@
     "driverSlug": "jeff-hinkemeyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jeff-marshall_unknown-photographer_photo_001.jpg",
@@ -855,7 +888,7 @@
     "driverSlug": "jeff-marshall",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jeff-massingill_unknown-photographer_photo_001.jpg",
@@ -866,7 +899,7 @@
     "driverSlug": "jeff-massingill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jeff-mitrisin_unknown-photographer_photo_001.jpg",
@@ -877,7 +910,7 @@
     "driverSlug": "jeff-mitrisin",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jeff-pohojenen_unknown-photographer_photo_001.jpg",
@@ -888,7 +921,7 @@
     "driverSlug": "jeff-pohojenen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jeff-provinzino_unknown-photographer_photo_001.jpg",
@@ -899,7 +932,7 @@
     "driverSlug": "jeff-provinzino",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jim-west_neil-miller_photo_001.jpg",
@@ -910,7 +943,7 @@
     "driverSlug": "jim-west",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jimmy-mars_unknown-photographer_photo_001.jpg",
@@ -921,7 +954,7 @@
     "driverSlug": "jimmy-mars",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_jimmy-mars_unknown-photographer_photo_002.jpg",
@@ -932,7 +965,7 @@
     "driverSlug": "jimmy-mars",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_joe-oliver_unknown-photographer_photo_001.jpg",
@@ -943,7 +976,7 @@
     "driverSlug": "joe-oliver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_joe-oliver_unknown-photographer_photo_002.jpg",
@@ -954,7 +987,7 @@
     "driverSlug": "joe-oliver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_joel-cryderman_old-skool_photo_001.jpg",
@@ -965,7 +998,7 @@
     "driverSlug": "joel-cryderman",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_joey-jensen_unknown-photographer_photo_001.jpg",
@@ -976,7 +1009,7 @@
     "driverSlug": "joey-jensen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_joey-jensen_unknown-photographer_photo_002.jpg",
@@ -987,7 +1020,7 @@
     "driverSlug": "joey-jensen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_johnny-johnson_old-skool_photo_001.jpg",
@@ -998,7 +1031,7 @@
     "driverSlug": "johnny-johnson",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_justin-henderson_unknown-photographer_photo_001.jpg",
@@ -1009,7 +1042,7 @@
     "driverSlug": "justin-henderson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_keith-tourville_unknown-photographer_photo_001.jpg",
@@ -1020,7 +1053,7 @@
     "driverSlug": "keith-tourville",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_keith-tourville_unknown-photographer_photo_002.jpg",
@@ -1031,7 +1064,7 @@
     "driverSlug": "keith-tourville",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_kevin-monteith_unknown-photographer_photo_003.jpg",
@@ -1042,7 +1075,7 @@
     "driverSlug": "kevin-monteith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "superior-speedway_unknown-year_kristy-marken_unknown-photographer_photo_001.jpg",
@@ -1053,7 +1086,7 @@
     "driverSlug": "kristy-marken",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_lance-matthees_unknown-photographer_photo_877.jpg",
@@ -1075,7 +1108,7 @@
     "driverSlug": "les-mackyol",
     "photographerSlug": "submitted",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_lloyd-hepburn_danyelle-hope_post_400.jpg",
@@ -1163,7 +1196,7 @@
     "driverSlug": "marshall-andrews",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_mel-ferguson_old-skool_photo_001.jpg",
@@ -1174,7 +1207,7 @@
     "driverSlug": "mel-ferguson",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_mike-bellefeuille_unknown-photographer_photo_002.jpg",
@@ -1185,7 +1218,7 @@
     "driverSlug": "mike-bellefeuille",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_mike-kalkbrenner_unknown-photographer_photo_001.jpg",
@@ -1196,7 +1229,7 @@
     "driverSlug": "mike-kalkbrenner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
@@ -1207,7 +1240,7 @@
     "driverSlug": "mitch-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
@@ -1218,7 +1251,7 @@
     "driverSlug": "nick-lavato",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_nick-nelson_unknown-photographer_photo_001.jpg",
@@ -1229,7 +1262,7 @@
     "driverSlug": "nick-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_001.jpg",
@@ -1240,7 +1273,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_pat-doar_unknown-photographer_photo_002.jpg",
@@ -1251,7 +1284,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_phil-prusak_unknown-photographer_photo_001.jpg",
@@ -1262,7 +1295,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_randy-spacek_unknown-photographer_photo_001.jpg",
@@ -1273,7 +1306,7 @@
     "driverSlug": "randy-spacek",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_randy-vezina_unknown-photographer_photo_001.jpg",
@@ -1284,7 +1317,7 @@
     "driverSlug": "randy-vezina",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_rick-peterson_unknown-photographer_photo_001.jpg",
@@ -1295,7 +1328,7 @@
     "driverSlug": "rick-peterson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_rick-popovich_unknown-photographer_photo_001.jpg",
@@ -1306,7 +1339,7 @@
     "driverSlug": "rick-popovich",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_rick-rivord_unknown-photographer_photo_001.jpg",
@@ -1317,7 +1350,7 @@
     "driverSlug": "rick-rivord",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_rob-weber_unknown-photographer_photo_001.jpg",
@@ -1328,7 +1361,7 @@
     "driverSlug": "rob-weber",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_robbie-cooper_unknown-photographer_photo_001.jpg",
@@ -1339,7 +1372,7 @@
     "driverSlug": "robbie-cooper",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_russ-anderson_unknown-photographer_photo_1011.jpg",
@@ -1361,7 +1394,7 @@
     "driverSlug": "russ-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_ryan-aho_unknown-photographer_photo_002.jpg",
@@ -1372,7 +1405,7 @@
     "driverSlug": "ryan-aho",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-herrick_unknown-photographer_photo_001.jpg",
@@ -1383,7 +1416,7 @@
     "driverSlug": "scott-herrick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-hudack_unknown-photographer_photo_002.jpg",
@@ -1394,7 +1427,7 @@
     "driverSlug": "scott-hudack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_001.jpg",
@@ -1405,7 +1438,7 @@
     "driverSlug": "scott-lawrence",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_004.jpg",
@@ -1416,7 +1449,7 @@
     "driverSlug": "scott-lawrence",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_006.jpg",
@@ -1427,7 +1460,7 @@
     "driverSlug": "scott-lawrence",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_008.jpg",
@@ -1438,7 +1471,7 @@
     "driverSlug": "scott-lawrence",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_009.jpg",
@@ -1449,7 +1482,7 @@
     "driverSlug": "scott-lawrence",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-lawrence_unknown-photographer_photo_010.jpg",
@@ -1460,7 +1493,7 @@
     "driverSlug": "scott-lawrence",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-neitzel_unknown-photographer_photo_002.jpg",
@@ -1471,7 +1504,7 @@
     "driverSlug": "scott-neitzel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_001.jpg",
@@ -1482,7 +1515,7 @@
     "driverSlug": "scott-paulson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_scott-paulson_unknown-photographer_photo_002.jpg",
@@ -1493,7 +1526,7 @@
     "driverSlug": "scott-paulson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_shane-kistling_unknown-photographer_photo_002.jpg",
@@ -1504,7 +1537,7 @@
     "driverSlug": "shane-kistling",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_shane-sabraski_unknown-photographer_photo_002.jpg",
@@ -1515,7 +1548,7 @@
     "driverSlug": "shane-sabraski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "superior-speedway_unknown-year_skeeter-estey_unknown-photographer_photo_001.jpg",
@@ -1526,7 +1559,7 @@
     "driverSlug": "skeeter-estey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_skeeter-estey_unknown-photographer_photo_003.jpg",
@@ -1537,7 +1570,7 @@
     "driverSlug": "skeeter-estey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "superior-speedway_unknown-year_steve-laursen_old-skool_photo_001.jpg",
@@ -1548,7 +1581,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_steve-laursen_unknown-photographer_photo_001.jpg",
@@ -1559,7 +1592,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_terry-casey_unknown-photographer_photo_001.jpg",
@@ -1570,7 +1603,7 @@
     "driverSlug": "terry-casey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_tim-baum_unknown-photographer_photo_001.jpg",
@@ -1581,7 +1614,7 @@
     "driverSlug": "tim-baum",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_tim-carlson_unknown-photographer_photo_001.jpg",
@@ -1592,7 +1625,7 @@
     "driverSlug": "tim-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_tim-johnson_unknown-photographer_photo_001.jpg",
@@ -1603,7 +1636,7 @@
     "driverSlug": "tim-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_todd-eliason_unknown-photographer_photo_1.jpg",
@@ -1625,7 +1658,7 @@
     "driverSlug": "todd-gehl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_tom-nesbitt_unknown-photographer_photo_001.jpg",
@@ -1636,7 +1669,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_tom-waseleski_unknown-photographer_photo_001.jpg",
@@ -1647,7 +1680,7 @@
     "driverSlug": "tom-waseleski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_tony-bahr_unknown-photographer_photo_002.jpg",
@@ -1658,7 +1691,18 @@
     "driverSlug": "tony-bahr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "superior-speedway_unknown-year_tony-benedict_david-frank_post_111.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_tony-benedict_david-frank_post_111.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_tony-benedict_david-frank_post_111.jpg",
+    "trackSlug": "superior-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-benedict",
+    "photographerSlug": "david-frank",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "superior-speedway_unknown-year_travis-budisalovich_unknown-photographer_photo_001.jpg",
@@ -1669,7 +1713,7 @@
     "driverSlug": "travis-budisalovich",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_trevor-wilson_unknown-photographer_photo_888.jpg",
@@ -1867,6 +1911,6 @@
     "driverSlug": "zene-anderson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

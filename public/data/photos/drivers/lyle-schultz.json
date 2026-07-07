@@ -8,7 +8,7 @@
     "driverSlug": "lyle-schultz",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1975_lyle-schultz_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "lyle-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_lyle-schultz_joe-verdegan_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "lyle-schultz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lyle-schultz_unknown-photographer_photo_003.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "lyle-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

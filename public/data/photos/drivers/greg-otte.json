@@ -8,7 +8,7 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_greg-otte_weber-brothers_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_greg-otte_weber-brothers_photo_031.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "hales-corners-speedway_1984_greg-otte_weber-brothers_photo_444.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "072"
+    "sequence": "72"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_greg-otte_bob-schafer_photo_601.jpg",
@@ -74,61 +74,6 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_222.jpg",
-    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_222.jpg",
-    "publicPath": "/photos/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_222.jpg",
-    "trackSlug": "plymouth-dirt-track",
-    "year": "unknown-year",
-    "driverSlug": "greg-otte",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_223.jpg",
-    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_223.jpg",
-    "publicPath": "/photos/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_223.jpg",
-    "trackSlug": "plymouth-dirt-track",
-    "year": "unknown-year",
-    "driverSlug": "greg-otte",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "223"
-  },
-  {
-    "fileName": "plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_224.jpg",
-    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_224.jpg",
-    "publicPath": "/photos/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_224.jpg",
-    "trackSlug": "plymouth-dirt-track",
-    "year": "unknown-year",
-    "driverSlug": "greg-otte",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "224"
-  },
-  {
-    "fileName": "plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_225.jpg",
-    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_225.jpg",
-    "publicPath": "/photos/plymouth-dirt-track_unknown-year_greg-otte_unknown-photographer_photo_225.jpg",
-    "trackSlug": "plymouth-dirt-track",
-    "year": "unknown-year",
-    "driverSlug": "greg-otte",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "225"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_greg-otte_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_greg-otte_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_greg-otte_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "greg-otte",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

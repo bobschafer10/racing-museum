@@ -8,7 +8,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_monte-gress_kurt-luoma_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1987_monte-gress_don-besch_photo_001.jpg",
@@ -30,7 +30,18 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1990_monte-gress_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1990/lacrosse-interstate-speedway_1990_monte-gress_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1990_monte-gress_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1990",
+    "driverSlug": "monte-gress",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1990_monte-gress_bob-schafer_photo_222.jpg",
@@ -55,28 +66,6 @@
     "sequence": "412"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_monte-gress_father-grubba_photo_333.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_monte-gress_father-grubba_photo_333.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_monte-gress_father-grubba_photo_333.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "monte-gress",
-    "photographerSlug": "father-grubba",
-    "creditType": "photo",
-    "sequence": "333"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_monte-gress_joe-slack_post_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_monte-gress_joe-slack_post_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_monte-gress_joe-slack_post_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "monte-gress",
-    "photographerSlug": "joe-slack",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
     "fileName": "marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_001.jpg",
     "storagePath": "photos/master/marshfield-super-speedway/2006/marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_001.jpg",
     "publicPath": "/photos/marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_001.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_002.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_117.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "lokotaco",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_monte-gress_joe-slack_photo_001.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_monte-gress_kurt-luoma_photo_001.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_monte-gress_unknown-photographer_photo_001.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_monte-gress_kurt-luoma_photo_333.jpg",
@@ -184,6 +173,6 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

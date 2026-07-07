@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "dave-bouche",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "luxemburg-speedway_2005_dave-bouche_john-garniss_photo_001.jpeg",
     "storagePath": "photos/master/luxemburg-speedway/2005/luxemburg-speedway_2005_dave-bouche_john-garniss_photo_001.jpeg",
     "publicPath": "/photos/luxemburg-speedway_2005_dave-bouche_john-garniss_photo_001.jpeg",
@@ -8,7 +19,7 @@
     "driverSlug": "dave-bouche",
     "photographerSlug": "john-garniss",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-bouche_joe-slack_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "dave-bouche",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-bouche_joe-verdegan_post_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "dave-bouche",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-bouche_unknown-photographer_photo_001.jpeg",
@@ -41,6 +52,6 @@
     "driverSlug": "dave-bouche",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,13 +1,13 @@
 [
   {
-    "fileName": "steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
-    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
-    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_photo_222.jpg",
+    "fileName": "steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_unknown-photographer_photo_222.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_unknown-photographer_photo_222.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_tom-steuding-lee-johnson_unknown-photographer_photo_222.jpg",
     "trackSlug": "steele-county-fairgrounds",
     "year": "unknown-year",
     "driverSlug": "tom-steuding-lee-johnson",
-    "photographerSlug": "photo",
-    "creditType": "222",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "222"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "joe-white",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_joe-white_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "joe-white",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_joe-white_brad-luepke_post_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "joe-white",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

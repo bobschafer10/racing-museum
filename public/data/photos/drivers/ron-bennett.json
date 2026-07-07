@@ -1,27 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_ron-bennett_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ron-bennett_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_ron-bennett_unknown-photographer_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ron-bennett",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_ron-bennett_unknown-photographer_photo_1111.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ron-bennett_unknown-photographer_photo_1111.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_ron-bennett_unknown-photographer_photo_1111.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ron-bennett",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "1111"
-  },
-  {
     "fileName": "lake-geneva-raceway_unknown-year_ron-bennett_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_ron-bennett_pat-heaney_post_001.jpg",
     "publicPath": "/photos/lake-geneva-raceway_unknown-year_ron-bennett_pat-heaney_post_001.jpg",
@@ -30,7 +8,7 @@
     "driverSlug": "ron-bennett",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_ron-bennett_unknown-photographer_photo_001.jpg",
@@ -41,7 +19,7 @@
     "driverSlug": "ron-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_ron-bennett_unknown-photographer_photo_002.jpg",
@@ -52,7 +30,7 @@
     "driverSlug": "ron-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_unknown-year_ron-bennett_unknown-photographer_photo_14134.jpg",
@@ -74,7 +52,7 @@
     "driverSlug": "ron-bennett",
     "photographerSlug": "15-mall-show-weber",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-bennett_unknown-photographer_photo_001.jpg",
@@ -85,7 +63,7 @@
     "driverSlug": "ron-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-bennett_unknown-photographer_photo_002.jpg",
@@ -96,6 +74,6 @@
     "driverSlug": "ron-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

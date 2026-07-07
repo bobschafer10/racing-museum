@@ -8,7 +8,7 @@
     "driverSlug": "jim-melis",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "065"
+    "sequence": "65"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_jim-melis_bob-schafer_photo_601.jpg",
@@ -22,17 +22,6 @@
     "sequence": "601"
   },
   {
-    "fileName": "unknown-track_unknown-year_jim-melis_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-melis_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-melis_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-melis",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
     "fileName": "yellow-river-speedway_unknown-year_jim-melis_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/yellow-river-speedway/unknown-year/yellow-river-speedway_unknown-year_jim-melis_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/yellow-river-speedway_unknown-year_jim-melis_kurt-luoma_photo_001.jpg",
@@ -41,6 +30,6 @@
     "driverSlug": "jim-melis",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

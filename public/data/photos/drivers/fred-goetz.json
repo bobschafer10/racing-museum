@@ -8,7 +8,7 @@
     "driverSlug": "fred-goetz",
     "photographerSlug": "dennis-satorious",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_fred-goetz_pete-vercauteren_photo_001.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "fred-goetz",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fred-goetz_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fred-goetz_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fred-goetz_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fred-goetz",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,82 @@
 [
   {
+    "fileName": "141-speedway_2023_dan-schumacher_dan-lewis_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_dan-schumacher_dan-lewis_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_dan-schumacher_dan-lewis_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "dan-schumacher",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_2023_mark-caswell_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_mark-caswell_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_mark-caswell_putch-bentley_post_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "mark-caswell",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_2023_nick-schumacher_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_nick-schumacher_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_nick-schumacher_putch-bentley_post_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "nick-schumacher",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_2023_rick-gustavson_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_rick-gustavson_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_rick-gustavson_putch-bentley_post_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "rick-gustavson",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_2023_seth-farr_putch-bentley_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_seth-farr_putch-bentley_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_seth-farr_putch-bentley_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "seth-farr",
+    "photographerSlug": "putch-bentley",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_2023_taylor-rahn_dan-lewis_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_taylor-rahn_dan-lewis_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_taylor-rahn_dan-lewis_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "taylor-rahn",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_2023_tj-smith_putch-bentley_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_tj-smith_putch-bentley_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_tj-smith_putch-bentley_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "tj-smith",
+    "photographerSlug": "putch-bentley",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "abc-raceway_2023_aaron-mashlan_abc-raceway_post_001.jpg",
     "storagePath": "photos/master/abc-raceway/2023/abc-raceway_2023_aaron-mashlan_abc-raceway_post_001.jpg",
     "publicPath": "/photos/abc-raceway_2023_aaron-mashlan_abc-raceway_post_001.jpg",
@@ -8,7 +85,18 @@
     "driverSlug": "aaron-mashlan",
     "photographerSlug": "abc-raceway",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "abc-raceway_2023_alex-bond_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/abc-raceway/2023/abc-raceway_2023_alex-bond_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/abc-raceway_2023_alex-bond_unknown-photographer_photo_333.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "2023",
+    "driverSlug": "alex-bond",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "cedar-lake-speedway_2023_nick-anvelink-_nick-anvelink_post_001.jpg",
@@ -19,7 +107,18 @@
     "driverSlug": "nick-anvelink-",
     "photographerSlug": "nick-anvelink",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_2023_andrew-borntreger_andrew-borntreger_post_443.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2023/dells-motor-speedway_2023_andrew-borntreger_andrew-borntreger_post_443.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2023_andrew-borntreger_andrew-borntreger_post_443.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2023",
+    "driverSlug": "andrew-borntreger",
+    "photographerSlug": "andrew-borntreger",
+    "creditType": "post",
+    "sequence": "443"
   },
   {
     "fileName": "dells-motor-speedway_2023_matt-urban_roy-ophime_photo_333.jpg",
@@ -39,9 +138,31 @@
     "trackSlug": "door-county-speedway",
     "year": "2023",
     "driverSlug": "devin-yaeger",
-    "photographerSlug": "kaylaLyn",
+    "photographerSlug": "kaylalyn",
     "creditType": "photo",
     "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2023_chase-solomon_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2023/eagle-river-speedway_2023_chase-solomon_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2023_chase-solomon_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2023",
+    "driverSlug": "chase-solomon",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2023/gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2023",
+    "driverSlug": "tim-mitchell",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "332"
   },
   {
     "fileName": "jefferson-speedway_2023_aaron-genske_jeremy-liback_photo_001.jpg",
@@ -52,7 +173,18 @@
     "driverSlug": "aaron-genske",
     "photographerSlug": "jeremy-liback",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "jefferson-speedway_2023_gracie-flanagan_josh-zacharias_post_453.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2023/jefferson-speedway_2023_gracie-flanagan_josh-zacharias_post_453.jpg",
+    "publicPath": "/photos/jefferson-speedway_2023_gracie-flanagan_josh-zacharias_post_453.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2023",
+    "driverSlug": "gracie-flanagan",
+    "photographerSlug": "josh-zacharias",
+    "creditType": "post",
+    "sequence": "453"
   },
   {
     "fileName": "jefferson-speedway_2023_jason-uttech_jeremy-libick_photo_333.jpg",
@@ -66,6 +198,17 @@
     "sequence": "333"
   },
   {
+    "fileName": "luxemburg-speedway_2023_putch-bentley_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2023/luxemburg-speedway_2023_putch-bentley_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2023_putch-bentley_bob-greuel_photo_444.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2023",
+    "driverSlug": "putch-bentley",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "luxemburg-speedway_2023_putch-bentley_unknown-credit_post_001.jpg",
     "storagePath": "photos/master/luxemburg-speedway/2023/luxemburg-speedway_2023_putch-bentley_unknown-credit_post_001.jpg",
     "publicPath": "/photos/luxemburg-speedway_2023_putch-bentley_unknown-credit_post_001.jpg",
@@ -74,7 +217,7 @@
     "driverSlug": "putch-bentley",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2023_abby-kohn_tom-loos_photo_001.jpg",
@@ -85,7 +228,29 @@
     "driverSlug": "abby-kohn",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2023_dillon-mackesy_dillon-mackesy_post_334.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2023/marshfield-super-speedway_2023_dillon-mackesy_dillon-mackesy_post_334.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2023_dillon-mackesy_dillon-mackesy_post_334.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2023",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "marshfield-super-speedway_2023_dillon-mackesy_tom-loos_photo_433.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2023/marshfield-super-speedway_2023_dillon-mackesy_tom-loos_photo_433.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2023_dillon-mackesy_tom-loos_photo_433.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2023",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": ""
   },
   {
     "fileName": "milwaukee-mile_2023_harley-jankowski_weber-brothers_photo_001.jpg",
@@ -96,7 +261,7 @@
     "driverSlug": "harley-jankowski",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2023_keegan-bush_weber-brothers_photo_001.jpg",
@@ -107,7 +272,7 @@
     "driverSlug": "keegan-bush",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2023_kyle-stark_weber-brothers_photo_001.jpg",
@@ -118,7 +283,29 @@
     "driverSlug": "kyle-stark",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_2023_levon-vandergeest_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2023/milwaukee-mile_2023_levon-vandergeest_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_2023_levon-vandergeest_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2023",
+    "driverSlug": "levon-vandergeest",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "milwaukee-mile_2023_rick-corso_weber-brothers_photo_111.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2023/milwaukee-mile_2023_rick-corso_weber-brothers_photo_111.jpg",
+    "publicPath": "/photos/milwaukee-mile_2023_rick-corso_weber-brothers_photo_111.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2023",
+    "driverSlug": "rick-corso",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "proctor-speedway_2023_aaron-bernick_brian-roseberg_photo_001.jpg",
@@ -129,7 +316,7 @@
     "driverSlug": "aaron-bernick",
     "photographerSlug": "brian-roseberg",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -140,7 +327,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2023/rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2023",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_2023_kayden-young_dan-lewis_photo_112.jpg",
@@ -163,6 +361,17 @@
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
     "sequence": "113"
+  },
+  {
+    "fileName": "slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "storagePath": "photos/master/slinger-speedway/2023/slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "publicPath": "/photos/slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2023",
+    "driverSlug": "dean-olla",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "555"
   },
   {
     "fileName": "state-park-speedway_2023_dave-cabelka_qc-willy_post_333.jpg",
@@ -195,7 +404,7 @@
     "driverSlug": "aaron-bernick",
     "photographerSlug": "shooterguy-photos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomahawk-speedway_2023_abby-kohn_qc-willy_photo_001.jpg",
@@ -206,40 +415,29 @@
     "driverSlug": "abby-kohn",
     "photographerSlug": "qc-willy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_2023_aaron-butterbrodt_wi-dirt-racin_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_aaron-butterbrodt_wi-dirt-racin_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2023_aaron-butterbrodt_wi-dirt-racin_post_001.jpg",
+    "fileName": "unknown-track_2023_adam-zellmer_adam-zellmer_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_adam-zellmer_adam-zellmer_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2023_adam-zellmer_adam-zellmer_post_111.jpg",
     "trackSlug": "unknown-track",
     "year": "2023",
-    "driverSlug": "aaron-butterbrodt",
-    "photographerSlug": "wi-dirt-racin",
+    "driverSlug": "adam-zellmer",
+    "photographerSlug": "adam-zellmer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "111"
   },
   {
-    "fileName": "unknown-track_2023_aaron-lillo_aaron-lillo_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_aaron-lillo_aaron-lillo_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2023_aaron-lillo_aaron-lillo_post_001.jpg",
+    "fileName": "unknown-track_2023_brady-ascherien_weber-brothers_photo_777.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_brady-ascherien_weber-brothers_photo_777.jpg",
+    "publicPath": "/photos/unknown-track_2023_brady-ascherien_weber-brothers_photo_777.jpg",
     "trackSlug": "unknown-track",
     "year": "2023",
-    "driverSlug": "aaron-lillo",
-    "photographerSlug": "aaron-lillo",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2023_alex-pokorski_weber-brothers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_alex-pokorski_weber-brothers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2023_alex-pokorski_weber-brothers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2023",
-    "driverSlug": "alex-pokorski",
+    "driverSlug": "brady-ascherien",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "777"
   },
   {
     "fileName": "unknown-track_2023_brady-uotinen_unknown-photographer_photo_333.jpg",
@@ -253,6 +451,50 @@
     "sequence": "333"
   },
   {
+    "fileName": "unknown-track_2023-derek-kaat_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023-derek-kaat_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2023-derek-kaat_putch-bentley_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2023",
+    "driverSlug": "derek-kaat",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_2023_elijah-zevenbergen_cody-papke_photo_111.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_elijah-zevenbergen_cody-papke_photo_111.jpg",
+    "publicPath": "/photos/unknown-track_2023_elijah-zevenbergen_cody-papke_photo_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2023",
+    "driverSlug": "elijah-zevenbergen",
+    "photographerSlug": "cody-papke",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_2023_jason-schilling_unknown-photographer_photo_20232.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_jason-schilling_unknown-photographer_photo_20232.jpg",
+    "publicPath": "/photos/unknown-track_2023_jason-schilling_unknown-photographer_photo_20232.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2023",
+    "driverSlug": "jason-schilling",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "20232"
+  },
+  {
+    "fileName": "unknown-track_2023_joey-galloway_joey-galloway_post_443.jpg",
+    "storagePath": "photos/master/unknown-track/2023/unknown-track_2023_joey-galloway_joey-galloway_post_443.jpg",
+    "publicPath": "/photos/unknown-track_2023_joey-galloway_joey-galloway_post_443.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2023",
+    "driverSlug": "joey-galloway",
+    "photographerSlug": "joey-galloway",
+    "creditType": "post",
+    "sequence": "443"
+  },
+  {
     "fileName": "wilmot-raceway_2023_eric-blumer_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/wilmot-raceway/2023/wilmot-raceway_2023_eric-blumer_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/wilmot-raceway_2023_eric-blumer_weber-brothers_photo_001.jpg",
@@ -261,7 +503,29 @@
     "driverSlug": "eric-blumer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wilmot-raceway_2023_robbie-wirth_weber-brothers_photo_677.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2023/wilmot-raceway_2023_robbie-wirth_weber-brothers_photo_677.jpg",
+    "publicPath": "/photos/wilmot-raceway_2023_robbie-wirth_weber-brothers_photo_677.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2023",
+    "driverSlug": "robbie-wirth",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "677"
+  },
+  {
+    "fileName": "wilmot-raceway_2023_tony-wondra_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2023/wilmot-raceway_2023_tony-wondra_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/wilmot-raceway_2023_tony-wondra_weber-brothers_photo_444.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2023",
+    "driverSlug": "tony-wondra",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_2023_sawyer-effertz_unknown-photographer_photo_111.jpg",

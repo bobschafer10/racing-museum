@@ -8,7 +8,18 @@
     "driverSlug": "roger-trapp",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_roger-trapp_bob-bergeron_photo_100.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_roger-trapp_bob-bergeron_photo_100.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_roger-trapp_bob-bergeron_photo_100.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-trapp",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-trapp_pete-vercauteren_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "roger-trapp",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-trapp_unknown-photographer_photo_001.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "roger-trapp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,6 +8,17 @@
     "driverSlug": "tim-jarvis",
     "photographerSlug": "lee-lawrence",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "norway-speedway_unknown-year_tim-jarvis_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_tim-jarvis_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_tim-jarvis_unknown-photographer_photo_334.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tim-jarvis",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "mike-esser",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2013_aaron-falbe_karly-stadler_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "karly-stadler",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2014_aaron-falbe_leader-photography_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "leader-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2002_aaron-falbe_jeff-gilhart_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2003_aaron-falbe_charlie-spry_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2007_aaron-falbe_aaron-falbe_post_001.jpg",
@@ -63,7 +63,18 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "aaron-falbe",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_aaron-falbe_charlie-spry_photo_443.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_aaron-falbe_charlie-spry_photo_443.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_aaron-falbe_charlie-spry_photo_443.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-falbe",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "443"
   },
   {
     "fileName": "dodge-county-fairgrounds_2014_aaron-falbe_leader-photography_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "leader-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2015_aaron-falbe_leader-photography_photo_001.jpg",
@@ -85,6 +96,6 @@
     "driverSlug": "aaron-falbe",
     "photographerSlug": "leader-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

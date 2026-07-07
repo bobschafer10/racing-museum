@@ -8,7 +8,7 @@
     "driverSlug": "etchie-biertzer",
     "photographerSlug": "dave-jensen",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedarburg-speedway_1956_miles-melius_dave-jensen_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "miles-melius",
     "photographerSlug": "dave-jensen",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1956_carl-kulow_dave-jensen_photo_001.jpg",
@@ -30,17 +30,6 @@
     "driverSlug": "carl-kulow",
     "photographerSlug": "dave-jensen",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1956_hal-kulow_dave-jensen_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1956/unknown-track_1956_hal-kulow_dave-jensen_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1956_hal-kulow_dave-jensen_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1956",
-    "driverSlug": "hal-kulow",
-    "photographerSlug": "dave-jensen",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "bill-fitzgerald",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1966_bill-moore_unknown-credit_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bill-moore",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1970_mike-hintz_bob-bergeron_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "mike-hintz",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1970_unknown_bob-bergeron_photo_001.jpg",
@@ -38,10 +38,10 @@
     "publicPath": "/photos/brown-county-speedway_1970_unknown_bob-bergeron_photo_001.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "1970",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1970_unknown-driver_bob-bergeron_photo_015.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "015"
+    "sequence": "15"
   },
   {
     "fileName": "brown-county-speedway_1972_jerry-smith_dennis-satorius_post_333.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "russ-peterson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1972_wayne-weckworth_bob-bergeron_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "wayne-weckworth",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1973_al-schill_pete-vercauteren_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1973_dan-desotell_joe-verdegan_post_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "dan-desotell",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1974_tom-nesbitt_bob-bergeron_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1975_bob-bennett_bob-bergeron_photo_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "bob-bennett",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-bruggink_john-vass_photo_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "dave-bruggink",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-campshure_john-vass_photo_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "dave-campshure",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-schneider_john-vass_photo_001.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "dave-schneider",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_dave-valentyne_joe-verdegan_post_001.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "dave-valentyne",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_jerry-smith_john-vass_photo_001.jpg",
@@ -184,7 +184,18 @@
     "driverSlug": "jerry-smith",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/brown-county-speedway/1978/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "publicPath": "/photos/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "1978",
+    "driverSlug": "john-vass",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_leon-plank_john-vass_photo_001.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "leon-plank",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_lowell-bennett_john-vass_photo_001.jpg",
@@ -206,7 +217,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_lowell-bennett_john-vass_photo_111.jpg",
@@ -228,7 +239,7 @@
     "driverSlug": "mike-blaser",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_pete-parker_joe-verdegan_post_001.jpg",
@@ -239,7 +250,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_punky-manor_john-vass_photo_001.jpg",
@@ -250,7 +261,7 @@
     "driverSlug": "punky-manor",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_rod-wheeler_john-vass_photo_001.jpg",
@@ -261,7 +272,7 @@
     "driverSlug": "rod-wheeler",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_roger-paul_john-vass_photo_001.jpg",
@@ -272,7 +283,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_roger-paul_john-vass_photo_2000.jpg",
@@ -305,7 +316,7 @@
     "driverSlug": "roger-plautz",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_tom-greenlee_john-vass_photo_001.jpg",
@@ -316,7 +327,7 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1978_unknown-driver_john-vass_photo_001.jpg",
@@ -327,18 +338,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
-    "storagePath": "photos/master/brown-county-speedway/1978gary-roehborn/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
-    "publicPath": "/photos/brown-county-speedway_1978gary-roehborn_john-vass_photo_001.jpg",
-    "trackSlug": "brown-county-speedway",
-    "year": "1978gary-roehborn",
-    "driverSlug": "john-vass",
-    "photographerSlug": "photo",
-    "creditType": "001",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_al-presteen_pete-vercauteren_photo_001.jpg",
@@ -349,7 +349,7 @@
     "driverSlug": "al-presteen",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_al-snellenberger_unknown-photographer_photo_001.jpg",
@@ -360,7 +360,7 @@
     "driverSlug": "al-snellenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bill-foster_joe-verdegan_post_001.jpg",
@@ -371,7 +371,7 @@
     "driverSlug": "bill-foster",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-bennett_pete-vercauteren_photo_001.jpg",
@@ -382,7 +382,7 @@
     "driverSlug": "bob-bennett",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-bennett_pete-vercauteren_photo_002.jpg",
@@ -393,7 +393,7 @@
     "driverSlug": "bob-bennett",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-devroy_joe-verdegan_post_001.jpg",
@@ -404,7 +404,7 @@
     "driverSlug": "bob-devroy",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-femal_unknown-photographer_photo_001.jpg",
@@ -415,7 +415,7 @@
     "driverSlug": "bob-femal",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_004.jpg",
@@ -426,7 +426,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-potts_joe-verdegan_post_001.jpg",
@@ -437,7 +437,7 @@
     "driverSlug": "bob-potts",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_002.jpg",
@@ -448,7 +448,7 @@
     "driverSlug": "bob-white-sr",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bob-white-sr_joe-verdegan_post_003.jpg",
@@ -459,7 +459,7 @@
     "driverSlug": "bob-white-sr",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bobby-marquis_unknown-photographer_photo_001.jpg",
@@ -470,7 +470,7 @@
     "driverSlug": "bobby-marquis",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_bobby-marquis_unknown-photographer_photo_10064.jpg",
@@ -492,7 +492,7 @@
     "driverSlug": "bobby-schmelzer",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_buck-bacon_unknown-photographer_photo_001.jpg",
@@ -503,7 +503,7 @@
     "driverSlug": "buck-bacon",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_charlie-ewald_pete-vercauteren_photo_001.jpg",
@@ -514,7 +514,7 @@
     "driverSlug": "charlie-ewald",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_charlie-ewald_unknown-photographer_photo_001.jpg",
@@ -525,7 +525,7 @@
     "driverSlug": "charlie-ewald",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_chris-duquaines_bob-bergeron_photo_001.jpg",
@@ -536,7 +536,7 @@
     "driverSlug": "chris-duquaines",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_chuck-grall_joe-verdegan_post_001.jpg",
@@ -547,7 +547,7 @@
     "driverSlug": "chuck-grall",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_cliff-zellner_joe-verdegan_post_001.jpg",
@@ -558,7 +558,7 @@
     "driverSlug": "cliff-zellner",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_corby-vanlorynen_joe-verdegan_post_001.jpg",
@@ -569,7 +569,7 @@
     "driverSlug": "corby-vanlorynen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_corby-vanlorynen_joe-verdegan_post_002.jpg",
@@ -580,7 +580,7 @@
     "driverSlug": "corby-vanlorynen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dale-verhagen_joe-verdegan_post_001.jpg",
@@ -591,7 +591,7 @@
     "driverSlug": "dale-verhagen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dan-ambrose_pete-vercauteren_photo_001.jpg",
@@ -602,7 +602,7 @@
     "driverSlug": "dan-ambrose",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dan-kuhnz_pete-vercauteren_photo_001.jpg",
@@ -613,7 +613,7 @@
     "driverSlug": "dan-kuhnz",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_001.jpg",
@@ -624,7 +624,7 @@
     "driverSlug": "dan-weyker",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dan-weyker_pete-vercauteren_photo_002.jpg",
@@ -635,7 +635,7 @@
     "driverSlug": "dan-weyker",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dan-weyker_unknown-photographer_photo_3042.jpg",
@@ -657,7 +657,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dave-conger_pete-vercauteren_photo_002.jpg",
@@ -668,7 +668,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dave-degroot_joe-verdegan_post_001.jpg",
@@ -679,7 +679,7 @@
     "driverSlug": "dave-degroot",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dick-jerovetz_joe-verdegan_post_001.jpg",
@@ -690,7 +690,7 @@
     "driverSlug": "dick-jerovetz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_dick-jerovetz_joe-verdegan_post_002.jpg",
@@ -701,7 +701,7 @@
     "driverSlug": "dick-jerovetz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_don-mcclure_joe-verdegan_post_001.jpg",
@@ -712,7 +712,7 @@
     "driverSlug": "don-mcclure",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_don-mee_pete-vercauteren_photo_001.jpg",
@@ -723,7 +723,7 @@
     "driverSlug": "don-mee",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_doug-larson_joe-verdegan_post_001.jpg",
@@ -734,7 +734,7 @@
     "driverSlug": "doug-larson",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_earl-schmude_pete-vercauteren_photo_001.jpg",
@@ -745,7 +745,7 @@
     "driverSlug": "earl-schmude",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ed-rowell_dennis-satorius_post_001.jpg",
@@ -756,7 +756,7 @@
     "driverSlug": "ed-rowell",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_elmer-ragen_joe-verdegan_post_001.jpg",
@@ -767,7 +767,7 @@
     "driverSlug": "elmer-ragen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ernie-rathke_pete-vercauteren_photo_001.jpg",
@@ -778,7 +778,7 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_festus-foster_pete-vercauteren_photo_001.jpg",
@@ -789,7 +789,7 @@
     "driverSlug": "festus-foster",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_fran-penterman_bob-bergeron_photo_001.jpg",
@@ -800,7 +800,7 @@
     "driverSlug": "fran-penterman",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_frank-smith_pete-vercauteren_photo_001.jpg",
@@ -811,7 +811,7 @@
     "driverSlug": "frank-smith",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_fred-goetz_dennis-satorious_post_001.jpg",
@@ -822,7 +822,7 @@
     "driverSlug": "fred-goetz",
     "photographerSlug": "dennis-satorious",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_fred-goetz_pete-vercauteren_photo_001.jpg",
@@ -833,7 +833,7 @@
     "driverSlug": "fred-goetz",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_gary-crawford_joe-verdegan_post_001.jpg",
@@ -844,7 +844,7 @@
     "driverSlug": "gary-crawford",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_gary-roehborn_joe-verdegan_post_001.jpg",
@@ -855,7 +855,7 @@
     "driverSlug": "gary-roehborn",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_gene-poradek_dennis-satorius_post_001.jpg",
@@ -866,7 +866,7 @@
     "driverSlug": "gene-poradek",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_gordie-sannes_joe-verdegan_post_001.jpg",
@@ -877,7 +877,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_gordie-sannes_pete-vercauteren_photo_001.jpg",
@@ -888,7 +888,7 @@
     "driverSlug": "gordie-sannes",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_harold-mueller_pete-vercauteren_photo_001.jpg",
@@ -899,7 +899,7 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_herb-iverson_bob-bergeron_photo_001.jpg",
@@ -910,7 +910,7 @@
     "driverSlug": "herb-iverson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_howie-mess_bob-bergeron_photo_001.jpg",
@@ -921,7 +921,7 @@
     "driverSlug": "howie-mess",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_howie-mess_joe-verdegan_post_001.jpg",
@@ -932,7 +932,7 @@
     "driverSlug": "howie-mess",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_howie-mess_pete-vercauteren_photo_001.jpg",
@@ -943,7 +943,7 @@
     "driverSlug": "howie-mess",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_howie-mess_ron-thruman_post_001.jpg",
@@ -954,7 +954,7 @@
     "driverSlug": "howie-mess",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_irv-ettien_joe-verdegan_post_001.jpg",
@@ -965,7 +965,7 @@
     "driverSlug": "irv-ettien",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jack-peter_dennis-satorius_post_001.jpg",
@@ -976,7 +976,7 @@
     "driverSlug": "jack-peter",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jack-peters_joe-verdegan_post_001.jpg",
@@ -987,7 +987,7 @@
     "driverSlug": "jack-peters",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jerry-muenster_pete-vercauteren_photo_001.jpg",
@@ -998,7 +998,7 @@
     "driverSlug": "jerry-muenster",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jerry-smith_unknown-photographer_photo_001.jpg",
@@ -1009,7 +1009,7 @@
     "driverSlug": "jerry-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jim-fischer_pete-vercauteren_photo_001.jpg",
@@ -1020,7 +1020,7 @@
     "driverSlug": "jim-fischer",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
@@ -1031,7 +1031,7 @@
     "driverSlug": "jim-fischer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jim-jensen_joe-verdegan_post_001.jpg",
@@ -1042,7 +1042,7 @@
     "driverSlug": "jim-jensen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jim-krause_joe-verdegan_post_001.jpg",
@@ -1053,7 +1053,7 @@
     "driverSlug": "jim-krause",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jim-krause_joe-verdegan_post_002.jpg",
@@ -1064,7 +1064,7 @@
     "driverSlug": "jim-krause",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jj-smith_pete-vercauteren_photo_001.jpg",
@@ -1075,7 +1075,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_jj-smith_unknown-photographer_photo_001.jpg",
@@ -1086,7 +1086,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_john-delabraux_joe-verdegan_post_001.jpg",
@@ -1097,7 +1097,7 @@
     "driverSlug": "john-delabraux",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_john-geske_pete-vercauteren_photo_001 (2).jpg",
@@ -1108,7 +1108,7 @@
     "driverSlug": "john-geske",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_john-geske_pete-vercauteren_photo_001.jpg",
@@ -1119,7 +1119,7 @@
     "driverSlug": "john-geske",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_john-geske_pete-vercauteren_photo_003.jpg",
@@ -1130,7 +1130,7 @@
     "driverSlug": "john-geske",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ken-walton_joe-verdegan_post_001.jpg",
@@ -1141,7 +1141,7 @@
     "driverSlug": "ken-walton",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ken-walton_unknown-photographer_photo_001.jpg",
@@ -1152,7 +1152,7 @@
     "driverSlug": "ken-walton",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_larry-duford_pete-vercauteren_photo_001.jpg",
@@ -1163,7 +1163,29 @@
     "driverSlug": "larry-duford",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "len-zellner",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_len-zellner_jim-krouse_post_111.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_len-zellner_jim-krouse_post_111.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_len-zellner_jim-krouse_post_111.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "len-zellner",
+    "photographerSlug": "jim-krouse",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_leon-plank_john-vass_photo_001.jpg",
@@ -1174,7 +1196,7 @@
     "driverSlug": "leon-plank",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_les-lecaptain_joe-verdegan_post_001.jpg",
@@ -1185,7 +1207,7 @@
     "driverSlug": "les-lecaptain",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_les-luther_unknown-photographer_photo_001.jpg",
@@ -1196,7 +1218,7 @@
     "driverSlug": "les-luther",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_lowell-bennett_pete-vercauteren_photo_001.jpg",
@@ -1207,7 +1229,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_mike-king_joe-verdegan_post_001.jpg",
@@ -1218,7 +1240,7 @@
     "driverSlug": "mike-king",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_mike-kuhnz_pete-vercauteren_photo_001.jpg",
@@ -1229,7 +1251,7 @@
     "driverSlug": "mike-kuhnz",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_mike-panure_unknown-photographer_photo_001.jpg",
@@ -1240,7 +1262,7 @@
     "driverSlug": "mike-panure",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_mj-mcbride_pete-vercauteren_photo_001.jpg",
@@ -1251,7 +1273,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_mj-mcbride_unknown-photographer_photo_001.jpg",
@@ -1262,7 +1284,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_paul-christensen_bob-bergeron_photo_0201.jpg",
@@ -1273,7 +1295,7 @@
     "driverSlug": "paul-christensen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "0201"
+    "sequence": "201"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_pete-parker_bob-bergeron_photo_001.jpg",
@@ -1284,7 +1306,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_002.png",
@@ -1295,7 +1317,18 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_2928.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_2928.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_pete-parker_unknown-photographer_photo_2928.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "pete-parker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2928"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ray-besaw_joe-verdegan_post_001.jpg",
@@ -1306,7 +1339,7 @@
     "driverSlug": "ray-besaw",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ray-bohlander_pete-vercauteren_photo_001.jpg",
@@ -1317,7 +1350,7 @@
     "driverSlug": "ray-bohlander",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ray-bohlander_unknown-photographer_photo_001.jpg",
@@ -1328,7 +1361,7 @@
     "driverSlug": "ray-bohlander",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ray-gumieny_joe-slack_photo_001.jpg",
@@ -1339,7 +1372,7 @@
     "driverSlug": "ray-gumieny",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ray-trudell_unknown-photographer_photo_001.jpg",
@@ -1350,7 +1383,7 @@
     "driverSlug": "ray-trudell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_red-bedell_joe-slack_photo_001.jpg",
@@ -1361,7 +1394,7 @@
     "driverSlug": "red-bedell",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_red-bedell_joe-slack_post_001.jpg",
@@ -1372,7 +1405,7 @@
     "driverSlug": "red-bedell",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-nuthals_joe-verdegan_post_001.jpg",
@@ -1383,7 +1416,7 @@
     "driverSlug": "roger-nuthals",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-parrot_joe-verdegan_post_001.jpg",
@@ -1394,7 +1427,7 @@
     "driverSlug": "roger-parrot",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-paul_unknown-photographer_photo_001.jpg",
@@ -1405,7 +1438,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-paul_unknown-photographer_photo_002.jpg",
@@ -1416,7 +1449,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-paul_unknown-photographer_photo_333.jpg",
@@ -1438,7 +1471,7 @@
     "driverSlug": "roger-peret",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-perrett_pete-vercauteren_photo_001.jpg",
@@ -1449,7 +1482,7 @@
     "driverSlug": "roger-perrett",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-regeth_unknown-photographer_photo_001.jpg",
@@ -1460,7 +1493,18 @@
     "driverSlug": "roger-regeth",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "brown-county-speedway_unknown-year_roger-regeth_unknown-photographer_photo_2898.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_roger-regeth_unknown-photographer_photo_2898.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_roger-regeth_unknown-photographer_photo_2898.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-regeth",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2898"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-trapp_pete-vercauteren_photo_001.jpg",
@@ -1471,7 +1515,7 @@
     "driverSlug": "roger-trapp",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roger-van-roy_pete-vercauteren_photo_001.jpg",
@@ -1482,7 +1526,7 @@
     "driverSlug": "roger-van-roy",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_roy-powless_pete-vercauteren_photo_001.jpg",
@@ -1493,7 +1537,7 @@
     "driverSlug": "roy-powless",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_russ-peterson_joe-verdegan_post_001.jpg",
@@ -1504,7 +1548,7 @@
     "driverSlug": "russ-peterson",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_russ-peterson_pete-vercauteren_photo_001.jpg",
@@ -1515,7 +1559,7 @@
     "driverSlug": "russ-peterson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_ted-peters_joe-verdegan_post_001.jpg",
@@ -1526,7 +1570,7 @@
     "driverSlug": "ted-peters",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_terry-anvelink_bob-bergeron_photo_001.jpg",
@@ -1537,7 +1581,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_terry-baldry_pete-vercauteren_photo_001.jpg",
@@ -1548,7 +1592,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_tiny-vandermoss_joe-verdegan_post_001.jpg",
@@ -1559,7 +1603,7 @@
     "driverSlug": "tiny-vandermoss",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_tom-barkey_joe-verdegan_post_001.jpg",
@@ -1570,7 +1614,7 @@
     "driverSlug": "tom-barkey",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_tom-degroot_joe-verdegan_post_001.jpg",
@@ -1581,7 +1625,7 @@
     "driverSlug": "tom-degroot",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
@@ -1592,7 +1636,7 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_tom-van-dreel_ron-thruman_post_001.jpg",
@@ -1603,7 +1647,7 @@
     "driverSlug": "tom-van-dreel",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
@@ -1611,10 +1655,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
@@ -1622,10 +1666,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
@@ -1633,10 +1677,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
@@ -1644,10 +1688,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_craig-perrault_post_001.jpg",
@@ -1655,10 +1699,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_craig-perrault_post_001.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "craig-perrault",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_joe-verdegan_post_001.jpg",
@@ -1666,10 +1710,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_joe-verdegan_post_001.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_021.jpg",
@@ -1680,7 +1724,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_071.jpg",
@@ -1691,7 +1735,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "071"
+    "sequence": "71"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_096.jpg",
@@ -1702,7 +1746,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "096"
+    "sequence": "96"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_104.jpg",
@@ -1746,7 +1790,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeronr",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_joe-verdegan_post_002.jpg",
@@ -1757,7 +1801,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_joe-verdegan_post_003.jpg",
@@ -1768,7 +1812,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_pat-heaney_post_001.jpg",
@@ -1779,7 +1823,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_unknown-photographer_photo_007.jpg",
@@ -1790,7 +1834,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_wally-jors_bob-bergeron_photo_001.jpg",
@@ -1801,7 +1845,7 @@
     "driverSlug": "wally-jors",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_wayne-roffers_joe-verdegan_post_001.jpg",
@@ -1812,7 +1856,7 @@
     "driverSlug": "wayne-roffers",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_wayne-weckworth_bob-bergeron_photo_001.jpg",
@@ -1823,7 +1867,7 @@
     "driverSlug": "wayne-weckworth",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_willie-goeden_unknown-photographer_photo_008.jpg",
@@ -1834,6 +1878,6 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   }
 ]

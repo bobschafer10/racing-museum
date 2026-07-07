@@ -8,7 +8,18 @@
     "driverSlug": "woody-pool",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_woody-pool_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_woody-pool_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_woody-pool_raceway-park-history_post_555.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "woody-pool",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "woody-pool",
     "photographerSlug": "al-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

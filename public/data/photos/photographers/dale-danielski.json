@@ -8,7 +8,7 @@
     "driverSlug": "ron-waite",
     "photographerSlug": "dale-danielski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1965_unknown-driver_dale-danielski_post_002.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "dale-danielski",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "capital-super-speedway_1965_unknown-driver_dale-danielski_post_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1965/capital-super-speedway_1965_unknown-driver_dale-danielski_post_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_1965_unknown-driver_dale-danielski_post_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1965",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dale-danielski",
+    "creditType": "post",
+    "sequence": "2"
   },
   {
     "fileName": "capital-super-speedway_1965_unknown-driver_dale-danielski_post_003.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "dale-danielski",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "capital-super-speedway_1965_unknown-driver_dale-danielski_post_003.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1965/capital-super-speedway_1965_unknown-driver_dale-danielski_post_003.jpg",
+    "publicPath": "/photos/capital-super-speedway_1965_unknown-driver_dale-danielski_post_003.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1965",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "dale-danielski",
+    "creditType": "post",
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_dale-danielski_dale-danielski_photo_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "dale-danielski",
     "photographerSlug": "dale-danielski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_doug-strasburg_dale-danielski_post_001.jpg",
@@ -52,7 +74,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "dale-danielski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_m-j-mcbride_dale-danielski_photo_001.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "m-j-mcbride",
     "photographerSlug": "dale-danielski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-miller_dale-danielski_post_001.jpg",
@@ -74,6 +96,6 @@
     "driverSlug": "mike-miller",
     "photographerSlug": "dale-danielski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

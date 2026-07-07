@@ -8,7 +8,62 @@
     "driverSlug": "frank-gawlinski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_1565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_1565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_1565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawlinski",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "1565"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_525.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_525.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_525.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawlinski",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "525"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_555.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawlinski",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawlinski",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_585.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_585.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_frank-gawlinski_raceway-park-history_post_585.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawlinski",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "585"
   },
   {
     "fileName": "rockford-speedway_1981_frank-gawlinski_don-besch_photo_001.jpg",
@@ -19,6 +74,6 @@
     "driverSlug": "frank-gawlinski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

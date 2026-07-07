@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2004/cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2004",
+    "driverSlug": "chuckie-desmith",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
@@ -8,7 +19,29 @@
     "driverSlug": "chuckie-desmith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuckie-desmith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuckie-desmith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_002.jpg",
@@ -19,6 +52,28 @@
     "driverSlug": "chuckie-desmith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuckie-desmith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuckie-desmith_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuckie-desmith",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   }
 ]

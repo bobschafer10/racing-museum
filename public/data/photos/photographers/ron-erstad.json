@@ -1,5 +1,93 @@
 [
   {
+    "fileName": "slinger-speedway_2021_adam-bleskan_ron-erstad_photo_333.jpg",
+    "storagePath": "photos/master/slinger-speedway/2021/slinger-speedway_2021_adam-bleskan_ron-erstad_photo_333.jpg",
+    "publicPath": "/photos/slinger-speedway_2021_adam-bleskan_ron-erstad_photo_333.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2021",
+    "driverSlug": "adam-bleskan",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "storagePath": "photos/master/slinger-speedway/2023/slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "publicPath": "/photos/slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2023",
+    "driverSlug": "dean-olla",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2024/slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2024",
+    "driverSlug": "morgan-zerwinski",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_hunter-cardinal_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_hunter-cardinal_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_hunter-cardinal_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "hunter-cardinal",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_jake-schraufnagel_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_jake-schraufnagel_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_jake-schraufnagel_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "jake-schraufnagel",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_karter-stark_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_karter-stark_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_karter-stark_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "karter-stark",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_lincoln-cain_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_lincoln-cain_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_lincoln-cain_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "lincoln-cain",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_james-swan_ron-erstad_photo_001.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_james-swan_ron-erstad_photo_001.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_james-swan_ron-erstad_photo_001.jpg",
@@ -8,7 +96,7 @@
     "driverSlug": "james-swan",
     "photographerSlug": "ron-erstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_russ-lorbiecki_ron-erstad_photo_001.jpg",
@@ -19,6 +107,6 @@
     "driverSlug": "russ-lorbiecki",
     "photographerSlug": "ron-erstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

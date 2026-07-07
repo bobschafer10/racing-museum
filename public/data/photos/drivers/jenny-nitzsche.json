@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "state-park-speedway_2006_jenny-nitzsche_charlie-spry_post_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/2006/state-park-speedway_2006_jenny-nitzsche_charlie-spry_post_111.jpg",
+    "publicPath": "/photos/state-park-speedway_2006_jenny-nitzsche_charlie-spry_post_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2006",
+    "driverSlug": "jenny-nitzsche",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_jenny-nitzsche_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jenny-nitzsche_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_jenny-nitzsche_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,17 @@
     "driverSlug": "jenny-nitzsche",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_jenny-nitzsche_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_jenny-nitzsche_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_jenny-nitzsche_unknown-photographer_photo_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jenny-nitzsche",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
   }
 ]

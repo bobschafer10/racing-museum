@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_scott-hansen_bob-elman_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "bob-elman",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "grundy-county-speedway_1987_scott-hansen_don-besch_photo_001.jpg",
     "storagePath": "photos/master/grundy-county-speedway/1987/grundy-county-speedway_1987_scott-hansen_don-besch_photo_001.jpg",
     "publicPath": "/photos/grundy-county-speedway_1987_scott-hansen_don-besch_photo_001.jpg",
@@ -19,7 +8,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_scott-hansen_bob-bergeron_photo_026.jpg",
@@ -30,7 +19,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "026"
+    "sequence": "26"
   },
   {
     "fileName": "leos-speedway_unknown-year_scott-hansen_bob-bergeron_photo_027.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "leos-speedway_unknown-year_scott-hansen_pat-heaney_post_001.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_unknown-year_scott-hansen_joe-verdegan_post_001.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_scott-hansen_bob-schafer_photo_253.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_scott-hansen_unknown-photographer_photo_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_scott-hansen_ken-koppa_post_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1993_scott-hansen_stan-kalwasinski_photo_001.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_bob-schafer_photo_13165.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_don-besch_photo_001.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_don-besch_photo_002.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_unknown-photographer_photo_003.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_unknown-photographer_photo_11664.jpg",
@@ -206,7 +195,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1981_scott-hansen_joe-verdegan_post_001.jpg",
@@ -217,51 +206,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1975_scott-hansen_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1975/unknown-track_1975_scott-hansen_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1975_scott-hansen_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1975",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1976_scott-hansen_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1976/unknown-track_1976_scott-hansen_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1976_scott-hansen_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1976",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_scott-hansen_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_scott-hansen_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_scott-hansen_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_scott-hansen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_scott-hansen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_scott-hansen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-hansen_joe-verdegan_post_001.jpg",
@@ -272,7 +217,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-hansen_paul-socwell_post_001.jpg",
@@ -283,7 +228,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "paul-socwell",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-hansen_unknown-photographer_photo_003.jpg",
@@ -294,7 +239,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-hansen_unknown-photographer_photo_004.jpg",
@@ -305,7 +250,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-hansen_unknown-photographer_photo_005.jpg",
@@ -316,7 +261,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-hansen_unknown-photographer_photo_006.jpg",
@@ -327,7 +272,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_scott-hansen_bob-schafer_photo_504.jpg",
@@ -360,7 +305,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_scott-hansen_keith-vercauteren_post_100.jpg",
@@ -382,7 +327,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_scott-hansen_kurt-luoma_photo_333.jpg",
@@ -404,7 +349,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_scott-hansen_unknown-photographer_photo_003.jpg",
@@ -415,6 +360,6 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

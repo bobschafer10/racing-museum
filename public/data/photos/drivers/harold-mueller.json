@@ -8,7 +8,7 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_harold-mueller_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_harold-mueller_john-alft_post_001.jpg",
@@ -30,106 +30,18 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_2020_harold-mueller_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_harold-mueller_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_harold-mueller_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_harold-mueller_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_harold-mueller_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_harold-mueller_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_pete-vercauteren_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_pete-vercauteren_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_pete-vercauteren_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "lacrosse-interstate-speedway_unknown-year_harold-mueller_john-alft_post_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_harold-mueller_john-alft_post_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_harold-mueller_john-alft_post_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
     "year": "unknown-year",
     "driverSlug": "harold-mueller",
-    "photographerSlug": "pete-vercauteren",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_007.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_008.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_008.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_008.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "008"
+    "photographerSlug": "john-alft",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_009.jpg",
@@ -140,40 +52,7 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_010.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_010.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_010.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "010"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_011.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_011.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_011.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "011"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_012.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_012.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_012.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "012"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_014.jpg",
@@ -184,40 +63,7 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "014"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_016.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_016.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_016.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "016"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_017.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_017.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_017.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "017"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_6337.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_6337.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_harold-mueller_unknown-photographer_photo_6337.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "6337"
+    "sequence": "14"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_harold-mueller_pete-vercauteren_photo_001 (2).jpg",
@@ -228,7 +74,7 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "wausau-fairgrounds_unknown-year_harold-mueller_pete-vercauteren_photo_001.jpg",
@@ -239,6 +85,17 @@
     "driverSlug": "harold-mueller",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_harold-mueller_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_harold-mueller_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_harold-mueller_unknown-photographer_photo_100.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "harold-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "mall-show_unknown-year_jim-ruth_charlie-spry_photo_333.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_jim-ruth_charlie-spry_photo_333.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_jim-ruth_charlie-spry_photo_333.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "jim-ruth",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "waukegan-speedway_1975_jim-ruth_mike-napierala_photo_001.jpg",
     "storagePath": "photos/master/waukegan-speedway/1975/waukegan-speedway_1975_jim-ruth_mike-napierala_photo_001.jpg",
     "publicPath": "/photos/waukegan-speedway_1975_jim-ruth_mike-napierala_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "jim-ruth",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1981_jim-ruth_don-besch_photo_001.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "jim-ruth",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

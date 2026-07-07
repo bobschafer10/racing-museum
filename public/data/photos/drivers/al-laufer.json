@@ -8,7 +8,18 @@
     "driverSlug": "al-laufer",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-laufer",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "114"
   },
   {
     "fileName": "rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "al-laufer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_al-laufer_unknown-photographer_photo_002.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "al-laufer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_unknown-year_al-laufer_unknown-photographer_photo_003.jpg",
@@ -85,18 +96,7 @@
     "driverSlug": "al-laufer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-laufer_yellow-john-waters_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-laufer_yellow-john-waters_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-laufer_yellow-john-waters_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-laufer",
-    "photographerSlug": "yellow-john-waters",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-laufer_bob-schafer_photo_265.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "al-laufer",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-laufer_kurt-luoma_photo_1252.jpg",

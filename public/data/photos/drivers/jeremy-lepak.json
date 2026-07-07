@@ -8,7 +8,7 @@
     "driverSlug": "jeremy-lepak",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_jeremy-lepak_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jeremy-lepak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_jeremy-lepak_tom-loos_photo_002.jpg",
@@ -30,29 +30,7 @@
     "driverSlug": "jeremy-lepak",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeremy-lepak_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-lepak_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeremy-lepak_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeremy-lepak",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeremy-lepak",
-    "photographerSlug": "tom-loos",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_002.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "jeremy-lepak",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_003.jpg",
@@ -74,50 +52,6 @@
     "driverSlug": "jeremy-lepak",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeremy-lepak_tom-loos_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeremy-lepak",
-    "photographerSlug": "tom-loos",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeremy-lepak",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeremy-lepak",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jeremy-lepak_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jeremy-lepak",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
+    "sequence": "3"
   }
 ]

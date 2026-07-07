@@ -8,7 +8,7 @@
     "driverSlug": "paul-smith",
     "photographerSlug": "david-polini",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-smith_pete-vercauteren_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "paul-smith",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-smith_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "paul-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_paul-smith_kurt-luoma_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "paul-smith",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_paul-smith_kurt-luoma_photo_1143.jpg",
@@ -74,6 +74,6 @@
     "driverSlug": "paul-smith",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

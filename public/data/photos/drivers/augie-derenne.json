@@ -8,7 +8,7 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "door-county-speedway_unknown-year_augie-derenne_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_augie-derenne_unknown-photographer_photo_001.jpg",
@@ -30,40 +30,18 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_augie-derenne_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_augie-derenne_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_augie-derenne_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
+    "fileName": "wisconsin-international-raceway_1983_augie-derenne_john-vass_photo_111.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_augie-derenne_john-vass_photo_111.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_augie-derenne_john-vass_photo_111.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
     "driverSlug": "augie-derenne",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_augie-derenne_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_augie-derenne_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_augie-derenne_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "augie-derenne",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_augie-derenne_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_augie-derenne_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_augie-derenne_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "augie-derenne",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
+    "sequence": "111"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_augie-derenne_bob-schafer_photo_419.jpg",
@@ -96,7 +74,7 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_augie-derenne_unknown-photographer_photo_002.jpg",
@@ -107,7 +85,7 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_augie-derenne_unknown-photographer_photo_004.jpg",
@@ -118,7 +96,7 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_augie-derenne_unknown-photographer_photo_005.jpg",
@@ -129,7 +107,7 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_augie-derenne_unknown-photographer_photo_006.jpg",
@@ -140,6 +118,6 @@
     "driverSlug": "augie-derenne",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   }
 ]

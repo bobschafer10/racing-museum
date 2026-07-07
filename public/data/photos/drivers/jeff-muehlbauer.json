@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2026/gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2026",
+    "driverSlug": "jeff-muehlbauer",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "344"
+  },
+  {
     "fileName": "plymouth-dirt-track_2026_jeff-muehlbauer_victory-image_photo_001.jpg",
     "storagePath": "photos/master/plymouth-dirt-track/2026/plymouth-dirt-track_2026_jeff-muehlbauer_victory-image_photo_001.jpg",
     "publicPath": "/photos/plymouth-dirt-track_2026_jeff-muehlbauer_victory-image_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "jeff-muehlbauer",
     "photographerSlug": "victory-image",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

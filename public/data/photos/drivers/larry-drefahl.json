@@ -8,7 +8,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_larry-drefahl_brad-luepke_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-drefahl_ryan-aho_post_062.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "062"
+    "sequence": "62"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-drefahl_unknown-photographer_photo_002.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-drefahl_unknown-photographer_photo_003.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_larry-drefahl_unknown-photographer_photo_001.jpg",
@@ -63,6 +63,6 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

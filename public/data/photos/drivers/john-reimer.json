@@ -8,7 +8,18 @@
     "driverSlug": "john-reimer",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-reimer_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-reimer_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-reimer_kurt-luoma_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-reimer",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_john-reimer_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "john-reimer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_john-reimer_pat-heaney_post_001.jpg",
@@ -30,51 +41,18 @@
     "driverSlug": "john-reimer",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_john-reimer_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-reimer_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-reimer_kurt-luoma_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "slinger-speedway_unknown-year_john-reimer_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-reimer_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-reimer_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
     "year": "unknown-year",
     "driverSlug": "john-reimer",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-reimer_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-reimer_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-reimer_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-reimer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-reimer_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-reimer_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-reimer_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-reimer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-reimer_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-reimer_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-reimer_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-reimer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-reimer_keith-vercauteren_post_001.jpg",
@@ -85,7 +63,7 @@
     "driverSlug": "john-reimer",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-reimer_kurt-luoma_photo_1250.jpg",

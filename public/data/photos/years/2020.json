@@ -1,5 +1,71 @@
 [
   {
+    "fileName": "angell-park-speedway_2020_brandon-wimmer_casey-bollig_photo_111.jpg",
+    "storagePath": "photos/master/angell-park-speedway/2020/angell-park-speedway_2020_brandon-wimmer_casey-bollig_photo_111.jpg",
+    "publicPath": "/photos/angell-park-speedway_2020_brandon-wimmer_casey-bollig_photo_111.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "2020",
+    "driverSlug": "brandon-wimmer",
+    "photographerSlug": "casey-bollig",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "angell-park-speedway_2020_brian-peterson_casey-bollig_photo_111.jpg",
+    "storagePath": "photos/master/angell-park-speedway/2020/angell-park-speedway_2020_brian-peterson_casey-bollig_photo_111.jpg",
+    "publicPath": "/photos/angell-park-speedway_2020_brian-peterson_casey-bollig_photo_111.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "2020",
+    "driverSlug": "brian-peterson",
+    "photographerSlug": "casey-bollig",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "angell-park-speedway_2020_derek-crane_casey-bollig_photo_111.jpg",
+    "storagePath": "photos/master/angell-park-speedway/2020/angell-park-speedway_2020_derek-crane_casey-bollig_photo_111.jpg",
+    "publicPath": "/photos/angell-park-speedway_2020_derek-crane_casey-bollig_photo_111.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "2020",
+    "driverSlug": "derek-crane",
+    "photographerSlug": "casey-bollig",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "angell-park-speedway_2020_jeff-zelinski_casey-bollig_photo_111.jpg",
+    "storagePath": "photos/master/angell-park-speedway/2020/angell-park-speedway_2020_jeff-zelinski_casey-bollig_photo_111.jpg",
+    "publicPath": "/photos/angell-park-speedway_2020_jeff-zelinski_casey-bollig_photo_111.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "2020",
+    "driverSlug": "jeff-zelinski",
+    "photographerSlug": "casey-bollig",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "angell-park-speedway_2020_jeremy-schultz_casey-bollig_photo_111.jpg",
+    "storagePath": "photos/master/angell-park-speedway/2020/angell-park-speedway_2020_jeremy-schultz_casey-bollig_photo_111.jpg",
+    "publicPath": "/photos/angell-park-speedway_2020_jeremy-schultz_casey-bollig_photo_111.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "2020",
+    "driverSlug": "jeremy-schultz",
+    "photographerSlug": "casey-bollig",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "angell-park-speedway_2020_joey-moughan_casey-bollig_photo_111.jpg",
+    "storagePath": "photos/master/angell-park-speedway/2020/angell-park-speedway_2020_joey-moughan_casey-bollig_photo_111.jpg",
+    "publicPath": "/photos/angell-park-speedway_2020_joey-moughan_casey-bollig_photo_111.jpg",
+    "trackSlug": "angell-park-speedway",
+    "year": "2020",
+    "driverSlug": "joey-moughan",
+    "photographerSlug": "casey-bollig",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "cedar-lake-speedway_2020_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
     "storagePath": "photos/master/cedar-lake-speedway/2020/cedar-lake-speedway_2020_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
     "publicPath": "/photos/cedar-lake-speedway_2020_adam-ayotte_fotos-by-fizzle_photo_001.jpg",
@@ -8,7 +74,7 @@
     "driverSlug": "adam-ayotte",
     "photographerSlug": "fotos-by-fizzle",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_2020_paul-parker_troy-powers_photo_115.jpg",
@@ -30,7 +96,7 @@
     "driverSlug": "aaron-hoff",
     "photographerSlug": "hoff-racing",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_2020_ollie-schoonover_unknown-photographer_photo_001.jpg",
@@ -41,7 +107,7 @@
     "driverSlug": "ollie-schoonover",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_2020_aaron-marthaler_aaron-marthaler_post_001.jpg",
@@ -52,7 +118,7 @@
     "driverSlug": "aaron-marthaler",
     "photographerSlug": "aaron-marthaler",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2020_aj-kraeger_aj-kraeger_post_001.jpg",
@@ -63,7 +129,29 @@
     "driverSlug": "aj-kraeger",
     "photographerSlug": "aj-kraeger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "gravity-park-speedway_2020_nick-zdroik_joe-holz_photo_111.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2020/gravity-park-speedway_2020_nick-zdroik_joe-holz_photo_111.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2020_nick-zdroik_joe-holz_photo_111.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2020",
+    "driverSlug": "nick-zdroik",
+    "photographerSlug": "joe-holz",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "hales-corners-speedway_2020_unknown-driver_unknown-photographer_photo_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/2020/hales-corners-speedway_2020_unknown-driver_unknown-photographer_photo_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_2020_unknown-driver_unknown-photographer_photo_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "2020",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "555"
   },
   {
     "fileName": "hales-corners-speedway_2020_unknown-driver_unknown-photographer_photo_555.jpg",
@@ -85,7 +173,7 @@
     "driverSlug": "jason-uttech",
     "photographerSlug": "jason-uttech",
     "creditType": "post",
-    "sequence": "2020"
+    "sequence": "333"
   },
   {
     "fileName": "kasson-speedway_2020_dave-nobel_unknown-photographer_photo_001.jpg",
@@ -96,7 +184,106 @@
     "driverSlug": "dave-nobel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "luxemburg-speedway_2020_jason-cornelius_bob-greuel_photo_555.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2020/luxemburg-speedway_2020_jason-cornelius_bob-greuel_photo_555.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2020_jason-cornelius_bob-greuel_photo_555.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2020",
+    "driverSlug": "jason-cornelius",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2020_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2020/marshfield-super-speedway_2020_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2020_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2020",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "aaron-wickersheim",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_chris-oertel_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_chris-oertel_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_chris-oertel_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "chris-oertel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_hunter-anderson_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_hunter-anderson_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_hunter-anderson_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "hunter-anderson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_james-giossi_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_james-giossi_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_james-giossi_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "james-giossi",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "ron-stroika",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "norway-speedway_2020_anthony-schiefelbein_anthony-schiefelbein_post_100.jpg",
+    "storagePath": "photos/master/norway-speedway/2020/norway-speedway_2020_anthony-schiefelbein_anthony-schiefelbein_post_100.jpg",
+    "publicPath": "/photos/norway-speedway_2020_anthony-schiefelbein_anthony-schiefelbein_post_100.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "2020",
+    "driverSlug": "anthony-schiefelbein",
+    "photographerSlug": "anthony-schiefelbein",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "norway-speedway_2020_anthony-schiefelbein_anthony-schiefelbein_post_101.jpg",
+    "storagePath": "photos/master/norway-speedway/2020/norway-speedway_2020_anthony-schiefelbein_anthony-schiefelbein_post_101.jpg",
+    "publicPath": "/photos/norway-speedway_2020_anthony-schiefelbein_anthony-schiefelbein_post_101.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "2020",
+    "driverSlug": "anthony-schiefelbein",
+    "photographerSlug": "anthony-schiefelbein",
+    "creditType": "post",
+    "sequence": "101"
   },
   {
     "fileName": "rice-lake-speedway_2020_dave-morgan_unknown-photographer_photo_001.jpg",
@@ -107,7 +294,7 @@
     "driverSlug": "dave-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2020_jayden-schmidt_unknown-photographer_photo_001.jpg",
@@ -118,7 +305,7 @@
     "driverSlug": "jayden-schmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2020_matt-urban_matt-urban_post_333.jpg",
@@ -140,7 +327,18 @@
     "driverSlug": "aaron-marthaler",
     "photographerSlug": "qc-willy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-park-speedway_2020_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/2020/state-park-speedway_2020_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "publicPath": "/photos/state-park-speedway_2020_dillon-mackesy_dillon-mackesy_post_444.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2020",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
   },
   {
     "fileName": "state-park-speedway_2020_mondel-peters_qc-willy_photo_333.jpg",
@@ -154,147 +352,15 @@
     "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_aaron-bennett_aaron-bennett_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_aaron-bennett_aaron-bennett_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_aaron-bennett_aaron-bennett_post_001.jpg",
+    "fileName": "unknown-track_2020_allen-borntreger_danielle-hadley_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_allen-borntreger_danielle-hadley_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2020_allen-borntreger_danielle-hadley_post_444.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "aaron-bennett",
-    "photographerSlug": "aaron-bennett",
+    "driverSlug": "allen-borntreger",
+    "photographerSlug": "danielle-hadley",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_aaron-butterbrodt_aaron-butterbrodt_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_aaron-butterbrodt_aaron-butterbrodt_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_aaron-butterbrodt_aaron-butterbrodt_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "aaron-butterbrodt",
-    "photographerSlug": "aaron-butterbrodt",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_aj-kraeger_aj-krager_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_aj-kraeger_aj-krager_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_aj-kraeger_aj-krager_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "aj-kraeger",
-    "photographerSlug": "aj-krager",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_billy-nelson_unknown-credit_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "billy-nelson",
-    "photographerSlug": "unknown-credit",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-gherardi_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-gherardi_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-gherardi_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-gherardi",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-jusola_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-jusola_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-jusola_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-jusola",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-percy_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-percy_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-percy_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-percy",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-root_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-root_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-root_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-root",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-root_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-root_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-root_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-root",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-root_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-root_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-root_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-root",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-root_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-root_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-root_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-root",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-root_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-root_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-root_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-root",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_2020_brent-laursen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_brent-laursen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_brent-laursen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "brent-laursen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "444"
   },
   {
     "fileName": "unknown-track_2020_craig-haas_unknown-photographer_photo_333.jpg",
@@ -308,103 +374,26 @@
     "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_dan-mcmann_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dan-mcmann_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dan-mcmann_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2020_craig-haas_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_craig-haas_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_2020_craig-haas_unknown-photographer_photo_333.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "dan-mcmann",
+    "driverSlug": "craig-haas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_dave-adams_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-adams_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-adams_unknown-credit_post_001.jpg",
+    "fileName": "unknown-track_2020_craig-haas_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_craig-haas_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_2020_craig-haas_unknown-photographer_photo_333.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "dave-adams",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-adams_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-adams_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-adams_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-adams",
+    "driverSlug": "craig-haas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-bjorge_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-bjorge_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-bjorge_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-bjorge",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-bjorge_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-bjorge_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-bjorge_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-bjorge",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-morgan_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-morgan_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-morgan_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-morgan_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-morgan_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-morgan_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-morgan_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-morgan",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_2020_dave-shackelton_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dave-shackelton_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dave-shackelton_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dave-shackelton",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_2020_derek-haas_unknown-photographer_photo_333.jpg",
@@ -418,213 +407,48 @@
     "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_dick-christman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dick-christman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dick-christman_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2020_derek-haas_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_derek-haas_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_2020_derek-haas_unknown-photographer_photo_333.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "dick-christman",
+    "driverSlug": "derek-haas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_dick-oulette_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dick-oulette_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dick-oulette_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2020_derek-haas_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_derek-haas_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_2020_derek-haas_unknown-photographer_photo_333.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "dick-oulette",
+    "driverSlug": "derek-haas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_durand-track_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_durand-track_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_durand-track_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2020_geoff-zdroik_geoff-zdroik_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_geoff-zdroik_geoff-zdroik_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2020_geoff-zdroik_geoff-zdroik_post_111.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "durand-track",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "driverSlug": "geoff-zdroik",
+    "photographerSlug": "geoff-zdroik",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
-    "fileName": "unknown-track_2020_durand-track-ii_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_durand-track-ii_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_durand-track-ii_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2020_matt-mceathron_dan-zelten_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_matt-mceathron_dan-zelten_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2020_matt-mceathron_dan-zelten_post_111.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "durand-track-ii",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dwaine-erickson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dwaine-erickson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dwaine-erickson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dwaine-erickson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_harold-mueller_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_harold-mueller_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_harold-mueller_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_harold-mueller_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_harold-mueller_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_harold-mueller_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "harold-mueller",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_2020_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_jeff-hinkemeyer_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "jeff-hinkemeyer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_jeff-keeney_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_jeff-keeney_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_jeff-keeney_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "jeff-keeney",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_jerry-amundson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_jerry-amundson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_jerry-amundson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "jerry-amundson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_jim-eliason_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_jim-eliason_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_jim-eliason_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "jim-eliason",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_jim-schell_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_jim-schell_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_jim-schell_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "jim-schell",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_joel-cryderman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_joel-cryderman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_joel-cryderman_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "joel-cryderman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_johnny-johnson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_johnny-johnson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_johnny-johnson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "johnny-johnson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_johnny-johnson-hauler_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_johnny-johnson-hauler_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_johnny-johnson-hauler_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "johnny-johnson-hauler",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_karl-fenske_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_karl-fenske_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_karl-fenske_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "karl-fenske",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_2020_lance-matthees_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_lance-matthees_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_lance-matthees_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "lance-matthees",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_lou-rigey_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_lou-rigey_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_lou-rigey_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "lou-rigey",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_mcbride-brad-luepke-via_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_mcbride-brad-luepke-via_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_mcbride-brad-luepke-via_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "mcbride-brad-luepke-via",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "driverSlug": "matt-mceathron",
+    "photographerSlug": "dan-zelten",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "unknown-track_2020_michael-holstrom_unknown-photographer_photo_333.jpg",
@@ -638,180 +462,48 @@
     "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_mike-baer_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_mike-baer_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_mike-baer_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2020_michael-holstrom_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_michael-holstrom_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_2020_michael-holstrom_unknown-photographer_photo_333.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "mike-baer",
+    "driverSlug": "michael-holstrom",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_pat-willis_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_pat-willis_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_pat-willis_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_2020_michael-holstrom_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_michael-holstrom_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_2020_michael-holstrom_unknown-photographer_photo_333.jpg",
     "trackSlug": "unknown-track",
     "year": "2020",
-    "driverSlug": "pat-willis",
+    "driverSlug": "michael-holstrom",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
-    "fileName": "unknown-track_2020_punky-manor_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_punky-manor_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_punky-manor_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2020/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_444.jpg",
+    "trackSlug": "wilmot-raceway",
     "year": "2020",
-    "driverSlug": "punky-manor",
-    "photographerSlug": "unknown-photographer",
+    "driverSlug": "leroy-ostrowski",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "444"
   },
   {
-    "fileName": "unknown-track_2020_randy-gullixson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_randy-gullixson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_randy-gullixson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_454.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2020/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_454.jpg",
+    "publicPath": "/photos/wilmot-raceway_2020_leroy-ostrowski_weber-brothers_photo_454.jpg",
+    "trackSlug": "wilmot-raceway",
     "year": "2020",
-    "driverSlug": "randy-gullixson",
-    "photographerSlug": "unknown-photographer",
+    "driverSlug": "leroy-ostrowski",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_redetzke-lem-turnberg_racing_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_redetzke-lem-turnberg_racing_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_redetzke-lem-turnberg_racing_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "redetzke-lem-turnberg",
-    "photographerSlug": "racing",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_rick-cox_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_rick-cox_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_rick-cox_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "rick-cox",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_rick-popovich_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_rick-popovich_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_rick-popovich_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "rick-popovich",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_shorty-espesth_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_shorty-espesth_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_shorty-espesth_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "shorty-espesth",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "steve-fegers",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_steve-laursen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_steve-laursen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_steve-laursen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "steve-laursen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_terry-henck_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_terry-henck_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_terry-henck_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "terry-henck",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_terry-lanphear_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_terry-lanphear_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_terry-lanphear_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "terry-lanphear",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_terry-lanphear_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_terry-lanphear_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_2020_terry-lanphear_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "terry-lanphear",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_2020_tim-mcmann_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_tim-mcmann_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_tim-mcmann_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "tim-mcmann",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_tom-nesbitt_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_tom-nesbitt_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_tom-nesbitt_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "tom-nesbitt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_willy-kraft_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_willy-kraft_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_willy-kraft_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "willy-kraft",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "454"
   },
   {
     "fileName": "wilmot-raceway_2020_mike-conn_weber-brothers_photo_001.jpg",
@@ -822,6 +514,6 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_john-ziegler_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_john-ziegler_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_john-ziegler_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_john-ziegler_al-fortner_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_bob-elman_photo_007.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "bob-elman",
+    "creditType": "photo",
+    "sequence": "7"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_bob-schafer_photo_180.jpg",
@@ -44,15 +66,15 @@
     "sequence": "180"
   },
   {
-    "fileName": "capital-super-speedway_unknown-year_john-ziegler_father-grubba_photo_333.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_father-grubba_photo_333.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_father-grubba_photo_333.jpg",
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_bob-schafer_photo_180.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_bob-schafer_photo_180.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_bob-schafer_photo_180.jpg",
     "trackSlug": "capital-super-speedway",
     "year": "unknown-year",
     "driverSlug": "john-ziegler",
-    "photographerSlug": "father-grubba",
+    "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "333"
+    "sequence": "180"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_john-vass_photo_002.jpg",
@@ -63,7 +85,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_john-vass_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_john-vass_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_kurt-luoma_post_001.jpg",
@@ -74,7 +107,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "kurt-luoma",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_kurt-luoma_post_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_kurt-luoma_post_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_kurt-luoma_post_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
@@ -85,7 +129,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_003.jpg",
@@ -96,7 +151,29 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_003.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_1346.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_1346.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_1346.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1346"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_john-ziegler_unknown-photographer_photo_1346.jpg",
@@ -140,7 +217,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_john-ziegler_unknown-photographer_photo_204.jpg",
@@ -173,7 +250,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_john-ziegler_unknown-photographer_photo_1342.jpg",
@@ -195,7 +272,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "dave-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_john-ziegler_kurt-luoma_photo_001.jpg",
@@ -206,7 +283,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_john-ziegler_unknown-photographer_photo_11128.jpg",
@@ -228,7 +305,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
@@ -239,7 +316,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1991_john-ziegler_bob-schafer_photo_211.jpg",
@@ -261,7 +338,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-ziegler_unknown-photographer_photo_3301.jpg",
@@ -283,7 +360,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-ziegler_bob-schafer_photo_12806.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-ziegler_bob-schafer_photo_12806.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-ziegler_bob-schafer_photo_12806.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "12806"
   },
   {
     "fileName": "slinger-speedway_unknown-year_john-ziegler_bob-schafer_photo_12806.jpg",
@@ -308,6 +396,28 @@
     "sequence": "14042"
   },
   {
+    "fileName": "slinger-speedway_unknown-year_john-ziegler_bob-schafer_photo_14042.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-ziegler_bob-schafer_photo_14042.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-ziegler_bob-schafer_photo_14042.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "14042"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-ziegler_father-grubba_photo_114.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-ziegler_father-grubba_photo_114.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-ziegler_father-grubba_photo_114.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "114"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_john-ziegler_father-grubba_photo_114.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-ziegler_father-grubba_photo_114.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_john-ziegler_father-grubba_photo_114.jpg",
@@ -327,7 +437,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001 (2).jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001 (2).jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001 (2).jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "12"
   },
   {
     "fileName": "slinger-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
@@ -338,7 +459,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_john-ziegler_weber-brothers_photo_001.jpg",
@@ -349,40 +481,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_1969_john-ziegler_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1969/unknown-track_1969_john-ziegler_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1969_john-ziegler_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1969",
-    "driverSlug": "john-ziegler",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-ziegler_kurt-luoma_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-ziegler_kurt-luoma_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-ziegler_kurt-luoma_photo_002.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "slinger-speedway_unknown-year_john-ziegler_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_john-ziegler_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_john-ziegler_weber-brothers_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
     "year": "unknown-year",
     "driverSlug": "john-ziegler",
-    "photographerSlug": "kurt-luoma",
+    "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-ziegler_kurt-luoma_photo_1369.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-ziegler_kurt-luoma_photo_1369.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-ziegler_kurt-luoma_photo_1369.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-ziegler",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "1369"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_john-ziegler_bob-schafer_photo_222.jpg",
@@ -437,7 +547,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ziegler_kurt-luoma_photo_001.jpg",
@@ -448,7 +558,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ziegler_kurt-luoma_photo_1130.jpg",
@@ -514,7 +624,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ziegler_unknown-photographer_photo_002.jpg",
@@ -525,7 +635,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ziegler_unknown-photographer_photo_003.jpg",
@@ -536,7 +646,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ziegler_unknown-photographer_photo_004.jpg",
@@ -547,7 +657,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ziegler_unknown-photographer_photo_005.jpg",
@@ -558,6 +668,6 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   }
 ]

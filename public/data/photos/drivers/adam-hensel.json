@@ -8,7 +8,7 @@
     "driverSlug": "adam-hensel",
     "photographerSlug": "jerry-zimmy",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-valley-speedway_unknown-year_adam-hensel_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "adam-hensel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rice-lake-speedway_unknown-year_adam-hensel_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "adam-hensel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rice-lake-speedway_unknown-year_adam-hensel_unknown-photographer_photo_222.jpg",
@@ -52,40 +52,7 @@
     "driverSlug": "adam-hensel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_adam-hensel_larry-quinn_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_adam-hensel_larry-quinn_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_adam-hensel_larry-quinn_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "adam-hensel",
-    "photographerSlug": "larry-quinn",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_adam-hensel_larry-quinn_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_adam-hensel_larry-quinn_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_adam-hensel_larry-quinn_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "adam-hensel",
-    "photographerSlug": "larry-quinn",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_adam-hensel_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_adam-hensel_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_adam-hensel_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "adam-hensel",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_adam-hensel_kurt-luoma_photo_001.jpg",
@@ -96,6 +63,6 @@
     "driverSlug": "adam-hensel",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

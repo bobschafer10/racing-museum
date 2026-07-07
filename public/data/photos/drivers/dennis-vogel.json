@@ -8,18 +8,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "032"
-  },
-  {
-    "fileName": "dells-motor-speedway_unknown-year_dennis-vogel_john-vass_photo_001.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_dennis-vogel_john-vass_photo_001.jpg",
-    "publicPath": "/photos/dells-motor-speedway_unknown-year_dennis-vogel_john-vass_photo_001.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "unknown-year",
-    "driverSlug": "dennis-vogel",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "32"
   },
   {
     "fileName": "leos-speedway_unknown-year_dennis-vogel_unknown-photographer_photo_555.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dennis-vogel_bob-schafer_photo_13920.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_dennis-vogel_weber-brothers_photo_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-vogel_unknown-photographer_photo_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-vogel_unknown-photographer_photo_002.jpg",
@@ -118,7 +107,18 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dennis-vogel_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dennis-vogel_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dennis-vogel_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dennis-vogel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-vogel_unknown-photographer_photo_003.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_dennis-vogel_weber-brothers_photo_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dennis-vogel_bob-schafer_photo_490.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dennis-vogel_john-vass_photo_001.jpg",
@@ -184,6 +184,6 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

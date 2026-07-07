@@ -8,7 +8,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "fond-du-lac-fairgrounds_1971_bob-kleinschmidt_joe-verdegan_post_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
@@ -74,7 +74,29 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
@@ -85,7 +107,29 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
@@ -96,6 +140,28 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-kleinschmidt_unknown-photographer_photo_008.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-kleinschmidt",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "rick-aukland",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-aukland_kurt-luoma_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "rick-aukland",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rick-aukland_ryan-aho_post_113.jpg",
@@ -31,6 +31,17 @@
     "photographerSlug": "ryan-aho",
     "creditType": "post",
     "sequence": "113"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_rick-aukland_unknown-photographer_photo_1880.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_rick-aukland_unknown-photographer_photo_1880.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_rick-aukland_unknown-photographer_photo_1880.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "rick-aukland",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1880"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_rick-aukland_kurt-luoma_photo_111.jpg",

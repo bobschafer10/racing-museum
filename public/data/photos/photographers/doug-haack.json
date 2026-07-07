@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "freeport-raceway-park_unknown-year_arnie-christen_doug-haack_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_arnie-christen_doug-haack_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_arnie-christen_doug-haack_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "arnie-christen",
+    "photographerSlug": "doug-haack",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "sammy-reakes",
+    "photographerSlug": "doug-haack",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_irv-janey_doug-haack_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_irv-janey_doug-haack_post_444.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_irv-janey_doug-haack_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "irv-janey",
+    "photographerSlug": "doug-haack",
+    "creditType": "post",
+    "sequence": "444"
+  }
+]

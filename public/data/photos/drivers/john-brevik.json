@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_556.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_556.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_556.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-brevik",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "556"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_557.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_557.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_john-brevik_kurt-luoma_photo_557.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-brevik",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "557"
+  },
+  {
     "fileName": "lacrosse-interstate-speedway_unknown-year_john-brevik_john-vass_photo_001.jpg",
     "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_john-brevik_john-vass_photo_001.jpg",
     "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_john-brevik_john-vass_photo_001.jpg",
@@ -8,7 +30,7 @@
     "driverSlug": "john-brevik",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_john-brevik_unknown-photographer_photo_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "john-brevik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_john-brevik_unknown-photographer_photo_002.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "john-brevik",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

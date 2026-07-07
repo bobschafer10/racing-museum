@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "freeport-raceway-park_unknown-year_dennis-erb-sr_ron-thruman_photo_555.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_dennis-erb-sr_ron-thruman_photo_555.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_dennis-erb-sr_ron-thruman_photo_555.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "dennis-erb-sr",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "sante-fe-speedway_unknown-year_dennis-erb-sr_tom-sexton_post_111.jpg",
+    "storagePath": "photos/master/sante-fe-speedway/unknown-year/sante-fe-speedway_unknown-year_dennis-erb-sr_tom-sexton_post_111.jpg",
+    "publicPath": "/photos/sante-fe-speedway_unknown-year_dennis-erb-sr_tom-sexton_post_111.jpg",
+    "trackSlug": "sante-fe-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-erb-sr",
+    "photographerSlug": "tom-sexton",
+    "creditType": "post",
+    "sequence": "111"
+  }
+]

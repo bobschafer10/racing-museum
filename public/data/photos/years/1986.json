@@ -8,7 +8,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "paul-socwell",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1986_dick-peardot_jeff-gilhart_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dick-peardot",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1986_bob-roosa_unknown-photographer_photo_001.jpg",
@@ -30,18 +30,7 @@
     "driverSlug": "bob-roosa",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "dells-motor-speedway_1986_charlie-schwoch_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/dells-motor-speedway/1986/dells-motor-speedway_1986_charlie-schwoch_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/dells-motor-speedway_1986_charlie-schwoch_unknown-photographer_photo_001.jpg",
-    "trackSlug": "dells-motor-speedway",
-    "year": "1986",
-    "driverSlug": "charlie-schwoch",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1986_rich-bickle-jr_bob-schafer_photo_100.jpg",
@@ -53,6 +42,17 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "100"
+  },
+  {
+    "fileName": "hales-corners-speedway_1986_dave-gorny_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1986/hales-corners-speedway_1986_dave-gorny_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1986_dave-gorny_weber-brothers_photo_334.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1986",
+    "driverSlug": "dave-gorny",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "hales-corners-speedway_1986_ed-ledger_weber-brothers_photo_111.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "john-warren",
     "photographerSlug": "bob-cruse",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1986_mike-marshall_weber-brothers_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "mike-marshall",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1986_tom-dowd_weber-brothers_photo_111.jpg",
@@ -110,17 +110,6 @@
     "sequence": "115"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_1986_dan-navrestad_jeff-gilhart_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/1986/lacrosse-interstate-speedway_1986_dan-navrestad_jeff-gilhart_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_1986_dan-navrestad_jeff-gilhart_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "1986",
-    "driverSlug": "dan-navrestad",
-    "photographerSlug": "jeff-gilhart",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "lacrosse-interstate-speedway_1986_paul-proksch_jeff-gilhart_photo_001.jpg",
     "storagePath": "photos/master/lacrosse-interstate-speedway/1986/lacrosse-interstate-speedway_1986_paul-proksch_jeff-gilhart_photo_001.jpg",
     "publicPath": "/photos/lacrosse-interstate-speedway_1986_paul-proksch_jeff-gilhart_photo_001.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "paul-proksch",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_1986_pat-heaney_al-fortner_photo_001.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "pat-heaney",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1986_wally-wise_dave-panske_photo_001.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "wally-wise",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1986_jj-pulera_pat-heaney_post_001.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "jj-pulera",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1986_john-ziegler_pat-heaney_post_001.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1986_kevin-rein_pat-heaney_post_001.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "kevin-rein",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1986_larry-epright_pat-heaney_post_001.jpg",
@@ -195,7 +184,7 @@
     "driverSlug": "larry-epright",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1986_randy-larsen_pat-heaney_post_001.jpg",
@@ -206,7 +195,7 @@
     "driverSlug": "randy-larsen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1986_steve-mccarthy_pat-heaney_post_999.jpg",
@@ -231,28 +220,6 @@
     "sequence": "618"
   },
   {
-    "fileName": "unknown-track_1986_tm-miller_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1986/unknown-track_1986_tm-miller_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1986_tm-miller_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1986",
-    "driverSlug": "tm-miller",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1986_tom-steuding_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1986/unknown-track_1986_tom-steuding_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1986_tom-steuding_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1986",
-    "driverSlug": "tom-steuding",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "wisconsin-international-raceway_1986_kent-pearson_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/1986/wisconsin-international-raceway_1986_kent-pearson_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_1986_kent-pearson_unknown-photographer_photo_001.jpg",
@@ -261,6 +228,6 @@
     "driverSlug": "kent-pearson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

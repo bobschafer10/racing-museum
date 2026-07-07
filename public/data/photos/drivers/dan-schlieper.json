@@ -1,14 +1,14 @@
 [
   {
-    "fileName": "unknown-track_1993_dan-schlieper_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_dan-schlieper_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_dan-schlieper_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
+    "fileName": "hales-corners-speedway_2002_dan-schlieper_mark-vanveghel_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/2002/hales-corners-speedway_2002_dan-schlieper_mark-vanveghel_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_2002_dan-schlieper_mark-vanveghel_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "2002",
     "driverSlug": "dan-schlieper",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "mark-vanveghel",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-schlieper_unknown-photographer_photo_001.jpg",
@@ -19,6 +19,17 @@
     "driverSlug": "dan-schlieper",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-schlieper_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-schlieper_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-schlieper_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-schlieper",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

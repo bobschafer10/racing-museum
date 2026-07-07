@@ -8,7 +8,7 @@
     "driverSlug": "randy-sweet",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "randy-sweet",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_unknown-year_randy-sweet_kurt-luoma_photo_2910.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_randy-sweet_kurt-luoma_photo_2910.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_randy-sweet_kurt-luoma_photo_2910.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "randy-sweet",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "2910"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_randy-sweet_unknown-photographer_photo_359.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "randy-sweet",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_randy-sweet_kurt-luoma_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "randy-sweet",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_randy-sweet_weber-brothers_photo_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "randy-sweet",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_randy-sweet_keith-vercauteren_post_001.jpg",
@@ -96,6 +107,6 @@
     "driverSlug": "randy-sweet",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

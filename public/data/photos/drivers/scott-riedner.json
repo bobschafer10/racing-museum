@@ -8,7 +8,29 @@
     "driverSlug": "scott-riedner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1999_scott-riedner_brandon-riedner_post_111.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1999/capital-super-speedway_1999_scott-riedner_brandon-riedner_post_111.jpg",
+    "publicPath": "/photos/capital-super-speedway_1999_scott-riedner_brandon-riedner_post_111.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1999",
+    "driverSlug": "scott-riedner",
+    "photographerSlug": "brandon-riedner",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_scott-riedner_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_scott-riedner_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_scott-riedner_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-riedner",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_scott-riedner_don-wendlandt_photo_115.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "scott-riedner",
     "photographerSlug": "charlie-doerr",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-riedner_charlie-spry_photo_001.jpg",
@@ -41,6 +63,6 @@
     "driverSlug": "scott-riedner",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

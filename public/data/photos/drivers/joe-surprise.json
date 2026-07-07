@@ -8,6 +8,17 @@
     "driverSlug": "joe-surprise",
     "photographerSlug": "chad-tessman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_unknown-year_joe-surprise_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/unknown-year/dodge-county-fairgrounds_unknown-year_joe-surprise_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_unknown-year_joe-surprise_unknown-photographer_photo_333.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "joe-surprise",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   }
 ]

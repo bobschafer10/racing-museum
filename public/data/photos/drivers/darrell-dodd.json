@@ -8,7 +8,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "dave-olson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mall-show_unknown-year_darrell-dodd_don-besch_photo_222.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_darrell-dodd_joe-slack_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_11-racing-wisconsin_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "11-racing-wisconsin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_john-vass_photo_001.jpg",
@@ -74,7 +74,18 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-dodd_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-dodd_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-dodd_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-dodd",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_john-vass_photo_002.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_002.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_003.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_004.jpg",
@@ -118,7 +129,18 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "darrell-dodd",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_005.jpg",
@@ -129,7 +151,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_darrell-dodd_unknown-photographer_photo_006.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_darrell-dodd_kurt-luoma_photo_001.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_darrell-dodd_kurt-luoma_photo_002.jpg",
@@ -162,6 +184,6 @@
     "driverSlug": "darrell-dodd",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

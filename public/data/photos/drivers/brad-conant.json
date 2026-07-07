@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "marshfield-super-speedway_2014_brad-conant_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_brad-conant_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_brad-conant_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "brad-conant",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
     "fileName": "state-park-speedway_unknown-year_brad-conant_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_brad-conant_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_unknown-year_brad-conant_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "brad-conant",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

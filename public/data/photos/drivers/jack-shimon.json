@@ -1,14 +1,14 @@
 [
   {
-    "fileName": "unknown-track_unknown-year_jack-shimon_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-shimon_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-shimon_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "superior-speedway_unknown-year_jack-shimon_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/superior-speedway/unknown-year/superior-speedway_unknown-year_jack-shimon_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/superior-speedway_unknown-year_jack-shimon_unknown-photographer_photo_111.jpg",
+    "trackSlug": "superior-speedway",
     "year": "unknown-year",
     "driverSlug": "jack-shimon",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "111"
   },
   {
     "fileName": "unknown-track_unknown-year_jack-shimon_unknown-photographer_photo_005.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "jack-shimon",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jack-shimon_unknown-photographer_photo_006.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jack-shimon_unknown-photographer_photo_006.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jack-shimon_unknown-photographer_photo_006.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jack-shimon",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "006"
+    "sequence": "5"
   }
 ]

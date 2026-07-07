@@ -8,7 +8,29 @@
     "driverSlug": "craig-haupt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-haupt_pat-heaney_post_201.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-haupt_pat-heaney_post_201.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-haupt_pat-heaney_post_201.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-haupt",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "201"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-haupt_pat-heaney_post_201.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-haupt_pat-heaney_post_201.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-haupt_pat-heaney_post_201.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-haupt",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "201"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-haupt_pat-heaney_post_201.jpg",

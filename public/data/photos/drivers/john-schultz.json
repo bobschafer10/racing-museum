@@ -8,7 +8,7 @@
     "driverSlug": "john-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_john-schultz_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "john-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_john-schultz_pete-vercauteren_photo_001.jpg",
@@ -30,29 +30,7 @@
     "driverSlug": "john-schultz",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-schultz_pete-vercauteren_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-schultz_pete-vercauteren_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-schultz_pete-vercauteren_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-schultz",
-    "photographerSlug": "pete-vercauteren",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-schultz_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-schultz_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-schultz_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-schultz",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-schultz_unknown-photographer_photo_001.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "john-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-schultz_unknown-photographer_photo_002.jpg",
@@ -74,6 +52,6 @@
     "driverSlug": "john-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "bob-delaney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_bob-delaney_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bob-delaney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-delaney_blaser_photo_001.jpg",
@@ -30,7 +30,29 @@
     "driverSlug": "bob-delaney",
     "photographerSlug": "blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-delaney_blaser_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-delaney_blaser_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-delaney_blaser_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-delaney",
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-delaney_blaser_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-delaney_blaser_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-delaney_blaser_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-delaney",
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-delaney_geoff-mckarns_post_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "bob-delaney",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-delaney_geoff-mckarns_post_002.jpg",
@@ -52,6 +74,6 @@
     "driverSlug": "bob-delaney",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

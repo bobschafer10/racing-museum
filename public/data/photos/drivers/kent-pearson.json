@@ -8,7 +8,7 @@
     "driverSlug": "kent-pearson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_kent-pearson_unknown-photographer_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "kent-pearson",
     "photographerSlug": "unknown-photographer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1986_kent-pearson_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "kent-pearson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kent-pearson_keith-vercauteren_post_001.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "kent-pearson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

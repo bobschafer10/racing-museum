@@ -8,7 +8,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1978_tom-reffner_john-vass_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1979_tom-reffner_john-vass_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1983_tom-reffner_al-fortner_photo_001.jpg",
@@ -41,62 +41,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "kurt-luoma",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_003.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_tom-reffner_unknown-photographer_photo_004.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1981_tom-reffner_doyce-eaton_photo_001.jpg",
@@ -107,7 +52,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "doyce-eaton",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_tom-reffner_bob-schafer_photo_170.jpg",
@@ -129,7 +74,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "020"
+    "sequence": "20"
   },
   {
     "fileName": "elko-speedway_unknown-year_tom-reffner_cal-wood_photo_001.jpg",
@@ -140,7 +85,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_tom-reffner_cal-wood_photo_002.jpg",
@@ -151,7 +96,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_father-grubba_photo_333.jpg",
@@ -173,7 +118,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
@@ -184,7 +129,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_002.jpg",
@@ -195,7 +140,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_003.jpg",
@@ -206,7 +151,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_004.jpg",
@@ -217,7 +162,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_005.jpg",
@@ -228,7 +173,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_006.jpg",
@@ -239,7 +184,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_kurt-luoma_photo_111.jpg",
@@ -283,7 +228,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
@@ -294,7 +239,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "i-70-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -305,18 +250,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_bob-schafer_photo_169.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_tom-reffner_bob-schafer_photo_169.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_tom-reffner_bob-schafer_photo_169.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "169"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
@@ -327,7 +261,18 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -338,7 +283,18 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
@@ -349,7 +305,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_003.jpg",
@@ -360,7 +316,18 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_11151.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_11151.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_11151.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "11151"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_tom-reffner_unknown-photographer_photo_11151.jpg",
@@ -393,7 +360,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "steve-zautke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tom-reffner_stan-kalwasinski_photo_001.jpg",
@@ -404,7 +371,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -415,7 +382,18 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_tom-reffner_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_tom-reffner_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_tom-reffner_raceway-park-history_post_888.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
   },
   {
     "fileName": "rockford-speedway_1971_tom-reffner_unknown-credit_post_001.jpg",
@@ -426,7 +404,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -437,7 +415,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_tom-reffner_weber-brothers_photo_001.jpg",
@@ -448,7 +426,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_tom-reffner_weber-brothers_photo_001.jpg",
@@ -459,7 +437,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_tom-reffner_weber-brothers_photo_001.jpg",
@@ -470,7 +448,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_tom-reffner_weber-brothers_photo_002.jpg",
@@ -481,7 +459,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-reffner_don-besch_photo_001.jpg",
@@ -492,7 +470,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -503,7 +481,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-reffner_unknown-photographer_photo_377.jpg",
@@ -525,7 +503,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_1982_tom-reffner_tom-loos_photo_001.jpg",
@@ -536,7 +514,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_tom-reffner_kurt-luoma_photo_001.jpg",
@@ -547,7 +525,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_tom-reffner_kurt-luoma_photo_222.jpg",
@@ -569,18 +547,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_tom-reffner_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_tom-reffner_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_1978_tom-reffner_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "tom-reffner",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_pat-heaney_post_001.jpg",
@@ -591,7 +558,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -602,7 +569,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
@@ -613,7 +580,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_003.jpg",
@@ -624,7 +591,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_004.jpg",
@@ -635,7 +602,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_005.jpg",
@@ -646,7 +613,29 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_005.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_005.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_005.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_090.jpg",
@@ -657,7 +646,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "090"
+    "sequence": "90"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-reffner_unknown-photographer_photo_556.jpg",
@@ -679,7 +668,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-reffner_bob-schafer_photo_14027.jpg",
@@ -701,7 +690,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-reffner_bob-wedlund_photo_002.jpg",
@@ -712,7 +701,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-reffner_john-vass_photo_100.jpg",
@@ -822,7 +811,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-reffner_unknown-photographer_photo_002.jpg",
@@ -833,7 +822,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-reffner_unknown-photographer_photo_003.jpg",
@@ -844,7 +833,18 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tom-reffner_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tom-reffner_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tom-reffner_unknown-photographer_photo_100.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-reffner",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-reffner_unknown-photographer_photo_12784.jpg",

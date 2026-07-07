@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "storagePath": "photos/master/slinger-speedway/2023/slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "publicPath": "/photos/slinger-speedway_2023_dean-olla_ron-erstad_photo_555.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2023",
+    "driverSlug": "dean-olla",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_dean-olla_dean-olla_post_443.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dean-olla_dean-olla_post_443.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_dean-olla_dean-olla_post_443.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-olla",
+    "photographerSlug": "dean-olla",
+    "creditType": "post",
+    "sequence": "443"
+  }
+]

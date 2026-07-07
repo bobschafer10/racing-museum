@@ -8,7 +8,7 @@
     "driverSlug": "jerry-straube",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1983_jerry-straube_pat-heaney_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jerry-straube",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jerry-straube_unknown-photographer_photo_001.jpg",
@@ -30,17 +30,6 @@
     "driverSlug": "jerry-straube",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-straube_pat-heaney_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-straube_pat-heaney_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-straube_pat-heaney_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-straube",
-    "photographerSlug": "pat-heaney",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

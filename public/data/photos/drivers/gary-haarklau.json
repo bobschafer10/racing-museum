@@ -8,7 +8,18 @@
     "driverSlug": "gary-haarklau",
     "photographerSlug": "blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1990/dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1990",
+    "driverSlug": "gary-haarklau",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "dells-motor-speedway_1990_gary-haarklau_bob-schafer_photo_222.jpg",
@@ -28,8 +39,19 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "gary-haarklau",
-    "photographerSlug": "Blaser-photo",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_gary-haarklau_charlie-spry_post_565.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-haarklau_charlie-spry_post_565.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_gary-haarklau_charlie-spry_post_565.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "gary-haarklau",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "565"
   }
 ]

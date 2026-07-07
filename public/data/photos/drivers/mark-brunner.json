@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "hales-corners-speedway_1982_mark-brunner_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1982/hales-corners-speedway_1982_mark-brunner_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1982_mark-brunner_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1982",
+    "driverSlug": "mark-brunner",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
     "fileName": "hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_002.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_003.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_005.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_mark-brunner_bob-schafer_photo_12654.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "jeff-weber",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-brunner_pat-heaney_post_002.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-brunner_unknown-photographer_photo_001.jpg",
@@ -85,6 +96,6 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

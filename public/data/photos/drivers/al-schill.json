@@ -8,18 +8,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "capital-super-speedway_unknown-year_al-schill_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_al-schill_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_al-schill_unknown-photographer_photo_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedarburg-speedway_1979_al-schill_unknown-photographer_photo_001.jpg",
@@ -30,7 +19,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_1987_al-schill_don-besch_photo_001.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "grundy-county-speedway_unknown-year_al-schill_bob-schafer_photo_14132.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "kim-kemperman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1978_al-schill_sean-ninneman_post_001.jpg",
@@ -74,7 +63,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "sean-ninneman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_al-schill_bob-schafer_photo_113.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_al-schill_unknown-photographer_photo_001.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_al-schill_unknown-photographer_photo_002.jpg",
@@ -118,7 +107,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_al-schill_unknown-photographer_photo_003.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_al-schill_unknown-photographer_photo_004.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_al-schill_unknown-photographer_photo_200.jpg",
@@ -187,17 +176,6 @@
     "sequence": "502"
   },
   {
-    "fileName": "hales-corners-speedway_unknown-year_al-schill_weber-brothers_photo_001.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_al-schill_weber-brothers_photo_001.jpg",
-    "publicPath": "/photos/hales-corners-speedway_unknown-year_al-schill_weber-brothers_photo_001.jpg",
-    "trackSlug": "hales-corners-speedway",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "hales-corners-speedway_unknown-year_al-schill_weber-brothers_photo_6966.jpg",
     "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_al-schill_weber-brothers_photo_6966.jpg",
     "publicPath": "/photos/hales-corners-speedway_unknown-year_al-schill_weber-brothers_photo_6966.jpg",
@@ -220,17 +198,6 @@
     "sequence": "114"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_al-schill_father-grubba_photo_333.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_al-schill_father-grubba_photo_333.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_al-schill_father-grubba_photo_333.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "father-grubba",
-    "creditType": "photo",
-    "sequence": "333"
-  },
-  {
     "fileName": "lake-geneva-raceway_1976_al-schill_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/1976/lake-geneva-raceway_1976_al-schill_pat-heaney_post_001.jpg",
     "publicPath": "/photos/lake-geneva-raceway_1976_al-schill_pat-heaney_post_001.jpg",
@@ -239,7 +206,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_al-schill_unknown-photographer_photo_002.jpg",
@@ -250,7 +217,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_1982_al-schill_ken-koppa_post_001.jpg",
@@ -261,7 +228,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1985_al-schill_john-vass_photo_001.jpg",
@@ -272,7 +239,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-schill_rpm_photo_001.jpg",
@@ -283,7 +250,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-schill_unknown-photographer_photo_001.jpg",
@@ -294,7 +261,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-schill_unknown-photographer_photo_354.jpg",
@@ -316,7 +283,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_al-schill_don-besch_photo_001.jpg",
@@ -327,7 +294,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_al-schill_don-besch_photo_001.jpg",
@@ -338,7 +305,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_al-schill_unknown-photographer_photo_001.jpg",
@@ -349,7 +316,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_al-schill_pat-heaney_post_001.jpg",
@@ -360,7 +327,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_al-schill_don-besch_photo_001.jpg",
@@ -371,7 +338,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_al-schill_don-besch_photo_001.jpg",
@@ -382,7 +349,29 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "al-schill",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "al-schill",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "rockford-speedway_2003_al-schill_weber-brothers_photo_001.jpg",
@@ -393,7 +382,18 @@
     "driverSlug": "al-schill",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2003_al-schill_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2003/rockford-speedway_2003_al-schill_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2003_al-schill_weber-brothers_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2003",
+    "driverSlug": "al-schill",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_al-schill_don-besch_photo_001.jpg",
@@ -404,7 +404,29 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-schill_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-schill_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-schill_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-schill_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-schill_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-schill_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "sante-fe-speedway_unknown-year_al-schill_stan-kalwasinski_photo_038.jpg",
@@ -415,7 +437,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "038"
+    "sequence": "38"
   },
   {
     "fileName": "sante-fe-speedway_unknown-year_al-schill_unknown-photographer_photo_001.jpg",
@@ -426,7 +448,18 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "storagePath": "photos/master/slinger-speedway/1977/slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "publicPath": "/photos/slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1977",
+    "driverSlug": "al-schill",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "344"
   },
   {
     "fileName": "slinger-speedway_1981_al-schill_weber-brothers_photo_001.jpg",
@@ -437,7 +470,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2002_al-schill_unknown-photographer_photo_001.jpg",
@@ -448,7 +481,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2011_al-schill_don-knoblauch_photo_001.jpeg",
@@ -459,7 +492,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-knoblauch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_al-schill_bob-schafer_photo_13826.jpg",
@@ -481,7 +514,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "slinger-speedway_unknown-year_al-schill_weber-brothers_photo_001.jpg",
@@ -492,95 +525,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1979_al-schill_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1979/unknown-track_1979_al-schill_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1979_al-schill_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1979",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_bob-wedlund_photo_006.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_bob-wedlund_photo_006.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_bob-wedlund_photo_006.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "bob-wedlund",
-    "creditType": "photo",
-    "sequence": "006"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_pat-heaney_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_pat-heaney_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_pat-heaney_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "pat-heaney",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_unknown-credit_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_unknown-credit_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_unknown-credit_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-credit",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_unknown-photographer_photo_007.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_unknown-photographer_photo_009.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_unknown-photographer_photo_009.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_unknown-photographer_photo_009.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "009"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_unknown-photographer_photo_011.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_unknown-photographer_photo_011.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_unknown-photographer_photo_011.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "011"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_al-schill_unknown-photographer_photo_5359.jpg",
@@ -594,28 +539,6 @@
     "sequence": "5359"
   },
   {
-    "fileName": "unknown-track_unknown-year_al-schill_weber-brothers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_weber-brothers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_weber-brothers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-schill_weber-brothers_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-schill_weber-brothers_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-schill_weber-brothers_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-schill",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
     "fileName": "waukegan-speedway_unknown-year_al-schill_geoff-mckarns_post_001.jpg",
     "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_al-schill_geoff-mckarns_post_001.jpg",
     "publicPath": "/photos/waukegan-speedway_unknown-year_al-schill_geoff-mckarns_post_001.jpg",
@@ -624,7 +547,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1984_al-schill_al-fortner_photo_333.jpg",
@@ -679,7 +602,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "bob-wedlund",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_bob-wedlund_photo_1044.jpg",
@@ -712,7 +635,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_kurt-luoma_photo_002.jpg",
@@ -723,7 +646,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_kurt-luoma_photo_003.jpg",
@@ -734,7 +657,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_kurt-luoma_photo_004.jpg",
@@ -745,7 +668,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_kurt-luoma_photo_333.jpg",
@@ -778,7 +701,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_unknown-photographer_photo_003.jpg",
@@ -789,7 +712,18 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_al-schill_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_al-schill_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_al-schill_unknown-photographer_photo_100.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_unknown-photographer_photo_400.jpg",

@@ -8,7 +8,7 @@
     "driverSlug": "tim-ludwigson",
     "photographerSlug": "4-christopher-kolstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "red-cedar-speedway_unknown-year_tim-ludwigson_unknown-photographer_photo_001.jpg",
@@ -19,18 +19,7 @@
     "driverSlug": "tim-ludwigson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_tim-ludwigson_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_tim-ludwigson_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_tim-ludwigson_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "tim-ludwigson",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-ludwigson_unknown-photographer_photo_001.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "tim-ludwigson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-ludwigson_unknown-photographer_photo_002.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "tim-ludwigson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-ludwigson_unknown-photographer_photo_003.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "tim-ludwigson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-ludwigson_unknown-photographer_photo_004.jpg",
@@ -74,7 +63,7 @@
     "driverSlug": "tim-ludwigson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_tim-ludwigson_kurt-luoma_photo_604.jpg",

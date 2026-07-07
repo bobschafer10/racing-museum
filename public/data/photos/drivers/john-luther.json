@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "capital-super-speedway_1981_john-luther_weber-brothers_photo_555.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1981/capital-super-speedway_1981_john-luther_weber-brothers_photo_555.jpg",
+    "publicPath": "/photos/capital-super-speedway_1981_john-luther_weber-brothers_photo_555.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1981",
+    "driverSlug": "john-luther",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_john-luther_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_john-luther_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_john-luther_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "john-luther",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

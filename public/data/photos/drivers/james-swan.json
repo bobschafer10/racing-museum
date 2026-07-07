@@ -8,7 +8,29 @@
     "driverSlug": "james-swan",
     "photographerSlug": "charlie-doerr",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_james-swan_keith-vercauteren_post_555.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_james-swan_keith-vercauteren_post_555.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_james-swan_keith-vercauteren_post_555.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "james-swan",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1999/rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1999",
+    "driverSlug": "james-swan",
+    "photographerSlug": "james-swan",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "slinger-speedway_2014_james-swan_bob-schneider_photo_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "james-swan",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_james-swan_ron-erstad_photo_001.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "james-swan",
     "photographerSlug": "ron-erstad",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_james-swan_tom-loos_photo_001.jpg",
@@ -41,6 +63,6 @@
     "driverSlug": "james-swan",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

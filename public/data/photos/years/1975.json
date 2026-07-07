@@ -8,7 +8,7 @@
     "driverSlug": "bob-bennett",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_alan-kulwicki-mike-napierala_photo_001.jpg",
@@ -17,9 +17,20 @@
     "trackSlug": "capital-super-speedway",
     "year": "1975",
     "driverSlug": "alan-kulwicki-mike-napierala",
-    "photographerSlug": "photo",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_alan-kulwicki-mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_alan-kulwicki-mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_alan-kulwicki-mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "alan-kulwicki-mike-napierala",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_benny-olson_mike-napierala_photo_001.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "benny-olson",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_benny-olson_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_benny-olson_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_benny-olson_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "benny-olson",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_bill-mcdonald_mike-napierala_photo_001.jpg",
@@ -41,7 +63,18 @@
     "driverSlug": "bill-mcdonald",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_bill-mcdonald_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_bill-mcdonald_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_bill-mcdonald_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "bill-mcdonald",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_dave-evans_mike-napierala_photo_001.jpg",
@@ -52,7 +85,7 @@
     "driverSlug": "dave-evans",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_dave-watson_mike-napierala_photo_001.jpg",
@@ -63,7 +96,18 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_dave-watson_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_dave-watson_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_dave-watson_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "dave-watson",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_doug-strasburg_mike-napierala_photo_001.jpg",
@@ -74,7 +118,18 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_doug-strasburg_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_doug-strasburg_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_doug-strasburg_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "doug-strasburg",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_jerry-eckhardt_mike-napierala_photo_001.jpg",
@@ -85,7 +140,18 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_jerry-eckhardt_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_jerry-eckhardt_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_jerry-eckhardt_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "jerry-eckhardt",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_jim-sauter_kurt-luoma_photo_113.jpg",
@@ -107,7 +173,29 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_joe-shear_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_joe-shear_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_joe-shear_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "joe-shear",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_joe-shear_mike-napierala_photo_2002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_joe-shear_mike-napierala_photo_2002.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_joe-shear_mike-napierala_photo_2002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "joe-shear",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "2002"
   },
   {
     "fileName": "capital-super-speedway_1975_joe-shear_mike-napierala_photo_2002.jpg",
@@ -129,7 +217,18 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_john-knaus_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_john-knaus_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_john-knaus_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "john-knaus",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_john-knaus_mike-napierala_photo_2003.jpg",
@@ -151,7 +250,18 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1975_john-ziegler_mike-napierala_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1975/capital-super-speedway_1975_john-ziegler_mike-napierala_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1975_john-ziegler_mike-napierala_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1975",
+    "driverSlug": "john-ziegler",
+    "photographerSlug": "mike-napierala",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_pete-parker_mike-napierala_photo_001.jpg",
@@ -162,7 +272,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_ray-young_mike-napierala_photo_001.jpg",
@@ -173,7 +283,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_tom-reffner_mike-napierala_photo_001.jpg",
@@ -184,7 +294,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_tony-strupp_mike-napierala_photo_001.jpg",
@@ -195,7 +305,7 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_vern-brunner_mike-napierala_photo_001.jpg",
@@ -206,7 +316,7 @@
     "driverSlug": "vern-brunner",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1975_wally-jors_mike-napierala_photo_001.jpg",
@@ -217,7 +327,7 @@
     "driverSlug": "wally-jors",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1975_terry-helmbrecht_unknown-photographer_photo_001.jpg",
@@ -228,7 +338,7 @@
     "driverSlug": "terry-helmbrecht",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1975_dave-boodle_unknown-photographer_photo_001.jpg",
@@ -239,7 +349,7 @@
     "driverSlug": "dave-boodle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1975_dick-trickle_unknown-photographer_photo_001.jpg",
@@ -250,7 +360,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1975_doug-strasburg_unknown-photographer_photo_001.jpg",
@@ -261,7 +371,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1975_joe-shear_unknown-photographer_photo_001.jpg",
@@ -272,7 +382,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1975_tony-strupp_unknown-photographer_photo_001.jpg",
@@ -283,7 +393,18 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "farley-speedway_1975_wayne-lensing_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/farley-speedway/1975/farley-speedway_1975_wayne-lensing_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/farley-speedway_1975_wayne-lensing_unknown-photographer_photo_333.jpg",
+    "trackSlug": "farley-speedway",
+    "year": "1975",
+    "driverSlug": "wayne-lensing",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "golden-sands-speedway_1975_bob-mackesy_unknown-photographer_photo_001.jpg",
@@ -294,7 +415,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1975_wally-jors_unknown-photographer_photo_001.jpg",
@@ -305,7 +426,18 @@
     "driverSlug": "wally-jors",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_bud-mulqueen_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_bud-mulqueen_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_bud-mulqueen_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "bud-mulqueen",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "hales-corners-speedway_1975_butch-mierendorf_joe-slack_photo_001.jpg",
@@ -316,7 +448,40 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_butch-mierendorf_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_butch-mierendorf_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_butch-mierendorf_joe-slack_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "butch-mierendorf",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_dave-stormer_pat-heaney_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_dave-stormer_pat-heaney_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_dave-stormer_pat-heaney_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "dave-stormer",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_gregg-carlson_weber-brothers_photo_766.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_gregg-carlson_weber-brothers_photo_766.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_gregg-carlson_weber-brothers_photo_766.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "gregg-carlson",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "766"
   },
   {
     "fileName": "hales-corners-speedway_1975_jerry-kindler_unknown-photographer_photo_001.jpg",
@@ -327,7 +492,40 @@
     "driverSlug": "jerry-kindler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_jerry-kindler_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_jerry-kindler_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_jerry-kindler_unknown-photographer_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "jerry-kindler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_jim-cossman_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_jim-cossman_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_jim-cossman_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "jim-cossman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "hales-corners-speedway_1975_tom-schley_weber-brothers_photo_111.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1975/hales-corners-speedway_1975_tom-schley_weber-brothers_photo_111.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1975_tom-schley_weber-brothers_photo_111.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1975",
+    "driverSlug": "tom-schley",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "illiana-speedway_1975_dave-evans_stan-kalwasinski_photo_001.jpg",
@@ -338,7 +536,7 @@
     "driverSlug": "dave-evans",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1975_joe-shear_unknown-photographer_photo_001.jpg",
@@ -349,7 +547,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_1975_wes-eckert_unknown-photographer_photo_002.jpg",
@@ -360,7 +558,18 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "milwaukee-mile_1975_bob-brevak_weber-brothers-photo_344.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1975/milwaukee-mile_1975_bob-brevak_weber-brothers-photo_344.jpg",
+    "publicPath": "/photos/milwaukee-mile_1975_bob-brevak_weber-brothers-photo_344.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1975",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "344"
   },
   {
     "fileName": "milwaukee-mile_1975_bob-lewis_pace-car_photo_001.jpg",
@@ -371,7 +580,7 @@
     "driverSlug": "bob-lewis",
     "photographerSlug": "pace-car",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
@@ -382,7 +591,29 @@
     "driverSlug": "ramo-stott",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_1975_lou-roon_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/1975/raceway-park-il-il_1975_lou-roon_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_1975_lou-roon_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "1975",
+    "driverSlug": "lou-roon",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
+  },
+  {
+    "fileName": "raceway-park-il-il_1975_tom-nielsen_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/1975/raceway-park-il-il_1975_tom-nielsen_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_1975_tom-nielsen_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "1975",
+    "driverSlug": "tom-nielsen",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
   },
   {
     "fileName": "rockford-speedway_1975_bruce-meske_geoff-mckarns_post_001.jpg",
@@ -393,7 +624,7 @@
     "driverSlug": "bruce-meske",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-watson_leonard-reimer_post_001.jpg",
@@ -404,7 +635,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-watson_unknown-photographer_photo_001.jpg",
@@ -415,7 +646,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-weltmeyer_unknown-photographer_photo_001.jpg",
@@ -426,7 +657,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-weltmeyer_unknown-photographer_photo_002.jpg",
@@ -437,7 +668,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_1975_don-james_geoff-mckarns_post_001.jpg",
@@ -448,7 +679,7 @@
     "driverSlug": "don-james",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_don-marmor_geoff-mckarns_post_001.jpg",
@@ -459,7 +690,7 @@
     "driverSlug": "don-marmor",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_leonard-reimer_leonard-reimer_post_001.jpg",
@@ -470,7 +701,7 @@
     "driverSlug": "leonard-reimer",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_marv-palmer_unknown-photographer_photo_001.jpg",
@@ -481,7 +712,18 @@
     "driverSlug": "marv-palmer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1975_pete-breit_ron-thruman_post_555.jpg",
+    "storagePath": "photos/master/rockford-speedway/1975/rockford-speedway_1975_pete-breit_ron-thruman_post_555.jpg",
+    "publicPath": "/photos/rockford-speedway_1975_pete-breit_ron-thruman_post_555.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1975",
+    "driverSlug": "pete-breit",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "rockford-speedway_1975_ray-young_unknown-photographer_photo_001.jpg",
@@ -492,7 +734,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_ted-richter_john-mckarns_photo_001.jpg",
@@ -503,7 +745,7 @@
     "driverSlug": "ted-richter",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -514,7 +756,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -525,7 +767,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1975_lyle-schultz_unknown-photographer_photo_001.jpg",
@@ -536,7 +778,7 @@
     "driverSlug": "lyle-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1975_wayne-roffers_joe-slack_post_001.jpg",
@@ -547,7 +789,7 @@
     "driverSlug": "wayne-roffers",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_1975_don-marcis_bob-graveen_post_001.jpg",
@@ -558,29 +800,7 @@
     "driverSlug": "don-marcis",
     "photographerSlug": "bob-graveen",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1975_johnny-johnson_bob-wedlund_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1975/unknown-track_1975_johnny-johnson_bob-wedlund_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1975_johnny-johnson_bob-wedlund_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1975",
-    "driverSlug": "johnny-johnson",
-    "photographerSlug": "bob-wedlund",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1975_scott-hansen_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1975/unknown-track_1975_scott-hansen_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1975_scott-hansen_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1975",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_chuck-bostick_mike-napierala_photo_001.jpg",
@@ -591,7 +811,7 @@
     "driverSlug": "chuck-bostick",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_ed-dunne_mike-napierala_photo_001.jpg",
@@ -602,7 +822,7 @@
     "driverSlug": "ed-dunne",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_hal-davis_mike-napierala_photo_001.jpg",
@@ -613,7 +833,7 @@
     "driverSlug": "hal-davis",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_jim-ruth_mike-napierala_photo_001.jpg",
@@ -624,7 +844,7 @@
     "driverSlug": "jim-ruth",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1975_jim-sauter_kurt-luoma_photo_111.jpg",
@@ -646,6 +866,6 @@
     "driverSlug": "marcus-brei",
     "photographerSlug": "dennis-satorius",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

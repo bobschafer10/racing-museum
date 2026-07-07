@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "lake-geneva-raceway_1996_bart-reinen_charlie-spry_photo_444.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1996/lake-geneva-raceway_1996_bart-reinen_charlie-spry_photo_444.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1996_bart-reinen_charlie-spry_photo_444.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1996",
+    "driverSlug": "bart-reinen",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "lake-geneva-raceway_unknown-year_bart-reinen_bob-schafer_photo_222.jpg",
     "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_bart-reinen_bob-schafer_photo_222.jpg",
     "publicPath": "/photos/lake-geneva-raceway_unknown-year_bart-reinen_bob-schafer_photo_222.jpg",
@@ -19,7 +30,18 @@
     "driverSlug": "bart-reinen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bart-reinen_bob-schafer_photo_13717.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bart-reinen_bob-schafer_photo_13717.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bart-reinen_bob-schafer_photo_13717.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bart-reinen",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13717"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bart-reinen_bob-schafer_photo_13717.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "bart-reinen",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_bart-reinen_joe-slack_photo_001.jpg",
@@ -74,40 +96,7 @@
     "driverSlug": "bart-reinen",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bart-reinen_john-vass_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bart-reinen_john-vass_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bart-reinen_john-vass_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bart-reinen",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bart-reinen_john-vass_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bart-reinen_john-vass_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bart-reinen_john-vass_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bart-reinen",
-    "photographerSlug": "john-vass",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bart-reinen_pat-heaney_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bart-reinen_pat-heaney_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bart-reinen_pat-heaney_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bart-reinen",
-    "photographerSlug": "pat-heaney",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bart-reinen_joe-slack_post_001.jpg",
@@ -118,6 +107,6 @@
     "driverSlug": "bart-reinen",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

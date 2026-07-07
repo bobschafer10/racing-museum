@@ -6,9 +6,9 @@
     "trackSlug": "unknown",
     "year": "unknown-year",
     "driverSlug": "dave-drost",
-    "photographerSlug": "charlie-spry-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-drost_charlie-spry_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "dave-drost",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-drost_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-drost_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-drost_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-drost",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-drost_charlie-spry_post_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "dave-drost",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-drost_john-waters_post_001.jpg",
@@ -41,6 +52,6 @@
     "driverSlug": "dave-drost",
     "photographerSlug": "john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "freeport-raceway-park_unknown-year_sammy-reakes_ron-thruman_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_sammy-reakes_ron-thruman_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_sammy-reakes_ron-thruman_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "sammy-reakes",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "rockford-speedway_1973_sammy-reakes_ron-thruman_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1973/rockford-speedway_1973_sammy-reakes_ron-thruman_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1973_sammy-reakes_ron-thruman_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1973",
+    "driverSlug": "sammy-reakes",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "sammy-reakes",
+    "photographerSlug": "doug-haack",
+    "creditType": "post",
+    "sequence": "444"
+  }
+]

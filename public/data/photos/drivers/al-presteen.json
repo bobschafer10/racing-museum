@@ -8,7 +8,7 @@
     "driverSlug": "al-presteen",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_al-presteen_bob-bergeron_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "al-presteen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_al-presteen_pete-vercauteren_photo_001.jpg",
@@ -30,17 +30,6 @@
     "driverSlug": "al-presteen",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-presteen_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-presteen_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-presteen_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-presteen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   }
 ]

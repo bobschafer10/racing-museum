@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "norway-speedway_2026_scott-stanchina_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/norway-speedway/2026/norway-speedway_2026_scott-stanchina_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/norway-speedway_2026_scott-stanchina_unknown-photographer_photo_334.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "2026",
+    "driverSlug": "scott-stanchina",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
     "fileName": "norway-speedway_unknown-year_scott-stanchina_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_scott-stanchina_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/norway-speedway_unknown-year_scott-stanchina_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "scott-stanchina",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

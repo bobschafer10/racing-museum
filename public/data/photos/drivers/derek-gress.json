@@ -8,7 +8,7 @@
     "driverSlug": "derek-gress",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_derek-gress_don-wendlandt_photo_117.jpg",
@@ -20,5 +20,16 @@
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
     "sequence": "117"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2025_derek-gress_cwra_post_444.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2025/tomah-sparta-speedway_2025_derek-gress_cwra_post_444.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2025_derek-gress_cwra_post_444.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2025",
+    "driverSlug": "derek-gress",
+    "photographerSlug": "cwra",
+    "creditType": "post",
+    "sequence": ""
   }
 ]

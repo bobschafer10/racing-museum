@@ -8,7 +8,7 @@
     "driverSlug": "greg-guzzo",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_greg-guzzo_pat-heaney_post_001.jpg",
@@ -19,6 +19,17 @@
     "driverSlug": "greg-guzzo",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_greg-guzzo_raceway-park-history_post_676.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_greg-guzzo_raceway-park-history_post_676.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_greg-guzzo_raceway-park-history_post_676.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "greg-guzzo",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "676"
   }
 ]

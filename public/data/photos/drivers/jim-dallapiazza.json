@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "norway-speedway_1979_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/norway-speedway/1979/norway-speedway_1979_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/norway-speedway_1979_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "1979",
+    "driverSlug": "jim-dallapiazza",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "norway-speedway_unknown-year_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/norway-speedway/unknown-year/norway-speedway_unknown-year_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/norway-speedway_unknown-year_jim-dallapiazza_unknown-photographer_photo_333.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-dallapiazza",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  }
+]

@@ -8,7 +8,7 @@
     "driverSlug": "ron-van-roy",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_unknown-year_gary-dye_bob-bergeron_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "gary-dye",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1961_bill-fitzgerald_bob-bergeron_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bill-fitzgerald",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1970_mike-hintz_bob-bergeron_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "mike-hintz",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1970_unknown_bob-bergeron_photo_001.jpg",
@@ -49,10 +49,10 @@
     "publicPath": "/photos/brown-county-speedway_1970_unknown_bob-bergeron_photo_001.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "1970",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1970_unknown-driver_bob-bergeron_photo_015.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "015"
+    "sequence": "15"
   },
   {
     "fileName": "brown-county-speedway_1972_russ-peterson_bob-bergeron_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "russ-peterson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1972_wayne-weckworth_bob-bergeron_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "wayne-weckworth",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1974_tom-nesbitt_bob-bergeron_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_1975_bob-bennett_bob-bergeron_photo_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "bob-bennett",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_chris-duquaines_bob-bergeron_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "chris-duquaines",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_fran-penterman_bob-bergeron_photo_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "fran-penterman",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_herb-iverson_bob-bergeron_photo_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "herb-iverson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_howie-mess_bob-bergeron_photo_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "howie-mess",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_paul-christensen_bob-bergeron_photo_0201.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "paul-christensen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "0201"
+    "sequence": "201"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_pete-parker_bob-bergeron_photo_001.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_terry-anvelink_bob-bergeron_photo_001.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
@@ -192,10 +192,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
@@ -203,10 +203,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
@@ -214,10 +214,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
@@ -225,10 +225,10 @@
     "publicPath": "/photos/brown-county-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
     "trackSlug": "brown-county-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_021.jpg",
@@ -239,7 +239,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_071.jpg",
@@ -250,7 +250,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "071"
+    "sequence": "71"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_096.jpg",
@@ -261,7 +261,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "096"
+    "sequence": "96"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_unknown-driver_bob-bergeron_photo_104.jpg",
@@ -305,7 +305,7 @@
     "driverSlug": "wally-jors",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brown-county-speedway_unknown-year_wayne-weckworth_bob-bergeron_photo_001.jpg",
@@ -316,7 +316,7 @@
     "driverSlug": "wayne-weckworth",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_orv-buelow_bob-bergeron_photo_001.jpg",
@@ -327,7 +327,7 @@
     "driverSlug": "orv-buelow",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_rocky-breezer_bob-bergeron_photo_001.jpg",
@@ -338,7 +338,7 @@
     "driverSlug": "rocky-breezer",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_1966_unknown-driver_bob-bergeron_photo_003.jpg",
@@ -349,7 +349,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "leos-speedway_1967_harlin-krueger_bob-bergeron_photo_001.jpg",
@@ -360,7 +360,7 @@
     "driverSlug": "harlin-krueger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_barry-helms_bob-bergeron_photo_021.jpg",
@@ -371,7 +371,7 @@
     "driverSlug": "barry-helms",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "leos-speedway_unknown-year_bill-kempf_bob-bergeron_photo_001.jpg",
@@ -382,7 +382,7 @@
     "driverSlug": "bill-kempf",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_bob-bennett_bob-bergeron_photo_001.jpg",
@@ -393,7 +393,7 @@
     "driverSlug": "bob-bennett",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_bob-kienast_bob-bergeron_photo_001.jpg",
@@ -404,7 +404,7 @@
     "driverSlug": "bob-kienast",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_charlie-ewald_bob-bergeron_photo_001.jpg",
@@ -415,7 +415,7 @@
     "driverSlug": "charlie-ewald",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_clark-hansen_bob-bergeron_photo_001.jpg",
@@ -426,7 +426,7 @@
     "driverSlug": "clark-hansen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_dave-conger_bob-bergeron_photo_001.jpg",
@@ -437,7 +437,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_dave-thompson_bob-bergeron_photo_301.jpg",
@@ -459,7 +459,7 @@
     "driverSlug": "dennis-dietzen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_dick-dunn_bob-bergeron_photo_001.jpg",
@@ -470,7 +470,7 @@
     "driverSlug": "dick-dunn",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_ed-staehler_bob-bergeron_photo_001.jpg",
@@ -481,7 +481,7 @@
     "driverSlug": "ed-staehler",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_ernie-rathke_bob-bergeron_photo_001.jpg",
@@ -492,7 +492,7 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_001.jpg",
@@ -503,7 +503,7 @@
     "driverSlug": "erv-schmude",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_erv-schmude_bob-bergeron_photo_002.jpg",
@@ -514,7 +514,7 @@
     "driverSlug": "erv-schmude",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "leos-speedway_unknown-year_etchie-biertzer_bob-bergeron_photo_001.jpg",
@@ -525,7 +525,7 @@
     "driverSlug": "etchie-biertzer",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_frank-smith_bob-bergeron_photo_041.jpg",
@@ -536,7 +536,7 @@
     "driverSlug": "frank-smith",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "leos-speedway_unknown-year_gordie-paulick_bob-bergeron_photo_001.jpg",
@@ -547,7 +547,7 @@
     "driverSlug": "gordie-paulick",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_greg-martell_bob-bergeron_photo_001.jpg",
@@ -558,7 +558,7 @@
     "driverSlug": "greg-martell",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_harvey-bartel_bob-bergeron_photo_001.jpg",
@@ -569,7 +569,7 @@
     "driverSlug": "harvey-bartel",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_001.jpg",
@@ -580,7 +580,7 @@
     "driverSlug": "jerry-reichenberger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_002.jpg",
@@ -591,7 +591,7 @@
     "driverSlug": "jerry-reichenberger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "leos-speedway_unknown-year_jerry-reichenberger_bob-bergeron_photo_027.jpg",
@@ -602,7 +602,7 @@
     "driverSlug": "jerry-reichenberger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "leos-speedway_unknown-year_jj-smith_bob-bergeron_photo_456.jpg",
@@ -668,7 +668,7 @@
     "driverSlug": "john-geske",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_lacy-pappenfuss_bob-bergeron_photo_001.jpg",
@@ -679,7 +679,7 @@
     "driverSlug": "lacy-pappenfuss",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_mike-melius_bob-bergeron_photo_001.jpg",
@@ -690,7 +690,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_mike-pahlow_bob-bergeron_photo_001.jpg",
@@ -701,7 +701,7 @@
     "driverSlug": "mike-pahlow",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_mike-rueden_bob-bergeron_photo_001.jpg",
@@ -712,7 +712,7 @@
     "driverSlug": "mike-rueden",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_mike-rueden_bob-bergeron_photo_200.jpg",
@@ -734,7 +734,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "leos-speedway_unknown-year_mj-mcbride_bob-bergeron_photo_013.jpg",
@@ -745,7 +745,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "leos-speedway_unknown-year_ray-bolander_bob-bergeron_photo_001.jpg",
@@ -756,7 +756,7 @@
     "driverSlug": "ray-bolander",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_001.jpg",
@@ -767,7 +767,7 @@
     "driverSlug": "ray-dietzen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_ray-dietzen_bob-bergeron_photo_200.jpg",
@@ -789,7 +789,7 @@
     "driverSlug": "rod-wheeler",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_roger-johnson_bob-bergeron_photo_001.jpg",
@@ -800,7 +800,7 @@
     "driverSlug": "roger-johnson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_roger-regeth_bob-bergeron_photo_001.jpg",
@@ -811,7 +811,7 @@
     "driverSlug": "roger-regeth",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_ron-schmidt_bob-bergeron_photo_001.jpg",
@@ -822,7 +822,7 @@
     "driverSlug": "ron-schmidt",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_ron-van-roy_bob-bergeron_photo_031.jpg",
@@ -833,7 +833,7 @@
     "driverSlug": "ron-van-roy",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "leos-speedway_unknown-year_scott-hansen_bob-bergeron_photo_026.jpg",
@@ -844,7 +844,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "026"
+    "sequence": "26"
   },
   {
     "fileName": "leos-speedway_unknown-year_scott-hansen_bob-bergeron_photo_027.jpg",
@@ -855,7 +855,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "leos-speedway_unknown-year_stu-marquardt_bob-bergeron_photo_001.jpg",
@@ -866,7 +866,7 @@
     "driverSlug": "stu-marquardt",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_terry-baldry_bob-bergeron_photo_001.jpg",
@@ -877,7 +877,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_tom-klippel_bob-bergeron_photo_001.jpg",
@@ -888,7 +888,7 @@
     "driverSlug": "tom-klippel",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_001 (2).jpg",
@@ -899,7 +899,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_001.jpg",
@@ -910,7 +910,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_002.jpg",
@@ -921,7 +921,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_003.jpg",
@@ -932,7 +932,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_004.jpg",
@@ -943,7 +943,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_005.jpg",
@@ -954,7 +954,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_006.jpg",
@@ -965,7 +965,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_007.jpg",
@@ -976,7 +976,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_008.jpg",
@@ -987,7 +987,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_009.jpg",
@@ -998,7 +998,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_011.jpg",
@@ -1009,7 +1009,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_012.jpg",
@@ -1020,7 +1020,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_013.jpg",
@@ -1031,7 +1031,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_014.jpg",
@@ -1042,7 +1042,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_016.jpg",
@@ -1053,7 +1053,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "016"
+    "sequence": "16"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_017.jpg",
@@ -1064,7 +1064,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "017"
+    "sequence": "17"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_018.jpg",
@@ -1075,7 +1075,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "018"
+    "sequence": "18"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_019.jpg",
@@ -1086,7 +1086,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "019"
+    "sequence": "19"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_022.jpg",
@@ -1097,7 +1097,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_023.jpg",
@@ -1108,7 +1108,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "023"
+    "sequence": "23"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_025.jpg",
@@ -1119,7 +1119,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "025"
+    "sequence": "25"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_028.jpg",
@@ -1130,7 +1130,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "028"
+    "sequence": "28"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_029.jpg",
@@ -1141,7 +1141,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "029"
+    "sequence": "29"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_030.jpg",
@@ -1152,7 +1152,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "030"
+    "sequence": "30"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_031.jpg",
@@ -1163,7 +1163,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_032.jpg",
@@ -1174,7 +1174,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "032"
+    "sequence": "32"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_036.jpg",
@@ -1185,7 +1185,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "036"
+    "sequence": "36"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_037.jpg",
@@ -1196,7 +1196,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "037"
+    "sequence": "37"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_038.jpg",
@@ -1207,7 +1207,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "038"
+    "sequence": "38"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_040.jpg",
@@ -1218,7 +1218,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "040"
+    "sequence": "40"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_041.jpg",
@@ -1229,7 +1229,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_042.jpg",
@@ -1240,7 +1240,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "042"
+    "sequence": "42"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_043.jpg",
@@ -1251,7 +1251,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "043"
+    "sequence": "43"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_044.jpg",
@@ -1262,7 +1262,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "044"
+    "sequence": "44"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_045.jpg",
@@ -1273,7 +1273,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "045"
+    "sequence": "45"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_046.jpg",
@@ -1284,7 +1284,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "046"
+    "sequence": "46"
   },
   {
     "fileName": "leos-speedway_unknown-year_unknown-driver_bob-bergeron_photo_1101.jpg",
@@ -1328,7 +1328,7 @@
     "driverSlug": "wayne-weckworth",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_wes-eckert_bob-bergeron_photo_001.jpg",
@@ -1339,7 +1339,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_willie-goeden_bob-bergeron_photo_001.jpg",
@@ -1350,7 +1350,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "leos-speedway_unknown-year_willie-goeden_bob-bergeron_photo_002.jpg",
@@ -1361,7 +1361,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "leos-speedway_unknown-year_willie-shoppenhorst_bob-bergeron_photo_333.jpg",
@@ -1383,7 +1383,7 @@
     "driverSlug": "doug-larson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_m-j-mcbride_bob-bergeron_photo_001.jpg",
@@ -1394,7 +1394,7 @@
     "driverSlug": "m-j-mcbride",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_red-isaccson_bob-bergeron_photo_001.jpg",
@@ -1405,7 +1405,18 @@
     "driverSlug": "red-isaccson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "seymour-speedway_unknown-year_roger-trapp_bob-bergeron_photo_100.jpg",
+    "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_roger-trapp_bob-bergeron_photo_100.jpg",
+    "publicPath": "/photos/seymour-speedway_unknown-year_roger-trapp_bob-bergeron_photo_100.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-trapp",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "seymour-speedway_unknown-year_terry-baldry_bob-bergeron_photo_001.jpg",
@@ -1416,7 +1427,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_unknown-driver_bob-bergeron_photo_064.jpg",
@@ -1427,7 +1438,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "064"
+    "sequence": "64"
   },
   {
     "fileName": "seymour-speedway_unknown-year_unknown-driver_bob-bergeron_photo_076.jpg",
@@ -1438,7 +1449,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "076"
+    "sequence": "76"
   },
   {
     "fileName": "seymour-speedway_unknown-year_unknown-driver_bob-bergeron_photo_098.jpg",
@@ -1449,7 +1460,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "098"
+    "sequence": "98"
   },
   {
     "fileName": "seymour-speedway_unknown-year_unknown-driver_bob-bergeron_photo_102.jpg",
@@ -1548,7 +1559,7 @@
     "driverSlug": "wayne-weckwerth",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "078"
+    "sequence": "78"
   },
   {
     "fileName": "shawano-speedway_1970_doug-larson_bob-bergeron_photo_001.jpg",
@@ -1559,7 +1570,7 @@
     "driverSlug": "doug-larson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1970_unknown-driver_bob-bergeron_photo_445.jpg",
@@ -1581,7 +1592,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_al-presteen_bob-bergeron_photo_001.jpg",
@@ -1592,7 +1603,7 @@
     "driverSlug": "al-presteen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_earl-ness_bob-bergeron_photo_001.jpg",
@@ -1603,7 +1614,7 @@
     "driverSlug": "earl-ness",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_glenn-bessette_bob-bergeron_photo_001.jpg",
@@ -1614,7 +1625,7 @@
     "driverSlug": "glenn-bessette",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_larry-drefahl_bob-bergeron_photo_001.jpg",
@@ -1625,7 +1636,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_ray-bohlander_bob-bergeron_photo_001.jpg",
@@ -1636,7 +1647,7 @@
     "driverSlug": "ray-bohlander",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_roger-paul_bob-bergeron_photo_001.jpg",
@@ -1647,7 +1658,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_roger-paul_bob-bergeron_photo_002.jpg",
@@ -1658,7 +1669,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-anvelink_bob-bergeron_photo_001.jpg",
@@ -1669,7 +1680,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
@@ -1677,10 +1688,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
@@ -1688,10 +1699,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
@@ -1699,10 +1710,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
@@ -1710,10 +1721,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_006.jpg",
@@ -1721,10 +1732,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_006.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_008.jpg",
@@ -1732,10 +1743,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_008.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_009.jpg",
@@ -1743,10 +1754,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_009.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_010.jpg",
@@ -1754,10 +1765,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_010.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_011.jpg",
@@ -1765,10 +1776,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_011.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_012.jpg",
@@ -1776,10 +1787,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_012.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "shiocton-speedway_unknown-year_lyle-diemel_bob-bergeron_photo_077.jpg",
@@ -1790,7 +1801,7 @@
     "driverSlug": "lyle-diemel",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "077"
+    "sequence": "77"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg",
@@ -1801,7 +1812,29 @@
     "driverSlug": "bob-bergeron-fox-valley-new",
     "photographerSlug": "bob-bergeron",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-bergeron-fox-valley-new",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-bergeron-fox-valley-new",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg",
@@ -1812,7 +1845,29 @@
     "driverSlug": "bob-bergeron-phot",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-bergeron-phot",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-bergeron-phot",
+    "photographerSlug": "bob-bergeron",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_jerry-jonet_bob-bergeron_photo_001.jpg",
@@ -1823,7 +1878,7 @@
     "driverSlug": "jerry-jonet",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_red-bedell_bob-bergeron_photo_004.jpg",
@@ -1834,7 +1889,7 @@
     "driverSlug": "red-bedell",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown_bob-bergeron_photo_001.jpg",
@@ -1842,10 +1897,10 @@
     "publicPath": "/photos/unknown-track_unknown-year_unknown_bob-bergeron_photo_001.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_bob-bergeron_photo_003.jpg",
@@ -1856,7 +1911,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_bob-bergeron_photo_023.jpg",
@@ -1867,7 +1922,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "023"
+    "sequence": "23"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_bob-bergeron_photo_032.jpg",
@@ -1878,7 +1933,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "032"
+    "sequence": "32"
   },
   {
     "fileName": "unknown-track_unknown-year_unknown-driver_bob-bergeron_photo_3206.jpg",
@@ -1900,7 +1955,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_aaron-solsrud_bob-bergeron_photo_001.jpg",
@@ -1911,7 +1966,7 @@
     "driverSlug": "aaron-solsrud",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bay-darnell_bob-bergeron_photo_001.jpg",
@@ -1922,7 +1977,7 @@
     "driverSlug": "bay-darnell",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-carey_bob-bergeron_photo_001.jpg",
@@ -1933,7 +1988,7 @@
     "driverSlug": "bill-carey",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-johnson-iii_bob-bergeron_photo_001.jpg",
@@ -1944,7 +1999,7 @@
     "driverSlug": "bill-johnson-iii",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-johnson-jr_bob-bergeron_photo_001.jpg",
@@ -1955,7 +2010,7 @@
     "driverSlug": "bill-johnson-jr",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-robbins_bob-bergeron_photo_001.jpg",
@@ -1966,7 +2021,7 @@
     "driverSlug": "bob-robbins",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-robel_bob-bergeron_photo_001.jpg",
@@ -1977,7 +2032,7 @@
     "driverSlug": "bob-robel",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-schroeder_bob-bergeron_photo_001.jpg",
@@ -1988,7 +2043,7 @@
     "driverSlug": "bob-schroeder",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-schultz_bob-bergeron_photo_001.jpg",
@@ -1999,7 +2054,7 @@
     "driverSlug": "bob-schultz",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-warren_bob-bergeron_photo_001.jpg",
@@ -2010,7 +2065,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_boyce-sparkman_bob-bergeron_photo_222.jpg",
@@ -2032,7 +2087,7 @@
     "driverSlug": "charlie-ewald",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-wikel_bob-bergeron_photo_001.jpg",
@@ -2043,7 +2098,7 @@
     "driverSlug": "dale-wikel",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-conger_bob-bergeron_photo_001.jpg",
@@ -2054,7 +2109,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-conger_bob-bergeron_photo_002.jpg",
@@ -2065,7 +2120,7 @@
     "driverSlug": "dave-conger",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dennis-lampman_bob-bergeron_photo_001.jpg",
@@ -2076,7 +2131,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dennis-monday_bob-bergeron_photo_222.jpg",
@@ -2109,7 +2164,7 @@
     "driverSlug": "dick-aissen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dick-lucht_bob-bergeron_photo_001.jpg",
@@ -2120,7 +2175,7 @@
     "driverSlug": "dick-lucht",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_don-kiel_bob-bergeron_photo_001.jpg",
@@ -2131,7 +2186,7 @@
     "driverSlug": "don-kiel",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_don-turner_bob-bergeron_photo_1113.jpg",
@@ -2153,7 +2208,7 @@
     "driverSlug": "etchie-biertzer",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fuzzy-fassbender_bob-bergeron_photo_001.jpg",
@@ -2164,7 +2219,7 @@
     "driverSlug": "fuzzy-fassbender",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fuzzy-fassbender_bob-bergeron_photo_002.jpg",
@@ -2175,7 +2230,7 @@
     "driverSlug": "fuzzy-fassbender",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gary-dye_bob-bergeron_photo_001.jpg",
@@ -2186,7 +2241,7 @@
     "driverSlug": "gary-dye",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gary-dye_bob-bergeron_photo_002.jpg",
@@ -2197,7 +2252,7 @@
     "driverSlug": "gary-dye",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gene-erdmann_bob-bergeron_photo_001.jpg",
@@ -2208,7 +2263,7 @@
     "driverSlug": "gene-erdmann",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gene-wheeler_bob-bergeron_photo_001.jpg",
@@ -2219,7 +2274,7 @@
     "driverSlug": "gene-wheeler",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_bob-bergeron_photo_333.jpg",
@@ -2252,7 +2307,7 @@
     "driverSlug": "jerry-bonjean",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jj-smith_bob-bergeron_photo_001.jpg",
@@ -2263,7 +2318,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ken-markwardt_bob-bergeron_photo_001.jpg",
@@ -2274,7 +2329,7 @@
     "driverSlug": "ken-markwardt",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-hunt_bob-bergeron_photo_001.jpg",
@@ -2285,7 +2340,7 @@
     "driverSlug": "larry-hunt",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-ninneman_bob-bergeron_photo_001.jpg",
@@ -2296,7 +2351,7 @@
     "driverSlug": "larry-ninneman",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-melius_bob-bergeron_photo_001.jpg",
@@ -2307,7 +2362,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_neil-callahan_bob-bergeron_photo_001.jpg",
@@ -2318,7 +2373,7 @@
     "driverSlug": "neil-callahan",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rich-somers_bob-bergeron_photo_001.jpg",
@@ -2329,7 +2384,7 @@
     "driverSlug": "rich-somers",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rick-lemanski_bob-bergeron_photo_001.jpg",
@@ -2340,7 +2395,7 @@
     "driverSlug": "rick-lemanski",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_roger-van-roy_bob-bergeron_photo_001.jpg",
@@ -2351,7 +2406,7 @@
     "driverSlug": "roger-van-roy",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ron-bergsma_bob-bergeron_photo_001.jpg",
@@ -2362,7 +2417,7 @@
     "driverSlug": "ron-bergsma",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_ron-marish_bob-bergeron_photo_001.jpg",
@@ -2373,7 +2428,7 @@
     "driverSlug": "ron-marish",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_stu-nitzke_bob-bergeron_photo_001.jpg",
@@ -2384,7 +2439,7 @@
     "driverSlug": "stu-nitzke",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_stu-nitzke_bob-bergeron_photo_401.jpg",
@@ -2417,7 +2472,7 @@
     "driverSlug": "tom-anderson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_unknown-driver_bob-bergeron_photo_106.jpg",
@@ -2549,7 +2604,7 @@
     "driverSlug": "wally-jors",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wayne-goetsch_bob-bergeron_photo_001.jpg",
@@ -2560,7 +2615,7 @@
     "driverSlug": "wayne-goetsch",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_willie-goeden_bob-bergeron_photo_001.jpg",
@@ -2571,6 +2626,6 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

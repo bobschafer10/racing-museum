@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "141-speedway_1982_dan-peterman_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_dan-peterman_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/141-speedway_1982_dan-peterman_weber-brothers_photo_888.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "dan-peterman",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
     "fileName": "141-speedway_unknown-year_dan-peterman_joe-slack_photo_001.jpg",
     "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_dan-peterman_joe-slack_photo_001.jpg",
     "publicPath": "/photos/141-speedway_unknown-year_dan-peterman_joe-slack_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "dan-peterman",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_dan-peterman_joe-verdegan_post_001.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "dan-peterman",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

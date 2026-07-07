@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "storagePath": "photos/master/shawano-speedway/1966/shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "publicPath": "/photos/shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1966",
+    "driverSlug": "pete-kielbasa",
+    "photographerSlug": "dennis-satorious",
+    "creditType": "post",
+    "sequence": "888"
+  },
+  {
     "fileName": "shawano-speedway_1970_doug-larson_bob-bergeron_photo_001.jpg",
     "storagePath": "photos/master/shawano-speedway/1970/shawano-speedway_1970_doug-larson_bob-bergeron_photo_001.jpg",
     "publicPath": "/photos/shawano-speedway_1970_doug-larson_bob-bergeron_photo_001.jpg",
@@ -8,7 +19,18 @@
     "driverSlug": "doug-larson",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_1970_jim-hansen-mi_dennis-satorious_post_888.jpg",
+    "storagePath": "photos/master/shawano-speedway/1970/shawano-speedway_1970_jim-hansen-mi_dennis-satorious_post_888.jpg",
+    "publicPath": "/photos/shawano-speedway_1970_jim-hansen-mi_dennis-satorious_post_888.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1970",
+    "driverSlug": "jim-hansen-mi",
+    "photographerSlug": "dennis-satorious",
+    "creditType": "post",
+    "sequence": "888"
   },
   {
     "fileName": "shawano-speedway_1970_leroy-raddant_dan-radig_post_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "leroy-raddant",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1970_unknown-driver_bob-bergeron_photo_445.jpg",
@@ -52,7 +74,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1972_roger-paul_bob-bergeron_photo_001.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1973_roger-perret_joe-verdegan_post_001.jpg",
@@ -74,7 +96,7 @@
     "driverSlug": "roger-perret",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1974_butch-thiel_unknown-photographer_photo_001.jpg",
@@ -85,7 +107,7 @@
     "driverSlug": "butch-thiel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1974_tom-klippel_dennis-satorius_post_001.jpg",
@@ -96,7 +118,7 @@
     "driverSlug": "tom-klippel",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1975_wayne-roffers_joe-slack_post_001.jpg",
@@ -107,7 +129,7 @@
     "driverSlug": "wayne-roffers",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1977_al-schultz_joe-verdegan_post_001.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "al-schultz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1978_jj-smith_joe-verdegan_post_001.jpg",
@@ -129,7 +151,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1978_kevin-stepan_sherman-lafan_post_001.jpg",
@@ -140,7 +162,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "sherman-lafan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1979_dave-valentyne_36-putch-bentley_photo_001.jpg",
@@ -151,7 +173,7 @@
     "driverSlug": "dave-valentyne",
     "photographerSlug": "36-putch-bentley",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1980_lowell-bennett_randy-van-hoof_photo_001.jpg",
@@ -162,7 +184,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "randy-van-hoof",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1981_randy-guelette_joe-verdegan_post_001.jpg",
@@ -173,7 +195,7 @@
     "driverSlug": "randy-guelette",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1981_scott-hansen_joe-verdegan_post_001.jpg",
@@ -184,7 +206,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1981_unknown-driver_unknown-photographer_post_555.jpg",
@@ -217,7 +239,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "shawano-speedway_1985_chris-willadsen_bob-schafer_photo_042.jpg",
@@ -228,7 +250,7 @@
     "driverSlug": "chris-willadsen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "042"
+    "sequence": "42"
   },
   {
     "fileName": "shawano-speedway_1985_chuck-buckbee_bob-schafer_photo_043.jpg",
@@ -239,7 +261,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "043"
+    "sequence": "43"
   },
   {
     "fileName": "shawano-speedway_1985_dennis-wolfgram_bob-schafer_photo_044.jpg",
@@ -250,7 +272,7 @@
     "driverSlug": "dennis-wolfgram",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "044"
+    "sequence": "44"
   },
   {
     "fileName": "shawano-speedway_1985_jeff-teske_bob-schafer_photo_045.jpg",
@@ -261,7 +283,7 @@
     "driverSlug": "jeff-teske",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "045"
+    "sequence": "45"
   },
   {
     "fileName": "shawano-speedway_1985_mike-fletcher_bob-schafer_photo_046.jpg",
@@ -272,7 +294,7 @@
     "driverSlug": "mike-fletcher",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "046"
+    "sequence": "46"
   },
   {
     "fileName": "shawano-speedway_1985_mike-schmelzer_bob-schafer_photo_047.jpg",
@@ -283,7 +305,7 @@
     "driverSlug": "mike-schmelzer",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "047"
+    "sequence": "47"
   },
   {
     "fileName": "shawano-speedway_1985_phil-rehberg_bob-schafer_photo_048.jpg",
@@ -294,7 +316,7 @@
     "driverSlug": "phil-rehberg",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "048"
+    "sequence": "48"
   },
   {
     "fileName": "shawano-speedway_1985_ron-bomber_bob-schafer_photo_049.jpg",
@@ -305,7 +327,7 @@
     "driverSlug": "ron-bomber",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "049"
+    "sequence": "49"
   },
   {
     "fileName": "shawano-speedway_1985_scott-millar_bob-schafer_photo_050.jpg",
@@ -316,7 +338,7 @@
     "driverSlug": "scott-millar",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "050"
+    "sequence": "50"
   },
   {
     "fileName": "shawano-speedway_1985_steve-schultz_bob-schafer_photo_051.jpg",
@@ -327,7 +349,7 @@
     "driverSlug": "steve-schultz",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "051"
+    "sequence": "51"
   },
   {
     "fileName": "shawano-speedway_1985_terry-anvelink_bob-schafer_photo_052.jpg",
@@ -338,7 +360,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "052"
+    "sequence": "52"
   },
   {
     "fileName": "shawano-speedway_1985_vj-giguere_bob-schafer_photo_053.jpg",
@@ -349,7 +371,7 @@
     "driverSlug": "vj-giguere",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "053"
+    "sequence": "53"
   },
   {
     "fileName": "shawano-speedway_1987_terry-kralovetz_unknown-photographer_photo_001.jpg",
@@ -360,7 +382,18 @@
     "driverSlug": "terry-kralovetz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/1990/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1990",
+    "driverSlug": "dan-grosskreutz",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_1990_pete-parker_bob-schafer_photo_054.jpg",
@@ -371,7 +404,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "054"
+    "sequence": "54"
   },
   {
     "fileName": "shawano-speedway_1997_kenny-richards_mary-lewis_photo_001.jpg",
@@ -382,7 +415,7 @@
     "driverSlug": "kenny-richards",
     "photographerSlug": "mary-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1997_mark-house_dan-lewis_photo_001.jpg",
@@ -393,7 +426,7 @@
     "driverSlug": "mark-house",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1997_ted-dolhun_dan-lewis_photo_001.jpg",
@@ -404,7 +437,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1997_terry-anvelink_mark-olson_photo_455.jpg",
@@ -426,7 +459,7 @@
     "driverSlug": "dan-michonski",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1999_unknown-driver_neil-miller_photo_455.jpg",
@@ -448,7 +481,7 @@
     "driverSlug": "bill-lemmens",
     "photographerSlug": "dan-mary-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2000_kevin-lamberies_jennifer-jach_photo_001.jpg",
@@ -459,7 +492,7 @@
     "driverSlug": "kevin-lamberies",
     "photographerSlug": "jennifer-jach",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2000_tom-naeyaert_dan-mary-lewis_photo_001.jpg",
@@ -470,7 +503,7 @@
     "driverSlug": "tom-naeyaert",
     "photographerSlug": "dan-mary-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2003_tony-wudstrack_unknown-photographer_photo_001.jpg",
@@ -481,7 +514,7 @@
     "driverSlug": "tony-wudstrack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
@@ -492,7 +525,7 @@
     "driverSlug": "aaron-wickersheim",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2013_brock-saunders_bob-greuel_photo_001.jpg",
@@ -503,7 +536,7 @@
     "driverSlug": "brock-saunders",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2013_pat-zdroik_bob-greuel_photo_001.jpg",
@@ -514,7 +547,7 @@
     "driverSlug": "pat-zdroik",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2014_mark-weisnicht_weisnicht_post_001.jpg",
@@ -525,7 +558,7 @@
     "driverSlug": "mark-weisnicht",
     "photographerSlug": "weisnicht",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2015_aaron-holiday_andy-springborn_photo_001.jpg",
@@ -536,7 +569,7 @@
     "driverSlug": "aaron-holiday",
     "photographerSlug": "andy-springborn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2015_mark-weisnicht_weisnicht_post_001.jpg",
@@ -547,7 +580,7 @@
     "driverSlug": "mark-weisnicht",
     "photographerSlug": "weisnicht",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2016_aaron-reivitis_aaron-reivitis_post_001.jpg",
@@ -558,7 +591,18 @@
     "driverSlug": "aaron-reivitis",
     "photographerSlug": "aaron-reivitis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/2016/shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2016",
+    "driverSlug": "jason-zdroik",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_2016_luke-uttecht_bill-schmidt_photo_333.jpg",
@@ -580,7 +624,7 @@
     "driverSlug": "paul-parker",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2016_ray-depew_bill-schmidt_photo_333.jpg",
@@ -602,7 +646,7 @@
     "driverSlug": "ron-berna",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2017_mark-weisnicht_randy-van-hoof_photo_001.jpg",
@@ -613,7 +657,7 @@
     "driverSlug": "mark-weisnicht",
     "photographerSlug": "randy-van-hoof",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2020_jayden-schmidt_unknown-photographer_photo_001.jpg",
@@ -624,7 +668,7 @@
     "driverSlug": "jayden-schmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2025_jason-yaeger_jason-yaeger_post_112 (2).jpg",
@@ -635,7 +679,7 @@
     "driverSlug": "jason-yaeger",
     "photographerSlug": "jason-yaeger",
     "creditType": "post",
-    "sequence": "112 (2)"
+    "sequence": "1122"
   },
   {
     "fileName": "shawano-speedway_2025_trace-yaeger_trace-yaeger_post_112.jpg",
@@ -657,7 +701,18 @@
     "driverSlug": "andy-karl",
     "photographerSlug": "hoofer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_2026_andy-karl_hoofer_photo_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/2026/shawano-speedway_2026_andy-karl_hoofer_photo_111.jpg",
+    "publicPath": "/photos/shawano-speedway_2026_andy-karl_hoofer_photo_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2026",
+    "driverSlug": "andy-karl",
+    "photographerSlug": "hoofer",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_2026_bill-edler_bill-edler_post_001.jpg",
@@ -668,7 +723,7 @@
     "driverSlug": "bill-edler",
     "photographerSlug": "bill-edler",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2026_chris-oertel_hoofer_photo_001.jpg",
@@ -679,7 +734,7 @@
     "driverSlug": "chris-oertel",
     "photographerSlug": "hoofer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2026_jordan-bartz_jordan-bartz_post_001.jpg",
@@ -690,7 +745,7 @@
     "driverSlug": "jordan-bartz",
     "photographerSlug": "jordan-bartz",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2026_michael-springborn_unknown-photographer_photo_001.jpg",
@@ -701,7 +756,7 @@
     "driverSlug": "michael-springborn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2026_troy-springborn_hoofer_photo_001.jpg",
@@ -712,7 +767,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "hoofer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_aaron-bennett_chad-marquardt_photo_001.jpg",
@@ -723,7 +778,7 @@
     "driverSlug": "aaron-bennett",
     "photographerSlug": "chad-marquardt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_al-gibson_brad-luepke_post_001.jpg",
@@ -734,7 +789,7 @@
     "driverSlug": "al-gibson",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_al-presteen_bob-bergeron_photo_001.jpg",
@@ -745,7 +800,7 @@
     "driverSlug": "al-presteen",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_al-presteen_pete-vercauteren_photo_001.jpg",
@@ -756,7 +811,7 @@
     "driverSlug": "al-presteen",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_art-siefert_brad-luepke_post_001.jpg",
@@ -767,7 +822,7 @@
     "driverSlug": "art-siefert",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_benji-lacrosse_unknown-photographer_photo_001.jpg",
@@ -778,7 +833,7 @@
     "driverSlug": "benji-lacrosse",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_benji-lacrosse_unknown-photographer_photo_002.jpg",
@@ -789,7 +844,7 @@
     "driverSlug": "benji-lacrosse",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bill-lemmens_brad-luepke_post_001.jpg",
@@ -800,7 +855,7 @@
     "driverSlug": "bill-lemmens",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bob-bemmels_brad-luepke_post_001.jpg",
@@ -811,7 +866,7 @@
     "driverSlug": "bob-bemmels",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_001.jpg",
@@ -822,7 +877,7 @@
     "driverSlug": "bob-schmidt",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bob-schmidt_brad-luepke_post_222.jpg",
@@ -844,7 +899,7 @@
     "driverSlug": "brad-wedde",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bret-swedberg_bob-greuel_photo_001.jpg",
@@ -855,7 +910,7 @@
     "driverSlug": "bret-swedberg",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bret-swedberg_unknown-photographer_photo_001.jpg",
@@ -866,7 +921,7 @@
     "driverSlug": "bret-swedberg",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_brian-mullen_unknown-photographer_photo_001.jpg",
@@ -877,7 +932,7 @@
     "driverSlug": "brian-mullen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_brian-thielke_joe-verdegan_post_001.jpg",
@@ -888,7 +943,7 @@
     "driverSlug": "brian-thielke",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_001.jpg",
@@ -899,7 +954,7 @@
     "driverSlug": "brian-thielke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_002.jpg",
@@ -910,7 +965,7 @@
     "driverSlug": "brian-thielke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_003.jpg",
@@ -921,7 +976,18 @@
     "driverSlug": "brian-thielke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_brian-thielke_unknown-photographer_photo_333.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-thielke",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bud-lyn_unknown-photographer_photo_001.jpg",
@@ -932,7 +998,7 @@
     "driverSlug": "bud-lyn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bud-lynn_brad-luepke_post_001.jpg",
@@ -943,7 +1009,7 @@
     "driverSlug": "bud-lynn",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_001.jpg",
@@ -954,7 +1020,7 @@
     "driverSlug": "bud-lynn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_002.jpg",
@@ -965,7 +1031,7 @@
     "driverSlug": "bud-lynn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bud-lynn_unknown-photographer_photo_101.jpg",
@@ -987,7 +1053,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_pete-vercauteren_photo_001.jpg",
@@ -998,7 +1064,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_001.jpg",
@@ -1009,7 +1075,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_002.jpg",
@@ -1020,7 +1086,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_003.jpg",
@@ -1031,7 +1097,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_004.jpg",
@@ -1042,7 +1108,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_005.jpg",
@@ -1053,7 +1119,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_006.jpg",
@@ -1064,7 +1130,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_007.jpg",
@@ -1075,7 +1141,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_008.jpg",
@@ -1086,7 +1152,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_009.jpg",
@@ -1097,7 +1163,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_010.jpg",
@@ -1108,7 +1174,7 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chad-paul_unknown-photographer_photo_011.jpg",
@@ -1119,7 +1185,18 @@
     "driverSlug": "chad-paul",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_chick-stolarik_unknown-photographer_photo_100.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_chick-stolarik_unknown-photographer_photo_100.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_chick-stolarik_unknown-photographer_photo_100.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chris-kollross_brad-luepke_post_001.jpg",
@@ -1130,7 +1207,7 @@
     "driverSlug": "chris-kollross",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chris-kollross_joe-verdegan_post_001.jpg",
@@ -1141,7 +1218,7 @@
     "driverSlug": "chris-kollross",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chris-kolross_joe-slack_photo_001.jpg",
@@ -1152,7 +1229,7 @@
     "driverSlug": "chris-kolross",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chuck-buckbee_brad-luepke_post_001.jpg",
@@ -1163,7 +1240,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chuck-buckbee_brad-luepke-ii_post_001.jpg",
@@ -1174,7 +1251,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "brad-luepke-ii",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_chuck-buckbee_unknown-photographer_photo_001.jpg",
@@ -1185,7 +1262,7 @@
     "driverSlug": "chuck-buckbee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_cliff-ebben_joe-verdegan_post_001.jpg",
@@ -1196,7 +1273,7 @@
     "driverSlug": "cliff-ebben",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_cliff-ebben_unknown-photographer_photo_001.jpg",
@@ -1207,7 +1284,7 @@
     "driverSlug": "cliff-ebben",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_cubby-lambries_brad-luepke_post_001.jpg",
@@ -1218,7 +1295,7 @@
     "driverSlug": "cubby-lambries",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dan-ambrose_pete-vercauteren_photo_001.jpg",
@@ -1229,7 +1306,18 @@
     "driverSlug": "dan-ambrose",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-grosskreutz",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dan-grosskreutz_scott-owen_post_001.jpg",
@@ -1240,7 +1328,7 @@
     "driverSlug": "dan-grosskreutz",
     "photographerSlug": "scott-owen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dan-michonski_unknown-photographer_photo_001.jpg",
@@ -1251,7 +1339,7 @@
     "driverSlug": "dan-michonski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dan-michonski_unknown-photographer_photo_002.jpg",
@@ -1262,7 +1350,7 @@
     "driverSlug": "dan-michonski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dan-weyker_eugene-schmitz_post_001.jpg",
@@ -1273,7 +1361,7 @@
     "driverSlug": "dan-weyker",
     "photographerSlug": "eugene-schmitz",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dave-bennett_unknown-photographer_photo_001.jpg",
@@ -1284,7 +1372,7 @@
     "driverSlug": "dave-bennett",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dave-peitersen_unknown-photographer_photo_001.jpg",
@@ -1295,7 +1383,7 @@
     "driverSlug": "dave-peitersen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dave-schneider_unknown-photographer_photo_001.jpg",
@@ -1306,7 +1394,7 @@
     "driverSlug": "dave-schneider",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_dennis-teschke_unknown-photographer_photo_001.jpg",
@@ -1317,7 +1405,7 @@
     "driverSlug": "dennis-teschke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_devin-snellenberger_unknown-photographer_photo_001.jpg",
@@ -1328,7 +1416,7 @@
     "driverSlug": "devin-snellenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_don-diemel_aj-diemel_post_001.jpg",
@@ -1339,7 +1427,7 @@
     "driverSlug": "don-diemel",
     "photographerSlug": "aj-diemel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_doug-blashe_unknown-photographer_photo_001.jpg",
@@ -1350,7 +1438,7 @@
     "driverSlug": "doug-blashe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_doug-larson_pete-vercauteren_photo_001.jpg",
@@ -1361,7 +1449,7 @@
     "driverSlug": "doug-larson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_doug-vandenlangenberg_bob-schafer_photo_069.jpg",
@@ -1372,7 +1460,7 @@
     "driverSlug": "doug-vandenlangenberg",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "069"
+    "sequence": "69"
   },
   {
     "fileName": "shawano-speedway_unknown-year_doug-vandenlangenberg_brad-luepke_post_001.jpg",
@@ -1383,7 +1471,7 @@
     "driverSlug": "doug-vandenlangenberg",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_earl-ness_bob-bergeron_photo_001.jpg",
@@ -1394,7 +1482,7 @@
     "driverSlug": "earl-ness",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_eddie-muenster_brad-luepke_post_001.jpg",
@@ -1405,7 +1493,7 @@
     "driverSlug": "eddie-muenster",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_eddie-muenster-wade-schutt_unknown-photographer_photo_001.jpg",
@@ -1416,7 +1504,7 @@
     "driverSlug": "eddie-muenster-wade-schutt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_ernie-rathke_unknown-photographer_photo_001.jpg",
@@ -1427,7 +1515,7 @@
     "driverSlug": "ernie-rathke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_gary-lyne_brad-luepke_post_001.jpg",
@@ -1438,7 +1526,7 @@
     "driverSlug": "gary-lyne",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_glenn-bessette_bob-bergeron_photo_001.jpg",
@@ -1449,7 +1537,7 @@
     "driverSlug": "glenn-bessette",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_gordie-seegert_unknown-photographer_photo_001.jpg",
@@ -1460,7 +1548,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_herb-iverson_pete-vercauteren_photo_001.jpg",
@@ -1471,7 +1559,7 @@
     "driverSlug": "herb-iverson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jeff-curtin_dan-lewis_photo_001.jpg",
@@ -1482,7 +1570,7 @@
     "driverSlug": "jeff-curtin",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jeff-teschke_scott-owen_post_001.jpg",
@@ -1493,7 +1581,7 @@
     "driverSlug": "jeff-teschke",
     "photographerSlug": "scott-owen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jeff-teske_brad-luepke_post_001.jpg",
@@ -1504,7 +1592,7 @@
     "driverSlug": "jeff-teske",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jeremy-christians_unknown-photographer_photo_001.jpg",
@@ -1515,7 +1603,7 @@
     "driverSlug": "jeremy-christians",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jerry-muenster_brad-luepke_post_001.jpg",
@@ -1526,7 +1614,7 @@
     "driverSlug": "jerry-muenster",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jerry-muenster_unknown-photographer_photo_001.jpg",
@@ -1537,7 +1625,7 @@
     "driverSlug": "jerry-muenster",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jerry-smith_dennis-satorius_post_333.jpg",
@@ -1559,7 +1647,7 @@
     "driverSlug": "jerry-smith",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jerry-weigel_unknown-photographer_photo_001.jpg",
@@ -1570,7 +1658,7 @@
     "driverSlug": "jerry-weigel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jesse-krahn_turn-2_photo_001.jpg",
@@ -1581,7 +1669,7 @@
     "driverSlug": "jesse-krahn",
     "photographerSlug": "turn-2",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jesse-peebles_dan-lewis_photo_001.jpg",
@@ -1592,7 +1680,7 @@
     "driverSlug": "jesse-peebles",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jim-fischer_unknown-photographer_photo_001.jpg",
@@ -1603,7 +1691,7 @@
     "driverSlug": "jim-fischer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jim-hanson_unknown-photographer_photo_001.jpg",
@@ -1614,7 +1702,7 @@
     "driverSlug": "jim-hanson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jim-jahnke_pete-vercauteren_photo_001.jpg",
@@ -1625,7 +1713,7 @@
     "driverSlug": "jim-jahnke",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jim-vandenberg_joe-slack_photo_001.jpg",
@@ -1636,7 +1724,7 @@
     "driverSlug": "jim-vandenberg",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jj-smith_unknown-photographer_photo_002.jpg",
@@ -1647,7 +1735,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_joe-white_brad-luepke_post_001.jpg",
@@ -1658,7 +1746,7 @@
     "driverSlug": "joe-white",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_john-beyers_pete-vercauteren_photo_001.jpg",
@@ -1669,7 +1757,7 @@
     "driverSlug": "john-beyers",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_john-gutho_brad-luepke_post_001.jpg",
@@ -1680,7 +1768,7 @@
     "driverSlug": "john-gutho",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_john-schultz_pete-vercauteren_photo_001.jpg",
@@ -1691,7 +1779,7 @@
     "driverSlug": "john-schultz",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jon-olson_unknown-photographer_photo_001.jpg",
@@ -1702,7 +1790,7 @@
     "driverSlug": "jon-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jordan-barkholz_joe-verdegan_post_001.jpg",
@@ -1713,7 +1801,7 @@
     "driverSlug": "jordan-barkholz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_josh-slewinski_unknown-photographer_photo_001.jpg",
@@ -1724,7 +1812,7 @@
     "driverSlug": "josh-slewinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_josh-slewinski_unknown-photographer_photo_002.jpg",
@@ -1735,7 +1823,7 @@
     "driverSlug": "josh-slewinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_justin-ritchie_unknown-photographer_photo_001.jpg",
@@ -1746,7 +1834,7 @@
     "driverSlug": "justin-ritchie",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_kasey-gross_unknown-photographer_photo_001.jpg",
@@ -1757,7 +1845,7 @@
     "driverSlug": "kasey-gross",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_ken-fischer_unknown-photographer_photo_001.jpg",
@@ -1768,7 +1856,7 @@
     "driverSlug": "ken-fischer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_kevin-tober_joe-verdegan_post_001.jpg",
@@ -1779,7 +1867,7 @@
     "driverSlug": "kevin-tober",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_001.jpg",
@@ -1790,7 +1878,7 @@
     "driverSlug": "kevin-tober",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_kevin-tober_unknown-photographer_photo_002.jpg",
@@ -1801,7 +1889,7 @@
     "driverSlug": "kevin-tober",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_kurt-habeck_unknown-photographer_photo_001.jpg",
@@ -1812,7 +1900,7 @@
     "driverSlug": "kurt-habeck",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_kurt-olson_unknown-photographer_photo_001.jpg",
@@ -1823,7 +1911,7 @@
     "driverSlug": "kurt-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_larry-buckwheat_unknown-photographer_photo_001.jpg",
@@ -1834,7 +1922,7 @@
     "driverSlug": "larry-buckwheat",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_larry-drefahl_bob-bergeron_photo_001.jpg",
@@ -1845,7 +1933,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_larry-drefahl_brad-luepke_post_001.jpg",
@@ -1856,7 +1944,7 @@
     "driverSlug": "larry-drefahl",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_lee-hammond_joe-verdegan_post_001.jpg",
@@ -1867,7 +1955,7 @@
     "driverSlug": "lee-hammond",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_leon-plank_pete-vercauteren_photo_001.jpg",
@@ -1878,7 +1966,7 @@
     "driverSlug": "leon-plank",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_lerory-arnold_pat-heaney_post_001.jpg",
@@ -1889,7 +1977,7 @@
     "driverSlug": "lerory-arnold",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_001.jpg",
@@ -1900,7 +1988,7 @@
     "driverSlug": "leroy-arnold",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_leroy-arnold_joe-verdegan_post_002.jpg",
@@ -1911,7 +1999,7 @@
     "driverSlug": "leroy-arnold",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_leroy-arnold_pete-vercauteren_photo_001.jpg",
@@ -1922,7 +2010,7 @@
     "driverSlug": "leroy-arnold",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_leroy-arnold_unknown-photographer_photo_001.jpg",
@@ -1933,7 +2021,7 @@
     "driverSlug": "leroy-arnold",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_les-ponto_dennis-satorius_post_116.jpg",
@@ -1955,7 +2043,7 @@
     "driverSlug": "les-yaeger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_lucas-lamberies_unknown-photographer_photo_001.jpg",
@@ -1966,7 +2054,7 @@
     "driverSlug": "lucas-lamberies",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_lucas-lambries_unknown-photographer_photo_001.jpg",
@@ -1977,7 +2065,7 @@
     "driverSlug": "lucas-lambries",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_lyndle-horsens_brad-luepke_post_001.jpg",
@@ -1988,7 +2076,7 @@
     "driverSlug": "lyndle-horsens",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_m-j-mcbride_tim-crass_post_001.jpg",
@@ -1999,7 +2087,7 @@
     "driverSlug": "m-j-mcbride",
     "photographerSlug": "tim-crass",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_m-j-mcbride_unknown-photographer_photo_001.jpg",
@@ -2010,7 +2098,7 @@
     "driverSlug": "m-j-mcbride",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_m-j-mcbride_unknown-photographer_photo_002.jpg",
@@ -2021,7 +2109,7 @@
     "driverSlug": "m-j-mcbride",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_marcus-yarie_unknown-photographer_photo_001.jpg",
@@ -2032,7 +2120,7 @@
     "driverSlug": "marcus-yarie",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_marcus-yarie_unknown-photographer_photo_002.jpg",
@@ -2043,7 +2131,18 @@
     "driverSlug": "marcus-yarie",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_mark-house_mark-house_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_mark-house_mark-house_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_mark-house_mark-house_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mark-house",
+    "photographerSlug": "mark-house",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mark-house_unknown-photographer_photo_001.jpg",
@@ -2054,7 +2153,7 @@
     "driverSlug": "mark-house",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mark-weisnicht_derek-sabourin_photo_001.jpg",
@@ -2065,7 +2164,7 @@
     "driverSlug": "mark-weisnicht",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-babino_unknown-photographer_photo_001.jpg",
@@ -2076,7 +2175,7 @@
     "driverSlug": "mike-babino",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-fletcher_brad-luepke_post_001.jpg",
@@ -2087,7 +2186,7 @@
     "driverSlug": "mike-fletcher",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-mitchell_unknown-photographer_photo_001.jpg",
@@ -2098,7 +2197,7 @@
     "driverSlug": "mike-mitchell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-mullen_unknown-photographer_photo_001.jpg",
@@ -2109,7 +2208,7 @@
     "driverSlug": "mike-mullen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-mullen_unknown-photographer_photo_002.jpg",
@@ -2120,7 +2219,7 @@
     "driverSlug": "mike-mullen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-schmelzer_brad-luepke_post_001.jpg",
@@ -2131,7 +2230,7 @@
     "driverSlug": "mike-schmelzer",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-schmelzer_brad-luepke-ii_post_001.jpg",
@@ -2142,7 +2241,7 @@
     "driverSlug": "mike-schmelzer",
     "photographerSlug": "brad-luepke-ii",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-schmelzer_unknown-photographer_photo_001.jpg",
@@ -2153,7 +2252,7 @@
     "driverSlug": "mike-schmelzer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mike-schmidt_unknown-photographer_photo_001.jpg",
@@ -2164,7 +2263,7 @@
     "driverSlug": "mike-schmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mitch-johnson_unknown-photographer_photo_001.jpg",
@@ -2175,7 +2274,7 @@
     "driverSlug": "mitch-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mitch-stankowski_unknown-photographer_photo_001.jpg",
@@ -2186,7 +2285,7 @@
     "driverSlug": "mitch-stankowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mj-mcbride_jony-chapa_post_001.jpg",
@@ -2197,7 +2296,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "jony-chapa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mj-mcbride_pete-vercauteren_photo_001.jpg",
@@ -2208,7 +2307,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mj-mcbride_pete-vercauteren_photo_002.jpg",
@@ -2219,7 +2318,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_mj-mcbride_unknown-photographer_photo_002.jpg",
@@ -2230,7 +2329,7 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pat-doar_brad-luepke_post_001.jpg",
@@ -2241,7 +2340,7 @@
     "driverSlug": "pat-doar",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_001.jpg",
@@ -2252,7 +2351,7 @@
     "driverSlug": "paul-christensen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_paul-christensen_unknown-photographer_photo_333.jpg",
@@ -2274,7 +2373,7 @@
     "driverSlug": "paul-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_paul-thorpe_unknown-photographer_photo_001.jpg",
@@ -2285,7 +2384,7 @@
     "driverSlug": "paul-thorpe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pete-parker_bob-schafer_photo_12509.jpg",
@@ -2307,7 +2406,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pete-parker_pete-vercauteren_photo_001.jpg",
@@ -2318,7 +2417,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pete-parker_unknown-photographer_photo_001.jpg",
@@ -2329,7 +2428,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_randy-markwardt_bob-greuel_photo_001.jpg",
@@ -2340,7 +2439,7 @@
     "driverSlug": "randy-markwardt",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_randy-redmond_joe-verdegan_photo_898.jpg",
@@ -2362,7 +2461,7 @@
     "driverSlug": "ray-bohlander",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rick-egersdorf_unknown-photographer_photo_001.jpg",
@@ -2373,7 +2472,7 @@
     "driverSlug": "rick-egersdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rm-van-pay_brad-luepke_post_001.jpg",
@@ -2384,7 +2483,7 @@
     "driverSlug": "rm-van-pay",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rm-van-pay_unknown-photographer_photo_555.jpg",
@@ -2406,7 +2505,7 @@
     "driverSlug": "robbie-maas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rocky-cornelius_pete-vercauteren_photo_001.jpg",
@@ -2417,7 +2516,7 @@
     "driverSlug": "rocky-cornelius",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rocky-miller_unknown-photographer_photo_001.jpg",
@@ -2428,7 +2527,7 @@
     "driverSlug": "rocky-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rod-snellenberger_brad-luepke_post_001.jpg",
@@ -2439,7 +2538,7 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_rod-snellenberger_unknown-photographer_photo_001.jpg",
@@ -2450,7 +2549,7 @@
     "driverSlug": "rod-snellenberger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_roger-paul_bob-bergeron_photo_001.jpg",
@@ -2461,7 +2560,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_roger-paul_bob-bergeron_photo_002.jpg",
@@ -2472,7 +2571,7 @@
     "driverSlug": "roger-paul",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_roger-van-roy_brad-luepke_post_001.jpg",
@@ -2483,7 +2582,7 @@
     "driverSlug": "roger-van-roy",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_roger-van-roy_unknown-photographer_photo_001.jpg",
@@ -2494,7 +2593,7 @@
     "driverSlug": "roger-van-roy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_ron-berna_unknown-photographer_photo_001.jpg",
@@ -2505,7 +2604,7 @@
     "driverSlug": "ron-berna",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_ron-berna_unknown-photographer_photo_2833.jpg",
@@ -2527,7 +2626,7 @@
     "driverSlug": "ron-bomber",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_ron-woldt_brad-luepke_post_001.jpg",
@@ -2538,7 +2637,7 @@
     "driverSlug": "ron-woldt",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_russ-manthei_joe-verdegan_post_001.jpg",
@@ -2549,7 +2648,7 @@
     "driverSlug": "russ-manthei",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_russ-peterson_joe-verdegan_post_001.jpg",
@@ -2560,7 +2659,7 @@
     "driverSlug": "russ-peterson",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_sam-konitzer_brad-luepke_post_001.jpg",
@@ -2571,7 +2670,7 @@
     "driverSlug": "sam-konitzer",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_sam-konitzer_joe-verdegan_post_001.jpg",
@@ -2582,7 +2681,7 @@
     "driverSlug": "sam-konitzer",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_sam-konitzer_terry-timmers_post_001.jpg",
@@ -2593,7 +2692,7 @@
     "driverSlug": "sam-konitzer",
     "photographerSlug": "terry-timmers",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_sam-reakes_joe-verdegan_post_001.jpg",
@@ -2604,7 +2703,7 @@
     "driverSlug": "sam-reakes",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_scott-clements_bob-schafer_photo_999.jpg",
@@ -2626,7 +2725,7 @@
     "driverSlug": "scott-clements",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_scott-cramer_unknown-photographer_photo_2019.jpg",
@@ -2648,7 +2747,7 @@
     "driverSlug": "scott-owen",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_scott-thiede_dan-lewis_photo_5414.jpg",
@@ -2703,7 +2802,7 @@
     "driverSlug": "ted-scharl",
     "photographerSlug": "dennis-satroius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-anvelink_bob-bergeron_photo_001.jpg",
@@ -2714,7 +2813,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-anvelink_pete-vercauteren_photo_001.jpg",
@@ -2725,7 +2824,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-anvelink_unknown-photographer_photo_001.jpg",
@@ -2736,7 +2835,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-anvelink_unknown-photographer_photo_002.jpg",
@@ -2747,7 +2846,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-casey_unknown-photographer_photo_001.jpg",
@@ -2758,7 +2857,7 @@
     "driverSlug": "terry-casey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-kralovetz_joe-verdegan_post_001.jpg",
@@ -2769,7 +2868,7 @@
     "driverSlug": "terry-kralovetz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_terry-kralovetz_unknown-photographer_photo_001.jpg",
@@ -2780,7 +2879,7 @@
     "driverSlug": "terry-kralovetz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tim-buhler_unknown-photographer_photo_002.jpg",
@@ -2791,7 +2890,7 @@
     "driverSlug": "tim-buhler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tiny-lund_unknown-photographer_photo_001.jpg",
@@ -2802,7 +2901,7 @@
     "driverSlug": "tiny-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tm-miller_unknown-photographer_photo_101.jpg",
@@ -2901,7 +3000,7 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_002.jpg",
@@ -2912,7 +3011,7 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tom-greenlee_pete-vercauteren_photo_003.jpg",
@@ -2923,7 +3022,7 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_001.jpg",
@@ -2934,7 +3033,7 @@
     "driverSlug": "tom-naeyaert",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tom-naeyaert_brad-luepke_post_444.jpg",
@@ -2956,7 +3055,7 @@
     "driverSlug": "tom-naeyaert",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tom-naeyaert_unknown-photographer_photo_001.jpg",
@@ -2967,7 +3066,7 @@
     "driverSlug": "tom-naeyaert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tom-ort_brad-luepke_post_446.jpg",
@@ -2989,7 +3088,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tony-berg_brad-luepke_post_001.jpg",
@@ -3000,7 +3099,7 @@
     "driverSlug": "tony-berg",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tony-seefeldt_tony-seefeldt_post_001.jpg",
@@ -3011,7 +3110,7 @@
     "driverSlug": "tony-seefeldt",
     "photographerSlug": "tony-seefeldt",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001 (2).jpg",
@@ -3022,7 +3121,7 @@
     "driverSlug": "tony-wudstrack",
     "photographerSlug": "tony-wudstruck",
     "creditType": "post",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "shawano-speedway_unknown-year_tony-wudstrack_tony-wudstruck_post_001.jpg",
@@ -3033,7 +3132,7 @@
     "driverSlug": "tony-wudstrack",
     "photographerSlug": "tony-wudstruck",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_travis-spaulding_unknown-photographer_photo_001.jpg",
@@ -3044,7 +3143,7 @@
     "driverSlug": "travis-spaulding",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_travis-van-straten_unknown-photographer_photo_001.jpg",
@@ -3055,7 +3154,7 @@
     "driverSlug": "travis-van-straten",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_travis-van-straten_unknown-photographer_photo_002.jpg",
@@ -3066,7 +3165,7 @@
     "driverSlug": "travis-van-straten",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_travis-whitney_unknown-photographer_photo_001.jpg",
@@ -3077,7 +3176,7 @@
     "driverSlug": "travis-whitney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_troy-springborn_brad-luepke_post_001.jpg",
@@ -3088,7 +3187,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_001.jpg",
@@ -3099,7 +3198,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_troy-springborn_unknown-photographer_photo_021.jpg",
@@ -3110,7 +3209,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
@@ -3118,10 +3217,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_001.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
@@ -3129,10 +3228,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_002.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
@@ -3140,10 +3239,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_003.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
@@ -3151,10 +3250,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_004.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_006.jpg",
@@ -3162,10 +3261,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_006.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_008.jpg",
@@ -3173,10 +3272,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_008.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_009.jpg",
@@ -3184,10 +3283,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_009.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_010.jpg",
@@ -3195,10 +3294,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_010.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_011.jpg",
@@ -3206,10 +3305,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_011.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_bob-bergeron_photo_012.jpg",
@@ -3217,10 +3316,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_bob-bergeron_photo_012.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_joe-verdegan_post_002.jpg",
@@ -3228,10 +3327,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_joe-verdegan_post_002.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_joe-verdegan_post_003.jpg",
@@ -3239,10 +3338,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_joe-verdegan_post_003.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown_pat-heaney_post_001.jpg",
@@ -3250,10 +3349,10 @@
     "publicPath": "/photos/shawano-speedway_unknown-year_unknown_pat-heaney_post_001.jpg",
     "trackSlug": "shawano-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_unknown-driver_dennis-satorius_post_116.jpg",
@@ -3418,7 +3517,7 @@
     "driverSlug": "unknown-raddant",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_vj-giguere_brad-luepke_post_001.jpg",
@@ -3429,7 +3528,7 @@
     "driverSlug": "vj-giguere",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_vj-giguere_unknown-photographer_photo_001.jpg",
@@ -3440,7 +3539,7 @@
     "driverSlug": "vj-giguere",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_vj-giguere_unknown-photographer_photo_002.jpg",
@@ -3451,7 +3550,7 @@
     "driverSlug": "vj-giguere",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "shawano-speedway_unknown-year_vj-giguere_unknown-photographer_photo_004.jpg",
@@ -3462,7 +3561,7 @@
     "driverSlug": "vj-giguere",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "shawano-speedway_unknown-year_wyatt-block_unknown-photographer_photo_001.jpg",
@@ -3473,6 +3572,6 @@
     "driverSlug": "wyatt-block",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

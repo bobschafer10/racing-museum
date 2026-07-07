@@ -8,7 +8,7 @@
     "driverSlug": "bill-johnson-jr",
     "photographerSlug": "john-surges",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_bob-robel_john-surges_post_001.jpg",
@@ -19,28 +19,6 @@
     "driverSlug": "bob-robel",
     "photographerSlug": "john-surges",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1959_homer-ansel_john-surges_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1959",
-    "driverSlug": "homer-ansel",
-    "photographerSlug": "john-surges",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1959/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1959_norm-nelson_john-surges_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1959",
-    "driverSlug": "norm-nelson",
-    "photographerSlug": "john-surges",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

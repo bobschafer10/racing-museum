@@ -19,7 +19,7 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "eugene-bryan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bobby-allison_father-grubba_photo_333.jpg",
@@ -85,7 +85,18 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_bobby-allison_kurt-luoma_photo_333.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_bobby-allison_kurt-luoma_photo_333.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_bobby-allison_kurt-luoma_photo_333.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-allison",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bobby-allison_bob-schafer_photo_397.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bobby-allison_john-vass_photo_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bobby-allison_ron-thruman_post_001.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bobby-allison_unknown-photographer_photo_001.jpg",
@@ -140,6 +151,6 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

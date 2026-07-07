@@ -1,0 +1,57 @@
+[
+  {
+    "fileName": "sante-fe-speedway_unknown-year_dennis-erb-sr_tom-sexton_post_111.jpg",
+    "storagePath": "photos/master/sante-fe-speedway/unknown-year/sante-fe-speedway_unknown-year_dennis-erb-sr_tom-sexton_post_111.jpg",
+    "publicPath": "/photos/sante-fe-speedway_unknown-year_dennis-erb-sr_tom-sexton_post_111.jpg",
+    "trackSlug": "sante-fe-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-erb-sr",
+    "photographerSlug": "tom-sexton",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_jim-morrison_tom-sexton_post_111.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_jim-morrison_tom-sexton_post_111.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_jim-morrison_tom-sexton_post_111.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-morrison",
+    "photographerSlug": "tom-sexton",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_jim-morrison_tom-sexton_post_112.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_jim-morrison_tom-sexton_post_112.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_jim-morrison_tom-sexton_post_112.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-morrison",
+    "photographerSlug": "tom-sexton",
+    "creditType": "post",
+    "sequence": "112"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_tom-ballard_tom-sexton_post_111.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_tom-ballard_tom-sexton_post_111.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_tom-ballard_tom-sexton_post_111.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tom-ballard",
+    "photographerSlug": "tom-sexton",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "wilmot-raceway_unknown-year_vince-wilkinson_tom-sexton_post_111.jpg",
+    "storagePath": "photos/master/wilmot-raceway/unknown-year/wilmot-raceway_unknown-year_vince-wilkinson_tom-sexton_post_111.jpg",
+    "publicPath": "/photos/wilmot-raceway_unknown-year_vince-wilkinson_tom-sexton_post_111.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "unknown-year",
+    "driverSlug": "vince-wilkinson",
+    "photographerSlug": "tom-sexton",
+    "creditType": "post",
+    "sequence": "111"
+  }
+]

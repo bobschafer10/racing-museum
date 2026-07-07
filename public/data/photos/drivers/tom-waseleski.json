@@ -8,7 +8,7 @@
     "driverSlug": "tom-waseleski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-waseleski_photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tom-waseleski",
     "photographerSlug": "photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-waseleski_ryan-aho_post_023.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "tom-waseleski",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "023"
+    "sequence": "23"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-waseleski_ryan-aho_post_068.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "tom-waseleski",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "068"
+    "sequence": "68"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "joe-gresk",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1981_joe-gresk_weber-brothers_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "joe-gresk",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1981_joe-gresk_weber-brothers_photo_002.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "joe-gresk",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_joe-gresk_weber-brothers_photo_555.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "joe-gresk",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1981_joe-gresk_weber-brothers_photo_001.jpg",
@@ -63,17 +63,6 @@
     "driverSlug": "joe-gresk",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_joe-gresk_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-gresk_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-gresk_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "joe-gresk",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

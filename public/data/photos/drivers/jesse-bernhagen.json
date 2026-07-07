@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "slinger-speedway_2026_jesse-bernhagen_doug-corcoran_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_jesse-bernhagen_doug-corcoran_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_jesse-bernhagen_doug-corcoran_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "jesse-bernhagen",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "state-park-speedway_2003_jesse-bernhagen_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/state-park-speedway/2003/state-park-speedway_2003_jesse-bernhagen_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/state-park-speedway_2003_jesse-bernhagen_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "jesse-bernhagen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

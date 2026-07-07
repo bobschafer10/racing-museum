@@ -8,7 +8,7 @@
     "driverSlug": "butch-wondra",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_butch-wondra_bob-schafer_photo_055.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "butch-wondra",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "055"
+    "sequence": "55"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_butch-wondra_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "butch-wondra",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_butch-wondra_joe-slack_photo_001.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "butch-wondra",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

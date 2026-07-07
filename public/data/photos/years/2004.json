@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "storagePath": "photos/master/cedar-lake-speedway/2004/cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "publicPath": "/photos/cedar-lake-speedway_2004_chuckie-desmith_troy-powers_photo_333.jpg",
+    "trackSlug": "cedar-lake-speedway",
+    "year": "2004",
+    "driverSlug": "chuckie-desmith",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "columbus-151-speedway_2004_brandon-selle_don-wendlandt_photo_122.jpg",
     "storagePath": "photos/master/columbus-151-speedway/2004/columbus-151-speedway_2004_brandon-selle_don-wendlandt_photo_122.jpg",
     "publicPath": "/photos/columbus-151-speedway_2004_brandon-selle_don-wendlandt_photo_122.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "tom-spierowski",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_butch-madsen_unknown-photographer_photo_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "butch-madsen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_eric-pember_unknown-photographer_photo_001.jpeg",
@@ -129,7 +140,7 @@
     "driverSlug": "eric-pember",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_paul-brust_unknown-photographer_photo_001.jpeg",
@@ -140,7 +151,7 @@
     "driverSlug": "paul-brust",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_tim-mcmann_unknown-photographer_photo_001.jpeg",
@@ -151,7 +162,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2004_unknown-driver_unknown-photographer_photo_020.jpg",
@@ -162,6 +173,50 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "020"
+    "sequence": "20"
+  },
+  {
+    "fileName": "unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "storagePath": "photos/master/unknown-track/2004/unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "publicPath": "/photos/unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2004",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "2006"
+  },
+  {
+    "fileName": "unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "storagePath": "photos/master/unknown-track/2004/unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "publicPath": "/photos/unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2004",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "2006"
+  },
+  {
+    "fileName": "unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "storagePath": "photos/master/unknown-track/2004/unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "publicPath": "/photos/unknown-track_2004_brady-smith_troy-powers_photo_2006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2004",
+    "driverSlug": "brady-smith",
+    "photographerSlug": "troy-powers",
+    "creditType": "photo",
+    "sequence": "2006"
+  },
+  {
+    "fileName": "unknown-track_2004_brian-gilles_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/unknown-track/2004/unknown-track_2004_brian-gilles_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/unknown-track_2004_brian-gilles_unknown-photographer_photo_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2004",
+    "driverSlug": "brian-gilles",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
   }
 ]

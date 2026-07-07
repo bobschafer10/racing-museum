@@ -8,7 +8,7 @@
     "driverSlug": "joel-cryderman",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_dale-gangl_bill-taylor_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dale-gangl",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_jason-gross_bill-taylor_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jason-gross",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_jason-schill_bill-taylor_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "jason-schill",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_joe-kouba_bill-taylor_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "joe-kouba",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_sid-denzer_bill-taylor_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "sid-denzer",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_spike-lempelius_bill-taylor_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "spike-lempelius",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_todd-nelson_bill-taylor_photo_001.png",
@@ -85,7 +85,7 @@
     "driverSlug": "todd-nelson",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "kopellah-speedway_unknown-year_travis-whitney_bill-taylor_photo_002.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "travis-whitney",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_chris-hawkey_bill-taylor_photo_001.jpg",
@@ -107,18 +107,29 @@
     "driverSlug": "chris-hawkey",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_joe-roe_bill-taylor_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_joe-roe_bill-taylor_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_joe-roe_bill-taylor_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_chris-hawkey_bill-taylor_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-hawkey_bill-taylor_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-hawkey_bill-taylor_photo_001.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
-    "driverSlug": "joe-roe",
+    "driverSlug": "chris-hawkey",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chris-hawkey_bill-taylor_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chris-hawkey_bill-taylor_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chris-hawkey_bill-taylor_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chris-hawkey",
+    "photographerSlug": "bill-taylor",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-baxter_bill-taylor_photo_001.jpg",
@@ -129,6 +140,6 @@
     "driverSlug": "tim-baxter",
     "photographerSlug": "bill-taylor",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

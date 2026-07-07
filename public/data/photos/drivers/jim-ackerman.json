@@ -8,7 +8,7 @@
     "driverSlug": "jim-ackerman",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_jim-ackerman_unknown-photographer_photo_103.jpg",
@@ -20,27 +20,5 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "103"
-  },
-  {
-    "fileName": "unknown-track_1983_jim-ackerman_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1983/unknown-track_1983_jim-ackerman_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1983_jim-ackerman_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1983",
-    "driverSlug": "jim-ackerman",
-    "photographerSlug": "lee-johnson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-ackerman_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-ackerman_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-ackerman_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-ackerman",
-    "photographerSlug": "lee-johnson",
-    "creditType": "photo",
-    "sequence": "001"
   }
 ]

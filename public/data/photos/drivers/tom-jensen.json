@@ -8,7 +8,7 @@
     "driverSlug": "tom-jensen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1981_tom-jensen_don-besch_photo_001.jpg",
@@ -19,18 +19,7 @@
     "driverSlug": "tom-jensen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1967_tom-jensen_ron-thruman_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1967/unknown-track_1967_tom-jensen_ron-thruman_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1967_tom-jensen_ron-thruman_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1967",
-    "driverSlug": "tom-jensen",
-    "photographerSlug": "ron-thruman",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-jensen_john-alft_post_001.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "tom-jensen",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-jensen_keith-vercauteren_post_001.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "tom-jensen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-jensen_unknown-photographer_photo_001.jpg",
@@ -63,6 +52,6 @@
     "driverSlug": "tom-jensen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

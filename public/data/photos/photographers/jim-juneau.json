@@ -8,6 +8,17 @@
     "driverSlug": "putz-renhock",
     "photographerSlug": "jim-juneau",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_1968_eddie-loomis_jim-juneau_photo_333.jpg",
+    "storagePath": "photos/master/slinger-speedway/1968/slinger-speedway_1968_eddie-loomis_jim-juneau_photo_333.jpg",
+    "publicPath": "/photos/slinger-speedway_1968_eddie-loomis_jim-juneau_photo_333.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1968",
+    "driverSlug": "eddie-loomis",
+    "photographerSlug": "jim-juneau",
+    "creditType": "photo",
+    "sequence": "333"
   }
 ]

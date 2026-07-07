@@ -8,6 +8,17 @@
     "driverSlug": "josh-pierce",
     "photographerSlug": "victory-image",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_2024_josh-pierce_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_josh-pierce_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2024_josh-pierce_putch-bentley_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "josh-pierce",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
   }
 ]

@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_100.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_100.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_100.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-milanowski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_556.jpg",
+    "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_556.jpg",
+    "publicPath": "/photos/golden-sands-speedway_unknown-year_joe-milanowski_kurt-luoma_photo_556.jpg",
+    "trackSlug": "golden-sands-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-milanowski",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "556"
+  },
+  {
     "fileName": "golden-sands-speedway_unknown-year_joe-milanowski_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/golden-sands-speedway/unknown-year/golden-sands-speedway_unknown-year_joe-milanowski_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/golden-sands-speedway_unknown-year_joe-milanowski_unknown-photographer_photo_001.jpg",
@@ -8,6 +30,6 @@
     "driverSlug": "joe-milanowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

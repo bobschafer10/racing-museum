@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "jefferson-speedway_unknown-year_curt-otterholt_charlie-spry_photo_222.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_curt-otterholt_charlie-spry_photo_222.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_curt-otterholt_charlie-spry_photo_222.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-otterholt",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_curt-otterholt_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_curt-otterholt_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_curt-otterholt_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "curt-otterholt",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  }
+]

@@ -8,6 +8,39 @@
     "driverSlug": "jeff-storm",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_jeff-storm_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_jeff-storm_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_jeff-storm_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "jeff-storm",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_jeff-storm_dave-drews_photo_443.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jeff-storm_dave-drews_photo_443.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jeff-storm_dave-drews_photo_443.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-storm",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "443"
+  },
+  {
+    "fileName": "slinger-speedway_2026_jeff-storm_doug-corcoran_photo_344.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_jeff-storm_doug-corcoran_photo_344.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_jeff-storm_doug-corcoran_photo_344.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "jeff-storm",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "344"
   }
 ]

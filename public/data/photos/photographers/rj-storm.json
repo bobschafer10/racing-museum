@@ -5,10 +5,10 @@
     "publicPath": "/photos/beaver-dam-raceway_unknown-year_unknown_rj-storm_photo_001.jpg",
     "trackSlug": "beaver-dam-raceway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "rj-storm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_rj-storm_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "rj-storm",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_jeff-cupery_rj-storm_post_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "jeff-cupery",
     "photographerSlug": "rj-storm",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

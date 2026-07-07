@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "unknown-track_unknown-year_john-boegeman_61-ron-thruman_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-boegeman_61-ron-thruman_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-boegeman_61-ron-thruman_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-boegeman",
-    "photographerSlug": "61-ron-thruman",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
     "fileName": "unknown-track_unknown-year_ole-brua_61-ron-thruman_post_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ole-brua_61-ron-thruman_post_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_ole-brua_61-ron-thruman_post_001.jpg",
@@ -19,7 +8,7 @@
     "driverSlug": "ole-brua",
     "photographerSlug": "61-ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-boegeman_61-ron-thruman_post_001.jpg",
@@ -30,6 +19,6 @@
     "driverSlug": "john-boegeman",
     "photographerSlug": "61-ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

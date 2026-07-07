@@ -11,6 +11,28 @@
     "sequence": "332"
   },
   {
+    "fileName": "dells-motor-speedway_unknown-year_george-olson_bob-schafer_photo_332.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_george-olson_bob-schafer_photo_332.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_george-olson_bob-schafer_photo_332.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "george-olson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "332"
+  },
+  {
+    "fileName": "slinger-speedway_1981_george-olson_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_george-olson_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_george-olson_weber-brothers_photo_334.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "george-olson",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_george-olson_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_george-olson_pat-heaney_post_001.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_george-olson_pat-heaney_post_001.jpg",
@@ -19,6 +41,17 @@
     "driverSlug": "george-olson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_george-olson_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_george-olson_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_george-olson_unknown-photographer_photo_333.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "george-olson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   }
 ]

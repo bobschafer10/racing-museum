@@ -8,7 +8,18 @@
     "driverSlug": "brian-lambie",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-lambie",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_brian-lambie_joe-verdegan_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "brian-lambie",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_brian-lambie_keith-vercauteren_post_001.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "brian-lambie",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

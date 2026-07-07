@@ -8,7 +8,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_russ-scheffler_bob-schafer_photo_12506.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_russ-scheffler_unknown-photographer_photo_34.jpg",
@@ -42,6 +42,17 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "34"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year-russ-scheffler_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year-russ-scheffler_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year-russ-scheffler_unknown-photographer_photo_333.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "russ-scheffler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "mall-show_unknown-year_russ-scheffler_unknown-photographer_photo_335.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_2010_russ-scheffler__bob-greuel_photo_001.jpg",
@@ -72,9 +83,9 @@
     "trackSlug": "plymouth-dirt-track",
     "year": "2010",
     "driverSlug": "russ-scheffler",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "bob-greuel",
-    "sequence": "photo"
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_russ-scheffler_unknown-photographer_photo_002.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "seymour-speedway_1990_russ-scheffler_bob-schafer_photo_001.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_russ-scheffler_bob-schafer_photo_085.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "085"
+    "sequence": "85"
   },
   {
     "fileName": "seymour-speedway_unknown-year_russ-scheffler_unknown-photographer_photo_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_russ-scheffler_unknown-photographer_photo_334.jpg",
@@ -132,28 +143,6 @@
     "sequence": "334"
   },
   {
-    "fileName": "unknown-track_1993_russ-scheffler_neil-miller_photo_001 (2).jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_russ-scheffler_neil-miller_photo_001 (2).jpg",
-    "publicPath": "/photos/unknown-track_1993_russ-scheffler_neil-miller_photo_001 (2).jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "russ-scheffler",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001 (2)"
-  },
-  {
-    "fileName": "unknown-track_1993_russ-scheffler_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_russ-scheffler_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_russ-scheffler_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "russ-scheffler",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "unknown-track_unknown-year_russ-scheffler_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_russ-scheffler_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_russ-scheffler_unknown-photographer_photo_001.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_russ-scheffler_unknown-photographer_photo_003.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_russ-scheffler_unknown-photographer_photo_004.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_russ-scheffler_kurt-luoma_photo_001.jpg",
@@ -195,7 +184,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_russ-scheffler_kurt-luoma_photo_002.jpg",
@@ -206,7 +195,7 @@
     "driverSlug": "russ-scheffler",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_russ-scheffler_kurt-luoma_photo_400.jpg",

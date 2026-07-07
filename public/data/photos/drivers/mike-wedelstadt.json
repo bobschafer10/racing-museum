@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "storagePath": "photos/master/oshkosh-speed-zone/2015/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "publicPath": "/photos/oshkosh-speed-zone_2015_mike-wedelstadt_dave-panske_photo_001.gif",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2015",
+    "driverSlug": "mike-wedelstadt",
+    "photographerSlug": "dave-panske",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
     "fileName": "unknown-track_unknown-year_mike-wedelstadt_unknown-photographer_photo_003.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-wedelstadt_unknown-photographer_photo_003.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_mike-wedelstadt_unknown-photographer_photo_003.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "mike-wedelstadt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

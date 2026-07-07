@@ -8,7 +8,7 @@
     "driverSlug": "tim-crimmings",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_1982_tim-crimmings_jim-kraemer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tim-crimmings",
     "photographerSlug": "jim-kraemer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "tim-crimmings",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_002.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "tim-crimmings",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_003.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "tim-crimmings",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_tim-crimmings_unknown-photographer_photo_004.jpg",
@@ -63,6 +63,6 @@
     "driverSlug": "tim-crimmings",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   }
 ]

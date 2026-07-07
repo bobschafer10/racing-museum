@@ -8,7 +8,7 @@
     "driverSlug": "jeff-fechter",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_jeff-fechter_randy-rein_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jeff-fechter",
     "photographerSlug": "randy-rein",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_jeff-fechter_unknown-photographer_photo_001.jpg",
@@ -30,17 +30,6 @@
     "driverSlug": "jeff-fechter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "plymouth-dirt-track_unknown-year_jeff-fechter_unknown-photographer_photo_222.jpg",
-    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_jeff-fechter_unknown-photographer_photo_222.jpg",
-    "publicPath": "/photos/plymouth-dirt-track_unknown-year_jeff-fechter_unknown-photographer_photo_222.jpg",
-    "trackSlug": "plymouth-dirt-track",
-    "year": "unknown-year",
-    "driverSlug": "jeff-fechter",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "222"
+    "sequence": "1"
   }
 ]

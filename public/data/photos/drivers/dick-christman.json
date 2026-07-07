@@ -8,40 +8,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "rats-racing",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1980_dick-christman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1980/unknown-track_1980_dick-christman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1980_dick-christman_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1980",
-    "driverSlug": "dick-christman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1981_dick-christman_kurt-gaber_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_dick-christman_kurt-gaber_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1981_dick-christman_kurt-gaber_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1981",
-    "driverSlug": "dick-christman",
-    "photographerSlug": "kurt-gaber",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_dick-christman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_dick-christman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_dick-christman_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "dick-christman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_mcclain_photo_001.jpg",
@@ -52,7 +19,18 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_mcclain_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_mcclain_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_mcclain_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "mcclain",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_rats-racing_post_001.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "rats-racing",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_ryan-aho_post_010.jpg",
@@ -74,7 +52,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_ryan-aho_post_103.jpg",
@@ -118,7 +96,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "scott-christman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_001.jpg",
@@ -129,7 +107,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_002.jpg",
@@ -140,7 +118,18 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_003.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_004.jpg",
@@ -162,7 +151,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_005.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_006.jpg",
@@ -184,7 +173,18 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_006.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_006.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_006.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_007.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_009.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_010.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_011.jpg",
@@ -228,7 +228,18 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_011.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_011.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_011.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_013.jpg",
@@ -239,7 +250,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "013"
+    "sequence": "13"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_014.jpg",
@@ -250,7 +261,7 @@
     "driverSlug": "dick-christman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1419.jpg",
@@ -262,5 +273,38 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "1419"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1419.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1419.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1419.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1419"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1419.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1419.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1419.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1419"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1955.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1955.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-christman_unknown-photographer_photo_1955.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-christman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1955"
   }
 ]

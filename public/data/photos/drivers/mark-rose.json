@@ -8,7 +8,18 @@
     "driverSlug": "mark-rose",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2013/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2013",
+    "driverSlug": "mark-rose",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-rose_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "mark-rose",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-rose_unknown-photographer_photo_002.jpg",
@@ -30,6 +41,6 @@
     "driverSlug": "mark-rose",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

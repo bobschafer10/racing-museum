@@ -8,7 +8,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "elko-speedway_unknown-year_tom-reffner_cal-wood_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "minnesota-state-fair_unknown-year_jerry-richert_cal-wood_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jerry-richert",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "minnesota-state-fair_unknown-year_unknown-driver_cal-wood_photo_334.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "johnny-boegeman",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "raceway-park-mn_unknown-year_larry-behrens_cal-wood_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "larry-behrens",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dick-trickle_cal-wood_photo_001.jpg",
@@ -85,7 +85,18 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dick-trickle_cal-wood_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dick-trickle_cal-wood_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dick-trickle_cal-wood_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "cal-wood",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-james_cal-wood_photo_001.jpg",
@@ -96,28 +107,17 @@
     "driverSlug": "don-james",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_jim-derhaag_cal-wood_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-derhaag_cal-wood_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-derhaag_cal-wood_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_don-james_cal-wood_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-james_cal-wood_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-james_cal-wood_photo_001.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
-    "driverSlug": "jim-derhaag",
+    "driverSlug": "don-james",
     "photographerSlug": "cal-wood",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-weber-elko_cal-wood_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-weber-elko_cal-wood_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-weber-elko_cal-wood_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-weber-elko",
-    "photographerSlug": "cal-wood",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

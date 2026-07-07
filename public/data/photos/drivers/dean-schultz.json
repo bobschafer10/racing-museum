@@ -11,6 +11,17 @@
     "sequence": "122"
   },
   {
+    "fileName": "columbus-151-speedway_unknown-year_dean-schultz_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_dean-schultz_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_dean-schultz_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dean-schultz",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
     "fileName": "columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_001.jpg",
     "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_001.jpg",
     "publicPath": "/photos/columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "dean-schultz",
     "photographerSlug": "j&d",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_dean-schultz_j&d_photo_021.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "dean-schultz",
     "photographerSlug": "j&d",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "unknown-track_unknown-year_dean-schultz_charlie-spry_post_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "dean-schultz",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "dean-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_002.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "dean-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dean-schultz_unknown-photographer_photo_003.jpg",
@@ -74,6 +85,6 @@
     "driverSlug": "dean-schultz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "sycamore-speedway_2019_lyle-zanker_mitch-zanker_post_111.jpg",
+    "storagePath": "photos/master/sycamore-speedway/2019/sycamore-speedway_2019_lyle-zanker_mitch-zanker_post_111.jpg",
+    "publicPath": "/photos/sycamore-speedway_2019_lyle-zanker_mitch-zanker_post_111.jpg",
+    "trackSlug": "sycamore-speedway",
+    "year": "2019",
+    "driverSlug": "lyle-zanker",
+    "photographerSlug": "mitch-zanker",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "sycamore-speedway_unknown-year_paul-parker_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/sycamore-speedway/unknown-year/sycamore-speedway_unknown-year_paul-parker_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/sycamore-speedway_unknown-year_paul-parker_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "paul-parker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

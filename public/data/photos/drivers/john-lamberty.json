@@ -19,6 +19,17 @@
     "driverSlug": "john-lamberty",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "019"
+    "sequence": "19"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_john-lamberty_charlie-spry_photo_321.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_john-lamberty_charlie-spry_photo_321.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_john-lamberty_charlie-spry_photo_321.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "john-lamberty",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "321"
   }
 ]

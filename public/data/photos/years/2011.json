@@ -8,7 +8,7 @@
     "driverSlug": "aaron-holiday",
     "photographerSlug": "aaron-holiday",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2011_jeff-steenbergen_bob-greuel_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "jeff-steenbergen",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/2011/chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "2011",
+    "driverSlug": "tom-schneider",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "deer-creek-speedway_2011_aj-wiste_aj-wiste_post_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "aj-wiste",
     "photographerSlug": "aj-wiste",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-valley-speedway_2011_joel-cryderman_charlie-lancour_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "joel-cryderman",
     "photographerSlug": "charlie-lancour",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "manitowoc-expo-speedway_2011_jeff-wilke_jamie-hanson_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "jeff-wilke",
     "photographerSlug": "jamie-hanson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2011_bryan-reffner_tom-loos_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2011_matt-tifft_tom-loos_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "matt-tifft",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2011_dave-steele_todd-shannon_post_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "dave-steele",
     "photographerSlug": "todd-shannon",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2011_kyle-larson_todd-shannon_post_001.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "kyle-larson",
     "photographerSlug": "todd-shannon",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_2011_kris-kelly_bob-greuel_photo_001.jpeg",
@@ -107,7 +118,7 @@
     "driverSlug": "kris-kelly",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_2011_brandon-mcmullen_bob-greuel_photo_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "brandon-mcmullen",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2011_al-schill_don-knoblauch_photo_001.jpeg",
@@ -129,7 +140,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-knoblauch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2011_alex-prunty_unknown-photographer_photo_006.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "alex-prunty",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "slinger-speedway_2011_kyle-shear_bob-greuel_photo_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "kyle-shear",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2011_neal-sannes_unknown-photographer_photo_006.jpg",
@@ -162,7 +173,7 @@
     "driverSlug": "neal-sannes",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "state-park-speedway_2011_m-g-gajewski_bob-gruell_photo_001.jpg",
@@ -173,7 +184,7 @@
     "driverSlug": "m-g-gajewski",
     "photographerSlug": "bob-gruell",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2011_mike-olson_bob-greuel_photo_001.jpg",
@@ -184,7 +195,7 @@
     "driverSlug": "mike-olson",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2011_travis-sauter_tom-loos_photo_001.jpg",
@@ -195,40 +206,7 @@
     "driverSlug": "travis-sauter",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2011_aaron-cain_aaron-cain_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2011/unknown-track_2011_aaron-cain_aaron-cain_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2011_aaron-cain_aaron-cain_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2011",
-    "driverSlug": "aaron-cain",
-    "photographerSlug": "aaron-cain",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2011_larry-richards_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2011/unknown-track_2011_larry-richards_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2011_larry-richards_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2011",
-    "driverSlug": "larry-richards",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2011_unknown-driver_pat-heaney_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2011/unknown-track_2011_unknown-driver_pat-heaney_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2011_unknown-driver_pat-heaney_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2011",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "pat-heaney",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_2011_al-atkinson_charlie-lancour_photo_001.jpg",
@@ -239,7 +217,7 @@
     "driverSlug": "al-atkinson",
     "photographerSlug": "charlie-lancour",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_2011_brandon-thone_charlie-lancour_photo_001.jpg",
@@ -250,7 +228,7 @@
     "driverSlug": "brandon-thone",
     "photographerSlug": "charlie-lancour",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_2011_dustin-holland_charlie-lancour_photo_001.jpg",
@@ -261,7 +239,7 @@
     "driverSlug": "dustin-holland",
     "photographerSlug": "charlie-lancour",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_2011_tim-buhler_74-charlie-lancour_photo_001.jpg",
@@ -272,7 +250,7 @@
     "driverSlug": "tim-buhler",
     "photographerSlug": "74-charlie-lancour",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_2011_tommy-sexton_charlie-lancour_photo_001.jpg",
@@ -283,6 +261,6 @@
     "driverSlug": "tommy-sexton",
     "photographerSlug": "charlie-lancour",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "john-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1990_john-olson_bob-schafer_photo_222.jpg",
@@ -55,6 +55,17 @@
     "sequence": "480"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_john-olson_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_john-olson_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_john-olson_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-olson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_john-olson_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_john-olson_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_john-olson_unknown-photographer_photo_002.jpg",
@@ -63,29 +74,7 @@
     "driverSlug": "john-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-olson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-olson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-olson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-olson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-olson_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-olson_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-olson_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-olson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_1989_john-olson_pat-heaney_post_001.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "john-olson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-olson_pat-heaney_post_001.jpg",
@@ -107,6 +96,6 @@
     "driverSlug": "john-olson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

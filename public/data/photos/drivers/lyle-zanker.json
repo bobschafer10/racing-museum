@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_111.jpg",
+    "storagePath": "photos/master/freeport-speedway/unknown-year/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_111.jpg",
+    "publicPath": "/photos/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_111.jpg",
+    "trackSlug": "freeport-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-zanker",
+    "photographerSlug": "teresa-nolan",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_112.jpg",
+    "storagePath": "photos/master/freeport-speedway/unknown-year/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_112.jpg",
+    "publicPath": "/photos/freeport-speedway_unknown-year_lyle-zanker_teresa-nolan_post_112.jpg",
+    "trackSlug": "freeport-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-zanker",
+    "photographerSlug": "teresa-nolan",
+    "creditType": "post",
+    "sequence": "112"
+  },
+  {
+    "fileName": "sycamore-speedway_2019_lyle-zanker_mitch-zanker_post_111.jpg",
+    "storagePath": "photos/master/sycamore-speedway/2019/sycamore-speedway_2019_lyle-zanker_mitch-zanker_post_111.jpg",
+    "publicPath": "/photos/sycamore-speedway_2019_lyle-zanker_mitch-zanker_post_111.jpg",
+    "trackSlug": "sycamore-speedway",
+    "year": "2019",
+    "driverSlug": "lyle-zanker",
+    "photographerSlug": "mitch-zanker",
+    "creditType": "post",
+    "sequence": "111"
+  }
+]

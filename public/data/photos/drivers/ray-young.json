@@ -8,7 +8,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_ray-young_charlie-spry_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_ray-young_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,18 @@
     "driverSlug": "ray-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_1981_ray-young_greg-bauer_post_444.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/1981/grundy-county-speedway_1981_ray-young_greg-bauer_post_444.jpg",
+    "publicPath": "/photos/grundy-county-speedway_1981_ray-young_greg-bauer_post_444.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "1981",
+    "driverSlug": "ray-young",
+    "photographerSlug": "greg-bauer",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ray-young_bob-schafer_photo_12853.jpg",
@@ -52,7 +63,51 @@
     "driverSlug": "ray-young",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_1983_ray-young_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/1983/raceway-park-il-il_1983_ray-young_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/raceway-park-il-il_1983_ray-young_raceway-park-history_post_555.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "1983",
+    "driverSlug": "ray-young",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_3565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_3565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_3565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "ray-young",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "3565"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_555.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "ray-young",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_5625.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_5625.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_ray-young_raceway-park-history_post_5625.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "unknown-year",
+    "driverSlug": "ray-young",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "5625"
   },
   {
     "fileName": "rockford-speedway_1975_ray-young_unknown-photographer_photo_001.jpg",
@@ -63,7 +118,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_ray-young_weber-brothers_photo_001.jpg",
@@ -74,7 +129,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-young_john-vass_photo_001.jpg",
@@ -85,7 +140,18 @@
     "driverSlug": "ray-young",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ray-young_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-young_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ray-young_raceway-park-history_post_565.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ray-young",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-young_unknown-photographer_photo_001.jpg",
@@ -96,7 +162,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-young_unknown-photographer_photo_002.jpg",
@@ -107,7 +173,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-young_unknown-photographer_photo_004.jpg",
@@ -118,18 +184,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ray-young_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ray-young_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ray-young_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ray-young",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_ray-young_unknown-photographer_photo_1379.jpg",
@@ -151,7 +206,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ray-young_geoff-mckarns_post_001.jpg",
@@ -162,7 +217,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ray-young_geoff-mckarns_post_002.jpg",
@@ -173,6 +228,6 @@
     "driverSlug": "ray-young",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

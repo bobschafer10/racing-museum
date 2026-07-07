@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "columbus-151-speedway_unknown-year_russ-lange_charlie-spry_photo_333.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_russ-lange_charlie-spry_photo_333.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_russ-lange_charlie-spry_photo_333.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "russ-lange",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "columbus-151-speedway_unknown-year_russ-lange_j&d_photo_001.jpg",
     "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_russ-lange_j&d_photo_001.jpg",
     "publicPath": "/photos/columbus-151-speedway_unknown-year_russ-lange_j&d_photo_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "russ-lange",
     "photographerSlug": "j&d",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

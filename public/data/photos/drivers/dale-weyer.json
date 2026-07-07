@@ -8,7 +8,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_dale-weyer_weber-brothers_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2010_dale-weyer_unknown-credit_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_dale-weyer_ken-koppa_post_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1978_dale-weyer_bob-schneider_post_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "bob-schneider",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_dale-weyer_weber-brothers_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_dale-weyer_weber-brothers_photo_002.jpg",
@@ -74,7 +74,18 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "slinger-speedway_1981_dale-weyer_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_dale-weyer_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_dale-weyer_weber-brothers_photo_334.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "dale-weyer",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "slinger-speedway_1982_dale-weyer_weber-brothers_photo_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_dale-weyer_unknown-photographer_photo_001.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_dale-weyer_bob-schafer_photo_424.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_dale-weyer_unknown-photographer_photo_002.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_unknown-year_dale-weyer_unknown-photographer_photo_003.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "slinger-speedway_unknown-year_dale-weyer_weber-brothers_photo_001.jpg",
@@ -162,7 +173,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dale-weyer_bob-wippel_post_001.jpg",
@@ -173,7 +184,18 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "bob-wippel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-weyer_bob-wippel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-weyer_bob-wippel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-weyer_bob-wippel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-weyer",
+    "photographerSlug": "bob-wippel",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dale-weyer_dave-drews_photo_001.jpg",
@@ -184,7 +206,18 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-weyer_dave-drews_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-weyer_dave-drews_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-weyer_dave-drews_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-weyer",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_001.jpg",
@@ -195,7 +228,18 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-weyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_002.jpg",
@@ -206,7 +250,18 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dale-weyer_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dale-weyer",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_dale-weyer_al-fortner_photo_333.jpg",
@@ -231,6 +286,17 @@
     "sequence": "4333"
   },
   {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-weyer_joe-slack_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-weyer_joe-slack_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-weyer_joe-slack_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-weyer",
+    "photographerSlug": "joe-slack",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-weyer_keith-vercauteren_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-weyer_keith-vercauteren_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-weyer_keith-vercauteren_post_001.jpg",
@@ -239,7 +305,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-weyer_keith-vercauteren_post_2221.jpg",
@@ -261,6 +327,6 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

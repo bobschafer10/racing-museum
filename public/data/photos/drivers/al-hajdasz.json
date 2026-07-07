@@ -8,7 +8,7 @@
     "driverSlug": "al-hajdasz",
     "photographerSlug": "larry-quinn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rice-lake-speedway_unknown-year_al-hajdasz_larry-quinn_post_001.jpg",
@@ -19,17 +19,6 @@
     "driverSlug": "al-hajdasz",
     "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-hajdasz_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-hajdasz_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-hajdasz_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-hajdasz",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

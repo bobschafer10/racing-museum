@@ -8,7 +8,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "eagle-river-speedway_2020_ollie-schoonover_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,128 @@
     "driverSlug": "ollie-schoonover",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "eagle-river-speedway_2021_dan-zelten_dan-zelten_post_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2021/eagle-river-speedway_2021_dan-zelten_dan-zelten_post_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2021_dan-zelten_dan-zelten_post_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2021",
+    "driverSlug": "dan-zelten",
+    "photographerSlug": "dan-zelten",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2022_aaron-streblow_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_aaron-streblow_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_aaron-streblow_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "aaron-streblow",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "eagle-river-speedway_2022_brad-weiss_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_brad-weiss_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_brad-weiss_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "brad-weiss",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "eagle-river-speedway_2022_chad-espen_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_chad-espen_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_chad-espen_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "chad-espen",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "eagle-river-speedway_2022_gabe-zellner_gabe-zellner_post_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_gabe-zellner_gabe-zellner_post_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_gabe-zellner_gabe-zellner_post_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "gabe-zellner",
+    "photographerSlug": "gabe-zellner",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2022_justin-pearson_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_justin-pearson_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_justin-pearson_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "justin-pearson",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "eagle-river-speedway_2022_ryan-minster_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_ryan-minster_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_ryan-minster_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "ryan-minster",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "eagle-river-speedway_2022_todd-ascherien_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2022/eagle-river-speedway_2022_todd-ascherien_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2022_todd-ascherien_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2022",
+    "driverSlug": "todd-ascherien",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "eagle-river-speedway_2023_chase-solomon_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2023/eagle-river-speedway_2023_chase-solomon_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2023_chase-solomon_putch-bentley_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2023",
+    "driverSlug": "chase-solomon",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_cole-czarneski_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_cole-czarneski_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_cole-czarneski_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "cole-czarneski",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "dave-bouche",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "eagle-river-speedway_2025_guy-carley_unknown-photographer_photo_001.jpg",
@@ -30,7 +151,51 @@
     "driverSlug": "guy-carley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "larry-karcz-jr",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_travis-spaulding_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_travis-spaulding_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_travis-spaulding_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "travis-spaulding",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_will-hoefs_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_will-hoefs_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_will-hoefs_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "will-hoefs",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2026_trentin-bell_trentin-bell_post_444.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2026/eagle-river-speedway_2026_trentin-bell_trentin-bell_post_444.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2026_trentin-bell_trentin-bell_post_444.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2026",
+    "driverSlug": "trentin-bell",
+    "photographerSlug": "trentin-bell",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
@@ -41,7 +206,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_001.jpg",
@@ -52,7 +217,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_unknown-photographer_photo_002.jpg",
@@ -63,7 +228,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_brad-sievers_unknown-photographer_photo_001.jpg",
@@ -74,7 +239,7 @@
     "driverSlug": "brad-sievers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bruce-stanley_unknown-photographer_photo_111.jpg",
@@ -96,7 +261,7 @@
     "driverSlug": "chad-boettcher",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_chad-boettcher_unknown-photographer_photo_001.jpg",
@@ -107,7 +272,7 @@
     "driverSlug": "chad-boettcher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_cj-hedges_unknown-photographer_photo_222.jpg",
@@ -162,7 +327,7 @@
     "driverSlug": "john-johnson-ldf",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_vic-bodamer_unknown-photographer_photo_8765.jpg",

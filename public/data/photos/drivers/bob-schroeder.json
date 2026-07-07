@@ -8,7 +8,7 @@
     "driverSlug": "bob-schroeder",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-schroeder_pete-vercauteren_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bob-schroeder",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-schroeder_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "bob-schroeder",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "hales-corners-speedway_unknown-year_dave-dubnicka_weber-brothers_photo_333.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_dave-dubnicka_weber-brothers_photo_333.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_dave-dubnicka_weber-brothers_photo_333.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-dubnicka",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_dave-dubnicka_bob-schafer_photo_063.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_dave-dubnicka_bob-schafer_photo_063.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_dave-dubnicka_bob-schafer_photo_063.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "dave-dubnicka",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "063"
+    "sequence": "63"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-dubnicka_unknown-photographer_photo_001.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "dave-dubnicka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

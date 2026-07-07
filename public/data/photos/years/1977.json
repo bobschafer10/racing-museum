@@ -8,7 +8,7 @@
     "driverSlug": "mike-simko",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1977_bob-senneker_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1977_bob-senneker_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1977/capital-super-speedway_1977_bob-senneker_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1977_bob-senneker_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1977",
+    "driverSlug": "bob-senneker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1977_john-boegeman_mark-vanveghel_photo_001.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "john-boegeman",
     "photographerSlug": "mark-vanveghel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_1977_john-boegeman_mark-vanveghel_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1977/capital-super-speedway_1977_john-boegeman_mark-vanveghel_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_1977_john-boegeman_mark-vanveghel_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1977",
+    "driverSlug": "john-boegeman",
+    "photographerSlug": "mark-vanveghel",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_1977_steve-benesh_unknown-photographer_photo_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "steve-benesh",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1977_dick-stalter_weber-brothers_photo_001.jpg",
@@ -52,7 +74,18 @@
     "driverSlug": "dick-stalter",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1977_dick-stalter_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1977/hales-corners-speedway_1977_dick-stalter_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1977_dick-stalter_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1977",
+    "driverSlug": "dick-stalter",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1977_jack-aschenbrenner_weber-brothers_photo_001.jpg",
@@ -63,7 +96,18 @@
     "driverSlug": "jack-aschenbrenner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1977_jim-cossman_michael-halbherr_post_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1977/hales-corners-speedway_1977_jim-cossman_michael-halbherr_post_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1977_jim-cossman_michael-halbherr_post_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1977",
+    "driverSlug": "jim-cossman",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "hales-corners-speedway_1977_tom-klippel_glen-harper_post_001.jpg",
@@ -74,7 +118,7 @@
     "driverSlug": "tom-klippel",
     "photographerSlug": "glen-harper",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1977_ralph-bakewell_unknown-photographer_photo_001.jpg",
@@ -85,7 +129,7 @@
     "driverSlug": "ralph-bakewell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1977_bob-koehn_pat-heaney_post_001.jpg",
@@ -96,7 +140,7 @@
     "driverSlug": "bob-koehn",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1977_dale-brandenberg_pat-heaney_post_001.jpg",
@@ -107,7 +151,7 @@
     "driverSlug": "dale-brandenberg",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1977_fred-weyrauch_pat-heaney_post_001.jpg",
@@ -118,7 +162,7 @@
     "driverSlug": "fred-weyrauch",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1977_mark-schneider_pat-heaney_post_001.jpg",
@@ -129,7 +173,7 @@
     "driverSlug": "mark-schneider",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1977_ron-grosskopf_pat-heaney_post_001.jpg",
@@ -140,7 +184,7 @@
     "driverSlug": "ron-grosskopf",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1977_tom-hackney_pat-heaney_post_001.jpg",
@@ -151,7 +195,7 @@
     "driverSlug": "tom-hackney",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "neillsville-speedway_1977_ken-hutchens_unknown-photographer_photo_001.jpg",
@@ -162,7 +206,18 @@
     "driverSlug": "ken-hutchens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "norway-speedway_1977_mike-bubloni_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/norway-speedway/1977/norway-speedway_1977_mike-bubloni_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/norway-speedway_1977_mike-bubloni_unknown-photographer_photo_333.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "1977",
+    "driverSlug": "mike-bubloni",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "plymouth-dirt-track_1977_gary-laack_unknown-photographer_photo_001.jpg",
@@ -173,7 +228,7 @@
     "driverSlug": "gary-laack",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_1977_john-michaels_unknown-photographer_photo_001.jpg",
@@ -184,7 +239,18 @@
     "driverSlug": "john-michaels",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "raceway-park-il-il_1977_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/1977/raceway-park-il-il_1977_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_1977_jerry-kemperman_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "1977",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
   },
   {
     "fileName": "riverview-raceway_1977_unknown-driver_troy-powers_post_001.jpg",
@@ -195,7 +261,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "troy-powers",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1977_al-schultz_joe-verdegan_post_001.jpg",
@@ -206,7 +272,18 @@
     "driverSlug": "al-schultz",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "storagePath": "photos/master/slinger-speedway/1977/slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "publicPath": "/photos/slinger-speedway_1977_al-schill_rpm_photo_344.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1977",
+    "driverSlug": "al-schill",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "344"
   },
   {
     "fileName": "stillwater-speedway_1977_unknown-driver_don-reilly_photo_555.jpg",
@@ -231,127 +308,6 @@
     "sequence": "556"
   },
   {
-    "fileName": "unknown-track_1977_brent-laursen_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_brent-laursen_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_brent-laursen_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "brent-laursen",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_jeff-hinkemeyer_troy-powers_photo_111.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_jeff-hinkemeyer_troy-powers_photo_111.jpg",
-    "publicPath": "/photos/unknown-track_1977_jeff-hinkemeyer_troy-powers_photo_111.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "jeff-hinkemeyer",
-    "photographerSlug": "troy-powers",
-    "creditType": "photo",
-    "sequence": "111"
-  },
-  {
-    "fileName": "unknown-track_1977_kenny-mann_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_kenny-mann_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_kenny-mann_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "kenny-mann",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_leonard-reimer_leonard-reimer_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_leonard-reimer_leonard-reimer_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_leonard-reimer_leonard-reimer_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "leonard-reimer",
-    "photographerSlug": "leonard-reimer",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_punky-manor_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_punky-manor_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_punky-manor_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "punky-manor",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_randy-thomas_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_randy-thomas_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_randy-thomas_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "randy-thomas",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_scott-hansen_joe-verdegan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_scott-hansen_joe-verdegan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_scott-hansen_joe-verdegan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "scott-hansen",
-    "photographerSlug": "joe-verdegan",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_skip-splittstoesser_troy-powers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_skip-splittstoesser_troy-powers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_skip-splittstoesser_troy-powers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "skip-splittstoesser",
-    "photographerSlug": "troy-powers",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_steve-egersdorf_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "steve-egersdorf",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_tom-nesbitt_bill-warrick_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "tom-nesbitt",
-    "photographerSlug": "bill-warrick",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1977_willie-goeden_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1977/unknown-track_1977_willie-goeden_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1977_willie-goeden_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1977",
-    "driverSlug": "willie-goeden",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "wilmot-raceway_1977_bob-warren_michael-halbherr_post_001.jpg",
     "storagePath": "photos/master/wilmot-raceway/1977/wilmot-raceway_1977_bob-warren_michael-halbherr_post_001.jpg",
     "publicPath": "/photos/wilmot-raceway_1977_bob-warren_michael-halbherr_post_001.jpg",
@@ -360,6 +316,6 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "lyle-nelson",
     "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1952_unknown-driver_bill-behm_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bill-behm",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "monroe-speedway_1952_unknown-driver-ron-thruman_post_001.jpg",
@@ -28,8 +28,118 @@
     "trackSlug": "monroe-speedway",
     "year": "1952",
     "driverSlug": "unknown-driver-ron-thruman",
-    "photographerSlug": "post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_432.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_432.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_432.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "432"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_432.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_432.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_432.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "432"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_433.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_433.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_433.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "433"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_433.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_433.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_433.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "433"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_434.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_434.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_434.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "434"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_434.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_434.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_434.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "434"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_435.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_435.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_435.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "435"
+  },
+  {
+    "fileName": "plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_435.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/1952/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_435.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_1952_unknown-driver_rusty-heyn_post_435.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "1952",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "rusty-heyn",
+    "creditType": "post",
+    "sequence": "435"
+  },
+  {
+    "fileName": "unknown-track_1952_art-heyn_shawn-mueller_post_555.jpg",
+    "storagePath": "photos/master/unknown-track/1952/unknown-track_1952_art-heyn_shawn-mueller_post_555.jpg",
+    "publicPath": "/photos/unknown-track_1952_art-heyn_shawn-mueller_post_555.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1952",
+    "driverSlug": "art-heyn",
+    "photographerSlug": "shawn-mueller",
+    "creditType": "post",
+    "sequence": "555"
+  },
+  {
+    "fileName": "unknown-track_1952_art-heyn_shawn-mueller_post_556.jpg",
+    "storagePath": "photos/master/unknown-track/1952/unknown-track_1952_art-heyn_shawn-mueller_post_556.jpg",
+    "publicPath": "/photos/unknown-track_1952_art-heyn_shawn-mueller_post_556.jpg",
+    "trackSlug": "unknown-track",
+    "year": "1952",
+    "driverSlug": "art-heyn",
+    "photographerSlug": "shawn-mueller",
+    "creditType": "post",
+    "sequence": "556"
   }
 ]

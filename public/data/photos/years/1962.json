@@ -8,18 +8,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1962_karl-schultz_glen-harper_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1962/unknown-track_1962_karl-schultz_glen-harper_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1962_karl-schultz_glen-harper_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1962",
-    "driverSlug": "karl-schultz",
-    "photographerSlug": "glen-harper",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1962_larry-leach_pat-heaney_post_001.jpg",
@@ -30,6 +19,6 @@
     "driverSlug": "larry-leach",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

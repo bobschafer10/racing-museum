@@ -8,7 +8,7 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1990_jim-zwirgzdas_bob-schafer_photo_022.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "022"
+    "sequence": "22"
   },
   {
     "fileName": "hales-corners-speedway_1990_jim-zwirgzdas_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_jim-zwirgzdas_pat-heaney_post_001.jpg",
@@ -41,18 +41,18 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-zwirgzdas_ryan-aho_post_054.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
+    "fileName": "slinger-speedway_1981_jim-zwirgzdas_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_jim-zwirgzdas_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_jim-zwirgzdas_weber-brothers_photo_334.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
     "driverSlug": "jim-zwirgzdas",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "054"
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "wilmot-raceway_unknown-year_jim-zwirgzdas_dave-olson_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "dave-olson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_unknown-year_jim-zwirgzdas_don-besch_photo_001.jpg",
@@ -74,6 +74,6 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

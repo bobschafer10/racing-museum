@@ -19,7 +19,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_wes-eckert_scott-krueger_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_wes-eckert_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_wes-eckert_unknown-photographer_photo_002.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_wes-eckert_weber-brothers_photo_222.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "leos-speedway_unknown-year_wes-eckert_bob-bergeron_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wes-eckert_joe-verdegan_post_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wes-eckert_unknown-photographer_photo_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wes-eckert_unknown-photographer_photo_002.jpg",
@@ -118,6 +118,6 @@
     "driverSlug": "wes-eckert",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

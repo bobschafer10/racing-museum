@@ -1,0 +1,46 @@
+[
+  {
+    "fileName": "grove-creek-speedway_unknown-year_rob-caho_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/grove-creek-speedway/unknown-year/grove-creek-speedway_unknown-year_rob-caho_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/grove-creek-speedway_unknown-year_rob-caho_unknown-photographer_photo_111.jpg",
+    "trackSlug": "grove-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rob-caho",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/grove-creek-speedway/unknown-year/grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_111.jpg",
+    "trackSlug": "grove-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_121.jpg",
+    "storagePath": "photos/master/grove-creek-speedway/unknown-year/grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_121.jpg",
+    "publicPath": "/photos/grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_121.jpg",
+    "trackSlug": "grove-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "121"
+  },
+  {
+    "fileName": "grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_1221.jpg",
+    "storagePath": "photos/master/grove-creek-speedway/unknown-year/grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_1221.jpg",
+    "publicPath": "/photos/grove-creek-speedway_unknown-year_unknown-driver_unknown-photographer_photo_1221.jpg",
+    "trackSlug": "grove-creek-speedway",
+    "year": "unknown-year",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1221"
+  }
+]

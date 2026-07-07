@@ -8,6 +8,17 @@
     "driverSlug": "larry-ingebretsen",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-ingebretsen_unknown-photographer_photo_1794.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-ingebretsen_unknown-photographer_photo_1794.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-ingebretsen_unknown-photographer_photo_1794.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-ingebretsen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1794"
   }
 ]

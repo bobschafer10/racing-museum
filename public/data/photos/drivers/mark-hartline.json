@@ -8,7 +8,7 @@
     "driverSlug": "mark-hartline",
     "photographerSlug": "charlie-doerr",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-hartline_don-besch_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "mark-hartline",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-hartline_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "mark-hartline",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

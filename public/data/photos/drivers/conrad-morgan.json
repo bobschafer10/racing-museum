@@ -11,6 +11,28 @@
     "sequence": "178"
   },
   {
+    "fileName": "capital-super-speedway_unknown-year_conrad-morgan_bob-schafer_photo_178.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_conrad-morgan_bob-schafer_photo_178.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_conrad-morgan_bob-schafer_photo_178.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "conrad-morgan",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "178"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_114.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_114.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_114.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "conrad-morgan",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "114"
+  },
+  {
     "fileName": "capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_114.jpg",
     "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_114.jpg",
     "publicPath": "/photos/capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_114.jpg",
@@ -33,6 +55,17 @@
     "sequence": "214"
   },
   {
+    "fileName": "capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_214.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_214.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_conrad-morgan_father-grubba_photo_214.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "conrad-morgan",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "214"
+  },
+  {
     "fileName": "capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_001.jpg",
@@ -41,7 +74,18 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_001.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "conrad-morgan",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_002.jpg",
@@ -52,7 +96,18 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_002.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "conrad-morgan",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "dells-motor-speedway_1978_conrad-morgan_john-vass_photo_001.jpg",
@@ -63,7 +118,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1974_conrad-morgan_unknown-photographer_photo_001.jpg",
@@ -74,7 +129,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_conrad-morgan_don-besch_photo_001.jpg",
@@ -85,7 +140,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1990_conrad-morgan_bob-schafer_photo_222.jpg",
@@ -107,7 +162,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_conrad-morgan_bob-schafer_photo_036.jpg",
@@ -118,7 +173,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "036"
+    "sequence": "36"
   },
   {
     "fileName": "rockford-speedway_unknown-year_conrad-morgan_don-besch_photo_001.jpg",
@@ -129,7 +184,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1981_conrad-morgan_weber-brothers_photo_001.jpg",
@@ -140,7 +195,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1998_conrad-morgan_unknown-photographer_photo_001.jpg",
@@ -151,7 +206,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2012_conrad-morgan_bob-schneider_photo_001.jpeg",
@@ -162,7 +217,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_conrad-morgan_bob-schafer_photo_055.jpg",
@@ -173,7 +228,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "055"
+    "sequence": "55"
   },
   {
     "fileName": "slinger-speedway_unknown-year_conrad-morgan_dave-drews_photo_001.jpg",
@@ -184,7 +239,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_conrad-morgan_father-grubba_photo_333.jpg",
@@ -206,7 +261,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_conrad-morgan_unknown-photographer_photo_004.jpg",
@@ -217,7 +272,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_conrad-morgan_bob-schafer_photo_177.jpg",
@@ -250,7 +305,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_conrad-morgan_unknown-photographer_photo_002.jpg",
@@ -261,7 +316,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_conrad-morgan_unknown-photographer_photo_1142.jpg",

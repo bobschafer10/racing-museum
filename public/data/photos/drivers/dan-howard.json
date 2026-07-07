@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "dells-motor-speedway_2017_dan-howard_weber-brothers_photo_336.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2017/dells-motor-speedway_2017_dan-howard_weber-brothers_photo_336.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2017_dan-howard_weber-brothers_photo_336.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2017",
+    "driverSlug": "dan-howard",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "336"
+  },
+  {
     "fileName": "unknown-track_unknown-year_dan-howard_charlie-spry_post_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-howard_charlie-spry_post_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_dan-howard_charlie-spry_post_001.jpg",
@@ -8,7 +19,18 @@
     "driverSlug": "dan-howard",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-howard_charlie-spry_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-howard_charlie-spry_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-howard_charlie-spry_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-howard",
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-howard_unknown-photographer_photo_002.jpg",
@@ -19,6 +41,17 @@
     "driverSlug": "dan-howard",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-howard_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-howard_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-howard_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-howard",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   }
 ]

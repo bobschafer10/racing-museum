@@ -33,6 +33,17 @@
     "sequence": "222"
   },
   {
+    "fileName": "lacrosse-interstate-speedway_unknown-year_roger-lund_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_roger-lund_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_roger-lund_bob-schafer_photo_222.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "unknown-year",
+    "driverSlug": "roger-lund",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "lacrosse-interstate-speedway_unknown-year_roger-lund_bob-schafer_photo_511.jpg",
     "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_roger-lund_bob-schafer_photo_511.jpg",
     "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_roger-lund_bob-schafer_photo_511.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "roger-lund",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_roger-lund_bob-schafer_photo_512.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "roger-lund",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-lund_unknown-photographer_photo_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "roger-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-lund_unknown-photographer_photo_002.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "roger-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_roger-lund_unknown-photographer_photo_004.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "roger-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_roger-lund_unknown-photographer_photo_001.jpg",
@@ -118,6 +129,6 @@
     "driverSlug": "roger-lund",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

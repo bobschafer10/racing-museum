@@ -1,27 +1,5 @@
 [
   {
-    "fileName": "unknown-track_unknown-year_bill-nelson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-nelson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-nelson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-nelson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_bill-nelson_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bill-nelson_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_bill-nelson_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "bill-nelson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
     "fileName": "wisconsin-international-raceway_unknown-year_bill-nelson_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_bill-nelson_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_bill-nelson_unknown-photographer_photo_001.jpg",
@@ -30,6 +8,6 @@
     "driverSlug": "bill-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

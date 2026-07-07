@@ -11,6 +11,17 @@
     "sequence": "355"
   },
   {
+    "fileName": "columbus-151-speedway_unknown-year_terry-sauer_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_terry-sauer_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_terry-sauer_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "terry-sauer",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
     "fileName": "columbus-151-speedway_unknown-year_terry-sauer_don-wendlandt_photo_001.jpg",
     "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_terry-sauer_don-wendlandt_photo_001.jpg",
     "publicPath": "/photos/columbus-151-speedway_unknown-year_terry-sauer_don-wendlandt_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_terry-sauer_unknown-photographer_photo_3292.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1976_terry-sauer_dale-weyer_post_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "dale-weyer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_003.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_terry-sauer_unknown-photographer_photo_006.jpg",
@@ -85,6 +96,6 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   }
 ]

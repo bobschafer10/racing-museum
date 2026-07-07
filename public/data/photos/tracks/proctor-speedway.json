@@ -8,7 +8,7 @@
     "driverSlug": "bob-root",
     "photographerSlug": "kurt-gaber",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_1998_bob-kintner_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bob-kintner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_brad-hanson_unknown-photographer_photo_002.jpeg",
@@ -30,7 +30,7 @@
     "driverSlug": "brad-hanson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_brady-smith_unknown-photographer_photo_002.jpeg",
@@ -41,7 +41,7 @@
     "driverSlug": "brady-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_darrell-nelson_unknown-photographer_photo_002.jpeg",
@@ -52,7 +52,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_don-copp_unknown-photographer_photo_002.jpeg",
@@ -63,7 +63,7 @@
     "driverSlug": "don-copp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_harry-hanson_unknown-photographer_photo_002.jpeg",
@@ -74,7 +74,7 @@
     "driverSlug": "harry-hanson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_jason-miller_unknown-photographer_photo_002.jpeg",
@@ -85,7 +85,7 @@
     "driverSlug": "jason-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_kelly-estey_unknown-photographer_photo_002.jpeg",
@@ -96,7 +96,7 @@
     "driverSlug": "kelly-estey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_steve-vesel_unknown-photographer_photo_002.jpeg",
@@ -107,7 +107,7 @@
     "driverSlug": "steve-vesel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_tim-mcmann_unknown-photographer_photo_001.jpeg",
@@ -118,7 +118,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_1998_tim-mcmann_unknown-photographer_photo_002.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_2000_matt-meyers_neil-miller_photo_001.jpeg",
@@ -140,7 +140,7 @@
     "driverSlug": "matt-meyers",
     "photographerSlug": "neil-miller",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_2003_john-kaanta_unknown-photographer_photo_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_2014_unknown-driver_unknown-photographer_photo_444.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "aaron-bernick",
     "photographerSlug": "brian-roseberg",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_adam-archer_unknown-photographer_photo_001.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "adam-archer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_al-uotinen_unknown-photographer_photo_001.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "al-uotinen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_bob-schryock_unknown-photographer_photo_001.jpg",
@@ -239,7 +239,7 @@
     "driverSlug": "bob-schryock",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_charlie-klick_unknown-photographer_photo_333.jpg",
@@ -272,7 +272,7 @@
     "driverSlug": "derek-ament",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_harry-hanson_unknown-photographer_photo_001.jpg",
@@ -283,7 +283,7 @@
     "driverSlug": "harry-hanson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_jim-sweet_unknown-photographer_photo_001.jpg",
@@ -294,7 +294,7 @@
     "driverSlug": "jim-sweet",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_joey-ogston_unknown-photographer_photo_001.jpg",
@@ -305,7 +305,7 @@
     "driverSlug": "joey-ogston",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_kevin-carlson_troy-powers_photo_001.jpg",
@@ -316,7 +316,7 @@
     "driverSlug": "kevin-carlson",
     "photographerSlug": "troy-powers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_kyle-peterlin_unknown-photographer_photo_001.jpg",
@@ -327,7 +327,7 @@
     "driverSlug": "kyle-peterlin",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_les-duellman_unknown-photographer_photo_001.jpg",
@@ -338,7 +338,7 @@
     "driverSlug": "les-duellman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_nick-lavato_unknown-photographer_photo_001.jpg",
@@ -349,7 +349,7 @@
     "driverSlug": "nick-lavato",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_pete-wohlers_unknown-photographer_photo_001.jpg",
@@ -360,7 +360,7 @@
     "driverSlug": "pete-wohlers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_proctor-speedway_don-reilly_post_100.jpg",
@@ -415,7 +415,7 @@
     "driverSlug": "red-steffen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_terry-lillo_track-rate_photo_001.jpg",
@@ -426,7 +426,7 @@
     "driverSlug": "terry-lillo",
     "photographerSlug": "track-rate",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_tim-mcmann_unknown-photographer_photo_001.jpg",
@@ -437,7 +437,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_todd-frank_unknown-photographer_photo_001.jpg",
@@ -448,7 +448,18 @@
     "driverSlug": "todd-frank",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "proctor-speedway_unknown-year_tom-baublitz_neil-miller_photo_333.jpg",
+    "storagePath": "photos/master/proctor-speedway/unknown-year/proctor-speedway_unknown-year_tom-baublitz_neil-miller_photo_333.jpg",
+    "publicPath": "/photos/proctor-speedway_unknown-year_tom-baublitz_neil-miller_photo_333.jpg",
+    "trackSlug": "proctor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-baublitz",
+    "photographerSlug": "neil-miller",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "proctor-speedway_unknown-year_tom-nesbitt_unknown-photographer_photo_002.jpg",
@@ -459,7 +470,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_unknown-year_unknown_unknown-photographer_photo_001.jpg",
@@ -467,10 +478,10 @@
     "publicPath": "/photos/proctor-speedway_unknown-year_unknown_unknown-photographer_photo_001.jpg",
     "trackSlug": "proctor-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_unknown-year_unknown-driver_in-a-flash_photo_14610.jpg",
@@ -514,6 +525,6 @@
     "driverSlug": "whitey-harris",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

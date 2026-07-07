@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "mississippi-thunder-speedway_2026_andrew-blees_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/mississippi-thunder-speedway/2026/mississippi-thunder-speedway_2026_andrew-blees_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/mississippi-thunder-speedway_2026_andrew-blees_unknown-photographer_photo_333.jpg",
+    "trackSlug": "mississippi-thunder-speedway",
+    "year": "2026",
+    "driverSlug": "andrew-blees",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "mississippi-thunder-speedway_2026_jordan-yaggy_unknown-photographer_photo_111.jpg",
     "storagePath": "photos/master/mississippi-thunder-speedway/2026/mississippi-thunder-speedway_2026_jordan-yaggy_unknown-photographer_photo_111.jpg",
     "publicPath": "/photos/mississippi-thunder-speedway_2026_jordan-yaggy_unknown-photographer_photo_111.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "keith-foss",
     "photographerSlug": "rydeware-inc",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mississippi-thunder-speedway_unknown-year_curt-myers_unknown-photographer_photo_001.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "curt-myers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "mississippi-thunder-speedway_unknown-year-joe-provinzino_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/mississippi-thunder-speedway/unknown-year/mississippi-thunder-speedway_unknown-year-joe-provinzino_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/mississippi-thunder-speedway_unknown-year-joe-provinzino_unknown-photographer_photo_333.jpg",
+    "trackSlug": "mississippi-thunder-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-provinzino",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "mississippi-thunder-speedway_unknown-year_jon-duffy_unknown-photographer_photo_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "jon-duffy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mississippi-thunder-speedway_unknown-year_josh-angst_unknown-photographer_photo_001.jpg",
@@ -52,7 +74,7 @@
     "driverSlug": "josh-angst",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mississippi-thunder-speedway_unknown-year_kyle-jumbek_unknown-photographer_photo_001.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "kyle-jumbek",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mississippi-thunder-speedway_unknown-year_travis-krause_unknown-photographer_photo_001.jpg",
@@ -74,7 +96,7 @@
     "driverSlug": "travis-krause",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "mississippi-thunder-speedway_unknown-year_unknown-driver_unknown-photographer_photo_139.jpg",

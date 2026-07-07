@@ -8,7 +8,7 @@
     "driverSlug": "john-boegemann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-boegemann_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "john-boegemann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-boegemann_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "john-boegemann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_john-boegemann_unknown-photographer_photo_001.jpg",
@@ -41,17 +41,6 @@
     "driverSlug": "john-boegemann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_john-boegemann_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_john-boegemann_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_john-boegemann_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "john-boegemann",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,18 @@
     "driverSlug": "bruce-havel",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "columbus-151-speedway_unknown-year_bruce-havel_charlie-spry_photo_433.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/unknown-year/columbus-151-speedway_unknown-year_bruce-havel_charlie-spry_photo_433.jpg",
+    "publicPath": "/photos/columbus-151-speedway_unknown-year_bruce-havel_charlie-spry_photo_433.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-havel",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "433"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_bruce-havel_charlie-spry_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "bruce-havel",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
@@ -30,6 +41,39 @@
     "driverSlug": "bruce-havel",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-havel",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-havel",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bruce-havel_charlie-spry_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bruce-havel",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

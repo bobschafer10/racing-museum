@@ -1,5 +1,49 @@
 [
   {
+    "fileName": "141-speedway_1982_john-born_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_john-born_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/141-speedway_1982_john-born_weber-brothers_photo_888.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "john-born",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "141-speedway_1982_john-born_weber-brothers_photo_889.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_john-born_weber-brothers_photo_889.jpg",
+    "publicPath": "/photos/141-speedway_1982_john-born_weber-brothers_photo_889.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "john-born",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "889"
+  },
+  {
+    "fileName": "141-speedway_1982_john-born_weber-brothers_photo_890.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_john-born_weber-brothers_photo_890.jpg",
+    "publicPath": "/photos/141-speedway_1982_john-born_weber-brothers_photo_890.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "john-born",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "890"
+  },
+  {
+    "fileName": "141-speedway_1982_john-born_weber-brothers_photo_891.jpg",
+    "storagePath": "photos/master/141-speedway/1982/141-speedway_1982_john-born_weber-brothers_photo_891.jpg",
+    "publicPath": "/photos/141-speedway_1982_john-born_weber-brothers_photo_891.jpg",
+    "trackSlug": "141-speedway",
+    "year": "1982",
+    "driverSlug": "john-born",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "891"
+  },
+  {
     "fileName": "141-speedway_unknown-year_john-born_joe-slack_photo_001.jpg",
     "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_john-born_joe-slack_photo_001.jpg",
     "publicPath": "/photos/141-speedway_unknown-year_john-born_joe-slack_photo_001.jpg",
@@ -8,7 +52,7 @@
     "driverSlug": "john-born",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_john-born_joe-slack_photo_002.jpg",
@@ -19,7 +63,7 @@
     "driverSlug": "john-born",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "141-speedway_unknown-year_john-born_joe-slack_photo_101.jpg",
@@ -52,7 +96,7 @@
     "driverSlug": "john-born",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "mall-show_unknown-year_john-born_unknown-photographer_photo_004.jpg",
@@ -63,7 +107,7 @@
     "driverSlug": "john-born",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_john-born_unknown-photographer_photo_001.jpg",
@@ -74,7 +118,7 @@
     "driverSlug": "john-born",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_john-born_unknown-photographer_photo_092.jpg",
@@ -85,7 +129,7 @@
     "driverSlug": "john-born",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "092"
+    "sequence": "92"
   },
   {
     "fileName": "wisconsin-international-raceway_1982_john-born_weber-brothers_photo_116.jpg",

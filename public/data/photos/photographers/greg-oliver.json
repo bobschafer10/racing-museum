@@ -8,7 +8,7 @@
     "driverSlug": "greg-oliver",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_dean-pennel_greg-oliver_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dean-pennel",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_francis-kelly_greg-oliver_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "francis-kelly",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_george-fiedler_greg-oliver_post_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "george-fiedler",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_greg-oliver_greg-oliver_post_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "greg-oliver",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_greg-oliver_greg-oliver_post_002.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "greg-oliver",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_larry-trute_greg-oliver_post_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "larry-trute",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_mark-backus_greg-oliver_post_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "mark-backus",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_nelson-drinkwine_greg-oliver_post_001.jpg",
@@ -96,17 +96,6 @@
     "driverSlug": "nelson-drinkwine",
     "photographerSlug": "greg-oliver",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gordy-clay_greg-oliver_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gordy-clay_greg-oliver_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gordy-clay_greg-oliver_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gordy-clay",
-    "photographerSlug": "greg-oliver",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

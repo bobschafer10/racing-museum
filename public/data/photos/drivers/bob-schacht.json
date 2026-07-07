@@ -8,7 +8,18 @@
     "driverSlug": "bob-schacht",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1982_bob-schacht_weber-brothers_photo_335.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1982/milwaukee-mile_1982_bob-schacht_weber-brothers_photo_335.jpg",
+    "publicPath": "/photos/milwaukee-mile_1982_bob-schacht_weber-brothers_photo_335.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1982",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "335"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-schacht_don-besch_post_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "bob-schacht",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-schacht_unknown-photographer_photo_222.jpg",
@@ -41,7 +52,29 @@
     "driverSlug": "bob-schacht",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_don-besch_post_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "don-besch",
+    "creditType": "post",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
@@ -52,6 +85,28 @@
     "driverSlug": "bob-schacht",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-schacht_pete-fileca_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

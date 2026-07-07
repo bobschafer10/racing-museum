@@ -8,7 +8,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_aaron-solsrud_dave-nitsch_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "aaron-solsrud",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_ron-baciak_dave-nitsch_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "ron-baciak",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_wayne-goetsch_dave-nitsch_photo_001.jpg",
@@ -41,7 +41,18 @@
     "driverSlug": "wayne-goetsch",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_wayne-goetsch_dave-nitsch_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_wayne-goetsch_dave-nitsch_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_wayne-goetsch_dave-nitsch_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "wayne-goetsch",
+    "photographerSlug": "dave-nitsch",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_gib-wiser_dave-nitsch_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "gib-wiser",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jim-fiscus_dave-nitsch_photo_001.jpg",
@@ -63,7 +74,18 @@
     "driverSlug": "jim-fiscus",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jim-fiscus_dave-nitsch_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jim-fiscus_dave-nitsch_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jim-fiscus_dave-nitsch_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-fiscus",
+    "photographerSlug": "dave-nitsch",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_richard-yelich_dave-nitsch_photo_001.jpg",
@@ -74,29 +96,7 @@
     "driverSlug": "richard-yelich",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_frankie-heimerl_dave-nitsch_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frankie-heimerl_dave-nitsch_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_frankie-heimerl_dave-nitsch_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "frankie-heimerl",
-    "photographerSlug": "dave-nitsch",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_fuzzy-fassbender_dave-nitsch_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fuzzy-fassbender_dave-nitsch_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fuzzy-fassbender_dave-nitsch_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "fuzzy-fassbender",
-    "photographerSlug": "dave-nitsch",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-edler_dave-nitsch_photo_001.jpg",
@@ -107,6 +107,6 @@
     "driverSlug": "steve-edler",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

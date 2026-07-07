@@ -8,7 +8,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_1976_bob-warren_michael-halbherr_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_unknown-year_bob-warren_michael-halbherr_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedarburg-speedway_1971_bob-warren_michael-halbherr_post_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_1973_bob-warren_dave-nitsch_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "dave-nitsch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_bob-warren_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1972_bob-warren_michael-halbherr_post_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
@@ -85,7 +85,40 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
@@ -96,7 +129,40 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_john-vass_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
@@ -107,7 +173,40 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-warren_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-warren",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1977_bob-warren_michael-halbherr_post_001.jpg",
@@ -118,7 +217,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "michael-halbherr",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1981_bob-warren_don-besch_photo_001.jpg",
@@ -129,7 +228,7 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-warren_bob-bergeron_photo_001.jpg",
@@ -140,6 +239,6 @@
     "driverSlug": "bob-warren",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

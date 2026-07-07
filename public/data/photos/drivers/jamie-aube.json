@@ -8,6 +8,17 @@
     "driverSlug": "jamie-aube",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_jamie-aube_pat-heaney_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_jamie-aube_pat-heaney_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_jamie-aube_pat-heaney_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "jamie-aube",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "444"
   }
 ]

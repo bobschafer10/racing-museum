@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "rockford-speedway_1967_boyce-sparkman_ron-thruman_post_333.jpg",
+    "storagePath": "photos/master/rockford-speedway/1967/rockford-speedway_1967_boyce-sparkman_ron-thruman_post_333.jpg",
+    "publicPath": "/photos/rockford-speedway_1967_boyce-sparkman_ron-thruman_post_333.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1967",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
     "fileName": "rockford-speedway_1968_darrell-dake_ron-thruman_post_001.jpg",
     "storagePath": "photos/master/rockford-speedway/1968/rockford-speedway_1968_darrell-dake_ron-thruman_post_001.jpg",
     "publicPath": "/photos/rockford-speedway_1968_darrell-dake_ron-thruman_post_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "darrell-dake",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1970_dave-watson_john-mckarns_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1970_denny-ballard_john-mckarns_photo_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "denny-ballard",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1970_larry-obrien_john-mckarns_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "larry-obrien",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1970_unknown-driver_john-mckarns_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1970_unknown-driver_john-mckarns_photo_021.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "rockford-speedway_1970_unknown-driver_john-mckarns_photo_301.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "vaughn-gerke",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1971_tom-reffner_unknown-credit_post_001.jpg",
@@ -118,7 +129,29 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1972/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1972",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1972/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1972_boyce-sparkman_ron-thruman_photo_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1972",
+    "driverSlug": "boyce-sparkman",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_1973_bob-mckay_john-mckarns_photo_001.jpg",
@@ -129,7 +162,7 @@
     "driverSlug": "bob-mckay",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_denny-ballard_geoff-mckarns_post_001.jpg",
@@ -140,7 +173,7 @@
     "driverSlug": "denny-ballard",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_don-bischofberger_geoff-mckarns_post_001.jpg",
@@ -151,7 +184,7 @@
     "driverSlug": "don-bischofberger",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_don-leach_geoff-mckarns_post_001.jpg",
@@ -162,7 +195,7 @@
     "driverSlug": "don-leach",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_don-leach_john-mckarns_photo_001.jpg",
@@ -173,7 +206,7 @@
     "driverSlug": "don-leach",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_ed-hoffman_john-mckarns_photo_001.jpg",
@@ -184,7 +217,7 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_george-hill_geoff-mckarns_post_001.jpg",
@@ -195,7 +228,7 @@
     "driverSlug": "george-hill",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_jerry-eckhardt_john-mckarns_photo_001.jpg",
@@ -206,7 +239,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_john-knaus_geoff-mckarns_post_001.jpg",
@@ -217,7 +250,7 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_larry-peterson_geoff-mckarns_post_001.jpg",
@@ -228,7 +261,7 @@
     "driverSlug": "larry-peterson",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_ray-para_john-mckarns_photo_001.jpg",
@@ -239,7 +272,7 @@
     "driverSlug": "ray-para",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_ray-para_john-mckarns-ii_photo_001.jpg",
@@ -250,7 +283,7 @@
     "driverSlug": "ray-para",
     "photographerSlug": "john-mckarns-ii",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_ron-bridges_geoff-mckarns_post_001.jpg",
@@ -261,7 +294,7 @@
     "driverSlug": "ron-bridges",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_sam-reakes_geoff-mckarns_post_001.jpg",
@@ -272,7 +305,18 @@
     "driverSlug": "sam-reakes",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1973_sammy-reakes_ron-thruman_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1973/rockford-speedway_1973_sammy-reakes_ron-thruman_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1973_sammy-reakes_ron-thruman_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1973",
+    "driverSlug": "sammy-reakes",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_1973_steve-arndt_geoff-mckarns_post_001.jpg",
@@ -283,7 +327,7 @@
     "driverSlug": "steve-arndt",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_unknown-driver_geoff-mckarns_post_001.jpg",
@@ -294,7 +338,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1973_willy-reints_geoff-mckarns_post_001.jpg",
@@ -305,7 +349,7 @@
     "driverSlug": "willy-reints",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_bruce-meske_geoff-mckarns_post_001.jpg",
@@ -316,7 +360,7 @@
     "driverSlug": "bruce-meske",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-watson_leonard-reimer_post_001.jpg",
@@ -327,7 +371,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-watson_unknown-photographer_photo_001.jpg",
@@ -338,7 +382,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-weltmeyer_unknown-photographer_photo_001.jpg",
@@ -349,7 +393,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_dave-weltmeyer_unknown-photographer_photo_002.jpg",
@@ -360,7 +404,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_1975_don-james_geoff-mckarns_post_001.jpg",
@@ -371,7 +415,7 @@
     "driverSlug": "don-james",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_don-marmor_geoff-mckarns_post_001.jpg",
@@ -382,7 +426,7 @@
     "driverSlug": "don-marmor",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_leonard-reimer_leonard-reimer_post_001.jpg",
@@ -393,7 +437,7 @@
     "driverSlug": "leonard-reimer",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_marv-palmer_unknown-photographer_photo_001.jpg",
@@ -404,7 +448,18 @@
     "driverSlug": "marv-palmer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1975_pete-breit_ron-thruman_post_555.jpg",
+    "storagePath": "photos/master/rockford-speedway/1975/rockford-speedway_1975_pete-breit_ron-thruman_post_555.jpg",
+    "publicPath": "/photos/rockford-speedway_1975_pete-breit_ron-thruman_post_555.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1975",
+    "driverSlug": "pete-breit",
+    "photographerSlug": "ron-thruman",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "rockford-speedway_1975_ray-young_unknown-photographer_photo_001.jpg",
@@ -415,7 +470,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_ted-richter_john-mckarns_photo_001.jpg",
@@ -426,7 +481,7 @@
     "driverSlug": "ted-richter",
     "photographerSlug": "john-mckarns",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -437,7 +492,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1975_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -448,7 +503,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1979_dick-trickle_unknown-photographer_photo_001.jpg",
@@ -459,7 +514,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1979_ed-hoffman_unknown-photographer_photo_111.jpg",
@@ -481,7 +536,7 @@
     "driverSlug": "pat-schauer",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_dale-weyer_ken-koppa_post_001.jpg",
@@ -492,7 +547,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_james-bond_weber-brothers_photo_001.jpg",
@@ -503,7 +558,7 @@
     "driverSlug": "james-bond",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1980_ray-young_weber-brothers_photo_001.jpg",
@@ -514,7 +569,29 @@
     "driverSlug": "ray-young",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "rich-bickle-jr",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
+  },
+  {
+    "fileName": "rockford-speedway_1980_rich-bickle-sr_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_rich-bickle-sr_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_rich-bickle-sr_weber-brothers_photo_999.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "rich-bickle-sr",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
   },
   {
     "fileName": "rockford-speedway_1980_tom-reffner_weber-brothers_photo_001.jpg",
@@ -525,7 +602,51 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1980_unknown-driver_weber-brothers_photo_777.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_unknown-driver_weber-brothers_photo_777.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_unknown-driver_weber-brothers_photo_777.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "777"
+  },
+  {
+    "fileName": "rockford-speedway_1980_wayne-dion_weber-brothers_photo_878.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_wayne-dion_weber-brothers_photo_878.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_wayne-dion_weber-brothers_photo_878.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "wayne-dion",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "878"
+  },
+  {
+    "fileName": "rockford-speedway_1980_wayne-dion_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_wayne-dion_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_wayne-dion_weber-brothers_photo_888.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "wayne-dion",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "rockford-speedway_1980_wayne-dion_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_wayne-dion_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_wayne-dion_weber-brothers_photo_999.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "wayne-dion",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
   },
   {
     "fileName": "rockford-speedway_1981_al-schill_don-besch_photo_001.jpg",
@@ -536,7 +657,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_bill-venturini_don-besch_photo_001.jpg",
@@ -547,7 +668,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_bill-venturini_don-besch_photo_002.jpg",
@@ -558,7 +679,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_1981_bob-strait_bob-elman_photo_001.jpg",
@@ -569,7 +690,7 @@
     "driverSlug": "bob-strait",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_dave-watson_don-besch_photo_001.jpg",
@@ -580,7 +701,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_dave-weltmeyer_don-besch_photo_001.jpg",
@@ -591,7 +712,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_dennis-vogel_don-besch_photo_001.jpg",
@@ -602,7 +723,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_dick-barker_don-besch_photo_001.jpg",
@@ -613,7 +734,7 @@
     "driverSlug": "dick-barker",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_don-james_don-besch_photo_001.jpg",
@@ -624,7 +745,7 @@
     "driverSlug": "don-james",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_doug-lane_don-besch_photo_001.jpg",
@@ -635,7 +756,7 @@
     "driverSlug": "doug-lane",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_doug-strasburg_pat-heaney_post_001.jpg",
@@ -646,7 +767,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_fran-prestay_don-besch_photo_001.jpg",
@@ -657,7 +778,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_frank-gawlinski_don-besch_photo_001.jpg",
@@ -668,7 +789,7 @@
     "driverSlug": "frank-gawlinski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_fred-campbell_don-besch_photo_001.jpg",
@@ -679,7 +800,7 @@
     "driverSlug": "fred-campbell",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_george-dukas_don-besch_photo_001.jpg",
@@ -690,7 +811,7 @@
     "driverSlug": "george-dukas",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_greg-guzzo_don-besch_photo_001.jpg",
@@ -701,7 +822,7 @@
     "driverSlug": "greg-guzzo",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_greg-guzzo_pat-heaney_post_001.jpg",
@@ -712,7 +833,7 @@
     "driverSlug": "greg-guzzo",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_jim-sauter_don-besch_photo_001.jpg",
@@ -723,7 +844,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_jim-sauter_pat-heaney_post_001.jpg",
@@ -734,7 +855,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_jim-weber_don-besch_photo_001.jpg",
@@ -745,7 +866,7 @@
     "driverSlug": "jim-weber",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_jimmy-pierson_don-besch_photo_001.jpg",
@@ -756,7 +877,7 @@
     "driverSlug": "jimmy-pierson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_joe-shear_don-besch_photo_001.jpg",
@@ -767,7 +888,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_jr-hanley_don-besch_photo_001.jpg",
@@ -778,7 +899,7 @@
     "driverSlug": "jr-hanley",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_jr-hanley_pat-heaney_post_001.jpg",
@@ -789,7 +910,7 @@
     "driverSlug": "jr-hanley",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_ken-lund_don-besch_photo_001.jpg",
@@ -800,7 +921,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_ken-lund_pat-heaney_post_001.jpg",
@@ -811,7 +932,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_mike-simon_don-besch_photo_001.jpg",
@@ -822,7 +943,7 @@
     "driverSlug": "mike-simon",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_randy-slack_don-besch_photo_001.jpg",
@@ -833,7 +954,7 @@
     "driverSlug": "randy-slack",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_randy-slack_pat-heaney_post_001.jpg",
@@ -844,7 +965,7 @@
     "driverSlug": "randy-slack",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_rich-bickle_don-besch_photo_001.jpg",
@@ -855,7 +976,7 @@
     "driverSlug": "rich-bickle",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_rich-bickle_don-besch_photo_002.jpg",
@@ -866,7 +987,7 @@
     "driverSlug": "rich-bickle",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_1981_steve-murgic_don-besch_photo_001.jpg",
@@ -877,7 +998,7 @@
     "driverSlug": "steve-murgic",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_terry-weatherford_don-besch_photo_001.jpg",
@@ -888,7 +1009,7 @@
     "driverSlug": "terry-weatherford",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_tim-cox_don-besch_photo_001.jpg",
@@ -899,7 +1020,7 @@
     "driverSlug": "tim-cox",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1981_wayne-lensing_jack-kalwasinski_post_001.jpg",
@@ -910,7 +1031,7 @@
     "driverSlug": "wayne-lensing",
     "photographerSlug": "jack-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_al-schill_don-besch_photo_001.jpg",
@@ -921,7 +1042,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_al-schill_unknown-photographer_photo_001.jpg",
@@ -932,7 +1053,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_bob-abitz_don-besch_photo_001.jpg",
@@ -943,7 +1064,7 @@
     "driverSlug": "bob-abitz",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_bobby-hacker_don-besch_photo_001.jpg",
@@ -954,7 +1075,18 @@
     "driverSlug": "bobby-hacker",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1982_bobby-hacker_weber-brothers_photo_116.jpg",
+    "storagePath": "photos/master/rockford-speedway/1982/rockford-speedway_1982_bobby-hacker_weber-brothers_photo_116.jpg",
+    "publicPath": "/photos/rockford-speedway_1982_bobby-hacker_weber-brothers_photo_116.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1982",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "116"
   },
   {
     "fileName": "rockford-speedway_1982_bobby-hacker_weber-brothers_photo_116.jpg",
@@ -976,7 +1108,7 @@
     "driverSlug": "burt-weitemeyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_conrad-morgan_don-besch_photo_001.jpg",
@@ -987,7 +1119,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_curt-cheshire_weber-brothers_photo_001.jpg",
@@ -998,7 +1130,7 @@
     "driverSlug": "curt-cheshire",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_danny-duke_don-besch_photo_001.jpg",
@@ -1009,7 +1141,7 @@
     "driverSlug": "danny-duke",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_dave-watson_don-besch_photo_001.jpg",
@@ -1020,7 +1152,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_dennis-lampman_don-besch_photo_001.jpg",
@@ -1031,7 +1163,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_denny-james_don-besch_photo_001.jpg",
@@ -1042,7 +1174,7 @@
     "driverSlug": "denny-james",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_dick-trickle_weber-brothers_photo_001.jpg",
@@ -1053,7 +1185,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_don-bridges_don-besch_photo_001.jpg",
@@ -1064,7 +1196,7 @@
     "driverSlug": "don-bridges",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_jay-sauter_don-besch_photo_001.jpg",
@@ -1075,7 +1207,7 @@
     "driverSlug": "jay-sauter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_jim-weber_don-besch_photo_001.jpg",
@@ -1086,7 +1218,7 @@
     "driverSlug": "jim-weber",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_joe-shear_don-besch_photo_001.jpg",
@@ -1097,7 +1229,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_joe-tyrell_weber-brothers_photo_001.jpg",
@@ -1108,7 +1240,7 @@
     "driverSlug": "joe-tyrell",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_jr-hanley_don-besch_photo_001.jpg",
@@ -1119,7 +1251,7 @@
     "driverSlug": "jr-hanley",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_junior-hanley_weber-brothers_photo_001.jpg",
@@ -1130,7 +1262,7 @@
     "driverSlug": "junior-hanley",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_kevin-stepan_don-besch_photo_001.jpg",
@@ -1141,7 +1273,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_larry-cooper_don-besch_photo_001.jpg",
@@ -1152,7 +1284,7 @@
     "driverSlug": "larry-cooper",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_mel-walen_don-besch_photo_001.jpg",
@@ -1163,7 +1295,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_mel-walen_weber-brothers_photo_001.jpg",
@@ -1174,7 +1306,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_randy-slack_don-besch_photo_001.jpg",
@@ -1185,7 +1317,7 @@
     "driverSlug": "randy-slack",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_rick-hanley_weber-brothers_photo_001.jpg",
@@ -1196,7 +1328,7 @@
     "driverSlug": "rick-hanley",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_ron-bridges_weber-brothers_photo_001.jpg",
@@ -1207,7 +1339,7 @@
     "driverSlug": "ron-bridges",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_steve-carlson_don-besch_photo_001.jpg",
@@ -1218,7 +1350,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_terry-baldry_al-fortner_photo_001.jpg",
@@ -1229,7 +1361,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_tim-cox_don-besch_photo_001.jpg",
@@ -1240,7 +1372,7 @@
     "driverSlug": "tim-cox",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_tim-cox_weber-brothers_photo_001.jpg",
@@ -1251,7 +1383,7 @@
     "driverSlug": "tim-cox",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_tom-jones_don-besch_photo_001.jpg",
@@ -1262,7 +1394,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_tom-reffner_weber-brothers_photo_001.jpg",
@@ -1273,7 +1405,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_tracy-schuler_don-besch_photo_001.jpg",
@@ -1284,7 +1416,7 @@
     "driverSlug": "tracy-schuler",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_willie-goeden_don-besch_photo_001.jpg",
@@ -1295,7 +1427,7 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_al-laufer_pat-heaney_post_001.jpg",
@@ -1306,7 +1438,7 @@
     "driverSlug": "al-laufer",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_al-schill_pat-heaney_post_001.jpg",
@@ -1317,7 +1449,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_dave-weltmeyer_don-besch_photo_001.jpg",
@@ -1328,7 +1460,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_dick-kirkman_don-besch_photo_001.jpg",
@@ -1339,7 +1471,7 @@
     "driverSlug": "dick-kirkman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_jamie-neville_don-besch_photo_001.jpg",
@@ -1350,7 +1482,7 @@
     "driverSlug": "jamie-neville",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_jay-sauter_don-besch_photo_001.jpg",
@@ -1361,7 +1493,7 @@
     "driverSlug": "jay-sauter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_jim-sauter_don-besch_photo_001.jpg",
@@ -1372,7 +1504,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_joe-shear_don-besch_photo_001.jpg",
@@ -1383,7 +1515,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_mel-walen_pat-heaney_post_444.jpg",
@@ -1405,7 +1537,7 @@
     "driverSlug": "robert-hixon",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_robert-hixon_pat-heaney_post_001.jpg",
@@ -1416,7 +1548,7 @@
     "driverSlug": "robert-hixon",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_robert-hixon_pat-heaney_post_333.jpg",
@@ -1438,7 +1570,7 @@
     "driverSlug": "spike-lindley",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_steve-burgess_pat-heaney_post_001.jpg",
@@ -1449,7 +1581,7 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_terry-weatherford_don-besch_photo_001.jpg",
@@ -1460,7 +1592,7 @@
     "driverSlug": "terry-weatherford",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_tom-musgrave_don-besch_photo_001.jpg",
@@ -1471,7 +1603,7 @@
     "driverSlug": "tom-musgrave",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_tom-reffner_weber-brothers_photo_001.jpg",
@@ -1482,7 +1614,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1983_tom-reffner_weber-brothers_photo_002.jpg",
@@ -1493,7 +1625,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_1984_al-schill_don-besch_photo_001.jpg",
@@ -1504,7 +1636,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_bill-sontag_don-besch_photo_001.jpg",
@@ -1515,7 +1647,7 @@
     "driverSlug": "bill-sontag",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_dennis-miller_don-besch_photo_001.jpg",
@@ -1526,7 +1658,7 @@
     "driverSlug": "dennis-miller",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_dick-trickle_gary-vercauteren_photo_001.jpg",
@@ -1537,7 +1669,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "gary-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_dick-trickle_weber-brothers_photo_001.jpg",
@@ -1548,7 +1680,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_don-collins_don-besch_photo_001.jpg",
@@ -1559,7 +1691,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_don-moon_don-besch_photo_001.jpg",
@@ -1570,7 +1702,7 @@
     "driverSlug": "don-moon",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_jim-helland_don-besch_photo_001.jpg",
@@ -1581,7 +1713,7 @@
     "driverSlug": "jim-helland",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_jim-weber_don-besch_photo_001.jpg",
@@ -1592,7 +1724,7 @@
     "driverSlug": "jim-weber",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_randy-sargent_don-besch_photo_001.jpg",
@@ -1603,7 +1735,7 @@
     "driverSlug": "randy-sargent",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_rich-lofy_don-besch_photo_001.jpg",
@@ -1614,7 +1746,7 @@
     "driverSlug": "rich-lofy",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_ricky-bilderback_don-besch_photo_001.jpg",
@@ -1625,7 +1757,7 @@
     "driverSlug": "ricky-bilderback",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_robbie-reiser_don-besch_photo_001.jpg",
@@ -1636,7 +1768,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_steve-burgess_don-besch_photo_001.jpg",
@@ -1647,7 +1779,7 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_al-schill_don-besch_photo_001.jpg",
@@ -1658,7 +1790,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_axel-dahlberg_don-besch_photo_001.jpg",
@@ -1669,7 +1801,7 @@
     "driverSlug": "axel-dahlberg",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_bobby-hacker_don-besch_photo_001.jpg",
@@ -1680,7 +1812,7 @@
     "driverSlug": "bobby-hacker",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_fred-campbell_don-besch_photo_001.jpg",
@@ -1691,7 +1823,7 @@
     "driverSlug": "fred-campbell",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_jim-helland_don-besch_photo_001.jpg",
@@ -1702,7 +1834,7 @@
     "driverSlug": "jim-helland",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_joe-shear_don-besch_photo_001.jpg",
@@ -1713,7 +1845,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_mike-vansparentak_don-besch_photo_001.jpg",
@@ -1724,7 +1856,7 @@
     "driverSlug": "mike-vansparentak",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_ricky-bilderback_don-besch_photo_001.jpg",
@@ -1735,7 +1867,7 @@
     "driverSlug": "ricky-bilderback",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_roger-lund_don-besch_photo_001.jpg",
@@ -1746,7 +1878,7 @@
     "driverSlug": "roger-lund",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_scott-hansen_ken-koppa_post_001.jpg",
@@ -1757,7 +1889,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_steve-carlson_don-besch_photo_001.jpg",
@@ -1768,7 +1900,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_steve-holzhausen_don-besch_photo_001.jpg",
@@ -1779,7 +1911,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_steve-murgic_don-besch_photo_001.jpg",
@@ -1790,7 +1922,7 @@
     "driverSlug": "steve-murgic",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_steve-seligman_don-besch_photo_001.jpg",
@@ -1801,7 +1933,7 @@
     "driverSlug": "steve-seligman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_ted-musgrave_don-besch_photo_001.jpg",
@@ -1812,7 +1944,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_terry-baldry_don-besch_photo_001.jpg",
@@ -1823,7 +1955,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1985_tom-musgrave_don-besch_photo_001.jpg",
@@ -1834,7 +1966,7 @@
     "driverSlug": "tom-musgrave",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_bart-reinen_pat-heaney_post_001.jpg",
@@ -1845,7 +1977,7 @@
     "driverSlug": "bart-reinen",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_bob-senneker_pat-heaney_post_001.jpg",
@@ -1856,7 +1988,7 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_dennis-barta_bob-schafer_photo_13678.jpg",
@@ -1878,7 +2010,7 @@
     "driverSlug": "jeannie-kind",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_mack-mcclellan_pat-heaney_post_001.jpg",
@@ -1889,7 +2021,7 @@
     "driverSlug": "mack-mcclellan",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
@@ -1903,100 +2035,34 @@
     "sequence": "222"
   },
   {
-    "fileName": "rockford-speedway_1990_ al-schill_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ al-schill_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ al-schill_bob-schafer_photo_222.jpg",
+    "fileName": "rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1989/rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1989_ray-genzler_bob-schafer_photo_222.jpg",
     "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " al-schill",
+    "year": "1989",
+    "driverSlug": "ray-genzler",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
   },
   {
-    "fileName": "rockford-speedway_1990_ bobby-wilberg_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ bobby-wilberg_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ bobby-wilberg_bob-schafer_photo_222.jpg",
+    "fileName": "rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
     "trackSlug": "rockford-speedway",
     "year": "1990",
-    "driverSlug": " bobby-wilberg",
+    "driverSlug": "al-schill",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
   },
   {
-    "fileName": "rockford-speedway_1990_ carl-schwartz_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ carl-schwartz_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ carl-schwartz_bob-schafer_photo_222.jpg",
+    "fileName": "rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_al-schill_bob-schafer_photo_222.jpg",
     "trackSlug": "rockford-speedway",
     "year": "1990",
-    "driverSlug": " carl-schwartz",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ dave-anspaugh_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ dave-anspaugh_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ dave-anspaugh_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " dave-anspaugh",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ doug-herbst_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ doug-herbst_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ doug-herbst_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " doug-herbst",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ ed-holmes_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ ed-holmes_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ ed-holmes_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " ed-holmes",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ jay-sauter_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ jay-sauter_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ jay-sauter_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " jay-sauter",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ scott-fischer_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ scott-fischer_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ scott-fischer_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " scott-fischer",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "222"
-  },
-  {
-    "fileName": "rockford-speedway_1990_ todd-coon_bob-schafer_photo_222.jpg",
-    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ todd-coon_bob-schafer_photo_222.jpg",
-    "publicPath": "/photos/rockford-speedway_1990_ todd-coon_bob-schafer_photo_222.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "1990",
-    "driverSlug": " todd-coon",
+    "driverSlug": "al-schill",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -2008,6 +2074,50 @@
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "bill-botkin",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "bobby-wilberg",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_bobby-wilberg_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "bobby-wilberg",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "carl-schwartz",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_carl-schwartz_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "carl-schwartz",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -2035,6 +2145,28 @@
     "sequence": "222"
   },
   {
+    "fileName": "rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "dave-anspaugh",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_dave-anspaugh_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "dave-anspaugh",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "rockford-speedway_1990_dick-trickle_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_dick-trickle_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_1990_dick-trickle_weber-brothers_photo_001.jpg",
@@ -2043,7 +2175,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
@@ -2052,6 +2184,61 @@
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "don-leach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_don-leach_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "don-leach",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_doug-herbst_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_doug-herbst_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_doug-herbst_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "doug-herbst",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_ed-holmes_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_ed-holmes_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_ed-holmes_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "ed-holmes",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_jay-sauter_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_jay-sauter_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_jay-sauter_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "jay-sauter",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_jeff-finley_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_jeff-finley_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_jeff-finley_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "jeff-finley",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -2087,7 +2274,18 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "eff-sandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "kevin-servais",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "rockford-speedway_1990_kevin-servais_bob-schafer_photo_222.jpg",
@@ -2107,6 +2305,39 @@
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "rick-wateski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_rick-wateski_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "rick-wateski",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_scott-fischer_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_scott-fischer_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_scott-fischer_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "scott-fischer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_steve-carlson_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "steve-carlson",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -2134,12 +2365,45 @@
     "sequence": "222"
   },
   {
+    "fileName": "rockford-speedway_1990_steve-erickson_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_steve-erickson_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_steve-erickson_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "steve-erickson",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
     "fileName": "rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
     "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
     "publicPath": "/photos/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
     "trackSlug": "rockford-speedway",
     "year": "1990",
     "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_tim-fedewa_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "tim-fedewa",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "rockford-speedway_1990_todd-coon_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/rockford-speedway/1990/rockford-speedway_1990_todd-coon_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/rockford-speedway_1990_todd-coon_bob-schafer_photo_222.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1990",
+    "driverSlug": "todd-coon",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "222"
@@ -2296,7 +2560,7 @@
     "driverSlug": "bobby-blount",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1993_bobby-wilberg_stan-kalwasinski_photo_001.jpg",
@@ -2307,7 +2571,7 @@
     "driverSlug": "bobby-wilberg",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1993_joe-shear_stan-kalwasinski_photo_001.jpg",
@@ -2318,7 +2582,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1993_kevin-cywinski_stan-kalwasinski_photo_001.jpg",
@@ -2329,7 +2593,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1993_kevin-servais_stan-kalwasinski_photo_001.jpg",
@@ -2340,7 +2604,7 @@
     "driverSlug": "kevin-servais",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1993_roger-regeth_stan-kalwasinski_photo_4444.jpg",
@@ -2362,7 +2626,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1993_steve-holzhausen_stan-kalwasinski_photo_432.jpg",
@@ -2384,7 +2648,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1997_doug-hoerth_diane-mech_photo_001.jpg",
@@ -2395,7 +2659,7 @@
     "driverSlug": "doug-hoerth",
     "photographerSlug": "diane-mech",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
@@ -2406,7 +2670,18 @@
     "driverSlug": "jim-sorrick",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1997/rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1997_jim-sorrick_unknown-credit_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1997",
+    "driverSlug": "jim-sorrick",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
@@ -2417,7 +2692,18 @@
     "driverSlug": "rick-cregger",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1997/rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1997_rick-cregger_unknown-credit_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1997",
+    "driverSlug": "rick-cregger",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1997_wanda-dobbs_diane-mech_photo_001.jpg",
@@ -2428,7 +2714,40 @@
     "driverSlug": "wanda-dobbs",
     "photographerSlug": "diane-mech",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1997_wanda-dobbs_diane-mech_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/1997/rockford-speedway_1997_wanda-dobbs_diane-mech_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_1997_wanda-dobbs_diane-mech_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1997",
+    "driverSlug": "wanda-dobbs",
+    "photographerSlug": "diane-mech",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/1999/rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_1999_james-swan_james-swan_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1999",
+    "driverSlug": "james-swan",
+    "photographerSlug": "james-swan",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_2000_unknown-driver_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/rockford-speedway/2000/rockford-speedway_2000_unknown-driver_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/rockford-speedway_2000_unknown-driver_unknown-photographer_photo_333.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2000",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "rockford-speedway_2000_unknown-driver_unknown-photographer_photo_333.jpg",
@@ -2450,18 +2769,29 @@
     "driverSlug": "al-schill",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "rockford-speedway_2015_matt-urban_matt-urban_post_333.jpg",
-    "storagePath": "photos/master/rockford-speedway/2015/rockford-speedway_2015_matt-urban_matt-urban_post_333.jpg",
-    "publicPath": "/photos/rockford-speedway_2015_matt-urban_matt-urban_post_333.jpg",
+    "fileName": "rockford-speedway_2003_al-schill_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2003/rockford-speedway_2003_al-schill_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2003_al-schill_weber-brothers_photo_001.jpg",
     "trackSlug": "rockford-speedway",
-    "year": "2015",
-    "driverSlug": "matt-urban",
-    "photographerSlug": "matt-urban",
+    "year": "2003",
+    "driverSlug": "al-schill",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2017_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/rockford-speedway/2017/rockford-speedway_2017_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/rockford-speedway_2017_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2017",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
     "creditType": "post",
-    "sequence": "333"
+    "sequence": "111"
   },
   {
     "fileName": "rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
@@ -2472,7 +2802,18 @@
     "driverSlug": "aaron-rude",
     "photographerSlug": "hotshot-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2019/rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2019_aaron-rude_hotshot-photography_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2019",
+    "driverSlug": "aaron-rude",
+    "photographerSlug": "hotshot-photography",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
@@ -2483,7 +2824,29 @@
     "driverSlug": "michael-bilderback",
     "photographerSlug": "hotshot-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2019/rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2019_michael-bilderback_hotshot-photography_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2019",
+    "driverSlug": "michael-bilderback",
+    "photographerSlug": "hotshot-photography",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2021_dillon-mackesy_dillon-mackesy_post_433.jpg",
+    "storagePath": "photos/master/rockford-speedway/2021/rockford-speedway_2021_dillon-mackesy_dillon-mackesy_post_433.jpg",
+    "publicPath": "/photos/rockford-speedway_2021_dillon-mackesy_dillon-mackesy_post_433.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2021",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "dillon-mackesy",
+    "creditType": "post",
+    "sequence": ""
   },
   {
     "fileName": "rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -2494,7 +2857,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/2023/rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_2023_unknown-driver_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "2023",
+    "driverSlug": "unknown-driver",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_aaron-wilke_charlie-spry_photo_001.jpg",
@@ -2505,7 +2879,29 @@
     "driverSlug": "aaron-wilke",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_aaron-wilke_charlie-spry_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_aaron-wilke_charlie-spry_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_aaron-wilke_charlie-spry_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "aaron-wilke",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-laufer",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "114"
   },
   {
     "fileName": "rockford-speedway_unknown-year_al-laufer_father-grubba_photo_114.jpg",
@@ -2527,7 +2923,29 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-schill_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-schill_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-schill_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-schill_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-schill_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-schill_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_001.jpg",
@@ -2538,7 +2956,18 @@
     "driverSlug": "al-schill-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_al-schill-jr_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-schill-jr",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_alan-kulwicki_don-besch_photo_001.jpg",
@@ -2549,7 +2978,29 @@
     "driverSlug": "alan-kulwicki",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_alan-kulwicki_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_alan-kulwicki_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_alan-kulwicki_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "alan-kulwicki",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_alan-kulwicki_father-grubba_photo_114.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_alan-kulwicki_father-grubba_photo_114.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_alan-kulwicki_father-grubba_photo_114.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "alan-kulwicki",
+    "photographerSlug": "father-grubba",
+    "creditType": "photo",
+    "sequence": "114"
   },
   {
     "fileName": "rockford-speedway_unknown-year_alan-kulwicki_father-grubba_photo_114.jpg",
@@ -2574,6 +3025,17 @@
     "sequence": "13717"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_bart-reinen_bob-schafer_photo_13717.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bart-reinen_bob-schafer_photo_13717.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bart-reinen_bob-schafer_photo_13717.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bart-reinen",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "13717"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
@@ -2585,6 +3047,28 @@
     "sequence": "160"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bert-weitemeyer_bob-schafer_photo_160.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bert-weitemeyer",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "160"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bert-weitemeyer_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bert-weitemeyer_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bert-weitemeyer_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bert-weitemeyer",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
@@ -2593,7 +3077,18 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bill-prietzel_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
@@ -2604,7 +3099,29 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bill-venturini_pat-heaney_post_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-venturini",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bill-woodworth_bob-schafer_photo_484.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bill-woodworth_bob-schafer_photo_484.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bill-woodworth_bob-schafer_photo_484.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bill-woodworth",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "484"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bill-woodworth_bob-schafer_photo_484.jpg",
@@ -2626,7 +3143,29 @@
     "driverSlug": "billy-heden",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_billy-heden_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_billy-heden_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_billy-heden_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "billy-heden",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bj-sparkman_unknown-photographer_photo_13611.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bj-sparkman_unknown-photographer_photo_13611.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bj-sparkman_unknown-photographer_photo_13611.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bj-sparkman",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "13611"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bj-sparkman_unknown-photographer_photo_13611.jpg",
@@ -2648,7 +3187,40 @@
     "driverSlug": "bob-gunn",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bob-gunn_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bob-gunn_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bob-gunn_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-gunn",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bob-roosa_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bob-roosa_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bob-roosa_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-roosa",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bob-senneker_bob-schafer_photo_434.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bob-senneker_bob-schafer_photo_434.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bob-senneker_bob-schafer_photo_434.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-senneker",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "434"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bob-senneker_bob-schafer_photo_434.jpg",
@@ -2670,7 +3242,18 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bob-senneker_don-besch_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bob-senneker_don-besch_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bob-senneker_don-besch_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-senneker",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
@@ -2681,7 +3264,29 @@
     "driverSlug": "bob-weltmeyer",
     "photographerSlug": "pete-fileca",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bob-weltmeyer_pete-fileca_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-weltmeyer",
+    "photographerSlug": "pete-fileca",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-dotter_bob-schafer_photo_143.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-dotter_bob-schafer_photo_143.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-dotter_bob-schafer_photo_143.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "143"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bobby-dotter_bob-schafer_photo_143.jpg",
@@ -2703,7 +3308,18 @@
     "driverSlug": "bobby-dotter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-dotter_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-dotter",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
@@ -2714,7 +3330,18 @@
     "driverSlug": "bobby-hacker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_002.jpg",
@@ -2725,7 +3352,18 @@
     "driverSlug": "bobby-hacker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_002.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_004.jpg",
@@ -2736,7 +3374,29 @@
     "driverSlug": "bobby-hacker",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-hacker_unknown-photographer_photo_004.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-hacker",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-weiss_bob-schafer_photo_466.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-weiss_bob-schafer_photo_466.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-weiss_bob-schafer_photo_466.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-weiss",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "466"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bobby-weiss_bob-schafer_photo_466.jpg",
@@ -2758,7 +3418,29 @@
     "driverSlug": "bobby-weiss",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-weiss_don-besch_photo_002.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-weiss_don-besch_photo_002.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-weiss_don-besch_photo_002.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-weiss",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-weiss_don-besch_photo_100 .jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-weiss_don-besch_photo_100 .jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-weiss_don-besch_photo_100 .jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-weiss",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bobby-weiss_unknown-photographer_photo_001.jpg",
@@ -2769,7 +3451,29 @@
     "driverSlug": "bobby-weiss",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_bobby-weiss_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_bobby-weiss_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_bobby-weiss_unknown-photographer_photo_001.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bobby-weiss",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_brett-wachowiacz_brett-wachowiacz_post_111.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_brett-wachowiacz_brett-wachowiacz_post_111.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_brett-wachowiacz_brett-wachowiacz_post_111.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brett-wachowiacz",
+    "photographerSlug": "brett-wachowiacz",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "rockford-speedway_unknown-year_brett-wachowiacz_brett-wachowiacz_post_111.jpg",
@@ -2791,7 +3495,18 @@
     "driverSlug": "brian-lambie",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-lambie",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_unknown-year_bud-helm_ron-thruman_post_001.jpg",
@@ -2802,7 +3517,7 @@
     "driverSlug": "bud-helm",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_burt-weitemeyer_don-besch_photo_001.jpg",
@@ -2813,7 +3528,7 @@
     "driverSlug": "burt-weitemeyer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_001.jpg",
@@ -2824,7 +3539,18 @@
     "driverSlug": "burton-brown",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "burton-brown",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_unknown-year_butch-miller_don-besch_photo_001.jpg",
@@ -2835,7 +3561,7 @@
     "driverSlug": "butch-miller",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_chet-scott_ron-thruman_post_001.jpg",
@@ -2846,7 +3572,7 @@
     "driverSlug": "chet-scott",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_chet-scott_unknown-photographer_photo_001.jpg",
@@ -2857,7 +3583,7 @@
     "driverSlug": "chet-scott",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_cliff-leach_bob-schafer_photo_13160.jpg",
@@ -2890,7 +3616,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_conrad-morgan_bob-schafer_photo_036.jpg",
@@ -2901,7 +3627,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "036"
+    "sequence": "36"
   },
   {
     "fileName": "rockford-speedway_unknown-year_conrad-morgan_don-besch_photo_001.jpg",
@@ -2912,7 +3638,40 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_coy-williams_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_coy-williams_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_coy-williams_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "coy-williams",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_curt-wendelschafer_charlie-spry_photo_655.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_curt-wendelschafer_charlie-spry_photo_655.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_curt-wendelschafer_charlie-spry_photo_655.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "curt-wendelschafer",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "655"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_dan-odell_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_dan-odell_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_dan-odell_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-odell",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_danny-duke_pete-vercauteren_photo_001.jpg",
@@ -2923,7 +3682,7 @@
     "driverSlug": "danny-duke",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-anspaugh_don-besch_photo_001.jpg",
@@ -2934,7 +3693,7 @@
     "driverSlug": "dave-anspaugh",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-fossum_joe-slack_photo_001.jpg",
@@ -2945,7 +3704,7 @@
     "driverSlug": "dave-fossum",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-tomczak_unknown-photographer_photo_001.jpg",
@@ -2956,7 +3715,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-tushoski_unknown-photographer_photo_001.jpg",
@@ -2967,7 +3726,7 @@
     "driverSlug": "dave-tushoski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-watson_unknown-photographer_photo_002.jpg",
@@ -2978,7 +3737,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-watson_unknown-photographer_photo_005.jpg",
@@ -2989,7 +3748,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-weltmeyer_unknown-photographer_photo_001.jpg",
@@ -3000,7 +3759,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dave-weltmeyer_weber-brothers_photo_001.jpg",
@@ -3011,7 +3770,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dennis-aho_bob-schafer_photo_13154.jpg",
@@ -3023,6 +3782,17 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "13154"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_dennis-aho_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_dennis-aho_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_dennis-aho_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-aho",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dennis-chase_father-grubba_photo_114.jpg",
@@ -3044,7 +3814,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dennis-lampman_unknown-photographer_photo_002.jpg",
@@ -3055,7 +3825,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dick-hautzinger_unknown-photographer_photo_001.jpg",
@@ -3066,7 +3836,7 @@
     "driverSlug": "dick-hautzinger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dick-trickle_don-besch_photo_001.jpg",
@@ -3077,7 +3847,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dick-trickle_don-besch_photo_002.jpg",
@@ -3088,7 +3858,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dick-trickle_father-grubba_photo_114.jpg",
@@ -3121,7 +3891,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_dick-trickle_weber-brothers_photo_002.jpg",
@@ -3132,7 +3902,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_don-jenkins_unknown-photographer_photo_001.jpg",
@@ -3143,7 +3913,7 @@
     "driverSlug": "don-jenkins",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_don-leach_bob-schafer_photo_001.jpg",
@@ -3154,7 +3924,7 @@
     "driverSlug": "don-leach",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_don-leach_bob-schafer_photo_13947.jpg",
@@ -3176,7 +3946,40 @@
     "driverSlug": "don-leach",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_don-leach_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_don-leach_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_don-leach_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-leach",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_don-leach_ron-thruman_photo_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_don-leach_ron-thruman_photo_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_don-leach_ron-thruman_photo_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "don-leach",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_donna-unash_charlie-spry_photo_655.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_donna-unash_charlie-spry_photo_655.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_donna-unash_charlie-spry_photo_655.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "donna-unash",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "655"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ed-harvey_ron-thruman_photo_001.jpg",
@@ -3187,7 +3990,7 @@
     "driverSlug": "ed-harvey",
     "photographerSlug": "ron-thruman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ed-hoffman_don-besch_photo_001.jpg",
@@ -3198,7 +4001,7 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ed-sanger_pete-vercauteren_photo_001.jpg",
@@ -3209,7 +4012,40 @@
     "driverSlug": "ed-sanger",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_eddie-hoffman_dave-drews_photo_443.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_eddie-hoffman_dave-drews_photo_443.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_eddie-hoffman_dave-drews_photo_443.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "eddie-hoffman",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "443"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_eddie-hoffman_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_eddie-hoffman_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_eddie-hoffman_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "eddie-hoffman",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_frank-gawalinski_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_frank-gawalinski_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_frank-gawalinski_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "frank-gawalinski",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_frank-slabenek_kim-kemperman_photo_001.jpg",
@@ -3220,7 +4056,7 @@
     "driverSlug": "frank-slabenek",
     "photographerSlug": "kim-kemperman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_fred-nason_unknown-photographer_photo_001.jpg",
@@ -3231,7 +4067,7 @@
     "driverSlug": "fred-nason",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_fred-winn_bob-schafer_photo_13966.jpg",
@@ -3264,7 +4100,7 @@
     "driverSlug": "gene-coleman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_gene-marocco_unknown-photographer_photo_001.jpg",
@@ -3275,7 +4111,7 @@
     "driverSlug": "gene-marocco",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_gene-marocco_unknown-photographer_photo_002.jpg",
@@ -3286,7 +4122,7 @@
     "driverSlug": "gene-marocco",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_george-prziborowski_bob-schafer_photo_157.jpg",
@@ -3308,7 +4144,7 @@
     "driverSlug": "george-prziborowski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_herb-moag_charlie-spry_photo_001.jpg",
@@ -3319,7 +4155,7 @@
     "driverSlug": "herb-moag",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_hugh-deery_unknown-photographer_photo_001.jpg",
@@ -3330,7 +4166,7 @@
     "driverSlug": "hugh-deery",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_hugh-deery_unknown-photographer_photo_304.jpg",
@@ -3352,7 +4188,7 @@
     "driverSlug": "hut-stricklin",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jack-gritter_don-besch_photo_001.jpg",
@@ -3363,7 +4199,7 @@
     "driverSlug": "jack-gritter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jack-landis_bob-schafer_photo_13816.jpg",
@@ -3385,7 +4221,7 @@
     "driverSlug": "james-bond",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jamie-neville_father-grubba_photo_114.jpg",
@@ -3407,7 +4243,7 @@
     "driverSlug": "jamie-neville",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jason-bragg_krystle-erbe_post_001.jpg",
@@ -3418,7 +4254,7 @@
     "driverSlug": "jason-bragg",
     "photographerSlug": "krystle-erbe",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jay-sauter_don-besch_photo_001.jpg",
@@ -3429,7 +4265,7 @@
     "driverSlug": "jay-sauter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jeff-harr_unknown-photographer_photo_001.jpg",
@@ -3440,7 +4276,18 @@
     "driverSlug": "jeff-harr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_jeff-storm_dave-drews_photo_443.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jeff-storm_dave-drews_photo_443.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jeff-storm_dave-drews_photo_443.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jeff-storm",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "443"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jerry-gille_bob-schafer_photo_13667.jpg",
@@ -3462,7 +4309,7 @@
     "driverSlug": "jerry-gille",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jerry-straube_unknown-photographer_photo_001.jpg",
@@ -3473,7 +4320,18 @@
     "driverSlug": "jerry-straube",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_jerry-wood_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jerry-wood_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jerry-wood_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-wood",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jerry-wood_unknown-photographer_photo_001.jpg",
@@ -3484,7 +4342,7 @@
     "driverSlug": "jerry-wood",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jim-back_unknown-photographer_photo_001.jpg",
@@ -3495,7 +4353,7 @@
     "driverSlug": "jim-back",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jim-helland_don-besch_photo_001.jpg",
@@ -3506,7 +4364,7 @@
     "driverSlug": "jim-helland",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jim-reynolds_bob-schafer_photo_084.jpg",
@@ -3517,7 +4375,7 @@
     "driverSlug": "jim-reynolds",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "084"
+    "sequence": "84"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jim-sauter_father-grubba_photo_114.jpg",
@@ -3531,6 +4389,17 @@
     "sequence": "114"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_jim-sauter_kurt-luoma_photo_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jim-sauter_kurt-luoma_photo_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_jim-sauter_kurt-luoma_photo_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-sauter",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_jim-sauter_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_jim-sauter_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_jim-sauter_unknown-photographer_photo_002.jpg",
@@ -3539,7 +4408,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jim-sauter_unknown-photographer_photo_1348.jpg",
@@ -3583,7 +4452,7 @@
     "driverSlug": "jim-weber",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jim-weber_unknown-photographer_photo_041.jpg",
@@ -3594,7 +4463,7 @@
     "driverSlug": "jim-weber",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "041"
+    "sequence": "41"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jim-weber_unknown-photographer_photo_203.jpg",
@@ -3616,7 +4485,7 @@
     "driverSlug": "jj-schultz",
     "photographerSlug": "kim-kemperman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_joe-kryzkowski_unknown-photographer_photo_001.jpg",
@@ -3627,7 +4496,7 @@
     "driverSlug": "joe-kryzkowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_joe-shear_bob-schafer_photo_13887.jpg",
@@ -3660,7 +4529,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "rockford-speedway_unknown-year_joe-shear_don-besch_photo_004.jpg",
@@ -3671,7 +4540,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "rockford-speedway_unknown-year_joe-shear_father-grubba_photo_115.jpg",
@@ -3685,6 +4554,17 @@
     "sequence": "115"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_joe-shear_ron-thruman_photo_555.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_joe-shear_ron-thruman_photo_555.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_joe-shear_ron-thruman_photo_555.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-shear",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_joe-shear_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_joe-shear_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_joe-shear_unknown-photographer_photo_002.jpg",
@@ -3693,7 +4573,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_joe-shear_unknown-photographer_photo_005.jpg",
@@ -3704,7 +4584,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "rockford-speedway_unknown-year_joe-shear_unknown-photographer_photo_14650.jpg",
@@ -3726,7 +4606,7 @@
     "driverSlug": "joe-tyrell",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_joel-laufer_bob-schafer_photo_500.jpg",
@@ -3748,7 +4628,7 @@
     "driverSlug": "john-boegemann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-gentry_unknown-photographer_photo_001.jpg",
@@ -3759,7 +4639,7 @@
     "driverSlug": "john-gentry",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-knaus_unknown-photographer_photo_002.jpg",
@@ -3770,7 +4650,7 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-knaus_unknown-photographer_photo_003.jpg",
@@ -3781,7 +4661,7 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-knaus_unknown-photographer_photo_004.jpg",
@@ -3792,7 +4672,7 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-knaus_unknown-photographer_photo_007.jpg",
@@ -3803,7 +4683,7 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-luther_unknown-photographer_photo_001.jpg",
@@ -3814,7 +4694,7 @@
     "driverSlug": "john-luther",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-olson_bob-schafer_photo_471.jpg",
@@ -3839,6 +4719,17 @@
     "sequence": "480"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_john-olson_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_john-olson_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_john-olson_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-olson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_john-olson_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_john-olson_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_john-olson_unknown-photographer_photo_002.jpg",
@@ -3847,7 +4738,18 @@
     "driverSlug": "john-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_john-strausser_keith-vercauteren_post_323.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_john-strausser_keith-vercauteren_post_323.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_john-strausser_keith-vercauteren_post_323.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-strausser",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "323"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
@@ -3858,7 +4760,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_john-ziegler_unknown-photographer_photo_3301.jpg",
@@ -3880,7 +4782,7 @@
     "driverSlug": "johnny-reimer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jon-reynolds_bob-schafer_photo_354.jpg",
@@ -3902,7 +4804,7 @@
     "driverSlug": "jon-reynolds-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jr-hanley_don-besch_photo_001.jpg",
@@ -3913,7 +4815,7 @@
     "driverSlug": "jr-hanley",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_justin-dierks_unknown-photographer_photo_001.jpg",
@@ -3924,7 +4826,7 @@
     "driverSlug": "justin-dierks",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_keith-nelson_unknown-photographer_photo_001.jpg",
@@ -3935,7 +4837,7 @@
     "driverSlug": "keith-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_keith-nelson_unknown-photographer_photo_002.jpg",
@@ -3946,7 +4848,7 @@
     "driverSlug": "keith-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ken-lund_charlie-spry_post_001.jpg",
@@ -3957,7 +4859,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ken-lund_dan-walker_photo_001.jpg",
@@ -3968,7 +4870,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "dan-walker",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_kevin-cywinski_bob-schafer_photo_331.jpg",
@@ -3982,6 +4884,17 @@
     "sequence": "331"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_kevin-cywinski_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_kevin-cywinski_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_kevin-cywinski_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "kevin-cywinski",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_kevin-cywinski_unknown-photographer_photo_001.jpg",
@@ -3990,7 +4903,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_kevin-nuttleman_bob-schafer_photo_13706.jpg",
@@ -4023,7 +4936,7 @@
     "driverSlug": "larry-middleton",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_larry-schuler_unknown-photographer_photo_001.jpg",
@@ -4034,7 +4947,7 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_larry-schuler_unknown-photographer_photo_002.jpg",
@@ -4045,7 +4958,7 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_larry-schuler_unknown-photographer_photo_003.jpg",
@@ -4056,7 +4969,7 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "rockford-speedway_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
@@ -4067,7 +4980,18 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nowak",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mark-day_bob-schafer_photo_13833.jpg",
@@ -4089,7 +5013,7 @@
     "driverSlug": "mark-day",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mark-lameraux_unknown-photographer_photo_001.jpg",
@@ -4100,7 +5024,7 @@
     "driverSlug": "mark-lameraux",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mark-martin_father-grubba_photo_114.jpg",
@@ -4133,7 +5057,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mark-martin_unknown-photographer_photo_002.jpg",
@@ -4144,7 +5068,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mel-walen_don-besch_photo_001.jpg",
@@ -4155,7 +5079,7 @@
     "driverSlug": "mel-walen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_merv-chandler_unknown-photographer_photo_375.jpg",
@@ -4177,7 +5101,7 @@
     "driverSlug": "michael-waltrip",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mike-alexander_bob-schafer_photo_14013.jpg",
@@ -4199,7 +5123,7 @@
     "driverSlug": "mike-beyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mike-beyer_unknown-photographer_photo_002.jpg",
@@ -4210,7 +5134,7 @@
     "driverSlug": "mike-beyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mike-miller_unknown-photographer_photo_001.jpg",
@@ -4221,7 +5145,7 @@
     "driverSlug": "mike-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_mitch-haver_leonard-reimer_post_001.jpg",
@@ -4232,7 +5156,7 @@
     "driverSlug": "mitch-haver",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_monte-gress_lokotaco_post_001.jpg",
@@ -4243,7 +5167,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "lokotaco",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_nathan-haseleu_unknown-photographer_photo_001.jpg",
@@ -4254,7 +5178,7 @@
     "driverSlug": "nathan-haseleu",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_neil-callahan_pete-vercauteren_photo_001.jpg",
@@ -4265,7 +5189,7 @@
     "driverSlug": "neil-callahan",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_nick-clubb_kim-kemperman_photo_1.jpg",
@@ -4287,7 +5211,7 @@
     "driverSlug": "norm-setran",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_peterson_charlie-spry_photo_001.jpg",
@@ -4298,7 +5222,7 @@
     "driverSlug": "peterson",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_randy-ross_bob-schafer_photo_452.jpg",
@@ -4331,7 +5255,7 @@
     "driverSlug": "red-gates",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
@@ -4342,7 +5266,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_bob-schafer_photo_13907.jpg",
@@ -4364,7 +5288,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_don-besch_photo_021.jpg",
@@ -4375,7 +5299,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_unknown-photographer_photo_003.jpg",
@@ -4386,7 +5310,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "rockford-speedway_unknown-year_richard-lofy_pete-vercauteren_photo_001.jpg",
@@ -4397,7 +5321,7 @@
     "driverSlug": "richard-lofy",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rick-wateski_don-besch_photo_001.jpg",
@@ -4408,7 +5332,7 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ricky-bilderback_bob-schafer_photo_13778.jpg",
@@ -4430,7 +5354,7 @@
     "driverSlug": "ricky-bilderback",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ricky-bilderback_unknown-photographer_photo_002.jpg",
@@ -4441,7 +5365,7 @@
     "driverSlug": "ricky-bilderback",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ricky-bilderback_unknown-photographer_photo_003.jpg",
@@ -4452,7 +5376,7 @@
     "driverSlug": "ricky-bilderback",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "rockford-speedway_unknown-year_robbie-reiser_bob-schafer_photo_037.jpg",
@@ -4463,7 +5387,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "037"
+    "sequence": "37"
   },
   {
     "fileName": "rockford-speedway_unknown-year_robbie-reiser_bob-schafer_photo_13151.jpg",
@@ -4477,6 +5401,17 @@
     "sequence": "13151"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_robbie-reiser_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_robbie-reiser_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_robbie-reiser_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
@@ -4485,7 +5420,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_robert-hixson_bob-schafer_photo_14174.jpg",
@@ -4507,7 +5442,7 @@
     "driverSlug": "robin-amato",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rod-wheeler_unknown-photographer_photo_001.jpg",
@@ -4518,7 +5453,7 @@
     "driverSlug": "rod-wheeler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_roger-lund_bob-schafer_photo_512.jpg",
@@ -4540,7 +5475,7 @@
     "driverSlug": "roger-otto",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_roger-regeth_joe-verdegan_post_001.jpg",
@@ -4551,7 +5486,18 @@
     "driverSlug": "roger-regeth",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_sammy-reakes_doug-haack_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "sammy-reakes",
+    "photographerSlug": "doug-haack",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_bob-schafer_photo_13165.jpg",
@@ -4584,7 +5530,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_don-besch_photo_001.jpg",
@@ -4595,7 +5541,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_don-besch_photo_002.jpg",
@@ -4606,7 +5552,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_unknown-photographer_photo_003.jpg",
@@ -4617,7 +5563,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "rockford-speedway_unknown-year_scott-hansen_unknown-photographer_photo_11664.jpg",
@@ -4639,7 +5585,7 @@
     "driverSlug": "spike-lindley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_stash-kullman_unknown-photographer_photo_001.jpg",
@@ -4650,7 +5596,7 @@
     "driverSlug": "stash-kullman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-burgess_unknown-photographer_photo_001.jpg",
@@ -4661,7 +5607,18 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_steve-carlson_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-carlson_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_steve-carlson_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-carlson",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-carlson_pete-vercauteren_photo_001.jpg",
@@ -4672,7 +5629,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-carlson_unknown-photographer_photo_11662.jpg",
@@ -4686,6 +5643,17 @@
     "sequence": "11662"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_steve-drays_charlie-spry_photo_655.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-drays_charlie-spry_photo_655.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_steve-drays_charlie-spry_photo_655.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-drays",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "655"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_steve-drays_charlie-spry_post_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-drays_charlie-spry_post_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_steve-drays_charlie-spry_post_001.jpg",
@@ -4694,7 +5662,7 @@
     "driverSlug": "steve-drays",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-holzhausen_bob-schafer_photo_13156.jpg",
@@ -4727,7 +5695,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-mckinney_unknown-photographer_photo_001.jpg",
@@ -4738,7 +5706,7 @@
     "driverSlug": "steve-mckinney",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-moll_unknown-photographer_photo_001.jpg",
@@ -4749,7 +5717,7 @@
     "driverSlug": "steve-moll",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_steve-murgic_bob-schafer_photo_14055.jpg",
@@ -4771,7 +5739,7 @@
     "driverSlug": "steve-murgic",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ted-musgrave_bob-schafer_photo_185.jpg",
@@ -4793,7 +5761,7 @@
     "driverSlug": "ted-musgrave",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_ted-musgrave_father-grubba_photo_114.jpg",
@@ -4826,7 +5794,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tim-fedewa_bob-schafer_photo_13148.jpg",
@@ -4848,7 +5816,7 @@
     "driverSlug": "tim-melvin",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tim-sandretti_unknown-photographer_photo_001.jpg",
@@ -4859,7 +5827,7 @@
     "driverSlug": "tim-sandretti",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-carlson_bob-schafer_photo_496.jpg",
@@ -4881,7 +5849,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "john-lafrentz",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-carlson_pete-vercauteren_photo_001.jpg",
@@ -4892,7 +5860,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-carlson_steve-heiman_post_001.jpg",
@@ -4903,7 +5871,7 @@
     "driverSlug": "tom-carlson",
     "photographerSlug": "steve-heiman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-cellini_unknown-photographer_photo_001.jpg",
@@ -4914,7 +5882,7 @@
     "driverSlug": "tom-cellini",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-greenlee_unknown-photographer_photo_001.jpg",
@@ -4925,7 +5893,7 @@
     "driverSlug": "tom-greenlee",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-jones_unknown-photographer_photo_001.jpg",
@@ -4936,7 +5904,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-jones_weber-brothers_photo_001.jpg",
@@ -4947,7 +5915,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-reffner_don-besch_photo_001.jpg",
@@ -4958,7 +5926,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -4969,7 +5937,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tom-reffner_unknown-photographer_photo_377.jpg",
@@ -4991,7 +5959,7 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tony-strupp_don-besch_photo_005.jpg",
@@ -5002,7 +5970,18 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_tony-strupp_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_tony-strupp_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_tony-strupp_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tony-strupp",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "rockford-speedway_unknown-year_tony-strupp_unknown-photographer_photo_002.jpg",
@@ -5013,7 +5992,7 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown_joe-slack_photo_001.jpg",
@@ -5021,10 +6000,10 @@
     "publicPath": "/photos/rockford-speedway_unknown-year_unknown_joe-slack_photo_001.jpg",
     "trackSlug": "rockford-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown",
+    "driverSlug": "unknown-driver",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_077.jpg",
@@ -5035,7 +6014,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "077"
+    "sequence": "77"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_079.jpg",
@@ -5046,7 +6025,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "079"
+    "sequence": "79"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_089.jpg",
@@ -5057,29 +6036,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "089"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_092.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_092.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_092.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "092"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13262.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13262.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13262.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13262"
+    "sequence": "89"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13530.jpg",
@@ -5093,83 +6050,6 @@
     "sequence": "13530"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13542.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13542.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13542.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13542"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13544.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13544.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13544.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13544"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13559.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13559.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13559.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13559"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13560.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13560.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13560.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13560"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13561.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13561.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13561.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13561"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13575.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13575.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13575.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13575"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13590.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13590.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13590.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13590"
-  },
-  {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13657.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13657.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13657.jpg",
@@ -5179,39 +6059,6 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "13657"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13689.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13689.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13689.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13689"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13693.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13693.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13693.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13693"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13703.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13703.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13703.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13703"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13747.jpg",
@@ -5225,39 +6072,6 @@
     "sequence": "13747"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13752.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13752.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13752.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13752"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13771.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13771.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13771.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13771"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13773.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13773.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13773.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13773"
-  },
-  {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13793.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13793.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13793.jpg",
@@ -5267,39 +6081,6 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "13793"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13824.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13824.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13824.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13824"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13834.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13834.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_13834.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13834"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_257.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_257.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_257.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "257"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_310.jpg",
@@ -5313,81 +6094,48 @@
     "sequence": "310"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_413.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_413.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_413.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "413"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_491.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_491.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_bob-schafer_photo_491.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "491"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_don-besch_photo_001.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_001.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_001.jpg",
+    "fileName": "rockford-speedway_unknown-year_unknown-driver_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_100.jpg",
     "trackSlug": "rockford-speedway",
     "year": "unknown-year",
     "driverSlug": "unknown-driver",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "100"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_114 (2).jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_114 (2).jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_114 (2).jpg",
+    "fileName": "rockford-speedway_unknown-year_unknown-driver_don-besch_photo_140.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_140.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_140.jpg",
     "trackSlug": "rockford-speedway",
     "year": "unknown-year",
     "driverSlug": "unknown-driver",
-    "photographerSlug": "father-grubba",
+    "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "114 (2)"
+    "sequence": "140"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_114.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_114.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_114.jpg",
+    "fileName": "rockford-speedway_unknown-year_unknown-driver_don-besch_photo_555.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_555.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_555.jpg",
     "trackSlug": "rockford-speedway",
     "year": "unknown-year",
     "driverSlug": "unknown-driver",
-    "photographerSlug": "father-grubba",
+    "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "114"
+    "sequence": "555"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_115.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_115.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_father-grubba_photo_115.jpg",
+    "fileName": "rockford-speedway_unknown-year_unknown-driver_don-besch_photo_556.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_556.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_don-besch_photo_556.jpg",
     "trackSlug": "rockford-speedway",
     "year": "unknown-year",
     "driverSlug": "unknown-driver",
-    "photographerSlug": "father-grubba",
+    "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "115"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_joe-slack_photo_002.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_joe-slack_photo_002.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_joe-slack_photo_002.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "joe-slack",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "556"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_leonard-reimer_post_001.jpg",
@@ -5398,62 +6146,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "leonard-reimer",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_001.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_003.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_021.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_021.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_021.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "021"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_11655.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_11655.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_11655.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "11655"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_1324.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_1324.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_1324.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "1324"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_201.jpg",
@@ -5467,50 +6160,6 @@
     "sequence": "201"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_202.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_202.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_202.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "202"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_207.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_207.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_207.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "207"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_281.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_281.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_281.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "281"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_2975.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_2975.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_2975.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "2975"
-  },
-  {
     "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_301.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_301.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_301.jpg",
@@ -5522,39 +6171,6 @@
     "sequence": "301"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_302.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_302.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_302.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "302"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_378.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_378.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_378.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "378"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_401.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_401.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-driver_unknown-photographer_photo_401.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "unknown-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "401"
-  },
-  {
     "fileName": "rockford-speedway_unknown-year_unknown-photo_joe-slack_photo_002.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-photo_joe-slack_photo_002.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_unknown-photo_joe-slack_photo_002.jpg",
@@ -5563,61 +6179,28 @@
     "driverSlug": "unknown-photo",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknown-year_joe-slack_photo_001.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknown-year_joe-slack_photo_001.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknown-year_joe-slack_photo_001.jpg",
+    "fileName": "rockford-speedway_unknown-year_vaughn-gerke_ron-thruman_photo_334.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_vaughn-gerke_ron-thruman_photo_334.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_vaughn-gerke_ron-thruman_photo_334.jpg",
     "trackSlug": "rockford-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknown-year",
-    "photographerSlug": "joe-slack",
+    "driverSlug": "vaughn-gerke",
+    "photographerSlug": "ron-thruman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "334"
   },
   {
-    "fileName": "rockford-speedway_unknown-year_unknownn-driver_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_unknownn-driver_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_unknownn-driver_unknown-photographer_photo_002.jpg",
+    "fileName": "rockford-speedway_unknown-year_wayne-para_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_wayne-para_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_wayne-para_raceway-park-history_post_888.jpg",
     "trackSlug": "rockford-speedway",
     "year": "unknown-year",
-    "driverSlug": "unknownn-driver",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_wayne-brietenfeldt_bob-schafer_photo_13828.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "wayne-brietenfeldt",
-    "photographerSlug": "bob-schafer",
-    "creditType": "photo",
-    "sequence": "13828"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_wayne-dion_charlie-spry_photo_001.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_wayne-dion_charlie-spry_photo_001.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_wayne-dion_charlie-spry_photo_001.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "wayne-dion",
-    "photographerSlug": "charlie-spry",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "rockford-speedway_unknown-year_wayne-lensing_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_wayne-lensing_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/rockford-speedway_unknown-year_wayne-lensing_unknown-photographer_photo_001.jpg",
-    "trackSlug": "rockford-speedway",
-    "year": "unknown-year",
-    "driverSlug": "wayne-lensing",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "driverSlug": "wayne-para",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
   }
 ]

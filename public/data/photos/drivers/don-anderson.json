@@ -8,7 +8,7 @@
     "driverSlug": "don-anderson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "escanaba-speedway_unknown-year_don-anderson_joe-verdegan_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "don-anderson",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-anderson_unknown-photographer_photo_002.jpg",
@@ -30,6 +30,6 @@
     "driverSlug": "don-anderson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

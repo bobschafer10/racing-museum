@@ -1,13 +1,24 @@
 [
   {
-    "fileName": "unknown-track_unknown-year_fred-clatt_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_fred-clatt_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_fred-clatt_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "plymouth-dirt-track_unknown-year_fred-clatt_pat-heaney_post_345.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_fred-clatt_pat-heaney_post_345.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_fred-clatt_pat-heaney_post_345.jpg",
+    "trackSlug": "plymouth-dirt-track",
     "year": "unknown-year",
     "driverSlug": "fred-clatt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "345"
+  },
+  {
+    "fileName": "plymouth-dirt-track_unknown-year_fred-clatt_pat-heaney_post_345.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_fred-clatt_pat-heaney_post_345.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_unknown-year_fred-clatt_pat-heaney_post_345.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "unknown-year",
+    "driverSlug": "fred-clatt",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "345"
   }
 ]

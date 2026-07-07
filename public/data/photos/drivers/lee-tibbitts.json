@@ -8,7 +8,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1987_lee-tibbitts_pat-heaney_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_1989_lee-tibbitts_bob-schafer_photo_222.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_005.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_lee-tibbitts_unknown-photographer_photo_006.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_lee-tibbitts_tom-furlan_post_001.jpg",
@@ -96,6 +96,6 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

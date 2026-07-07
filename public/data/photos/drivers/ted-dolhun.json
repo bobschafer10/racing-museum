@@ -8,7 +8,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1990_ted-dolhun_bob-schafer_photo_015.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "015"
+    "sequence": "15"
   },
   {
     "fileName": "hales-corners-speedway_1990_ted-dolhun_bob-schafer_photo_027.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_ted-dolhun_bob-schafer_photo_12474.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_ted-dolhun_unknown-photographer_photo_003.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "leos-speedway_unknown-year_ted-dolhun_unknown-photographer_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_ted-dolhun_bob-greuel_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1997_ted-dolhun_dan-lewis_photo_001.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_lee-johnson_photo_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_003.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_005.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_006.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_007.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_008.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_009.jpg",
@@ -173,7 +173,18 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_2891.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_2891.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ted-dolhun_unknown-photographer_photo_2891.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ted-dolhun",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2891"
   },
   {
     "fileName": "unknown-track_unknown-year_ted-dolhun_weber-brothers_photo_002.jpg",
@@ -184,6 +195,6 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

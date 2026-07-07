@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "freeport-raceway-park_unknown-year_arnie-gardner_dave-eberle_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_arnie-gardner_dave-eberle_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_arnie-gardner_dave-eberle_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "arnie-gardner",
+    "photographerSlug": "dave-eberle",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "hales-corners-speedway_unknown-year_arnie-gardner_joe-slack_post_001.jpg",
     "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_arnie-gardner_joe-slack_post_001.jpg",
     "publicPath": "/photos/hales-corners-speedway_unknown-year_arnie-gardner_joe-slack_post_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "arnie-gardner",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hibbing-raceway_unknown-year_arnie-gardner_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,18 @@
     "driverSlug": "arnie-gardner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "sante-fe-speedway_1981_arnie-gardner_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/sante-fe-speedway/1981/sante-fe-speedway_1981_arnie-gardner_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/sante-fe-speedway_1981_arnie-gardner_weber-brothers_photo_999.jpg",
+    "trackSlug": "sante-fe-speedway",
+    "year": "1981",
+    "driverSlug": "arnie-gardner",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_arnie-gardner_ron-thruman_post_001.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "arnie-gardner",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

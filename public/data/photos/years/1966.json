@@ -8,7 +8,7 @@
     "driverSlug": "bill-moore",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_1966_dick-cheseboro_dennis-satorius_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dick-cheseboro",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "griffith-park-speedway_1966_dave-fields_dennis-satorius_post_001.jpg",
@@ -30,7 +30,73 @@
     "driverSlug": "dave-fields",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1966_fran-ansell_michael-halbherr_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_fran-ansell_michael-halbherr_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_fran-ansell_michael-halbherr_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "fran-ansell",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "455"
+  },
+  {
+    "fileName": "hales-corners-speedway_1966_fuzzy-fassbender_glen-harper_photo_777.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_fuzzy-fassbender_glen-harper_photo_777.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_fuzzy-fassbender_glen-harper_photo_777.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "fuzzy-fassbender",
+    "photographerSlug": "glen-harper",
+    "creditType": "photo",
+    "sequence": "777"
+  },
+  {
+    "fileName": "hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_jack-aschenbrenner_russ-lake_photo_555.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "jack-aschenbrenner",
+    "photographerSlug": "russ-lake",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "hales-corners-speedway_1966_jack-brewer_michael-halbherr_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_jack-brewer_michael-halbherr_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_jack-brewer_michael-halbherr_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "jack-brewer",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "455"
+  },
+  {
+    "fileName": "hales-corners-speedway_1966_larry-nau_michael-halbherr_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_larry-nau_michael-halbherr_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_larry-nau_michael-halbherr_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "larry-nau",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "455"
+  },
+  {
+    "fileName": "hales-corners-speedway_1966_marty-sommers_michael-halbherr_post_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1966/hales-corners-speedway_1966_marty-sommers_michael-halbherr_post_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1966_marty-sommers_michael-halbherr_post_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1966",
+    "driverSlug": "marty-sommers",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "455"
   },
   {
     "fileName": "leos-speedway_1966_unknown-driver_bob-bergeron_photo_003.jpg",
@@ -41,7 +107,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-bergeron",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "milwaukee-mile_1966_bill-behling_pat-heaney_post_001.jpg",
@@ -52,7 +118,7 @@
     "driverSlug": "bill-behling",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1966_jim-hurtubise_doug-schellinger_post_333.jpg",
@@ -66,6 +132,17 @@
     "sequence": "333"
   },
   {
+    "fileName": "shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "storagePath": "photos/master/shawano-speedway/1966/shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "publicPath": "/photos/shawano-speedway_1966_pete-kielbasa_dennis-satorious_post_888.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1966",
+    "driverSlug": "pete-kielbasa",
+    "photographerSlug": "dennis-satorious",
+    "creditType": "post",
+    "sequence": "888"
+  },
+  {
     "fileName": "slinger-speedway_1966_tom-gruenwald_glen-harper_post_001.jpg",
     "storagePath": "photos/master/slinger-speedway/1966/slinger-speedway_1966_tom-gruenwald_glen-harper_post_001.jpg",
     "publicPath": "/photos/slinger-speedway_1966_tom-gruenwald_glen-harper_post_001.jpg",
@@ -74,29 +151,7 @@
     "driverSlug": "tom-gruenwald",
     "photographerSlug": "glen-harper",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1966/unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1966_everette-fox_ken-hutchens_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1966",
-    "driverSlug": "everette-fox",
-    "photographerSlug": "ken-hutchens",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1966_stan-gracyalny_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1966/unknown-track_1966_stan-gracyalny_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1966_stan-gracyalny_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1966",
-    "driverSlug": "stan-gracyalny",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1966_bob-anzinger_priscilla-pawlik-sexton_post_001.jpg",
@@ -107,7 +162,7 @@
     "driverSlug": "bob-anzinger",
     "photographerSlug": "priscilla-pawlik-sexton",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1966_jerry-meyer_dennis-satorius_post_001.jpg",
@@ -118,7 +173,7 @@
     "driverSlug": "jerry-meyer",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1966_tom-romo_dennis-satorius_post_001.jpg",
@@ -129,6 +184,6 @@
     "driverSlug": "tom-romo",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

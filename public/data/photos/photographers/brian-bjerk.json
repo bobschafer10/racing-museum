@@ -8,7 +8,18 @@
     "driverSlug": "tristan-swanson",
     "photographerSlug": "brian-bjerk",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_2026_tristan-swanson_brian-bjerk_post_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2026/dells-motor-speedway_2026_tristan-swanson_brian-bjerk_post_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2026_tristan-swanson_brian-bjerk_post_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2026",
+    "driverSlug": "tristan-swanson",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2026_al-strobel_brian-bjerk_photo_768.jpg",
@@ -31,5 +42,38 @@
     "photographerSlug": "brian-bjerk",
     "creditType": "post",
     "sequence": "773"
+  },
+  {
+    "fileName": "slinger-speedway_2026_michael-bilderback_brian-bjerk_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_michael-bilderback_brian-bjerk_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_michael-bilderback_brian-bjerk_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "michael-bilderback",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2026_nick-egan_brian-bjerk_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_nick-egan_brian-bjerk_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_nick-egan_brian-bjerk_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "nick-egan",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2026_penn-sauter_brian-bjerk_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_penn-sauter_brian-bjerk_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_penn-sauter_brian-bjerk_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "penn-sauter",
+    "photographerSlug": "brian-bjerk",
+    "creditType": "photo",
+    "sequence": "111"
   }
 ]

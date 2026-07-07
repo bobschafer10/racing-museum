@@ -8,7 +8,7 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "don-salzer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "minnesota-state-fair_unknown-year_bob-jusola_don-salzer_post_333.jpg",
@@ -33,26 +33,15 @@
     "sequence": "320"
   },
   {
-    "fileName": "unknown-track_1978_bob-jusola_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_bob-jusola_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_bob-jusola_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_bob-jusola_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_john-vass_photo_001.jpg",
     "trackSlug": "unknown-track",
-    "year": "1978",
+    "year": "unknown-year",
     "driverSlug": "bob-jusola",
-    "photographerSlug": "unknown-photographer",
+    "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_bob-jusola_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_bob-jusola_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_bob-jusola_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "bob-jusola",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola_john-vass_photo_001.jpg",
@@ -63,7 +52,18 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_john-vass_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_john-vass_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_john-vass_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola_john-vass_photo_002.jpg",
@@ -74,7 +74,29 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_john-vass_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_john-vass_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_john-vass_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_john-vass_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_john-vass_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "john-vass",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola_mcclain-racing_photo_001.jpg",
@@ -85,7 +107,29 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "mcclain-racing",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_mcclain-racing_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_mcclain-racing_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_mcclain-racing_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "mcclain-racing",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_mcclain-racing_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_mcclain-racing_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_mcclain-racing_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "mcclain-racing",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola_ron-thruman_photo_001.jpg",
@@ -96,7 +140,29 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "ron-thruman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_ron-thruman_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_ron-thruman_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_ron-thruman_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_ron-thruman_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_ron-thruman_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_ron-thruman_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_002.jpg",
@@ -107,7 +173,29 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_003.jpg",
@@ -118,7 +206,29 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_004.jpg",
@@ -129,7 +239,29 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-jusola_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-jusola",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-jusola_dennis-satorius_post_001.jpg",
@@ -140,7 +272,7 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-jusola_keith-vercauteren_post_001.jpg",
@@ -151,7 +283,7 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-jusola_ron-nelson_post_001.jpg",
@@ -162,7 +294,7 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "ron-nelson",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-jusola_unknown-photographer_photo_001.jpg",
@@ -173,6 +305,6 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

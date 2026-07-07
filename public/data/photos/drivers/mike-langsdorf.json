@@ -8,7 +8,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_mike-langsdorf_bob-schafer_photo_004.jpg",
@@ -19,18 +19,40 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
-    "fileName": "capital-super-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
+    "fileName": "capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_photo_222.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_photo_222.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_photo_222.jpg",
     "trackSlug": "capital-super-speedway",
     "year": "unknown-year",
     "driverSlug": "mike-langsdorf",
-    "photographerSlug": "kevin-wisniewski",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_photo_242.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_photo_242.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_photo_242.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-langsdorf",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "242"
+  },
+  {
+    "fileName": "capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_post_333.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_post_333.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_mike-langsdorf_charlie-spry_post_333.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "mike-langsdorf",
+    "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
     "fileName": "columbus-151-speedway_1998_mike-langsdorf_jeff-gilhart_photo_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2000_mike-langsdorf_jeff-gilhart_photo_001.jpg",
@@ -52,7 +74,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_mike-langsdorf_john-waters_post_001.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "john-waters",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
@@ -74,7 +96,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway-wi_unknown-year_mike-langsdorf_charlie-spry-post_001.jpg",
@@ -83,20 +105,9 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "mike-langsdorf",
-    "photographerSlug": "charlie-spry-post",
-    "creditType": "001",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_1991_mike-langsdorf_jeff-gilhart_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/1991/lacrosse-interstate-speedway_1991_mike-langsdorf_jeff-gilhart_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_1991_mike-langsdorf_jeff-gilhart_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "1991",
-    "driverSlug": "mike-langsdorf",
-    "photographerSlug": "jeff-gilhart",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_mike-langsdorf_unknown-photographer_photo_001.jpg",
@@ -107,18 +118,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1982_mike-langsdorf_mark-vanveghel_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1982/unknown-track_1982_mike-langsdorf_mark-vanveghel_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1982_mike-langsdorf_mark-vanveghel_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1982",
-    "driverSlug": "mike-langsdorf",
-    "photographerSlug": "mark-vanveghel",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-langsdorf_slinger-kevin-wisniewski_post_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "slinger-kevin-wisniewski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-langsdorf_unknown-photographer_photo_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-langsdorf_pat-heaney_post_001.jpg",
@@ -151,6 +151,6 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "larry-karcz-jr",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "seymour-speedway_unknown-year_larry-karcz-jr_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/seymour-speedway/unknown-year/seymour-speedway_unknown-year_larry-karcz-jr_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/seymour-speedway_unknown-year_larry-karcz-jr_unknown-photographer_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "larry-karcz-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_larry-karcz-jr_unknown-photographer_photo_001.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "larry-karcz-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

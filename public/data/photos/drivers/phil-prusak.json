@@ -8,7 +8,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "cedar-lake-speedway_unknown-year_phil-prusak_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,18 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "steele-county-fairgrounds_unknown-year_phil-prusak_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_phil-prusak_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_phil-prusak_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "unknown-year",
+    "driverSlug": "phil-prusak",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "superior-speedway_unknown-year_phil-prusak_unknown-photographer_photo_001.jpg",
@@ -30,18 +41,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1974_phil-prusak_robert-hoff_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1974/unknown-track_1974_phil-prusak_robert-hoff_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1974_phil-prusak_robert-hoff_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1974",
-    "driverSlug": "phil-prusak",
-    "photographerSlug": "robert-hoff",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_missy-lushinsky_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_pete-vercauteren_photo_001.jpg",
@@ -63,7 +63,18 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_phil-prusak_phil-prusak_photo_1934.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_phil-prusak_phil-prusak_photo_1934.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_phil-prusak_phil-prusak_photo_1934.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "phil-prusak",
+    "photographerSlug": "phil-prusak",
+    "creditType": "photo",
+    "sequence": "1934"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_003.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_004.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_006.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_007.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_008.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_009.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_010.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "010"
+    "sequence": "10"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_011.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "011"
+    "sequence": "11"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_012.jpg",
@@ -162,7 +173,7 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_014.jpg",
@@ -173,6 +184,17 @@
     "driverSlug": "phil-prusak",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "014"
+    "sequence": "14"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_1927.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_1927.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_phil-prusak_unknown-photographer_photo_1927.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "phil-prusak",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1927"
   }
 ]

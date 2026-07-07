@@ -1,14 +1,14 @@
 [
   {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_grant-wilson_father-grubba_photo_333.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_grant-wilson_father-grubba_photo_333.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_grant-wilson_father-grubba_photo_333.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
+    "fileName": "capital-super-speedway_1981_grant-wilson_charlie-spry_photo_444.jpg",
+    "storagePath": "photos/master/capital-super-speedway/1981/capital-super-speedway_1981_grant-wilson_charlie-spry_photo_444.jpg",
+    "publicPath": "/photos/capital-super-speedway_1981_grant-wilson_charlie-spry_photo_444.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "1981",
     "driverSlug": "grant-wilson",
-    "photographerSlug": "father-grubba",
+    "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "333"
+    "sequence": "444"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_grant-wilson_joe-slack_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "grant-wilson",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_unknown-year_grant-wilson_john-alft_post_001.jpg",
@@ -30,18 +30,7 @@
     "driverSlug": "grant-wilson",
     "photographerSlug": "john-alft",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1978_grant-wilson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1978/unknown-track_1978_grant-wilson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1978_grant-wilson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1978",
-    "driverSlug": "grant-wilson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_grant-wilson_unknown-photographer_photo_5366.jpg",

@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "hales-corners-speedway_1963_bob-zynda_pat-heaney_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1963/hales-corners-speedway_1963_bob-zynda_pat-heaney_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1963_bob-zynda_pat-heaney_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1963",
+    "driverSlug": "bob-zynda",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
@@ -8,6 +19,39 @@
     "driverSlug": "bob-zynda",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-zynda",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-zynda",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-zynda_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-zynda",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

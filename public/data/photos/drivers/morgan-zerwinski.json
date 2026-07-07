@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2024/slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2024",
+    "driverSlug": "morgan-zerwinski",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_morgan-zerwinski_morgan-zerwinski_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_morgan-zerwinski_morgan-zerwinski_post_111.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_morgan-zerwinski_morgan-zerwinski_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "morgan-zerwinski",
+    "photographerSlug": "morgan-zerwinski",
+    "creditType": "post",
+    "sequence": "111"
+  }
+]

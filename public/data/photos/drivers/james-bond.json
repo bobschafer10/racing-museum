@@ -1,14 +1,14 @@
 [
   {
-    "fileName": "raceway-park-il_unknown-year_james-bond_dennis-burgeson_post_001.jpg",
-    "storagePath": "photos/master/raceway-park-il/unknown-year/raceway-park-il_unknown-year_james-bond_dennis-burgeson_post_001.jpg",
-    "publicPath": "/photos/raceway-park-il_unknown-year_james-bond_dennis-burgeson_post_001.jpg",
-    "trackSlug": "raceway-park-il",
+    "fileName": "raceway-park-il-il_unknown-year_james-bond_raceway-park-history_post_555.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/unknown-year/raceway-park-il-il_unknown-year_james-bond_raceway-park-history_post_555.jpg",
+    "publicPath": "/photos/raceway-park-il-il_unknown-year_james-bond_raceway-park-history_post_555.jpg",
+    "trackSlug": "raceway-park-il-il",
     "year": "unknown-year",
     "driverSlug": "james-bond",
-    "photographerSlug": "dennis-burgeson",
+    "photographerSlug": "raceway-park-history",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "555"
   },
   {
     "fileName": "rockford-speedway_1980_james-bond_weber-brothers_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "james-bond",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
@@ -30,17 +30,17 @@
     "driverSlug": "james-bond",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_james-bond_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "sante-fe-speedway_unknown-year_james-bond_raceway-park-history_post_888.jpg",
+    "storagePath": "photos/master/sante-fe-speedway/unknown-year/sante-fe-speedway_unknown-year_james-bond_raceway-park-history_post_888.jpg",
+    "publicPath": "/photos/sante-fe-speedway_unknown-year_james-bond_raceway-park-history_post_888.jpg",
+    "trackSlug": "sante-fe-speedway",
     "year": "unknown-year",
     "driverSlug": "james-bond",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "888"
   }
 ]

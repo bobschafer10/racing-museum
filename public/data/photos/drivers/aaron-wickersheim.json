@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_aaron-wickersheim_unknown-photographer_photo_334.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "aaron-wickersheim",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
     "fileName": "shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
     "storagePath": "photos/master/shawano-speedway/2010/shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
     "publicPath": "/photos/shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
@@ -8,17 +19,6 @@
     "driverSlug": "aaron-wickersheim",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_aaron-wickersheim_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_aaron-wickersheim_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_aaron-wickersheim_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "aaron-wickersheim",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

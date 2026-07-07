@@ -8,7 +8,7 @@
     "driverSlug": "sid-kittleson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_025.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "sid-kittleson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "025"
+    "sequence": "25"
   },
   {
     "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_027.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "sid-kittleson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "027"
+    "sequence": "27"
   },
   {
     "fileName": "unknown-track_unknown-year_sid-kittleson_ryan-aho_post_061.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "sid-kittleson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "061"
+    "sequence": "61"
   }
 ]

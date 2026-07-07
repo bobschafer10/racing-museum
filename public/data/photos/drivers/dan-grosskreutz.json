@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/1990/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1990",
+    "driverSlug": "dan-grosskreutz",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-grosskreutz",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "shawano-speedway_unknown-year_dan-grosskreutz_scott-owen_post_001.jpg",
     "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_dan-grosskreutz_scott-owen_post_001.jpg",
     "publicPath": "/photos/shawano-speedway_unknown-year_dan-grosskreutz_scott-owen_post_001.jpg",
@@ -8,6 +30,6 @@
     "driverSlug": "dan-grosskreutz",
     "photographerSlug": "scott-owen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

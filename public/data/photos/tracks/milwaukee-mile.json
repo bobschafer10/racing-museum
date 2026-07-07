@@ -19,7 +19,7 @@
     "driverSlug": "marshall-teague",
     "photographerSlug": "wally-kroncke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1953_unknown-driver_wally-kroncke_post_323.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "darrell-dake",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1960_ed-snow_stan-kalwasinski_post_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "ed-snow",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1962_aj-foyt_pete-fileca_post_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1965_sal-tovella_wayne-bryant_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "wayne-bryant",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1966_bill-behling_pat-heaney_post_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "bill-behling",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1966_jim-hurtubise_doug-schellinger_post_333.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "tom-klippel",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1969_terry-nichels_dave-schwartz_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "terry-nichels",
     "photographerSlug": "dave-schwartz",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1970_al-unser_unknown-photographer_photo_333.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "art-pollard",
     "photographerSlug": "tom-kierzek",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1971_al-unser_pat-heaney_post_333.jpg",
@@ -162,7 +162,18 @@
     "driverSlug": "dick-beinlich",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1972_bentley-warren_scott-krueger_post_999.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1972/milwaukee-mile_1972_bentley-warren_scott-krueger_post_999.jpg",
+    "publicPath": "/photos/milwaukee-mile_1972_bentley-warren_scott-krueger_post_999.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1972",
+    "driverSlug": "bentley-warren",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "999"
   },
   {
     "fileName": "milwaukee-mile_1972_ed-hoffman_pete-fileca_post_001.jpg",
@@ -173,7 +184,29 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1972_ramo-stott_scott-krueger_photo_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1972/milwaukee-mile_1972_ramo-stott_scott-krueger_photo_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_1972_ramo-stott_scott-krueger_photo_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1972",
+    "driverSlug": "ramo-stott",
+    "photographerSlug": "scott-krueger",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "milwaukee-mile_1973_daryl-fiene_michael-halbherr_post_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1973/milwaukee-mile_1973_daryl-fiene_michael-halbherr_post_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_1973_daryl-fiene_michael-halbherr_post_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1973",
+    "driverSlug": "daryl-fiene",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "333"
   },
   {
     "fileName": "milwaukee-mile_1974_bobby-unser_mike-napierala_photo_001.jpg",
@@ -184,7 +217,7 @@
     "driverSlug": "bobby-unser",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1974_frank-freda_mike-napierala_photo_001.jpg",
@@ -195,7 +228,7 @@
     "driverSlug": "frank-freda",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1974_terry-ryan_mike-napierala_photo_001.jpg",
@@ -206,7 +239,18 @@
     "driverSlug": "terry-ryan",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1975_bob-brevak_weber-brothers-photo_344.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1975/milwaukee-mile_1975_bob-brevak_weber-brothers-photo_344.jpg",
+    "publicPath": "/photos/milwaukee-mile_1975_bob-brevak_weber-brothers-photo_344.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1975",
+    "driverSlug": "bob-brevak",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "344"
   },
   {
     "fileName": "milwaukee-mile_1975_bob-lewis_pace-car_photo_001.jpg",
@@ -217,7 +261,7 @@
     "driverSlug": "bob-lewis",
     "photographerSlug": "pace-car",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
@@ -228,7 +272,7 @@
     "driverSlug": "ramo-stott",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1976_fred-zack_ralph-hibbard_post_001.jpg",
@@ -239,7 +283,7 @@
     "driverSlug": "fred-zack",
     "photographerSlug": "ralph-hibbard",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1976_norm-nelson_wally-kroncke_post_001.jpg",
@@ -250,7 +294,7 @@
     "driverSlug": "norm-nelson",
     "photographerSlug": "wally-kroncke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1978_bobby-allison_eugene-bryan_post_001.jpg",
@@ -261,7 +305,7 @@
     "driverSlug": "bobby-allison",
     "photographerSlug": "eugene-bryan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1978_tom-reffner_steve-zautke_post_001.jpg",
@@ -272,7 +316,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "steve-zautke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1979_aj-foyt_russ-lake_photo_001.jpg",
@@ -283,7 +327,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "russ-lake",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1979_joe-ruttman_unknown-credit_post_001.jpg",
@@ -294,7 +338,7 @@
     "driverSlug": "joe-ruttman",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_bill-venturini_weber-brothers_photo_001.jpg",
@@ -305,7 +349,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_gene-richards_weber-brothers_photo_001.jpg",
@@ -316,7 +360,7 @@
     "driverSlug": "gene-richards",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_jack-aschnebrenner_weber-brothers_photo_001.jpg",
@@ -327,7 +371,7 @@
     "driverSlug": "jack-aschnebrenner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1980_mike-wallace_weber-brothers_photo_001.jpg",
@@ -338,7 +382,7 @@
     "driverSlug": "mike-wallace",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1981_butch-hartman_weber-brothers_photo_001.jpg",
@@ -349,7 +393,18 @@
     "driverSlug": "butch-hartman",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1981_butch-hartman_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_butch-hartman_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1981_butch-hartman_weber-brothers_photo_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1981",
+    "driverSlug": "butch-hartman",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_1981_dave-pinkowski_weber-brothers_photo_111.jpg",
@@ -363,6 +418,39 @@
     "sequence": "111"
   },
   {
+    "fileName": "milwaukee-mile_1981_ed-evans_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_ed-evans_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/milwaukee-mile_1981_ed-evans_weber-brothers_photo_334.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1981",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "milwaukee-mile_1981_ed-evans_weber-brothers_photo_335.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_ed-evans_weber-brothers_photo_335.jpg",
+    "publicPath": "/photos/milwaukee-mile_1981_ed-evans_weber-brothers_photo_335.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1981",
+    "driverSlug": "ed-evans",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "335"
+  },
+  {
+    "fileName": "milwaukee-mile_1981_george-scheffler_weber-brothers_photo_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_george-scheffler_weber-brothers_photo_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_1981_george-scheffler_weber-brothers_photo_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1981",
+    "driverSlug": "george-scheffler",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "milwaukee-mile_1981_jim-hendricks_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_jim-hendricks_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/milwaukee-mile_1981_jim-hendricks_weber-brothers_photo_001.jpg",
@@ -371,7 +459,7 @@
     "driverSlug": "jim-hendricks",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1981_joe-gresk_weber-brothers_photo_001.jpg",
@@ -382,7 +470,18 @@
     "driverSlug": "joe-gresk",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1981_rick-anderson_weber-brothers_photo_111.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_rick-anderson_weber-brothers_photo_111.jpg",
+    "publicPath": "/photos/milwaukee-mile_1981_rick-anderson_weber-brothers_photo_111.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1981",
+    "driverSlug": "rick-anderson",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "milwaukee-mile_1981_russ-peterson_unknown-credit_post_001.jpg",
@@ -393,7 +492,29 @@
     "driverSlug": "russ-peterson",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1981_ryl-magoon_pat-heaney_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_ryl-magoon_pat-heaney_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1981_ryl-magoon_pat-heaney_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1981",
+    "driverSlug": "ryl-magoon",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_1981_tom-dowd_weber-brothers_photo_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1981/milwaukee-mile_1981_tom-dowd_weber-brothers_photo_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_1981_tom-dowd_weber-brothers_photo_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1981",
+    "driverSlug": "tom-dowd",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "milwaukee-mile_1982_al-schill_ken-koppa_post_001.jpg",
@@ -404,7 +525,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_bill-stephenson_ken-koppa_post_001.jpg",
@@ -415,7 +536,18 @@
     "driverSlug": "bill-stephenson",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1982_bill-venturini_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1982/milwaukee-mile_1982_bill-venturini_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_1982_bill-venturini_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1982",
+    "driverSlug": "bill-venturini",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
   },
   {
     "fileName": "milwaukee-mile_1982_bob-brevak_ken-koppa_post_001.jpg",
@@ -426,7 +558,18 @@
     "driverSlug": "bob-brevak",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1982_bob-schacht_weber-brothers_photo_335.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1982/milwaukee-mile_1982_bob-schacht_weber-brothers_photo_335.jpg",
+    "publicPath": "/photos/milwaukee-mile_1982_bob-schacht_weber-brothers_photo_335.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1982",
+    "driverSlug": "bob-schacht",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "335"
   },
   {
     "fileName": "milwaukee-mile_1982_clark-dwyer_ken-koppa_post_001.jpg",
@@ -437,7 +580,18 @@
     "driverSlug": "clark-dwyer",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1982_danny-sullivan_weber-brothers_photo_225.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1982/milwaukee-mile_1982_danny-sullivan_weber-brothers_photo_225.jpg",
+    "publicPath": "/photos/milwaukee-mile_1982_danny-sullivan_weber-brothers_photo_225.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1982",
+    "driverSlug": "danny-sullivan",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "225"
   },
   {
     "fileName": "milwaukee-mile_1982_don-collins_ken-koppa_post_001.jpg",
@@ -448,7 +602,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_fred-zack_weber-brothers_photo_001.jpg",
@@ -459,7 +613,7 @@
     "driverSlug": "fred-zack",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_glen-ohlman_ken-koppa_post_001.jpg",
@@ -470,7 +624,7 @@
     "driverSlug": "glen-ohlman",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_jeep-pflum_mark-vanveghel_photo_001.jpg",
@@ -481,7 +635,7 @@
     "driverSlug": "jeep-pflum",
     "photographerSlug": "mark-vanveghel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_jody-ridley_ken-koppa_post_001.jpg",
@@ -492,7 +646,7 @@
     "driverSlug": "jody-ridley",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_john-ziegler_ken-koppa_post_001.jpg",
@@ -503,7 +657,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_larry-nau_weber-brothers_photo_001.jpg",
@@ -514,7 +668,7 @@
     "driverSlug": "larry-nau",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1982_steve-moll_ken-koppa_post_001.jpg",
@@ -525,7 +679,7 @@
     "driverSlug": "steve-moll",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1983_dennis-lampman_weber-brothers_photo_001.jpg",
@@ -536,7 +690,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1983_dennis-lampman_weber-brothers_photo_002.jpg",
@@ -547,7 +701,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_1983_don-collins_weber-brothers_photo_001.jpg",
@@ -558,7 +712,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1983_gary-balough_weber-brothers_photo_001.jpg",
@@ -569,7 +723,7 @@
     "driverSlug": "gary-balough",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1983_gene-harsch_weber-brothers_photo_115.jpg",
@@ -594,6 +748,17 @@
     "sequence": "115"
   },
   {
+    "fileName": "milwaukee-mile_1983_randy-couch_weber-brothers_photo_335.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1983/milwaukee-mile_1983_randy-couch_weber-brothers_photo_335.jpg",
+    "publicPath": "/photos/milwaukee-mile_1983_randy-couch_weber-brothers_photo_335.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1983",
+    "driverSlug": "randy-couch",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "335"
+  },
+  {
     "fileName": "milwaukee-mile_1983_terry-senneker_ken-koppa_post_001.jpg",
     "storagePath": "photos/master/milwaukee-mile/1983/milwaukee-mile_1983_terry-senneker_ken-koppa_post_001.jpg",
     "publicPath": "/photos/milwaukee-mile_1983_terry-senneker_ken-koppa_post_001.jpg",
@@ -602,7 +767,18 @@
     "driverSlug": "terry-senneker",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1984_billy-standridge_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1984/milwaukee-mile_1984_billy-standridge_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_1984_billy-standridge_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1984",
+    "driverSlug": "billy-standridge",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
   },
   {
     "fileName": "milwaukee-mile_1984_don-collins_weber-brothers_photo_001.jpg",
@@ -613,7 +789,18 @@
     "driverSlug": "don-collins",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1984/milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "publicPath": "/photos/milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1984",
+    "driverSlug": "rusty-wallace",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "777"
   },
   {
     "fileName": "milwaukee-mile_1985_al-schill_john-vass_photo_001.jpg",
@@ -624,7 +811,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1985_bill-venturini_ken-koppa_post_001.jpg",
@@ -635,7 +822,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "ken-koppa",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1985_dick-trickle_weber-brothers_photo_001.jpg",
@@ -646,7 +833,18 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1985_roy-atchison_dennis-tofte_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1985/milwaukee-mile_1985_roy-atchison_dennis-tofte_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1985_roy-atchison_dennis-tofte_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1985",
+    "driverSlug": "roy-atchison",
+    "photographerSlug": "dennis-tofte",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_1987_bob-frey_don-besch_photo_001.jpg",
@@ -657,7 +855,7 @@
     "driverSlug": "bob-frey",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_butch-miller_don-besch_photo_001.jpg",
@@ -668,7 +866,7 @@
     "driverSlug": "butch-miller",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_claude-leclerc_don-besch_photo_001.jpg",
@@ -679,7 +877,7 @@
     "driverSlug": "claude-leclerc",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_dave-jackson_don-besch_photo_001.jpg",
@@ -690,7 +888,7 @@
     "driverSlug": "dave-jackson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_dave-watson_don-besch_photo_001.jpg",
@@ -701,7 +899,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_dennis-miles_don-besch_photo_001.jpg",
@@ -712,7 +910,7 @@
     "driverSlug": "dennis-miles",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_dennis-vogel_don-besch_photo_001.jpg",
@@ -723,7 +921,7 @@
     "driverSlug": "dennis-vogel",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_doug-mayr_don-besch_photo_001.jpg",
@@ -734,7 +932,7 @@
     "driverSlug": "doug-mayr",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_ed-cooper_don-besch_photo_001.jpg",
@@ -745,7 +943,7 @@
     "driverSlug": "ed-cooper",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_gary-st-amant_don-besch_photo_001.jpg",
@@ -756,7 +954,7 @@
     "driverSlug": "gary-st-amant",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_gene-harsch_don-besch_photo_001.jpg",
@@ -767,7 +965,7 @@
     "driverSlug": "gene-harsch",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_jamie-aube_don-besch_photo_001.jpg",
@@ -778,7 +976,7 @@
     "driverSlug": "jamie-aube",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_jeff-neal_don-besch_photo_001.jpg",
@@ -789,7 +987,7 @@
     "driverSlug": "jeff-neal",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_john-wilson_don-besch_photo_001.jpg",
@@ -800,7 +998,7 @@
     "driverSlug": "john-wilson",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_ken-christensen_don-besch_photo_001.jpg",
@@ -811,7 +1009,7 @@
     "driverSlug": "ken-christensen",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_ken-lund_don-besch_photo_001.jpg",
@@ -822,7 +1020,7 @@
     "driverSlug": "ken-lund",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_kenny-wallace_don-besch_photo_001.jpg",
@@ -833,7 +1031,7 @@
     "driverSlug": "kenny-wallace",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_kent-stauffer_don-besch_photo_001.jpg",
@@ -844,7 +1042,7 @@
     "driverSlug": "kent-stauffer",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_larry-harris_don-besch_photo_001.jpg",
@@ -855,7 +1053,7 @@
     "driverSlug": "larry-harris",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_mike-rowe_don-besch_photo_001.jpg",
@@ -866,7 +1064,7 @@
     "driverSlug": "mike-rowe",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_milt-wright_don-besch_photo_001.jpg",
@@ -877,7 +1075,7 @@
     "driverSlug": "milt-wright",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_robbie-crouch_don-besch_photo_001.jpg",
@@ -888,7 +1086,7 @@
     "driverSlug": "robbie-crouch",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_robbie-reiser_don-besch_photo_001.jpg",
@@ -899,7 +1097,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_russ-urlin_don-besch_photo_001.jpg",
@@ -910,7 +1108,7 @@
     "driverSlug": "russ-urlin",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_steve-grissom_don-besch_photo_001.jpg",
@@ -921,7 +1119,7 @@
     "driverSlug": "steve-grissom",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_tom-harrington_don-besch_photo_001.jpg",
@@ -932,7 +1130,7 @@
     "driverSlug": "tom-harrington",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_tom-jones_don-besch_photo_001.jpg",
@@ -943,7 +1141,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1989_jay-sauter_bob-schafer_photo_13785.jpg",
@@ -1089,6 +1287,39 @@
     "sequence": "304"
   },
   {
+    "fileName": "milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1998/milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1998",
+    "driverSlug": "joel-clossey",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1998/milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1998",
+    "driverSlug": "steve-moenck",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2001/milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2001",
+    "driverSlug": "steve-strasburg",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "milwaukee-mile_2009_kelly-bires_bob-greuel_photo_001.jpg",
     "storagePath": "photos/master/milwaukee-mile/2009/milwaukee-mile_2009_kelly-bires_bob-greuel_photo_001.jpg",
     "publicPath": "/photos/milwaukee-mile_2009_kelly-bires_bob-greuel_photo_001.jpg",
@@ -1097,7 +1328,7 @@
     "driverSlug": "kelly-bires",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2011_dave-steele_todd-shannon_post_001.jpg",
@@ -1108,7 +1339,7 @@
     "driverSlug": "dave-steele",
     "photographerSlug": "todd-shannon",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2011_kyle-larson_todd-shannon_post_001.jpg",
@@ -1119,7 +1350,7 @@
     "driverSlug": "kyle-larson",
     "photographerSlug": "todd-shannon",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2019_danny-church_weber-brothers_photo_001.jpg",
@@ -1130,7 +1361,7 @@
     "driverSlug": "danny-church",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2021_bobby-gutknecht_weber-brothers_photo_001.jpg",
@@ -1141,7 +1372,51 @@
     "driverSlug": "bobby-gutknecht",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_2022_bill-prietzel_weber-brothers_photo_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2022/milwaukee-mile_2022_bill-prietzel_weber-brothers_photo_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_2022_bill-prietzel_weber-brothers_photo_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2022",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "milwaukee-mile_2022_kevin-knuese_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2022/milwaukee-mile_2022_kevin-knuese_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_2022_kevin-knuese_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2022",
+    "driverSlug": "kevin-knuese",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "milwaukee-mile_2022_kody-hubred_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2022/milwaukee-mile_2022_kody-hubred_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_2022_kody-hubred_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2022",
+    "driverSlug": "kody-hubred",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "milwaukee-mile_2022_zach-riddle_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2022/milwaukee-mile_2022_zach-riddle_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/milwaukee-mile_2022_zach-riddle_weber-brothers_photo_334.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2022",
+    "driverSlug": "zach-riddle",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "milwaukee-mile_2023_harley-jankowski_weber-brothers_photo_001.jpg",
@@ -1152,7 +1427,7 @@
     "driverSlug": "harley-jankowski",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2023_keegan-bush_weber-brothers_photo_001.jpg",
@@ -1163,7 +1438,7 @@
     "driverSlug": "keegan-bush",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_2023_kyle-stark_weber-brothers_photo_001.jpg",
@@ -1174,7 +1449,29 @@
     "driverSlug": "kyle-stark",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_2023_levon-vandergeest_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2023/milwaukee-mile_2023_levon-vandergeest_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_2023_levon-vandergeest_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2023",
+    "driverSlug": "levon-vandergeest",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "milwaukee-mile_2023_rick-corso_weber-brothers_photo_111.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2023/milwaukee-mile_2023_rick-corso_weber-brothers_photo_111.jpg",
+    "publicPath": "/photos/milwaukee-mile_2023_rick-corso_weber-brothers_photo_111.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2023",
+    "driverSlug": "rick-corso",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_aj-foyt_dan-radig_post_001.jpg",
@@ -1185,7 +1482,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_aj-foyt_unknown-photographer_photo_001.jpg",
@@ -1196,7 +1493,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_aj-foyt_weber-brothers_photo_001.jpg",
@@ -1207,7 +1504,7 @@
     "driverSlug": "aj-foyt",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-schill_rpm_photo_001.jpg",
@@ -1218,7 +1515,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-schill_unknown-photographer_photo_001.jpg",
@@ -1229,7 +1526,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-schill_unknown-photographer_photo_354.jpg",
@@ -1251,7 +1548,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_al-unser-jr_weber-brothers_photo_222.jpg",
@@ -1295,7 +1592,7 @@
     "driverSlug": "alan-sheppard",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_alan-sheppard_pat-heaney_post_001.jpg",
@@ -1306,7 +1603,7 @@
     "driverSlug": "alan-sheppard",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_arnie-christen_77-weber_photo_001.jpg",
@@ -1317,7 +1614,18 @@
     "driverSlug": "arnie-christen",
     "photographerSlug": "77-weber",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_art-bormet_scott-krueger_post_766.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_art-bormet_scott-krueger_post_766.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_art-bormet_scott-krueger_post_766.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "art-bormet",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "766"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_art-sommers_bob-schafer_photo_13813.jpg",
@@ -1339,7 +1647,7 @@
     "driverSlug": "bay-darnell",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bay-darnell_weber-brothers_photo_001.jpg",
@@ -1350,7 +1658,7 @@
     "driverSlug": "bay-darnell",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bill-lutz_pat-heaney_post_001.jpg",
@@ -1361,7 +1669,7 @@
     "driverSlug": "bill-lutz",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bill-venturini_don-besch_photo_001.jpg",
@@ -1372,7 +1680,7 @@
     "driverSlug": "bill-venturini",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bill-venturini_father-grubba_photo_333.jpg",
@@ -1392,9 +1700,9 @@
     "trackSlug": "milwaukee-mile",
     "year": "unknown-year",
     "driverSlug": "billy-kuhn",
-    "photographerSlug": "photo",
-    "creditType": "004",
-    "sequence": "001"
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_001.jpg",
@@ -1405,7 +1713,7 @@
     "driverSlug": "bob-brevak",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-brevak_weber-brothers_photo_002.jpg",
@@ -1416,7 +1724,7 @@
     "driverSlug": "bob-brevak",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-dotter_don-besch_photo_001.jpg",
@@ -1427,7 +1735,7 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-iverson_john-vass_photo_001.jpg",
@@ -1438,7 +1746,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-menor_unknown-photographer_photo_001.jpg",
@@ -1449,7 +1757,7 @@
     "driverSlug": "bob-menor",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-schacht_don-besch_post_001.jpg",
@@ -1460,7 +1768,7 @@
     "driverSlug": "bob-schacht",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-schacht_unknown-photographer_photo_222.jpg",
@@ -1482,7 +1790,7 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "032"
+    "sequence": "32"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-senneker_bob-schafer_photo_066.jpg",
@@ -1493,7 +1801,7 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "066"
+    "sequence": "66"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-senneker_bob-schafer_photo_149.jpg",
@@ -1548,7 +1856,7 @@
     "driverSlug": "bob-sensiba",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bob-strait_pat-heaney_post_001.jpg",
@@ -1559,7 +1867,7 @@
     "driverSlug": "bob-strait",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bobby-allison_father-grubba_photo_333.jpg",
@@ -1603,7 +1911,7 @@
     "driverSlug": "bobby-marshman",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bobby-unser_unknown-photographer_photo_001.jpg",
@@ -1614,7 +1922,7 @@
     "driverSlug": "bobby-unser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bobby-unser_unknown-photographer_photo_002.jpg",
@@ -1625,7 +1933,7 @@
     "driverSlug": "bobby-unser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_bruce-odell_unknown-photographer_photo_350.jpg",
@@ -1658,7 +1966,7 @@
     "driverSlug": "butch-hartman-roger-mccluskey",
     "photographerSlug": "11-pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_butch-mierendorf_kevin-wisniewski_photo_001.jpg",
@@ -1669,7 +1977,7 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_butch-miller_bob-elman_photo_006.jpg",
@@ -1680,7 +1988,7 @@
     "driverSlug": "butch-miller",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_butch-miller_bob-schafer_photo_13924.jpg",
@@ -1735,7 +2043,7 @@
     "driverSlug": "danny-darnell",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dave-jackson_bob-schafer_photo_13906.jpg",
@@ -1779,7 +2087,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dave-weltmeyer_don-besch_post_001.jpg",
@@ -1790,7 +2098,7 @@
     "driverSlug": "dave-weltmeyer",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_davey-allison_don-besch_photo_001.jpg",
@@ -1801,7 +2109,7 @@
     "driverSlug": "davey-allison",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dean-roper_don-besch_photo_001.jpg",
@@ -1812,7 +2120,7 @@
     "driverSlug": "dean-roper",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dean-roper_rpm_photo_001.jpg",
@@ -1823,7 +2131,7 @@
     "driverSlug": "dean-roper",
     "photographerSlug": "rpm",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dennis-lampman_unknown-photographer_photo_003.jpg",
@@ -1834,7 +2142,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dennis-lampman_unknown-photographer_photo_004.jpg",
@@ -1845,7 +2153,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dennis-vogel_bob-schafer_photo_13920.jpg",
@@ -1889,7 +2197,7 @@
     "driverSlug": "dick-taylor",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dick-trickle_bob-schafer_photo_14051.jpg",
@@ -1933,7 +2241,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dick-trickle_tom-loos_photo_001.jpg",
@@ -1944,7 +2252,73 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_455.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_455.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_455.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "trickle-memorial",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_456.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_456.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_456.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "trickle-memorial",
+    "creditType": "photo",
+    "sequence": "456"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_457.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_457.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_457.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "trickle-memorial",
+    "creditType": "photo",
+    "sequence": "457"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_458.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_458.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_458.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "trickle-memorial",
+    "creditType": "photo",
+    "sequence": "458"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_459.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_459.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_459.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "trickle-memorial",
+    "creditType": "photo",
+    "sequence": "459"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_460.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_460.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dick-trickle_trickle-memorial_photo_460.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "trickle-memorial",
+    "creditType": "photo",
+    "sequence": "460"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dick-trickle_unknown-photographer_photo_001.jpg",
@@ -1955,7 +2329,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dick-trickle_unknown-photographer_photo_002.jpg",
@@ -1966,7 +2340,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_dick-trickle_unknown-photographer_photo_016.jpg",
@@ -1977,7 +2351,18 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "016"
+    "sequence": "16"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_dick-trickle_unknown-photographer_photo_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_dick-trickle_unknown-photographer_photo_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_dick-trickle_unknown-photographer_photo_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_don-collins_bob-schafer_photo_414.jpg",
@@ -1999,7 +2384,18 @@
     "driverSlug": "don-collins",
     "photographerSlug": "robert-robison",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_don-gregory_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_don-gregory_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_don-gregory_unknown-photographer_photo_111.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "don-gregory",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_don-marmor_don-besch_post_001.jpg",
@@ -2010,7 +2406,7 @@
     "driverSlug": "don-marmor",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_don-marmor_pat-heaney_post_001.jpg",
@@ -2021,7 +2417,7 @@
     "driverSlug": "don-marmor",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_don-rand_unknown-photographer_photo_344.jpg",
@@ -2043,7 +2439,7 @@
     "driverSlug": "don-white",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_don-white_mike-napierala_photo_001.jpg",
@@ -2054,7 +2450,7 @@
     "driverSlug": "don-white",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_don-white_unknown-photographer_photo_001.jpg",
@@ -2065,7 +2461,7 @@
     "driverSlug": "don-white",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_duane-pierson_don-besch_post_001.jpg",
@@ -2076,7 +2472,7 @@
     "driverSlug": "duane-pierson",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ed-hoffman_stan-kalwasinski_photo_115.jpg",
@@ -2098,7 +2494,7 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ed-hoffman_unknown-photographer_photo_002.jpg",
@@ -2109,7 +2505,7 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ed-hoffman_unknown-photographer_photo_003.jpg",
@@ -2120,7 +2516,7 @@
     "driverSlug": "ed-hoffman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_emmett-groves_pat-heaney_post_001.jpg",
@@ -2131,7 +2527,7 @@
     "driverSlug": "emmett-groves",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_fred-bender_unknown-photographer_photo_001.jpg",
@@ -2142,7 +2538,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_fred-bender_unknown-photographer_photo_352.jpg",
@@ -2156,6 +2552,17 @@
     "sequence": "352"
   },
   {
+    "fileName": "milwaukee-mile_unknown-year_fred-lorenzen_pat-heaney_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_fred-lorenzen_pat-heaney_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_fred-lorenzen_pat-heaney_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "fred-lorenzen",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "milwaukee-mile_unknown-year_fred-tovella_pat-heaney_post_001.jpg",
     "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_fred-tovella_pat-heaney_post_001.jpg",
     "publicPath": "/photos/milwaukee-mile_unknown-year_fred-tovella_pat-heaney_post_001.jpg",
@@ -2164,7 +2571,7 @@
     "driverSlug": "fred-tovella",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_fred-zack_don-besch_post_001.jpg",
@@ -2175,7 +2582,7 @@
     "driverSlug": "fred-zack",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gary-balough_kim-kemperman_post_001.jpg",
@@ -2186,7 +2593,7 @@
     "driverSlug": "gary-balough",
     "photographerSlug": "kim-kemperman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gary-bowsher_mike-napierala_photo_001.jpg",
@@ -2197,7 +2604,7 @@
     "driverSlug": "gary-bowsher",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gene-coleman_pete-fileca_post_001.jpg",
@@ -2208,7 +2615,7 @@
     "driverSlug": "gene-coleman",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gene-marmor_pete-fileca_post_001.jpg",
@@ -2219,7 +2626,7 @@
     "driverSlug": "gene-marmor",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gene-marmor_unknown-credit_post_001.jpg",
@@ -2230,7 +2637,7 @@
     "driverSlug": "gene-marmor",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gordie-blankenship_unknown-photographer_photo_222.jpg",
@@ -2252,7 +2659,7 @@
     "driverSlug": "gordy-blankenship",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_001.jpg",
@@ -2263,7 +2670,7 @@
     "driverSlug": "gordy-blankenship",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gordy-blankenship_weber-brothers_photo_002.jpg",
@@ -2274,7 +2681,7 @@
     "driverSlug": "gordy-blankenship",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_gregg-carlson_unknown-photographer_photo_001.jpg",
@@ -2285,7 +2692,7 @@
     "driverSlug": "gregg-carlson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_harold-fair_bob-schafer_photo_12749.jpg",
@@ -2318,7 +2725,7 @@
     "driverSlug": "j-j-smith",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_jack-bowsher_21-weber_photo_001.jpg",
@@ -2329,7 +2736,7 @@
     "driverSlug": "jack-bowsher",
     "photographerSlug": "21-weber",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_jack-bowsher_unknown-photographer_photo_001.jpg",
@@ -2340,7 +2747,7 @@
     "driverSlug": "jack-bowsher",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_jake-jump_19-weber_photo_001.jpg",
@@ -2351,7 +2758,18 @@
     "driverSlug": "jake-jump",
     "photographerSlug": "19-weber",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_jamie-aube_pat-heaney_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_jamie-aube_pat-heaney_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_jamie-aube_pat-heaney_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "jamie-aube",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_jay-sauter_bob-schafer_photo_278.jpg",
@@ -2373,7 +2791,7 @@
     "driverSlug": "jeff-neal",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_jim-hurtubise_56-dan-radig_post_001.jpg",
@@ -2384,7 +2802,7 @@
     "driverSlug": "jim-hurtubise",
     "photographerSlug": "56-dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_jim-sauter_unknown-photographer_photo_333.jpg",
@@ -2406,7 +2824,7 @@
     "driverSlug": "jim-southard-milwaukee",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_joe-frasson_unknown-photographer_photo_001.jpg",
@@ -2417,7 +2835,7 @@
     "driverSlug": "joe-frasson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_joe-shear_unknown-photographer_photo_4765.jpg",
@@ -2431,6 +2849,17 @@
     "sequence": "4765"
   },
   {
+    "fileName": "milwaukee-mile_unknown-year_john-anderson_weber-brothers_photo_100.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_john-anderson_weber-brothers_photo_100.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_john-anderson_weber-brothers_photo_100.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "john-anderson",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "milwaukee-mile_unknown-year_john-boegemann_unknown-photographer_photo_001 (2).jpg",
     "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_john-boegemann_unknown-photographer_photo_001 (2).jpg",
     "publicPath": "/photos/milwaukee-mile_unknown-year_john-boegemann_unknown-photographer_photo_001 (2).jpg",
@@ -2439,7 +2868,7 @@
     "driverSlug": "john-boegemann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-boegemann_unknown-photographer_photo_001.jpg",
@@ -2450,7 +2879,18 @@
     "driverSlug": "john-boegemann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_john-champlin_ron-thruman_photo_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_john-champlin_ron-thruman_photo_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_john-champlin_ron-thruman_photo_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "john-champlin",
+    "photographerSlug": "ron-thruman",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-kennedy_pat-heaney_post_001.jpg",
@@ -2461,7 +2901,7 @@
     "driverSlug": "john-kennedy",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-knaus_john-vass_photo_001.jpg",
@@ -2472,7 +2912,7 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-knaus_unknown-photographer_photo_339.jpg",
@@ -2494,7 +2934,7 @@
     "driverSlug": "john-olsen",
     "photographerSlug": "ralph-hibbard",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-olson_bob-schafer_photo_249.jpg",
@@ -2516,7 +2956,7 @@
     "driverSlug": "john-rostek",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_john-ziegler_unknown-photographer_photo_001.jpg",
@@ -2527,7 +2967,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_johnny-benson_bob-schafer_photo_267.jpg",
@@ -2549,7 +2989,7 @@
     "driverSlug": "johnny-reimer",
     "photographerSlug": "mike-dunn",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_junior-hanley_bob-schafer_photo_13969.jpg",
@@ -2593,7 +3033,7 @@
     "driverSlug": "ken-rowley",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_kent-stauffer_bob-schafer_photo_225.jpg",
@@ -2615,7 +3055,7 @@
     "driverSlug": "larry-detjens",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_larry-detjens_unknown-photographer_photo_3433.jpg",
@@ -2648,7 +3088,7 @@
     "driverSlug": "larry-moore",
     "photographerSlug": "wally-kroncke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_larry-nau_don-besch_photo_001.jpg",
@@ -2659,7 +3099,7 @@
     "driverSlug": "larry-nau",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_larry-phillips_unknown-photographer_photo_001.jpg",
@@ -2670,7 +3110,18 @@
     "driverSlug": "larry-phillips",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nowak",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mark-marden_don-besch_post_001.jpg",
@@ -2681,7 +3132,7 @@
     "driverSlug": "mark-marden",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mark-marden_pat-heaney_post_001.jpg",
@@ -2692,7 +3143,18 @@
     "driverSlug": "mark-marden",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_mark-martin_al-lewis_post_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_mark-martin_al-lewis_post_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_mark-martin_al-lewis_post_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "mark-martin",
+    "photographerSlug": "al-lewis",
+    "creditType": "post",
+    "sequence": "333"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mark-martin_unknown-photographer_photo_001.jpg",
@@ -2703,7 +3165,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mike-eddy_bob-schafer_photo_075.jpg",
@@ -2714,7 +3176,7 @@
     "driverSlug": "mike-eddy",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "075"
+    "sequence": "75"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mike-eddy_bob-schafer_photo_14029.jpg",
@@ -2747,7 +3209,7 @@
     "driverSlug": "mike-eddy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mike-eddy_unknown-photographer_photo_003.jpg",
@@ -2758,7 +3220,7 @@
     "driverSlug": "mike-eddy",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mike-fry_don-besch_post_001.jpg",
@@ -2769,7 +3231,7 @@
     "driverSlug": "mike-fry",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_mike-miller_father-grubba_photo_333.jpg",
@@ -2791,7 +3253,7 @@
     "driverSlug": "mike-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_morie-delmore_unknown-photographer_photo_355.jpg",
@@ -2813,7 +3275,7 @@
     "driverSlug": "norm-nelson",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_parnelli-jones_dan-radig_post_001.jpg",
@@ -2824,7 +3286,7 @@
     "driverSlug": "parnelli-jones",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_pat-heaney_pat-heaney_post_001.jpg",
@@ -2835,7 +3297,7 @@
     "driverSlug": "pat-heaney",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_pat-schauer_unknown-photographer_photo_358.jpg",
@@ -2857,7 +3319,7 @@
     "driverSlug": "ramo-stott",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_randy-huffman_don-besch_photo_001.jpg",
@@ -2868,7 +3330,7 @@
     "driverSlug": "randy-huffman",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_randy-sweet_unknown-photographer_photo_359.jpg",
@@ -2912,7 +3374,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_red-swanberg_51-dan-radig_post_001.jpg",
@@ -2923,7 +3385,7 @@
     "driverSlug": "red-swanberg",
     "photographerSlug": "51-dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_rick-kleich_dan-radig_post_001.jpg",
@@ -2934,7 +3396,7 @@
     "driverSlug": "rick-kleich",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_robbie-reiser_bob-schafer_photo_258.jpg",
@@ -2956,7 +3418,7 @@
     "driverSlug": "rodger-ward",
     "photographerSlug": "1-dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_roger-drake_don-besch_post_001.jpg",
@@ -2967,7 +3429,7 @@
     "driverSlug": "roger-drake",
     "photographerSlug": "don-besch",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_roger-mccluskey_pete-fileca_post_001.jpg",
@@ -2978,7 +3440,7 @@
     "driverSlug": "roger-mccluskey",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_roger-regeth_96-dan-radig_post_001.jpg",
@@ -2989,7 +3451,7 @@
     "driverSlug": "roger-regeth",
     "photographerSlug": "96-dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_roger-ward_pete-fileca_post_001.jpg",
@@ -3000,7 +3462,7 @@
     "driverSlug": "roger-ward",
     "photographerSlug": "pete-fileca",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_rolf-helland_pat-heaney_post_001.jpg",
@@ -3011,7 +3473,7 @@
     "driverSlug": "rolf-helland",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ron-hutchison_unknown-photographer_photo_001.jpg",
@@ -3022,7 +3484,7 @@
     "driverSlug": "ron-hutchison",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_russ-urlin_bob-schafer_photo_176.jpg",
@@ -3077,7 +3539,18 @@
     "driverSlug": "rusty-wallace-don-white",
     "photographerSlug": "66-93-weber",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_ryl-magoon_weber-brothers_photo_100.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_ryl-magoon_weber-brothers_photo_100.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_ryl-magoon_weber-brothers_photo_100.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "ryl-magoon",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_sal-tovella_unknown-photographer_photo_001.jpg",
@@ -3088,7 +3561,7 @@
     "driverSlug": "sal-tovella",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_scott-hansen_bob-schafer_photo_253.jpg",
@@ -3110,7 +3583,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_scott-hansen_unknown-photographer_photo_001.jpg",
@@ -3121,7 +3594,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_stan-fox_24-weber_photo_001.jpg",
@@ -3132,7 +3605,7 @@
     "driverSlug": "stan-fox",
     "photographerSlug": "24-weber",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_stan-horton_randy-boehles_post_100.jpg",
@@ -3154,7 +3627,7 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_steve-burgess_unknown-photographer_photo_356.jpg",
@@ -3198,7 +3671,18 @@
     "driverSlug": "thom-laimon",
     "photographerSlug": "doug-schoebel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_thom-laimon_scott-krueger_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_thom-laimon_scott-krueger_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_thom-laimon_scott-krueger_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "thom-laimon",
+    "photographerSlug": "scott-krueger",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tim-fedewa_bob-schafer_photo_238.jpg",
@@ -3212,6 +3696,17 @@
     "sequence": "238"
   },
   {
+    "fileName": "milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "milwaukee-mile_unknown-year_tim-steele_bob-schafer_photo_088.jpg",
     "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tim-steele_bob-schafer_photo_088.jpg",
     "publicPath": "/photos/milwaukee-mile_unknown-year_tim-steele_bob-schafer_photo_088.jpg",
@@ -3220,7 +3715,7 @@
     "driverSlug": "tim-steele",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "088"
+    "sequence": "88"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tom-harrington_bob-schafer_photo_14037.jpg",
@@ -3242,7 +3737,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tom-jones_unknown-photographer_photo_345.jpg",
@@ -3264,7 +3759,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tom-reffner_unknown-photographer_photo_001.jpg",
@@ -3275,7 +3770,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tony-izzo_bob-elman_photo_003.jpg",
@@ -3286,7 +3781,7 @@
     "driverSlug": "tony-izzo",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tony-izzo_unknown-photographer_photo_351.jpg",
@@ -3330,7 +3825,7 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_tracy-schuler_bob-schafer_photo_14090.jpg",
@@ -3638,6 +4133,6 @@
     "driverSlug": "whitey-gerken",
     "photographerSlug": "dan-radig",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

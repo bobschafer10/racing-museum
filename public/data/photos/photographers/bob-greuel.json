@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "141-speedway_2010_dave-degrave_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/2010/141-speedway_2010_dave-degrave_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_2010_dave-degrave_bob-greuel_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2010",
+    "driverSlug": "dave-degrave",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "141-speedway_2010_dennis-miesler_bob-greuel_photo_001.jpg",
     "storagePath": "photos/master/141-speedway/2010/141-speedway_2010_dennis-miesler_bob-greuel_photo_001.jpg",
     "publicPath": "/photos/141-speedway_2010_dennis-miesler_bob-greuel_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "dennis-miesler",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2010_jared-siefert_bob-greuel_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "jared-siefert",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_tracy-wassenberg_bob-greuel_post_001.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "tracy-wassenberg",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2011_jeff-steenbergen_bob-greuel_photo_001.jpg",
@@ -41,7 +52,7 @@
     "driverSlug": "jeff-steenbergen",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2017_mike-winters_bob-greuel_photo_001.jpg",
@@ -52,18 +63,40 @@
     "driverSlug": "mike-winters",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "capital-super-speedway_unknown-year_ty-majeski_bob-greuel_post_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_ty-majeski_bob-greuel_post_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_ty-majeski_bob-greuel_post_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "ty-majeski",
+    "fileName": "beaver-dam-raceway_2025_brandon-schmitt_bob-greuel_photo_336.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2025/beaver-dam-raceway_2025_brandon-schmitt_bob-greuel_photo_336.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2025_brandon-schmitt_bob-greuel_photo_336.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2025",
+    "driverSlug": "brandon-schmitt",
     "photographerSlug": "bob-greuel",
-    "creditType": "post",
-    "sequence": "001"
+    "creditType": "photo",
+    "sequence": "336"
+  },
+  {
+    "fileName": "chilton-speedway_2010_brandon-frank_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/2010/chilton-speedway_2010_brandon-frank_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_2010_brandon-frank_bob-greuel_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "2010",
+    "driverSlug": "brandon-frank",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/2011/chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_2011_tom-schneider_bob-greuel_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "2011",
+    "driverSlug": "tom-schneider",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_unknown-year_lance-fassbender_bob-greuel_photo_001.jpg",
@@ -74,7 +107,7 @@
     "driverSlug": "lance-fassbender",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_2010_bob-kohn_bob-greuel_photo_001.jpg",
@@ -85,7 +118,7 @@
     "driverSlug": "bob-kohn",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_dylan-scott_bob-greuel_post_001.jpg",
@@ -96,7 +129,18 @@
     "driverSlug": "dylan-scott",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dodge-county-fairgrounds_2010_kenny-richards_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/dodge-county-fairgrounds/2010/dodge-county-fairgrounds_2010_kenny-richards_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/dodge-county-fairgrounds_2010_kenny-richards_bob-greuel_photo_444.jpg",
+    "trackSlug": "dodge-county-fairgrounds",
+    "year": "2010",
+    "driverSlug": "kenny-richards",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "dodge-county-fairgrounds_2013_jason-zdroik_bob-greuel_photo_001.jpg",
@@ -107,7 +151,7 @@
     "driverSlug": "jason-zdroik",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_2018_troy-springborn_bob-greuel_photo_001.jpg",
@@ -118,7 +162,7 @@
     "driverSlug": "troy-springborn",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "door-county-speedway_2019_ed-anschutz_bob-greuel_photo_001.jpg",
@@ -129,7 +173,7 @@
     "driverSlug": "ed-anschutz",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "eagle-river-speedway_unknown-year_bob-kleinschmidt_bob-greuel_post_001.jpg",
@@ -140,7 +184,7 @@
     "driverSlug": "bob-kleinschmidt",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2017_dave-neitzke_bob-greuel_photo_001.jpg",
@@ -151,7 +195,7 @@
     "driverSlug": "dave-neitzke",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_2018_derek-gress_bob-greuel_photo_001.jpg",
@@ -162,7 +206,18 @@
     "driverSlug": "derek-gress",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2023/gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2023_tim-mitchell_bob-greuel_photo_332.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2023",
+    "driverSlug": "tim-mitchell",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "332"
   },
   {
     "fileName": "gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
@@ -173,7 +228,51 @@
     "driverSlug": "ryan-minster",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2026/gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2026_jeff-muehlbauer_bob-greuel_photo_344.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2026",
+    "driverSlug": "jeff-muehlbauer",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "344"
+  },
+  {
+    "fileName": "gravity-park-speedway_2026_joel-seegert-jr_bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2026/gravity-park-speedway_2026_joel-seegert-jr_bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2026_joel-seegert-jr_bob-greuel_photo_001.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2026",
+    "driverSlug": "joel-seegert-jr",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "jefferson-speedway_2012_jeffrey-lefave_bob-greuel_photo_334.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2012/jefferson-speedway_2012_jeffrey-lefave_bob-greuel_photo_334.jpg",
+    "publicPath": "/photos/jefferson-speedway_2012_jeffrey-lefave_bob-greuel_photo_334.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2012",
+    "driverSlug": "jeffrey-lefave",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "jefferson-speedway_2017_jordan-devoy_bob-greuel_photo_333.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2017/jefferson-speedway_2017_jordan-devoy_bob-greuel_photo_333.jpg",
+    "publicPath": "/photos/jefferson-speedway_2017_jordan-devoy_bob-greuel_photo_333.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2017",
+    "driverSlug": "jordan-devoy",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "jefferson-speedway_2018_joe-shelby_bob-greuel_photo_001.jpg",
@@ -184,18 +283,7 @@
     "driverSlug": "joe-shelby",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_2013_skylar-holzhausen_bob-greuel_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/2013/lacrosse-interstate-speedway_2013_skylar-holzhausen_bob-greuel_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_2013_skylar-holzhausen_bob-greuel_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "2013",
-    "driverSlug": "skylar-holzhausen",
-    "photographerSlug": "bob-greuel",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_unknown-driver_bob-greuel_photo_001.jpg",
@@ -206,7 +294,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "langlade-county-speedway_2017_steve-meyer_bob-greuel_photo_001.jpeg",
@@ -217,7 +305,51 @@
     "driverSlug": "steve-meyer",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "luxemburg-speedway_2013_brad-rohloff_bob-greuel_photo_335.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2013/luxemburg-speedway_2013_brad-rohloff_bob-greuel_photo_335.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2013_brad-rohloff_bob-greuel_photo_335.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2013",
+    "driverSlug": "brad-rohloff",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "335"
+  },
+  {
+    "fileName": "luxemburg-speedway_2020_jason-cornelius_bob-greuel_photo_555.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2020/luxemburg-speedway_2020_jason-cornelius_bob-greuel_photo_555.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2020_jason-cornelius_bob-greuel_photo_555.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2020",
+    "driverSlug": "jason-cornelius",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "luxemburg-speedway_2023_putch-bentley_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2023/luxemburg-speedway_2023_putch-bentley_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2023_putch-bentley_bob-greuel_photo_444.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2023",
+    "driverSlug": "putch-bentley",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "manitowoc-speedway_2010_keith-kellenbentz_bob-greuel_photo_334.jpg",
+    "storagePath": "photos/master/manitowoc-speedway/2010/manitowoc-speedway_2010_keith-kellenbentz_bob-greuel_photo_334.jpg",
+    "publicPath": "/photos/manitowoc-speedway_2010_keith-kellenbentz_bob-greuel_photo_334.jpg",
+    "trackSlug": "manitowoc-speedway",
+    "year": "2010",
+    "driverSlug": "keith-kellenbentz",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "milwaukee-mile_2009_kelly-bires_bob-greuel_photo_001.jpg",
@@ -228,7 +360,7 @@
     "driverSlug": "kelly-bires",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_2011_kris-kelly_bob-greuel_photo_001.jpeg",
@@ -239,7 +371,18 @@
     "driverSlug": "kris-kelly",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "norway-speedway_2017_john-mattia_bob-greuel_photo_977.jpg",
+    "storagePath": "photos/master/norway-speedway/2017/norway-speedway_2017_john-mattia_bob-greuel_photo_977.jpg",
+    "publicPath": "/photos/norway-speedway_2017_john-mattia_bob-greuel_photo_977.jpg",
+    "trackSlug": "norway-speedway",
+    "year": "2017",
+    "driverSlug": "john-mattia",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "977"
   },
   {
     "fileName": "norway-speedway_2017_tony-wilz_bob-greuel_photo_001.jpg",
@@ -250,7 +393,18 @@
     "driverSlug": "tony-wilz",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_tim-doehling_bob-greuel_photo_444.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "tim-doehling",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_jerry-kope_bob-greuel_photo_001.jpg",
@@ -261,7 +415,7 @@
     "driverSlug": "jerry-kope",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "oshkosh-speed-zone_unknown-year_unknown-driver_bob-greuel_post_001.jpg",
@@ -272,7 +426,29 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2009_brett-wenzel_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2009/plymouth-dirt-track_2009_brett-wenzel_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2009_brett-wenzel_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2009",
+    "driverSlug": "brett-wenzel",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2009_matt-yancey_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2009/plymouth-dirt-track_2009_matt-yancey_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2009_matt-yancey_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2009",
+    "driverSlug": "matt-yancey",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "plymouth-dirt-track_2010_bret-wenzel_bob-greuel_photo_001.jpg",
@@ -283,7 +459,7 @@
     "driverSlug": "bret-wenzel",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_2010_jeremy-schultz_bob-greuel_photo_001.jpg",
@@ -294,7 +470,18 @@
     "driverSlug": "jeremy-schultz",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2010_russ-scheffler__bob-greuel_photo_001.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2010/plymouth-dirt-track_2010_russ-scheffler__bob-greuel_photo_001.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2010_russ-scheffler__bob-greuel_photo_001.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2010",
+    "driverSlug": "russ-scheffler",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_2011_brandon-mcmullen_bob-greuel_photo_001.jpg",
@@ -305,7 +492,18 @@
     "driverSlug": "brandon-mcmullen",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2012_dick-hed_bob-greuel_photo_334.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2012/plymouth-dirt-track_2012_dick-hed_bob-greuel_photo_334.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2012_dick-hed_bob-greuel_photo_334.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2012",
+    "driverSlug": "dick-hed",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "plymouth-dirt-track_2015_brad-lubach_bob-greuel_photo_001.jpg",
@@ -316,7 +514,40 @@
     "driverSlug": "brad-lubach",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "kevin-juech",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "kevin-juech",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2026_travis-arenz_bob-greuel_photo_111.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2026/plymouth-dirt-track_2026_travis-arenz_bob-greuel_photo_111.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2026_travis-arenz_bob-greuel_photo_111.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2026",
+    "driverSlug": "travis-arenz",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_chris-clayton_bob-greuel_post_001.jpg",
@@ -327,7 +558,7 @@
     "driverSlug": "chris-clayton",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_dick-hed_bob-greuel_photo_001.jpg",
@@ -338,7 +569,7 @@
     "driverSlug": "dick-hed",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_ted-dolhun_bob-greuel_photo_001.jpg",
@@ -349,7 +580,18 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "seymour-speedway_2016_dan-nelson_bob-greuel_photo_333.jpg",
+    "storagePath": "photos/master/seymour-speedway/2016/seymour-speedway_2016_dan-nelson_bob-greuel_photo_333.jpg",
+    "publicPath": "/photos/seymour-speedway_2016_dan-nelson_bob-greuel_photo_333.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2016",
+    "driverSlug": "dan-nelson",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "shawano-speedway_2010_aaron-wickersheim_bob-greuel_photo_001.jpg",
@@ -360,7 +602,7 @@
     "driverSlug": "aaron-wickersheim",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2013_brock-saunders_bob-greuel_photo_001.jpg",
@@ -371,7 +613,7 @@
     "driverSlug": "brock-saunders",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2013_pat-zdroik_bob-greuel_photo_001.jpg",
@@ -382,7 +624,7 @@
     "driverSlug": "pat-zdroik",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_2016_paul-parker_bob-greuel_photo_001.jpg",
@@ -393,7 +635,7 @@
     "driverSlug": "paul-parker",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_bret-swedberg_bob-greuel_photo_001.jpg",
@@ -404,7 +646,7 @@
     "driverSlug": "bret-swedberg",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_randy-markwardt_bob-greuel_photo_001.jpg",
@@ -415,7 +657,18 @@
     "driverSlug": "randy-markwardt",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2010_jason-hicks_bob-greuel_photo_335.jpg",
+    "storagePath": "photos/master/slinger-speedway/2010/slinger-speedway_2010_jason-hicks_bob-greuel_photo_335.jpg",
+    "publicPath": "/photos/slinger-speedway_2010_jason-hicks_bob-greuel_photo_335.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2010",
+    "driverSlug": "jason-hicks",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "335"
   },
   {
     "fileName": "slinger-speedway_2010_scott-schoeni_bob-greuel_photo_001.jpg",
@@ -426,7 +679,7 @@
     "driverSlug": "scott-schoeni",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_2011_kyle-shear_bob-greuel_photo_001.jpg",
@@ -437,7 +690,18 @@
     "driverSlug": "kyle-shear",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2017_braison-bennett_bob-greuel_photo_112.jpg",
+    "storagePath": "photos/master/slinger-speedway/2017/slinger-speedway_2017_braison-bennett_bob-greuel_photo_112.jpg",
+    "publicPath": "/photos/slinger-speedway_2017_braison-bennett_bob-greuel_photo_112.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2017",
+    "driverSlug": "braison-bennett",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "112"
   },
   {
     "fileName": "slinger-speedway_unknown-year_joe-destefano_bob-greuel_post_001.jpg",
@@ -448,7 +712,18 @@
     "driverSlug": "joe-destefano",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_joe-destefano_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_joe-destefano_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_joe-destefano_bob-greuel_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-destefano",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2011_mike-olson_bob-greuel_photo_001.jpg",
@@ -459,7 +734,7 @@
     "driverSlug": "mike-olson",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tnt-speedway_2013_ison_bob-greuel_photo_001.jpg",
@@ -470,7 +745,7 @@
     "driverSlug": "ison",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_2017_matt-olson_bob-greuel_photo_001.jpg",
@@ -481,7 +756,7 @@
     "driverSlug": "matt-olson",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
@@ -492,7 +767,40 @@
     "driverSlug": "brandon-goeser",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brandon-goeser",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brandon-goeser",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brandon-goeser_bob-greuel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brandon-goeser",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
@@ -503,7 +811,40 @@
     "driverSlug": "brian-crapser",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-crapser",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-crapser",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-crapser_bob-greuel_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-crapser",
+    "photographerSlug": "bob-greuel",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dylan-may_bob-greuel_post_001.jpg",
@@ -514,7 +855,7 @@
     "driverSlug": "dylan-may",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_eric-dercks_bob-greuel_post_001.jpg",
@@ -525,40 +866,7 @@
     "driverSlug": "eric-dercks",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_justin-miller_bob-greuel_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_justin-miller_bob-greuel_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_justin-miller_bob-greuel_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "justin-miller",
-    "photographerSlug": "bob-greuel",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kaitlyn-sohrweide_bob-greuel_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kaitlyn-sohrweide_bob-greuel_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kaitlyn-sohrweide_bob-greuel_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kaitlyn-sohrweide",
-    "photographerSlug": "bob-greuel",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kevin-naidl_bob-greuel_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kevin-naidl_bob-greuel_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kevin-naidl_bob-greuel_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kevin-naidl",
-    "photographerSlug": "bob-greuel",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_manitowoc-expo_bob-greuel_post_001.jpg",
@@ -569,7 +877,7 @@
     "driverSlug": "manitowoc-expo",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-reichenberger_bob-greuel_post_001.jpg",
@@ -580,7 +888,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_parker-dercks-gravity_bob-greuel_post_001.jpg",
@@ -591,7 +899,7 @@
     "driverSlug": "parker-dercks-gravity",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_paul-pokorski_bob-greuel_post_001.jpg",
@@ -602,7 +910,7 @@
     "driverSlug": "paul-pokorski",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_riley-meier_bob-greuel_post_001.jpg",
@@ -613,7 +921,7 @@
     "driverSlug": "riley-meier",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_scott-sohrweide_bob-greuel_post_001.jpg",
@@ -624,7 +932,7 @@
     "driverSlug": "scott-sohrweide",
     "photographerSlug": "bob-greuel",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_unknown-year_johnny-whitman_bob-greuel_photo_001.jpg",
@@ -635,7 +943,7 @@
     "driverSlug": "johnny-whitman",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2008_jesse-gracyalny_bob-greuel_photo_001.jpg",
@@ -646,6 +954,28 @@
     "driverSlug": "jesse-gracyalny",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2010_doug-mahlik_bob-greuel_photo_334.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2010/wisconsin-international-raceway_2010_doug-mahlik_bob-greuel_photo_334.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2010_doug-mahlik_bob-greuel_photo_334.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2010",
+    "driverSlug": "doug-mahlik",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_2017_corey-manders_bob-greuel_photo_666.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/2017/wisconsin-international-raceway_2017_corey-manders_bob-greuel_photo_666.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_2017_corey-manders_bob-greuel_photo_666.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "2017",
+    "driverSlug": "corey-manders",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "666"
   }
 ]

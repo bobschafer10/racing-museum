@@ -8,7 +8,7 @@
     "driverSlug": "chad-butz",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_unknown-year_chad-butz_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "chad-butz",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
@@ -30,6 +30,28 @@
     "driverSlug": "chad-butz",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chad-butz",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chad-butz_tom-loos_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chad-butz",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

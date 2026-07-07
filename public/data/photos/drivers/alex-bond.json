@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "abc-raceway_2023_alex-bond_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/abc-raceway/2023/abc-raceway_2023_alex-bond_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/abc-raceway_2023_alex-bond_unknown-photographer_photo_333.jpg",
+    "trackSlug": "abc-raceway",
+    "year": "2023",
+    "driverSlug": "alex-bond",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_2024_alex-bond_alex-bond_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_alex-bond_alex-bond_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2024_alex-bond_alex-bond_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "alex-bond",
+    "photographerSlug": "alex-bond",
+    "creditType": "post",
+    "sequence": "444"
+  }
+]

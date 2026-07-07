@@ -8,7 +8,7 @@
     "driverSlug": "chuck-calvert",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_jeff-kendall_dave-drews_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jeff-kendall",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_jim-carlson_dave-drews_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jim-carlson",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_joe-walsh_dave-drews_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "joe-walsh",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
@@ -52,7 +52,18 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/1994/dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
+    "publicPath": "/photos/dells-motor-speedway_1994_kevin-cywinski_dave-drews_photo_001.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "1994",
+    "driverSlug": "kevin-cywinski",
+    "photographerSlug": "dave-drews",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_kregg-hurlbert_dave-drews_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "kregg-hurlbert",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_mark-dimaggio_dave-drews_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "mark-dimaggio",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_ron-breese_dave-drews_photo_001.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "ron-breese",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway_1994_tim-olson_dave-drews_photo_001.jpg",
@@ -96,7 +107,18 @@
     "driverSlug": "tim-olson",
     "photographerSlug": "dave-drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lacrosse-interstate-speedway_1994_bill-niles_bill-niles_photo_555.jpg",
+    "storagePath": "photos/master/lacrosse-interstate-speedway/1994/lacrosse-interstate-speedway_1994_bill-niles_bill-niles_photo_555.jpg",
+    "publicPath": "/photos/lacrosse-interstate-speedway_1994_bill-niles_bill-niles_photo_555.jpg",
+    "trackSlug": "lacrosse-interstate-speedway",
+    "year": "1994",
+    "driverSlug": "bill-niles",
+    "photographerSlug": "bill-niles",
+    "creditType": "photo",
+    "sequence": "555"
   },
   {
     "fileName": "senoia-speedway_1994_unknown-driver_bob-schafer_photo_13541.jpg",
@@ -118,18 +140,7 @@
     "driverSlug": "matt-kenseth",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1994_paul-harelstad_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1994/unknown-track_1994_paul-harelstad_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1994_paul-harelstad_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1994",
-    "driverSlug": "paul-harelstad",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_1994_tommy-sexton_priscilla-pawlik-sexton_post_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "tommy-sexton",
     "photographerSlug": "priscilla-pawlik-sexton",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1994_bob-mcdonald_pat-heaney_post_333.jpg",
@@ -173,7 +184,7 @@
     "driverSlug": "jay-sauter",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1994_jj-smith_pat-heaney_post_333.jpg",

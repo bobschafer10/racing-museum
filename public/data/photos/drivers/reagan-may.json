@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "marshfield-super-speedway_2014_reagan-may_tom-loos_photo_666.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_666.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_666.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "reagan-may",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2014_reagan-may_tom-loos_photo_667.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2014/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_667.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2014_reagan-may_tom-loos_photo_667.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2014",
+    "driverSlug": "reagan-may",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "667"
+  },
+  {
+    "fileName": "state-park-speedway_unknown-year_reagan-may_kurt-luoma_photo_444.jpg",
+    "storagePath": "photos/master/state-park-speedway/unknown-year/state-park-speedway_unknown-year_reagan-may_kurt-luoma_photo_444.jpg",
+    "publicPath": "/photos/state-park-speedway_unknown-year_reagan-may_kurt-luoma_photo_444.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "unknown-year",
+    "driverSlug": "reagan-may",
+    "photographerSlug": "kurt-luoma",
+    "creditType": "photo",
+    "sequence": "444"
+  }
+]

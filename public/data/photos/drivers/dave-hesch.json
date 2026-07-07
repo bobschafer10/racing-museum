@@ -8,7 +8,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "cedar-lake-speedway_1990_dave-hesch_todd-narveson_photo_001.jpg",
@@ -19,29 +19,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_dave-hesch_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_dave-hesch_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_dave-hesch_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "dave-hesch",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1995_dave-hesch_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1995/unknown-track_1995_dave-hesch_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1995_dave-hesch_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1995",
-    "driverSlug": "dave-hesch",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_kurt-luoma_photo_001.jpg",
@@ -52,7 +30,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_kurt-luoma_photo_002.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_missy-lushinsky_photo_001.jpg",
@@ -74,7 +52,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_nason_photo_001.jpg",
@@ -85,7 +63,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_owatonna-mcclain_photo_001.jpg",
@@ -96,7 +74,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_002.jpg",
@@ -107,7 +85,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_003.jpg",
@@ -118,7 +96,18 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-hesch",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_004.jpg",
@@ -129,7 +118,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_005.jpg",
@@ -140,7 +129,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_006.jpg",
@@ -151,7 +140,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_007.jpg",
@@ -162,7 +151,18 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_007.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_007.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_007.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dave-hesch",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-hesch_unknown-photographer_photo_009.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_dave-hesch_kurt-luoma_photo_012.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "dave-hesch",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "012"
+    "sequence": "12"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_dave-hesch_kurt-luoma_photo_1344.jpg",

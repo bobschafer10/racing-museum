@@ -8,18 +8,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "larry-quinn",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1982_steve-rudiger_old-town-eau-claire_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1982/unknown-track_1982_steve-rudiger_old-town-eau-claire_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1982_steve-rudiger_old-town-eau-claire_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1982",
-    "driverSlug": "steve-rudiger",
-    "photographerSlug": "old-town-eau-claire",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_heidi-bjork_photo_001.jpg",
@@ -30,7 +19,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "heidi-bjork",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_scott-christman_post_001.jpg",
@@ -41,7 +30,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "scott-christman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_unknown-photographer_photo_001.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_unknown-photographer_photo_002.jpg",
@@ -63,7 +52,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_unknown-photographer_photo_003.jpg",
@@ -74,7 +63,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_unknown-photographer_photo_004.jpg",
@@ -85,7 +74,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_unknown-photographer_photo_005.jpg",
@@ -96,7 +85,7 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-rudiger_unknown-photographer_photo_006.jpg",
@@ -107,6 +96,6 @@
     "driverSlug": "steve-rudiger",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   }
 ]

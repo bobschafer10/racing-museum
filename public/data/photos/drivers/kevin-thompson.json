@@ -19,7 +19,7 @@
     "driverSlug": "kevin-thompson",
     "photographerSlug": "todd-narveson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-thompson_ryan-aho_post_052.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "kevin-thompson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "052"
+    "sequence": "52"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-thompson_ryan-aho_post_057.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "kevin-thompson",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "057"
+    "sequence": "57"
   }
 ]

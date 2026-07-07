@@ -11,6 +11,17 @@
     "sequence": "13154"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_dennis-aho_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_dennis-aho_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_dennis-aho_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dennis-aho",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "wisconsin-international-raceway_1990_dennis-aho_bob-schafer_photo_222.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/1990/wisconsin-international-raceway_1990_dennis-aho_bob-schafer_photo_222.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_1990_dennis-aho_bob-schafer_photo_222.jpg",
@@ -52,6 +63,6 @@
     "driverSlug": "dennis-aho",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

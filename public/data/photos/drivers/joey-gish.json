@@ -8,6 +8,17 @@
     "driverSlug": "joey-gish",
     "photographerSlug": "drews",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_1981_joey-gish_weber-brothers_photo_436.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_joey-gish_weber-brothers_photo_436.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_joey-gish_weber-brothers_photo_436.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "joey-gish",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "436"
   }
 ]

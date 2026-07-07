@@ -8,6 +8,39 @@
     "driverSlug": "bruce-wesley",
     "photographerSlug": "darell-olson",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1980_bruce-wesley_rpmi_photo_888.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1980/hales-corners-speedway_1980_bruce-wesley_rpmi_photo_888.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1980_bruce-wesley_rpmi_photo_888.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1980",
+    "driverSlug": "bruce-wesley",
+    "photographerSlug": "rpmi",
+    "creditType": "photo",
+    "sequence": "888"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_bruce-wesley_kevin-wisniewski_post_888.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bruce-wesley_kevin-wisniewski_post_888.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_bruce-wesley_kevin-wisniewski_post_888.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-wesley",
+    "photographerSlug": "kevin-wisniewski",
+    "creditType": "post",
+    "sequence": "888"
+  },
+  {
+    "fileName": "state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "storagePath": "photos/master/state-fair-park/1980/state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "publicPath": "/photos/state-fair-park_1980_bruce-wesley_rpm_photo_444.jpg",
+    "trackSlug": "state-fair-park",
+    "year": "1980",
+    "driverSlug": "bruce-wesley",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
   }
 ]

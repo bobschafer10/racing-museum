@@ -8,7 +8,7 @@
     "driverSlug": "brian-reif",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_brian-reif_joe-slack_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "brian-reif",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
@@ -30,6 +30,39 @@
     "driverSlug": "brian-reif",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-reif",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-reif",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_brian-reif_joe-verdegan_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "brian-reif",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

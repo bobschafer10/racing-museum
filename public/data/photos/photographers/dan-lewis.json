@@ -1,5 +1,71 @@
 [
   {
+    "fileName": "141-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "storagePath": "photos/master/141-speedway/2016/141-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "publicPath": "/photos/141-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2016",
+    "driverSlug": "kyle-frederick",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "141-speedway_2021_nick-zdroik_dan-lewis_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/2021/141-speedway_2021_nick-zdroik_dan-lewis_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_2021_nick-zdroik_dan-lewis_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2021",
+    "driverSlug": "nick-zdroik",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "141-speedway_2022_cody-rass_dan-lewis_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/2022/141-speedway_2022_cody-rass_dan-lewis_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_2022_cody-rass_dan-lewis_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2022",
+    "driverSlug": "cody-rass",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "141-speedway_2022_mark-howe_dan-lewis_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/2022/141-speedway_2022_mark-howe_dan-lewis_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_2022_mark-howe_dan-lewis_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2022",
+    "driverSlug": "mark-howe",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "141-speedway_2023_dan-schumacher_dan-lewis_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_dan-schumacher_dan-lewis_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_dan-schumacher_dan-lewis_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "dan-schumacher",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "141-speedway_2023_taylor-rahn_dan-lewis_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/2023/141-speedway_2023_taylor-rahn_dan-lewis_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_2023_taylor-rahn_dan-lewis_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2023",
+    "driverSlug": "taylor-rahn",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
     "fileName": "141-speedway_2024_devin-yaeger_dan-lewis_photo_113.jpg",
     "storagePath": "photos/master/141-speedway/2024/141-speedway_2024_devin-yaeger_dan-lewis_photo_113.jpg",
     "publicPath": "/photos/141-speedway_2024_devin-yaeger_dan-lewis_photo_113.jpg",
@@ -19,7 +85,7 @@
     "driverSlug": "benji-lacrosse",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2025_johnny-whitman_dan-lewis_photo_001.jpg",
@@ -30,7 +96,7 @@
     "driverSlug": "johnny-whitman",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_unknown-year_brandon-schmitt_dan-lewis_photo_001.jpg",
@@ -41,7 +107,18 @@
     "driverSlug": "brandon-schmitt",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "141-speedway_unknown-year_dave-paskiewicz_dan-lewis_photo_444.jpg",
+    "storagePath": "photos/master/141-speedway/unknown-year/141-speedway_unknown-year_dave-paskiewicz_dan-lewis_photo_444.jpg",
+    "publicPath": "/photos/141-speedway_unknown-year_dave-paskiewicz_dan-lewis_photo_444.jpg",
+    "trackSlug": "141-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dave-paskiewicz",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_1998_chad-schlenvogt_dan-lewis_photo_001.jpg",
@@ -52,7 +129,7 @@
     "driverSlug": "chad-schlenvogt",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_1999_mike-kertscher_dan-lewis_photo_001.jpeg",
@@ -63,7 +140,18 @@
     "driverSlug": "mike-kertscher",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "chilton-speedway_unknown-year_chris-gross_dan-lewis_photo_444.jpg",
+    "storagePath": "photos/master/chilton-speedway/unknown-year/chilton-speedway_unknown-year_chris-gross_dan-lewis_photo_444.jpg",
+    "publicPath": "/photos/chilton-speedway_unknown-year_chris-gross_dan-lewis_photo_444.jpg",
+    "trackSlug": "chilton-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chris-gross",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "chilton-speedway_unknown-year_eric-derks_dan-lewis_photo_175.jpg",
@@ -96,7 +184,7 @@
     "driverSlug": "steve-dekerf",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_unknown-year_steve-kracht_dan-lewis_photo_001.png",
@@ -107,7 +195,7 @@
     "driverSlug": "steve-kracht",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "door-county-speedway_2019_aaron-butterbrodt_dan-lewis_photo_001.jpg",
@@ -118,7 +206,7 @@
     "driverSlug": "aaron-butterbrodt",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "door-county-speedway_unknown-year_buck-schmelzer_dan-lewis_photo_001.jpg",
@@ -129,7 +217,7 @@
     "driverSlug": "buck-schmelzer",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_2015_aaron-holiday_dan-lewis_photo_001.jpeg",
@@ -140,18 +228,18 @@
     "driverSlug": "aaron-holiday",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "plymouth-dirt-track_unknown-year_dave-enders_dan-lewis_photo_222.jpg",
-    "storagePath": "photos/master/plymouth-dirt-track/unknown-year/plymouth-dirt-track_unknown-year_dave-enders_dan-lewis_photo_222.jpg",
-    "publicPath": "/photos/plymouth-dirt-track_unknown-year_dave-enders_dan-lewis_photo_222.jpg",
-    "trackSlug": "plymouth-dirt-track",
-    "year": "unknown-year",
-    "driverSlug": "dave-enders",
+    "fileName": "luxemburg-speedway_2017_brandon-gagnon_dan-lewis_photo_443.jpg",
+    "storagePath": "photos/master/luxemburg-speedway/2017/luxemburg-speedway_2017_brandon-gagnon_dan-lewis_photo_443.jpg",
+    "publicPath": "/photos/luxemburg-speedway_2017_brandon-gagnon_dan-lewis_photo_443.jpg",
+    "trackSlug": "luxemburg-speedway",
+    "year": "2017",
+    "driverSlug": "brandon-gagnon",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "222"
+    "sequence": "443"
   },
   {
     "fileName": "plymouth-dirt-track_unknown-year_kevin-schnell_dan-lewis_photo_222.jpg",
@@ -173,7 +261,29 @@
     "driverSlug": "aaron-holiday",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "seymour-speedway_2016_alan-schlueter_dan-lewis_photo_100.jpg",
+    "storagePath": "photos/master/seymour-speedway/2016/seymour-speedway_2016_alan-schlueter_dan-lewis_photo_100.jpg",
+    "publicPath": "/photos/seymour-speedway_2016_alan-schlueter_dan-lewis_photo_100.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2016",
+    "driverSlug": "alan-schlueter",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
+    "fileName": "seymour-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "storagePath": "photos/master/seymour-speedway/2016/seymour-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "publicPath": "/photos/seymour-speedway_2016_kyle-frederick_dan-lewis_photo_100.jpg",
+    "trackSlug": "seymour-speedway",
+    "year": "2016",
+    "driverSlug": "kyle-frederick",
+    "photographerSlug": "dan-lewis",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "seymour-speedway_2023_kayden-young_dan-lewis_photo_112.jpg",
@@ -206,7 +316,7 @@
     "driverSlug": "adam-janke",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_unknown-year_andrew-yaeger_dan-lewis_photo_112.jpg",
@@ -228,7 +338,7 @@
     "driverSlug": "kevin-hebbe",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1997_mark-house_dan-lewis_photo_001.jpg",
@@ -239,7 +349,7 @@
     "driverSlug": "mark-house",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1997_ted-dolhun_dan-lewis_photo_001.jpg",
@@ -250,7 +360,7 @@
     "driverSlug": "ted-dolhun",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jeff-curtin_dan-lewis_photo_001.jpg",
@@ -261,7 +371,7 @@
     "driverSlug": "jeff-curtin",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_jesse-peebles_dan-lewis_photo_001.jpg",
@@ -272,7 +382,7 @@
     "driverSlug": "jesse-peebles",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_pete-parker_dan-lewis_photo_001.jpg",
@@ -283,7 +393,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_scott-thiede_dan-lewis_photo_5414.jpg",
@@ -297,15 +407,15 @@
     "sequence": "5414"
   },
   {
-    "fileName": "unknown-track_unknown-year_adam-broehm_dan-lewis_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_adam-broehm_dan-lewis_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_adam-broehm_dan-lewis_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_dan-lewis-hot-shots-full-pag_dan-lewis_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-lewis-hot-shots-full-pag_dan-lewis_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-lewis-hot-shots-full-pag_dan-lewis_post_001.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
-    "driverSlug": "adam-broehm",
+    "driverSlug": "dan-lewis-hot-shots-full-pag",
     "photographerSlug": "dan-lewis",
-    "creditType": "photo",
-    "sequence": "001"
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-lewis-hot-shots-full-pag_dan-lewis_post_001.jpg",
@@ -316,7 +426,7 @@
     "driverSlug": "dan-lewis-hot-shots-full-pag",
     "photographerSlug": "dan-lewis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-lewis-hot-shots-i_dan-lewis_post_001.jpg",
@@ -327,7 +437,18 @@
     "driverSlug": "dan-lewis-hot-shots-i",
     "photographerSlug": "dan-lewis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-lewis-hot-shots-i_dan-lewis_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-lewis-hot-shots-i_dan-lewis_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-lewis-hot-shots-i_dan-lewis_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-lewis-hot-shots-i",
+    "photographerSlug": "dan-lewis",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_don-singer-chilton_dan-lewis_post_001.jpg",
@@ -338,18 +459,29 @@
     "driverSlug": "don-singer-chilton",
     "photographerSlug": "dan-lewis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_george-sweere_dan-lewis_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_george-sweere_dan-lewis_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_george-sweere_dan-lewis_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_don-singer-chilton_dan-lewis_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-singer-chilton_dan-lewis_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-singer-chilton_dan-lewis_post_001.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
-    "driverSlug": "george-sweere",
+    "driverSlug": "don-singer-chilton",
     "photographerSlug": "dan-lewis",
-    "creditType": "photo",
-    "sequence": "001"
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-singer-chilton_dan-lewis_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-singer-chilton_dan-lewis_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-singer-chilton_dan-lewis_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-singer-chilton",
+    "photographerSlug": "dan-lewis",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_wayne-block_dan-lewis_photo_001.jpg",
@@ -360,7 +492,7 @@
     "driverSlug": "wayne-block",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-internationa-raceway_unknown-year_brad-mueller_dan-lewis_photo_001.jpg",
@@ -371,7 +503,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ostermann_dan-lewis_post_001.jpg",
@@ -382,6 +514,6 @@
     "driverSlug": "john-ostermann",
     "photographerSlug": "dan-lewis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

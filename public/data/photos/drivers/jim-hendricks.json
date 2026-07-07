@@ -8,7 +8,7 @@
     "driverSlug": "jim-hendricks",
     "photographerSlug": "scott-krueger",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_jim-hendricks_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "jim-hendricks",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1981_jim-hendricks_weber-brothers_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "jim-hendricks",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_2021_jim-hendricks_sara-hendricks_post_001.jpg",
@@ -41,29 +41,7 @@
     "driverSlug": "jim-hendricks",
     "photographerSlug": "sara-hendricks",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-hendricks_gary-budzien_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-hendricks_gary-budzien_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-hendricks_gary-budzien_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-hendricks",
-    "photographerSlug": "gary-budzien",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-hendricks",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_002.jpg",
@@ -74,50 +52,6 @@
     "driverSlug": "jim-hendricks",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-hendricks",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-hendricks",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-hendricks_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-hendricks",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jim-hendricks_weber-brothers_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jim-hendricks_weber-brothers_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jim-hendricks_weber-brothers_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jim-hendricks",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   }
 ]

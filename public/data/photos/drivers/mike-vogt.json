@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "slinger-speedway_1983_mike-vogt_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/slinger-speedway/1983/slinger-speedway_1983_mike-vogt_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/slinger-speedway_1983_mike-vogt_weber-brothers_photo_334.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1983",
+    "driverSlug": "mike-vogt",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_mike-vogt_weber-brothers_photo_9358.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_mike-vogt_weber-brothers_photo_9358.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_mike-vogt_weber-brothers_photo_9358.jpg",
@@ -11,17 +22,6 @@
     "sequence": "9358"
   },
   {
-    "fileName": "unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "mike-vogt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
     "fileName": "unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_002.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_002.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_002.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "mike-vogt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-vogt_unknown-photographer_photo_004.jpg",
@@ -41,6 +41,6 @@
     "driverSlug": "mike-vogt",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   }
 ]

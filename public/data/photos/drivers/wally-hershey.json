@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "capital-super-speedway_unknown-year_wally-hershey_charlie-spry_photo_222.jpg",
+    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_wally-hershey_charlie-spry_photo_222.jpg",
+    "publicPath": "/photos/capital-super-speedway_unknown-year_wally-hershey_charlie-spry_photo_222.jpg",
+    "trackSlug": "capital-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wally-hershey",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "marshfield-super-speedway_unknown-year_wally-hershey_tom-loos_post_333.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_wally-hershey_tom-loos_post_333.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_wally-hershey_tom-loos_post_333.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "wally-hershey",
+    "photographerSlug": "tom-loos",
+    "creditType": "post",
+    "sequence": "333"
+  }
+]

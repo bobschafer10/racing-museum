@@ -8,7 +8,7 @@
     "driverSlug": "craig-priewe",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_craig-priewe_travis-zuelsdorf_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "craig-priewe",
     "photographerSlug": "travis-zuelsdorf",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_craig-priewe_travis-zuelsdorf-ii_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "craig-priewe",
     "photographerSlug": "travis-zuelsdorf-ii",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_craig-priewe_unknown-photographer_photo_333.jpg",
@@ -52,7 +52,29 @@
     "driverSlug": "craig-priewe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-priewe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-priewe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_004.jpg",
@@ -63,6 +85,28 @@
     "driverSlug": "craig-priewe",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-priewe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_craig-priewe_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "craig-priewe",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
   }
 ]

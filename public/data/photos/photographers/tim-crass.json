@@ -19,7 +19,7 @@
     "driverSlug": "les-sternard",
     "photographerSlug": "tim-crass",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_unknown-year_m-j-mcbride_tim-crass_post_001.jpg",
@@ -30,18 +30,7 @@
     "driverSlug": "m-j-mcbride",
     "photographerSlug": "tim-crass",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_irv-ettien_tim-crass_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_irv-ettien_tim-crass_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_irv-ettien_tim-crass_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "irv-ettien",
-    "photographerSlug": "tim-crass",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_joe-haferkorn_tim-crass_post_114.jpg",
@@ -63,6 +52,6 @@
     "driverSlug": "randy-guellette",
     "photographerSlug": "tim-crass",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

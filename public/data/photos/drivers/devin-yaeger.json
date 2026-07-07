@@ -17,7 +17,7 @@
     "trackSlug": "door-county-speedway",
     "year": "2023",
     "driverSlug": "devin-yaeger",
-    "photographerSlug": "kaylaLyn",
+    "photographerSlug": "kaylalyn",
     "creditType": "photo",
     "sequence": "111"
   },
@@ -31,27 +31,5 @@
     "photographerSlug": "devin-yaeger",
     "creditType": "post",
     "sequence": "111"
-  },
-  {
-    "fileName": "unknown-track_2022_devin-yaeger_devin-yaeger_post_111.jpg",
-    "storagePath": "photos/master/unknown-track/2022/unknown-track_2022_devin-yaeger_devin-yaeger_post_111.jpg",
-    "publicPath": "/photos/unknown-track_2022_devin-yaeger_devin-yaeger_post_111.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2022",
-    "driverSlug": "devin-yaeger",
-    "photographerSlug": "devin-yaeger",
-    "creditType": "post",
-    "sequence": "111"
-  },
-  {
-    "fileName": "unknown-track_2025_devin-yaeger_devin-yaeger_post_112.jpg",
-    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_devin-yaeger_devin-yaeger_post_112.jpg",
-    "publicPath": "/photos/unknown-track_2025_devin-yaeger_devin-yaeger_post_112.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2025",
-    "driverSlug": "devin-yaeger",
-    "photographerSlug": "devin-yaeger",
-    "creditType": "post",
-    "sequence": "112"
   }
 ]

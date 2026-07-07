@@ -8,29 +8,18 @@
     "driverSlug": "frank-kreyer",
     "photographerSlug": "jeff-blaser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_frank-kreyer_tom-loos_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frank-kreyer_tom-loos_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_frank-kreyer_tom-loos_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
+    "fileName": "marshfield-super-speedway_2010_frank-kreyer_wayne-brevik_photo_444.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2010/marshfield-super-speedway_2010_frank-kreyer_wayne-brevik_photo_444.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2010_frank-kreyer_wayne-brevik_photo_444.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2010",
     "driverSlug": "frank-kreyer",
-    "photographerSlug": "tom-loos",
+    "photographerSlug": "wayne-brevik",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_frank-kreyer_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_frank-kreyer_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_frank-kreyer_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "frank-kreyer",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_2013_frank-kreyer_corey-juelich_photo_333.jpg",

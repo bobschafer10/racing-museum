@@ -8,7 +8,7 @@
     "driverSlug": "larry-leach",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1970_roy-acuff_ron-thruman_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "roy-acuff",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1974_ray-young_tom-furlan_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_chuck-bostick_mike-napierala_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "chuck-bostick",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_ed-dunne_mike-napierala_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "ed-dunne",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_hal-davis_mike-napierala_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "hal-davis",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1975_jim-ruth_mike-napierala_photo_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "jim-ruth",
     "photographerSlug": "mike-napierala",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_1976_unknown-driver_tom-furlan_post_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_abel-avila_william-avila_post_001.jpg",
@@ -96,7 +96,18 @@
     "driverSlug": "abel-avila",
     "photographerSlug": "william-avila",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_al-hagerty_vince-mayer_photo_100.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_al-hagerty_vince-mayer_photo_100.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_al-hagerty_vince-mayer_photo_100.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "al-hagerty",
+    "photographerSlug": "vince-mayer",
+    "creditType": "photo",
+    "sequence": "100"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_al-ovaska_geoff-mckarns_post_001.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "al-ovaska",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_al-schill_geoff-mckarns_post_001.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_arnie-gardner_ron-thruman_post_001.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "arnie-gardner",
     "photographerSlug": "ron-thruman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bill-bohn_tom-furlan_post_001.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "bill-bohn",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bill-mcdonald_geoff-mckarns_post_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "bill-mcdonald",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-delaney_geoff-mckarns_post_001.jpg",
@@ -162,7 +173,7 @@
     "driverSlug": "bob-delaney",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-delaney_geoff-mckarns_post_002.jpg",
@@ -173,7 +184,7 @@
     "driverSlug": "bob-delaney",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-dotter_geoff-mckarns_post_001.jpg",
@@ -184,7 +195,7 @@
     "driverSlug": "bob-dotter",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-may_geoff-mckarns_post_001.jpg",
@@ -195,7 +206,7 @@
     "driverSlug": "bob-may",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-may_tom-furlan_post_001.jpg",
@@ -206,7 +217,7 @@
     "driverSlug": "bob-may",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_bob-roper_geoff-mckarns_post_001.jpg",
@@ -217,7 +228,18 @@
     "driverSlug": "bob-roper",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "waukegan-speedway_unknown-year_bob-roper_pete-fileca_post_335.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_bob-roper_pete-fileca_post_335.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_bob-roper_pete-fileca_post_335.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-roper",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "335"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_butch-bergsma_stan-kalwasinski_post_001.jpg",
@@ -228,7 +250,7 @@
     "driverSlug": "butch-bergsma",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_carl-major_geoff-mckarns_post_001.jpg",
@@ -239,7 +261,7 @@
     "driverSlug": "carl-major",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_carl-major_mike-slepawic_post_001.jpg",
@@ -250,7 +272,7 @@
     "driverSlug": "carl-major",
     "photographerSlug": "mike-slepawic",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_carl-schultz_geoff-mckarns_post_001.jpg",
@@ -261,7 +283,7 @@
     "driverSlug": "carl-schultz",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_chet-atcheson_randy-boehles_post_001.jpg",
@@ -272,7 +294,7 @@
     "driverSlug": "chet-atcheson",
     "photographerSlug": "randy-boehles",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_chuck-bostick_geoff-mckarns_post_001.jpg",
@@ -283,7 +305,7 @@
     "driverSlug": "chuck-bostick",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_cj-lindholm_geoff-mckarns_post_001.jpg",
@@ -294,7 +316,7 @@
     "driverSlug": "cj-lindholm",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_dave-watson_geoff-mckarns_post_001.jpg",
@@ -305,7 +327,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_dick-dornbusch_tom-furlan_post_001.jpg",
@@ -316,7 +338,7 @@
     "driverSlug": "dick-dornbusch",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_don-collins_dean-bentley_post_001.jpg",
@@ -327,7 +349,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "dean-bentley",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_don-collins_geoff-mckarns_post_001.jpg",
@@ -338,7 +360,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_frank-dowell_geoff-mckarns_post_001.jpg",
@@ -349,7 +371,7 @@
     "driverSlug": "frank-dowell",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_frank-dowell_geoff-mckarns_post_002.jpg",
@@ -360,7 +382,7 @@
     "driverSlug": "frank-dowell",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_frank-slabenak_mike-slabenak_post_001.jpg",
@@ -371,7 +393,7 @@
     "driverSlug": "frank-slabenak",
     "photographerSlug": "mike-slabenak",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_hal-davis_geoff-mckarns_post_001.jpg",
@@ -382,7 +404,7 @@
     "driverSlug": "hal-davis",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jack-aschenbrenner_geoff-mckarns_post_001.jpg",
@@ -393,7 +415,7 @@
     "driverSlug": "jack-aschenbrenner",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_001.jpg",
@@ -404,7 +426,7 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_geoff-mckarns_post_4444.jpg",
@@ -418,6 +440,17 @@
     "sequence": "4444"
   },
   {
+    "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_pete-fileca_post_444.jpg",
+    "trackSlug": "waukegan-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-kemperman",
+    "photographerSlug": "pete-fileca",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
     "storagePath": "photos/master/waukegan-speedway/unknown-year/waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
     "publicPath": "/photos/waukegan-speedway_unknown-year_jerry-kemperman_tom-furlan_post_001.jpg",
@@ -426,7 +459,7 @@
     "driverSlug": "jerry-kemperman",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_geoff-mckarns_post_001.jpg",
@@ -437,7 +470,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_001.jpg",
@@ -448,7 +481,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_002.jpg",
@@ -459,7 +492,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_003.jpg",
@@ -470,7 +503,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_004.jpg",
@@ -481,7 +514,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_005.jpg",
@@ -492,7 +525,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_pat-heaney_post_006.jpg",
@@ -503,7 +536,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_randy-boehles_post_001.jpg",
@@ -514,7 +547,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "randy-boehles",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-cossman_tom-furlan_post_001.jpg",
@@ -525,7 +558,7 @@
     "driverSlug": "jim-cossman",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-hill_tom-furlan_post_001.jpg",
@@ -536,7 +569,7 @@
     "driverSlug": "jim-hill",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_jim-sullivan_stan-kalwasinski_post_001.jpg",
@@ -547,7 +580,7 @@
     "driverSlug": "jim-sullivan",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_johnny-mcpartlin_geoff-mckarns_post_001.jpg",
@@ -558,7 +591,7 @@
     "driverSlug": "johnny-mcpartlin",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_johnny-reimer_stan-kalwasinski_post_001.jpg",
@@ -569,7 +602,7 @@
     "driverSlug": "johnny-reimer",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_johnny-reimer_stan-kalwasinski_post_002.jpg",
@@ -580,7 +613,7 @@
     "driverSlug": "johnny-reimer",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ken-becker_cliff-maki_post_001.jpg",
@@ -591,7 +624,7 @@
     "driverSlug": "ken-becker",
     "photographerSlug": "cliff-maki",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_larry-schuler_geoff-mckarns_post_001.jpg",
@@ -602,7 +635,7 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_larry-schuler_geoff-mckarns_post_002.jpg",
@@ -613,7 +646,7 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_lee-tibbitts_tom-furlan_post_001.jpg",
@@ -624,7 +657,7 @@
     "driverSlug": "lee-tibbitts",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_marty-champman_unknown-photographer_photo_001.jpg",
@@ -635,7 +668,7 @@
     "driverSlug": "marty-champman",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_mike-bicanic_geoff-mckarns_post_001.jpg",
@@ -646,7 +679,7 @@
     "driverSlug": "mike-bicanic",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_mike-frost_geoff-mckarns_post_001.jpg",
@@ -657,7 +690,7 @@
     "driverSlug": "mike-frost",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_mike-melius_geoff-mckarns_post_001.jpg",
@@ -668,7 +701,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_mike-wolfe_tom-furlan_post_001.jpg",
@@ -679,7 +712,7 @@
     "driverSlug": "mike-wolfe",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ray-young_geoff-mckarns_post_001.jpg",
@@ -690,7 +723,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ray-young_geoff-mckarns_post_002.jpg",
@@ -701,7 +734,7 @@
     "driverSlug": "ray-young",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_rich-bickle-sr_geoff-mckarns_post_001.jpg",
@@ -712,7 +745,7 @@
     "driverSlug": "rich-bickle-sr",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_rich-sundling_geoff-mckarns_post_001.jpg",
@@ -723,7 +756,7 @@
     "driverSlug": "rich-sundling",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_roger-otto_stan-kalwasinski_post_001.jpg",
@@ -734,7 +767,7 @@
     "driverSlug": "roger-otto",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ron-bergsma_stan-kalwasinski_post_001.jpg",
@@ -745,7 +778,7 @@
     "driverSlug": "ron-bergsma",
     "photographerSlug": "stan-kalwasinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ron-parker_geoff-mckarns_post_001.jpg",
@@ -756,7 +789,7 @@
     "driverSlug": "ron-parker",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_ron-shearer_geoff-mckarns_post_001.jpg",
@@ -767,7 +800,7 @@
     "driverSlug": "ron-shearer",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_steve-seligman_geoff-mckarns_post_001.jpg",
@@ -778,7 +811,7 @@
     "driverSlug": "steve-seligman",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_tom-bain_tom-bain_post_001.jpg",
@@ -789,7 +822,7 @@
     "driverSlug": "tom-bain",
     "photographerSlug": "tom-bain",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_tom-jones_geoff-mckarns_post_001.jpg",
@@ -800,7 +833,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_tom-jones_tom-furlan_post_001.jpg",
@@ -811,7 +844,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_tom-musgrave_tom-furlan_post_001.jpg",
@@ -822,7 +855,7 @@
     "driverSlug": "tom-musgrave",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_unknown-driver_dennis-satorius_post_001.jpg",
@@ -833,7 +866,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_unknown-driver_dennis-satorius_post_002.jpg",
@@ -844,7 +877,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "dennis-satorius",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_unknown-driver_geoff-mckarns_post_155.jpg",
@@ -965,7 +998,7 @@
     "driverSlug": "vern-browne",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_vern-browne_tom-furlan_post_001.jpg",
@@ -976,7 +1009,7 @@
     "driverSlug": "vern-browne",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_wayne-dukas_chicagoland-auto-racing_post_165.jpg",
@@ -998,7 +1031,7 @@
     "driverSlug": "wayne-dukas",
     "photographerSlug": "tom-furlan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_wayne-welch_geoff-mckarns_post_001.jpg",
@@ -1009,7 +1042,7 @@
     "driverSlug": "wayne-welch",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "waukegan-speedway_unknown-year_wendell-stevenson_geoff-mckarns_post_001.jpg",
@@ -1020,6 +1053,6 @@
     "driverSlug": "wendell-stevenson",
     "photographerSlug": "geoff-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

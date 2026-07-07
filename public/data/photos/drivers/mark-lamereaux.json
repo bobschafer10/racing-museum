@@ -6,9 +6,9 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "mark-lamereaux",
-    "photographerSlug": "charlie-spry-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mark-lamereaux_kurt-luoma_photo_001.jpg",
@@ -19,6 +19,6 @@
     "driverSlug": "mark-lamereaux",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

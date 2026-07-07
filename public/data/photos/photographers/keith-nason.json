@@ -8,7 +8,7 @@
     "driverSlug": "mitch-johnson",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "red-cedar-speedway_unknown-year_brent-laursen_keith-nason_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "brent-laursen",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "riverview-raceway_unknown-year_john-jones_keith-nason_post_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "john-jones",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "riverview-raceway_unknown-year_tom-nesbitt_keith-nason_post_222.jpg",
@@ -44,15 +44,15 @@
     "sequence": "222"
   },
   {
-    "fileName": "unknown-track_1981_tom-nesbitt_keith-nason_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_tom-nesbitt_keith-nason_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1981_tom-nesbitt_keith-nason_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
     "trackSlug": "unknown-track",
-    "year": "1981",
-    "driverSlug": "tom-nesbitt",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
     "photographerSlug": "keith-nason",
-    "creditType": "photo",
-    "sequence": "001"
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
@@ -63,7 +63,18 @@
     "driverSlug": "bob-saterdaelen",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_bob-saterdaelen_keith-nason_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "bob-saterdaelen",
+    "photographerSlug": "keith-nason",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_egersdorf_keith-nason_photo_001.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "egersdorf",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_egersdorf_keith-nason_photo_002.jpg",
@@ -85,18 +96,7 @@
     "driverSlug": "egersdorf",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_glenn-timko_keith-nason_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_glenn-timko_keith-nason_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_glenn-timko_keith-nason_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "glenn-timko",
-    "photographerSlug": "keith-nason",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_glenn-timko_keith-nason_post_001.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "glenn-timko",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_jeff-hinkemeyer_keith-nason_photo_001.jpg",
@@ -118,29 +118,7 @@
     "driverSlug": "jeff-hinkemeyer",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_jerry-redetzke_keith-nason_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-redetzke_keith-nason_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-redetzke_keith-nason_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "jerry-redetzke",
-    "photographerSlug": "keith-nason",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_kerry-hansen_keith-nason_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_kerry-hansen_keith-nason_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_kerry-hansen_keith-nason_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "kerry-hansen",
-    "photographerSlug": "keith-nason",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_leon-plank_keith-nason_photo_001.jpg",
@@ -151,7 +129,7 @@
     "driverSlug": "leon-plank",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-parker_keith-nason_photo_001.jpg",
@@ -162,7 +140,7 @@
     "driverSlug": "pete-parker",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_phil-prusak-leon-plank_keith-nason_post_001.jpg",
@@ -173,7 +151,7 @@
     "driverSlug": "phil-prusak-leon-plank",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-haas_keith-nason_photo_001.jpg",
@@ -184,7 +162,7 @@
     "driverSlug": "steve-haas",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_keith-nason_photo_001.jpg",
@@ -195,7 +173,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-nesbitt_keith-nason_post_001.jpg",
@@ -206,7 +184,7 @@
     "driverSlug": "tom-nesbitt",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-smart_keith-nason_post_001.jpg",
@@ -217,6 +195,6 @@
     "driverSlug": "tom-smart",
     "photographerSlug": "keith-nason",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_2003_john-kaanta_unknown-photographer_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "red-cedar-speedway_unknown-year_john-kaanta_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "red-cedar-speedway_unknown-year_john-kaanta_unknown-photographer_photo_7236.jpg",
@@ -44,169 +44,15 @@
     "sequence": "7236"
   },
   {
-    "fileName": "unknown-track_unknown-year_john-kaanta_larry-quinn_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_larry-quinn_post_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_larry-quinn_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "larry-quinn",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_ryan-aho_post_071.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_ryan-aho_post_071.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_ryan-aho_post_071.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "071"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_ryan-aho_post_107.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_ryan-aho_post_107.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_ryan-aho_post_107.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "ryan-aho",
-    "creditType": "post",
-    "sequence": "107"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_todd-narveson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_todd-narveson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_todd-narveson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "todd-narveson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_001 (2).jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_001 (2).jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_001 (2).jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "steele-county-fairgrounds_unknown-year_john-kaanta_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/unknown-year/steele-county-fairgrounds_unknown-year_john-kaanta_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds_unknown-year_john-kaanta_unknown-photographer_photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
     "year": "unknown-year",
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001 (2)"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_003.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_003.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_003.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_004.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_004.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_004.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "004"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_005.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_005.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_005.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "005"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_006.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_006.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_006.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "006"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_007.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_007.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_007.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "007"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_008.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_008.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_008.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "008"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_009.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_009.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_009.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "009"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_010.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_010.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_john-kaanta_unknown-photographer_photo_010.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "john-kaanta",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "010"
+    "sequence": "333"
   },
   {
     "fileName": "yellow-river-speedway_1990_john-kaanta_unknown-photographer_photo_001.jpg",
@@ -217,7 +63,7 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_john-kaanta_kurt-luoma_photo_001.jpg",
@@ -228,6 +74,6 @@
     "driverSlug": "john-kaanta",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

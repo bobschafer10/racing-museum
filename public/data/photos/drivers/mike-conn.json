@@ -8,7 +8,18 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1978/hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1978_mike-conn_rpm_photo_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1978",
+    "driverSlug": "mike-conn",
+    "photographerSlug": "rpm",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_mike-conn_bob-schafer_photo_104.jpg",
@@ -85,7 +96,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "035"
+    "sequence": "35"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-conn_unknown-photographer_photo_001.jpg",
@@ -96,7 +107,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-conn_unknown-photographer_photo_002.jpg",
@@ -107,7 +118,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-conn_unknown-photographer_photo_003.jpg",
@@ -118,7 +129,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-conn_unknown-photographer_photo_004.jpg",
@@ -129,7 +140,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-conn_unknown-photographer_photo_005.jpg",
@@ -140,7 +151,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_mike-conn_weber-brothers_photo_001.jpg",
@@ -151,7 +162,7 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wilmot-raceway_2020_mike-conn_weber-brothers_photo_001.jpg",
@@ -162,6 +173,17 @@
     "driverSlug": "mike-conn",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wilmot-raceway_2022_mike-conn_weber-brothers_photo_444.jpg",
+    "storagePath": "photos/master/wilmot-raceway/2022/wilmot-raceway_2022_mike-conn_weber-brothers_photo_444.jpg",
+    "publicPath": "/photos/wilmot-raceway_2022_mike-conn_weber-brothers_photo_444.jpg",
+    "trackSlug": "wilmot-raceway",
+    "year": "2022",
+    "driverSlug": "mike-conn",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "444"
   }
 ]

@@ -19,7 +19,7 @@
     "driverSlug": "brad-dahmer",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "brainerd-international-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
@@ -30,7 +30,95 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_bob-dotter_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-dotter",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_brian-kubinski_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_brian-kubinski_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_brian-kubinski_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-kubinski",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_chet-kurzeja_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_chet-kurzeja_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_chet-kurzeja_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "chet-kurzeja",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_gene-hill_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_gene-hill_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_gene-hill_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "gene-hill",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "grundy-county-speedway_unknown-year_jimmy-wilson_keith-vercauteren_post_333.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/unknown-year/grundy-county-speedway_unknown-year_jimmy-wilson_keith-vercauteren_post_333.jpg",
+    "publicPath": "/photos/grundy-county-speedway_unknown-year_jimmy-wilson_keith-vercauteren_post_333.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jimmy-wilson",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "illiana-speedway_2001_peter-hernandez_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/illiana-speedway/2001/illiana-speedway_2001_peter-hernandez_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/illiana-speedway_2001_peter-hernandez_keith-vercauteren_post_444.jpg",
+    "trackSlug": "illiana-speedway",
+    "year": "2001",
+    "driverSlug": "peter-hernandez",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_bill-prietzel_keith-vercauteren_post_001.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "bill-prietzel",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
+    "fileName": "lake-geneva-raceway_unknown-year_james-swan_keith-vercauteren_post_555.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/unknown-year/lake-geneva-raceway_unknown-year_james-swan_keith-vercauteren_post_555.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_unknown-year_james-swan_keith-vercauteren_post_555.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "unknown-year",
+    "driverSlug": "james-swan",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_david-duckworth_keith-vercauteren_post_111.jpg",
@@ -44,6 +132,72 @@
     "sequence": "111"
   },
   {
+    "fileName": "marshfield-super-speedway_unknown-year_david-duckworth_keith-vercauteren_post_111.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/unknown-year/marshfield-super-speedway_unknown-year_david-duckworth_keith-vercauteren_post_111.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_unknown-year_david-duckworth_keith-vercauteren_post_111.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "unknown-year",
+    "driverSlug": "david-duckworth",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1998/milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1998",
+    "driverSlug": "joel-clossey",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1998/milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1998",
+    "driverSlug": "steve-moenck",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/2001/milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_2001_steve-strasburg_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "2001",
+    "driverSlug": "steve-strasburg",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nowak",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_tim-rothe_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "tim-rothe",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "road-america_1983_dave-watson_keith-vercauteren_post_001.jpg",
     "storagePath": "photos/master/road-america/1983/road-america_1983_dave-watson_keith-vercauteren_post_001.jpg",
     "publicPath": "/photos/road-america_1983_dave-watson_keith-vercauteren_post_001.jpg",
@@ -52,7 +206,18 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "road-america_2007_kyle-shear_keith-vercauteren_post-444.jpg",
+    "storagePath": "photos/master/road-america/2007/road-america_2007_kyle-shear_keith-vercauteren_post-444.jpg",
+    "publicPath": "/photos/road-america_2007_kyle-shear_keith-vercauteren_post-444.jpg",
+    "trackSlug": "road-america",
+    "year": "2007",
+    "driverSlug": "kyle-shear",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_001.jpg",
@@ -63,7 +228,18 @@
     "driverSlug": "brian-lambie",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_brian-lambie_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "brian-lambie",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_001.jpg",
@@ -74,7 +250,51 @@
     "driverSlug": "burton-brown",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_burton-brown_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "burton-brown",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_eddie-hoffman_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_eddie-hoffman_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_eddie-hoffman_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "eddie-hoffman",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_john-strausser_keith-vercauteren_post_323.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_john-strausser_keith-vercauteren_post_323.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_john-strausser_keith-vercauteren_post_323.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-strausser",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "323"
+  },
+  {
+    "fileName": "rockford-speedway_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_lyle-nowak_keith-vercauteren_post_444.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lyle-nowak",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "slinger-speedway_1987_dave-tomczak_keith-vercauteren_post_001.jpg",
@@ -85,7 +305,7 @@
     "driverSlug": "dave-tomczak",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_doug-strasburg_keith-vercauteren_post_001.jpg",
@@ -96,7 +316,7 @@
     "driverSlug": "doug-strasburg",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_frank-formiller_keith-vercauteren_post_001.jpg",
@@ -107,7 +327,7 @@
     "driverSlug": "frank-formiller",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_jeremy-bloomberg_keith-vercauteren_post_116.jpg",
@@ -119,6 +339,17 @@
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
     "sequence": "116"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_scott-poritz_keith-vercauteren_post_332.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_scott-poritz_keith-vercauteren_post_332.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_scott-poritz_keith-vercauteren_post_332.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "scott-poritz",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "332"
   },
   {
     "fileName": "unknown-track_unknown-year_shawn-utphall_keith-vercauteren_post_333.jpg",
@@ -140,7 +371,7 @@
     "driverSlug": "tom-reffner",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_bob-senneker_keith-vercauteren_post_001.jpg",
@@ -151,7 +382,7 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_frankie-heimerl_keith-vercauteren_post_001.jpg",
@@ -162,7 +393,7 @@
     "driverSlug": "frankie-heimerl",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1980_larry-schuler_keith-vercauteren_post_001.jpg",
@@ -173,7 +404,18 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_1983_terry-baldry_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/1983/wisconsin-international-raceway_1983_terry-baldry_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_1983_terry-baldry_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "1983",
+    "driverSlug": "terry-baldry",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_1984_dave-wypiszynski_keith-vercauteren_post_001.jpg",
@@ -184,7 +426,7 @@
     "driverSlug": "dave-wypiszynski",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1984_rod-wheeler_keith-vercauteren_post_001.jpg",
@@ -195,7 +437,7 @@
     "driverSlug": "rod-wheeler",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1994_jay-sauter_keith-vercauteren_post_001.jpg",
@@ -206,7 +448,7 @@
     "driverSlug": "jay-sauter",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2000_brad-mueller_keith-vercauteren_post_001.jpg",
@@ -217,7 +459,7 @@
     "driverSlug": "brad-mueller",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_al-schill_keith-vercauteren_post_111.jpg",
@@ -239,7 +481,7 @@
     "driverSlug": "arnie-christen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_arnie-christen_keith-vercauteren_post_116.jpg",
@@ -272,7 +514,7 @@
     "driverSlug": "bill-prietzel",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-brownell_keith-vercauteren_post_001.jpg",
@@ -283,7 +525,7 @@
     "driverSlug": "bob-brownell",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-gunn_keith-vercauteren_post_1140.jpg",
@@ -316,7 +558,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-jusola_keith-vercauteren_post_001.jpg",
@@ -327,7 +569,7 @@
     "driverSlug": "bob-jusola",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-mcdonald_keith-vercauteren_post_001.jpg",
@@ -338,7 +580,7 @@
     "driverSlug": "bob-mcdonald",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-menor_keith-vercauteren_post_001.jpg",
@@ -349,7 +591,7 @@
     "driverSlug": "bob-menor",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bob-senneker_keith-vercauteren_post_001.jpg",
@@ -360,7 +602,7 @@
     "driverSlug": "bob-senneker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bobby-dotter_keith-vercauteren_post_001.jpg",
@@ -371,7 +613,7 @@
     "driverSlug": "bobby-dotter",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bobby-hacker_keith-vercauteren_post_116.jpg",
@@ -393,7 +635,7 @@
     "driverSlug": "brian-lambie",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-bares_keith-vercauteren_post_001.jpg",
@@ -404,7 +646,7 @@
     "driverSlug": "bruce-bares",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_bruce-white_keith-vercauteren_post_001.jpg",
@@ -415,7 +657,7 @@
     "driverSlug": "bruce-white",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_butch-miller_keith-vercauteren_post_100.jpg",
@@ -429,6 +671,17 @@
     "sequence": "100"
   },
   {
+    "fileName": "wisconsin-international-raceway_unknown-year_butch-miller_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_butch-miller_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_butch-miller_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "butch-miller",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "wisconsin-international-raceway_unknown-year_chuck-schmidt_keith-vercauteren_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_chuck-schmidt_keith-vercauteren_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_chuck-schmidt_keith-vercauteren_post_001.jpg",
@@ -437,7 +690,7 @@
     "driverSlug": "chuck-schmidt",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_craig-peters_keith-vercauteren_post_001.jpg",
@@ -448,7 +701,7 @@
     "driverSlug": "craig-peters",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_craig-peters_keith-vercauteren_post_333.jpg",
@@ -462,6 +715,17 @@
     "sequence": "333"
   },
   {
+    "fileName": "wisconsin-international-raceway_unknown-year_dale-cayemburg_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-cayemburg_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-cayemburg_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dale-cayemburg",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-earnhardt_keith-vercauteren_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dale-earnhardt_keith-vercauteren_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dale-earnhardt_keith-vercauteren_post_001.jpg",
@@ -470,7 +734,7 @@
     "driverSlug": "dale-earnhardt",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-weyer_keith-vercauteren_post_001.jpg",
@@ -481,7 +745,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dale-weyer_keith-vercauteren_post_2221.jpg",
@@ -503,7 +767,7 @@
     "driverSlug": "dan-nettekoven",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-decker_keith-vercauteren_post_001.jpg",
@@ -514,7 +778,7 @@
     "driverSlug": "dave-decker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-valentyne_keith-vercauteren_post_001.jpg",
@@ -525,7 +789,7 @@
     "driverSlug": "dave-valentyne",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dave-van-elzen_keith-vercauteren_post_116.jpg",
@@ -547,7 +811,7 @@
     "driverSlug": "dave-watson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dennis-dietzen_keith-vercauteren_post_001.jpg",
@@ -558,7 +822,7 @@
     "driverSlug": "dennis-dietzen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dennis-dietzen_keith-vercauteren_post_116.jpg",
@@ -580,7 +844,7 @@
     "driverSlug": "dennis-lampman",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dennis-utke_keith-vercauteren_post_001.jpg",
@@ -591,7 +855,7 @@
     "driverSlug": "dennis-utke",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dick-stang_keith-vercauteren_post_001.jpg",
@@ -602,7 +866,7 @@
     "driverSlug": "dick-stang",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dick-trickle_keith-vercauteren_post_001.jpg",
@@ -613,7 +877,18 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_dick-trickle_keith-vercauteren_post_100.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_dick-trickle_keith-vercauteren_post_100.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_dick-trickle_keith-vercauteren_post_100.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "dick-trickle",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "100"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_dick-trickle_keith-vercauteren_post_1256.jpg",
@@ -646,7 +921,7 @@
     "driverSlug": "eric-moe",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_everett-dewitt_keith-vercauteren_post_001.jpg",
@@ -657,7 +932,7 @@
     "driverSlug": "everett-dewitt",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fran-prestay_keith-vercauteren_post_001.jpg",
@@ -668,7 +943,7 @@
     "driverSlug": "fran-prestay",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fred-bender_keith-vercauteren_post_001.jpg",
@@ -679,7 +954,7 @@
     "driverSlug": "fred-bender",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_fred-winn_keith-vercauteren_post_001.jpg",
@@ -690,7 +965,7 @@
     "driverSlug": "fred-winn",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-may_keith-vercauteren_post_001.jpg",
@@ -701,7 +976,7 @@
     "driverSlug": "gordie-may",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_gordie-sannes_keith-vercauteren_post_333.jpg",
@@ -723,7 +998,7 @@
     "driverSlug": "jack-hardy",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jack-landis_keith-vercauteren_post_001.jpg",
@@ -734,7 +1009,7 @@
     "driverSlug": "jack-landis",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jeff-fredrickson_keith-vercauteren_post_001.jpg",
@@ -745,7 +1020,7 @@
     "driverSlug": "jeff-fredrickson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jeff-richards_keith-vercauteren_post_001.jpg",
@@ -756,7 +1031,7 @@
     "driverSlug": "jeff-richards",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-eckhardt_keith-vercauteren_post_001.jpg",
@@ -767,7 +1042,7 @@
     "driverSlug": "jerry-eckhardt",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-kuhn_keith-vercauteren_post_116.jpg",
@@ -789,7 +1064,18 @@
     "driverSlug": "jerry-smith",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jerry-smith_keith-vercauteren_post_111.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jerry-smith_keith-vercauteren_post_111.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jerry-smith_keith-vercauteren_post_111.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-smith",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jerry-smits_keith-vercauteren_post_116.jpg",
@@ -801,6 +1087,17 @@
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
     "sequence": "116"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_jerry-wenzel_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jerry-wenzel_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jerry-wenzel_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jerry-wenzel",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-anthony_keith-vercauteren_post_116.jpg",
@@ -822,7 +1119,7 @@
     "driverSlug": "jim-courtney",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-sauter_keith-vercauteren_post_001.jpg",
@@ -833,7 +1130,7 @@
     "driverSlug": "jim-sauter",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-wachsmuth_keith-vercauteren_post_001.jpg",
@@ -844,7 +1141,7 @@
     "driverSlug": "jim-wachsmuth",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jim-weber_keith-vercauteren_post_113.jpg",
@@ -858,6 +1155,17 @@
     "sequence": "113"
   },
   {
+    "fileName": "wisconsin-international-raceway_unknown-year_jim-weber_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jim-weber_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jim-weber_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "jim-weber",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "wisconsin-international-raceway_unknown-year_jimmy-pierson_keith-vercauteren_post_002.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_jimmy-pierson_keith-vercauteren_post_002.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_jimmy-pierson_keith-vercauteren_post_002.jpg",
@@ -866,7 +1174,7 @@
     "driverSlug": "jimmy-pierson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jj-smith_keith-vercauteren_post_001.jpg",
@@ -877,7 +1185,7 @@
     "driverSlug": "jj-smith",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_jj-smith_keith-vercauteren_post_116.jpg",
@@ -899,7 +1207,7 @@
     "driverSlug": "joe-haferkorn",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_joe-haferkorn_keith-vercauteren_post_116.jpg",
@@ -921,7 +1229,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_joe-vanooyen_keith-vercauteren_post_001.jpg",
@@ -932,7 +1240,7 @@
     "driverSlug": "joe-vanooyen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-geske_keith-vercauteren_photo_001.jpg",
@@ -943,7 +1251,18 @@
     "driverSlug": "john-geske",
     "photographerSlug": "keith-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_john-gregorich_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_john-gregorich_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_john-gregorich_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "john-gregorich",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-knaus_keith-vercauteren_post_001.jpg",
@@ -954,7 +1273,7 @@
     "driverSlug": "john-knaus",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-mcnamara_keith-vercauteren_post_111.jpg",
@@ -998,7 +1317,7 @@
     "driverSlug": "john-reimer",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-speer_keith-vercauteren_post_001.jpg",
@@ -1009,7 +1328,7 @@
     "driverSlug": "john-speer",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_john-ziegler_keith-vercauteren_post_001.jpg",
@@ -1020,7 +1339,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kenny-wallace_keith-vercauteren_post_222.jpg",
@@ -1042,7 +1361,7 @@
     "driverSlug": "kent-pearson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-cywinski_keith-vercauteren_post_001.jpg",
@@ -1053,7 +1372,7 @@
     "driverSlug": "kevin-cywinski",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kurt-johnson_keith-vercauteren_post_111.jpg",
@@ -1067,6 +1386,17 @@
     "sequence": "111"
   },
   {
+    "fileName": "wisconsin-international-raceway_unknown-year_kurt-johnson_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_kurt-johnson_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_kurt-johnson_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "kurt-johnson",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-gintner_keith-vercauteren_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_larry-gintner_keith-vercauteren_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_larry-gintner_keith-vercauteren_post_001.jpg",
@@ -1075,7 +1405,7 @@
     "driverSlug": "larry-gintner",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-schuler_keith-vercauteren_post_001.jpg",
@@ -1086,7 +1416,7 @@
     "driverSlug": "larry-schuler",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_larry-schuler_keith-vercauteren_post_1127.jpg",
@@ -1119,7 +1449,29 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mark-pluer_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mark-pluer_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mark-pluer_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-pluer",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mark-pluer_keith-vercauteren_post_454.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mark-pluer_keith-vercauteren_post_454.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mark-pluer_keith-vercauteren_post_454.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mark-pluer",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "454"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-kellly_keith-vercauteren_post_001.jpg",
@@ -1130,7 +1482,7 @@
     "driverSlug": "mike-kellly",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-kelly_keith-vercauteren_post_1259.jpg",
@@ -1152,7 +1504,7 @@
     "driverSlug": "mike-mattson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-mattson_keith-vercauteren_post_1260.jpg",
@@ -1174,7 +1526,7 @@
     "driverSlug": "mike-reichenberger",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-reichenberger_keith-vercauteren_post_111.jpg",
@@ -1186,6 +1538,17 @@
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
     "sequence": "111"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_mike-reichenberger_keith-vercauteren-post_001.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_mike-reichenberger_keith-vercauteren-post_001.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_mike-reichenberger_keith-vercauteren-post_001.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "mike-reichenberger",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_mike-st-cyr_keith-vercauteren_post_333.jpg",
@@ -1207,7 +1570,18 @@
     "driverSlug": "mj-mcbride",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_monte-coffman_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_monte-coffman_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_monte-coffman_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "monte-coffman",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_neil-maas_keith-vercauteren_post_1144.jpg",
@@ -1221,6 +1595,17 @@
     "sequence": "1144"
   },
   {
+    "fileName": "wisconsin-international-raceway_unknown-year_neil-maas_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_neil-maas_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_neil-maas_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "neil-maas",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
     "fileName": "wisconsin-international-raceway_unknown-year_perry-redeker_keith-vercauteren_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_perry-redeker_keith-vercauteren_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_perry-redeker_keith-vercauteren_post_001.jpg",
@@ -1229,7 +1614,7 @@
     "driverSlug": "perry-redeker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_perry-redeker_keith-vercauteren_post_002.jpg",
@@ -1240,7 +1625,7 @@
     "driverSlug": "perry-redeker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_perry-redeker_keith-vercauteren_post_003.jpg",
@@ -1251,7 +1636,7 @@
     "driverSlug": "perry-redeker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_perry-redeker_keith-vercauteren_post_004.jpg",
@@ -1262,7 +1647,7 @@
     "driverSlug": "perry-redeker",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-berken_keith-vercauteren_post_001.jpg",
@@ -1273,7 +1658,7 @@
     "driverSlug": "pete-berken",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-berken_keith-vercauteren_post_002.jpg",
@@ -1284,7 +1669,7 @@
     "driverSlug": "pete-berken",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-parker_keith-vercauteren_post_1126.jpg",
@@ -1306,7 +1691,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_randy-boegh_keith-vercauteren_post_001.jpg",
@@ -1317,7 +1702,7 @@
     "driverSlug": "randy-boegh",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_randy-gintner_keith-vercauteren_post_001.jpg",
@@ -1328,7 +1713,7 @@
     "driverSlug": "randy-gintner",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_randy-sweet_keith-vercauteren_post_001.jpg",
@@ -1339,7 +1724,7 @@
     "driverSlug": "randy-sweet",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_richard-lofy_keith-vercauteren_post_001.jpg",
@@ -1350,7 +1735,18 @@
     "driverSlug": "richard-lofy",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_rick-beebe_keith-vercauteren_post_555.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_rick-beebe_keith-vercauteren_post_555.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_rick-beebe_keith-vercauteren_post_555.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "rick-beebe",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "555"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_robbie-reiser_keith-vercauteren_post_001.jpg",
@@ -1361,7 +1757,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_robbie-reiser_keith-vercauteren_post_002.jpg",
@@ -1372,7 +1768,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_roger-regeth_keith-vercauteren_post_111.jpg",
@@ -1386,6 +1782,28 @@
     "sequence": "111"
   },
   {
+    "fileName": "wisconsin-international-raceway_unknown-year_russ-keberlein_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_russ-keberlein_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_russ-keberlein_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "russ-keberlein",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_russ-peterson_keith-vercauteren_post_111.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_russ-peterson_keith-vercauteren_post_111.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_russ-peterson_keith-vercauteren_post_111.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "russ-peterson",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "wisconsin-international-raceway_unknown-year_scott-hansen_keith-vercauteren_post_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_scott-hansen_keith-vercauteren_post_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_unknown-year_scott-hansen_keith-vercauteren_post_001.jpg",
@@ -1394,7 +1812,7 @@
     "driverSlug": "scott-hansen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_scott-hansen_keith-vercauteren_post_100.jpg",
@@ -1416,7 +1834,7 @@
     "driverSlug": "stan-gracyalny",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-burgess_keith-vercauteren_post_001.jpg",
@@ -1427,7 +1845,7 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-burgess_keith-vercauteren_unknown_001.jpg",
@@ -1437,8 +1855,8 @@
     "year": "unknown-year",
     "driverSlug": "steve-burgess",
     "photographerSlug": "keith-vercauteren",
-    "creditType": "unknown",
-    "sequence": "001"
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-carlson_keith-vercauteren_post_001.jpg",
@@ -1449,7 +1867,7 @@
     "driverSlug": "steve-carlson",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_001.jpg",
@@ -1460,7 +1878,7 @@
     "driverSlug": "steve-giese",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-giese_keith-vercauteren_post_111.jpg",
@@ -1482,7 +1900,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-holzhausen_keith-vercauteren_post_002.jpg",
@@ -1493,7 +1911,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-holzhausen_keith-vercauteren_post_003.jpg",
@@ -1504,7 +1922,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_steve-holzhausen_keith-vercauteren_post_1000.jpg",
@@ -1526,7 +1944,7 @@
     "driverSlug": "terry-baldry",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_thom-laimon_keith-vercauteren_post_001.jpg",
@@ -1537,7 +1955,7 @@
     "driverSlug": "thom-laimon",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tim-rothe_keith-vercauteren_post_001.jpg",
@@ -1548,7 +1966,18 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_tod-kropf_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_tod-kropf_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_tod-kropf_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "tod-kropf",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_todd-herrmann_keith-vercauteren_post_001.jpg",
@@ -1559,7 +1988,7 @@
     "driverSlug": "todd-herrmann",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_todd-herrmann_keith-vercauteren_post_002.jpg",
@@ -1570,7 +1999,7 @@
     "driverSlug": "todd-herrmann",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_001.jpg",
@@ -1581,7 +2010,7 @@
     "driverSlug": "tom-haen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-haen_keith-vercauteren_post_222.jpg",
@@ -1603,7 +2032,7 @@
     "driverSlug": "tom-jensen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tom-jones_keith-vercauteren_post_001.jpg",
@@ -1614,7 +2043,7 @@
     "driverSlug": "tom-jones",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_tony-strupp_keith-vercauteren_post_001.jpg",
@@ -1625,7 +2054,7 @@
     "driverSlug": "tony-strupp",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wally-blank_keith-vercauteren_post_001.jpg",
@@ -1636,7 +2065,18 @@
     "driverSlug": "wally-blank",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_wally-jors_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_wally-jors_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_wally-jors_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "wally-jors",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wayne-roffers_keith-vercauteren_post_001.jpg",
@@ -1647,7 +2087,7 @@
     "driverSlug": "wayne-roffers",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wayne-roffers_keith-vercauteren_post_002.jpg",
@@ -1658,7 +2098,7 @@
     "driverSlug": "wayne-roffers",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wayne-roffers_keith-vercauteren_post_003.jpg",
@@ -1669,7 +2109,7 @@
     "driverSlug": "wayne-roffers",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wayne-roffers_keith-vercauteren_post_004.jpg",
@@ -1680,7 +2120,7 @@
     "driverSlug": "wayne-roffers",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wayne-roffers_keith-vercauteren_post_222.jpg",
@@ -1702,7 +2142,7 @@
     "driverSlug": "wayne-weckworth",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_wes-biswell_keith-vercauteren_post_001.jpg",
@@ -1713,7 +2153,18 @@
     "driverSlug": "wes-biswell",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "wisconsin-international-raceway_unknown-year_wes-biswell_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/wisconsin-international-raceway/unknown-year/wisconsin-international-raceway_unknown-year_wes-biswell_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/wisconsin-international-raceway_unknown-year_wes-biswell_keith-vercauteren_post_444.jpg",
+    "trackSlug": "wisconsin-international-raceway",
+    "year": "unknown-year",
+    "driverSlug": "wes-biswell",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_willie-goeden_keith-vercauteren_post_001.jpg",
@@ -1724,6 +2175,6 @@
     "driverSlug": "willie-goeden",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

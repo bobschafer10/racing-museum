@@ -8,7 +8,7 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1989_dan-johnson_pat-heaney_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_dan-johnson_pat-heaney_post_001.jpg",
@@ -30,18 +30,7 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1972_dan-johnson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1972/unknown-track_1972_dan-johnson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1972_dan-johnson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1972",
-    "driverSlug": "dan-johnson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-johnson_pat-heaney_post_001.jpg",
@@ -52,7 +41,18 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-johnson_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-johnson_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-johnson_pat-heaney_post_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-johnson",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_001.jpg",
@@ -63,7 +63,18 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-johnson",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_002.jpg",
@@ -74,7 +85,18 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-johnson_pete-vercauteren_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-johnson",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_002.jpg",
@@ -85,7 +107,18 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_003.jpg",
@@ -96,6 +129,17 @@
     "driverSlug": "dan-johnson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_dan-johnson_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "dan-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   }
 ]

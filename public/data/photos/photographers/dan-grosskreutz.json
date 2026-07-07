@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/brown-county-speedway/unknown-year/brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/brown-county-speedway_unknown-year_len-zellner_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "brown-county-speedway",
+    "year": "unknown-year",
+    "driverSlug": "len-zellner",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "luxemburg-speedway_2003_cody-grosskreutz_dan-grosskreutz_post_001.jpg",
     "storagePath": "photos/master/luxemburg-speedway/2003/luxemburg-speedway_2003_cody-grosskreutz_dan-grosskreutz_post_001.jpg",
     "publicPath": "/photos/luxemburg-speedway_2003_cody-grosskreutz_dan-grosskreutz_post_001.jpg",
@@ -8,6 +19,50 @@
     "driverSlug": "cody-grosskreutz",
     "photographerSlug": "dan-grosskreutz",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/1990/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_1990_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "1990",
+    "driverSlug": "dan-grosskreutz",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/shawano-speedway_unknown-year_dan-grosskreutz_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "unknown-year",
+    "driverSlug": "dan-grosskreutz",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_milo-van-oudenhoven_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_milo-van-oudenhoven_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_milo-van-oudenhoven_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "milo-van-oudenhoven",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_red-bedell_dan-grosskreutz_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_red-bedell_dan-grosskreutz_post_111.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_red-bedell_dan-grosskreutz_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "red-bedell",
+    "photographerSlug": "dan-grosskreutz",
+    "creditType": "post",
+    "sequence": "111"
   }
 ]

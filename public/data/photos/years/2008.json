@@ -8,7 +8,18 @@
     "driverSlug": "adam-jahnke",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "009"
+    "sequence": "9"
+  },
+  {
+    "fileName": "manitowoc-expo-speedway_2008_tim-buhler_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/manitowoc-expo-speedway/2008/manitowoc-expo-speedway_2008_tim-buhler_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/manitowoc-expo-speedway_2008_tim-buhler_unknown-photographer_photo_111.jpg",
+    "trackSlug": "manitowoc-expo-speedway",
+    "year": "2008",
+    "driverSlug": "tim-buhler",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "rice-lake-speedway_2008_unknown-driver_unknown-photographer_photo_555.jpg",
@@ -22,6 +33,17 @@
     "sequence": "555"
   },
   {
+    "fileName": "unknown-track_2008_jayme-zidar_jayme-zidar_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2008/unknown-track_2008_jayme-zidar_jayme-zidar_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2008_jayme-zidar_jayme-zidar_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2008",
+    "driverSlug": "jayme-zidar",
+    "photographerSlug": "jayme-zidar",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
     "fileName": "wisconsin-international-raceway_2008_jesse-gracyalny_bob-greuel_photo_001.jpg",
     "storagePath": "photos/master/wisconsin-international-raceway/2008/wisconsin-international-raceway_2008_jesse-gracyalny_bob-greuel_photo_001.jpg",
     "publicPath": "/photos/wisconsin-international-raceway_2008_jesse-gracyalny_bob-greuel_photo_001.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "jesse-gracyalny",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,18 @@
     "driverSlug": "don-schuppel",
     "photographerSlug": "al-polchinski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1967_don-schuppel_michael-halbherr_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1967/hales-corners-speedway_1967_don-schuppel_michael-halbherr_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1967_don-schuppel_michael-halbherr_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1967",
+    "driverSlug": "don-schuppel",
+    "photographerSlug": "michael-halbherr",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "unknown-track_unknown-year_don-schuppel_unknown-photographer_photo_002.jpg",
@@ -19,6 +30,17 @@
     "driverSlug": "don-schuppel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_don-schuppel_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_don-schuppel_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_don-schuppel_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "don-schuppel",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   }
 ]

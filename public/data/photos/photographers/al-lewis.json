@@ -8,7 +8,7 @@
     "driverSlug": "billy-kuhn",
     "photographerSlug": "al-lewis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "illiana-speedway_unknown-year_greg-powell_al-lewis_post_001.jpg",
@@ -19,7 +19,62 @@
     "driverSlug": "greg-powell",
     "photographerSlug": "al-lewis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_unknown-year_mark-martin_al-lewis_post_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/unknown-year/milwaukee-mile_unknown-year_mark-martin_al-lewis_post_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_unknown-year_mark-martin_al-lewis_post_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "unknown-year",
+    "driverSlug": "mark-martin",
+    "photographerSlug": "al-lewis",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
+    "fileName": "peoria-speedway_unknown-year_art-brady_al-lewis_photo_444.jpg",
+    "storagePath": "photos/master/peoria-speedway/unknown-year/peoria-speedway_unknown-year_art-brady_al-lewis_photo_444.jpg",
+    "publicPath": "/photos/peoria-speedway_unknown-year_art-brady_al-lewis_photo_444.jpg",
+    "trackSlug": "peoria-speedway",
+    "year": "unknown-year",
+    "driverSlug": "art-brady",
+    "photographerSlug": "al-lewis",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "sante-fe-speedway_unknown-year_bob-berger_al-lewis_photo_555.jpg",
+    "storagePath": "photos/master/sante-fe-speedway/unknown-year/sante-fe-speedway_unknown-year_bob-berger_al-lewis_photo_555.jpg",
+    "publicPath": "/photos/sante-fe-speedway_unknown-year_bob-berger_al-lewis_photo_555.jpg",
+    "trackSlug": "sante-fe-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bob-berger",
+    "photographerSlug": "al-lewis",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "sante-fe-speedway_unknown-year_earl-hubert_al-lewis_photo_555.jpg",
+    "storagePath": "photos/master/sante-fe-speedway/unknown-year/sante-fe-speedway_unknown-year_earl-hubert_al-lewis_photo_555.jpg",
+    "publicPath": "/photos/sante-fe-speedway_unknown-year_earl-hubert_al-lewis_photo_555.jpg",
+    "trackSlug": "sante-fe-speedway",
+    "year": "unknown-year",
+    "driverSlug": "earl-hubert",
+    "photographerSlug": "al-lewis",
+    "creditType": "photo",
+    "sequence": "555"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_larry-schuler_al-lewis_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_larry-schuler_al-lewis_post_444.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_larry-schuler_al-lewis_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "larry-schuler",
+    "photographerSlug": "al-lewis",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "unknown-track_unknown-year_leon-plank_al-lewis_photo_001.jpg",
@@ -30,7 +85,7 @@
     "driverSlug": "leon-plank",
     "photographerSlug": "al-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-cellini_al-lewis_post_001.jpg",
@@ -41,7 +96,7 @@
     "driverSlug": "tom-cellini",
     "photographerSlug": "al-lewis",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_woody-pool_al-lewis_photo_001.jpg",
@@ -52,6 +107,6 @@
     "driverSlug": "woody-pool",
     "photographerSlug": "al-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_dave-trute_unknown-photographer_photo_223.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_dave-trute_unknown-photographer_photo_223.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_dave-trute_unknown-photographer_photo_223.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "dave-trute",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "223"
-  },
-  {
     "fileName": "dells-motor-speedway_unknown-year_dave-trute_unknown-photographer_photo_222.jpg",
     "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_dave-trute_unknown-photographer_photo_222.jpg",
     "publicPath": "/photos/dells-motor-speedway_unknown-year_dave-trute_unknown-photographer_photo_222.jpg",
@@ -52,7 +41,7 @@
     "driverSlug": "dave-trute",
     "photographerSlug": "cole-scholze",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "tomah-sparta-speedway_unknown-year_dave-trute_unknown-photographer_photo_222.jpg",
@@ -107,7 +96,7 @@
     "driverSlug": "dave-trute",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_dave-trute_unknown-photographer_photo_333.jpg",

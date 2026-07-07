@@ -8,7 +8,29 @@
     "driverSlug": "duke-gardner",
     "photographerSlug": "brett-moore",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "escanaba-speedway_2022_evan-gagne_evan-gagne_post_444.jpg",
+    "storagePath": "photos/master/escanaba-speedway/2022/escanaba-speedway_2022_evan-gagne_evan-gagne_post_444.jpg",
+    "publicPath": "/photos/escanaba-speedway_2022_evan-gagne_evan-gagne_post_444.jpg",
+    "trackSlug": "escanaba-speedway",
+    "year": "2022",
+    "driverSlug": "evan-gagne",
+    "photographerSlug": "evan-gagne",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "escanaba-speedway_2024_evan-gagne_evan-gagne_post_444.jpg",
+    "storagePath": "photos/master/escanaba-speedway/2024/escanaba-speedway_2024_evan-gagne_evan-gagne_post_444.jpg",
+    "publicPath": "/photos/escanaba-speedway_2024_evan-gagne_evan-gagne_post_444.jpg",
+    "trackSlug": "escanaba-speedway",
+    "year": "2024",
+    "driverSlug": "evan-gagne",
+    "photographerSlug": "evan-gagne",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "escanaba-speedway_unknown-year_don-anderson_joe-verdegan_post_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "don-anderson",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "escanaba-speedway_unknown-year_escanaba-speedway_unknown-photographer_photo_001.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "escanaba-speedway",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "escanaba-speedway_unknown-year_etchie-biertzer_doug-mckenzie_post_001.jpg",
@@ -41,7 +63,7 @@
     "driverSlug": "etchie-biertzer",
     "photographerSlug": "doug-mckenzie",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "escanaba-speedway_unknown-year_herb-iverson_unknown-photographer_photo_278.jpg",
@@ -66,6 +88,17 @@
     "sequence": "114"
   },
   {
+    "fileName": "escanaba-speedway_Unknown-year_john-nelson_dave-nelson_post_001.jpg",
+    "storagePath": "photos/master/escanaba-speedway/unknown-year/escanaba-speedway_Unknown-year_john-nelson_dave-nelson_post_001.jpg",
+    "publicPath": "/photos/escanaba-speedway_Unknown-year_john-nelson_dave-nelson_post_001.jpg",
+    "trackSlug": "escanaba-speedway",
+    "year": "unknown-year",
+    "driverSlug": "john-nelson",
+    "photographerSlug": "dave-nelson",
+    "creditType": "post",
+    "sequence": "1"
+  },
+  {
     "fileName": "escanaba-speedway_unknown-year_ron-baciak_up-vintage-modified-racing_post_001.jpg",
     "storagePath": "photos/master/escanaba-speedway/unknown-year/escanaba-speedway_unknown-year_ron-baciak_up-vintage-modified-racing_post_001.jpg",
     "publicPath": "/photos/escanaba-speedway_unknown-year_ron-baciak_up-vintage-modified-racing_post_001.jpg",
@@ -74,17 +107,6 @@
     "driverSlug": "ron-baciak",
     "photographerSlug": "up-vintage-modified-racing",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "escanaba-speedway_Unknown-year_john-nelson_dave-nelson_post_001.jpg",
-    "storagePath": "photos/master/escanaba-speedway/Unknown-year/escanaba-speedway_Unknown-year_john-nelson_dave-nelson_post_001.jpg",
-    "publicPath": "/photos/escanaba-speedway_Unknown-year_john-nelson_dave-nelson_post_001.jpg",
-    "trackSlug": "escanaba-speedway",
-    "year": "Unknown-year",
-    "driverSlug": "john-nelson",
-    "photographerSlug": "dave-nelson",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

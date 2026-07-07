@@ -8,7 +8,18 @@
     "driverSlug": "jim-zwrigzdas",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_1981_jim-zwrigzdas_weber-brothers_photo_335.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_jim-zwrigzdas_weber-brothers_photo_335.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_jim-zwrigzdas_weber-brothers_photo_335.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "jim-zwrigzdas",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "335"
   },
   {
     "fileName": "slinger-speedway_unknown-year_jim-zwrigzdas_pat-heaney_post_001.jpg",
@@ -19,6 +30,17 @@
     "driverSlug": "jim-zwrigzdas",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_jim-zwrigzdas_pat-heaney_post_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_jim-zwrigzdas_pat-heaney_post_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_jim-zwrigzdas_pat-heaney_post_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "jim-zwrigzdas",
+    "photographerSlug": "pat-heaney",
+    "creditType": "post",
+    "sequence": "1"
   }
 ]

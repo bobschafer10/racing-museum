@@ -8,7 +8,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "charlie-spry",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_unknown-year_kevin-stepan_unknown-photographer_photo_1180.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "golden-sands-speedway_unknown-year_kevin-stepan_kurt-luoma_photo_600.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1982_kevin-stepan_don-besch_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "shawano-speedway_1978_kevin-stepan_sherman-lafan_post_001.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "sherman-lafan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_1997_kevin-stepan_tom-loos_photo_001.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_kevin-stepan_bob-schafer_photo_222.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "doyce-eaton",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_kevin-stepan_doyce-eaton_photo_570.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_unknown-year_kevin-stepan_unknown-photographer_photo_002.jpg",
@@ -151,18 +151,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
-  },
-  {
-    "fileName": "unknown-track_1983_kevin-stepan_allen-stepan_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/1983/unknown-track_1983_kevin-stepan_allen-stepan_post_001.jpg",
-    "publicPath": "/photos/unknown-track_1983_kevin-stepan_allen-stepan_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1983",
-    "driverSlug": "kevin-stepan",
-    "photographerSlug": "allen-stepan",
-    "creditType": "post",
-    "sequence": "001"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-stepan_kurt-luoma_photo_001.jpg",
@@ -173,7 +162,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-stepan_unknown-photographer_photo_001.jpg",
@@ -184,7 +173,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-stepan_unknown-photographer_photo_002.jpg",
@@ -195,7 +184,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-stepan_unknown-photographer_photo_003.jpg",
@@ -206,7 +195,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-stepan_unknown-photographer_photo_004.jpg",
@@ -217,7 +206,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-stepan_unknown-photographer_photo_005.jpg",
@@ -228,7 +217,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_kevin-stepan_unknown-photographer_photo_006.jpg",
@@ -239,7 +228,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-stepan_unknown-credit_post_001.jpg",
@@ -250,7 +239,7 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_kevin-stepan_unknown-photographer_photo_001.jpg",
@@ -261,6 +250,6 @@
     "driverSlug": "kevin-stepan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

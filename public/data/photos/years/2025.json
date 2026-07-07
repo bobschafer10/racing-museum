@@ -8,7 +8,7 @@
     "driverSlug": "benji-lacrosse",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2025_chris-lowenhagen_derek-sabourin_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "chris-lowenhagen",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2025_johnny-whitman_dan-lewis_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "johnny-whitman",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "angell-park-speedway_2025_aaron-schuck_dan-simpson_photo_001.jpg",
@@ -41,7 +41,18 @@
     "driverSlug": "aaron-schuck",
     "photographerSlug": "dan-simpson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "beaver-dam-raceway_2025_brandon-schmitt_bob-greuel_photo_336.jpg",
+    "storagePath": "photos/master/beaver-dam-raceway/2025/beaver-dam-raceway_2025_brandon-schmitt_bob-greuel_photo_336.jpg",
+    "publicPath": "/photos/beaver-dam-raceway_2025_brandon-schmitt_bob-greuel_photo_336.jpg",
+    "trackSlug": "beaver-dam-raceway",
+    "year": "2025",
+    "driverSlug": "brandon-schmitt",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "336"
   },
   {
     "fileName": "beaver-dam-raceway_2025_logan-julien_derek-sabourin_photo_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "logan-julien",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2025_unknown-driver_derek-sabourin_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2025_unknown-driver_derek-sabourin_photo_002.jpg",
@@ -74,7 +85,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "dells-motor-speedway_2025_allen-borntreger_allen-borntreger_post_444.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2025/dells-motor-speedway_2025_allen-borntreger_allen-borntreger_post_444.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2025_allen-borntreger_allen-borntreger_post_444.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2025",
+    "driverSlug": "allen-borntreger",
+    "photographerSlug": "allen-borntreger",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "dodge-county-fairgrounds_2025_tony-wedelstadt_derek-sabourin_photo_001.jpg",
@@ -85,7 +107,29 @@
     "driverSlug": "tony-wedelstadt",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_cole-czarneski_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_cole-czarneski_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_cole-czarneski_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "cole-czarneski",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_dave-bouche_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "dave-bouche",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "eagle-river-speedway_2025_guy-carley_unknown-photographer_photo_001.jpg",
@@ -96,7 +140,40 @@
     "driverSlug": "guy-carley",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_larry-karcz-jr_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "larry-karcz-jr",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_travis-spaulding_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_travis-spaulding_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_travis-spaulding_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "travis-spaulding",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "eagle-river-speedway_2025_will-hoefs_joe-verdegan_photo_111.jpg",
+    "storagePath": "photos/master/eagle-river-speedway/2025/eagle-river-speedway_2025_will-hoefs_joe-verdegan_photo_111.jpg",
+    "publicPath": "/photos/eagle-river-speedway_2025_will-hoefs_joe-verdegan_photo_111.jpg",
+    "trackSlug": "eagle-river-speedway",
+    "year": "2025",
+    "driverSlug": "will-hoefs",
+    "photographerSlug": "joe-verdegan",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "gravity-park-speedway_2025_ryan-minster_bob-greuel_photo_001.jpg",
@@ -107,7 +184,18 @@
     "driverSlug": "ryan-minster",
     "photographerSlug": "bob-greuel",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hibbing-raceway_2025_austin-blom_austin-blom_post_444.jpg",
+    "storagePath": "photos/master/hibbing-raceway/2025/hibbing-raceway_2025_austin-blom_austin-blom_post_444.jpg",
+    "publicPath": "/photos/hibbing-raceway_2025_austin-blom_austin-blom_post_444.jpg",
+    "trackSlug": "hibbing-raceway",
+    "year": "2025",
+    "driverSlug": "austin-blom",
+    "photographerSlug": "austin-blom",
+    "creditType": "post",
+    "sequence": "444"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2025_dalton-zehr_derek-sabourin_photo_001.jpg",
@@ -118,18 +206,7 @@
     "driverSlug": "dalton-zehr",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_2025_jacob-goede_forte-design_photo_112.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/2025/lacrosse-interstate-speedway_2025_jacob-goede_forte-design_photo_112.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_2025_jacob-goede_forte-design_photo_112.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "2025",
-    "driverSlug": "jacob-goede",
-    "photographerSlug": "forte-design",
-    "creditType": "photo",
-    "sequence": "112"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2025_jason-stark_first-design_photo_114.jpg",
@@ -151,7 +228,7 @@
     "driverSlug": "abi-yelle",
     "photographerSlug": "abi-yelle",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2025_abigail-blasel_blasel-racing_post_001.jpg",
@@ -162,7 +239,7 @@
     "driverSlug": "abigail-blasel",
     "photographerSlug": "blasel-racing",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "north-central-speedway_2025_aj-viehauser_aj-viehauser_post_001.jpg",
@@ -173,7 +250,7 @@
     "driverSlug": "aj-viehauser",
     "photographerSlug": "aj-viehauser",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "norway-speedway_2025_abi-yelle_abi-yelle_post_001.jpg",
@@ -184,7 +261,7 @@
     "driverSlug": "abi-yelle",
     "photographerSlug": "abi-yelle",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_2025_jaden-schmidt_derek-sabourin_photo_001.jpg",
@@ -195,7 +272,7 @@
     "driverSlug": "jaden-schmidt",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "red-cedar-speedway_2025_abby-lingen_abby-lingen_post_001.jpg",
@@ -206,7 +283,7 @@
     "driverSlug": "abby-lingen",
     "photographerSlug": "abby-lingen",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "red-cedar-speedway_2025_derek-haas_unknown-photographer_photo_333.jpg",
@@ -228,7 +305,7 @@
     "driverSlug": "abi-yelle",
     "photographerSlug": "abi-yelle",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "sands-speedway_2025_jeremy-yelle_jeremy-yelle_post_111.jpg",
@@ -261,7 +338,7 @@
     "driverSlug": "jason-yaeger",
     "photographerSlug": "jason-yaeger",
     "creditType": "post",
-    "sequence": "112 (2)"
+    "sequence": "1122"
   },
   {
     "fileName": "shawano-speedway_2025_trace-yaeger_trace-yaeger_post_112.jpg",
@@ -275,6 +352,28 @@
     "sequence": "112"
   },
   {
+    "fileName": "slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_brad-mueller_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "brad-mueller",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_hunter-cardinal_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_hunter-cardinal_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_hunter-cardinal_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "hunter-cardinal",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
     "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
     "publicPath": "/photos/slinger-speedway_2025_jake-hassler_doug-corcoran_post_001.jpg",
@@ -283,7 +382,40 @@
     "driverSlug": "jake-hassler",
     "photographerSlug": "doug-corcoran",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2025_jake-schraufnagel_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_jake-schraufnagel_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_jake-schraufnagel_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "jake-schraufnagel",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_karter-stark_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_karter-stark_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_karter-stark_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "karter-stark",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "slinger-speedway_2025_lincoln-cain_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2025/slinger-speedway_2025_lincoln-cain_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2025_lincoln-cain_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2025",
+    "driverSlug": "lincoln-cain",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "thunder-city-speedway_2025_aj-kellar_aj-kellar_post_001.jpg",
@@ -294,7 +426,7 @@
     "driverSlug": "aj-kellar",
     "photographerSlug": "aj-kellar",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "thunder-city-speedway_2025_brady-uotinen_ace-photography_photo_333.jpg",
@@ -316,40 +448,106 @@
     "driverSlug": "adam-abbey",
     "photographerSlug": "adam-abbey",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_2025_a.j.-fike_unknown-photographer_001.jpg",
-    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_a.j.-fike_unknown-photographer_001.jpg",
-    "publicPath": "/photos/unknown-track_2025_a.j.-fike_unknown-photographer_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "tomah-sparta-speedway_2025_andrew_borntreger_cody-anderson_photo_444.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2025/tomah-sparta-speedway_2025_andrew_borntreger_cody-anderson_photo_444.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2025_andrew_borntreger_cody-anderson_photo_444.jpg",
+    "trackSlug": "tomah-sparta-speedway",
     "year": "2025",
-    "driverSlug": "a.j.-fike",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "001",
-    "sequence": "001"
+    "driverSlug": "andrew-borntreger",
+    "photographerSlug": "cody-anderson",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
-    "fileName": "unknown-track_2025_aaron-blacklance_aaron-blacklance_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_aaron-blacklance_aaron-blacklance_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2025_aaron-blacklance_aaron-blacklance_post_001.jpg",
-    "trackSlug": "unknown-track",
+    "fileName": "tomah-sparta-speedway_2025_derek-gress_cwra_post_444.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2025/tomah-sparta-speedway_2025_derek-gress_cwra_post_444.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2025_derek-gress_cwra_post_444.jpg",
+    "trackSlug": "tomah-sparta-speedway",
     "year": "2025",
-    "driverSlug": "aaron-blacklance",
-    "photographerSlug": "aaron-blacklance",
+    "driverSlug": "derek-gress",
+    "photographerSlug": "cwra",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": ""
   },
   {
-    "fileName": "unknown-track_2025_devin-yaeger_devin-yaeger_post_112.jpg",
-    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_devin-yaeger_devin-yaeger_post_112.jpg",
-    "publicPath": "/photos/unknown-track_2025_devin-yaeger_devin-yaeger_post_112.jpg",
+    "fileName": "tomah-sparta-speedway_2025_dillon-mackesy_cwra_post_444.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2025/tomah-sparta-speedway_2025_dillon-mackesy_cwra_post_444.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2025_dillon-mackesy_cwra_post_444.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2025",
+    "driverSlug": "dillon-mackesy",
+    "photographerSlug": "cwra",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2025_paul-paine_cwra_post_444.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2025/tomah-sparta-speedway_2025_paul-paine_cwra_post_444.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2025_paul-paine_cwra_post_444.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2025",
+    "driverSlug": "paul-paine",
+    "photographerSlug": "cwra",
+    "creditType": "post",
+    "sequence": ""
+  },
+  {
+    "fileName": "unknown-track_2025_amanda-bohn_amanda-bohn_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_amanda-bohn_amanda-bohn_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2025_amanda-bohn_amanda-bohn_post_444.jpg",
     "trackSlug": "unknown-track",
     "year": "2025",
-    "driverSlug": "devin-yaeger",
-    "photographerSlug": "devin-yaeger",
+    "driverSlug": "amanda-bohn",
+    "photographerSlug": "amanda-bohn",
     "creditType": "post",
-    "sequence": "112"
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_2025_ashley-boyum_ashley-boyum_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_ashley-boyum_ashley-boyum_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2025_ashley-boyum_ashley-boyum_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2025",
+    "driverSlug": "ashley-boyum",
+    "photographerSlug": "ashley-boyum",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_2025_faith-zellmer_faith-zellmer_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_faith-zellmer_faith-zellmer_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2025_faith-zellmer_faith-zellmer_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2025",
+    "driverSlug": "faith-zellmer",
+    "photographerSlug": "faith-zellmer",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_2025_george-bohn_amanda-bohn_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2025/unknown-track_2025_george-bohn_amanda-bohn_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2025_george-bohn_amanda-bohn_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2025",
+    "driverSlug": "george-bohn",
+    "photographerSlug": "amanda-bohn",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "williams-grove-speedway_2025_brock-zearfoss_brock-zearfoss_post_111.jpg",
+    "storagePath": "photos/master/williams-grove-speedway/2025/williams-grove-speedway_2025_brock-zearfoss_brock-zearfoss_post_111.jpg",
+    "publicPath": "/photos/williams-grove-speedway_2025_brock-zearfoss_brock-zearfoss_post_111.jpg",
+    "trackSlug": "williams-grove-speedway",
+    "year": "2025",
+    "driverSlug": "brock-zearfoss",
+    "photographerSlug": "brock-zearfoss",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "wisconsin-international-raceway_2025_andy-monday_derek-sabourin_photo_001.jpg",
@@ -360,7 +558,7 @@
     "driverSlug": "andy-monday",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_2025_grant-griesbach_unknown-photographer_photo_111.jpg",
@@ -382,6 +580,6 @@
     "driverSlug": "penn-sauter",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

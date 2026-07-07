@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "141-speedway_2012_jim-zdroik_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/2012/141-speedway_2012_jim-zdroik_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_2012_jim-zdroik_unknown-photographer_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2012",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "beaver-dam-raceway_2012_aaron-muhle_wi-dirt-racin_photo_001.jpg",
     "storagePath": "photos/master/beaver-dam-raceway/2012/beaver-dam-raceway_2012_aaron-muhle_wi-dirt-racin_photo_001.jpg",
     "publicPath": "/photos/beaver-dam-raceway_2012_aaron-muhle_wi-dirt-racin_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "aaron-muhle",
     "photographerSlug": "wi-dirt-racin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_2012_adam-janke_j-and-s_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "adam-janke",
     "photographerSlug": "j-and-s",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "deer-creek-speedway_2012_aj-wiste_aj-wiste_post_001.jpg",
@@ -30,7 +41,18 @@
     "driverSlug": "aj-wiste",
     "photographerSlug": "aj-wiste",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "jefferson-speedway_2012_jeffrey-lefave_bob-greuel_photo_334.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2012/jefferson-speedway_2012_jeffrey-lefave_bob-greuel_photo_334.jpg",
+    "publicPath": "/photos/jefferson-speedway_2012_jeffrey-lefave_bob-greuel_photo_334.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2012",
+    "driverSlug": "jeffrey-lefave",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "lacrosse-interstate-speedway_2012_aaron-hass_bruce-nuttleman_photo_001.jpg",
@@ -41,7 +63,18 @@
     "driverSlug": "aaron-hass",
     "photographerSlug": "bruce-nuttleman",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2012_dick-hed_bob-greuel_photo_334.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2012/plymouth-dirt-track_2012_dick-hed_bob-greuel_photo_334.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2012_dick-hed_bob-greuel_photo_334.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2012",
+    "driverSlug": "dick-hed",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "334"
   },
   {
     "fileName": "sands-speedway_2012_jeremy-yelle_jeremy-yelle_post_112.jpg",
@@ -63,7 +96,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "bob-schneider",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2012_chad-wood_tom-loos_photo_001.jpg",
@@ -74,7 +107,7 @@
     "driverSlug": "chad-wood",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_2012_cole-yach_cole-yach_post_112.jpg",
@@ -96,7 +129,51 @@
     "driverSlug": "aj-kania",
     "photographerSlug": "aj-kania",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_2012_darrell-garman_larry-thompson_post_432.jpg",
+    "storagePath": "photos/master/unknown-track/2012/unknown-track_2012_darrell-garman_larry-thompson_post_432.jpg",
+    "publicPath": "/photos/unknown-track_2012_darrell-garman_larry-thompson_post_432.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2012",
+    "driverSlug": "darrell-garman",
+    "photographerSlug": "larry-thompson",
+    "creditType": "post",
+    "sequence": "432"
+  },
+  {
+    "fileName": "unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2012/unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2012",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2012/unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2012",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2012/unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2012_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2012",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
+    "creditType": "post",
+    "sequence": "111"
   },
   {
     "fileName": "unknown-track_2012_jason-utter_unknown-photographer_photo_333.jpg",
@@ -118,6 +195,6 @@
     "driverSlug": "jeremy-schultz",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -118,7 +118,7 @@
     "driverSlug": "bob-gunn",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_bob-iverson_al-fortner_photo_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "bob-iverson",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_bryan-reffner_al-fortner_photo_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "bryan-reffner",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_dale-weyer_weber-brothers_photo_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_danny-darnell_don-besch_photo_001.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "danny-darnell",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_don-cabunac_weber-brothers_photo_333.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "jim-back",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_john-ziegler_al-fortner_photo_001.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "john-ziegler",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_lowell-bennett_weber-brothers_photo_001.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "lowell-bennett",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_mark-martin_don-besch_photo_001.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_mike-wirth_pat-heaney_post_001.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "mike-wirth",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "capital-super-speedway_1984_steve-holzhausen_al-fortner_photo_001.jpg",
@@ -239,7 +239,7 @@
     "driverSlug": "steve-holzhausen",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1984_bugs-mallon_jeff-gilhart_photo_001.jpg",
@@ -250,7 +250,7 @@
     "driverSlug": "bugs-mallon",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1984_dick-peardot_jeff-gilhart_photo_001.jpg",
@@ -261,7 +261,7 @@
     "driverSlug": "dick-peardot",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_art-meining_weber-brothers_photo_001.jpg",
@@ -272,7 +272,29 @@
     "driverSlug": "art-meining",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_art-meining_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_art-meining_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_art-meining_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "art-meining",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_bob-rau_weber-brothers_photo_534.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_bob-rau_weber-brothers_photo_534.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_bob-rau_weber-brothers_photo_534.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "bob-rau",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "534"
   },
   {
     "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_001.jpg",
@@ -283,7 +305,18 @@
     "driverSlug": "bob-saelens",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_001.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "bob-saelens",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_002.jpg",
@@ -294,7 +327,7 @@
     "driverSlug": "bob-saelens",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_003.jpg",
@@ -305,7 +338,7 @@
     "driverSlug": "bob-saelens",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_004.jpg",
@@ -316,7 +349,18 @@
     "driverSlug": "bob-saelens",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_004.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_004.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_004.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "bob-saelens",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "4"
   },
   {
     "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_006.jpg",
@@ -327,7 +371,7 @@
     "driverSlug": "bob-saelens",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "hales-corners-speedway_1984_bob-saelens_weber-brothers_photo_007.jpg",
@@ -338,7 +382,7 @@
     "driverSlug": "bob-saelens",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-blake_weber-brothers_photo_001.jpg",
@@ -349,7 +393,7 @@
     "driverSlug": "brian-blake",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_001.jpg",
@@ -360,7 +404,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_002.jpg",
@@ -371,7 +415,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_003.jpg",
@@ -382,18 +426,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
-  },
-  {
-    "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_004.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_004.jpg",
-    "publicPath": "/photos/hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_004.jpg",
-    "trackSlug": "hales-corners-speedway",
-    "year": "1984",
-    "driverSlug": "brian-jaeger",
-    "photographerSlug": "weber-brothers",
-    "creditType": "photo",
-    "sequence": "004"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_031.jpg",
@@ -404,7 +437,7 @@
     "driverSlug": "brian-jaeger",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "hales-corners-speedway_1984_brian-jaeger_weber-brothers_photo_666.jpg",
@@ -426,7 +459,7 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_002.jpg",
@@ -437,7 +470,7 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
@@ -448,7 +481,18 @@
     "driverSlug": "chick-stolarik",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_chick-stolarik_weber-brothers_photo_003.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "chick-stolarik",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_1984_dick-bonnert_weber-brothers_photo_001.jpg",
@@ -459,7 +503,7 @@
     "driverSlug": "dick-bonnert",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_don-walter_weber-brothers_photo_001.jpg",
@@ -470,7 +514,7 @@
     "driverSlug": "don-walter",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_ed-kulka_weber-brothers_photo_001.jpg",
@@ -481,7 +525,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_ed-kulka_weber-brothers_photo_222.jpg",
@@ -503,7 +547,7 @@
     "driverSlug": "frank-smith",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_george-dukas_weber-brothers_photo_001.jpg",
@@ -514,7 +558,7 @@
     "driverSlug": "george-dukas",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_george-dukas_weber-brothers_photo_002.jpg",
@@ -525,7 +569,7 @@
     "driverSlug": "george-dukas",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_gordie-seegert_weber-brothers_photo_001 (2).jpg",
@@ -536,7 +580,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001 (2)"
+    "sequence": "12"
   },
   {
     "fileName": "hales-corners-speedway_1984_gordie-seegert_weber-brothers_photo_001.jpg",
@@ -547,7 +591,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_gordie-seegert_weber-brothers_photo_002.jpg",
@@ -558,7 +602,7 @@
     "driverSlug": "gordie-seegert",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_greg-otte_weber-brothers_photo_001.jpg",
@@ -569,7 +613,7 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_greg-otte_weber-brothers_photo_002.jpg",
@@ -580,7 +624,7 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_greg-otte_weber-brothers_photo_031.jpg",
@@ -591,7 +635,7 @@
     "driverSlug": "greg-otte",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "031"
+    "sequence": "31"
   },
   {
     "fileName": "hales-corners-speedway_1984_greg-otte_weber-brothers_photo_444.jpg",
@@ -613,7 +657,7 @@
     "driverSlug": "jerry-kindler",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_jerry-kindler_weber-brothers_photo_002.jpg",
@@ -624,7 +668,7 @@
     "driverSlug": "jerry-kindler",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_jerry-kindler_weber-brothers_photo_003.jpg",
@@ -635,7 +679,7 @@
     "driverSlug": "jerry-kindler",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_1984_jerry-kindler_weber-brothers_photo_444.jpg",
@@ -657,7 +701,62 @@
     "driverSlug": "jim-ackerman",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_334.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "jim-knoll",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_335.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_335.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_335.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "jim-knoll",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "335"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_336.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_336.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_336.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "jim-knoll",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "336"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_337.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_337.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_337.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "jim-knoll",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "337"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_338.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_338.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_jim-knoll_weber-brothers_photo_338.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "jim-knoll",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "338"
   },
   {
     "fileName": "hales-corners-speedway_1984_jim-watson_weber-brothers_photo_001.jpg",
@@ -668,7 +767,7 @@
     "driverSlug": "jim-watson",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_jim-zwirgzdas_weber-brothers_photo_001.jpg",
@@ -679,7 +778,7 @@
     "driverSlug": "jim-zwirgzdas",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_joe-gresk_weber-brothers_photo_555.jpg",
@@ -701,7 +800,7 @@
     "driverSlug": "larry-walter",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_lee-sohns_weber-brothers_photo_555.jpg",
@@ -723,7 +822,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_002.jpg",
@@ -734,7 +833,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_003.jpg",
@@ -745,7 +844,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "hales-corners-speedway_1984_mark-brunner_weber-brothers_photo_005.jpg",
@@ -756,7 +855,7 @@
     "driverSlug": "mark-brunner",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "hales-corners-speedway_1984_mike-melius_weber-brothers_photo_001.jpg",
@@ -767,7 +866,7 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_mike-melius_weber-brothers_photo_002.jpg",
@@ -778,7 +877,18 @@
     "driverSlug": "mike-melius",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_mike-melius_weber-brothers_photo_002.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_mike-melius_weber-brothers_photo_002.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_mike-melius_weber-brothers_photo_002.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "mike-melius",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "hales-corners-speedway_1984_mike-melius_weber-brothers_photo_6616.jpg",
@@ -803,6 +913,61 @@
     "sequence": "666"
   },
   {
+    "fileName": "hales-corners-speedway_1984_mike-melius_weber-brothers_photo_666.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_mike-melius_weber-brothers_photo_666.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_mike-melius_weber-brothers_photo_666.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "mike-melius",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "666"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_perry-edwards_weber-brothers_photo_334.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_perry-edwards_weber-brothers_photo_334.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_perry-edwards_weber-brothers_photo_334.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "perry-edwards",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "334"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_455.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_455.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_455.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "pete-schanen",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "455"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_456.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_456.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_456.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "pete-schanen",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "456"
+  },
+  {
+    "fileName": "hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_457.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_457.jpg",
+    "publicPath": "/photos/hales-corners-speedway_1984_pete-schanen_weber-brothers_photo_457.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "1984",
+    "driverSlug": "pete-schanen",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "457"
+  },
+  {
     "fileName": "hales-corners-speedway_1984_steve-lurvey_weber-brothers_photo_001.jpg",
     "storagePath": "photos/master/hales-corners-speedway/1984/hales-corners-speedway_1984_steve-lurvey_weber-brothers_photo_001.jpg",
     "publicPath": "/photos/hales-corners-speedway_1984_steve-lurvey_weber-brothers_photo_001.jpg",
@@ -811,7 +976,7 @@
     "driverSlug": "steve-lurvey",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_steve-lurvey_weber-brothers_photo_555.jpg",
@@ -877,7 +1042,7 @@
     "driverSlug": "tom-steuding",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lacrosse-interstate-speedway_1984_rick-wateski_john-lafrenz_post_001.jpg",
@@ -888,7 +1053,18 @@
     "driverSlug": "rick-wateski",
     "photographerSlug": "john-lafrenz",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1984_billy-standridge_weber-brothers_photo_888.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1984/milwaukee-mile_1984_billy-standridge_weber-brothers_photo_888.jpg",
+    "publicPath": "/photos/milwaukee-mile_1984_billy-standridge_weber-brothers_photo_888.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1984",
+    "driverSlug": "billy-standridge",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "888"
   },
   {
     "fileName": "milwaukee-mile_1984_don-collins_weber-brothers_photo_001.jpg",
@@ -899,7 +1075,18 @@
     "driverSlug": "don-collins",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1984/milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "publicPath": "/photos/milwaukee-mile_1984_rusty-wallace_weber-brothers_photo_777.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1984",
+    "driverSlug": "rusty-wallace",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "777"
   },
   {
     "fileName": "minnesota-state-fair_1984_jim-weber_gregg-mckarns_post_001.jpg",
@@ -910,7 +1097,7 @@
     "driverSlug": "jim-weber",
     "photographerSlug": "gregg-mckarns",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "queen-city-speedway_1984_joe-shear_bob-elman_photo_333.jpg",
@@ -924,6 +1111,17 @@
     "sequence": "333"
   },
   {
+    "fileName": "raceway-park-il-il_1984_pat-echlin_raceway-park-history_post_565.jpg",
+    "storagePath": "photos/master/raceway-park-il-il/1984/raceway-park-il-il_1984_pat-echlin_raceway-park-history_post_565.jpg",
+    "publicPath": "/photos/raceway-park-il-il_1984_pat-echlin_raceway-park-history_post_565.jpg",
+    "trackSlug": "raceway-park-il-il",
+    "year": "1984",
+    "driverSlug": "pat-echlin",
+    "photographerSlug": "raceway-park-history",
+    "creditType": "post",
+    "sequence": "565"
+  },
+  {
     "fileName": "raceway-park-mn_1984_george-prziborowski_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/raceway-park-mn/1984/raceway-park-mn_1984_george-prziborowski_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/raceway-park-mn_1984_george-prziborowski_unknown-photographer_photo_001.jpg",
@@ -932,7 +1130,7 @@
     "driverSlug": "george-prziborowski",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_al-schill_don-besch_photo_001.jpg",
@@ -943,7 +1141,7 @@
     "driverSlug": "al-schill",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_bill-sontag_don-besch_photo_001.jpg",
@@ -954,7 +1152,7 @@
     "driverSlug": "bill-sontag",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_dennis-miller_don-besch_photo_001.jpg",
@@ -965,7 +1163,7 @@
     "driverSlug": "dennis-miller",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_dick-trickle_gary-vercauteren_photo_001.jpg",
@@ -976,7 +1174,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "gary-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_dick-trickle_weber-brothers_photo_001.jpg",
@@ -987,7 +1185,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_don-collins_don-besch_photo_001.jpg",
@@ -998,7 +1196,7 @@
     "driverSlug": "don-collins",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_don-moon_don-besch_photo_001.jpg",
@@ -1009,7 +1207,7 @@
     "driverSlug": "don-moon",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_jim-helland_don-besch_photo_001.jpg",
@@ -1020,7 +1218,7 @@
     "driverSlug": "jim-helland",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_jim-weber_don-besch_photo_001.jpg",
@@ -1031,7 +1229,7 @@
     "driverSlug": "jim-weber",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_randy-sargent_don-besch_photo_001.jpg",
@@ -1042,7 +1240,7 @@
     "driverSlug": "randy-sargent",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_rich-lofy_don-besch_photo_001.jpg",
@@ -1053,7 +1251,7 @@
     "driverSlug": "rich-lofy",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_ricky-bilderback_don-besch_photo_001.jpg",
@@ -1064,7 +1262,7 @@
     "driverSlug": "ricky-bilderback",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_robbie-reiser_don-besch_photo_001.jpg",
@@ -1075,7 +1273,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1984_steve-burgess_don-besch_photo_001.jpg",
@@ -1086,7 +1284,7 @@
     "driverSlug": "steve-burgess",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1984_terry-anvelink_bob-schafer_photo_059.jpg",
@@ -1097,7 +1295,7 @@
     "driverSlug": "terry-anvelink",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "059"
+    "sequence": "59"
   },
   {
     "fileName": "seymour-speedway_1984_unknown-driver_joe-verdegan_post_001.jpg",
@@ -1108,7 +1306,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_1984_unknown-driver_unknown-photographer_photo_001.jpg",
@@ -1119,7 +1317,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_andy-wendt_joe-slack_post_001.jpg",
@@ -1130,7 +1328,7 @@
     "driverSlug": "andy-wendt",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_bobby-allison_al-fortner_photo_777.jpg",
@@ -1152,7 +1350,7 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_dale-weyer_unknown-photographer_photo_001.jpg",
@@ -1163,7 +1361,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_doug-feiner_joe-slack_post_001.jpg",
@@ -1174,7 +1372,7 @@
     "driverSlug": "doug-feiner",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_doug-feiner_joe-slack_post_002.jpg",
@@ -1185,7 +1383,7 @@
     "driverSlug": "doug-feiner",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_1984_mark-martin_pat-heaney_post_001.jpg",
@@ -1196,7 +1394,7 @@
     "driverSlug": "mark-martin",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1984_unknown-driver_joe-slack_photo_001.jpg",
@@ -1207,7 +1405,18 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "bob-schryock",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "steele-county-fairgrounds_1984_dick-johanneck_lee-johnson_photo_115.jpg",
@@ -1243,6 +1452,17 @@
     "sequence": "115"
   },
   {
+    "fileName": "steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
+    "trackSlug": "steele-county-fairgrounds",
+    "year": "1984",
+    "driverSlug": "ron-schreiner",
+    "photographerSlug": "lee-johnson",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
     "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
     "publicPath": "/photos/steele-county-fairgrounds_1984_terry-lanphear_lee-johnson_photo_115.jpg",
@@ -1254,81 +1474,15 @@
     "sequence": "115"
   },
   {
-    "fileName": "steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
-    "storagePath": "photos/master/steele-county-fairgrounds-mn/1984/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
-    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_bob-schyrock_lee-johnson-photo_333.jpg",
-    "trackSlug": "steele-county-fairgrounds-mn",
-    "year": "1984",
-    "driverSlug": "bob-schyrock",
-    "photographerSlug": "lee-johnson-photo",
-    "creditType": "333",
-    "sequence": "001"
-  },
-  {
-    "fileName": "steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
-    "storagePath": "photos/master/steele-county-fairgrounds-mn/1984/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
-    "publicPath": "/photos/steele-county-fairgrounds-mn_1984_ron-schreiner_lee-johnson-photo_333.jpg",
-    "trackSlug": "steele-county-fairgrounds-mn",
-    "year": "1984",
-    "driverSlug": "ron-schreiner",
-    "photographerSlug": "lee-johnson-photo",
-    "creditType": "333",
-    "sequence": "001"
-  },
-  {
     "fileName": "steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
-    "storagePath": "photos/master/steele-county-fairgrounds-mn/1984/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
+    "storagePath": "photos/master/steele-county-fairgrounds/1984/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
     "publicPath": "/photos/steele-county-fairgrounds-mn_1984_tom-steuding_lee-johnson-photo_333.jpg",
-    "trackSlug": "steele-county-fairgrounds-mn",
+    "trackSlug": "steele-county-fairgrounds",
     "year": "1984",
     "driverSlug": "tom-steuding",
-    "photographerSlug": "lee-johnson-photo",
-    "creditType": "333",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1984_joel-cryderman_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_joel-cryderman_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1984_joel-cryderman_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1984",
-    "driverSlug": "joel-cryderman",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1984_mike-seller-elko_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_mike-seller-elko_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1984_mike-seller-elko_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1984",
-    "driverSlug": "mike-seller-elko",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1984_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1984_rick-egersdorf_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1984",
-    "driverSlug": "rick-egersdorf",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1984",
-    "driverSlug": "steve-fegers",
     "photographerSlug": "lee-johnson",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "333"
   },
   {
     "fileName": "wilmot-raceway_1984_gib-wiser_pat-heaney_post_001.jpg",
@@ -1339,7 +1493,7 @@
     "driverSlug": "gib-wiser",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1984_al-schill_al-fortner_photo_333.jpg",
@@ -1405,7 +1559,7 @@
     "driverSlug": "dave-wypiszynski",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1984_keith-nelson_al-fortner_photo_333.jpg",
@@ -1471,7 +1625,7 @@
     "driverSlug": "rod-wheeler",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1984_thom-laimon_al-fortner_photo_333.jpg",

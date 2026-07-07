@@ -19,7 +19,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_2005_steve-laursen_unknown-photographer_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_steve-laursen_old-skool_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "old-skool",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "superior-speedway_unknown-year_steve-laursen_unknown-photographer_photo_001.jpg",
@@ -52,40 +52,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1981_steve-laursen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1981/unknown-track_1981_steve-laursen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1981_steve-laursen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1981",
-    "driverSlug": "steve-laursen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1993_steve-laursen_neil-miller_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1993/unknown-track_1993_steve-laursen_neil-miller_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1993_steve-laursen_neil-miller_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1993",
-    "driverSlug": "steve-laursen",
-    "photographerSlug": "neil-miller",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_steve-laursen_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_steve-laursen_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_steve-laursen_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "steve-laursen",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_keith-nason_photo_001.jpg",
@@ -96,7 +63,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "keith-nason",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_ryan-aho_post_053.jpg",
@@ -107,7 +74,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "053"
+    "sequence": "53"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_ryan-aho_post_112.jpg",
@@ -129,7 +96,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_002.jpg",
@@ -140,7 +107,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_003.jpg",
@@ -151,7 +118,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_004.jpg",
@@ -162,7 +129,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_005.jpg",
@@ -173,7 +140,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_006.jpg",
@@ -184,7 +151,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_007.jpg",
@@ -195,7 +162,7 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_008.jpg",
@@ -206,7 +173,29 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-laursen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_333.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "steve-laursen",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-laursen_unknown-photographer_photo_333.jpg",
@@ -228,6 +217,6 @@
     "driverSlug": "steve-laursen",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

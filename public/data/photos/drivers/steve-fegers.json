@@ -19,7 +19,7 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "steele-county-fairgrounds_unknown-year_steve-fegers_missy-lushinsky_photo_001.jpg",
@@ -30,29 +30,7 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/1984/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_1984_steve-fegers_lee-johnson_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "1984",
-    "driverSlug": "steve-fegers",
-    "photographerSlug": "lee-johnson",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_2020_steve-fegers_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2020",
-    "driverSlug": "steve-fegers",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-fegers_ryan-aho_post_017.jpg",
@@ -63,7 +41,7 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "ryan-aho",
     "creditType": "post",
-    "sequence": "017"
+    "sequence": "17"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_001.jpg",
@@ -74,7 +52,7 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_steve-fegers_unknown-photographer_photo_002.jpg",
@@ -85,6 +63,6 @@
     "driverSlug": "steve-fegers",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

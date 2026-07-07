@@ -11,6 +11,17 @@
     "sequence": "479"
   },
   {
+    "fileName": "slinger-speedway_unknown-year_joe-mueller_bob-schafer_photo_479.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_joe-mueller_bob-schafer_photo_479.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_joe-mueller_bob-schafer_photo_479.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-mueller",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "479"
+  },
+  {
     "fileName": "slinger-speedway_unknown-year_joe-mueller_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_joe-mueller_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/slinger-speedway_unknown-year_joe-mueller_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,18 @@
     "driverSlug": "joe-mueller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_joe-mueller_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_joe-mueller_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_joe-mueller_unknown-photographer_photo_001.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "joe-mueller",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_joe-mueller_kurt-luoma_photo_1108.jpg",

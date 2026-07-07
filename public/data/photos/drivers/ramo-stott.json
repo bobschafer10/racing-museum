@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "milwaukee-mile_1972_ramo-stott_scott-krueger_photo_333.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1972/milwaukee-mile_1972_ramo-stott_scott-krueger_photo_333.jpg",
+    "publicPath": "/photos/milwaukee-mile_1972_ramo-stott_scott-krueger_photo_333.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1972",
+    "driverSlug": "ramo-stott",
+    "photographerSlug": "scott-krueger",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
     "storagePath": "photos/master/milwaukee-mile/1975/milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
     "publicPath": "/photos/milwaukee-mile_1975_ramo-stott_mike-dunn_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "ramo-stott",
     "photographerSlug": "mike-dunn",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_ramo-stott_unknown-photographer_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "ramo-stott",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_004.jpg",
@@ -30,7 +41,7 @@
     "driverSlug": "ramo-stott",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_ramo-stott_unknown-photographer_photo_005.jpg",
@@ -41,6 +52,6 @@
     "driverSlug": "ramo-stott",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   }
 ]

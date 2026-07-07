@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "unknown-track_unknown-year_mg-johnson_unknown-photographer_photo_1919.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_mg-johnson_unknown-photographer_photo_1919.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_mg-johnson_unknown-photographer_photo_1919.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "mg-johnson",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1919"
+  },
+  {
     "fileName": "yellow-river-speedway_1991_mg-johnson_kurt-luoma_photo_001.jpg",
     "storagePath": "photos/master/yellow-river-speedway/1991/yellow-river-speedway_1991_mg-johnson_kurt-luoma_photo_001.jpg",
     "publicPath": "/photos/yellow-river-speedway_1991_mg-johnson_kurt-luoma_photo_001.jpg",
@@ -8,7 +19,7 @@
     "driverSlug": "mg-johnson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_unknown-year_mg-johnson_kurt-luoma_photo_1278.jpg",

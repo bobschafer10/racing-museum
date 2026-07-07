@@ -1,13 +1,24 @@
 [
   {
-    "fileName": "unknown-track_2026_bobby-frisch_bobby-frisch_post_001.jpg",
-    "storagePath": "photos/master/unknown-track/2026/unknown-track_2026_bobby-frisch_bobby-frisch_post_001.jpg",
-    "publicPath": "/photos/unknown-track_2026_bobby-frisch_bobby-frisch_post_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "2026",
+    "fileName": "jefferson-speedway_unknown-year_bobby-frisch_charlie-spry_photo_222.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_bobby-frisch_charlie-spry_photo_222.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_bobby-frisch_charlie-spry_photo_222.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
     "driverSlug": "bobby-frisch",
-    "photographerSlug": "bobby-frisch",
-    "creditType": "post",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "222"
+  },
+  {
+    "fileName": "mall-show_unknown-year_bobby-frisch_charlie-spry_photo_333.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_bobby-frisch_charlie-spry_photo_333.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_bobby-frisch_charlie-spry_photo_333.jpg",
+    "trackSlug": "mall-show",
+    "year": "unknown-year",
+    "driverSlug": "bobby-frisch",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "333"
   }
 ]

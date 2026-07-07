@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "rockford-speedway_unknown-year_steve-drays_charlie-spry_photo_655.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-drays_charlie-spry_photo_655.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_steve-drays_charlie-spry_photo_655.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "steve-drays",
+    "photographerSlug": "charlie-spry",
+    "creditType": "photo",
+    "sequence": "655"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_steve-drays_charlie-spry_post_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_steve-drays_charlie-spry_post_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_steve-drays_charlie-spry_post_001.jpg",
@@ -8,6 +19,6 @@
     "driverSlug": "steve-drays",
     "photographerSlug": "charlie-spry",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

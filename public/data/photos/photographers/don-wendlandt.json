@@ -107,7 +107,7 @@
     "driverSlug": "b-j-erickson",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_dave-baerwolf_don-wendlandt_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "dave-baerwolf",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_dave-dalby_don-wendlandt_photo_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "dave-dalby",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_dave-gruenberg_don-wendlandt_photo_001.jpg",
@@ -140,7 +140,7 @@
     "driverSlug": "dave-gruenberg",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_dave-oswald_don-wendlandt_photo_001.jpg",
@@ -151,7 +151,7 @@
     "driverSlug": "dave-oswald",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_jason-erickson_don-wendlandt_photo_001.jpg",
@@ -162,7 +162,7 @@
     "driverSlug": "jason-erickson",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_jerry-eckhardt_don-wendlandt_photo_115.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "jim-maas",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_keith-reamer_don-wendlandt_photo_001.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "keith-reamer",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_ken-olson_don-wendlandt_photo_001.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "ken-olson",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_pete-moore_don-wendlandt_photo_115.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "rick-coppernoll",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_unknown-year_scott-riedner_don-wendlandt_photo_115.jpg",
@@ -250,7 +250,18 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2006/dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2006",
+    "driverSlug": "deau-sanden",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "115"
   },
   {
     "fileName": "dells-motor-speedway_2006_deau-sanden_don-wendlandt_photo_115.jpg",
@@ -371,7 +382,7 @@
     "driverSlug": "dick-duerst",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "jefferson-speedway_unknown-year_lyle-phillips_don-wendlandt_photo_115.jpg",
@@ -415,7 +426,7 @@
     "driverSlug": "pete-seitz",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "jefferson-speedway_unknown-year_randy-lindemann_don-wendlandt_photo_001.jpg",
@@ -426,7 +437,18 @@
     "driverSlug": "randy-lindemann",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "jefferson-speedway_unknown-year_tom-deukeuster_don-wendlandt_photo_444.jpg",
+    "storagePath": "photos/master/jefferson-speedway/unknown-year/jefferson-speedway_unknown-year_tom-deukeuster_don-wendlandt_photo_444.jpg",
+    "publicPath": "/photos/jefferson-speedway_unknown-year_tom-deukeuster_don-wendlandt_photo_444.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "unknown-year",
+    "driverSlug": "tom-deukeuster",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "lake-geneva-raceway_1981_bill-wilke_don-wendlandt_photo_001.jpg",
@@ -437,7 +459,7 @@
     "driverSlug": "bill-wilke",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1981_jim-rogers_don-wendlandt_photo_001.jpg",
@@ -448,7 +470,7 @@
     "driverSlug": "jim-rogers",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1981_lyle-phillips_don-wendlandt_photo_001.jpg",
@@ -459,7 +481,7 @@
     "driverSlug": "lyle-phillips",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1981_roger-behlke_don-wendlandt_photo_001.jpg",
@@ -470,7 +492,7 @@
     "driverSlug": "roger-behlke",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1981_terry-sauer_don-wendlandt_photo_001.jpg",
@@ -481,7 +503,7 @@
     "driverSlug": "terry-sauer",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1981_unknown-driver_don-wendlandt_photo_001.jpg",
@@ -492,7 +514,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_1981_unknown-driver_don-wendlandt_photo_222.jpg",
@@ -517,48 +539,48 @@
     "sequence": "116"
   },
   {
-    "fileName": "mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo.jpg",
-    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo.jpg",
-    "publicPath": "/photos/mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo.jpg",
+    "fileName": "mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo_1.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo_1.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_blackie-bornberg_don-wendlandt_photo_1.jpg",
     "trackSlug": "mall-show",
     "year": "unknown-year",
     "driverSlug": "blackie-bornberg",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "mall-show_unknown-year_matt-pyburn_don-wendlandt_photo.jpg",
-    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_matt-pyburn_don-wendlandt_photo.jpg",
-    "publicPath": "/photos/mall-show_unknown-year_matt-pyburn_don-wendlandt_photo.jpg",
+    "fileName": "mall-show_unknown-year_matt-pyburn_don-wendlandt_photo_1.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_matt-pyburn_don-wendlandt_photo_1.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_matt-pyburn_don-wendlandt_photo_1.jpg",
     "trackSlug": "mall-show",
     "year": "unknown-year",
     "driverSlug": "matt-pyburn",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "mall-show_unknown-year_matt-raykowski_don-wendlandt_photo.jpg",
-    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_matt-raykowski_don-wendlandt_photo.jpg",
-    "publicPath": "/photos/mall-show_unknown-year_matt-raykowski_don-wendlandt_photo.jpg",
+    "fileName": "mall-show_unknown-year_matt-raykowski_don-wendlandt_photo_1.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_matt-raykowski_don-wendlandt_photo_1.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_matt-raykowski_don-wendlandt_photo_1.jpg",
     "trackSlug": "mall-show",
     "year": "unknown-year",
     "driverSlug": "matt-raykowski",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "mall-show_unknown-year_steve-borski_don-wendlandt_photo.jpg",
-    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_steve-borski_don-wendlandt_photo.jpg",
-    "publicPath": "/photos/mall-show_unknown-year_steve-borski_don-wendlandt_photo.jpg",
+    "fileName": "mall-show_unknown-year_steve-borski_don-wendlandt_photo_1.jpg",
+    "storagePath": "photos/master/mall-show/unknown-year/mall-show_unknown-year_steve-borski_don-wendlandt_photo_1.jpg",
+    "publicPath": "/photos/mall-show_unknown-year_steve-borski_don-wendlandt_photo_1.jpg",
     "trackSlug": "mall-show",
     "year": "unknown-year",
     "driverSlug": "steve-borski",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_bret-widdes_don-wendlandt_photo_117.jpg",
@@ -580,7 +602,7 @@
     "driverSlug": "brett-widdes",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_derek-gress_don-wendlandt_photo_117.jpg",
@@ -624,7 +646,7 @@
     "driverSlug": "doug-droste",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_duane-davis_don-wendlandt_photo_001.jpg",
@@ -635,7 +657,7 @@
     "driverSlug": "duane-davis",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jake-ryan_don-wendlandt_photo_001.jpg",
@@ -646,7 +668,7 @@
     "driverSlug": "jake-ryan",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jake-ryan_don-wendlandt_photo_117.jpg",
@@ -668,7 +690,7 @@
     "driverSlug": "jim-carlson",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jim-carlson_don-wendlandt_photo_117.jpg",
@@ -690,7 +712,7 @@
     "driverSlug": "jim-duchow",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_jim-duchow_don-wendlandt_photo_117.jpg",
@@ -712,7 +734,7 @@
     "driverSlug": "keith-bomsach",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_keith-bomsach_don-wendlandt_photo_117.jpg",
@@ -745,7 +767,7 @@
     "driverSlug": "matt-wisz",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_matt-wisz_don-wendlandt_photo_117.jpg",
@@ -778,7 +800,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_002.jpg",
@@ -789,7 +811,7 @@
     "driverSlug": "monte-gress",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_2006_monte-gress_don-wendlandt_photo_117.jpg",
@@ -822,7 +844,7 @@
     "driverSlug": "tim-rothe",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_2006_tim-rothe_don-wendlandt_photo_117.jpg",
@@ -932,7 +954,7 @@
     "driverSlug": "don-prisk",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_curt-wendleschafer_don-wendlandt_photo_001.jpg",
@@ -943,7 +965,29 @@
     "driverSlug": "curt-wendleschafer",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_curt-wendleschafer_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_curt-wendleschafer_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_curt-wendleschafer_don-wendlandt_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "curt-wendleschafer",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_curt-wendleschafer_don-wendlandt_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_curt-wendleschafer_don-wendlandt_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_curt-wendleschafer_don-wendlandt_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "curt-wendleschafer",
+    "photographerSlug": "don-wendlandt",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_doc-herold_don-wendlandt_photo_001.jpg",
@@ -954,29 +998,7 @@
     "driverSlug": "doc-herold",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_gary-krueger_don-wendlandt_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_gary-krueger_don-wendlandt_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_gary-krueger_don-wendlandt_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "gary-krueger",
-    "photographerSlug": "don-wendlandt",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_ken-pankratz_don-wendlandt_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ken-pankratz_don-wendlandt_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_ken-pankratz_don-wendlandt_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "ken-pankratz",
-    "photographerSlug": "don-wendlandt",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rudy-bandt_don-wendlandt_photo_001.jpg",
@@ -987,7 +1009,7 @@
     "driverSlug": "rudy-bandt",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_tom-torbleau_don-wendlandt_photo_001.jpg",
@@ -998,6 +1020,6 @@
     "driverSlug": "tom-torbleau",
     "photographerSlug": "don-wendlandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

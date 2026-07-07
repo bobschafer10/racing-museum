@@ -8,7 +8,7 @@
     "driverSlug": "rich-olson",
     "photographerSlug": "lee-johnson",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-olson_missy-lushinsky_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "rich-olson",
     "photographerSlug": "missy-lushinsky",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-olson_owatonna-mcclain_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "rich-olson",
     "photographerSlug": "owatonna-mcclain",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-olson_unknown-photographer_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "rich-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-olson_unknown-photographer_photo_002.jpg",
@@ -52,6 +52,6 @@
     "driverSlug": "rich-olson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

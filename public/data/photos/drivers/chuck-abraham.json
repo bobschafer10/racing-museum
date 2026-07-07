@@ -8,7 +8,7 @@
     "driverSlug": "chuck-abraham",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
@@ -19,7 +19,29 @@
     "driverSlug": "chuck-abraham",
     "photographerSlug": "doyce-eaton",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-abraham",
+    "photographerSlug": "doyce-eaton",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_chuck-abraham_doyce-eaton_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "chuck-abraham",
+    "photographerSlug": "doyce-eaton",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wausau-fairgrounds_1978_chuck-abraham_john-vass_photo_001.jpg",
@@ -30,6 +52,6 @@
     "driverSlug": "chuck-abraham",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

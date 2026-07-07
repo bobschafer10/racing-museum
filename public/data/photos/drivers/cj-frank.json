@@ -8,7 +8,7 @@
     "driverSlug": "cj-frank",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_cj-frank_joe-slack_photo_001.jpg",
@@ -19,6 +19,28 @@
     "driverSlug": "cj-frank",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cj-frank_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cj-frank_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cj-frank_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cj-frank",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_cj-frank_joe-slack_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_cj-frank_joe-slack_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_cj-frank_joe-slack_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "cj-frank",
+    "photographerSlug": "joe-slack",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

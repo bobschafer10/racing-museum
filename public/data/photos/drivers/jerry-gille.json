@@ -8,7 +8,7 @@
     "driverSlug": "jerry-gille",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_jerry-gille_bob-schafer_photo_13667.jpg",
@@ -30,17 +30,17 @@
     "driverSlug": "jerry-gille",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_unknown-year_jerry-gille_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-gille_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_jerry-gille_unknown-photographer_photo_001.jpg",
+    "fileName": "unknown-track_unknown-year_jerry-gille_charlie-spry_post_565.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_jerry-gille_charlie-spry_post_565.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_jerry-gille_charlie-spry_post_565.jpg",
     "trackSlug": "unknown-track",
     "year": "unknown-year",
     "driverSlug": "jerry-gille",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "565"
   }
 ]

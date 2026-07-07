@@ -1,5 +1,16 @@
 [
   {
+    "fileName": "jefferson-speedway_2017_jordan-devoy_bob-greuel_photo_333.jpg",
+    "storagePath": "photos/master/jefferson-speedway/2017/jefferson-speedway_2017_jordan-devoy_bob-greuel_photo_333.jpg",
+    "publicPath": "/photos/jefferson-speedway_2017_jordan-devoy_bob-greuel_photo_333.jpg",
+    "trackSlug": "jefferson-speedway",
+    "year": "2017",
+    "driverSlug": "jordan-devoy",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "slinger-speedway_2026_jordan-devoy_jodan-devoy_post-001.jpg_772.jpg",
     "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_jordan-devoy_jodan-devoy_post-001.jpg_772.jpg",
     "publicPath": "/photos/slinger-speedway_2026_jordan-devoy_jodan-devoy_post-001.jpg_772.jpg",
@@ -7,7 +18,7 @@
     "year": "2026",
     "driverSlug": "jordan-devoy",
     "photographerSlug": "jodan-devoy",
-    "creditType": "post-001",
-    "sequence": "772.jpg"
+    "creditType": "photo",
+    "sequence": "772"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "aj-springborn",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "141-speedway_2024_devin-yaeger_dan-lewis_photo_113.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "aaron-fiscus",
     "photographerSlug": "badger-midget-auto-racing-association",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2024_aaron-muhle_derek-sabourin_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "aaron-muhle",
     "photographerSlug": "derek-sabourin",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "beaver-dam-raceway_2024_jerry-winkler_unknown-photographer_photo_001.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "jerry-winkler",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chateau-speedway_2024_aaron-benson_stoen-racing-engines_post_001.jpg",
@@ -63,7 +63,51 @@
     "driverSlug": "aaron-benson",
     "photographerSlug": "stoen-racing-engines",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "dells-motor-speedway_2024_jake-zellmer_jake-zellmer_post_111.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/2024/dells-motor-speedway_2024_jake-zellmer_jake-zellmer_post_111.jpg",
+    "publicPath": "/photos/dells-motor-speedway_2024_jake-zellmer_jake-zellmer_post_111.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "2024",
+    "driverSlug": "jake-zellmer",
+    "photographerSlug": "jake-zellmer",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "escanaba-speedway_2024_evan-gagne_evan-gagne_post_444.jpg",
+    "storagePath": "photos/master/escanaba-speedway/2024/escanaba-speedway_2024_evan-gagne_evan-gagne_post_444.jpg",
+    "publicPath": "/photos/escanaba-speedway_2024_evan-gagne_evan-gagne_post_444.jpg",
+    "trackSlug": "escanaba-speedway",
+    "year": "2024",
+    "driverSlug": "evan-gagne",
+    "photographerSlug": "evan-gagne",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "gravity-park-speedway_2024_jeff-richards_joe-holz_photo_444.jpg",
+    "storagePath": "photos/master/gravity-park-speedway/2024/gravity-park-speedway_2024_jeff-richards_joe-holz_photo_444.jpg",
+    "publicPath": "/photos/gravity-park-speedway_2024_jeff-richards_joe-holz_photo_444.jpg",
+    "trackSlug": "gravity-park-speedway",
+    "year": "2024",
+    "driverSlug": "jeff-richards",
+    "photographerSlug": "joe-holz",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "grundy-county-speedway_2024_gracie-flanagan_josh-zacharias_post_422.jpg",
+    "storagePath": "photos/master/grundy-county-speedway/2024/grundy-county-speedway_2024_gracie-flanagan_josh-zacharias_post_422.jpg",
+    "publicPath": "/photos/grundy-county-speedway_2024_gracie-flanagan_josh-zacharias_post_422.jpg",
+    "trackSlug": "grundy-county-speedway",
+    "year": "2024",
+    "driverSlug": "gracie-flanagan",
+    "photographerSlug": "josh-zacharias",
+    "creditType": "post",
+    "sequence": "422"
   },
   {
     "fileName": "jefferson-speedway_2024_jason-uttech_jason-uttech_post_333.jpg",
@@ -96,7 +140,7 @@
     "driverSlug": "aaron-karcz",
     "photographerSlug": "kevin-deneys",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "luxemburg-speedway_2024_aaron-zellner_aaron-zellner_post_001.jpg",
@@ -107,7 +151,7 @@
     "driverSlug": "aaron-zellner",
     "photographerSlug": "aaron-zellner",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "plymouth-dirt-track_2024_dave-uttech_r-custom-photography_photo_333.jpg",
@@ -121,6 +165,61 @@
     "sequence": "333"
   },
   {
+    "fileName": "plymouth-dirt-track_2024_dave-uttech_r-custom-photography_photo_333.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_dave-uttech_r-custom-photography_photo_333.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_dave-uttech_r-custom-photography_photo_333.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "dave-uttech",
+    "photographerSlug": "r-custom-photography",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "kevin-juech",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_kevin-juech_bob-greuel_photo_444.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "kevin-juech",
+    "photographerSlug": "bob-greuel",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2024_will-sorce_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_will-sorce_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_will-sorce_unknown-photographer_photo_111.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "will-sorce",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "plymouth-dirt-track_2024_will-sorce_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/plymouth-dirt-track/2024/plymouth-dirt-track_2024_will-sorce_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/plymouth-dirt-track_2024_will-sorce_unknown-photographer_photo_111.jpg",
+    "trackSlug": "plymouth-dirt-track",
+    "year": "2024",
+    "driverSlug": "will-sorce",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "slinger-speedway_2024_aaron-genske_kd-photography_photo_001.jpg",
     "storagePath": "photos/master/slinger-speedway/2024/slinger-speedway_2024_aaron-genske_kd-photography_photo_001.jpg",
     "publicPath": "/photos/slinger-speedway_2024_aaron-genske_kd-photography_photo_001.jpg",
@@ -129,18 +228,106 @@
     "driverSlug": "aaron-genske",
     "photographerSlug": "kd-photography",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "unknown-track_2024_andrew-yaeger_andrew-yaeger_post_111.jpg",
-    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_andrew-yaeger_andrew-yaeger_post_111.jpg",
-    "publicPath": "/photos/unknown-track_2024_andrew-yaeger_andrew-yaeger_post_111.jpg",
+    "fileName": "slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/2024/slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_2024_morgan-zerwinski_ron-erstad_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2024",
+    "driverSlug": "morgan-zerwinski",
+    "photographerSlug": "ron-erstad",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "state-park-speedway_2024_abby-kohn_qc-willy_photo_111.jpg",
+    "storagePath": "photos/master/state-park-speedway/2024/state-park-speedway_2024_abby-kohn_qc-willy_photo_111.jpg",
+    "publicPath": "/photos/state-park-speedway_2024_abby-kohn_qc-willy_photo_111.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2024",
+    "driverSlug": "abby-kohn",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "state-park-speedway_2024_noah-gajewski_qc-willy_photo_443.jpg",
+    "storagePath": "photos/master/state-park-speedway/2024/state-park-speedway_2024_noah-gajewski_qc-willy_photo_443.jpg",
+    "publicPath": "/photos/state-park-speedway_2024_noah-gajewski_qc-willy_photo_443.jpg",
+    "trackSlug": "state-park-speedway",
+    "year": "2024",
+    "driverSlug": "noah-gajewski",
+    "photographerSlug": "qc-willy",
+    "creditType": "photo",
+    "sequence": "443"
+  },
+  {
+    "fileName": "tomah-sparta-speedway_2024_allen-borntreger_cody-anderson_photo_444.jpg",
+    "storagePath": "photos/master/tomah-sparta-speedway/2024/tomah-sparta-speedway_2024_allen-borntreger_cody-anderson_photo_444.jpg",
+    "publicPath": "/photos/tomah-sparta-speedway_2024_allen-borntreger_cody-anderson_photo_444.jpg",
+    "trackSlug": "tomah-sparta-speedway",
+    "year": "2024",
+    "driverSlug": "allen-borntreger",
+    "photographerSlug": "cody-anderson",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_2024_alex-bond_alex-bond_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_alex-bond_alex-bond_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2024_alex-bond_alex-bond_post_444.jpg",
     "trackSlug": "unknown-track",
     "year": "2024",
-    "driverSlug": "andrew-yaeger",
-    "photographerSlug": "andrew-yaeger",
+    "driverSlug": "alex-bond",
+    "photographerSlug": "alex-bond",
     "creditType": "post",
-    "sequence": "111"
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_2024_ashley-boyum_ashley-boyum_post_443.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_ashley-boyum_ashley-boyum_post_443.jpg",
+    "publicPath": "/photos/unknown-track_2024_ashley-boyum_ashley-boyum_post_443.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "ashley-boyum",
+    "photographerSlug": "ashley-boyum",
+    "creditType": "post",
+    "sequence": "443"
+  },
+  {
+    "fileName": "unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "publicPath": "/photos/unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "bj-schoneck",
+    "photographerSlug": "bj-schoneck",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "publicPath": "/photos/unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "bj-schoneck",
+    "photographerSlug": "bj-schoneck",
+    "creditType": "post",
+    "sequence": "100"
+  },
+  {
+    "fileName": "unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "publicPath": "/photos/unknown-track_2024_bj-schoneck_bj-schoneck_post_100.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "bj-schoneck",
+    "photographerSlug": "bj-schoneck",
+    "creditType": "post",
+    "sequence": "100"
   },
   {
     "fileName": "unknown-track_2024_colton-utley_unknown-photographer_photo_333.jpg",
@@ -152,5 +339,38 @@
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
     "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_2024_jack-wiroll_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_jack-wiroll_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2024_jack-wiroll_putch-bentley_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "jack-wiroll",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_2024_jake-richards_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_jake-richards_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2024_jake-richards_putch-bentley_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "jake-richards",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "unknown-track_2024_josh-pierce_putch-bentley_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/2024/unknown-track_2024_josh-pierce_putch-bentley_post_444.jpg",
+    "publicPath": "/photos/unknown-track_2024_josh-pierce_putch-bentley_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2024",
+    "driverSlug": "josh-pierce",
+    "photographerSlug": "putch-bentley",
+    "creditType": "post",
+    "sequence": "444"
   }
 ]

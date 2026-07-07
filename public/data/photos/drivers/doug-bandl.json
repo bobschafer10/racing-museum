@@ -8,7 +8,18 @@
     "driverSlug": "doug-bandl",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_doug-bandl_unknown-credit_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_doug-bandl_unknown-credit_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_doug-bandl_unknown-credit_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "doug-bandl",
+    "photographerSlug": "unknown-credit",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_doug-bandl_unknown-credit_photo_002.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "doug-bandl",
     "photographerSlug": "unknown-credit",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   }
 ]

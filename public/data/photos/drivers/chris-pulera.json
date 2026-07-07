@@ -8,7 +8,7 @@
     "driverSlug": "chris-pulera",
     "photographerSlug": "pate-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_chris-pulera_pat-heaney_post_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "chris-pulera",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "lake-geneva-raceway_unknown-year_chris-pulera_unknown-photographer_photo_001.jpg",
@@ -30,6 +30,17 @@
     "driverSlug": "chris-pulera",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_2026_chris-pulera_doug-corcoran_photo_988.jpg",
+    "storagePath": "photos/master/slinger-speedway/2026/slinger-speedway_2026_chris-pulera_doug-corcoran_photo_988.jpg",
+    "publicPath": "/photos/slinger-speedway_2026_chris-pulera_doug-corcoran_photo_988.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "2026",
+    "driverSlug": "chris-pulera",
+    "photographerSlug": "doug-corcoran",
+    "creditType": "photo",
+    "sequence": "988"
   }
 ]

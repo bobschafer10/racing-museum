@@ -8,7 +8,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-vandermolen_unknown-photographer_photo_002.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_1990_pete-vandermolen_bob-schafer_photo_222.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-vandermolen_clintman_post_002.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-vandermolen_clintman_post_003.jpg",
@@ -107,7 +107,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "clintman",
     "creditType": "post",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-vandermolen_john-vass_photo_001.jpg",
@@ -118,7 +118,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "john-vass",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-vandermolen_keith-vercauteren_post_001.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_pete-vandermolen_pete-vercauteren_post_001.jpg",
@@ -140,6 +140,6 @@
     "driverSlug": "pete-vandermolen",
     "photographerSlug": "pete-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

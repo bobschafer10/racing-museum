@@ -8,7 +8,7 @@
     "driverSlug": "al-gibson",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "075"
+    "sequence": "75"
   },
   {
     "fileName": "shawano-speedway_unknown-year_al-gibson_brad-luepke_post_001.jpg",
@@ -19,28 +19,6 @@
     "driverSlug": "al-gibson",
     "photographerSlug": "brad-luepke",
     "creditType": "post",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-gibson_unknown-photographer_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-gibson_unknown-photographer_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-gibson_unknown-photographer_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-gibson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_al-gibson_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_al-gibson_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_al-gibson_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "al-gibson",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
+    "sequence": "1"
   }
 ]

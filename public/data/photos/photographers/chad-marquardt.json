@@ -8,7 +8,7 @@
     "driverSlug": "aaron-muhle",
     "photographerSlug": "chad-marquardt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "dodge-county-fairgrounds_unknown-year_ron-bomber_chad-marquardt_photo_001.jpg",
@@ -19,7 +19,40 @@
     "driverSlug": "ron-bomber",
     "photographerSlug": "chad-marquardt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2013/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2013_mark-rose_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2013",
+    "driverSlug": "mark-rose",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_jim-letizia_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "jim-letizia",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/oshkosh-speed-zone/2016/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/oshkosh-speed-zone_2016_jim-zdroik_chad-marquardt_photo_111.jpg",
+    "trackSlug": "oshkosh-speed-zone",
+    "year": "2016",
+    "driverSlug": "jim-zdroik",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
   },
   {
     "fileName": "plymouth-dirt-track_2018_ron-bomber_chad-marquardt_photo_001.jpg",
@@ -30,7 +63,7 @@
     "driverSlug": "ron-bomber",
     "photographerSlug": "chad-marquardt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "seymour-speedway_2026_tyler-nettekoven_chad-marquardt_photo_113.jpg",
@@ -44,6 +77,17 @@
     "sequence": "113"
   },
   {
+    "fileName": "shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "storagePath": "photos/master/shawano-speedway/2016/shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "publicPath": "/photos/shawano-speedway_2016_jason-zdroik_chad-marquardt_photo_111.jpg",
+    "trackSlug": "shawano-speedway",
+    "year": "2016",
+    "driverSlug": "jason-zdroik",
+    "photographerSlug": "chad-marquardt",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "shawano-speedway_unknown-year_aaron-bennett_chad-marquardt_photo_001.jpg",
     "storagePath": "photos/master/shawano-speedway/unknown-year/shawano-speedway_unknown-year_aaron-bennett_chad-marquardt_photo_001.jpg",
     "publicPath": "/photos/shawano-speedway_unknown-year_aaron-bennett_chad-marquardt_photo_001.jpg",
@@ -52,6 +96,6 @@
     "driverSlug": "aaron-bennett",
     "photographerSlug": "chad-marquardt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -11,6 +11,17 @@
     "sequence": "398"
   },
   {
+    "fileName": "dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_398.jpg",
+    "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_398.jpg",
+    "publicPath": "/photos/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_398.jpg",
+    "trackSlug": "dells-motor-speedway",
+    "year": "unknown-year",
+    "driverSlug": "geno-broesch",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "398"
+  },
+  {
     "fileName": "dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_400.jpg",
     "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_400.jpg",
     "publicPath": "/photos/dells-motor-speedway_unknown-year_geno-broesch_bob-schafer_photo_400.jpg",
@@ -41,6 +52,6 @@
     "driverSlug": "geno-broesch",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,18 @@
     "driverSlug": "marv-flick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "marshfield-super-speedway_2013_marv-flick_wayne-brevik_post_655.jpg",
+    "storagePath": "photos/master/marshfield-super-speedway/2013/marshfield-super-speedway_2013_marv-flick_wayne-brevik_post_655.jpg",
+    "publicPath": "/photos/marshfield-super-speedway_2013_marv-flick_wayne-brevik_post_655.jpg",
+    "trackSlug": "marshfield-super-speedway",
+    "year": "2013",
+    "driverSlug": "marv-flick",
+    "photographerSlug": "wayne-brevik",
+    "creditType": "post",
+    "sequence": "655"
   },
   {
     "fileName": "unknown-track_unknown-year_marv-flick_unknown-photographer_photo_001.jpg",
@@ -19,6 +30,6 @@
     "driverSlug": "marv-flick",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

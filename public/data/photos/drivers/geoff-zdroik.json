@@ -1,0 +1,35 @@
+[
+  {
+    "fileName": "141-speedway_2016_geoff-zdroik_turn-2_photo_111.jpg",
+    "storagePath": "photos/master/141-speedway/2016/141-speedway_2016_geoff-zdroik_turn-2_photo_111.jpg",
+    "publicPath": "/photos/141-speedway_2016_geoff-zdroik_turn-2_photo_111.jpg",
+    "trackSlug": "141-speedway",
+    "year": "2016",
+    "driverSlug": "geoff-zdroik",
+    "photographerSlug": "turn-2",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2016/monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2016_geoff-zdroik_tom-loos_photo_111.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2016",
+    "driverSlug": "geoff-zdroik",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
+    "fileName": "unknown-track_2020_geoff-zdroik_geoff-zdroik_post_111.jpg",
+    "storagePath": "photos/master/unknown-track/2020/unknown-track_2020_geoff-zdroik_geoff-zdroik_post_111.jpg",
+    "publicPath": "/photos/unknown-track_2020_geoff-zdroik_geoff-zdroik_post_111.jpg",
+    "trackSlug": "unknown-track",
+    "year": "2020",
+    "driverSlug": "geoff-zdroik",
+    "photographerSlug": "geoff-zdroik",
+    "creditType": "post",
+    "sequence": "111"
+  }
+]

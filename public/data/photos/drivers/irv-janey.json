@@ -1,0 +1,24 @@
+[
+  {
+    "fileName": "freeport-raceway-park_unknown-year_irv-janey_stan-kalwasinski_photo_333.jpg",
+    "storagePath": "photos/master/freeport-raceway-park/unknown-year/freeport-raceway-park_unknown-year_irv-janey_stan-kalwasinski_photo_333.jpg",
+    "publicPath": "/photos/freeport-raceway-park_unknown-year_irv-janey_stan-kalwasinski_photo_333.jpg",
+    "trackSlug": "freeport-raceway-park",
+    "year": "unknown-year",
+    "driverSlug": "irv-janey",
+    "photographerSlug": "stan-kalwasinski",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_irv-janey_doug-haack_post_444.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_irv-janey_doug-haack_post_444.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_irv-janey_doug-haack_post_444.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "irv-janey",
+    "photographerSlug": "doug-haack",
+    "creditType": "post",
+    "sequence": "444"
+  }
+]

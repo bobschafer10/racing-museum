@@ -11,6 +11,17 @@
     "sequence": "333"
   },
   {
+    "fileName": "columbus-151-speedway_1991_bobby-moore_bobby-moore_post_333.jpg",
+    "storagePath": "photos/master/columbus-151-speedway/1991/columbus-151-speedway_1991_bobby-moore_bobby-moore_post_333.jpg",
+    "publicPath": "/photos/columbus-151-speedway_1991_bobby-moore_bobby-moore_post_333.jpg",
+    "trackSlug": "columbus-151-speedway",
+    "year": "1991",
+    "driverSlug": "bobby-moore",
+    "photographerSlug": "bobby-moore",
+    "creditType": "post",
+    "sequence": "333"
+  },
+  {
     "fileName": "columbus-151-speedway_1991_jeff-falbe_jeff-gilhart_photo_001.jpg",
     "storagePath": "photos/master/columbus-151-speedway/1991/columbus-151-speedway_1991_jeff-falbe_jeff-gilhart_photo_001.jpg",
     "publicPath": "/photos/columbus-151-speedway_1991_jeff-falbe_jeff-gilhart_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "jeff-falbe",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1991_ron-shuman_unknown-photographer_photo_114.jpg",
@@ -41,18 +52,7 @@
     "driverSlug": "randy-nottestad",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "lacrosse-interstate-speedway_1991_mike-langsdorf_jeff-gilhart_photo_001.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/1991/lacrosse-interstate-speedway_1991_mike-langsdorf_jeff-gilhart_photo_001.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_1991_mike-langsdorf_jeff-gilhart_photo_001.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "1991",
-    "driverSlug": "mike-langsdorf",
-    "photographerSlug": "jeff-gilhart",
-    "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_1991_bob-brownell_bob-schafer_photo_208.jpg",
@@ -173,7 +173,7 @@
     "driverSlug": "unknown-driver",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "086"
+    "sequence": "86"
   },
   {
     "fileName": "slinger-speedway_1991_jim-dragich_dale-weyer_post_001.jpg",
@@ -184,7 +184,7 @@
     "driverSlug": "jim-dragich",
     "photographerSlug": "dale-weyer",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1991_joe-shear_pat-heaney_post_001.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "joe-shear",
     "photographerSlug": "pat-heaney",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "volusia-county-speedway_1991_jerry-wood_bob-schafer_photo_13152.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "dick-trickle",
     "photographerSlug": "paul-gilbertson",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1991_al-olson_kurt-luoma_photo_001.jpg",
@@ -228,7 +228,7 @@
     "driverSlug": "al-olson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1991_clarence-oertel_dave-panske_photo_001.jpg",
@@ -239,7 +239,7 @@
     "driverSlug": "clarence-oertel",
     "photographerSlug": "dave-panske",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "yellow-river-speedway_1991_mg-johnson_kurt-luoma_photo_001.jpg",
@@ -250,6 +250,6 @@
     "driverSlug": "mg-johnson",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

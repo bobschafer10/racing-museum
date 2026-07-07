@@ -1,16 +1,5 @@
 [
   {
-    "fileName": "capital-super-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
-    "storagePath": "photos/master/capital-super-speedway/unknown-year/capital-super-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
-    "publicPath": "/photos/capital-super-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
-    "trackSlug": "capital-super-speedway",
-    "year": "unknown-year",
-    "driverSlug": "mike-langsdorf",
-    "photographerSlug": "kevin-wisniewski",
-    "creditType": "post",
-    "sequence": "001"
-  },
-  {
     "fileName": "dells-motor-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
     "storagePath": "photos/master/dells-motor-speedway/unknown-year/dells-motor-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
     "publicPath": "/photos/dells-motor-speedway_unknown-year_mike-langsdorf_kevin-wisniewski_post_001.jpg",
@@ -19,7 +8,18 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_bruce-wesley_kevin-wisniewski_post_888.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bruce-wesley_kevin-wisniewski_post_888.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_bruce-wesley_kevin-wisniewski_post_888.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "bruce-wesley",
+    "photographerSlug": "kevin-wisniewski",
+    "creditType": "post",
+    "sequence": "888"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_butch-mierendorf_kevin-wisniewski_photo_001.jpg",
@@ -30,18 +30,40 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
-    "fileName": "hales-corners-speedway_unknown-year_don-collins_kevin-wisniewski_post_001.jpg",
-    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_don-collins_kevin-wisniewski_post_001.jpg",
-    "publicPath": "/photos/hales-corners-speedway_unknown-year_don-collins_kevin-wisniewski_post_001.jpg",
+    "fileName": "hales-corners-speedway_unknown-year_rick-tackman_kevin-wisniewski_photo_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_rick-tackman_kevin-wisniewski_photo_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_rick-tackman_kevin-wisniewski_photo_444.jpg",
     "trackSlug": "hales-corners-speedway",
     "year": "unknown-year",
-    "driverSlug": "don-collins",
+    "driverSlug": "rick-tackman",
+    "photographerSlug": "kevin-wisniewski",
+    "creditType": "photo",
+    "sequence": "444"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_rick-tackman_kevin-wisniewski_photo_445.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_rick-tackman_kevin-wisniewski_photo_445.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_rick-tackman_kevin-wisniewski_photo_445.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "rick-tackman",
+    "photographerSlug": "kevin-wisniewski",
+    "creditType": "photo",
+    "sequence": "445"
+  },
+  {
+    "fileName": "hales-corners-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_444.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_444.jpg",
+    "publicPath": "/photos/hales-corners-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_444.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-weiss",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "444"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_skeeter-burrows_kevin-wisniewski_photo_001.jpg",
@@ -52,7 +74,7 @@
     "driverSlug": "skeeter-burrows",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_unknown-year_wally-jors_kevin-wisniewski_photo_001.jpg",
@@ -63,7 +85,7 @@
     "driverSlug": "wally-jors",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_butch-mierendorf_kevin-wisniewski_photo_001.jpg",
@@ -74,7 +96,29 @@
     "driverSlug": "butch-mierendorf",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_444.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_444.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_444.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-weiss",
+    "photographerSlug": "kevin-wisniewski",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "slinger-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_445.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_445.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_scott-weiss_kevin-wisniewski_post_445.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "scott-weiss",
+    "photographerSlug": "kevin-wisniewski",
+    "creditType": "post",
+    "sequence": "445"
   },
   {
     "fileName": "state-park-speedway_unknown-year_fluff-furo_kevin-wisniewski_photo_001.jpg",
@@ -85,6 +129,6 @@
     "driverSlug": "fluff-furo",
     "photographerSlug": "kevin-wisniewski",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -6,9 +6,9 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "eric-ziegler",
-    "photographerSlug": "charlie-spry-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway-wi_unknown-year_gary-haarklau_Blaser-photo_001.jpg",
@@ -17,9 +17,9 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "gary-haarklau",
-    "photographerSlug": "Blaser-photo",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway-wi_unknown-year_mark-lamereaux_charlie-spry-post_001.jpg",
@@ -28,9 +28,9 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "mark-lamereaux",
-    "photographerSlug": "charlie-spry-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway-wi_unknown-year_mike-langsdorf_charlie-spry-post_001.jpg",
@@ -39,9 +39,9 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "mike-langsdorf",
-    "photographerSlug": "charlie-spry-post",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "charlie-spry",
+    "creditType": "post",
+    "sequence": "1"
   },
   {
     "fileName": "dells-motor-speedway-wi_unknown-year_ron-mortimer_Blaser-photo_001.jpg",
@@ -50,8 +50,8 @@
     "trackSlug": "dells-motor-speedway-wi",
     "year": "unknown-year",
     "driverSlug": "ron-mortimer",
-    "photographerSlug": "Blaser-photo",
-    "creditType": "001",
-    "sequence": "001"
+    "photographerSlug": "blaser",
+    "creditType": "photo",
+    "sequence": "1"
   }
 ]

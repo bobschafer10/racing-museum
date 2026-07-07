@@ -41,7 +41,7 @@
     "driverSlug": "pete-kempf",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "marshfield-super-speedway_unknown-year_pete-kempf_tom-loos_photo_003.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "pete-kempf",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-kempf_kurt-luoma_photo_001.jpg",
@@ -63,7 +63,7 @@
     "driverSlug": "pete-kempf",
     "photographerSlug": "kurt-luoma",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_pete-kempf_unknown-photographer_photo_001.jpg",
@@ -74,6 +74,6 @@
     "driverSlug": "pete-kempf",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

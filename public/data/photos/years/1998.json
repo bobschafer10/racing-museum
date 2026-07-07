@@ -19,7 +19,7 @@
     "driverSlug": "dale-weyer",
     "photographerSlug": "unknown-credit",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_1998_bruce-holz_weber-brothers_photo_001.jpg",
@@ -30,7 +30,7 @@
     "driverSlug": "bruce-holz",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "chilton-speedway_1998_chad-schlenvogt_dan-lewis_photo_001.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "chad-schlenvogt",
     "photographerSlug": "dan-lewis",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "columbus-151-speedway_1998_mike-langsdorf_jeff-gilhart_photo_001.jpg",
@@ -52,7 +52,18 @@
     "driverSlug": "mike-langsdorf",
     "photographerSlug": "jeff-gilhart",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "lake-geneva-raceway_1998_terry-marzofka_jeff-sachse_photo_444.jpg",
+    "storagePath": "photos/master/lake-geneva-raceway/1998/lake-geneva-raceway_1998_terry-marzofka_jeff-sachse_photo_444.jpg",
+    "publicPath": "/photos/lake-geneva-raceway_1998_terry-marzofka_jeff-sachse_photo_444.jpg",
+    "trackSlug": "lake-geneva-raceway",
+    "year": "1998",
+    "driverSlug": "terry-marzofka",
+    "photographerSlug": "jeff-sachse",
+    "creditType": "photo",
+    "sequence": "444"
   },
   {
     "fileName": "marshfield-super-speedway_1998_keith-witt_tom-loos_photo_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "keith-witt",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "marshfield-super-speedway_1998_mike-brahmstedt_tom-loos_photo_001.jpg",
@@ -74,7 +85,40 @@
     "driverSlug": "mike-brahmstedt",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1998/milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1998_joel-clossey_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1998",
+    "driverSlug": "joel-clossey",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "storagePath": "photos/master/milwaukee-mile/1998/milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "publicPath": "/photos/milwaukee-mile_1998_steve-moenck_keith-vercauteren_post_444.jpg",
+    "trackSlug": "milwaukee-mile",
+    "year": "1998",
+    "driverSlug": "steve-moenck",
+    "photographerSlug": "keith-vercauteren",
+    "creditType": "post",
+    "sequence": "444"
+  },
+  {
+    "fileName": "monster-hall-raceway_1998-lonnie-leu_tom-loos_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/1998/monster-hall-raceway_1998-lonnie-leu_tom-loos_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_1998-lonnie-leu_tom-loos_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "1998",
+    "driverSlug": "lonnie-leu",
+    "photographerSlug": "tom-loos",
+    "creditType": "photo",
+    "sequence": "333"
   },
   {
     "fileName": "proctor-speedway_1998_bob-kintner_unknown-photographer_photo_002.jpg",
@@ -85,7 +129,7 @@
     "driverSlug": "bob-kintner",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_brad-hanson_unknown-photographer_photo_002.jpeg",
@@ -96,7 +140,7 @@
     "driverSlug": "brad-hanson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_brady-smith_unknown-photographer_photo_002.jpeg",
@@ -107,7 +151,7 @@
     "driverSlug": "brady-smith",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_darrell-nelson_unknown-photographer_photo_002.jpeg",
@@ -118,7 +162,7 @@
     "driverSlug": "darrell-nelson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_don-copp_unknown-photographer_photo_002.jpeg",
@@ -129,7 +173,7 @@
     "driverSlug": "don-copp",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_harry-hanson_unknown-photographer_photo_002.jpeg",
@@ -140,7 +184,7 @@
     "driverSlug": "harry-hanson",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_jason-miller_unknown-photographer_photo_002.jpeg",
@@ -151,7 +195,7 @@
     "driverSlug": "jason-miller",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_kelly-estey_unknown-photographer_photo_002.jpeg",
@@ -162,7 +206,7 @@
     "driverSlug": "kelly-estey",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_steve-vesel_unknown-photographer_photo_002.jpeg",
@@ -173,7 +217,7 @@
     "driverSlug": "steve-vesel",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "proctor-speedway_1998_tim-mcmann_unknown-photographer_photo_001.jpeg",
@@ -184,7 +228,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "proctor-speedway_1998_tim-mcmann_unknown-photographer_photo_002.jpg",
@@ -195,7 +239,7 @@
     "driverSlug": "tim-mcmann",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "slinger-speedway_1998_conrad-morgan_unknown-photographer_photo_001.jpg",
@@ -206,7 +250,7 @@
     "driverSlug": "conrad-morgan",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "state-park-speedway_1998_bob-mackesy_tom-loos_photo_001.jpg",
@@ -217,7 +261,7 @@
     "driverSlug": "bob-mackesy",
     "photographerSlug": "tom-loos",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-internatiional-raceway_1998_jason-schuler_chuck-look_photo_001.jpeg",
@@ -228,7 +272,7 @@
     "driverSlug": "jason-schuler",
     "photographerSlug": "chuck-look",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-internatiional-raceway_1998_mike-monroe_chuck-look_photo_001.jpeg",
@@ -239,7 +283,7 @@
     "driverSlug": "mike-monroe",
     "photographerSlug": "chuck-look",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-internatiional-raceway_1998_rick-spoo_chuck-look_photo_001.jpeg",
@@ -250,6 +294,6 @@
     "driverSlug": "rick-spoo",
     "photographerSlug": "chuck-look",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]

@@ -8,7 +8,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "hales-corners-speedway_1984_ed-kulka_weber-brothers_photo_222.jpg",
@@ -41,7 +41,18 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "pete-vercauteren",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-kulka_pete-vercauteren_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-kulka_pete-vercauteren_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-kulka_pete-vercauteren_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-kulka",
+    "photographerSlug": "pete-vercauteren",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_red-rj-storm_post_001.jpg",
@@ -52,7 +63,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "red-rj-storm",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_rj-storm_post_001.jpg",
@@ -63,7 +74,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "rj-storm",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_002.jpg",
@@ -74,7 +85,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_003.jpg",
@@ -85,7 +96,18 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-kulka",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_004.jpg",
@@ -96,7 +118,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_006.jpg",
@@ -107,7 +129,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "006"
+    "sequence": "6"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_007.jpg",
@@ -118,7 +140,7 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "007"
+    "sequence": "7"
   },
   {
     "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_008.jpg",
@@ -129,6 +151,17 @@
     "driverSlug": "ed-kulka",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "008"
+    "sequence": "8"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_008.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_008.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_ed-kulka_unknown-photographer_photo_008.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "ed-kulka",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "8"
   }
 ]

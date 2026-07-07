@@ -11,6 +11,17 @@
     "sequence": "111"
   },
   {
+    "fileName": "slinger-speedway_unknown-year_lonnie-lentz_unknown-photographer_photo_111.jpg",
+    "storagePath": "photos/master/slinger-speedway/unknown-year/slinger-speedway_unknown-year_lonnie-lentz_unknown-photographer_photo_111.jpg",
+    "publicPath": "/photos/slinger-speedway_unknown-year_lonnie-lentz_unknown-photographer_photo_111.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "unknown-year",
+    "driverSlug": "lonnie-lentz",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "111"
+  },
+  {
     "fileName": "unknown-track_unknown-year_lonnie-lentz_joe-slack_photo_001.jpg",
     "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_lonnie-lentz_joe-slack_photo_001.jpg",
     "publicPath": "/photos/unknown-track_unknown-year_lonnie-lentz_joe-slack_photo_001.jpg",
@@ -19,7 +30,7 @@
     "driverSlug": "lonnie-lentz",
     "photographerSlug": "joe-slack",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_1983_lonnie-lentz_al-fortner_photo_333.jpg",

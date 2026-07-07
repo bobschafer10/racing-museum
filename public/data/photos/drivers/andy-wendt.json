@@ -8,7 +8,7 @@
     "driverSlug": "andy-wendt",
     "photographerSlug": "joe-slack",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1987_andy-wendt_al-fortner_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "andy-wendt",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_1990_andy-wendt_bob-schafer_photo_222.jpg",
@@ -42,27 +42,5 @@
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
     "sequence": "14169"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_andy-wendt_joe-slack_photo_001.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_andy-wendt_joe-slack_photo_001.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_andy-wendt_joe-slack_photo_001.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "andy-wendt",
-    "photographerSlug": "joe-slack",
-    "creditType": "photo",
-    "sequence": "001"
-  },
-  {
-    "fileName": "unknown-track_unknown-year_andy-wendt_unknown-photographer_photo_002.jpg",
-    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_andy-wendt_unknown-photographer_photo_002.jpg",
-    "publicPath": "/photos/unknown-track_unknown-year_andy-wendt_unknown-photographer_photo_002.jpg",
-    "trackSlug": "unknown-track",
-    "year": "unknown-year",
-    "driverSlug": "andy-wendt",
-    "photographerSlug": "unknown-photographer",
-    "creditType": "photo",
-    "sequence": "002"
   }
 ]

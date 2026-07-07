@@ -1,5 +1,27 @@
 [
   {
+    "fileName": "hales-corners-speedway_2000_ron-stroika_formella-enterprises_post_111.jpg",
+    "storagePath": "photos/master/hales-corners-speedway/2000/hales-corners-speedway_2000_ron-stroika_formella-enterprises_post_111.jpg",
+    "publicPath": "/photos/hales-corners-speedway_2000_ron-stroika_formella-enterprises_post_111.jpg",
+    "trackSlug": "hales-corners-speedway",
+    "year": "2000",
+    "driverSlug": "ron-stroika",
+    "photographerSlug": "formella-enterprises",
+    "creditType": "post",
+    "sequence": "111"
+  },
+  {
+    "fileName": "monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "storagePath": "photos/master/monster-hall-raceway/2020/monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "publicPath": "/photos/monster-hall-raceway_2020_ron-stroika_unknown-photographer_photo_333.jpg",
+    "trackSlug": "monster-hall-raceway",
+    "year": "2020",
+    "driverSlug": "ron-stroika",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "333"
+  },
+  {
     "fileName": "oshkosh-speed-zone_unknown-year_ron-stroika_mike-esser_photo_001.jpg",
     "storagePath": "photos/master/oshkosh-speed-zone/unknown-year/oshkosh-speed-zone_unknown-year_ron-stroika_mike-esser_photo_001.jpg",
     "publicPath": "/photos/oshkosh-speed-zone_unknown-year_ron-stroika_mike-esser_photo_001.jpg",
@@ -8,7 +30,7 @@
     "driverSlug": "ron-stroika",
     "photographerSlug": "mike-esser",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-stroika_unknown-photographer_photo_001.jpg",
@@ -19,7 +41,7 @@
     "driverSlug": "ron-stroika",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-stroika_unknown-photographer_photo_002.jpg",
@@ -30,7 +52,7 @@
     "driverSlug": "ron-stroika",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_ron-stroika_unknown-photographer_photo_003.jpg",
@@ -41,6 +63,6 @@
     "driverSlug": "ron-stroika",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   }
 ]

@@ -11,17 +11,6 @@
     "sequence": "100"
   },
   {
-    "fileName": "lacrosse-interstate-speedway_unknown-year_rich-bickle-jr_father-grubba_photo_333.jpg",
-    "storagePath": "photos/master/lacrosse-interstate-speedway/unknown-year/lacrosse-interstate-speedway_unknown-year_rich-bickle-jr_father-grubba_photo_333.jpg",
-    "publicPath": "/photos/lacrosse-interstate-speedway_unknown-year_rich-bickle-jr_father-grubba_photo_333.jpg",
-    "trackSlug": "lacrosse-interstate-speedway",
-    "year": "unknown-year",
-    "driverSlug": "rich-bickle-jr",
-    "photographerSlug": "father-grubba",
-    "creditType": "photo",
-    "sequence": "333"
-  },
-  {
     "fileName": "milwaukee-mile_1990_rich-bickle-jr_bob-schafer_photo_275.jpg",
     "storagePath": "photos/master/milwaukee-mile/1990/milwaukee-mile_1990_rich-bickle-jr_bob-schafer_photo_275.jpg",
     "publicPath": "/photos/milwaukee-mile_1990_rich-bickle-jr_bob-schafer_photo_275.jpg",
@@ -44,6 +33,17 @@
     "sequence": "382"
   },
   {
+    "fileName": "rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "storagePath": "photos/master/rockford-speedway/1980/rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "publicPath": "/photos/rockford-speedway_1980_rich-bickle-jr_weber-brothers_photo_999.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "1980",
+    "driverSlug": "rich-bickle-jr",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "999"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_rich-bickle-jr_bob-elman_photo_005.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "bob-elman",
     "creditType": "photo",
-    "sequence": "005"
+    "sequence": "5"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_bob-schafer_photo_13907.jpg",
@@ -74,7 +74,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_don-besch_photo_021.jpg",
@@ -85,7 +85,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "021"
+    "sequence": "21"
   },
   {
     "fileName": "rockford-speedway_unknown-year_rich-bickle-jr_unknown-photographer_photo_003.jpg",
@@ -96,7 +96,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "slinger-speedway_unknown-year_rich-bickle-jr_father-grubba_photo_114.jpg",
@@ -129,7 +129,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "jeff-sandt",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_rich-bickle-jr_unknown-photographer_photo_1148.jpg",
@@ -195,7 +195,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rich-bickle-jr_unknown-photographer_photo_002.jpg",
@@ -206,7 +206,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rich-bickle-jr_unknown-photographer_photo_003.jpg",
@@ -217,7 +217,7 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_rich-bickle-jr_unknown-photographer_photo_004.jpg",
@@ -228,6 +228,6 @@
     "driverSlug": "rich-bickle-jr",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
   }
 ]

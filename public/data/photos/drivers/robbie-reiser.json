@@ -8,7 +8,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "joe-verdegan",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_1987_robbie-reiser_don-besch_photo_001.jpg",
@@ -19,7 +19,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "milwaukee-mile_unknown-year_robbie-reiser_bob-schafer_photo_258.jpg",
@@ -41,7 +41,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "don-besch",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "rockford-speedway_unknown-year_robbie-reiser_bob-schafer_photo_037.jpg",
@@ -52,7 +52,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "037"
+    "sequence": "37"
   },
   {
     "fileName": "rockford-speedway_unknown-year_robbie-reiser_bob-schafer_photo_13151.jpg",
@@ -66,6 +66,17 @@
     "sequence": "13151"
   },
   {
+    "fileName": "rockford-speedway_unknown-year_robbie-reiser_don-besch_photo_100.jpg",
+    "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_robbie-reiser_don-besch_photo_100.jpg",
+    "publicPath": "/photos/rockford-speedway_unknown-year_robbie-reiser_don-besch_photo_100.jpg",
+    "trackSlug": "rockford-speedway",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "don-besch",
+    "creditType": "photo",
+    "sequence": "100"
+  },
+  {
     "fileName": "rockford-speedway_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
     "storagePath": "photos/master/rockford-speedway/unknown-year/rockford-speedway_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
     "publicPath": "/photos/rockford-speedway_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
@@ -74,7 +85,62 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "slinger-speedway_1981_robbie-reiser_weber-brothers_photo_433.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_433.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_433.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "433"
+  },
+  {
+    "fileName": "slinger-speedway_1981_robbie-reiser_weber-brothers_photo_434.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_434.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_434.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "434"
+  },
+  {
+    "fileName": "slinger-speedway_1981_robbie-reiser_weber-brothers_photo_435.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_435.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_435.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "435"
+  },
+  {
+    "fileName": "slinger-speedway_1981_robbie-reiser_weber-brothers_photo_436.jpg",
+    "storagePath": "photos/master/slinger-speedway/1981/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_436.jpg",
+    "publicPath": "/photos/slinger-speedway_1981_robbie-reiser_weber-brothers_photo_436.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1981",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "436"
+  },
+  {
+    "fileName": "slinger-speedway_1990_robbie-reiser_bob-schafer_photo_222.jpg",
+    "storagePath": "photos/master/slinger-speedway/1990/slinger-speedway_1990_robbie-reiser_bob-schafer_photo_222.jpg",
+    "publicPath": "/photos/slinger-speedway_1990_robbie-reiser_bob-schafer_photo_222.jpg",
+    "trackSlug": "slinger-speedway",
+    "year": "1990",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "bob-schafer",
+    "creditType": "photo",
+    "sequence": "222"
   },
   {
     "fileName": "slinger-speedway_1993_robbie-reiser_al-fortner_photo_001.jpg",
@@ -85,7 +151,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_robbie-reiser_al-fortner_photo_001.jpg",
@@ -96,7 +162,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "al-fortner",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "slinger-speedway_unknown-year_robbie-reiser_bob-schafer_photo_058.jpg",
@@ -107,7 +173,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "bob-schafer",
     "creditType": "photo",
-    "sequence": "058"
+    "sequence": "58"
   },
   {
     "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
@@ -118,7 +184,29 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_002.jpg",
@@ -129,7 +217,29 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "002"
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_002.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_002.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_002.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "2"
   },
   {
     "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_003.jpg",
@@ -140,7 +250,29 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "003"
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_003.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_003.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_003.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "3"
   },
   {
     "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_004.jpg",
@@ -151,7 +283,29 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "004"
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_004.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_004.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_unknown-photographer_photo_004.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "unknown-photographer",
+    "creditType": "photo",
+    "sequence": "4"
   },
   {
     "fileName": "unknown-track_unknown-year_robbie-reiser_weber-brothers_photo_001.jpg",
@@ -162,7 +316,29 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "weber-brothers",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_weber-brothers_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "1"
+  },
+  {
+    "fileName": "unknown-track_unknown-year_robbie-reiser_weber-brothers_photo_001.jpg",
+    "storagePath": "photos/master/unknown-track/unknown-year/unknown-track_unknown-year_robbie-reiser_weber-brothers_photo_001.jpg",
+    "publicPath": "/photos/unknown-track_unknown-year_robbie-reiser_weber-brothers_photo_001.jpg",
+    "trackSlug": "unknown-track",
+    "year": "unknown-year",
+    "driverSlug": "robbie-reiser",
+    "photographerSlug": "weber-brothers",
+    "creditType": "photo",
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_robbie-reiser_bob-schafer_photo_13962.jpg",
@@ -184,7 +360,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "001"
+    "sequence": "1"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_robbie-reiser_keith-vercauteren_post_002.jpg",
@@ -195,7 +371,7 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "keith-vercauteren",
     "creditType": "post",
-    "sequence": "002"
+    "sequence": "2"
   },
   {
     "fileName": "wisconsin-international-raceway_unknown-year_robbie-reiser_unknown-photographer_photo_001.jpg",
@@ -206,6 +382,6 @@
     "driverSlug": "robbie-reiser",
     "photographerSlug": "unknown-photographer",
     "creditType": "photo",
-    "sequence": "001"
+    "sequence": "1"
   }
 ]
