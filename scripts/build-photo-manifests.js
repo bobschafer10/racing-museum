@@ -1,56 +1,17 @@
 const fs = require("fs")
 const path = require("path")
+const { createClient } = require("@supabase/supabase-js")
 
 const ROOT = process.cwd()
-const PHOTOS_DIR = path.join(ROOT, "public", "photos")
 const OUT_DIR = path.join(ROOT, "public", "data", "photos")
 
-const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".png", ".webp"])
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+)
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true })
-}
-
-function walk(dir) {
-  let files = []
-  for (const item of fs.readdirSync(dir)) {
-    const full = path.join(dir, item)
-    const stat = fs.statSync(full)
-    if (stat.isDirectory()) files = files.concat(walk(full))
-    else files.push(full)
-  }
-  return files
-}
-
-function parsePhoto(filePath) {
-  const fileName = path.basename(filePath)
-  const ext = path.extname(fileName).toLowerCase()
-
-  if (!IMAGE_EXTS.has(ext)) return null
-
-  const base = fileName.replace(ext, "")
-  const parts = base.split("_")
-
-  const trackSlug = parts[0] || "unknown-track"
-  const year = parts[1] || "unknown-year"
-  const driverSlug = parts[2] || "unknown-driver"
-  const photographerSlug = parts[3] || "unknown-photographer"
-  const creditType = parts[4] || "photo"
-  const sequence = parts[5] || "001"
-
-  const storagePath = `photos/master/${trackSlug}/${year}/${fileName}`
-
-  return {
-    fileName,
-    storagePath,
-    publicPath: `/photos/${fileName}`,
-    trackSlug,
-    year,
-    driverSlug,
-    photographerSlug,
-    creditType,
-    sequence,
-  }
 }
 
 function writeJson(filePath, data) {
@@ -67,36 +28,62 @@ function groupBy(items, key) {
   }, {})
 }
 
-function main() {
-  if (!fs.existsSync(PHOTOS_DIR)) {
-    console.error(`Missing photos folder: ${PHOTOS_DIR}`)
-    process.exit(1)
+async function fetchAllPhotos() {
+  let all = []
+  let from = 0
+  const pageSize = 1000
+
+  while (true) {
+    const { data, error } = await supabase
+      .from("photos")
+      .select("file_name, track_slug, year, driver_slug, photographer_slug, credit_type, sequence")
+      .order("track_slug")
+      .range(from, from + pageSize - 1)
+
+    if (error) throw error
+    if (!data || data.length === 0) break
+
+    all = all.concat(data)
+    if (data.length < pageSize) break
+
+    from += pageSize
   }
 
+  return all
+}
+
+async function main() {
   ensureDir(OUT_DIR)
 
-  const files = walk(PHOTOS_DIR)
-  const photos = files.map(parsePhoto).filter(Boolean)
+  const rows = await fetchAllPhotos()
 
-  photos.sort((a, b) => {
-    return (
-      String(a.trackSlug).localeCompare(String(b.trackSlug)) ||
-      String(a.year).localeCompare(String(b.year)) ||
-      String(a.driverSlug).localeCompare(String(b.driverSlug)) ||
-      String(a.fileName).localeCompare(String(b.fileName))
-    )
-  })
+  const photos = rows.map((photo) => ({
+    fileName: photo.file_name,
+    storagePath: `photos/master/${photo.track_slug}/${photo.year}/${photo.file_name}`,
+    publicPath: `/photos/${photo.file_name}`,
+    trackSlug: photo.track_slug,
+    year: photo.year,
+    driverSlug: photo.driver_slug,
+    photographerSlug: photo.photographer_slug,
+    creditType: photo.credit_type,
+    sequence: String(photo.sequence || ""),
+  }))
+
+  photos.sort((a, b) =>
+    String(a.trackSlug).localeCompare(String(b.trackSlug)) ||
+    String(a.year).localeCompare(String(b.year)) ||
+    String(a.driverSlug).localeCompare(String(b.driverSlug)) ||
+    String(a.fileName).localeCompare(String(b.fileName))
+  )
 
   writeJson(path.join(OUT_DIR, "all.json"), photos)
 
-  const groups = [
+  for (const [folder, key] of [
     ["tracks", "trackSlug"],
     ["drivers", "driverSlug"],
     ["photographers", "photographerSlug"],
     ["years", "year"],
-  ]
-
-  for (const [folder, key] of groups) {
+  ]) {
     const grouped = groupBy(photos, key)
 
     for (const [slug, items] of Object.entries(grouped)) {
@@ -104,8 +91,10 @@ function main() {
     }
   }
 
-  console.log(`Photos scanned: ${photos.length}`)
-  console.log(`Manifest written to: public/data/photos`)
+  console.log(`Photos scanned from Supabase: ${photos.length}`)
 }
 
-main()
+main().catch((err) => {
+  console.error(err)
+  process.exit(1)
+})
