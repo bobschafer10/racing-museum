@@ -20,6 +20,7 @@ export default async function TrackPhotosPage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
+const baseSlug = slug.replace(/-(wi|il|mn|mi)$/i, "")
 
   const { data: track } = await supabase
     .from("track_profile_view_v3")
@@ -33,12 +34,12 @@ export default async function TrackPhotosPage({
 
   
   const { data: photos } = await supabase
-    .from("photos")
-    .select("*")
-    .eq("track_slug", slug)
-    .neq("credit_type", "unknown")
-    .order("year", { ascending: false, nullsFirst: false })
-    .order("sequence", { ascending: true })
+  .from("photos")
+  .select("*")
+  .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
+  .neq("credit_type", "unknown")
+  .order("year", { ascending: false, nullsFirst: false })
+  .order("sequence", { ascending: true })
 
   function formatSlugName(value?: string | null) {
     if (
