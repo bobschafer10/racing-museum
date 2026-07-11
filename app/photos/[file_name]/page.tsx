@@ -29,31 +29,30 @@ export default async function PhotoDetailPage({
     )
   }
 
-  const storagePath =
+    const storagePath =
     `photos/master/${photo.track_slug}/${photo.year}/${photo.file_name}`
 
-  const { data: signedData, error: signedError } = await supabase.storage
-    .from('media')
-    .createSignedUrl(storagePath, 60 * 60)
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 
-  if (signedError || !signedData?.signedUrl) {
-    console.error('Photo URL error:', {
-      storagePath,
-      signedError,
-    })
-
+  if (!supabaseUrl) {
     return (
       <main style={pageWrap}>
         <Link href="/photos" style={backLink}>
           ← Back to Photos
         </Link>
-        <h1>Photo could not be loaded</h1>
-        <p>{storagePath}</p>
+        <h1>Photo configuration error</h1>
+        <p>NEXT_PUBLIC_SUPABASE_URL is not configured.</p>
       </main>
     )
   }
 
-  const imageUrl = signedData.signedUrl
+  const encodedStoragePath = storagePath
+    .split('/')
+    .map((segment) => encodeURIComponent(segment))
+    .join('/')
+
+  const imageUrl =
+    `${supabaseUrl}/storage/v1/object/public/media/${encodedStoragePath}`
 
   return (
     <main style={pageWrap}>
