@@ -4,6 +4,16 @@ import { supabase } from '@/lib/supabase'
 
 export const dynamic = 'force-dynamic'
 
+type PhotoRecord = {
+  photo_id: number
+  file_name: string
+  track_slug: string | null
+  year: string | null
+  driver_slug: string | null
+  photographer_slug: string | null
+  credit_type: string | null
+}
+
 export default async function PhotoDetailPage({
   params,
 }: {
@@ -12,29 +22,65 @@ export default async function PhotoDetailPage({
   const { file_name } = await params
   const decodedFileName = decodeURIComponent(file_name)
 
-  const { data: photo } = await supabase
+  const { data, error } = await supabase
     .from('photos')
-    .select('*')
+    .select(`
+      photo_id,
+      file_name,
+      track_slug,
+      year,
+      driver_slug,
+      photographer_slug,
+      credit_type
+    `)
     .eq('file_name', decodedFileName)
-    .single()
+    .maybeSingle()
 
-  if (!photo) {
+  if (error) {
+    console.error('Photo database error:', error)
+
     return (
       <main style={pageWrap}>
-        <Link href="/photos" style={backLink}>← Back to Photos</Link>
+        <Link href="/photos" style={backLink}>
+          ← Back to Photos
+        </Link>
+        <h1>Photo could not be retrieved</h1>
+      </main>
+    )
+  }
+
+  if (!data) {
+    return (
+      <main style={pageWrap}>
+        <Link href="/photos" style={backLink}>
+          ← Back to Photos
+        </Link>
         <h1>Photo Not Found</h1>
       </main>
     )
   }
 
+  const photo = data as PhotoRecord
+
+  const trackSlug = photo.track_slug || 'unknown-track'
+  const year = photo.year || 'unknown-year'
+
+  const storagePath =
+    `photos/master/${trackSlug}/${year}/${photo.file_name}`
+
+  const imageUrl =
+    `/api/photo?path=${encodeURIComponent(storagePath)}`
+
   return (
     <main style={pageWrap}>
-      <Link href="/photos" style={backLink}>← Back to Photos</Link>
+      <Link href="/photos" style={backLink}>
+        ← Back to Photos
+      </Link>
 
       <section style={detailPanel}>
         <div style={imageWrap}>
           <img
-            src={`/photos/${photo.file_name}`}
+            src={imageUrl}
             alt={formatSlugName(photo.driver_slug)}
             style={largeImage}
           />
@@ -49,36 +95,62 @@ export default async function PhotoDetailPage({
 
           <div style={metaBlock}>
             <div style={label}>Year</div>
-            <div>{photo.year || 'Year Unknown'}</div>
+            <div>{formatYear(photo.year)}</div>
           </div>
 
           <div style={metaBlock}>
             <div style={label}>Driver</div>
-            <Link href={`/photos?driver=${photo.driver_slug}`} style={metaLink}>
-              {formatSlugName(photo.driver_slug)}
-            </Link>
+
+            {photo.driver_slug ? (
+              <Link
+                href={`/photos?driver=${encodeURIComponent(photo.driver_slug)}`}
+                style={metaLink}
+              >
+                {formatSlugName(photo.driver_slug)}
+              </Link>
+            ) : (
+              <div>Unknown</div>
+            )}
           </div>
 
           <div style={metaBlock}>
             <div style={label}>Track</div>
-            <Link href={`/photos?track=${photo.track_slug}`} style={metaLink}>
-              {formatSlugName(photo.track_slug)}
-            </Link>
+
+            {photo.track_slug ? (
+              <Link
+                href={`/photos?track=${encodeURIComponent(photo.track_slug)}`}
+                style={metaLink}
+              >
+                {formatSlugName(photo.track_slug)}
+              </Link>
+            ) : (
+              <div>Unknown</div>
+            )}
           </div>
 
           <div style={metaBlock}>
             <div style={label}>Photographer / Credit</div>
-            <Link
-              href={`/photos?photographer=${photo.photographer_slug}`}
-              style={metaLink}
-            >
-              {formatCreditLine(photo.credit_type, photo.photographer_slug)}
-            </Link>
+
+            {photo.photographer_slug ? (
+              <Link
+                href={`/photos?photographer=${encodeURIComponent(
+                  photo.photographer_slug
+                )}`}
+                style={metaLink}
+              >
+                {formatCreditLine(
+                  photo.credit_type,
+                  photo.photographer_slug
+                )}
+              </Link>
+            ) : (
+              <div>Unknown Photo</div>
+            )}
           </div>
 
           <div style={metaBlock}>
             <div style={label}>File</div>
-            <div style={fileName}>{photo.file_name}</div>
+            <div style={fileNameStyle}>{photo.file_name}</div>
           </div>
 
           <div style={buttonRow}>
@@ -87,7 +159,12 @@ export default async function PhotoDetailPage({
             </Link>
 
             {photo.driver_slug && (
-              <Link href={`/photos?driver=${photo.driver_slug}`} style={buttonAlt}>
+              <Link
+                href={`/photos?driver=${encodeURIComponent(
+                  photo.driver_slug
+                )}`}
+                style={buttonAlt}
+              >
                 More of This Driver
               </Link>
             )}
@@ -96,6 +173,14 @@ export default async function PhotoDetailPage({
       </section>
     </main>
   )
+}
+
+function formatYear(value: string | null) {
+  if (!value || value === 'unknown-year') {
+    return 'Year Unknown'
+  }
+
+  return value
 }
 
 function formatSlugName(value: string | null) {
@@ -114,15 +199,27 @@ function formatSlugName(value: string | null) {
     .replace(/_/g, '-')
     .split('-')
     .filter(Boolean)
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(
+      (word) =>
+        word.charAt(0).toUpperCase() +
+        word.slice(1)
+    )
     .join(' ')
 }
 
-function formatCreditLine(type: string | null, photographer: string | null) {
+function formatCreditLine(
+  type: string | null,
+  photographer: string | null
+) {
   const name = formatSlugName(photographer)
 
-  if (!type || type === 'photo') return `${name} Photo`
-  if (type === 'post') return `${name} Post`
+  if (!type || type === 'photo') {
+    return `${name} Photo`
+  }
+
+  if (type === 'post') {
+    return `${name} Post`
+  }
 
   return `${name} ${formatSlugName(type)}`
 }
@@ -152,6 +249,7 @@ const detailPanel: CSSProperties = {
 }
 
 const imageWrap: CSSProperties = {
+  minHeight: '560px',
   background: '#efe7d6',
   border: '1px solid #c2a97d',
   padding: '14px',
@@ -162,11 +260,10 @@ const imageWrap: CSSProperties = {
 
 const largeImage: CSSProperties = {
   width: '100%',
+  height: 'auto',
   maxHeight: '760px',
   objectFit: 'contain',
   display: 'block',
-  border: '1px solid #b29364',
-  background: '#d8c39d',
 }
 
 const infoPanel: CSSProperties = {
@@ -211,7 +308,7 @@ const metaLink: CSSProperties = {
   fontWeight: 700,
 }
 
-const fileName: CSSProperties = {
+const fileNameStyle: CSSProperties = {
   fontSize: '13px',
   wordBreak: 'break-word',
   color: '#5b3a1b',
