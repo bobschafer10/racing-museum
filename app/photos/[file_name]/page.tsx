@@ -18,23 +18,53 @@ export default async function PhotoDetailPage({
     .eq('file_name', decodedFileName)
     .single()
 
-  if (!photo) {
+      if (!photo) {
     return (
       <main style={pageWrap}>
-        <Link href="/photos" style={backLink}>← Back to Photos</Link>
+        <Link href="/photos" style={backLink}>
+          ← Back to Photos
+        </Link>
         <h1>Photo Not Found</h1>
       </main>
     )
   }
 
+  const storagePath =
+    `photos/master/${photo.track_slug}/${photo.year}/${photo.file_name}`
+
+  const { data: signedData, error: signedError } = await supabase.storage
+    .from('media')
+    .createSignedUrl(storagePath, 60 * 60)
+
+  if (signedError || !signedData?.signedUrl) {
+    console.error('Photo URL error:', {
+      storagePath,
+      signedError,
+    })
+
+    return (
+      <main style={pageWrap}>
+        <Link href="/photos" style={backLink}>
+          ← Back to Photos
+        </Link>
+        <h1>Photo could not be loaded</h1>
+        <p>{storagePath}</p>
+      </main>
+    )
+  }
+
+  const imageUrl = signedData.signedUrl
+
   return (
     <main style={pageWrap}>
-      <Link href="/photos" style={backLink}>← Back to Photos</Link>
+      <Link href="/photos" style={backLink}>
+        ← Back to Photos
+      </Link>
 
       <section style={detailPanel}>
         <div style={imageWrap}>
           <img
-            src={`/photos/${photo.file_name}`}
+            src={imageUrl}
             alt={formatSlugName(photo.driver_slug)}
             style={largeImage}
           />
