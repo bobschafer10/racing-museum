@@ -42,7 +42,7 @@ export default async function TrackProfilePage({
     { data: classes },
     { data: results },
     { data: resultYears },
-    { count: resultsCount },
+    { count: featureWinsCount },
   ] = await Promise.all([
     supabase
       .from("track_archive_quality_with_coverage_view")
@@ -92,9 +92,10 @@ export default async function TrackProfilePage({
       .order("result_year", { ascending: true }),
 
     supabase
-      .from("global_results_view")
-      .select("*", { count: "exact", head: true })
-      .eq("track_slug", slug),
+  .from("global_results_view")
+  .select("*", { count: "exact", head: true })
+  .eq("track_slug", slug)
+  .eq("finishing_position", 1),
   ])
 
   const sortedClasses = [...(classes || [])].sort(
@@ -217,6 +218,204 @@ export default async function TrackProfilePage({
     },
   ].filter(Boolean) as Array<{ icon: string; label: string }>
 
+  const firstResultYear =
+    availableYears.length > 0 ? availableYears[0] : null
+
+  const latestResultYear =
+    availableYears.length > 0
+      ? availableYears[availableYears.length - 1]
+      : null
+
+  const topWinner = winners?.[0] || null
+  const topChampions =
+  champions && champions.length > 0
+    ? champions.filter(
+        (champion: any) =>
+          champion.title_count === champions[0].title_count
+      )
+    : []
+
+const topChampion = topChampions[0] || null
+  const topClass = sortedClasses?.[0] || null
+
+  const leftFacts = [
+    firstResultYear
+      ? {
+          key: "results-span",
+          label: "Archive Begins",
+          value: String(firstResultYear),
+          detail: "First year with discovered feature results.",
+        }
+      : null,
+
+    featureWinsCount
+      ? {
+          key: "feature-wins",
+          label: "Feature Wins",
+          value: Number(featureWinsCount).toLocaleString(),
+          detail: "First-place feature results discovered.",
+        }
+      : null,
+
+    topWinner
+      ? {
+          key: "top-winner",
+          label: "Leading Winner",
+          value: topWinner.driver_name,
+          detail: `${Number(topWinner.win_count || 0).toLocaleString()} discovered feature wins.`,
+        }
+      : null,
+
+   topChampions.length > 0
+  ? {
+      key: "top-champion",
+      label:
+        topChampions.length > 1
+          ? "Championship Leaders"
+          : "Leading Champion",
+      value: topChampions
+        .map((champion: any) => champion.driver_name)
+        .join(" & "),
+      detail: `${Number(
+        topChampions[0].title_count || 0
+      ).toLocaleString()} discovered track titles each.`,
+    }
+  : null,
+
+    topClass
+      ? {
+          key: "top-class",
+          label: "Leading Class",
+          value: topClass.class_name || topClass.division_name,
+          detail: `${Number(topClass.race_count || 0).toLocaleString()} discovered feature wins.`,
+        }
+      : null,
+  ].filter(Boolean) as Array<{
+    key: string
+    label: string
+    value: string
+    detail: string
+  }>
+
+  const rightFacts = [
+    allPhotos.length > 0
+      ? {
+          label: "Museum Spotlight",
+          key: "photos",
+          title: "Historic Photo Collection",
+          text: `${allPhotos.length.toLocaleString()} photographs connected to ${track.track_name} are preserved in the Museum archive.`,
+          href: `/tracks/${slug}/photos`,
+          linkLabel: "Browse Photo Archive →",
+        }
+      : null,
+
+    featureWinsCount
+      ? {
+          label: "Museum Spotlight",
+          key: "feature-wins",
+          title: "Feature Race Archive",
+          text: `${Number(featureWinsCount).toLocaleString()} first-place feature results have been discovered for ${track.track_name}.`,
+          href: `/tracks/${slug}/results`,
+          linkLabel: "Explore Feature Results →",
+        }
+      : null,
+
+    topWinner
+      ? {
+          label: "Museum Spotlight",
+          key: "top-winner",
+          title: "Victory Lane Leader",
+          text: `${topWinner.driver_name} leads the discovered feature-win archive with ${Number(
+            topWinner.win_count || 0
+          ).toLocaleString()} wins at ${track.track_name}.`,
+          href: topWinner.driver_slug
+            ? `/drivers/${topWinner.driver_slug}`
+            : `/tracks/${slug}/results`,
+          linkLabel: topWinner.driver_slug
+            ? `View ${topWinner.driver_name} →`
+            : "Explore Feature Results →",
+        }
+      : null,
+
+   topChampions.length > 0
+  ? {
+      key: "top-champion",
+      label: "Museum Spotlight",
+      title:
+        topChampions.length > 1
+          ? "Championship Leaders"
+          : "Championship Leader",
+      text:
+        topChampions.length > 1
+          ? `${topChampions
+              .map((champion: any) => champion.driver_name)
+              .join(" and ")} share the discovered championship lead with ${Number(
+              topChampions[0].title_count || 0
+            ).toLocaleString()} track titles each.`
+          : `${topChampion.driver_name} leads the discovered championship archive with ${Number(
+              topChampion.title_count || 0
+            ).toLocaleString()} track titles.`,
+      href: `/tracks/${slug}`,
+      linkLabel: "View Track Champions →",
+    }
+  : null,
+
+    topClass
+      ? {
+          label: "Museum Spotlight",
+          key: "top-class",
+          title: "Leading Division",
+          text: `${
+            topClass.class_name || topClass.division_name
+          } leads the class archive with ${Number(
+            topClass.race_count || 0
+          ).toLocaleString()} discovered feature wins.`,
+          href: `/tracks/${slug}/classes/${encodeURIComponent(
+            topClass.class_name || topClass.division_name || "Unknown Class"
+          )}`,
+          linkLabel: "View Class Results →",
+        }
+      : null,
+
+    firstResultYear && latestResultYear
+      ? {
+          label: "Museum Spotlight",
+          key: "results-span",
+          title: "Results Through the Years",
+          text: `Discovered feature results currently span ${firstResultYear} through ${
+            latestResultYear === new Date().getFullYear()
+              ? "the present"
+              : latestResultYear
+          }.`,
+          href: `/tracks/${slug}/results`,
+          linkLabel: "Browse Results by Year →",
+        }
+      : null,
+  ].filter(Boolean) as Array<{
+    key: string
+    label: string
+    title: string
+    text: string
+    href: string
+    linkLabel: string
+  }>
+
+  const dailyIndex = getDayOfYear()
+
+  const leftFact =
+    leftFacts.length > 0
+      ? leftFacts[dailyIndex % leftFacts.length]
+      : null
+
+  const eligibleRightFacts = leftFact
+    ? rightFacts.filter((fact) => fact.key !== leftFact.key)
+    : rightFacts
+
+  const rightFact =
+    eligibleRightFacts.length > 0
+      ? eligibleRightFacts[(dailyIndex + 2) % eligibleRightFacts.length]
+      : null
+
   return (
     <main style={pageStyle} className="track-profile-page">
       <section style={heroSection}>
@@ -224,15 +423,27 @@ export default async function TrackProfilePage({
           <div style={heroText}>
             <div style={eyebrow}>Track Profile</div>
 
-            <div style={logoWrap}>
-              <img
-                src={logoPath}
-                alt={`${track.track_name} logo`}
-                style={logoImg}
-              />
-            </div>
+<div style={logoFactRow} className="track-logo-fact-row">
+  <div style={logoWrap}>
+    <img
+      src={logoPath}
+      alt={`${track.track_name} logo`}
+      style={logoImg}
+    />
+  </div>
 
-            <h1 style={pageTitle}>{track.track_name}</h1>
+  {leftFact ? (
+    <div style={logoFactCard}>
+      <div style={factEyebrow}>Today in the Archive</div>
+      <div style={logoFactLabel}>{leftFact.label}</div>
+      <div style={logoFactValue}>{leftFact.value}</div>
+      <div style={logoFactDetail}>{leftFact.detail}</div>
+    </div>
+  ) : null}
+</div>
+
+<h1 style={pageTitle}>{track.track_name}</h1>
+
 
             <div style={locationLine}>
               {[track.city, track.state].filter(Boolean).join(", ") ||
@@ -282,55 +493,60 @@ export default async function TrackProfilePage({
               </div>
 
               <div style={metaCard}>
-                <div style={metaLabel}>Years Active</div>
-                <div style={metaValue}>
-                  {track.first_year ||
-                  track.last_year ||
-                  archiveQuality?.first_result_year ||
-                  archiveQuality?.last_result_year
-                    ? `${track.first_year || archiveQuality?.first_result_year || "?"}–${
-                        track.last_year ||
-                        archiveQuality?.last_result_year ||
-                        "Present"
-                      }`
-                    : "Unknown"}
-                </div>
-              </div>
+  <div style={metaLabel}>Results Discovered</div>
+  <div style={metaValue}>
+    {availableYears.length > 0
+      ? `${availableYears[0]}–Present`
+      : "Unknown"}
+  </div>
+</div>
 
               <div style={metaCard}>
-                <div style={metaLabel}>Results</div>
+                <div style={metaLabel}>Feature Wins Discovered</div>
                 <div style={metaValue}>
-                  {resultsCount ?? track.recorded_results ?? 0}
+                  {featureWinsCount ?? 0}
                 </div>
               </div>
             </div>
           </div>
 
           <div style={photoPanel}>
-            {!heroPhotoItem ? (
-              <div style={photoPlaceholder}>Photo Coming Soon</div>
-            ) : (
-              <div>
-                <img
-                  src={getPhotoUrl(heroPhotoItem)}
-                  alt={track.track_name}
-                  style={heroPhoto}
-                />
+  {!heroPhotoItem ? (
+    <div style={photoPlaceholder}>Photo Coming Soon</div>
+  ) : (
+    <div>
+      <img
+        src={getPhotoUrl(heroPhotoItem)}
+        alt={track.track_name}
+        style={heroPhoto}
+      />
 
-                <div style={heroCaption}>
-                  {[
-                    formatSlugName(heroPhotoItem?.driver_slug),
-                    formatPhotoYear(heroPhotoItem?.year),
-                    formatSlugName(heroPhotoItem?.photographer_slug)
-                      ? `${formatSlugName(heroPhotoItem?.photographer_slug)} Photo`
-                      : null,
-                  ]
-                    .filter(Boolean)
-                    .join(", ")}
-                </div>
-              </div>
-            )}
-          </div>
+      <div style={heroCaption}>
+        {[
+          formatSlugName(heroPhotoItem?.driver_slug),
+          formatPhotoYear(heroPhotoItem?.year),
+          formatSlugName(heroPhotoItem?.photographer_slug)
+            ? `${formatSlugName(heroPhotoItem?.photographer_slug)} Photo`
+            : null,
+        ]
+          .filter(Boolean)
+          .join(", ")}
+      </div>
+
+      {rightFact ? (
+        <div style={heroFactCard}>
+          <div style={factEyebrow}>{rightFact.label}</div>
+          <div style={heroFactTitle}>{rightFact.title}</div>
+          <div style={heroFactText}>{rightFact.text}</div>
+
+          <Link href={rightFact.href} style={heroFactLink}>
+            {rightFact.linkLabel}
+          </Link>
+        </div>
+      ) : null}
+    </div>
+  )}
+</div>
         </div>
       </section>
 
@@ -388,7 +604,7 @@ export default async function TrackProfilePage({
             )}
           </InfoPanel>
 
-          <InfoPanel title="Top Classes">
+          <InfoPanel title="Feature Wins by Class">
             {sortedClasses.length > 0 ? (
               <div style={listWrap}>
                 {sortedClasses.map((cl: any, idx: number) => (
@@ -685,8 +901,8 @@ const eyebrow: CSSProperties = {
 }
 
 const logoWrap: CSSProperties = {
-  marginBottom: 18,
-  maxWidth: "520px",
+  marginBottom: 0,
+  maxWidth: "240px",
 }
 
 const logoImg: CSSProperties = {
@@ -981,6 +1197,83 @@ const resultRaceCard: CSSProperties = {
   padding: "12px 0",
 }
 
+const logoFactRow: CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "minmax(170px, 0.8fr) minmax(220px, 1.2fr)",
+  gap: 22,
+  alignItems: "center",
+  marginBottom: 18,
+  maxWidth: 700,
+}
+
+const logoFactCard: CSSProperties = {
+  padding: "16px 18px",
+  borderLeft: "3px solid #9a7440",
+  background: "rgba(251, 245, 232, 0.58)",
+  borderRadius: "0 12px 12px 0",
+}
+
+const factEyebrow: CSSProperties = {
+  fontSize: 10,
+  textTransform: "uppercase",
+  letterSpacing: "0.16em",
+  color: "#8a704f",
+  fontWeight: 700,
+  marginBottom: 7,
+}
+
+const logoFactLabel: CSSProperties = {
+  fontSize: 13,
+  textTransform: "uppercase",
+  letterSpacing: "0.08em",
+  color: "#6f5434",
+  marginBottom: 4,
+}
+
+const logoFactValue: CSSProperties = {
+  fontSize: 23,
+  lineHeight: 1.15,
+  color: "#2f2419",
+  fontWeight: 800,
+  marginBottom: 6,
+}
+
+const logoFactDetail: CSSProperties = {
+  fontSize: 13,
+  lineHeight: 1.5,
+  color: "#66503b",
+}
+
+const heroFactCard: CSSProperties = {
+  marginTop: 18,
+  padding: "18px",
+  background: "#fbf5e8",
+  border: "1px solid rgba(115, 88, 52, 0.18)",
+  borderRadius: 12,
+}
+
+const heroFactTitle: CSSProperties = {
+  fontSize: 21,
+  lineHeight: 1.2,
+  color: "#2f2419",
+  fontWeight: 800,
+  marginBottom: 8,
+}
+
+const heroFactText: CSSProperties = {
+  fontSize: 16,
+  lineHeight: 1.65,
+  color: "#4f3c2b",
+}
+
+const heroFactLink: CSSProperties = {
+  display: "inline-block",
+  marginTop: 12,
+  color: "#6c4d22",
+  textDecoration: "none",
+  fontSize: 13,
+  fontWeight: 800,
+}
 const resultClassName: CSSProperties = {
   fontWeight: 800,
   marginBottom: "10px",
