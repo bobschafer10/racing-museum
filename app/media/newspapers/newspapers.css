@@ -258,22 +258,39 @@
 }
 
 .year-card {
+  position: relative;
   min-height: 120px;
-  background:
-    linear-gradient(rgba(255,255,255,.68), rgba(255,255,255,.68)),
-    url("/newspaper-assets/checkered-flag-racing-news.jpg");
-  background-size: 120px auto;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .68);
   border: 1px solid #d0b98d;
   color: #281d15;
   text-decoration: none;
   text-align: center;
-  padding: 22px 12px;
+  padding: 22px 12px 40px;
   box-shadow: 0 5px 14px rgba(64, 45, 20, .10);
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
+.year-card strong,
+.year-card em,
+.year-card span {
+  position: relative;
+  z-index: 2;
+}
+
+.year-card-watermark {
+  position: absolute;
+  right: 6px;
+  bottom: 5px;
+  z-index: 1;
+  width: 120px;
+  height: 32px;
+  object-fit: contain;
+  object-position: right bottom;
+  opacity: .22;
+  pointer-events: none;
+  user-select: none;
+}
 .year-card strong {
   display: block;
   font-size: 40px;

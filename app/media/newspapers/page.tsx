@@ -142,15 +142,24 @@ export default async function NewspapersPage() {
 
                 <div className="year-grid">
                   {years.map((year) => (
-                    <Link
-                      key={year}
-                      href={`/media/newspapers/${pub.slug}/year/${year}`}
-                      className="year-card"
-                    >
-                      <strong>{year}</strong>
-                      <em />
-                      <span>{pub.years[year]} Issues</span>
-                    </Link>
+                   <Link
+  key={year}
+  href={`/media/newspapers/${pub.slug}/year/${year}`}
+  className="year-card"
+>
+  <strong>{year}</strong>
+  <em />
+  <span>{pub.years[year]} Issues</span>
+
+  {PUBLICATION_LOGOS[pub.slug] && (
+    <img
+      src={PUBLICATION_LOGOS[pub.slug]}
+      alt=""
+      aria-hidden="true"
+      className="year-card-watermark"
+    />
+  )}
+</Link>
                   ))}
                 </div>
               </section>
