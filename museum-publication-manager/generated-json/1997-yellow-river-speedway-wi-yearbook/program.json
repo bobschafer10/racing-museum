@@ -1,0 +1,179 @@
+{
+  "title": "1997 Yellow River Speedway Yearbook",
+  "slug": "1997-yellow-river-speedway-wi-yearbook",
+  "year": 1997,
+  "type": "yearbook",
+  "publicationType": "yearbook",
+  "track": "Yellow River Speedway",
+  "track_slug": "yellow-river-speedway-wi",
+  "trackSlug": "yellow-river-speedway-wi",
+  "trackName": "Yellow River Speedway",
+  "state": "WI",
+  "folder": "1997-yellow-river-speedway-wi-yearbook",
+  "coverImage": "front-cover.jpg",
+  "backCoverImage": "back-cover.jpg",
+  "thumbnailImage": "thumbnail.jpg",
+  "pageCount": 26,
+  "images": [
+    "001.jpg",
+    "002.jpg",
+    "003.jpg",
+    "004.jpg",
+    "005.jpg",
+    "006.jpg",
+    "007.jpg",
+    "008.jpg",
+    "009.jpg",
+    "010.jpg",
+    "011.jpg",
+    "012.jpg",
+    "013.jpg",
+    "014.jpg",
+    "015.jpg",
+    "016.jpg",
+    "017.jpg",
+    "018.jpg",
+    "019.jpg",
+    "020.jpg",
+    "021.jpg",
+    "022.jpg",
+    "023.jpg",
+    "024.jpg",
+    "025.jpg",
+    "026.jpg"
+  ],
+  "pages": [
+    {
+      "pageNumber": 1,
+      "image": "001.jpg",
+      "title": "Page 1"
+    },
+    {
+      "pageNumber": 2,
+      "image": "002.jpg",
+      "title": "Page 2"
+    },
+    {
+      "pageNumber": 3,
+      "image": "003.jpg",
+      "title": "Page 3"
+    },
+    {
+      "pageNumber": 4,
+      "image": "004.jpg",
+      "title": "Page 4"
+    },
+    {
+      "pageNumber": 5,
+      "image": "005.jpg",
+      "title": "Page 5"
+    },
+    {
+      "pageNumber": 6,
+      "image": "006.jpg",
+      "title": "Page 6"
+    },
+    {
+      "pageNumber": 7,
+      "image": "007.jpg",
+      "title": "Page 7"
+    },
+    {
+      "pageNumber": 8,
+      "image": "008.jpg",
+      "title": "Page 8"
+    },
+    {
+      "pageNumber": 9,
+      "image": "009.jpg",
+      "title": "Page 9"
+    },
+    {
+      "pageNumber": 10,
+      "image": "010.jpg",
+      "title": "Page 10"
+    },
+    {
+      "pageNumber": 11,
+      "image": "011.jpg",
+      "title": "Page 11"
+    },
+    {
+      "pageNumber": 12,
+      "image": "012.jpg",
+      "title": "Page 12"
+    },
+    {
+      "pageNumber": 13,
+      "image": "013.jpg",
+      "title": "Page 13"
+    },
+    {
+      "pageNumber": 14,
+      "image": "014.jpg",
+      "title": "Page 14"
+    },
+    {
+      "pageNumber": 15,
+      "image": "015.jpg",
+      "title": "Page 15"
+    },
+    {
+      "pageNumber": 16,
+      "image": "016.jpg",
+      "title": "Page 16"
+    },
+    {
+      "pageNumber": 17,
+      "image": "017.jpg",
+      "title": "Page 17"
+    },
+    {
+      "pageNumber": 18,
+      "image": "018.jpg",
+      "title": "Page 18"
+    },
+    {
+      "pageNumber": 19,
+      "image": "019.jpg",
+      "title": "Page 19"
+    },
+    {
+      "pageNumber": 20,
+      "image": "020.jpg",
+      "title": "Page 20"
+    },
+    {
+      "pageNumber": 21,
+      "image": "021.jpg",
+      "title": "Page 21"
+    },
+    {
+      "pageNumber": 22,
+      "image": "022.jpg",
+      "title": "Page 22"
+    },
+    {
+      "pageNumber": 23,
+      "image": "023.jpg",
+      "title": "Page 23"
+    },
+    {
+      "pageNumber": 24,
+      "image": "024.jpg",
+      "title": "Page 24"
+    },
+    {
+      "pageNumber": 25,
+      "image": "025.jpg",
+      "title": "Page 25"
+    },
+    {
+      "pageNumber": 26,
+      "image": "026.jpg",
+      "title": "Page 26"
+    }
+  ],
+  "generatedBy": "Museum Publication Manager v1.3",
+  "generatedAt": "2026-08-01T18:22:41.399Z"
+}
