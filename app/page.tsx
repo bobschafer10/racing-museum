@@ -57,8 +57,6 @@ function photoStorageUrl(photo: any) {
 
 export default async function Home() {
 
-const SOFT_OPENING_END = new Date("2026-07-10T23:59:59");
-const showSoftOpeningNotice = new Date() <= SOFT_OPENING_END;
   const [
     { data: stats },
     { data: driverPool },
@@ -188,10 +186,10 @@ const hasTwoSpotlightPhotos =
           return `${creditLabel}: ${driverName} at ${trackName}`
         })
       : [
-          'Extensive photo add from south central Wisconsin',
-          'Eastern Wisconsin Stock Car yearbooks',
-          '1961 Midwest Racing News',
-          'Race results through end of June 2026',
+          'Midwest Racing News into the 1970s',
+          '1000s of new photos from multiple eras',
+          '1973 Checkered Flag Racing News in full',
+          'Race results through end of July 2026',
         ]
 
   return(
@@ -209,7 +207,7 @@ const hasTwoSpotlightPhotos =
 <div style={heroGrain} />
 
         <div style={heroContent} className="home-hero-content">
-<div style={heroOpeningBadge}>WELCOME TO A SOFT OPENING</div>
+
           <Image
             className="home-hero-logo"
             src="/museum-logo.png"
@@ -237,93 +235,19 @@ const hasTwoSpotlightPhotos =
       </section>
 
       {/* SOFT OPENING / MUSEUM WELCOME */}
-      {showSoftOpeningNotice ? (
-        <section style={softOpeningNotice} className="soft-opening-notice">
-          <div style={softOpeningTopLine}>
-            <span style={softOpeningFlag}>🏁</span>
-            <span style={softOpeningBadge}>Soft Opening • Summer 2026</span>
-          </div>
+      <section style={softOpeningMiniBanner} className="soft-opening-mini">
+  <div>
+    <strong>New to the Museum?</strong>{' '}
+    <span>
+      Learn how this living archive is preserving more than a century of
+      Upper Midwest auto racing history.
+    </span>
+  </div>
 
-          <h2 style={softOpeningTitle}>Welcome to the Museum</h2>
-
-          <p style={softOpeningLead}>
-            Welcome to the <strong>Virtual Upper Midwest Auto Racing Museum</strong>.
-          </p>
-
-          <p style={softOpeningText}>
-            Today marks the public opening of a project dedicated to preserving
-            more than a century of short track auto racing history throughout
-            Wisconsin, Upper Michigan, Eastern Minnesota, Northern Illinois,
-            and Chicagoland.
-          </p>
-
-          <p style={softOpeningText}>
-            Although the museum is now open, this is only the beginning. New race
-            results, photographs, driver biographies, track histories, newspapers,
-            and special collections will continue to be added on a regular basis.
-          </p>
-
-          <p style={softOpeningText}>
-            Like any museum with an expanding collection, some exhibits are still
-            being researched, cataloged, identified, and refined. Every update
-            brings another piece of racing history back to life.
-          </p>
-
-          <div style={softOpeningStatsGrid} className="soft-opening-stats-grid">
-            <div style={softOpeningStatCard}>
-              <strong>{formatStat(stats?.drivers_count ?? 0)}</strong>
-              <span>Drivers</span>
-            </div>
-            <div style={softOpeningStatCard}>
-              <strong>{formatStat(stats?.tracks_count ?? 0)}</strong>
-              <span>Tracks</span>
-            </div>
-            <div style={softOpeningStatCard}>
-              <strong>{formatStat(stats?.events_count ?? 0)}</strong>
-              <span>Race Events</span>
-            </div>
-            <div style={softOpeningStatCard}>
-              <strong>{formatStat(stats?.results_count ?? 0)}</strong>
-              <span>Race Results</span>
-            </div>
-            <div style={softOpeningStatCard}>
-              <strong>{formatStat(38000)}</strong>
-              <span>Historic Photos</span>
-            </div>
-            <div style={softOpeningStatCard}>
-              <strong>1903–2026</strong>
-              <span>Coverage</span>
-            </div>
-          </div>
-
-          <p style={softOpeningText}>
-            Have photographs, race programs, newspapers, race results, or
-            historical information to share? Your contributions help preserve
-            the rich history of Upper Midwest auto racing for future generations.
-          </p>
-
-          <a
-            href="mailto:autoracinghistory@gmail.com?subject=Museum Information Submission"
-            style={softOpeningButton}
-          >
-            Submit Historical Information
-          </a>
-        </section>
-      ) : (
-        <section style={softOpeningMiniBanner} className="soft-opening-mini">
-          <div>
-            <strong>New to the Museum?</strong>{' '}
-            <span>
-              Learn how this living archive is preserving more than a century of
-              Upper Midwest auto racing history.
-            </span>
-          </div>
-
-          <a href="#museum-desk" style={softOpeningMiniButton}>
-            Visit Museum Desk →
-          </a>
-        </section>
-      )}
+  <a href="#museum-desk" style={softOpeningMiniButton}>
+    Visit Museum Desk →
+  </a>
+</section>
 
 {/* STATS */}
 <section style={statsStrip} className="home-stats">
