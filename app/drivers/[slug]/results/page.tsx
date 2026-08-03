@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+const SUPABASE_PHOTO_BASE =
+  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
 
 type Driver = {
   driver_name: string
@@ -17,6 +19,7 @@ type Photo = {
   photographer_slug: string | null
   credit_type: string | null
   sequence: number | null
+  track_slug: string | null
 }
 
 type FullResultRow = {
@@ -173,10 +176,10 @@ Object.keys(groupedResults).forEach((year) => {
               ) : (
                 <div>
                   <img
-                    src={`/photos/${heroPhotoItem.file_name}`}
-                    alt={driver.driver_name}
-                    style={heroPhoto}
-                  />
+  src={buildPhotoUrl(heroPhotoItem)}
+  alt={driver.driver_name}
+  style={heroPhoto}
+/>
                   <div style={heroCaption}>
                     {buildPhotoCaption(heroPhotoItem)}
                   </div>
@@ -351,6 +354,14 @@ function formatRaceDate(dateString: string) {
     month: 'short',
     day: 'numeric',
   })
+}
+function buildPhotoUrl(photo: Photo | null | undefined) {
+  if (!photo?.file_name) return ''
+
+  const track = String(photo.track_slug || 'unknown-track')
+  const year = String(photo.year || 'unknown-year')
+
+  return `${SUPABASE_PHOTO_BASE}/${track}/${year}/${encodeURIComponent(photo.file_name)}`
 }
 
 function buildPhotoCaption(photo: Photo) {
