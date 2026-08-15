@@ -45,17 +45,19 @@ export default async function SeriesEventPage({
   }
 
   const { data: results } = await supabase
-  .from('SeriesEventResults')
-  .select('*')
-  .eq('series_event_id', event.id)
-  .order('result_section', { ascending: true })
-  .order('finishing_position', { ascending: true })
+    .from('SeriesEventResults')
+    .select('*')
+    .eq('series_event_id', event.id)
+    .order('result_section', { ascending: true })
+    .order('finishing_position', { ascending: true })
 
-const featureResults =
-  results?.filter((row: any) => row.result_section !== 'DNQ') ?? []
+  const featureResults =
+    results?.filter((row: any) => row.result_section !== 'DNQ') ?? []
 
-const dnqResults =
-  results?.filter((row: any) => row.result_section === 'DNQ') ?? []
+  const dnqResults =
+    results?.filter((row: any) => row.result_section === 'DNQ') ?? []
+
+  const hasDnqs = dnqResults.length > 0
 
   return (
     <main style={pageStyle}>
@@ -74,106 +76,94 @@ const dnqResults =
           </div>
 
           <div style={heroTopRow}>
-  <div style={heroTextBlock}>
-    <div style={eyebrow}>Series Event</div>
+            <div style={heroTextBlock}>
+              <div style={eyebrow}>Series Event</div>
 
-    <h1 style={pageTitle}>
-      Race #{raceNo} — {event.track_name}
-    </h1>
+              <h1 style={pageTitle}>
+                Race #{raceNo} — {event.track_name}
+              </h1>
 
-    <p style={metaLine}>
-      {formatDate(event.race_date)}
-      {event.winner_name ? ` • Winner: ${event.winner_name}` : ''}
-    </p>
+              <p style={metaLine}>
+                {formatDate(event.race_date)}
+                {event.winner_name ? ` • Winner: ${event.winner_name}` : ''}
+              </p>
 
-    <Link href={`/series/${slug}/${seasonYear}`} style={backButton}>
-      Back to {seasonYear} Season
-    </Link>
-  </div>
+              <Link href={`/series/${slug}/${seasonYear}`} style={backButton}>
+                Back to {seasonYear} Season
+              </Link>
+            </div>
 
-  <div style={heroLogoRow}>
-    {event.track_name && (
-      <img
-        src={`/logos/tracks/${slugify(event.track_name)}-wi.jpg`}
-        alt={`${event.track_name} logo`}
-        style={heroTrackLogo}
-      />
-    )}
+            <div style={heroLogoRow}>
+              {event.track_name && (
+                <img
+                  src={`/logos/tracks/${slugify(event.track_name)}-wi.jpg`}
+                  alt={`${event.track_name} logo`}
+                  style={heroTrackLogo}
+                />
+              )}
 
-    <img
-      src={`/logos/series/${series.slug}.jpg`}
-      alt={`${series.series_name} logo`}
-      style={heroSeriesLogo}
-    />
-  </div>
-</div>
+              <img
+                src={`/logos/series/${series.slug}.jpg`}
+                alt={`${series.series_name} logo`}
+                style={heroSeriesLogo}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       <section style={contentWrap}>
         <Panel title="Feature Results">
-  <div style={resultsLayout}>
-    <div>
-      {featureResults.length > 0 ? (
-        <div>
-          <div style={featureHeader}>
-            <span>Fin</span>
-            <span>St</span>
-            <span>#</span>
-            <span>Driver</span>
+          <div style={hasDnqs ? resultsLayout : resultsLayoutFullWidth}>
+            <div>
+              {featureResults.length > 0 ? (
+                <div>
+                  <div style={featureHeader}>
+                    <span>Fin</span>
+                    <span>#</span>
+                    <span>Driver</span>
+                  </div>
+
+                  {featureResults.map((row: any) => (
+                    <div key={row.id} style={featureRow}>
+                      <span>{row.finishing_position || ''}</span>
+                      <span>{row.car_number || ''}</span>
+                      <Link
+                        href={`/drivers/${slugify(row.driver_name)}`}
+                        style={driverLink}
+                      >
+                        {row.driver_name || ''}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p style={panelText}>
+                  Full rundown has not been added yet for this series event.
+                </p>
+              )}
+            </div>
+
+            {hasDnqs && (
+              <aside style={dnqBox}>
+                <h3 style={dnqTitle}>Did Not Qualify</h3>
+                <div>
+                  {dnqResults.map((row: any) => (
+                    <div key={row.id} style={dnqInlineRow}>
+                      <span style={dnqTag}>DNQ</span>
+                      <Link
+                        href={`/drivers/${slugify(row.driver_name)}`}
+                        style={driverLink}
+                      >
+                        {row.driver_name || ''}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </aside>
+            )}
           </div>
-
-          {featureResults.map((row: any) => (
-            <div key={row.id} style={featureRow}>
-              <span>{row.finishing_position || ''}</span>
-              <span>{row.starting_position || row.finishing_position || ''}</span>
-              <span>{row.car_number || ''}</span>
-              <Link
-                href={`/drivers/${slugify(row.driver_name)}`}
-                style={driverLink}
-              >
-                {row.driver_name || ''}
-              </Link>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <p style={panelText}>
-          Full rundown has not been added yet for this series event.
-        </p>
-      )}
-    </div>
-
-    <aside style={dnqBox}>
-      <h3 style={dnqTitle}>Did Not Qualify</h3>
-
-      {dnqResults.length > 0 ? (
-        <div>
-          {dnqResults.map((row: any) => (
-            <div key={row.id} style={dnqInlineRow}>
-              <span style={dnqTag}>DNQ</span>
-              <Link
-                href={`/drivers/${slugify(row.driver_name)}`}
-                style={driverLink}
-              >
-                {row.driver_name || ''}
-              </Link>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div style={dnqEmptyBox}>
-          <img
-            src="/logos/series/wisconsin-short-track-series.png"
-            alt="Wisconsin Short Track Series logo"
-            style={dnqLogo}
-          />
-          <p style={dnqEmptyText}>No DNQ drivers listed in the source.</p>
-        </div>
-      )}
-    </aside>
-  </div>
-</Panel>
+        </Panel>
 
         <Panel title="Source Attribution">
           <p style={panelText}>
@@ -230,6 +220,7 @@ function slugify(value?: string | null) {
     .replace(/\./g, '')
     .replace(/\s+/g, '-')
 }
+
 const pageStyle: CSSProperties = {
   background: '#eadfc7',
   color: '#2f2417',
@@ -334,27 +325,6 @@ const panelBody: CSSProperties = {
   overflowX: 'auto',
 }
 
-const resultHeader: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: '55px 55px 60px 1.4fr 1fr 100px 70px 70px 100px 70px',
-  gap: '10px',
-  padding: '10px 0',
-  borderBottom: '2px solid #b29364',
-  fontWeight: 700,
-  color: '#5b3a1b',
-  minWidth: '1100px',
-}
-
-const resultRow: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: '55px 55px 60px 1.4fr 1fr 100px 70px 70px 100px 70px',
-  gap: '10px',
-  padding: '9px 0',
-  borderBottom: '1px solid #ccb48a',
-  alignItems: 'center',
-  minWidth: '1100px',
-}
-
 const panelText: CSSProperties = {
   fontSize: '17px',
   lineHeight: 1.7,
@@ -371,12 +341,17 @@ const resultsLayout: CSSProperties = {
   gridTemplateColumns: '1.35fr 1fr',
   gap: '22px',
   alignItems: 'start',
-  minWidth: '980px',
+  minWidth: '760px',
+}
+
+const resultsLayoutFullWidth: CSSProperties = {
+  display: 'block',
+  width: '100%',
 }
 
 const featureHeader: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: '55px 55px 60px 1fr',
+  gridTemplateColumns: '55px 70px 1fr',
   gap: '10px',
   padding: '10px 0',
   borderBottom: '2px solid #b29364',
@@ -386,7 +361,7 @@ const featureHeader: CSSProperties = {
 
 const featureRow: CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: '55px 55px 60px 1fr',
+  gridTemplateColumns: '55px 70px 1fr',
   gap: '10px',
   padding: '9px 0',
   borderBottom: '1px solid #ccb48a',
@@ -418,23 +393,6 @@ const dnqTag: CSSProperties = {
   color: '#5b3a1b',
 }
 
-const dnqEmptyBox: CSSProperties = {
-  marginTop: '16px',
-  border: '1px solid #ccb48a',
-  background: '#eadfc7',
-  padding: '20px',
-  textAlign: 'center',
-}
-
-const dnqLogo: CSSProperties = {
-  maxWidth: '260px',
-  width: '80%',
-  height: 'auto',
-  margin: '0 auto 12px',
-  display: 'block',
-  opacity: 0.9,
-}
-
 const heroTopRow: CSSProperties = {
   display: 'flex',
   justifyContent: 'space-between',
@@ -463,11 +421,4 @@ const heroSeriesLogo: CSSProperties = {
   width: '170px',
   maxHeight: '100px',
   objectFit: 'contain',
-}
-
-const dnqEmptyText: CSSProperties = {
-  margin: 0,
-  fontSize: '17px',
-  fontStyle: 'italic',
-  color: '#5a3a1b',
 }
