@@ -1,45 +1,67 @@
-/* Series archive mobile layout overrides.
-   Loaded after globals.css so these rules can undo the broad emergency
-   one-column grid rules on series pages without changing desktop. */
+/* Series archive responsive layout.
+   Loaded after globals.css so these rules override broad global mobile rules
+   only when the current page is a Series archive page. */
+
+/* Hide Related Race Programs completely when the series has no linked artifacts. */
+body > main > main:has(a[href^="/series/"]) > section:last-child:not(:has(article)) {
+  display: none !important;
+}
 
 @media (max-width: 768px) {
+  /* ---------- MOBILE NAV ---------- */
   .site-nav-inner {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
     padding: 10px 12px !important;
-    gap: 10px !important;
-    align-items: flex-start !important;
+    gap: 8px !important;
+    align-items: start !important;
   }
 
   .site-nav-tagline {
-    flex: 1 1 100% !important;
     width: 100% !important;
     font-size: 18px !important;
     line-height: 1.15 !important;
-    text-align: left !important;
+    text-align: center !important;
   }
 
   .site-nav-links {
     width: 100% !important;
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 6px 10px !important;
+    gap: 4px 8px !important;
     font-size: 13px !important;
-    justify-items: start !important;
+    justify-items: stretch !important;
   }
 
   .site-nav-links a {
     display: block !important;
-    padding: 4px 0 !important;
+    padding: 5px 2px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
   }
 
+  /* ---------- PAGE SHELL ---------- */
   body > main > main:has(a[href^="/series/"]) {
     width: 100% !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
 
-  /* Hero: logo, identity, featured photo stack cleanly. */
+  /* ---------- HERO ---------- */
+  body > main > main:has(a[href^="/series/"]) > section:first-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   body > main > main:has(a[href^="/series/"]) > section:first-child > div {
-    padding: 18px 12px 22px !important;
+    padding: 16px 12px 22px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:first-child {
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 16px !important;
+    font-size: 13px !important;
   }
 
   body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(2) {
@@ -49,33 +71,54 @@
     align-items: start !important;
   }
 
+  /* Series logo */
   body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(2) > div:first-child {
-    width: min(220px, 66vw) !important;
-    max-width: 220px !important;
+    width: min(205px, 62vw) !important;
+    max-width: 205px !important;
     margin: 0 auto !important;
+    padding: 8px !important;
   }
 
+  /* Series identity */
   body > main > main:has(a[href^="/series/"]) > section:first-child h1 {
-    font-size: clamp(34px, 10vw, 44px) !important;
+    font-size: clamp(33px, 9.5vw, 43px) !important;
     line-height: 1.02 !important;
     text-align: center !important;
-    margin-top: 2px !important;
+    margin: 4px 0 8px !important;
   }
 
   body > main > main:has(a[href^="/series/"]) > section:first-child p {
     text-align: center !important;
     max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   body > main > main:has(a[href^="/series/"]) > section:first-child div[style*="display: flex"] {
     justify-content: center !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) > section:first-child a[style] {
+  body > main > main:has(a[href^="/series/"]) > section:first-child div[style*="display: flex"] > a {
+    flex: 1 1 145px !important;
+    max-width: 230px !important;
     text-align: center !important;
   }
 
-  /* Keep the summary statistics compact instead of four tall blocks. */
+  /* Featured driver image */
+  .series-hero-photo {
+    width: 100% !important;
+    max-width: 430px !important;
+    margin: 2px auto 0 !important;
+  }
+
+  .series-hero-photo img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 275px !important;
+    object-fit: cover !important;
+  }
+
+  /* 2 x 2 hero stats */
   body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -85,39 +128,76 @@
 
   body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) > div {
     min-width: 0 !important;
-    padding: 11px 8px !important;
+    padding: 10px 6px !important;
   }
 
-  /* Main landing-page columns become one column. */
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) > div > div:first-child {
+    font-size: 25px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) > div > div:last-child {
+    font-size: 11px !important;
+  }
+
+  /* ---------- MAIN CONTENT ---------- */
+  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) {
+    padding: 16px 10px 26px !important;
+  }
+
   body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
     gap: 14px !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) {
-    padding: 18px 10px 28px !important;
-  }
-
   body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div > div {
     min-width: 0 !important;
   }
 
-  /* Event cards should be one per row on phones. */
+  /* ---------- SERIES SEASONS ---------- */
+  /* Keep each season compact: year + champion, then race count below champion. */
+  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div > div:first-child > div:first-child a[href^="/series/"] {
+    display: grid !important;
+    grid-template-columns: 66px minmax(0, 1fr) !important;
+    gap: 4px 10px !important;
+    align-items: center !important;
+    padding: 12px 2px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div > div:first-child > div:first-child a[href^="/series/"] > span:nth-child(3) {
+    grid-column: 2 !important;
+    font-size: 13px !important;
+    white-space: normal !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div > div:first-child > div:first-child a[href^="/series/"] > span:nth-child(4) {
+    display: none !important;
+  }
+
+  /* Long-running series: decade cards stack, but year chips still wrap inside them. */
   body > main > main:has(a[href^="/series/"]) div[style*="minmax(210px"] {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
+    gap: 9px !important;
   }
 
-  /* Standings need to remain a compact table rather than being collapsed by globals.css. */
+  /* ---------- SEASON SNAPSHOT ---------- */
+  /* One event card per row on phones. */
+  body > main > main:has(a[href^="/series/"]) div[style*="minmax(210px"] > a {
+    min-height: 0 !important;
+  }
+
+  /* ---------- STANDINGS ---------- */
+  /* Preserve table-like rows instead of letting globals.css collapse them. */
   body > main > main:has(a[href^="/series/"]) div[style*="55px 1fr 80px 70px"] {
     display: grid !important;
-    grid-template-columns: 38px minmax(0, 1fr) 52px 44px !important;
-    gap: 6px !important;
-    font-size: 14px !important;
+    grid-template-columns: 34px minmax(0, 1fr) 50px 42px !important;
+    gap: 5px !important;
+    font-size: 13px !important;
+    align-items: center !important;
   }
 
-  /* Track and archive links use a compact two-column layout. */
+  /* ---------- TRACKS / EXPLORE ---------- */
   body > main > main:has(a[href^="/series/"]) div[style*="minmax(135px"] {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -127,26 +207,21 @@
   body > main > main:has(a[href^="/series/"]) div[style*="repeat(2,minmax(0,1fr))"] {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
   }
 
-  /* Featured series driver image. */
-  .series-hero-photo {
-    width: 100% !important;
-    max-width: 420px !important;
-    margin: 0 auto !important;
-  }
-
-  .series-hero-photo img {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 280px !important;
-    object-fit: cover !important;
+  body > main > main:has(a[href^="/series/"]) div[style*="minmax(135px"] img {
+    max-height: 64px !important;
   }
 }
 
 @media (max-width: 420px) {
   .site-nav-links {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .site-nav-links a {
+    font-size: 12px !important;
   }
 
   body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) {
