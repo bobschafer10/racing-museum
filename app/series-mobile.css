@@ -1,0 +1,130 @@
+/* Series archive mobile layout overrides.
+   Loaded after globals.css so these rules can undo the broad emergency
+   one-column grid rules on series pages without changing desktop. */
+
+@media (max-width: 768px) {
+  body > main > main:has(a[href^="/series/"]) {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Hero: logo, identity, featured photo stack cleanly. */
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div {
+    padding: 18px 12px 22px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(2) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+    align-items: start !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(2) > div:first-child {
+    width: min(230px, 72vw) !important;
+    max-width: 230px !important;
+    margin: 0 auto !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child h1 {
+    font-size: clamp(34px, 10vw, 44px) !important;
+    line-height: 1.02 !important;
+    text-align: center !important;
+    margin-top: 2px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child p {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child div[style*="display: flex"] {
+    justify-content: center !important;
+  }
+
+  /* Keep the summary statistics compact instead of four tall blocks. */
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    margin-top: 18px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) > div {
+    min-width: 0 !important;
+    padding: 11px 8px !important;
+  }
+
+  /* Main landing-page columns become one column. */
+  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) {
+    padding: 18px 10px 28px !important;
+  }
+
+  /* Panel spacing. */
+  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div > div {
+    min-width: 0 !important;
+  }
+
+  /* Season rows stay readable: year, champion, race count and arrow. */
+  body > main > main:has(a[href^="/series/"]) a[href^="/series/"][href*="/20"],
+  body > main > main:has(a[href^="/series/"]) a[href^="/series/"][href*="/19"] {
+    max-width: 100% !important;
+  }
+
+  /* Event cards should be one per row on phones. */
+  body > main > main:has(a[href^="/series/"]) div[style*="minmax(210px"] {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  /* Standings need to remain a table-like four-column row. */
+  body > main > main:has(a[href^="/series/"]) div[style*="55px 1fr 80px 70px"] {
+    display: grid !important;
+    grid-template-columns: 38px minmax(0, 1fr) 52px 44px !important;
+    gap: 6px !important;
+    font-size: 14px !important;
+  }
+
+  /* Track and archive links use a compact two-column layout. */
+  body > main > main:has(a[href^="/series/"]) div[style*="minmax(135px"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) div[style*="repeat(2,minmax(0,1fr))"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  /* Featured series driver image. */
+  .series-hero-photo {
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+  }
+
+  .series-hero-photo img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 280px !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  body > main > main:has(a[href^="/series/"]) div[style*="minmax(135px"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
