@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./series-mobile.css";
 import Link from "next/link"
 
 const geistSans = Geist({
@@ -36,22 +37,21 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
 
         {/* NAV BAR */}
-        <div style={navBar}>
-          <div style={navInner}>
+        <div style={navBar} className="site-nav-bar">
+          <div style={navInner} className="site-nav-inner">
 
-            
-  <div style={navTagline}>
-  Every click opens a door to another piece of auto racing history.
-</div>
+            <div style={navTagline} className="site-nav-tagline">
+              Every click opens a door to another piece of auto racing history.
+            </div>
 
-            <div style={navLinks}>
-  <Link href="/" style={navLink}>Home</Link>
-  <Link href="/tracks" style={navLink}>Tracks</Link>
-  <Link href="/drivers" style={navLink}>Drivers</Link>
-  <Link href="/series" style={navLink}>Series</Link>
-  <Link href="/results" style={navLink}>Results</Link>
-  <Link href="/media" style={navLink}>Media Archive</Link>
-</div>
+            <div style={navLinks} className="site-nav-links">
+              <Link href="/" style={navLink}>Home</Link>
+              <Link href="/tracks" style={navLink}>Tracks</Link>
+              <Link href="/drivers" style={navLink}>Drivers</Link>
+              <Link href="/series" style={navLink}>Series</Link>
+              <Link href="/results" style={navLink}>Results</Link>
+              <Link href="/media" style={navLink}>Media Archive</Link>
+            </div>
 
           </div>
         </div>
