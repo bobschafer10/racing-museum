@@ -31,7 +31,7 @@ export default function SeriesHeroPhoto({ photos }: { photos: HeroPhoto[] }) {
       : ''
 
   return (
-    <Link href={`/drivers/${photo.driverSlug}`} style={photoLink}>
+    <Link href={`/drivers/${photo.driverSlug}`} style={photoLink} className="series-hero-photo">
       <div style={photoFrame}>
         <img src={photo.imageUrl} alt={photo.driverName} style={photoImage} />
         <div style={caption}>
