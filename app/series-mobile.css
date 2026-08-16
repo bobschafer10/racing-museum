@@ -1,9 +1,14 @@
-/* Series archive layout overrides.
-   This file is loaded after globals.css. Keep collection-page protection
-   separate from profile-page mobile rules. */
+/* Series archive responsive rules.
+   Loaded after globals.css. The /series collection is protected separately
+   from an individual /series/[slug] profile.
 
-/* /series collection protection: the collection divider is a direct div
-   followed by the collection section. Force its card grid to remain visible. */
+   IMPORTANT: individual profiles are identified by the exact Back to Series
+   link (href="/series"). The collection page does not contain that link, so
+   profile rules cannot accidentally hide or reshape the 72-card collection. */
+
+/* =========================
+   SERIES COLLECTION
+========================= */
 body > main > main > div + section > div {
   display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important;
@@ -22,155 +27,238 @@ body > main > main > div + section > div > a {
   opacity: 1 !important;
 }
 
+/* =========================
+   PHONE / SMALL TABLET
+========================= */
 @media (max-width: 768px) {
+  /* Site navigation */
   .site-nav-inner {
-    padding: 10px 12px !important;
-    gap: 10px !important;
+    padding: 9px 12px !important;
+    gap: 8px !important;
     align-items: flex-start !important;
   }
 
   .site-nav-tagline {
     flex: 1 1 100% !important;
     width: 100% !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
     line-height: 1.15 !important;
-    text-align: left !important;
+    text-align: center !important;
   }
 
   .site-nav-links {
     width: 100% !important;
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 6px 10px !important;
+    gap: 3px 8px !important;
     font-size: 13px !important;
-    justify-items: start !important;
+    justify-items: center !important;
   }
 
   .site-nav-links a {
     display: block !important;
-    padding: 4px 0 !important;
+    padding: 5px 2px !important;
+    text-align: center !important;
   }
 
-  /* Collection page: two cards per row on normal phones, one on very narrow screens. */
+  /* Collection page remains distinct from profile pages. */
   body > main > main > div + section > div {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 10px !important;
     padding: 0 !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) {
+  /* Individual series profile only. */
+  body > main > main:has(a[href="/series"]) {
     width: 100% !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
 
-  /* Hero: logo, identity, featured photo stack cleanly. */
-  body > main > main:has(a[href^="/series/"]) > section:first-child > div {
-    padding: 18px 12px 22px !important;
+  body > main > main:has(a[href="/series"]) > section:first-child > div {
+    padding: 14px 12px 20px !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(2) {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 16px !important;
-    align-items: start !important;
-  }
-
-  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(2) > div:first-child {
-    width: min(220px, 66vw) !important;
-    max-width: 220px !important;
-    margin: 0 auto !important;
-  }
-
-  body > main > main:has(a[href^="/series/"]) > section:first-child h1 {
-    font-size: clamp(34px, 10vw, 44px) !important;
-    line-height: 1.02 !important;
-    text-align: center !important;
-    margin-top: 2px !important;
-  }
-
-  body > main > main:has(a[href^="/series/"]) > section:first-child p {
-    text-align: center !important;
-    max-width: 100% !important;
-  }
-
-  body > main > main:has(a[href^="/series/"]) > section:first-child div[style*="display: flex"] {
+  /* Breadcrumb is useful, but keep it visually secondary. */
+  body > main > main:has(a[href="/series"]) > section:first-child > div > div:first-child {
+    margin-bottom: 13px !important;
+    font-size: 13px !important;
     justify-content: center !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) > section:first-child a[style] {
-    text-align: center !important;
-  }
-
-  /* Keep the summary statistics compact instead of four tall blocks. */
-  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 8px !important;
-    margin-top: 18px !important;
-  }
-
-  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) > div {
-    min-width: 0 !important;
-    padding: 11px 8px !important;
-  }
-
-  /* Main landing-page columns become one column. */
-  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div {
+  /* Hero: logo -> title/meta -> driver photo. */
+  body > main > main:has(a[href="/series"]) > section:first-child > div > div:nth-child(2) {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
     gap: 14px !important;
+    align-items: start !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) {
-    padding: 18px 10px 28px !important;
+  body > main > main:has(a[href="/series"]) > section:first-child > div > div:nth-child(2) > div:first-child {
+    width: min(190px, 58vw) !important;
+    max-width: 190px !important;
+    margin: 0 auto !important;
+    padding: 7px !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) > section:nth-child(2) > div > div > div {
-    min-width: 0 !important;
+  body > main > main:has(a[href="/series"]) > section:first-child h1 {
+    font-size: clamp(32px, 9.5vw, 42px) !important;
+    line-height: 1.02 !important;
+    text-align: center !important;
+    margin: 2px 0 7px !important;
   }
 
-  /* Event cards should be one per row on phones. */
-  body > main > main:has(a[href^="/series/"]) div[style*="minmax(210px"] {
+  body > main > main:has(a[href="/series"]) > section:first-child p {
+    text-align: center !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body > main > main:has(a[href="/series"]) > section:first-child p:first-of-type {
+    font-size: 17px !important;
+    margin-bottom: 9px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) > section:first-child div[style*="display: flex"] {
+    justify-content: center !important;
+  }
+
+  /* Hero action buttons: large tap targets. */
+  body > main > main:has(a[href="/series"]) > section:first-child a[href="/series"],
+  body > main > main:has(a[href="/series"]) > section:first-child a[href*="/series/"] {
+    text-align: center !important;
+  }
+
+  body > main > main:has(a[href="/series"]) > section:first-child div[style*="flex-wrap"] {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
-  }
-
-  /* Standings need to remain a compact table rather than being collapsed by globals.css. */
-  body > main > main:has(a[href^="/series/"]) div[style*="55px 1fr 80px 70px"] {
-    display: grid !important;
-    grid-template-columns: 38px minmax(0, 1fr) 52px 44px !important;
-    gap: 6px !important;
-    font-size: 14px !important;
-  }
-
-  /* Track and archive links use a compact two-column layout. */
-  body > main > main:has(a[href^="/series/"]) div[style*="minmax(135px"] {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
     gap: 8px !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) div[style*="repeat(2,minmax(0,1fr))"] {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  body > main > main:has(a[href="/series"]) > section:first-child div[style*="flex-wrap"] > a {
+    width: 100% !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  /* Featured series driver image. */
+  /* Featured series driver photo */
   .series-hero-photo {
     width: 100% !important;
-    max-width: 420px !important;
-    margin: 0 auto !important;
+    max-width: 390px !important;
+    margin: 2px auto 0 !important;
   }
 
   .series-hero-photo img {
     width: 100% !important;
     height: auto !important;
-    max-height: 280px !important;
+    max-height: 245px !important;
     object-fit: cover !important;
+  }
+
+  /* Summary statistics stay 2x2. */
+  body > main > main:has(a[href="/series"]) > section:first-child > div > div:nth-child(3) {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) > section:first-child > div > div:nth-child(3) > div {
+    min-width: 0 !important;
+    padding: 10px 7px !important;
+  }
+
+  /* Main desktop columns become one intentional mobile stream. */
+  body > main > main:has(a[href="/series"]) > section:nth-child(2) {
+    padding: 16px 10px 24px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) > section:nth-child(2) > div > div {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) > section:nth-child(2) > div > div > div {
+    min-width: 0 !important;
+    gap: 14px !important;
+  }
+
+  /* Panels use more of the phone width. */
+  body > main > main:has(a[href="/series"]) > section:nth-child(2) div[style*="border: 2px"] {
+    max-width: 100% !important;
+  }
+
+  /* Season row: 2-column card rather than a squeezed desktop row. */
+  body > main > main:has(a[href="/series"]) a[href^="/series/"][href$="/2013"],
+  body > main > main:has(a[href="/series"]) a[href^="/series/"][href*="/19"],
+  body > main > main:has(a[href="/series"]) a[href^="/series/"][href*="/20"] {
+    max-width: 100% !important;
+  }
+
+  /* Champion header in season snapshot stacks cleanly. */
+  body > main > main:has(a[href="/series"]) div[style*="justify-content: space-between"][style*="align-items: end"] {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 7px !important;
+    align-items: start !important;
+  }
+
+  /* One event card per row. */
+  body > main > main:has(a[href="/series"]) div[style*="minmax(210px"] {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 9px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) div[style*="minmax(210px"] > a {
+    min-height: 0 !important;
+    padding: 12px !important;
+  }
+
+  /* Standings retain all four useful columns. */
+  body > main > main:has(a[href="/series"]) div[style*="55px 1fr 80px 70px"] {
+    display: grid !important;
+    grid-template-columns: 36px minmax(0, 1fr) 48px 42px !important;
+    gap: 5px !important;
+    font-size: 13px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) div[style*="55px 1fr 80px 70px"] > span:nth-child(3),
+  body > main > main:has(a[href="/series"]) div[style*="55px 1fr 80px 70px"] > span:nth-child(4) {
+    text-align: right !important;
+  }
+
+  /* Summary rows wrap gracefully instead of colliding. */
+  body > main > main:has(a[href="/series"]) div[style*="justify-content: space-between"][style*="border-bottom"] {
+    align-items: flex-start !important;
+  }
+
+  /* Track tiles and archive links: compact 2-column grids. */
+  body > main > main:has(a[href="/series"]) div[style*="minmax(135px"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) div[style*="repeat(2,minmax(0,1fr))"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  body > main > main:has(a[href="/series"]) div[style*="minmax(135px"] img {
+    max-height: 62px !important;
   }
 }
 
+/* =========================
+   NARROW PHONES
+========================= */
 @media (max-width: 420px) {
   .site-nav-links {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -180,11 +268,20 @@ body > main > main > div + section > div > a {
     grid-template-columns: minmax(0, 1fr) !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) > section:first-child > div > div:nth-child(3) {
+  body > main > main:has(a[href="/series"]) > section:first-child > div > div:nth-child(2) > div:first-child {
+    width: min(175px, 56vw) !important;
+  }
+
+  body > main > main:has(a[href="/series"]) > section:first-child > div > div:nth-child(3) {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
-  body > main > main:has(a[href^="/series/"]) div[style*="minmax(135px"] {
+  body > main > main:has(a[href="/series"]) div[style*="minmax(135px"] {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  body > main > main:has(a[href="/series"]) div[style*="55px 1fr 80px 70px"] {
+    grid-template-columns: 30px minmax(0, 1fr) 44px 38px !important;
+    font-size: 12px !important;
   }
 }
