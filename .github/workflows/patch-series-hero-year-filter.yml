@@ -1,0 +1,183 @@
+name: Patch series hero year filter
+
+on:
+  push:
+    branches:
+      - series-hero-year-filter
+    paths:
+      - .github/workflows/patch-series-hero-year-filter.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: series-hero-year-filter
+          fetch-depth: 0
+
+      - name: Restrict series hero photos to series drivers and years
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('app/series/[slug]/page.tsx')
+          text = path.read_text(encoding='utf-8')
+
+          old = '''  const standingRows = latestStandings || []
+
+  const heroDriverIds = Array.from(
+    new Set(
+      [
+        ...standingRows.map((row: any) => Number(row.driver_id)),
+        ...latestSeasonEvents.map((event: any) => Number(event.winner_driver_id)),
+      ].filter((id) => Number.isFinite(id) && id > 0)
+    )
+  )
+
+  const { data: heroDrivers } = heroDriverIds.length
+    ? await supabase
+        .from('Drivers')
+        .select('driver_id, driver_name, slug')
+        .in('driver_id', heroDriverIds)
+    : { data: [] }
+
+  const heroDriverRows = heroDrivers || []
+  const heroDriverSlugs = heroDriverRows.map((driver: any) => driver.slug).filter(Boolean)
+  const heroDriverBySlug = new Map(
+    heroDriverRows.map((driver: any) => [driver.slug, driver])
+  )
+
+  const { data: heroPhotoRows } = heroDriverSlugs.length
+    ? await supabase
+        .from('photos')
+        .select('photo_id, file_name, track_slug, driver_slug, year, photographer_slug, sequence, needs_review')
+        .in('driver_slug', heroDriverSlugs)
+        .eq('needs_review', false)
+        .limit(100)
+    : { data: [] }
+
+  const heroPhotos = buildHeroPhotos(heroPhotoRows || [], heroDriverBySlug, latestSeason?.year)
+'''
+
+          new = '''  const standingRows = latestStandings || []
+  const seriesYears = seasonRows
+    .map((season: any) => String(season.year || ''))
+    .filter((year: string) => /^\\d{4}$/.test(year))
+
+  const seriesEventIds = eventRows
+    .map((event: any) => Number(event.id))
+    .filter((id: number) => Number.isFinite(id) && id > 0)
+
+  const { data: seriesResultDrivers } = seriesEventIds.length
+    ? await supabase
+        .from('SeriesEventResults')
+        .select('driver_id')
+        .in('series_event_id', seriesEventIds)
+    : { data: [] }
+
+  const heroDriverIds = Array.from(
+    new Set(
+      [
+        ...(seriesResultDrivers || []).map((row: any) => Number(row.driver_id)),
+        ...standingRows.map((row: any) => Number(row.driver_id)),
+        ...eventRows.map((event: any) => Number(event.winner_driver_id)),
+        ...seasonRows.map((season: any) => Number(season.champion_driver_id)),
+      ].filter((id) => Number.isFinite(id) && id > 0)
+    )
+  )
+
+  const { data: heroDrivers } = heroDriverIds.length
+    ? await supabase
+        .from('Drivers')
+        .select('driver_id, driver_name, slug')
+        .in('driver_id', heroDriverIds)
+    : { data: [] }
+
+  const heroDriverRows = heroDrivers || []
+  const heroDriverSlugs = heroDriverRows.map((driver: any) => driver.slug).filter(Boolean)
+  const heroDriverBySlug = new Map(
+    heroDriverRows.map((driver: any) => [driver.slug, driver])
+  )
+
+  const { data: heroPhotoRows } = heroDriverSlugs.length && seriesYears.length
+    ? await supabase
+        .from('photos')
+        .select('photo_id, file_name, track_slug, driver_slug, year, photographer_slug, sequence, needs_review')
+        .in('driver_slug', heroDriverSlugs)
+        .in('year', seriesYears)
+        .eq('needs_review', false)
+        .limit(200)
+    : { data: [] }
+
+  const heroPhotos = buildHeroPhotos(
+    heroPhotoRows || [],
+    heroDriverBySlug,
+    seriesYears,
+    latestSeason?.year
+  )
+'''
+
+          if old not in text:
+              raise SystemExit('Hero query block not found; refusing to patch')
+          text = text.replace(old, new, 1)
+
+          old_fn = '''function buildHeroPhotos(photoRows: any[], driverBySlug: Map<any, any>, seasonYear?: number | null) {
+  const ranked = photoRows
+    .filter((photo: any) => photo.file_name && photo.driver_slug && driverBySlug.has(photo.driver_slug))
+    .map((photo: any) => {
+      const driver = driverBySlug.get(photo.driver_slug)
+      const photoYear = String(photo.year || 'unknown-year')
+      const track = String(photo.track_slug || 'unknown-track')
+      let score = 0
+      if (seasonYear && photoYear === String(seasonYear)) score += 100
+      if (photoYear !== 'unknown-year') score += 20
+      if (photo.photographer_slug && photo.photographer_slug !== 'unknown-photographer') score += 5
+'''
+
+          new_fn = '''function buildHeroPhotos(
+  photoRows: any[],
+  driverBySlug: Map<any, any>,
+  seriesYears: string[],
+  seasonYear?: number | null
+) {
+  const validYears = new Set(seriesYears)
+  const ranked = photoRows
+    .filter((photo: any) => {
+      const photoYear = String(photo.year || '')
+      return (
+        photo.file_name &&
+        photo.driver_slug &&
+        driverBySlug.has(photo.driver_slug) &&
+        validYears.has(photoYear)
+      )
+    })
+    .map((photo: any) => {
+      const driver = driverBySlug.get(photo.driver_slug)
+      const photoYear = String(photo.year)
+      const track = String(photo.track_slug || 'unknown-track')
+      let score = 0
+      if (seasonYear && photoYear === String(seasonYear)) score += 100
+      if (photo.photographer_slug && photo.photographer_slug !== 'unknown-photographer') score += 5
+'''
+
+          if old_fn not in text:
+              raise SystemExit('buildHeroPhotos block not found; refusing to patch')
+          text = text.replace(old_fn, new_fn, 1)
+
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit patch and remove temporary workflow
+        run: |
+          git config user.name "ChatGPT Codex Connector"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/patch-series-hero-year-filter.yml
+          git add 'app/series/[slug]/page.tsx'
+          git commit -m "Restrict series hero photos to series years"
+          git push origin series-hero-year-filter
