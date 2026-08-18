@@ -31,7 +31,7 @@ export default function SeriesHeroPhoto({ photos }: { photos: HeroPhoto[] }) {
 
       const slug = pathname.split('/').filter(Boolean)[1]
       if (!slug) {
-        if (!cancelled) setEligiblePhotos(photos)
+        if (!cancelled) setEligiblePhotos([])
         return
       }
 
@@ -42,7 +42,7 @@ export default function SeriesHeroPhoto({ photos }: { photos: HeroPhoto[] }) {
         .maybeSingle()
 
       if (!seriesRow?.id) {
-        if (!cancelled) setEligiblePhotos(photos)
+        if (!cancelled) setEligiblePhotos([])
         return
       }
 
@@ -51,44 +51,19 @@ export default function SeriesHeroPhoto({ photos }: { photos: HeroPhoto[] }) {
         .select('year')
         .eq('series_id', seriesRow.id)
 
-      const validYears = Array.from(
-        new Set(
-          (seasonRows || [])
-            .map((row: any) => Number(row.year))
-            .filter((year: number) => Number.isInteger(year) && year > 1900)
-        )
+      const validYears = new Set(
+        (seasonRows || [])
+          .map((row: any) => Number(row.year))
+          .filter((year: number) => Number.isInteger(year) && year > 1900)
       )
 
-      const exactYearPhotos = photos.filter((photo) => {
+      // Strict rule: a series landing-page hero must be a photo of an eligible
+      // series driver from one of the actual years represented by the series.
+      // Never substitute an older/newer photo of the same driver.
+      const selected = photos.filter((photo) => {
         const year = Number(photo.year)
-        return Number.isInteger(year) && validYears.includes(year)
+        return Number.isInteger(year) && validYears.has(year)
       })
-
-      let selected = exactYearPhotos
-
-      // If no exact series-year photo exists, use the nearest known-year photo
-      // from the already-qualified series driver pool rather than leaving the hero blank.
-      if (!selected.length && validYears.length) {
-        const knownYearPhotos = photos
-          .map((photo) => ({ photo, year: Number(photo.year) }))
-          .filter((entry) => Number.isInteger(entry.year) && entry.year > 1900)
-          .map((entry) => ({
-            ...entry,
-            distance: Math.min(...validYears.map((seriesYear) => Math.abs(seriesYear - entry.year))),
-          }))
-          .sort((a, b) => a.distance - b.distance)
-
-        if (knownYearPhotos.length) {
-          const bestDistance = knownYearPhotos[0].distance
-          selected = knownYearPhotos
-            .filter((entry) => entry.distance === bestDistance)
-            .map((entry) => entry.photo)
-        }
-      }
-
-      // Final fallback: retain the existing series-driver candidate pool.
-      // This keeps the page balanced even when photo metadata is incomplete.
-      if (!selected.length) selected = photos
 
       if (!cancelled) {
         setEligiblePhotos(selected)
