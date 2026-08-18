@@ -1,8 +1,10 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import type { CSSProperties } from 'react'
+import { supabase } from '@/lib/supabase'
 
 type HeroPhoto = {
   photoId: number | string
@@ -14,17 +16,69 @@ type HeroPhoto = {
 }
 
 export default function SeriesHeroPhoto({ photos }: { photos: HeroPhoto[] }) {
+  const pathname = usePathname()
+  const [eligiblePhotos, setEligiblePhotos] = useState<HeroPhoto[] | null>(null)
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
-    if (photos.length <= 1) return
-    setIndex(Math.floor(Math.random() * photos.length))
-  }, [photos.length])
+    let cancelled = false
 
-  if (!photos.length) return null
+    async function filterToSeriesYears() {
+      if (!photos.length) {
+        if (!cancelled) setEligiblePhotos([])
+        return
+      }
 
-  const photo = photos[index] || photos[0]
-  const yearText = photo.year && photo.year !== 'unknown-year' ? ` • ${photo.year}` : ''
+      const slug = pathname.split('/').filter(Boolean)[1]
+      if (!slug) {
+        if (!cancelled) setEligiblePhotos([])
+        return
+      }
+
+      const { data: seriesRow } = await supabase
+        .from('Series')
+        .select('id')
+        .eq('slug', slug)
+        .maybeSingle()
+
+      if (!seriesRow?.id) {
+        if (!cancelled) setEligiblePhotos([])
+        return
+      }
+
+      const { data: seasonRows } = await supabase
+        .from('SeriesSeasons')
+        .select('year')
+        .eq('series_id', seriesRow.id)
+
+      const validYears = new Set(
+        (seasonRows || [])
+          .map((row: any) => String(row.year || ''))
+          .filter((year: string) => /^\d{4}$/.test(year))
+      )
+
+      const filtered = photos.filter((photo) => {
+        const photoYear = String(photo.year || '')
+        return validYears.has(photoYear)
+      })
+
+      if (!cancelled) {
+        setEligiblePhotos(filtered)
+        setIndex(filtered.length > 1 ? Math.floor(Math.random() * filtered.length) : 0)
+      }
+    }
+
+    filterToSeriesYears()
+
+    return () => {
+      cancelled = true
+    }
+  }, [pathname, photos])
+
+  if (!eligiblePhotos || !eligiblePhotos.length) return null
+
+  const photo = eligiblePhotos[index] || eligiblePhotos[0]
+  const yearText = photo.year ? ` • ${photo.year}` : ''
   const photographerText =
     photo.photographer && photo.photographer !== 'unknown-photographer'
       ? ` • Photo: ${humanize(photo.photographer)}`
