@@ -6,6 +6,9 @@ import { useEffect, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 
+const SUPABASE_PHOTO_BASE =
+  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
+
 type HeroPhoto = {
   photoId: number | string
   imageUrl: string
@@ -51,19 +54,49 @@ export default function SeriesHeroPhoto({ photos }: { photos: HeroPhoto[] }) {
         .select('year')
         .eq('series_id', seriesRow.id)
 
-      const validYears = new Set(
-        (seasonRows || [])
-          .map((row: any) => Number(row.year))
-          .filter((year: number) => Number.isInteger(year) && year > 1900)
+      const validYears = Array.from(
+        new Set(
+          (seasonRows || [])
+            .map((row: any) => Number(row.year))
+            .filter((year: number) => Number.isInteger(year) && year > 1900)
+        )
       )
 
-      // Strict rule: a series landing-page hero must be a photo of an eligible
-      // series driver from one of the actual years represented by the series.
-      // Never substitute an older/newer photo of the same driver.
-      const selected = photos.filter((photo) => {
-        const year = Number(photo.year)
-        return Number.isInteger(year) && validYears.has(year)
-      })
+      const driverNames = new Map(
+        photos.map((photo) => [photo.driverSlug, photo.driverName])
+      )
+      const driverSlugs = Array.from(driverNames.keys()).filter(Boolean)
+
+      if (!validYears.length || !driverSlugs.length) {
+        if (!cancelled) setEligiblePhotos([])
+        return
+      }
+
+      // Query the photo table again instead of relying on the server's single
+      // preselected photo per driver. This lets us skip an out-of-era Lowell
+      // Bennett image and use a 1993/1994 photo of Lowell or another eligible driver.
+      const { data: exactRows } = await supabase
+        .from('photos')
+        .select('photo_id, file_name, track_slug, driver_slug, year, photographer_slug, needs_review')
+        .in('driver_slug', driverSlugs)
+        .in('year', validYears)
+        .eq('needs_review', false)
+        .limit(100)
+
+      const selected: HeroPhoto[] = (exactRows || [])
+        .filter((photo: any) => photo.file_name && photo.driver_slug && driverNames.has(photo.driver_slug))
+        .map((photo: any) => {
+          const photoYear = String(photo.year)
+          const track = String(photo.track_slug || 'unknown-track')
+          return {
+            photoId: photo.photo_id,
+            imageUrl: `${SUPABASE_PHOTO_BASE}/${track}/${photoYear}/${encodeURIComponent(photo.file_name)}`,
+            driverName: driverNames.get(photo.driver_slug) || photo.driver_slug,
+            driverSlug: photo.driver_slug,
+            year: photoYear,
+            photographer: photo.photographer_slug,
+          }
+        })
 
       if (!cancelled) {
         setEligiblePhotos(selected)
