@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import TrackLogo from '@/app/tracks/[slug]/TrackLogo'
 
 export default async function SeriesEventPage({
   params,
@@ -129,12 +130,10 @@ export default async function SeriesEventPage({
 
             <div style={heroLogoRow}>
               {event.track_name && trackSlug && (
-                <Link href={`/tracks/${trackSlug}`}>
-                  <img
-                    src={`/logos/tracks/${trackSlug}.jpg`}
-                    alt={`${event.track_name} logo`}
-                    style={heroTrackLogo}
-                  />
+                <Link href={`/tracks/${trackSlug}`} style={heroTrackLogoLink}>
+                  <div style={heroTrackLogoWrap}>
+                    <TrackLogo slug={trackSlug} trackName={event.track_name} />
+                  </div>
                 </Link>
               )}
 
@@ -451,10 +450,16 @@ const heroLogoRow: CSSProperties = {
   gap: '24px',
 }
 
-const heroTrackLogo: CSSProperties = {
+const heroTrackLogoLink: CSSProperties = {
+  display: 'block',
+  textDecoration: 'none',
+}
+
+const heroTrackLogoWrap: CSSProperties = {
   width: '170px',
-  maxHeight: '100px',
-  objectFit: 'contain',
+  height: '100px',
+  overflow: 'hidden',
+  background: '#efe7d6',
 }
 
 const heroSeriesLogo: CSSProperties = {
