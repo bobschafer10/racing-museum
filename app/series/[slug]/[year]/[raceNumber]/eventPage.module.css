@@ -1,0 +1,319 @@
+.page {
+  background: #eadfc7;
+  color: #2f2417;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+}
+
+.heroSection {
+  background: linear-gradient(to bottom, #e7d9bf, #eadfc7);
+  border-bottom: 2px solid #b29364;
+}
+
+.heroInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 20px 30px;
+}
+
+.breadcrumbRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 15px;
+  margin-bottom: 22px;
+  color: #6b4a22;
+}
+
+.breadcrumbLink {
+  color: #7a5827;
+  text-decoration: none;
+}
+
+.breadcrumbSep { color: #8d7049; }
+.breadcrumbCurrent { color: #4b351d; }
+
+.heroTopRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 40px;
+  align-items: start;
+}
+
+.heroTextBlock { min-width: 0; }
+
+.eyebrow {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a5827;
+  margin-bottom: 8px;
+}
+
+.pageTitle {
+  font-size: clamp(34px, 4vw, 48px);
+  margin: 0 0 10px;
+  color: #3d2b16;
+  line-height: 1.05;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.metaLine {
+  font-size: 22px;
+  margin: 0 0 18px;
+  color: #5a3a1b;
+}
+
+.backButton {
+  display: inline-block;
+  background: #7a5827;
+  color: #fff8ea;
+  padding: 12px 18px;
+  border: 1px solid #5d3f17;
+  text-decoration: none;
+}
+
+.heroLogoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 4px;
+}
+
+.heroTrackLogoLink {
+  display: block;
+  text-decoration: none;
+}
+
+.heroTrackLogo,
+.heroSeriesLogo {
+  display: block;
+  width: 170px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.contentWrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 28px 20px 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.panel {
+  background: #ddc8a2;
+  border: 2px solid #b29364;
+  padding: 10px;
+}
+
+.panelHeader {
+  font-size: 26px;
+  font-weight: 700;
+  color: #5b3a1b;
+  margin-bottom: 10px;
+}
+
+.panelBody {
+  background: #f1e5ce;
+  border: 1px solid #c2a97d;
+  padding: 14px;
+}
+
+.resultsLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.resultsLayoutFullWidth { width: 100%; }
+
+.featureHeader,
+.featureRow {
+  display: grid;
+  grid-template-columns: 55px 70px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.featureHeader {
+  padding: 10px 0;
+  border-bottom: 2px solid #b29364;
+  font-weight: 700;
+  color: #5b3a1b;
+}
+
+.featureRow {
+  padding: 9px 0;
+  border-bottom: 1px solid #ccb48a;
+}
+
+.driverLink {
+  color: #2f2417;
+  text-decoration: none;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.dnqBox {
+  border-left: 1px solid #ccb48a;
+  padding-left: 18px;
+}
+
+.dnqTitle {
+  font-size: 26px;
+  color: #5b3a1b;
+  margin: 0 0 8px;
+}
+
+.dnqInlineRow {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid #ccb48a;
+  align-items: center;
+}
+
+.dnqTag {
+  font-weight: 700;
+  color: #5b3a1b;
+}
+
+.panelText {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+
+.inlineLink {
+  color: #7a5827;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .heroInner {
+    padding: 18px 16px 22px;
+  }
+
+  .breadcrumbRow {
+    font-size: 13px;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .heroTopRow {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .eyebrow {
+    font-size: 13px;
+  }
+
+  .pageTitle {
+    font-size: clamp(34px, 10vw, 42px);
+    line-height: 1.02;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .metaLine {
+    font-size: 19px;
+    line-height: 1.25;
+  }
+
+  .backButton {
+    padding: 11px 15px;
+    font-size: 17px;
+  }
+
+  .heroLogoRow {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+    padding-top: 0;
+  }
+
+  .heroTrackLogo,
+  .heroSeriesLogo {
+    width: min(42vw, 145px);
+    height: 92px;
+  }
+
+  .contentWrap {
+    padding: 20px 10px 30px;
+    gap: 16px;
+  }
+
+  .panel {
+    padding: 8px;
+  }
+
+  .panelHeader {
+    font-size: 24px;
+  }
+
+  .panelBody {
+    padding: 10px;
+    overflow: visible;
+  }
+
+  .resultsLayout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .featureHeader,
+  .featureRow {
+    grid-template-columns: 42px 54px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .featureHeader {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+
+  .featureRow {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .dnqBox {
+    border-left: 0;
+    border-top: 1px solid #ccb48a;
+    padding-left: 0;
+    padding-top: 16px;
+  }
+
+  .dnqTitle {
+    font-size: 24px;
+  }
+
+  .dnqInlineRow {
+    grid-template-columns: 54px minmax(0, 1fr);
+    gap: 8px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .pageTitle {
+    font-size: 32px;
+  }
+
+  .heroLogoRow {
+    gap: 12px;
+  }
+
+  .heroTrackLogo,
+  .heroSeriesLogo {
+    width: 132px;
+    height: 82px;
+  }
+}
