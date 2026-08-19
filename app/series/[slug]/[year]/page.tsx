@@ -44,13 +44,48 @@ export default async function SeriesSeasonPage({
     .eq('season_id', season.id)
     .order('finishing_position', { ascending: true })
 
-const associatedTracks = Array.from(
-  new Map(
-    (events || [])
-      .filter((event: any) => event.track_name)
-      .map((event: any) => [event.track_name, event])
-  ).values()
-)
+  const standingDriverIds = Array.from(
+    new Set(
+      (standings || [])
+        .map((row: any) => Number(row.driver_id))
+        .filter((id: number) => Number.isFinite(id))
+    )
+  )
+
+  let standingDrivers: any[] = []
+  if (standingDriverIds.length > 0) {
+    const { data } = await supabase
+      .from('Drivers')
+      .select('driver_id, slug')
+      .in('driver_id', standingDriverIds)
+    standingDrivers = data || []
+  }
+
+  const driverSlugById = new Map(
+    standingDrivers.map((driver: any) => [Number(driver.driver_id), driver.slug])
+  )
+
+  const associatedTracks = Array.from(
+    new Map(
+      (events || [])
+        .filter((event: any) => event.track_id && event.track_name)
+        .map((event: any) => [Number(event.track_id), event])
+    ).values()
+  )
+
+  const associatedTrackIds = associatedTracks.map((track: any) => Number(track.track_id))
+  let canonicalTracks: any[] = []
+  if (associatedTrackIds.length > 0) {
+    const { data } = await supabase
+      .from('Tracks')
+      .select('track_id, slug')
+      .in('track_id', associatedTrackIds)
+    canonicalTracks = data || []
+  }
+
+  const trackSlugById = new Map(
+    canonicalTracks.map((track: any) => [Number(track.track_id), track.slug])
+  )
 
   return (
     <main style={pageStyle}>
@@ -66,30 +101,28 @@ const associatedTracks = Array.from(
             <span style={breadcrumbCurrent}>{seasonYear}</span>
           </div>
 
-<div style={heroTopRow}>
-  <div style={heroTextBlock}>
-    <div style={eyebrow}>Series Season</div>
-    <h1 style={pageTitle}>{seasonYear} {series.series_name}</h1>
+          <div style={heroTopRow}>
+            <div style={heroTextBlock}>
+              <div style={eyebrow}>Series Season</div>
+              <h1 style={pageTitle}>{seasonYear} {series.series_name}</h1>
 
-    <p style={metaLine}>
-      Champion: {season.champion_name || 'TBD'}
-      {season.races ? ` • ${season.races} races` : ''}
-      {season.margin ? ` • Margin: ${season.margin}` : ''}
-    </p>
+              <p style={metaLine}>
+                Champion: {season.champion_name || 'TBD'}
+                {season.races ? ` • ${season.races} races` : ''}
+                {season.margin ? ` • Margin: ${season.margin}` : ''}
+              </p>
 
-    <Link href={`/series/${slug}`} style={backButton}>
-      Back to Series Profile
-    </Link>
-  </div>
+              <Link href={`/series/${slug}`} style={backButton}>
+                Back to Series Profile
+              </Link>
+            </div>
 
-  <img
-    src={`/logos/series/${series.slug}.jpg`}
-    alt={`${series.series_name} logo`}
-    style={seasonSeriesLogo}
-  />
-</div>
-
-          
+            <img
+              src={`/logos/series/${series.slug}.jpg`}
+              alt={`${series.series_name} logo`}
+              style={seasonSeriesLogo}
+            />
+          </div>
         </div>
       </section>
 
@@ -100,10 +133,10 @@ const associatedTracks = Array.from(
               <div>
                 {events.map((event: any) => (
                   <Link
-  key={event.id}
-  href={`/series/${slug}/${seasonYear}/${event.race_number}`}
-  style={scheduleRow}
->
+                    key={event.id}
+                    href={`/series/${slug}/${seasonYear}/${event.race_number}`}
+                    style={scheduleRow}
+                  >
                     <span style={raceNumber}>#{event.race_number}</span>
                     <span>{formatDate(event.race_date)}</span>
                     <span>{event.track_name}</span>
@@ -119,18 +152,20 @@ const associatedTracks = Array.from(
           <Panel title="Final Point Standings">
             {standings && standings.length > 0 ? (
               <div>
-                {standings.map((row: any) => (
-                  <div key={row.id} style={standingsRow}>
-                    <span style={raceNumber}>{row.finishing_position}</span>
-                    <Link
-  href={`/drivers/${slugify(row.driver_name)}`}
-  style={driverLink}
->
-  {row.driver_name}
-</Link>
-                    <span style={pointsText}>{row.points || ''}</span>
-                  </div>
-                ))}
+                {standings.map((row: any) => {
+                  const driverSlug =
+                    driverSlugById.get(Number(row.driver_id)) || slugify(row.driver_name)
+
+                  return (
+                    <div key={row.id} style={standingsRow}>
+                      <span style={raceNumber}>{row.finishing_position}</span>
+                      <Link href={`/drivers/${driverSlug}`} style={driverLink}>
+                        {row.driver_name}
+                      </Link>
+                      <span style={pointsText}>{row.points || ''}</span>
+                    </div>
+                  )
+                })}
               </div>
             ) : (
               <p style={panelText}>No standings have been added yet.</p>
@@ -138,27 +173,30 @@ const associatedTracks = Array.from(
           </Panel>
         </div>
 
-<Panel title="Associated Tracks">
-  <div style={trackLogoGrid}>
-    {associatedTracks.map((track: any) => (
-      <Link
-        key={track.track_name}
-        href={`/tracks/${slugify(track.track_name)}-wi`}
-        style={trackTile}
-      >
-        <img
-          src={`/logos/tracks/${slugify(track.track_name)}-wi.jpg`}
-          alt={`${track.track_name} logo`}
-          style={trackLogo}
-        />
+        <Panel title="Associated Tracks">
+          <div style={trackLogoGrid}>
+            {associatedTracks.map((track: any) => {
+              const trackSlug =
+                trackSlugById.get(Number(track.track_id)) || slugify(track.track_name)
 
-        <div style={trackTileName}>
-          {track.track_name}
-        </div>
-      </Link>
-    ))}
-  </div>
-</Panel>
+              return (
+                <Link
+                  key={track.track_id}
+                  href={`/tracks/${trackSlug}`}
+                  style={trackTile}
+                >
+                  <img
+                    src={`/logos/tracks/${trackSlug}.jpg`}
+                    alt={`${track.track_name} logo`}
+                    style={trackLogo}
+                  />
+
+                  <div style={trackTileName}>{track.track_name}</div>
+                </Link>
+              )
+            })}
+          </div>
+        </Panel>
 
         <Panel title="Source Attribution">
           <p style={panelText}>
@@ -325,8 +363,8 @@ const scheduleRow: CSSProperties = {
   padding: '10px 0',
   borderBottom: '1px solid #ccb48a',
   alignItems: 'center',
-textDecoration: 'none',
-color: '#2f2417',
+  textDecoration: 'none',
+  color: '#2f2417',
 }
 
 const standingsRow: CSSProperties = {
@@ -352,12 +390,6 @@ const panelText: CSSProperties = {
   fontSize: '17px',
   lineHeight: 1.7,
   margin: '0 0 10px',
-}
-
-const seasonYearStyle: CSSProperties = {
-  fontWeight: 700,
-  color: '#5b3a1b',
-  fontSize: '22px',
 }
 
 const driverLink: CSSProperties = {

@@ -51,6 +51,40 @@ export default async function SeriesEventPage({
     .order('result_section', { ascending: true })
     .order('finishing_position', { ascending: true })
 
+  const resultDriverIds = Array.from(
+    new Set(
+      (results || [])
+        .map((row: any) => Number(row.driver_id))
+        .filter((id: number) => Number.isFinite(id))
+    )
+  )
+
+  let resultDrivers: any[] = []
+  if (resultDriverIds.length > 0) {
+    const { data } = await supabase
+      .from('Drivers')
+      .select('driver_id, slug')
+      .in('driver_id', resultDriverIds)
+    resultDrivers = data || []
+  }
+
+  const driverSlugById = new Map(
+    resultDrivers.map((driver: any) => [Number(driver.driver_id), driver.slug])
+  )
+
+  let trackSlug = event.track_name ? slugify(event.track_name) : ''
+  if (event.track_id) {
+    const { data: track } = await supabase
+      .from('Tracks')
+      .select('slug')
+      .eq('track_id', event.track_id)
+      .maybeSingle()
+
+    if (track?.slug) {
+      trackSlug = track.slug
+    }
+  }
+
   const featureResults =
     results?.filter((row: any) => row.result_section !== 'DNQ') ?? []
 
@@ -94,12 +128,14 @@ export default async function SeriesEventPage({
             </div>
 
             <div style={heroLogoRow}>
-              {event.track_name && (
-                <img
-                  src={`/logos/tracks/${slugify(event.track_name)}-wi.jpg`}
-                  alt={`${event.track_name} logo`}
-                  style={heroTrackLogo}
-                />
+              {event.track_name && trackSlug && (
+                <Link href={`/tracks/${trackSlug}`}>
+                  <img
+                    src={`/logos/tracks/${trackSlug}.jpg`}
+                    alt={`${event.track_name} logo`}
+                    style={heroTrackLogo}
+                  />
+                </Link>
               )}
 
               <img
@@ -124,18 +160,20 @@ export default async function SeriesEventPage({
                     <span>Driver</span>
                   </div>
 
-                  {featureResults.map((row: any) => (
-                    <div key={row.id} style={featureRow}>
-                      <span>{row.finishing_position || ''}</span>
-                      <span>{row.car_number || ''}</span>
-                      <Link
-                        href={`/drivers/${slugify(row.driver_name)}`}
-                        style={driverLink}
-                      >
-                        {row.driver_name || ''}
-                      </Link>
-                    </div>
-                  ))}
+                  {featureResults.map((row: any) => {
+                    const driverSlug =
+                      driverSlugById.get(Number(row.driver_id)) || slugify(row.driver_name)
+
+                    return (
+                      <div key={row.id} style={featureRow}>
+                        <span>{row.finishing_position || ''}</span>
+                        <span>{row.car_number || ''}</span>
+                        <Link href={`/drivers/${driverSlug}`} style={driverLink}>
+                          {row.driver_name || ''}
+                        </Link>
+                      </div>
+                    )
+                  })}
                 </div>
               ) : (
                 <p style={panelText}>
@@ -148,17 +186,19 @@ export default async function SeriesEventPage({
               <aside style={dnqBox}>
                 <h3 style={dnqTitle}>Did Not Qualify</h3>
                 <div>
-                  {dnqResults.map((row: any) => (
-                    <div key={row.id} style={dnqInlineRow}>
-                      <span style={dnqTag}>DNQ</span>
-                      <Link
-                        href={`/drivers/${slugify(row.driver_name)}`}
-                        style={driverLink}
-                      >
-                        {row.driver_name || ''}
-                      </Link>
-                    </div>
-                  ))}
+                  {dnqResults.map((row: any) => {
+                    const driverSlug =
+                      driverSlugById.get(Number(row.driver_id)) || slugify(row.driver_name)
+
+                    return (
+                      <div key={row.id} style={dnqInlineRow}>
+                        <span style={dnqTag}>DNQ</span>
+                        <Link href={`/drivers/${driverSlug}`} style={driverLink}>
+                          {row.driver_name || ''}
+                        </Link>
+                      </div>
+                    )
+                  })}
                 </div>
               </aside>
             )}
