@@ -9,37 +9,21 @@ export default function TrackLogo({
   slug: string
   trackName: string
 }) {
-  const candidates = [
-    `/logos/tracks/${slug}.jpg`,
-    `/logos/tracks/${slug}.png`,
-    `https://raw.githubusercontent.com/bobschafer10/racing-museum/main/public/logos/tracks/${slug}.jpg`,
-    `https://raw.githubusercontent.com/bobschafer10/racing-museum/main/public/logos/tracks/${slug}.png`,
-  ]
+  const logoPath = `/api/track-logo/${encodeURIComponent(slug)}`
 
   return (
     <div style={logoWrap}>
       <img
-        src={candidates[0]}
+        src={logoPath}
         alt={`${trackName} logo`}
         style={logoImage}
-        data-logo-index="0"
         onError={(e) => {
           const target = e.currentTarget
-          const currentIndex = Number(target.dataset.logoIndex || '0')
-          const nextIndex = currentIndex + 1
-
-          if (nextIndex < candidates.length) {
-            target.dataset.logoIndex = String(nextIndex)
-            target.src = candidates[nextIndex]
-            return
-          }
-
           target.style.display = 'none'
           const fallbackEl = target.nextElementSibling as HTMLElement | null
           if (fallbackEl) fallbackEl.style.display = 'flex'
         }}
       />
-
       <div style={fallbackStyle}>
         <div style={fallbackLabel}>Track Logo</div>
         <div style={fallbackName}>{trackName}</div>
@@ -49,47 +33,21 @@ export default function TrackLogo({
 }
 
 const logoWrap: CSSProperties = {
-  width: '100%',
-  height: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  background: '#efe7d6',
-  overflow: 'hidden',
+  width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#efe7d6', overflow: 'hidden',
 }
 
 const logoImage: CSSProperties = {
-  width: '100%',
-  height: '100%',
-  objectFit: 'contain',
-  display: 'block',
+  width: '100%', height: '100%', objectFit: 'contain', display: 'block',
 }
 
 const fallbackStyle: CSSProperties = {
-  width: '100%',
-  height: '100%',
-  display: 'none',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  textAlign: 'center',
-  padding: '12px',
-  color: '#4a3218',
-  border: '1px solid #b29364',
-  background: '#f1e5ce',
+  width: '100%', height: '100%', display: 'none', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '12px', color: '#4a3218', border: '1px solid #b29364', background: '#f1e5ce',
 }
 
 const fallbackLabel: CSSProperties = {
-  fontSize: '11px',
-  textTransform: 'uppercase',
-  letterSpacing: '1px',
-  color: '#7a5827',
-  marginBottom: '6px',
-  fontWeight: 700,
+  fontSize: '11px', textTransform: 'uppercase', letterSpacing: '1px', color: '#7a5827', marginBottom: '6px', fontWeight: 700,
 }
 
 const fallbackName: CSSProperties = {
-  fontSize: '17px',
-  fontWeight: 800,
-  lineHeight: 1.15,
+  fontSize: '17px', fontWeight: 800, lineHeight: 1.15,
 }
