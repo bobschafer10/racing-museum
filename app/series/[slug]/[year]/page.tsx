@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import TrackLogo from '@/app/tracks/[slug]/TrackLogo'
 
 export default async function SeriesSeasonPage({
   params,
@@ -185,11 +186,9 @@ export default async function SeriesSeasonPage({
                   href={`/tracks/${trackSlug}`}
                   style={trackTile}
                 >
-                  <img
-                    src={`/logos/tracks/${trackSlug}.jpg`}
-                    alt={`${track.track_name} logo`}
-                    style={trackLogo}
-                  />
+                  <div style={trackLogoWrap}>
+                    <TrackLogo slug={trackSlug} trackName={track.track_name} />
+                  </div>
 
                   <div style={trackTileName}>{track.track_name}</div>
                 </Link>
@@ -435,11 +434,12 @@ const trackTile: CSSProperties = {
   color: '#2f2417',
 }
 
-const trackLogo: CSSProperties = {
+const trackLogoWrap: CSSProperties = {
   width: '100%',
   height: '90px',
-  objectFit: 'contain',
   marginBottom: '10px',
+  overflow: 'hidden',
+  background: '#efe7d6',
 }
 
 const trackTileName: CSSProperties = {
