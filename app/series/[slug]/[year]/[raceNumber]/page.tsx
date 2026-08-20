@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { Buffer } from 'node:buffer'
 import { supabase } from '@/lib/supabase'
 import styles from './eventPage.module.css'
 
@@ -78,8 +77,6 @@ export default async function SeriesEventPage({
     if (track?.slug) trackSlug = track.slug
   }
 
-  const trackLogoSrc = trackSlug ? await getTrackLogoDataUrl(trackSlug) : null
-
   const featureResults = results?.filter((row: any) => row.result_section !== 'DNQ') ?? []
   const dnqResults = results?.filter((row: any) => row.result_section === 'DNQ') ?? []
   const hasDnqs = dnqResults.length > 0
@@ -114,9 +111,13 @@ export default async function SeriesEventPage({
             </div>
 
             <div className={styles.heroLogoRow}>
-              {event.track_name && trackSlug && trackLogoSrc && (
+              {event.track_name && trackSlug && (
                 <Link href={`/tracks/${trackSlug}`} className={styles.heroTrackLogoLink}>
-                  <img src={trackLogoSrc} alt={`${event.track_name} logo`} className={styles.heroTrackLogo} />
+                  <img
+                    src={`/logos/tracks/${trackSlug}.jpg?v=20260820`}
+                    alt={`${event.track_name} logo`}
+                    className={styles.heroTrackLogo}
+                  />
                 </Link>
               )}
               <img
@@ -132,7 +133,7 @@ export default async function SeriesEventPage({
       <section className={styles.contentWrap}>
         <Panel title="Feature Results">
           <div className={hasDnqs ? styles.resultsLayout : styles.resultsLayoutFullWidth}>
-            <div>
+            <div className={styles.featureTable}>
               {featureResults.length > 0 ? (
                 <div>
                   <div className={styles.featureHeader}>
@@ -200,23 +201,6 @@ function Panel({ title, children }: { title: string; children: React.ReactNode }
       <div className={styles.panelBody}>{children}</div>
     </div>
   )
-}
-
-async function getTrackLogoDataUrl(trackSlug: string) {
-  const extensions = ['jpg', 'png']
-  for (const ext of extensions) {
-    try {
-      const url = `https://raw.githubusercontent.com/bobschafer10/racing-museum/main/public/logos/tracks/${trackSlug}.${ext}`
-      const response = await fetch(url, { next: { revalidate: 86400 } })
-      if (!response.ok) continue
-      const mime = response.headers.get('content-type') || (ext === 'png' ? 'image/png' : 'image/jpeg')
-      const bytes = Buffer.from(await response.arrayBuffer())
-      return `data:${mime};base64,${bytes.toString('base64')}`
-    } catch {
-      // Try the next extension.
-    }
-  }
-  return null
 }
 
 function formatDate(value?: string | null) {
