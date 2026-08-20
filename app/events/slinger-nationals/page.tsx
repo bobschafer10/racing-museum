@@ -83,14 +83,20 @@ export default function SlingerNationalsPage() {
         <section style={yearSection}>
           <div style={sectionTitle}>Year-by-Year Archive</div>
           <p style={yearIntro}>
-            Individual race pages will become active as the audited Slinger Nationals archive is connected to the Museum database. The historical inventory itself is complete from 1980 through 2026.
+            Select a year to open its Slinger Nationals archive page. Race-result tables will populate as the audited archive is connected to the Museum database.
           </p>
           <div style={yearGrid}>
             {Array.from({ length: 47 }, (_, i) => 2026 - i).map((year) => (
-              <div key={year} style={yearCard}>
+              <Link
+                key={year}
+                href={`/events/slinger-nationals/${year}`}
+                style={yearCard}
+                aria-label={`Open ${year} Slinger Nationals archive`}
+              >
                 <div style={yearNumber}>{year}</div>
                 <div style={yearStatus}>{year < 2000 ? 'Series era' : 'Annual event'}</div>
-              </div>
+                {mrnYears.includes(year) && <div style={sourceBadge}>MRN points</div>}
+              </Link>
             ))}
           </div>
         </section>
@@ -145,6 +151,7 @@ const statusValue: CSSProperties = { fontSize: '17px', fontWeight: 700, marginTo
 const yearSection: CSSProperties = { marginTop: '36px' }
 const yearIntro: CSSProperties = { maxWidth: '900px', fontSize: '15px', lineHeight: 1.55, margin: '-6px 0 18px', color: '#5a4630' }
 const yearGrid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(105px,1fr))', gap: '8px' }
-const yearCard: CSSProperties = { background: '#f1e3c8', border: '1px solid #b29364', padding: '11px 9px', textAlign: 'center' }
+const yearCard: CSSProperties = { display: 'block', background: '#f1e3c8', border: '1px solid #b29364', padding: '11px 9px', textAlign: 'center', textDecoration: 'none', color: '#2f2417' }
 const yearNumber: CSSProperties = { fontSize: '20px', fontWeight: 700, color: '#3d2b16' }
 const yearStatus: CSSProperties = { fontSize: '11px', color: '#7a5827', marginTop: '3px', textTransform: 'uppercase', letterSpacing: '.5px' }
+const sourceBadge: CSSProperties = { marginTop: '7px', display: 'inline-block', padding: '3px 6px', background: '#7a5827', color: '#fff8ea', fontSize: '10px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.4px' }
