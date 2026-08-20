@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { CSSProperties } from 'react'
+import { getSlingerNationalsMrnStandings } from '@/lib/special-events/slingerNationals'
 
 const MIN_YEAR = 1980
 const MAX_YEAR = 2026
@@ -24,6 +25,8 @@ export default async function SlingerNationalsYearPage({
     seasonYear === 1981 || seasonYear === 1982 ? 4 :
     seasonYear >= 1983 && seasonYear <= 1998 ? 3 :
     seasonYear === 1999 ? 2 : 1
+
+  const mrnStandings = getSlingerNationalsMrnStandings(seasonYear)
 
   return (
     <main style={pageStyle}>
@@ -65,11 +68,27 @@ export default async function SlingerNationalsYearPage({
         </Panel>
 
         <Panel title="Point Standings">
-          {mrnYears.has(seasonYear) ? (
-            <p style={panelText}>
-              Midwest Racing News provides supplemental final Slinger Nationals point standings for {seasonYear}.
-              Those published totals will be retained with source attribution rather than reconstructed.
-            </p>
+          {mrnStandings ? (
+            <div>
+              <div style={sourceNote}>
+                <strong>{mrnStandings.source}</strong> — {mrnStandings.coverage}
+              </div>
+              <div style={standingsHeader}>
+                <span>Pos.</span>
+                <span>Driver</span>
+                <span style={{ textAlign: 'right' }}>Points</span>
+              </div>
+              {mrnStandings.rows.map((row) => (
+                <div key={`${seasonYear}-${row.position}-${row.driver}`} style={standingsRow}>
+                  <strong>{row.position}</strong>
+                  <span>{row.driver}</span>
+                  <strong style={{ textAlign: 'right' }}>{row.points.toLocaleString('en-US')}</strong>
+                </div>
+              ))}
+              <p style={standingsFoot}>
+                Only clearly confirmed published positions are shown. Missing positions or point totals are not reconstructed.
+              </p>
+            </div>
           ) : (
             <p style={panelText}>
               Available point standings will be shown exactly as preserved by the historical source. Missing point totals
@@ -127,4 +146,8 @@ const panelHeader: CSSProperties = { fontSize: '24px', fontWeight: 700, color: '
 const panelBody: CSSProperties = { background: '#f1e5ce', border: '1px solid #c2a97d', padding: '14px' }
 const panelText: CSSProperties = { fontSize: '16px', lineHeight: 1.65, margin: 0 }
 const statusBox: CSSProperties = { marginTop: '12px', padding: '10px 12px', background: '#eadfc7', border: '1px solid #b89b6d', fontWeight: 700, color: '#6b4a22' }
+const sourceNote: CSSProperties = { fontSize: '14px', color: '#6b4a22', marginBottom: '12px' }
+const standingsHeader: CSSProperties = { display: 'grid', gridTemplateColumns: '70px 1fr 110px', gap: '12px', padding: '8px 0', borderBottom: '2px solid #b29364', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '.7px', color: '#7a5827', fontWeight: 700 }
+const standingsRow: CSSProperties = { display: 'grid', gridTemplateColumns: '70px 1fr 110px', gap: '12px', padding: '9px 0', borderBottom: '1px solid #ccb48a', alignItems: 'center' }
+const standingsFoot: CSSProperties = { fontSize: '13px', lineHeight: 1.5, color: '#6b4a22', margin: '12px 0 0' }
 const backButton: CSSProperties = { display: 'inline-block', justifySelf: 'start', background: '#7a5827', color: '#fff8ea', padding: '10px 14px', border: '1px solid #5d3f17', textDecoration: 'none', fontWeight: 700 }
