@@ -27,6 +27,9 @@ export default async function SlingerNationalsYearPage({
     seasonYear === 1999 ? 2 : 1
 
   const mrnStandings = getSlingerNationalsMrnStandings(seasonYear)
+  const champion = mrnStandings?.rows.find((row) => row.position === 1) ?? null
+  const previousYear = seasonYear > MIN_YEAR ? seasonYear - 1 : null
+  const nextYear = seasonYear < MAX_YEAR ? seasonYear + 1 : null
 
   return (
     <main style={pageStyle}>
@@ -54,11 +57,22 @@ export default async function SlingerNationalsYearPage({
             <Stat label="Archive Era" value={seriesEra ? 'Series' : 'Annual'} />
             <Stat label="Race Events" value={String(raceCount)} />
             <Stat label="Points Source" value={mrnYears.has(seasonYear) ? 'MRN + TTT' : 'The Third Turn'} />
+            {champion ? <Stat label="Published Champion" value={champion.driver} /> : null}
           </div>
         </div>
       </section>
 
       <section style={contentWrap}>
+        <div style={yearNav}>
+          {previousYear ? (
+            <Link href={`/events/slinger-nationals/${previousYear}`} style={yearNavLink}>← {previousYear}</Link>
+          ) : <span />}
+          <Link href="/events/slinger-nationals" style={yearNavCenter}>All Years</Link>
+          {nextYear ? (
+            <Link href={`/events/slinger-nationals/${nextYear}`} style={yearNavLink}>{nextYear} →</Link>
+          ) : <span />}
+        </div>
+
         <Panel title="Race Results">
           <p style={panelText}>
             The audited race inventory for this year has been preserved. Full feature finishes, DNQs where listed,
@@ -136,11 +150,14 @@ const breadcrumbLink: CSSProperties = { color: '#7a5827', textDecoration: 'none'
 const eyebrow: CSSProperties = { fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase', color: '#7a5827', marginBottom: '7px' }
 const pageTitle: CSSProperties = { fontSize: '52px', margin: '0 0 10px', color: '#3d2b16', lineHeight: 1.05 }
 const heroTagline: CSSProperties = { fontSize: '22px', fontStyle: 'italic', color: '#6f4d24', margin: 0 }
-const statRow: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(3,minmax(0,1fr))', gap: '12px', marginTop: '22px', maxWidth: '760px' }
+const statRow: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(170px,1fr))', gap: '12px', marginTop: '22px', maxWidth: '940px' }
 const statCard: CSSProperties = { background: '#f1e5ce', border: '1px solid #b89b6d', padding: '14px' }
 const statLabel: CSSProperties = { fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.8px', color: '#7a5827' }
 const statValue: CSSProperties = { fontSize: '22px', fontWeight: 700, color: '#3d2b16', marginTop: '4px' }
 const contentWrap: CSSProperties = { maxWidth: '1100px', margin: '0 auto', padding: '28px 20px 44px', display: 'grid', gap: '18px' }
+const yearNav: CSSProperties = { display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center', gap: '12px' }
+const yearNavLink: CSSProperties = { color: '#6a4a1f', fontWeight: 700, textDecoration: 'none' }
+const yearNavCenter: CSSProperties = { color: '#fff8ea', background: '#7a5827', border: '1px solid #5d3f17', padding: '7px 11px', textDecoration: 'none', fontWeight: 700 }
 const panel: CSSProperties = { background: '#ddc8a2', border: '2px solid #b29364', padding: '10px' }
 const panelHeader: CSSProperties = { fontSize: '24px', fontWeight: 700, color: '#5b3a1b', marginBottom: '8px' }
 const panelBody: CSSProperties = { background: '#f1e5ce', border: '1px solid #c2a97d', padding: '14px' }
