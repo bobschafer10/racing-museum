@@ -13,7 +13,7 @@
 .heroInner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 28px 20px 30px;
+  padding: 24px 20px 26px;
 }
 
 .breadcrumbRow {
@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   gap: 8px;
   font-size: 15px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   color: #6b4a22;
 }
 
@@ -35,9 +35,9 @@
 
 .heroTopRow {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 40px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 28px;
+  align-items: center;
 }
 
 .heroTextBlock { min-width: 0; }
@@ -56,7 +56,7 @@
   color: #3d2b16;
   line-height: 1.05;
   overflow-wrap: normal;
-  word-break: normal;
+  word-break: keep-all;
   hyphens: none;
 }
 
@@ -76,32 +76,38 @@
 }
 
 .heroLogoRow {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding-top: 4px;
+  justify-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .heroTrackLogoLink {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
   text-decoration: none;
 }
 
 .heroTrackLogo,
 .heroSeriesLogo {
   display: block;
-  width: 170px;
-  height: 100px;
+  width: 100%;
+  max-width: 170px;
+  height: 105px;
   object-fit: contain;
 }
 
 .contentWrap {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 28px 20px 40px;
+  padding: 24px 20px 36px;
   display: grid;
-  gap: 20px;
+  gap: 18px;
 }
 
 .panel {
@@ -121,6 +127,7 @@
   background: #f1e5ce;
   border: 1px solid #c2a97d;
   padding: 14px;
+  min-width: 0;
 }
 
 .resultsLayout {
@@ -131,6 +138,7 @@
 }
 
 .resultsLayoutFullWidth { width: 100%; }
+.featureTable { min-width: 0; }
 
 .featureHeader,
 .featureRow {
@@ -195,125 +203,173 @@
   font-weight: 700;
 }
 
-@media (max-width: 760px) {
-  .heroInner {
-    padding: 18px 16px 22px;
-  }
-
-  .breadcrumbRow {
-    font-size: 13px;
-    gap: 6px;
-    margin-bottom: 16px;
-  }
-
+@media (max-width: 900px) {
   .heroTopRow {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) 300px;
     gap: 20px;
-  }
-
-  .eyebrow {
-    font-size: 13px;
-  }
-
-  .pageTitle {
-    font-size: clamp(34px, 10vw, 42px);
-    line-height: 1.02;
-    text-align: left;
-    max-width: 100%;
-  }
-
-  .metaLine {
-    font-size: 19px;
-    line-height: 1.25;
-  }
-
-  .backButton {
-    padding: 11px 15px;
-    font-size: 17px;
-  }
-
-  .heroLogoRow {
-    width: 100%;
-    justify-content: center;
-    gap: 18px;
-    padding-top: 0;
   }
 
   .heroTrackLogo,
   .heroSeriesLogo {
-    width: min(42vw, 145px);
-    height: 92px;
+    max-width: 135px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 700px) {
+  .heroInner {
+    padding: 16px 14px 18px;
+  }
+
+  .breadcrumbRow {
+    display: none;
+  }
+
+  .heroTopRow {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .pageTitle {
+    font-size: 30px;
+    line-height: 1.08;
+    margin-bottom: 8px;
+    text-align: left;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .metaLine {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 14px;
+  }
+
+  .backButton {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+  .heroLogoRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    justify-items: center;
+    padding-top: 2px;
+  }
+
+  .heroTrackLogo,
+  .heroSeriesLogo {
+    width: 100%;
+    max-width: 132px;
+    height: 82px;
   }
 
   .contentWrap {
-    padding: 20px 10px 30px;
-    gap: 16px;
+    padding: 16px 8px 28px;
+    gap: 14px;
   }
 
   .panel {
-    padding: 8px;
+    padding: 6px;
   }
 
   .panelHeader {
     font-size: 24px;
+    margin-bottom: 7px;
   }
 
   .panelBody {
     padding: 10px;
-    overflow: visible;
   }
 
   .resultsLayout {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 18px;
   }
 
   .featureHeader,
   .featureRow {
-    grid-template-columns: 42px 54px minmax(0, 1fr);
-    gap: 8px;
+    grid-template-columns: 38px 50px minmax(0, 1fr);
+    gap: 7px;
   }
 
   .featureHeader {
-    font-size: 15px;
-    padding: 8px 0;
+    font-size: 14px;
+    padding: 7px 0;
   }
 
   .featureRow {
-    font-size: 16px;
-    padding: 8px 0;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 7px 0;
+  }
+
+  .driverLink {
+    overflow-wrap: anywhere;
   }
 
   .dnqBox {
     border-left: 0;
     border-top: 1px solid #ccb48a;
     padding-left: 0;
-    padding-top: 16px;
+    padding-top: 14px;
   }
 
   .dnqTitle {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 5px;
   }
 
   .dnqInlineRow {
-    grid-template-columns: 54px minmax(0, 1fr);
-    gap: 8px;
-    font-size: 16px;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 7px;
+    font-size: 15px;
+    padding: 7px 0;
   }
 }
 
 @media (max-width: 390px) {
+  .heroInner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .pageTitle {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  .metaLine {
+    font-size: 17px;
   }
 
   .heroLogoRow {
-    gap: 12px;
+    gap: 10px;
   }
 
   .heroTrackLogo,
   .heroSeriesLogo {
-    width: 132px;
-    height: 82px;
+    max-width: 120px;
+    height: 76px;
+  }
+
+  .contentWrap {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .panelHeader {
+    font-size: 22px;
+  }
+
+  .featureHeader,
+  .featureRow {
+    grid-template-columns: 34px 46px minmax(0, 1fr);
+    gap: 6px;
   }
 }
