@@ -49,6 +49,7 @@ export default function RootLayout({
               <Link href="/tracks" style={navLink}>Tracks</Link>
               <Link href="/drivers" style={navLink}>Drivers</Link>
               <Link href="/series" style={navLink}>Series</Link>
+              <Link href="/events" style={navLink}>Special Events</Link>
               <Link href="/results" style={navLink}>Results</Link>
               <Link href="/media" style={navLink}>Media Archive</Link>
             </div>
