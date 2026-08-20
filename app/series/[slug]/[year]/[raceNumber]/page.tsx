@@ -66,8 +66,12 @@ export default async function SeriesEventPage({
     resultDrivers.map((driver: any) => [Number(driver.driver_id), driver.slug])
   )
 
-  let trackSlug = event.track_name ? slugify(event.track_name) : ''
-  if (event.track_id) {
+  // SeriesEvents now stores the canonical Tracks.slug directly. This avoids
+  // falling back to a name-generated slug such as "oshkosh-speed-zone" when
+  // the real Museum asset is "oshkosh-speed-zone-wi.jpg".
+  let trackSlug = event.track_slug || ''
+
+  if (!trackSlug && event.track_id) {
     const { data: track } = await supabase
       .from('Tracks')
       .select('slug')
@@ -76,6 +80,18 @@ export default async function SeriesEventPage({
 
     if (track?.slug) trackSlug = track.slug
   }
+
+  if (!trackSlug && event.track_name) {
+    const { data: trackByName } = await supabase
+      .from('Tracks')
+      .select('slug')
+      .eq('track_name', event.track_name)
+      .maybeSingle()
+
+    if (trackByName?.slug) trackSlug = trackByName.slug
+  }
+
+  if (!trackSlug) trackSlug = slugify(event.track_name)
 
   const featureResults = results?.filter((row: any) => row.result_section !== 'DNQ') ?? []
   const dnqResults = results?.filter((row: any) => row.result_section === 'DNQ') ?? []
@@ -114,7 +130,7 @@ export default async function SeriesEventPage({
               {event.track_name && trackSlug && (
                 <Link href={`/tracks/${trackSlug}`} className={styles.heroTrackLogoLink}>
                   <img
-                    src={`/logos/tracks/${trackSlug}.jpg?v=20260820`}
+                    src={`/logos/tracks/${trackSlug}.jpg?v=20260820b`}
                     alt={`${event.track_name} logo`}
                     className={styles.heroTrackLogo}
                   />
