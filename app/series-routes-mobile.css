@@ -1,0 +1,206 @@
+/* Mobile corrections for nested Series routes.
+   This file intentionally loads AFTER series-mobile.css.
+
+   series-mobile.css contains profile-page rules keyed from the presence of an
+   /series link. Season and event pages also contain that breadcrumb, so those
+   profile rules can otherwise squeeze nested pages into the profile layout.
+*/
+
+@media (max-width: 768px) {
+  /* =========================
+     SERIES EVENT PAGE
+     /series/[slug]/[year]/[raceNumber]
+
+     The event page is the nested Series route whose root <main> is styled by
+     a CSS module rather than inline styles. Restore its own full-width mobile
+     layout after the broader profile rules have run.
+  ========================= */
+  body > main > main:not([style]):has(a[href="/series"]) {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: clip !important;
+  }
+
+  body > main > main:not([style]):has(a[href="/series"]) > section:first-child > div {
+    padding: 12px !important;
+  }
+
+  body > main > main:not([style]):has(a[href="/series"]) > section:first-child > div > div:nth-child(2) {
+    display: block !important;
+  }
+
+  /* Undo the 190px profile-logo rule that was landing on event hero text. */
+  body > main > main:not([style]):has(a[href="/series"]) > section:first-child > div > div:nth-child(2) > div:first-child {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+  }
+
+  body > main > main:not([style]):has(a[href="/series"]) > section:first-child h1 {
+    width: 100% !important;
+    max-width: none !important;
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.08 !important;
+    text-align: left !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    hyphens: none !important;
+    margin: 0 0 7px !important;
+  }
+
+  body > main > main:not([style]):has(a[href="/series"]) > section:first-child p {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  body > main > main:not([style]):has(a[href="/series"]) > section:nth-child(2) {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 14px 12px 26px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* =========================
+     SERIES SEASON PAGE
+     /series/[slug]/[year]
+
+     The race schedule rows have a distinctive inline desktop grid. That lets
+     us scope these corrections to season pages without changing the profile.
+  ========================= */
+  body > main > main:has(a[style*="60px 170px"]) {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: clip !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:first-child > div {
+    padding: 14px 12px 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:first-child > div > div:nth-child(2) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  /* Undo profile logo sizing accidentally applied to the season text block. */
+  body > main > main:has(a[style*="60px 170px"]) > section:first-child > div > div:nth-child(2) > div:first-child {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:first-child h1 {
+    width: 100% !important;
+    max-width: none !important;
+    font-size: clamp(30px, 8.5vw, 38px) !important;
+    line-height: 1.08 !important;
+    text-align: left !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    hyphens: none !important;
+    margin: 0 0 8px !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:first-child p {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:first-child img {
+    width: min(190px, 58vw) !important;
+    max-width: 190px !important;
+    height: auto !important;
+    max-height: 120px !important;
+    margin: 0 auto !important;
+    justify-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:nth-child(2) {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 14px 12px 28px !important;
+    box-sizing: border-box !important;
+    gap: 14px !important;
+  }
+
+  /* Desktop Race Schedule / Standings columns become a single mobile stream. */
+  body > main > main:has(a[style*="60px 170px"]) > section:nth-child(2) > div:first-child {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    gap: 14px !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:nth-child(2) > div:first-child > div,
+  body > main > main:has(a[style*="60px 170px"]) > section:nth-child(2) > div:not(:first-child) {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Race schedule: number / date / track, then winner on a clean second line. */
+  body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] {
+    display: grid !important;
+    grid-template-columns: 38px minmax(112px, 0.9fr) minmax(0, 1.1fr) !important;
+    gap: 6px 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 10px 0 !important;
+    align-items: start !important;
+    box-sizing: border-box !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] > span,
+  body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] > strong {
+    min-width: 0 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    hyphens: none !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] > strong {
+    grid-column: 2 / -1 !important;
+    padding-top: 2px !important;
+  }
+
+  /* Final standings keep position and points compact while protecting names. */
+  body > main > main:has(a[style*="60px 170px"]) div[style*="60px 1fr 100px"] {
+    grid-template-columns: 38px minmax(0, 1fr) 64px !important;
+    gap: 8px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) div[style*="repeat(auto-fit, minmax(180px"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] {
+    grid-template-columns: 32px minmax(102px, 0.9fr) minmax(0, 1.1fr) !important;
+    gap: 6px 8px !important;
+    font-size: 15px !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) > section:nth-child(2),
+  body > main > main:not([style]):has(a[href="/series"]) > section:nth-child(2) {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
