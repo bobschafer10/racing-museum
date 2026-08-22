@@ -1,9 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
+  },
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/logos/tracks/:slug.jpg",
+          destination: "/api/track-logo/:slug",
+        },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
   },
 };
 
