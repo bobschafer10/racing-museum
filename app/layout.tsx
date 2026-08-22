@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./series-mobile.css";
+import "./series-routes-mobile.css";
 import Link from "next/link"
 
 const geistSans = Geist({
