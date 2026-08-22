@@ -110,14 +110,14 @@ export default async function SeriesProfilePage({
   const { data: tracks, error: tracksError } = trackIds.length
     ? await supabase
         .from('Tracks')
-        .select('track_id, track_name, slug')
-        .in('track_id', trackIds)
+        .select('id, track_id, track_name, slug')
+        .in('id', trackIds)
     : { data: [], error: null }
 
   if (tracksError) console.error('Tracks error:', tracksError)
 
   const trackById = new Map(
-    (tracks || []).map((track: any) => [Number(track.track_id), track])
+    (tracks || []).map((track: any) => [Number(track.id), track])
   )
 
   const associatedTracks = Array.from(
