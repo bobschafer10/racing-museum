@@ -151,7 +151,7 @@
     box-sizing: border-box !important;
   }
 
-  /* Race schedule: number / date / track, then winner on a clean second line. */
+  /* Race schedule: number / date / winner, then track on a clean second line. */
   body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] {
     display: grid !important;
     grid-template-columns: 38px minmax(112px, 0.9fr) minmax(0, 1.1fr) !important;
@@ -173,7 +173,14 @@
   }
 
   body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] > strong {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    padding-top: 0 !important;
+  }
+
+  body > main > main:has(a[style*="60px 170px"]) a[style*="60px 170px"] > span:nth-child(3) {
     grid-column: 2 / -1 !important;
+    grid-row: 2 !important;
     padding-top: 2px !important;
   }
 
