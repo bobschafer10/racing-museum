@@ -21,6 +21,7 @@ const completedSeries = new Set([
   'badger-modified-tour',
   'badger-stock-car-tour',
   'big-eight-late-model-series',
+  'central-wisconsin-steel-frame-challenge',
   'wisconsin-challenge-series',
   'wisconsin-short-track-series',
 ])
@@ -35,77 +36,23 @@ export default async function SeriesPage() {
 
   const rows: SeriesRow[] = seriesRows ?? []
 
-  const featuredSeries =
-    rows.length > 0 ? rows[Math.floor(Math.random() * rows.length)] : null
-
-  const firstSeriesYear =
-  rows
-    .flatMap((s) => {
-      const values = [s.first_year, s.last_year, s.years_active]
-      return values
-        .map((value) => String(value ?? '').match(/\d{4}/)?.[0])
-        .filter(Boolean)
-        .map(Number)
-    })
-    .filter((y): y is number => Number.isFinite(y))
-    .sort((a, b) => a - b)[0] ?? 'TBD'
-
-  const activeSeriesCount = rows.filter(
-    (s) => !s.last_year || s.last_year >= 2020
-  ).length
+  const featuredSeries = rows.length > 0 ? rows[Math.floor(Math.random() * rows.length)] : null
+  const firstSeriesYear = rows.flatMap((s) => [s.first_year, s.last_year, s.years_active].map((value) => String(value ?? '').match(/\d{4}/)?.[0]).filter(Boolean).map(Number)).filter((y): y is number => Number.isFinite(y)).sort((a, b) => a - b)[0] ?? 'TBD'
+  const activeSeriesCount = rows.filter((s) => !s.last_year || s.last_year >= 2020).length
 
   return (
     <main style={pageStyle}>
       <section style={heroSection}>
         <div style={heroWatermark}>SERIES</div>
-        <div style={heroInner}>
-          <div style={heroGrid}>
-            <div>
-              <div style={eyebrow}>Museum Collection</div>
-              <h1 style={pageTitle}>Series</h1>
-              <p style={heroTagline}>Preserving the organizations, tours, and weekly divisions that shaped Midwestern racing.</p>
-              <p style={pageIntro}>Browse racing series from across the Upper Midwest archive, including touring groups, weekly divisions, sanctioning bodies, and historic organizations.</p>
-              <div style={archiveStatsRow}>
-                <div style={archiveStatCard}><div style={archiveStatLabel}>Series Archived</div><div style={archiveStatValue}>{rows.length}</div></div>
-                <div style={archiveStatCard}><div style={archiveStatLabel}>Earliest Record</div><div style={archiveStatValue}>{firstSeriesYear}</div></div>
-                <div style={archiveStatCard}><div style={archiveStatLabel}>Modern / Active</div><div style={archiveStatValue}>{activeSeriesCount}</div></div>
-              </div>
-            </div>
-            {featuredSeries ? (
-              <div style={featuredCard}>
-                <div style={featuredLabel}>Featured Series</div>
-                <div style={featuredLogoWrap}><SeriesLogo slug={featuredSeries.slug} seriesName={featuredSeries.series_name} /></div>
-                <div style={featuredBody}>
-                  <div style={featuredName}>{featuredSeries.series_name}</div>
-                  <div style={featuredMeta}>{featuredSeries.region || 'Upper Midwest Archive'}{featuredSeries.years_active ? ` • ${featuredSeries.years_active}` : ''}</div>
-                  <p style={featuredText}>Explore season history, associated tracks, race records, and related archive material.</p>
-                  <Link href={`/series/${featuredSeries.slug}`} style={featuredButton}>Explore Series</Link>
-                </div>
-              </div>
-            ) : null}
-          </div>
-        </div>
+        <div style={heroInner}><div style={heroGrid}><div>
+          <div style={eyebrow}>Museum Collection</div><h1 style={pageTitle}>Series</h1>
+          <p style={heroTagline}>Preserving the organizations, tours, and weekly divisions that shaped Midwestern racing.</p>
+          <p style={pageIntro}>Browse racing series from across the Upper Midwest archive, including touring groups, weekly divisions, sanctioning bodies, and historic organizations.</p>
+          <div style={archiveStatsRow}><div style={archiveStatCard}><div style={archiveStatLabel}>Series Archived</div><div style={archiveStatValue}>{rows.length}</div></div><div style={archiveStatCard}><div style={archiveStatLabel}>Earliest Record</div><div style={archiveStatValue}>{firstSeriesYear}</div></div><div style={archiveStatCard}><div style={archiveStatLabel}>Modern / Active</div><div style={archiveStatValue}>{activeSeriesCount}</div></div></div>
+        </div>{featuredSeries ? <div style={featuredCard}><div style={featuredLabel}>Featured Series</div><div style={featuredLogoWrap}><SeriesLogo slug={featuredSeries.slug} seriesName={featuredSeries.series_name} /></div><div style={featuredBody}><div style={featuredName}>{featuredSeries.series_name}</div><div style={featuredMeta}>{featuredSeries.region || 'Upper Midwest Archive'}{featuredSeries.years_active ? ` • ${featuredSeries.years_active}` : ''}</div><p style={featuredText}>Explore season history, associated tracks, race records, and related archive material.</p><Link href={`/series/${featuredSeries.slug}`} style={featuredButton}>Explore Series</Link></div></div> : null}</div></div>
       </section>
-
       <div style={archiveDivider}>Series Collection</div>
-      <section style={contentWrap}>
-        {error ? <div style={errorBox}>Unable to load series right now.</div> : rows.length === 0 ? <div style={emptyBox}>No series available yet.</div> : (
-          <div style={gridWrap}>
-            {rows.map((s) => {
-              const isComplete = completedSeries.has(s.slug)
-              return (
-                <Link key={s.slug} href={`/series/${s.slug}`} style={{...seriesCard, ...(isComplete ? completedSeriesCard : {})}}>
-                  <div style={seriesLogoWrap}><SeriesLogo slug={s.slug} seriesName={s.series_name} /></div>
-                  <div style={seriesNameStyle}>{s.series_name}</div>
-                  {(s.region || s.years_active) && (
-                    <div style={seriesMetaStyle}>{s.region || 'Region TBD'}{s.region && s.years_active ? ' • ' : ''}{s.years_active || ''}</div>
-                  )}
-                </Link>
-              )
-            })}
-          </div>
-        )}
-      </section>
+      <section style={contentWrap}>{error ? <div style={errorBox}>Unable to load series right now.</div> : rows.length === 0 ? <div style={emptyBox}>No series available yet.</div> : <div style={gridWrap}>{rows.map((s) => { const isComplete = completedSeries.has(s.slug); return <Link key={s.slug} href={`/series/${s.slug}`} style={{...seriesCard, ...(isComplete ? completedSeriesCard : {})}}><div style={seriesLogoWrap}><SeriesLogo slug={s.slug} seriesName={s.series_name} /></div><div style={seriesNameStyle}>{s.series_name}</div>{(s.region || s.years_active) && <div style={seriesMetaStyle}>{s.region || 'Region TBD'}{s.region && s.years_active ? ' • ' : ''}{s.years_active || ''}</div>}</Link> })}</div>}</section>
     </main>
   )
 }
