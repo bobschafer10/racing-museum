@@ -22,6 +22,7 @@ const completedSeries = new Set([
   'badger-stock-car-tour',
   'big-eight-late-model-series',
   'central-wisconsin-steel-frame-challenge',
+  'mars-late-model-series',
   'wisconsin-challenge-series',
   'wisconsin-short-track-series',
 ])
