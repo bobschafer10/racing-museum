@@ -144,7 +144,7 @@
 .featureHeader,
 .featureRow {
   display: grid;
-  grid-template-columns: 55px 70px minmax(0, 1fr);
+  grid-template-columns: 55px minmax(0, 1fr);
   gap: 10px;
   align-items: center;
 }
@@ -439,7 +439,7 @@
 
   .featureHeader,
   .featureRow {
-    grid-template-columns: 34px 46px minmax(0, 1fr);
+    grid-template-columns: 34px minmax(0, 1fr);
     gap: 6px;
   }
 
@@ -569,7 +569,7 @@
 
   .featureHeader,
   .featureRow {
-    grid-template-columns: 32px 42px minmax(0, 1fr);
+    grid-template-columns: 32px minmax(0, 1fr);
     gap: 5px;
   }
 
