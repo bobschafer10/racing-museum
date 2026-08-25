@@ -8,6 +8,7 @@ const TRACK_LOGO_ALIASES: Record<string, string[]> = {
   'dells-motor-speedway-wi': ['dells-raceway-park-wi'],
   'golden-sands-speedway-wi': ['golden-sands-raceway-wi'],
   'lacrosse-fairgrounds-wi': ['lacrosse-fairgrounds-speedway-wi'],
+  'marshfield-speedway-wi': ['marshfield-speedway'],
 }
 
 export async function GET(
