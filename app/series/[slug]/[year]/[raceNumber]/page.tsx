@@ -45,6 +45,33 @@ export default async function SeriesEventPage({
     .order('result_section', { ascending: true })
     .order('finishing_position', { ascending: true })
 
+  const { data: mediaLinks } = await supabase
+    .from('SeriesEventMediaLinks')
+    .select('media_id, relationship_type, display_order, is_featured')
+    .eq('series_event_id', event.id)
+    .order('display_order', { ascending: true })
+
+  const mediaIds = Array.from(
+    new Set((mediaLinks || []).map((link: any) => Number(link.media_id)).filter(Number.isFinite))
+  )
+
+  let mediaAssets: any[] = []
+  if (mediaIds.length > 0) {
+    const { data } = await supabase
+      .from('SeriesEventMedia')
+      .select('*')
+      .in('id', mediaIds)
+    mediaAssets = data || []
+  }
+
+  const mediaById = new Map(mediaAssets.map((media: any) => [Number(media.id), media]))
+  const eventMedia = (mediaLinks || [])
+    .map((link: any) => {
+      const media = mediaById.get(Number(link.media_id))
+      return media ? { ...media, ...link } : null
+    })
+    .filter(Boolean)
+
   const resultDriverIds = Array.from(
     new Set(
       (results || [])
@@ -66,9 +93,7 @@ export default async function SeriesEventPage({
     resultDrivers.map((driver: any) => [Number(driver.driver_id), driver.slug])
   )
 
-  // SeriesEvents now stores the canonical Tracks.slug directly. This avoids
-  // falling back to a name-generated slug such as "oshkosh-speed-zone" when
-  // the real Museum asset is "oshkosh-speed-zone-wi.jpg".
+  // SeriesEvents stores the canonical Tracks.slug directly when available.
   let trackSlug = event.track_slug || ''
 
   if (!trackSlug && event.track_id) {
@@ -193,6 +218,40 @@ export default async function SeriesEventPage({
             )}
           </div>
         </Panel>
+
+        {eventMedia.length > 0 && (
+          <Panel title="Event Coverage">
+            <div className={styles.coverageGrid}>
+              {eventMedia.map((media: any) => {
+                const mediaPath = media.public_path || media.storage_path
+                if (!mediaPath) return null
+
+                const publication = media.publication_name || media.publication_code?.toUpperCase() || 'Archival Source'
+                const label = media.headline || `${publication} — Page ${media.page_number ?? '?'}`
+
+                return (
+                  <article key={`${media.id}-${media.series_event_id}`} className={styles.coverageCard}>
+                    <a href={mediaPath} target="_blank" rel="noreferrer" className={styles.coverageImageLink}>
+                      <img src={mediaPath} alt={label} className={styles.coverageImage} />
+                    </a>
+                    <div className={styles.coverageDetails}>
+                      <div className={styles.coveragePublication}>{publication}</div>
+                      <div className={styles.coverageMeta}>
+                        {media.issue_date ? formatDate(media.issue_date) : 'Issue date unknown'}
+                        {media.page_number ? ` • Page ${media.page_number}` : ''}
+                      </div>
+                      {media.headline && <div className={styles.coverageHeadline}>{media.headline}</div>}
+                      {media.caption && <p className={styles.coverageCaption}>{media.caption}</p>}
+                      <a href={mediaPath} target="_blank" rel="noreferrer" className={styles.coverageButton}>
+                        View Full Page
+                      </a>
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+          </Panel>
+        )}
 
         <Panel title="Source Attribution">
           <p className={styles.panelText}>
