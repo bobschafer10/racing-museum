@@ -202,14 +202,13 @@ export default async function SeriesEventPage({
               {featureResults.length > 0 ? (
                 <div>
                   <div className={styles.featureHeader}>
-                    <span>Fin</span><span>#</span><span>Driver</span>
+                    <span>Fin</span><span>Driver</span>
                   </div>
                   {featureResults.map((row: any) => {
                     const driverSlug = driverSlugById.get(Number(row.driver_id)) || slugify(row.driver_name)
                     return (
                       <div key={row.id} className={styles.featureRow}>
                         <span>{row.finishing_position || ''}</span>
-                        <span>{row.car_number || ''}</span>
                         <Link href={`/drivers/${driverSlug}`} className={styles.driverLink}>
                           {row.driver_name || ''}
                         </Link>
