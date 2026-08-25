@@ -72,6 +72,31 @@ export default async function SeriesEventPage({
     })
     .filter(Boolean)
 
+  const coverageGroupMap = new Map<string, any>()
+  eventMedia.forEach((media: any) => {
+    const publication = media.publication_name || media.publication_code?.toUpperCase() || 'Archival Source'
+    const issueDate = media.issue_date || ''
+    const key = `${publication}::${issueDate}`
+
+    if (!coverageGroupMap.has(key)) {
+      coverageGroupMap.set(key, {
+        publication,
+        publicationCode: media.publication_code || '',
+        issueDate,
+        pages: [],
+      })
+    }
+
+    coverageGroupMap.get(key).pages.push(media)
+  })
+
+  const coverageGroups = Array.from(coverageGroupMap.values()).map((group: any) => ({
+    ...group,
+    pages: group.pages.sort((a: any, b: any) =>
+      Number(a.page_number ?? 9999) - Number(b.page_number ?? 9999)
+    ),
+  }))
+
   const resultDriverIds = Array.from(
     new Set(
       (results || [])
@@ -93,7 +118,6 @@ export default async function SeriesEventPage({
     resultDrivers.map((driver: any) => [Number(driver.driver_id), driver.slug])
   )
 
-  // SeriesEvents stores the canonical Tracks.slug directly when available.
   let trackSlug = event.track_slug || ''
 
   if (!trackSlug && event.track_id) {
@@ -219,36 +243,57 @@ export default async function SeriesEventPage({
           </div>
         </Panel>
 
-        {eventMedia.length > 0 && (
+        {coverageGroups.length > 0 && (
           <Panel title="Event Coverage">
-            <div className={styles.coverageGrid}>
-              {eventMedia.map((media: any) => {
-                const mediaPath = media.public_path || media.storage_path
-                if (!mediaPath) return null
+            <div className={styles.coverageIntro}>
+              <span className={styles.coverageKicker}>From the Museum Archive</span>
+              <span>Original contemporary race coverage. Select any newspaper page to open the full-size scan.</span>
+            </div>
 
-                const publication = media.publication_name || media.publication_code?.toUpperCase() || 'Archival Source'
-                const label = media.headline || `${publication} — Page ${media.page_number ?? '?'}`
-
-                return (
-                  <article key={`${media.id}-${media.series_event_id}`} className={styles.coverageCard}>
-                    <a href={mediaPath} target="_blank" rel="noreferrer" className={styles.coverageImageLink}>
-                      <img src={mediaPath} alt={label} className={styles.coverageImage} />
-                    </a>
-                    <div className={styles.coverageDetails}>
-                      <div className={styles.coveragePublication}>{publication}</div>
-                      <div className={styles.coverageMeta}>
-                        {media.issue_date ? formatDate(media.issue_date) : 'Issue date unknown'}
-                        {media.page_number ? ` • Page ${media.page_number}` : ''}
-                      </div>
-                      {media.headline && <div className={styles.coverageHeadline}>{media.headline}</div>}
-                      {media.caption && <p className={styles.coverageCaption}>{media.caption}</p>}
-                      <a href={mediaPath} target="_blank" rel="noreferrer" className={styles.coverageButton}>
-                        View Full Page
-                      </a>
+            <div className={styles.coverageGroups}>
+              {coverageGroups.map((group: any) => (
+                <section key={`${group.publication}-${group.issueDate}`} className={styles.publicationGroup}>
+                  <header className={styles.publicationHeader}>
+                    <div className={styles.publicationCode}>
+                      {group.publicationCode ? group.publicationCode.toUpperCase() : 'ARCHIVE'}
                     </div>
-                  </article>
-                )
-              })}
+                    <h3 className={styles.publicationTitle}>{group.publication}</h3>
+                    <div className={styles.publicationDate}>
+                      {group.issueDate ? formatDate(group.issueDate) : 'Issue date unknown'}
+                    </div>
+                    <div className={styles.publicationCount}>
+                      {group.pages.length} {group.pages.length === 1 ? 'page' : 'pages'} preserved
+                    </div>
+                  </header>
+
+                  <div className={styles.publicationPages}>
+                    {group.pages.map((media: any) => {
+                      const mediaPath = media.public_path || media.storage_path
+                      if (!mediaPath) return null
+
+                      const pageLabel = media.page_number ? `Page ${media.page_number}` : 'Page'
+                      const alt = media.headline || `${group.publication} ${pageLabel}`
+
+                      return (
+                        <a
+                          key={`${media.id}-${media.series_event_id}`}
+                          href={mediaPath}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={styles.pageTile}
+                          title={`Open ${group.publication} ${pageLabel}`}
+                        >
+                          <div className={styles.pageImageFrame}>
+                            <img src={mediaPath} alt={alt} className={styles.pageImage} />
+                            <span className={styles.pageBadge}>{pageLabel}</span>
+                          </div>
+                          {media.headline && <div className={styles.pageHeadline}>{media.headline}</div>}
+                        </a>
+                      )
+                    })}
+                  </div>
+                </section>
+              ))}
             </div>
           </Panel>
         )}
