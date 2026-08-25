@@ -18,6 +18,7 @@ type SeriesRow = {
 }
 
 const completedSeries = new Set([
+  'artgo-challenge-series',
   'badger-modified-tour',
   'badger-stock-car-tour',
   'big-eight-late-model-series',
