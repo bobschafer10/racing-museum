@@ -25,6 +25,7 @@ const completedSeries = new Set([
   'central-wisconsin-steel-frame-challenge',
   'cowbell-street-stock-tour',
   'mars-late-model-series',
+  'tundra-super-late-model-series',
   'wisconsin-challenge-series',
   'wisconsin-short-track-series',
 ])
