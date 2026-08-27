@@ -87,9 +87,7 @@ const CAREER_PROFILES: Record<string, CareerProfile> = {
   },
   'pete-parker': {
     headlineChampionships: 1,
-    championships: [
-      '1988 UMP Gold Series / Summer Nationals Champion',
-    ],
+    championships: ['1988 UMP Gold Series / Summer Nationals Champion'],
     seriesSuccess: [
       'National Dirt Racing Association race winner',
       'Strong national and regional dirt Late Model record',
@@ -149,9 +147,7 @@ const CAREER_PROFILES: Record<string, CareerProfile> = {
       'Extensive WISSOTA and Northland Super Stock success',
       'Many Minnesota victories already preserved in museum race results',
     ],
-    majorVictories: [
-      'Wins at Proctor, Grand Rapids, Granite City, North Central and Princeton in Minnesota',
-    ],
+    majorVictories: ['Wins at Proctor, Grand Rapids, Granite City, North Central and Princeton in Minnesota'],
   },
   'benji-lacrosse': {
     headlineChampionships: 2,
@@ -184,16 +180,21 @@ export function DriverCareerAccomplishments({ slug }: { slug: string }) {
   const hasVictories = profile.majorVictories.length > 0
 
   return (
-    <section style={{ margin: '4px 0 28px', border: '1px solid #b29364', background: '#efe2c8', boxShadow: '0 6px 18px rgba(73, 48, 21, 0.08)' }}>
-      <div style={{ padding: '18px 20px 8px' }}>
-        <div style={{ fontSize: '13px', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#8a632b', fontWeight: 700 }}>Documented Career History</div>
-        <h2 style={{ fontSize: '30px', margin: '5px 0 8px', color: '#3d2b16' }}>Career Accomplishments</h2>
-        {profile.summary && (
-          <p style={{ margin: '0 0 10px', maxWidth: '980px', fontSize: '16px', lineHeight: 1.65, color: '#4a351e' }}>{profile.summary}</p>
-        )}
+    <section style={{ margin: '10px 0 32px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '10px' }}>
+        <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#8a632b', fontWeight: 700 }}>Documented Career History</div>
+          <h2 style={{ fontSize: '31px', margin: '4px 0 0', color: '#3d2b16' }}>Career Accomplishments</h2>
+        </div>
+        <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px', padding: '10px 16px 16px' }}>
+      {profile.summary && (
+        <p style={{ margin: '0 auto 16px', maxWidth: '970px', textAlign: 'center', fontSize: '15px', lineHeight: 1.65, color: '#5a4327' }}>{profile.summary}</p>
+      )}
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(255px, 1fr))', gap: '14px' }}>
         {hasChampionships && (
           <CareerCard title="Championships" icon="★">
             <CareerList items={profile.championships} />
@@ -212,7 +213,7 @@ export function DriverCareerAccomplishments({ slug }: { slug: string }) {
       </div>
 
       {profile.note && (
-        <div style={{ margin: '0 16px 16px', padding: '10px 12px', borderTop: '1px solid #c8aa79', fontSize: '13px', lineHeight: 1.55, color: '#6a5337', fontStyle: 'italic' }}>
+        <div style={{ marginTop: '12px', padding: '9px 14px', borderTop: '1px solid #c8aa79', borderBottom: '1px solid #c8aa79', fontSize: '12px', lineHeight: 1.55, color: '#6a5337', fontStyle: 'italic', textAlign: 'center' }}>
           {profile.note}
         </div>
       )}
@@ -222,8 +223,8 @@ export function DriverCareerAccomplishments({ slug }: { slug: string }) {
 
 function CareerCard({ title, icon, children }: { title: string; icon: string; children: ReactNode }) {
   return (
-    <div style={{ border: '1px solid #c2a97d', background: '#f5ead7', padding: '15px 16px', minHeight: '170px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '18px', fontWeight: 700, color: '#5b3a1b', marginBottom: '10px' }}>
+    <div style={{ border: '1px solid #c8b18a', background: '#f7eedf', padding: '17px 18px', minHeight: '178px', boxShadow: '0 4px 12px rgba(73,48,21,0.06)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '17px', fontWeight: 700, color: '#5b3a1b', marginBottom: '11px', borderBottom: '1px solid #dbc8a7', paddingBottom: '8px' }}>
         <span style={{ color: '#8a632b' }}>{icon}</span>
         {title}
       </div>
@@ -234,7 +235,7 @@ function CareerCard({ title, icon, children }: { title: string; icon: string; ch
 
 function CareerList({ items }: { items: string[] }) {
   return (
-    <ul style={{ margin: 0, paddingLeft: '19px', color: '#3f2d18', fontSize: '14px', lineHeight: 1.55 }}>
+    <ul style={{ margin: 0, paddingLeft: '18px', color: '#3f2d18', fontSize: '13px', lineHeight: 1.6 }}>
       {items.map((item) => <li key={item} style={{ marginBottom: '6px' }}>{item}</li>)}
     </ul>
   )
