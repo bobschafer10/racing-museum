@@ -8,6 +8,7 @@ import {
   DriverCareerAccomplishments,
   getDriverCareerProfile,
 } from '@/components/DriverCareerAccomplishments'
+import PhotoLightboxImage from '@/components/PhotoLightboxImage'
 
 type Driver = {
   driver_id: number
@@ -59,6 +60,7 @@ export default async function DriverProfilePage({
     { data: winsByClass },
     { data: recentResults },
     { data: championships },
+    { data: winRows },
   ] = await Promise.all([
     supabase
       .from('photos')
@@ -95,6 +97,11 @@ export default async function DriverProfilePage({
       .select('year, track_name, track_slug, class_name')
       .eq('driver_slug', slug)
       .order('year', { ascending: false }),
+    supabase
+      .from('driver_full_results_view')
+      .select('track_slug')
+      .eq('driver_slug', slug)
+      .eq('finishing_position', 1),
   ])
 
   const safePhotos = photos ?? []
@@ -103,7 +110,41 @@ export default async function DriverProfilePage({
   const safeWinsByClass = winsByClass ?? []
   const safeRecentResults = recentResults ?? []
   const safeChampionships = championships ?? []
+  const safeWinRows = winRows ?? []
   const careerProfile = getDriverCareerProfile(slug)
+
+  const winTrackSlugs = Array.from(
+    new Set(
+      safeWinRows
+        .map((row: any) => row.track_slug)
+        .filter((value: string | null | undefined): value is string => Boolean(value))
+    )
+  )
+
+  const { data: trackSurfaceRows } = winTrackSlugs.length
+    ? await supabase
+        .from('Tracks')
+        .select('slug, surface_type')
+        .in('slug', winTrackSlugs)
+    : { data: [] as any[] }
+
+  const surfaceByTrack = new Map<string, string>()
+  for (const row of trackSurfaceRows ?? []) {
+    if ((row as any)?.slug) {
+      surfaceByTrack.set(String((row as any).slug), String((row as any).surface_type || 'Unknown'))
+    }
+  }
+
+  let asphaltWins = 0
+  let dirtWins = 0
+  let mixedOrUnknownWins = 0
+
+  for (const row of safeWinRows as any[]) {
+    const surface = surfaceByTrack.get(String(row.track_slug || ''))?.toLowerCase() || 'unknown'
+    if (surface.includes('asphalt')) asphaltWins += 1
+    else if (surface.includes('dirt')) dirtWins += 1
+    else mixedOrUnknownWins += 1
+  }
 
   const lastRecordedYear =
     flatResultsByYear.length > 0
@@ -152,6 +193,9 @@ export default async function DriverProfilePage({
   const buildLogoUrl = (trackSlug: string | null | undefined) =>
     trackSlug ? `/logos/tracks/${trackSlug}.jpg` : ''
 
+  const museumWins = Math.max(driver.recorded_wins ?? 0, driver.wisconsin_feature_wins ?? 0)
+  const knownCareerWinsDisplay = careerProfile ? `${museumWins.toLocaleString()}+` : museumWins.toLocaleString()
+
   return (
     <main style={{ background: '#eadfc7', color: '#2f2417', minHeight: '100vh', fontFamily: 'Georgia, serif', margin: 0 }}>
       <section style={{ background: 'linear-gradient(to bottom, rgba(231,217,191,0.96), rgba(234,223,199,0.98))', borderBottom: '2px solid #b29364', position: 'relative', overflow: 'hidden' }}>
@@ -174,14 +218,26 @@ export default async function DriverProfilePage({
                 </div>
               ) : (
                 <>
-                  <img src={buildPhotoUrl(heroPhotoItem)} alt={driver.driver_name} style={{ width: '100%', height: 'auto', display: 'block', border: '1px solid #a78654', background: '#efe7d6' }} />
+                  <PhotoLightboxImage
+                    src={buildPhotoUrl(heroPhotoItem)}
+                    alt={driver.driver_name}
+                    caption={buildPhotoCaption(heroPhotoItem)}
+                    imageStyle={{ width: '100%', height: 'auto', display: 'block', border: '1px solid #a78654', background: '#efe7d6' }}
+                  />
                   <div style={{ marginTop: '8px', fontSize: '14px', color: '#5a3a1b', textAlign: 'center', lineHeight: 1.4 }}>
                     {buildPhotoCaption(heroPhotoItem)}
                   </div>
                   {displayPhotos.slice(0, 3).length > 0 && (
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', marginTop: '10px' }}>
                       {displayPhotos.slice(0, 3).map((photo) => (
-                        <img key={photo.photo_id} src={buildPhotoUrl(photo)} alt={driver.driver_name} style={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', border: '1px solid #a78654' }} />
+                        <PhotoLightboxImage
+                          key={photo.photo_id}
+                          src={buildPhotoUrl(photo)}
+                          alt={driver.driver_name}
+                          caption={buildPhotoCaption(photo)}
+                          imageStyle={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', border: '1px solid #a78654', display: 'block' }}
+                          showZoomBadge
+                        />
                       ))}
                     </div>
                   )}
@@ -195,7 +251,7 @@ export default async function DriverProfilePage({
                   <div style={{ fontSize: '15px', letterSpacing: '1px', textTransform: 'uppercase', color: '#7a5827', marginBottom: '8px' }}>Driver Profile</div>
                   <h1 style={{ fontSize: '52px', margin: '0 0 10px', color: '#3d2b16', lineHeight: 1.05 }}>{driver.driver_name}</h1>
                   <p style={{ fontSize: '22px', margin: '0 0 18px', color: '#5a3a1b' }}>
-                    {driver.hometown || 'Unknown hometown'}{driver.state ? `, ${driver.state}` : ''}
+                    {driver.hometown || 'Unknown hometown'}{driver.state ? `, ${String(driver.state).trim()}` : ''}
                   </p>
                 </div>
                 <Link href={`/drivers/${slug}/results`} style={{ display: 'inline-block', background: '#6e4d21', color: '#fff8ea', padding: '14px 22px', border: '1px solid #4d3413', textDecoration: 'none', fontWeight: 700, letterSpacing: '0.03em', boxShadow: '0 4px 12px rgba(0,0,0,0.12)' }}>
@@ -210,13 +266,20 @@ export default async function DriverProfilePage({
                 <CareerHighlights highlights={careerHighlights as any[]} />
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, minmax(0, 1fr))', marginTop: '18px', background: '#76511f', border: '1px solid #5b3a14', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.18)' }}>
-                <HeroStat label="Wisconsin Feature Wins" value={driver.wisconsin_feature_wins ?? 0} sublabel="Museum leaderboard total" />
-                <HeroStat label="Known Museum-Recorded Wins" value={driver.recorded_wins ?? 0} sublabel="Includes documented races beyond Wisconsin" />
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(125px, 1fr))', marginTop: '18px', background: '#76511f', border: '1px solid #5b3a14', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.18)' }}>
+                <HeroStat label="Wisconsin Feature Wins" value={driver.wisconsin_feature_wins ?? 0} sublabel="Museum leaderboard" />
+                <HeroStat label="Museum-Recorded Wins" value={museumWins} sublabel="All museum results" />
+                <HeroStat label="Known Career Feature Wins" value={knownCareerWinsDisplay} sublabel={careerProfile ? 'Verified minimum' : 'Museum total'} />
+                <HeroStat label="Museum Asphalt Wins" value={asphaltWins} sublabel="Asphalt-classified tracks" />
+                <HeroStat label="Museum Dirt Wins" value={dirtWins} sublabel="Dirt-classified tracks" />
                 <HeroStat label="Major Championships" value={careerProfile?.headlineChampionships ?? 0} sublabel={careerProfile ? 'Documented career titles' : 'Career layer expanding'} />
                 <HeroStat label="Recorded Results" value={driver.recorded_results ?? 0} sublabel="Museum database" />
-                <HeroStat label="Museum-Recorded Career" value={`${firstRecordedYear ?? '—'}–${lastRecordedYear ?? '—'}`} sublabel="First to last recorded result" />
               </div>
+              {mixedOrUnknownWins > 0 && (
+                <div style={{ padding: '8px 12px', background: 'rgba(244,234,215,0.78)', border: '1px solid #c9ad7c', fontSize: '11px', lineHeight: 1.45, color: '#6b5437' }}>
+                  Surface note: {mixedOrUnknownWins.toLocaleString()} museum-recorded win{mixedOrUnknownWins === 1 ? '' : 's'} occurred at tracks classified as mixed-surface or without a single current surface designation, so they are not forced into the dirt/asphalt split.
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -225,29 +288,42 @@ export default async function DriverProfilePage({
       <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '26px 20px 42px' }}>
         <DriverCareerAccomplishments slug={slug} />
 
-        <section style={{ marginBottom: '28px', border: '1px solid #b29364', background: '#efe2c8', padding: '18px 20px' }}>
-          <div style={{ fontSize: '13px', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#8a632b', fontWeight: 700 }}>Museum Race Record</div>
-          <h2 style={{ fontSize: '29px', margin: '5px 0 14px', color: '#3d2b16' }}>Racing Career Summary</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', borderTop: '1px solid #c5a572' }}>
-            <SummaryMetric label="Wisconsin Feature Wins" value={driver.wisconsin_feature_wins ?? 0} />
-            <SummaryMetric label="Known Museum Wins" value={driver.recorded_wins ?? 0} />
-            <SummaryMetric label="Top-3 Feature Finishes" value={driver.recorded_top_3_finishes ?? 0} />
-            <SummaryMetric label="Recorded Results" value={driver.recorded_results ?? 0} />
+        <section style={{ marginBottom: '30px', padding: '5px 0 2px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '13px' }}>
+            <h2 style={{ fontSize: '28px', margin: 0, color: '#3d2b16' }}>Racing Lifetime Totals</h2>
+            <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
           </div>
-          <p style={{ margin: '12px 0 0', fontSize: '12px', color: '#6a5337', fontStyle: 'italic' }}>
-            Museum totals reflect races currently documented in the database. Historical research and verification continue.
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', borderTop: '1px solid #c5a572', borderBottom: '1px solid #c5a572' }}>
+            <SummaryMetric label="WI Feature Wins" value={driver.wisconsin_feature_wins ?? 0} />
+            <SummaryMetric label="Museum-Recorded Wins" value={museumWins} />
+            <SummaryMetricText label="Known Career Feature Wins" value={knownCareerWinsDisplay} />
+            <SummaryMetric label="Museum Asphalt Wins" value={asphaltWins} />
+            <SummaryMetric label="Museum Dirt Wins" value={dirtWins} />
+            <SummaryMetric label="Major Championships" value={careerProfile?.headlineChampionships ?? 0} />
+          </div>
+          <p style={{ margin: '10px 0 0', fontSize: '12px', color: '#6a5337', fontStyle: 'italic' }}>
+            Known career wins are shown as a verified minimum while outside-area research is still being reconciled against museum race records. Surface totals use each track’s current museum surface classification; mixed-surface tracks are kept separate rather than guessed.
           </p>
         </section>
 
         <section style={{ marginTop: '8px', marginBottom: '28px' }}>
-          <h2 style={{ fontSize: '29px', margin: '0 0 12px', color: '#3d2b16' }}>Photo Archive</h2>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap', marginBottom: '12px' }}>
+            <h2 style={{ fontSize: '29px', margin: 0, color: '#3d2b16' }}>Photo Archive</h2>
+            <span style={{ fontSize: '12px', color: '#765b39', fontStyle: 'italic' }}>Click any photo to enlarge.</span>
+          </div>
           {displayPhotos.length === 0 ? (
             <div style={{ padding: '18px', background: '#f1e5ce', border: '1px solid #c2a97d' }}>No photos available yet.</div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: '14px' }}>
               {displayPhotos.map((photo) => (
                 <div key={photo.photo_id} style={{ background: '#f1e5ce', border: '1px solid #c2a97d', padding: '9px' }}>
-                  <img src={buildPhotoUrl(photo)} alt={driver.driver_name} style={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', display: 'block', border: '1px solid #b29364' }} />
+                  <PhotoLightboxImage
+                    src={buildPhotoUrl(photo)}
+                    alt={driver.driver_name}
+                    caption={buildPhotoCaption(photo)}
+                    imageStyle={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', display: 'block', border: '1px solid #b29364' }}
+                    showZoomBadge
+                  />
                   <div style={{ marginTop: '7px', fontSize: '12px', color: '#5a3a1b', lineHeight: 1.45 }}>{buildPhotoCaption(photo)}</div>
                 </div>
               ))}
@@ -260,7 +336,8 @@ export default async function DriverProfilePage({
             <Panel title="Driver Summary">
               <SummaryRow label="Driver Name" value={driver.driver_name} />
               <SummaryRow label="Hometown" value={driver.hometown || 'Unknown hometown'} />
-              <SummaryRow label="State" value={driver.state || 'Unknown'} />
+              <SummaryRow label="State" value={String(driver.state || 'Unknown').trim()} />
+              <SummaryRow label="Museum-Recorded Career" value={`${firstRecordedYear ?? '—'}–${lastRecordedYear ?? '—'}`} />
             </Panel>
 
             <Panel title="Recent Feature Results">
@@ -359,19 +436,28 @@ function CareerHighlights({ highlights }: { highlights: { year: number | string;
 
 function HeroStat({ label, value, sublabel }: { label: string; value: number | string; sublabel?: string }) {
   return (
-    <div style={{ background: '#76511f', padding: '20px 10px', textAlign: 'center', color: '#fff7e7', borderRight: '1px solid rgba(255,247,231,0.32)' }}>
-      <div style={{ fontSize: typeof value === 'number' ? '32px' : '24px', fontWeight: 700, lineHeight: 1, marginBottom: '7px' }}>{typeof value === 'number' ? value.toLocaleString() : value}</div>
-      <div style={{ fontSize: '12px', color: '#f1dfbf', textTransform: 'uppercase', letterSpacing: '0.05em', lineHeight: 1.35 }}>{label}</div>
-      {sublabel && <div style={{ fontSize: '10px', color: '#e4cfaa', marginTop: '5px', lineHeight: 1.25 }}>{sublabel}</div>}
+    <div style={{ background: '#76511f', padding: '18px 9px', textAlign: 'center', color: '#fff7e7', borderRight: '1px solid rgba(255,247,231,0.32)' }}>
+      <div style={{ fontSize: typeof value === 'number' ? '29px' : '25px', fontWeight: 700, lineHeight: 1, marginBottom: '7px' }}>{typeof value === 'number' ? value.toLocaleString() : value}</div>
+      <div style={{ fontSize: '11px', color: '#f1dfbf', textTransform: 'uppercase', letterSpacing: '0.045em', lineHeight: 1.35 }}>{label}</div>
+      {sublabel && <div style={{ fontSize: '9px', color: '#e4cfaa', marginTop: '5px', lineHeight: 1.25 }}>{sublabel}</div>}
     </div>
   )
 }
 
 function SummaryMetric({ label, value }: { label: string; value: number }) {
   return (
-    <div style={{ padding: '14px 16px', borderRight: '1px solid #c5a572' }}>
-      <div style={{ fontSize: '28px', fontWeight: 700, color: '#4e3417' }}>{value.toLocaleString()}</div>
-      <div style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#74552f', marginTop: '3px' }}>{label}</div>
+    <div style={{ padding: '14px 14px', borderRight: '1px solid #c5a572' }}>
+      <div style={{ fontSize: '27px', fontWeight: 700, color: '#4e3417' }}>{value.toLocaleString()}</div>
+      <div style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.055em', color: '#74552f', marginTop: '3px' }}>{label}</div>
+    </div>
+  )
+}
+
+function SummaryMetricText({ label, value }: { label: string; value: string }) {
+  return (
+    <div style={{ padding: '14px 14px', borderRight: '1px solid #c5a572' }}>
+      <div style={{ fontSize: '27px', fontWeight: 700, color: '#4e3417' }}>{value}</div>
+      <div style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.055em', color: '#74552f', marginTop: '3px' }}>{label}</div>
     </div>
   )
 }
