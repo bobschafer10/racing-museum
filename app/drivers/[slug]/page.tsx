@@ -374,13 +374,16 @@ function HeroStat({ label, value, sublabel }: { label: string; value: number | s
 
 function SummaryMetric({ label, value, isLast = false }: { label: string; value: string; isLast?: boolean }) {
   const isCount = /^\d+$/.test(value)
+  const longestWord = value.split(/\s+/).reduce((max, word) => Math.max(max, word.length), 0)
   const valueFontSize = isCount
     ? '64px'
-    : value.length > 26
-      ? '29px'
-      : value.length > 18
-        ? '34px'
-        : '42px'
+    : longestWord >= 13 || value.length >= 30
+      ? '24px'
+      : longestWord >= 10 || value.length >= 24
+        ? '28px'
+        : value.length >= 18
+          ? '34px'
+          : '42px'
 
   return (
     <div
@@ -402,7 +405,8 @@ function SummaryMetric({ label, value, isLast = false }: { label: string; value:
           lineHeight: 0.98,
           letterSpacing: '-0.025em',
           wordBreak: 'normal',
-          overflowWrap: 'anywhere',
+          overflowWrap: 'normal',
+          hyphens: 'none',
         }}
       >
         {value}
