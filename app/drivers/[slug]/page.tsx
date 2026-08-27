@@ -172,9 +172,10 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     COVERAGE_STATES.has(stateByTrack.get(String(row.track_slug || '')) || '')
   ).length
 
-  const museumWins = Math.max(driver.recorded_wins ?? 0, driver.wisconsin_feature_wins ?? 0)
+  // Use the actual feature-win rows as the museum discovered baseline. Summary fields can lag behind.
+  const museumDiscoveredWins = Math.max(safeWinRows.length, coverageAreaWins, driver.wisconsin_feature_wins ?? 0)
   const discoveredOutsideWins = DISCOVERED_OUTSIDE_AREA_WINS[slug] ?? 0
-  const totalDiscoveredWins = museumWins + discoveredOutsideWins
+  const totalDiscoveredWins = museumDiscoveredWins + discoveredOutsideWins
 
   const seriesChampionships = Math.max(
     (seriesChampionshipRows ?? []).length,
@@ -378,23 +379,26 @@ function SummaryMetric({ label, value, isLast = false }: { label: string; value:
   const valueFontSize = isCount
     ? '64px'
     : longestWord >= 13 || value.length >= 30
-      ? '24px'
+      ? '20px'
       : longestWord >= 10 || value.length >= 24
-        ? '28px'
+        ? '22px'
         : value.length >= 18
-          ? '34px'
-          : '42px'
+          ? '25px'
+          : value.length >= 14
+            ? '29px'
+            : '34px'
 
   return (
     <div
       style={{
-        padding: '22px 16px 16px',
+        padding: '22px 18px 16px',
         borderRight: isLast ? 'none' : '1px solid #c5a572',
         minWidth: 0,
         minHeight: '215px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
+        overflow: 'hidden',
       }}
     >
       <div
@@ -402,11 +406,14 @@ function SummaryMetric({ label, value, isLast = false }: { label: string; value:
           fontSize: valueFontSize,
           fontWeight: 700,
           color: '#4e3417',
-          lineHeight: 0.98,
-          letterSpacing: '-0.025em',
+          lineHeight: 1.06,
+          letterSpacing: isCount ? '-0.025em' : '-0.015em',
           wordBreak: 'normal',
           overflowWrap: 'normal',
           hyphens: 'none',
+          whiteSpace: 'normal',
+          maxWidth: '100%',
+          overflow: 'hidden',
         }}
       >
         {value}
