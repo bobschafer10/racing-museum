@@ -374,9 +374,53 @@ function HeroStat({ label, value, sublabel }: { label: string; value: number | s
 
 function SummaryMetric({ label, value, isLast = false }: { label: string; value: string; isLast?: boolean }) {
   const isCount = /^\d+$/.test(value)
-  const valueFontSize = isCount ? '38px' : value.length > 22 ? '17px' : '25px'
+  const valueFontSize = isCount
+    ? '64px'
+    : value.length > 26
+      ? '29px'
+      : value.length > 18
+        ? '34px'
+        : '42px'
 
-  return <div style={{ padding: '18px 14px', borderRight: isLast ? 'none' : '1px solid #c5a572', minWidth: 0 }}><div style={{ fontSize: valueFontSize, fontWeight: 700, color: '#4e3417', lineHeight: 1.08, wordBreak: 'break-word' }}>{value}</div><div style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.055em', color: '#74552f', marginTop: '7px', lineHeight: 1.3 }}>{label}</div></div>
+  return (
+    <div
+      style={{
+        padding: '22px 16px 16px',
+        borderRight: isLast ? 'none' : '1px solid #c5a572',
+        minWidth: 0,
+        minHeight: '215px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+      }}
+    >
+      <div
+        style={{
+          fontSize: valueFontSize,
+          fontWeight: 700,
+          color: '#4e3417',
+          lineHeight: 0.98,
+          letterSpacing: '-0.025em',
+          wordBreak: 'normal',
+          overflowWrap: 'anywhere',
+        }}
+      >
+        {value}
+      </div>
+      <div
+        style={{
+          fontSize: '10px',
+          textTransform: 'uppercase',
+          letterSpacing: '0.065em',
+          color: '#74552f',
+          lineHeight: 1.3,
+          paddingTop: '14px',
+        }}
+      >
+        {label}
+      </div>
+    </div>
+  )
 }
 
 function SummaryRow({ label, value }: { label: string; value: string }) {
