@@ -24,6 +24,37 @@ function extractYearFromSlug(slug: string) {
   return match ? Number(match[1]) : null
 }
 
+function normalizeProgram(program: RaceProgram): RaceProgram {
+  const cover = program.coverImage ?? null
+  const backCover = program.backCoverImage ?? null
+
+  const interior = program.images.filter((image) => {
+    if (cover && image === cover) return false
+    if (backCover && image === backCover) return false
+
+    // 1983 EWSCA: 019.jpg and 020.jpg are byte-for-byte duplicates.
+    if (
+      program.slug === "1983-eastern-wisconsin-stock-car-association-yearbook" &&
+      image.endsWith("/020.jpg")
+    ) {
+      return false
+    }
+
+    return true
+  })
+
+  const ordered = [
+    ...(cover ? [cover] : []),
+    ...interior,
+    ...(backCover ? [backCover] : []),
+  ]
+
+  return {
+    ...program,
+    images: Array.from(new Set(ordered)),
+  }
+}
+
 export async function getRacePrograms(): Promise<RaceProgram[]> {
   try {
     const manifestPath = path.join(
@@ -34,7 +65,7 @@ export async function getRacePrograms(): Promise<RaceProgram[]> {
     )
 
     const raw = await fs.readFile(manifestPath, "utf-8")
-    const programs = JSON.parse(raw) as RaceProgram[]
+    const programs = (JSON.parse(raw) as RaceProgram[]).map(normalizeProgram)
 
     return programs.sort((a, b) => {
       const aYear =
