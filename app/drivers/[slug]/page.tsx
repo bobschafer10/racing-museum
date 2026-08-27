@@ -138,6 +138,13 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   const safeWinRows = winRows ?? []
   const careerProfile = getDriverCareerProfile(slug)
 
+  const orderedPhotos = [...safePhotos].sort((a, b) => {
+    const yearA = normalizedPhotoYear(a.year)
+    const yearB = normalizedPhotoYear(b.year)
+    if (yearA !== yearB) return yearA - yearB
+    return (a.sequence ?? Number.MAX_SAFE_INTEGER) - (b.sequence ?? Number.MAX_SAFE_INTEGER)
+  })
+
   const lastRecordedYear = flatResultsByYear.length
     ? Number((flatResultsByYear[0] as any)?.result_year || 0)
     : null
@@ -196,9 +203,11 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     ? formatRaceDate((lastWinRows?.[0] as any).race_date)
     : '—'
 
-  const foundHero = safePhotos.find((p) => p.year !== null && String(p.year) !== 'unknown-year')
-  const heroPhotoItem: Photo | null = foundHero ?? safePhotos[0] ?? null
-  const displayPhotos = safePhotos.filter((p) => p.file_name !== heroPhotoItem?.file_name).slice(0, 150)
+  const foundHero = orderedPhotos.find((p) => normalizedPhotoYear(p.year) !== Number.MAX_SAFE_INTEGER)
+  const heroPhotoItem: Photo | null = foundHero ?? orderedPhotos[0] ?? null
+  const displayPhotos = orderedPhotos
+    .filter((p) => p.file_name !== heroPhotoItem?.file_name)
+    .slice(0, 150)
 
   const bestYear = flatResultsByYear.reduce<any | null>((best, row: any) => {
     if (!best || (row.wins ?? 0) > (best.wins ?? 0)) return row
@@ -286,20 +295,20 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
             <h2 style={{ fontSize: '28px', margin: 0, color: '#3d2b16' }}>Racing Lifetime Totals</h2>
             <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', borderTop: '1px solid #c5a572', borderBottom: '1px solid #c5a572' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', border: '1px solid #c5a572' }}>
             <SummaryMetric label="Tracks Won Feature Races At" value={String(tracksWonAt)} />
             <SummaryMetric label="Classes Won Feature Races In" value={String(classesWonIn)} />
             <SummaryMetric label="Class With Most Feature Wins" value={mostSuccessfulClass} />
             <SummaryMetric label="Track With Most Feature Wins" value={mostSuccessfulTrack} />
             <SummaryMetric label="Series With Most Feature Wins" value={mostSuccessfulSeries} />
-            <SummaryMetric label="Last Feature Win Date" value={lastFeatureWinDate} />
+            <SummaryMetric label="Last Feature Win Date" value={lastFeatureWinDate} isLast />
           </div>
         </section>
 
         <section style={{ marginTop: '8px', marginBottom: '28px' }}>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap', marginBottom: '12px' }}>
             <h2 style={{ fontSize: '29px', margin: 0, color: '#3d2b16' }}>Photo Archive</h2>
-            <span style={{ fontSize: '12px', color: '#765b39', fontStyle: 'italic' }}>Click any photo to enlarge.</span>
+            <span style={{ fontSize: '12px', color: '#765b39', fontStyle: 'italic' }}>Oldest dated photos first. Unknown-year photos appear last. Click any photo to enlarge.</span>
           </div>
           {displayPhotos.length === 0 ? <div style={{ padding: '18px', background: '#f1e5ce', border: '1px solid #c2a97d' }}>No photos available yet.</div> : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: '14px' }}>
@@ -363,8 +372,11 @@ function HeroStat({ label, value, sublabel }: { label: string; value: number | s
   return <div style={{ background: '#76511f', padding: '18px 9px', textAlign: 'center', color: '#fff7e7', borderRight: '1px solid rgba(255,247,231,0.32)' }}><div style={{ fontSize: typeof value === 'number' ? '29px' : '24px', fontWeight: 700, lineHeight: 1, marginBottom: '7px' }}>{typeof value === 'number' ? value.toLocaleString() : value}</div><div style={{ fontSize: '11px', color: '#f1dfbf', textTransform: 'uppercase', letterSpacing: '0.045em', lineHeight: 1.35 }}>{label}</div>{sublabel && <div style={{ fontSize: '9px', color: '#e4cfaa', marginTop: '5px' }}>{sublabel}</div>}</div>
 }
 
-function SummaryMetric({ label, value }: { label: string; value: string }) {
-  return <div style={{ padding: '14px 14px', borderRight: '1px solid #c5a572', minWidth: 0 }}><div style={{ fontSize: value.length > 22 ? '17px' : '25px', fontWeight: 700, color: '#4e3417', lineHeight: 1.15, wordBreak: 'break-word' }}>{value}</div><div style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.055em', color: '#74552f', marginTop: '5px', lineHeight: 1.3 }}>{label}</div></div>
+function SummaryMetric({ label, value, isLast = false }: { label: string; value: string; isLast?: boolean }) {
+  const isCount = /^\d+$/.test(value)
+  const valueFontSize = isCount ? '38px' : value.length > 22 ? '17px' : '25px'
+
+  return <div style={{ padding: '18px 14px', borderRight: isLast ? 'none' : '1px solid #c5a572', minWidth: 0 }}><div style={{ fontSize: valueFontSize, fontWeight: 700, color: '#4e3417', lineHeight: 1.08, wordBreak: 'break-word' }}>{value}</div><div style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.055em', color: '#74552f', marginTop: '7px', lineHeight: 1.3 }}>{label}</div></div>
 }
 
 function SummaryRow({ label, value }: { label: string; value: string }) {
@@ -376,6 +388,14 @@ function buildPhotoCaption(photo: Photo) {
   const photographer = photo.photographer_slug && photo.photographer_slug !== 'unknown' ? formatName(photo.photographer_slug) : 'Unknown Credit'
   const creditType = photo.credit_type && photo.credit_type !== 'unknown' ? formatCreditType(photo.credit_type) : 'Photo'
   return [trackLabel, photo.year && String(photo.year) !== 'unknown-year' ? photo.year : 'Year Unknown', photographer !== 'Unknown Credit' ? `${photographer}${creditType !== 'Photo' ? ` ${creditType}` : ''}` : null].filter(Boolean).join(' • ')
+}
+
+function normalizedPhotoYear(year: Photo['year']) {
+  if (year === null || year === undefined) return Number.MAX_SAFE_INTEGER
+  const value = String(year).trim().toLowerCase()
+  if (!value || value === 'unknown-year' || value === 'unknown') return Number.MAX_SAFE_INTEGER
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? parsed : Number.MAX_SAFE_INTEGER
 }
 
 function formatRaceDate(dateString: string) {
