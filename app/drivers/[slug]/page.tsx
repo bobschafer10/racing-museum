@@ -60,7 +60,6 @@ export default async function DriverProfilePage({
     { data: winsByClass },
     { data: recentResults },
     { data: championships },
-    { data: winRows },
   ] = await Promise.all([
     supabase
       .from('photos')
@@ -97,11 +96,6 @@ export default async function DriverProfilePage({
       .select('year, track_name, track_slug, class_name')
       .eq('driver_slug', slug)
       .order('year', { ascending: false }),
-    supabase
-      .from('driver_full_results_view')
-      .select('track_slug')
-      .eq('driver_slug', slug)
-      .eq('finishing_position', 1),
   ])
 
   const safePhotos = photos ?? []
@@ -110,41 +104,7 @@ export default async function DriverProfilePage({
   const safeWinsByClass = winsByClass ?? []
   const safeRecentResults = recentResults ?? []
   const safeChampionships = championships ?? []
-  const safeWinRows = winRows ?? []
   const careerProfile = getDriverCareerProfile(slug)
-
-  const winTrackSlugs = Array.from(
-    new Set(
-      safeWinRows
-        .map((row: any) => row.track_slug)
-        .filter((value: string | null | undefined): value is string => Boolean(value))
-    )
-  )
-
-  const { data: trackSurfaceRows } = winTrackSlugs.length
-    ? await supabase
-        .from('Tracks')
-        .select('slug, surface_type')
-        .in('slug', winTrackSlugs)
-    : { data: [] as any[] }
-
-  const surfaceByTrack = new Map<string, string>()
-  for (const row of trackSurfaceRows ?? []) {
-    if ((row as any)?.slug) {
-      surfaceByTrack.set(String((row as any).slug), String((row as any).surface_type || 'Unknown'))
-    }
-  }
-
-  let asphaltWins = 0
-  let dirtWins = 0
-  let mixedOrUnknownWins = 0
-
-  for (const row of safeWinRows as any[]) {
-    const surface = surfaceByTrack.get(String(row.track_slug || ''))?.toLowerCase() || 'unknown'
-    if (surface.includes('asphalt')) asphaltWins += 1
-    else if (surface.includes('dirt')) dirtWins += 1
-    else mixedOrUnknownWins += 1
-  }
 
   const lastRecordedYear =
     flatResultsByYear.length > 0
@@ -195,6 +155,9 @@ export default async function DriverProfilePage({
 
   const museumWins = Math.max(driver.recorded_wins ?? 0, driver.wisconsin_feature_wins ?? 0)
   const knownCareerWinsDisplay = careerProfile ? `${museumWins.toLocaleString()}+` : museumWins.toLocaleString()
+  const careerSpanDisplay = firstRecordedYear && lastRecordedYear
+    ? `${firstRecordedYear}–${lastRecordedYear}`
+    : '—'
 
   return (
     <main style={{ background: '#eadfc7', color: '#2f2417', minHeight: '100vh', fontFamily: 'Georgia, serif', margin: 0 }}>
@@ -266,20 +229,14 @@ export default async function DriverProfilePage({
                 <CareerHighlights highlights={careerHighlights as any[]} />
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(125px, 1fr))', marginTop: '18px', background: '#76511f', border: '1px solid #5b3a14', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.18)' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', marginTop: '18px', background: '#76511f', border: '1px solid #5b3a14', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.18)' }}>
                 <HeroStat label="Wisconsin Feature Wins" value={driver.wisconsin_feature_wins ?? 0} sublabel="Museum leaderboard" />
                 <HeroStat label="Museum-Recorded Wins" value={museumWins} sublabel="All museum results" />
                 <HeroStat label="Known Career Feature Wins" value={knownCareerWinsDisplay} sublabel={careerProfile ? 'Verified minimum' : 'Museum total'} />
-                <HeroStat label="Museum Asphalt Wins" value={asphaltWins} sublabel="Asphalt-classified tracks" />
-                <HeroStat label="Museum Dirt Wins" value={dirtWins} sublabel="Dirt-classified tracks" />
                 <HeroStat label="Major Championships" value={careerProfile?.headlineChampionships ?? 0} sublabel={careerProfile ? 'Documented career titles' : 'Career layer expanding'} />
                 <HeroStat label="Recorded Results" value={driver.recorded_results ?? 0} sublabel="Museum database" />
+                <HeroStat label="Recorded Career" value={careerSpanDisplay} sublabel="First–last museum year" />
               </div>
-              {mixedOrUnknownWins > 0 && (
-                <div style={{ padding: '8px 12px', background: 'rgba(244,234,215,0.78)', border: '1px solid #c9ad7c', fontSize: '11px', lineHeight: 1.45, color: '#6b5437' }}>
-                  Surface note: {mixedOrUnknownWins.toLocaleString()} museum-recorded win{mixedOrUnknownWins === 1 ? '' : 's'} occurred at tracks classified as mixed-surface or without a single current surface designation, so they are not forced into the dirt/asphalt split.
-                </div>
-              )}
             </div>
           </div>
         </div>
@@ -293,16 +250,16 @@ export default async function DriverProfilePage({
             <h2 style={{ fontSize: '28px', margin: 0, color: '#3d2b16' }}>Racing Lifetime Totals</h2>
             <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', borderTop: '1px solid #c5a572', borderBottom: '1px solid #c5a572' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', borderTop: '1px solid #c5a572', borderBottom: '1px solid #c5a572' }}>
             <SummaryMetric label="WI Feature Wins" value={driver.wisconsin_feature_wins ?? 0} />
             <SummaryMetric label="Museum-Recorded Wins" value={museumWins} />
             <SummaryMetricText label="Known Career Feature Wins" value={knownCareerWinsDisplay} />
-            <SummaryMetric label="Museum Asphalt Wins" value={asphaltWins} />
-            <SummaryMetric label="Museum Dirt Wins" value={dirtWins} />
             <SummaryMetric label="Major Championships" value={careerProfile?.headlineChampionships ?? 0} />
+            <SummaryMetric label="Recorded Results" value={driver.recorded_results ?? 0} />
+            <SummaryMetricText label="Recorded Career" value={careerSpanDisplay} />
           </div>
           <p style={{ margin: '10px 0 0', fontSize: '12px', color: '#6a5337', fontStyle: 'italic' }}>
-            Known career wins are shown as a verified minimum while outside-area research is still being reconciled against museum race records. Surface totals use each track’s current museum surface classification; mixed-surface tracks are kept separate rather than guessed.
+            Known career wins are shown as a verified minimum while outside-area research is still being reconciled against museum race records.
           </p>
         </section>
 
@@ -337,7 +294,7 @@ export default async function DriverProfilePage({
               <SummaryRow label="Driver Name" value={driver.driver_name} />
               <SummaryRow label="Hometown" value={driver.hometown || 'Unknown hometown'} />
               <SummaryRow label="State" value={String(driver.state || 'Unknown').trim()} />
-              <SummaryRow label="Museum-Recorded Career" value={`${firstRecordedYear ?? '—'}–${lastRecordedYear ?? '—'}`} />
+              <SummaryRow label="Museum-Recorded Career" value={careerSpanDisplay} />
             </Panel>
 
             <Panel title="Recent Feature Results">
