@@ -18,25 +18,66 @@ type CareerAccomplishment = {
   notes: string | null
 }
 
+type MuseumSeriesChampionship = {
+  year: number | null
+  series_name: string
+}
+
 export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
-  const { data } = await supabase
-    .from('DriverCareerAccomplishments')
-    .select('id, year, accomplishment_date, accomplishment_type, series_name, event_name, track_name, finishing_position, championship_level, geography, source_name, source_url, display_priority, notes')
-    .eq('driver_slug', slug)
-    .eq('is_published', true)
-    .order('display_priority', { ascending: true })
-    .order('year', { ascending: true, nullsFirst: false })
-    .order('accomplishment_date', { ascending: true, nullsFirst: false })
+  const [{ data }, { data: driverRow }] = await Promise.all([
+    supabase
+      .from('DriverCareerAccomplishments')
+      .select('id, year, accomplishment_date, accomplishment_type, series_name, event_name, track_name, finishing_position, championship_level, geography, source_name, source_url, display_priority, notes')
+      .eq('driver_slug', slug)
+      .eq('is_published', true)
+      .order('display_priority', { ascending: true })
+      .order('year', { ascending: true, nullsFirst: false })
+      .order('accomplishment_date', { ascending: true, nullsFirst: false }),
+    supabase
+      .from('driver_directory_alpha_view')
+      .select('driver_id')
+      .eq('driver_slug', slug)
+      .maybeSingle(),
+  ])
 
   const rows = (data ?? []) as CareerAccomplishment[]
-  if (!rows.length) return null
+  const driverId = Number((driverRow as any)?.driver_id || 0)
 
-  const championships = rows.filter((row) => isChampionship(row.accomplishment_type))
+  let museumSeriesChampionships: MuseumSeriesChampionship[] = []
+  if (driverId) {
+    const { data: seasonRows } = await supabase
+      .from('SeriesSeasons')
+      .select('series_id, year')
+      .eq('champion_driver_id', driverId)
+      .order('year', { ascending: true })
+
+    const seriesIds = Array.from(new Set((seasonRows ?? []).map((row: any) => Number(row.series_id)).filter(Boolean)))
+    const { data: seriesRows } = seriesIds.length
+      ? await supabase.from('Series').select('id, series_name').in('id', seriesIds)
+      : { data: [] as any[] }
+
+    const seriesNameById = new Map<number, string>()
+    for (const row of seriesRows ?? []) {
+      seriesNameById.set(Number((row as any).id), String((row as any).series_name || 'Series'))
+    }
+
+    museumSeriesChampionships = (seasonRows ?? []).map((row: any) => ({
+      year: row.year ?? null,
+      series_name: seriesNameById.get(Number(row.series_id)) || 'Series',
+    }))
+  }
+
+  if (!rows.length && !museumSeriesChampionships.length) return null
+
+  const externalChampionships = rows.filter((row) => isSeriesChampionship(row.accomplishment_type))
+  const trackChampionships = rows.filter((row) => row.accomplishment_type === 'TRACK_CHAMPIONSHIP')
   const majorVictories = rows.filter((row) => row.accomplishment_type === 'MAJOR_EVENT_WIN')
   const outsideWins = rows.filter((row) => row.accomplishment_type === 'OUTSIDE_AREA_FEATURE_WIN')
   const majorTop5s = rows.filter((row) => row.accomplishment_type === 'MAJOR_TOP5')
   const summaries = rows.filter((row) => row.accomplishment_type === 'CAREER_SERIES_SUMMARY')
   const selectedVictories = [...majorVictories, ...outsideWins]
+
+  const championshipItems = mergeSeriesChampionships(museumSeriesChampionships, externalChampionships)
 
   return (
     <section style={{ margin: '10px 0 32px' }}>
@@ -50,13 +91,13 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
       </div>
 
       <p style={{ margin: '0 auto 16px', maxWidth: '970px', textAlign: 'center', fontSize: '15px', lineHeight: 1.65, color: '#5a4327' }}>
-        Verified career accomplishments beyond the museum’s normal race-result coverage, with existing museum results kept in their original event and championship records.
+        Documented series championships and verified broader-career accomplishments, with museum-recorded race results kept in their original event records.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(255px, 1fr))', gap: '14px' }}>
-        {championships.length > 0 && (
-          <CareerCard title="Championships" icon="★">
-            <CareerList items={championships.map(formatAccomplishment)} />
+        {championshipItems.length > 0 && (
+          <CareerCard title="Series Championships" icon="★">
+            <CareerList items={championshipItems} />
           </CareerCard>
         )}
 
@@ -73,21 +114,63 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
         )}
       </div>
 
+      {trackChampionships.length > 0 && (
+        <div style={{ marginTop: '12px', fontSize: '12px', lineHeight: 1.55, color: '#6a5337', textAlign: 'center' }}>
+          Additional verified track championships are reflected in the Track Championships total and track-championship section below.
+        </div>
+      )}
+
       <div style={{ marginTop: '12px', padding: '9px 14px', borderTop: '1px solid #c8aa79', borderBottom: '1px solid #c8aa79', fontSize: '12px', lineHeight: 1.55, color: '#6a5337', fontStyle: 'italic', textAlign: 'center' }}>
-        Career accomplishments shown here are independently verified additions. Museum-recorded race results and championships are not duplicated in this section.
+        Museum series championships are merged with verified broader-career championship records and deduplicated here. Museum-recorded race results are not duplicated.
       </div>
     </section>
   )
 }
 
-function isChampionship(type: string) {
-  return ['SERIES_CHAMPIONSHIP', 'REGIONAL_CHAMPIONSHIP', 'NATIONAL_CHAMPIONSHIP', 'TRACK_CHAMPIONSHIP'].includes(type)
+function isSeriesChampionship(type: string) {
+  return ['SERIES_CHAMPIONSHIP', 'REGIONAL_CHAMPIONSHIP', 'NATIONAL_CHAMPIONSHIP'].includes(type)
+}
+
+function mergeSeriesChampionships(museumRows: MuseumSeriesChampionship[], externalRows: CareerAccomplishment[]) {
+  const items: { year: number | null; series: string; label: string }[] = []
+  const seen = new Set<string>()
+
+  for (const row of museumRows) {
+    const key = `${row.year ?? ''}|${normalizeSeriesName(row.series_name)}`
+    if (seen.has(key)) continue
+    seen.add(key)
+    items.push({
+      year: row.year,
+      series: row.series_name,
+      label: `${row.year ? `${row.year} ` : ''}${row.series_name} Champion`,
+    })
+  }
+
+  for (const row of externalRows) {
+    const series = row.series_name || row.track_name || row.notes || 'Championship'
+    const key = `${row.year ?? ''}|${normalizeSeriesName(series)}`
+    if (seen.has(key)) continue
+    seen.add(key)
+    items.push({
+      year: row.year,
+      series,
+      label: `${row.year ? `${row.year} ` : ''}${series} Champion`,
+    })
+  }
+
+  return items
+    .sort((a, b) => (a.year ?? Number.MAX_SAFE_INTEGER) - (b.year ?? Number.MAX_SAFE_INTEGER) || a.series.localeCompare(b.series))
+    .map((item) => item.label)
+}
+
+function normalizeSeriesName(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
 }
 
 function formatAccomplishment(row: CareerAccomplishment) {
   const year = row.year ? `${row.year} ` : ''
 
-  if (isChampionship(row.accomplishment_type)) {
+  if (isSeriesChampionship(row.accomplishment_type) || row.accomplishment_type === 'TRACK_CHAMPIONSHIP') {
     const label = row.series_name || row.track_name || row.notes || 'Championship'
     return `${year}${label} Champion`
   }
