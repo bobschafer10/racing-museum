@@ -1,11 +1,6 @@
 import type { ReactNode } from 'react'
 import { supabase } from '@/lib/supabase'
 
-type CareerProfile = {
-  summary?: string
-  headlineChampionships: number
-}
-
 type CareerAccomplishment = {
   id: number
   year: number | null
@@ -21,28 +16,6 @@ type CareerAccomplishment = {
   source_url: string | null
   display_priority: number | null
   notes: string | null
-}
-
-// Temporary compatibility metadata for the profile hero while page.tsx is
-// migrated to calculate its headline championship count directly from Supabase.
-const LEGACY_PROFILE_META: Record<string, CareerProfile> = {
-  'dick-trickle': {
-    summary: 'One of the most accomplished short-track stock car drivers in American racing history, with major success across ARTGO, ASA, national touring series, and marquee events beyond the museum’s core reporting area.',
-    headlineChampionships: 10,
-  },
-  'kevin-adams': { headlineChampionships: 4 },
-  'tom-reffner': { headlineChampionships: 2 },
-  'miles-melius': { headlineChampionships: 2 },
-  'pete-parker': { headlineChampionships: 1 },
-  'rod-snellenberger': { headlineChampionships: 2 },
-  'bill-johnson-jr': { headlineChampionships: 0 },
-  'terry-van-roy': { headlineChampionships: 0 },
-  'curt-myers': { headlineChampionships: 3 },
-  'benji-lacrosse': { headlineChampionships: 2 },
-}
-
-export function getDriverCareerProfile(slug: string) {
-  return LEGACY_PROFILE_META[slug] ?? null
 }
 
 export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
