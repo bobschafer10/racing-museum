@@ -26,6 +26,7 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
     .eq('is_published', true)
     .order('display_priority', { ascending: true })
     .order('year', { ascending: true, nullsFirst: false })
+    .order('accomplishment_date', { ascending: true, nullsFirst: false })
 
   const rows = (data ?? []) as CareerAccomplishment[]
   if (!rows.length) return null
@@ -35,6 +36,7 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
   const outsideWins = rows.filter((row) => row.accomplishment_type === 'OUTSIDE_AREA_FEATURE_WIN')
   const majorTop5s = rows.filter((row) => row.accomplishment_type === 'MAJOR_TOP5')
   const summaries = rows.filter((row) => row.accomplishment_type === 'CAREER_SERIES_SUMMARY')
+  const selectedVictories = [...majorVictories, ...outsideWins]
 
   return (
     <section style={{ margin: '10px 0 32px' }}>
@@ -58,15 +60,15 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
           </CareerCard>
         )}
 
-        {(summaries.length > 0 || outsideWins.length > 0 || majorTop5s.length > 0) && (
+        {(summaries.length > 0 || majorTop5s.length > 0) && (
           <CareerCard title="Major Series Success" icon="◆">
-            <CareerList items={[...summaries, ...outsideWins, ...majorTop5s].map(formatAccomplishment)} />
+            <CareerList items={[...summaries, ...majorTop5s].map(formatAccomplishment)} />
           </CareerCard>
         )}
 
-        {majorVictories.length > 0 && (
-          <CareerCard title="Selected Major Victories" icon="🏁">
-            <CareerList items={majorVictories.map(formatAccomplishment)} />
+        {selectedVictories.length > 0 && (
+          <CareerCard title="Selected Major & Touring Victories" icon="🏁">
+            <CareerList items={selectedVictories.map(formatAccomplishment)} />
           </CareerCard>
         )}
       </div>
