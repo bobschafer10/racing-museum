@@ -4,10 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
 import { supabase } from '@/lib/supabase'
-import {
-  DriverCareerAccomplishments,
-  getDriverCareerProfile,
-} from '@/components/DriverCareerAccomplishments'
+import { DriverCareerAccomplishments } from '@/components/DriverCareerAccomplishments'
 import PhotoLightboxImage from '@/components/PhotoLightboxImage'
 
 type Driver = {
@@ -33,21 +30,25 @@ type Photo = {
   track_slug?: string | null
 }
 
+type CareerHeadlineRow = {
+  accomplishment_type: string
+}
+
 export const revalidate = 3600
 
 const SUPABASE_PHOTO_BASE =
   'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
 
-// Verified outside-area feature wins that are not yet represented by museum event rows.
-// This list will grow as the Top 100 career audit is reconciled driver-by-driver.
-const DISCOVERED_OUTSIDE_AREA_WINS: Record<string, number> = {
-  'kevin-adams': 12,
-  'pete-parker': 1,
-  'rod-snellenberger': 1,
-  'benji-lacrosse': 3,
-}
-
 const COVERAGE_STATES = new Set(['WI', 'MN', 'MI', 'IL'])
+const SERIES_CHAMPIONSHIP_TYPES = new Set([
+  'SERIES_CHAMPIONSHIP',
+  'REGIONAL_CHAMPIONSHIP',
+  'NATIONAL_CHAMPIONSHIP',
+])
+const DISCOVERED_WIN_TYPES = new Set([
+  'OUTSIDE_AREA_FEATURE_WIN',
+  'MAJOR_EVENT_WIN',
+])
 
 export default async function DriverProfilePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -71,6 +72,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     { data: seriesChampionshipRows },
     { data: seriesWinRows },
     { data: lastWinRows },
+    { data: careerHeadlineRows },
   ] = await Promise.all([
     supabase
       .from('photos')
@@ -127,6 +129,11 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
       .eq('finishing_position', 1)
       .order('race_date', { ascending: false })
       .limit(1),
+    supabase
+      .from('DriverCareerAccomplishments')
+      .select('accomplishment_type')
+      .eq('driver_slug', slug)
+      .eq('is_published', true),
   ])
 
   const safePhotos = photos ?? []
@@ -136,7 +143,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   const safeRecentResults = recentResults ?? []
   const safeChampionships = championships ?? []
   const safeWinRows = winRows ?? []
-  const careerProfile = getDriverCareerProfile(slug)
+  const safeCareerHeadlineRows = (careerHeadlineRows ?? []) as CareerHeadlineRow[]
 
   const orderedPhotos = [...safePhotos].sort((a, b) => {
     const yearA = normalizedPhotoYear(a.year)
@@ -172,16 +179,27 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     COVERAGE_STATES.has(stateByTrack.get(String(row.track_slug || '')) || '')
   ).length
 
-  // Use the actual feature-win rows as the museum discovered baseline. Summary fields can lag behind.
-  const museumDiscoveredWins = Math.max(safeWinRows.length, coverageAreaWins, driver.wisconsin_feature_wins ?? 0)
-  const discoveredOutsideWins = DISCOVERED_OUTSIDE_AREA_WINS[slug] ?? 0
+  // The museum result table remains the baseline. Only separately verified career
+  // wins stored outside the museum result table are added to the discovered total.
+  const museumDiscoveredWins = Math.max(
+    safeWinRows.length,
+    coverageAreaWins,
+    driver.wisconsin_feature_wins ?? 0
+  )
+  const discoveredOutsideWins = safeCareerHeadlineRows.filter((row) =>
+    DISCOVERED_WIN_TYPES.has(row.accomplishment_type)
+  ).length
   const totalDiscoveredWins = museumDiscoveredWins + discoveredOutsideWins
 
-  const seriesChampionships = Math.max(
-    (seriesChampionshipRows ?? []).length,
-    careerProfile?.headlineChampionships ?? 0
-  )
-  const trackChampionships = safeChampionships.length
+  const externalSeriesChampionships = safeCareerHeadlineRows.filter((row) =>
+    SERIES_CHAMPIONSHIP_TYPES.has(row.accomplishment_type)
+  ).length
+  const seriesChampionships = (seriesChampionshipRows ?? []).length + externalSeriesChampionships
+
+  const externalTrackChampionships = safeCareerHeadlineRows.filter((row) =>
+    row.accomplishment_type === 'TRACK_CHAMPIONSHIP'
+  ).length
+  const trackChampionships = safeChampionships.length + externalTrackChampionships
 
   const tracksWonAt = winningTrackSlugs.length
   const classesWonIn = new Set(
@@ -221,6 +239,10 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     ...safeChampionships.slice(0, 3).map((ch: any) => ({ year: ch.year, text: `${ch.track_name} Champion` })),
     lastRecordedYear && lastRecordedYear !== firstRecordedYear ? { year: lastRecordedYear, text: 'Last Recorded Feature Race' } : null,
   ].filter(Boolean)
+
+  const profileSummary = safeCareerHeadlineRows.length > 0
+    ? 'Historical driver profile from the Upper Midwest Auto Racing Museum archive, combining museum race records, photographs and championships with independently verified broader career accomplishments.'
+    : 'Historical driver profile from the Upper Midwest Auto Racing Museum archive. This page combines museum race records, photographs and championships.'
 
   const buildPhotoUrl = (photoObj: Photo | null | undefined) => {
     if (!photoObj?.file_name) return ''
@@ -271,7 +293,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(260px, 330px)', gap: '24px', alignItems: 'start' }}>
-                <p style={{ fontSize: '18px', lineHeight: 1.8, margin: 0, color: '#3f2d18' }}>{careerProfile?.summary || 'Historical driver profile from the Upper Midwest Auto Racing Museum archive. This page combines museum race records, photographs, championships, and documented career accomplishments.'}</p>
+                <p style={{ fontSize: '18px', lineHeight: 1.8, margin: 0, color: '#3f2d18' }}>{profileSummary}</p>
                 <CareerHighlights highlights={careerHighlights as any[]} />
               </div>
 
@@ -279,8 +301,8 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
                 <HeroStat label="Wisconsin Feature Wins" value={driver.wisconsin_feature_wins ?? 0} sublabel="Wisconsin tracks" />
                 <HeroStat label="Coverage-Area Feature Wins" value={coverageAreaWins} sublabel="Museum reporting area" />
                 <HeroStat label="Total Discovered Feature Wins" value={totalDiscoveredWins} sublabel="Museum + verified outside-area" />
-                <HeroStat label="Series Championships" value={seriesChampionships} sublabel="Documented series titles" />
-                <HeroStat label="Track Championships" value={trackChampionships} sublabel="Museum championship records" />
+                <HeroStat label="Series Championships" value={seriesChampionships} sublabel="Museum + verified broader career" />
+                <HeroStat label="Track Championships" value={trackChampionships} sublabel="Museum + verified broader career" />
                 <HeroStat label="Recorded Career" value={careerSpanDisplay} sublabel="First–last museum year" />
               </div>
             </div>
