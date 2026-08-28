@@ -1,183 +1,67 @@
 import type { ReactNode } from 'react'
+import { supabase } from '@/lib/supabase'
 
 type CareerProfile = {
   summary?: string
   headlineChampionships: number
-  championships: string[]
-  seriesSuccess: string[]
-  majorVictories: string[]
-  note?: string
 }
 
-const CAREER_PROFILES: Record<string, CareerProfile> = {
+type CareerAccomplishment = {
+  id: number
+  year: number | null
+  accomplishment_date: string | null
+  accomplishment_type: string
+  series_name: string | null
+  event_name: string | null
+  track_name: string | null
+  finishing_position: number | null
+  championship_level: string | null
+  geography: string | null
+  source_name: string | null
+  source_url: string | null
+  display_priority: number | null
+  notes: string | null
+}
+
+// Temporary compatibility metadata for the profile hero while page.tsx is
+// migrated to calculate its headline championship count directly from Supabase.
+const LEGACY_PROFILE_META: Record<string, CareerProfile> = {
   'dick-trickle': {
     summary: 'One of the most accomplished short-track stock car drivers in American racing history, with major success across ARTGO, ASA, national touring series, and marquee events beyond the museum’s core reporting area.',
     headlineChampionships: 10,
-    championships: [
-      '7× ARTGO Challenge Series Champion — 1977, 1979, 1980, 1983, 1984, 1985, 1987',
-      '2× ASA National Tour Champion — 1984, 1985',
-      '1982 World Series of Asphalt Super Late Model Champion',
-    ],
-    seriesSuccess: [
-      '68 ARTGO Challenge Series wins',
-      '32 ASA National Tour wins',
-      '16 World Series of Asphalt Super Late Model wins',
-      '6 ALL PRO Super Series wins',
-      '6 NASCAR All-American Challenge wins',
-      '2 NASCAR Southwest Tour wins',
-    ],
-    majorVictories: [
-      '1983 World Crown 300 — Gresham Motorsports Park, Georgia',
-      'Multiple major ASA, ARTGO, ALL PRO and national touring victories',
-      'Career accomplishments span Wisconsin, the Midwest, the Southeast, Canada and national events',
-    ],
-    note: 'ARTGO events are already part of the museum’s complete ARTGO series archive and are referenced here rather than duplicated.',
   },
-  'kevin-adams': {
-    headlineChampionships: 4,
-    championships: [
-      'WISSOTA Modified Champion — 2008',
-      'WISSOTA Modified Champion — 2011',
-      'WISSOTA Modified Champion — 2014',
-      'WISSOTA Modified Champion — 2015',
-    ],
-    seriesSuccess: [
-      'Extensive WISSOTA Modified and Midwest Modified success',
-      'Multiple Florida Modified Winternationals and Sunshine State victories',
-      'Recorded wins in Wisconsin, Minnesota and Florida',
-    ],
-    majorVictories: [
-      'Modified Winternationals victories at East Bay Raceway Park',
-      'Sunshine State Modified / B-Mod Tour victories in Florida',
-      'Minnesota Modified Nationals victory at Ogilvie Raceway',
-    ],
-  },
-  'tom-reffner': {
-    headlineChampionships: 2,
-    championships: [
-      'ARTGO Challenge Series Champion — 1975',
-      'ARTGO Challenge Series Champion — 1978',
-    ],
-    seriesSuccess: [
-      '15 recorded ARTGO Challenge Series wins in the museum archive',
-      '68 ARTGO top-five finishes',
-      'Major 1975 feature-win season with victories across the Midwest',
-    ],
-    majorVictories: [
-      '1976 World Cup 400 — I-70 Speedway, Missouri',
-      '1978 NASCAR Late Model Sportsman National Championship race win — Colorado Springs',
-      '1975 outside-Wisconsin wins at I-70, Elko, Grundy County and Ohio tracks',
-    ],
-    note: 'The museum recognizes Reffner as the 1975 ARTGO champion even though the inaugural ARTGO season consisted of one race.',
-  },
-  'miles-melius': {
-    headlineChampionships: 2,
-    championships: [
-      'Badger Midget Auto Racing Association Champion — 1949',
-      'Badger Midget Auto Racing Association Champion — 1950',
-    ],
-    seriesSuccess: [
-      'Extensive Midget, Late Model and Modified success across the Upper Midwest',
-      'Museum-recorded victories in Wisconsin, Minnesota, Illinois and Michigan',
-    ],
-    majorVictories: [
-      'Wins at Austin Fairgrounds, Rockford Speedway, Waukegan Speedway and Escanaba Speedway',
-      'Known 1951 IMCA Stock Car Series top-five finish remains under event-level research',
-    ],
-  },
-  'pete-parker': {
-    headlineChampionships: 1,
-    championships: ['1988 UMP Gold Series / Summer Nationals Champion'],
-    seriesSuccess: [
-      'National Dirt Racing Association race winner',
-      'Strong national and regional dirt Late Model record',
-      'Top-five finishes in multiple major dirt Late Model events',
-    ],
-    majorVictories: [
-      '1981 NDRA victory — Tri-City Speedway, Illinois',
-      '1981 feature victory — Oskaloosa, Iowa',
-      '1983 Silver 1000 winner — Proctor Speedway, Minnesota',
-    ],
-  },
-  'rod-snellenberger': {
-    headlineChampionships: 2,
-    championships: [
-      '2008 IMCA Stock Car National Champion',
-      '2013 Badger Stock Car Tour Champion',
-    ],
-    seriesSuccess: [
-      'Long-running IMCA Stock Car career with national and regional success',
-      'Museum-recorded Badger Stock Car Tour championship already linked to series history',
-    ],
-    majorVictories: [
-      '2026 Clash on the Coast victory — Northwest Florida Speedway',
-      'Major IMCA Stock Car accomplishments across Wisconsin and beyond',
-    ],
-  },
-  'bill-johnson-jr': {
-    headlineChampionships: 0,
-    championships: [],
-    seriesSuccess: [
-      'Extensive early Midget and Modified history already represented in museum results',
-      'Outside-Wisconsin results include Illinois and Upper Michigan competition',
-    ],
-    majorVictories: [
-      '1958 Rockford Speedway Midget victories',
-      'Additional Rockford and regional results already preserved in museum race history',
-    ],
-    note: 'Most known broader career results for Johnson are already represented by existing museum race records.',
-  },
-  'terry-van-roy': {
-    headlineChampionships: 0,
-    championships: [],
-    seriesSuccess: [
-      'Career appears to be overwhelmingly Wisconsin-based based on the current museum and Third Turn audit',
-    ],
-    majorVictories: [],
-    note: 'No verified outside-area accomplishment is being added at this time. This section can expand if additional documentation surfaces.',
-  },
-  'curt-myers': {
-    headlineChampionships: 3,
-    championships: [
-      '2000 WISSOTA Street Stock Champion',
-      '2015 FastLane Motorsports Northland Super Stock Series Champion',
-      '2025 FastLane Motorsports Northland Super Stock Series Champion',
-    ],
-    seriesSuccess: [
-      'Extensive WISSOTA and Northland Super Stock success',
-      'Many Minnesota victories already preserved in museum race results',
-    ],
-    majorVictories: ['Wins at Proctor, Grand Rapids, Granite City, North Central and Princeton in Minnesota'],
-  },
-  'benji-lacrosse': {
-    headlineChampionships: 2,
-    championships: [
-      '2006 IMCA Modified National Champion',
-      '2006 IMCA Modified North Central Region Champion',
-    ],
-    seriesSuccess: [
-      'Major IMCA Modified championship and national-event résumé',
-      'Repeated top-five finishes in marquee Iowa Modified events',
-    ],
-    majorVictories: [
-      '2005 IMCA Super Nationals Modified winner — Boone Speedway',
-      '2011 Night of 1,000 Stars winner — Hancock County Speedway',
-      '2013 Night of 10,000 Stars winner — Hancock County Speedway',
-      'Night of 10,000 Stars runner-up — 2014 and 2015',
-    ],
-  },
+  'kevin-adams': { headlineChampionships: 4 },
+  'tom-reffner': { headlineChampionships: 2 },
+  'miles-melius': { headlineChampionships: 2 },
+  'pete-parker': { headlineChampionships: 1 },
+  'rod-snellenberger': { headlineChampionships: 2 },
+  'bill-johnson-jr': { headlineChampionships: 0 },
+  'terry-van-roy': { headlineChampionships: 0 },
+  'curt-myers': { headlineChampionships: 3 },
+  'benji-lacrosse': { headlineChampionships: 2 },
 }
 
 export function getDriverCareerProfile(slug: string) {
-  return CAREER_PROFILES[slug] ?? null
+  return LEGACY_PROFILE_META[slug] ?? null
 }
 
-export function DriverCareerAccomplishments({ slug }: { slug: string }) {
-  const profile = getDriverCareerProfile(slug)
-  if (!profile) return null
+export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
+  const { data } = await supabase
+    .from('DriverCareerAccomplishments')
+    .select('id, year, accomplishment_date, accomplishment_type, series_name, event_name, track_name, finishing_position, championship_level, geography, source_name, source_url, display_priority, notes')
+    .eq('driver_slug', slug)
+    .eq('is_published', true)
+    .order('display_priority', { ascending: true })
+    .order('year', { ascending: true, nullsFirst: false })
 
-  const hasChampionships = profile.championships.length > 0
-  const hasVictories = profile.majorVictories.length > 0
+  const rows = (data ?? []) as CareerAccomplishment[]
+  if (!rows.length) return null
+
+  const championships = rows.filter((row) => isChampionship(row.accomplishment_type))
+  const majorVictories = rows.filter((row) => row.accomplishment_type === 'MAJOR_EVENT_WIN')
+  const outsideWins = rows.filter((row) => row.accomplishment_type === 'OUTSIDE_AREA_FEATURE_WIN')
+  const majorTop5s = rows.filter((row) => row.accomplishment_type === 'MAJOR_TOP5')
+  const summaries = rows.filter((row) => row.accomplishment_type === 'CAREER_SERIES_SUMMARY')
 
   return (
     <section style={{ margin: '10px 0 32px' }}>
@@ -190,35 +74,68 @@ export function DriverCareerAccomplishments({ slug }: { slug: string }) {
         <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
       </div>
 
-      {profile.summary && (
-        <p style={{ margin: '0 auto 16px', maxWidth: '970px', textAlign: 'center', fontSize: '15px', lineHeight: 1.65, color: '#5a4327' }}>{profile.summary}</p>
-      )}
+      <p style={{ margin: '0 auto 16px', maxWidth: '970px', textAlign: 'center', fontSize: '15px', lineHeight: 1.65, color: '#5a4327' }}>
+        Verified career accomplishments beyond the museum’s normal race-result coverage, with existing museum results kept in their original event and championship records.
+      </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(255px, 1fr))', gap: '14px' }}>
-        {hasChampionships && (
+        {championships.length > 0 && (
           <CareerCard title="Championships" icon="★">
-            <CareerList items={profile.championships} />
+            <CareerList items={championships.map(formatAccomplishment)} />
           </CareerCard>
         )}
 
-        <CareerCard title="Major Series Success" icon="◆">
-          <CareerList items={profile.seriesSuccess} />
-        </CareerCard>
+        {(summaries.length > 0 || outsideWins.length > 0 || majorTop5s.length > 0) && (
+          <CareerCard title="Major Series Success" icon="◆">
+            <CareerList items={[...summaries, ...outsideWins, ...majorTop5s].map(formatAccomplishment)} />
+          </CareerCard>
+        )}
 
-        {hasVictories && (
+        {majorVictories.length > 0 && (
           <CareerCard title="Selected Major Victories" icon="🏁">
-            <CareerList items={profile.majorVictories} />
+            <CareerList items={majorVictories.map(formatAccomplishment)} />
           </CareerCard>
         )}
       </div>
 
-      {profile.note && (
-        <div style={{ marginTop: '12px', padding: '9px 14px', borderTop: '1px solid #c8aa79', borderBottom: '1px solid #c8aa79', fontSize: '12px', lineHeight: 1.55, color: '#6a5337', fontStyle: 'italic', textAlign: 'center' }}>
-          {profile.note}
-        </div>
-      )}
+      <div style={{ marginTop: '12px', padding: '9px 14px', borderTop: '1px solid #c8aa79', borderBottom: '1px solid #c8aa79', fontSize: '12px', lineHeight: 1.55, color: '#6a5337', fontStyle: 'italic', textAlign: 'center' }}>
+        Career accomplishments shown here are independently verified additions. Museum-recorded race results and championships are not duplicated in this section.
+      </div>
     </section>
   )
+}
+
+function isChampionship(type: string) {
+  return ['SERIES_CHAMPIONSHIP', 'REGIONAL_CHAMPIONSHIP', 'NATIONAL_CHAMPIONSHIP', 'TRACK_CHAMPIONSHIP'].includes(type)
+}
+
+function formatAccomplishment(row: CareerAccomplishment) {
+  const year = row.year ? `${row.year} ` : ''
+
+  if (isChampionship(row.accomplishment_type)) {
+    const label = row.series_name || row.track_name || row.notes || 'Championship'
+    return `${year}${label} Champion`
+  }
+
+  if (row.accomplishment_type === 'MAJOR_EVENT_WIN') {
+    const event = row.event_name || row.series_name || 'Major event'
+    const location = [row.track_name, row.geography].filter(Boolean).join(', ')
+    return `${year}${event}${location ? ` — ${location}` : ''}`
+  }
+
+  if (row.accomplishment_type === 'OUTSIDE_AREA_FEATURE_WIN') {
+    const label = row.event_name || row.series_name || 'Feature win'
+    const location = [row.track_name, row.geography].filter(Boolean).join(', ')
+    return `${year}${label}${location ? ` — ${location}` : ''}`
+  }
+
+  if (row.accomplishment_type === 'MAJOR_TOP5') {
+    const event = row.event_name || row.series_name || 'Major event'
+    const finish = row.finishing_position ? ` — P${row.finishing_position}` : ''
+    return `${year}${event}${finish}`
+  }
+
+  return row.notes || `${year}${row.series_name || row.event_name || 'Documented career accomplishment'}`
 }
 
 function CareerCard({ title, icon, children }: { title: string; icon: string; children: ReactNode }) {
@@ -236,7 +153,7 @@ function CareerCard({ title, icon, children }: { title: string; icon: string; ch
 function CareerList({ items }: { items: string[] }) {
   return (
     <ul style={{ margin: 0, paddingLeft: '18px', color: '#3f2d18', fontSize: '13px', lineHeight: 1.6 }}>
-      {items.map((item) => <li key={item} style={{ marginBottom: '6px' }}>{item}</li>)}
+      {items.map((item, index) => <li key={`${item}-${index}`} style={{ marginBottom: '6px' }}>{item}</li>)}
     </ul>
   )
 }
