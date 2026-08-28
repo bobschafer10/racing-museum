@@ -167,20 +167,21 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   )) as string[]
 
   const { data: winningTrackRows } = winningTrackSlugs.length
-    ? await supabase.from('Tracks').select('slug, state').in('slug', winningTrackSlugs)
+    ? await supabase.from('Tracks').select('slug, state, logo_url').in('slug', winningTrackSlugs)
     : { data: [] as any[] }
 
   const stateByTrack = new Map<string, string>()
+  const logoByTrack = new Map<string, string>()
   for (const row of winningTrackRows ?? []) {
-    stateByTrack.set(String((row as any).slug), String((row as any).state || '').trim())
+    const trackSlug = String((row as any).slug)
+    stateByTrack.set(trackSlug, String((row as any).state || '').trim())
+    if ((row as any).logo_url) logoByTrack.set(trackSlug, String((row as any).logo_url))
   }
 
   const coverageAreaWins = safeWinRows.filter((row: any) =>
     COVERAGE_STATES.has(stateByTrack.get(String(row.track_slug || '')) || '')
   ).length
 
-  // The museum result table remains the baseline. Only separately verified career
-  // wins stored outside the museum result table are added to the discovered total.
   const museumDiscoveredWins = Math.max(
     safeWinRows.length,
     coverageAreaWins,
@@ -207,6 +208,10 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   ).size
   const mostSuccessfulClass = safeWinsByClass[0]?.class_name || '—'
   const mostSuccessfulTrack = safeTopTracks[0]?.track_name || '—'
+  const mostSuccessfulTrackSlug = safeTopTracks[0]?.track_slug || null
+  const mostSuccessfulTrackLogo = mostSuccessfulTrackSlug
+    ? (logoByTrack.get(String(mostSuccessfulTrackSlug)) || `/logos/tracks/${mostSuccessfulTrackSlug}.jpg`)
+    : ''
 
   const seriesWinCounts = new Map<number, number>()
   for (const row of seriesWinRows ?? []) {
@@ -215,9 +220,10 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   }
   const topSeriesId = Array.from(seriesWinCounts.entries()).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
   const { data: topSeriesRow } = topSeriesId
-    ? await supabase.from('Series').select('series_name').eq('id', topSeriesId).maybeSingle()
+    ? await supabase.from('Series').select('series_name, logo_url').eq('id', topSeriesId).maybeSingle()
     : { data: null as any }
   const mostSuccessfulSeries = (topSeriesRow as any)?.series_name || '—'
+  const mostSuccessfulSeriesLogo = (topSeriesRow as any)?.logo_url || ''
   const lastFeatureWinDate = (lastWinRows?.[0] as any)?.race_date
     ? formatRaceDate((lastWinRows?.[0] as any).race_date)
     : '—'
@@ -322,8 +328,8 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
             <SummaryMetric label="Tracks Won Feature Races At" value={String(tracksWonAt)} />
             <SummaryMetric label="Classes Won Feature Races In" value={String(classesWonIn)} />
             <SummaryMetric label="Class With Most Feature Wins" value={mostSuccessfulClass} />
-            <SummaryMetric label="Track With Most Feature Wins" value={mostSuccessfulTrack} />
-            <SummaryMetric label="Series With Most Feature Wins" value={mostSuccessfulSeries} />
+            <SummaryMetric label="Track With Most Feature Wins" value={mostSuccessfulTrack} logoSrc={mostSuccessfulTrackLogo} logoAlt={`${mostSuccessfulTrack} logo`} />
+            <SummaryMetric label="Series With Most Feature Wins" value={mostSuccessfulSeries} logoSrc={mostSuccessfulSeriesLogo} logoAlt={`${mostSuccessfulSeries} logo`} />
             <SummaryMetric label="Last Feature Win Date" value={lastFeatureWinDate} isLast />
           </div>
         </section>
@@ -395,7 +401,7 @@ function HeroStat({ label, value, sublabel }: { label: string; value: number | s
   return <div style={{ background: '#76511f', padding: '18px 9px', textAlign: 'center', color: '#fff7e7', borderRight: '1px solid rgba(255,247,231,0.32)' }}><div style={{ fontSize: typeof value === 'number' ? '29px' : '24px', fontWeight: 700, lineHeight: 1, marginBottom: '7px' }}>{typeof value === 'number' ? value.toLocaleString() : value}</div><div style={{ fontSize: '11px', color: '#f1dfbf', textTransform: 'uppercase', letterSpacing: '0.045em', lineHeight: 1.35 }}>{label}</div>{sublabel && <div style={{ fontSize: '9px', color: '#e4cfaa', marginTop: '5px' }}>{sublabel}</div>}</div>
 }
 
-function SummaryMetric({ label, value, isLast = false }: { label: string; value: string; isLast?: boolean }) {
+function SummaryMetric({ label, value, logoSrc, logoAlt, isLast = false }: { label: string; value: string; logoSrc?: string; logoAlt?: string; isLast?: boolean }) {
   const isCount = /^\d+$/.test(value)
   const longestWord = value.split(/\s+/).reduce((max, word) => Math.max(max, word.length), 0)
   const valueFontSize = isCount
@@ -413,7 +419,7 @@ function SummaryMetric({ label, value, isLast = false }: { label: string; value:
   return (
     <div
       style={{
-        padding: '22px 18px 16px',
+        padding: '18px 18px 16px',
         borderRight: isLast ? 'none' : '1px solid #c5a572',
         minWidth: 0,
         minHeight: '215px',
@@ -423,22 +429,29 @@ function SummaryMetric({ label, value, isLast = false }: { label: string; value:
         overflow: 'hidden',
       }}
     >
-      <div
-        style={{
-          fontSize: valueFontSize,
-          fontWeight: 700,
-          color: '#4e3417',
-          lineHeight: 1.06,
-          letterSpacing: isCount ? '-0.025em' : '-0.015em',
-          wordBreak: 'normal',
-          overflowWrap: 'normal',
-          hyphens: 'none',
-          whiteSpace: 'normal',
-          maxWidth: '100%',
-          overflow: 'hidden',
-        }}
-      >
-        {value}
+      <div style={{ minWidth: 0 }}>
+        {logoSrc && (
+          <div style={{ height: '48px', marginBottom: '9px', display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
+            <img src={logoSrc} alt={logoAlt || ''} style={{ maxWidth: '108px', maxHeight: '46px', width: 'auto', height: 'auto', objectFit: 'contain', display: 'block' }} />
+          </div>
+        )}
+        <div
+          style={{
+            fontSize: valueFontSize,
+            fontWeight: 700,
+            color: '#4e3417',
+            lineHeight: 1.06,
+            letterSpacing: isCount ? '-0.025em' : '-0.015em',
+            wordBreak: 'normal',
+            overflowWrap: 'normal',
+            hyphens: 'none',
+            whiteSpace: 'normal',
+            maxWidth: '100%',
+            overflow: 'hidden',
+          }}
+        >
+          {value}
+        </div>
       </div>
       <div
         style={{
@@ -447,7 +460,7 @@ function SummaryMetric({ label, value, isLast = false }: { label: string; value:
           letterSpacing: '0.065em',
           color: '#74552f',
           lineHeight: 1.3,
-          paddingTop: '14px',
+          paddingTop: '12px',
         }}
       >
         {label}
