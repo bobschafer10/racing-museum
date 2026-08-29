@@ -9,7 +9,9 @@ export default function TrackLogo({
   slug: string
   trackName: string
 }) {
-  const logoPath = `/api/track-logo/${encodeURIComponent(slug)}`
+  // Version parameter prevents browsers/CDNs from reusing a placeholder
+  // that was cached before a newly added logo existed.
+  const logoPath = `/api/track-logo/${encodeURIComponent(slug)}?v=2`
 
   return (
     <div style={logoWrap}>
