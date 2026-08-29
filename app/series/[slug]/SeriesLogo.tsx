@@ -11,6 +11,10 @@ export default function SeriesLogo({
 }) {
   const jpgPath = `/logos/series/${slug}.jpg`
   const pngPath = `/logos/series/${slug}.png`
+  const legacyLogoPaths: Record<string, string> = {
+    'international-racing-association': '/logos/series/IRA%20LOGO.jpg',
+  }
+  const primaryPath = legacyLogoPaths[slug] || jpgPath
 
   const fallbackIndex = hashSlug(slug) % fallbackDesigns.length
   const fallback = fallbackDesigns[fallbackIndex]
@@ -19,13 +23,18 @@ export default function SeriesLogo({
   return (
     <div style={logoWrap}>
       <img
-        src={jpgPath}
+        src={primaryPath}
         alt={`${seriesName} logo`}
         style={logoStyle}
         onError={(e) => {
           const target = e.currentTarget
+          const attempted = target.getAttribute('data-attempt') || 'primary'
 
-          if (!target.src.includes('.png')) {
+          if (attempted === 'primary' && primaryPath !== jpgPath) {
+            target.setAttribute('data-attempt', 'jpg')
+            target.src = jpgPath
+          } else if (attempted !== 'png') {
+            target.setAttribute('data-attempt', 'png')
             target.src = pngPath
           } else {
             target.style.display = 'none'
