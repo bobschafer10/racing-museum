@@ -27,8 +27,10 @@ export async function GET(
   for (const candidate of candidates) {
     for (const ext of ['jpg', 'png', 'jpeg', 'webp']) {
       try {
+        // Do not cache an upstream 404. New museum logos are added regularly,
+        // and a cached miss would otherwise keep showing the placeholder.
         const upstream = await fetch(`${GITHUB_RAW_BASE}/${candidate}.${ext}`, {
-          cache: 'force-cache',
+          cache: 'no-store',
         })
 
         if (!upstream.ok) continue
@@ -74,7 +76,9 @@ export async function GET(
     status: 200,
     headers: {
       'Content-Type': 'image/svg+xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600, s-maxage=86400',
+      // Never cache a missing-logo placeholder. Once a logo is added to the
+      // repository, the next request should discover it immediately.
+      'Cache-Control': 'no-store, max-age=0',
     },
   })
 }
