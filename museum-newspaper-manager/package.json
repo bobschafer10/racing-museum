@@ -7,7 +7,7 @@
     "newspapers-dry-run": "node newspaper-manager.js --dry-run",
     "newspapers-upload": "node newspaper-manager.js",
     "newspapers-ocr-only": "node newspaper-manager.js --dry-run --ocr",
-    "newspapers-ocr-backfill": "node ocr-backfill.js"
+    "newspapers-ocr-backfill": "node ocr-backfill-v2.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.4",
