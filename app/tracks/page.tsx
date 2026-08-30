@@ -111,9 +111,12 @@ export default async function TracksPage({
         <div style={stateGrid}>
           {primaryStates.map((item) => (
             <Link key={item.code} href={`/tracks/state/${item.code.toLowerCase()}`} style={stateCard}>
-              <StateShape code={item.code} color={item.color} />
-              <div style={stateName}>{item.name}</div>
-              <div style={stateCount}>{stateCounts[item.code] ?? 0} Track{(stateCounts[item.code] ?? 0) === 1 ? '' : 's'}</div>
+              <CheckeredFlagWatermark />
+              <div style={stateCardContent}>
+                <StateShape code={item.code} color={item.color} />
+                <div style={stateName}>{item.name}</div>
+                <div style={stateCount}>{stateCounts[item.code] ?? 0} Track{(stateCounts[item.code] ?? 0) === 1 ? '' : 's'}</div>
+              </div>
             </Link>
           ))}
         </div>
@@ -125,8 +128,11 @@ export default async function TracksPage({
             <div style={otherGrid}>
               {otherStates.map((item) => (
                 <Link key={item.code} href={`/tracks/state/${item.code.toLowerCase()}`} style={otherCard}>
-                  <div style={otherName}>{item.name}</div>
-                  <div style={otherCount}>{item.count} Track{item.count === 1 ? '' : 's'}</div>
+                  <CheckeredFlagWatermark compact />
+                  <div style={otherCardContent}>
+                    <div style={otherName}>{item.name}</div>
+                    <div style={otherCount}>{item.count} Track{item.count === 1 ? '' : 's'}</div>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -162,33 +168,62 @@ export default async function TracksPage({
   )
 }
 
+function CheckeredFlagWatermark({ compact = false }: { compact?: boolean }) {
+  const cols = 7
+  const rows = 5
+  const size = 10
+  return (
+    <svg
+      viewBox="0 0 80 58"
+      aria-hidden="true"
+      style={compact ? compactFlagWatermark : flagWatermark}
+    >
+      <g transform="translate(5 4) skewY(-7)">
+        {Array.from({ length: rows }).flatMap((_, row) =>
+          Array.from({ length: cols }).map((__, col) => (
+            <rect
+              key={`${row}-${col}`}
+              x={col * size}
+              y={row * size}
+              width={size}
+              height={size}
+              fill={(row + col) % 2 === 0 ? '#3d2b16' : '#f7efdf'}
+            />
+          )),
+        )}
+      </g>
+      <path d="M5 4 C28 0 48 8 75 2 L75 48 C51 55 28 44 5 52 Z" fill="none" stroke="#7b603d" strokeWidth="1.2" />
+    </svg>
+  )
+}
+
 function StateShape({ code, color }: { code: string; color: string }) {
-  const common = { fill: color, stroke: '#3d2b16', strokeWidth: 1.6, strokeLinejoin: 'round' as const }
+  const common = { fill: color, stroke: '#3d2b16', strokeWidth: 1.25, strokeLinejoin: 'round' as const }
   if (code === 'WI') return (
     <svg viewBox="0 0 120 100" style={stateSvg} aria-label="Wisconsin outline">
-      <path {...common} d="M31 11 L46 8 L52 12 L61 11 L67 16 L80 15 L88 21 L91 28 L85 34 L80 35 L82 42 L78 50 L75 58 L72 66 L67 73 L64 86 L52 90 L43 86 L38 78 L32 72 L30 61 L23 54 L18 44 L21 35 L19 28 L24 20 Z" />
-      <path {...common} d="M82 34 L91 29 L96 31 L93 38 L88 45 L84 42 Z" />
+      <path {...common} d="M31 11 L45 8 L51 11 L60 10 L66 15 L78 15 L87 20 L91 27 L86 33 L81 35 L82 41 L78 49 L76 57 L72 65 L68 72 L64 86 L53 90 L44 87 L39 79 L33 73 L30 63 L24 56 L19 46 L22 37 L20 29 L25 21 Z" />
+      <path {...common} d="M82 34 L91 29 L96 31 L94 37 L88 44 L84 42 Z" />
     </svg>
   )
   if (code === 'MN') return (
     <svg viewBox="0 0 120 100" style={stateSvg} aria-label="Minnesota outline">
-      <path {...common} d="M30 9 L58 9 L58 14 L69 14 L73 19 L82 19 L86 24 L78 30 L76 38 L72 42 L73 50 L69 57 L68 66 L72 75 L79 85 L31 85 Z" />
+      <path {...common} d="M29 9 L57 9 L58 14 L69 14 L72 18 L80 18 L86 23 L80 28 L76 29 L74 38 L70 43 L72 50 L68 57 L67 66 L71 75 L78 85 L31 85 L31 74 L29 68 Z" />
     </svg>
   )
   if (code === 'MI') return (
     <svg viewBox="0 0 120 100" style={stateSvg} aria-label="Michigan outline">
-      <path {...common} d="M14 29 L21 22 L30 19 L38 13 L47 15 L54 13 L62 16 L69 15 L78 20 L84 27 L78 31 L68 30 L60 34 L52 32 L44 35 L35 32 L29 36 L22 34 Z" />
-      <path {...common} d="M67 40 L76 37 L85 42 L90 50 L89 59 L84 65 L82 73 L75 79 L71 88 L62 84 L58 76 L60 68 L55 61 L57 52 L61 45 Z" />
+      <path {...common} d="M14 29 L22 22 L31 19 L39 13 L47 15 L54 13 L62 16 L69 15 L78 20 L84 27 L78 31 L68 30 L60 34 L52 32 L44 35 L35 32 L29 36 L22 34 Z" />
+      <path {...common} d="M67 40 L76 37 L84 41 L89 48 L90 56 L86 63 L82 68 L81 75 L75 80 L71 88 L63 85 L58 77 L60 68 L56 61 L57 52 L61 45 Z" />
     </svg>
   )
   if (code === 'IL') return (
     <svg viewBox="0 0 120 100" style={stateSvg} aria-label="Illinois outline">
-      <path {...common} d="M49 8 L68 8 L69 18 L66 28 L70 36 L67 44 L71 52 L67 61 L62 67 L61 76 L55 88 L48 82 L45 72 L39 65 L41 56 L36 48 L39 40 L37 31 L42 24 L44 15 Z" />
+      <path {...common} d="M49 8 L67 8 L68 18 L66 28 L69 36 L66 44 L70 52 L67 60 L63 66 L61 75 L56 87 L50 83 L46 73 L40 66 L41 57 L37 49 L40 40 L38 31 L43 24 L45 15 Z" />
     </svg>
   )
   return (
     <svg viewBox="0 0 120 100" style={stateSvg} aria-label="Indiana outline">
-      <path {...common} d="M45 8 L71 8 L70 23 L72 36 L70 48 L71 60 L68 72 L61 84 L53 89 L46 84 L43 72 L44 60 L42 49 L44 37 L42 25 Z" />
+      <path {...common} d="M45 8 L70 8 L70 22 L72 35 L70 48 L71 60 L68 72 L62 83 L54 89 L47 85 L44 73 L45 61 L43 49 L44 37 L42 25 Z" />
     </svg>
   )
 }
@@ -212,15 +247,19 @@ const stateSection: CSSProperties = { maxWidth: '1200px', margin: '0 auto', padd
 const sectionHeading: CSSProperties = { fontSize: '16px', textTransform: 'uppercase', color: '#5b3b1b', fontWeight: 700 }
 const sectionSubhead: CSSProperties = { fontSize: '14px', margin: '5px 0 15px', color: '#5a4934' }
 const stateGrid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(5, minmax(140px, 1fr))', gap: '16px' }
-const stateCard: CSSProperties = { textDecoration: 'none', color: '#2f2417', background: '#f2e8d6', border: '1px solid #c8ad82', borderRadius: '5px', minHeight: '200px', padding: '12px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 5px rgba(65,45,20,.08)' }
-const stateSvg: CSSProperties = { width: '112px', height: '112px', display: 'block', marginBottom: '4px' }
+const stateCard: CSSProperties = { textDecoration: 'none', color: '#2f2417', background: '#f2e8d6', border: '1px solid #c8ad82', borderRadius: '5px', minHeight: '200px', padding: '12px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 5px rgba(65,45,20,.08)', position: 'relative', overflow: 'hidden' }
+const stateCardContent: CSSProperties = { position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%' }
+const flagWatermark: CSSProperties = { position: 'absolute', width: '84%', height: '76%', right: '-8%', top: '4%', opacity: 0.075, transform: 'rotate(-8deg)', pointerEvents: 'none' }
+const compactFlagWatermark: CSSProperties = { position: 'absolute', width: '92%', height: '110%', right: '-12%', top: '-8%', opacity: 0.11, transform: 'rotate(-8deg)', pointerEvents: 'none' }
+const stateSvg: CSSProperties = { width: '116px', height: '116px', display: 'block', marginBottom: '2px', filter: 'drop-shadow(0 1px 0 rgba(255,255,255,.4))' }
 const stateName: CSSProperties = { fontSize: '25px', fontWeight: 700, marginTop: '2px' }
 const stateCount: CSSProperties = { fontFamily: 'Arial, sans-serif', fontSize: '13px', fontWeight: 700, marginTop: '8px' }
 const otherWrap: CSSProperties = { marginTop: '17px', borderTop: '1px solid #b29364', borderBottom: '1px solid #b29364', padding: '9px 0 13px', textAlign: 'center' }
 const otherTitle: CSSProperties = { textTransform: 'uppercase', color: '#6a491d', fontWeight: 700, fontSize: '15px' }
 const otherSubhead: CSSProperties = { fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#6b5a44', margin: '4px 0 10px' }
 const otherGrid: CSSProperties = { display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }
-const otherCard: CSSProperties = { minWidth: '105px', padding: '8px 12px', textDecoration: 'none', border: '1px solid #c8ad82', background: '#f2e8d6', color: '#304b36', borderRadius: '4px' }
+const otherCard: CSSProperties = { minWidth: '105px', padding: '9px 13px', textDecoration: 'none', border: '1px solid #c8ad82', background: '#f2e8d6', color: '#304b36', borderRadius: '4px', position: 'relative', overflow: 'hidden', boxShadow: '0 1px 3px rgba(65,45,20,.07)' }
+const otherCardContent: CSSProperties = { position: 'relative', zIndex: 1 }
 const otherName: CSSProperties = { fontWeight: 700, fontSize: '14px' }
 const otherCount: CSSProperties = { color: '#3c3124', fontFamily: 'Arial, sans-serif', fontSize: '12px', marginTop: '2px' }
 const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '0 auto', padding: '4px 20px 40px' }
