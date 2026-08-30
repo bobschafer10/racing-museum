@@ -9,6 +9,12 @@ const TRACK_LOGO_ALIASES: Record<string, string[]> = {
   'golden-sands-speedway-wi': ['golden-sands-raceway-wi'],
   'lacrosse-fairgrounds-wi': ['lacrosse-fairgrounds-speedway-wi'],
   'marshfield-speedway-wi': ['marshfield-speedway'],
+  'pecatonica-motor-speedway-il': ['pecatonica-speedway-il'],
+}
+
+const STATE_LOGO_FOLDERS: Record<string, string> = {
+  il: 'ILLINOIS',
+  mn: 'Minnesota',
 }
 
 export async function GET(
@@ -22,43 +28,51 @@ export async function GET(
     return new NextResponse('Invalid track slug', { status: 400 })
   }
 
+  const stateCode = safeSlug.match(/-([a-z]{2,3})$/)?.[1] || ''
+  const stateFolder = STATE_LOGO_FOLDERS[stateCode]
+  const folders = stateFolder ? ['', stateFolder] : ['']
   const candidates = [safeSlug, ...(TRACK_LOGO_ALIASES[safeSlug] || [])]
 
-  for (const candidate of candidates) {
-    for (const ext of ['jpg', 'png', 'jpeg', 'webp']) {
-      try {
-        // Do not cache an upstream 404. New museum logos are added regularly,
-        // and a cached miss would otherwise keep showing the placeholder.
-        const upstream = await fetch(`${GITHUB_RAW_BASE}/${candidate}.${ext}`, {
-          cache: 'no-store',
-        })
+  for (const folder of folders) {
+    const folderPrefix = folder ? `${folder}/` : ''
 
-        if (!upstream.ok) continue
+    for (const candidate of candidates) {
+      for (const ext of ['jpg', 'png', 'jpeg', 'webp']) {
+        try {
+          // Do not cache an upstream 404. New museum logos are added regularly,
+          // and a cached miss would otherwise keep showing the placeholder.
+          const upstream = await fetch(
+            `${GITHUB_RAW_BASE}/${folderPrefix}${candidate}.${ext}`,
+            { cache: 'no-store' },
+          )
 
-        const body = await upstream.arrayBuffer()
-        const contentType =
-          upstream.headers.get('content-type') ||
-          (ext === 'png'
-            ? 'image/png'
-            : ext === 'webp'
-              ? 'image/webp'
-              : 'image/jpeg')
+          if (!upstream.ok) continue
 
-        return new NextResponse(body, {
-          status: 200,
-          headers: {
-            'Content-Type': contentType,
-            'Cache-Control': 'public, max-age=86400, s-maxage=604800',
-          },
-        })
-      } catch {
-        // Try the next candidate/extension.
+          const body = await upstream.arrayBuffer()
+          const contentType =
+            upstream.headers.get('content-type') ||
+            (ext === 'png'
+              ? 'image/png'
+              : ext === 'webp'
+                ? 'image/webp'
+                : 'image/jpeg')
+
+          return new NextResponse(body, {
+            status: 200,
+            headers: {
+              'Content-Type': contentType,
+              'Cache-Control': 'public, max-age=86400, s-maxage=604800',
+            },
+          })
+        } catch {
+          // Try the next candidate/extension/folder.
+        }
       }
     }
   }
 
   const title = safeSlug
-    .replace(/-(wi|il|mn|ia|mi)$/i, '')
+    .replace(/-(wi|il|mn|ia|mi|in|mo|oh|co|ks|tn|ont)$/i, '')
     .split('-')
     .filter(Boolean)
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
