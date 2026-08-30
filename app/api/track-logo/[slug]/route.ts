@@ -37,7 +37,7 @@ export async function GET(
     const folderPrefix = folder ? `${folder}/` : ''
 
     for (const candidate of candidates) {
-      for (const ext of ['jpg', 'png', 'jpeg', 'webp']) {
+      for (const ext of ['jpg', 'png', 'jpeg', 'webp', 'svg']) {
         try {
           // Do not cache an upstream 404. New museum logos are added regularly,
           // and a cached miss would otherwise keep showing the placeholder.
@@ -55,7 +55,9 @@ export async function GET(
               ? 'image/png'
               : ext === 'webp'
                 ? 'image/webp'
-                : 'image/jpeg')
+                : ext === 'svg'
+                  ? 'image/svg+xml'
+                  : 'image/jpeg')
 
           return new NextResponse(body, {
             status: 200,
