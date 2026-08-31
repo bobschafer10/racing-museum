@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./series-mobile.css";
 import "./series-routes-mobile.css";
+import "./research-center-home.css";
 import Link from "next/link"
 
 const geistSans = Geist({
@@ -47,6 +48,7 @@ export default function RootLayout({
 
             <div style={navLinks} className="site-nav-links">
               <Link href="/" style={navLink}>Home</Link>
+              <Link href="/stats/feature-winners" style={researchNavLink}>Research Center</Link>
               <Link href="/tracks" style={navLink}>Tracks</Link>
               <Link href="/drivers" style={navLink}>Drivers</Link>
               <Link href="/series" style={navLink}>Series</Link>
@@ -116,4 +118,14 @@ const navLink: React.CSSProperties = {
   color: '#f3e4c7',
   fontWeight: 500,
   transition: 'opacity 0.2s ease',
+}
+
+const researchNavLink: React.CSSProperties = {
+  ...navLink,
+  color: '#fff4dd',
+  fontWeight: 800,
+  border: '1px solid #9e7136',
+  background: '#6d241c',
+  padding: '6px 10px',
+  boxShadow: '2px 2px 0 rgba(0,0,0,0.25)',
 }
