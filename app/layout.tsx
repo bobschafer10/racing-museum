@@ -4,6 +4,7 @@ import "./globals.css";
 import "./series-mobile.css";
 import "./series-routes-mobile.css";
 import "./research-center-home.css";
+import "./research-center-home-v2.css";
 import Link from "next/link"
 
 const geistSans = Geist({
