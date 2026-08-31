@@ -1,0 +1,348 @@
+/* ========================================
+   HOMEPAGE — VICTORY LANE RESEARCH CENTER
+   Promotes the Research Center as a primary
+   museum destination while preserving the
+   existing sepia / archival visual language.
+======================================== */
+
+.home-page {
+  --research-ink: #24180f;
+  --research-brown: #4a321d;
+  --research-rule: #b99d6c;
+  --research-paper: #efe3c6;
+  --research-paper-light: #f7edd7;
+  --research-accent: #7b241d;
+  --research-accent-dark: #5e1914;
+}
+
+/* Put the research experience closer to the top of the homepage. */
+.home-page {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.home-page > .home-hero { order: 1; }
+.home-page > .home-stats { order: 2; }
+.home-page > .home-section:has(.home-stats-lab) { order: 3; }
+.home-page > .home-archive-search-section { order: 4; }
+.home-page > .soft-opening-mini { order: 5; }
+.home-page > .home-ticker { order: 6; }
+.home-page > section:not(.home-hero):not(.home-stats):not(.home-archive-search-section):not(.soft-opening-mini):not(.home-ticker):not(:has(.home-stats-lab)) {
+  order: 7;
+}
+
+/* The main research feature now reads as the homepage's major destination. */
+.home-page .home-section:has(.home-stats-lab) {
+  padding: 34px 38px 0 !important;
+  background:
+    linear-gradient(rgba(239,227,198,.94), rgba(239,227,198,.94)),
+    repeating-linear-gradient(45deg, rgba(84,58,30,.045) 0 22px, rgba(255,255,255,.03) 22px 44px) !important;
+}
+
+.home-page .home-stats-lab {
+  max-width: 1500px !important;
+  margin: 0 auto !important;
+  padding: 38px !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.3fr) minmax(360px, .8fr) !important;
+  gap: 34px !important;
+  background: linear-gradient(135deg, #f5ead1 0%, #e9d8b2 100%) !important;
+  border: 2px solid #7b6544 !important;
+  box-shadow: 8px 8px 0 rgba(72,52,30,.18), inset 0 0 0 8px rgba(255,255,255,.2) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.home-page .home-stats-lab::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(107,82,46,.45);
+  pointer-events: none;
+}
+
+.home-page .home-stats-lab > div {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.home-page .home-stats-lab-title {
+  max-width: 820px !important;
+  margin: 6px 0 12px !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: clamp(54px, 5.2vw, 94px) !important;
+  line-height: .92 !important;
+  letter-spacing: -0.04em !important;
+  color: var(--research-ink) !important;
+}
+
+.home-page .home-stats-lab-description {
+  max-width: 850px !important;
+  margin: 18px 0 24px !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 22px !important;
+  line-height: 1.55 !important;
+  color: #3b2b1b !important;
+}
+
+/* Hide the old small three-card emphasis. The data/search tools below do the job better. */
+.home-page .home-stats-lab-highlights {
+  display: none !important;
+}
+
+/* Make the existing CTA feel like the doorway into the archive. */
+.home-page .stats-lab-button {
+  min-width: 360px !important;
+  padding: 18px 28px !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: linear-gradient(#8c3027, #661c17) !important;
+  color: #fff7e7 !important;
+  border: 2px solid #b78b4b !important;
+  box-shadow: 4px 4px 0 rgba(50,32,17,.23) !important;
+  text-transform: none !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 0 !important;
+  font-weight: 700 !important;
+  letter-spacing: .01em !important;
+}
+
+.home-page .stats-lab-button::after {
+  content: "🏁  Enter the Research Center  →";
+  font-size: 20px;
+}
+
+/* Museum-by-numbers becomes a bold 2x2 wall. */
+.home-page .home-stats-lab > div:last-child {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.home-page .home-stats-lab > div:last-child > div {
+  width: 100% !important;
+  padding: 22px !important;
+  background: rgba(248,239,219,.72) !important;
+  border: 1px solid #aa9266 !important;
+}
+
+.home-page .home-stats-lab-numbers {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+  gap: 0 !important;
+  border-top: 1px solid #bca47a !important;
+  border-left: 1px solid #bca47a !important;
+}
+
+.home-page .home-stats-lab-numbers > div {
+  min-height: 185px !important;
+  padding: 26px 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: rgba(255,249,235,.45) !important;
+  border-right: 1px solid #bca47a !important;
+  border-bottom: 1px solid #bca47a !important;
+  text-align: center !important;
+}
+
+.home-page .home-stats-lab-numbers > div > div:first-child {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: clamp(37px, 3.2vw, 58px) !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  color: var(--research-ink) !important;
+}
+
+.home-page .home-stats-lab-numbers > div > div:last-child {
+  margin-top: 10px !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  letter-spacing: .16em !important;
+  text-transform: uppercase !important;
+  color: #6a4a2b !important;
+}
+
+/* Visually join the existing search/coverage/decade section to the Research Center. */
+.home-page .home-archive-search-section {
+  padding: 0 38px 44px !important;
+  background:
+    linear-gradient(rgba(239,227,198,.95), rgba(239,227,198,.95)),
+    repeating-linear-gradient(45deg, rgba(84,58,30,.045) 0 22px, rgba(255,255,255,.03) 22px 44px) !important;
+}
+
+.home-page .home-explore-panel {
+  max-width: 1500px !important;
+  margin: 0 auto !important;
+  padding: 26px 36px 34px !important;
+  background: #f3e6c8 !important;
+  border: 2px solid #7b6544 !important;
+  border-top: 0 !important;
+  box-shadow: 8px 8px 0 rgba(72,52,30,.14) !important;
+}
+
+.home-page .home-explore-top {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, .75fr) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+.home-page .home-search-area,
+.home-page .home-archive-status {
+  padding: 24px !important;
+  background: rgba(255,250,238,.52) !important;
+  border: 1px solid #b79d72 !important;
+}
+
+.home-page .home-explore-title {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 31px !important;
+  line-height: 1.05 !important;
+  color: #2e2014 !important;
+}
+
+.home-page .home-search-bar-wrap {
+  display: grid !important;
+  grid-template-columns: 1fr 150px !important;
+  gap: 10px !important;
+  margin-top: 20px !important;
+}
+
+.home-page .home-search-input {
+  min-height: 56px !important;
+  padding: 0 18px !important;
+  border: 1px solid #9d835c !important;
+  background: #fffaf0 !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 17px !important;
+}
+
+.home-page .home-search-button {
+  min-height: 56px !important;
+  background: var(--research-accent) !important;
+  border: 1px solid #a98046 !important;
+  color: #fff5df !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+}
+
+.home-page .home-archive-status {
+  color: #3c2b1b !important;
+}
+
+.home-page .home-archive-status ul {
+  margin: 14px 0 0 !important;
+  padding-left: 20px !important;
+  display: grid !important;
+  gap: 7px !important;
+}
+
+/* Decades become quick-start research paths rather than a secondary feature. */
+.home-page .home-era-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0,1fr)) !important;
+  gap: 10px !important;
+  margin-top: 16px !important;
+}
+
+.home-page .home-era-grid a {
+  min-height: 58px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(255,249,235,.7) !important;
+  border: 1px solid #bba174 !important;
+  color: #3a2819 !important;
+  box-shadow: none !important;
+  transition: transform .18s ease, background .18s ease !important;
+}
+
+.home-page .home-era-grid a:hover {
+  transform: translateY(-2px) !important;
+  background: #fff8e8 !important;
+}
+
+.home-page .home-era-grid span {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+}
+
+/* Secondary homepage notices move below the major research destination. */
+.home-page .soft-opening-mini,
+.home-page .home-ticker {
+  max-width: 1500px !important;
+  width: calc(100% - 76px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 1000px) {
+  .home-page .home-stats-lab {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-page .home-explore-top {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-page .home-era-grid {
+    grid-template-columns: repeat(3, minmax(0,1fr)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page .home-section:has(.home-stats-lab),
+  .home-page .home-archive-search-section {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .home-page .home-stats-lab,
+  .home-page .home-explore-panel {
+    padding: 20px 16px !important;
+    box-shadow: 4px 4px 0 rgba(72,52,30,.14) !important;
+  }
+
+  .home-page .home-stats-lab-title {
+    font-size: 46px !important;
+  }
+
+  .home-page .home-stats-lab-description {
+    font-size: 18px !important;
+  }
+
+  .home-page .stats-lab-button {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .home-page .home-stats-lab-numbers {
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+  }
+
+  .home-page .home-stats-lab-numbers > div {
+    min-height: 125px !important;
+    padding: 18px 8px !important;
+  }
+
+  .home-page .home-stats-lab-numbers > div > div:first-child {
+    font-size: 31px !important;
+  }
+
+  .home-page .home-search-bar-wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-page .home-era-grid {
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+  }
+
+  .home-page .soft-opening-mini,
+  .home-page .home-ticker {
+    width: calc(100% - 24px) !important;
+  }
+}
