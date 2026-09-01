@@ -27,6 +27,17 @@ const events = [
       'The historic Silver 1000 collection links the Late Model and Modified divisions together by year at Proctor Speedway. Halvor Lines Speedway references are normalized to the Museum’s Proctor Speedway track record.',
   },
   {
+    slug: 'wissota-100',
+    title: 'WISSOTA 100',
+    venue: 'Upper Midwest / Upper Great Plains',
+    years: '1986–2025',
+    races: 173,
+    results: 1513,
+    status: 'Archive built',
+    description:
+      'The WISSOTA 100 archive links the championship divisions together by year, including Late Model, Modified, Super Stock, Street Stock, Midwest Modified, Mod Four, Pure Stock and Hornet records where documented. Race of Champions and qualifying-night features remain separate.',
+  },
+  {
     slug: null,
     title: 'Red, White & Blue Series',
     venue: 'Wisconsin International Raceway',
@@ -63,9 +74,9 @@ export default function EventsPage() {
             Special Events brings together year-by-year race histories that do not fit neatly into a touring-series archive. Each collection can include winners, full feature results, DNQs, historical point standings, and source notes.
           </p>
           <div style={statsRow}>
-            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>2</div></div>
-            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>177</div></div>
-            <div style={statCard}><div style={statLabel}>Silver 1000 Results</div><div style={statValue}>1,065</div></div>
+            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>3</div></div>
+            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>350</div></div>
+            <div style={statCard}><div style={statLabel}>Result Rows Archived</div><div style={statValue}>4,763</div></div>
           </div>
         </div>
       </section>
