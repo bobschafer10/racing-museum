@@ -4,18 +4,22 @@ import { supabase } from '@/lib/supabase'
 
 export const dynamic = 'force-dynamic'
 
-const SERIES_ID = 93
+const LATE_MODEL_SERIES_ID = 93
+const MODIFIED_SERIES_ID = 94
 const FIRST_YEAR = 1973
 const LAST_YEAR = 2025
+const MODIFIED_FIRST_YEAR = 1988
 
 export default async function Silver1000Page() {
-  const [{ data: seasons }, { data: events }] = await Promise.all([
-    supabase.from('SeriesSeasons').select('year,races').eq('series_id', SERIES_ID).order('year', { ascending: false }),
-    supabase.from('SeriesEvents').select('id,race_date,winner_name').eq('series_id', SERIES_ID),
+  const [{ data: seasons }, { data: lateModelEvents }, { data: modifiedEvents }] = await Promise.all([
+    supabase.from('SeriesSeasons').select('year,races').eq('series_id', LATE_MODEL_SERIES_ID).order('year', { ascending: false }),
+    supabase.from('SeriesEvents').select('id,race_date,winner_name').eq('series_id', LATE_MODEL_SERIES_ID),
+    supabase.from('SeriesEvents').select('id,race_date,winner_name').eq('series_id', MODIFIED_SERIES_ID),
   ])
 
   const years = seasons ?? []
-  const eventCount = events?.length ?? 52
+  const lateModelCount = lateModelEvents?.length ?? 52
+  const modifiedCount = modifiedEvents?.length ?? 37
 
   return (
     <main style={pageStyle}>
@@ -25,14 +29,14 @@ export default async function Silver1000Page() {
           <Link href="/events" style={backLink}>← Special Events</Link>
           <div style={eyebrow}>Special Event Archive</div>
           <h1 style={title}>Silver 1000</h1>
-          <p style={tagline}>The historic Late Model classic at Proctor Speedway in Proctor, Minnesota.</p>
+          <p style={tagline}>The historic annual Silver 1000 at Proctor Speedway in Proctor, Minnesota.</p>
           <p style={intro}>
-            Historical sources sometimes call the venue Halvor Lines Speedway. In the Museum archive, those events are normalized to Proctor Speedway.
+            The Late Model Division has been part of the event since 1973, with the Modified Division joining the Silver 1000 program in 1988. Historical sources sometimes call the venue Halvor Lines Speedway; in the Museum archive, those events are normalized to Proctor Speedway and linked together by year.
           </p>
           <div style={statsGrid}>
             <Stat label="Years" value={`${FIRST_YEAR}–${LAST_YEAR}`} />
-            <Stat label="Editions" value="53" />
-            <Stat label="Races Held" value={String(eventCount)} />
+            <Stat label="Late Model Races" value={String(lateModelCount)} />
+            <Stat label="Modified Races" value={String(modifiedCount)} />
             <Stat label="2020" value="Cancelled" />
           </div>
         </div>
@@ -40,7 +44,7 @@ export default async function Silver1000Page() {
 
       <section style={contentWrap}>
         <div style={statusBox}>
-          <strong>Archive status:</strong> winner history and event inventory are connected to the Museum database. Full finishing orders are being expanded from surviving historical sources; incomplete early years are shown only to the depth actually documented.
+          <strong>Archive status:</strong> each Silver 1000 year is treated as one event collection. Late Model and Modified division races are displayed together on the same annual page whenever both divisions competed. Finishing orders are shown only to the depth preserved by historical sources.
         </div>
 
         <h2 style={sectionTitle}>Year-by-Year Archive</h2>
@@ -48,7 +52,9 @@ export default async function Silver1000Page() {
           {(years.length ? years : Array.from({ length: 53 }, (_, i) => ({ year: LAST_YEAR - i, races: LAST_YEAR - i === 2020 ? 0 : 1 }))).map((row) => (
             <Link key={row.year} href={`/events/silver-1000/${row.year}`} style={yearCard}>
               <div style={yearNumber}>{row.year}</div>
-              <div style={yearStatus}>{row.races === 0 ? 'Cancelled' : 'Late Model'}</div>
+              <div style={yearStatus}>
+                {row.races === 0 ? 'Cancelled' : row.year >= MODIFIED_FIRST_YEAR ? 'Late Model + Modified' : 'Late Model'}
+              </div>
             </Link>
           ))}
         </div>
@@ -77,7 +83,7 @@ const statValue: CSSProperties = { fontSize: '26px', fontWeight: 700, marginTop:
 const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '0 auto', padding: '34px 20px 50px' }
 const statusBox: CSSProperties = { background: '#f1e3c8', border: '1px solid #b29364', padding: '15px', lineHeight: 1.55, marginBottom: '28px' }
 const sectionTitle: CSSProperties = { fontSize: '26px', margin: '0 0 16px', color: '#3d2b16' }
-const yearGrid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(105px,1fr))', gap: '8px' }
+const yearGrid: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(125px,1fr))', gap: '8px' }
 const yearCard: CSSProperties = { display: 'block', background: '#f1e3c8', border: '1px solid #b29364', padding: '11px 9px', textAlign: 'center', textDecoration: 'none', color: '#2f2417' }
 const yearNumber: CSSProperties = { fontSize: '20px', fontWeight: 700, color: '#3d2b16' }
 const yearStatus: CSSProperties = { fontSize: '11px', color: '#7a5827', marginTop: '3px', textTransform: 'uppercase', letterSpacing: '.5px' }
