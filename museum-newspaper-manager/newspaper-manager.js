@@ -31,10 +31,12 @@ const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const BUCKET = process.env.SUPABASE_STORAGE_BUCKET || 'media';
 const ROOT = (process.env.NEWSPAPERS_ROOT_FOLDER || 'newspapers').replace(/^\/+|\/+$/g, '');
-const MAX_FOLDERS = Number(process.env.MAX_NEWSPAPER_FOLDERS || 25);
+const MAX_FOLDERS = Number(process.env.MAX_NEWSPAPER_FOLDERS || 50);
 const BATCH_FOLDER = process.env.NEWSPAPER_BATCH_FOLDER || 'newspaper-upload-batch';
 const MANIFEST_PATH = path.resolve(process.cwd(), process.env.MANIFEST_NEWSPAPERS || '../public/data/newspapers-manifest.json');
-const OCR_ENABLED = String(process.env.NEWSPAPER_OCR_ENABLED || 'true').toLowerCase() !== 'false' || FORCE_OCR;
+// OCR is OPT-IN so normal production uploads stay fast.
+// Enable with --ocr or NEWSPAPER_OCR_ENABLED=true.
+const OCR_ENABLED = FORCE_OCR || String(process.env.NEWSPAPER_OCR_ENABLED || 'false').toLowerCase() === 'true';
 const OCR_MAX_PAGES = Number(process.env.NEWSPAPER_OCR_MAX_PAGES || 1);
 const OCR_TIMEOUT_MS = Number(process.env.NEWSPAPER_OCR_TIMEOUT_MS || 60000);
 const OCR_MIN_WIDTH = Number(process.env.NEWSPAPER_OCR_MIN_WIDTH || 500);
@@ -438,7 +440,8 @@ async function writeReport(rows) {
   return file;
 }
 async function main() {
-  console.log('Museum Newspaper Manager v1.2.2 - clean public summaries + hidden OCR archive + CFRN/MRN/NSSN shortcuts + page spread support');
+  console.log('Museum Newspaper Manager v1.2.2 - clean public summaries + optional hidden OCR archive + CFRN/MRN/NSSN shortcuts + page spread support');
+  console.log(`OCR: ${OCR_ENABLED ? 'ENABLED' : 'OFF (use --ocr or NEWSPAPER_OCR_ENABLED=true to enable)'}`);
   console.log(`Bucket: ${BUCKET}`);
   console.log(`Root folder: ${ROOT}`);
   console.log(`Manifest: ${MANIFEST_PATH}`);
