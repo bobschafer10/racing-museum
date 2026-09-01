@@ -21,7 +21,7 @@ const events = [
     venue: 'Proctor Speedway',
     years: '1973–2025',
     races: 52,
-    results: 245,
+    results: 938,
     status: 'Archive live — enrichment underway',
     description:
       'The historic Late Model classic at Proctor Speedway. Halvor Lines Speedway references are normalized to the Museum’s Proctor Speedway track record.',
