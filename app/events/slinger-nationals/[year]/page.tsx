@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { CSSProperties } from 'react'
+import { supabase } from '@/lib/supabase'
 import { getSlingerNationalsMrnStandings } from '@/lib/special-events/slingerNationals'
 
+export const dynamic = 'force-dynamic'
+
+const SERIES_ID = 38
 const MIN_YEAR = 1980
 const MAX_YEAR = 2026
 const mrnYears = new Set([1981, 1982, 1983, 1987, 1999])
@@ -19,13 +23,23 @@ export default async function SlingerNationalsYearPage({
     notFound()
   }
 
+  const { data: raceEvents, error: raceError } = await supabase
+    .from('SeriesEvents')
+    .select('id,race_number,race_date,winner_name,source_url')
+    .eq('series_id', SERIES_ID)
+    .gte('race_date', `${seasonYear}-01-01`)
+    .lte('race_date', `${seasonYear}-12-31`)
+    .order('race_date', { ascending: true })
+    .order('race_number', { ascending: true })
+
   const seriesEra = seasonYear < 2000
-  const raceCount =
+  const expectedRaceCount =
     seasonYear === 1980 ? 3 :
     seasonYear === 1981 || seasonYear === 1982 ? 4 :
     seasonYear >= 1983 && seasonYear <= 1998 ? 3 :
     seasonYear === 1999 ? 2 : 1
 
+  const liveRaceCount = raceEvents?.length ?? expectedRaceCount
   const mrnStandings = getSlingerNationalsMrnStandings(seasonYear)
   const champion = mrnStandings?.rows.find((row) => row.position === 1) ?? null
   const previousYear = seasonYear > MIN_YEAR ? seasonYear - 1 : null
@@ -49,13 +63,13 @@ export default async function SlingerNationalsYearPage({
           <h1 style={pageTitle}>{seasonYear} Slinger Nationals</h1>
           <p style={heroTagline}>
             {seriesEra
-              ? `${raceCount}-race Slinger Nationals series season.`
+              ? `${liveRaceCount}-race Slinger Nationals series season.`
               : 'Annual Slinger Nationals special event.'}
           </p>
 
           <div style={statRow}>
             <Stat label="Archive Era" value={seriesEra ? 'Series' : 'Annual'} />
-            <Stat label="Race Events" value={String(raceCount)} />
+            <Stat label="Race Events" value={String(liveRaceCount)} />
             <Stat label="Points Source" value={mrnYears.has(seasonYear) ? 'MRN + TTT' : 'The Third Turn'} />
             {champion ? <Stat label="Published Champion" value={champion.driver} /> : null}
           </div>
@@ -74,11 +88,29 @@ export default async function SlingerNationalsYearPage({
         </div>
 
         <Panel title="Race Results">
-          <p style={panelText}>
-            The audited race inventory for this year has been preserved. Full feature finishes, DNQs where listed,
-            and race-level details will populate here when the Special Events import is connected to the Museum database.
-          </p>
-          <div style={statusBox}>Database connection pending — source archive complete.</div>
+          {raceError ? (
+            <div style={statusBox}>Unable to load the live race inventory.</div>
+          ) : raceEvents && raceEvents.length > 0 ? (
+            <div>
+              <div style={raceHeader}>
+                <span>Race</span>
+                <span>Date</span>
+                <span>Winner</span>
+              </div>
+              {raceEvents.map((race) => (
+                <div key={race.id} style={raceRow}>
+                  <strong>Race {race.race_number ?? '—'}</strong>
+                  <span>{formatDate(race.race_date)}</span>
+                  <strong>{race.winner_name ?? 'Winner not listed'}</strong>
+                </div>
+              ))}
+              <div style={statusBox}>
+                Event inventory connected to the Museum database. Detailed feature finishing orders and DNQs are the next import layer.
+              </div>
+            </div>
+          ) : (
+            <div style={statusBox}>No race inventory is currently available for this year.</div>
+          )}
         </Panel>
 
         <Panel title="Point Standings">
@@ -124,6 +156,12 @@ export default async function SlingerNationalsYearPage({
   )
 }
 
+function formatDate(value: string | null) {
+  if (!value) return 'Date not listed'
+  const [year, month, day] = value.split('-')
+  return `${Number(month)}/${Number(day)}/${year}`
+}
+
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div style={statCard}>
@@ -163,6 +201,8 @@ const panelHeader: CSSProperties = { fontSize: '24px', fontWeight: 700, color: '
 const panelBody: CSSProperties = { background: '#f1e5ce', border: '1px solid #c2a97d', padding: '14px' }
 const panelText: CSSProperties = { fontSize: '16px', lineHeight: 1.65, margin: 0 }
 const statusBox: CSSProperties = { marginTop: '12px', padding: '10px 12px', background: '#eadfc7', border: '1px solid #b89b6d', fontWeight: 700, color: '#6b4a22' }
+const raceHeader: CSSProperties = { display: 'grid', gridTemplateColumns: '110px 150px 1fr', gap: '12px', padding: '8px 0', borderBottom: '2px solid #b29364', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '.7px', color: '#7a5827', fontWeight: 700 }
+const raceRow: CSSProperties = { display: 'grid', gridTemplateColumns: '110px 150px 1fr', gap: '12px', padding: '10px 0', borderBottom: '1px solid #ccb48a', alignItems: 'center' }
 const sourceNote: CSSProperties = { fontSize: '14px', color: '#6b4a22', marginBottom: '12px' }
 const standingsHeader: CSSProperties = { display: 'grid', gridTemplateColumns: '70px 1fr 110px', gap: '12px', padding: '8px 0', borderBottom: '2px solid #b29364', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '.7px', color: '#7a5827', fontWeight: 700 }
 const standingsRow: CSSProperties = { display: 'grid', gridTemplateColumns: '70px 1fr 110px', gap: '12px', padding: '9px 0', borderBottom: '1px solid #ccb48a', alignItems: 'center' }
