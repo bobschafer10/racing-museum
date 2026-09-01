@@ -20,11 +20,11 @@ const events = [
     title: 'Silver 1000',
     venue: 'Proctor Speedway',
     years: '1973–2025',
-    races: 52,
-    results: 938,
+    races: 89,
+    results: 1037,
     status: 'Archive live — enrichment underway',
     description:
-      'The historic Late Model classic at Proctor Speedway. Halvor Lines Speedway references are normalized to the Museum’s Proctor Speedway track record.',
+      'The historic Silver 1000 collection links the Late Model and Modified divisions together by year at Proctor Speedway. Halvor Lines Speedway references are normalized to the Museum’s Proctor Speedway track record.',
   },
   {
     slug: null,
@@ -64,8 +64,8 @@ export default function EventsPage() {
           </p>
           <div style={statsRow}>
             <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>2</div></div>
-            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>140</div></div>
-            <div style={statCard}><div style={statLabel}>Slinger Results</div><div style={statValue}>2,185</div></div>
+            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>177</div></div>
+            <div style={statCard}><div style={statLabel}>Silver 1000 Results</div><div style={statValue}>1,037</div></div>
           </div>
         </div>
       </section>
