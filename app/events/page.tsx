@@ -16,6 +16,17 @@ const events = [
       'A complete historical event collection spanning the original multi-race Slinger Nationals era and the modern annual 200-lap classic.',
   },
   {
+    slug: 'silver-1000',
+    title: 'Silver 1000',
+    venue: 'Proctor Speedway',
+    years: '1973–2025',
+    races: 52,
+    results: 210,
+    status: 'Archive live — enrichment underway',
+    description:
+      'The historic Late Model classic at Proctor Speedway. Halvor Lines Speedway references are normalized to the Museum’s Proctor Speedway track record.',
+  },
+  {
     slug: null,
     title: 'Red, White & Blue Series',
     venue: 'Wisconsin International Raceway',
@@ -47,25 +58,14 @@ export default function EventsPage() {
         <div style={heroInner}>
           <div style={eyebrow}>Museum Collection</div>
           <h1 style={title}>Special Events</h1>
-          <p style={tagline}>
-            Marquee races, annual classics, and historic event series preserved as complete collections.
-          </p>
+          <p style={tagline}>Marquee races, annual classics, and historic event series preserved as complete collections.</p>
           <p style={intro}>
             Special Events brings together year-by-year race histories that do not fit neatly into a touring-series archive. Each collection can include winners, full feature results, DNQs, historical point standings, and source notes.
           </p>
           <div style={statsRow}>
-            <div style={statCard}>
-              <div style={statLabel}>Collections Published</div>
-              <div style={statValue}>1</div>
-            </div>
-            <div style={statCard}>
-              <div style={statLabel}>Slinger Races Archived</div>
-              <div style={statValue}>88</div>
-            </div>
-            <div style={statCard}>
-              <div style={statLabel}>Slinger Results</div>
-              <div style={statValue}>2,185</div>
-            </div>
+            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>2</div></div>
+            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>140</div></div>
+            <div style={statCard}><div style={statLabel}>Slinger Results</div><div style={statValue}>2,185</div></div>
           </div>
         </div>
       </section>
@@ -96,13 +96,9 @@ export default function EventsPage() {
             )
 
             return event.slug ? (
-              <Link key={event.title} href={`/events/${event.slug}`} style={card}>
-                {body}
-              </Link>
+              <Link key={event.title} href={`/events/${event.slug}`} style={card}>{body}</Link>
             ) : (
-              <div key={event.title} style={{ ...card, cursor: 'default' }}>
-                {body}
-              </div>
+              <div key={event.title} style={{ ...card, cursor: 'default' }}>{body}</div>
             )
           })}
         </div>
