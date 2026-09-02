@@ -30,6 +30,27 @@ const completedSeries = new Set([
   'wisconsin-short-track-series',
 ])
 
+const specialEventSeriesSlugs = new Set([
+  'clash-at-the-creek',
+  'usa-nationals',
+  'wissota-100-late-model-division',
+  'wissota-100-modified-division',
+  'wissota-100-super-stock-division',
+  'wissota-100-street-stock-division',
+  'wissota-100-midwest-modified-division',
+  'wissota-100-mod-four-division',
+  'wissota-100-pure-stock-division',
+  'wissota-100-hornet-division',
+  'legendary-100-late-model-division',
+  'legendary-100-modified-division',
+  'legendary-100-midwest-modified-division',
+  'legendary-100-pro-stock-division',
+  'legendary-100-street-stock-division',
+  'legendary-100-pure-stock-division',
+  'legendary-100-hornet-division',
+  'legendary-100-limited-late-model-division',
+])
+
 export default async function SeriesPage() {
   const { data: seriesRows, error } = await supabase
     .from('Series')
@@ -38,7 +59,7 @@ export default async function SeriesPage() {
     .order('series_name', { ascending: true })
     .limit(200)
 
-  const rows: SeriesRow[] = seriesRows ?? []
+  const rows: SeriesRow[] = ((seriesRows ?? []) as SeriesRow[]).filter((s) => !specialEventSeriesSlugs.has(s.slug))
 
   const featuredSeries = rows.length > 0 ? rows[Math.floor(Math.random() * rows.length)] : null
   const firstSeriesYear = rows.flatMap((s) => [s.first_year, s.last_year, s.years_active].map((value) => String(value ?? '').match(/\d{4}/)?.[0]).filter(Boolean).map(Number)).filter((y): y is number => Number.isFinite(y)).sort((a, b) => a - b)[0] ?? 'TBD'
