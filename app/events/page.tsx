@@ -24,7 +24,7 @@ const events = [
     results: 1065,
     status: 'Archive live — enrichment underway',
     description:
-      'The historic Silver 1000 collection links the Late Model and Modified divisions together by year at Proctor Speedway. Halvor Lines Speedway references are normalized to the Museum’s Proctor Speedway track record.',
+      'One Silver 1000 collection links the Late Model and Modified divisions together by year at Proctor Speedway. Halvor Lines Speedway references are normalized to the Museum’s Proctor Speedway track record.',
   },
   {
     slug: 'wissota-100',
@@ -71,26 +71,26 @@ const events = [
       'The annual Clash at the Creek Modified event is preserved as one Special Event collection with its year-by-year winners and available finishing orders.',
   },
   {
-    slug: null,
-    title: 'Red, White & Blue Series',
-    venue: 'Wisconsin International Raceway',
-    years: 'Historic collection',
-    races: null,
-    results: null,
-    status: 'Coming next',
+    slug: 'oktoberfest',
+    title: 'Oktoberfest',
+    venue: 'LaCrosse Fairgrounds Speedway',
+    years: '1970–2025',
+    races: 56,
+    results: 1611,
+    status: 'Archive built',
     description:
-      'The historic Wisconsin International Raceway special-event series will be added to this collection.',
+      'The Oktoberfest headline archive is preserved as one annual Special Event collection with all documented finishing-order records tied to the event history.',
   },
   {
-    slug: null,
-    title: 'Oktoberfest Race Weekend',
-    venue: 'LaCrosse Fairgrounds Speedway',
-    years: 'Historic annual event',
-    races: null,
-    results: null,
-    status: 'Planned',
+    slug: 'national-short-track-championships',
+    title: 'National Short Track Championships',
+    venue: 'Rockford Speedway',
+    years: '1966–2025',
+    races: 60,
+    results: 1576,
+    status: 'Archive built',
     description:
-      'One of the Upper Midwest’s signature annual racing weekends and a future Special Events archive collection.',
+      'The National Short Track Championships are preserved as one annual Special Event collection, with the headline event chronology and available full finishing orders tied together by year.',
   },
 ]
 
@@ -102,14 +102,14 @@ export default function EventsPage() {
         <div style={heroInner}>
           <div style={eyebrow}>Museum Collection</div>
           <h1 style={title}>Special Events</h1>
-          <p style={tagline}>Marquee races, annual classics, and historic event series preserved as complete collections.</p>
+          <p style={tagline}>Marquee races, annual classics, and historic event weekends preserved as complete collections.</p>
           <p style={intro}>
             Special Events brings together year-by-year race histories that do not fit neatly into a touring-series archive. Multi-division annual events appear once here, with all documented divisions and results tied to that single event collection.
           </p>
           <div style={statsRow}>
-            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>6</div></div>
-            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>536</div></div>
-            <div style={statCard}><div style={statLabel}>Result Rows Archived</div><div style={statValue}>7,006</div></div>
+            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>8</div></div>
+            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>652</div></div>
+            <div style={statCard}><div style={statLabel}>Result Rows Archived</div><div style={statValue}>10,193</div></div>
           </div>
         </div>
       </section>
@@ -128,22 +128,16 @@ export default function EventsPage() {
                 </div>
                 <div style={cardBody}>
                   <p style={cardText}>{event.description}</p>
-                  {event.races !== null && (
-                    <div style={miniStats}>
-                      <span><strong>{event.races}</strong> race events</span>
-                      <span><strong>{event.results?.toLocaleString()}</strong> result rows</span>
-                    </div>
-                  )}
-                  <div style={cardButton}>{event.slug ? 'Explore Event →' : 'Archive Coming Soon'}</div>
+                  <div style={miniStats}>
+                    <span><strong>{event.races}</strong> race events</span>
+                    <span><strong>{event.results.toLocaleString()}</strong> result rows</span>
+                  </div>
+                  <div style={cardButton}>Explore Event →</div>
                 </div>
               </>
             )
 
-            return event.slug ? (
-              <Link key={event.title} href={`/events/${event.slug}`} style={card}>{body}</Link>
-            ) : (
-              <div key={event.title} style={{ ...card, cursor: 'default' }}>{body}</div>
-            )
+            return <Link key={event.title} href={`/events/${event.slug}`} style={card}>{body}</Link>
           })}
         </div>
       </section>
