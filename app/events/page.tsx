@@ -35,7 +35,40 @@ const events = [
     results: 1513,
     status: 'Archive built',
     description:
-      'The WISSOTA 100 archive links the championship divisions together by year, including Late Model, Modified, Super Stock, Street Stock, Midwest Modified, Mod Four, Pure Stock and Hornet records where documented. Race of Champions and qualifying-night features remain separate.',
+      'One Special Event collection ties all documented WISSOTA 100 championship divisions together by year, including Late Model, Modified, Super Stock, Street Stock, Midwest Modified, Mod Four, Pure Stock and Hornet records. Race of Champions and qualifying-night features remain separate.',
+  },
+  {
+    slug: 'legendary-100',
+    title: 'Legendary 100',
+    venue: 'Cedar Lake Speedway',
+    years: '2006–2025',
+    races: 128,
+    results: 1898,
+    status: 'Archive built',
+    description:
+      'One Legendary 100 collection ties the Late Model, Modified, Midwest Modified, Pro Stock/Super Stock, Street Stock, Pure Stock, Hornet and Limited Late Model divisions together by year.',
+  },
+  {
+    slug: 'usa-nationals',
+    title: 'USA Nationals',
+    venue: 'Cedar Lake Speedway',
+    years: '1988–2026',
+    races: 39,
+    results: 142,
+    status: 'Chronology complete through 2026',
+    description:
+      'The USA Nationals headline Dirt Late Model event is preserved as a single annual Special Event collection, with available finishing orders tied to each edition.',
+  },
+  {
+    slug: 'clash-at-the-creek',
+    title: 'Clash at the Creek',
+    venue: '141 Speedway',
+    years: '2009–2026',
+    races: 19,
+    results: 203,
+    status: 'Archive built',
+    description:
+      'The annual Clash at the Creek Modified event is preserved as one Special Event collection with its year-by-year winners and available finishing orders.',
   },
   {
     slug: null,
@@ -71,12 +104,12 @@ export default function EventsPage() {
           <h1 style={title}>Special Events</h1>
           <p style={tagline}>Marquee races, annual classics, and historic event series preserved as complete collections.</p>
           <p style={intro}>
-            Special Events brings together year-by-year race histories that do not fit neatly into a touring-series archive. Each collection can include winners, full feature results, DNQs, historical point standings, and source notes.
+            Special Events brings together year-by-year race histories that do not fit neatly into a touring-series archive. Multi-division annual events appear once here, with all documented divisions and results tied to that single event collection.
           </p>
           <div style={statsRow}>
-            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>3</div></div>
-            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>350</div></div>
-            <div style={statCard}><div style={statLabel}>Result Rows Archived</div><div style={statValue}>4,763</div></div>
+            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>6</div></div>
+            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>536</div></div>
+            <div style={statCard}><div style={statLabel}>Result Rows Archived</div><div style={statValue}>7,006</div></div>
           </div>
         </div>
       </section>
