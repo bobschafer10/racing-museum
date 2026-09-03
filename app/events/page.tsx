@@ -92,6 +92,17 @@ const events = [
     description:
       'The National Short Track Championships are preserved as one annual Special Event collection, with the headline event chronology and available full finishing orders tied together by year.',
   },
+  {
+    slug: 'jmck-63',
+    title: 'JMcK 63',
+    venue: 'LaCrosse Fairgrounds Speedway',
+    years: '2010–2018',
+    races: 9,
+    results: 15,
+    status: 'Chronology complete — enrichment underway',
+    description:
+      'The annual John McKarns memorial invitational is preserved as a Special Event collection, with all nine overall winners verified and available full finishing orders tied to each edition.',
+  },
 ]
 
 export default function EventsPage() {
@@ -107,9 +118,9 @@ export default function EventsPage() {
             Special Events brings together year-by-year race histories that do not fit neatly into a touring-series archive. Multi-division annual events appear once here, with all documented divisions and results tied to that single event collection.
           </p>
           <div style={statsRow}>
-            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>8</div></div>
-            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>652</div></div>
-            <div style={statCard}><div style={statLabel}>Result Rows Archived</div><div style={statValue}>10,193</div></div>
+            <div style={statCard}><div style={statLabel}>Collections Published</div><div style={statValue}>9</div></div>
+            <div style={statCard}><div style={statLabel}>Race Events Archived</div><div style={statValue}>661</div></div>
+            <div style={statCard}><div style={statLabel}>Result Rows Archived</div><div style={statValue}>10,208</div></div>
           </div>
         </div>
       </section>
