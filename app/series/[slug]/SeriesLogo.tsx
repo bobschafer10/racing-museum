@@ -13,6 +13,10 @@ export default function SeriesLogo({
   const pngPath = `/logos/series/${slug}.png`
   const legacyLogoPaths: Record<string, string> = {
     'international-racing-association': '/logos/series/IRA%20LOGO.jpg',
+    'aaa-champ-car-series': '/logos/series/american-automobile-association.jpg',
+    'aaa-midget-division': '/logos/series/american-automobile-association.jpg',
+    'aaa-midwest-big-car-series': '/logos/series/american-automobile-association.jpg',
+    'aaa-sprint-car-series': '/logos/series/american-automobile-association.jpg',
   }
   const primaryPath = legacyLogoPaths[slug] || jpgPath
 
