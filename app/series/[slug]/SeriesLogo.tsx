@@ -17,6 +17,7 @@ export default function SeriesLogo({
     'aaa-midget-division': '/logos/series/american-automobile-association.jpg',
     'aaa-midwest-big-car-series': '/logos/series/american-automobile-association.jpg',
     'aaa-sprint-car-series': '/logos/series/american-automobile-association.jpg',
+    'aaa-stock-car-series': '/logos/series/american-automobile-association.jpg',
   }
   const primaryPath = legacyLogoPaths[slug] || jpgPath
 
