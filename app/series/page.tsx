@@ -18,16 +18,21 @@ type SeriesRow = {
 }
 
 const completedSeries = new Set([
+  'american-ethanol-supertruck-series',
   'artgo-challenge-series',
+  'asa-national-tour',
   'badger-modified-tour',
   'badger-stock-car-tour',
   'big-eight-late-model-series',
   'central-wisconsin-steel-frame-challenge',
   'cowbell-street-stock-tour',
+  'fastlane-motorsports-northland-super-stock-series',
   'mars-late-model-series',
+  'tundra-sportsman-series',
   'tundra-super-late-model-series',
   'wisconsin-challenge-series',
   'wisconsin-short-track-series',
+  'wisconsin-wingless-sprint-car-series',
 ])
 
 const specialEventSeriesSlugs = new Set([
