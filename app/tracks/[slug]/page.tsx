@@ -155,6 +155,7 @@ export default async function TrackProfilePage({
   const featuredPhotos = (photos || []).slice(0, 6)
   const topWinners = winners.slice(0, 8)
   const topChampions = champions.slice(0, 8)
+  const latestRecordedDate = recentResults?.[0]?.race_date || null
 
   const availableYears = Array.from(
     new Set((resultYears || []).map((row: any) => Number(row.result_year)).filter(Boolean))
@@ -501,16 +502,31 @@ export default async function TrackProfilePage({
         <section className={styles.lowerGrid}>
           <div className={styles.panel}>
             <div className={styles.panelHeader}>
-              <h2 className={styles.panelTitle}>
-                <span className={styles.panelTitleIcon} aria-hidden="true">🏁</span>
-                Recent Results
-              </h2>
+              <div>
+                <h2 className={styles.panelTitle}>
+                  <span className={styles.panelTitleIcon} aria-hidden="true">🏁</span>
+                  Latest Recorded Results
+                </h2>
+                {latestRecordedDate ? (
+                  <p
+                    style={{
+                      margin: "5px 0 0",
+                      color: "#8f969b",
+                      fontSize: "0.68rem",
+                      fontWeight: 700,
+                      letterSpacing: "0.03em",
+                    }}
+                  >
+                    Latest recorded event: {formatDate(latestRecordedDate)}
+                  </p>
+                ) : null}
+              </div>
               <Link href={`/tracks/${slug}/results`} className={styles.panelLink}>
                 View all results →
               </Link>
             </div>
             {!recentResults || recentResults.length === 0 ? (
-              <div className={styles.empty}>No recent results are available yet.</div>
+              <div className={styles.empty}>No race results are currently indexed for this track.</div>
             ) : (
               <div className={styles.tableWrap}>
                 <table className={styles.table}>
