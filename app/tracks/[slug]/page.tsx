@@ -130,7 +130,7 @@ export default async function TrackProfilePage({
       .eq("track_slug", slug)
       .order("race_date", { ascending: false })
       .order("class_name", { ascending: true })
-      .limit(8),
+      .limit(16),
 
     supabase
       .from("track_results_by_year_view")
