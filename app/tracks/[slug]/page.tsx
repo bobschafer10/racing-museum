@@ -35,6 +35,16 @@ function formatSlugName(value?: string | null) {
     .join(" ")
 }
 
+function formatPhotoDriverName(value?: string | null) {
+  if (!value || value === "unknown" || value === "unknown-driver") return null
+
+  const baseSlug = value
+    .split("---")[0]
+    .replace(/-(wi|mn|il|mi|ia|in)$/i, "")
+
+  return formatSlugName(baseSlug)
+}
+
 function driverCell(name?: string | null, driverSlug?: string | null) {
   const label = name || formatSlugName(driverSlug) || "Unknown Driver"
   if (!driverSlug || driverSlug === "unknown-driver" || driverSlug === "unknown") {
@@ -447,19 +457,43 @@ export default async function TrackProfilePage({
             <div className={styles.empty}>No track photographs are available yet.</div>
           ) : (
             <div className={styles.photoGrid}>
-              {featuredPhotos.map((photo: any) => (
-                <Link
-                  href={`/tracks/${slug}/photos`}
-                  className={styles.photoCard}
-                  key={photo.photo_id}
-                  aria-label={`Open ${track.track_name} photo archive`}
-                >
-                  <img src={getPhotoUrl(photo)} alt={`Historic racing at ${track.track_name}`} />
-                  <span className={styles.photoOverlay}>
-                    {photo.year && photo.year !== "unknown-year" ? photo.year : "Year unknown"}
-                  </span>
-                </Link>
-              ))}
+              {featuredPhotos.map((photo: any) => {
+                const photoDriver = formatPhotoDriverName(photo.driver_slug)
+                const photoYear =
+                  photo.year && photo.year !== "unknown-year" ? String(photo.year) : null
+
+                return (
+                  <Link
+                    href={`/tracks/${slug}/photos`}
+                    className={styles.photoCard}
+                    key={photo.photo_id}
+                    aria-label={`Open ${photoDriver || track.track_name} photo in ${track.track_name} archive`}
+                  >
+                    <img
+                      src={getPhotoUrl(photo)}
+                      alt={photoDriver ? `${photoDriver} at ${track.track_name}` : `Historic racing at ${track.track_name}`}
+                    />
+                    <span className={styles.photoOverlay}>
+                      <span style={{ display: "block", fontSize: "0.78rem", lineHeight: 1.15 }}>
+                        {photoDriver || (photoYear ? `Year ${photoYear}` : "Driver unknown")}
+                      </span>
+                      {photoDriver && photoYear ? (
+                        <span
+                          style={{
+                            display: "block",
+                            marginTop: 2,
+                            color: "rgba(255,255,255,0.72)",
+                            fontSize: "0.62rem",
+                            fontWeight: 700,
+                          }}
+                        >
+                          Year {photoYear}
+                        </span>
+                      ) : null}
+                    </span>
+                  </Link>
+                )
+              })}
             </div>
           )}
         </section>
