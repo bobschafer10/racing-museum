@@ -1,309 +1,212 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import type { CSSProperties } from "react"
 import { supabase } from "@/lib/supabase"
+import styles from "../track-profile.module.css"
+
+const PAGE_SIZE = 96
 
 function getPhotoUrl(photo: any) {
   if (!photo?.file_name) return ""
 
   const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-
   const trackSlug = photo.track_slug || photo.file_name.split("_")[0]
   const year = photo.year || photo.file_name.split("_")[1] || "unknown-year"
 
   return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
 }
 
+function formatSlugName(value?: string | null) {
+  if (
+    !value ||
+    value === "unknown-credit" ||
+    value === "unknown-driver" ||
+    value === "unknown"
+  ) {
+    return null
+  }
+
+  return value
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ")
+}
+
 export default async function TrackPhotosPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>
+  searchParams: Promise<{ page?: string }>
 }) {
   const { slug } = await params
-const baseSlug = slug.replace(/-(wi|il|mn|mi)$/i, "")
+  const query = await searchParams
+  const baseSlug = slug.replace(/-(wi|il|mn|mi)$/i, "")
+  const requestedPage = Number(query.page || 1)
+  const currentPage = Number.isFinite(requestedPage) && requestedPage > 0
+    ? Math.floor(requestedPage)
+    : 1
 
-  const { data: track } = await supabase
-    .from("track_profile_view_v3")
-    .select("track_name, slug, city, state")
-    .eq("slug", slug)
-    .maybeSingle()
+  const [{ data: track }, { count }] = await Promise.all([
+    supabase
+      .from("track_profile_view_v3")
+      .select("track_name,slug,city,state")
+      .eq("slug", slug)
+      .maybeSingle(),
+    supabase
+      .from("photos")
+      .select("photo_id", { count: "exact", head: true })
+      .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
+      .neq("credit_type", "unknown"),
+  ])
 
-  if (!track) {
-    notFound()
-  }
+  if (!track) notFound()
 
-  
+  const totalPhotos = Number(count || 0)
+  const totalPages = Math.max(1, Math.ceil(totalPhotos / PAGE_SIZE))
+  const safePage = Math.min(currentPage, totalPages)
+  const from = (safePage - 1) * PAGE_SIZE
+  const to = from + PAGE_SIZE - 1
+
   const { data: photos } = await supabase
-  .from("photos")
-  .select("*")
-  .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
-  .neq("credit_type", "unknown")
-  .order("year", { ascending: false, nullsFirst: false })
-  .order("sequence", { ascending: true })
+    .from("photos")
+    .select("*")
+    .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
+    .neq("credit_type", "unknown")
+    .order("year", { ascending: false, nullsFirst: false })
+    .order("sequence", { ascending: true })
+    .range(from, to)
 
-  function formatSlugName(value?: string | null) {
-    if (
-      !value ||
-      value === "unknown-credit" ||
-      value === "unknown-driver" ||
-      value === "unknown"
-    ) {
-      return null
-    }
-
-    return value
-      .split("-")
-      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-      .join(" ")
-  }
+  const rows = photos || []
+  const location = [track.city, track.state].filter(Boolean).join(", ")
+  const firstShown = totalPhotos === 0 ? 0 : from + 1
+  const lastShown = Math.min(from + rows.length, totalPhotos)
 
   return (
-    <main style={pageStyle}>
-      <section style={heroSection}>
-        <div style={heroInner}>
-          <div style={breadcrumbRow}>
-            <Link href="/" style={breadcrumbLink}>Home</Link>
-            <span style={breadcrumbSep}>/</span>
-            <Link href="/tracks" style={breadcrumbLink}>Tracks</Link>
-            <span style={breadcrumbSep}>/</span>
-            <Link href={`/tracks/${slug}`} style={breadcrumbLink}>
-              {track.track_name}
-            </Link>
-            <span style={breadcrumbSep}>/</span>
-            <span style={breadcrumbCurrent}>Photo Archive</span>
-          </div>
-
-          <div style={eyebrow}>Track Photo Archive</div>
-          <h1 style={pageTitle}>{track.track_name}</h1>
-
-          <p style={locationLine}>
-            {[track.city, track.state].filter(Boolean).join(", ") || "Location unknown"}
+    <main className={styles.subpage}>
+      <section className={styles.subHero}>
+        <div className={styles.subHeroInner}>
+          <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
+            <Link href="/tracks">Tracks</Link>
+            <span>›</span>
+            <Link href={`/tracks/${slug}`}>{track.track_name}</Link>
+            <span>›</span>
+            <span>Photos</span>
+          </nav>
+          <p className={styles.eyebrow}>Museum Photo Collection</p>
+          <h1 className={styles.subTitle}>Track Photos</h1>
+          <p className={styles.subSubtitle}>
+            {track.track_name}{location ? ` • ${location}` : ""}
           </p>
-
-          <p style={introText}>Full photo archive connected to this racing venue.</p>
-
-          <div style={{ marginTop: "14px" }}>
-            <Link href={`/tracks/${slug}`} style={backButton}>
-              Back to Track Profile
+          <p className={styles.subIntro}>
+            Browse the complete photo archive currently connected to {track.track_name}.
+            The collection will continue to expand as photographs are identified and cataloged.
+          </p>
+          <div className={styles.subActions}>
+            <Link href={`/tracks/${slug}`} className={styles.backButton}>
+              ← Track Overview
+            </Link>
+            <Link href={`/tracks/${slug}/feature-winners`} className={styles.secondaryButton}>
+              Feature Winners
+            </Link>
+            <Link href={`/tracks/${slug}/champions`} className={styles.secondaryButton}>
+              Track Champions
             </Link>
           </div>
         </div>
       </section>
 
-      <section style={sectionStyle}>
-        <h2 style={sectionTitle}>All Photos</h2>
+      <div className={styles.subContent}>
+        <section className={styles.summaryGrid} aria-label="Photo archive summary">
+          <div className={styles.summaryCard}>
+            <div className={styles.summaryValue}>{totalPhotos.toLocaleString()}</div>
+            <div className={styles.summaryLabel}>Archived Photos</div>
+          </div>
+          <div className={styles.summaryCard}>
+            <div className={styles.summaryValue}>{safePage}</div>
+            <div className={styles.summaryLabel}>Page of {totalPages}</div>
+          </div>
+          <div className={styles.summaryCard}>
+            <div className={styles.summaryValue}>
+              {totalPhotos ? `${firstShown}–${lastShown}` : "—"}
+            </div>
+            <div className={styles.summaryLabel}>Photos Shown</div>
+          </div>
+        </section>
 
-        {!photos || photos.length === 0 ? (
-          <div style={emptyPanel}>No photos available yet.</div>
+        {rows.length === 0 ? (
+          <section className={styles.panel}>
+            <div className={styles.empty}>No track photos are available yet.</div>
+          </section>
         ) : (
-          <>
-            <p style={sectionIntro}>
-              Showing {photos.length.toLocaleString()} archived photos for {track.track_name}.
-            </p>
+          <section className={styles.archivePhotoGrid}>
+            {rows.map((photo: any) => {
+              const driverName = formatSlugName(photo.driver_slug) || "Driver not identified"
+              const photographer = formatSlugName(photo.photographer_slug)
+              const hasDriver =
+                !!photo.driver_slug &&
+                photo.driver_slug !== "unknown-driver" &&
+                photo.driver_slug !== "unknown"
 
-            <div style={photoGrid}>
-              {photos.map((photo) => {
-                const driverName = formatSlugName(photo.driver_slug) || "Unknown Driver"
-
-                const hasDriver =
-                  !!photo.driver_slug &&
-                  photo.driver_slug !== "unknown-driver" &&
-                  photo.driver_slug !== "unknown"
-
-                const driverHref = hasDriver ? `/drivers/${photo.driver_slug}` : null
-
-                return (
-                  <div key={photo.photo_id} style={photoCard}>
-                    {driverHref ? (
-                      <Link href={driverHref} style={{ display: "block" }}>
-                        <img
-                          src={getPhotoUrl(photo)}
-                          alt={driverName}
-                          style={{ ...photoImage, cursor: "pointer" }}
-                        />
-                      </Link>
-                    ) : (
+              return (
+                <article className={styles.archivePhotoCard} key={photo.photo_id}>
+                  {hasDriver ? (
+                    <Link href={`/drivers/${photo.driver_slug}`}>
                       <img
                         src={getPhotoUrl(photo)}
-                        alt={driverName}
-                        style={photoImage}
+                        alt={`${driverName} at ${track.track_name}`}
+                        className={styles.archivePhotoImage}
                       />
-                    )}
-
-                    <div style={photoMeta}>
-                      <div style={{ fontWeight: 700 }}>
-                        {driverHref ? (
-                          <Link
-                            href={driverHref}
-                            style={{ ...inlineLink, display: "inline-block" }}
-                          >
-                            {driverName}
-                          </Link>
-                        ) : (
-                          driverName
-                        )}
-                      </div>
-
-                      <div>{photo.year || "Year Unknown"}</div>
-
-                      <div>
-                        {formatSlugName(photo.photographer_slug)
-                          ? `${formatSlugName(photo.photographer_slug)} Photo`
-                          : "Unknown photographer"}
-                      </div>
-                    </div>
+                    </Link>
+                  ) : (
+                    <img
+                      src={getPhotoUrl(photo)}
+                      alt={`Historic racing at ${track.track_name}`}
+                      className={styles.archivePhotoImage}
+                    />
+                  )}
+                  <div className={styles.archivePhotoMeta}>
+                    <strong>
+                      {hasDriver ? (
+                        <Link href={`/drivers/${photo.driver_slug}`} className={styles.driverLink}>
+                          {driverName}
+                        </Link>
+                      ) : (
+                        driverName
+                      )}
+                    </strong>
+                    <div>{photo.year && photo.year !== "unknown-year" ? photo.year : "Year unknown"}</div>
+                    <div>{photographer ? `${photographer} photo` : "Photographer not identified"}</div>
                   </div>
-                )
-              })}
-            </div>
-          </>
+                </article>
+              )
+            })}
+          </section>
         )}
-      </section>
+
+        {totalPages > 1 ? (
+          <nav className={styles.subActions} aria-label="Photo archive pagination" style={{ marginTop: 22 }}>
+            {safePage > 1 ? (
+              <Link
+                href={`/tracks/${slug}/photos?page=${safePage - 1}`}
+                className={styles.secondaryButton}
+              >
+                ← Previous Photos
+              </Link>
+            ) : null}
+            <span className={styles.secondaryButton} aria-current="page">
+              Page {safePage} of {totalPages}
+            </span>
+            {safePage < totalPages ? (
+              <Link
+                href={`/tracks/${slug}/photos?page=${safePage + 1}`}
+                className={styles.secondaryButton}
+              >
+                Next Photos →
+              </Link>
+            ) : null}
+          </nav>
+        ) : null}
+      </div>
     </main>
   )
-}
-
-const pageStyle: CSSProperties = {
-  maxWidth: "1280px",
-  margin: "0 auto",
-  padding: "28px 18px 80px",
-}
-
-const heroSection: CSSProperties = {
-  marginBottom: 28,
-}
-
-const heroInner: CSSProperties = {
-  background: "#f3ead7",
-  border: "1px solid rgba(115, 88, 52, 0.24)",
-  borderRadius: 18,
-  padding: "26px 24px",
-  boxShadow: "0 10px 28px rgba(60, 40, 20, 0.06)",
-}
-
-const breadcrumbRow: CSSProperties = {
-  display: "flex",
-  flexWrap: "wrap",
-  gap: "8px",
-  fontSize: "15px",
-  marginBottom: "18px",
-  color: "#6b4a22",
-}
-
-const breadcrumbLink: CSSProperties = {
-  color: "#7a5827",
-  textDecoration: "none",
-}
-
-const breadcrumbSep: CSSProperties = {
-  color: "#8d7049",
-}
-
-const breadcrumbCurrent: CSSProperties = {
-  color: "#4b351d",
-}
-
-const eyebrow: CSSProperties = {
-  fontSize: 12,
-  letterSpacing: "0.18em",
-  textTransform: "uppercase",
-  color: "#7a6348",
-  marginBottom: 10,
-}
-
-const pageTitle: CSSProperties = {
-  margin: 0,
-  fontSize: "clamp(2rem, 4vw, 3.2rem)",
-  lineHeight: 1.05,
-  color: "#2f2419",
-}
-
-const locationLine: CSSProperties = {
-  marginTop: 10,
-  fontSize: 18,
-  color: "#5f4935",
-  fontWeight: 600,
-}
-
-const introText: CSSProperties = {
-  marginTop: 18,
-  fontSize: 16,
-  lineHeight: 1.75,
-  color: "#554332",
-  maxWidth: 760,
-}
-
-const backButton: CSSProperties = {
-  display: "inline-block",
-  background: "#7a5827",
-  color: "#fff8ea",
-  padding: "12px 18px",
-  border: "1px solid #5d3f17",
-  textDecoration: "none",
-  borderRadius: 999,
-  fontWeight: 700,
-}
-
-const sectionStyle: CSSProperties = {
-  marginTop: 34,
-}
-
-const sectionTitle: CSSProperties = {
-  fontSize: 30,
-  margin: "0 0 12px",
-  color: "#34271c",
-}
-
-const sectionIntro: CSSProperties = {
-  fontSize: 16,
-  lineHeight: 1.7,
-  color: "#5c4836",
-  maxWidth: 920,
-  marginBottom: 18,
-}
-
-const emptyPanel: CSSProperties = {
-  background: "#f1e5ce",
-  border: "1px solid #c2a97d",
-  padding: "16px",
-  borderRadius: 14,
-  fontSize: "17px",
-  lineHeight: 1.7,
-  color: "#5a3a1b",
-}
-
-const photoGrid: CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
-  gap: 16,
-}
-
-const photoCard: CSSProperties = {
-  background: "#f5eddc",
-  border: "1px solid rgba(115, 88, 52, 0.22)",
-  borderRadius: 16,
-  padding: 12,
-  boxShadow: "0 8px 24px rgba(60, 40, 20, 0.06)",
-}
-
-const photoImage: CSSProperties = {
-  width: "100%",
-  height: "auto",
-  display: "block",
-  borderRadius: 10,
-  border: "1px solid #b29364",
-  background: "#efe7d6",
-}
-
-const photoMeta: CSSProperties = {
-  marginTop: 8,
-  fontSize: 13,
-  color: "#5a3a1b",
-  lineHeight: 1.5,
-}
-
-const inlineLink: CSSProperties = {
-  textDecoration: "none",
-  color: "#6c4d22",
-  fontWeight: 700,
 }
