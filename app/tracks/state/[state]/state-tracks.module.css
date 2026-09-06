@@ -481,3 +481,108 @@
 @media (max-width: 420px) {
   .statsGrid { grid-template-columns: 1fr; }
 }
+
+/* Final museum polish: prioritize racing imagery and keep logo/fallback stages dark. */
+.highlightMedia,
+.trackMedia {
+  position: relative;
+  background:
+    radial-gradient(circle at 80% 18%, rgba(198,161,91,.12), transparent 34%),
+    linear-gradient(145deg, #15191d 0%, #090c0e 72%);
+}
+
+.highlightMedia { height: 172px; }
+.trackMedia { height: 172px; }
+
+.highlightMedia > img,
+.trackMedia > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.highlightCard:hover .highlightMedia > img,
+.trackCard:hover .trackMedia > img {
+  transform: scale(1.025);
+  filter: saturate(1.05) contrast(1.03);
+}
+
+/* TrackLogo is an inset exhibit when no racing photo exists, rather than a cream slab. */
+.highlightMedia > div,
+.trackMedia > div {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 14px !important;
+  background:
+    linear-gradient(135deg, rgba(198,161,91,.09), transparent 60%),
+    #0b0e10 !important;
+}
+
+.highlightMedia > div > img,
+.trackMedia > div > img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  filter: none !important;
+}
+
+/* Dark museum fallback for tracks that do not yet have a real logo file. */
+.highlightMedia > div > div,
+.trackMedia > div > div {
+  border: 1px solid rgba(198,161,91,.35) !important;
+  background:
+    linear-gradient(135deg, rgba(198,161,91,.13), transparent 55%),
+    repeating-conic-gradient(from 45deg, rgba(255,255,255,.025) 0 25%, transparent 0 50%) 0 0 / 24px 24px,
+    #0e1215 !important;
+  color: #f1eadf !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.025);
+}
+
+.highlightMedia > div > div > div:first-child,
+.trackMedia > div > div > div:first-child {
+  color: var(--gold) !important;
+  letter-spacing: .14em !important;
+}
+
+.highlightMedia > div > div > div:last-child,
+.trackMedia > div > div > div:last-child {
+  color: #fff !important;
+  font-size: 1rem !important;
+  line-height: 1.12 !important;
+  font-weight: 900 !important;
+}
+
+.highlightCard,
+.trackCard,
+.footerCard {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.highlightName { font-size: 1.1rem; }
+.trackName { font-size: 1.06rem; letter-spacing: -.01em; }
+.trackLocation { color: #afb3b6; }
+.trackStats strong { font-size: 1.07rem; letter-spacing: -.015em; }
+.trackStats > div { background: rgba(255,255,255,.027); }
+.trackYears { font-size: .72rem; }
+
+.trackCard { min-height: 352px; }
+.highlightCard { min-height: 328px; }
+
+.footerCard {
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+.footerCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(198,161,91,.42);
+}
+
+.searchPanel {
+  border-color: rgba(233,220,194,.31);
+}
+
+@media (max-width: 640px) {
+  .highlightMedia,
+  .trackMedia { height: 205px; }
+}
