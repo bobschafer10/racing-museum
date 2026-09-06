@@ -1,6 +1,9 @@
 'use client'
 
+import { useEffect } from 'react'
 import type { CSSProperties } from 'react'
+import { usePathname } from 'next/navigation'
+import { supabase } from '@/lib/supabase'
 
 export default function TrackLogo({
   slug,
@@ -9,6 +12,45 @@ export default function TrackLogo({
   slug: string
   trackName: string
 }) {
+  const pathname = usePathname()
+
+  useEffect(() => {
+    let preferredRank = 1
+
+    if (pathname.includes('/feature-winners')) preferredRank = 4
+    else if (pathname.includes('/champions')) preferredRank = 3
+    else if (pathname.includes('/results')) preferredRank = 2
+    else return
+
+    let cancelled = false
+
+    async function syncHeroImage() {
+      const { data } = await supabase
+        .from('track_hero_photo_variants_view')
+        .select('photo_rank,image_url')
+        .eq('slug', slug)
+        .lte('photo_rank', preferredRank)
+        .order('photo_rank', { ascending: false })
+        .limit(1)
+
+      if (cancelled || !data?.[0]?.image_url) return
+
+      const heroImage = Array.from(document.querySelectorAll<HTMLImageElement>('img')).find(
+        (image) => image.alt === `Racing at ${trackName}`,
+      )
+
+      if (heroImage && heroImage.src !== data[0].image_url) {
+        heroImage.src = data[0].image_url
+      }
+    }
+
+    void syncHeroImage()
+
+    return () => {
+      cancelled = true
+    }
+  }, [pathname, slug, trackName])
+
   // Version parameter prevents browsers/CDNs from reusing a placeholder
   // that was cached before a newly added logo existed.
   const logoPath = `/api/track-logo/${encodeURIComponent(slug)}?v=2`
