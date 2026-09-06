@@ -1,0 +1,95 @@
+.scope {
+  display: contents;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"]) {
+  margin-top: 12px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(233,220,194,.22);
+  background: linear-gradient(90deg, rgba(198,161,91,.06), transparent 45%), #0d1114;
+  color: #aeb2b5;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] > span) {
+  flex: 0 0 auto;
+  color: #c6a15b;
+  font-size: .66rem;
+  font-weight: 950;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] > div) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] a) {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+  border: 1px solid rgba(233,220,194,.15);
+  background: rgba(255,255,255,.02);
+  color: #d4d6d7;
+  text-decoration: none;
+  font-size: .7rem;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] a strong) {
+  color: #f0c7a8;
+  font-size: .72rem;
+  letter-spacing: .04em;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] a span) {
+  color: #979da1;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] a:hover) {
+  border-color: rgba(223,38,48,.62);
+  background: rgba(189,23,33,.1);
+  color: #fff;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] a[aria-current="page"]) {
+  border-color: rgba(198,161,91,.65);
+  background: linear-gradient(135deg, rgba(198,161,91,.18), rgba(189,23,33,.08)), #14181b;
+  box-shadow: inset 0 -2px 0 #bd1721;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] a[aria-current="page"] strong),
+.scope :global(nav[aria-label="Switch state track archive"] a[aria-current="page"] span) {
+  color: #fff;
+}
+
+.scope :global(nav[aria-label="Switch state track archive"] a:last-child) {
+  margin-left: 4px;
+  color: #ef6168;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .scope :global(nav[aria-label="Switch state track archive"]) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .scope :global(nav[aria-label="Switch state track archive"] a span) {
+    display: none;
+  }
+
+  .scope :global(nav[aria-label="Switch state track archive"] a) {
+    min-width: 42px;
+    justify-content: center;
+  }
+}
