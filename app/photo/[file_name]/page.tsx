@@ -1,338 +1,44 @@
 import Link from 'next/link'
-import type { CSSProperties } from 'react'
+import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
+import { getPhotoUrl } from '@/lib/photos'
+import '../../media/archive-dark.css'
 
 export const dynamic = 'force-dynamic'
 
-type PhotoRecord = {
-  photo_id: number
-  file_name: string
-  track_slug: string | null
-  year: string | null
-  driver_slug: string | null
-  photographer_slug: string | null
-  credit_type: string | null
-}
+type PhotoRecord = { photo_id:number; file_name:string; track_slug:string|null; year:string|null; driver_slug:string|null; photographer_slug:string|null; credit_type:string|null }
 
-export default async function PhotoDetailPage({
-  params,
-}: {
-  params: Promise<{ file_name: string }>
-}) {
+export default async function PhotoDetailPage({ params }: { params: Promise<{ file_name:string }> }) {
   const { file_name } = await params
-  const decodedFileName = decodeURIComponent(file_name)
-
-  const { data, error } = await supabase
-    .from('photos')
-    .select(`
-      photo_id,
-      file_name,
-      track_slug,
-      year,
-      driver_slug,
-      photographer_slug,
-      credit_type
-    `)
-    .eq('file_name', decodedFileName)
-    .maybeSingle()
-
-  if (error) {
-    console.error('Photo database error:', error)
-
-    return (
-      <main style={pageWrap}>
-        <Link href="/photos" style={backLink}>
-          ← Back to Photos
-        </Link>
-        <h1>Photo could not be retrieved</h1>
-      </main>
-    )
-  }
-
-  if (!data) {
-    return (
-      <main style={pageWrap}>
-        <Link href="/photos" style={backLink}>
-          ← Back to Photos
-        </Link>
-        <h1>Photo Not Found</h1>
-      </main>
-    )
-  }
-
+  const decoded = decodeURIComponent(file_name)
+  const { data } = await supabase.from('photos').select('photo_id,file_name,track_slug,year,driver_slug,photographer_slug,credit_type').eq('file_name',decoded).maybeSingle()
+  if (!data) notFound()
   const photo = data as PhotoRecord
+  const imageUrl = photoUrl(photo)
 
-  const trackSlug = photo.track_slug || 'unknown-track'
-  const year = photo.year || 'unknown-year'
+  let relatedQuery = supabase.from('photos').select('photo_id,file_name,track_slug,year,driver_slug,photographer_slug,credit_type').neq('file_name',photo.file_name).limit(8)
+  if (photo.driver_slug && !isUnknown(photo.driver_slug)) relatedQuery = relatedQuery.eq('driver_slug',photo.driver_slug)
+  else if (photo.track_slug) relatedQuery = relatedQuery.eq('track_slug',photo.track_slug)
+  const { data: related } = await relatedQuery
 
-  const storagePath =
-    `photos/master/${trackSlug}/${year}/${photo.file_name}`
+  const driverName = formatSlugName(photo.driver_slug)
+  const photographerName = formatSlugName(photo.photographer_slug)
+  const trackName = formatSlugName(photo.track_slug)
 
-  const imageUrl =
-    `/api/photo?path=${encodeURIComponent(storagePath)}`
+  return <main className="ma-page">
+    <section className="ma-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.98),rgba(5,8,10,.84) 48%,rgba(5,8,10,.48)),url(${imageUrl})`,backgroundSize:'cover',backgroundPosition:'center'}}>
+      <div className="ma-hero-inner"><div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><Link href="/photos">Photos</Link><span>›</span><span>{driverName}</span></div><div className="ma-hero-grid"><div><div className="ma-eyebrow">Museum Photo Archive</div><h1 className="ma-title">{driverName}</h1><div className="ma-subtitle">{photo.year && photo.year!=='unknown-year' ? photo.year : 'Year Unknown'} • {trackName}</div><p className="ma-lede">A preserved racing photograph connected to the museum's driver, track, year, and photographer research indexes.</p><div className="ma-actions"><Link href="/photos" className="ma-button">Browse Photo Archive</Link>{photo.photographer_slug && !isUnknown(photo.photographer_slug)?<Link href={`/photographers/${photo.photographer_slug}`} className="ma-button-ghost">{photographerName} Collection</Link>:null}</div></div></div><div className="ma-stats"><div className="ma-stat"><strong>{photo.year && photo.year!=='unknown-year'?photo.year:'—'}</strong><span>Year</span></div><div className="ma-stat"><strong>{driverName==='Unknown'?'—':driverName.split(' ').slice(-1)[0]}</strong><span>Driver</span></div><div className="ma-stat"><strong>{trackName==='Unknown'?'—':trackName.split(' ')[0]}</strong><span>Track</span></div><div className="ma-stat"><strong>{photographerName==='Unknown'?'—':photographerName.split(' ').slice(-1)[0]}</strong><span>Photographer</span></div><div className="ma-stat"><strong>#{photo.photo_id}</strong><span>Museum Photo ID</span></div></div></div>
+    </section>
 
-  return (
-    <main style={pageWrap}>
-      <Link href="/photos" style={backLink}>
-        ← Back to Photos
-      </Link>
+    <section className="ma-section"><div className="ma-grid-2" style={{gridTemplateColumns:'minmax(0,2fr) minmax(280px,1fr)'}}><div className="ma-panel" style={{display:'grid',placeItems:'center'}}><img src={imageUrl} alt={driverName} style={{width:'100%',maxHeight:'78vh',objectFit:'contain',display:'block'}}/></div><aside className="ma-panel"><div className="ma-kicker">Archive Metadata</div><h2 className="ma-h2" style={{fontSize:28,marginBottom:18}}>Photo Record</h2>{[['Driver',driverName],['Track',trackName],['Year',photo.year&&photo.year!=='unknown-year'?photo.year:'Year Unknown'],['Credit',formatCreditLine(photo.credit_type,photo.photographer_slug)],['File',photo.file_name]].map(([label,value])=><div key={label} style={{borderTop:'1px solid #283036',padding:'12px 0'}}><div className="ma-card-label">{label}</div><div style={{marginTop:5,color:'#fff',fontSize:13,wordBreak:'break-word'}}>{value}</div></div>)}<div className="ma-actions">{photo.driver_slug&&!isUnknown(photo.driver_slug)?<Link href={`/photos?driver=${encodeURIComponent(photo.driver_slug)}`} className="ma-button-ghost">More of This Driver</Link>:null}{photo.track_slug?<Link href={`/photos?track=${encodeURIComponent(photo.track_slug)}`} className="ma-button-ghost">More From This Track</Link>:null}</div></aside></div></section>
 
-      <section style={detailPanel}>
-        <div style={imageWrap}>
-          <img
-            src={imageUrl}
-            alt={formatSlugName(photo.driver_slug)}
-            style={largeImage}
-          />
-        </div>
+    {(related||[]).length>0?<section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Connected Archive</div><h2 className="ma-h2">Related Photographs</h2></div><div className="ma-note">More images tied to the same driver or track.</div></div><div className="ma-grid-4">{(related||[]).map((r:any)=><Link href={`/photo/${encodeURIComponent(r.file_name)}`} className="ma-card" key={r.file_name}><div className="ma-card-media"><img src={photoUrl(r)} alt={formatSlugName(r.driver_slug)}/></div><div className="ma-card-body"><div className="ma-card-label">{r.year||'Year unknown'}</div><div className="ma-card-title">{formatSlugName(r.driver_slug)}</div><div className="ma-card-meta">{formatSlugName(r.track_slug)}</div><span className="ma-card-link">Open photo →</span></div></Link>)}</div></section>:null}
 
-        <aside style={infoPanel}>
-          <div style={eyebrow}>Photo Archive</div>
-
-          <h1 style={title}>
-            {formatSlugName(photo.driver_slug)}
-          </h1>
-
-          <div style={metaBlock}>
-            <div style={label}>Year</div>
-            <div>{formatYear(photo.year)}</div>
-          </div>
-
-          <div style={metaBlock}>
-            <div style={label}>Driver</div>
-
-            {photo.driver_slug ? (
-              <Link
-                href={`/photos?driver=${encodeURIComponent(photo.driver_slug)}`}
-                style={metaLink}
-              >
-                {formatSlugName(photo.driver_slug)}
-              </Link>
-            ) : (
-              <div>Unknown</div>
-            )}
-          </div>
-
-          <div style={metaBlock}>
-            <div style={label}>Track</div>
-
-            {photo.track_slug ? (
-              <Link
-                href={`/photos?track=${encodeURIComponent(photo.track_slug)}`}
-                style={metaLink}
-              >
-                {formatSlugName(photo.track_slug)}
-              </Link>
-            ) : (
-              <div>Unknown</div>
-            )}
-          </div>
-
-          <div style={metaBlock}>
-            <div style={label}>Photographer / Credit</div>
-
-            {photo.photographer_slug ? (
-              <Link
-                href={`/photos?photographer=${encodeURIComponent(
-                  photo.photographer_slug
-                )}`}
-                style={metaLink}
-              >
-                {formatCreditLine(
-                  photo.credit_type,
-                  photo.photographer_slug
-                )}
-              </Link>
-            ) : (
-              <div>Unknown Photo</div>
-            )}
-          </div>
-
-          <div style={metaBlock}>
-            <div style={label}>File</div>
-            <div style={fileNameStyle}>{photo.file_name}</div>
-          </div>
-
-          <div style={buttonRow}>
-            <Link href="/photos" style={button}>
-              Browse Photos
-            </Link>
-
-            {photo.driver_slug && (
-              <Link
-                href={`/photos?driver=${encodeURIComponent(
-                  photo.driver_slug
-                )}`}
-                style={buttonAlt}
-              >
-                More of This Driver
-              </Link>
-            )}
-          </div>
-        </aside>
-      </section>
-    </main>
-  )
+    <section className="ma-section"><div className="ma-footer-links"><Link href="/photos" className="ma-footer-link">Photo Archive<span>Search all photography →</span></Link><Link href="/photographers" className="ma-footer-link">Photographers<span>Browse credited collections →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
+  </main>
 }
 
-function formatYear(value: string | null) {
-  if (!value || value === 'unknown-year') {
-    return 'Year Unknown'
-  }
-
-  return value
-}
-
-function formatSlugName(value: string | null) {
-  if (
-    !value ||
-    value === 'unknown' ||
-    value === 'unknown-driver' ||
-    value === 'unknown-track' ||
-    value === 'unknown-credit' ||
-    value === 'unknown-photographer'
-  ) {
-    return 'Unknown'
-  }
-
-  return value
-    .replace(/_/g, '-')
-    .split('-')
-    .filter(Boolean)
-    .map(
-      (word) =>
-        word.charAt(0).toUpperCase() +
-        word.slice(1)
-    )
-    .join(' ')
-}
-
-function formatCreditLine(
-  type: string | null,
-  photographer: string | null
-) {
-  const name = formatSlugName(photographer)
-
-  if (!type || type === 'photo') {
-    return `${name} Photo`
-  }
-
-  if (type === 'post') {
-    return `${name} Post`
-  }
-
-  return `${name} ${formatSlugName(type)}`
-}
-
-const pageWrap: CSSProperties = {
-  maxWidth: '1320px',
-  margin: '0 auto',
-  padding: '34px 18px 60px',
-  color: '#2f2417',
-}
-
-const backLink: CSSProperties = {
-  display: 'inline-block',
-  marginBottom: '18px',
-  color: '#5b3a1b',
-  textDecoration: 'none',
-  fontWeight: 700,
-}
-
-const detailPanel: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'minmax(0, 1.35fr) 420px',
-  gap: '24px',
-  background: '#ddc8a2',
-  border: '2px solid #b29364',
-  padding: '16px',
-}
-
-const imageWrap: CSSProperties = {
-  minHeight: '560px',
-  background: '#efe7d6',
-  border: '1px solid #c2a97d',
-  padding: '14px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}
-
-const largeImage: CSSProperties = {
-  width: '100%',
-  height: 'auto',
-  maxHeight: '760px',
-  objectFit: 'contain',
-  display: 'block',
-}
-
-const infoPanel: CSSProperties = {
-  background: '#efe7d6',
-  border: '1px solid #c2a97d',
-  padding: '24px',
-}
-
-const eyebrow: CSSProperties = {
-  textTransform: 'uppercase',
-  letterSpacing: '0.18em',
-  fontSize: '12px',
-  color: '#7a6348',
-  marginBottom: '10px',
-}
-
-const title: CSSProperties = {
-  fontSize: '42px',
-  lineHeight: 1.05,
-  margin: '0 0 24px',
-}
-
-const metaBlock: CSSProperties = {
-  borderTop: '1px solid #c2a97d',
-  padding: '14px 0',
-  fontSize: '17px',
-  lineHeight: 1.4,
-}
-
-const label: CSSProperties = {
-  fontSize: '12px',
-  textTransform: 'uppercase',
-  letterSpacing: '0.12em',
-  color: '#7a6348',
-  marginBottom: '5px',
-}
-
-const metaLink: CSSProperties = {
-  color: '#2f2417',
-  textDecoration: 'none',
-  borderBottom: '1px dotted #7a5827',
-  fontWeight: 700,
-}
-
-const fileNameStyle: CSSProperties = {
-  fontSize: '13px',
-  wordBreak: 'break-word',
-  color: '#5b3a1b',
-}
-
-const buttonRow: CSSProperties = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  gap: '10px',
-  marginTop: '18px',
-}
-
-const button: CSSProperties = {
-  background: '#7a5827',
-  color: '#fff8ea',
-  border: '1px solid #5d3f17',
-  padding: '10px 14px',
-  textDecoration: 'none',
-}
-
-const buttonAlt: CSSProperties = {
-  background: '#efe7d6',
-  color: '#5b3a1b',
-  border: '1px solid #b29364',
-  padding: '10px 14px',
-  textDecoration: 'none',
-}
+function photoUrl(photo:any){return getPhotoUrl(`photos/master/${photo.track_slug||'unknown-track'}/${photo.year||'unknown-year'}/${photo.file_name}`)}
+function isUnknown(v:string|null|undefined){return !v||['unknown','unknown-driver','unknown-track','unknown-photographer','unknown-credit'].includes(v)}
+function formatSlugName(value:string|null|undefined){if(isUnknown(value))return'Unknown';return String(value).replace(/_/g,'-').split('-').filter(Boolean).map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' ')}
+function formatCreditLine(type:string|null,photographer:string|null){const name=formatSlugName(photographer);if(!type||type==='photo')return `${name} Photo`;if(type==='post')return `${name} Post`;return `${name} ${formatSlugName(type)}`}
