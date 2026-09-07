@@ -158,9 +158,12 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   const datedPhotos = orderedPhotos.filter((p) => normalizedPhotoYear(p.year) !== Number.MAX_SAFE_INTEGER)
   const profilePhotoItem: Photo | null = datedPhotos[0] ?? orderedPhotos[0] ?? null
   const heroPhotoItem: Photo | null = datedPhotos[datedPhotos.length - 1] ?? orderedPhotos[orderedPhotos.length - 1] ?? null
-  const displayPhotos = orderedPhotos
-    .filter((p) => p.file_name !== profilePhotoItem?.file_name)
-    .slice(0, 150)
+  const galleryCandidates = orderedPhotos.filter((p) => p.file_name !== profilePhotoItem?.file_name)
+  const displayPhotos = (
+    heroPhotoItem && heroPhotoItem.file_name !== profilePhotoItem?.file_name && galleryCandidates.length > 1
+      ? galleryCandidates.filter((p) => p.file_name !== heroPhotoItem.file_name)
+      : galleryCandidates
+  ).slice(0, 150)
 
   const lastRecordedYear = flatResultsByYear.length
     ? Number((flatResultsByYear[0] as any)?.result_year || 0)
@@ -232,7 +235,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   const { data: topSeriesRow } = topSeriesId
     ? await supabase.from('Series').select('series_name, logo_url').eq('id', topSeriesId).maybeSingle()
     : { data: null as any }
-  const mostSuccessfulSeries = (topSeriesRow as any)?.series_name || '—'
+  const mostSuccessfulSeries = (topSeriesRow as any)?.series_name || 'No series wins recorded'
   const mostSuccessfulSeriesLogo = (topSeriesRow as any)?.logo_url || ''
   const lastFeatureWinDate = (lastWinRows?.[0] as any)?.race_date
     ? formatRaceDate((lastWinRows?.[0] as any).race_date)
@@ -262,12 +265,16 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
 
   const primaryStats = [
     { value: number(driver.recorded_wins), label: 'Recorded Feature Wins' },
-    { value: number(coverageAreaWins), label: 'Coverage-Area Wins' },
-    { value: number(totalDiscoveredWins), label: 'Total Discovered Wins' },
+    { value: number(driver.recorded_results), label: 'Recorded Results' },
+    { value: number(driver.recorded_top_3_finishes), label: 'Recorded Top-3 Finishes' },
     { value: number(trackChampionships), label: 'Track Championships' },
     { value: number(seriesChampionships), label: 'Series Championships' },
     { value: careerSpanDisplay, label: 'Recorded Career' },
   ]
+
+  const broaderWinNote = totalDiscoveredWins > Number(driver.recorded_wins || 0)
+    ? `${number(totalDiscoveredWins)} total discovered wins are documented when verified broader-career victories are included.`
+    : null
 
   return (
     <main className={styles.page}>
@@ -353,7 +360,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
               <span>Career snapshot</span>
               <h2>Racing Lifetime Totals</h2>
             </div>
-            <p>Key museum-recorded and verified career indicators.</p>
+            <p>{broaderWinNote || 'Key museum-recorded and verified career indicators.'}</p>
           </div>
 
           <div className={styles.metricGrid}>
@@ -472,18 +479,30 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
             <div className={styles.emptyState}>No additional photos are available yet.</div>
           ) : (
             <div className={styles.photoGrid}>
-              {displayPhotos.map((photo) => (
-                <article className={styles.photoCard} key={photo.photo_id}>
-                  <PhotoLightboxImage
-                    src={buildPhotoUrl(photo)}
-                    alt={driver.driver_name}
-                    caption={buildPhotoCaption(photo)}
-                    imageStyle={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', display: 'block' }}
-                    showZoomBadge
-                  />
-                  <p>{buildPhotoCaption(photo)}</p>
-                </article>
-              ))}
+              {displayPhotos.map((photo) => {
+                const trackLabel = formatTrackSlug(photo.track_slug)
+                const yearLabel = photo.year && String(photo.year) !== 'unknown-year' ? String(photo.year) : 'Year Unknown'
+                const creditLine = buildPhotoCreditLine(photo)
+                return (
+                  <article className={styles.photoCard} key={photo.photo_id}>
+                    <PhotoLightboxImage
+                      src={buildPhotoUrl(photo)}
+                      alt={driver.driver_name}
+                      caption={buildPhotoCaption(photo)}
+                      imageStyle={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', display: 'block' }}
+                      showZoomBadge
+                    />
+                    <p>
+                      <strong style={{ display: 'block', color: '#eee9df', fontSize: '0.67rem', lineHeight: 1.35 }}>
+                        {[yearLabel, trackLabel].filter(Boolean).join(' • ')}
+                      </strong>
+                      <span style={{ display: 'block', marginTop: '4px', color: '#8e9599', fontSize: '0.58rem', lineHeight: 1.4 }}>
+                        {creditLine}
+                      </span>
+                    </p>
+                  </article>
+                )
+              })}
             </div>
           )}
         </section>
@@ -546,17 +565,24 @@ function RankPanel({
 
 function buildPhotoCaption(photo: Photo) {
   const trackLabel = formatTrackSlug(photo.track_slug)
-  const photographer = photo.photographer_slug && photo.photographer_slug !== 'unknown'
-    ? formatName(photo.photographer_slug)
-    : 'Unknown Credit'
-  const creditType = photo.credit_type && photo.credit_type !== 'unknown'
-    ? formatCreditType(photo.credit_type)
-    : 'Photo'
+  const creditLine = buildPhotoCreditLine(photo)
   return [
     trackLabel,
     photo.year && String(photo.year) !== 'unknown-year' ? photo.year : 'Year Unknown',
-    photographer !== 'Unknown Credit' ? `${photographer}${creditType !== 'Photo' ? ` ${creditType}` : ''}` : null,
+    creditLine !== 'Museum archive photo' ? creditLine : null,
   ].filter(Boolean).join(' • ')
+}
+
+function buildPhotoCreditLine(photo: Photo) {
+  const photographer = photo.photographer_slug && photo.photographer_slug !== 'unknown'
+    ? formatName(photo.photographer_slug)
+    : null
+  const creditType = photo.credit_type && photo.credit_type !== 'unknown'
+    ? formatCreditType(photo.credit_type)
+    : null
+  if (!photographer && !creditType) return 'Museum archive photo'
+  if (photographer) return `${photographer}${creditType && creditType !== 'Photo' ? ` ${creditType}` : ''}`
+  return creditType || 'Museum archive photo'
 }
 
 function normalizedPhotoYear(year: Photo['year']) {
