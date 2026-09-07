@@ -1,212 +1,87 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getRaceProgramBySlug } from "@/lib/race-programs"
+import "../../archive-dark.css"
 
-export default async function RaceProgramDetailPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>
-}) {
+export default async function RaceProgramDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const program = await getRaceProgramBySlug(slug)
-
   if (!program) notFound()
 
+  const heroImage = program.coverImage || program.images[0] || null
+  const pageCount = program.images.length
+
   return (
-    <main style={styles.viewerDesk}>
-      <section style={styles.viewerToolbar}>
-        <Link href="/media/race-programs" style={styles.backLink}>
-          ← Back to Printed Archive
-        </Link>
+    <main className="ma-page">
+      <section
+        className="ma-hero"
+        style={heroImage ? { backgroundImage: `linear-gradient(90deg,rgba(5,8,10,.96),rgba(5,8,10,.82) 48%,rgba(5,8,10,.52)),url(${heroImage})`, backgroundSize: 'cover', backgroundPosition: 'center 30%' } : undefined}
+      >
+        <div className="ma-hero-inner">
+          <div className="ma-breadcrumbs">
+            <Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><Link href="/media/race-programs">Race Programs</Link><span>›</span><span>{program.year ?? 'Archive'}</span>
+          </div>
 
-        <div style={styles.viewerLabel}>Museum Scan Viewer</div>
-      </section>
+          <div className="ma-hero-grid">
+            <div>
+              <div className="ma-eyebrow">Printed Racing Archive</div>
+              <h1 className="ma-title">{program.title}</h1>
+              <div className="ma-subtitle">
+                {[program.year, program.track, program.type].filter(Boolean).join(' • ')}
+              </div>
+              <p className="ma-lede">
+                {program.description || program.subtitle || 'A digitized race program preserved by the Upper Midwest Auto Racing Museum. Browse the complete surviving publication below.'}
+              </p>
+              <div className="ma-actions">
+                <Link href="/media/race-programs" className="ma-button">Back to Program Archive</Link>
+                {program.track_slug ? <Link href={`/tracks/${program.track_slug}`} className="ma-button-ghost">Open Track Archive</Link> : null}
+                {program.series_slug ? <Link href={`/series/${program.series_slug}`} className="ma-button-ghost">Open Series Archive</Link> : null}
+              </div>
+            </div>
+            <div className="ma-hero-media">
+              {program.coverImage ? <img src={program.coverImage} alt={program.title} className="ma-cover" /> : null}
+            </div>
+          </div>
 
-      <section style={styles.programHeader}>
-        <div>
-          <div style={styles.eyebrow}>{program.type ?? "Program"}</div>
-          <h1 style={styles.title}>{program.title}</h1>
-
-          <div style={styles.metaRow}>
-            <span style={styles.metaChip}>{program.year ?? "Unknown Year"}</span>
-
-            {program.track ? (
-              <span style={styles.metaChip}>{program.track}</span>
-            ) : null}
-
-            {program.series ? (
-              <span style={styles.metaChip}>{program.series}</span>
-            ) : null}
+          <div className="ma-stats">
+            <div className="ma-stat"><strong>{program.year ?? '—'}</strong><span>Publication Year</span></div>
+            <div className="ma-stat"><strong>{pageCount}</strong><span>Scanned Pages</span></div>
+            <div className="ma-stat"><strong>{program.track ? '1' : '—'}</strong><span>Connected Track</span></div>
+            <div className="ma-stat"><strong>{program.series ? '1' : '—'}</strong><span>Connected Series</span></div>
+            <div className="ma-stat"><strong>Digital</strong><span>Museum Preservation</span></div>
           </div>
         </div>
-
-        {program.coverImage ? (
-          <img
-            src={program.coverImage}
-            alt={program.title}
-            style={styles.coverPreview}
-          />
-        ) : null}
       </section>
 
-      <section style={styles.openProgram}>
-        {program.images.length === 0 ? (
-          <div style={styles.emptyPanel}>No scanned pages found.</div>
+      <section className="ma-section">
+        <div className="ma-section-head">
+          <div><div className="ma-kicker">Complete Publication</div><h2 className="ma-h2">Scanned Pages</h2></div>
+          <div className="ma-note">Select any page to open the full-resolution scan in a new tab.</div>
+        </div>
+
+        {pageCount === 0 ? (
+          <div className="ma-source">No scanned pages are currently attached to this publication.</div>
         ) : (
-          <div style={styles.pagesStack}>
+          <div className="ma-scan-grid">
             {program.images.map((image, index) => (
-              <figure key={image} style={styles.pageFrame}>
-                <img
-                  src={image}
-                  alt={`${program.title} page ${index + 1}`}
-                  style={styles.pageImage}
-                />
-                <figcaption style={styles.pageCaption}>
-                  Page {index + 1} of {program.images.length}
-                </figcaption>
+              <figure className="ma-scan-frame" key={image}>
+                <a href={image} target="_blank" rel="noreferrer">
+                  <img src={image} alt={`${program.title} page ${index + 1}`} loading={index < 4 ? 'eager' : 'lazy'} />
+                </a>
+                <figcaption>{index === 0 ? 'Front Cover' : index === pageCount - 1 && program.backCoverImage ? 'Back Cover' : `Page ${index + 1} of ${pageCount}`}</figcaption>
               </figure>
             ))}
           </div>
         )}
       </section>
+
+      <section className="ma-section">
+        <div className="ma-footer-links">
+          <Link href="/media/race-programs" className="ma-footer-link">Race Programs<span>Browse printed archive →</span></Link>
+          <Link href="/media/newspapers" className="ma-footer-link">Racing Newspapers<span>Browse newspaper archive →</span></Link>
+          <Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link>
+        </div>
+      </section>
     </main>
   )
-}
-
-const styles: Record<string, React.CSSProperties> = {
-  viewerDesk: {
-    minHeight: "100vh",
-    padding: "34px 18px 80px",
-    background:
-      "radial-gradient(circle at 20% 10%, rgba(255,255,255,0.12), transparent 24%), linear-gradient(135deg, #3a2515 0%, #6b4525 48%, #2d1c10 100%)",
-  },
-
-  viewerToolbar: {
-    maxWidth: 1180,
-    margin: "0 auto 18px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    color: "#fff4df",
-  },
-
-  backLink: {
-    color: "#fff4df",
-    textDecoration: "none",
-    fontWeight: 900,
-  },
-
-  viewerLabel: {
-    fontSize: 12,
-    fontWeight: 900,
-    letterSpacing: "0.16em",
-    textTransform: "uppercase",
-    color: "#f4dfb8",
-  },
-
-  programHeader: {
-    maxWidth: 1180,
-    margin: "0 auto 24px",
-    display: "grid",
-    gridTemplateColumns: "minmax(0, 1fr) 150px",
-    gap: 24,
-    alignItems: "center",
-    padding: 24,
-    borderRadius: 24,
-    background: "rgba(246, 234, 210, 0.94)",
-    boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
-  },
-
-  eyebrow: {
-    fontSize: 12,
-    fontWeight: 900,
-    letterSpacing: "0.16em",
-    textTransform: "uppercase",
-    color: "#76562f",
-    marginBottom: 10,
-  },
-
-  title: {
-    margin: 0,
-    fontSize: "clamp(2rem, 4vw, 4rem)",
-    lineHeight: 1,
-    color: "#2f2115",
-    letterSpacing: "-0.04em",
-  },
-
-  metaRow: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: 9,
-    marginTop: 16,
-  },
-
-  metaChip: {
-    display: "inline-flex",
-    padding: "7px 10px",
-    borderRadius: 999,
-    background: "#3a2a1b",
-    color: "#fff1d0",
-    fontSize: 12,
-    fontWeight: 900,
-    letterSpacing: "0.05em",
-    textTransform: "uppercase",
-  },
-
-  coverPreview: {
-    width: "100%",
-    borderRadius: 14,
-    boxShadow: "0 14px 28px rgba(45, 31, 18, 0.28)",
-  },
-
-  openProgram: {
-    maxWidth: 980,
-    margin: "0 auto",
-    padding: 26,
-    borderRadius: 26,
-    background:
-      "linear-gradient(180deg, rgba(255,255,255,0.32), rgba(255,255,255,0)), #f6ead2",
-    boxShadow:
-      "0 28px 70px rgba(0,0,0,0.38), inset 0 0 0 1px rgba(80,55,29,0.18)",
-  },
-
-  pagesStack: {
-    display: "grid",
-    gap: 30,
-  },
-
-  pageFrame: {
-    margin: 0,
-    padding: 18,
-    borderRadius: 22,
-    background: "#fbf3df",
-    boxShadow:
-      "0 18px 38px rgba(42, 27, 14, 0.22), inset 0 0 0 1px rgba(91, 62, 31, 0.14)",
-  },
-
-  pageImage: {
-    width: "100%",
-    display: "block",
-    borderRadius: 12,
-    background: "#eadcc3",
-  },
-
-  pageCaption: {
-    marginTop: 10,
-    textAlign: "center",
-    fontSize: 12,
-    fontWeight: 900,
-    letterSpacing: "0.12em",
-    textTransform: "uppercase",
-    color: "#76562f",
-  },
-
-  emptyPanel: {
-    padding: 24,
-    borderRadius: 18,
-    background: "#fbf3df",
-    color: "#5a4634",
-    fontSize: 16,
-    lineHeight: 1.6,
-  },
 }
