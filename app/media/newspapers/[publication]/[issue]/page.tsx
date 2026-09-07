@@ -1,233 +1,33 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import type { CSSProperties } from "react"
 import { getNewspaperIssue } from "@/lib/newspapers"
 import NewspaperPageViewer from "./NewspaperPageViewer"
+import "../../../archive-dark.css"
 
-export default async function NewspaperIssuePage({
-  params,
-}: {
-  params: Promise<{
-    publication: string
-    issue: string
-  }>
-}) {
+export default async function NewspaperIssuePage({ params }: { params: Promise<{ publication: string; issue: string }> }) {
   const { publication, issue: issueSlug } = await params
   const issue = await getNewspaperIssue(publication, issueSlug)
-
   if (!issue) notFound()
 
-  const pages = issue.pages.map((image, index) => ({
-    label:
-      index === 0
-        ? "Front Cover"
-        : index === issue.pages.length - 1
-          ? "Back Cover"
-          : `Page ${index + 1}`,
-    image,
-  }))
+  const orderedImages = Array.from(new Set([issue.coverImage, ...(issue.pages || []), ...(issue.backCoverImage ? [issue.backCoverImage] : [])].filter(Boolean))) as string[]
+  const pages = orderedImages.map((image,index)=>({ label:index===0?'Front Cover':index===orderedImages.length-1 && issue.backCoverImage===image?'Back Cover':`Page ${index+1}`, image }))
+  const summary = issue.description || issue.summary || `This issue of ${issue.publication}, published on ${issue.title}, preserves race coverage, photographs, schedules, advertising, results, and period news from the regional racing scene.`
 
-  const summary =
-    issue.description ||
-    `This issue of ${issue.publication}, published on ${issue.title}, preserves a snapshot of short-track racing history through race coverage, photographs, schedules, advertising, and period racing news.`
-
-  return (
-    <main style={pageStyle}>
-      <section style={heroWrap}>
-        <div style={heroGrid}>
-          <div style={coverWrap}>
-            <img
-              src={issue.coverImage}
-              alt={`${issue.publication} ${issue.title}`}
-              style={coverImage}
-            />
-          </div>
-
-          <div style={heroText}>
-            <div style={eyebrow}>Newspaper Issue</div>
-            <h1 style={pageTitle}>{issue.publication}</h1>
-            <div style={publicationLine}>{issue.title}</div>
-
-            <div style={issueMeta}>
-              {issue.issueDate}
-              {(issue.volume || issue.number) && (
-                <span> • {issue.volume} {issue.number}</span>
-              )}
-            </div>
-
-            <p style={summaryText}>{summary}</p>
-
-            <div style={buttonRow}>
-              <Link
-                href={`/media/newspapers/${publication}`}
-                style={primaryButton}
-              >
-                Back to Newspaper Archive
-              </Link>
-            </div>
-          </div>
-
-          <div style={backCoverPanel}>
-            {issue.backCoverImage ? (
-              <img
-                src={issue.backCoverImage}
-                alt={`${issue.publication} ${issue.title} back cover`}
-                style={backCoverImage}
-              />
-            ) : (
-              <div style={backCoverPlaceholder}>Back Cover</div>
-            )}
-
-            <div style={backCoverCaption}>Back Cover</div>
-          </div>
+  return <main className="ma-page">
+    <section className="ma-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.98),rgba(5,8,10,.84) 50%,rgba(5,8,10,.48)),url(${issue.coverImage})`,backgroundSize:'cover',backgroundPosition:'center 15%'}}>
+      <div className="ma-hero-inner">
+        <div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><Link href="/media/newspapers">Newspapers</Link><span>›</span><Link href={`/media/newspapers/${publication}`}>{issue.publication}</Link><span>›</span><span>{issue.title}</span></div>
+        <div className="ma-hero-grid">
+          <div><div className="ma-eyebrow">Digitized Newspaper Issue</div><h1 className="ma-title">{issue.publication}</h1><div className="ma-subtitle">{issue.title}</div><p className="ma-lede">{summary}</p><div className="ma-actions"><Link href={`/media/newspapers/${publication}`} className="ma-button">Back to Publication</Link><Link href={`/media/newspapers/${publication}/year/${issue.year}`} className="ma-button-ghost">Browse {issue.year}</Link></div></div>
+          <div className="ma-hero-media"><img src={issue.coverImage} alt={`${issue.publication} ${issue.title}`} className="ma-cover" />{issue.backCoverImage ? <img src={issue.backCoverImage} alt={`${issue.publication} back cover`} className="ma-cover" /> : null}</div>
         </div>
-      </section>
+        <div className="ma-stats"><div className="ma-stat"><strong>{issue.year}</strong><span>Publication Year</span></div><div className="ma-stat"><strong>{pages.length}</strong><span>Digitized Pages</span></div><div className="ma-stat"><strong>{issue.volume || '—'}</strong><span>Volume</span></div><div className="ma-stat"><strong>{issue.number || '—'}</strong><span>Issue Number</span></div><div className="ma-stat"><strong>OCR</strong><span>Research Ready</span></div></div>
+      </div>
+    </section>
 
-      <section style={sectionStyle}>
-        <h2 style={sectionTitle}>Issue Pages</h2>
-        <NewspaperPageViewer pages={pages} />
-      </section>
-    </main>
-  )
-}
+    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Complete Issue</div><h2 className="ma-h2">Issue Pages</h2></div><div className="ma-note">Select any page for a full-screen viewer. Use arrow keys to move through the issue.</div></div><NewspaperPageViewer pages={pages} /></section>
 
-const pageStyle: CSSProperties = {
-  maxWidth: "1320px",
-  margin: "0 auto",
-  padding: "26px 18px 80px",
-  color: "#2f2417",
-  background: "#eadfc7",
-  fontFamily: "Georgia, serif",
-}
-
-const heroWrap: CSSProperties = {
-  background: "#ddc8a2",
-  border: "2px solid #b29364",
-  padding: "12px",
-  marginBottom: "26px",
-}
-
-const heroGrid: CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "320px 1fr 340px",
-  gap: "24px",
-  background: "#f1e5ce",
-  border: "1px solid #c2a97d",
-  padding: "18px",
-}
-
-const coverWrap: CSSProperties = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "flex-start",
-}
-
-const coverImage: CSSProperties = {
-  width: "100%",
-  height: "auto",
-  maxWidth: "320px",
-  border: "1px solid #b29364",
-  background: "#efe7d6",
-}
-
-const heroText: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "flex-start",
-}
-
-const eyebrow: CSSProperties = {
-  fontSize: "12px",
-  textTransform: "uppercase",
-  letterSpacing: "0.14em",
-  color: "#7a6348",
-  marginBottom: "10px",
-}
-
-const pageTitle: CSSProperties = {
-  fontSize: "42px",
-  lineHeight: 1.04,
-  margin: "0 0 10px",
-  color: "#34271c",
-}
-
-const publicationLine: CSSProperties = {
-  fontSize: "24px",
-  fontWeight: 700,
-  marginBottom: "10px",
-}
-
-const issueMeta: CSSProperties = {
-  fontSize: "18px",
-  color: "#5f4935",
-  marginBottom: "18px",
-}
-
-const summaryText: CSSProperties = {
-  fontSize: "17px",
-  lineHeight: 1.7,
-  maxWidth: "760px",
-  margin: "0 0 18px",
-}
-
-const buttonRow: CSSProperties = {
-  marginTop: "6px",
-}
-
-const primaryButton: CSSProperties = {
-  display: "inline-block",
-  background: "#7a5827",
-  color: "#fff8ea",
-  padding: "10px 14px",
-  border: "1px solid #5d3f17",
-  textDecoration: "none",
-}
-
-const sectionStyle: CSSProperties = {
-  marginTop: "34px",
-}
-
-const sectionTitle: CSSProperties = {
-  fontSize: "34px",
-  margin: "0 0 14px",
-  color: "#34271c",
-}
-
-const backCoverPanel: CSSProperties = {
-  background: "#eadfc7",
-  border: "1px solid #c2a97d",
-  padding: "14px",
-  alignSelf: "stretch",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-}
-
-const backCoverImage: CSSProperties = {
-  width: "100%",
-  maxWidth: "300px",
-  height: "auto",
-  border: "1px solid #b29364",
-  background: "#efe7d6",
-}
-
-const backCoverCaption: CSSProperties = {
-  marginTop: "10px",
-  fontSize: "14px",
-  fontWeight: 700,
-  color: "#5f4935",
-  textTransform: "uppercase",
-  letterSpacing: "0.08em",
-}
-
-const backCoverPlaceholder: CSSProperties = {
-  width: "100%",
-  maxWidth: "300px",
-  aspectRatio: "3 / 4",
-  border: "1px dashed #b29364",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  color: "#7a6348",
-  fontStyle: "italic",
+    <section className="ma-section"><div className="ma-source"><strong className="ma-gold">Museum research note:</strong> digitized issues are preserved as archival source material. Page counts reflect the surviving scans currently in the museum collection.</div></section>
+    <section className="ma-section"><div className="ma-footer-links"><Link href={`/media/newspapers/${publication}/year/${issue.year}`} className="ma-footer-link">{issue.year} Archive<span>All issues from this year →</span></Link><Link href={`/media/newspapers/${publication}`} className="ma-footer-link">{issue.publication}<span>Publication archive →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
+  </main>
 }
