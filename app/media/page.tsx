@@ -1,406 +1,304 @@
-import Link from "next/link"
+import Link from 'next/link'
+import { getRacePrograms } from '@/lib/race-programs'
+import { getNewspaperIssues } from '@/lib/newspapers'
+import { supabase } from '@/lib/supabase'
+import styles from './media-archive.module.css'
 
-type ArchiveSection = {
-  title: string
+export const revalidate = 300
+
+type FeaturedArtifact = {
+  key: string
   href: string
-  description: string
-  status: "Open Now" | "Coming Soon"
-  isLive: boolean
-  isFeatured?: boolean
-  buttonText: string
-}
-
-const pageWrap: React.CSSProperties = {
-  maxWidth: 1280,
-  margin: "0 auto",
-  padding: "24px 18px 80px",
-}
-
-const heroPanel: React.CSSProperties = {
-  background: "linear-gradient(180deg, #f4ead6 0%, #eadcc3 100%)",
-  border: "1px solid rgba(115, 88, 52, 0.30)",
-  borderRadius: 18,
-  padding: "42px 28px",
-  boxShadow: "0 10px 28px rgba(60, 40, 20, 0.08)",
-  marginBottom: 30,
-}
-
-const eyebrow: React.CSSProperties = {
-  fontSize: 12,
-  letterSpacing: "0.18em",
-  textTransform: "uppercase",
-  color: "#7a6348",
-  marginBottom: 10,
-}
-
-const titleStyle: React.CSSProperties = {
-  margin: 0,
-  fontSize: "clamp(2.2rem, 4vw, 3.8rem)",
-  lineHeight: 1.05,
-  color: "#2f2419",
-}
-
-const introStyle: React.CSSProperties = {
-  marginTop: 16,
-  maxWidth: 860,
-  fontSize: 17,
-  lineHeight: 1.75,
-  color: "#554332",
-}
-
-const taglineStyle: React.CSSProperties = {
-  marginTop: 14,
-  maxWidth: 860,
-  fontSize: 18,
-  lineHeight: 1.65,
-  color: "#4e3d2b",
-  fontStyle: "italic",
-}
-
-const actionRow: React.CSSProperties = {
-  display: "flex",
-  flexWrap: "wrap",
-  gap: 12,
-  marginTop: 24,
-}
-
-const ghostButton: React.CSSProperties = {
-  display: "inline-block",
-  padding: "12px 16px",
-  borderRadius: 999,
-  textDecoration: "none",
-  background: "rgba(255,255,255,0.6)",
-  color: "#5a442d",
-  fontWeight: 700,
-  border: "1px solid rgba(123, 92, 52, 0.28)",
-}
-
-const sectionStyle: React.CSSProperties = {
-  marginTop: 34,
-}
-
-const sectionTitle: React.CSSProperties = {
-  fontSize: 30,
-  margin: "0 0 12px",
-  color: "#34271c",
-}
-
-const sectionIntro: React.CSSProperties = {
-  fontSize: 16,
-  lineHeight: 1.7,
-  color: "#5c4836",
-  maxWidth: 940,
-  marginBottom: 18,
-}
-
-const infoGrid: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-  gap: 16,
-}
-
-const infoCard: React.CSSProperties = {
-  background: "#f5eddc",
-  border: "1px solid rgba(115, 88, 52, 0.30)",
-  borderRadius: 16,
-  padding: 18,
-  boxShadow: "0 8px 24px rgba(60, 40, 20, 0.06)",
-}
-
-const infoCardTitle: React.CSSProperties = {
-  margin: "0 0 8px",
-  fontSize: 22,
-  fontWeight: 600,
-  color: "#2f2419",
-}
-
-const infoCardText: React.CSSProperties = {
-  margin: 0,
-  fontSize: 15,
-  lineHeight: 1.6,
-  color: "#554332",
-}
-
-const archiveGrid: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-  gap: 20,
-}
-
-const archiveCardBase: React.CSSProperties = {
-  border: "1px solid rgba(115, 88, 52, 0.30)",
-  borderRadius: 16,
-  padding: 22,
-  boxShadow: "0 8px 24px rgba(60, 40, 20, 0.08)",
-  display: "flex",
-  flexDirection: "column",
-  minHeight: 300,
-  transition: "transform 0.15s ease, box-shadow 0.15s ease",
-}
-
-const archiveCardDefault: React.CSSProperties = {
-  background: "#f5eddc",
-}
-
-const archiveCardFeatured: React.CSSProperties = {
-  background: "#efe3ca",
-  border: "2px solid #7b5c34",
-}
-
-const statusChipBase: React.CSSProperties = {
-  display: "inline-block",
-  alignSelf: "flex-start",
-  marginBottom: 12,
-  padding: "6px 10px",
-  borderRadius: 999,
-  fontSize: 12,
-  fontWeight: 700,
-  letterSpacing: "0.03em",
-}
-
-const statusChipOpen: React.CSSProperties = {
-  background: "#e3d4b8",
-  color: "#5b442c",
-}
-
-const statusChipSoon: React.CSSProperties = {
-  background: "#eadcc3",
-  color: "#664f39",
-}
-
-const archiveCardTitle: React.CSSProperties = {
-  margin: "0 0 10px",
-  fontSize: 28,
-  fontWeight: 600,
-  color: "#2f2419",
-}
-
-const archiveCardText: React.CSSProperties = {
-  fontSize: 15,
-  lineHeight: 1.7,
-  color: "#554332",
-  marginBottom: 18,
-}
-
-const archiveButtonLive: React.CSSProperties = {
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  marginTop: "auto",
-  padding: "10px 18px",
-  minWidth: 170,
-  minHeight: 42,
-  borderRadius: 999,
-  textDecoration: "none",
-  background: "#7b5c34",
-  color: "#fff8ee",
-  fontWeight: 700,
-  border: "1px solid #7b5c34",
-  alignSelf: "flex-start",
-  whiteSpace: "nowrap",
-}
-
-const archiveButtonDisabled: React.CSSProperties = {
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  marginTop: "auto",
-  padding: "10px 18px",
-  minWidth: 150,
-  borderRadius: 999,
-  textDecoration: "none",
-  background: "#cbbca1",
-  color: "#6b5a3f",
-  fontWeight: 700,
-  border: "1px solid #cbbca1",
-  alignSelf: "flex-start",
-  cursor: "not-allowed",
-  opacity: 0.75,
-  pointerEvents: "none",
-  whiteSpace: "nowrap",
-}
-
-
-const quotePanel: React.CSSProperties = {
-  marginTop: 34,
-  background: "#efe3ca",
-  border: "1px solid rgba(115, 88, 52, 0.30)",
-  borderRadius: 16,
-  padding: "24px 22px",
-  color: "#4f3d2d",
-  fontSize: 20,
-  lineHeight: 1.7,
-  fontStyle: "italic",
-}
-
-async function getArchiveSections(): Promise<ArchiveSection[]> {
-  return [
-    {
-      title: "Race Programs",
-      href: "/media/race-programs",
-      description:
-        "A growing archive of race night programs, yearbooks, souvenir books, and special event publications from tracks and series across the Upper Midwest.",
-      status: "Open Now",
-      isLive: true,
-      isFeatured: true,
-      buttonText: "View Race Programs",
-    },
-    {
-      title: "Through the Lens",
-      href: "/photographers",
-      description:
-        "Historic racing photographs featuring drivers, cars, tracks, crews, fans, victory lane scenes, and moments captured by photographers across the region.",
-      status: "Open Now",
-      isLive: true,
-      isFeatured: true,
-      buttonText: "View Photographers",
-    },
-    {
-  title: "Print Media",
-  href: "/media/newspapers",
-  description:
-    "Selected pages and featured material from racing newspapers, magazines, and publications that helped document the sport across decades.",
-  status: "Open Now",
-  isLive: true,
-  isFeatured: true,
-  buttonText: "View Newspapers",
-},
-    {
-      title: "Special Event Posters",
-      href: "/media/posters",
-      description:
-        "Event posters, flyers, promotional sheets, and visual pieces that capture how race nights and marquee specials were marketed to fans.",
-      status: "Coming Soon",
-      isLive: false,
-      buttonText: "Coming Soon",
-    },
-  ]
+  title: string
+  meta: string
+  image: string
 }
 
 export default async function MediaArchivePage() {
-  const sections = await getArchiveSections()
+  const [programs, issues, photoCountResponse, photographerCountResponse, heroPhotoResponse] =
+    await Promise.all([
+      getRacePrograms(),
+      getNewspaperIssues(),
+      supabase.from('photos').select('photo_id', { count: 'exact', head: true }),
+      supabase
+        .from('photographer_directory_view')
+        .select('*', { count: 'exact', head: true }),
+      supabase
+        .from('track_hero_photo_variants_view')
+        .select('slug,image_url')
+        .in('slug', [
+          'milwaukee-mile-wi',
+          'rockford-speedway-il',
+          'slinger-speedway-wi',
+          'wisconsin-international-raceway-wi',
+        ])
+        .eq('photo_rank', 1),
+    ])
+
+  const photoCount = photoCountResponse.count || 0
+  const photographerCount = photographerCountResponse.count || 0
+  const programCount = programs.length
+  const issueCount = issues.length
+  const preservedPages =
+    programs.reduce((sum, program) => sum + (program.images?.length || 0), 0) +
+    issues.reduce((sum, issue) => sum + (issue.pages?.length || 0), 0)
+
+  const heroPhotos = new Map(
+    (heroPhotoResponse.data || []).map((row: any) => [row.slug, row.image_url]),
+  )
+
+  const heroImage =
+    heroPhotos.get('milwaukee-mile-wi') ||
+    heroPhotos.get('rockford-speedway-il') ||
+    heroPhotos.get('slinger-speedway-wi') ||
+    ''
+
+  const programCover = [...programs]
+    .reverse()
+    .find((program) => Boolean(program.coverImage))?.coverImage
+
+  const newspaperCover = [...issues]
+    .reverse()
+    .find((issue) => Boolean(issue.coverImage))?.coverImage
+
+  const collections = [
+    {
+      key: 'photos',
+      href: '/photos',
+      kicker: 'Museum Photo Collection',
+      title: 'Photo Archive',
+      text: 'Browse racing photography tied directly to drivers, tracks, years, and photographers throughout the museum.',
+      metric: `${photoCount.toLocaleString()} photographs`,
+      image: heroPhotos.get('slinger-speedway-wi') || heroImage,
+      contain: false,
+      action: 'Browse photos →',
+    },
+    {
+      key: 'programs',
+      href: '/media/race-programs',
+      kicker: 'Printed Racing History',
+      title: 'Race Programs & Yearbooks',
+      text: 'Original race-night programs, yearbooks, souvenir publications, and special-event books preserved page by page.',
+      metric: `${programCount.toLocaleString()} publications`,
+      image: programCover || heroImage,
+      contain: true,
+      action: 'Browse programs →',
+    },
+    {
+      key: 'newspapers',
+      href: '/media/newspapers',
+      kicker: 'OCR / Newspaper Archive',
+      title: 'Racing Newspapers',
+      text: 'Digitized issues and original racing coverage that document results, personalities, controversies, and weekly race life.',
+      metric: `${issueCount.toLocaleString()} issues`,
+      image: newspaperCover || heroImage,
+      contain: true,
+      action: 'Browse newspapers →',
+    },
+    {
+      key: 'photographers',
+      href: '/photographers',
+      kicker: 'Through the Lens',
+      title: 'Photographer Archive',
+      text: 'Follow the photographers whose collections preserve the cars, people, tracks, and moments behind the statistics.',
+      metric: `${photographerCount.toLocaleString()} photographers`,
+      image: heroPhotos.get('rockford-speedway-il') || heroImage,
+      contain: false,
+      action: 'Browse photographers →',
+    },
+  ]
+
+  const featuredArtifacts: FeaturedArtifact[] = [
+    ...[...programs]
+      .reverse()
+      .filter((program) => Boolean(program.coverImage))
+      .slice(0, 3)
+      .map((program) => ({
+        key: `program-${program.slug}`,
+        href: `/media/race-programs/${program.slug}`,
+        title: program.title,
+        meta: `${program.year || 'Year unknown'} • Race program`,
+        image: program.coverImage as string,
+      })),
+    ...[...issues]
+      .reverse()
+      .filter((issue) => Boolean(issue.coverImage))
+      .slice(0, 3)
+      .map((issue) => ({
+        key: `issue-${issue.publicationSlug}-${issue.slug}`,
+        href: `/media/newspapers/${issue.publicationSlug}/${issue.slug}`,
+        title: issue.publication,
+        meta: `${formatIssueDate(issue.issueDate)} • Newspaper`,
+        image: issue.coverImage,
+      })),
+  ]
 
   return (
-    <main style={pageWrap}>
-      <style>{`
-        .archive-card-hover:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 12px 30px rgba(60, 40, 20, 0.12) !important;
-        }
-      `}</style>
+    <main className={styles.page}>
+      <section className={styles.hero}>
+        <div
+          className={styles.heroBackground}
+          style={heroImage ? { backgroundImage: `url("${heroImage}")` } : undefined}
+        />
+        <div className={styles.heroShade} />
+        <div className={styles.heroTexture} />
 
-      <section style={heroPanel}>
-        <div style={eyebrow}>Museum Archive</div>
-        <h1 style={titleStyle}>Media Archive</h1>
+        <div className={styles.heroInner}>
+          <div className={styles.heroGrid}>
+            <div>
+              <div className={styles.eyebrow}>Upper Midwest Media Archive</div>
+              <h1 className={styles.title}>MEDIA ARCHIVE</h1>
+              <div className={styles.subtitle}>EXPLORE THE MATERIAL THAT SURROUNDED RACE NIGHT</div>
+              <p className={styles.intro}>
+                Racing history is more than finishing positions. Explore photographs, race programs,
+                yearbooks, newspapers, and the photographers who preserved the people and places of
+                Upper Midwest auto racing.
+              </p>
+            </div>
 
-        <p style={introStyle}>
-          The Media Archive preserves the printed, photographic, and visual
-          material that helps bring Upper Midwest auto racing history to life.
-          Here you can move beyond statistics and results to explore the
-          publications, images, and artifacts that surrounded the sport.
-        </p>
-
-        <p style={taglineStyle}>
-          With every click, a new door opens to another piece of auto racing
-          history.
-        </p>
-
-        <div style={actionRow}>
-          <Link href="/tracks" style={ghostButton}>
-            Explore Tracks
-          </Link>
-          <Link href="/drivers" style={ghostButton}>
-            Explore Drivers
-          </Link>
-          <Link href="/series" style={ghostButton}>
-            Explore Series
-          </Link>
-        </div>
-      </section>
-
-      <section style={sectionStyle}>
-        <h2 style={sectionTitle}>How the Archive Works</h2>
-        <p style={sectionIntro}>
-          Each section in the archive is designed as a museum doorway. Instead
-          of simply listing files, the archive presents artifacts as part of a
-          broader story—connecting publications, photographs, and visual history
-          back to the tracks, drivers, series, and events that shaped them.
-        </p>
-
-        <div style={infoGrid}>
-          <div style={infoCard}>
-            <h3 style={infoCardTitle}>Browse the Artifact</h3>
-            <p style={infoCardText}>
-              Start with covers, key images, and featured content before diving
-              into deeper galleries and full documents.
-            </p>
+            <div className={styles.heroScript}>
+              History Lives
+              <br />
+              Beyond Results
+              <span />
+            </div>
           </div>
 
-          <div style={infoCard}>
-            <h3 style={infoCardTitle}>Study the Era</h3>
-            <p style={infoCardText}>
-              The archive helps show not just what happened, but how racing was
-              promoted, photographed, remembered, and experienced.
-            </p>
-          </div>
-
-          <div style={infoCard}>
-            <h3 style={infoCardTitle}>Follow the Connections</h3>
-            <p style={infoCardText}>
-              Each artifact can lead you back into the museum through linked
-              series, tracks, drivers, and historic events.
-            </p>
+          <div className={styles.stats}>
+            <Stat value={photoCount.toLocaleString()} label="Racing photographs" />
+            <Stat value={programCount.toLocaleString()} label="Programs & yearbooks" />
+            <Stat value={issueCount.toLocaleString()} label="Newspaper issues" />
+            <Stat value={preservedPages.toLocaleString()} label="Printed pages preserved" />
+            <Stat value={photographerCount.toLocaleString()} label="Photographers indexed" />
           </div>
         </div>
       </section>
 
-      <section style={sectionStyle}>
-        <h2 style={sectionTitle}>Archive Collections</h2>
-        <p style={sectionIntro}>
-          Explore the growing sections of the museum archive below.
-        </p>
+      <div className={styles.content}>
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <div>
+              <div className={styles.sectionEyebrow}>Browse the Collection</div>
+              <h2 className={styles.sectionTitle}>EXPLORE MEDIA HISTORY</h2>
+            </div>
+            <div className={styles.sectionNote}>
+              Every artifact is another doorway back into the drivers, tracks, series, and events
+              documented throughout the museum.
+            </div>
+          </div>
 
-        <div style={archiveGrid}>
-          {sections.map((section) => {
-            const cardStyle: React.CSSProperties = {
-              ...archiveCardBase,
-              ...(section.isFeatured ? archiveCardFeatured : archiveCardDefault),
-            }
+          <div className={styles.collectionGrid}>
+            {collections.map((collection) => (
+              <Link key={collection.key} href={collection.href} className={styles.collectionCard}>
+                {collection.image ? (
+                  <img
+                    src={collection.image}
+                    alt=""
+                    className={`${styles.collectionImage} ${
+                      collection.contain ? styles.collectionImageContain : ''
+                    }`}
+                  />
+                ) : null}
+                <div className={styles.collectionShade} />
+                <div className={styles.collectionBody}>
+                  <div className={styles.cardKicker}>{collection.kicker}</div>
+                  <h3 className={styles.collectionTitle}>{collection.title}</h3>
+                  <p className={styles.collectionText}>{collection.text}</p>
+                  <div className={styles.collectionFooter}>
+                    <span className={styles.collectionMetric}>{collection.metric}</span>
+                    <span className={styles.collectionAction}>{collection.action}</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-            const chipStyle: React.CSSProperties = {
-              ...statusChipBase,
-              ...(section.status === "Open Now" ? statusChipOpen : statusChipSoon),
-            }
+        {featuredArtifacts.length > 0 ? (
+          <section className={styles.section}>
+            <div className={styles.sectionHeader}>
+              <div>
+                <div className={styles.sectionEyebrow}>Museum Highlights</div>
+                <h2 className={styles.sectionTitle}>FEATURED ARTIFACTS</h2>
+              </div>
+              <div className={styles.sectionNote}>
+                A rotating look at preserved publications already available in the digital archive.
+              </div>
+            </div>
 
-            return (
-              <article
-                key={section.href}
-                className="archive-card-hover"
-                style={cardStyle}
-              >
-                <div style={chipStyle}>{section.status}</div>
+            <div className={styles.artifactGrid}>
+              {featuredArtifacts.map((artifact) => (
+                <Link key={artifact.key} href={artifact.href} className={styles.artifactCard}>
+                  <div className={styles.artifactImageWrap}>
+                    <img src={artifact.image} alt="" className={styles.artifactImage} />
+                  </div>
+                  <div className={styles.artifactBody}>
+                    <div className={styles.artifactMeta}>{artifact.meta}</div>
+                    <div className={styles.artifactTitle}>{artifact.title}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
-                <h3 style={archiveCardTitle}>{section.title}</h3>
-                <p style={archiveCardText}>{section.description}</p>
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <div>
+              <div className={styles.sectionEyebrow}>Research Pathways</div>
+              <h2 className={styles.sectionTitle}>GO DEEPER INTO THE ARCHIVE</h2>
+            </div>
+          </div>
 
-                {section.isLive ? (
-  <Link href={section.href} style={archiveButtonLive}>
-    {section.buttonText}
-  </Link>
-) : (
-  <span style={archiveButtonDisabled}>{section.buttonText}</span>
-)}
-              </article>
-            )
-          })}
-        </div>
-      </section>
+          <div className={styles.pathwayGrid}>
+            <Link href="/photos" className={styles.pathway}>
+              <div className={styles.miniLabel}>01 • Photography</div>
+              <div className={styles.pathwayTitle}>Search the Complete Photo Archive</div>
+              <p className={styles.pathwayText}>
+                Move beyond featured images and browse the museum's full connected racing-photo collection.
+              </p>
+              <span className={styles.pathwayLink}>Browse photos →</span>
+            </Link>
 
-      <section style={quotePanel}>
-        The Media Archive is where racing history becomes more than numbers. It
-        becomes printed pages, photographed moments, and preserved pieces of the
-        world that surrounded race night.
-      </section>
+            <Link href="/media/posters" className={styles.pathway}>
+              <div className={styles.miniLabel}>02 • Visual Ephemera</div>
+              <div className={styles.pathwayTitle}>Special Event Posters</div>
+              <p className={styles.pathwayText}>
+                Promotional posters and race-night artwork are the next visual-media collection being organized.
+              </p>
+              <span className={styles.pathwayLink}>View collection →</span>
+            </Link>
+
+            <Link href="/research-center" className={`${styles.pathway} ${styles.pathwayAccent}`}>
+              <div className={styles.miniLabel}>03 • Research Center</div>
+              <div className={styles.pathwayTitle}>Connect Media to Museum Research</div>
+              <p className={styles.pathwayText}>
+                Follow preserved media back into driver histories, track records, feature winners, and race results.
+              </p>
+              <span className={styles.pathwayLink}>Open Research Center →</span>
+            </Link>
+          </div>
+        </section>
+      </div>
     </main>
   )
+}
+
+function Stat({ value, label }: { value: string; label: string }) {
+  return (
+    <div className={styles.stat}>
+      <div className={styles.statValue}>{value}</div>
+      <div className={styles.statLabel}>{label}</div>
+    </div>
+  )
+}
+
+function formatIssueDate(value?: string | null) {
+  if (!value) return 'Date unknown'
+  const [year, month, day] = value.split('-').map(Number)
+  return new Date(year, month - 1, day).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  })
 }
