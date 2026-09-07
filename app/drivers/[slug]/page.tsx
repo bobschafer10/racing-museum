@@ -2,15 +2,14 @@
 
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import type { ReactNode } from 'react'
 import { supabase } from '@/lib/supabase'
 import { DriverCareerAccomplishments } from '@/components/DriverCareerAccomplishments'
 import PhotoLightboxImage from '@/components/PhotoLightboxImage'
+import styles from './driver-profile.module.css'
 
 type Driver = {
   driver_id: number
   driver_name: string
-  slug: string
   driver_slug?: string
   hometown: string | null
   state: string | null
@@ -34,7 +33,7 @@ type CareerHeadlineRow = {
   accomplishment_type: string
 }
 
-export const revalidate = 3600
+export const revalidate = 300
 
 const SUPABASE_PHOTO_BASE =
   'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
@@ -49,6 +48,10 @@ const DISCOVERED_WIN_TYPES = new Set([
   'OUTSIDE_AREA_FEATURE_WIN',
   'MAJOR_EVENT_WIN',
 ])
+
+function number(value: number | null | undefined) {
+  return Number(value || 0).toLocaleString('en-US')
+}
 
 export default async function DriverProfilePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -91,7 +94,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
       .select('result_year, results_count, wins, top_3s')
       .eq('driver_slug', slug)
       .order('result_year', { ascending: false })
-      .limit(50),
+      .limit(60),
     supabase
       .from('driver_wins_by_class_view')
       .select('class_name, wins')
@@ -136,7 +139,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
       .eq('is_published', true),
   ])
 
-  const safePhotos = photos ?? []
+  const safePhotos = (photos ?? []) as Photo[]
   const safeTopTracks = topTracks ?? []
   const flatResultsByYear = Array.isArray(resultsByYear ?? []) ? (resultsByYear ?? []) : []
   const safeWinsByClass = winsByClass ?? []
@@ -152,6 +155,13 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     return (a.sequence ?? Number.MAX_SAFE_INTEGER) - (b.sequence ?? Number.MAX_SAFE_INTEGER)
   })
 
+  const datedPhotos = orderedPhotos.filter((p) => normalizedPhotoYear(p.year) !== Number.MAX_SAFE_INTEGER)
+  const profilePhotoItem: Photo | null = datedPhotos[0] ?? orderedPhotos[0] ?? null
+  const heroPhotoItem: Photo | null = datedPhotos[datedPhotos.length - 1] ?? orderedPhotos[orderedPhotos.length - 1] ?? null
+  const displayPhotos = orderedPhotos
+    .filter((p) => p.file_name !== profilePhotoItem?.file_name)
+    .slice(0, 150)
+
   const lastRecordedYear = flatResultsByYear.length
     ? Number((flatResultsByYear[0] as any)?.result_year || 0)
     : null
@@ -163,7 +173,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     : '—'
 
   const winningTrackSlugs = Array.from(new Set(
-    safeWinRows.map((row: any) => row.track_slug).filter(Boolean)
+    safeWinRows.map((row: any) => row.track_slug).filter(Boolean),
   )) as string[]
 
   const { data: winningTrackRows } = winningTrackSlugs.length
@@ -179,32 +189,32 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   }
 
   const coverageAreaWins = safeWinRows.filter((row: any) =>
-    COVERAGE_STATES.has(stateByTrack.get(String(row.track_slug || '')) || '')
+    COVERAGE_STATES.has(stateByTrack.get(String(row.track_slug || '')) || ''),
   ).length
 
   const museumDiscoveredWins = Math.max(
     safeWinRows.length,
     coverageAreaWins,
-    driver.wisconsin_feature_wins ?? 0
+    driver.wisconsin_feature_wins ?? 0,
   )
   const discoveredOutsideWins = safeCareerHeadlineRows.filter((row) =>
-    DISCOVERED_WIN_TYPES.has(row.accomplishment_type)
+    DISCOVERED_WIN_TYPES.has(row.accomplishment_type),
   ).length
   const totalDiscoveredWins = museumDiscoveredWins + discoveredOutsideWins
 
   const externalSeriesChampionships = safeCareerHeadlineRows.filter((row) =>
-    SERIES_CHAMPIONSHIP_TYPES.has(row.accomplishment_type)
+    SERIES_CHAMPIONSHIP_TYPES.has(row.accomplishment_type),
   ).length
   const seriesChampionships = (seriesChampionshipRows ?? []).length + externalSeriesChampionships
 
   const externalTrackChampionships = safeCareerHeadlineRows.filter((row) =>
-    row.accomplishment_type === 'TRACK_CHAMPIONSHIP'
+    row.accomplishment_type === 'TRACK_CHAMPIONSHIP',
   ).length
   const trackChampionships = safeChampionships.length + externalTrackChampionships
 
   const tracksWonAt = winningTrackSlugs.length
   const classesWonIn = new Set(
-    safeWinRows.map((row: any) => row.class_name).filter(Boolean)
+    safeWinRows.map((row: any) => row.class_name).filter(Boolean),
   ).size
   const mostSuccessfulClass = safeWinsByClass[0]?.class_name || '—'
   const mostSuccessfulTrack = safeTopTracks[0]?.track_name || '—'
@@ -228,12 +238,6 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     ? formatRaceDate((lastWinRows?.[0] as any).race_date)
     : '—'
 
-  const foundHero = orderedPhotos.find((p) => normalizedPhotoYear(p.year) !== Number.MAX_SAFE_INTEGER)
-  const heroPhotoItem: Photo | null = foundHero ?? orderedPhotos[0] ?? null
-  const displayPhotos = orderedPhotos
-    .filter((p) => p.file_name !== heroPhotoItem?.file_name)
-    .slice(0, 150)
-
   const bestYear = flatResultsByYear.reduce<any | null>((best, row: any) => {
     if (!best || (row.wins ?? 0) > (best.wins ?? 0)) return row
     return best
@@ -241,14 +245,10 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
 
   const careerHighlights = [
     firstRecordedYear ? { year: firstRecordedYear, text: 'First Recorded Feature Race' } : null,
-    bestYear && bestYear.wins > 0 ? { year: bestYear.result_year, text: `${bestYear.wins} Feature Wins (Career High)` } : null,
+    bestYear && bestYear.wins > 0 ? { year: bestYear.result_year, text: `${bestYear.wins} Feature Wins — Career High` } : null,
     ...safeChampionships.slice(0, 3).map((ch: any) => ({ year: ch.year, text: `${ch.track_name} Champion` })),
-    lastRecordedYear && lastRecordedYear !== firstRecordedYear ? { year: lastRecordedYear, text: 'Last Recorded Feature Race' } : null,
-  ].filter(Boolean)
-
-  const profileSummary = safeCareerHeadlineRows.length > 0
-    ? 'Historical driver profile from the Upper Midwest Auto Racing Museum archive, combining museum race records, photographs and championships with independently verified broader career accomplishments.'
-    : 'Historical driver profile from the Upper Midwest Auto Racing Museum archive. This page combines museum race records, photographs and championships.'
+    lastRecordedYear && lastRecordedYear !== firstRecordedYear ? { year: lastRecordedYear, text: 'Latest Recorded Feature Season' } : null,
+  ].filter(Boolean) as { year: number | string; text: string }[]
 
   const buildPhotoUrl = (photoObj: Photo | null | undefined) => {
     if (!photoObj?.file_name) return ''
@@ -257,227 +257,306 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     return `${SUPABASE_PHOTO_BASE}/${track}/${year}/${encodeURIComponent(String(photoObj.file_name))}`
   }
 
-  const buildLogoUrl = (trackSlug: string | null | undefined) => trackSlug ? `/logos/tracks/${trackSlug}.jpg` : ''
+  const heroUrl = buildPhotoUrl(heroPhotoItem)
+  const profilePhotoUrl = buildPhotoUrl(profilePhotoItem)
+
+  const primaryStats = [
+    { value: number(driver.recorded_wins), label: 'Recorded Feature Wins' },
+    { value: number(coverageAreaWins), label: 'Coverage-Area Wins' },
+    { value: number(totalDiscoveredWins), label: 'Total Discovered Wins' },
+    { value: number(trackChampionships), label: 'Track Championships' },
+    { value: number(seriesChampionships), label: 'Series Championships' },
+    { value: careerSpanDisplay, label: 'Recorded Career' },
+  ]
 
   return (
-    <main style={{ background: '#eadfc7', color: '#2f2417', minHeight: '100vh', fontFamily: 'Georgia, serif', margin: 0 }}>
-      <section style={{ background: 'linear-gradient(to bottom, rgba(231,217,191,0.96), rgba(234,223,199,0.98))', borderBottom: '2px solid #b29364' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '28px 20px 22px' }}>
-          <div style={{ display: 'flex', gap: '8px', fontSize: '15px', marginBottom: '22px', color: '#6b4a22' }}>
-            <Link href="/" style={{ color: '#7a5827', textDecoration: 'none' }}>Home</Link><span>/</span>
-            <Link href="/drivers" style={{ color: '#7a5827', textDecoration: 'none' }}>Drivers</Link><span>/</span>
+    <main className={styles.page}>
+      <section className={styles.hero}>
+        {heroUrl ? <img src={heroUrl} alt="" className={styles.heroImage} aria-hidden="true" /> : <div className={styles.heroFallback} />}
+        <div className={styles.heroShade} />
+
+        <div className={styles.heroInner}>
+          <div className={styles.breadcrumbs}>
+            <Link href="/">Home</Link><span>›</span>
+            <Link href="/drivers">Drivers</Link><span>›</span>
             <span>{driver.driver_name}</span>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 420px) minmax(0, 1fr)', gap: '34px', alignItems: 'start' }}>
-            <div style={{ border: '2px solid #bda87a', padding: '10px', background: '#f4ead7', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-              {!heroPhotoItem?.file_name ? (
-                <div style={{ height: '280px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#d8c39d', border: '1px solid #b29364', fontWeight: 700 }}>Photo Coming Soon</div>
+          <div className={styles.heroGrid}>
+            <div className={styles.profileMedia}>
+              {profilePhotoUrl ? (
+                <PhotoLightboxImage
+                  src={profilePhotoUrl}
+                  alt={driver.driver_name}
+                  caption={buildPhotoCaption(profilePhotoItem!)}
+                  imageStyle={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
               ) : (
-                <>
-                  <PhotoLightboxImage src={buildPhotoUrl(heroPhotoItem)} alt={driver.driver_name} caption={buildPhotoCaption(heroPhotoItem)} imageStyle={{ width: '100%', height: 'auto', display: 'block', border: '1px solid #a78654' }} />
-                  <div style={{ marginTop: '8px', fontSize: '14px', color: '#5a3a1b', textAlign: 'center' }}>{buildPhotoCaption(heroPhotoItem)}</div>
-                  {displayPhotos.slice(0, 3).length > 0 && (
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', marginTop: '10px' }}>
-                      {displayPhotos.slice(0, 3).map((photo) => (
-                        <PhotoLightboxImage key={photo.photo_id} src={buildPhotoUrl(photo)} alt={driver.driver_name} caption={buildPhotoCaption(photo)} imageStyle={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', border: '1px solid #a78654', display: 'block' }} showZoomBadge />
-                      ))}
-                    </div>
-                  )}
-                </>
+                <div className={styles.profileFallback}>
+                  <strong>{driverInitials(driver.driver_name)}</strong>
+                  <span>Driver Archive</span>
+                </div>
               )}
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', gap: '20px', flexWrap: 'wrap' }}>
-                <div>
-                  <div style={{ fontSize: '15px', letterSpacing: '1px', textTransform: 'uppercase', color: '#7a5827', marginBottom: '8px' }}>Driver Profile</div>
-                  <h1 style={{ fontSize: '52px', margin: '0 0 10px', color: '#3d2b16', lineHeight: 1.05 }}>{driver.driver_name}</h1>
-                  <p style={{ fontSize: '22px', margin: '0 0 18px', color: '#5a3a1b' }}>{driver.hometown || 'Unknown hometown'}{driver.state ? `, ${String(driver.state).trim()}` : ''}</p>
+            <div className={styles.heroCopy}>
+              <span className={styles.eyebrow}>Upper Midwest Driver Archive</span>
+              <h1>{driver.driver_name}</h1>
+              <h2>{[driver.hometown, driver.state ? String(driver.state).trim() : null].filter(Boolean).join(', ') || 'Hometown not yet documented'}</h2>
+              <p>
+                Historical driver profile combining museum-recorded race results, feature wins,
+                championships, photographs and verified broader-career accomplishments.
+              </p>
+
+              <div className={styles.heroActions}>
+                <Link href={`/drivers/${slug}/results`} className={styles.primaryAction}>View Full Results →</Link>
+                <a href="#photos" className={styles.secondaryAction}>Browse Photos</a>
+              </div>
+
+              {careerHighlights.length > 0 ? (
+                <div className={styles.timeline}>
+                  {careerHighlights.slice(0, 5).map((item, index) => (
+                    <div key={`${item.year}-${item.text}-${index}`}>
+                      <strong>{item.year}</strong>
+                      <span>{item.text}</span>
+                    </div>
+                  ))}
                 </div>
-                <Link href={`/drivers/${slug}/results`} style={{ background: '#6e4d21', color: '#fff8ea', padding: '14px 22px', height: 'fit-content', border: '1px solid #4d3413', textDecoration: 'none', fontWeight: 700 }}>View Full Results</Link>
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(260px, 330px)', gap: '24px', alignItems: 'start' }}>
-                <p style={{ fontSize: '18px', lineHeight: 1.8, margin: 0, color: '#3f2d18' }}>{profileSummary}</p>
-                <CareerHighlights highlights={careerHighlights as any[]} />
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', marginTop: '18px', background: '#76511f', border: '1px solid #5b3a14', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.18)' }}>
-                <HeroStat label="Wisconsin Feature Wins" value={driver.wisconsin_feature_wins ?? 0} sublabel="Wisconsin tracks" />
-                <HeroStat label="Coverage-Area Feature Wins" value={coverageAreaWins} sublabel="Museum reporting area" />
-                <HeroStat label="Total Discovered Feature Wins" value={totalDiscoveredWins} sublabel="Museum + verified outside-area" />
-                <HeroStat label="Series Championships" value={seriesChampionships} sublabel="Museum + verified broader career" />
-                <HeroStat label="Track Championships" value={trackChampionships} sublabel="Museum + verified broader career" />
-                <HeroStat label="Recorded Career" value={careerSpanDisplay} sublabel="First–last museum year" />
-              </div>
+              ) : null}
             </div>
+          </div>
+
+          <div className={styles.statsGrid}>
+            {primaryStats.map((stat) => (
+              <div className={styles.statCard} key={stat.label}>
+                <strong>{stat.value}</strong>
+                <span>{stat.label}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '26px 20px 42px' }}>
-        <DriverCareerAccomplishments slug={slug} />
+      <nav className={styles.profileNav} aria-label="Driver profile sections">
+        <div>
+          <a href="#overview" className={styles.activeNav}>Overview</a>
+          <Link href={`/drivers/${slug}/results`}>Results</Link>
+          <a href="#career">Career History</a>
+          <a href="#photos">Photos</a>
+        </div>
+      </nav>
 
-        <section style={{ marginBottom: '30px', padding: '5px 0 2px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '13px' }}>
-            <h2 style={{ fontSize: '28px', margin: 0, color: '#3d2b16' }}>Racing Lifetime Totals</h2>
-            <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
+      <div className={styles.content}>
+        <section className={styles.overviewSection} id="overview">
+          <div className={styles.sectionHeading}>
+            <div>
+              <span>Career snapshot</span>
+              <h2>Racing Lifetime Totals</h2>
+            </div>
+            <p>Key museum-recorded and verified career indicators.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', border: '1px solid #c5a572' }}>
-            <SummaryMetric label="Tracks Won Feature Races At" value={String(tracksWonAt)} />
-            <SummaryMetric label="Classes Won Feature Races In" value={String(classesWonIn)} />
-            <SummaryMetric label="Class With Most Feature Wins" value={mostSuccessfulClass} />
-            <SummaryMetric label="Track With Most Feature Wins" value={mostSuccessfulTrack} logoSrc={mostSuccessfulTrackLogo} logoAlt={`${mostSuccessfulTrack} logo`} />
-            <SummaryMetric label="Series With Most Feature Wins" value={mostSuccessfulSeries} logoSrc={mostSuccessfulSeriesLogo} logoAlt={`${mostSuccessfulSeries} logo`} />
-            <SummaryMetric label="Last Feature Win Date" value={lastFeatureWinDate} isLast />
+
+          <div className={styles.metricGrid}>
+            <MetricCard label="Tracks Won At" value={String(tracksWonAt)} />
+            <MetricCard label="Classes Won In" value={String(classesWonIn)} />
+            <MetricCard label="Top Winning Class" value={mostSuccessfulClass} />
+            <MetricCard label="Top Winning Track" value={mostSuccessfulTrack} logoSrc={mostSuccessfulTrackLogo} />
+            <MetricCard label="Top Winning Series" value={mostSuccessfulSeries} logoSrc={mostSuccessfulSeriesLogo} />
+            <MetricCard label="Last Feature Win" value={lastFeatureWinDate} />
           </div>
         </section>
 
-        <section style={{ marginTop: '8px', marginBottom: '28px' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap', marginBottom: '12px' }}>
-            <h2 style={{ fontSize: '29px', margin: 0, color: '#3d2b16' }}>Photo Archive</h2>
-            <span style={{ fontSize: '12px', color: '#765b39', fontStyle: 'italic' }}>Oldest dated photos first. Unknown-year photos appear last. Click any photo to enlarge.</span>
+        <section id="career" className={styles.careerWrap}>
+          <DriverCareerAccomplishments slug={slug} />
+        </section>
+
+        <section className={styles.splitSection}>
+          <div>
+            <div className={styles.sectionHeading}>
+              <div>
+                <span>Latest archive activity</span>
+                <h2>Recent Feature Results</h2>
+              </div>
+              <Link href={`/drivers/${slug}/results`}>View complete results →</Link>
+            </div>
+            <div className={styles.resultTable}>
+              {safeRecentResults.length === 0 ? (
+                <div className={styles.emptyState}>No recent feature results are available yet.</div>
+              ) : safeRecentResults.map((result: any, index: number) => (
+                <Link
+                  href={result.track_slug ? `/tracks/${result.track_slug}` : '#'}
+                  className={styles.resultRow}
+                  key={`${result.race_date}-${result.track_slug}-${index}`}
+                >
+                  <span>{result.race_date ? formatRaceDate(result.race_date) : 'Date unknown'}</span>
+                  <strong>{result.track_name || 'Track unknown'}</strong>
+                  <span>{result.class_name || 'Division unknown'}</span>
+                  <b>P{result.finishing_position}</b>
+                </Link>
+              ))}
+            </div>
           </div>
-          {displayPhotos.length === 0 ? <div style={{ padding: '18px', background: '#f1e5ce', border: '1px solid #c2a97d' }}>No photos available yet.</div> : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: '14px' }}>
-              {displayPhotos.map((photo) => (
-                <div key={photo.photo_id} style={{ background: '#f1e5ce', border: '1px solid #c2a97d', padding: '9px' }}>
-                  <PhotoLightboxImage src={buildPhotoUrl(photo)} alt={driver.driver_name} caption={buildPhotoCaption(photo)} imageStyle={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', display: 'block', border: '1px solid #b29364' }} showZoomBadge />
-                  <div style={{ marginTop: '7px', fontSize: '12px', color: '#5a3a1b', lineHeight: 1.45 }}>{buildPhotoCaption(photo)}</div>
+
+          <div className={styles.sidePanels}>
+            <RankPanel title="Feature Wins by Track" rows={safeTopTracks.map((track: any) => ({
+              label: track.track_name,
+              value: Number(track.wins || 0),
+              href: track.track_slug ? `/tracks/${track.track_slug}` : undefined,
+            }))} />
+            <RankPanel title="Feature Wins by Class" rows={safeWinsByClass.map((row: any) => ({
+              label: row.class_name || 'Unknown class',
+              value: Number(row.wins || 0),
+            }))} />
+          </div>
+        </section>
+
+        <section className={styles.archiveGrid}>
+          <div>
+            <div className={styles.sectionHeading}>
+              <div>
+                <span>Season-by-season record</span>
+                <h2>Results by Year</h2>
+              </div>
+            </div>
+            <div className={styles.yearTable}>
+              {flatResultsByYear.length === 0 ? (
+                <div className={styles.emptyState}>No yearly result summary is available yet.</div>
+              ) : flatResultsByYear.map((row: any) => (
+                <div className={styles.yearRow} key={row.result_year}>
+                  <strong>{row.result_year}</strong>
+                  <span>{number(row.results_count)} Results</span>
+                  <span>{number(row.wins)} Wins</span>
+                  <span>{number(row.top_3s)} Top 3s</span>
                 </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className={styles.sectionHeading}>
+              <div>
+                <span>Championship history</span>
+                <h2>Track Championships</h2>
+              </div>
+            </div>
+            <div className={styles.championshipList}>
+              {safeChampionships.length === 0 ? (
+                <div className={styles.emptyState}>No track championships are recorded yet.</div>
+              ) : safeChampionships.map((ch: any, index: number) => (
+                <Link
+                  href={ch.track_slug ? `/tracks/${ch.track_slug}` : '#'}
+                  key={`${ch.year}-${ch.track_slug}-${index}`}
+                  className={styles.championshipRow}
+                >
+                  <strong>{ch.year}</strong>
+                  <div>
+                    <b>{ch.track_name}</b>
+                    <span>{ch.class_name || 'Division not listed'}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.photoSection} id="photos">
+          <div className={styles.sectionHeading}>
+            <div>
+              <span>Museum photo collection</span>
+              <h2>Photo Archive</h2>
+            </div>
+            <p>{displayPhotos.length.toLocaleString('en-US')} additional image{displayPhotos.length === 1 ? '' : 's'} connected to this driver</p>
+          </div>
+
+          {displayPhotos.length === 0 ? (
+            <div className={styles.emptyState}>No additional photos are available yet.</div>
+          ) : (
+            <div className={styles.photoGrid}>
+              {displayPhotos.map((photo) => (
+                <article className={styles.photoCard} key={photo.photo_id}>
+                  <PhotoLightboxImage
+                    src={buildPhotoUrl(photo)}
+                    alt={driver.driver_name}
+                    caption={buildPhotoCaption(photo)}
+                    imageStyle={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', display: 'block' }}
+                    showZoomBadge
+                  />
+                  <p>{buildPhotoCaption(photo)}</p>
+                </article>
               ))}
             </div>
           )}
         </section>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '20px' }}>
-          <div style={{ display: 'grid', gap: '20px' }}>
-            <Panel title="Driver Summary">
-              <SummaryRow label="Driver Name" value={driver.driver_name} />
-              <SummaryRow label="Hometown" value={driver.hometown || 'Unknown hometown'} />
-              <SummaryRow label="State" value={String(driver.state || 'Unknown').trim()} />
-              <SummaryRow label="Museum-Recorded Career" value={careerSpanDisplay} />
-            </Panel>
-
-            <Panel title="Recent Feature Results">
-              {safeRecentResults.length === 0 ? <p>No recent results available yet.</p> : safeRecentResults.map((result: any, index: number) => (
-                <div key={`${result.race_date}-${result.track_slug}-${index}`} style={{ display: 'grid', gridTemplateColumns: '130px 1fr 130px 44px', gap: '10px', padding: '8px 0', borderBottom: '1px solid #ccb48a' }}>
-                  <span>{result.race_date ? formatRaceDate(result.race_date) : 'Unknown date'}</span>
-                  <div>{result.track_slug && <img src={buildLogoUrl(result.track_slug)} alt="" style={{ width: '24px', height: '24px', objectFit: 'contain', marginRight: '8px' }} />}<Link href={`/tracks/${result.track_slug}`} style={{ color: '#5a3a1b' }}>{result.track_name}</Link></div>
-                  <span>{result.class_name || 'Unknown'}</span><strong>P{result.finishing_position}</strong>
-                </div>
-              ))}
-            </Panel>
-
-            <Panel title="Results by Year">
-              {flatResultsByYear.length === 0 ? <p>No yearly results available yet.</p> : flatResultsByYear.map((row: any) => (
-                <div key={row.result_year} style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', padding: '9px 0', borderBottom: '1px solid #ccb48a' }}><span>{row.result_year}</span><strong>{row.results_count} Results • {row.wins} Wins • {row.top_3s} Top 3</strong></div>
-              ))}
-            </Panel>
-          </div>
-
-          <div style={{ display: 'grid', gap: '20px' }}>
-            <Panel title="Feature Wins by Class">{safeWinsByClass.length === 0 ? <p>No class data available yet.</p> : safeWinsByClass.map((cls: any) => <SummaryRow key={cls.class_name} label={cls.class_name} value={String(cls.wins)} />)}</Panel>
-            <Panel title="Feature Wins by Track">{safeTopTracks.length === 0 ? <p>No wins recorded yet.</p> : safeTopTracks.map((track: any) => <SummaryRow key={track.track_slug} label={track.track_name} value={String(track.wins)} />)}</Panel>
-            <Panel title="Track Championships">{safeChampionships.length === 0 ? <p>No championships recorded yet.</p> : safeChampionships.map((ch: any, index: number) => <SummaryRow key={`${ch.year}-${ch.track_slug}-${index}`} label={`${ch.year} ${ch.track_name}`} value={ch.class_name || ''} />)}</Panel>
-          </div>
-        </div>
-      </section>
+        <section className={styles.researchGrid}>
+          <Link href={`/drivers/${slug}/results`} className={styles.researchCard}>
+            <span>01</span>
+            <div><strong>Complete Results</strong><p>Open the full race-by-race archive for {driver.driver_name}.</p><b>Browse Results →</b></div>
+          </Link>
+          <Link href="/drivers" className={styles.researchCard}>
+            <span>02</span>
+            <div><strong>Driver Directory</strong><p>Return to the complete museum driver index.</p><b>Browse Drivers →</b></div>
+          </Link>
+          <Link href="/stats/feature-winners" className={styles.researchCard}>
+            <span>03</span>
+            <div><strong>Research Center</strong><p>Compare feature winners, championships and archive statistics.</p><b>Open Research Center →</b></div>
+          </Link>
+        </section>
+      </div>
     </main>
   )
 }
 
-function Panel({ title, children }: { title: string; children: ReactNode }) {
-  return <div style={{ background: '#ddc8a2', border: '2px solid #b29364', padding: '10px' }}><div style={{ fontSize: '23px', fontWeight: 700, color: '#5b3a1b', marginBottom: '9px' }}>{title}</div><div style={{ background: '#f1e5ce', border: '1px solid #c2a97d', padding: '14px' }}>{children}</div></div>
-}
-
-function CareerHighlights({ highlights }: { highlights: { year: number | string; text: string }[] }) {
-  if (!highlights.length) return null
-  return <div style={{ background: 'rgba(244,234,215,0.82)', border: '1px solid #b29364', padding: '14px 16px' }}><div style={{ marginBottom: '9px', color: '#5b3a1b', fontSize: '15px', fontWeight: 700 }}>★ Career Highlights</div>{highlights.slice(0, 5).map((item, index) => <div key={`${item.year}-${item.text}-${index}`} style={{ display: 'grid', gridTemplateColumns: '52px 1fr', gap: '10px', padding: '4px 0', fontSize: '14px' }}><strong>{item.year}</strong><span>{item.text}</span></div>)}</div>
-}
-
-function HeroStat({ label, value, sublabel }: { label: string; value: number | string; sublabel?: string }) {
-  return <div style={{ background: '#76511f', padding: '18px 9px', textAlign: 'center', color: '#fff7e7', borderRight: '1px solid rgba(255,247,231,0.32)' }}><div style={{ fontSize: typeof value === 'number' ? '29px' : '24px', fontWeight: 700, lineHeight: 1, marginBottom: '7px' }}>{typeof value === 'number' ? value.toLocaleString() : value}</div><div style={{ fontSize: '11px', color: '#f1dfbf', textTransform: 'uppercase', letterSpacing: '0.045em', lineHeight: 1.35 }}>{label}</div>{sublabel && <div style={{ fontSize: '9px', color: '#e4cfaa', marginTop: '5px' }}>{sublabel}</div>}</div>
-}
-
-function SummaryMetric({ label, value, logoSrc, logoAlt, isLast = false }: { label: string; value: string; logoSrc?: string; logoAlt?: string; isLast?: boolean }) {
-  const isCount = /^\d+$/.test(value)
-  const longestWord = value.split(/\s+/).reduce((max, word) => Math.max(max, word.length), 0)
-  const valueFontSize = isCount
-    ? '64px'
-    : longestWord >= 13 || value.length >= 30
-      ? '20px'
-      : longestWord >= 10 || value.length >= 24
-        ? '22px'
-        : value.length >= 18
-          ? '25px'
-          : value.length >= 14
-            ? '29px'
-            : '34px'
-
+function MetricCard({ label, value, logoSrc }: { label: string; value: string; logoSrc?: string }) {
   return (
-    <div
-      style={{
-        padding: '18px 18px 16px',
-        borderRight: isLast ? 'none' : '1px solid #c5a572',
-        minWidth: 0,
-        minHeight: '215px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        overflow: 'hidden',
-      }}
-    >
-      <div style={{ minWidth: 0 }}>
-        {logoSrc && (
-          <div style={{ height: '48px', marginBottom: '9px', display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-            <img src={logoSrc} alt={logoAlt || ''} style={{ maxWidth: '108px', maxHeight: '46px', width: 'auto', height: 'auto', objectFit: 'contain', display: 'block' }} />
-          </div>
-        )}
-        <div
-          style={{
-            fontSize: valueFontSize,
-            fontWeight: 700,
-            color: '#4e3417',
-            lineHeight: 1.06,
-            letterSpacing: isCount ? '-0.025em' : '-0.015em',
-            wordBreak: 'normal',
-            overflowWrap: 'normal',
-            hyphens: 'none',
-            whiteSpace: 'normal',
-            maxWidth: '100%',
-            overflow: 'hidden',
-          }}
-        >
-          {value}
-        </div>
-      </div>
-      <div
-        style={{
-          fontSize: '10px',
-          textTransform: 'uppercase',
-          letterSpacing: '0.065em',
-          color: '#74552f',
-          lineHeight: 1.3,
-          paddingTop: '12px',
-        }}
-      >
-        {label}
-      </div>
+    <div className={styles.metricCard}>
+      {logoSrc ? <img src={logoSrc} alt="" /> : null}
+      <strong>{value}</strong>
+      <span>{label}</span>
     </div>
   )
 }
 
-function SummaryRow({ label, value }: { label: string; value: string }) {
-  return <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', padding: '9px 0', borderBottom: '1px solid #ccb48a' }}><span style={{ color: '#5a3a1b' }}>{label}</span><span style={{ fontWeight: 700, textAlign: 'right' }}>{value}</span></div>
+function RankPanel({
+  title,
+  rows,
+}: {
+  title: string
+  rows: Array<{ label: string; value: number; href?: string }>
+}) {
+  return (
+    <div className={styles.rankPanel}>
+      <h3>{title}</h3>
+      {rows.length === 0 ? <div className={styles.emptyState}>No data recorded yet.</div> : rows.map((row, index) => {
+        const content = (
+          <>
+            <span><small>{String(index + 1).padStart(2, '0')}</small>{row.label}</span>
+            <strong>{number(row.value)}</strong>
+          </>
+        )
+        return row.href ? (
+          <Link href={row.href} className={styles.rankRow} key={`${row.label}-${index}`}>{content}</Link>
+        ) : (
+          <div className={styles.rankRow} key={`${row.label}-${index}`}>{content}</div>
+        )
+      })}
+    </div>
+  )
 }
 
 function buildPhotoCaption(photo: Photo) {
   const trackLabel = formatTrackSlug(photo.track_slug)
-  const photographer = photo.photographer_slug && photo.photographer_slug !== 'unknown' ? formatName(photo.photographer_slug) : 'Unknown Credit'
-  const creditType = photo.credit_type && photo.credit_type !== 'unknown' ? formatCreditType(photo.credit_type) : 'Photo'
-  return [trackLabel, photo.year && String(photo.year) !== 'unknown-year' ? photo.year : 'Year Unknown', photographer !== 'Unknown Credit' ? `${photographer}${creditType !== 'Photo' ? ` ${creditType}` : ''}` : null].filter(Boolean).join(' • ')
+  const photographer = photo.photographer_slug && photo.photographer_slug !== 'unknown'
+    ? formatName(photo.photographer_slug)
+    : 'Unknown Credit'
+  const creditType = photo.credit_type && photo.credit_type !== 'unknown'
+    ? formatCreditType(photo.credit_type)
+    : 'Photo'
+  return [
+    trackLabel,
+    photo.year && String(photo.year) !== 'unknown-year' ? photo.year : 'Year Unknown',
+    photographer !== 'Unknown Credit' ? `${photographer}${creditType !== 'Photo' ? ` ${creditType}` : ''}` : null,
+  ].filter(Boolean).join(' • ')
 }
 
 function normalizedPhotoYear(year: Photo['year']) {
@@ -489,20 +568,38 @@ function normalizedPhotoYear(year: Photo['year']) {
 }
 
 function formatRaceDate(dateString: string) {
-  return new Date(dateString).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+  const [year, month, day] = String(dateString).split('-').map(Number)
+  if (!year || !month || !day) return dateString
+  return new Date(year, month - 1, day).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
 }
 
 function formatTrackSlug(trackSlug: string | null | undefined) {
   if (!trackSlug || ['unknown', 'unknown-track'].includes(trackSlug)) return null
-  return trackSlug.replace(/-(wi|il|mn|mi)$/i, '').split('-').filter(Boolean).map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+  return trackSlug
+    .replace(/-(wi|il|mn|mi)$/i, '')
+    .split('-')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
 }
 
 function formatName(name: string | null) {
   if (!name) return 'Unknown'
-  return name.replace(/[-_]/g, ' ').split(' ').filter(Boolean).map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+  return name
+    .replace(/[-_]/g, ' ')
+    .split(' ')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
 }
 
 function formatCreditType(type: string | null) {
   if (!type || type.toLowerCase() === 'unknown') return 'Photo'
   return type.charAt(0).toUpperCase() + type.slice(1)
+}
+
+function driverInitials(name: string) {
+  const parts = name.split(/\s+/).filter(Boolean)
+  if (!parts.length) return 'DR'
+  return `${parts[0]?.[0] || ''}${parts.length > 1 ? parts[parts.length - 1]?.[0] || '' : ''}`.toUpperCase()
 }

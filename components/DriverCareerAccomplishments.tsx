@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react'
 import { supabase } from '@/lib/supabase'
+import styles from './DriverCareerAccomplishments.module.css'
 
 type CareerAccomplishment = {
   id: number
@@ -51,7 +51,9 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
       .eq('champion_driver_id', driverId)
       .order('year', { ascending: true })
 
-    const seriesIds = Array.from(new Set((seasonRows ?? []).map((row: any) => Number(row.series_id)).filter(Boolean)))
+    const seriesIds = Array.from(new Set(
+      (seasonRows ?? []).map((row: any) => Number(row.series_id)).filter(Boolean),
+    ))
     const { data: seriesRows } = seriesIds.length
       ? await supabase.from('Series').select('id, series_name').in('id', seriesIds)
       : { data: [] as any[] }
@@ -76,53 +78,51 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
   const majorTop5s = rows.filter((row) => row.accomplishment_type === 'MAJOR_TOP5')
   const summaries = rows.filter((row) => row.accomplishment_type === 'CAREER_SERIES_SUMMARY')
   const selectedVictories = [...majorVictories, ...outsideWins]
-
   const championshipItems = mergeSeriesChampionships(museumSeriesChampionships, externalChampionships)
 
+  const groups = [
+    championshipItems.length ? { kicker: 'Championship record', title: 'Series Championships', items: championshipItems } : null,
+    summaries.length || majorTop5s.length
+      ? { kicker: 'Touring & major events', title: 'Major Series Success', items: [...summaries, ...majorTop5s].map(formatAccomplishment) }
+      : null,
+    selectedVictories.length
+      ? { kicker: 'Selected victories', title: 'Major & Touring Wins', items: selectedVictories.map(formatAccomplishment) }
+      : null,
+  ].filter(Boolean) as Array<{ kicker: string; title: string; items: string[] }>
+
   return (
-    <section style={{ margin: '10px 0 32px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '10px' }}>
-        <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
-        <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#8a632b', fontWeight: 700 }}>Documented Career History</div>
-          <h2 style={{ fontSize: '31px', margin: '4px 0 0', color: '#3d2b16' }}>Career Accomplishments</h2>
+    <section className={styles.section}>
+      <div className={styles.heading}>
+        <div>
+          <span>Documented career history</span>
+          <h2>Career Accomplishments</h2>
         </div>
-        <span style={{ height: '1px', background: '#b29364', flex: 1 }} />
+        <p>Verified broader-career milestones alongside the museum&apos;s original event records.</p>
       </div>
 
-      <p style={{ margin: '0 auto 16px', maxWidth: '970px', textAlign: 'center', fontSize: '15px', lineHeight: 1.65, color: '#5a4327' }}>
-        Documented series championships and verified broader-career accomplishments, with museum-recorded race results kept in their original event records.
+      <div className={styles.grid}>
+        {groups.map((group, index) => (
+          <article className={styles.card} key={group.title}>
+            <div className={styles.cardHeading}>
+              <span>{String(index + 1).padStart(2, '0')} · {group.kicker}</span>
+              <h3>{group.title}</h3>
+            </div>
+            <ul>
+              {group.items.map((item, itemIndex) => <li key={`${item}-${itemIndex}`}>{item}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+
+      {trackChampionships.length > 0 ? (
+        <p className={styles.note}>
+          Additional verified track championships are included in the Track Championships total and championship archive below.
+        </p>
+      ) : null}
+
+      <p className={styles.disclaimer}>
+        Museum series championships and verified broader-career records are merged and deduplicated here. Museum-recorded race results remain in their original event records.
       </p>
-
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(255px, 1fr))', gap: '14px' }}>
-        {championshipItems.length > 0 && (
-          <CareerCard title="Series Championships" icon="★">
-            <CareerList items={championshipItems} />
-          </CareerCard>
-        )}
-
-        {(summaries.length > 0 || majorTop5s.length > 0) && (
-          <CareerCard title="Major Series Success" icon="◆">
-            <CareerList items={[...summaries, ...majorTop5s].map(formatAccomplishment)} />
-          </CareerCard>
-        )}
-
-        {selectedVictories.length > 0 && (
-          <CareerCard title="Selected Major & Touring Victories" icon="🏁">
-            <CareerList items={selectedVictories.map(formatAccomplishment)} />
-          </CareerCard>
-        )}
-      </div>
-
-      {trackChampionships.length > 0 && (
-        <div style={{ marginTop: '12px', fontSize: '12px', lineHeight: 1.55, color: '#6a5337', textAlign: 'center' }}>
-          Additional verified track championships are reflected in the Track Championships total and track-championship section below.
-        </div>
-      )}
-
-      <div style={{ marginTop: '12px', padding: '9px 14px', borderTop: '1px solid #c8aa79', borderBottom: '1px solid #c8aa79', fontSize: '12px', lineHeight: 1.55, color: '#6a5337', fontStyle: 'italic', textAlign: 'center' }}>
-        Museum series championships are merged with verified broader-career championship records and deduplicated here. Museum-recorded race results are not duplicated.
-      </div>
     </section>
   )
 }
@@ -194,24 +194,4 @@ function formatAccomplishment(row: CareerAccomplishment) {
   }
 
   return row.notes || `${year}${row.series_name || row.event_name || 'Documented career accomplishment'}`
-}
-
-function CareerCard({ title, icon, children }: { title: string; icon: string; children: ReactNode }) {
-  return (
-    <div style={{ border: '1px solid #c8b18a', background: '#f7eedf', padding: '17px 18px', minHeight: '178px', boxShadow: '0 4px 12px rgba(73,48,21,0.06)' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '17px', fontWeight: 700, color: '#5b3a1b', marginBottom: '11px', borderBottom: '1px solid #dbc8a7', paddingBottom: '8px' }}>
-        <span style={{ color: '#8a632b' }}>{icon}</span>
-        {title}
-      </div>
-      {children}
-    </div>
-  )
-}
-
-function CareerList({ items }: { items: string[] }) {
-  return (
-    <ul style={{ margin: 0, paddingLeft: '18px', color: '#3f2d18', fontSize: '13px', lineHeight: 1.6 }}>
-      {items.map((item, index) => <li key={`${item}-${index}`} style={{ marginBottom: '6px' }}>{item}</li>)}
-    </ul>
-  )
 }
