@@ -1,439 +1,63 @@
 import Link from 'next/link'
-import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
+import '../media/archive-dark.css'
 
 export const dynamic = 'force-dynamic'
+const PAGE_SIZE = 60
 
-type SearchParams = {
-  q?: string
-  driver?: string
-  photographer?: string
-  track?: string
-  year?: string
-  credit?: string
-}
+type SearchParams = { q?: string; driver?: string; photographer?: string; track?: string; year?: string; credit?: string; page?: string }
 
-export default async function PhotosPage({
-  searchParams,
-}: {
-  searchParams: Promise<SearchParams>
-}) {
+export default async function PhotosPage({ searchParams }: { searchParams: Promise<SearchParams> }) {
   const params = await searchParams
+  const page = Math.max(1, Number(params.page || 1) || 1)
+  const from = (page-1)*PAGE_SIZE
+  const to = from+PAGE_SIZE-1
 
-  let query = supabase
-  .from('photos')
-  .select('*')
-    .order('year', { ascending: false, nullsFirst: false })
-    .order('file_name', { ascending: true })
-    .limit(500)
+  let query = supabase.from('photos').select('*',{count:'exact'}).order('year',{ascending:false,nullsFirst:false}).order('file_name',{ascending:true})
+  if (params.driver) query=query.eq('driver_slug',params.driver)
+  if (params.photographer) query=query.eq('photographer_slug',params.photographer)
+  if (params.track) query=query.eq('track_slug',params.track)
+  if (params.year) query=query.eq('year',params.year)
+  if (params.credit) query=query.eq('credit_type',params.credit)
+  if (params.q) query=query.or(`file_name.ilike.%${params.q}%,driver_slug.ilike.%${params.q}%,photographer_slug.ilike.%${params.q}%,track_slug.ilike.%${params.q}%`)
 
-  if (params.driver) query = query.eq('driver_slug', params.driver)
-  if (params.photographer) query = query.eq('photographer_slug', params.photographer)
-  if (params.track) query = query.eq('track_slug', params.track)
-  if (params.year) query = query.eq('year', params.year)
-  if (params.credit) query = query.eq('credit_type', params.credit)
+  const [{data:photos,count},{data:filterRows}] = await Promise.all([
+    query.range(from,to),
+    supabase.from('photos').select('driver_slug,photographer_slug,track_slug,year,credit_type').limit(10000),
+  ])
 
-  if (params.q) {
-    query = query.or(
-      `file_name.ilike.%${params.q}%,driver_slug.ilike.%${params.q}%,photographer_slug.ilike.%${params.q}%,track_slug.ilike.%${params.q}%`
-    )
-  }
+  const rows = photos || []
+  const total = count || 0
+  const totalPages = Math.max(1,Math.ceil(total/PAGE_SIZE))
+  const drivers=uniqueClean(filterRows?.map((p:any)=>p.driver_slug))
+  const photographers=uniqueClean(filterRows?.map((p:any)=>p.photographer_slug))
+  const tracks=uniqueClean(filterRows?.map((p:any)=>p.track_slug))
+  const years=uniqueClean(filterRows?.map((p:any)=>p.year)).sort((a,b)=>Number(b)-Number(a))
+  const credits=uniqueClean(filterRows?.map((p:any)=>p.credit_type))
+  const hero=rows[0]
+  const selectedPhotographer=params.photographer?formatSlugName(params.photographer):null
+  const selectedDriver=params.driver?formatSlugName(params.driver):null
+  const selectedTrack=params.track?formatSlugName(params.track):null
+  const title=selectedPhotographer?`${selectedPhotographer} Photos`:selectedDriver?`${selectedDriver} Photos`:selectedTrack?`${selectedTrack} Photos`:'Photo Archive'
 
-  const { data: photos } = await query
+  const makeUrl=(targetPage:number)=>{const sp=new URLSearchParams();Object.entries(params).forEach(([k,v])=>{if(v&&k!=='page')sp.set(k,v)});if(targetPage>1)sp.set('page',String(targetPage));const s=sp.toString();return `/photos${s?`?${s}`:''}`}
 
-  const { data: filterRows } = await supabase
-    .from('photos')
-    .select('driver_slug, photographer_slug, track_slug, year, credit_type')
-    .limit(5000)
+  return <main className="ma-page">
+    <section className="ma-hero" style={hero ? {backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.97),rgba(5,8,10,.8) 50%,rgba(5,8,10,.44)),url(${photoUrl(hero)})`,backgroundSize:'cover',backgroundPosition:'center'}:undefined}>
+      <div className="ma-hero-inner"><div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><span>Photos</span></div><div className="ma-hero-grid"><div><div className="ma-eyebrow">Museum Photo Collection</div><h1 className="ma-title">{title}</h1><div className="ma-subtitle">Search the Complete Racing Image Archive</div><p className="ma-lede">Browse racing photography connected to drivers, tracks, years, and credited photographers throughout the Upper Midwest Auto Racing Museum.</p><div className="ma-actions"><Link href="/media" className="ma-button">Media Archive</Link><Link href="/photographers" className="ma-button-ghost">Photographer Directory</Link></div></div></div><div className="ma-stats"><div className="ma-stat"><strong>{total.toLocaleString()}</strong><span>Matching Photos</span></div><div className="ma-stat"><strong>{page}</strong><span>Current Page</span></div><div className="ma-stat"><strong>{totalPages}</strong><span>Archive Pages</span></div><div className="ma-stat"><strong>{params.year || 'All'}</strong><span>Year Filter</span></div><div className="ma-stat"><strong>{params.credit ? formatSlugName(params.credit) : 'All'}</strong><span>Credit Type</span></div></div></div>
+    </section>
 
-let photographerCount = photos?.length || 0
+    <section className="ma-section"><form action="/photos" className="ma-filter"><input name="q" defaultValue={params.q||''} placeholder="Search photos..."/><select name="driver" defaultValue={params.driver||''}><option value="">All Drivers</option>{drivers.map(v=><option key={v} value={v}>{formatSlugName(v)}</option>)}</select><select name="photographer" defaultValue={params.photographer||''}><option value="">All Photographers</option>{photographers.map(v=><option key={v} value={v}>{formatSlugName(v)}</option>)}</select><select name="track" defaultValue={params.track||''}><option value="">All Tracks</option>{tracks.map(v=><option key={v} value={v}>{formatSlugName(v)}</option>)}</select><select name="year" defaultValue={params.year||''}><option value="">All Years</option>{years.map(v=><option key={v} value={v}>{v}</option>)}</select><button type="submit">Search Archive</button></form></section>
 
-if (params.photographer) {
-  const { count } = await supabase
-    .from('photos')
-    .select('*', { count: 'exact', head: true })
-    .eq('photographer_slug', params.photographer)
+    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Research Results</div><h2 className="ma-h2">Photo Collection</h2></div><div className="ma-note">Showing {rows.length} photos on page {page} of {totalPages}.</div></div><div className="ma-photo-grid">{rows.map((photo:any)=><article key={photo.file_name} className="ma-photo-card"><Link href={`/photo/${encodeURIComponent(photo.file_name)}`}><img src={photoUrl(photo)} alt={formatSlugName(photo.driver_slug)} loading="lazy"/></Link><div className="body"><h3><Link href={`/photo/${encodeURIComponent(photo.file_name)}`}>{formatSlugName(photo.driver_slug)}</Link></h3><p><span className="ma-gold">{photo.year||'Year unknown'}</span> • {formatSlugName(photo.track_slug)}</p><p>{formatCredit(photo.credit_type,photo.photographer_slug)}</p></div></article>)}</div>
+    {totalPages>1?<div className="ma-actions" style={{justifyContent:'space-between',marginTop:18}}>{page>1?<Link href={makeUrl(page-1)} className="ma-button-ghost">← Previous Page</Link>:<span/>}<span className="ma-muted" style={{fontSize:11,alignSelf:'center'}}>Page {page} of {totalPages}</span>{page<totalPages?<Link href={makeUrl(page+1)} className="ma-button">Next Page →</Link>:<span/>}</div>:null}</section>
 
-  photographerCount = count || 0
+    <section className="ma-section"><div className="ma-footer-links"><Link href="/photographers" className="ma-footer-link">Photographer Archive<span>Browse collections →</span></Link><Link href="/media/race-programs" className="ma-footer-link">Race Programs<span>Browse printed archive →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
+  </main>
 }
 
-  const drivers = uniqueClean(filterRows?.map((p) => p.driver_slug))
-  const photographers = uniqueClean(filterRows?.map((p) => p.photographer_slug))
-  const tracks = uniqueClean(filterRows?.map((p) => p.track_slug))
-  const years = uniqueClean(filterRows?.map((p) => p.year)).sort((a, b) => Number(b) - Number(a))
-  const credits = uniqueClean(filterRows?.map((p) => p.credit_type))
-
- const hasFilters =
-  params.q || params.driver || params.photographer || params.track || params.year || params.credit
-
-const selectedPhotographerName = params.photographer
-  ? formatSlugName(params.photographer)
-  : null
-
-  return (
-    <main style={pageWrap}>
-      <section style={heroBox}>
-        <div style={breadcrumb}>
-          <Link href="/" style={crumbLink}>Home</Link> / Photos
-        </div>
-
-        <div style={eyebrow}>Photo Archive</div>
-        <h1 style={title}>Photos</h1>
-
-        <p style={intro}>
-  Browse the growing photo archive from tracks, drivers, photographers, and racing history across the Upper Midwest.
-</p>
-
-{selectedPhotographerName && (
-  <div style={photographerNamePlate}>
-    <div style={photographerPlateLabel}>
-      Photography Collection of
-    </div>
-
-    <div style={photographerPlateName}>
-      {selectedPhotographerName}
-    </div>
-
-    <div style={photographerPlateCount}>
-  {photographerCount.toLocaleString()} archived photographs
-</div>
-  </div>
-)}
-      </section>
-
-      <section style={filterPanel}>
-        <form action="/photos" style={filterGrid}>
-          <input
-            name="q"
-            defaultValue={params.q || ''}
-            placeholder="Search photos..."
-            style={inputStyle}
-          />
-
-          <select name="driver" defaultValue={params.driver || ''} style={inputStyle}>
-            <option value="">All Drivers</option>
-            {drivers.map((driver) => (
-              <option key={driver} value={driver}>
-                {formatSlugName(driver)}
-              </option>
-            ))}
-          </select>
-
-          <select name="photographer" defaultValue={params.photographer || ''} style={inputStyle}>
-            <option value="">All Photographers</option>
-            {photographers.map((photographer) => (
-              <option key={photographer} value={photographer}>
-                {formatSlugName(photographer)}
-              </option>
-            ))}
-          </select>
-
-          <select name="track" defaultValue={params.track || ''} style={inputStyle}>
-            <option value="">All Tracks</option>
-            {tracks.map((track) => (
-              <option key={track} value={track}>
-                {formatSlugName(track)}
-              </option>
-            ))}
-          </select>
-
-          <select name="year" defaultValue={params.year || ''} style={inputStyle}>
-            <option value="">All Years</option>
-            {years.map((year) => (
-              <option key={year} value={year}>
-                {year}
-              </option>
-            ))}
-          </select>
-
-          <select name="credit" defaultValue={params.credit || ''} style={inputStyle}>
-            <option value="">All Types</option>
-            {credits.map((credit) => (
-              <option key={credit} value={credit}>
-                {formatSlugName(credit)}
-              </option>
-            ))}
-          </select>
-
-          <button type="submit" style={buttonStyle}>
-            Apply Filters
-          </button>
-
-          {hasFilters && (
-            <Link href="/photos" style={clearButton}>
-              Clear
-            </Link>
-          )}
-        </form>
-      </section>
-
-      <div style={resultLine}>
-        Showing {photos?.length || 0} photos
-      </div>
-
-     <section style={photoGrid}>
-  {(photos || []).map((photo) => (
-    <article key={photo.id || photo.file_name} style={photoCard}>
-      <Link href={`/photo/${encodeURIComponent(photo.file_name)}`}>
-        <img
-  src={getPhotoUrl(
-    `photos/master/${photo.track_slug}/${photo.year || 'unknown-year'}/${photo.file_name}`
-  )}
-  alt={formatSlugName(photo.driver_slug)}
-  style={photoImage}
-/>
-      </Link>
-
-      <div style={photoBody}>
-        <h3 style={photoTitle}>
-          <Link href={`/photos?driver=${photo.driver_slug}`} style={linkStyle}>
-            {formatSlugName(photo.driver_slug)}
-          </Link>
-        </h3>
-
-        <div style={photoMeta}>
-          {photo.year || 'Year Unknown'}
-        </div>
-
-        <div style={photoMeta}>
-          <Link
-            href={`/photos?photographer=${photo.photographer_slug}`}
-            style={linkStyle}
-          >
-            {formatCreditType(photo.credit_type, photo.photographer_slug)}
-          </Link>
-        </div>
-
-        <div style={photoTrack}>
-          <Link href={`/photos?track=${photo.track_slug}`} style={linkStyle}>
-            {formatSlugName(photo.track_slug)}
-          </Link>
-        </div>
-      </div>
-    </article>
-  ))}
-</section>
-    </main>
-  )
-}
-
-function uniqueClean(values: any[] | undefined) {
-  return Array.from(
-    new Set(
-      (values || [])
-        .filter(Boolean)
-        .map((v) => String(v))
-        .filter((v) =>
-          ![
-            'unknown',
-            'unknown-driver',
-            'unknown-track',
-            'unknown-photographer',
-            'unknown-credit',
-            'year-unknown',
-            'unknown-year',
-          ].includes(v)
-        )
-    )
-  ).sort()
-}
-
-function formatSlugName(value: string | null) {
-  if (!value) return 'Unknown'
-
-  return value
-    .replace(/_/g, '-')
-    .split('-')
-    .filter(Boolean)
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ')
-}
-
-function formatCreditType(
-  value: string | null,
-  photographer: string | null
-) {
-  const name = formatSlugName(photographer)
-
-  if (!value || value === 'photo') return `${name} Photo`
-  if (value === 'post') return `${name} Post`
-
-  return `${name} ${formatSlugName(value)}`
-}
-
-const pageWrap: CSSProperties = {
-  maxWidth: '1320px',
-  margin: '0 auto',
-  padding: '36px 18px 60px',
-  color: '#2f2417',
-}
-
-const heroBox: CSSProperties = {
-  background: '#efe7d6',
-  border: '1px solid #c9b88e',
-  borderRadius: '18px',
-  padding: '28px',
-  marginBottom: '28px',
-  boxShadow: '0 10px 28px rgba(0,0,0,0.08)',
-}
-
-const breadcrumb: CSSProperties = {
-  fontSize: '14px',
-  marginBottom: '18px',
-}
-
-const crumbLink: CSSProperties = {
-  color: '#5b3a1b',
-  textDecoration: 'none',
-}
-
-const eyebrow: CSSProperties = {
-  textTransform: 'uppercase',
-  letterSpacing: '0.22em',
-  fontSize: '12px',
-  color: '#7a6348',
-  marginBottom: '10px',
-}
-
-const photographerPlateCount: CSSProperties = {
-  marginTop: '16px',
-  fontSize: '18px',
-  color: '#6b5738',
-  fontStyle: 'italic',
-  letterSpacing: '0.03em',
-}
-const title: CSSProperties = {
-  fontSize: '54px',
-  margin: '0 0 18px',
-}
-
-const intro: CSSProperties = {
-  fontSize: '17px',
-  lineHeight: 1.6,
-  margin: 0,
-}
-
-const filterPanel: CSSProperties = {
-  background: '#ddc8a2',
-  border: '2px solid #b29364',
-  padding: '16px',
-  marginBottom: '24px',
-}
-
-const filterGrid: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(4, minmax(160px, 1fr))',
-  gap: '12px',
-  alignItems: 'center',
-}
-
-const inputStyle: CSSProperties = {
-  width: '100%',
-  padding: '10px 12px',
-  border: '1px solid #b29364',
-  background: '#fff8ea',
-  color: '#2f2417',
-  fontSize: '15px',
-  fontFamily: 'Georgia, serif',
-}
-
-const buttonStyle: CSSProperties = {
-  background: '#7a5827',
-  color: '#fff8ea',
-  border: '1px solid #5d3f17',
-  padding: '10px 14px',
-  fontSize: '15px',
-  fontFamily: 'Georgia, serif',
-  cursor: 'pointer',
-}
-
-const clearButton: CSSProperties = {
-  display: 'inline-block',
-  textAlign: 'center',
-  background: '#efe7d6',
-  color: '#5b3a1b',
-  border: '1px solid #b29364',
-  padding: '10px 14px',
-  textDecoration: 'none',
-}
-
-const photographerNamePlate: CSSProperties = {
-  marginTop: '26px',
-  padding: '24px 34px',
-  border: '4px double #7a5827',
-  borderRadius: '18px',
-  background: '#fff8ea',
-  textAlign: 'center',
-  boxShadow: 'inset 0 0 0 2px rgba(122, 88, 39, 0.18)',
-}
-
-const photographerPlateLabel: CSSProperties = {
-  textTransform: 'uppercase',
-  letterSpacing: '0.42em',
-  fontSize: '13px',
-  color: '#7a6348',
-  marginBottom: '10px',
-}
-
-const photographerPlateName: CSSProperties = {
-  fontFamily: 'Georgia, serif',
-  fontSize: 'clamp(42px, 7vw, 88px)',
-  fontWeight: 800,
-  lineHeight: 1,
-  color: '#2f2417',
-}
-const resultLine: CSSProperties = {
-  fontWeight: 700,
-  marginBottom: '16px',
-}
-
-const photoGrid: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-  gap: '18px',
-}
-
-const photoCard: CSSProperties = {
-  background: '#efe7d6',
-  border: '1px solid #c9b88e',
-  borderRadius: '14px',
-  padding: '12px',
-  overflow: 'hidden',
-}
-
-const photoImage: CSSProperties = {
-  width: '100%',
-  aspectRatio: '4/3',
-  objectFit: 'cover',
-  display: 'block',
-  border: '1px solid #b29364',
-  borderRadius: '8px',
-  marginBottom: '10px',
-}
-
-const linkStyle: CSSProperties = {
-  color: '#2f2417',
-  textDecoration: 'none',
-  borderBottom: '1px dotted #7a5827',
-}
-
-const photoBody: CSSProperties = {
-  fontSize: '14px',
-  lineHeight: 1.45,
-}
-
-const photoTitle: CSSProperties = {
-  fontSize: '18px',
-  margin: '0 0 4px',
-}
-
-const photoMeta: CSSProperties = {
-  color: '#3d2b16',
-}
-
-const photoTrack: CSSProperties = {
-  marginTop: '6px',
-  color: '#7a5827',
-  fontWeight: 700,
-}
+function photoUrl(photo:any){return getPhotoUrl(`photos/master/${photo.track_slug}/${photo.year||'unknown-year'}/${photo.file_name}`)}
+function uniqueClean(values:any[]|undefined){return Array.from(new Set((values||[]).filter(Boolean).map(v=>String(v)).filter(v=>!['unknown','unknown-driver','unknown-track','unknown-photographer','unknown-credit','year-unknown','unknown-year'].includes(v)))).sort()}
+function formatSlugName(value:string|null|undefined){if(!value)return'Unknown';return value.replace(/_/g,'-').split('-').filter(Boolean).map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' ')}
+function formatCredit(value:string|null,photographer:string|null){const name=formatSlugName(photographer);if(!value||value==='photo')return `${name} Photo`;if(value==='post')return `${name} Post`;return `${name} ${formatSlugName(value)}`}
