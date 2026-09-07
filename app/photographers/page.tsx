@@ -1,300 +1,53 @@
 import Link from 'next/link'
-import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import '../media/archive-dark.css'
 
 export const dynamic = 'force-dynamic'
-export const revalidate = 0
-export const runtime = 'nodejs'
+export const revalidate = 300
 
+type SearchParams = Promise<{ q?: string }>
+
+function formatSlugName(value: string) { return value.split('-').map(w => w.charAt(0).toUpperCase()+w.slice(1)).join(' ') }
 function getPhotoUrl(photo: any) {
   if (!photo?.file_name) return ''
-
   const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
   const rawTrackSlug = photo.track_slug || photo.file_name.split('_')[0]
   const trackSlug = rawTrackSlug.replace(/-(wi|il|mn|mi)$/i, '')
   const year = photo.year || photo.file_name.split('_')[1] || 'unknown-year'
-
   return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
 }
 
-export default async function PhotographersPage() {
-  const { data, error } = await supabase
-    .from('photographer_directory_view')
-    .select('photographer_slug, photographer_name, total_items, photo_count, post_count')
-    .order('total_items', { ascending: false })
-    .limit(300)
+export default async function PhotographersPage({ searchParams }: { searchParams?: SearchParams }) {
+  const params = searchParams ? await searchParams : {}
+  const q = (params?.q || '').trim().toLowerCase()
 
-  const { data: samplePhotos } = await supabase
-    .from('photos')
-    .select('photographer_slug, track_slug, file_name, credit_type, year')
-    .neq('credit_type', 'unknown')
-    .not('photographer_slug', 'is', null)
-    .not('file_name', 'is', null)
-    .order('year', { ascending: false, nullsFirst: false })
-    .order('sequence', { ascending: true })
-    .limit(1200)
+  const [{ data, error }, { data: samplePhotos }] = await Promise.all([
+    supabase.from('photographer_directory_view').select('photographer_slug, photographer_name, total_items, photo_count, post_count').order('total_items',{ascending:false}).limit(2000),
+    supabase.from('photos').select('photographer_slug, track_slug, file_name, credit_type, year').neq('credit_type','unknown').not('photographer_slug','is',null).not('file_name','is',null).order('year',{ascending:false,nullsFirst:false}).order('sequence',{ascending:true}).limit(5000),
+  ])
 
-  const samplePhotoMap = new Map<string, any>()
+  if (error) return <main className="ma-page"><section className="ma-section"><div className="ma-source">Unable to load photographer archive.</div></section></main>
 
-  for (const photo of samplePhotos || []) {
-    if (!photo.photographer_slug || samplePhotoMap.has(photo.photographer_slug)) continue
-    samplePhotoMap.set(photo.photographer_slug, photo)
-  }
+  const sampleMap = new Map<string,any>()
+  for (const photo of samplePhotos || []) if (photo.photographer_slug && !sampleMap.has(photo.photographer_slug)) sampleMap.set(photo.photographer_slug,photo)
 
-  if (error) {
-    return <div style={{ padding: '40px' }}>Error loading photographers</div>
-  }
+  const photographers = (data || []).filter((p:any)=>p.photographer_slug && !p.photographer_slug.includes('#') && !/^\d/.test(p.photographer_slug) && p.photographer_slug.length>=3 && !['unknown','unknown-credit','unknown-photographer','photo'].includes(p.photographer_slug)).map((p:any)=>({slug:p.photographer_slug,name:p.photographer_name||formatSlugName(p.photographer_slug),total:Number(p.total_items||0),photos:Number(p.photo_count||0),posts:Number(p.post_count||0),samplePhoto:sampleMap.get(p.photographer_slug)}))
 
-  const photographers = (data || [])
-    .filter((p) => {
-      const slug = p.photographer_slug
+  const filtered = q ? photographers.filter(p => p.name.toLowerCase().includes(q) || p.slug.includes(q)) : photographers
+  const top = photographers.slice(0,12)
+  const totalPhotos = photographers.reduce((sum,p)=>sum+p.photos,0)
+  const heroPhoto = top.find(p=>p.samplePhoto)?.samplePhoto
+  const heroUrl = heroPhoto ? getPhotoUrl(heroPhoto) : ''
 
-      return (
-        slug &&
-        !slug.includes('#') &&
-        !/^\d/.test(slug) &&
-        slug.length >= 3 &&
-        ![
-          'unknown',
-          'unknown-credit',
-          'unknown-photographer',
-          'photo',
-        ].includes(slug)
-      )
-    })
-    .map((p) => ({
-      slug: p.photographer_slug,
-      name: p.photographer_name || formatSlugName(p.photographer_slug),
-      total: Number(p.total_items ?? 0),
-      photos: Number(p.photo_count ?? 0),
-      posts: Number(p.post_count ?? 0),
-      samplePhoto: samplePhotoMap.get(p.photographer_slug),
-    }))
+  return <main className="ma-page">
+    <section className="ma-hero" style={heroUrl ? {backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.97),rgba(5,8,10,.82) 50%,rgba(5,8,10,.48)),url(${heroUrl})`,backgroundSize:'cover',backgroundPosition:'center'}:undefined}>
+      <div className="ma-hero-inner"><div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><span>Photographers</span></div><div className="ma-hero-grid"><div><div className="ma-eyebrow">Through the Lens</div><h1 className="ma-title">Photographer Archive</h1><div className="ma-subtitle">The People Who Preserved Race Night</div><p className="ma-lede">Explore credited photographers and contributors whose images document drivers, cars, tracks, crews, victory lanes, and the atmosphere surrounding Upper Midwest auto racing.</p><div className="ma-actions"><Link href="/media" className="ma-button">Back to Media Archive</Link><Link href="/photos" className="ma-button-ghost">Complete Photo Archive</Link></div></div></div><div className="ma-stats"><div className="ma-stat"><strong>{photographers.length.toLocaleString()}</strong><span>Indexed Sources</span></div><div className="ma-stat"><strong>{totalPhotos.toLocaleString()}</strong><span>Credited Photos</span></div><div className="ma-stat"><strong>{top[0]?.photos.toLocaleString() || '—'}</strong><span>Largest Photo Collection</span></div><div className="ma-stat"><strong>{top[0]?.name?.split(' ').slice(-1)[0] || '—'}</strong><span>Leading Contributor</span></div><div className="ma-stat"><strong>Growing</strong><span>Research Collection</span></div></div></div>
+    </section>
 
-  const topContributors = photographers.slice(0, 24)
+    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Museum Highlights</div><h2 className="ma-h2">Leading Contributors</h2></div><div className="ma-note">The largest currently indexed credited collections in the museum.</div></div><div className="ma-leader-grid">{top.map((p,index)=><Link key={p.slug} href={`/photographers/${p.slug}`} className="ma-leader-card" style={{textDecoration:'none'}}>{p.samplePhoto ? <img src={getPhotoUrl(p.samplePhoto)} alt={p.name} /> : <div style={{width:92,height:76,display:'grid',placeItems:'center',background:'#171c20',color:'#8f979d',fontSize:10}}>NO IMAGE</div>}<div><div className="ma-card-label">#{index+1} • Photographer Archive</div><strong>{p.name}</strong><span>{p.photos.toLocaleString()} photos • {p.total.toLocaleString()} archive items</span><span className="ma-red">View collection →</span></div></Link>)}</div></section>
 
-  const fullDirectory = [...photographers].sort((a, b) =>
-    a.name.localeCompare(b.name)
-  )
+    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Research Directory</div><h2 className="ma-h2">Photographers & Sources</h2></div><div className="ma-note">{filtered.length.toLocaleString()} collections shown.</div></div><form action="/photographers" className="ma-filter" style={{gridTemplateColumns:'1fr auto',marginBottom:10}}><input name="q" defaultValue={params?.q||''} placeholder="Search photographers or contributors..."/><button type="submit">Search</button></form><div className="ma-directory"><div className="ma-row head"><span>Photographer / Source</span><span>Photos</span><span>Posts</span><span>Total Items</span><span>Collection</span></div>{filtered.map(p=><div className="ma-row" key={p.slug}><strong><Link href={`/photographers/${p.slug}`}>{p.name}</Link></strong><span>{p.photos.toLocaleString()}</span><span>{p.posts.toLocaleString()}</span><span>{p.total.toLocaleString()}</span><Link href={`/photographers/${p.slug}`} className="ma-red">View →</Link></div>)}</div></section>
 
-  return (
-    <main style={pageStyle}>
-      <div style={{ ...container, position: 'relative' }}>
-        <div style={titleRow}>
-          <h1 style={title}>Photographers & Sources</h1>
-
-          <img
-            src="/images/camera-accent.jpg"
-            alt="Camera"
-            style={cameraImage}
-          />
-        </div>
-
-        <p style={subtitle}>
-          Historic racing images captured by photographers and contributors across the Upper Midwest.
-        </p>
-
-        <h2 style={sectionTitle}>Top Contributors</h2>
-
-        <div style={grid}>
-          {topContributors.map((p) => (
-            <div key={p.slug} style={card}>
-              <div style={cardInner}>
-                <div style={contributorRow}>
-                  {p.samplePhoto ? (
-                    <img
-                      src={getPhotoUrl(p.samplePhoto)}
-                      alt={p.name}
-                      style={contributorThumb}
-                    />
-                  ) : (
-                    <div style={contributorThumbFallback}>No Image</div>
-                  )}
-
-                  <div>
-                    <div style={scriptName}>{p.name}</div>
-                    <h3 style={name}>{p.name}</h3>
-
-                    <div style={meta}>
-                      {p.total.toLocaleString()} archive items
-                    </div>
-
-                    <div style={metaSmall}>
-                      Photos: {p.photos.toLocaleString()} | Posts: {p.posts.toLocaleString()}
-                    </div>
-
-                    <Link href={`/photos?photographer=${p.slug}`} style={button}>
-                      View Collection
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <h2 style={sectionTitle}>Full Photographers & Sources Directory</h2>
-
-        <div style={directoryGrid}>
-          {fullDirectory.map((p) => (
-            <Link key={p.slug} href={`/photos?photographer=${p.slug}`} style={directoryItem}>
-              <strong>{p.name}</strong>
-              <span>{p.total.toLocaleString()} items</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </main>
-  )
-}
-
-function formatSlugName(value: string) {
-  return value
-    .split('-')
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ')
-}
-
-const pageStyle: CSSProperties = {
-  background: '#eadfc7',
-  minHeight: '100vh',
-  color: '#2f2417',
-  fontFamily: 'Georgia, serif',
-}
-
-const container: CSSProperties = {
-  maxWidth: '1200px',
-  margin: '0 auto',
-  padding: '40px 20px',
-}
-
-const title: CSSProperties = {
-  fontSize: '42px',
-  marginBottom: '10px',
-}
-
-const subtitle: CSSProperties = {
-  fontSize: '18px',
-  marginBottom: '30px',
-  maxWidth: '760px',
-}
-
-const grid: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gap: '20px',
-}
-
-const directoryGrid: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gap: '12px',
-}
-
-const directoryItem: CSSProperties = {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '4px',
-  background: '#f1e5ce',
-  border: '1px solid #c2a97d',
-  padding: '12px 14px',
-  color: '#2f2417',
-  textDecoration: 'none',
-}
-
-const card: CSSProperties = {
-  background: '#dcc7a1',
-  border: '2px solid #b29364',
-  padding: '10px',
-}
-
-const cardInner: CSSProperties = {
-  background: '#f1e5ce',
-  border: '1px solid #c2a97d',
-  padding: '14px',
-}
-
-const name: CSSProperties = {
-  fontSize: '24px',
-  marginBottom: '8px',
-}
-
-const meta: CSSProperties = {
-  fontSize: '16px',
-  marginBottom: '6px',
-}
-
-const sectionTitle: CSSProperties = {
-  fontSize: '30px',
-  margin: '34px 0 16px',
-  color: '#3d2b16',
-}
-
-const metaSmall: CSSProperties = {
-  fontSize: '14px',
-  marginBottom: '12px',
-}
-
-const contributorRow: CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: '110px 1fr',
-  gap: '14px',
-  alignItems: 'center',
-}
-
-const titleRow: CSSProperties = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-}
-
-const contributorThumb: CSSProperties = {
-  width: '110px',
-  height: '90px',
-  objectFit: 'cover',
-  border: '1px solid #b29364',
-  background: '#d8c39d',
-}
-
-const contributorThumbFallback: CSSProperties = {
-  width: '110px',
-  height: '90px',
-  border: '1px solid #b29364',
-  background: '#d8c39d',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  fontSize: '12px',
-  color: '#5b472f',
-}
-
-const cameraImage: CSSProperties = {
-  position: 'absolute',
-  top: '40px',
-  right: '70px',
-  width: '240px',
-  transform: 'rotate(3deg)',
-  border: '3px solid #a8895a',
-  padding: '6px',
-  background: '#e6d3b1',
-  boxShadow: '0px 8px 12px rgba(0,0,0,0.18)',
-  filter: 'sepia(70%) contrast(95%)',
-}
-
-const scriptName: CSSProperties = {
-  fontFamily: '"Brush Script MT", "Lucida Handwriting", cursive',
-  fontSize: '24px',
-  color: '#6a4a1f',
-  transform: 'rotate(-2deg)',
-  marginBottom: '2px',
-  opacity: 0.85,
-}
-
-const button: CSSProperties = {
-  display: 'inline-block',
-  background: '#7a5827',
-  color: '#fff8ea',
-  padding: '8px 12px',
-  textDecoration: 'none',
-  border: '1px solid #5d3f17',
+    <section className="ma-section"><div className="ma-footer-links"><Link href="/photos" className="ma-footer-link">Photo Archive<span>Browse all photography →</span></Link><Link href="/media/race-programs" className="ma-footer-link">Race Programs<span>Browse printed history →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
+  </main>
 }
