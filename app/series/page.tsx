@@ -1,13 +1,12 @@
 import Link from 'next/link'
-import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 import SeriesLogo from './[slug]/SeriesLogo'
+import styles from './series-landing.module.css'
 
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
-export const runtime = 'nodejs'
+export const revalidate = 300
 
 type SeriesRow = {
+  id: number
   slug: string
   series_name: string
   region?: string | null
@@ -15,6 +14,32 @@ type SeriesRow = {
   first_year?: number | null
   last_year?: number | null
   logo_url?: string | null
+  image_url?: string | null
+  status?: string | null
+  coverage?: string | null
+  is_published?: boolean | null
+  season_count?: number | string | null
+  event_count?: number | string | null
+  champion_driver_count?: number | string | null
+  winner_count?: number | string | null
+  first_event_date?: string | null
+  latest_event_date?: string | null
+}
+
+type TotalsRow = {
+  series_count?: number | string | null
+  season_count?: number | string | null
+  event_count?: number | string | null
+  winner_count?: number | string | null
+  champion_driver_count?: number | string | null
+  first_year?: number | null
+  last_year?: number | null
+}
+
+type PhotoRow = {
+  file_name?: string | null
+  track_slug?: string | null
+  year?: string | number | null
 }
 
 const completedSeries = new Set([
@@ -56,65 +81,353 @@ const specialEventSeriesSlugs = new Set([
   'legendary-100-limited-late-model-division',
 ])
 
-export default async function SeriesPage() {
-  const { data: seriesRows, error } = await supabase
-    .from('Series')
-    .select('slug, series_name, region, years_active, first_year, last_year, logo_url, is_published')
-    .eq('is_published', true)
-    .order('series_name', { ascending: true })
-    .limit(200)
+const featuredSlugs = [
+  'asa-national-tour',
+  'artgo-challenge-series',
+  'asa-midwest-tour',
+  'big-eight-late-model-series',
+  'tundra-super-late-model-series',
+  'wisconsin-wingless-sprint-car-series',
+]
 
-  const rows: SeriesRow[] = ((seriesRows ?? []) as SeriesRow[]).filter((s) => !specialEventSeriesSlugs.has(s.slug))
+const highlightDefinitions = [
+  { slug: 'asa-national-tour', label: 'Deepest Results Archive', stat: 'events' as const },
+  { slug: 'artgo-challenge-series', label: 'Historic Touring Series', stat: 'seasons' as const },
+  { slug: 'asa-midwest-tour', label: 'Recently Active Archive', stat: 'latest' as const },
+  { slug: 'tundra-super-late-model-series', label: 'Modern Championship Tour', stat: 'winners' as const },
+]
 
-  const featuredSeries = rows.length > 0 ? rows[Math.floor(Math.random() * rows.length)] : null
-  const firstSeriesYear = rows.flatMap((s) => [s.first_year, s.last_year, s.years_active].map((value) => String(value ?? '').match(/\d{4}/)?.[0]).filter(Boolean).map(Number)).filter((y): y is number => Number.isFinite(y)).sort((a, b) => a - b)[0] ?? 'TBD'
-  const activeSeriesCount = rows.filter((s) => !s.last_year || s.last_year >= 2020).length
+const eras = [
+  { key: 'pre1980', title: 'Origins', note: 'Through 1979', start: 1900, end: 1979 },
+  { key: '1980s90s', title: '1980s–1990s', note: '1980–1999', start: 1980, end: 1999 },
+  { key: '2000s', title: '2000s', note: '2000–2009', start: 2000, end: 2009 },
+  { key: '2010s', title: '2010s', note: '2010–2019', start: 2010, end: 2019 },
+  { key: 'current', title: 'Current Era', note: '2020–Present', start: 2020, end: 9999 },
+]
+
+function n(value: number | string | null | undefined) {
+  return Number(value || 0)
+}
+
+function formatNumber(value: number | string | null | undefined) {
+  return n(value).toLocaleString('en-US')
+}
+
+function seriesStart(row: SeriesRow) {
+  if (row.first_year) return Number(row.first_year)
+  const match = String(row.years_active || '').match(/\d{4}/)
+  return match ? Number(match[0]) : 9999
+}
+
+function seriesEnd(row: SeriesRow) {
+  if (row.last_year) return Number(row.last_year)
+  const years = String(row.years_active || '').match(/\d{4}/g)
+  if (String(row.years_active || '').toLowerCase().includes('present')) return 9999
+  return years?.length ? Number(years[years.length - 1]) : seriesStart(row)
+}
+
+function yearsLabel(row: SeriesRow) {
+  if (row.years_active) return row.years_active
+  const first = row.first_year
+  const last = row.last_year
+  if (first && last) return first === last ? String(first) : `${first}–${last}`
+  if (first) return `${first}–Present`
+  return 'Years being researched'
+}
+
+function isActive(row: SeriesRow) {
+  return seriesEnd(row) >= 2024 || String(row.years_active || '').toLowerCase().includes('present')
+}
+
+function inEra(row: SeriesRow, key: string) {
+  const era = eras.find((item) => item.key === key)
+  if (!era) return true
+  return seriesStart(row) <= era.end && seriesEnd(row) >= era.start
+}
+
+function baseTrackSlug(slug: string) {
+  return slug.replace(/-(wi|mn|il|mi|in|ia|mo|oh|tn|co|ks|ky|sc|sd|ont)$/i, '')
+}
+
+function photoUrl(photo?: PhotoRow | null) {
+  if (!photo?.file_name) return ''
+  const base = process.env.NEXT_PUBLIC_SUPABASE_URL
+  if (!base) return ''
+  const track = photo.track_slug || photo.file_name.split('_')[0] || 'unknown-track'
+  const year = photo.year || photo.file_name.split('_')[1] || 'unknown-year'
+  return `${base}/storage/v1/object/public/media/photos/master/${track}/${year}/${encodeURIComponent(photo.file_name)}`
+}
+
+function buildHref(page: number, filters: { q: string; era: string; status: string; sort: string }) {
+  const params = new URLSearchParams()
+  if (filters.q) params.set('q', filters.q)
+  if (filters.era) params.set('era', filters.era)
+  if (filters.status) params.set('status', filters.status)
+  if (filters.sort && filters.sort !== 'name') params.set('sort', filters.sort)
+  if (page > 1) params.set('page', String(page))
+  const query = params.toString()
+  return `/series${query ? `?${query}` : ''}#directory`
+}
+
+export default async function SeriesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string; era?: string; status?: string; sort?: string; page?: string }>
+}) {
+  const params = await searchParams
+  const filters = {
+    q: String(params.q || '').trim(),
+    era: String(params.era || '').trim(),
+    status: String(params.status || '').trim(),
+    sort: String(params.sort || 'name').trim(),
+  }
+  const requestedPage = Math.max(1, Number(params.page || 1) || 1)
+
+  const [{ data: rawRows, error }, { data: totalsData }] = await Promise.all([
+    supabase
+      .from('series_landing_stats_view')
+      .select('*')
+      .eq('is_published', true)
+      .order('series_name', { ascending: true }),
+    supabase.from('series_archive_totals_view').select('*').maybeSingle(),
+  ])
+
+  const rows = ((rawRows || []) as SeriesRow[]).filter((row) => !specialEventSeriesSlugs.has(row.slug))
+  const totals = (totalsData || {}) as TotalsRow
+  const rowBySlug = new Map(rows.map((row) => [row.slug, row]))
+
+  const heroSeries = rowBySlug.get('asa-midwest-tour') || [...rows].sort((a, b) => String(b.latest_event_date || '').localeCompare(String(a.latest_event_date || '')))[0] || null
+  let heroPhoto = ''
+  let heroTrack = ''
+
+  if (heroSeries) {
+    const { data: latestEvent } = await supabase
+      .from('SeriesEvents')
+      .select('track_id, track_name, race_date')
+      .eq('series_id', heroSeries.id)
+      .order('race_date', { ascending: false })
+      .limit(1)
+      .maybeSingle()
+
+    if (latestEvent?.track_id) {
+      const { data: track } = await supabase
+        .from('Tracks')
+        .select('slug, track_name')
+        .eq('id', latestEvent.track_id)
+        .maybeSingle()
+
+      if (track?.slug) {
+        const slugs = Array.from(new Set([track.slug, baseTrackSlug(track.slug)]))
+        const { data: photos } = await supabase
+          .from('photos')
+          .select('file_name, track_slug, year')
+          .in('track_slug', slugs)
+          .order('year', { ascending: false, nullsFirst: false })
+          .order('sequence', { ascending: true, nullsFirst: false })
+          .limit(1)
+        heroPhoto = photoUrl((photos || [])[0] as PhotoRow | undefined)
+        heroTrack = latestEvent.track_name || track.track_name || ''
+      }
+    }
+  }
+
+  const eraCounts = new Map(eras.map((era) => [era.key, rows.filter((row) => inEra(row, era.key)).length]))
+  const highlights = highlightDefinitions
+    .map((item) => ({ ...item, row: rowBySlug.get(item.slug) }))
+    .filter((item): item is typeof item & { row: SeriesRow } => Boolean(item.row))
+
+  const featured = featuredSlugs.map((slug) => rowBySlug.get(slug)).filter((row): row is SeriesRow => Boolean(row))
+
+  let filtered = rows.filter((row) => {
+    if (filters.q) {
+      const haystack = `${row.series_name} ${row.region || ''} ${row.years_active || ''}`.toLowerCase()
+      if (!haystack.includes(filters.q.toLowerCase())) return false
+    }
+    if (filters.era && !inEra(row, filters.era)) return false
+    if (filters.status === 'complete' && !completedSeries.has(row.slug)) return false
+    if (filters.status === 'active' && !isActive(row)) return false
+    if (filters.status === 'historic' && isActive(row)) return false
+    return true
+  })
+
+  filtered = [...filtered].sort((a, b) => {
+    if (filters.sort === 'events') return n(b.event_count) - n(a.event_count) || a.series_name.localeCompare(b.series_name)
+    if (filters.sort === 'seasons') return n(b.season_count) - n(a.season_count) || a.series_name.localeCompare(b.series_name)
+    if (filters.sort === 'newest') return seriesEnd(b) - seriesEnd(a) || a.series_name.localeCompare(b.series_name)
+    if (filters.sort === 'oldest') return seriesStart(a) - seriesStart(b) || a.series_name.localeCompare(b.series_name)
+    return a.series_name.localeCompare(b.series_name)
+  })
+
+  const pageSize = 20
+  const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize))
+  const currentPage = Math.min(requestedPage, pageCount)
+  const pageRows = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize)
+  const hasFilters = Boolean(filters.q || filters.era || filters.status || filters.sort !== 'name')
+
+  const firstYear = totals.first_year || Math.min(...rows.map(seriesStart).filter((year) => Number.isFinite(year)))
+  const lastYear = totals.last_year || 2026
 
   return (
-    <main style={pageStyle}>
-      <section style={heroSection}>
-        <div style={heroWatermark}>SERIES</div>
-        <div style={heroInner}><div style={heroGrid}><div>
-          <div style={eyebrow}>Museum Collection</div><h1 style={pageTitle}>Series</h1>
-          <p style={heroTagline}>Preserving the organizations, tours, and weekly divisions that shaped Midwestern racing.</p>
-          <p style={pageIntro}>Browse racing series from across the Upper Midwest archive, including touring groups, weekly divisions, sanctioning bodies, and historic organizations.</p>
-          <div style={archiveStatsRow}><div style={archiveStatCard}><div style={archiveStatLabel}>Series Archived</div><div style={archiveStatValue}>{rows.length}</div></div><div style={archiveStatCard}><div style={archiveStatLabel}>Earliest Record</div><div style={archiveStatValue}>{firstSeriesYear}</div></div><div style={archiveStatCard}><div style={archiveStatLabel}>Modern / Active</div><div style={archiveStatValue}>{activeSeriesCount}</div></div></div>
-        </div>{featuredSeries ? <div style={featuredCard}><div style={featuredLabel}>Featured Series</div><div style={featuredLogoWrap}><SeriesLogo slug={featuredSeries.slug} seriesName={featuredSeries.series_name} /></div><div style={featuredBody}><div style={featuredName}>{featuredSeries.series_name}</div><div style={featuredMeta}>{featuredSeries.region || 'Upper Midwest Archive'}{featuredSeries.years_active ? ` • ${featuredSeries.years_active}` : ''}</div><p style={featuredText}>Explore season history, associated tracks, race records, and related archive material.</p><Link href={`/series/${featuredSeries.slug}`} style={featuredButton}>Explore Series</Link></div></div> : null}</div></div>
+    <main className={styles.page}>
+      <section className={styles.hero}>
+        {heroPhoto ? <img src={heroPhoto} alt="" aria-hidden="true" className={styles.heroImage} /> : <div className={styles.heroFallback} />}
+        <div className={styles.heroShade} />
+        <div className={styles.heroInner}>
+          <div className={styles.heroGrid}>
+            <div>
+              <div className={styles.eyebrow}>Upper Midwest Series Archive</div>
+              <h1 className={styles.title}>Series</h1>
+              <div className={styles.subtitle}>Explore {formatNumber(totals.series_count || rows.length)} racing organizations</div>
+              <p className={styles.intro}>
+                Discover touring series, sanctioning bodies, championship organizations, and regional race groups preserved across the museum. Search season history, champions, events, winners, tracks, and related archival material.
+              </p>
+            </div>
+            <div className={styles.heroScript} aria-hidden="true">
+              <span>Series</span><strong>Build</strong><strong>Legacies</strong>
+            </div>
+          </div>
+
+          <div className={styles.statsGrid}>
+            <HeroStat icon="◉" value={formatNumber(totals.series_count || rows.length)} label="Series Archived" />
+            <HeroStat icon="▦" value={formatNumber(totals.season_count)} label="Seasons Recorded" />
+            <HeroStat icon="⚑" value={formatNumber(totals.event_count)} label="Race Events Recorded" />
+            <HeroStat icon="★" value={formatNumber(totals.winner_count)} label="Feature Winners" />
+            <HeroStat icon="⌁" value={`${firstYear}–${lastYear}`} label="Years of Series History" />
+          </div>
+
+          <form className={styles.searchPanel} action="/series" method="get">
+            <div className={styles.searchRow}>
+              <div className={styles.searchInputWrap}>
+                <span className={styles.searchIcon}>⌕</span>
+                <input className={styles.searchInput} type="search" name="q" defaultValue={filters.q} placeholder="Search series by name, region, or era..." />
+              </div>
+              <button className={styles.searchButton} type="submit">Search Series</button>
+            </div>
+            <div className={styles.filterGrid}>
+              <label className={styles.filterField}><span>Era</span><select name="era" defaultValue={filters.era}><option value="">All Eras</option>{eras.map((era) => <option key={era.key} value={era.key}>{era.title}</option>)}</select></label>
+              <label className={styles.filterField}><span>Archive Status</span><select name="status" defaultValue={filters.status}><option value="">All Series</option><option value="active">Current / Recent</option><option value="historic">Historic</option><option value="complete">Completed Museum Archives</option></select></label>
+              <label className={styles.filterField}><span>Sort By</span><select name="sort" defaultValue={filters.sort}><option value="name">Series Name (A–Z)</option><option value="events">Most Recorded Events</option><option value="seasons">Most Seasons</option><option value="newest">Newest Activity</option><option value="oldest">Earliest History</option></select></label>
+              <div className={styles.filterActions}>{hasFilters ? <Link href="/series#directory">Clear filters</Link> : 'Search the complete series archive'}</div>
+            </div>
+          </form>
+        </div>
       </section>
-      <div style={archiveDivider}>Series Collection</div>
-      <section style={contentWrap}>{error ? <div style={errorBox}>Unable to load series right now.</div> : rows.length === 0 ? <div style={emptyBox}>No series available yet.</div> : <div style={gridWrap}>{rows.map((s) => { const isComplete = completedSeries.has(s.slug); return <Link key={s.slug} href={`/series/${s.slug}`} style={{...seriesCard, ...(isComplete ? completedSeriesCard : {})}}><div style={seriesLogoWrap}><SeriesLogo slug={s.slug} seriesName={s.series_name} /></div><div style={seriesNameStyle}>{s.series_name}</div>{(s.region || s.years_active) && <div style={seriesMetaStyle}>{s.region || 'Region TBD'}{s.region && s.years_active ? ' • ' : ''}{s.years_active || ''}</div>}</Link> })}</div>}</section>
+
+      <div className={styles.content}>
+        <section className={styles.section}>
+          <SectionHeader kicker="Browse the archive" title="Browse by Era" note="Jump directly into a period of series history." />
+          <div className={styles.eraGrid}>
+            {eras.map((era) => (
+              <Link key={era.key} href={buildHref(1, { ...filters, era: era.key })} className={styles.eraCard}>
+                <strong>{era.title}</strong><span>{eraCounts.get(era.key) || 0} series</span><small>{era.note}</small>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <SectionHeader kicker="Museum archive highlights" title="Explore Series History" note={heroTrack ? `Current archive imagery from ${heroTrack}.` : 'Key series from across the museum archive.'} />
+          <div className={styles.highlightGrid}>
+            {highlights.map(({ row, label, stat }) => (
+              <Link href={`/series/${row.slug}`} className={styles.highlightCard} key={row.slug}>
+                <div className={styles.highlightMedia}><SeriesLogo slug={row.slug} seriesName={row.series_name} /></div>
+                <div className={styles.highlightBody}>
+                  <div className={styles.cardLabel}>{label}</div>
+                  <div className={styles.highlightTitle}>{row.series_name}</div>
+                  <div className={styles.highlightMeta}>{row.region || 'Upper Midwest'} • {yearsLabel(row)}</div>
+                  <div className={styles.highlightStat}>{highlightStat(row, stat)}</div>
+                  <div className={styles.highlightCta}>View Series →</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <SectionHeader kicker="Museum highlights" title="Featured Series" note="A cross-section of major touring and championship archives." />
+          <div className={styles.featuredGrid}>
+            {featured.map((row) => {
+              const complete = completedSeries.has(row.slug)
+              return (
+                <Link href={`/series/${row.slug}`} className={`${styles.featuredCard} ${complete ? styles.complete : ''}`} key={row.slug}>
+                  <div className={styles.featuredLogo}><SeriesLogo slug={row.slug} seriesName={row.series_name} /></div>
+                  <div className={styles.featuredBody}>
+                    <div className={styles.featuredName}>{row.series_name}</div>
+                    <div className={styles.featuredRegion}>{row.region || 'Upper Midwest'} • {yearsLabel(row)}</div>
+                    <div className={styles.featuredStats}>
+                      <MiniStat value={formatNumber(row.season_count)} label="Seasons" />
+                      <MiniStat value={formatNumber(row.event_count)} label="Events" />
+                      <MiniStat value={formatNumber(row.winner_count)} label="Winners" />
+                    </div>
+                    {complete ? <div className={styles.completeBadge}>Museum archive complete</div> : null}
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+
+        <section className={styles.section} id="directory">
+          <SectionHeader kicker="Research directory" title="Complete Series Directory" note={`${filtered.length.toLocaleString('en-US')} series match the current view`} />
+          {error ? <div className={styles.empty}>Unable to load the series directory right now.</div> : pageRows.length === 0 ? <div className={styles.empty}>No series match those filters.</div> : (
+            <>
+              <div className={styles.directory}>
+                <div className={styles.directoryHead}><span>Series</span><span>Region</span><span>Years</span><span>Seasons</span><span>Events</span><span>Winners</span><span>Status</span></div>
+                {pageRows.map((row) => {
+                  const complete = completedSeries.has(row.slug)
+                  return (
+                    <Link href={`/series/${row.slug}`} className={`${styles.directoryRow} ${complete ? styles.complete : ''}`} key={row.slug}>
+                      <div className={styles.seriesIdentity}>
+                        <div className={styles.directoryLogo}><SeriesLogo slug={row.slug} seriesName={row.series_name} /></div>
+                        <div><strong>{row.series_name}</strong><span>{complete ? 'Completed museum archive' : 'Series profile'}</span></div>
+                      </div>
+                      <div className={styles.directoryValue}>{row.region || 'Upper Midwest'}</div>
+                      <div className={styles.directoryValue}>{yearsLabel(row)}</div>
+                      <div className={styles.directoryNumber}>{formatNumber(row.season_count)}</div>
+                      <div className={styles.directoryNumber}>{formatNumber(row.event_count)}</div>
+                      <div className={styles.directoryNumber}>{formatNumber(row.winner_count)}</div>
+                      <div className={`${styles.directoryStatus} ${complete ? styles.complete : ''}`}>{complete ? 'Complete' : isActive(row) ? 'Current' : 'Historic'}</div>
+                    </Link>
+                  )
+                })}
+              </div>
+              <div className={styles.pagination}>
+                <span>Page {currentPage} of {pageCount}</span>
+                <div>{currentPage > 1 ? <Link href={buildHref(currentPage - 1, filters)}>← Previous</Link> : null}{currentPage > 1 && currentPage < pageCount ? '   ·   ' : null}{currentPage < pageCount ? <Link href={buildHref(currentPage + 1, filters)}>Next →</Link> : null}</div>
+              </div>
+            </>
+          )}
+        </section>
+
+        <section className={styles.bottomGrid}>
+          <Link href="/results" className={styles.bottomCard}><strong>Race Results Archive</strong><p>Explore recorded feature results across tracks, drivers, special events, and series.</p><span>Browse Results →</span></Link>
+          <Link href="/drivers" className={styles.bottomCard}><strong>Driver Directory</strong><p>Move from series history into the complete museum driver archive.</p><span>Browse Drivers →</span></Link>
+          <Link href="/stats/feature-winners" className={styles.bottomCard}><strong>Research Center</strong><p>Compare winners, championships, archive totals, and museum research records.</p><span>Open Research Center →</span></Link>
+        </section>
+      </div>
     </main>
   )
 }
 
-const pageStyle: CSSProperties = { background: '#eadfc7', minHeight: '100vh', color: '#2f2417', fontFamily: 'Georgia, serif' }
-const heroSection: CSSProperties = { position: 'relative', overflow: 'hidden', background: 'radial-gradient(circle at 78% 18%, rgba(122,88,39,0.12), transparent 28%), linear-gradient(to bottom, #e7d9bf, #eadfc7)', borderBottom: '2px solid #b29364' }
-const heroWatermark: CSSProperties = { position: 'absolute', right: '-48px', top: '-24px', fontSize: '220px', fontWeight: 700, lineHeight: 1, color: 'rgba(90, 62, 29, 0.045)', pointerEvents: 'none', userSelect: 'none' }
-const heroInner: CSSProperties = { position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '34px 20px 42px' }
-const heroGrid: CSSProperties = { display: 'grid', gridTemplateColumns: 'minmax(0, 1.15fr) 380px', gap: '42px', alignItems: 'center' }
-const eyebrow: CSSProperties = { fontSize: '15px', letterSpacing: '1px', textTransform: 'uppercase', color: '#7a5827', marginBottom: '8px' }
-const pageTitle: CSSProperties = { fontSize: '56px', margin: '0 0 10px', color: '#3d2b16', lineHeight: 1.05 }
-const heroTagline: CSSProperties = { margin: '0 0 18px', fontSize: '24px', lineHeight: 1.4, fontStyle: 'italic', color: '#6f4d24', maxWidth: '760px' }
-const pageIntro: CSSProperties = { fontSize: '20px', lineHeight: 1.6, maxWidth: '820px', margin: 0 }
-const archiveStatsRow: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '14px', marginTop: '24px', maxWidth: '760px' }
-const archiveStatCard: CSSProperties = { background: 'rgba(239, 225, 199, 0.92)', border: '1px solid #b89b6d', padding: '18px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }
-const archiveStatLabel: CSSProperties = { fontSize: '13px', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', color: '#7a5827', marginBottom: '6px' }
-const archiveStatValue: CSSProperties = { fontSize: '36px', fontWeight: 700, color: '#3d2b16', lineHeight: 1.1 }
-const featuredCard: CSSProperties = { border: '1px solid #b29364', background: '#f4e8d0', boxShadow: '0 14px 28px rgba(40, 28, 14, 0.14)', transform: 'rotate(-1deg)', overflow: 'hidden' }
-const featuredLabel: CSSProperties = { fontSize: '13px', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', color: '#7a5827', padding: '10px 14px 0' }
-const featuredLogoWrap: CSSProperties = { height: '170px', margin: '8px 14px 0', background: '#efe7d6', border: '1px solid #b29364', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }
-const featuredBody: CSSProperties = { padding: '14px 16px 16px' }
-const featuredName: CSSProperties = { fontSize: '24px', fontWeight: 700, color: '#3d2b16', lineHeight: 1.1, marginBottom: '6px' }
-const featuredMeta: CSSProperties = { fontSize: '14px', color: '#6a4a1f', fontWeight: 700, marginBottom: '8px' }
-const featuredText: CSSProperties = { fontSize: '14px', lineHeight: 1.5, color: '#5a4630', margin: '0 0 12px' }
-const featuredButton: CSSProperties = { display: 'inline-block', background: '#7a5827', color: '#fff8ea', padding: '9px 12px', border: '1px solid #5d3f17', textDecoration: 'none', fontWeight: 700 }
-const archiveDivider: CSSProperties = { maxWidth: '1200px', margin: '0 auto', padding: '18px 20px 0', fontSize: '20px', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', color: '#6b4a22', borderTop: '2px solid rgba(122,88,39,0.25)' }
-const contentWrap: CSSProperties = { maxWidth: '1200px', margin: '0 auto', padding: '28px 20px 40px' }
-const errorBox: CSSProperties = { padding: '18px', background: '#f2d8d3', border: '1px solid #b36a5e' }
-const emptyBox: CSSProperties = { padding: '18px', background: '#f1e5ce', border: '1px solid #c2a97d' }
-const gridWrap: CSSProperties = { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }
-const seriesCard: CSSProperties = { display: 'block', textDecoration: 'none', border: '2px solid #b29364', background: '#ddc8a2', padding: '10px', color: '#2f2417', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }
-const completedSeriesCard: CSSProperties = { border: '4px solid #9f1d20', padding: '8px', boxShadow: '0 2px 10px rgba(120, 18, 20, 0.22)' }
-const seriesLogoWrap: CSSProperties = { height: '160px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#efe7d6', border: '1px solid #b29364', marginBottom: '12px', overflow: 'hidden' }
-const seriesNameStyle: CSSProperties = { textAlign: 'center', fontWeight: 700, color: '#3d2b16', marginBottom: '4px', lineHeight: 1.2 }
-const seriesMetaStyle: CSSProperties = { textAlign: 'center', fontSize: '14px', color: '#5a3a1b' }
+function HeroStat({ icon, value, label }: { icon: string; value: string; label: string }) {
+  return <div className={styles.statCard}><div className={styles.statIcon}>{icon}</div><div><div className={styles.statValue}>{value}</div><div className={styles.statLabel}>{label}</div></div></div>
+}
+
+function MiniStat({ value, label }: { value: string; label: string }) {
+  return <div className={styles.featuredStat}><strong>{value}</strong><span>{label}</span></div>
+}
+
+function SectionHeader({ kicker, title, note }: { kicker: string; title: string; note: string }) {
+  return <div className={styles.sectionHeader}><div><div className={styles.sectionKicker}>{kicker}</div><h2>{title}</h2></div><div className={styles.sectionNote}>{note}</div></div>
+}
+
+function highlightStat(row: SeriesRow, kind: 'events' | 'seasons' | 'latest' | 'winners') {
+  if (kind === 'events') return `${formatNumber(row.event_count)} recorded events`
+  if (kind === 'seasons') return `${formatNumber(row.season_count)} seasons documented`
+  if (kind === 'winners') return `${formatNumber(row.winner_count)} different winners`
+  if (row.latest_event_date) {
+    const [year, month, day] = row.latest_event_date.split('-').map(Number)
+    if (year && month && day) return `Latest archive activity • ${new Date(year, month - 1, day).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`
+  }
+  return 'Recently active series archive'
+}
