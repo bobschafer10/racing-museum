@@ -51,7 +51,7 @@ type PhotoRow = {
   photographer_slug?: string | null
   credit_type?: string | null
   year?: string | number | null
-  created_at?: string | null
+  sequence?: number | null
 }
 
 function dailyPick<T>(items: T[]): T | null {
@@ -88,13 +88,6 @@ function formatApprox(value?: number | null) {
   return `${number}+`
 }
 
-function formatDate(value?: string | null) {
-  if (!value) return 'Recently'
-  const date = new Date(value)
-  if (Number.isNaN(date.getTime())) return 'Recently'
-  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-}
-
 function trackYears(track?: TrackRow | null) {
   if (!track?.first_year && !track?.last_year) return 'Historic racing venue'
   return `${track.first_year || '?'}–${track.last_year || 'Present'}`
@@ -120,12 +113,13 @@ export default async function Home() {
     supabase.from('Series').select('*').eq('is_published', true).not('slug', 'is', null).limit(160),
     supabase
       .from('photos')
-      .select('file_name,driver_slug,track_slug,photographer_slug,credit_type,year,created_at')
-      .neq('credit_type', 'unknown')
+      .select('file_name,driver_slug,track_slug,photographer_slug,credit_type,year,sequence')
+      .not('driver_slug', 'is', null)
+      .not('track_slug', 'is', null)
       .not('driver_slug', 'in', '("unknown-driver","unknown")')
       .not('track_slug', 'in', '("unknown-track","unknown")')
-      .order('created_at', { ascending: false })
-      .limit(140),
+      .order('sequence', { ascending: false, nullsFirst: false })
+      .limit(180),
   ])
 
   const stats = (statsResult.data || {}) as StatsRow
@@ -144,11 +138,11 @@ export default async function Home() {
   if (featuredDriver?.driver_slug) {
     const { data } = await supabase
       .from('photos')
-      .select('file_name,driver_slug,track_slug,photographer_slug,credit_type,year,created_at')
+      .select('file_name,driver_slug,track_slug,photographer_slug,credit_type,year,sequence')
       .eq('driver_slug', featuredDriver.driver_slug)
-      .neq('credit_type', 'unknown')
+      .not('track_slug', 'is', null)
       .not('track_slug', 'in', '("unknown-track","unknown")')
-      .order('year', { ascending: false })
+      .order('sequence', { ascending: false, nullsFirst: false })
       .limit(1)
       .maybeSingle()
     featuredDriverPhoto = (data || null) as PhotoRow | null
@@ -158,7 +152,9 @@ export default async function Home() {
     ? photos.find((photo) => photo.track_slug === featuredTrack.slug) || null
     : null
 
-  const spotlightPhoto = dailyPick(photos.slice(0, 80))
+  const spotlightPhoto = dailyPick(photos.slice(0, 90))
+  const supportPhoto = photos.find((photo) => photo.file_name !== spotlightPhoto?.file_name) || spotlightPhoto
+  const gatewayTrackPhoto = featuredTrackPhoto || photos[2] || photos[0] || null
   const recentAdditions = photos.slice(0, 6)
   const seriesLogo = featuredSeries?.slug ? `/logos/series/${featuredSeries.slug}.jpg` : null
 
@@ -168,7 +164,7 @@ export default async function Home() {
       text: 'Explore the careers, hometowns, victories, photographs, and records of the racers who made Upper Midwest racing history.',
       href: '/drivers',
       button: 'View Drivers →',
-      image: featuredDriverPhoto ? photoStorageUrl(featuredDriverPhoto) : '',
+      image: featuredDriverPhoto ? photoStorageUrl(featuredDriverPhoto) : '/media/home/photographers.jpg',
       imageAlt: featuredDriver?.driver_name || 'Historic racing driver',
       icon: 'DR',
     },
@@ -177,7 +173,7 @@ export default async function Home() {
       text: 'From hometown ovals to historic speedways, discover tracks by state and follow their history across generations.',
       href: '/tracks',
       button: 'Explore Tracks →',
-      image: featuredTrackPhoto ? photoStorageUrl(featuredTrackPhoto) : '',
+      image: gatewayTrackPhoto ? photoStorageUrl(gatewayTrackPhoto) : '/media/home/event-flyers.jpg',
       imageAlt: featuredTrack?.track_name || 'Historic race track',
       icon: 'TR',
     },
@@ -238,7 +234,8 @@ export default async function Home() {
           <div className={styles.heroCopy}>
             <div className={`${styles.eyebrow} ${styles.heroEyebrow}`}>A living archive of racing history</div>
             <h1 className={styles.heroTitle}>
-              Preserving the History of Upper Midwest Auto Racing
+              <span>Preserving the History of</span>
+              <span>Upper Midwest Auto Racing</span>
             </h1>
             <p className={styles.heroText}>
               Explore drivers, tracks, race results, series, special events, and historic photographs — preserved for future generations.
@@ -262,7 +259,8 @@ export default async function Home() {
       <div className={styles.shell}>
         <section className={styles.section}>
           <div className={styles.researchPanel}>
-            <div>
+            <div className={styles.researchFlag} aria-hidden="true" />
+            <div className={styles.researchMain}>
               <div className={styles.eyebrow}>Museum Research Collection</div>
               <h2 className={styles.researchTitle}>Victory Lane Research Center</h2>
               <p className={styles.researchText}>
@@ -293,6 +291,7 @@ export default async function Home() {
                 <NumberCell value={formatExact(stats.tracks_count)} label="Tracks" />
                 <NumberCell value="1903–2026" label="Coverage" />
               </div>
+              <p className={styles.numberNote}>More than a century of racing history, preserved and growing.</p>
             </aside>
           </div>
         </section>
@@ -332,9 +331,11 @@ export default async function Home() {
               <div className={styles.recentList}>
                 {recentAdditions.length ? recentAdditions.map((photo, index) => (
                   <div key={`${photo.file_name}-${index}`} className={styles.recentRow}>
-                    <span className={styles.recentDate}>{formatDate(photo.created_at)}</span>
+                    <span className={styles.recentDate}>
+                      {photo.sequence ? `#${photo.sequence.toLocaleString('en-US')}` : 'Latest'}
+                    </span>
                     <span className={styles.recentText}>
-                      Photo added: {formatSlugName(photo.driver_slug)} at {formatSlugName(photo.track_slug)}
+                      New photo: {formatSlugName(photo.driver_slug)} at {formatSlugName(photo.track_slug)}
                     </span>
                     <span className={styles.badge}>Photo</span>
                   </div>
@@ -421,10 +422,14 @@ export default async function Home() {
           </div>
         </section>
 
-        <section className={styles.section}>
+        <section id="support-museum" className={styles.section}>
           <div className={styles.supportMilestone}>
             <div className={styles.supportPanel}>
-              <img src="/media/home/event-flyers.jpg" alt="Historic racing archive material" />
+              {supportPhoto ? (
+                <img className={styles.supportImage} src={photoStorageUrl(supportPhoto)} alt="Upper Midwest racing history" />
+              ) : (
+                <img className={styles.supportImage} src="/media/home/event-flyers.jpg" alt="Historic racing archive material" />
+              )}
               <div>
                 <div className={styles.eyebrow}>Preserving Racing History</div>
                 <h2 className={styles.supportTitle}>A Living Archive for Upper Midwest Auto Racing</h2>
@@ -490,7 +495,7 @@ export default async function Home() {
                       <strong>{formatSlugName(spotlightPhoto.driver_slug)}</strong>
                       <span>
                         {formatSlugName(spotlightPhoto.track_slug)}
-                        {spotlightPhoto.year ? ` • ${spotlightPhoto.year}` : ''}
+                        {spotlightPhoto.year && spotlightPhoto.year !== 'unknown-year' ? ` • ${spotlightPhoto.year}` : ''}
                         {spotlightPhoto.photographer_slug && !spotlightPhoto.photographer_slug.startsWith('unknown')
                           ? ` • ${formatSlugName(spotlightPhoto.photographer_slug)}`
                           : ''}
