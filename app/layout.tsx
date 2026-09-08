@@ -53,8 +53,8 @@ export default function RootLayout({
               <Link href="/events" style={navLink}>Special Events</Link>
               <Link href="/results" style={navLink}>Results</Link>
               <Link href="/media" style={navLink}>Photos & Media</Link>
-              <Link href="/stats/feature-winners" style={navLink}>Research Center</Link>
-              <Link href="/#support-museum" style={supportNavLink}>Support the Museum</Link>
+              <Link href="/stats/feature-winners" style={researchNavLink}>Research Center</Link>
+              <Link href="/#support-museum" style={navLink}>Support the Museum</Link>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ const navLink: React.CSSProperties = {
   transition: 'opacity 0.2s ease',
 }
 
-const supportNavLink: React.CSSProperties = {
+const researchNavLink: React.CSSProperties = {
   ...navLink,
   color: '#fff4dd',
   fontWeight: 800,
