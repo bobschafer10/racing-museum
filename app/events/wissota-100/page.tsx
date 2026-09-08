@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
+export const dynamic='force-dynamic'
 export const revalidate=300
 const SERIES_IDS=[95,96,98,99,100,101,102,103],FIRST_YEAR=1986,LAST_YEAR=2025
 const divisionNames:Record<number,string>={95:'Late Model',96:'Modified',98:'Super Stock',99:'Street Stock',100:'Midwest Modified',101:'Mod Four',102:'Pure Stock',103:'Hornet'}
