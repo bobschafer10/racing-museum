@@ -69,6 +69,6 @@ export default async function ResultsPage(){
       </article>)}</div>:<div className="ra-empty">No recent results are available.</div>}
     </section>
 
-    <section className="ra-section"><div className="ra-footer-links"><Link href="/tracks" className="ra-footer-link">Track Archive<span>Browse tracks →</span></Link><Link href="/results/year" className="ra-footer-link">Season Archive<span>Browse years →</span></Link><Link href="/research" className="ra-footer-link">Research Center<span>Open research tools →</span></Link></div></section>
+    <section className="ra-section"><div className="ra-footer-links"><Link href="/tracks" className="ra-footer-link">Track Archive<span>Browse tracks →</span></Link><Link href="/results/year" className="ra-footer-link">Season Archive<span>Browse years →</span></Link><Link href="/stats/feature-winners" className="ra-footer-link">Research Center<span>Open research tools →</span></Link></div></section>
   </main>
 }
