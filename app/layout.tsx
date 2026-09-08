@@ -38,11 +38,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-
-        {/* NAV BAR */}
         <div style={navBar} className="site-nav-bar">
           <div style={navInner} className="site-nav-inner">
-
             <div style={navTagline} className="site-nav-tagline">
               Every click opens a door to another piece of auto racing history.
             </div>
@@ -54,22 +51,21 @@ export default function RootLayout({
               <Link href="/series" style={navLink}>Series</Link>
               <Link href="/events" style={navLink}>Special Events</Link>
               <Link href="/results" style={navLink}>Results</Link>
-              <Link href="/media" style={navLink}>Media Archive</Link>
-              <Link href="/stats/feature-winners" style={researchNavLink}>Research Center</Link>
+              <Link href="/media" style={navLink}>Photos & Media</Link>
+              <Link href="/stats/feature-winners" style={navLink}>Research Center</Link>
+              <Link href="/#support-museum" style={supportNavLink}>Support the Museum</Link>
             </div>
-
           </div>
         </div>
 
-        {/* PAGE CONTENT */}
         <main style={{ flex: 1 }}>
           {children}
         </main>
-
       </body>
     </html>
   );
 }
+
 const navBar: React.CSSProperties = {
   background: '#2f2417',
   color: '#eadfc7',
@@ -79,20 +75,20 @@ const navBar: React.CSSProperties = {
 const navInner: React.CSSProperties = {
   maxWidth: '1600px',
   margin: '0 auto',
-  padding: '12px 20px',
+  padding: '9px 18px',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  gap: '24px',
+  gap: '22px',
   flexWrap: 'wrap',
 }
 
 const navTagline: React.CSSProperties = {
   color: '#f0dfbf',
-  fontSize: '25px',
-  fontWeight: 600,
-  lineHeight: 1.15,
-  flex: '1 1 520px',
+  fontSize: '14px',
+  fontWeight: 650,
+  lineHeight: 1.2,
+  flex: '1 1 360px',
   minWidth: 0,
   whiteSpace: 'normal',
   overflow: 'visible',
@@ -101,27 +97,21 @@ const navTagline: React.CSSProperties = {
 
 const navLinks: React.CSSProperties = {
   display: 'flex',
-  gap: '18px',
-  fontSize: '15px',
+  alignItems: 'center',
+  gap: '15px',
+  fontSize: '13px',
   flexWrap: 'wrap',
   justifyContent: 'center',
-}
-
-const navLogo: React.CSSProperties = {
-  fontSize: '18px',
-  fontWeight: 600,
-  textDecoration: 'none',
-  color: '#eadfc7',
 }
 
 const navLink: React.CSSProperties = {
   textDecoration: 'none',
   color: '#f3e4c7',
-  fontWeight: 500,
+  fontWeight: 600,
   transition: 'opacity 0.2s ease',
 }
 
-const researchNavLink: React.CSSProperties = {
+const supportNavLink: React.CSSProperties = {
   ...navLink,
   color: '#fff4dd',
   fontWeight: 800,
