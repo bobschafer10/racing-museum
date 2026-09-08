@@ -7,13 +7,19 @@ export const revalidate = 300
 function formatDate(value:string){return new Date(`${value}T12:00:00`).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}
 function fmt(value:number|null|undefined){return value==null?'—':value.toLocaleString()}
 
+type ArchiveStats = {
+  recorded_results?: number | string | null
+  race_events?: number | string | null
+  tracks_archived?: number | string | null
+  drivers_indexed?: number | string | null
+  first_year?: number | string | null
+  latest_year?: number | string | null
+}
+
 export default async function ResultsPage(){
-  const [recentRes,resultsCount,eventsCount,tracksCount,driversCount,yearsRes]=await Promise.all([
+  const [recentRes,statsRes,yearsRes]=await Promise.all([
     supabase.from('global_results_view').select('*').order('race_date',{ascending:false}).order('track_name',{ascending:true}).limit(140),
-    supabase.from('Results').select('*',{count:'exact',head:true}),
-    supabase.from('Events').select('*',{count:'exact',head:true}),
-    supabase.from('Tracks').select('*',{count:'exact',head:true}),
-    supabase.from('Drivers').select('*',{count:'exact',head:true}),
+    supabase.rpc('results_archive_public_stats').single(),
     supabase.from('results_years').select('year'),
   ])
 
@@ -21,8 +27,9 @@ export default async function ResultsPage(){
   for(const row of recentRes.data||[]){if(!grouped.has(row.race_date))grouped.set(row.race_date,[]);grouped.get(row.race_date)!.push(row)}
   const recentDates=Array.from(grouped.entries()).slice(0,4)
   const years=(yearsRes.data||[]).map((r:any)=>Number(r.year)).filter(Number.isFinite).sort((a:number,b:number)=>a-b)
-  const firstYear=years[0]||1903
-  const latestYear=years[years.length-1]||2026
+  const stats=(statsRes.data||{}) as ArchiveStats
+  const firstYear=Number(stats.first_year)||years[0]||1903
+  const latestYear=Number(stats.latest_year)||years[years.length-1]||2026
   const latestDate=recentDates[0]?.[0]
 
   return <main className="ra-page">
@@ -34,10 +41,10 @@ export default async function ResultsPage(){
       <p className="ra-lede">Explore more than a century of race nights, feature winners, finishing orders, tracks, and drivers preserved throughout the museum. Start with the latest results or move deep into the historical record.</p>
       <div className="ra-actions"><Link href="/results/year" className="ra-button">Browse by Year</Link><Link href="/tracks" className="ra-button-ghost">Browse by Track</Link></div>
       <div className="ra-stats">
-        <div className="ra-stat"><strong>{fmt(resultsCount.count)}</strong><span>Recorded Results</span></div>
-        <div className="ra-stat"><strong>{fmt(eventsCount.count)}</strong><span>Race Events</span></div>
-        <div className="ra-stat"><strong>{fmt(tracksCount.count)}</strong><span>Tracks Archived</span></div>
-        <div className="ra-stat"><strong>{fmt(driversCount.count)}</strong><span>Drivers Indexed</span></div>
+        <div className="ra-stat"><strong>{fmt(Number(stats.recorded_results)||0)}</strong><span>Recorded Results</span></div>
+        <div className="ra-stat"><strong>{fmt(Number(stats.race_events)||0)}</strong><span>Race Events</span></div>
+        <div className="ra-stat"><strong>{fmt(Number(stats.tracks_archived)||0)}</strong><span>Tracks Archived</span></div>
+        <div className="ra-stat"><strong>{fmt(Number(stats.drivers_indexed)||0)}</strong><span>Drivers Indexed</span></div>
         <div className="ra-stat"><strong>{firstYear}–{latestYear}</strong><span>Years of Racing</span></div>
       </div>
     </div></section>
