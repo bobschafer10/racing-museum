@@ -22,6 +22,11 @@ type SearchResponse = {
   error?: string
 }
 
+type NewspaperSearchProps = {
+  searchablePages: number
+  searchableYears: number[]
+}
+
 const EXAMPLES = ["Miles Melius", "point standings", "Slinger", "Etchie Biertzer"]
 
 function displayDate(value: string) {
@@ -34,7 +39,17 @@ function displayDate(value: string) {
   })
 }
 
-export default function NewspaperSearch() {
+function yearSummary(years: number[]) {
+  if (!years.length) return "No newspaper years are indexed yet."
+  if (years.length === 1) return `${years[0]} Midwest Racing News.`
+  const sorted = [...years].sort((a, b) => a - b)
+  const consecutive = sorted.every((year, index) => index === 0 || year === sorted[index - 1] + 1)
+  return consecutive
+    ? `${sorted[0]}–${sorted[sorted.length - 1]} Midwest Racing News.`
+    : `${sorted.join(", ")} Midwest Racing News.`
+}
+
+export default function NewspaperSearch({ searchablePages, searchableYears }: NewspaperSearchProps) {
   const [query, setQuery] = useState("")
   const [searchedQuery, setSearchedQuery] = useState("")
   const [results, setResults] = useState<SearchResult[]>([])
@@ -79,7 +94,7 @@ export default function NewspaperSearch() {
         <p>
           Search names, tracks, phrases, results, and point standings inside OCR-indexed newspaper pages. Results open the original scanned source page.
         </p>
-        <div className="ma-ocr-status"><strong>Searchable now:</strong> 136 pages of 1959 Midwest Racing News. More years will appear here as OCR indexing continues.</div>
+        <div className="ma-ocr-status"><strong>Searchable now:</strong> {searchablePages.toLocaleString()} OCR-indexed pages from {yearSummary(searchableYears)} More years appear automatically as indexing completes.</div>
       </div>
 
       <form className="ma-ocr-form" onSubmit={submit}>

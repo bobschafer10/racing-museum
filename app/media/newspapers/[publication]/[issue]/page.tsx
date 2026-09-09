@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getNewspaperIssue } from "@/lib/newspapers"
+import { supabase } from "@/lib/supabase"
 import NewspaperPageViewer from "./NewspaperPageViewer"
 import "../../../archive-dark.css"
 
@@ -30,7 +31,14 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
   const initialPageIndex = sourceIndex >= 0 ? sourceIndex : null
   const searchQueryValue = Array.isArray(search.q) ? search.q[0] : search.q
   const searchQuery = searchQueryValue?.trim() || ""
-  const isSearchable = publication === "midwest-racing-news" && issue.year === 1959
+
+  const { count: indexedPages } = await supabase
+    .from("newspaper_ocr_pages")
+    .select("id", { count: "exact", head: true })
+    .eq("publication_code", publication)
+    .eq("issue_date", issue.issueDate)
+    .eq("status", "complete")
+  const isSearchable = (indexedPages || 0) > 0
 
   return <main className="ma-page">
     <section className="ma-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.98),rgba(5,8,10,.84) 50%,rgba(5,8,10,.48)),url(${issue.coverImage})`,backgroundSize:'cover',backgroundPosition:'center 15%'}}>
