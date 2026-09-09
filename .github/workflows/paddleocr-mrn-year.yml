@@ -58,7 +58,7 @@ jobs:
             "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/public/data/newspapers-manifest.json" \
             -o /tmp/newspapers-manifest.json
           python - "$YEAR" "$GITHUB_OUTPUT" <<'PY'
-          import json, sys
+          import json, re, sys
           from pathlib import Path
           from urllib.parse import unquote, urlparse
 
@@ -67,6 +67,8 @@ jobs:
           issues = json.loads(Path('/tmp/newspapers-manifest.json').read_text(encoding='utf-8'))
           rows=[]
           total_pages=0
+          image_re=re.compile(r'.+\.(?:jpg|jpeg|png|webp)$', re.I)
+          numbered_re=re.compile(r'^\d+\.(?:jpg|jpeg|png|webp)$', re.I)
 
           for issue in issues:
               if issue.get('publicationSlug') != 'midwest-racing-news' or int(issue.get('year') or 0) != year:
@@ -74,25 +76,36 @@ jobs:
               issue_date=str(issue.get('issueDate') or issue.get('slug') or '')
               if not issue_date.startswith(f'{year}-'):
                   continue
-              urls=[]
+
+              # The archive stores front-cover/back-cover convenience copies alongside
+              # canonical numbered scans. They are useful for presentation but duplicate
+              # page 1 / the final numbered page in OCR search. Prefer numbered images.
+              all_urls=[]
               for value in [issue.get('coverImage'), *(issue.get('pages') or []), issue.get('backCoverImage')]:
                   if isinstance(value,str) and value:
-                      urls.append(value)
-              pages=[]
+                      all_urls.append(value)
+
+              filenames=[]
               seen=set()
-              for url in urls:
+              for url in all_urls:
                   filename=unquote(urlparse(url).path.split('/')[-1])
                   low=filename.lower()
                   if low in {'thumbnail.jpg','thumbnail.jpeg','thumbnail.png','thumbnail.webp'}:
                       continue
-                  if not low.endswith(('.jpg','.jpeg','.png','.webp')):
+                  if not image_re.fullmatch(filename):
                       continue
                   if filename in seen:
                       continue
                   seen.add(filename)
-                  pages.append(filename)
+                  filenames.append(filename)
+
+              numbered=[name for name in filenames if numbered_re.fullmatch(name)]
+              pages=numbered if numbered else [name for name in filenames if name.lower() not in {'front-cover.jpg','back-cover.jpg'}]
+              if not pages:
+                  pages=filenames
               if not pages:
                   raise SystemExit(f'No OCR page images found in manifest for {issue_date}')
+
               rows.append({'issue':issue_date,'pages_json':json.dumps(pages,separators=(',',':')),'page_count':len(pages)})
               total_pages += len(pages)
 
@@ -100,7 +113,7 @@ jobs:
           if not rows:
               raise SystemExit(f'No Midwest Racing News issues found for {year}')
           matrix=json.dumps({'include':rows},separators=(',',':'))
-          print(f'MRN {year}: {len(rows)} issues / {total_pages} unique issue pages')
+          print(f'MRN {year}: {len(rows)} issues / {total_pages} canonical numbered pages')
           for row in rows:
               print(f"  {row['issue']}: {row['page_count']} pages")
           with output.open('a',encoding='utf-8') as f:
