@@ -2,6 +2,7 @@ import Link from "next/link"
 import { getNewspaperIssues } from "@/lib/newspapers"
 import NewspaperSearch from "./NewspaperSearch"
 import "../archive-dark.css"
+import "./ocr-search.css"
 
 type PublicationGroup = { slug: string; name: string; years: Record<string, number>; issueCount: number; latestCover?: string }
 
@@ -56,7 +57,7 @@ export default async function NewspapersPage() {
         </div>
       </section>
 
-      <section className="ma-section">
+      <section className="ma-section" id="newspaper-search">
         <NewspaperSearch />
       </section>
 
