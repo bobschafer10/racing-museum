@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { supabase } from "@/lib/supabase"
+import { formatDriverSlugName } from "@/lib/driver-display"
 import styles from "../track-profile.module.css"
 
 const PAGE_SIZE = 96
@@ -140,7 +141,7 @@ export default async function TrackPhotosPage({
         ) : (
           <section className={styles.archivePhotoGrid}>
             {rows.map((photo: any) => {
-              const driverName = formatSlugName(photo.driver_slug) || "Driver not identified"
+              const driverName = formatDriverSlugName(photo.driver_slug)
               const photographer = formatSlugName(photo.photographer_slug)
               const hasDriver =
                 !!photo.driver_slug &&
@@ -171,7 +172,7 @@ export default async function TrackPhotosPage({
                           {driverName}
                         </Link>
                       ) : (
-                        driverName
+                        "Driver not identified"
                       )}
                     </strong>
                     <div>{photo.year && photo.year !== "unknown-year" ? photo.year : "Year unknown"}</div>
