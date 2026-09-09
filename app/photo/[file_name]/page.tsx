@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
+import { formatDriverSlugName } from '@/lib/driver-display'
 import '../../media/archive-dark.css'
 
 export const dynamic = 'force-dynamic'
@@ -21,7 +22,7 @@ export default async function PhotoDetailPage({ params }: { params: Promise<{ fi
   else if (photo.track_slug) relatedQuery = relatedQuery.eq('track_slug',photo.track_slug)
   const { data: related } = await relatedQuery
 
-  const driverName = formatSlugName(photo.driver_slug)
+  const driverName = formatDriverSlugName(photo.driver_slug)
   const photographerName = formatSlugName(photo.photographer_slug)
   const trackName = formatSlugName(photo.track_slug)
 
@@ -32,7 +33,7 @@ export default async function PhotoDetailPage({ params }: { params: Promise<{ fi
 
     <section className="ma-section"><div className="ma-grid-2" style={{gridTemplateColumns:'minmax(0,2fr) minmax(280px,1fr)'}}><div className="ma-panel" style={{display:'grid',placeItems:'center'}}><img src={imageUrl} alt={driverName} style={{width:'100%',maxHeight:'78vh',objectFit:'contain',display:'block'}}/></div><aside className="ma-panel"><div className="ma-kicker">Archive Metadata</div><h2 className="ma-h2" style={{fontSize:28,marginBottom:18}}>Photo Record</h2>{[['Driver',driverName],['Track',trackName],['Year',photo.year&&photo.year!=='unknown-year'?photo.year:'Year Unknown'],['Credit',formatCreditLine(photo.credit_type,photo.photographer_slug)],['File',photo.file_name]].map(([label,value])=><div key={label} style={{borderTop:'1px solid #283036',padding:'12px 0'}}><div className="ma-card-label">{label}</div><div style={{marginTop:5,color:'#fff',fontSize:13,wordBreak:'break-word'}}>{value}</div></div>)}<div className="ma-actions">{photo.driver_slug&&!isUnknown(photo.driver_slug)?<Link href={`/photos?driver=${encodeURIComponent(photo.driver_slug)}`} className="ma-button-ghost">More of This Driver</Link>:null}{photo.track_slug?<Link href={`/photos?track=${encodeURIComponent(photo.track_slug)}`} className="ma-button-ghost">More From This Track</Link>:null}</div></aside></div></section>
 
-    {(related||[]).length>0?<section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Connected Archive</div><h2 className="ma-h2">Related Photographs</h2></div><div className="ma-note">More images tied to the same driver or track.</div></div><div className="ma-grid-4">{(related||[]).map((r:any)=><Link href={`/photo/${encodeURIComponent(r.file_name)}`} className="ma-card" key={r.file_name}><div className="ma-card-media"><img src={photoUrl(r)} alt={formatSlugName(r.driver_slug)}/></div><div className="ma-card-body"><div className="ma-card-label">{r.year||'Year unknown'}</div><div className="ma-card-title">{formatSlugName(r.driver_slug)}</div><div className="ma-card-meta">{formatSlugName(r.track_slug)}</div><span className="ma-card-link">Open photo →</span></div></Link>)}</div></section>:null}
+    {(related||[]).length>0?<section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Connected Archive</div><h2 className="ma-h2">Related Photographs</h2></div><div className="ma-note">More images tied to the same driver or track.</div></div><div className="ma-grid-4">{(related||[]).map((r:any)=><Link href={`/photo/${encodeURIComponent(r.file_name)}`} className="ma-card" key={r.file_name}><div className="ma-card-media"><img src={photoUrl(r)} alt={formatDriverSlugName(r.driver_slug)}/></div><div className="ma-card-body"><div className="ma-card-label">{r.year||'Year unknown'}</div><div className="ma-card-title">{formatDriverSlugName(r.driver_slug)}</div><div className="ma-card-meta">{formatSlugName(r.track_slug)}</div><span className="ma-card-link">Open photo →</span></div></Link>)}</div></section>:null}
 
     <section className="ma-section"><div className="ma-footer-links"><Link href="/photos" className="ma-footer-link">Photo Archive<span>Search all photography →</span></Link><Link href="/photographers" className="ma-footer-link">Photographers<span>Browse credited collections →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
   </main>
