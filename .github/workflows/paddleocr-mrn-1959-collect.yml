@@ -1,0 +1,63 @@
+name: Collect MRN 1959 OCR Outputs
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-mrn-1959-collect.yml'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Download completed 1959 issue artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p collected
+          gh run download 34403200448 --repo "$GH_REPO" --pattern 'mrn-1959-1959-*' --dir collected
+          echo "Issue artifacts:"
+          find collected -maxdepth 1 -mindepth 1 -type d | sort
+          test "$(find collected -maxdepth 1 -mindepth 1 -type d | wc -l)" -eq 15
+
+      - name: Build combined manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('collected')
+          issues=[]
+          for p in sorted(root.rglob('summary.json')):
+              issues.append(json.loads(p.read_text(encoding='utf-8')))
+          out={
+            'publication':'midwest-racing-news',
+            'year':1959,
+            'issue_count':len(issues),
+            'page_count':sum(x.get('page_count',0) for x in issues),
+            'characters':sum(x.get('total_characters',0) for x in issues),
+            'candidates':sum(x.get('total_candidates',0) for x in issues),
+            'issues':issues,
+          }
+          Path('collected/manifest.json').write_text(json.dumps(out,indent=2),encoding='utf-8')
+          print(json.dumps({k:out[k] for k in ('issue_count','page_count','characters','candidates')},indent=2))
+          PY
+
+      - name: Upload consolidated 1959 OCR corpus
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-1959-ocr-corpus
+          path: collected
+          if-no-files-found: error
+          retention-days: 7
