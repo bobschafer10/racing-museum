@@ -1,0 +1,65 @@
+name: Temporary Wayback Enduro Audit
+
+on:
+  push:
+    paths:
+      - '.github/workflows/wayback-enduro-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Fetch CDX and archived pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p audit/pages
+          python - <<'PY'
+          import json, os, urllib.parse, urllib.request, time
+          target='http://www.racingonline.com/enduro/standing.html'
+          params={
+            'url': target,
+            'from': '1996',
+            'to': '2001',
+            'output': 'json',
+            'filter': 'statuscode:200',
+            'fl': 'timestamp,original,statuscode,mimetype,digest',
+            'collapse': 'digest',
+          }
+          url='https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode(params)
+          req=urllib.request.Request(url,headers={'User-Agent':'UMARM historical research/1.0'})
+          with urllib.request.urlopen(req,timeout=90) as r:
+            raw=r.read()
+          open('audit/cdx.json','wb').write(raw)
+          data=json.loads(raw)
+          rows=[]
+          if data:
+            header=data[0]
+            for row in data[1:]: rows.append(dict(zip(header,row)))
+          open('audit/captures.json','w').write(json.dumps(rows,indent=2))
+          print('captures',len(rows))
+          for i,row in enumerate(rows):
+            ts=row['timestamp']
+            snap=f'https://web.archive.org/web/{ts}id_/{target}'
+            try:
+              req=urllib.request.Request(snap,headers={'User-Agent':'UMARM historical research/1.0'})
+              with urllib.request.urlopen(req,timeout=90) as r:
+                body=r.read()
+              open(f'audit/pages/{ts}.html','wb').write(body)
+              print(ts,len(body))
+            except Exception as e:
+              print('ERROR',ts,repr(e))
+            time.sleep(.25)
+          PY
+      - name: Upload recovered archive files
+        uses: actions/upload-artifact@v4
+        with:
+          name: wayback-enduro-audit
+          path: audit
+          if-no-files-found: error
+          retention-days: 1
