@@ -14,58 +14,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
-      - name: Fetch known Cedar Lake standings captures
+      - name: Recover Cedar Lake 1999 final standings
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p audit/wayback-cedarlake
+          mkdir -p audit/wayback-cedarlake-1999
           python - <<'PY'
-          import json, time, urllib.request
+          import json, time, urllib.parse, urllib.request
           from html.parser import HTMLParser
           from pathlib import Path
 
-          OUT = Path('audit/wayback-cedarlake')
-          TARGET = 'http://www.racingonline.com:80/cedarlake/stand.html'
-          CAPTURES = [
-              '19980120035710',
-              '19980527004908',
-              '19980704213229',
-              '19990210053204',
-              '20000709094809',
-              '20001011010811',
-              '20010115043400',
-          ]
+          OUT=Path('audit/wayback-cedarlake-1999')
+          TARGET='http://www.racingonline.com/cedarlake/1999s.html'
           UA='UMARM historical standings recovery/1.0'
-
-          class Extractor(HTMLParser):
-              def __init__(self):
-                  super().__init__(convert_charrefs=True)
-                  self.in_title=False; self.title=[]; self.in_cell=False; self.cell=[]
-                  self.row=None; self.current_table=None; self.tables=[]; self.text=[]
-              def handle_starttag(self, tag, attrs):
-                  t=tag.lower()
-                  if t=='title': self.in_title=True
-                  elif t=='table': self.current_table=[]
-                  elif t=='tr': self.row=[]
-                  elif t in ('td','th'): self.in_cell=True; self.cell=[]
-              def handle_endtag(self, tag):
-                  t=tag.lower()
-                  if t=='title': self.in_title=False
-                  elif t in ('td','th') and self.in_cell:
-                      v=' '.join(''.join(self.cell).split())
-                      if self.row is not None: self.row.append(v)
-                      self.in_cell=False; self.cell=[]
-                  elif t=='tr' and self.row is not None:
-                      if self.current_table is not None and any(self.row): self.current_table.append(self.row)
-                      self.row=None
-                  elif t=='table' and self.current_table is not None:
-                      if self.current_table: self.tables.append(self.current_table)
-                      self.current_table=None
-              def handle_data(self,data):
-                  if self.in_title: self.title.append(data)
-                  if self.in_cell: self.cell.append(data)
-                  s=' '.join(data.split())
-                  if s: self.text.append(s)
 
           def get(url, attempts=5):
               last=None
@@ -78,21 +39,27 @@ jobs:
                       last=repr(e); print('ERROR',i+1,url,last); time.sleep(2*(i+1))
               raise RuntimeError(last)
 
+          params={'url':TARGET,'from':'1999','to':'2002','output':'json','fl':'timestamp,original,statuscode,mimetype,digest','filter':'statuscode:200','collapse':'digest'}
+          cdx='https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode(params)
+          status,final_url,raw=get(cdx)
+          data=json.loads(raw.decode('utf-8','replace'))
+          (OUT/'cdx.json').write_text(json.dumps(data,indent=2),encoding='utf-8')
+          print('CDX rows',max(0,len(data)-1))
+          rows=[]
+          if data:
+              header=data[0]
+              rows=[dict(zip(header,r)) for r in data[1:]]
           recovered=[]
-          for ts in CAPTURES:
-              urls=[
-                  f'https://web.archive.org/web/{ts}id_/{TARGET}',
-                  f'https://web.archive.org/web/{ts}/{TARGET}',
-              ]
-              item={'timestamp':ts,'attempted':urls}
-              for url in urls:
+          for rec in rows:
+              ts=rec['timestamp']; original=rec['original']
+              item={'timestamp':ts,'original':original}
+              for suffix in ('id_/',''):
+                  snap=f'https://web.archive.org/web/{ts}{suffix}{original}'
                   try:
-                      status,final_url,body=get(url)
-                      html=body.decode('latin-1','replace')
-                      p=Extractor(); p.feed(html)
-                      item.update({'status':status,'resolved':final_url,'bytes':len(body),'title':' '.join(''.join(p.title).split()),'tables':p.tables,'body_text':' '.join(p.text)})
+                      s,u,body=get(snap)
+                      item.update({'status':s,'resolved':u,'bytes':len(body),'body':body.decode('latin-1','replace')})
                       (OUT/f'{ts}.html').write_bytes(body)
-                      print('CAPTURE',ts,status,len(body),item['title'],'tables',len(p.tables))
+                      print('CAPTURE',ts,s,len(body),u)
                       break
                   except Exception as e:
                       item.setdefault('errors',[]).append(repr(e))
@@ -100,10 +67,10 @@ jobs:
           (OUT/'captures.json').write_text(json.dumps(recovered,indent=2,ensure_ascii=False),encoding='utf-8')
           PY
 
-      - name: Upload Cedar Lake recovery
+      - name: Upload Cedar Lake 1999 recovery
         uses: actions/upload-artifact@v4
         with:
-          name: wayback-cedarlake-captures
-          path: audit/wayback-cedarlake
+          name: wayback-cedarlake-1999-final
+          path: audit/wayback-cedarlake-1999
           if-no-files-found: error
           retention-days: 1
