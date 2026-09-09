@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""PaddleOCR pilot for one Midwest Racing News issue.
+"""Optimized PaddleOCR pilot for one Midwest Racing News issue.
 
-This is intentionally non-destructive: it downloads the existing public Supabase
-page images and writes OCR output only to a local audit folder for review.
+Non-destructive: reads existing public Supabase newspaper page images and writes
+only local audit outputs. Uses lightweight PP-OCRv5 detection + English mobile
+recognition and reconstructs the five newspaper columns from OCR coordinates.
 """
 from __future__ import annotations
 
 import json
 import re
 import statistics
+import time
 import urllib.request
 from pathlib import Path
 
@@ -20,21 +22,25 @@ BUCKET = "media"
 PUBLICATION = "midwest-racing-news"
 ISSUE_DATE = "1959-06-03"
 PAGES = [f"{n}.jpg" for n in range(1, 9)]
+COLUMN_COUNT = 5
+MAX_WIDTH = 2400
 
-ROOT = Path("audit/paddleocr-mrn-1959-06-03")
-INPUT = ROOT / "input"
-PREPARED = ROOT / "prepared"
+ROOT = Path("audit/paddleocr-mrn-1959-06-03-mobile")
+INPUT = ROOT / "_input"
+PREPARED = ROOT / "_prepared"
 JSON_DIR = ROOT / "json"
 TEXT_DIR = ROOT / "text"
 for folder in (INPUT, PREPARED, JSON_DIR, TEXT_DIR):
     folder.mkdir(parents=True, exist_ok=True)
 
-USER_AGENT = "UMARM newspaper OCR research pilot/1.0"
+USER_AGENT = "UMARM newspaper OCR research/1.1"
 KEYWORD_RE = re.compile(
     r"\b(final\s+point(?:s|\s+standings)?|final\s+standings|point\s+standings|"
-    r"season\s+standings|championship\s+points?|champion(?:ship)?|standings)\b",
+    r"season\s+standings|championship\s+points?|points?\s+leaders?|standings)\b",
     re.IGNORECASE,
 )
+FINAL_RE = re.compile(r"\b(final|season[- ]end|year[- ]end|champions?|championship)\b", re.I)
+CURRENT_RE = re.compile(r"\b(as\s+of|up\s+to\s+date|current|through\s+\w+|to\s+date)\b", re.I)
 
 
 def public_url(page: str) -> str:
@@ -51,144 +57,219 @@ def download(url: str, target: Path) -> None:
 
 
 def prepare_image(source: Path, target: Path) -> dict:
-    """Normalize contrast and cap width to keep CPU/RAM reasonable."""
     with Image.open(source) as img:
         img = ImageOps.exif_transpose(img)
         original_size = img.size
         img = ImageOps.grayscale(img)
         img = ImageOps.autocontrast(img, cutoff=0.5)
-        max_width = 2800
-        if img.width > max_width:
-            height = round(img.height * max_width / img.width)
-            img = img.resize((max_width, height), Image.Resampling.LANCZOS)
+        if img.width > MAX_WIDTH:
+            height = round(img.height * MAX_WIDTH / img.width)
+            img = img.resize((MAX_WIDTH, height), Image.Resampling.LANCZOS)
         prepared_size = img.size
-        img.save(target, format="PNG", optimize=True)
+        img.save(target, format="PNG", optimize=False)
     return {"original_size": original_size, "prepared_size": prepared_size}
 
 
-def find_values(obj, key: str):
-    found = []
-    if isinstance(obj, dict):
-        for k, v in obj.items():
-            if k == key:
-                found.append(v)
-            found.extend(find_values(v, key))
-    elif isinstance(obj, list):
-        for item in obj:
-            found.extend(find_values(item, key))
-    return found
+def result_payload(res) -> dict:
+    payload = res.json
+    if isinstance(payload, dict):
+        return payload
+    try:
+        return json.loads(payload)
+    except Exception:
+        return {"raw": str(payload)}
 
 
-def flatten_text(payloads: list[dict]) -> tuple[list[str], list[float]]:
-    texts: list[str] = []
-    scores: list[float] = []
+def extract_lines(payloads: list[dict]) -> list[dict]:
+    lines: list[dict] = []
     for payload in payloads:
-        for value in find_values(payload, "rec_texts"):
-            if isinstance(value, list):
-                texts.extend(str(x).strip() for x in value if str(x).strip())
-        for value in find_values(payload, "rec_scores"):
-            if isinstance(value, list):
-                for x in value:
-                    try:
-                        scores.append(float(x))
-                    except (TypeError, ValueError):
-                        pass
-    return texts, scores
+        texts = payload.get("rec_texts") or []
+        scores = payload.get("rec_scores") or []
+        polys = payload.get("rec_polys") or payload.get("dt_polys") or []
+        for idx, text in enumerate(texts):
+            text = str(text).strip()
+            if not text:
+                continue
+            poly = polys[idx] if idx < len(polys) else None
+            if not poly:
+                continue
+            xs = [float(p[0]) for p in poly]
+            ys = [float(p[1]) for p in poly]
+            score = None
+            if idx < len(scores):
+                try:
+                    score = float(scores[idx])
+                except (TypeError, ValueError):
+                    pass
+            lines.append({
+                "text": text,
+                "score": score,
+                "x0": min(xs), "x1": max(xs),
+                "y0": min(ys), "y1": max(ys),
+                "xc": sum(xs) / len(xs), "yc": sum(ys) / len(ys),
+            })
+    return lines
 
 
-def context_hits(lines: list[str], radius: int = 2) -> list[dict]:
-    hits = []
-    for i, line in enumerate(lines):
-        if KEYWORD_RE.search(line):
+def assign_columns(lines: list[dict], page_width: int) -> list[list[dict]]:
+    """Reconstruct MRN's five newspaper columns using line center coordinates."""
+    cols: list[list[dict]] = [[] for _ in range(COLUMN_COUNT)]
+    col_width = page_width / COLUMN_COUNT
+    for line in lines:
+        idx = min(COLUMN_COUNT - 1, max(0, int(line["xc"] / col_width)))
+        line = dict(line)
+        line["column"] = idx + 1
+        cols[idx].append(line)
+    for col in cols:
+        col.sort(key=lambda x: (x["yc"], x["x0"]))
+    return cols
+
+
+def classify_context(context: str) -> str:
+    if CURRENT_RE.search(context):
+        return "in_season_likely"
+    if FINAL_RE.search(context):
+        return "possible_final_needs_review"
+    return "standings_candidate_needs_review"
+
+
+def candidate_hits(columns: list[list[dict]], radius: int = 8) -> list[dict]:
+    hits: list[dict] = []
+    seen = set()
+    for ci, col in enumerate(columns, start=1):
+        for i, line in enumerate(col):
+            if not KEYWORD_RE.search(line["text"]):
+                continue
             lo = max(0, i - radius)
-            hi = min(len(lines), i + radius + 1)
-            hits.append({"line": i + 1, "context": lines[lo:hi]})
+            hi = min(len(col), i + radius + 1)
+            context_lines = [x["text"] for x in col[lo:hi]]
+            context = "\n".join(context_lines)
+            key = (ci, line["text"].lower(), round(line["yc"] / 50))
+            if key in seen:
+                continue
+            seen.add(key)
+            hits.append({
+                "column": ci,
+                "anchor": line["text"],
+                "anchor_y": round(line["yc"], 1),
+                "classification_hint": classify_context(context),
+                "context": context_lines,
+            })
     return hits
 
 
 def main() -> None:
-    print(f"PaddleOCR pilot: {PUBLICATION} {ISSUE_DATE} ({len(PAGES)} pages)")
+    started = time.perf_counter()
+    print(f"PaddleOCR optimized pilot: {PUBLICATION} {ISSUE_DATE} ({len(PAGES)} pages)")
 
     for page in PAGES:
         source = INPUT / page
         if not source.exists():
-            url = public_url(page)
-            print(f"Downloading {page}: {url}")
-            download(url, source)
+            download(public_url(page), source)
 
     prep_meta = {}
     for page in PAGES:
         prepared = PREPARED / f"{Path(page).stem}.png"
         prep_meta[page] = prepare_image(INPUT / page, prepared)
-        print(f"Prepared {page}: {prep_meta[page]}")
 
-    print("Starting PaddleOCR model (English, CPU)...")
+    print("Starting PP-OCRv5 mobile detector + English mobile recognizer (CPU)...")
     ocr = PaddleOCR(
         lang="en",
+        text_detection_model_name="PP-OCRv5_mobile_det",
+        text_recognition_model_name="en_PP-OCRv5_mobile_rec",
         use_doc_orientation_classify=False,
         use_doc_unwarping=False,
         use_textline_orientation=False,
         device="cpu",
     )
 
-    combined_blocks = []
+    combined_raw = []
+    combined_columns = []
     summary_pages = []
 
     for page in PAGES:
+        page_started = time.perf_counter()
         prepared = PREPARED / f"{Path(page).stem}.png"
-        print(f"OCR {page} ...")
+        print(f"OCR {page} ...", flush=True)
         results = list(ocr.predict(str(prepared)))
         payloads = []
         for idx, res in enumerate(results, start=1):
-            json_path = JSON_DIR / f"{Path(page).stem}-{idx}.json"
-            res.save_to_json(str(json_path))
-            payload = res.json
-            if not isinstance(payload, dict):
-                try:
-                    payload = json.loads(payload)
-                except Exception:
-                    payload = {"raw": str(payload)}
+            payload = result_payload(res)
             payloads.append(payload)
+            # Keep compact OCR geometry for reproducibility, not the full source images.
+            slim = {
+                "rec_texts": payload.get("rec_texts", []),
+                "rec_scores": payload.get("rec_scores", []),
+                "rec_polys": payload.get("rec_polys", []),
+            }
+            (JSON_DIR / f"{Path(page).stem}-{idx}.json").write_text(
+                json.dumps(slim, ensure_ascii=False), encoding="utf-8"
+            )
 
-        lines, scores = flatten_text(payloads)
-        page_text = "\n".join(lines).strip()
-        (TEXT_DIR / f"{Path(page).stem}.txt").write_text(page_text + "\n", encoding="utf-8")
-        combined_blocks.append(f"--- {page} ---\n{page_text}")
+        lines = extract_lines(payloads)
+        page_width = prep_meta[page]["prepared_size"][0]
+        columns = assign_columns(lines, page_width)
+        raw_lines = sorted(lines, key=lambda x: (x["yc"], x["x0"]))
+        raw_text = "\n".join(x["text"] for x in raw_lines)
+        column_text = "\n\n".join(
+            f"=== COLUMN {i} ===\n" + "\n".join(x["text"] for x in col)
+            for i, col in enumerate(columns, start=1)
+        )
+        (TEXT_DIR / f"{Path(page).stem}-raw.txt").write_text(raw_text + "\n", encoding="utf-8")
+        (TEXT_DIR / f"{Path(page).stem}-columns.txt").write_text(column_text + "\n", encoding="utf-8")
+        combined_raw.append(f"--- {page} RAW ---\n{raw_text}")
+        combined_columns.append(f"--- {page} COLUMNS ---\n{column_text}")
 
-        hits = context_hits(lines)
-        page_summary = {
+        scores = [x["score"] for x in lines if x["score"] is not None]
+        hits = candidate_hits(columns)
+        elapsed = round(time.perf_counter() - page_started, 2)
+        summary_pages.append({
             "page": page,
             **prep_meta[page],
             "recognized_lines": len(lines),
-            "characters": len(page_text),
+            "characters": len(raw_text),
             "average_recognition_score": round(statistics.mean(scores), 4) if scores else None,
             "minimum_recognition_score": round(min(scores), 4) if scores else None,
-            "keyword_hits": hits,
-        }
-        summary_pages.append(page_summary)
+            "standings_candidates": hits,
+            "ocr_seconds": elapsed,
+        })
         print(
-            f"{page}: lines={len(lines)} chars={len(page_text)} "
-            f"avg_score={page_summary['average_recognition_score']} hits={len(hits)}"
+            f"{page}: lines={len(lines)} chars={len(raw_text)} "
+            f"avg={summary_pages[-1]['average_recognition_score']} "
+            f"candidates={len(hits)} seconds={elapsed}", flush=True
         )
 
-    combined = "\n\n".join(combined_blocks) + "\n"
-    (ROOT / "issue-ocr.txt").write_text(combined, encoding="utf-8")
+    (ROOT / "issue-ocr-raw.txt").write_text("\n\n".join(combined_raw) + "\n", encoding="utf-8")
+    (ROOT / "issue-ocr-columns.txt").write_text("\n\n".join(combined_columns) + "\n", encoding="utf-8")
     summary = {
         "publication": PUBLICATION,
         "issue_date": ISSUE_DATE,
-        "engine": "PaddleOCR",
-        "mode": "general OCR / English / CPU",
+        "engine": "PaddleOCR 3.5.0",
+        "detection_model": "PP-OCRv5_mobile_det",
+        "recognition_model": "en_PP-OCRv5_mobile_rec",
+        "max_width": MAX_WIDTH,
+        "column_count": COLUMN_COUNT,
         "pages": summary_pages,
         "total_characters": sum(p["characters"] for p in summary_pages),
-        "total_keyword_hits": sum(len(p["keyword_hits"]) for p in summary_pages),
+        "total_candidates": sum(len(p["standings_candidates"]) for p in summary_pages),
+        "total_ocr_seconds": round(sum(p["ocr_seconds"] for p in summary_pages), 2),
+        "wall_seconds": round(time.perf_counter() - started, 2),
     }
     (ROOT / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
-    print("\nPILOT COMPLETE")
+    # Do not include downloaded/prepared images in the artifact.
+    for folder in (INPUT, PREPARED):
+        for f in folder.glob("*"):
+            f.unlink(missing_ok=True)
+        folder.rmdir()
+
+    print("\nOPTIMIZED PILOT COMPLETE")
     print(json.dumps({
         "pages": len(summary_pages),
         "total_characters": summary["total_characters"],
-        "keyword_hits": summary["total_keyword_hits"],
+        "standings_candidates": summary["total_candidates"],
+        "ocr_seconds": summary["total_ocr_seconds"],
+        "wall_seconds": summary["wall_seconds"],
     }, indent=2))
 
 
