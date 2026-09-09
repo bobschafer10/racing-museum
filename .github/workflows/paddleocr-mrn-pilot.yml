@@ -5,7 +5,7 @@ on:
     branches:
       - paddleocr-mrn-pilot
     paths:
-      - 'museum-newspaper-manager/paddleocr-mrn-pilot.py'
+      - 'museum-newspaper-manager/paddleocr-mrn-runner.py'
       - '.github/workflows/paddleocr-mrn-pilot.yml'
   workflow_dispatch:
 
@@ -15,11 +15,16 @@ permissions:
 jobs:
   ocr:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 20
 
     steps:
-      - name: Check out repository
+      - name: Check out OCR runner only
         uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,19 +39,22 @@ jobs:
           python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
           python -m pip install paddleocr==3.5.0 pillow
 
-      - name: Run Midwest Racing News OCR pilot
+      - name: Run June 3 1959 validation
         shell: bash
         env:
           PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          MRN_ISSUE_DATE: '1959-06-03'
+          MRN_PAGE_COUNT: '8'
+          MRN_OUTPUT_ROOT: 'audit/paddleocr-mrn-1959/1959-06-03'
         run: |
           set -euo pipefail
-          python museum-newspaper-manager/paddleocr-mrn-pilot.py
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
 
-      - name: Upload OCR pilot results
+      - name: Upload OCR validation results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: paddleocr-mrn-1959-06-03-mobile
-          path: audit/paddleocr-mrn-1959-06-03-mobile
+          name: paddleocr-mrn-1959-06-03-v2
+          path: audit/paddleocr-mrn-1959/1959-06-03
           if-no-files-found: warn
           retention-days: 1
