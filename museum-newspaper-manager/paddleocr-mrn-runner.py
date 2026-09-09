@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """UMARM PaddleOCR runner for one Midwest Racing News issue.
 
-Reads the already-uploaded public Supabase page images, performs CPU OCR with
-PP-OCRv5 mobile models, reconstructs the five newspaper columns, and emits
-searchable text + standings-candidate JSON. It never writes to live standings.
+Reads already-uploaded public Supabase page images, performs CPU OCR with
+PP-OCRv5 mobile models, reconstructs newspaper columns, and emits searchable
+text + standings-candidate JSON. It never writes to live standings.
+
+For older issues with simple 1.jpg, 2.jpg... naming, set MRN_PAGE_COUNT.
+For later issues with padded or non-contiguous names, set MRN_PAGES_JSON to a
+JSON array such as ["001.jpg","002.jpg","020.jpg"].
 """
 from __future__ import annotations
 
@@ -20,14 +24,28 @@ from paddleocr import PaddleOCR
 
 PROJECT_URL = "https://szvkleurojiwqkkztxtr.supabase.co"
 BUCKET = "media"
-PUBLICATION = "midwest-racing-news"
+PUBLICATION = os.environ.get("NEWSPAPER_PUBLICATION", "midwest-racing-news")
 ISSUE_DATE = os.environ.get("MRN_ISSUE_DATE", "1959-06-03")
-PAGE_COUNT = int(os.environ.get("MRN_PAGE_COUNT", "8"))
 COLUMN_COUNT = int(os.environ.get("MRN_COLUMN_COUNT", "5"))
 MAX_WIDTH = int(os.environ.get("MRN_MAX_WIDTH", "2400"))
-PAGES = [f"{n}.jpg" for n in range(1, PAGE_COUNT + 1)]
 
-ROOT = Path(os.environ.get("MRN_OUTPUT_ROOT", f"audit/paddleocr-mrn-1959/{ISSUE_DATE}"))
+pages_json = os.environ.get("MRN_PAGES_JSON", "").strip()
+if pages_json:
+    parsed_pages = json.loads(pages_json)
+    if not isinstance(parsed_pages, list) or not parsed_pages:
+        raise ValueError("MRN_PAGES_JSON must be a non-empty JSON array")
+    PAGES = []
+    for raw_page in parsed_pages:
+        page = str(raw_page).strip()
+        if not re.fullmatch(r"[A-Za-z0-9._-]+\.(?:jpg|jpeg|png|webp)", page, re.IGNORECASE):
+            raise ValueError(f"Unsafe/unsupported page filename: {page!r}")
+        PAGES.append(page)
+else:
+    requested_count = int(os.environ.get("MRN_PAGE_COUNT", "8"))
+    PAGES = [f"{n}.jpg" for n in range(1, requested_count + 1)]
+
+PAGE_COUNT = len(PAGES)
+ROOT = Path(os.environ.get("MRN_OUTPUT_ROOT", f"audit/paddleocr-mrn/{ISSUE_DATE}"))
 INPUT = ROOT / "_input"
 PREPARED = ROOT / "_prepared"
 JSON_DIR = ROOT / "json"
@@ -35,7 +53,7 @@ TEXT_DIR = ROOT / "text"
 for folder in (INPUT, PREPARED, JSON_DIR, TEXT_DIR):
     folder.mkdir(parents=True, exist_ok=True)
 
-USER_AGENT = "UMARM newspaper OCR research/1.2"
+USER_AGENT = "UMARM newspaper OCR research/1.3"
 KEYWORD_RE = re.compile(
     r"\b(final\s+point(?:s|\s+standings)?|final\s+standings|point\s+standings|"
     r"season\s+standings|championship\s+points?|points?\s+leaders?|standings)\b",
@@ -85,7 +103,6 @@ def unwrap_payload(res) -> dict:
             payload = json.loads(payload)
         except Exception:
             return {"raw": str(payload)}
-    # PaddleOCR 3.5 module results commonly wrap the actual OCR payload in `res`.
     if isinstance(payload.get("res"), dict):
         payload = payload["res"]
     return payload
@@ -182,6 +199,7 @@ def cleanup_images() -> None:
 def main() -> None:
     started = time.perf_counter()
     print(f"UMARM PaddleOCR: {PUBLICATION} {ISSUE_DATE} ({PAGE_COUNT} pages)", flush=True)
+    print("Page files: " + ", ".join(PAGES), flush=True)
 
     prep_meta = {}
     for page in PAGES:
@@ -275,6 +293,7 @@ def main() -> None:
         "max_width": MAX_WIDTH,
         "column_count": COLUMN_COUNT,
         "page_count": PAGE_COUNT,
+        "page_files": PAGES,
         "pages": summary_pages,
         "total_characters": sum(p["characters"] for p in summary_pages),
         "total_candidates": len(all_candidates),
