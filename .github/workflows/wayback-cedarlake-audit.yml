@@ -7,183 +7,103 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   recover:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Recover Cedar Lake standings captures
+      - name: Fetch known Cedar Lake standings captures
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p audit/wayback-cedarlake
           python - <<'PY'
-          import json, re, time, urllib.parse, urllib.request
+          import json, time, urllib.request
           from html.parser import HTMLParser
           from pathlib import Path
 
-          TARGET = 'http://www.racingonline.com/cedarlake/stand.html'
           OUT = Path('audit/wayback-cedarlake')
-          UA = 'UMARM historical standings recovery/1.0'
-
-          def fetch(url, timeout=90, attempts=4):
-              last = None
-              for i in range(attempts):
-                  try:
-                      req = urllib.request.Request(url, headers={'User-Agent': UA})
-                      with urllib.request.urlopen(req, timeout=timeout) as r:
-                          return r.status, r.geturl(), r.read()
-                  except Exception as e:
-                      last = repr(e)
-                      print('FETCH ERROR', i + 1, url, last)
-                      time.sleep(3 * (i + 1))
-              raise RuntimeError(f'fetch failed: {url}: {last}')
-
-          # Query exact page plus :80 variant. Merge and deduplicate captures.
-          captures = {}
-          queries = [
-              'http://www.racingonline.com/cedarlake/stand.html',
-              'http://www.racingonline.com:80/cedarlake/stand.html',
-              'www.racingonline.com/cedarlake/stand.html',
+          TARGET = 'http://www.racingonline.com:80/cedarlake/stand.html'
+          CAPTURES = [
+              '19980120035710',
+              '19980527004908',
+              '19980704213229',
+              '19990210053204',
+              '20000709094809',
+              '20001011010811',
+              '20010115043400',
           ]
-          cdx_results = []
-          for q in queries:
-              params = {
-                  'url': q,
-                  'from': '1997',
-                  'to': '2001',
-                  'output': 'json',
-                  'fl': 'timestamp,original,statuscode,mimetype,digest',
-                  'filter': 'statuscode:200',
-                  'collapse': 'digest',
-              }
-              url = 'https://web.archive.org/cdx/search/cdx?' + urllib.parse.urlencode(params)
-              try:
-                  status, final_url, raw = fetch(url)
-                  data = json.loads(raw.decode('utf-8', 'replace'))
-                  cdx_results.append({'query': q, 'status': status, 'url': final_url, 'data': data})
-                  if data and isinstance(data[0], list):
-                      header = data[0]
-                      for row in data[1:]:
-                          rec = dict(zip(header, row))
-                          ts = rec.get('timestamp')
-                          if ts:
-                              captures[(ts, rec.get('digest',''))] = rec
-              except Exception as e:
-                  cdx_results.append({'query': q, 'error': repr(e)})
-
-          (OUT / 'cdx.json').write_text(json.dumps(cdx_results, indent=2), encoding='utf-8')
+          UA='UMARM historical standings recovery/1.0'
 
           class Extractor(HTMLParser):
               def __init__(self):
                   super().__init__(convert_charrefs=True)
-                  self.in_title = False
-                  self.title = []
-                  self.heading_tag = None
-                  self.heading_buf = []
-                  self.headings = []
-                  self.in_cell = False
-                  self.cell_buf = []
-                  self.row = None
-                  self.tables = []
-                  self.current_table = None
-                  self.pre = False
-                  self.pre_buf = []
-                  self.pres = []
-                  self.body_text = []
+                  self.in_title=False; self.title=[]; self.in_cell=False; self.cell=[]
+                  self.row=None; self.current_table=None; self.tables=[]; self.text=[]
               def handle_starttag(self, tag, attrs):
-                  t = tag.lower()
-                  if t == 'title': self.in_title = True
-                  if t in ('h1','h2','h3','h4','h5','h6'):
-                      self.heading_tag = t; self.heading_buf = []
-                  if t == 'table':
-                      self.current_table = []
-                  if t == 'tr': self.row = []
-                  if t in ('td','th'):
-                      self.in_cell = True; self.cell_buf = []
-                  if t == 'pre':
-                      self.pre = True; self.pre_buf = []
+                  t=tag.lower()
+                  if t=='title': self.in_title=True
+                  elif t=='table': self.current_table=[]
+                  elif t=='tr': self.row=[]
+                  elif t in ('td','th'): self.in_cell=True; self.cell=[]
               def handle_endtag(self, tag):
-                  t = tag.lower()
-                  if t == 'title': self.in_title = False
-                  if self.heading_tag == t:
-                      txt = ' '.join(''.join(self.heading_buf).split())
-                      if txt: self.headings.append({'tag': t, 'text': txt})
-                      self.heading_tag = None; self.heading_buf = []
-                  if t in ('td','th') and self.in_cell:
-                      txt = ' '.join(''.join(self.cell_buf).split())
-                      if self.row is not None: self.row.append(txt)
-                      self.in_cell = False; self.cell_buf = []
-                  if t == 'tr' and self.row is not None:
+                  t=tag.lower()
+                  if t=='title': self.in_title=False
+                  elif t in ('td','th') and self.in_cell:
+                      v=' '.join(''.join(self.cell).split())
+                      if self.row is not None: self.row.append(v)
+                      self.in_cell=False; self.cell=[]
+                  elif t=='tr' and self.row is not None:
                       if self.current_table is not None and any(self.row): self.current_table.append(self.row)
-                      self.row = None
-                  if t == 'table' and self.current_table is not None:
+                      self.row=None
+                  elif t=='table' and self.current_table is not None:
                       if self.current_table: self.tables.append(self.current_table)
-                      self.current_table = None
-                  if t == 'pre' and self.pre:
-                      txt = '\n'.join(line.rstrip() for line in ''.join(self.pre_buf).splitlines()).strip()
-                      if txt: self.pres.append(txt)
-                      self.pre = False; self.pre_buf = []
-              def handle_data(self, data):
+                      self.current_table=None
+              def handle_data(self,data):
                   if self.in_title: self.title.append(data)
-                  if self.heading_tag: self.heading_buf.append(data)
-                  if self.in_cell: self.cell_buf.append(data)
-                  if self.pre: self.pre_buf.append(data)
-                  s = ' '.join(data.split())
-                  if s: self.body_text.append(s)
+                  if self.in_cell: self.cell.append(data)
+                  s=' '.join(data.split())
+                  if s: self.text.append(s)
 
-          recovered = []
-          for rec in sorted(captures.values(), key=lambda r: r['timestamp']):
-              ts = rec['timestamp']
-              original = rec['original']
-              snap = f'https://web.archive.org/web/{ts}id_/{original}'
-              item = {'timestamp': ts, 'original': original, 'digest': rec.get('digest'), 'requested': snap}
-              try:
-                  status, final_url, body = fetch(snap)
-                  html = body.decode('latin-1', 'replace')
-                  p = Extractor(); p.feed(html)
-                  item.update({
-                      'status': status,
-                      'resolved': final_url,
-                      'bytes': len(body),
-                      'title': ' '.join(''.join(p.title).split()),
-                      'headings': p.headings,
-                      'tables': p.tables,
-                      'pre': p.pres,
-                      'body_text_sample': ' '.join(p.body_text)[:12000],
-                  })
-                  print('CAPTURE', ts, status, len(body), item['title'], 'tables', len(p.tables))
-              except Exception as e:
-                  item['error'] = repr(e)
-                  print('CAPTURE ERROR', ts, repr(e))
+          def get(url, attempts=5):
+              last=None
+              for i in range(attempts):
+                  try:
+                      req=urllib.request.Request(url,headers={'User-Agent':UA})
+                      with urllib.request.urlopen(req,timeout=90) as r:
+                          return r.status,r.geturl(),r.read()
+                  except Exception as e:
+                      last=repr(e); print('ERROR',i+1,url,last); time.sleep(2*(i+1))
+              raise RuntimeError(last)
+
+          recovered=[]
+          for ts in CAPTURES:
+              urls=[
+                  f'https://web.archive.org/web/{ts}id_/{TARGET}',
+                  f'https://web.archive.org/web/{ts}/{TARGET}',
+              ]
+              item={'timestamp':ts,'attempted':urls}
+              for url in urls:
+                  try:
+                      status,final_url,body=get(url)
+                      html=body.decode('latin-1','replace')
+                      p=Extractor(); p.feed(html)
+                      item.update({'status':status,'resolved':final_url,'bytes':len(body),'title':' '.join(''.join(p.title).split()),'tables':p.tables,'body_text':' '.join(p.text)})
+                      (OUT/f'{ts}.html').write_bytes(body)
+                      print('CAPTURE',ts,status,len(body),item['title'],'tables',len(p.tables))
+                      break
+                  except Exception as e:
+                      item.setdefault('errors',[]).append(repr(e))
               recovered.append(item)
-
-          (OUT / 'captures.json').write_text(json.dumps(recovered, indent=2, ensure_ascii=False), encoding='utf-8')
-          summary = {
-              'target': TARGET,
-              'capture_count': len(recovered),
-              'timestamps': [x['timestamp'] for x in recovered],
-              'errors': [x for x in recovered if 'error' in x],
-          }
-          (OUT / 'summary.json').write_text(json.dumps(summary, indent=2), encoding='utf-8')
+          (OUT/'captures.json').write_text(json.dumps(recovered,indent=2,ensure_ascii=False),encoding='utf-8')
           PY
 
-      - name: Commit recovered factual archive extraction
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "UMARM Wayback Recovery"
-          git config user.email "actions@users.noreply.github.com"
-          git add audit/wayback-cedarlake
-          if git diff --cached --quiet; then
-            echo "No recovery output changes"
-            exit 0
-          fi
-          git commit -m "Recover Cedar Lake Wayback standings captures"
-          git push
+      - name: Upload Cedar Lake recovery
+        uses: actions/upload-artifact@v4
+        with:
+          name: wayback-cedarlake-captures
+          path: audit/wayback-cedarlake
+          if-no-files-found: error
+          retention-days: 1
