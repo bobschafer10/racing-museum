@@ -247,7 +247,7 @@ export default async function TrackProfilePage({
             </div>
 
             <p className={styles.heroIntro}>
-              Explore the feature winners, track champions, photographs, race results,
+              Explore the feature winners, track champions, point standings, photographs, race results,
               programs, and growing newspaper archive connected to {track.track_name}.
             </p>
 
@@ -286,6 +286,9 @@ export default async function TrackProfilePage({
           </Link>
           <Link href={`/tracks/${slug}/results`} className={styles.tab}>
             Results
+          </Link>
+          <Link href={`/tracks/${slug}/standings`} className={styles.tab}>
+            Point Standings
           </Link>
           <Link href={`/tracks/${slug}/champions`} className={styles.tab}>
             Champions
@@ -355,12 +358,12 @@ export default async function TrackProfilePage({
             <span className={styles.actionArrow} aria-hidden="true">›</span>
           </Link>
 
-          <Link href="/media/newspapers" className={styles.actionCard}>
-            <span className={styles.actionIcon} aria-hidden="true">▤</span>
-            <p className={styles.actionKicker}>Growing research collection</p>
-            <h2 className={styles.actionTitle}>View OCR / Newspaper Archive</h2>
+          <Link href={`/tracks/${slug}/standings`} className={styles.actionCard}>
+            <span className={styles.actionIcon} aria-hidden="true">▦</span>
+            <p className={styles.actionKicker}>Season-ending points archive</p>
+            <h2 className={styles.actionTitle}>View Point Standings</h2>
             <p className={styles.actionText}>
-              Browse digitized racing papers as OCR coverage and track indexing continue to grow.
+              Browse complete final tables and clearly marked published final positions.
             </p>
             <span className={styles.actionArrow} aria-hidden="true">›</span>
           </Link>
