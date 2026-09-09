@@ -1,0 +1,88 @@
+name: Temporary Wayback Slinger Audit
+
+on:
+  push:
+    paths:
+      - '.github/workflows/wayback-slinger-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Recover Slinger Speedway 2000-2007 standings archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p audit/wayback-slinger-2000-2007
+          python - <<'PY'
+          import json, time, urllib.parse, urllib.request
+          from pathlib import Path
+
+          OUT=Path('audit/wayback-slinger-2000-2007')
+          TARGET='http://www.slingersuperspeedway.com/stand.html'
+          UA='UMARM historical standings recovery/1.0'
+
+          def get(url, attempts=5):
+              last=None
+              for i in range(attempts):
+                  try:
+                      req=urllib.request.Request(url,headers={'User-Agent':UA})
+                      with urllib.request.urlopen(req,timeout=90) as r:
+                          return r.status,r.geturl(),r.read()
+                  except Exception as e:
+                      last=repr(e)
+                      print('ERROR',i+1,url,last)
+                      time.sleep(2*(i+1))
+              raise RuntimeError(last)
+
+          params={
+              'url':TARGET,
+              'from':'2000',
+              'to':'2008',
+              'output':'json',
+              'fl':'timestamp,original,statuscode,mimetype,digest',
+              'filter':'statuscode:200',
+              'collapse':'digest'
+          }
+          cdx='https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode(params)
+          status,final_url,raw=get(cdx)
+          data=json.loads(raw.decode('utf-8','replace'))
+          (OUT/'cdx.json').write_text(json.dumps(data,indent=2),encoding='utf-8')
+          print('CDX rows',max(0,len(data)-1))
+          rows=[]
+          if data:
+              header=data[0]
+              rows=[dict(zip(header,r)) for r in data[1:]]
+
+          # Capture every unique page digest returned by CDX. These are small HTML pages
+          # and preserving all versions lets the audit distinguish midseason from final.
+          recovered=[]
+          for rec in rows:
+              ts=rec['timestamp']; original=rec['original']
+              item={'timestamp':ts,'original':original,'digest':rec.get('digest')}
+              for suffix in ('id_/',''):
+                  snap=f'https://web.archive.org/web/{ts}{suffix}{original}'
+                  try:
+                      s,u,body=get(snap)
+                      item.update({'status':s,'resolved':u,'bytes':len(body)})
+                      (OUT/f'{ts}.html').write_bytes(body)
+                      print('CAPTURE',ts,s,len(body),u)
+                      break
+                  except Exception as e:
+                      item.setdefault('errors',[]).append(repr(e))
+              recovered.append(item)
+          (OUT/'captures.json').write_text(json.dumps(recovered,indent=2,ensure_ascii=False),encoding='utf-8')
+          PY
+
+      - name: Upload Slinger recovery
+        uses: actions/upload-artifact@v4
+        with:
+          name: wayback-slinger-2000-2007
+          path: audit/wayback-slinger-2000-2007
+          if-no-files-found: error
+          retention-days: 1
