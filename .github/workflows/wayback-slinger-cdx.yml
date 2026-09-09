@@ -1,0 +1,33 @@
+name: Temporary Wayback Slinger CDX
+
+on:
+  push:
+    paths:
+      - '.github/workflows/wayback-slinger-cdx.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Inventory Slinger standings snapshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, urllib.parse, urllib.request
+          target='http://www.slingersuperspeedway.com/stand.html'
+          params={'url':target,'from':'2000','to':'2008','output':'json','fl':'timestamp,original,statuscode,mimetype,digest','filter':'statuscode:200','collapse':'digest'}
+          url='https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode(params)
+          req=urllib.request.Request(url,headers={'User-Agent':'UMARM historical standings recovery/1.0'})
+          with urllib.request.urlopen(req,timeout=90) as r:
+              data=json.loads(r.read().decode('utf-8','replace'))
+          print('CDX_JSON_START')
+          print(json.dumps(data))
+          print('CDX_JSON_END')
+          print('CDX_ROWS', max(0,len(data)-1))
+          PY
