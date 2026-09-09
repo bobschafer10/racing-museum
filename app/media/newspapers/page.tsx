@@ -1,10 +1,13 @@
 import Link from "next/link"
 import { getNewspaperIssues } from "@/lib/newspapers"
+import { supabase } from "@/lib/supabase"
 import NewspaperSearch from "./NewspaperSearch"
 import "../archive-dark.css"
 import "./ocr-search.css"
 
 type PublicationGroup = { slug: string; name: string; years: Record<string, number>; issueCount: number; latestCover?: string }
+
+type OcrCoverageRow = { issue_date: string }
 
 const PUBLICATION_LOGOS: Record<string, string> = {
   "checkered-flag-racing-news": "/newspaper-assets/checkered-flag-racing-news.jpg",
@@ -30,6 +33,18 @@ export default async function NewspapersPage() {
   const pageCount = issues.reduce((sum, issue) => sum + (issue.pages?.length || 0), 0)
   const heroCover = issues.find(i => i.coverImage)?.coverImage
 
+  const [{ count: searchablePages }, { data: coverageRows }] = await Promise.all([
+    supabase.from("newspaper_ocr_pages").select("id", { count: "exact", head: true }).eq("status", "complete"),
+    supabase.from("newspaper_ocr_pages").select("issue_date").eq("status", "complete"),
+  ])
+  const searchableYears = Array.from(new Set(((coverageRows || []) as OcrCoverageRow[]).map(row => Number(row.issue_date.slice(0, 4))).filter(Number.isFinite))).sort((a,b)=>a-b)
+  const searchableYearLabel = searchableYears.length
+    ? searchableYears.length === 1
+      ? String(searchableYears[0])
+      : `${searchableYears[0]}–${searchableYears[searchableYears.length - 1]}`
+    : "—"
+  const searchablePageCount = searchablePages || 0
+
   return (
     <main className="ma-page">
       <section className="ma-hero" style={heroCover ? { backgroundImage: `linear-gradient(90deg,rgba(5,8,10,.97),rgba(5,8,10,.82) 50%,rgba(5,8,10,.48)),url(${heroCover})`, backgroundSize:'cover', backgroundPosition:'center 20%' } : undefined}>
@@ -51,14 +66,14 @@ export default async function NewspapersPage() {
             <div className="ma-stat"><strong>{issues.length.toLocaleString()}</strong><span>Digitized Issues</span></div>
             <div className="ma-stat"><strong>{publications.length}</strong><span>Publications</span></div>
             <div className="ma-stat"><strong>{pageCount.toLocaleString()}</strong><span>Preserved Pages</span></div>
-            <div className="ma-stat"><strong>136</strong><span>OCR Searchable Pages</span></div>
-            <div className="ma-stat"><strong>1959</strong><span>Searchable MRN Year</span></div>
+            <div className="ma-stat"><strong>{searchablePageCount.toLocaleString()}</strong><span>OCR Searchable Pages</span></div>
+            <div className="ma-stat"><strong>{searchableYearLabel}</strong><span>Searchable Years</span></div>
           </div>
         </div>
       </section>
 
       <section className="ma-section" id="newspaper-search">
-        <NewspaperSearch />
+        <NewspaperSearch searchablePages={searchablePageCount} searchableYears={searchableYears} />
       </section>
 
       <section className="ma-section">
