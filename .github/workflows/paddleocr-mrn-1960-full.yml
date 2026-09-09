@@ -1,0 +1,285 @@
+name: PaddleOCR MRN 1960
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-mrn-1960-full.yml'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+  id-token: write
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        include:
+          - issue: '1960-05-18'
+            pages: '8'
+          - issue: '1960-05-25'
+            pages: '8'
+          - issue: '1960-06-01'
+            pages: '8'
+          - issue: '1960-06-08'
+            pages: '8'
+          - issue: '1960-06-15'
+            pages: '8'
+          - issue: '1960-06-22'
+            pages: '10'
+          - issue: '1960-06-29'
+            pages: '10'
+          - issue: '1960-07-06'
+            pages: '8'
+          - issue: '1960-07-13'
+            pages: '8'
+          - issue: '1960-07-20'
+            pages: '12'
+          - issue: '1960-07-27'
+            pages: '8'
+          - issue: '1960-08-03'
+            pages: '10'
+          - issue: '1960-08-10'
+            pages: '10'
+          - issue: '1960-08-17'
+            pages: '10'
+          - issue: '1960-08-24'
+            pages: '10'
+          - issue: '1960-08-31'
+            pages: '10'
+          - issue: '1960-09-07'
+            pages: '10'
+          - issue: '1960-09-14'
+            pages: '8'
+          - issue: '1960-09-21'
+            pages: '8'
+
+    steps:
+      - name: Check out OCR runner only
+        uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR ${{ matrix.issue }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          MRN_ISSUE_DATE: ${{ matrix.issue }}
+          MRN_PAGE_COUNT: ${{ matrix.pages }}
+          MRN_OUTPUT_ROOT: audit/paddleocr-mrn-1960/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Upload ${{ matrix.issue }} OCR
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-1960-${{ matrix.issue }}
+          path: audit/paddleocr-mrn-1960/${{ matrix.issue }}
+          if-no-files-found: warn
+          retention-days: 5
+
+  aggregate:
+    needs: ocr
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Download issue artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: mrn-1960-1960-*
+          path: collected
+          merge-multiple: false
+
+      - name: Build 1960 candidate index
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p aggregate
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('collected')
+          summaries = []
+          candidates = []
+          for path in root.rglob('summary.json'):
+              try:
+                  summaries.append(json.loads(path.read_text(encoding='utf-8')))
+              except Exception as e:
+                  print('SUMMARY ERROR', path, e)
+          for path in root.rglob('candidates.json'):
+              try:
+                  rows = json.loads(path.read_text(encoding='utf-8'))
+                  if isinstance(rows, list):
+                      candidates.extend(rows)
+              except Exception as e:
+                  print('CANDIDATE ERROR', path, e)
+
+          summaries.sort(key=lambda x: x.get('issue_date',''))
+          candidates.sort(key=lambda x: (x.get('issue_date',''), x.get('page',''), x.get('column',0), x.get('anchor_y',0)))
+          index = {
+              'year': 1960,
+              'publication': 'midwest-racing-news',
+              'issues_expected': 19,
+              'issues_completed': len(summaries),
+              'pages_expected': 172,
+              'pages_completed': sum(int(s.get('page_count',0)) for s in summaries),
+              'characters_recovered': sum(int(s.get('total_characters',0)) for s in summaries),
+              'candidate_count': len(candidates),
+              'issues': summaries,
+          }
+          Path('aggregate/1960-summary.json').write_text(json.dumps(index, indent=2), encoding='utf-8')
+          Path('aggregate/1960-candidates.json').write_text(json.dumps(candidates, indent=2), encoding='utf-8')
+          lines = [
+              'MIDWEST RACING NEWS — 1960 OCR BATCH',
+              f"Issues completed: {index['issues_completed']}/19",
+              f"Pages completed: {index['pages_completed']}/172",
+              f"Characters recovered: {index['characters_recovered']}",
+              f"Standings candidates: {index['candidate_count']}",
+              '',
+          ]
+          for c in candidates:
+              lines.append(f"{c.get('issue_date')} | {c.get('page')} | col {c.get('column')} | {c.get('classification_hint')} | {c.get('anchor')}")
+          Path('aggregate/1960-candidate-index.txt').write_text('\n'.join(lines)+'\n', encoding='utf-8')
+          print('\n'.join(lines[:5]))
+          if index['issues_completed'] != 19 or index['pages_completed'] != 172:
+              raise SystemExit('1960 OCR batch incomplete')
+          PY
+
+      - name: Upload combined 1960 index
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-1960-aggregate
+          path: aggregate
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    needs: ocr
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+
+      - name: Download 1960 issue OCR artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: mrn-1960-1960-*
+          path: collected
+          merge-multiple: false
+
+      - name: Build searchable OCR data tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf ocr-data/midwest-racing-news/1960
+          mkdir -p ocr-data/midwest-racing-news/1960
+          python - <<'PY'
+          import json, shutil
+          from pathlib import Path
+
+          src_root = Path('collected')
+          dest_root = Path('ocr-data/midwest-racing-news/1960')
+          manifest = {'publication':'midwest-racing-news','year':1960,'issues':[]}
+
+          for summary_path in sorted(src_root.rglob('summary.json')):
+              src = summary_path.parent
+              summary = json.loads(summary_path.read_text(encoding='utf-8'))
+              issue = summary['issue_date']
+              dst = dest_root / issue
+              dst.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(summary_path, dst / 'summary.json')
+              candidate = src / 'candidates.json'
+              if candidate.exists():
+                  shutil.copy2(candidate, dst / 'candidates.json')
+              pages=[]
+              for text_file in sorted((src / 'text').glob('*-columns.txt'), key=lambda p:int(p.name.split('-')[0])):
+                  page_num = int(text_file.name.split('-')[0])
+                  shutil.copy2(text_file, dst / f'{page_num}.txt')
+                  pages.append({'page':page_num,'file':f'{issue}/{page_num}.txt'})
+              manifest['issues'].append({'issue_date':issue,'pages':pages,'summary':f'{issue}/summary.json','candidates':f'{issue}/candidates.json'})
+
+          manifest['issues'].sort(key=lambda x:x['issue_date'])
+          manifest['issue_count']=len(manifest['issues'])
+          manifest['page_count']=sum(len(x['pages']) for x in manifest['issues'])
+          (dest_root / 'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+          print(json.dumps({'issues':manifest['issue_count'],'pages':manifest['page_count']},indent=2))
+          assert manifest['issue_count'] == 19
+          assert manifest['page_count'] == 172
+          PY
+
+      - name: Commit searchable 1960 OCR text
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add ocr-data/midwest-racing-news/1960
+          if git diff --cached --quiet; then
+            echo '1960 OCR data already published.'
+          else
+            git commit -m 'Publish searchable 1960 MRN OCR text'
+            git push origin HEAD:paddleocr-mrn-pilot
+          fi
+          git rev-parse HEAD > /tmp/source-sha
+
+      - name: Ingest 1960 OCR text into Supabase
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_SHA="$(cat /tmp/source-sha)"
+          OIDC_TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$OIDC_TOKEN"
+
+          issues=(
+            1960-05-18 1960-05-25 1960-06-01 1960-06-08 1960-06-15
+            1960-06-22 1960-06-29 1960-07-06 1960-07-13 1960-07-20
+            1960-07-27 1960-08-03 1960-08-10 1960-08-17 1960-08-24
+            1960-08-31 1960-09-07 1960-09-14 1960-09-21
+          )
+
+          total=0
+          for issue in "${issues[@]}"; do
+            response="$(curl -fsSL \
+              -X POST \
+              -H "Authorization: Bearer ${OIDC_TOKEN}" \
+              -H 'Content-Type: application/json' \
+              --data "{\"publication\":\"midwest-racing-news\",\"year\":1960,\"issue\":\"${issue}\",\"ref\":\"${SOURCE_SHA}\"}" \
+              "https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import")"
+            echo "$response"
+            updated="$(echo "$response" | jq -r '.updated // 0')"
+            total=$((total + updated))
+          done
+          echo "Imported 1960 page rows: $total"
+          test "$total" -eq 172
