@@ -16,6 +16,7 @@ import os
 import re
 import statistics
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -77,9 +78,33 @@ def public_url(page: str) -> str:
 
 
 def download(url: str, target: Path) -> None:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=120) as response:
-        target.write_bytes(response.read())
+    """Download a scan, retrying temporary storage/network failures."""
+    for attempt in range(1, 4):
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=120) as response:
+                target.write_bytes(response.read())
+            return
+        except urllib.error.HTTPError as exc:
+            if exc.code < 500 and exc.code != 429:
+                raise
+            if attempt == 3:
+                raise
+            delay = attempt * 10
+            print(
+                f"Temporary scan download HTTP {exc.code}; retry {attempt}/3 in {delay}s: {url}",
+                flush=True,
+            )
+            time.sleep(delay)
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt == 3:
+                raise
+            delay = attempt * 10
+            print(
+                f"Temporary scan download error {exc!r}; retry {attempt}/3 in {delay}s: {url}",
+                flush=True,
+            )
+            time.sleep(delay)
 
 
 def prepare_image(source: Path, target: Path) -> dict:
