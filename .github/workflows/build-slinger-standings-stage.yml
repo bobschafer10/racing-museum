@@ -1,0 +1,121 @@
+name: Build Slinger Standings Staging SQL
+
+on:
+  push:
+    paths:
+      - '.github/workflows/build-slinger-standings-stage.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install parser
+        run: pip install beautifulsoup4
+      - name: Recover and parse Slinger standings
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p audit
+          python - <<'PY'
+          import re, time, urllib.request
+          from bs4 import BeautifulSoup
+          from pathlib import Path
+
+          caps={
+            2000:('20001014134158','http://www.slingersuperspeedway.com:80/stand.html'),
+            2001:('20011024022503','http://www.slingersuperspeedway.com:80/stand.html'),
+            2002:('20021207091447','http://www.slingersuperspeedway.com:80/stand.html'),
+            2003:('20031202031802','http://www.slingersuperspeedway.com:80/stand.html'),
+            2004:('20041010063922','http://www.slingersuperspeedway.com:80/stand.html'),
+            2005:('20051108081120','http://www.slingersuperspeedway.com:80/stand.html'),
+            2006:('20061031161221','http://www.slingersuperspeedway.com/stand.html'),
+            2007:('20070917094940','http://www.slingersuperspeedway.com:80/stand.html'),
+          }
+          table_map={
+            2000:[(2,'LM'),(3,'MM'),(4,'ST'),(5,'F8')],
+            2001:[(2,'LM'),(3,'MM'),(4,'ST'),(5,'F8')],
+            2002:[(2,'LM'),(3,'MM'),(4,'ST'),(5,'F8')],
+            2003:[(2,'LM'),(3,'MM'),(4,'MS'),(5,'F8')],
+            2004:[(5,'LM'),(6,'MM'),(7,'MS'),(8,'F8')],
+            2005:[(5,'LM'),(6,'LLM'),(7,'MM'),(8,'MS'),(9,'F8')],
+            2006:[(5,'LM'),(6,'MM'),(7,'LLM'),(8,'MS'),(9,'TS'),(10,'SB'),(11,'F8')],
+            2007:[(5,'LM'),(6,'LLM'),(7,'MM'),(8,'MS'),(9,'TS'),(10,'SB'),(11,'F8')],
+          }
+          source_name={
+            'LM':'Late Model','MM':'Midwest Modified','ST':'Slinger Stingers','F8':'Figure 8',
+            'MS':'Midwest Sportsman','LLM':'Limited Late Models','TS':'Thunder Stock','SB':'Slinger Bees'
+          }
+          class_id={'LM':46,'MM':67,'ST':98,'F8':28,'MS':94,'LLM':51,'TS':107,'SB':30}
+          suffixes={'JR','SR','II','III','IV'}
+
+          def fetch(url):
+            last=None
+            for i in range(5):
+              try:
+                req=urllib.request.Request(url,headers={'User-Agent':'UMARM historical standings recovery/1.0'})
+                with urllib.request.urlopen(req,timeout=90) as r: return r.read()
+              except Exception as e:
+                last=e; time.sleep(2*(i+1))
+            raise RuntimeError(last)
+
+          def clean(s): return ' '.join(s.replace('\xa0',' ').split())
+          def display_name(src):
+            src=clean(src)
+            parts=[p.strip() for p in src.split(',')]
+            if len(parts)==1: return src
+            surname=parts[0]; rest=' '.join(p for p in parts[1:] if p).strip(); suffix=None
+            toks=surname.replace('.','').split()
+            if toks and toks[-1].upper() in suffixes:
+              suffix=toks[-1].replace('.',''); surname=' '.join(toks[:-1])
+            if not suffix:
+              rt=rest.replace('.','').split()
+              if rt and rt[0].upper() in suffixes:
+                suffix=rt[0]; rest=' '.join(rt[1:])
+              elif rt and rt[-1].upper() in suffixes:
+                suffix=rt[-1]; rest=' '.join(rt[:-1])
+            return clean(' '.join(x for x in (rest,surname,suffix) if x))
+
+          rows=[]; urls={}
+          for year,(ts,orig) in caps.items():
+            url=f'https://web.archive.org/web/{ts}id_/{orig}'
+            urls[year]=url
+            soup=BeautifulSoup(fetch(url).decode('latin-1','replace'),'html.parser')
+            tables=soup.find_all('table')
+            for idx,code in table_map[year]:
+              for tr in tables[idx].find_all('tr'):
+                cells=[clean(td.get_text(' ',strip=True)) for td in tr.find_all(['td','th'])]
+                if len(cells)<4 or not re.fullmatch(r'\d+',cells[0]): continue
+                pos=int(cells[0]); car=cells[1]; name=display_name(cells[2]); points=cells[3]
+                rows.append((year,code,pos,car,name,points))
+
+          assert len(rows)==1501, len(rows)
+          by_year={y:[] for y in caps}
+          for y,code,pos,car,name,points in rows:
+            assert '|' not in name and '|' not in car and '|' not in points
+            by_year[y].append('|'.join((code,str(pos),car,name,points)))
+
+          values=[]
+          for y in sorted(by_year):
+            payload='\n'.join(by_year[y])
+            note="'Source archived page heading: As of September 3, 2006; validated against Slinger 2006 championship report.'" if y==2006 else 'NULL'
+            url=urls[y].replace("'","''")
+            values.append(f"({y},$d{y}${payload}$d{y}$,'{url}','Slinger Speedway — Final {y} Standings',{note})")
+
+          sql='''delete from public.track_standings_wayback_staging where museum_track_id=183 and year between 2000 and 2007;\nwith yr(year,data,source_url,source_label,note) as (values\n'''+',\n'.join(values)+'''\n), lines as (select year,source_url,source_label,note,regexp_split_to_table(data,E'\\n') line from yr),\np as (select year,source_url,source_label,note,split_part(line,'|',1) code,split_part(line,'|',2)::int pos,split_part(line,'|',3) car,split_part(line,'|',4) name,split_part(line,'|',5) points from lines)\ninsert into public.track_standings_wayback_staging (museum_track_id,year,source_division_name,finishing_position,position_label,car_number,driver_name,normalized_driver_name,points,source_url,source_label,source_system,target_driver_id,target_class_id,match_method,needs_review,notes)\nselect 183,year,case code when 'LM' then 'Late Model' when 'MM' then 'Midwest Modified' when 'ST' then 'Slinger Stingers' when 'F8' then 'Figure 8' when 'MS' then 'Midwest Sportsman' when 'LLM' then 'Limited Late Models' when 'TS' then 'Thunder Stock' when 'SB' then 'Slinger Bees' end,pos,pos::text,car,name,regexp_replace(lower(name),'[^a-z0-9]','','g'),points,source_url,source_label,'wayback_archived_site',null,case code when 'LM' then 46 when 'MM' then 67 when 'ST' then 98 when 'F8' then 28 when 'MS' then 94 when 'LLM' then 51 when 'TS' then 107 when 'SB' then 30 end,'unmatched',true,note from p;\n'''
+          Path('audit/slinger_2000_2007_stage.sql').write_text(sql,encoding='utf-8')
+          Path('audit/slinger_2000_2007_summary.txt').write_text(f'rows={len(rows)}\n'+''.join(f'{y}={len(by_year[y])}\n' for y in sorted(by_year)),encoding='utf-8')
+          PY
+      - name: Commit generated staging SQL
+        shell: bash
+        run: |
+          git config user.name "UMARM Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add audit/slinger_2000_2007_stage.sql audit/slinger_2000_2007_summary.txt
+          git commit -m "Generate Slinger 2000-2007 standings staging SQL"
+          git push
