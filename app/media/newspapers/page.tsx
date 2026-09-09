@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { getNewspaperIssues } from "@/lib/newspapers"
+import NewspaperSearch from "./NewspaperSearch"
 import "../archive-dark.css"
+import "./ocr-search.css"
 
 type PublicationGroup = { slug: string; name: string; years: Record<string, number>; issueCount: number; latestCover?: string }
 
@@ -35,10 +37,10 @@ export default async function NewspapersPage() {
           <div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><span>Newspapers</span></div>
           <div className="ma-hero-grid">
             <div>
-              <div className="ma-eyebrow">OCR / Newspaper Archive</div>
+              <div className="ma-eyebrow">Searchable Newspaper Archive</div>
               <h1 className="ma-title">Racing Newspapers</h1>
               <div className="ma-subtitle">The Weekly Record of the Sport</div>
-              <p className="ma-lede">Browse digitized racing newspapers by publication, year, and issue. These pages preserve results, personalities, advertising, controversy, schedules, photographs, and the day-to-day history surrounding Upper Midwest racing.</p>
+              <p className="ma-lede">Browse digitized racing newspapers by publication, year, and issue—or search OCR-indexed pages for drivers, tracks, results, point standings, and the day-to-day history surrounding Upper Midwest racing.</p>
               <div className="ma-actions"><Link href="/media" className="ma-button">Back to Media Archive</Link><Link href="/media/race-programs" className="ma-button-ghost">Race Programs</Link></div>
             </div>
             <div className="ma-hero-media">
@@ -49,10 +51,14 @@ export default async function NewspapersPage() {
             <div className="ma-stat"><strong>{issues.length.toLocaleString()}</strong><span>Digitized Issues</span></div>
             <div className="ma-stat"><strong>{publications.length}</strong><span>Publications</span></div>
             <div className="ma-stat"><strong>{pageCount.toLocaleString()}</strong><span>Preserved Pages</span></div>
-            <div className="ma-stat"><strong>{earliest ?? '—'}</strong><span>Earliest Issue</span></div>
-            <div className="ma-stat"><strong>{latest ?? '—'}</strong><span>Latest Issue</span></div>
+            <div className="ma-stat"><strong>136</strong><span>OCR Searchable Pages</span></div>
+            <div className="ma-stat"><strong>1959</strong><span>Searchable MRN Year</span></div>
           </div>
         </div>
+      </section>
+
+      <section className="ma-section" id="newspaper-search">
+        <NewspaperSearch />
       </section>
 
       <section className="ma-section">

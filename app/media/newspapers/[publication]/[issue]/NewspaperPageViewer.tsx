@@ -6,8 +6,13 @@ import type { CSSProperties } from "react"
 
 type NewspaperPage = { label: string; image: string }
 
-export default function NewspaperPageViewer({ pages }: { pages: NewspaperPage[] }) {
-  const [openPageIndex, setOpenPageIndex] = useState<number | null>(null)
+type NewspaperPageViewerProps = {
+  pages: NewspaperPage[]
+  initialPageIndex?: number | null
+}
+
+export default function NewspaperPageViewer({ pages, initialPageIndex = null }: NewspaperPageViewerProps) {
+  const [openPageIndex, setOpenPageIndex] = useState<number | null>(initialPageIndex)
   const closeViewer = () => setOpenPageIndex(null)
   const goPrev = () => { if (openPageIndex !== null) setOpenPageIndex(openPageIndex === 0 ? pages.length - 1 : openPageIndex - 1) }
   const goNext = () => { if (openPageIndex !== null) setOpenPageIndex(openPageIndex === pages.length - 1 ? 0 : openPageIndex + 1) }
@@ -31,7 +36,7 @@ export default function NewspaperPageViewer({ pages }: { pages: NewspaperPage[] 
       </button>)}
     </div>
 
-    {openPageIndex !== null && <div style={overlay} onClick={closeViewer}>
+    {openPageIndex !== null && pages[openPageIndex] ? <div style={overlay} onClick={closeViewer}>
       <button type="button" style={close} onClick={(e)=>{e.stopPropagation();closeViewer()}} aria-label="Close page viewer">×</button>
       {pages.length > 1 ? <button type="button" style={{...arrow,left:18}} onClick={(e)=>{e.stopPropagation();goPrev()}} aria-label="Previous page">‹</button> : null}
       <div style={shell} onClick={(e)=>e.stopPropagation()}>
@@ -39,7 +44,7 @@ export default function NewspaperPageViewer({ pages }: { pages: NewspaperPage[] 
         <Image src={pages[openPageIndex].image} alt={pages[openPageIndex].label} width={1200} height={1650} priority unoptimized style={fullImage}/>
       </div>
       {pages.length > 1 ? <button type="button" style={{...arrow,right:18}} onClick={(e)=>{e.stopPropagation();goNext()}} aria-label="Next page">›</button> : null}
-    </div>}
+    </div> : null}
   </>
 }
 
