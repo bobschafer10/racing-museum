@@ -1,0 +1,152 @@
+{
+  "publication": "midwest-racing-news",
+  "issue_date": "1960-06-08",
+  "engine": "PaddleOCR 3.5.0",
+  "detection_model": "PP-OCRv5_mobile_det",
+  "recognition_model": "en_PP-OCRv5_mobile_rec",
+  "max_width": 2400,
+  "column_count": 5,
+  "page_count": 8,
+  "pages": [
+    {
+      "page": "1.jpg",
+      "original_size": [
+        3034,
+        4150
+      ],
+      "prepared_size": [
+        2400,
+        3283
+      ],
+      "recognized_lines": 123,
+      "characters": 2856,
+      "average_recognition_score": 0.9245,
+      "minimum_recognition_score": 0.1403,
+      "standings_candidates": 0,
+      "ocr_seconds": 5.49
+    },
+    {
+      "page": "2.jpg",
+      "original_size": [
+        3002,
+        4175
+      ],
+      "prepared_size": [
+        2400,
+        3338
+      ],
+      "recognized_lines": 375,
+      "characters": 10207,
+      "average_recognition_score": 0.977,
+      "minimum_recognition_score": 0.1044,
+      "standings_candidates": 2,
+      "ocr_seconds": 13.72
+    },
+    {
+      "page": "3.jpg",
+      "original_size": [
+        2999,
+        4194
+      ],
+      "prepared_size": [
+        2400,
+        3356
+      ],
+      "recognized_lines": 224,
+      "characters": 6028,
+      "average_recognition_score": 0.9601,
+      "minimum_recognition_score": 0.2101,
+      "standings_candidates": 0,
+      "ocr_seconds": 9.1
+    },
+    {
+      "page": "4.jpg",
+      "original_size": [
+        3051,
+        4145
+      ],
+      "prepared_size": [
+        2400,
+        3261
+      ],
+      "recognized_lines": 362,
+      "characters": 10274,
+      "average_recognition_score": 0.9837,
+      "minimum_recognition_score": 0.2739,
+      "standings_candidates": 0,
+      "ocr_seconds": 13.49
+    },
+    {
+      "page": "5.jpg",
+      "original_size": [
+        3003,
+        4156
+      ],
+      "prepared_size": [
+        2400,
+        3321
+      ],
+      "recognized_lines": 577,
+      "characters": 6346,
+      "average_recognition_score": 0.9803,
+      "minimum_recognition_score": 0.2051,
+      "standings_candidates": 0,
+      "ocr_seconds": 12.28
+    },
+    {
+      "page": "6.jpg",
+      "original_size": [
+        3023,
+        4190
+      ],
+      "prepared_size": [
+        2400,
+        3326
+      ],
+      "recognized_lines": 130,
+      "characters": 3674,
+      "average_recognition_score": 0.9782,
+      "minimum_recognition_score": 0.1416,
+      "standings_candidates": 0,
+      "ocr_seconds": 6.11
+    },
+    {
+      "page": "7.jpg",
+      "original_size": [
+        2982,
+        4189
+      ],
+      "prepared_size": [
+        2400,
+        3371
+      ],
+      "recognized_lines": 546,
+      "characters": 14786,
+      "average_recognition_score": 0.9793,
+      "minimum_recognition_score": 0.1161,
+      "standings_candidates": 0,
+      "ocr_seconds": 18.85
+    },
+    {
+      "page": "8.jpg",
+      "original_size": [
+        2990,
+        4207
+      ],
+      "prepared_size": [
+        2400,
+        3377
+      ],
+      "recognized_lines": 14,
+      "characters": 585,
+      "average_recognition_score": 0.9392,
+      "minimum_recognition_score": 0.2492,
+      "standings_candidates": 0,
+      "ocr_seconds": 2.38
+    }
+  ],
+  "total_characters": 54756,
+  "total_candidates": 2,
+  "total_ocr_seconds": 81.42,
+  "wall_seconds": 101.87
+}

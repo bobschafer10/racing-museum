@@ -1,0 +1,186 @@
+{
+  "publication": "midwest-racing-news",
+  "issue_date": "1960-06-29",
+  "engine": "PaddleOCR 3.5.0",
+  "detection_model": "PP-OCRv5_mobile_det",
+  "recognition_model": "en_PP-OCRv5_mobile_rec",
+  "max_width": 2400,
+  "column_count": 5,
+  "page_count": 10,
+  "pages": [
+    {
+      "page": "1.jpg",
+      "original_size": [
+        3029,
+        4175
+      ],
+      "prepared_size": [
+        2400,
+        3308
+      ],
+      "recognized_lines": 122,
+      "characters": 3135,
+      "average_recognition_score": 0.9667,
+      "minimum_recognition_score": 0.1237,
+      "standings_candidates": 0,
+      "ocr_seconds": 5.41
+    },
+    {
+      "page": "2.jpg",
+      "original_size": [
+        3019,
+        4141
+      ],
+      "prepared_size": [
+        2400,
+        3292
+      ],
+      "recognized_lines": 296,
+      "characters": 8860,
+      "average_recognition_score": 0.9748,
+      "minimum_recognition_score": 0.1735,
+      "standings_candidates": 1,
+      "ocr_seconds": 11.57
+    },
+    {
+      "page": "3.jpg",
+      "original_size": [
+        3031,
+        4121
+      ],
+      "prepared_size": [
+        2400,
+        3263
+      ],
+      "recognized_lines": 192,
+      "characters": 5666,
+      "average_recognition_score": 0.9676,
+      "minimum_recognition_score": 0.2427,
+      "standings_candidates": 0,
+      "ocr_seconds": 8.45
+    },
+    {
+      "page": "4.jpg",
+      "original_size": [
+        3062,
+        4170
+      ],
+      "prepared_size": [
+        2400,
+        3268
+      ],
+      "recognized_lines": 223,
+      "characters": 6843,
+      "average_recognition_score": 0.9795,
+      "minimum_recognition_score": 0.3651,
+      "standings_candidates": 0,
+      "ocr_seconds": 9.25
+    },
+    {
+      "page": "5.jpg",
+      "original_size": [
+        2975,
+        4163
+      ],
+      "prepared_size": [
+        2400,
+        3358
+      ],
+      "recognized_lines": 327,
+      "characters": 9360,
+      "average_recognition_score": 0.9805,
+      "minimum_recognition_score": 0.1586,
+      "standings_candidates": 0,
+      "ocr_seconds": 12.19
+    },
+    {
+      "page": "6.jpg",
+      "original_size": [
+        2984,
+        4134
+      ],
+      "prepared_size": [
+        2400,
+        3325
+      ],
+      "recognized_lines": 380,
+      "characters": 10618,
+      "average_recognition_score": 0.9712,
+      "minimum_recognition_score": 0.0835,
+      "standings_candidates": 1,
+      "ocr_seconds": 13.89
+    },
+    {
+      "page": "7.jpg",
+      "original_size": [
+        3081,
+        4180
+      ],
+      "prepared_size": [
+        2400,
+        3256
+      ],
+      "recognized_lines": 511,
+      "characters": 5617,
+      "average_recognition_score": 0.9785,
+      "minimum_recognition_score": 0.2389,
+      "standings_candidates": 0,
+      "ocr_seconds": 11.01
+    },
+    {
+      "page": "8.jpg",
+      "original_size": [
+        2987,
+        4158
+      ],
+      "prepared_size": [
+        2400,
+        3341
+      ],
+      "recognized_lines": 136,
+      "characters": 3209,
+      "average_recognition_score": 0.9766,
+      "minimum_recognition_score": 0.1418,
+      "standings_candidates": 0,
+      "ocr_seconds": 5.65
+    },
+    {
+      "page": "9.jpg",
+      "original_size": [
+        2987,
+        4148
+      ],
+      "prepared_size": [
+        2400,
+        3333
+      ],
+      "recognized_lines": 343,
+      "characters": 9716,
+      "average_recognition_score": 0.9814,
+      "minimum_recognition_score": 0.4974,
+      "standings_candidates": 1,
+      "ocr_seconds": 12.45
+    },
+    {
+      "page": "10.jpg",
+      "original_size": [
+        3024,
+        4170
+      ],
+      "prepared_size": [
+        2400,
+        3310
+      ],
+      "recognized_lines": 23,
+      "characters": 1194,
+      "average_recognition_score": 0.9894,
+      "minimum_recognition_score": 0.9444,
+      "standings_candidates": 0,
+      "ocr_seconds": 2.8
+    }
+  ],
+  "total_characters": 64218,
+  "total_candidates": 3,
+  "total_ocr_seconds": 92.67,
+  "wall_seconds": 113.01
+}

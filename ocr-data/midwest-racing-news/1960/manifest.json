@@ -1,0 +1,829 @@
+{
+  "publication": "midwest-racing-news",
+  "year": 1960,
+  "issues": [
+    {
+      "issue_date": "1960-05-18",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-05-18/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-05-18/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-05-18/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-05-18/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-05-18/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-05-18/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-05-18/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-05-18/8.txt"
+        }
+      ],
+      "summary": "1960-05-18/summary.json",
+      "candidates": "1960-05-18/candidates.json"
+    },
+    {
+      "issue_date": "1960-05-25",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-05-25/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-05-25/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-05-25/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-05-25/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-05-25/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-05-25/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-05-25/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-05-25/8.txt"
+        }
+      ],
+      "summary": "1960-05-25/summary.json",
+      "candidates": "1960-05-25/candidates.json"
+    },
+    {
+      "issue_date": "1960-06-01",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-06-01/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-06-01/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-06-01/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-06-01/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-06-01/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-06-01/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-06-01/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-06-01/8.txt"
+        }
+      ],
+      "summary": "1960-06-01/summary.json",
+      "candidates": "1960-06-01/candidates.json"
+    },
+    {
+      "issue_date": "1960-06-08",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-06-08/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-06-08/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-06-08/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-06-08/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-06-08/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-06-08/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-06-08/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-06-08/8.txt"
+        }
+      ],
+      "summary": "1960-06-08/summary.json",
+      "candidates": "1960-06-08/candidates.json"
+    },
+    {
+      "issue_date": "1960-06-15",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-06-15/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-06-15/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-06-15/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-06-15/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-06-15/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-06-15/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-06-15/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-06-15/8.txt"
+        }
+      ],
+      "summary": "1960-06-15/summary.json",
+      "candidates": "1960-06-15/candidates.json"
+    },
+    {
+      "issue_date": "1960-06-22",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-06-22/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-06-22/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-06-22/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-06-22/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-06-22/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-06-22/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-06-22/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-06-22/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-06-22/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-06-22/10.txt"
+        }
+      ],
+      "summary": "1960-06-22/summary.json",
+      "candidates": "1960-06-22/candidates.json"
+    },
+    {
+      "issue_date": "1960-06-29",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-06-29/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-06-29/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-06-29/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-06-29/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-06-29/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-06-29/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-06-29/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-06-29/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-06-29/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-06-29/10.txt"
+        }
+      ],
+      "summary": "1960-06-29/summary.json",
+      "candidates": "1960-06-29/candidates.json"
+    },
+    {
+      "issue_date": "1960-07-06",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-07-06/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-07-06/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-07-06/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-07-06/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-07-06/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-07-06/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-07-06/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-07-06/8.txt"
+        }
+      ],
+      "summary": "1960-07-06/summary.json",
+      "candidates": "1960-07-06/candidates.json"
+    },
+    {
+      "issue_date": "1960-07-13",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-07-13/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-07-13/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-07-13/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-07-13/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-07-13/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-07-13/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-07-13/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-07-13/8.txt"
+        }
+      ],
+      "summary": "1960-07-13/summary.json",
+      "candidates": "1960-07-13/candidates.json"
+    },
+    {
+      "issue_date": "1960-07-20",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-07-20/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-07-20/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-07-20/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-07-20/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-07-20/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-07-20/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-07-20/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-07-20/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-07-20/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-07-20/10.txt"
+        },
+        {
+          "page": 11,
+          "file": "1960-07-20/11.txt"
+        },
+        {
+          "page": 12,
+          "file": "1960-07-20/12.txt"
+        }
+      ],
+      "summary": "1960-07-20/summary.json",
+      "candidates": "1960-07-20/candidates.json"
+    },
+    {
+      "issue_date": "1960-07-27",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-07-27/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-07-27/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-07-27/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-07-27/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-07-27/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-07-27/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-07-27/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-07-27/8.txt"
+        }
+      ],
+      "summary": "1960-07-27/summary.json",
+      "candidates": "1960-07-27/candidates.json"
+    },
+    {
+      "issue_date": "1960-08-03",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-08-03/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-08-03/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-08-03/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-08-03/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-08-03/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-08-03/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-08-03/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-08-03/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-08-03/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-08-03/10.txt"
+        }
+      ],
+      "summary": "1960-08-03/summary.json",
+      "candidates": "1960-08-03/candidates.json"
+    },
+    {
+      "issue_date": "1960-08-10",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-08-10/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-08-10/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-08-10/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-08-10/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-08-10/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-08-10/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-08-10/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-08-10/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-08-10/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-08-10/10.txt"
+        }
+      ],
+      "summary": "1960-08-10/summary.json",
+      "candidates": "1960-08-10/candidates.json"
+    },
+    {
+      "issue_date": "1960-08-17",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-08-17/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-08-17/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-08-17/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-08-17/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-08-17/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-08-17/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-08-17/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-08-17/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-08-17/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-08-17/10.txt"
+        }
+      ],
+      "summary": "1960-08-17/summary.json",
+      "candidates": "1960-08-17/candidates.json"
+    },
+    {
+      "issue_date": "1960-08-24",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-08-24/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-08-24/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-08-24/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-08-24/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-08-24/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-08-24/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-08-24/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-08-24/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-08-24/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-08-24/10.txt"
+        }
+      ],
+      "summary": "1960-08-24/summary.json",
+      "candidates": "1960-08-24/candidates.json"
+    },
+    {
+      "issue_date": "1960-08-31",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-08-31/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-08-31/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-08-31/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-08-31/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-08-31/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-08-31/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-08-31/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-08-31/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-08-31/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-08-31/10.txt"
+        }
+      ],
+      "summary": "1960-08-31/summary.json",
+      "candidates": "1960-08-31/candidates.json"
+    },
+    {
+      "issue_date": "1960-09-07",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-09-07/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-09-07/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-09-07/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-09-07/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-09-07/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-09-07/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-09-07/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-09-07/8.txt"
+        },
+        {
+          "page": 9,
+          "file": "1960-09-07/9.txt"
+        },
+        {
+          "page": 10,
+          "file": "1960-09-07/10.txt"
+        }
+      ],
+      "summary": "1960-09-07/summary.json",
+      "candidates": "1960-09-07/candidates.json"
+    },
+    {
+      "issue_date": "1960-09-14",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-09-14/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-09-14/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-09-14/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-09-14/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-09-14/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-09-14/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-09-14/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-09-14/8.txt"
+        }
+      ],
+      "summary": "1960-09-14/summary.json",
+      "candidates": "1960-09-14/candidates.json"
+    },
+    {
+      "issue_date": "1960-09-21",
+      "pages": [
+        {
+          "page": 1,
+          "file": "1960-09-21/1.txt"
+        },
+        {
+          "page": 2,
+          "file": "1960-09-21/2.txt"
+        },
+        {
+          "page": 3,
+          "file": "1960-09-21/3.txt"
+        },
+        {
+          "page": 4,
+          "file": "1960-09-21/4.txt"
+        },
+        {
+          "page": 5,
+          "file": "1960-09-21/5.txt"
+        },
+        {
+          "page": 6,
+          "file": "1960-09-21/6.txt"
+        },
+        {
+          "page": 7,
+          "file": "1960-09-21/7.txt"
+        },
+        {
+          "page": 8,
+          "file": "1960-09-21/8.txt"
+        }
+      ],
+      "summary": "1960-09-21/summary.json",
+      "candidates": "1960-09-21/candidates.json"
+    }
+  ],
+  "issue_count": 19,
+  "page_count": 172
+}
