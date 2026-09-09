@@ -11,6 +11,7 @@ on:
 permissions:
   actions: read
   contents: write
+  id-token: write
 
 jobs:
   publish:
@@ -64,10 +65,7 @@ jobs:
                   pages.append({'page':page_num,'file':f'{issue}/{page_num}.txt'})
               manifest['issues'].append({'issue_date':issue,'pages':pages,'summary':f'{issue}/summary.json'})
 
-          # June 3 validated fast-model artifact.
           copy_issue(Path('/tmp/mrn-june03'))
-
-          # Remaining 15 issues from consolidated artifact.
           for summary in sorted(Path('/tmp/mrn-corpus').rglob('summary.json')):
               copy_issue(summary.parent)
 
@@ -89,7 +87,35 @@ jobs:
           git add ocr-data/midwest-racing-news/1959
           if git diff --cached --quiet; then
             echo 'OCR data already published.'
-            exit 0
+          else
+            git commit -m 'Publish searchable 1959 MRN OCR text'
+            git push origin HEAD:paddleocr-mrn-pilot
           fi
-          git commit -m 'Publish searchable 1959 MRN OCR text'
-          git push origin HEAD:paddleocr-mrn-pilot
+
+      - name: Ingest OCR text into Supabase
+        shell: bash
+        run: |
+          set -euo pipefail
+          OIDC_TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-mrn-ocr-import" | jq -r '.value')"
+          test -n "$OIDC_TOKEN"
+
+          issues=(
+            1959-06-03 1959-06-10 1959-06-17 1959-06-24
+            1959-07-01 1959-07-08 1959-07-15 1959-07-22 1959-07-29
+            1959-08-05 1959-08-12 1959-08-19 1959-08-26
+            1959-09-02 1959-09-09 1959-09-16
+          )
+
+          total=0
+          for issue in "${issues[@]}"; do
+            response="$(curl -fsSL \
+              -H "Authorization: Bearer ${OIDC_TOKEN}" \
+              "https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/mrn-1959-ocr-import?issue=${issue}")"
+            echo "$response"
+            updated="$(echo "$response" | jq -r '.updated // 0')"
+            total=$((total + updated))
+          done
+          echo "Imported page rows: $total"
+          test "$total" -eq 136
