@@ -192,7 +192,7 @@ export default async function SeriesSeasonPage({
                 {season.champion_name ? `Champion: ${season.champion_name}` : 'Championship season in progress'}
               </div>
               <p className={styles.heroDescription}>
-                Explore the complete {seasonYear} season schedule, race winners, final point standings, associated tracks, and preserved source material for {series.series_name}.
+                Explore the available {seasonYear} season record, including final point standings, recorded race results, associated tracks, and preserved source material for {series.series_name}.
               </p>
               <div className={styles.heroActions}>
                 <Link href={`/series/${slug}`} className={styles.secondaryAction}>Series Overview</Link>
@@ -318,7 +318,7 @@ export default async function SeriesSeasonPage({
           <SectionHeader kicker="Research Record" title="Source Attribution" note="Museum research trail" />
           <div className={styles.sourcePanel}>
             <p>{series.attribution_text || 'Historical series data is being compiled from archival sources and museum research.'}</p>
-            {season.source_url && <p>Source: <a href={season.source_url}>The Third Turn season page</a></p>}
+            {season.source_url && <p>Source: <a href={season.source_url}>{series.source_name || 'Open source page'}</a></p>}
           </div>
         </section>
 
