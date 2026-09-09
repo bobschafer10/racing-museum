@@ -1,0 +1,61 @@
+name: Temporary Wayback Slinger Finals
+
+on:
+  push:
+    paths:
+      - '.github/workflows/wayback-slinger-finals.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fetch likely final Slinger standings snapshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p audit/wayback-slinger-finals
+          python - <<'PY'
+          import json, time, urllib.request
+          from pathlib import Path
+          out=Path('audit/wayback-slinger-finals')
+          caps={
+            2000:('20001014134158','http://www.slingersuperspeedway.com:80/stand.html'),
+            2001:('20011024022503','http://www.slingersuperspeedway.com:80/stand.html'),
+            2002:('20021207091447','http://www.slingersuperspeedway.com:80/stand.html'),
+            2003:('20031202031802','http://www.slingersuperspeedway.com:80/stand.html'),
+            2004:('20041010063922','http://www.slingersuperspeedway.com:80/stand.html'),
+            2005:('20051108081120','http://www.slingersuperspeedway.com:80/stand.html'),
+            2006:('20061031161221','http://www.slingersuperspeedway.com/stand.html'),
+            2007:('20070917094940','http://www.slingersuperspeedway.com:80/stand.html'),
+          }
+          meta=[]
+          for year,(ts,orig) in caps.items():
+              url=f'https://web.archive.org/web/{ts}id_/{orig}'
+              req=urllib.request.Request(url,headers={'User-Agent':'UMARM historical standings recovery/1.0'})
+              last=None
+              for attempt in range(4):
+                  try:
+                      with urllib.request.urlopen(req,timeout=90) as r:
+                          body=r.read()
+                          (out/f'{year}_{ts}.html').write_bytes(body)
+                          meta.append({'year':year,'timestamp':ts,'original':orig,'resolved':r.geturl(),'status':r.status,'bytes':len(body)})
+                          print('CAPTURE',year,ts,r.status,len(body),r.geturl())
+                          break
+                  except Exception as e:
+                      last=repr(e); print('ERROR',year,attempt+1,last); time.sleep(2*(attempt+1))
+              else:
+                  raise RuntimeError(f'{year}: {last}')
+          (out/'captures.json').write_text(json.dumps(meta,indent=2),encoding='utf-8')
+          PY
+      - name: Upload Slinger finals recovery
+        uses: actions/upload-artifact@v4
+        with:
+          name: wayback-slinger-finals
+          path: audit/wayback-slinger-finals
+          if-no-files-found: error
+          retention-days: 1
