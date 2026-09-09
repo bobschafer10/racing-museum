@@ -1,0 +1,95 @@
+name: Publish MRN 1959 OCR Text
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/publish-mrn-1959-ocr.yml'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+
+      - name: Download completed OCR artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/mrn-corpus /tmp/mrn-june03
+          gh api -H 'Accept: application/vnd.github+json' \
+            "/repos/${GH_REPO}/actions/artifacts/10124704704/zip" > /tmp/mrn-corpus.zip
+          gh api -H 'Accept: application/vnd.github+json' \
+            "/repos/${GH_REPO}/actions/artifacts/10124215344/zip" > /tmp/mrn-june03.zip
+          unzip -q /tmp/mrn-corpus.zip -d /tmp/mrn-corpus
+          unzip -q /tmp/mrn-june03.zip -d /tmp/mrn-june03
+
+      - name: Build public OCR text tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf ocr-data/midwest-racing-news/1959
+          mkdir -p ocr-data/midwest-racing-news/1959
+          python - <<'PY'
+          import json, shutil
+          from pathlib import Path
+
+          dest_root = Path('ocr-data/midwest-racing-news/1959')
+          manifest = {'publication':'midwest-racing-news','year':1959,'issues':[]}
+
+          def copy_issue(src: Path):
+              summary_path = src / 'summary.json'
+              summary = json.loads(summary_path.read_text(encoding='utf-8'))
+              issue = summary['issue_date']
+              dst = dest_root / issue
+              dst.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(summary_path, dst / 'summary.json')
+              pages=[]
+              for text_file in sorted((src / 'text').glob('*-columns.txt'), key=lambda p:int(p.name.split('-')[0])):
+                  page_num = int(text_file.name.split('-')[0])
+                  target = dst / f'{page_num}.txt'
+                  shutil.copy2(text_file, target)
+                  pages.append({'page':page_num,'file':f'{issue}/{page_num}.txt'})
+              manifest['issues'].append({'issue_date':issue,'pages':pages,'summary':f'{issue}/summary.json'})
+
+          # June 3 validated fast-model artifact.
+          copy_issue(Path('/tmp/mrn-june03'))
+
+          # Remaining 15 issues from consolidated artifact.
+          for summary in sorted(Path('/tmp/mrn-corpus').rglob('summary.json')):
+              copy_issue(summary.parent)
+
+          manifest['issues'].sort(key=lambda x:x['issue_date'])
+          manifest['issue_count']=len(manifest['issues'])
+          manifest['page_count']=sum(len(x['pages']) for x in manifest['issues'])
+          (dest_root / 'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+          print(json.dumps({'issues':manifest['issue_count'],'pages':manifest['page_count']},indent=2))
+          assert manifest['issue_count'] == 16
+          assert manifest['page_count'] == 136
+          PY
+
+      - name: Commit OCR text data
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add ocr-data/midwest-racing-news/1959
+          if git diff --cached --quiet; then
+            echo 'OCR data already published.'
+            exit 0
+          fi
+          git commit -m 'Publish searchable 1959 MRN OCR text'
+          git push origin HEAD:paddleocr-mrn-pilot
