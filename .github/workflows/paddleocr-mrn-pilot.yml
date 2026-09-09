@@ -1,0 +1,53 @@
+name: PaddleOCR MRN 1959 Pilot
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - 'museum-newspaper-manager/paddleocr-mrn-pilot.py'
+      - '.github/workflows/paddleocr-mrn-pilot.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: Run Midwest Racing News OCR pilot
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-pilot.py
+
+      - name: Upload OCR pilot results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paddleocr-mrn-1959-06-03
+          path: audit/paddleocr-mrn-1959-06-03
+          if-no-files-found: warn
+          retention-days: 1
