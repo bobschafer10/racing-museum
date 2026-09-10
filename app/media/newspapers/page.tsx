@@ -39,7 +39,7 @@ export default async function NewspapersPage() {
               <h1 className="ma-title">Racing Newspapers</h1>
               <div className="ma-subtitle">The Weekly Record of the Sport</div>
               <p className="ma-lede">Browse digitized racing newspapers by publication, year, and issue. These pages preserve results, personalities, advertising, controversy, schedules, photographs, and the day-to-day history surrounding Upper Midwest racing.</p>
-              <div className="ma-actions"><Link href="/media" className="ma-button">Back to Media Archive</Link><Link href="/media/race-programs" className="ma-button-ghost">Race Programs</Link></div>
+              <div className="ma-actions"><Link href="/media" className="ma-button">Back to Media Archive</Link><Link href="/media/search?source=newspaper" className="ma-button-ghost">Search Newspaper OCR</Link><Link href="/media/race-programs" className="ma-button-ghost">Race Programs</Link></div>
             </div>
             <div className="ma-hero-media">
               {publications.slice(0,2).map(pub => PUBLICATION_LOGOS[pub.slug] ? <img key={pub.slug} src={PUBLICATION_LOGOS[pub.slug]} alt={pub.name} className="ma-logo" /> : null)}
@@ -79,7 +79,7 @@ export default async function NewspapersPage() {
         </div>
       </section>
 
-      <section className="ma-section"><div className="ma-footer-links"><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link><Link href="/media/race-programs" className="ma-footer-link">Race Programs<span>Browse printed publications →</span></Link><Link href="/photographers" className="ma-footer-link">Photographers<span>Explore image-makers →</span></Link></div></section>
+      <section className="ma-section"><div className="ma-footer-links"><Link href="/media/search?source=newspaper" className="ma-footer-link">Search Newspaper OCR<span>Search words inside every OCR page →</span></Link><Link href="/media/race-programs" className="ma-footer-link">Race Programs<span>Browse printed publications →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
     </main>
   )
 }
