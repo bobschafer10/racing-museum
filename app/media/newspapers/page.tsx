@@ -17,6 +17,11 @@ const PUBLICATION_LOGOS: Record<string, string> = {
   "all-the-dirt-racing-news": "/newspaper-assets/all-the-dirt-racing-news.jpg",
 }
 
+function yearRange(first: number | null, last: number | null) {
+  if (!first || !last || last < first) return []
+  return Array.from({ length: last - first + 1 }, (_, index) => first + index)
+}
+
 export default async function NewspapersPage() {
   const issues = await getNewspaperIssues()
   const publications = Object.values(issues.reduce((acc, issue) => {
@@ -33,11 +38,34 @@ export default async function NewspapersPage() {
   const pageCount = issues.reduce((sum, issue) => sum + (issue.pages?.length || 0), 0)
   const heroCover = issues.find(i => i.coverImage)?.coverImage
 
-  const [{ count: searchablePages }, { data: coverageRows }] = await Promise.all([
-    supabase.from("newspaper_ocr_pages").select("id", { count: "exact", head: true }).eq("status", "complete"),
-    supabase.from("newspaper_ocr_pages").select("issue_date").eq("status", "complete"),
+  // Keep OCR coverage checks tiny and cacheable. The former exact-count query used
+  // HEAD, which bypassed the resilient GET cache and could display 0 during a
+  // temporary Supabase/PostgREST timeout. Fetching one oldest row with an exact
+  // count gives us the same count via GET, while a second one-row GET finds the
+  // newest indexed year. This also avoids loading every OCR row on each page view.
+  const [{ count: searchablePages, data: oldestRows }, { data: newestRows }] = await Promise.all([
+    supabase
+      .from("newspaper_ocr_pages")
+      .select("issue_date", { count: "exact" })
+      .eq("status", "complete")
+      .order("issue_date", { ascending: true })
+      .limit(1),
+    supabase
+      .from("newspaper_ocr_pages")
+      .select("issue_date")
+      .eq("status", "complete")
+      .order("issue_date", { ascending: false })
+      .limit(1),
   ])
-  const searchableYears = Array.from(new Set(((coverageRows || []) as OcrCoverageRow[]).map(row => Number(row.issue_date.slice(0, 4))).filter(Number.isFinite))).sort((a,b)=>a-b)
+
+  const oldestIssue = ((oldestRows || []) as OcrCoverageRow[])[0]?.issue_date
+  const newestIssue = ((newestRows || []) as OcrCoverageRow[])[0]?.issue_date
+  const firstSearchableYear = oldestIssue ? Number(oldestIssue.slice(0, 4)) : null
+  const lastSearchableYear = newestIssue ? Number(newestIssue.slice(0, 4)) : null
+  const searchableYears = yearRange(
+    Number.isFinite(firstSearchableYear) ? firstSearchableYear : null,
+    Number.isFinite(lastSearchableYear) ? lastSearchableYear : null,
+  )
   const searchableYearLabel = searchableYears.length
     ? searchableYears.length === 1
       ? String(searchableYears[0])
