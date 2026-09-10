@@ -1,0 +1,320 @@
+name: PaddleOCR CFRN Year
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Checkered Flag Racing News year to OCR'
+        required: true
+        type: string
+
+permissions:
+  actions: write
+  contents: read
+  id-token: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      year: ${{ steps.matrix.outputs.year }}
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      issue_count: ${{ steps.matrix.outputs.issue_count }}
+      page_count: ${{ steps.matrix.outputs.page_count }}
+    steps:
+      - name: Build issue matrix from museum newspaper manifest
+        id: matrix
+        env:
+          INPUT_YEAR: ${{ inputs.year }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          YEAR="${INPUT_YEAR:-}"
+          if [[ ! "$YEAR" =~ ^19[0-9][0-9]$ ]]; then
+            echo "Invalid year: $YEAR" >&2
+            exit 1
+          fi
+          if (( YEAR < 1969 || YEAR > 1978 )); then
+            echo "Year $YEAR is outside configured CFRN range 1969-1978" >&2
+            exit 1
+          fi
+          curl -fsSL \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/public/data/newspapers-manifest.json" \
+            -o /tmp/newspapers-manifest.json
+          python - "$YEAR" "$GITHUB_OUTPUT" <<'PY'
+          import json, re, sys
+          from pathlib import Path
+          from urllib.parse import unquote, urlparse
+
+          year=int(sys.argv[1])
+          output=Path(sys.argv[2])
+          issues=json.loads(Path('/tmp/newspapers-manifest.json').read_text(encoding='utf-8'))
+          rows=[]
+          total_pages=0
+          image_re=re.compile(r'.+\.(?:jpg|jpeg|png|webp)$', re.I)
+
+          for issue in issues:
+              if issue.get('publicationSlug') != 'checkered-flag-racing-news' or int(issue.get('year') or 0) != year:
+                  continue
+              issue_date=str(issue.get('issueDate') or issue.get('slug') or '')
+              if not issue_date.startswith(f'{year}-'):
+                  continue
+
+              all_urls=[]
+              for value in [issue.get('coverImage'), *(issue.get('pages') or []), issue.get('backCoverImage')]:
+                  if isinstance(value,str) and value:
+                      all_urls.append(value)
+
+              pages=[]
+              seen=set()
+              for url in all_urls:
+                  filename=unquote(urlparse(url).path.split('/')[-1])
+                  low=filename.lower()
+                  if low in {'thumbnail.jpg','thumbnail.jpeg','thumbnail.png','thumbnail.webp'}:
+                      continue
+                  if not image_re.fullmatch(filename):
+                      continue
+                  if '/' in filename or '\\' in filename or filename in {'.','..'}:
+                      raise SystemExit(f'Unsafe page filename for {issue_date}: {filename!r}')
+                  if filename in seen:
+                      continue
+                  seen.add(filename)
+                  pages.append(filename)
+
+              # Some archives expose cover convenience images in addition to the exact
+              # page image. Only remove them when a different numbered/page-labeled scan
+              # clearly represents the same issue page set; otherwise preserve every scan.
+              if not pages:
+                  raise SystemExit(f'No OCR page images found in manifest for {issue_date}')
+
+              rows.append({'issue':issue_date,'pages_json':json.dumps(pages,separators=(',',':')),'page_count':len(pages)})
+              total_pages += len(pages)
+
+          rows.sort(key=lambda r:r['issue'])
+          if not rows:
+              raise SystemExit(f'No Checkered Flag Racing News issues found for {year}')
+          matrix=json.dumps({'include':rows},separators=(',',':'))
+          print(f'CFRN {year}: {len(rows)} issues / {total_pages} scan images')
+          for row in rows:
+              print(f"  {row['issue']}: {row['page_count']} scans")
+          with output.open('a',encoding='utf-8') as f:
+              f.write(f'year={year}\n')
+              f.write(f'issue_count={len(rows)}\n')
+              f.write(f'page_count={total_pages}\n')
+              f.write(f'matrix={matrix}\n')
+          PY
+
+  ocr:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Check out OCR runner only
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR ${{ matrix.issue }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: checkered-flag-racing-news
+          MRN_ISSUE_DATE: ${{ matrix.issue }}
+          MRN_PAGES_JSON: ${{ matrix.pages_json }}
+          MRN_OUTPUT_ROOT: audit/paddleocr-cfrn-${{ needs.prepare.outputs.year }}/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Upload OCR artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfrn-${{ needs.prepare.outputs.year }}-${{ matrix.issue }}
+          path: audit/paddleocr-cfrn-${{ needs.prepare.outputs.year }}/${{ matrix.issue }}
+          if-no-files-found: warn
+          retention-days: 14
+
+  aggregate:
+    needs: [prepare, ocr]
+    if: always() && needs.ocr.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Download issue artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: cfrn-${{ needs.prepare.outputs.year }}-*
+          path: collected
+          merge-multiple: false
+
+      - name: Build year candidate index
+        shell: bash
+        env:
+          YEAR: ${{ needs.prepare.outputs.year }}
+          EXPECTED_ISSUES: ${{ needs.prepare.outputs.issue_count }}
+          EXPECTED_PAGES: ${{ needs.prepare.outputs.page_count }}
+        run: |
+          set -euo pipefail
+          mkdir -p aggregate
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          year=int(os.environ['YEAR'])
+          root=Path('collected')
+          summaries=[]
+          candidates=[]
+          for p in root.rglob('summary.json'):
+              summaries.append(json.loads(p.read_text(encoding='utf-8')))
+          for p in root.rglob('candidates.json'):
+              rows=json.loads(p.read_text(encoding='utf-8'))
+              if isinstance(rows,list): candidates.extend(rows)
+          summaries.sort(key=lambda x:x.get('issue_date',''))
+          candidates.sort(key=lambda x:(x.get('issue_date',''),x.get('page',''),x.get('column',0),x.get('anchor_y',0)))
+          index={
+              'year':year,
+              'publication':'checkered-flag-racing-news',
+              'issues_expected':int(os.environ['EXPECTED_ISSUES']),
+              'issues_completed':len(summaries),
+              'pages_expected':int(os.environ['EXPECTED_PAGES']),
+              'pages_completed':sum(int(s.get('page_count',0)) for s in summaries),
+              'characters_recovered':sum(int(s.get('total_characters',0)) for s in summaries),
+              'candidate_count':len(candidates),
+              'issues':summaries,
+          }
+          Path(f'aggregate/{year}-summary.json').write_text(json.dumps(index,indent=2),encoding='utf-8')
+          Path(f'aggregate/{year}-candidates.json').write_text(json.dumps(candidates,indent=2),encoding='utf-8')
+          lines=[
+              f'CHECKERED FLAG RACING NEWS — {year} OCR BATCH',
+              f"Issues completed: {index['issues_completed']}/{index['issues_expected']}",
+              f"Scan images completed: {index['pages_completed']}/{index['pages_expected']}",
+              f"Characters recovered: {index['characters_recovered']}",
+              f"Standings candidates: {index['candidate_count']}",
+              '',
+          ]
+          for c in candidates:
+              lines.append(f"{c.get('issue_date')} | {c.get('page')} | col {c.get('column')} | {c.get('classification_hint')} | {c.get('anchor')}")
+          Path(f'aggregate/{year}-candidate-index.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          print('\n'.join(lines[:5]))
+          if index['issues_completed'] != index['issues_expected'] or index['pages_completed'] != index['pages_expected']:
+              raise SystemExit('OCR year aggregation incomplete')
+          PY
+
+      - name: Upload year aggregate
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfrn-${{ needs.prepare.outputs.year }}-aggregate
+          path: aggregate
+          retention-days: 30
+
+  ingest:
+    needs: [prepare, ocr]
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Download issue artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: cfrn-${{ needs.prepare.outputs.year }}-*
+          path: collected
+          merge-multiple: false
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest OCR pages and standings candidates
+        shell: bash
+        env:
+          YEAR: ${{ needs.prepare.outputs.year }}
+          EXPECTED_PAGES: ${{ needs.prepare.outputs.page_count }}
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          set -euo pipefail
+          total=0
+          candidate_total=0
+          while IFS= read -r summary; do
+            issue_dir="$(dirname "$summary")"
+            issue="$(jq -r '.issue_date' "$summary")"
+            python - "$issue_dir" "$YEAR" > /tmp/ocr-payload.json <<'PY'
+          import json, sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          year=int(sys.argv[2])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          pages=[]
+          for meta in summary.get('pages',[]):
+              page=str(meta['page'])
+              stem=Path(page).stem
+              text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+              pages.append({'page':page,'text':text,'meta':meta})
+          payload={
+              'publication':'checkered-flag-racing-news',
+              'year':year,
+              'issue':summary['issue_date'],
+              'summary':summary,
+              'pages':pages,
+              'candidates':candidates,
+          }
+          print(json.dumps(payload,separators=(',',':')))
+          PY
+            response="$(curl -fsSL -X POST \
+              -H "Authorization: Bearer ${OIDC_TOKEN}" \
+              -H 'Content-Type: application/json' \
+              --data-binary @/tmp/ocr-payload.json \
+              'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+            echo "$issue: $response"
+            updated="$(echo "$response" | jq -r '.updated // 0')"
+            saved_candidates="$(echo "$response" | jq -r '.candidates_saved // 0')"
+            total=$((total + updated))
+            candidate_total=$((candidate_total + saved_candidates))
+          done < <(find collected -name summary.json -print | sort)
+          echo "Imported searchable scans: $total / $EXPECTED_PAGES"
+          echo "Saved automated standings candidates: $candidate_total"
+          test "$total" -eq "$EXPECTED_PAGES"
+
+      - name: Queue next CFRN year after success
+        if: ${{ fromJSON(needs.prepare.outputs.year) < 1978 }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          YEAR: ${{ needs.prepare.outputs.year }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          next=$((YEAR + 1))
+          echo "Dispatching CFRN $next after successful $YEAR ingest"
+          gh workflow run paddleocr-cfrn-year.yml \
+            --repo "$GH_REPO" \
+            --ref paddleocr-mrn-pilot \
+            -f year="$next"
