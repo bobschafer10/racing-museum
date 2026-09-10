@@ -129,7 +129,7 @@ const galleryStyles = `
 
 @media (max-width: 720px) {
   .driver-report-utility-inner {
-    width: min(100% - 24px, 1380px);
+    width: min(1380px, calc(100% - 24px));
     min-height: 50px;
     justify-content: space-between;
   }
