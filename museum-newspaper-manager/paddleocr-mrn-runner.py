@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""UMARM PaddleOCR runner for one Midwest Racing News issue.
+"""UMARM PaddleOCR runner for one newspaper issue.
 
 Reads already-uploaded public Supabase page images, performs CPU OCR with
 PP-OCRv5 mobile models, reconstructs newspaper columns, and emits searchable
 text + standings-candidate JSON. It never writes to live standings.
 
 For older issues with simple 1.jpg, 2.jpg... naming, set MRN_PAGE_COUNT.
-For later issues with padded or non-contiguous names, set MRN_PAGES_JSON to a
-JSON array such as ["001.jpg","002.jpg","020.jpg"].
+For later/nonstandard issues, set MRN_PAGES_JSON to a JSON array of the exact
+storage filenames. NEWSPAPER_PUBLICATION selects the newspaper storage folder.
 """
 from __future__ import annotations
 
@@ -19,6 +19,7 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+from urllib.parse import quote
 
 from PIL import Image, ImageFile, ImageOps
 from paddleocr import PaddleOCR
@@ -34,23 +35,32 @@ ISSUE_DATE = os.environ.get("MRN_ISSUE_DATE", "1959-06-03")
 COLUMN_COUNT = int(os.environ.get("MRN_COLUMN_COUNT", "5"))
 MAX_WIDTH = int(os.environ.get("MRN_MAX_WIDTH", "2400"))
 
+# Spaces are required for Checkered Flag filenames such as "Page 1.jpg".
+# Slashes/backslashes and path traversal remain prohibited.
+SAFE_PAGE_RE = re.compile(r"[A-Za-z0-9._ -]+\.(?:jpg|jpeg|png|webp)", re.IGNORECASE)
+
+
+def validate_page_filename(raw_page: object) -> str:
+    page = str(raw_page).strip()
+    if not page or not SAFE_PAGE_RE.fullmatch(page):
+        raise ValueError(f"Unsafe/unsupported page filename: {page!r}")
+    if page in {".", ".."} or ".." in Path(page).parts or Path(page).name != page:
+        raise ValueError(f"Unsafe page path: {page!r}")
+    return page
+
+
 pages_json = os.environ.get("MRN_PAGES_JSON", "").strip()
 if pages_json:
     parsed_pages = json.loads(pages_json)
     if not isinstance(parsed_pages, list) or not parsed_pages:
         raise ValueError("MRN_PAGES_JSON must be a non-empty JSON array")
-    PAGES = []
-    for raw_page in parsed_pages:
-        page = str(raw_page).strip()
-        if not re.fullmatch(r"[A-Za-z0-9._-]+\.(?:jpg|jpeg|png|webp)", page, re.IGNORECASE):
-            raise ValueError(f"Unsafe/unsupported page filename: {page!r}")
-        PAGES.append(page)
+    PAGES = [validate_page_filename(raw_page) for raw_page in parsed_pages]
 else:
     requested_count = int(os.environ.get("MRN_PAGE_COUNT", "8"))
     PAGES = [f"{n}.jpg" for n in range(1, requested_count + 1)]
 
 PAGE_COUNT = len(PAGES)
-ROOT = Path(os.environ.get("MRN_OUTPUT_ROOT", f"audit/paddleocr-mrn/{ISSUE_DATE}"))
+ROOT = Path(os.environ.get("MRN_OUTPUT_ROOT", f"audit/paddleocr-newspaper/{PUBLICATION}/{ISSUE_DATE}"))
 INPUT = ROOT / "_input"
 PREPARED = ROOT / "_prepared"
 JSON_DIR = ROOT / "json"
@@ -58,7 +68,7 @@ TEXT_DIR = ROOT / "text"
 for folder in (INPUT, PREPARED, JSON_DIR, TEXT_DIR):
     folder.mkdir(parents=True, exist_ok=True)
 
-USER_AGENT = "UMARM newspaper OCR research/1.3"
+USER_AGENT = "UMARM newspaper OCR research/1.4"
 KEYWORD_RE = re.compile(
     r"\b(final\s+point(?:s|\s+standings)?|final\s+standings|point\s+standings|"
     r"season\s+standings|championship\s+points?|points?\s+leaders?|standings)\b",
@@ -75,9 +85,10 @@ CURRENT_RE = re.compile(
 
 
 def public_url(page: str) -> str:
+    encoded_page = quote(page, safe="-._~")
     return (
         f"{PROJECT_URL}/storage/v1/object/public/{BUCKET}/newspapers/"
-        f"{PUBLICATION}/{ISSUE_DATE}/{page}"
+        f"{PUBLICATION}/{ISSUE_DATE}/{encoded_page}"
     )
 
 
@@ -336,6 +347,7 @@ def main() -> None:
         raise RuntimeError("OCR completed but extracted zero characters")
 
     print("COMPLETE " + json.dumps({
+        "publication": PUBLICATION,
         "issue": ISSUE_DATE,
         "pages": PAGE_COUNT,
         "characters": summary["total_characters"],
