@@ -1,0 +1,108 @@
+name: PaddleOCR Archive Pilot
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - 'museum-newspaper-manager/paddleocr-archive-runner.py'
+      - '.github/workflows/paddleocr-archive-pilot.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: paddleocr-archive-pilot
+  cancel-in-progress: false
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - document_type: program
+            document_slug: 1956-wausau-fairgrounds-wi-program
+            document_title: 1956 Wausau Fairgrounds WI Program
+            publication_year: '1956'
+            column_count: '2'
+            page_count: '3'
+            pages_json: '["1.jpg","back-cover.jpg","front-cover.jpg"]'
+          - document_type: yearbook
+            document_slug: 1978-capital-super-speedway-wi-yearbook
+            document_title: 1978 Capital Super Speedway WI Yearbook
+            publication_year: '1978'
+            column_count: '2'
+            page_count: '7'
+            pages_json: '["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","back-cover.jpg","front-cover.jpg"]'
+
+    steps:
+      - name: Check out archive OCR runner
+        uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-archive-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR ${{ matrix.document_slug }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          ARCHIVE_DOCUMENT_TYPE: ${{ matrix.document_type }}
+          ARCHIVE_DOCUMENT_SLUG: ${{ matrix.document_slug }}
+          ARCHIVE_DOCUMENT_TITLE: ${{ matrix.document_title }}
+          ARCHIVE_PUBLICATION_YEAR: ${{ matrix.publication_year }}
+          ARCHIVE_COLUMN_COUNT: ${{ matrix.column_count }}
+          ARCHIVE_PAGES_JSON: ${{ matrix.pages_json }}
+          ARCHIVE_OUTPUT_ROOT: audit/paddleocr-archive/${{ matrix.document_slug }}
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-archive-runner.py
+
+      - name: Ingest OCR into Supabase
+        shell: bash
+        env:
+          EXPECTED_PAGES: ${{ matrix.page_count }}
+          PAYLOAD: audit/paddleocr-archive/${{ matrix.document_slug }}/payload.json
+        run: |
+          set -euo pipefail
+          OIDC_TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-archive-ocr-import" | jq -r '.value')"
+          test -n "$OIDC_TOKEN"
+          response="$(curl -fsSL \
+            -X POST \
+            -H "Authorization: Bearer ${OIDC_TOKEN}" \
+            -H 'Content-Type: application/json' \
+            --data-binary "@${PAYLOAD}" \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/archive-ocr-import')"
+          echo "$response"
+          test "$(echo "$response" | jq -r '.ok')" = 'true'
+          test "$(echo "$response" | jq -r '.updated')" -eq "$EXPECTED_PAGES"
+
+      - name: Upload OCR audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-ocr-${{ matrix.document_slug }}
+          path: audit/paddleocr-archive/${{ matrix.document_slug }}
+          if-no-files-found: warn
+          retention-days: 7
