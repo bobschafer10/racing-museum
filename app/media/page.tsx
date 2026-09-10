@@ -269,7 +269,7 @@ export default async function MediaArchivePage() {
               <span className={styles.pathwayLink}>View collection →</span>
             </Link>
 
-            <Link href="/research-center" className={`${styles.pathway} ${styles.pathwayAccent}`}>
+            <Link href="/stats/feature-winners" className={`${styles.pathway} ${styles.pathwayAccent}`}>
               <div className={styles.miniLabel}>03 • Research Center</div>
               <div className={styles.pathwayTitle}>Connect Media to Museum Research</div>
               <p className={styles.pathwayText}>
