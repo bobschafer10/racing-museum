@@ -9,9 +9,41 @@ const PUBLICATION_NAMES: Record<string, string> = {
   "all-the-dirt-racing-news": "All The Dirt Racing News",
 }
 
-function pageNumber(label: string | null) {
-  const match = String(label || "").match(/(\d+)/)
-  return match ? Number(match[1]) : null
+const SOURCE_NAMES: Record<string, string> = {
+  ...PUBLICATION_NAMES,
+  yearbook: "Yearbooks",
+  program: "Race Programs",
+}
+
+const SOURCE_ORDER: Record<string, number> = {
+  "midwest-racing-news": 1,
+  "checkered-flag-racing-news": 2,
+  yearbook: 1,
+  program: 2,
+}
+
+type SearchRow = {
+  page_id: number
+  document_type: string
+  source_key: string
+  document_slug: string
+  document_title: string
+  publication_year: number | null
+  issue_date: string | null
+  page_label: string | null
+  page_number: number | null
+  storage_path: string
+  avg_confidence: number | null
+  ocr_text: string | null
+  exact_phrase: boolean
+  rank_score: number
+  total_count: number
+}
+
+type FacetRow = {
+  facet_kind: "total" | "source" | "year"
+  facet_value: string
+  match_count: number
 }
 
 function queryTerms(query: string) {
@@ -36,11 +68,15 @@ function makeSnippet(text: string, query: string) {
   if (!clean) return ""
 
   const lower = clean.toLowerCase()
+  const normalizedQuery = query.toLowerCase().trim()
   const terms = queryTerms(query)
-  let hit = -1
-  for (const term of terms) {
-    const found = lower.indexOf(term)
-    if (found >= 0 && (hit < 0 || found < hit)) hit = found
+  let hit = normalizedQuery ? lower.indexOf(normalizedQuery) : -1
+
+  if (hit < 0) {
+    for (const term of terms) {
+      const found = lower.indexOf(term)
+      if (found >= 0 && (hit < 0 || found < hit)) hit = found
+    }
   }
 
   const radius = 180
@@ -49,25 +85,9 @@ function makeSnippet(text: string, query: string) {
   return `${start > 0 ? "…" : ""}${clean.slice(start, end).trim()}${end < clean.length ? "…" : ""}`
 }
 
-function relevance(text: string, query: string) {
-  const lower = text.toLowerCase()
-  const normalizedQuery = query.toLowerCase().trim()
-  const terms = queryTerms(query)
-  let score = 0
-
-  if (normalizedQuery && lower.includes(normalizedQuery)) score += 100
-  for (const term of terms) {
-    let from = 0
-    let count = 0
-    while (count < 12) {
-      const at = lower.indexOf(term, from)
-      if (at < 0) break
-      count += 1
-      from = at + term.length
-    }
-    score += Math.min(count, 12) * 4
-  }
-  return score
+function pageSizeFrom(value: string | null) {
+  const parsed = Number(value)
+  return [25, 50, 100].includes(parsed) ? parsed : 50
 }
 
 export async function GET(request: NextRequest) {
@@ -80,46 +100,103 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ query, results: [], error: "Search is too long." }, { status: 400 })
   }
 
-  const { data, error } = await supabase
-    .from("newspaper_ocr_pages")
-    .select("id,publication_code,issue_date,page_label,storage_path,ocr_text,avg_confidence")
-    .eq("status", "complete")
-    .textSearch("search_vector", query, { type: "websearch", config: "simple" })
-    .limit(60)
+  const collection = request.nextUrl.searchParams.get("collection") === "print" ? "print" : "newspaper"
+  const sourceParam = (request.nextUrl.searchParams.get("source") || "all").trim().toLowerCase()
+  const source = sourceParam === "all" ? null : sourceParam
+  const yearParam = Number(request.nextUrl.searchParams.get("year"))
+  const year = Number.isInteger(yearParam) && yearParam >= 1800 && yearParam <= 2200 ? yearParam : null
+  const requestedSort = (request.nextUrl.searchParams.get("sort") || "relevance").toLowerCase()
+  const sort = ["relevance", "oldest", "newest"].includes(requestedSort) ? requestedSort : "relevance"
+  const pageSize = pageSizeFrom(request.nextUrl.searchParams.get("pageSize"))
+  const requestedPage = Number(request.nextUrl.searchParams.get("page"))
+  const page = Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1
+  const offset = (page - 1) * pageSize
 
-  if (error) {
-    console.error("NEWSPAPER OCR SEARCH ERROR", error)
-    return NextResponse.json({ query, results: [], error: "Newspaper search is temporarily unavailable." }, { status: 500 })
+  const [{ data, error }, { data: facetData, error: facetError }] = await Promise.all([
+    supabase.rpc("search_museum_ocr", {
+      p_query: query,
+      p_collection: collection,
+      p_source: source,
+      p_year: year,
+      p_sort: sort,
+      p_limit: pageSize,
+      p_offset: offset,
+    }),
+    supabase.rpc("search_museum_ocr_facets", {
+      p_query: query,
+      p_collection: collection,
+      p_source: source,
+      p_year: year,
+    }),
+  ])
+
+  if (error || facetError) {
+    console.error("MUSEUM OCR SEARCH ERROR", error || facetError)
+    return NextResponse.json({ query, results: [], error: "Archive search is temporarily unavailable." }, { status: 500 })
   }
 
-  const results = (data || [])
-    .map((row) => {
-      const page = pageNumber(row.page_label)
-      const ocrText = row.ocr_text || ""
-      const publication = row.publication_code || ""
-      const issueDate = row.issue_date || ""
-      const href = `/media/newspapers/${publication}/${issueDate}${page ? `?sourcePage=${page}&q=${encodeURIComponent(query)}` : `?q=${encodeURIComponent(query)}`}`
-      const image = `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`
+  const rows = (data || []) as SearchRow[]
+  const facets = (facetData || []) as FacetRow[]
+  const total = Number(facets.find((facet) => facet.facet_kind === "total")?.match_count || rows[0]?.total_count || 0)
+  const totalPages = Math.max(1, Math.ceil(total / pageSize))
 
-      return {
-        id: row.id,
-        publication,
-        publicationName: PUBLICATION_NAMES[publication] || publication,
-        issueDate,
-        page,
-        pageLabel: row.page_label,
-        snippet: makeSnippet(ocrText, query),
-        confidence: row.avg_confidence,
-        href,
-        image,
-        score: relevance(ocrText, query),
-      }
-    })
-    .sort((a, b) => b.score - a.score || b.issueDate.localeCompare(a.issueDate) || (a.page || 0) - (b.page || 0))
-    .slice(0, 40)
+  const sources = facets
+    .filter((facet) => facet.facet_kind === "source")
+    .map((facet) => ({
+      key: facet.facet_value,
+      label: SOURCE_NAMES[facet.facet_value] || facet.facet_value,
+      count: Number(facet.match_count),
+    }))
+    .sort((a, b) => (SOURCE_ORDER[a.key] || 99) - (SOURCE_ORDER[b.key] || 99) || a.label.localeCompare(b.label))
+
+  const years = facets
+    .filter((facet) => facet.facet_kind === "year")
+    .map((facet) => ({ year: Number(facet.facet_value), count: Number(facet.match_count) }))
+    .filter((facet) => Number.isFinite(facet.year))
+    .sort((a, b) => b.year - a.year)
+
+  const results = rows.map((row) => {
+    const isNewspaper = row.document_type === "newspaper"
+    const sourceName = SOURCE_NAMES[row.source_key] || row.source_key
+    const documentTitle = isNewspaper ? sourceName : row.document_title
+    const sourcePage = row.page_number ? `sourcePage=${row.page_number}&` : ""
+    const href = isNewspaper
+      ? `/media/newspapers/${row.document_slug}/${row.issue_date}?${sourcePage}q=${encodeURIComponent(query)}`
+      : `/media/race-programs/${row.document_slug}${row.page_number ? `#scan-page-${row.page_number}` : ""}`
+
+    return {
+      id: `${row.document_type}-${row.page_id}`,
+      documentType: row.document_type,
+      sourceKey: row.source_key,
+      sourceName,
+      documentTitle,
+      publicationYear: row.publication_year,
+      issueDate: row.issue_date,
+      page: row.page_number,
+      pageLabel: row.page_label,
+      snippet: makeSnippet(row.ocr_text || "", query),
+      confidence: row.avg_confidence,
+      href,
+      image: `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`,
+    }
+  })
 
   return NextResponse.json(
-    { query, count: results.length, results },
+    {
+      query,
+      collection,
+      total,
+      count: total,
+      page,
+      pageSize,
+      totalPages,
+      sort,
+      source: source || "all",
+      year,
+      sources,
+      years,
+      results,
+    },
     { headers: { "Cache-Control": "no-store" } },
   )
 }

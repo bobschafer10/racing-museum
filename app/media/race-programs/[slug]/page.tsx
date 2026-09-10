@@ -3,6 +3,11 @@ import { notFound } from "next/navigation"
 import { getRaceProgramBySlug } from "@/lib/race-programs"
 import "../../archive-dark.css"
 
+function scanPageNumber(image: string) {
+  const match = image.match(/\/(\d+)\.(jpg|jpeg|png|webp)$/i)
+  return match ? Number(match[1]) : null
+}
+
 export default async function RaceProgramDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const program = await getRaceProgramBySlug(slug)
@@ -63,14 +68,22 @@ export default async function RaceProgramDetailPage({ params }: { params: Promis
           <div className="ma-source">No scanned pages are currently attached to this publication.</div>
         ) : (
           <div className="ma-scan-grid">
-            {program.images.map((image, index) => (
-              <figure className="ma-scan-frame" key={image}>
-                <a href={image} target="_blank" rel="noreferrer">
-                  <img src={image} alt={`${program.title} page ${index + 1}`} loading={index < 4 ? 'eager' : 'lazy'} />
-                </a>
-                <figcaption>{index === 0 ? 'Front Cover' : index === pageCount - 1 && program.backCoverImage ? 'Back Cover' : `Page ${index + 1} of ${pageCount}`}</figcaption>
-              </figure>
-            ))}
+            {program.images.map((image, index) => {
+              const sourcePage = scanPageNumber(image)
+              return (
+                <figure
+                  className="ma-scan-frame"
+                  key={image}
+                  id={sourcePage ? `scan-page-${sourcePage}` : undefined}
+                  style={{ scrollMarginTop: 90 }}
+                >
+                  <a href={image} target="_blank" rel="noreferrer">
+                    <img src={image} alt={`${program.title} page ${index + 1}`} loading={index < 4 ? 'eager' : 'lazy'} />
+                  </a>
+                  <figcaption>{index === 0 ? 'Front Cover' : index === pageCount - 1 && program.backCoverImage ? 'Back Cover' : `Page ${index + 1} of ${pageCount}`}</figcaption>
+                </figure>
+              )
+            })}
           </div>
         )}
       </section>
