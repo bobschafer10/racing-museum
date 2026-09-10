@@ -19,16 +19,16 @@ const readCache = globalThis.__umarmSupabaseReadCache ?? new Map<string, CachedR
 globalThis.__umarmSupabaseReadCache = readCache
 
 const REQUEST_TIMEOUT_MS = 8_000
-const PUBLIC_READ_REVALIDATE_SECONDS = 60
+const PUBLIC_READ_REVALIDATE_SECONDS = 300
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 2_000_000
 
 const homepageStatsFallback = {
-  drivers_count: 31907,
+  drivers_count: 32081,
   tracks_count: 275,
   events_count: 156706,
   results_count: 387088,
-  photos_count: 0,
+  photos_count: 33369,
 }
 
 function requestDetails(input: RequestInfo | URL, init?: RequestInit) {
@@ -82,10 +82,10 @@ const resilientFetch: typeof fetch = async (input, init) => {
     ? AbortSignal.timeout(REQUEST_TIMEOUT_MS)
     : init?.signal
 
-  // Public museum data does not need to hit PostgREST on every visitor request.
-  // A short shared Next.js data-cache window dramatically reduces repeated work
-  // from crawlers and page refreshes while keeping newly imported data visible
-  // within about a minute. Explicit caller cache settings are preserved.
+  // Landing-page data is refreshed in five-minute windows. Reusing successful
+  // public REST reads across that same window prevents crawlers and page refreshes
+  // from repeatedly executing identical archive queries while keeping imports current.
+  // Explicit caller cache settings are preserved.
   const fetchInit = {
     ...init,
     signal: timeoutSignal,
