@@ -77,9 +77,6 @@ jobs:
               if not issue_date.startswith(f'{year}-'):
                   continue
 
-              # The archive stores front-cover/back-cover convenience copies alongside
-              # canonical numbered scans. They are useful for presentation but duplicate
-              # page 1 / the final numbered page in OCR search. Prefer numbered images.
               all_urls=[]
               for value in [issue.get('coverImage'), *(issue.get('pages') or []), issue.get('backCoverImage')]:
                   if isinstance(value,str) and value:
@@ -336,3 +333,17 @@ jobs:
             --repo "$GH_REPO" \
             --ref paddleocr-mrn-pilot \
             -f year="$next"
+
+      - name: Start Checkered Flag after final MRN year
+        if: ${{ fromJSON(needs.prepare.outputs.year) == 1978 }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "MRN 1978 completed successfully. Starting Checkered Flag Racing News 1969."
+          gh workflow run paddleocr-cfrn-year.yml \
+            --repo "$GH_REPO" \
+            --ref paddleocr-mrn-pilot \
+            -f year="1969"
