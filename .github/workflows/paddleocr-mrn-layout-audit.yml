@@ -1,0 +1,60 @@
+name: PaddleOCR MRN Layout Audit
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - 'ocr-jobs/mrn-layout-audit.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out OCR runner
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: Re-OCR October 22 standings spread with narrow columns
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          MRN_ISSUE_DATE: '1962-10-22'
+          MRN_PAGES_JSON: '["006.jpg","007.jpg"]'
+          MRN_COLUMN_COUNT: '10'
+          MRN_MAX_WIDTH: '2800'
+          MRN_OUTPUT_ROOT: 'audit/mrn-1962-10-22-layout-10col'
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Upload layout audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-1962-10-22-layout-10col
+          path: audit/mrn-1962-10-22-layout-10col
+          if-no-files-found: warn
+          retention-days: 7
