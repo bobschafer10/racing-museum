@@ -1,9 +1,54 @@
 import type { ReactNode } from 'react'
 import DriverProfileGalleryEnhancer from './DriverProfileGalleryEnhancer'
+import DriverReportUtility from './DriverReportUtility'
 
 const galleryStyles = `
 #photos:has([class*="photoGrid"] > article:nth-child(31)):not([data-gallery-expanded="true"]) [class*="photoGrid"] > article:nth-child(n+25) {
   display: none;
+}
+
+.driver-report-utility {
+  border-bottom: 1px solid rgba(198, 161, 91, 0.26);
+  background: #0b0d0f;
+}
+
+.driver-report-utility-inner {
+  width: min(1380px, calc(100% - 40px));
+  min-height: 44px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.driver-report-utility-inner span {
+  color: #9ea4a7;
+  font-size: 0.61rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.driver-report-utility-inner a {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 11px;
+  border: 1px solid rgba(198, 161, 91, 0.54);
+  background: #6d171d;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.61rem;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.driver-report-utility-inner a:hover {
+  background: #8f1c24;
+  border-color: #c6a15b;
 }
 
 .driver-photo-gallery-controls {
@@ -83,6 +128,20 @@ const galleryStyles = `
 }
 
 @media (max-width: 720px) {
+  .driver-report-utility-inner {
+    width: min(100% - 24px, 1380px);
+    min-height: 50px;
+    justify-content: space-between;
+  }
+
+  .driver-report-utility-inner span {
+    font-size: 0.56rem;
+  }
+
+  .driver-report-utility-inner a {
+    font-size: 0.56rem;
+  }
+
   .driver-photo-gallery-controls {
     align-items: flex-start;
     flex-direction: column;
@@ -98,12 +157,19 @@ const galleryStyles = `
     width: 100%;
   }
 }
+
+@media print {
+  .driver-report-utility {
+    display: none !important;
+  }
+}
 `
 
 export default function DriverProfileLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <style>{galleryStyles}</style>
+      <DriverReportUtility />
       {children}
       <DriverProfileGalleryEnhancer />
     </>
