@@ -19,6 +19,7 @@ const readCache = globalThis.__umarmSupabaseReadCache ?? new Map<string, CachedR
 globalThis.__umarmSupabaseReadCache = readCache
 
 const REQUEST_TIMEOUT_MS = 8_000
+const PUBLIC_READ_REVALIDATE_SECONDS = 60
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 2_000_000
 
@@ -73,7 +74,7 @@ function seededHomepageStats(url: string) {
   })
 }
 
-const resilientNoStoreFetch: typeof fetch = async (input, init) => {
+const resilientFetch: typeof fetch = async (input, init) => {
   const { url, method, key } = requestDetails(input, init)
   const isPublicRestRead = method === 'GET' && url.includes('/rest/v1/')
 
@@ -81,12 +82,26 @@ const resilientNoStoreFetch: typeof fetch = async (input, init) => {
     ? AbortSignal.timeout(REQUEST_TIMEOUT_MS)
     : init?.signal
 
+  // Public museum data does not need to hit PostgREST on every visitor request.
+  // A short shared Next.js data-cache window dramatically reduces repeated work
+  // from crawlers and page refreshes while keeping newly imported data visible
+  // within about a minute. Explicit caller cache settings are preserved.
+  const fetchInit = {
+    ...init,
+    signal: timeoutSignal,
+  } as RequestInit & { next?: { revalidate?: number } }
+
+  if (isPublicRestRead && !init?.cache) {
+    fetchInit.next = {
+      ...(fetchInit.next || {}),
+      revalidate: PUBLIC_READ_REVALIDATE_SECONDS,
+    }
+  } else if (!isPublicRestRead && !init?.cache) {
+    fetchInit.cache = 'no-store'
+  }
+
   try {
-    const response = await fetch(input, {
-      ...init,
-      cache: 'no-store',
-      signal: timeoutSignal,
-    })
+    const response = await fetch(input, fetchInit)
 
     if (isPublicRestRead && response.ok) {
       const clone = response.clone()
@@ -142,7 +157,7 @@ export const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
   {
     global: {
-      fetch: resilientNoStoreFetch,
+      fetch: resilientFetch,
     },
   },
 )
