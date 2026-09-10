@@ -5,8 +5,7 @@ import { getPhotoUrl } from '@/lib/photos'
 import TrackLogo from './tracks/[slug]/TrackLogo'
 import styles from './home.module.css'
 
-export const dynamic = 'force-dynamic'
-export const runtime = 'nodejs'
+export const revalidate = 300
 
 type StatsRow = {
   drivers_count?: number | null
