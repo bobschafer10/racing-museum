@@ -187,6 +187,19 @@ export default async function MediaArchivePage() {
             </div>
           </div>
 
+          <Link
+            href="/media/search"
+            className={`${styles.pathway} ${styles.pathwayAccent}`}
+            style={{ display: 'block', marginBottom: 12 }}
+          >
+            <div className={styles.miniLabel}>OCR Full-Text Search</div>
+            <div className={styles.pathwayTitle}>Search Newspapers, Yearbooks & Programs</div>
+            <p className={styles.pathwayText}>
+              Search the words inside the museum's digitized publications, then open the original scanned page behind each match.
+            </p>
+            <span className={styles.pathwayLink}>Search the Digital Archive →</span>
+          </Link>
+
           <div className={styles.collectionGrid}>
             {collections.map((collection) => (
               <Link key={collection.key} href={collection.href} className={styles.collectionCard}>
