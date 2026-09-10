@@ -20,8 +20,12 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageFile, ImageOps
 from paddleocr import PaddleOCR
+
+# Historical scans occasionally have a harmless truncated JPEG end marker.
+# Pillow can recover these images without changing their visible page content.
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 PROJECT_URL = "https://szvkleurojiwqkkztxtr.supabase.co"
 BUCKET = "media"
