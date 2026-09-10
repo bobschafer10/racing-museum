@@ -5,12 +5,9 @@ import PrintReportButton from './PrintReportButton'
 import styles from './feature-win-report.module.css'
 
 type Driver = {
-  driver_id: number
   driver_name: string
-  driver_slug?: string
   hometown: string | null
   state: string | null
-  recorded_wins: number | null
 }
 
 type FeatureWin = {
@@ -50,7 +47,7 @@ export default async function FeatureWinReportPage({ params }: { params: Promise
 
   const { data: driver } = await supabase
     .from('driver_directory_alpha_view')
-    .select('driver_id, driver_name, driver_slug, hometown, state, recorded_wins')
+    .select('driver_name, hometown, state')
     .eq('driver_slug', slug)
     .maybeSingle<Driver>()
 
@@ -70,7 +67,7 @@ export default async function FeatureWinReportPage({ params }: { params: Promise
   ])
 
   const broaderWins = broaderResult.data ?? []
-  const trackSummary = summarize(wins, (row) => row.track_name || 'Unknown track')
+  const trackSummary = summarizeTracks(wins)
   const classSummary = summarize(wins, (row) => row.class_name || 'Unknown class')
   const yearSummary = summarizeYears(wins)
 
@@ -154,7 +151,7 @@ export default async function FeatureWinReportPage({ params }: { params: Promise
                 {wins.map((win, index) => (
                   <tr key={`${win.race_id}-${win.race_date}-${index}`}>
                     <td>{formatRaceDate(win.race_date)}</td>
-                    <td>{win.track_name || 'Unknown track'}</td>
+                    <td>{formatTrackLabel(win)}</td>
                     <td>{win.class_name || 'Unknown class'}</td>
                   </tr>
                 ))}
@@ -215,6 +212,7 @@ async function fetchAllFeatureWins(slug: string) {
       .eq('driver_slug', slug)
       .eq('finishing_position', 1)
       .order('race_date', { ascending: true })
+      .order('race_id', { ascending: true })
       .range(from, from + PAGE_SIZE - 1)
       .returns<FeatureWin[]>()
 
@@ -237,6 +235,20 @@ function summarize(rows: FeatureWin[], getLabel: (row: FeatureWin) => string): C
 
   return Array.from(counts.entries())
     .map(([label, wins]) => ({ label, wins }))
+    .sort((a, b) => b.wins - a.wins || a.label.localeCompare(b.label))
+}
+
+function summarizeTracks(rows: FeatureWin[]): CountSummary[] {
+  const counts = new Map<string, { label: string; wins: number }>()
+
+  for (const row of rows) {
+    const key = row.track_slug || row.track_name || 'unknown-track'
+    const label = formatTrackLabel(row)
+    const current = counts.get(key)
+    counts.set(key, { label, wins: (current?.wins ?? 0) + 1 })
+  }
+
+  return Array.from(counts.values())
     .sort((a, b) => b.wins - a.wins || a.label.localeCompare(b.label))
 }
 
@@ -265,8 +277,8 @@ function SummaryTable({ title, rows }: { title: string; rows: CountSummary[] }) 
             <tr><th>{title.replace('Wins by ', '')}</th><th>Wins</th></tr>
           </thead>
           <tbody>
-            {rows.map((row) => (
-              <tr key={row.label}><td>{row.label}</td><td>{row.wins.toLocaleString('en-US')}</td></tr>
+            {rows.map((row, index) => (
+              <tr key={`${row.label}-${index}`}><td>{row.label}</td><td>{row.wins.toLocaleString('en-US')}</td></tr>
             ))}
           </tbody>
         </table>
@@ -282,6 +294,17 @@ function Stat({ value, label }: { value: string; label: string }) {
       <span>{label}</span>
     </div>
   )
+}
+
+function formatTrackLabel(win: FeatureWin) {
+  const name = win.track_name || 'Unknown track'
+  const state = stateFromTrackSlug(win.track_slug)
+  return state ? `${name} (${state})` : name
+}
+
+function stateFromTrackSlug(slug: string | null | undefined) {
+  const match = String(slug || '').match(/-([a-z]{2})$/i)
+  return match ? match[1].toUpperCase() : null
 }
 
 function yearFromDate(value: string | null | undefined) {
