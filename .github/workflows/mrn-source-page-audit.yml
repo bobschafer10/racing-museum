@@ -1,0 +1,32 @@
+name: MRN Source Page Audit
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - 'ocr-jobs/mrn-source-page-audit.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fetch source scans
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p source
+          base='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/midwest-racing-news/1962-10-22'
+          curl -fL --retry 3 "$base/006.jpg" -o source/006.jpg
+          curl -fL --retry 3 "$base/007.jpg" -o source/007.jpg
+          file source/006.jpg source/007.jpg
+      - name: Upload source scans
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-1962-10-22-source-pages
+          path: source
+          retention-days: 3
