@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import HomeBase from './HomeBase'
 import styles from './home.module.css'
+import searchStyles from './homeSearchFix.module.css'
 
 export const revalidate = 300
 
@@ -31,8 +32,56 @@ function HallOfFameHomeFeature() {
   )
 }
 
+function polishDriverSearch(node: React.ReactNode): React.ReactNode {
+  if (!React.isValidElement(node)) return node
+
+  const element = node as React.ReactElement<any>
+
+  if (element.props.className === styles.searchForm) {
+    const children = React.Children.toArray(element.props.children)
+    const input = children.find(
+      (child) => React.isValidElement(child) && child.type === 'input',
+    ) as React.ReactElement<any> | undefined
+    const button = children.find(
+      (child) => React.isValidElement(child) && child.type === 'button',
+    ) as React.ReactElement<any> | undefined
+
+    return React.cloneElement(
+      element,
+      {
+        className: `${styles.searchForm} ${searchStyles.form}`,
+        'aria-label': 'Search the driver archive',
+      },
+      <label key="driver-search-label" className={searchStyles.label} htmlFor="home-driver-search">
+        Search the Driver Archive
+      </label>,
+      input
+        ? React.cloneElement(input, {
+            key: 'driver-search-input',
+            id: 'home-driver-search',
+            className: `${input.props.className || ''} ${searchStyles.input}`.trim(),
+          })
+        : null,
+      button
+        ? React.cloneElement(button, {
+            key: 'driver-search-button',
+            className: `${button.props.className || ''} ${searchStyles.button}`.trim(),
+          })
+        : null,
+    )
+  }
+
+  if (element.props.children == null) return element
+
+  return React.cloneElement(
+    element,
+    undefined,
+    React.Children.map(element.props.children, polishDriverSearch),
+  )
+}
+
 export default async function Home() {
-  const original = (await HomeBase()) as React.ReactElement<any>
+  const original = polishDriverSearch((await HomeBase()) as React.ReactElement<any>) as React.ReactElement<any>
   const mainChildren = React.Children.toArray(original.props.children)
 
   const shellIndex = mainChildren.findIndex(
