@@ -13,6 +13,7 @@ import "./search-visibility.css";
 import "./hall-of-fame.css";
 import Link from "next/link"
 import ResearchCenterNav from "@/components/ResearchCenterNav"
+import FeatureWinnersPdfEnhancer from "@/components/FeatureWinnersPdfEnhancer"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,6 +68,7 @@ export default function RootLayout({
         </div>
 
         <ResearchCenterNav />
+        <FeatureWinnersPdfEnhancer />
 
         <main style={{ flex: 1 }}>
           {children}
