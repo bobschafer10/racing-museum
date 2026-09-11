@@ -6,6 +6,7 @@ import "./series-routes-mobile.css";
 import "./research-center-home.css";
 import "./research-center-home-v2.css";
 import "./research-center-dark.css";
+import "./research-center-nav.css";
 import "./research-center-home-dark.css";
 import "./home-final-polish.css";
 import Link from "next/link"
