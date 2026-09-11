@@ -1,0 +1,124 @@
+/* Shared navigation across the museum's core research tools. */
+.rc-tool-nav {
+  position: relative;
+  z-index: 20;
+  border-bottom: 1px solid rgba(198, 161, 91, 0.32);
+  background:
+    linear-gradient(90deg, rgba(198, 161, 91, 0.055), transparent 28%),
+    #0b0e11;
+  color: #f3eee5;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.rc-tool-nav-inner {
+  width: min(1360px, calc(100% - 40px));
+  min-height: 58px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.rc-tool-nav-title {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  white-space: nowrap;
+}
+
+.rc-tool-nav-title span {
+  color: #c6a15b;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.rc-tool-nav-title strong {
+  color: #fffaf1;
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rc-tool-nav-links {
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.rc-tool-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  color: #bfc2c4;
+  text-decoration: none;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: border-color 140ms ease, background 140ms ease, color 140ms ease;
+}
+
+.rc-tool-nav-link:hover,
+.rc-tool-nav-link:focus-visible {
+  border-color: rgba(198, 161, 91, 0.42);
+  background: #151a1e;
+  color: #fff;
+  outline: none;
+}
+
+.rc-tool-nav-link.active {
+  border-color: rgba(198, 161, 91, 0.56);
+  background: linear-gradient(135deg, rgba(198, 161, 91, 0.15), rgba(143, 28, 36, 0.16));
+  color: #e5c781;
+  box-shadow: inset 0 -2px 0 #8f1c24;
+}
+
+@media (max-width: 900px) {
+  .rc-tool-nav-inner {
+    width: min(100% - 24px, 1360px);
+    min-height: 0;
+    padding: 10px 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .rc-tool-nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: thin;
+  }
+
+  .rc-tool-nav-link {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .rc-tool-nav-title {
+    gap: 6px;
+  }
+
+  .rc-tool-nav-title span {
+    display: none;
+  }
+
+  .rc-tool-nav-link {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 0.62rem;
+  }
+}
