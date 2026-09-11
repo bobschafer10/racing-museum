@@ -9,6 +9,7 @@ import "./research-center-dark.css";
 import "./research-center-home-dark.css";
 import "./home-final-polish.css";
 import Link from "next/link"
+import ResearchCenterNav from "@/components/ResearchCenterNav"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,6 +61,8 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+
+        <ResearchCenterNav />
 
         <main style={{ flex: 1 }}>
           {children}
