@@ -19,6 +19,7 @@ const readCache = globalThis.__umarmSupabaseReadCache ?? new Map<string, CachedR
 globalThis.__umarmSupabaseReadCache = readCache
 
 const REQUEST_TIMEOUT_MS = 8_000
+const OCR_SEARCH_TIMEOUT_MS = 20_000
 const PUBLIC_READ_REVALIDATE_SECONDS = 300
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 2_000_000
@@ -77,9 +78,11 @@ function seededHomepageStats(url: string) {
 const resilientFetch: typeof fetch = async (input, init) => {
   const { url, method, key } = requestDetails(input, init)
   const isPublicRestRead = method === 'GET' && url.includes('/rest/v1/')
+  const isOcrSearchRpc = method === 'POST' && url.includes('/rest/v1/rpc/search_museum_ocr')
+  const timeoutMs = isOcrSearchRpc ? OCR_SEARCH_TIMEOUT_MS : REQUEST_TIMEOUT_MS
 
   const timeoutSignal = !init?.signal && typeof AbortSignal !== 'undefined' && 'timeout' in AbortSignal
-    ? AbortSignal.timeout(REQUEST_TIMEOUT_MS)
+    ? AbortSignal.timeout(timeoutMs)
     : init?.signal
 
   // Landing-page data is refreshed in five-minute windows. Reusing successful
