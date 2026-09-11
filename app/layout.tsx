@@ -10,6 +10,7 @@ import "./research-center-nav.css";
 import "./research-center-home-dark.css";
 import "./home-final-polish.css";
 import "./search-visibility.css";
+import "./hall-of-fame.css";
 import Link from "next/link"
 import ResearchCenterNav from "@/components/ResearchCenterNav"
 
@@ -59,6 +60,7 @@ export default function RootLayout({
               <Link href="/results" style={navLink}>Results</Link>
               <Link href="/media" style={navLink}>Photos & Media</Link>
               <Link href="/stats/feature-winners" style={researchNavLink}>Research Center</Link>
+              <Link href="/hall-of-fame" style={hallNavLink}>Hall of Fame</Link>
               <Link href="/#support-museum" style={navLink}>Support the Museum</Link>
             </div>
           </div>
@@ -127,4 +129,11 @@ const researchNavLink: React.CSSProperties = {
   background: '#6d241c',
   padding: '6px 10px',
   boxShadow: '2px 2px 0 rgba(0,0,0,0.25)',
+}
+
+const hallNavLink: React.CSSProperties = {
+  ...navLink,
+  color: '#ead7a1',
+  fontWeight: 800,
+  whiteSpace: 'nowrap',
 }

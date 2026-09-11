@@ -1,0 +1,517 @@
+/* Hall of Fame — homepage entrance and Coming Soon landing page */
+
+.hof-home-section {
+  padding-top: 8px !important;
+}
+
+.hof-home-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, .82fr) minmax(440px, 1.18fr);
+  min-height: 330px;
+  overflow: hidden;
+  color: #f6ead0;
+  text-decoration: none;
+  border: 1px solid #856633;
+  background:
+    radial-gradient(circle at 72% 22%, rgba(219,177,92,.11), transparent 25%),
+    linear-gradient(115deg, #17120d 0%, #24190f 42%, #100d0a 100%);
+  box-shadow: 5px 7px 0 rgba(66,45,25,.14), inset 0 0 0 1px rgba(239,207,139,.08);
+}
+
+.hof-home-card::before,
+.hof-landing-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 88px, rgba(255,255,255,.018) 89px 90px),
+    linear-gradient(180deg, rgba(255,255,255,.03), transparent 35%, rgba(0,0,0,.28));
+}
+
+.hof-home-copy {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px 34px 38px 38px;
+  border-right: 1px solid rgba(211,174,101,.23);
+}
+
+.hof-kicker {
+  margin-bottom: 9px;
+  color: #d3b474;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.hof-home-copy h2 {
+  max-width: 510px;
+  margin: 0;
+  color: #fff0cf;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(34px, 3.5vw, 50px);
+  line-height: .98;
+  letter-spacing: -.03em;
+}
+
+.hof-home-copy p {
+  max-width: 520px;
+  margin: 16px 0 19px;
+  color: #ddcba8;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.hof-home-cta {
+  width: fit-content;
+  padding-bottom: 3px;
+  color: #e7ca88;
+  border-bottom: 1px solid rgba(231,202,136,.55);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.hof-home-door-zone {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(10,8,6,.38), rgba(10,8,6,.56)),
+    url('/museum-bg.png') center 48% / cover no-repeat;
+}
+
+.hof-home-door-zone::before {
+  content: '';
+  position: absolute;
+  inset: 24px 8% 0;
+  border: 8px solid #50391e;
+  border-bottom: none;
+  box-shadow:
+    inset 0 0 0 2px rgba(201,158,73,.45),
+    inset 0 0 70px rgba(0,0,0,.9),
+    0 0 0 1px #1c130c;
+  background:
+    radial-gradient(circle at 50% 16%, rgba(194,145,57,.18), transparent 35%),
+    linear-gradient(90deg, #17100b 0 12%, #2a1c10 12% 15%, #0e0b08 15% 85%, #2a1c10 85% 88%, #17100b 88%);
+}
+
+.hof-home-door-sign {
+  position: absolute;
+  z-index: 2;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(72%, 510px);
+  padding: 13px 20px;
+  border: 1px solid #8b692f;
+  background: rgba(10,8,6,.88);
+  box-shadow: 0 6px 20px rgba(0,0,0,.38);
+  color: #e6c989;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(24px, 3vw, 39px);
+  letter-spacing: .08em;
+  text-shadow: 0 2px 4px #000;
+}
+
+.hof-home-door-sub {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 42px;
+  transform: translateX(-50%);
+  width: 75%;
+  color: #d7bf8e;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.45;
+  letter-spacing: .04em;
+  text-shadow: 0 2px 4px #000;
+}
+
+.hof-tape {
+  position: absolute;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 8px 28px;
+  overflow: hidden;
+  border-top: 2px solid #8f7227;
+  border-bottom: 2px solid #80641e;
+  background:
+    repeating-linear-gradient(135deg, rgba(46,35,11,.08) 0 20px, rgba(255,255,255,.04) 20px 40px),
+    #c2a24a;
+  box-shadow: 0 7px 16px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.26);
+  color: #211a0e;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(16px, 1.9vw, 25px);
+  font-weight: 950;
+  letter-spacing: .06em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0 1px rgba(255,255,255,.18);
+}
+
+.hof-tape::before,
+.hof-tape::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 72px;
+  opacity: .38;
+  background: repeating-linear-gradient(135deg, #1c170d 0 10px, transparent 10px 20px);
+}
+
+.hof-tape::before { left: 0; }
+.hof-tape::after { right: 0; }
+
+.hof-tape-home {
+  top: 47%;
+  left: -7%;
+  width: 114%;
+  transform: rotate(-2.2deg);
+}
+
+/* Landing page */
+.hof-landing-page {
+  min-height: 100vh;
+  color: #2b2015;
+  background: linear-gradient(180deg, #e8d7b2 0%, #f6ecd5 42%, #ead9b7 100%);
+}
+
+.hof-landing-hero {
+  position: relative;
+  min-height: 610px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-bottom: 3px solid #7c5c2d;
+  background:
+    linear-gradient(90deg, rgba(12,9,6,.85), rgba(12,9,6,.38) 50%, rgba(12,9,6,.85)),
+    linear-gradient(180deg, rgba(6,5,4,.32), rgba(6,5,4,.76)),
+    url('/museum-bg.png') center / cover no-repeat;
+}
+
+.hof-landing-inner {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 36px));
+  min-height: 540px;
+  display: grid;
+  place-items: center;
+  padding: 38px 0 48px;
+}
+
+.hof-landing-doorframe {
+  position: relative;
+  width: min(800px, 90vw);
+  min-height: 455px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 56px 54px;
+  border: 12px solid #4a341c;
+  border-bottom-width: 18px;
+  background:
+    radial-gradient(circle at 50% 17%, rgba(200,154,67,.17), transparent 34%),
+    linear-gradient(90deg, #19110b 0 10%, #2b1d10 10% 13%, #0d0a08 13% 87%, #2b1d10 87% 90%, #19110b 90%);
+  box-shadow:
+    inset 0 0 0 2px rgba(202,159,75,.48),
+    inset 0 0 100px rgba(0,0,0,.9),
+    0 18px 36px rgba(0,0,0,.55);
+}
+
+.hof-landing-doorframe::before,
+.hof-landing-doorframe::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  width: 15%;
+  border: 1px solid rgba(190,145,66,.3);
+  background: linear-gradient(90deg, rgba(255,255,255,.025), rgba(0,0,0,.25));
+}
+
+.hof-landing-doorframe::before { left: 21px; }
+.hof-landing-doorframe::after { right: 21px; transform: scaleX(-1); }
+
+.hof-landing-copy {
+  position: relative;
+  z-index: 3;
+  max-width: 640px;
+  text-align: center;
+  color: #f3e2be;
+  text-shadow: 0 2px 5px #000;
+}
+
+.hof-landing-kicker {
+  color: #d7ba7a;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.hof-landing-copy h1 {
+  margin: 13px 0 10px;
+  color: #f4dca4;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(46px, 7vw, 82px);
+  line-height: .9;
+  letter-spacing: -.035em;
+}
+
+.hof-landing-copy p {
+  max-width: 570px;
+  margin: 18px auto 0;
+  color: #e2cfaa;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(16px, 1.8vw, 21px);
+  line-height: 1.5;
+}
+
+.hof-tape-landing {
+  top: 50%;
+  left: -11%;
+  width: 122%;
+  min-height: 66px;
+  transform: rotate(-3deg);
+  font-size: clamp(18px, 2.6vw, 31px);
+}
+
+.hof-landing-content {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 48px 0 62px;
+}
+
+.hof-landing-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.hof-landing-intro h2,
+.hof-principles-title {
+  margin: 0;
+  color: #2b1f14;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(35px, 4vw, 50px);
+  line-height: .98;
+  letter-spacing: -.03em;
+}
+
+.hof-landing-intro p {
+  margin: 15px 0 0;
+  color: #59432e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.hof-founders-note {
+  padding: 25px;
+  border: 1px solid #aa8956;
+  background: rgba(255,248,231,.72);
+  box-shadow: 4px 5px 0 rgba(80,57,31,.1);
+}
+
+.hof-founders-note strong {
+  display: block;
+  margin-bottom: 9px;
+  color: #6f2a21;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+}
+
+.hof-founders-note p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hof-principles {
+  margin-top: 43px;
+  padding-top: 34px;
+  border-top: 1px solid #b69a6d;
+}
+
+.hof-principles-title {
+  margin-bottom: 19px;
+  font-size: clamp(31px, 3.5vw, 42px);
+}
+
+.hof-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.hof-principle {
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid #b99a67;
+  background: rgba(250,242,222,.8);
+  box-shadow: 3px 4px 0 rgba(69,49,29,.08);
+}
+
+.hof-principle .hof-principle-num {
+  color: #96743c;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.hof-principle h3 {
+  margin: 8px 0 8px;
+  color: #2c2116;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  line-height: 1.02;
+}
+
+.hof-principle p {
+  margin: 0;
+  color: #604a34;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.hof-landing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 34px;
+}
+
+.hof-landing-action {
+  display: inline-block;
+  padding: 11px 17px;
+  color: #fff0d2;
+  background: linear-gradient(180deg, #813329, #68231d);
+  border: 1px solid #5b201b;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 2px 3px 0 rgba(64,42,24,.18);
+}
+
+.hof-landing-action-secondary {
+  color: #422f1d;
+  background: rgba(255,248,232,.62);
+  border-color: #a88754;
+}
+
+@media (max-width: 980px) {
+  .hof-home-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hof-home-copy {
+    border-right: none;
+    border-bottom: 1px solid rgba(211,174,101,.23);
+  }
+
+  .hof-home-door-zone {
+    min-height: 300px;
+  }
+
+  .hof-landing-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .hof-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .hof-home-copy {
+    padding: 29px 22px 30px;
+  }
+
+  .hof-home-copy h2 {
+    font-size: 36px;
+  }
+
+  .hof-home-door-zone {
+    min-height: 255px;
+  }
+
+  .hof-home-door-zone::before {
+    inset: 20px 5% 0;
+  }
+
+  .hof-home-door-sign {
+    top: 46px;
+    font-size: 24px;
+  }
+
+  .hof-home-door-sub {
+    bottom: 28px;
+    width: 82%;
+    font-size: 11px;
+  }
+
+  .hof-tape-home {
+    top: 49%;
+    left: -18%;
+    width: 136%;
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  .hof-landing-hero {
+    min-height: 535px;
+  }
+
+  .hof-landing-inner {
+    width: min(100% - 22px, 620px);
+    min-height: 500px;
+    padding: 28px 0 38px;
+  }
+
+  .hof-landing-doorframe {
+    width: 95vw;
+    min-height: 420px;
+    padding: 58px 22px 45px;
+    border-width: 8px;
+  }
+
+  .hof-landing-copy h1 {
+    font-size: 48px;
+  }
+
+  .hof-tape-landing {
+    left: -26%;
+    width: 152%;
+    min-height: 58px;
+    font-size: 17px;
+  }
+
+  .hof-landing-content {
+    width: min(100% - 24px, 620px);
+    padding: 36px 0 48px;
+  }
+
+  .hof-principles-grid {
+    grid-template-columns: 1fr;
+  }
+}
