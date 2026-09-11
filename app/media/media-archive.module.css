@@ -323,25 +323,107 @@
   color: #8b9292;
 }
 
+.artifactSection {
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid #252c2f;
+  background:
+    linear-gradient(125deg, rgba(196, 155, 85, 0.08), transparent 34%),
+    linear-gradient(315deg, rgba(150, 24, 31, 0.12), transparent 38%),
+    #0c1012;
+}
+
+.artifactSection::after {
+  content: '';
+  position: absolute;
+  right: -36px;
+  top: -36px;
+  width: 190px;
+  height: 190px;
+  opacity: 0.035;
+  pointer-events: none;
+  background-image:
+    linear-gradient(45deg, #fff 25%, transparent 25%),
+    linear-gradient(-45deg, #fff 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #fff 75%),
+    linear-gradient(-45deg, transparent 75%, #fff 75%);
+  background-size: 24px 24px;
+  background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+}
+
+.artifactSection .sectionHeader,
+.artifactGrid {
+  position: relative;
+  z-index: 1;
+}
+
+.artifactHeaderNote {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
+.rotationNote {
+  color: #c49b55;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
 .artifactGrid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
+  gap: 10px;
 }
 
 .artifactCard {
   display: block;
   min-width: 0;
+  overflow: hidden;
   border: 1px solid #303639;
   background: #101416;
   color: inherit;
   text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.artifactCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(198, 155, 86, .72);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
 }
 
 .artifactImageWrap {
+  position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   background: #e8ddc5;
+}
+
+.artifactBadge {
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  left: 9px;
+  max-width: calc(100% - 18px);
+  padding: 5px 7px;
+  border: 1px solid rgba(214, 174, 103, .58);
+  background: rgba(7, 10, 12, .88);
+  color: #f2d9aa;
+  font-size: 7px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 2px 10px rgba(0,0,0,.25);
 }
 
 .artifactImage {
@@ -349,15 +431,24 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: transform 180ms ease;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.artifactImageContain {
+  object-fit: contain;
+  padding: 7px;
+  background: #e8ddc5;
 }
 
 .artifactCard:hover .artifactImage {
   transform: scale(1.025);
+  filter: saturate(1.04) contrast(1.03);
 }
 
 .artifactBody {
-  padding: 11px 12px 13px;
+  min-height: 96px;
+  padding: 12px 12px 13px;
+  border-top: 1px solid #2a3033;
 }
 
 .artifactMeta {
@@ -371,6 +462,15 @@
   font-size: 12px;
   font-weight: 800;
   line-height: 1.25;
+}
+
+.artifactAction {
+  margin-top: 9px;
+  color: #d8444c;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .07em;
+  text-transform: uppercase;
 }
 
 .pathwayGrid {
@@ -440,6 +540,8 @@
   .stat { min-height: 78px; padding: 14px; }
   .sectionHeader { display: block; }
   .sectionNote { margin-top: 8px; text-align: left; }
+  .artifactSection { padding: 18px; }
+  .artifactHeaderNote { justify-items: start; }
   .artifactGrid { grid-template-columns: repeat(3, 1fr); }
   .pathwayGrid { grid-template-columns: 1fr; }
 }
@@ -451,5 +553,7 @@
   .stats { grid-template-columns: 1fr 1fr; }
   .collectionGrid { grid-template-columns: 1fr; }
   .collectionCard { min-height: 310px; }
+  .artifactSection { padding: 14px; }
   .artifactGrid { grid-template-columns: repeat(2, 1fr); }
+  .artifactBody { min-height: 90px; }
 }
