@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const ROOM_IS_OPEN = process.env.HALL_OF_FAME_ROOM_OPEN === 'true'
+
 export const metadata: Metadata = {
   title: 'Hall of Fame | Upper Midwest Auto Racing Museum',
   description: 'The Upper Midwest Auto Racing Museum Hall of Fame is coming soon.',
@@ -98,6 +100,9 @@ export default function HallOfFamePage() {
         </div>
 
         <div className="hof-landing-actions">
+          {ROOM_IS_OPEN ? (
+            <Link href="/hall-of-fame/room" className="hof-landing-action">Enter the Hall →</Link>
+          ) : null}
           <Link href="/" className="hof-landing-action">Return to the Museum →</Link>
           <Link href="/stats/feature-winners" className="hof-landing-action hof-landing-action-secondary">
             Visit the Research Center →
