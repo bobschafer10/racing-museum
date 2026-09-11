@@ -133,8 +133,6 @@ export async function GET(request: NextRequest) {
     supabase.rpc("search_museum_ocr_facets", facetArgs),
   ])
 
-  // Supabase can occasionally return a transient API/pool error while OCR indexing is active.
-  // Retry each failed RPC once so changing sort/page does not discard an otherwise valid search.
   if (searchResponse.error) {
     console.warn("MUSEUM OCR SEARCH RETRY", searchResponse.error)
     searchResponse = await supabase.rpc("search_museum_ocr", searchArgs)
@@ -149,8 +147,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ query, results: [], error: "Archive search is temporarily unavailable." }, { status: 500 })
   }
 
-  // Facets improve filtering but should never make valid search results disappear.
-  // If the facet query is still unavailable after retry, return the results and total from the search RPC.
   if (facetResponse.error) {
     console.error("MUSEUM OCR FACET ERROR", facetResponse.error)
   }
@@ -175,14 +171,26 @@ export async function GET(request: NextRequest) {
     .filter((facet) => Number.isFinite(facet.year))
     .sort((a, b) => b.year - a.year)
 
-  const results = rows.map((row) => {
+  const results = rows.map((row, rowIndex) => {
     const isNewspaper = row.document_type === "newspaper"
     const sourceName = SOURCE_NAMES[row.source_key] || row.source_key
     const documentTitle = isNewspaper ? sourceName : row.document_title
-    const sourcePage = row.page_number ? `sourcePage=${row.page_number}&` : ""
-    const href = isNewspaper
-      ? `/media/newspapers/${row.document_slug}/${row.issue_date}?${sourcePage}q=${encodeURIComponent(query)}`
-      : `/media/race-programs/${row.document_slug}${row.page_number ? `#scan-page-${row.page_number}` : ""}`
+
+    let href: string
+    if (isNewspaper) {
+      const resultParams = new URLSearchParams()
+      if (row.page_number) resultParams.set("sourcePage", String(row.page_number))
+      resultParams.set("q", query)
+      resultParams.set("sort", sort)
+      resultParams.set("source", source || "all")
+      if (year) resultParams.set("year", String(year))
+      resultParams.set("searchIndex", String(offset + rowIndex))
+      resultParams.set("searchTotal", String(total))
+      resultParams.set("pageSize", String(pageSize))
+      href = `/media/newspapers/${row.document_slug}/${row.issue_date}?${resultParams.toString()}`
+    } else {
+      href = `/media/race-programs/${row.document_slug}${row.page_number ? `#scan-page-${row.page_number}` : ""}`
+    }
 
     return {
       id: `${row.document_type}-${row.page_id}`,
