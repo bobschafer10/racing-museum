@@ -120,14 +120,18 @@ export default function HallOfFameRoomPage() {
           </p>
         </article>
 
-        <article className={styles.interpretiveCard}>
+        <Link
+          href="/hall-of-fame/selection-standards"
+          className={styles.interpretiveCard}
+          style={{ color: 'inherit', textDecoration: 'none' }}
+        >
           <div className={styles.cardNumber}>02</div>
           <h3>Selection Standards</h3>
           <p>
             Career excellence, historical importance, strength of competition, longevity, influence,
-            versatility, and lasting impact will matter more than any single statistic.
+            versatility, and lasting impact will matter more than any single statistic. Open the working charter →
           </p>
-        </article>
+        </Link>
 
         <article className={styles.interpretiveCard}>
           <div className={styles.cardNumber}>03</div>
