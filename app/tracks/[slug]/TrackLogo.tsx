@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { usePathname } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
@@ -13,6 +13,34 @@ export default function TrackLogo({
   trackName: string
 }) {
   const pathname = usePathname()
+  const [landingPhotoUrl, setLandingPhotoUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (pathname !== '/tracks') {
+      setLandingPhotoUrl(null)
+      return
+    }
+
+    let cancelled = false
+
+    async function loadLandingCardPhoto() {
+      const { data } = await supabase
+        .from('track_hero_photo_variants_view')
+        .select('image_url')
+        .eq('slug', slug)
+        .eq('photo_rank', 1)
+        .limit(1)
+
+      if (cancelled) return
+      setLandingPhotoUrl(data?.[0]?.image_url || null)
+    }
+
+    void loadLandingCardPhoto()
+
+    return () => {
+      cancelled = true
+    }
+  }, [pathname, slug])
 
   useEffect(() => {
     let preferredRank = 1
@@ -54,14 +82,21 @@ export default function TrackLogo({
   // Version parameter prevents browsers/CDNs from reusing a placeholder
   // that was cached before a newly added logo existed.
   const logoPath = `/api/track-logo/${encodeURIComponent(slug)}?v=2`
+  const showLandingPhoto = pathname === '/tracks' && Boolean(landingPhotoUrl)
+  const imageSrc = showLandingPhoto && landingPhotoUrl ? landingPhotoUrl : logoPath
 
   return (
-    <div style={logoWrap}>
+    <div style={showLandingPhoto ? photoWrap : logoWrap}>
       <img
-        src={logoPath}
-        alt={`${trackName} logo`}
-        style={logoImage}
+        src={imageSrc}
+        alt={showLandingPhoto ? `Racing at ${trackName}` : `${trackName} logo`}
+        style={showLandingPhoto ? photoImage : logoImage}
         onError={(e) => {
+          if (showLandingPhoto) {
+            setLandingPhotoUrl(null)
+            return
+          }
+
           const target = e.currentTarget
           target.style.display = 'none'
           const fallbackEl = target.nextElementSibling as HTMLElement | null
@@ -80,8 +115,16 @@ const logoWrap: CSSProperties = {
   width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#efe7d6', overflow: 'hidden',
 }
 
+const photoWrap: CSSProperties = {
+  width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0d1012', overflow: 'hidden',
+}
+
 const logoImage: CSSProperties = {
   width: '100%', height: '100%', objectFit: 'contain', display: 'block',
+}
+
+const photoImage: CSSProperties = {
+  width: '100%', height: '100%', objectFit: 'cover', display: 'block',
 }
 
 const fallbackStyle: CSSProperties = {
