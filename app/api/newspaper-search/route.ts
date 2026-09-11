@@ -112,32 +112,52 @@ export async function GET(request: NextRequest) {
   const page = Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1
   const offset = (page - 1) * pageSize
 
-  const [{ data, error }, { data: facetData, error: facetError }] = await Promise.all([
-    supabase.rpc("search_museum_ocr", {
-      p_query: query,
-      p_collection: collection,
-      p_source: source,
-      p_year: year,
-      p_sort: sort,
-      p_limit: pageSize,
-      p_offset: offset,
-    }),
-    supabase.rpc("search_museum_ocr_facets", {
-      p_query: query,
-      p_collection: collection,
-      p_source: source,
-      p_year: year,
-    }),
+  const searchArgs = {
+    p_query: query,
+    p_collection: collection,
+    p_source: source,
+    p_year: year,
+    p_sort: sort,
+    p_limit: pageSize,
+    p_offset: offset,
+  }
+  const facetArgs = {
+    p_query: query,
+    p_collection: collection,
+    p_source: source,
+    p_year: year,
+  }
+
+  let [searchResponse, facetResponse] = await Promise.all([
+    supabase.rpc("search_museum_ocr", searchArgs),
+    supabase.rpc("search_museum_ocr_facets", facetArgs),
   ])
 
-  if (error || facetError) {
-    console.error("MUSEUM OCR SEARCH ERROR", error || facetError)
+  // Supabase can occasionally return a transient API/pool error while OCR indexing is active.
+  // Retry each failed RPC once so changing sort/page does not discard an otherwise valid search.
+  if (searchResponse.error) {
+    console.warn("MUSEUM OCR SEARCH RETRY", searchResponse.error)
+    searchResponse = await supabase.rpc("search_museum_ocr", searchArgs)
+  }
+  if (facetResponse.error) {
+    console.warn("MUSEUM OCR FACET RETRY", facetResponse.error)
+    facetResponse = await supabase.rpc("search_museum_ocr_facets", facetArgs)
+  }
+
+  if (searchResponse.error) {
+    console.error("MUSEUM OCR SEARCH ERROR", searchResponse.error)
     return NextResponse.json({ query, results: [], error: "Archive search is temporarily unavailable." }, { status: 500 })
   }
 
-  const rows = (data || []) as SearchRow[]
-  const facets = (facetData || []) as FacetRow[]
-  const total = Number(facets.find((facet) => facet.facet_kind === "total")?.match_count || rows[0]?.total_count || 0)
+  // Facets improve filtering but should never make valid search results disappear.
+  // If the facet query is still unavailable after retry, return the results and total from the search RPC.
+  if (facetResponse.error) {
+    console.error("MUSEUM OCR FACET ERROR", facetResponse.error)
+  }
+
+  const rows = (searchResponse.data || []) as SearchRow[]
+  const facets = (facetResponse.error ? [] : facetResponse.data || []) as FacetRow[]
+  const total = Number(rows[0]?.total_count || facets.find((facet) => facet.facet_kind === "total")?.match_count || 0)
   const totalPages = Math.max(1, Math.ceil(total / pageSize))
 
   const sources = facets
