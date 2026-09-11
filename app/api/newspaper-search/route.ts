@@ -1,5 +1,17 @@
 import { NextRequest, NextResponse } from "next/server"
-import { supabase } from "@/lib/supabase"
+import { createClient } from "@supabase/supabase-js"
+
+const ocrSupabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+      detectSessionInUrl: false,
+    },
+  },
+)
 
 const PUBLICATION_NAMES: Record<string, string> = {
   "midwest-racing-news": "Midwest Racing News",
@@ -129,17 +141,17 @@ export async function GET(request: NextRequest) {
   }
 
   let [searchResponse, facetResponse] = await Promise.all([
-    supabase.rpc("search_museum_ocr", searchArgs),
-    supabase.rpc("search_museum_ocr_facets", facetArgs),
+    ocrSupabase.rpc("search_museum_ocr", searchArgs),
+    ocrSupabase.rpc("search_museum_ocr_facets", facetArgs),
   ])
 
   if (searchResponse.error) {
     console.warn("MUSEUM OCR SEARCH RETRY", searchResponse.error)
-    searchResponse = await supabase.rpc("search_museum_ocr", searchArgs)
+    searchResponse = await ocrSupabase.rpc("search_museum_ocr", searchArgs)
   }
   if (facetResponse.error) {
     console.warn("MUSEUM OCR FACET RETRY", facetResponse.error)
-    facetResponse = await supabase.rpc("search_museum_ocr_facets", facetArgs)
+    facetResponse = await ocrSupabase.rpc("search_museum_ocr_facets", facetArgs)
   }
 
   if (searchResponse.error) {
