@@ -38,6 +38,7 @@ const foundingPlaques: Plaque[] = Array.from({ length: 12 }, (_, index) => ({
     'Lasting impact on Upper Midwest auto racing',
   ],
   citation: 'This plaque is reserved for a member of the Hall of Fame Founding Class.',
+  slug: index === 0 ? 'exhibit-preview' : undefined,
 }))
 
 function PlaqueCard({ plaque, featured = false }: { plaque: Plaque; featured?: boolean }) {
