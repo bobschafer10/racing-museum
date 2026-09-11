@@ -1,0 +1,89 @@
+/*
+ * Search visibility polish for the Tracks and Drivers landing pages.
+ *
+ * Keep this intentionally narrow: these selectors target the existing search
+ * forms by action + query input so the completed landing-page designs remain
+ * unchanged everywhere else.
+ */
+
+form[action="/tracks"]:has(input[name="q"]),
+form[action="/drivers"]:has(input[name="q"]) {
+  background: rgba(15, 19, 22, 0.97) !important;
+  border-color: rgba(198, 161, 91, 0.42) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025),
+    0 14px 34px rgba(0, 0, 0, 0.2) !important;
+}
+
+form[action="/tracks"]:has(input[name="q"])::before,
+form[action="/drivers"]:has(input[name="q"])::before {
+  display: block;
+  margin: 0 0 8px 1px;
+  color: #c6a15b;
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+form[action="/tracks"]:has(input[name="q"])::before {
+  content: "Search the Track Archive";
+}
+
+form[action="/drivers"]:has(input[name="q"])::before {
+  content: "Search the Driver Archive";
+}
+
+form[action="/tracks"] input[name="q"][placeholder="Search tracks by name, city, or state..."],
+form[action="/drivers"] input[name="q"][placeholder="Search drivers by name..."] {
+  background: #171c20 !important;
+  border: 1.5px solid rgba(198, 161, 91, 0.76) !important;
+  color: #fff !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025),
+    0 0 0 1px rgba(198, 161, 91, 0.06),
+    0 0 14px rgba(198, 161, 91, 0.07) !important;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    background 150ms ease !important;
+}
+
+form[action="/tracks"] input[name="q"][placeholder="Search tracks by name, city, or state..."]::placeholder,
+form[action="/drivers"] input[name="q"][placeholder="Search drivers by name..."]::placeholder {
+  color: #c9c0b2 !important;
+  opacity: 0.9;
+}
+
+form[action="/tracks"] input[name="q"][placeholder="Search tracks by name, city, or state..."]:focus,
+form[action="/drivers"] input[name="q"][placeholder="Search drivers by name..."]:focus {
+  background: #1a2024 !important;
+  border-color: #dfbd79 !important;
+  outline: none !important;
+  box-shadow:
+    0 0 0 2px rgba(198, 161, 91, 0.22),
+    0 0 18px rgba(198, 161, 91, 0.16) !important;
+}
+
+/* The Tracks page already has a search icon; make it part of the gold cue. */
+form[action="/tracks"] div:has(> input[name="q"]) > span {
+  color: #d3ad66 !important;
+  text-shadow: 0 0 10px rgba(198, 161, 91, 0.18);
+}
+
+/* Keep the filters quieter than the primary search field, but visually grouped. */
+form[action="/tracks"] select,
+form[action="/drivers"] select {
+  border-color: rgba(233, 220, 194, 0.27) !important;
+  background-color: #13191d !important;
+}
+
+@media (max-width: 720px) {
+  form[action="/tracks"]:has(input[name="q"])::before,
+  form[action="/drivers"]:has(input[name="q"])::before {
+    margin-bottom: 7px;
+    font-size: 0.64rem;
+    letter-spacing: 0.12em;
+  }
+}
