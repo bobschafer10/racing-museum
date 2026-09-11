@@ -9,6 +9,7 @@ import "./research-center-dark.css";
 import "./research-center-nav.css";
 import "./research-center-home-dark.css";
 import "./home-final-polish.css";
+import "./search-visibility.css";
 import Link from "next/link"
 import ResearchCenterNav from "@/components/ResearchCenterNav"
 
