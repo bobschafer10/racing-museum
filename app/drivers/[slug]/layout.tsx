@@ -51,6 +51,28 @@ const galleryStyles = `
   border-color: #c6a15b;
 }
 
+.driver-feature-report-action {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border: 1px solid rgba(198, 161, 91, 0.68);
+  background: rgba(75, 55, 27, 0.82);
+  color: #f3dfb4;
+  text-decoration: none;
+  font-size: 0.66rem;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.driver-feature-report-action:hover {
+  border-color: #d8b66f;
+  background: rgba(106, 75, 30, 0.96);
+  color: #fff;
+}
+
 .driver-photo-gallery-controls {
   margin-top: 12px;
   display: flex;
@@ -142,6 +164,10 @@ const galleryStyles = `
     font-size: 0.56rem;
   }
 
+  .driver-feature-report-action {
+    width: 100%;
+  }
+
   .driver-photo-gallery-controls {
     align-items: flex-start;
     flex-direction: column;
@@ -159,7 +185,8 @@ const galleryStyles = `
 }
 
 @media print {
-  .driver-report-utility {
+  .driver-report-utility,
+  .driver-feature-report-action {
     display: none !important;
   }
 }
