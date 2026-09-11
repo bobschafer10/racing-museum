@@ -1,0 +1,196 @@
+/* =====================================================
+   HOMEPAGE RESEARCH CENTER — DARK MUSEUM CONTINUITY
+   Keeps the existing Research Center structure and controls,
+   while replacing the remaining paper/sepia surfaces with
+   the site's charcoal, cream, antique-gold and museum-red system.
+===================================================== */
+
+.home-page .home-section:has(.home-stats-lab),
+.home-page .home-archive-search-section {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(198, 161, 91, 0.08), transparent 30rem),
+    linear-gradient(180deg, #101316 0%, #0b0d0f 100%) !important;
+}
+
+.home-page .home-section:has(.home-stats-lab) {
+  padding-bottom: 0 !important;
+}
+
+.home-page .home-stats-lab {
+  border: 1px solid rgba(198, 161, 91, 0.5) !important;
+  background:
+    linear-gradient(135deg, rgba(198, 161, 91, 0.075), transparent 46%),
+    linear-gradient(180deg, #171b1f 0%, #111519 100%) !important;
+  box-shadow:
+    0 22px 54px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025) !important;
+  color: #f3eee5 !important;
+}
+
+.home-page .home-stats-lab::before {
+  border-color: rgba(198, 161, 91, 0.22) !important;
+}
+
+.home-page .home-stats-lab-title {
+  color: #fff8ed !important;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35) !important;
+}
+
+.home-page .home-stats-lab-description {
+  color: #c7c2ba !important;
+}
+
+.home-page .home-stats-lab [class*="kicker"],
+.home-page .home-stats-lab [class*="eyebrow"] {
+  color: #c6a15b !important;
+}
+
+.home-page .stats-lab-button {
+  border: 1px solid #b88d4b !important;
+  background: #8f1c24 !important;
+  color: #fff !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24) !important;
+}
+
+.home-page .stats-lab-button:hover {
+  background: #aa222b !important;
+  border-color: #c6a15b !important;
+}
+
+.home-page .home-stats-lab > div:last-child > div {
+  border: 1px solid rgba(198, 161, 91, 0.34) !important;
+  background:
+    linear-gradient(145deg, rgba(198, 161, 91, 0.055), transparent 55%),
+    #0f1316 !important;
+}
+
+.home-page .home-stats-lab-numbers {
+  border-top-color: rgba(198, 161, 91, 0.32) !important;
+  border-left-color: rgba(198, 161, 91, 0.32) !important;
+}
+
+.home-page .home-stats-lab-numbers > div {
+  border-right-color: rgba(198, 161, 91, 0.28) !important;
+  border-bottom-color: rgba(198, 161, 91, 0.28) !important;
+  background: #171c20 !important;
+}
+
+.home-page .home-stats-lab-numbers > div:nth-child(even) {
+  background: #14191d !important;
+}
+
+.home-page .home-stats-lab-numbers > div > div:first-child {
+  color: #d8b66f !important;
+}
+
+.home-page .home-stats-lab-numbers > div > div:last-child {
+  color: #aaa39a !important;
+}
+
+/* Join search, archive status and decade exploration into the same dark destination. */
+.home-page .home-explore-panel {
+  border: 1px solid rgba(198, 161, 91, 0.48) !important;
+  border-top: 1px solid rgba(198, 161, 91, 0.48) !important;
+  background:
+    linear-gradient(135deg, rgba(198, 161, 91, 0.055), transparent 52%),
+    #111519 !important;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.32) !important;
+  color: #f3eee5 !important;
+}
+
+.home-page .home-explore-panel::before {
+  color: #c6a15b !important;
+}
+
+.home-page .home-explore-panel::after {
+  background: linear-gradient(90deg, transparent, rgba(198, 161, 91, 0.7) 16%, rgba(198, 161, 91, 0.7) 84%, transparent) !important;
+}
+
+.home-page .home-search-area,
+.home-page .home-archive-status {
+  border: 1px solid rgba(198, 161, 91, 0.3) !important;
+  background: #161b20 !important;
+  color: #d7d1c8 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.018) !important;
+}
+
+.home-page .home-search-area :is(p, label, span),
+.home-page .home-archive-status :is(p, li, span) {
+  color: #b9b4ad !important;
+}
+
+.home-page .home-explore-title,
+.home-page .home-search-area h2,
+.home-page .home-search-area h3,
+.home-page .home-archive-status h2,
+.home-page .home-archive-status h3 {
+  color: #fff7eb !important;
+}
+
+.home-page .home-search-bar-wrap {
+  border: 1px solid rgba(198, 161, 91, 0.5) !important;
+  background: #0c1013 !important;
+}
+
+.home-page .home-search-input {
+  border: 0 !important;
+  background: #0c1013 !important;
+  color: #f5f0e8 !important;
+  outline: none !important;
+}
+
+.home-page .home-search-input::placeholder {
+  color: #777f83 !important;
+}
+
+.home-page .home-search-input:focus {
+  box-shadow: inset 0 0 0 2px rgba(198, 161, 91, 0.28) !important;
+}
+
+.home-page .home-search-button {
+  border: 0 !important;
+  border-left: 1px solid rgba(198, 161, 91, 0.5) !important;
+  background: #8f1c24 !important;
+  color: #fff !important;
+}
+
+.home-page .home-search-button:hover {
+  background: #aa222b !important;
+}
+
+.home-page .home-era-grid a {
+  border: 1px solid rgba(198, 161, 91, 0.38) !important;
+  background:
+    linear-gradient(135deg, rgba(198, 161, 91, 0.05), transparent 60%),
+    #171c20 !important;
+  color: #e8dfd2 !important;
+  box-shadow: inset 0 0 0 3px rgba(198, 161, 91, 0.025) !important;
+}
+
+.home-page .home-era-grid a:hover {
+  transform: translateY(-2px) !important;
+  border-color: #c6a15b !important;
+  background: #20272c !important;
+  color: #fff !important;
+}
+
+.home-page .home-era-grid span {
+  color: inherit !important;
+}
+
+@media (max-width: 768px) {
+  .home-page .home-stats-lab,
+  .home-page .home-explore-panel {
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .home-page .home-search-bar-wrap {
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  .home-page .home-search-input,
+  .home-page .home-search-button {
+    border: 1px solid rgba(198, 161, 91, 0.48) !important;
+  }
+}
