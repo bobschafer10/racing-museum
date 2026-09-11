@@ -1,0 +1,443 @@
+.page {
+  min-height: 100vh;
+  color: #f1e3c4;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(196, 146, 69, .08), transparent 28%),
+    linear-gradient(180deg, #0e0b08 0%, #181109 45%, #0b0907 100%);
+}
+
+.hero {
+  position: relative;
+  border-bottom: 1px solid rgba(191, 148, 73, .34);
+  background:
+    linear-gradient(90deg, rgba(8, 6, 5, .92), rgba(23, 16, 10, .68), rgba(8, 6, 5, .92)),
+    url('/museum-bg.png') center 45% / cover no-repeat;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .52));
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.backRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #bca273;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.backRow a {
+  color: #e1c589;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(250px, 340px) minmax(0, 1fr);
+  gap: 54px;
+  align-items: center;
+}
+
+.portraitFrame {
+  min-height: 410px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 22px;
+  padding: 32px;
+  border: 1px solid #826331;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(226, 189, 111, .14), transparent 28%),
+    linear-gradient(145deg, #372719, #17100b 70%);
+  box-shadow:
+    inset 0 0 0 7px #1b120c,
+    inset 0 0 0 8px rgba(209, 164, 80, .3),
+    0 16px 35px rgba(0, 0, 0, .45);
+}
+
+.portraitMedallion {
+  width: 190px;
+  height: 190px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 7px double #97733b;
+  color: #e0c38a;
+  background:
+    radial-gradient(circle at 40% 35%, #7e6032 0 8%, #3b2a19 45%, #18100a 100%);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, .74), 0 8px 18px rgba(0, 0, 0, .48);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.portraitCaption {
+  max-width: 230px;
+  color: #a88e63;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.heroCopy {
+  max-width: 760px;
+}
+
+.eyebrow,
+.sectionKicker {
+  color: #c7a25e;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.heroCopy h1,
+.citationCard h2,
+.sectionHeading h2,
+.footerPanel h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: -.035em;
+}
+
+.heroCopy h1 {
+  margin: 12px 0 7px;
+  color: #f2d99e;
+  font-size: clamp(52px, 7vw, 88px);
+  line-height: .9;
+}
+
+.identity {
+  color: #d1b67d;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+.lead {
+  max-width: 720px;
+  margin: 22px 0 20px;
+  color: #ddceb0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.58;
+}
+
+.heroStamp {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #977138;
+  color: #dfc17f;
+  background: rgba(16, 11, 8, .62);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.citationSection,
+.snapshotSection,
+.timelineSection,
+.archiveSection,
+.footerPanel {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.citationSection {
+  padding: 42px 0 24px;
+}
+
+.citationCard {
+  padding: 34px 38px;
+  border: 1px solid #7e6030;
+  background:
+    radial-gradient(circle at 88% 14%, rgba(217, 175, 96, .08), transparent 25%),
+    linear-gradient(135deg, #24180f, #120e0a);
+  box-shadow: inset 0 0 0 1px rgba(222, 184, 107, .06), 0 8px 22px rgba(0, 0, 0, .22);
+}
+
+.citationCard h2 {
+  margin: 8px 0 14px;
+  color: #f0dab0;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: .98;
+}
+
+.citationCard p {
+  margin: 11px 0 0;
+  color: #cdbd9f;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.snapshotSection,
+.timelineSection,
+.archiveSection {
+  padding: 32px 0;
+  border-top: 1px solid rgba(179, 139, 70, .2);
+}
+
+.sectionHeading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .55fr);
+  gap: 36px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.sectionHeading h2 {
+  margin: 8px 0 0;
+  color: #eed9ac;
+  font-size: clamp(31px, 3.8vw, 46px);
+  line-height: .98;
+}
+
+.sectionHeading > p {
+  margin: 0;
+  color: #a89572;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.snapshotGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.snapshotCard {
+  min-height: 132px;
+  padding: 20px;
+  border: 1px solid #624923;
+  background: linear-gradient(145deg, #21170f, #120d09);
+}
+
+.snapshotCard span {
+  display: block;
+  margin-bottom: 12px;
+  color: #bd9952;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.snapshotCard strong {
+  color: #e0cfad;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.timeline {
+  border: 1px solid #5f4624;
+  background: rgba(24, 17, 11, .65);
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px 26px;
+  border-bottom: 1px solid rgba(151, 113, 56, .26);
+}
+
+.timelineItem:last-child {
+  border-bottom: none;
+}
+
+.timelineNumber {
+  color: #9e7a3e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.timelineItem h3 {
+  margin: 0 0 6px;
+  color: #e5d2a9;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 23px;
+}
+
+.timelineItem p {
+  margin: 0;
+  color: #bbaa8a;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.archiveGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.archiveCard {
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  border: 1px solid #654a26;
+  background:
+    radial-gradient(circle at 90% 12%, rgba(219, 175, 90, .06), transparent 28%),
+    linear-gradient(145deg, #251a11, #100c09);
+}
+
+.archiveCard h3 {
+  margin: 0 0 10px;
+  color: #e4cea0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  line-height: 1.05;
+}
+
+.archiveCard p {
+  margin: 0 0 18px;
+  color: #ae9e82;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.52;
+}
+
+.archiveCard span {
+  margin-top: auto;
+  color: #c49a4c;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.footerPanel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 34px;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 54px;
+  padding: 30px 34px;
+  border: 1px solid #76582c;
+  background: linear-gradient(135deg, #2c1f14, #15100b);
+}
+
+.footerPanel h2 {
+  margin: 7px 0 8px;
+  color: #efdbaf;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.footerPanel p {
+  max-width: 760px;
+  margin: 0;
+  color: #b8a78a;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.returnButton {
+  padding: 11px 16px;
+  border: 1px solid #8c682f;
+  color: #f1d79d;
+  background: #6d281f;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .heroGrid,
+  .sectionHeading,
+  .footerPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .portraitFrame {
+    min-height: 330px;
+  }
+
+  .snapshotGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .archiveGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .heroInner,
+  .citationSection,
+  .snapshotSection,
+  .timelineSection,
+  .archiveSection,
+  .footerPanel {
+    width: min(100% - 22px, 560px);
+  }
+
+  .backRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .portraitMedallion {
+    width: 150px;
+    height: 150px;
+    font-size: 46px;
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(46px, 15vw, 64px);
+  }
+
+  .citationCard {
+    padding: 26px 22px;
+  }
+
+  .snapshotGrid,
+  .archiveGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timelineItem {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px 16px;
+  }
+
+  .timelineNumber {
+    font-size: 26px;
+  }
+
+  .footerPanel {
+    padding: 25px 22px;
+  }
+}
