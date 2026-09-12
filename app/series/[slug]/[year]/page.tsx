@@ -53,6 +53,14 @@ export default async function SeriesSeasonPage({
 
   const eventRows = events || []
   const standingRows = standings || []
+  const standingsGroups = groupStandingsByDivision(standingRows)
+  const hasMultipleStandingsGroups = standingsGroups.length > 1
+  const divisionChampions = standingsGroups
+    .map((group) => ({
+      division: group.label,
+      row: group.rows.find((row: any) => Number(row.finishing_position) === 1) || group.rows[0],
+    }))
+    .filter((item) => item.row)
 
   const standingDriverIds = Array.from(
     new Set(
@@ -119,9 +127,11 @@ export default async function SeriesSeasonPage({
 
   const championRow = season.champion_driver_id
     ? standingRows.find((row: any) => Number(row.driver_id) === Number(season.champion_driver_id))
-    : standingRows[0]
-  const championSlug = championRow
-    ? driverSlugById.get(Number(championRow.driver_id)) || slugify(championRow.driver_name)
+    : !hasMultipleStandingsGroups
+      ? standingRows.find((row: any) => Number(row.finishing_position) === 1) || standingRows[0]
+      : null
+  const championSlug = championRow?.driver_id
+    ? driverSlugById.get(Number(championRow.driver_id)) || ''
     : season.champion_name
       ? slugify(season.champion_name)
       : ''
@@ -189,7 +199,13 @@ export default async function SeriesSeasonPage({
               <div className={styles.eyebrow}>Series Season Archive</div>
               <h1>{seasonYear} {series.series_name}</h1>
               <div className={styles.heroMeta}>
-                {season.champion_name ? `Champion: ${season.champion_name}` : 'Championship season in progress'}
+                {hasMultipleStandingsGroups
+                  ? `${standingsGroups.length} championship divisions`
+                  : season.champion_name
+                    ? `Champion: ${season.champion_name}`
+                    : standingRows.length
+                      ? 'Final standings preserved'
+                      : 'Championship season in progress'}
               </div>
               <p className={styles.heroDescription}>
                 Explore the available {seasonYear} season record, including final point standings, recorded race results, associated tracks, and preserved source material for {series.series_name}.
@@ -207,7 +223,7 @@ export default async function SeriesSeasonPage({
             <Stat value={String(statRaces)} label="Recorded Races" />
             <Stat value={String(trackCards.length)} label="Tracks Visited" />
             <Stat value={String(winnerCounts.size)} label="Different Winners" />
-            <Stat value={String(standingRows.length)} label="Drivers in Standings" />
+            <Stat value={String(standingRows.length)} label="Standings Entries" />
             <Stat value={season.margin || seasonRange} label={season.margin ? 'Championship Margin' : 'Season Span'} />
           </div>
         </div>
@@ -228,13 +244,22 @@ export default async function SeriesSeasonPage({
           <SectionHeader kicker="Season Snapshot" title={`${seasonYear} Championship Archive`} note={seasonRange} />
           <div className={styles.snapshotGrid}>
             <div className={styles.snapshotCard}>
-              <span>Season Champion</span>
-              <strong>
-                {season.champion_name && championSlug ? (
-                  <Link href={`/drivers/${championSlug}`} className={styles.driverLink}>{season.champion_name}</Link>
-                ) : season.champion_name || 'Champion TBD'}
-              </strong>
-              <small>{season.margin ? `Championship margin: ${season.margin}` : 'Final championship record preserved in the museum archive.'}</small>
+              <span>{hasMultipleStandingsGroups ? 'Division Champions' : 'Season Champion'}</span>
+              {hasMultipleStandingsGroups ? (
+                <>
+                  <strong>{divisionChampions.length} champions</strong>
+                  <small>{divisionChampions.map(({ division, row }) => `${division}: ${row.driver_name}`).join(' • ')}</small>
+                </>
+              ) : (
+                <>
+                  <strong>
+                    {season.champion_name && championSlug ? (
+                      <Link href={`/drivers/${championSlug}`} className={styles.driverLink}>{season.champion_name}</Link>
+                    ) : season.champion_name || championRow?.driver_name || 'Champion TBD'}
+                  </strong>
+                  <small>{season.margin ? `Championship margin: ${season.margin}` : 'Final championship record preserved in the museum archive.'}</small>
+                </>
+              )}
             </div>
             <div className={styles.snapshotCard}>
               <span>Most Recorded Wins</span>
@@ -269,29 +294,47 @@ export default async function SeriesSeasonPage({
         </section>
 
         <section id="standings" className={styles.section}>
-          <SectionHeader kicker="Championship History" title="Final Point Standings" note={`${standingRows.length} drivers listed`} />
+          <SectionHeader
+            kicker="Championship History"
+            title="Final Point Standings"
+            note={hasMultipleStandingsGroups ? `${standingRows.length} entries across ${standingsGroups.length} divisions` : `${standingRows.length} drivers listed`}
+          />
           {standingRows.length ? (
-            <div className={styles.tableWrap}>
-              <div className={styles.standingsTable}>
-                <div className={styles.standingsHeader}>
-                  <span>Pos</span><span>Driver</span><span>Points</span><span>Starts</span><span>Wins</span><span>Top 5</span><span>Top 10</span>
-                </div>
-                {standingRows.map((row: any) => {
-                  const driverSlug = driverSlugById.get(Number(row.driver_id)) || slugify(row.driver_name)
-                  return (
-                    <div key={row.id} className={styles.standingsRow}>
-                      <span className={styles.standingsPos}>{row.finishing_position ?? '—'}</span>
-                      <Link href={`/drivers/${driverSlug}`} className={styles.driverLink}>{row.driver_name || 'Unknown driver'}</Link>
-                      <span className={styles.points}>{row.points || '—'}</span>
-                      <span>{row.starts || '—'}</span>
-                      <span>{row.wins || '—'}</span>
-                      <span>{row.top5 || '—'}</span>
-                      <span>{row.top10 || '—'}</span>
+            <>
+              {standingsGroups.map((group, groupIndex) => (
+                <div key={group.label} style={{ marginTop: groupIndex ? 28 : 0 }}>
+                  {hasMultipleStandingsGroups ? (
+                    <SectionHeader kicker="Division" title={group.label} note={`${group.rows.length} entries`} />
+                  ) : null}
+                  <div className={styles.tableWrap}>
+                    <div className={styles.standingsTable}>
+                      <div className={styles.standingsHeader}>
+                        <span>Pos</span><span>Driver</span><span>Points</span><span>Starts</span><span>Wins</span><span>Top 5</span><span>Top 10</span>
+                      </div>
+                      {group.rows.map((row: any) => {
+                        const driverSlug = row.driver_id ? driverSlugById.get(Number(row.driver_id)) || '' : ''
+                        const driverName = row.driver_name || 'Unknown driver'
+                        return (
+                          <div key={row.id} className={styles.standingsRow}>
+                            <span className={styles.standingsPos}>{row.position_label || row.finishing_position || '—'}</span>
+                            {driverSlug ? (
+                              <Link href={`/drivers/${driverSlug}`} className={styles.driverLink}>{driverName}</Link>
+                            ) : (
+                              <span>{driverName}</span>
+                            )}
+                            <span className={styles.points}>{row.points || '—'}</span>
+                            <span>{row.starts || '—'}</span>
+                            <span>{row.wins || '—'}</span>
+                            <span>{row.top5 || '—'}</span>
+                            <span>{row.top10 || '—'}</span>
+                          </div>
+                        )
+                      })}
                     </div>
-                  )
-                })}
-              </div>
-            </div>
+                  </div>
+                </div>
+              ))}
+            </>
           ) : <div className={styles.emptyState}>Final standings have not been added for this season yet.</div>}
         </section>
 
@@ -343,6 +386,25 @@ function SectionHeader({ kicker, title, note }: { kicker: string; title: string;
       {note ? <div className={styles.sectionNote}>{note}</div> : null}
     </div>
   )
+}
+
+function groupStandingsByDivision(rows: any[]) {
+  const groups = new Map<string, any[]>()
+  for (const row of rows) {
+    const label = String(row.source_division_name || '').trim() || 'Overall Standings'
+    const groupRows = groups.get(label) || []
+    groupRows.push(row)
+    groups.set(label, groupRows)
+  }
+
+  return Array.from(groups.entries()).map(([label, groupRows]) => ({
+    label,
+    rows: groupRows.sort((a: any, b: any) => {
+      const aPos = a.finishing_position == null ? Number.MAX_SAFE_INTEGER : Number(a.finishing_position)
+      const bPos = b.finishing_position == null ? Number.MAX_SAFE_INTEGER : Number(b.finishing_position)
+      return aPos - bPos || Number(a.id) - Number(b.id)
+    }),
+  }))
 }
 
 function photoUrl(photo?: PhotoRow) {
