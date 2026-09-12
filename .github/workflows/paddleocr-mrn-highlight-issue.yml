@@ -1,0 +1,118 @@
+name: PaddleOCR MRN Highlight Issue
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-mrn-highlight-issue.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: paddleocr-mrn-highlight-issue
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out newspaper OCR runner
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR reported May 23 1968 issue with line boxes
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: midwest-racing-news
+          MRN_ISSUE_DATE: '1968-05-23'
+          MRN_COLUMN_COUNT: '5'
+          MRN_PAGES_JSON: '["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg","012.jpg","013.jpg","014.jpg","015.jpg","016.jpg"]'
+          MRN_OUTPUT_ROOT: audit/paddleocr-newspaper-highlight/midwest-racing-news/1968-05-23
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest OCR text and highlight boxes
+        shell: bash
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+          OUTPUT_ROOT: audit/paddleocr-newspaper-highlight/midwest-racing-news/1968-05-23
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+
+          root=Path(os.environ['OUTPUT_ROOT'])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          pages=[]
+          for meta in summary.get('pages',[]):
+              page=str(meta['page'])
+              stem=Path(page).stem
+              text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+              pages.append({'page':page,'text':text,'meta':meta})
+          payload={
+              'publication':'midwest-racing-news',
+              'year':1968,
+              'issue':'1968-05-23',
+              'summary':summary,
+              'pages':pages,
+              'candidates':candidates,
+          }
+          Path('/tmp/ocr-payload.json').write_text(json.dumps(payload,separators=(',',':')),encoding='utf-8')
+          print(f"Prepared {len(pages)} pages for highlight backfill")
+          PY
+
+          response="$(curl -fsSL -X POST \
+            -H "Authorization: Bearer ${OIDC_TOKEN}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/ocr-payload.json \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+          echo "$response"
+          test "$(echo "$response" | jq -r '.ok')" = 'true'
+          test "$(echo "$response" | jq -r '.updated')" -eq 16
+
+      - name: Upload audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-1968-05-23-highlight-backfill
+          path: audit/paddleocr-newspaper-highlight/midwest-racing-news/1968-05-23
+          if-no-files-found: warn
+          retention-days: 7
