@@ -1,0 +1,139 @@
+name: PaddleOCR Joe Gresk Layout Repair
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-joe-gresk-layout-repair.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: paddleocr-joe-gresk-layout-repair
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        issue:
+          - '1971-06-10'
+          - '1971-06-24'
+          - '1971-07-22'
+          - '1971-07-29'
+          - '1971-08-05'
+          - '1971-08-12'
+
+    steps:
+      - name: Check out newspaper OCR runner
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: Resolve issue scan files
+        id: scans
+        shell: bash
+        env:
+          ISSUE: ${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          curl -fsSL "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/public/data/newspapers-manifest.json" -o /tmp/newspapers-manifest.json
+          python - "$ISSUE" "$GITHUB_OUTPUT" <<'PY'
+          import json, re, sys
+          from pathlib import Path
+          from urllib.parse import unquote, urlparse
+
+          issue_date=sys.argv[1]
+          output=Path(sys.argv[2])
+          manifest=json.loads(Path('/tmp/newspapers-manifest.json').read_text(encoding='utf-8'))
+          match=next((x for x in manifest if x.get('publicationSlug')=='midwest-racing-news' and str(x.get('issueDate') or x.get('slug'))==issue_date),None)
+          if not match:
+              raise SystemExit(f'Issue not found in manifest: {issue_date}')
+          image_re=re.compile(r'.+\.(?:jpg|jpeg|png|webp)$', re.I)
+          pages=[]; seen=set()
+          for value in [match.get('coverImage'), *(match.get('pages') or []), match.get('backCoverImage')]:
+              if not isinstance(value,str) or not value: continue
+              filename=unquote(urlparse(value).path.split('/')[-1])
+              if filename.lower() in {'thumbnail.jpg','thumbnail.jpeg','thumbnail.png','thumbnail.webp'}: continue
+              if not image_re.fullmatch(filename) or '/' in filename or '\\' in filename or filename in {'.','..'}: continue
+              if filename in seen: continue
+              seen.add(filename); pages.append(filename)
+          if not pages: raise SystemExit(f'No scan files found for {issue_date}')
+          with output.open('a',encoding='utf-8') as f:
+              f.write('pages_json='+json.dumps(pages,separators=(',',':'))+'\n')
+              f.write('page_count='+str(len(pages))+'\n')
+          print(issue_date, len(pages), 'scans')
+          PY
+
+      - name: OCR issue with line geometry
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: midwest-racing-news
+          MRN_ISSUE_DATE: ${{ matrix.issue }}
+          MRN_PAGES_JSON: ${{ steps.scans.outputs.pages_json }}
+          MRN_COLUMN_COUNT: '5'
+          MRN_OUTPUT_ROOT: audit/paddleocr-joe-gresk/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Build ingest payload
+        shell: bash
+        env:
+          ISSUE: ${{ matrix.issue }}
+          OUTPUT_ROOT: audit/paddleocr-joe-gresk/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path(os.environ['OUTPUT_ROOT'])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          pages=[]
+          for meta in summary.get('pages',[]):
+              page=str(meta['page']); stem=Path(page).stem
+              text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+              pages.append({'page':page,'text':text,'meta':meta})
+          payload={'publication':'midwest-racing-news','year':1971,'issue':os.environ['ISSUE'],'summary':summary,'pages':pages,'candidates':candidates}
+          Path('/tmp/ocr-payload.json').write_text(json.dumps(payload,separators=(',',':')),encoding='utf-8')
+          PY
+
+      - name: Ingest repaired layout
+        shell: bash
+        env:
+          EXPECTED_PAGES: ${{ steps.scans.outputs.page_count }}
+        run: |
+          set -euo pipefail
+          oidc="$(curl -fsSL -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$oidc"
+          response="$(curl -fsSL --retry 3 --retry-delay 3 --retry-all-errors -X POST -H "Authorization: Bearer ${oidc}" -H 'Content-Type: application/json' --data-binary @/tmp/ocr-payload.json 'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+          echo "$response"
+          test "$(echo "$response" | jq -r '.ok')" = 'true'
+          test "$(echo "$response" | jq -r '.updated')" -eq "$EXPECTED_PAGES"
