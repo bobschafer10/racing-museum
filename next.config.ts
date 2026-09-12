@@ -10,18 +10,6 @@ const nextConfig: NextConfig = {
   // than Next's 60-second default so a transient slowdown does not fail an
   // otherwise healthy deployment.
   staticPageGenerationTimeout: 180,
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: "/api/newspaper-search",
-          destination: "/api/newspaper-search-stable",
-        },
-      ],
-      afterFiles: [],
-      fallback: [],
-    };
-  },
 };
 
 export default nextConfig;
