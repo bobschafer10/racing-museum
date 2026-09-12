@@ -66,6 +66,7 @@ export default function NewspaperPageViewer({
   const [openPageIndex, setOpenPageIndex] = useState<number | null>(initialPageIndex)
   const [zoom, setZoom] = useState(1)
 
+  const hasSearchContext = Boolean(searchQuery && (searchSnippet || previousMatchHref || nextMatchHref))
   const resetZoom = () => setZoom(1)
   const closeViewer = () => {
     setOpenPageIndex(null)
@@ -74,12 +75,24 @@ export default function NewspaperPageViewer({
   const zoomIn = () => setZoom((value) => Math.min(MAX_ZOOM, Number((value + ZOOM_STEP).toFixed(2))))
   const zoomOut = () => setZoom((value) => Math.max(MIN_ZOOM, Number((value - ZOOM_STEP).toFixed(2))))
   const goPrev = () => {
+    // When a scan was opened from OCR search, left/right navigation should
+    // traverse OCR matches, not silently walk to the adjacent page in the
+    // same newspaper issue. Issue-page browsing remains available by closing
+    // the viewer and selecting a page thumbnail.
+    if (hasSearchContext) {
+      if (previousMatchHref) window.location.assign(previousMatchHref)
+      return
+    }
     if (openPageIndex !== null) {
       setOpenPageIndex(openPageIndex === 0 ? pages.length - 1 : openPageIndex - 1)
       resetZoom()
     }
   }
   const goNext = () => {
+    if (hasSearchContext) {
+      if (nextMatchHref) window.location.assign(nextMatchHref)
+      return
+    }
     if (openPageIndex !== null) {
       setOpenPageIndex(openPageIndex === pages.length - 1 ? 0 : openPageIndex + 1)
       resetZoom()
@@ -107,9 +120,8 @@ export default function NewspaperPageViewer({
     }
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [openPageIndex])
+  }, [openPageIndex, hasSearchContext, previousMatchHref, nextMatchHref])
 
-  const hasSearchContext = Boolean(searchQuery && (searchSnippet || previousMatchHref || nextMatchHref))
   const isMatchedPage = openPageIndex !== null && initialPageIndex !== null && openPageIndex === initialPageIndex
   const activeHighlightLines = isMatchedPage ? highlightLines : []
   const showSearchPanel = Boolean(isMatchedPage && searchQuery && searchSnippet)
@@ -132,7 +144,7 @@ export default function NewspaperPageViewer({
         <button type="button" style={fitButton} onClick={resetZoom}>Fit to screen</button>
       </div>
 
-      {pages.length > 1 ? <button type="button" style={{...arrow,left:18}} onClick={(e)=>{e.stopPropagation();goPrev()}} aria-label="Previous page">‹</button> : null}
+      {(hasSearchContext ? Boolean(previousMatchHref) : pages.length > 1) ? <button type="button" style={{...arrow,left:18}} onClick={(e)=>{e.stopPropagation();goPrev()}} aria-label={hasSearchContext ? "Previous OCR search match" : "Previous page"}>‹</button> : null}
       <div style={shell} onClick={(e)=>e.stopPropagation()}>
         <div style={label}>{pages[openPageIndex].label} <span style={{color:'#788087'}}>• {openPageIndex+1} of {pages.length}</span></div>
         {showSearchPanel && searchQuery && searchSnippet ? <div style={searchMatchPanel}>
@@ -170,7 +182,7 @@ export default function NewspaperPageViewer({
           </div>
         </div>
       </div>
-      {pages.length > 1 ? <button type="button" style={{...arrow,right:18}} onClick={(e)=>{e.stopPropagation();goNext()}} aria-label="Next page">›</button> : null}
+      {(hasSearchContext ? Boolean(nextMatchHref) : pages.length > 1) ? <button type="button" style={{...arrow,right:18}} onClick={(e)=>{e.stopPropagation();goNext()}} aria-label={hasSearchContext ? "Next OCR search match" : "Next page"}>›</button> : null}
 
       {hasSearchContext ? <div style={matchNav} onClick={(e)=>e.stopPropagation()}>
         {previousMatchHref ? <a href={previousMatchHref} style={matchNavButton}>← Previous Match</a> : <span style={matchNavDisabled}>← Previous Match</span>}
