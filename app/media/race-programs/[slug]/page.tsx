@@ -69,6 +69,68 @@ function matchSnippet(text: string, query: string) {
   return `${start > 0 ? "…" : ""}${clean.slice(start, end).trim()}${end < clean.length ? "…" : ""}`
 }
 
+type OcrLayoutLine = {
+  text: string
+  x: number
+  y: number
+  w: number
+  h: number
+  score: number | null
+}
+
+function parseOcrLayoutLines(value: unknown): OcrLayoutLine[] {
+  if (!value || typeof value !== 'object') return []
+  const rawLines = (value as { lines?: unknown }).lines
+  if (!Array.isArray(rawLines)) return []
+
+  return rawLines.flatMap((raw) => {
+    if (!raw || typeof raw !== 'object') return []
+    const item = raw as Record<string, unknown>
+    const text = typeof item.t === 'string' ? item.t.trim() : ''
+    const x = Number(item.x)
+    const y = Number(item.y)
+    const w = Number(item.w)
+    const h = Number(item.h)
+    const score = item.s == null ? null : Number(item.s)
+    if (!text || ![x, y, w, h].every(Number.isFinite)) return []
+    if (x < 0 || y < 0 || w <= 0 || h <= 0 || x > 1 || y > 1) return []
+    return [{
+      text,
+      x: Math.max(0, Math.min(1, x)),
+      y: Math.max(0, Math.min(1, y)),
+      w: Math.max(0, Math.min(1 - x, w)),
+      h: Math.max(0, Math.min(1 - y, h)),
+      score: Number.isFinite(score) ? score : null,
+    }]
+  })
+}
+
+function matchingOcrLayoutLines(lines: OcrLayoutLine[], query: string) {
+  const phrase = query.trim().toLowerCase()
+  const tokens = Array.from(new Set(
+    phrase
+      .replace(/["'()]/g, ' ')
+      .split(/\s+/)
+      .map((value) => value.trim())
+      .filter((value) => value.length >= 2),
+  ))
+  if (!phrase || !tokens.length) return []
+
+  const phraseMatches = lines.filter((line) => line.text.toLowerCase().includes(phrase))
+  if (phraseMatches.length) return phraseMatches
+
+  const allTokenMatches = lines.filter((line) => {
+    const text = line.text.toLowerCase()
+    return tokens.every((token) => text.includes(token))
+  })
+  if (allTokenMatches.length) return allTokenMatches
+
+  return lines.filter((line) => {
+    const text = line.text.toLowerCase()
+    return tokens.some((token) => text.includes(token))
+  })
+}
+
 type SearchMatchRow = {
   document_slug: string
   page_number: number | null
@@ -118,10 +180,11 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
   const pageCount = program.images.length
 
   let searchSnippet = ""
+  let searchLayoutLines: OcrLayoutLine[] = []
   if (focusedSearchMatch && requestedSourcePage) {
     const { data: ocrPage } = await supabase
       .from("archive_ocr_pages")
-      .select("ocr_text")
+      .select("ocr_text,ocr_json")
       .eq("document_slug", program.slug)
       .eq("page_number", requestedSourcePage)
       .eq("status", "complete")
@@ -129,6 +192,7 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
       .limit(1)
       .maybeSingle()
     searchSnippet = matchSnippet(ocrPage?.ocr_text || "", searchQuery)
+    searchLayoutLines = matchingOcrLayoutLines(parseOcrLayoutLines(ocrPage?.ocr_json), searchQuery)
   }
 
   let previousMatchHref: string | null = null
@@ -276,7 +340,9 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
               <h2 className="ma-h2">Scanned Page {requestedSourcePage}</h2>
             </div>
             <div className="ma-note">
-              Match for “{searchQuery}”. Verify the OCR against the original scan.
+              {searchLayoutLines.length
+                ? `Yellow boxes mark the OCR line${searchLayoutLines.length === 1 ? '' : 's'} containing “${searchQuery}”.`
+                : `Match for “${searchQuery}”. Verify the highlighted OCR excerpt against the original scan.`}
             </div>
           </div>
 
@@ -298,18 +364,40 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
                 {highlightedSearchText(searchSnippet, searchQuery)}
               </div>
               <div style={{ color: '#8e969b', fontSize: 10, lineHeight: 1.5, marginTop: 8 }}>
-                Highlighting here is based on OCR transcription. The scanned page remains the archival source of record.
+                OCR text can contain transcription errors. The scanned page remains the archival source of record.
               </div>
             </div>
           ) : null}
 
           <div className="ma-scan-grid" style={{ gridTemplateColumns: 'minmax(0, 1100px)', justifyContent: 'center' }}>
             <figure className="ma-scan-frame">
-              <a href={matchedImage} target="_blank" rel="noreferrer">
-                <img src={matchedImage} alt={`${program.title} scanned page ${requestedSourcePage}`} loading="eager" />
+              <a href={matchedImage} target="_blank" rel="noreferrer" style={{ display: 'block' }}>
+                <div style={{ position: 'relative', lineHeight: 0 }}>
+                  <img src={matchedImage} alt={`${program.title} scanned page ${requestedSourcePage}`} loading="eager" style={{ display: 'block', width: '100%', height: 'auto' }} />
+                  {searchLayoutLines.map((line, index) => (
+                    <span
+                      key={`${line.text}-${index}`}
+                      title={line.text}
+                      aria-hidden="true"
+                      style={{
+                        position: 'absolute',
+                        left: `${line.x * 100}%`,
+                        top: `${line.y * 100}%`,
+                        width: `${line.w * 100}%`,
+                        height: `${Math.max(line.h * 100, .8)}%`,
+                        background: 'rgba(255, 220, 55, .36)',
+                        border: '2px solid rgba(255, 214, 31, .95)',
+                        boxShadow: '0 0 0 2px rgba(0,0,0,.22), 0 0 12px rgba(255,214,31,.35)',
+                        pointerEvents: 'none',
+                        zIndex: 2,
+                      }}
+                    />
+                  ))}
+                </div>
               </a>
               <figcaption>
                 Page {requestedSourcePage} • {matchPosition && searchTotal ? `Match ${matchPosition} of ${searchTotal}` : 'Exact OCR Search Match'}
+                {searchLayoutLines.length ? ` • ${searchLayoutLines.length} highlighted OCR line${searchLayoutLines.length === 1 ? '' : 's'}` : ''}
               </figcaption>
             </figure>
           </div>
