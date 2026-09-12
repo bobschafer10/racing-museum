@@ -54,10 +54,16 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
         .select('*')
         .eq('season_id', latestSeason.id)
         .order('finishing_position', { ascending: true })
-        .limit(10)
     : { data: [] as any[] }
 
   const standingRows = latestStandings || []
+  const latestStandingsGroups = groupStandingsByDivision(standingRows)
+  const hasMultipleStandingsGroups = latestStandingsGroups.length > 1
+  const previewRows = hasMultipleStandingsGroups
+    ? latestStandingsGroups
+        .map((group) => group.rows.find((row: any) => Number(row.finishing_position) === 1) || group.rows[0])
+        .filter(Boolean)
+    : standingRows.slice(0, 8)
 
   const trackIds = Array.from(
     new Set(eventRows.map((event: any) => Number(event.track_id)).filter((id: number) => Number.isFinite(id) && id > 0)),
@@ -231,7 +237,12 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
                 <div className={styles.panel}>
                   <div className={styles.panelBody}>
                     <div className={styles.snapshotHeader}>
-                      <div><div className={styles.snapshotLabel}>Champion</div><div className={styles.snapshotChampion}>{latestSeason.champion_name || 'Champion TBD'}</div></div>
+                      <div>
+                        <div className={styles.snapshotLabel}>{hasMultipleStandingsGroups ? 'Division Champions' : 'Champion'}</div>
+                        <div className={styles.snapshotChampion}>
+                          {hasMultipleStandingsGroups ? `${latestStandingsGroups.length} divisions` : latestSeason.champion_name || previewRows[0]?.driver_name || 'Champion TBD'}
+                        </div>
+                      </div>
                       <div className={styles.snapshotMeta}>{latestSeason.races || latestSeasonEvents.length || 0} recorded races</div>
                     </div>
 
@@ -257,11 +268,19 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
 
             {latestSeason && standingRows.length > 0 ? (
               <section>
-                <div className={styles.sectionHeading}><div><span>Championship Chase</span><h2>{latestSeason.year} Standings Preview</h2></div></div>
+                <div className={styles.sectionHeading}>
+                  <div><span>Championship Chase</span><h2>{latestSeason.year} Standings Preview</h2></div>
+                  {hasMultipleStandingsGroups ? <p>Division champions</p> : null}
+                </div>
                 <div className={styles.panel}>
                   <div className={styles.standingsHeader}><span>Pos</span><span>Driver</span><span>Pts</span><span>Wins</span></div>
-                  {standingRows.slice(0, 8).map((row: any) => (
-                    <div className={styles.standingsRow} key={row.id}><span>{row.finishing_position}</span><span className={styles.standingsDriver}>{row.driver_name}</span><span>{row.points || '—'}</span><span>{row.wins || '0'}</span></div>
+                  {previewRows.map((row: any) => (
+                    <div className={styles.standingsRow} key={row.id}>
+                      <span>{row.position_label || row.finishing_position || '—'}</span>
+                      <span className={styles.standingsDriver}>{hasMultipleStandingsGroups && row.source_division_name ? `${row.source_division_name} — ` : ''}{row.driver_name}</span>
+                      <span>{row.points || '—'}</span>
+                      <span>{row.wins || '—'}</span>
+                    </div>
                   ))}
                   <div className={styles.panelBody}><div className={styles.panelAction}><Link href={`/series/${slug}/${latestSeason.year}`} className={styles.textLink}>View Complete Standings →</Link></div></div>
                 </div>
@@ -354,8 +373,8 @@ function SeasonRow({ slug, season, raceCount }: { slug: string; season: any; rac
   return (
     <Link href={`/series/${slug}/${season.year}`} className={styles.seasonRow}>
       <span className={styles.seasonYear}>{season.year}</span>
-      <span><strong>{season.champion_name || 'Champion TBD'}</strong>{season.champion_name ? ' — Champion' : ''}</span>
-      <span className={styles.seasonRaceCount}>{raceCount ? `${raceCount} races` : 'Race count TBD'}</span>
+      <span><strong>{season.champion_name || 'Championship archive'}</strong>{season.champion_name ? ' — Champion' : ''}</span>
+      <span className={styles.seasonRaceCount}>{raceCount ? `${raceCount} races` : 'Standings archived'}</span>
       <span className={styles.seasonArrow}>→</span>
     </Link>
   )
@@ -371,6 +390,17 @@ function groupSeasonsByDecade(seasons: any[]) {
   return Array.from(groups.entries())
     .sort((a, b) => b[0] - a[0])
     .map(([decade, group]) => ({ decade, seasons: group.sort((a, b) => Number(b.year) - Number(a.year)) }))
+}
+
+function groupStandingsByDivision(rows: any[]) {
+  const groups = new Map<string, any[]>()
+  for (const row of rows) {
+    const label = String(row.source_division_name || '').trim() || 'Overall Standings'
+    const groupRows = groups.get(label) || []
+    groupRows.push(row)
+    groups.set(label, groupRows)
+  }
+  return Array.from(groups.entries()).map(([label, groupRows]) => ({ label, rows: groupRows }))
 }
 
 function slugify(value?: string | null) {
