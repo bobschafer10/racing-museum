@@ -1,0 +1,170 @@
+name: PaddleOCR Priority Query Layout Repair
+
+on:
+  workflow_dispatch:
+    inputs:
+      query:
+        description: 'Quoted or unquoted newspaper search to prioritize'
+        required: true
+        default: '"Joe Gresk"'
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-mrn-priority-query-layout.yml'
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: paddleocr-priority-query-layout
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      query: ${{ steps.matrix.outputs.query }}
+      missing_pages: ${{ steps.matrix.outputs.missing_pages }}
+    steps:
+      - name: Find search hits still missing OCR geometry
+        id: matrix
+        shell: bash
+        env:
+          INPUT_QUERY: ${{ github.event.inputs.query }}
+        run: |
+          set -euo pipefail
+          query="$INPUT_QUERY"
+          if [ -z "$query" ]; then query='"Joe Gresk"'; fi
+          oidc="$(curl -fsSL -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$oidc"
+          jq -n --arg query "$query" '{query:$query}' > /tmp/request.json
+          http_code="$(curl -sS -o /tmp/missing.json -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer ${oidc}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/request.json \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-query-layout-missing')"
+          cat /tmp/missing.json
+          echo
+          test "$http_code" -ge 200 -a "$http_code" -lt 300
+          jq -e '.ok == true' /tmp/missing.json >/dev/null
+          python - "$GITHUB_OUTPUT" <<'PY'
+          import json, os, sys
+          data=json.load(open('/tmp/missing.json',encoding='utf-8'))
+          issues=data.get('issues') or []
+          chunks=[issues[i:i+10] for i in range(0,len(issues),10)]
+          matrix={'include':[{'batch':i+1,'issues':chunk} for i,chunk in enumerate(chunks)]}
+          with open(sys.argv[1],'a',encoding='utf-8') as f:
+              f.write('matrix='+json.dumps(matrix,separators=(',',':'))+'\n')
+              f.write('query='+str(data.get('query') or '').replace('\n',' ')+'\n')
+              f.write('missing_pages='+str(data.get('missing_pages') or 0)+'\n')
+          print(f"Priority query {data.get('query')!r}: {data.get('total_hits',0)} hits, {data.get('missing_pages',0)} missing geometry pages across {len(issues)} issues / {len(chunks)} batches")
+          PY
+
+  repair:
+    needs: prepare
+    if: needs.prepare.outputs.missing_pages != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Check out newspaper OCR runner
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: Repair priority search hits
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          BATCH_JSON: ${{ toJSON(matrix.issues) }}
+          QUERY: ${{ needs.prepare.outputs.query }}
+        run: |
+          set -euo pipefail
+          echo "$BATCH_JSON" | jq -c '.[]' > /tmp/issues.jsonl
+          repaired_total=0
+          while IFS= read -r item; do
+            test -n "$item" || continue
+            publication="$(echo "$item" | jq -r '.publication')"
+            issue="$(echo "$item" | jq -r '.issue')"
+            pages_json="$(echo "$item" | jq -c '.pages')"
+            pages="$(echo "$item" | jq -r '.pages | length')"
+            year="${issue%%-*}"
+            output_root="audit/paddleocr-priority-query/${publication}/${issue}"
+            echo "=== ${QUERY}: ${publication} ${issue}, ${pages} page(s) ==="
+
+            NEWSPAPER_PUBLICATION="$publication" \
+            MRN_ISSUE_DATE="$issue" \
+            MRN_PAGES_JSON="$pages_json" \
+            MRN_COLUMN_COUNT='5' \
+            MRN_OUTPUT_ROOT="$output_root" \
+              python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+            rm -rf /tmp/layout-repairs
+            mkdir -p /tmp/layout-repairs
+            OUTPUT_ROOT="$output_root" PUBLICATION="$publication" YEAR="$year" ISSUE="$issue" \
+              python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path(os.environ['OUTPUT_ROOT'])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          out=Path('/tmp/layout-repairs')
+          for i,meta in enumerate(summary.get('pages') or []):
+              page=str(meta.get('page') or '')
+              lines=((meta.get('line_layout') or {}).get('lines') or [])
+              if not page or not lines:
+                  raise SystemExit(f'Missing line geometry for {page!r}')
+              payload={
+                  'publication':os.environ['PUBLICATION'],
+                  'year':int(os.environ['YEAR']),
+                  'issue':os.environ['ISSUE'],
+                  'page':page,
+                  'meta':meta,
+                  'summary':summary,
+              }
+              (out/f'{i:04d}.json').write_text(json.dumps(payload,separators=(',',':')),encoding='utf-8')
+          PY
+
+            oidc="$(curl -fsSL -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+            test -n "$oidc"
+            repaired=0
+            for payload_file in /tmp/layout-repairs/*.json; do
+              page_name="$(jq -r '.page' "$payload_file")"
+              http_code="$(curl -sS -o /tmp/layout-response.json -w '%{http_code}' -X POST \
+                -H "Authorization: Bearer ${oidc}" \
+                -H 'Content-Type: application/json' \
+                --data-binary @"$payload_file" \
+                'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-layout-repair')"
+              cat /tmp/layout-response.json
+              echo
+              test "$http_code" -ge 200 -a "$http_code" -lt 300
+              jq -e '.ok == true and (.layout_lines // 0) > 0' /tmp/layout-response.json >/dev/null
+              repaired=$((repaired + 1))
+            done
+            test "$repaired" -eq "$pages"
+            repaired_total=$((repaired_total + repaired))
+            rm -rf "$output_root" /tmp/layout-repairs
+          done < /tmp/issues.jsonl
+          echo "Priority batch ${{ matrix.batch }} repaired ${repaired_total} page(s) for ${QUERY}"
