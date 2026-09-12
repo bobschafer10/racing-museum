@@ -66,10 +66,25 @@ type FallbackSearchResult = {
   error: unknown | null
 }
 
+function normalizeSearchQuery(value: string) {
+  return value.replace(/[“”]/g, '"').replace(/[‘’]/g, "'").trim()
+}
+
+function exactPhraseFromQuery(query: string) {
+  const trimmed = normalizeSearchQuery(query)
+  if (trimmed.length < 3 || !trimmed.startsWith('"') || !trimmed.endsWith('"')) return null
+  const phrase = trimmed.slice(1, -1).trim()
+  return phrase.length >= 2 ? phrase : null
+}
+
+function escapeRegex(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+}
+
 function queryTerms(query: string) {
   return Array.from(
     new Set(
-      query
+      normalizeSearchQuery(query)
         .toLowerCase()
         .replace(/["'()]/g, " ")
         .split(/\s+/)
@@ -77,6 +92,17 @@ function queryTerms(query: string) {
         .filter((term) => term.length >= 2 && !["and", "or", "not"].includes(term)),
     ),
   )
+}
+
+function exactPhraseHit(text: string, phrase: string) {
+  const tokens = phrase
+    .trim()
+    .split(/\s+/)
+    .map((token) => token.trim())
+    .filter(Boolean)
+  if (!tokens.length) return -1
+  const matcher = new RegExp(tokens.map(escapeRegex).join("[\\s\\W_]+"), "i")
+  return matcher.exec(text)?.index ?? -1
 }
 
 function makeSnippet(text: string, query: string) {
@@ -88,9 +114,10 @@ function makeSnippet(text: string, query: string) {
   if (!clean) return ""
 
   const lower = clean.toLowerCase()
-  const normalizedQuery = query.toLowerCase().trim()
+  const exactPhrase = exactPhraseFromQuery(query)
+  const normalizedQuery = normalizeSearchQuery(query).toLowerCase()
   const terms = queryTerms(query)
-  let hit = normalizedQuery ? lower.indexOf(normalizedQuery) : -1
+  let hit = exactPhrase ? exactPhraseHit(clean, exactPhrase) : normalizedQuery ? lower.indexOf(normalizedQuery) : -1
 
   if (hit < 0) {
     for (const term of terms) {
@@ -137,6 +164,8 @@ async function fallbackFullTextSearch({
   offset: number
 }): Promise<FallbackSearchResult> {
   try {
+    const exactPhrase = exactPhraseFromQuery(query)
+
     if (collection === "print") {
       let builder: any = ocrSupabase
         .from("archive_ocr_pages")
@@ -172,7 +201,7 @@ async function fallbackFullTextSearch({
         storage_path: String(row.storage_path),
         avg_confidence: row.avg_confidence == null ? null : Number(row.avg_confidence),
         ocr_text: row.ocr_text || null,
-        exact_phrase: String(row.ocr_text || "").toLowerCase().includes(query.toLowerCase()),
+        exact_phrase: exactPhrase ? exactPhraseHit(String(row.ocr_text || ""), exactPhrase) >= 0 : false,
         rank_score: 0,
         total_count: total,
       }))
@@ -212,7 +241,7 @@ async function fallbackFullTextSearch({
       storage_path: String(row.storage_path),
       avg_confidence: row.avg_confidence == null ? null : Number(row.avg_confidence),
       ocr_text: row.ocr_text || null,
-      exact_phrase: String(row.ocr_text || "").toLowerCase().includes(query.toLowerCase()),
+      exact_phrase: exactPhrase ? exactPhraseHit(String(row.ocr_text || ""), exactPhrase) >= 0 : false,
       rank_score: 0,
       total_count: total,
     }))
@@ -224,13 +253,16 @@ async function fallbackFullTextSearch({
 }
 
 export async function GET(request: NextRequest) {
-  const query = (request.nextUrl.searchParams.get("q") || "").trim()
+  const query = normalizeSearchQuery(request.nextUrl.searchParams.get("q") || "")
 
   if (query.length < 2) {
     return NextResponse.json({ query, results: [], error: "Enter at least two characters." }, { status: 400 })
   }
   if (query.length > 120) {
     return NextResponse.json({ query, results: [], error: "Search is too long." }, { status: 400 })
+  }
+  if (query.startsWith('"') && query.endsWith('"') && !exactPhraseFromQuery(query)) {
+    return NextResponse.json({ query, results: [], error: "Enter text inside the quotation marks." }, { status: 400 })
   }
 
   const collection: "newspaper" | "print" = request.nextUrl.searchParams.get("collection") === "print" ? "print" : "newspaper"
@@ -402,6 +434,7 @@ export async function GET(request: NextRequest) {
       years,
       results,
       searchMode,
+      queryMode: exactPhraseFromQuery(query) ? "exact_phrase" : "all_words",
     },
     { headers: { "Cache-Control": "no-store" } },
   )
