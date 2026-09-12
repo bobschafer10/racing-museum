@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { FormEvent, useMemo, useState } from "react"
+import { FormEvent, ReactNode, useEffect, useMemo, useRef, useState } from "react"
 
 type Collection = "newspaper" | "print"
 
@@ -55,6 +55,7 @@ type SearchOptions = {
 
 const NEWSPAPER_EXAMPLES = ["Dick Trickle", "Miles Melius", "point standings", "Slinger"]
 const PRINT_EXAMPLES = ["Dick Trickle", "champion", "point standings", "Slinger"]
+const SEARCH_PARAM_PREFIX = "ocr"
 
 function displayDate(value: string | null) {
   if (!value) return null
@@ -83,6 +84,37 @@ function pageChoices(current: number, total: number) {
   return Array.from(values).sort((a, b) => a - b)
 }
 
+function escapeRegex(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+}
+
+function highlightedSearchText(text: string, query: string): ReactNode[] {
+  const terms = Array.from(
+    new Set(
+      [query.trim(), ...query.trim().replace(/["'()]/g, " ").split(/\s+/)]
+        .map((value) => value.trim())
+        .filter((value) => value.length >= 2),
+    ),
+  ).sort((a, b) => b.length - a.length)
+
+  if (!terms.length) return [text]
+  const matcher = new RegExp(`(${terms.map(escapeRegex).join("|")})`, "gi")
+  const normalized = new Set(terms.map((term) => term.toLowerCase()))
+  return text.split(matcher).map((part, index) =>
+    normalized.has(part.toLowerCase()) ? <mark key={`${part}-${index}`} className="ma-ocr-highlight">{part}</mark> : part,
+  )
+}
+
+function safePageSize(value: string | null) {
+  const parsed = Number(value)
+  return [25, 50, 100].includes(parsed) ? parsed : 50
+}
+
+function safePage(value: string | null) {
+  const parsed = Number(value)
+  return Number.isInteger(parsed) && parsed > 0 ? parsed : 1
+}
+
 export default function NewspaperSearch({
   searchablePages,
   searchableYears,
@@ -106,6 +138,31 @@ export default function NewspaperSearch({
   const [sort, setSort] = useState("relevance")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const requestController = useRef<AbortController | null>(null)
+  const requestSequence = useRef(0)
+  const restoredFromUrl = useRef(false)
+
+  function syncSearchUrl(q: string, options: SearchOptions) {
+    if (typeof window === "undefined") return
+    const url = new URL(window.location.href)
+    url.searchParams.set(`${SEARCH_PARAM_PREFIX}q`, q)
+    url.searchParams.set(`${SEARCH_PARAM_PREFIX}source`, options.source)
+    url.searchParams.set(`${SEARCH_PARAM_PREFIX}year`, options.year)
+    url.searchParams.set(`${SEARCH_PARAM_PREFIX}sort`, options.sort)
+    url.searchParams.set(`${SEARCH_PARAM_PREFIX}page`, String(options.page))
+    url.searchParams.set(`${SEARCH_PARAM_PREFIX}size`, String(options.pageSize))
+    url.hash = isPrint ? "printed-archive-search" : "newspaper-search"
+    window.history.replaceState(window.history.state, "", url.toString())
+  }
+
+  function clearSearchUrl() {
+    if (typeof window === "undefined") return
+    const url = new URL(window.location.href)
+    for (const key of ["q", "source", "year", "sort", "page", "size"]) {
+      url.searchParams.delete(`${SEARCH_PARAM_PREFIX}${key}`)
+    }
+    window.history.replaceState(window.history.state, "", url.toString())
+  }
 
   async function runSearch(value: string, overrides: Partial<SearchOptions> = {}) {
     const q = value.trim()
@@ -119,6 +176,18 @@ export default function NewspaperSearch({
     const nextSort = overrides.sort ?? sort
     const nextPage = overrides.page ?? page
     const nextPageSize = overrides.pageSize ?? pageSize
+    const nextOptions: SearchOptions = {
+      source: nextSource,
+      year: nextYear,
+      sort: nextSort,
+      page: nextPage,
+      pageSize: nextPageSize,
+    }
+
+    requestController.current?.abort()
+    const controller = new AbortController()
+    requestController.current = controller
+    const sequence = ++requestSequence.current
 
     setQuery(q)
     setSearchedQuery(q)
@@ -141,9 +210,13 @@ export default function NewspaperSearch({
       if (nextSource !== "all") params.set("source", nextSource)
       if (nextYear !== "all") params.set("year", nextYear)
 
-      const response = await fetch(`/api/newspaper-search?${params.toString()}`, { cache: "no-store" })
+      const response = await fetch(`/api/newspaper-search?${params.toString()}`, {
+        cache: "no-store",
+        signal: controller.signal,
+      })
       const payload = (await response.json()) as SearchResponse
       if (!response.ok) throw new Error(payload.error || "Search failed.")
+      if (sequence !== requestSequence.current) return
 
       setResults(payload.results || [])
       setSources(payload.sources || [])
@@ -151,7 +224,14 @@ export default function NewspaperSearch({
       setTotal(payload.total || 0)
       setPage(payload.page || 1)
       setTotalPages(payload.totalPages || 1)
+      syncSearchUrl(q, {
+        ...nextOptions,
+        page: payload.page || 1,
+        pageSize: payload.pageSize || nextPageSize,
+      })
     } catch (searchError) {
+      if (searchError instanceof DOMException && searchError.name === "AbortError") return
+      if (sequence !== requestSequence.current) return
       setResults([])
       setSources([])
       setYears([])
@@ -159,13 +239,57 @@ export default function NewspaperSearch({
       setTotalPages(1)
       setError(searchError instanceof Error ? searchError.message : "Search failed.")
     } finally {
-      setLoading(false)
+      if (sequence === requestSequence.current) setLoading(false)
     }
   }
+
+  useEffect(() => {
+    if (restoredFromUrl.current || typeof window === "undefined") return
+    restoredFromUrl.current = true
+    const params = new URLSearchParams(window.location.search)
+    const restoredQuery = (params.get(`${SEARCH_PARAM_PREFIX}q`) || "").trim()
+    if (restoredQuery.length < 2) return
+
+    const restoredSource = params.get(`${SEARCH_PARAM_PREFIX}source`) || "all"
+    const restoredYear = params.get(`${SEARCH_PARAM_PREFIX}year`) || "all"
+    const restoredSortValue = params.get(`${SEARCH_PARAM_PREFIX}sort`) || "relevance"
+    const restoredSort = ["relevance", "oldest", "newest"].includes(restoredSortValue) ? restoredSortValue : "relevance"
+    void runSearch(restoredQuery, {
+      source: restoredSource,
+      year: restoredYear,
+      sort: restoredSort,
+      page: safePage(params.get(`${SEARCH_PARAM_PREFIX}page`)),
+      pageSize: safePageSize(params.get(`${SEARCH_PARAM_PREFIX}size`)),
+    })
+    // This runs once to restore a bookmarked/back-button search.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  useEffect(() => () => requestController.current?.abort(), [])
 
   function submit(event: FormEvent) {
     event.preventDefault()
     void runSearch(query, { page: 1 })
+  }
+
+  function clearSearch() {
+    requestController.current?.abort()
+    requestSequence.current += 1
+    setQuery("")
+    setSearchedQuery("")
+    setResults([])
+    setSources([])
+    setYears([])
+    setTotal(0)
+    setPage(1)
+    setTotalPages(1)
+    setPageSize(50)
+    setSource("all")
+    setYear("all")
+    setSort("relevance")
+    setLoading(false)
+    setError("")
+    clearSearchUrl()
   }
 
   const allSourceCount = sources.reduce((sum, item) => sum + item.count, 0)
@@ -181,7 +305,7 @@ export default function NewspaperSearch({
   const span = yearSpan(searchableYears)
 
   return (
-    <div className="ma-ocr-search">
+    <div className="ma-ocr-search" aria-busy={loading}>
       <div className="ma-ocr-search-copy">
         <div>
           <div className="ma-kicker">{isPrint ? "Full-Text Program & Yearbook Research" : "Full-Text Newspaper Research"}</div>
@@ -208,8 +332,10 @@ export default function NewspaperSearch({
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Try a driver, track, series, or phrase…"
             autoComplete="off"
+            enterKeyHint="search"
           />
           <button type="submit" disabled={loading}>{loading ? "Searching…" : "Search Archive"}</button>
+          {searchedQuery || error ? <button type="button" className="ma-ocr-clear" onClick={clearSearch} disabled={loading}>Clear</button> : null}
         </div>
         <div className="ma-ocr-examples">
           <span>Try:</span>
@@ -218,6 +344,10 @@ export default function NewspaperSearch({
           ))}
         </div>
       </form>
+
+      <div aria-live="polite" aria-atomic="true" className="ma-ocr-live-status">
+        {loading ? `Searching for ${query.trim() || "matches"}…` : searchedQuery && !error ? `${total.toLocaleString()} matching page${total === 1 ? "" : "s"} found.` : ""}
+      </div>
 
       {error ? <div className="ma-ocr-message error">{error}</div> : null}
 
@@ -284,11 +414,11 @@ export default function NewspaperSearch({
       ) : null}
 
       {results.length ? (
-        <div className="ma-ocr-results">
+        <div className={`ma-ocr-results${loading ? " loading" : ""}`}>
           {results.map((result) => {
             const date = displayDate(result.issueDate)
             return (
-              <Link className="ma-ocr-result" href={result.href} key={result.id}>
+              <Link className="ma-ocr-result" href={result.href} key={result.id} aria-label={`Open ${result.documentTitle}, ${result.page ? `page ${result.page}` : result.pageLabel || "matched page"}`}>
                 <div className="ma-ocr-result-thumb">
                   <img src={result.image} alt={`${result.documentTitle} ${result.pageLabel || "page"}`} loading="lazy" />
                 </div>
@@ -299,7 +429,7 @@ export default function NewspaperSearch({
                     <span>{result.page ? `Page ${result.page}` : result.pageLabel || "Page"}</span>
                   </div>
                   {isPrint ? <div className="ma-ocr-result-title">{result.documentTitle}</div> : null}
-                  <p>{result.snippet}</p>
+                  <p>{highlightedSearchText(result.snippet, searchedQuery)}</p>
                   <strong>Open scanned source page →</strong>
                 </div>
               </Link>
@@ -318,6 +448,7 @@ export default function NewspaperSearch({
                 <button
                   type="button"
                   className={pageNumber === page ? "active" : ""}
+                  aria-current={pageNumber === page ? "page" : undefined}
                   onClick={() => void runSearch(searchedQuery, { page: pageNumber })}
                 >{pageNumber}</button>
               </span>
