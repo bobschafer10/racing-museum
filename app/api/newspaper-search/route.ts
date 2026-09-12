@@ -203,10 +203,13 @@ export async function GET(request: NextRequest) {
       resultParams.set("searchTotal", String(total))
       resultParams.set("pageSize", String(pageSize))
       href = `/media/newspapers/${row.document_slug}/${row.issue_date}?${resultParams.toString()}`
+    } else if (row.page_number) {
+      const resultParams = new URLSearchParams({
+        sourcePage: String(row.page_number),
+        q: query,
+      })
+      href = `/media/race-programs/${row.document_slug}?${resultParams.toString()}`
     } else {
-      // OCR results for programs/yearbooks represent one exact scanned page.
-      // Open that scan directly instead of dropping the researcher at the top
-      // of the entire publication and forcing them to locate the match again.
       href = scanUrl
     }
 
