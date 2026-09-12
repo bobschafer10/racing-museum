@@ -38,6 +38,86 @@ function matchSnippet(text: string, query: string) {
   return `${start > 0 ? "…" : ""}${clean.slice(start, end).trim()}${end < clean.length ? "…" : ""}`
 }
 
+type OcrHighlightLine = {
+  text: string
+  x: number
+  y: number
+  w: number
+  h: number
+  score: number | null
+}
+
+function parseOcrLayoutLines(value: unknown): OcrHighlightLine[] {
+  if (!value || typeof value !== "object") return []
+  const record = value as Record<string, unknown>
+  const nested = record.line_layout && typeof record.line_layout === "object"
+    ? (record.line_layout as Record<string, unknown>).lines
+    : undefined
+  const rawLines = Array.isArray(record.lines) ? record.lines : nested
+  if (!Array.isArray(rawLines)) return []
+
+  return rawLines.flatMap((raw) => {
+    if (!raw || typeof raw !== "object") return []
+    const item = raw as Record<string, unknown>
+    const text = typeof item.t === "string" ? item.t.trim() : ""
+    const x = Number(item.x)
+    const y = Number(item.y)
+    const w = Number(item.w)
+    const h = Number(item.h)
+    const score = item.s == null ? null : Number(item.s)
+    if (!text || ![x, y, w, h].every(Number.isFinite)) return []
+    if (x < 0 || y < 0 || w <= 0 || h <= 0 || x > 1 || y > 1) return []
+    return [{
+      text,
+      x: Math.max(0, Math.min(1, x)),
+      y: Math.max(0, Math.min(1, y)),
+      w: Math.max(0, Math.min(1 - x, w)),
+      h: Math.max(0, Math.min(1 - y, h)),
+      score: Number.isFinite(score) ? score : null,
+    }]
+  })
+}
+
+function matchingOcrLayoutLines(lines: OcrHighlightLine[], query: string) {
+  const phrase = query.trim().toLowerCase()
+  const tokens = Array.from(new Set(
+    phrase
+      .replace(/["'()]/g, " ")
+      .split(/\s+/)
+      .map((value) => value.trim())
+      .filter((value) => value.length >= 2),
+  ))
+  if (!phrase || !tokens.length) return []
+
+  const phraseMatches = lines.filter((line) => line.text.toLowerCase().includes(phrase))
+  if (phraseMatches.length) return phraseMatches
+
+  const allTokenMatches = lines.filter((line) => {
+    const text = line.text.toLowerCase()
+    return tokens.every((token) => text.includes(token))
+  })
+  if (allTokenMatches.length) return allTokenMatches
+
+  const tokenMatches = lines.filter((line) => {
+    const text = line.text.toLowerCase()
+    return tokens.some((token) => text.includes(token))
+  })
+
+  if (tokens.length <= 1 || tokenMatches.length <= 1) return tokenMatches
+
+  // For split names/phrases, prefer nearby OCR lines rather than highlighting
+  // unrelated occurrences scattered across a newspaper page.
+  const clustered = tokenMatches.filter((line, index, candidates) =>
+    candidates.some((other, otherIndex) => {
+      if (index === otherIndex) return false
+      const verticalDistance = Math.abs(line.y - other.y)
+      const horizontalDistance = Math.abs(line.x - other.x)
+      return verticalDistance <= 0.06 && horizontalDistance <= 0.35
+    }),
+  )
+  return clustered.length ? clustered : tokenMatches
+}
+
 type SearchMatchRow = {
   document_slug: string
   issue_date: string | null
@@ -116,17 +196,19 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
   const isSearchable = (indexedPages || 0) > 0
 
   let searchSnippet = ""
+  let searchHighlightLines: OcrHighlightLine[] = []
   if (searchQuery && initialPageIndex !== null) {
     const pageLabel = scanFilename(orderedImages[initialPageIndex])
     const { data: ocrPage } = await supabase
       .from("newspaper_ocr_pages")
-      .select("ocr_text")
+      .select("ocr_text,ocr_json")
       .eq("publication_code", publication)
       .eq("issue_date", issue.issueDate)
       .eq("page_label", pageLabel)
       .eq("status", "complete")
       .maybeSingle()
     searchSnippet = matchSnippet(ocrPage?.ocr_text || "", searchQuery)
+    searchHighlightLines = matchingOcrLayoutLines(parseOcrLayoutLines(ocrPage?.ocr_json), searchQuery)
   }
 
   let previousMatchHref: string | null = null
@@ -207,7 +289,7 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
 
     {searchQuery && initialPageIndex !== null ? <section className="ma-section"><div className="ma-source ma-search-source"><strong className="ma-gold">Opened from OCR search:</strong> “{searchQuery}” matched source page {sourcePage}. {matchPosition && searchTotal ? `Match ${matchPosition.toLocaleString()} of ${searchTotal.toLocaleString()}.` : ''} The original scan is opened below for verification.</div></section> : null}
 
-    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Complete Issue</div><h2 className="ma-h2">Issue Pages</h2></div><div className="ma-note">Select any page for a full-screen viewer. Use arrow keys to move through the issue.</div></div><NewspaperPageViewer pages={pages} initialPageIndex={initialPageIndex} searchQuery={searchQuery || null} searchSnippet={searchSnippet || null} previousMatchHref={previousMatchHref} nextMatchHref={nextMatchHref} matchPosition={matchPosition} matchTotal={searchTotal} /></section>
+    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Complete Issue</div><h2 className="ma-h2">Issue Pages</h2></div><div className="ma-note">Select any page for a full-screen viewer. Use arrow keys to move through the issue.</div></div><NewspaperPageViewer pages={pages} initialPageIndex={initialPageIndex} searchQuery={searchQuery || null} searchSnippet={searchSnippet || null} highlightLines={searchHighlightLines} previousMatchHref={previousMatchHref} nextMatchHref={nextMatchHref} matchPosition={matchPosition} matchTotal={searchTotal} /></section>
 
     <section className="ma-section"><div className="ma-source"><strong className="ma-gold">Museum research note:</strong> digitized issues are preserved as archival source material. {isSearchable ? 'This issue has searchable OCR text; OCR may contain transcription errors, so use the scanned page as the final source.' : 'This issue is digitized but is not yet part of the full-text OCR search index.'}</div></section>
     <section className="ma-section"><div className="ma-footer-links"><Link href={`/media/newspapers/${publication}/year/${issue.year}`} className="ma-footer-link">{issue.year} Archive<span>All issues from this year →</span></Link><Link href={`/media/newspapers/${publication}`} className="ma-footer-link">{issue.publication}<span>Publication archive →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
