@@ -1,0 +1,194 @@
+name: PaddleOCR Archive Layout Backfill
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-archive-layout-backfill.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: paddleocr-archive-layout-backfill
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.manifest.outputs.matrix }}
+      document_count: ${{ steps.manifest.outputs.document_count }}
+      pending_pages: ${{ steps.manifest.outputs.pending_pages }}
+    steps:
+      - name: Build layout-backfill manifest
+        id: manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          OIDC_TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-archive-ocr-manifest" | jq -r '.value')"
+          test -n "$OIDC_TOKEN"
+
+          curl -fsSL \
+            -H "Authorization: Bearer ${OIDC_TOKEN}" \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/archive-ocr-manifest?mode=layout' \
+            -o manifest.json
+
+          jq -e '.ok == true and .mode == "layout"' manifest.json >/dev/null
+          document_count="$(jq -r '.document_count' manifest.json)"
+          pending_pages="$(jq -r '.pending_pages' manifest.json)"
+          matrix="$(jq -c '{include:.documents}' manifest.json)"
+
+          echo "Documents needing OCR layout boxes: ${document_count}"
+          echo "Pages needing OCR layout boxes: ${pending_pages}"
+          echo "document_count=${document_count}" >> "$GITHUB_OUTPUT"
+          echo "pending_pages=${pending_pages}" >> "$GITHUB_OUTPUT"
+          echo "matrix=${matrix}" >> "$GITHUB_OUTPUT"
+
+      - name: Upload layout manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-layout-backfill-manifest
+          path: manifest.json
+          retention-days: 7
+
+  ocr:
+    needs: prepare
+    if: needs.prepare.outputs.document_count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+
+    steps:
+      - name: Check out archive OCR runner
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-archive-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: Backfill layout boxes for ${{ matrix.document_slug }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          ARCHIVE_DOCUMENT_TYPE: ${{ matrix.document_type }}
+          ARCHIVE_DOCUMENT_SLUG: ${{ matrix.document_slug }}
+          ARCHIVE_DOCUMENT_TITLE: ${{ matrix.document_title }}
+          ARCHIVE_PUBLICATION_YEAR: ${{ matrix.publication_year }}
+          ARCHIVE_COLUMN_COUNT: ${{ matrix.column_count }}
+          ARCHIVE_ALL_PAGES_JSON: ${{ matrix.pages_json }}
+          EXPECTED_TOTAL_PAGES: ${{ matrix.page_count }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/archive-layout-chunks
+
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+
+          pages = json.loads(os.environ['ARCHIVE_ALL_PAGES_JSON'])
+          if not isinstance(pages, list) or not pages:
+              raise SystemExit('Archive layout page list is empty or invalid')
+          chunk_size = 40
+          root = Path('/tmp/archive-layout-chunks')
+          for index, start in enumerate(range(0, len(pages), chunk_size), start=1):
+              (root / f'{index:03d}.json').write_text(
+                  json.dumps(pages[start:start + chunk_size]), encoding='utf-8'
+              )
+          print(f'Prepared {len(list(root.glob("*.json")))} layout chunks for {len(pages)} pages')
+          PY
+
+          total_updated=0
+          chunk_no=0
+          for chunk_file in /tmp/archive-layout-chunks/*.json; do
+            chunk_no=$((chunk_no + 1))
+            chunk_pages="$(cat "$chunk_file")"
+            chunk_count="$(jq 'length' "$chunk_file")"
+            output_root="audit/paddleocr-archive-layout/${ARCHIVE_DOCUMENT_SLUG}/chunk-$(printf '%03d' "$chunk_no")"
+
+            echo "OCR layout chunk ${chunk_no}: ${chunk_count} pages"
+            ARCHIVE_PAGES_JSON="$chunk_pages" \
+            ARCHIVE_OUTPUT_ROOT="$output_root" \
+              python museum-newspaper-manager/paddleocr-archive-runner.py
+
+            OIDC_TOKEN="$(curl -fsSL \
+              -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+              "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-archive-ocr-import" | jq -r '.value')"
+            test -n "$OIDC_TOKEN"
+
+            response="$(curl -fsSL \
+              --retry 3 \
+              --retry-delay 3 \
+              --retry-all-errors \
+              -X POST \
+              -H "Authorization: Bearer ${OIDC_TOKEN}" \
+              -H 'Content-Type: application/json' \
+              --data-binary "@${output_root}/payload.json" \
+              'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/archive-ocr-import')"
+
+            echo "$response"
+            test "$(echo "$response" | jq -r '.ok')" = 'true'
+            updated="$(echo "$response" | jq -r '.updated // 0')"
+            test "$updated" -eq "$chunk_count"
+            total_updated=$((total_updated + updated))
+          done
+
+          echo "Document layout pages ingested: ${total_updated}/${EXPECTED_TOTAL_PAGES}"
+          test "$total_updated" -eq "$EXPECTED_TOTAL_PAGES"
+
+      - name: Upload OCR layout audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-layout-${{ matrix.document_slug }}
+          path: audit/paddleocr-archive-layout/${{ matrix.document_slug }}
+          if-no-files-found: warn
+          retention-days: 5
+
+  verify:
+    needs: [prepare, ocr]
+    if: always() && needs.prepare.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify remaining layout backlog
+        shell: bash
+        run: |
+          set -euo pipefail
+          OIDC_TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-archive-ocr-manifest" | jq -r '.value')"
+          test -n "$OIDC_TOKEN"
+          response="$(curl -fsSL \
+            -H "Authorization: Bearer ${OIDC_TOKEN}" \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/archive-ocr-manifest?mode=layout')"
+          echo "$response" | jq '{ok,mode,pending_pages,document_count}'
+          test "$(echo "$response" | jq -r '.ok')" = 'true'
+          remaining="$(echo "$response" | jq -r '.pending_pages')"
+          if [[ "${{ needs.ocr.result }}" == "success" ]]; then
+            test "$remaining" -eq 0
+          fi
