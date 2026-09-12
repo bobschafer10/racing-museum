@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: paddleocr-joe-gresk-targeted-layout-repair
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   repair:
@@ -22,19 +22,15 @@ jobs:
     timeout-minutes: 45
     strategy:
       fail-fast: false
-      max-parallel: 5
+      max-parallel: 3
       matrix:
         include:
-          - issue: '1971-09-02'
-            pages: '["007.jpg"]'
-          - issue: '1971-09-19'
-            pages: '["002.jpg"]'
-          - issue: '1971-10-10'
-            pages: '["023.jpg"]'
-          - issue: '1971-11-11'
-            pages: '["006.jpg"]'
-          - issue: '1971-12-09'
-            pages: '["002.jpg"]'
+          - issue: '1971-09-09'
+            pages: '["014.jpg"]'
+          - issue: '1971-09-16'
+            pages: '["013.jpg"]'
+          - issue: '1971-09-30'
+            pages: '["008.jpg"]'
 
     steps:
       - name: Check out newspaper OCR runner
@@ -89,6 +85,8 @@ jobs:
           summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
           out=Path('/tmp/layout-repairs')
           out.mkdir(parents=True,exist_ok=True)
+          issue=os.environ['ISSUE']
+          year=int(issue[:4])
           pages=summary.get('pages') or []
           if not pages:
               raise SystemExit('summary.json contains no pages')
@@ -99,8 +97,8 @@ jobs:
                   raise SystemExit(f'Missing page or line geometry for {page!r}')
               payload={
                   'publication':'midwest-racing-news',
-                  'year':1971,
-                  'issue':os.environ['ISSUE'],
+                  'year':year,
+                  'issue':issue,
                   'page':page,
                   'meta':meta,
                   'summary':summary,
