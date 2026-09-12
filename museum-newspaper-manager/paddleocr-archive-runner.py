@@ -6,6 +6,11 @@ OCR with PP-OCRv5 mobile models, reconstructs a configurable number of reading
 columns, and emits one payload that the authenticated archive-ocr-import Edge
 Function can ingest. Candidate extraction is review-only; it never writes live
 race results or standings.
+
+The payload also retains compact normalized line boxes so the museum can draw
+search highlights directly over the original scanned page. Coordinates are
+stored as fractions of the prepared OCR image and therefore remain stable when
+the browser responsively scales a scan.
 """
 from __future__ import annotations
 
@@ -93,7 +98,7 @@ def public_url(page: str) -> str:
 
 def download(url: str, target: Path) -> None:
     for attempt in range(1, 4):
-        req = urllib.request.Request(url, headers={"User-Agent": "UMARM archive OCR research/1.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": "UMARM archive OCR research/1.1"})
         try:
             with urllib.request.urlopen(req, timeout=120) as response:
                 target.write_bytes(response.read())
@@ -165,6 +170,29 @@ def extract_lines(payloads: list[dict]) -> list[dict]:
                 "yc": sum(ys) / len(ys),
             })
     return lines
+
+
+def normalized_line_boxes(lines: list[dict], page_width: int, page_height: int) -> list[dict]:
+    """Return compact 0..1 boxes for responsive browser overlays."""
+    if page_width <= 0 or page_height <= 0:
+        return []
+    boxes: list[dict] = []
+    for line in lines:
+        x0 = max(0.0, min(float(line["x0"]), float(page_width)))
+        x1 = max(x0, min(float(line["x1"]), float(page_width)))
+        y0 = max(0.0, min(float(line["y0"]), float(page_height)))
+        y1 = max(y0, min(float(line["y1"]), float(page_height)))
+        row = {
+            "t": str(line["text"]),
+            "x": round(x0 / page_width, 6),
+            "y": round(y0 / page_height, 6),
+            "w": round((x1 - x0) / page_width, 6),
+            "h": round((y1 - y0) / page_height, 6),
+        }
+        if line.get("score") is not None:
+            row["s"] = round(float(line["score"]), 4)
+        boxes.append(row)
+    return boxes
 
 
 def assign_columns(lines: list[dict], page_width: int) -> list[list[dict]]:
@@ -254,7 +282,8 @@ def main() -> None:
         prepared = PREPARED / f"{Path(page).stem}.png"
         payloads = [unwrap_payload(result) for result in ocr.predict(str(prepared))]
         lines = extract_lines(payloads)
-        columns = assign_columns(lines, prep_meta[page]["prepared_size"][0])
+        page_width, page_height = prep_meta[page]["prepared_size"]
+        columns = assign_columns(lines, page_width)
         text = "\n\n".join(
             "\n".join(item["text"] for item in column)
             for column in columns if column
@@ -277,6 +306,8 @@ def main() -> None:
             "minimum_recognition_score": round(min(scores), 4) if scores else None,
             "historical_candidates": len(hits),
             "ocr_seconds": round(time.perf_counter() - page_started, 2),
+            "layout_version": 1,
+            "lines": normalized_line_boxes(lines, page_width, page_height),
         }
         payload_pages.append({"page": page, "text": text, "meta": page_meta})
         total_chars += len(text)
@@ -296,6 +327,7 @@ def main() -> None:
         "total_characters": total_chars,
         "total_candidates": len(all_candidates),
         "wall_seconds": round(time.perf_counter() - started, 2),
+        "layout_version": 1,
     }
     payload = {
         "document_type": DOCUMENT_TYPE,
@@ -317,6 +349,7 @@ def main() -> None:
         "pages": len(PAGES),
         "characters": total_chars,
         "candidates": len(all_candidates),
+        "layout_version": 1,
     }), flush=True)
 
 
