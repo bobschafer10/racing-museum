@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import type { CSSProperties, ReactNode } from "react"
+import { supabase } from "@/lib/supabase"
 
 type NewspaperPage = { label: string; image: string }
 type OcrHighlightLine = {
@@ -12,6 +13,12 @@ type OcrHighlightLine = {
   w: number
   h: number
   score: number | null
+}
+
+type SearchMatchRow = {
+  document_slug: string
+  issue_date: string | null
+  page_number: number | null
 }
 
 type NewspaperPageViewerProps = {
@@ -52,6 +59,10 @@ function highlightedSearchText(text: string, query: string): ReactNode[] {
   )
 }
 
+function wait(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
 export default function NewspaperPageViewer({
   pages,
   initialPageIndex = null,
@@ -65,8 +76,13 @@ export default function NewspaperPageViewer({
 }: NewspaperPageViewerProps) {
   const [openPageIndex, setOpenPageIndex] = useState<number | null>(initialPageIndex)
   const [zoom, setZoom] = useState(1)
+  const [matchNavBusy, setMatchNavBusy] = useState(false)
+  const [matchNavError, setMatchNavError] = useState("")
 
-  const hasSearchContext = Boolean(searchQuery && (searchSnippet || previousMatchHref || nextMatchHref))
+  const hasSearchContext = Boolean(searchQuery && matchPosition && matchTotal)
+  const canPreviousMatch = Boolean(hasSearchContext && matchPosition && matchPosition > 1)
+  const canNextMatch = Boolean(hasSearchContext && matchPosition && matchTotal && matchPosition < matchTotal)
+
   const resetZoom = () => setZoom(1)
   const closeViewer = () => {
     setOpenPageIndex(null)
@@ -74,13 +90,107 @@ export default function NewspaperPageViewer({
   }
   const zoomIn = () => setZoom((value) => Math.min(MAX_ZOOM, Number((value + ZOOM_STEP).toFixed(2))))
   const zoomOut = () => setZoom((value) => Math.max(MIN_ZOOM, Number((value - ZOOM_STEP).toFixed(2))))
+
+  const buildMatchHref = (row: SearchMatchRow, targetIndex: number) => {
+    if (!row.issue_date || !row.document_slug || !searchQuery) return null
+    const current = new URLSearchParams(window.location.search)
+    const sort = current.get("sort") || "relevance"
+    const source = current.get("source") || "all"
+    const year = current.get("year")
+    const pageSizeValue = Number(current.get("pageSize"))
+    const pageSize = [25, 50, 100].includes(pageSizeValue) ? pageSizeValue : 50
+    const params = new URLSearchParams()
+    if (row.page_number) params.set("sourcePage", String(row.page_number))
+    params.set("q", searchQuery)
+    params.set("sort", sort)
+    params.set("source", source)
+    if (year) params.set("year", year)
+    params.set("searchIndex", String(targetIndex))
+    if (matchTotal) params.set("searchTotal", String(matchTotal))
+    params.set("pageSize", String(pageSize))
+    return `/media/newspapers/${row.document_slug}/${row.issue_date}?${params.toString()}`
+  }
+
+  const resolveMatchHref = async (targetIndex: number) => {
+    if (!searchQuery) return null
+    const current = new URLSearchParams(window.location.search)
+    const requestedSort = (current.get("sort") || "relevance").toLowerCase()
+    const sort = ["relevance", "oldest", "newest"].includes(requestedSort) ? requestedSort : "relevance"
+    const sourceParam = (current.get("source") || "all").trim().toLowerCase()
+    const source = sourceParam === "all" ? null : sourceParam
+    const yearValue = Number(current.get("year"))
+    const year = Number.isInteger(yearValue) && yearValue >= 1800 && yearValue <= 2200 ? yearValue : null
+    const pageSizeValue = Number(current.get("pageSize"))
+    const pageSize = [25, 50, 100].includes(pageSizeValue) ? pageSizeValue : 50
+
+    // Prefer a direct one-row RPC so Next Match still works even when the
+    // server-rendered adjacent-match lookup had a temporary connection miss.
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      const { data, error } = await supabase.rpc("search_museum_ocr", {
+        p_query: searchQuery,
+        p_collection: "newspaper",
+        p_source: source,
+        p_year: year,
+        p_sort: sort,
+        p_limit: 1,
+        p_offset: targetIndex,
+      })
+      const row = (data?.[0] || null) as SearchMatchRow | null
+      if (!error && row) return buildMatchHref(row, targetIndex)
+      if (attempt < 2) await wait(180 * (attempt + 1))
+    }
+
+    // Final fallback: ask the normal search API for the page containing the
+    // desired global match and take the corresponding result from that page.
+    try {
+      const targetPage = Math.floor(targetIndex / pageSize) + 1
+      const resultOffset = targetIndex % pageSize
+      const params = new URLSearchParams({
+        q: searchQuery,
+        collection: "newspaper",
+        page: String(targetPage),
+        pageSize: String(pageSize),
+        sort,
+      })
+      if (source) params.set("source", source)
+      if (year) params.set("year", String(year))
+
+      const response = await fetch(`/api/newspaper-search?${params.toString()}`, { cache: "no-store" })
+      if (!response.ok) return null
+      const payload = await response.json() as { results?: Array<{ href?: string }> }
+      return payload.results?.[resultOffset]?.href || null
+    } catch {
+      return null
+    }
+  }
+
+  const navigateMatch = async (direction: -1 | 1) => {
+    if (!hasSearchContext || !matchPosition || matchNavBusy) return
+    const targetIndex = matchPosition - 1 + direction
+    if (targetIndex < 0 || (matchTotal && targetIndex >= matchTotal)) return
+
+    setMatchNavError("")
+    const precomputedHref = direction < 0 ? previousMatchHref : nextMatchHref
+    if (precomputedHref) {
+      window.location.assign(precomputedHref)
+      return
+    }
+
+    setMatchNavBusy(true)
+    const resolvedHref = await resolveMatchHref(targetIndex)
+    if (resolvedHref) {
+      window.location.assign(resolvedHref)
+      return
+    }
+    setMatchNavBusy(false)
+    setMatchNavError("Could not load that OCR match. Try again.")
+  }
+
   const goPrev = () => {
-    // When a scan was opened from OCR search, left/right navigation should
-    // traverse OCR matches, not silently walk to the adjacent page in the
-    // same newspaper issue. Issue-page browsing remains available by closing
-    // the viewer and selecting a page thumbnail.
+    // In OCR-search mode, arrows mean previous/next SEARCH MATCH. They must
+    // never silently advance to an adjacent page in the current newspaper.
     if (hasSearchContext) {
-      if (previousMatchHref) window.location.assign(previousMatchHref)
+      if (canPreviousMatch) void navigateMatch(-1)
       return
     }
     if (openPageIndex !== null) {
@@ -90,7 +200,7 @@ export default function NewspaperPageViewer({
   }
   const goNext = () => {
     if (hasSearchContext) {
-      if (nextMatchHref) window.location.assign(nextMatchHref)
+      if (canNextMatch) void navigateMatch(1)
       return
     }
     if (openPageIndex !== null) {
@@ -103,8 +213,14 @@ export default function NewspaperPageViewer({
     const handleKeyDown = (event: KeyboardEvent) => {
       if (openPageIndex === null) return
       if (event.key === "Escape") closeViewer()
-      if (event.key === "ArrowLeft") goPrev()
-      if (event.key === "ArrowRight") goNext()
+      if (event.key === "ArrowLeft") {
+        event.preventDefault()
+        goPrev()
+      }
+      if (event.key === "ArrowRight") {
+        event.preventDefault()
+        goNext()
+      }
       if (event.key === "+" || event.key === "=") {
         event.preventDefault()
         zoomIn()
@@ -120,7 +236,7 @@ export default function NewspaperPageViewer({
     }
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [openPageIndex, hasSearchContext, previousMatchHref, nextMatchHref])
+  }, [openPageIndex, hasSearchContext, canPreviousMatch, canNextMatch, previousMatchHref, nextMatchHref, matchPosition, matchTotal, matchNavBusy])
 
   const isMatchedPage = openPageIndex !== null && initialPageIndex !== null && openPageIndex === initialPageIndex
   const activeHighlightLines = isMatchedPage ? highlightLines : []
@@ -144,7 +260,7 @@ export default function NewspaperPageViewer({
         <button type="button" style={fitButton} onClick={resetZoom}>Fit to screen</button>
       </div>
 
-      {(hasSearchContext ? Boolean(previousMatchHref) : pages.length > 1) ? <button type="button" style={{...arrow,left:18}} onClick={(e)=>{e.stopPropagation();goPrev()}} aria-label={hasSearchContext ? "Previous OCR search match" : "Previous page"}>‹</button> : null}
+      {(hasSearchContext ? canPreviousMatch : pages.length > 1) ? <button type="button" style={{...arrow,left:18}} onClick={(e)=>{e.stopPropagation();goPrev()}} aria-label={hasSearchContext ? "Previous OCR search match" : "Previous page"}>‹</button> : null}
       <div style={shell} onClick={(e)=>e.stopPropagation()}>
         <div style={label}>{pages[openPageIndex].label} <span style={{color:'#788087'}}>• {openPageIndex+1} of {pages.length}</span></div>
         {showSearchPanel && searchQuery && searchSnippet ? <div style={searchMatchPanel}>
@@ -182,12 +298,12 @@ export default function NewspaperPageViewer({
           </div>
         </div>
       </div>
-      {(hasSearchContext ? Boolean(nextMatchHref) : pages.length > 1) ? <button type="button" style={{...arrow,right:18}} onClick={(e)=>{e.stopPropagation();goNext()}} aria-label={hasSearchContext ? "Next OCR search match" : "Next page"}>›</button> : null}
+      {(hasSearchContext ? canNextMatch : pages.length > 1) ? <button type="button" style={{...arrow,right:18}} onClick={(e)=>{e.stopPropagation();goNext()}} aria-label={hasSearchContext ? "Next OCR search match" : "Next page"}>›</button> : null}
 
       {hasSearchContext ? <div style={matchNav} onClick={(e)=>e.stopPropagation()}>
-        {previousMatchHref ? <a href={previousMatchHref} style={matchNavButton}>← Previous Match</a> : <span style={matchNavDisabled}>← Previous Match</span>}
-        <span style={matchNavCount}>{matchPosition && matchTotal ? `Match ${matchPosition.toLocaleString()} of ${matchTotal.toLocaleString()}` : 'OCR Search Match'}</span>
-        {nextMatchHref ? <a href={nextMatchHref} style={matchNavButton}>Next Match →</a> : <span style={matchNavDisabled}>Next Match →</span>}
+        {canPreviousMatch ? <button type="button" style={matchNavButton} onClick={()=>void navigateMatch(-1)} disabled={matchNavBusy}>← Previous Match</button> : <span style={matchNavDisabled}>← Previous Match</span>}
+        <span style={matchNavCount}>{matchNavError || (matchNavBusy ? 'Loading next OCR match…' : matchPosition && matchTotal ? `Match ${matchPosition.toLocaleString()} of ${matchTotal.toLocaleString()}` : 'OCR Search Match')}</span>
+        {canNextMatch ? <button type="button" style={matchNavButton} onClick={()=>void navigateMatch(1)} disabled={matchNavBusy}>Next Match →</button> : <span style={matchNavDisabled}>Next Match →</span>}
       </div> : null}
     </div> : null}
   </>
@@ -215,6 +331,6 @@ const searchMatchTitle: CSSProperties = {fontSize:10,fontWeight:900,letterSpacin
 const searchMatchText: CSSProperties = {fontSize:13,lineHeight:1.45,color:'#f2f2ee',fontFamily:'Arial,Helvetica,sans-serif',maxHeight:54,overflow:'hidden'}
 const highlightMark: CSSProperties = {background:'#f3d35b',color:'#111',fontWeight:900,padding:'1px 2px',borderRadius:2}
 const matchNav: CSSProperties = {position:'fixed',bottom:16,left:'50%',transform:'translateX(-50%)',zIndex:4,display:'flex',alignItems:'center',gap:10,padding:'8px 10px',border:'1px solid #555e65',background:'rgba(17,23,27,.97)',borderRadius:8,boxShadow:'0 8px 28px rgba(0,0,0,.55)',fontFamily:'Arial,Helvetica,sans-serif'}
-const matchNavButton: CSSProperties = {display:'inline-flex',alignItems:'center',height:34,padding:'0 12px',border:'1px solid #9a813f',background:'#2b2518',color:'#f2d57a',textDecoration:'none',fontSize:11,fontWeight:900,textTransform:'uppercase',letterSpacing:'.04em',borderRadius:5,whiteSpace:'nowrap'}
+const matchNavButton: CSSProperties = {display:'inline-flex',alignItems:'center',height:34,padding:'0 12px',border:'1px solid #9a813f',background:'#2b2518',color:'#f2d57a',textDecoration:'none',fontSize:11,fontWeight:900,textTransform:'uppercase',letterSpacing:'.04em',borderRadius:5,whiteSpace:'nowrap',cursor:'pointer',fontFamily:'Arial,Helvetica,sans-serif'}
 const matchNavDisabled: CSSProperties = {...matchNavButton,opacity:.35,cursor:'default'}
-const matchNavCount: CSSProperties = {minWidth:120,textAlign:'center',color:'#fff',fontSize:11,fontWeight:900,whiteSpace:'nowrap'}
+const matchNavCount: CSSProperties = {minWidth:150,textAlign:'center',color:'#fff',fontSize:11,fontWeight:900,whiteSpace:'nowrap'}
