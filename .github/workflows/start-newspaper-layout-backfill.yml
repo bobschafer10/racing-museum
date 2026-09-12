@@ -1,0 +1,26 @@
+name: Start Newspaper Layout Backfill
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/start-newspaper-layout-backfill.yml'
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start comprehensive MRN and CFRN geometry backfill
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh workflow run paddleocr-mrn-layout-backfill.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref paddleocr-mrn-pilot
+          echo "Dispatched comprehensive newspaper layout backfill."
