@@ -60,6 +60,12 @@ type FacetRow = {
   match_count: number
 }
 
+type FallbackSearchResult = {
+  rows: SearchRow[]
+  total: number
+  error: unknown | null
+}
+
 function queryTerms(query: string) {
   return Array.from(
     new Set(
@@ -104,6 +110,119 @@ function pageSizeFrom(value: string | null) {
   return [25, 50, 100].includes(parsed) ? parsed : 50
 }
 
+function pageNumberFromLabel(value: string | null) {
+  const match = String(value || "").match(/(\d+)/)
+  return match ? Number(match[1]) : null
+}
+
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+async function fallbackFullTextSearch({
+  query,
+  collection,
+  source,
+  year,
+  sort,
+  pageSize,
+  offset,
+}: {
+  query: string
+  collection: "newspaper" | "print"
+  source: string | null
+  year: number | null
+  sort: string
+  pageSize: number
+  offset: number
+}): Promise<FallbackSearchResult> {
+  try {
+    if (collection === "print") {
+      let builder: any = ocrSupabase
+        .from("archive_ocr_pages")
+        .select(
+          "id,document_type,document_slug,document_title,publication_year,page_label,page_number,storage_path,avg_confidence,ocr_text",
+          { count: "exact" },
+        )
+        .in("document_type", ["program", "yearbook"])
+        .eq("status", "complete")
+        .not("ocr_text", "is", null)
+        .textSearch("search_vector", query, { config: "simple", type: "websearch" })
+
+      if (source) builder = builder.eq("document_type", source)
+      if (year) builder = builder.eq("publication_year", year)
+
+      builder = builder.order("publication_year", { ascending: sort === "oldest", nullsFirst: false })
+      builder = builder.order("page_number", { ascending: true, nullsFirst: false })
+
+      const { data, error, count } = await builder.range(offset, offset + pageSize - 1)
+      if (error) return { rows: [], total: 0, error }
+
+      const total = Number(count || 0)
+      const rows = ((data || []) as any[]).map((row) => ({
+        page_id: Number(row.id),
+        document_type: String(row.document_type),
+        source_key: String(row.document_type),
+        document_slug: String(row.document_slug),
+        document_title: String(row.document_title || row.document_slug),
+        publication_year: row.publication_year == null ? null : Number(row.publication_year),
+        issue_date: null,
+        page_label: row.page_label || null,
+        page_number: row.page_number == null ? null : Number(row.page_number),
+        storage_path: String(row.storage_path),
+        avg_confidence: row.avg_confidence == null ? null : Number(row.avg_confidence),
+        ocr_text: row.ocr_text || null,
+        exact_phrase: String(row.ocr_text || "").toLowerCase().includes(query.toLowerCase()),
+        rank_score: 0,
+        total_count: total,
+      }))
+
+      return { rows, total, error: null }
+    }
+
+    let builder: any = ocrSupabase
+      .from("newspaper_ocr_pages")
+      .select("id,publication_code,issue_date,page_label,storage_path,avg_confidence,ocr_text", { count: "exact" })
+      .eq("status", "complete")
+      .not("ocr_text", "is", null)
+      .textSearch("search_vector", query, { config: "simple", type: "websearch" })
+
+    if (source) builder = builder.eq("publication_code", source)
+    if (year) {
+      builder = builder.gte("issue_date", `${year}-01-01`).lt("issue_date", `${year + 1}-01-01`)
+    }
+
+    builder = builder.order("issue_date", { ascending: sort === "oldest", nullsFirst: false })
+    builder = builder.order("page_label", { ascending: true, nullsFirst: false })
+
+    const { data, error, count } = await builder.range(offset, offset + pageSize - 1)
+    if (error) return { rows: [], total: 0, error }
+
+    const total = Number(count || 0)
+    const rows = ((data || []) as any[]).map((row) => ({
+      page_id: Number(row.id),
+      document_type: "newspaper",
+      source_key: String(row.publication_code),
+      document_slug: String(row.publication_code),
+      document_title: String(row.publication_code),
+      publication_year: row.issue_date ? Number(String(row.issue_date).slice(0, 4)) : null,
+      issue_date: row.issue_date || null,
+      page_label: row.page_label || null,
+      page_number: pageNumberFromLabel(row.page_label || null),
+      storage_path: String(row.storage_path),
+      avg_confidence: row.avg_confidence == null ? null : Number(row.avg_confidence),
+      ocr_text: row.ocr_text || null,
+      exact_phrase: String(row.ocr_text || "").toLowerCase().includes(query.toLowerCase()),
+      rank_score: 0,
+      total_count: total,
+    }))
+
+    return { rows, total, error: null }
+  } catch (error) {
+    return { rows: [], total: 0, error }
+  }
+}
+
 export async function GET(request: NextRequest) {
   const query = (request.nextUrl.searchParams.get("q") || "").trim()
 
@@ -114,7 +233,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ query, results: [], error: "Search is too long." }, { status: 400 })
   }
 
-  const collection = request.nextUrl.searchParams.get("collection") === "print" ? "print" : "newspaper"
+  const collection: "newspaper" | "print" = request.nextUrl.searchParams.get("collection") === "print" ? "print" : "newspaper"
   const sourceParam = (request.nextUrl.searchParams.get("source") || "all").trim().toLowerCase()
   const source = sourceParam === "all" ? null : sourceParam
   const yearParam = Number(request.nextUrl.searchParams.get("year"))
@@ -142,32 +261,63 @@ export async function GET(request: NextRequest) {
     p_year: year,
   }
 
-  let [searchResponse, facetResponse] = await Promise.all([
-    ocrSupabase.rpc("search_museum_ocr", searchArgs),
-    ocrSupabase.rpc("search_museum_ocr_facets", facetArgs),
-  ])
-
-  if (searchResponse.error) {
-    console.warn("MUSEUM OCR SEARCH RETRY", searchResponse.error)
+  // Run the result search first instead of opening two simultaneous RPC connections.
+  // During OCR indexing the API pool can briefly be busy; a short staggered retry is
+  // substantially more reliable than firing the result and facet RPCs together.
+  let searchResponse = await ocrSupabase.rpc("search_museum_ocr", searchArgs)
+  for (let attempt = 1; searchResponse.error && attempt <= 2; attempt += 1) {
+    console.warn(`MUSEUM OCR SEARCH RETRY ${attempt}`, searchResponse.error)
+    await sleep(200 * attempt)
     searchResponse = await ocrSupabase.rpc("search_museum_ocr", searchArgs)
   }
-  if (facetResponse.error) {
-    console.warn("MUSEUM OCR FACET RETRY", facetResponse.error)
-    facetResponse = await ocrSupabase.rpc("search_museum_ocr_facets", facetArgs)
-  }
+
+  let rows: SearchRow[] = []
+  let fallbackTotal: number | null = null
+  let searchMode: "ranked" | "fallback" = "ranked"
 
   if (searchResponse.error) {
-    console.error("MUSEUM OCR SEARCH ERROR", searchResponse.error)
-    return NextResponse.json({ query, results: [], error: "Archive search is temporarily unavailable." }, { status: 500 })
+    console.error("MUSEUM OCR SEARCH RPC ERROR", searchResponse.error)
+    const fallback = await fallbackFullTextSearch({
+      query,
+      collection,
+      source,
+      year,
+      sort,
+      pageSize,
+      offset,
+    })
+
+    if (fallback.error) {
+      console.error("MUSEUM OCR FALLBACK ERROR", fallback.error)
+      return NextResponse.json(
+        { query, results: [], error: "Archive search is temporarily unavailable." },
+        { status: 500, headers: { "Cache-Control": "no-store" } },
+      )
+    }
+
+    rows = fallback.rows
+    fallbackTotal = fallback.total
+    searchMode = "fallback"
+  } else {
+    rows = (searchResponse.data || []) as SearchRow[]
   }
 
+  // Facets are useful but non-critical. Fetch them only after the result query has
+  // completed so a temporary facet failure can never take down the actual search.
+  let facetResponse = await ocrSupabase.rpc("search_museum_ocr_facets", facetArgs)
+  if (facetResponse.error) {
+    console.warn("MUSEUM OCR FACET RETRY", facetResponse.error)
+    await sleep(150)
+    facetResponse = await ocrSupabase.rpc("search_museum_ocr_facets", facetArgs)
+  }
   if (facetResponse.error) {
     console.error("MUSEUM OCR FACET ERROR", facetResponse.error)
   }
 
-  const rows = (searchResponse.data || []) as SearchRow[]
   const facets = (facetResponse.error ? [] : facetResponse.data || []) as FacetRow[]
-  const total = Number(rows[0]?.total_count || facets.find((facet) => facet.facet_kind === "total")?.match_count || 0)
+  const total = Number(
+    fallbackTotal ?? rows[0]?.total_count ?? facets.find((facet) => facet.facet_kind === "total")?.match_count ?? 0,
+  )
   const totalPages = Math.max(1, Math.ceil(total / pageSize))
 
   const sources = facets
@@ -251,6 +401,7 @@ export async function GET(request: NextRequest) {
       sources,
       years,
       results,
+      searchMode,
     },
     { headers: { "Cache-Control": "no-store" } },
   )
