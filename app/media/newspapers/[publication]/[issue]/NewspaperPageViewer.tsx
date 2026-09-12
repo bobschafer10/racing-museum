@@ -1,7 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { useRouter } from "next/navigation"
+import { useCallback, useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import type { CSSProperties, ReactNode } from "react"
 import { supabase } from "@/lib/supabase"
@@ -16,15 +15,27 @@ type OcrHighlightLine = {
   score: number | null
 }
 
-type SearchMatchRow = {
+type MatchDetailRow = {
+  page_id: number
   document_slug: string
   issue_date: string | null
   page_number: number | null
+  page_label: string | null
+  storage_path: string
+  ocr_text: string | null
+  ocr_json: unknown
+  avg_confidence: number | null
+  total_count: number | null
 }
 
-type CachedSearchResult = {
-  href?: string
-  image?: string
+type ActiveMatch = {
+  index: number
+  image: string
+  issueDate: string | null
+  pageNumber: number | null
+  pageLabel: string | null
+  snippet: string
+  highlights: OcrHighlightLine[]
 }
 
 type NewspaperPageViewerProps = {
@@ -42,22 +53,31 @@ type NewspaperPageViewerProps = {
 const MIN_ZOOM = 0.5
 const MAX_ZOOM = 3
 const ZOOM_STEP = 0.25
+const MEDIA_BASE_URL = "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/"
+const MATCH_CACHE_LIMIT = 7
 
 function escapeRegex(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
 }
 
+function queryPhrase(query: string) {
+  const trimmed = query.trim()
+  const straight = trimmed.length >= 2 && trimmed.startsWith('"') && trimmed.endsWith('"')
+  const smart = trimmed.length >= 2 && trimmed.startsWith("“") && trimmed.endsWith("”")
+  return straight || smart ? trimmed.slice(1, -1).trim() : trimmed
+}
+
 function highlightedSearchText(text: string, query: string): ReactNode[] {
+  const phrase = queryPhrase(query)
   const terms = Array.from(
     new Set(
-      [query.trim(), ...query.trim().split(/\s+/)]
+      [phrase, ...phrase.split(/\s+/)]
         .map((value) => value.trim())
         .filter((value) => value.length >= 2),
     ),
   ).sort((a, b) => b.length - a.length)
 
   if (!terms.length) return [text]
-
   const matcher = new RegExp(`(${terms.map(escapeRegex).join("|")})`, "gi")
   const normalized = new Set(terms.map((term) => term.toLowerCase()))
   return text.split(matcher).map((part, index) =>
@@ -65,43 +85,100 @@ function highlightedSearchText(text: string, query: string): ReactNode[] {
   )
 }
 
-function wait(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
+function snippet(text: string, query: string) {
+  const clean = text.replace(/===\s*COLUMN\s+\d+\s*===/gi, " ").replace(/\s+/g, " ").trim()
+  if (!clean) return ""
+  const phrase = queryPhrase(query).toLowerCase()
+  const terms = phrase.split(/\s+/).filter((value) => value.length >= 2)
+  const lower = clean.toLowerCase()
+  let hit = phrase ? lower.indexOf(phrase) : -1
+  if (hit < 0) {
+    for (const term of terms) {
+      const found = lower.indexOf(term)
+      if (found >= 0 && (hit < 0 || found < hit)) hit = found
+    }
+  }
+  const radius = 210
+  const start = hit > radius ? hit - radius : 0
+  const end = Math.min(clean.length, (hit >= 0 ? hit : 0) + radius + 260)
+  return `${start > 0 ? "…" : ""}${clean.slice(start, end).trim()}${end < clean.length ? "…" : ""}`
 }
 
-function cachedSearchResult(query: string, targetIndex: number): CachedSearchResult | null {
-  if (typeof window === "undefined") return null
-  const current = new URLSearchParams(window.location.search)
-  const currentSort = current.get("sort") || "relevance"
-  const currentSource = current.get("source") || "all"
-  const currentYear = current.get("year") || ""
+function parseOcrLayoutLines(value: unknown): OcrHighlightLine[] {
+  if (!value || typeof value !== "object") return []
+  const record = value as Record<string, unknown>
+  const nested = record.line_layout && typeof record.line_layout === "object"
+    ? (record.line_layout as Record<string, unknown>).lines
+    : undefined
+  const rawLines = Array.isArray(record.lines) ? record.lines : nested
+  if (!Array.isArray(rawLines)) return []
 
-  try {
-    for (let index = 0; index < window.sessionStorage.length; index += 1) {
-      const key = window.sessionStorage.key(index)
-      if (!key?.startsWith("umarm-ocr:")) continue
-      const raw = window.sessionStorage.getItem(key)
-      if (!raw) continue
-      const parsed = JSON.parse(raw) as {
-        payload?: { query?: string; results?: CachedSearchResult[] }
-      }
-      if (parsed.payload?.query !== query || !Array.isArray(parsed.payload.results)) continue
+  return rawLines.flatMap((raw) => {
+    if (!raw || typeof raw !== "object") return []
+    const item = raw as Record<string, unknown>
+    const text = typeof item.t === "string" ? item.t.trim() : ""
+    const x = Number(item.x)
+    const y = Number(item.y)
+    const w = Number(item.w)
+    const h = Number(item.h)
+    const score = item.s == null ? null : Number(item.s)
+    if (!text || ![x, y, w, h].every(Number.isFinite)) return []
+    if (x < 0 || y < 0 || w <= 0 || h <= 0 || x > 1 || y > 1) return []
+    return [{
+      text,
+      x: Math.max(0, Math.min(1, x)),
+      y: Math.max(0, Math.min(1, y)),
+      w: Math.max(0, Math.min(1 - x, w)),
+      h: Math.max(0, Math.min(1 - y, h)),
+      score: Number.isFinite(score) ? score : null,
+    }]
+  })
+}
 
-      for (const result of parsed.payload.results) {
-        if (!result?.href) continue
-        const url = new URL(result.href, window.location.origin)
-        if (Number(url.searchParams.get("searchIndex")) !== targetIndex) continue
-        if ((url.searchParams.get("sort") || "relevance") !== currentSort) continue
-        if ((url.searchParams.get("source") || "all") !== currentSource) continue
-        if ((url.searchParams.get("year") || "") !== currentYear) continue
-        return result
-      }
-    }
-  } catch {
-    return null
-  }
+function matchingOcrLayoutLines(lines: OcrHighlightLine[], query: string) {
+  const phrase = queryPhrase(query).toLowerCase()
+  const tokens = Array.from(new Set(
+    phrase
+      .replace(/["'“”()]/g, " ")
+      .split(/\s+/)
+      .map((value) => value.trim())
+      .filter((value) => value.length >= 2),
+  ))
+  if (!phrase || !tokens.length) return []
 
-  return null
+  const phraseMatches = lines.filter((line) => line.text.toLowerCase().includes(phrase))
+  if (phraseMatches.length) return phraseMatches
+
+  const allTokenMatches = lines.filter((line) => {
+    const text = line.text.toLowerCase()
+    return tokens.every((token) => text.includes(token))
+  })
+  if (allTokenMatches.length) return allTokenMatches
+
+  const tokenMatches = lines.filter((line) => {
+    const text = line.text.toLowerCase()
+    return tokens.some((token) => text.includes(token))
+  })
+  if (tokens.length <= 1 || tokenMatches.length <= 1) return tokenMatches
+
+  const clustered = tokenMatches.filter((line, index, candidates) =>
+    candidates.some((other, otherIndex) => {
+      if (index === otherIndex) return false
+      return Math.abs(line.y - other.y) <= 0.065 && Math.abs(line.x - other.x) <= 0.38
+    }),
+  )
+  return clustered.length ? clustered : tokenMatches
+}
+
+function searchSettings() {
+  const params = new URLSearchParams(window.location.search)
+  const requestedSort = (params.get("sort") || "relevance").toLowerCase()
+  const sort = ["relevance", "oldest", "newest"].includes(requestedSort) ? requestedSort : "relevance"
+  const sourceParam = (params.get("source") || "all").trim().toLowerCase()
+  const source = sourceParam === "all" ? null : sourceParam
+  const yearValue = Number(params.get("year"))
+  const year = Number.isInteger(yearValue) && yearValue >= 1800 && yearValue <= 2200 ? yearValue : null
+  return { sort, source, year }
 }
 
 export default function NewspaperPageViewer({
@@ -110,20 +187,44 @@ export default function NewspaperPageViewer({
   searchQuery = null,
   searchSnippet = null,
   highlightLines = [],
-  previousMatchHref = null,
-  nextMatchHref = null,
   matchPosition = null,
   matchTotal = null,
 }: NewspaperPageViewerProps) {
-  const router = useRouter()
+  const initialImage = initialPageIndex !== null ? pages[initialPageIndex]?.image || null : null
+  const initialSearchMode = Boolean(searchQuery && matchPosition && matchTotal && initialImage)
+  const initialMatchIndex = matchPosition ? matchPosition - 1 : 0
+
   const [openPageIndex, setOpenPageIndex] = useState<number | null>(initialPageIndex)
+  const [searchMode, setSearchMode] = useState(initialSearchMode)
+  const [activeMatch, setActiveMatch] = useState<ActiveMatch | null>(
+    initialSearchMode && initialImage
+      ? {
+          index: initialMatchIndex,
+          image: initialImage,
+          issueDate: null,
+          pageNumber: null,
+          pageLabel: pages[initialPageIndex || 0]?.label || null,
+          snippet: searchSnippet || "",
+          highlights: highlightLines,
+        }
+      : null,
+  )
   const [zoom, setZoom] = useState(1)
   const [matchNavBusy, setMatchNavBusy] = useState(false)
   const [matchNavError, setMatchNavError] = useState("")
+  const matchCache = useRef<Map<number, ActiveMatch>>(new Map())
+  const requestSequence = useRef(0)
 
-  const hasSearchContext = Boolean(searchQuery && matchPosition && matchTotal)
-  const canPreviousMatch = Boolean(hasSearchContext && matchPosition && matchPosition > 1)
-  const canNextMatch = Boolean(hasSearchContext && matchPosition && matchTotal && matchPosition < matchTotal)
+  useEffect(() => {
+    if (activeMatch) matchCache.current.set(activeMatch.index, activeMatch)
+    // Only initialize from server props when the route itself changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const hasSearchContext = Boolean(searchMode && searchQuery && activeMatch && matchTotal)
+  const activePosition = activeMatch ? activeMatch.index + 1 : matchPosition
+  const canPreviousMatch = Boolean(hasSearchContext && activePosition && activePosition > 1)
+  const canNextMatch = Boolean(hasSearchContext && activePosition && matchTotal && activePosition < matchTotal)
 
   const resetZoom = () => setZoom(1)
   const closeViewer = () => {
@@ -133,110 +234,93 @@ export default function NewspaperPageViewer({
   const zoomIn = () => setZoom((value) => Math.min(MAX_ZOOM, Number((value + ZOOM_STEP).toFixed(2))))
   const zoomOut = () => setZoom((value) => Math.max(MIN_ZOOM, Number((value - ZOOM_STEP).toFixed(2))))
 
-  const buildMatchHref = (row: SearchMatchRow, targetIndex: number) => {
-    if (!row.issue_date || !row.document_slug || !searchQuery) return null
-    const current = new URLSearchParams(window.location.search)
-    const sort = current.get("sort") || "relevance"
-    const source = current.get("source") || "all"
-    const year = current.get("year")
-    const pageSizeValue = Number(current.get("pageSize"))
-    const pageSize = [25, 50, 100].includes(pageSizeValue) ? pageSizeValue : 50
-    const params = new URLSearchParams()
-    if (row.page_number) params.set("sourcePage", String(row.page_number))
-    params.set("q", searchQuery)
-    params.set("sort", sort)
-    params.set("source", source)
-    if (year) params.set("year", year)
-    params.set("searchIndex", String(targetIndex))
-    if (matchTotal) params.set("searchTotal", String(matchTotal))
-    params.set("pageSize", String(pageSize))
-    return `/media/newspapers/${row.document_slug}/${row.issue_date}?${params.toString()}`
-  }
-
-  const resolveMatchHref = async (targetIndex: number) => {
-    if (!searchQuery) return null
-    const current = new URLSearchParams(window.location.search)
-    const requestedSort = (current.get("sort") || "relevance").toLowerCase()
-    const sort = ["relevance", "oldest", "newest"].includes(requestedSort) ? requestedSort : "relevance"
-    const sourceParam = (current.get("source") || "all").trim().toLowerCase()
-    const source = sourceParam === "all" ? null : sourceParam
-    const yearValue = Number(current.get("year"))
-    const year = Number.isInteger(yearValue) && yearValue >= 1800 && yearValue <= 2200 ? yearValue : null
-    const pageSizeValue = Number(current.get("pageSize"))
-    const pageSize = [25, 50, 100].includes(pageSizeValue) ? pageSizeValue : 50
-
-    // Prefer a direct one-row RPC so Next Match still works even when the
-    // server-rendered adjacent-match lookup had a temporary connection miss.
-    for (let attempt = 0; attempt < 3; attempt += 1) {
-      const { data, error } = await supabase.rpc("search_museum_ocr", {
-        p_query: searchQuery,
-        p_collection: "newspaper",
-        p_source: source,
-        p_year: year,
-        p_sort: sort,
-        p_limit: 1,
-        p_offset: targetIndex,
-      })
-      const row = (data?.[0] || null) as SearchMatchRow | null
-      if (!error && row) return buildMatchHref(row, targetIndex)
-      if (attempt < 2) await wait(180 * (attempt + 1))
+  const trimCache = useCallback((centerIndex: number) => {
+    for (const key of Array.from(matchCache.current.keys())) {
+      if (Math.abs(key - centerIndex) > 3 || matchCache.current.size > MATCH_CACHE_LIMIT) {
+        matchCache.current.delete(key)
+      }
     }
+  }, [])
 
-    // Final fallback: ask the normal search API for the page containing the
-    // desired global match and take the corresponding result from that page.
-    try {
-      const targetPage = Math.floor(targetIndex / pageSize) + 1
-      const resultOffset = targetIndex % pageSize
-      const params = new URLSearchParams({
-        q: searchQuery,
-        collection: "newspaper",
-        page: String(targetPage),
-        pageSize: String(pageSize),
-        sort,
-      })
-      if (source) params.set("source", source)
-      if (year) params.set("year", String(year))
+  const loadMatch = useCallback(async (targetIndex: number, preloadOnly = false): Promise<ActiveMatch | null> => {
+    if (!searchQuery || targetIndex < 0 || (matchTotal && targetIndex >= matchTotal)) return null
+    const cached = matchCache.current.get(targetIndex)
+    if (cached) return cached
 
-      const response = await fetch(`/api/newspaper-search?${params.toString()}`, { cache: "no-store" })
-      if (!response.ok) return null
-      const payload = await response.json() as { results?: Array<{ href?: string }> }
-      return payload.results?.[resultOffset]?.href || null
-    } catch {
-      return null
+    const { sort, source, year } = searchSettings()
+    const { data, error } = await supabase.rpc("get_newspaper_ocr_match_detail", {
+      p_query: searchQuery,
+      p_source: source,
+      p_year: year,
+      p_sort: sort,
+      p_offset: targetIndex,
+    })
+    if (error || !data?.[0]) return null
+
+    const row = data[0] as MatchDetailRow
+    const image = `${MEDIA_BASE_URL}${row.storage_path}`
+    const match: ActiveMatch = {
+      index: targetIndex,
+      image,
+      issueDate: row.issue_date,
+      pageNumber: row.page_number,
+      pageLabel: row.page_label,
+      snippet: snippet(row.ocr_text || "", searchQuery),
+      highlights: matchingOcrLayoutLines(parseOcrLayoutLines(row.ocr_json), searchQuery),
     }
-  }
+    matchCache.current.set(targetIndex, match)
+    trimCache(targetIndex)
 
-  const navigateMatch = async (direction: -1 | 1) => {
-    if (!hasSearchContext || !matchPosition || matchNavBusy || !searchQuery) return
-    const targetIndex = matchPosition - 1 + direction
+    if (typeof window !== "undefined") {
+      const preload = new window.Image()
+      preload.decoding = "async"
+      preload.src = image
+      if (!preloadOnly && "decode" in preload) {
+        try { await preload.decode() } catch { /* browser will still render the image */ }
+      }
+    }
+    return match
+  }, [searchQuery, matchTotal, trimCache])
+
+  const warmAdjacent = useCallback((centerIndex: number) => {
+    if (!searchQuery || !matchTotal) return
+    const next = centerIndex + 1
+    const previous = centerIndex - 1
+    if (next < matchTotal && !matchCache.current.has(next)) void loadMatch(next, true)
+    if (previous >= 0 && !matchCache.current.has(previous)) void loadMatch(previous, true)
+  }, [loadMatch, matchTotal, searchQuery])
+
+  useEffect(() => {
+    if (initialSearchMode && activeMatch) warmAdjacent(activeMatch.index)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const navigateMatch = useCallback(async (direction: -1 | 1) => {
+    if (!hasSearchContext || !activeMatch || matchNavBusy) return
+    const targetIndex = activeMatch.index + direction
     if (targetIndex < 0 || (matchTotal && targetIndex >= matchTotal)) return
 
-    setMatchNavError("")
-
-    // Search results are cached in sessionStorage. Reuse the exact matching
-    // result first so the viewer can navigate immediately without another
-    // database lookup. The route and scan are also prefetched below.
-    const cached = cachedSearchResult(searchQuery, targetIndex)
-    const precomputedHref = cached?.href || (direction < 0 ? previousMatchHref : nextMatchHref)
-    if (precomputedHref) {
-      setMatchNavBusy(true)
-      router.push(precomputedHref, { scroll: false })
-      return
-    }
-
+    const sequence = ++requestSequence.current
     setMatchNavBusy(true)
-    const resolvedHref = await resolveMatchHref(targetIndex)
-    if (resolvedHref) {
-      router.push(resolvedHref, { scroll: false })
+    setMatchNavError("")
+    const nextMatch = await loadMatch(targetIndex)
+    if (sequence !== requestSequence.current) return
+
+    if (!nextMatch) {
+      setMatchNavBusy(false)
+      setMatchNavError("Could not load that OCR match. Try again.")
       return
     }
+
+    setActiveMatch(nextMatch)
+    setSearchMode(true)
+    setOpenPageIndex(initialPageIndex ?? 0)
+    resetZoom()
     setMatchNavBusy(false)
-    setMatchNavError("Could not load that OCR match. Try again.")
-  }
+    warmAdjacent(targetIndex)
+  }, [activeMatch, hasSearchContext, initialPageIndex, loadMatch, matchNavBusy, matchTotal, warmAdjacent])
 
   const goPrev = () => {
-    // In OCR-search mode, arrows mean previous/next SEARCH MATCH. They must
-    // never silently advance to an adjacent page in the current newspaper.
     if (hasSearchContext) {
       if (canPreviousMatch) void navigateMatch(-1)
       return
@@ -246,6 +330,7 @@ export default function NewspaperPageViewer({
       resetZoom()
     }
   }
+
   const goNext = () => {
     if (hasSearchContext) {
       if (canNextMatch) void navigateMatch(1)
@@ -256,28 +341,6 @@ export default function NewspaperPageViewer({
       resetZoom()
     }
   }
-
-  // As soon as an OCR match opens, warm both adjacent Next.js routes and,
-  // when the original results page is still in this browser session, preload
-  // the exact adjacent scan image. This hides the server/database and image
-  // latency while the researcher is reading the current clipping.
-  useEffect(() => {
-    if (!hasSearchContext || !matchPosition || !searchQuery) return
-
-    const warm = (targetIndex: number, fallbackHref: string | null) => {
-      if (targetIndex < 0 || (matchTotal && targetIndex >= matchTotal)) return
-      const cached = cachedSearchResult(searchQuery, targetIndex)
-      const href = cached?.href || fallbackHref
-      if (href) router.prefetch(href)
-      if (cached?.image) {
-        const preload = document.createElement("img")
-        preload.src = cached.image
-      }
-    }
-
-    if (canPreviousMatch) warm(matchPosition - 2, previousMatchHref)
-    if (canNextMatch) warm(matchPosition, nextMatchHref)
-  }, [router, hasSearchContext, searchQuery, matchPosition, matchTotal, canPreviousMatch, canNextMatch, previousMatchHref, nextMatchHref])
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -306,74 +369,95 @@ export default function NewspaperPageViewer({
     }
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [openPageIndex, hasSearchContext, canPreviousMatch, canNextMatch, previousMatchHref, nextMatchHref, matchPosition, matchTotal, matchNavBusy])
+  }, [openPageIndex, hasSearchContext, canPreviousMatch, canNextMatch, activeMatch, matchNavBusy])
 
-  const isMatchedPage = openPageIndex !== null && initialPageIndex !== null && openPageIndex === initialPageIndex
-  const activeHighlightLines = isMatchedPage ? highlightLines : []
-  const showSearchPanel = Boolean(isMatchedPage && searchQuery && searchSnippet)
+  const issuePage = openPageIndex !== null ? pages[openPageIndex] : null
+  const displayImage = hasSearchContext && activeMatch ? activeMatch.image : issuePage?.image || ""
+  const displayLabel = hasSearchContext && activeMatch
+    ? `${activeMatch.issueDate || "OCR search"}${activeMatch.pageNumber ? ` • source page ${activeMatch.pageNumber}` : activeMatch.pageLabel ? ` • ${activeMatch.pageLabel}` : ""}`
+    : issuePage?.label || ""
+  const activeHighlightLines = hasSearchContext && activeMatch ? activeMatch.highlights : []
+  const activeSnippet = hasSearchContext && activeMatch ? activeMatch.snippet : ""
+  const showSearchPanel = Boolean(hasSearchContext && searchQuery && activeSnippet)
+  const displayQuery = searchQuery ? queryPhrase(searchQuery) : ""
 
   return <>
     <div className="ma-scan-grid">
-      {pages.map((page,index)=><button key={`${page.label}-${page.image}`} type="button" className="ma-scan-frame" style={buttonReset} onClick={()=>{setOpenPageIndex(index);resetZoom()}} aria-label={`Open ${page.label}`}>
+      {pages.map((page, index) => <button
+        key={`${page.label}-${page.image}`}
+        type="button"
+        className="ma-scan-frame"
+        style={buttonReset}
+        onClick={() => {
+          requestSequence.current += 1
+          setSearchMode(false)
+          setMatchNavBusy(false)
+          setMatchNavError("")
+          setOpenPageIndex(index)
+          resetZoom()
+        }}
+        aria-label={`Open ${page.label}`}
+      >
         <Image src={page.image} alt={page.label} width={320} height={440} unoptimized style={thumbImage}/>
         <figcaption style={caption}>{page.label}</figcaption>
       </button>)}
     </div>
 
-    {openPageIndex !== null && pages[openPageIndex] ? <div style={overlay} onClick={closeViewer}>
-      <button type="button" style={close} onClick={(e)=>{e.stopPropagation();closeViewer()}} aria-label="Close page viewer">×</button>
+    {openPageIndex !== null && displayImage ? <div style={overlay} onClick={closeViewer}>
+      <button type="button" style={close} onClick={(event) => { event.stopPropagation(); closeViewer() }} aria-label="Close page viewer">×</button>
 
-      <div style={zoomControls} onClick={(e)=>e.stopPropagation()}>
+      <div style={zoomControls} onClick={(event) => event.stopPropagation()}>
         <button type="button" style={zoomButton} onClick={zoomOut} disabled={zoom <= MIN_ZOOM} aria-label="Zoom out">−</button>
         <span style={zoomLabel}>{Math.round(zoom * 100)}%</span>
         <button type="button" style={zoomButton} onClick={zoomIn} disabled={zoom >= MAX_ZOOM} aria-label="Zoom in">+</button>
         <button type="button" style={fitButton} onClick={resetZoom}>Fit to screen</button>
       </div>
 
-      {(hasSearchContext ? canPreviousMatch : pages.length > 1) ? <button type="button" style={{...arrow,left:18}} onClick={(e)=>{e.stopPropagation();goPrev()}} aria-label={hasSearchContext ? "Previous OCR search match" : "Previous page"}>‹</button> : null}
-      <div style={shell} onClick={(e)=>e.stopPropagation()}>
-        <div style={label}>{pages[openPageIndex].label} <span style={{color:'#788087'}}>• {openPageIndex+1} of {pages.length}</span></div>
-        {showSearchPanel && searchQuery && searchSnippet ? <div style={searchMatchPanel}>
+      {(hasSearchContext ? canPreviousMatch : pages.length > 1) ? <button type="button" style={{...arrow,left:18}} onClick={(event) => { event.stopPropagation(); goPrev() }} aria-label={hasSearchContext ? "Previous OCR search match" : "Previous page"}>‹</button> : null}
+
+      <div style={shell} onClick={(event) => event.stopPropagation()}>
+        <div style={label}>
+          {displayLabel}
+          {hasSearchContext && activePosition && matchTotal ? <span style={{color:'#788087'}}> • Match {activePosition.toLocaleString()} of {matchTotal.toLocaleString()}</span> : !hasSearchContext && openPageIndex !== null ? <span style={{color:'#788087'}}> • {openPageIndex + 1} of {pages.length}</span> : null}
+        </div>
+
+        {showSearchPanel && searchQuery ? <div style={searchMatchPanel}>
           <div style={searchMatchTitle}>
-            OCR MATCH • “{searchQuery}”{activeHighlightLines.length ? ` • ${activeHighlightLines.length} ON-PAGE HIGHLIGHT${activeHighlightLines.length === 1 ? '' : 'S'}` : ''}
+            OCR MATCH • “{displayQuery}”{activeHighlightLines.length ? ` • ${activeHighlightLines.length} ON-PAGE HIGHLIGHT${activeHighlightLines.length === 1 ? '' : 'S'}` : ' • ON-PAGE HIGHLIGHT PENDING'}
           </div>
-          <div style={searchMatchText}>{highlightedSearchText(searchSnippet, searchQuery)}</div>
+          <div style={searchMatchText}>{highlightedSearchText(activeSnippet, searchQuery)}</div>
         </div> : null}
+
         <div style={{...viewport,height:showSearchPanel ? 'calc(92vh - 128px)' : 'calc(92vh - 34px)'}}>
           <div style={zoom === 1 ? imageStageFit : {...imageStageZoomed,width:`${Math.round(1200 * zoom)}px`}}>
-            <img
-              src={pages[openPageIndex].image}
-              alt={pages[openPageIndex].label}
-              style={zoom === 1 ? fullImageFit : fullImageZoomed}
-            />
-            {activeHighlightLines.map((line, index) => (
-              <span
-                key={`${line.text}-${index}`}
-                title={line.text}
-                aria-hidden="true"
-                style={{
-                  position:'absolute',
-                  left:`${line.x * 100}%`,
-                  top:`${line.y * 100}%`,
-                  width:`${line.w * 100}%`,
-                  height:`${Math.max(line.h * 100, .7)}%`,
-                  background:'rgba(255,220,55,.34)',
-                  border:'2px solid rgba(255,214,31,.96)',
-                  boxShadow:'0 0 0 2px rgba(0,0,0,.22),0 0 12px rgba(255,214,31,.35)',
-                  pointerEvents:'none',
-                  zIndex:2,
-                }}
-              />
-            ))}
+            <img src={displayImage} alt={displayLabel} style={zoom === 1 ? fullImageFit : fullImageZoomed}/>
+            {activeHighlightLines.map((line, index) => <span
+              key={`${line.text}-${index}`}
+              title={line.text}
+              aria-hidden="true"
+              style={{
+                position:'absolute',
+                left:`${line.x * 100}%`,
+                top:`${line.y * 100}%`,
+                width:`${line.w * 100}%`,
+                height:`${Math.max(line.h * 100, .7)}%`,
+                background:'rgba(255,220,55,.34)',
+                border:'2px solid rgba(255,214,31,.96)',
+                boxShadow:'0 0 0 2px rgba(0,0,0,.22),0 0 12px rgba(255,214,31,.35)',
+                pointerEvents:'none',
+                zIndex:2,
+              }}
+            />)}
           </div>
         </div>
       </div>
-      {(hasSearchContext ? canNextMatch : pages.length > 1) ? <button type="button" style={{...arrow,right:18}} onClick={(e)=>{e.stopPropagation();goNext()}} aria-label={hasSearchContext ? "Next OCR search match" : "Next page"}>›</button> : null}
 
-      {hasSearchContext ? <div style={matchNav} onClick={(e)=>e.stopPropagation()}>
-        {canPreviousMatch ? <button type="button" style={matchNavButton} onClick={()=>void navigateMatch(-1)} disabled={matchNavBusy}>← Previous Match</button> : <span style={matchNavDisabled}>← Previous Match</span>}
-        <span style={matchNavCount}>{matchNavError || (matchNavBusy ? 'Loading next OCR match…' : matchPosition && matchTotal ? `Match ${matchPosition.toLocaleString()} of ${matchTotal.toLocaleString()}` : 'OCR Search Match')}</span>
-        {canNextMatch ? <button type="button" style={matchNavButton} onClick={()=>void navigateMatch(1)} disabled={matchNavBusy}>Next Match →</button> : <span style={matchNavDisabled}>Next Match →</span>}
+      {(hasSearchContext ? canNextMatch : pages.length > 1) ? <button type="button" style={{...arrow,right:18}} onClick={(event) => { event.stopPropagation(); goNext() }} aria-label={hasSearchContext ? "Next OCR search match" : "Next page"}>›</button> : null}
+
+      {hasSearchContext ? <div style={matchNav} onClick={(event) => event.stopPropagation()}>
+        {canPreviousMatch ? <button type="button" style={matchNavButton} onClick={() => void navigateMatch(-1)} disabled={matchNavBusy}>← Previous Match</button> : <span style={matchNavDisabled}>← Previous Match</span>}
+        <span style={matchNavCount}>{matchNavError || (matchNavBusy ? 'Loading OCR match…' : activePosition && matchTotal ? `Match ${activePosition.toLocaleString()} of ${matchTotal.toLocaleString()}` : 'OCR Search Match')}</span>
+        {canNextMatch ? <button type="button" style={matchNavButton} onClick={() => void navigateMatch(1)} disabled={matchNavBusy}>Next Match →</button> : <span style={matchNavDisabled}>Next Match →</span>}
       </div> : null}
     </div> : null}
   </>
