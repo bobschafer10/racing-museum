@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
 import Image from "next/image"
 import type { CSSProperties, ReactNode } from "react"
 import { supabase } from "@/lib/supabase"
@@ -19,6 +20,11 @@ type SearchMatchRow = {
   document_slug: string
   issue_date: string | null
   page_number: number | null
+}
+
+type CachedSearchResult = {
+  href?: string
+  image?: string
 }
 
 type NewspaperPageViewerProps = {
@@ -63,6 +69,41 @@ function wait(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
+function cachedSearchResult(query: string, targetIndex: number): CachedSearchResult | null {
+  if (typeof window === "undefined") return null
+  const current = new URLSearchParams(window.location.search)
+  const currentSort = current.get("sort") || "relevance"
+  const currentSource = current.get("source") || "all"
+  const currentYear = current.get("year") || ""
+
+  try {
+    for (let index = 0; index < window.sessionStorage.length; index += 1) {
+      const key = window.sessionStorage.key(index)
+      if (!key?.startsWith("umarm-ocr:")) continue
+      const raw = window.sessionStorage.getItem(key)
+      if (!raw) continue
+      const parsed = JSON.parse(raw) as {
+        payload?: { query?: string; results?: CachedSearchResult[] }
+      }
+      if (parsed.payload?.query !== query || !Array.isArray(parsed.payload.results)) continue
+
+      for (const result of parsed.payload.results) {
+        if (!result?.href) continue
+        const url = new URL(result.href, window.location.origin)
+        if (Number(url.searchParams.get("searchIndex")) !== targetIndex) continue
+        if ((url.searchParams.get("sort") || "relevance") !== currentSort) continue
+        if ((url.searchParams.get("source") || "all") !== currentSource) continue
+        if ((url.searchParams.get("year") || "") !== currentYear) continue
+        return result
+      }
+    }
+  } catch {
+    return null
+  }
+
+  return null
+}
+
 export default function NewspaperPageViewer({
   pages,
   initialPageIndex = null,
@@ -74,6 +115,7 @@ export default function NewspaperPageViewer({
   matchPosition = null,
   matchTotal = null,
 }: NewspaperPageViewerProps) {
+  const router = useRouter()
   const [openPageIndex, setOpenPageIndex] = useState<number | null>(initialPageIndex)
   const [zoom, setZoom] = useState(1)
   const [matchNavBusy, setMatchNavBusy] = useState(false)
@@ -165,21 +207,27 @@ export default function NewspaperPageViewer({
   }
 
   const navigateMatch = async (direction: -1 | 1) => {
-    if (!hasSearchContext || !matchPosition || matchNavBusy) return
+    if (!hasSearchContext || !matchPosition || matchNavBusy || !searchQuery) return
     const targetIndex = matchPosition - 1 + direction
     if (targetIndex < 0 || (matchTotal && targetIndex >= matchTotal)) return
 
     setMatchNavError("")
-    const precomputedHref = direction < 0 ? previousMatchHref : nextMatchHref
+
+    // Search results are cached in sessionStorage. Reuse the exact matching
+    // result first so the viewer can navigate immediately without another
+    // database lookup. The route and scan are also prefetched below.
+    const cached = cachedSearchResult(searchQuery, targetIndex)
+    const precomputedHref = cached?.href || (direction < 0 ? previousMatchHref : nextMatchHref)
     if (precomputedHref) {
-      window.location.assign(precomputedHref)
+      setMatchNavBusy(true)
+      router.push(precomputedHref, { scroll: false })
       return
     }
 
     setMatchNavBusy(true)
     const resolvedHref = await resolveMatchHref(targetIndex)
     if (resolvedHref) {
-      window.location.assign(resolvedHref)
+      router.push(resolvedHref, { scroll: false })
       return
     }
     setMatchNavBusy(false)
@@ -208,6 +256,28 @@ export default function NewspaperPageViewer({
       resetZoom()
     }
   }
+
+  // As soon as an OCR match opens, warm both adjacent Next.js routes and,
+  // when the original results page is still in this browser session, preload
+  // the exact adjacent scan image. This hides the server/database and image
+  // latency while the researcher is reading the current clipping.
+  useEffect(() => {
+    if (!hasSearchContext || !matchPosition || !searchQuery) return
+
+    const warm = (targetIndex: number, fallbackHref: string | null) => {
+      if (targetIndex < 0 || (matchTotal && targetIndex >= matchTotal)) return
+      const cached = cachedSearchResult(searchQuery, targetIndex)
+      const href = cached?.href || fallbackHref
+      if (href) router.prefetch(href)
+      if (cached?.image) {
+        const preload = document.createElement("img")
+        preload.src = cached.image
+      }
+    }
+
+    if (canPreviousMatch) warm(matchPosition - 2, previousMatchHref)
+    if (canNextMatch) warm(matchPosition, nextMatchHref)
+  }, [router, hasSearchContext, searchQuery, matchPosition, matchTotal, canPreviousMatch, canNextMatch, previousMatchHref, nextMatchHref])
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
