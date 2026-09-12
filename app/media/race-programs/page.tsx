@@ -5,9 +5,39 @@ import ArchiveSearch from "../newspapers/NewspaperSearch"
 import "../archive-dark.css"
 import "../newspapers/ocr-search.css"
 
+export const dynamic = "force-dynamic"
+
 type SearchParams = Promise<{ decade?: string; type?: string }>
 type RaceProgramWithCover = RaceProgram & { coverImage: string }
 type OcrCoverageRow = { publication_year: number | null }
+
+function shuffle<T>(items: T[]) {
+  const shuffled = [...items]
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  return shuffled
+}
+
+function publicationSourceKey(program: RaceProgram) {
+  return (program.track_slug || program.track || program.series_slug || program.series || '')
+    .trim()
+    .toLowerCase()
+}
+
+function pickDistinctHeroPrograms(programs: RaceProgramWithCover[]) {
+  if (programs.length <= 1) return programs
+
+  const first = programs[0]
+  const firstSource = publicationSourceKey(first)
+  const second = programs.slice(1).find((program) => {
+    const source = publicationSourceKey(program)
+    return firstSource && source ? source !== firstSource : program.slug !== first.slug
+  }) || programs[1]
+
+  return [first, second]
+}
 
 export default async function RaceProgramsPage({ searchParams }: { searchParams?: SearchParams }) {
   const programs = await getRacePrograms()
@@ -21,11 +51,15 @@ export default async function RaceProgramsPage({ searchParams }: { searchParams?
   decades.sort()
   const filtered=programs.filter(p=>(activeDecade==='all'||getDecade(p.year)===activeDecade)&&(activeType==='all'||p.type?.toLowerCase()===activeType.toLowerCase()))
   const covers=programs.filter((p):p is RaceProgramWithCover=>Boolean(p.coverImage))
+  const shuffledCovers=shuffle(covers)
+  const heroPrograms=pickDistinctHeroPrograms(shuffledCovers)
+  const heroProgramSlugs=new Set(heroPrograms.map(p=>p.slug))
+  const featured=[...shuffledCovers.filter(p=>!heroProgramSlugs.has(p.slug)),...heroPrograms].slice(0,8)
   const years=programs.map(p=>getYear(p.year)).filter((y):y is number=>y!==null)
   const earliest=years.length?Math.min(...years):null
   const latest=years.length?Math.max(...years):null
   const pageCount=programs.reduce((sum,p)=>sum+(p.images?.length||0),0)
-  const hero=covers[covers.length-1]?.coverImage || covers[0]?.coverImage
+  const hero=heroPrograms[0]?.coverImage || covers[0]?.coverImage
 
   const [{ count: searchablePages, data: oldestRows }, { data: newestRows }] = await Promise.all([
     supabase
@@ -54,14 +88,14 @@ export default async function RaceProgramsPage({ searchParams }: { searchParams?
 
   return <main className="ma-page">
     <section className="ma-hero" style={hero?{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.97),rgba(5,8,10,.82) 50%,rgba(5,8,10,.45)),url(${hero})`,backgroundSize:'cover',backgroundPosition:'center'}:undefined}>
-      <div className="ma-hero-inner"><div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><span>Race Programs</span></div><div className="ma-hero-grid"><div><div className="ma-eyebrow">Printed Racing Archive</div><h1 className="ma-title">Race Programs & Yearbooks</h1><div className="ma-subtitle">Race Night Preserved on Paper</div><p className="ma-lede">Explore digitized race-night programs, souvenir books, yearbooks, and special-event publications from tracks and series across the Upper Midwest.</p><div className="ma-actions"><Link href="/media" className="ma-button">Back to Media Archive</Link><Link href="/media/newspapers" className="ma-button-ghost">Racing Newspapers</Link></div></div><div className="ma-hero-media">{covers.slice(-2).map(p=><img key={p.slug} src={p.coverImage} alt={p.title} className="ma-cover" />)}</div></div><div className="ma-stats"><div className="ma-stat"><strong>{programs.length}</strong><span>Publications</span></div><div className="ma-stat"><strong>{pageCount.toLocaleString()}</strong><span>Scanned Pages</span></div><div className="ma-stat"><strong>{earliest??'—'}</strong><span>Earliest Year</span></div><div className="ma-stat"><strong>{latest??'—'}</strong><span>Latest Year</span></div><div className="ma-stat"><strong>{types.length}</strong><span>Archive Types</span></div></div></div>
+      <div className="ma-hero-inner"><div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><span>Race Programs</span></div><div className="ma-hero-grid"><div><div className="ma-eyebrow">Printed Racing Archive</div><h1 className="ma-title">Race Programs & Yearbooks</h1><div className="ma-subtitle">Race Night Preserved on Paper</div><p className="ma-lede">Explore digitized race-night programs, souvenir books, yearbooks, and special-event publications from tracks and series across the Upper Midwest.</p><div className="ma-actions"><Link href="/media" classNameName="ma-button">Back to Media Archive</Link><Link href="/media/newspapers" className="ma-button-ghost">Racing Newspapers</Link></div></div><div className="ma-hero-media">{heroPrograms.map(p=><img key={p.slug} src={p.coverImage} alt={p.title} className="ma-cover" />)}</div></div><div className="ma-stats"><div className="ma-stat"><strong>{programs.length}</strong><span>Publications</span></div><div className="ma-stat"><strong>{pageCount.toLocaleString()}</strong><span>Scanned Pages</span></div><div className="ma-stat"><strong>{earliest??'—'}</strong><span>Earliest Year</span></div><div className="ma-stat"><strong>{latest??'—'}</strong><span>Latest Year</span></div><div className="ma-stat"><strong>{types.length}</strong><span>Archive Types</span></div></div></div>
     </section>
 
     {searchablePageCount > 0 ? <section className="ma-section" id="printed-archive-search"><ArchiveSearch collection="print" searchablePages={searchablePageCount} searchableYears={searchableYears} /></section> : null}
 
     <section className="ma-section"><form action="/media/race-programs" className="ma-filter" style={{gridTemplateColumns:'1fr 1fr auto'}}><select name="decade" defaultValue={activeDecade}><option value="all">All Decades</option>{decades.map(d=><option key={d} value={d}>{d}</option>)}</select><select name="type" defaultValue={activeType}><option value="all">All Publication Types</option>{types.map(t=><option key={t} value={t}>{t}</option>)}</select><button type="submit">Apply Filters</button></form></section>
 
-    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Museum Highlights</div><h2 className="ma-h2">Featured Publications</h2></div><div className="ma-note">A rotating selection of preserved covers from the printed archive.</div></div><div className="ma-grid-4">{covers.slice(-8).reverse().map(p=><Link key={p.slug} href={`/media/race-programs/${p.slug}`} className="ma-card"><div className="ma-card-media contain"><img src={p.coverImage} alt={p.title}/></div><div className="ma-card-body"><div className="ma-card-label">{p.year||'Unknown year'} • {p.type||'Publication'}</div><div className="ma-card-title">{p.title}</div><div className="ma-card-meta">{p.track||p.series||'Museum printed archive'}</div><span className="ma-card-link">Open publication →</span></div></Link>)}</div></section>
+    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Museum Highlights</div><h2 className="ma-h2">Featured Publications</h2></div><div className="ma-note">A rotating selection of preserved covers from the printed archive.</div></div><div className="ma-grid-4">{featured.map(p=><Link key={p.slug} href={`/media/race-programs/${p.slug}`} className="ma-card"><div className="ma-card-media contain"><img src={p.coverImage} alt={p.title}/></div><div className="ma-card-body"><div className="ma-card-label">{p.year||'Unknown year'} • {p.type||'Publication'}</div><div className="ma-card-title">{p.title}</div><div className="ma-card-meta">{p.track||p.series||'Museum printed archive'}</div><span className="ma-card-link">Open publication →</span></div></Link>)}</div></section>
 
     <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Complete Printed Archive</div><h2 className="ma-h2">All Publications</h2></div><div className="ma-note">{filtered.length} of {programs.length} publications shown.</div></div><div className="ma-grid-4">{filtered.map(p=><Link key={p.slug} href={`/media/race-programs/${p.slug}`} className="ma-card"><div className="ma-card-media contain">{p.coverImage?<img src={p.coverImage} alt={p.title}/>:<div className="ma-muted">Cover not available</div>}</div><div className="ma-card-body"><div className="ma-card-label">{p.year||'Unknown year'} • {p.type||'Publication'}</div><div className="ma-card-title">{p.title}</div><div className="ma-card-meta">{p.track||p.series||'Upper Midwest racing archive'} • {p.images.length} scanned pages</div><span className="ma-card-link">Open publication →</span></div></Link>)}</div></section>
 
