@@ -5,12 +5,21 @@ import Image from "next/image"
 import type { CSSProperties, ReactNode } from "react"
 
 type NewspaperPage = { label: string; image: string }
+type OcrHighlightLine = {
+  text: string
+  x: number
+  y: number
+  w: number
+  h: number
+  score: number | null
+}
 
 type NewspaperPageViewerProps = {
   pages: NewspaperPage[]
   initialPageIndex?: number | null
   searchQuery?: string | null
   searchSnippet?: string | null
+  highlightLines?: OcrHighlightLine[]
   previousMatchHref?: string | null
   nextMatchHref?: string | null
   matchPosition?: number | null
@@ -48,6 +57,7 @@ export default function NewspaperPageViewer({
   initialPageIndex = null,
   searchQuery = null,
   searchSnippet = null,
+  highlightLines = [],
   previousMatchHref = null,
   nextMatchHref = null,
   matchPosition = null,
@@ -100,6 +110,9 @@ export default function NewspaperPageViewer({
   }, [openPageIndex])
 
   const hasSearchContext = Boolean(searchQuery && (searchSnippet || previousMatchHref || nextMatchHref))
+  const isMatchedPage = openPageIndex !== null && initialPageIndex !== null && openPageIndex === initialPageIndex
+  const activeHighlightLines = isMatchedPage ? highlightLines : []
+  const showSearchPanel = Boolean(isMatchedPage && searchQuery && searchSnippet)
 
   return <>
     <div className="ma-scan-grid">
@@ -122,20 +135,39 @@ export default function NewspaperPageViewer({
       {pages.length > 1 ? <button type="button" style={{...arrow,left:18}} onClick={(e)=>{e.stopPropagation();goPrev()}} aria-label="Previous page">‹</button> : null}
       <div style={shell} onClick={(e)=>e.stopPropagation()}>
         <div style={label}>{pages[openPageIndex].label} <span style={{color:'#788087'}}>• {openPageIndex+1} of {pages.length}</span></div>
-        {searchQuery && searchSnippet ? <div style={searchMatchPanel}>
-          <div style={searchMatchTitle}>OCR MATCH • “{searchQuery}”</div>
+        {showSearchPanel && searchQuery && searchSnippet ? <div style={searchMatchPanel}>
+          <div style={searchMatchTitle}>
+            OCR MATCH • “{searchQuery}”{activeHighlightLines.length ? ` • ${activeHighlightLines.length} ON-PAGE HIGHLIGHT${activeHighlightLines.length === 1 ? '' : 'S'}` : ''}
+          </div>
           <div style={searchMatchText}>{highlightedSearchText(searchSnippet, searchQuery)}</div>
         </div> : null}
-        <div style={{...viewport,height:searchQuery && searchSnippet ? 'calc(92vh - 128px)' : 'calc(92vh - 34px)'}}>
-          <Image
-            src={pages[openPageIndex].image}
-            alt={pages[openPageIndex].label}
-            width={1200}
-            height={1650}
-            priority
-            unoptimized
-            style={zoom === 1 ? fullImageFit : {...fullImageZoomed,width:`${Math.round(1200 * zoom)}px`}}
-          />
+        <div style={{...viewport,height:showSearchPanel ? 'calc(92vh - 128px)' : 'calc(92vh - 34px)'}}>
+          <div style={zoom === 1 ? imageStageFit : {...imageStageZoomed,width:`${Math.round(1200 * zoom)}px`}}>
+            <img
+              src={pages[openPageIndex].image}
+              alt={pages[openPageIndex].label}
+              style={zoom === 1 ? fullImageFit : fullImageZoomed}
+            />
+            {activeHighlightLines.map((line, index) => (
+              <span
+                key={`${line.text}-${index}`}
+                title={line.text}
+                aria-hidden="true"
+                style={{
+                  position:'absolute',
+                  left:`${line.x * 100}%`,
+                  top:`${line.y * 100}%`,
+                  width:`${line.w * 100}%`,
+                  height:`${Math.max(line.h * 100, .7)}%`,
+                  background:'rgba(255,220,55,.34)',
+                  border:'2px solid rgba(255,214,31,.96)',
+                  boxShadow:'0 0 0 2px rgba(0,0,0,.22),0 0 12px rgba(255,214,31,.35)',
+                  pointerEvents:'none',
+                  zIndex:2,
+                }}
+              />
+            ))}
+          </div>
         </div>
       </div>
       {pages.length > 1 ? <button type="button" style={{...arrow,right:18}} onClick={(e)=>{e.stopPropagation();goNext()}} aria-label="Next page">›</button> : null}
@@ -156,8 +188,10 @@ const overlay: CSSProperties = {position:'fixed',inset:0,zIndex:9999,background:
 const shell: CSSProperties = {width:'90vw',height:'92vh',display:'flex',flexDirection:'column',alignItems:'center'}
 const viewport: CSSProperties = {width:'100%',overflow:'auto',display:'flex',alignItems:'flex-start',justifyContent:'center',padding:'0 8px 72px'}
 const label: CSSProperties = {color:'#f4f4f4',fontSize:13,fontWeight:900,marginBottom:8,textTransform:'uppercase',letterSpacing:'.08em',flex:'0 0 auto'}
-const fullImageFit: CSSProperties = {width:'auto',maxWidth:'88vw',height:'auto',maxHeight:'82vh',objectFit:'contain',background:'#eee4cf',border:'1px solid #4a5157',boxShadow:'0 20px 60px rgba(0,0,0,.7)',flex:'0 0 auto'}
-const fullImageZoomed: CSSProperties = {maxWidth:'none',height:'auto',objectFit:'contain',background:'#eee4cf',border:'1px solid #4a5157',boxShadow:'0 20px 60px rgba(0,0,0,.7)',flex:'0 0 auto'}
+const imageStageFit: CSSProperties = {position:'relative',display:'inline-block',lineHeight:0,maxWidth:'88vw',maxHeight:'82vh',flex:'0 0 auto'}
+const imageStageZoomed: CSSProperties = {position:'relative',display:'inline-block',lineHeight:0,maxWidth:'none',flex:'0 0 auto'}
+const fullImageFit: CSSProperties = {display:'block',width:'auto',maxWidth:'88vw',height:'auto',maxHeight:'82vh',objectFit:'contain',background:'#eee4cf',border:'1px solid #4a5157',boxShadow:'0 20px 60px rgba(0,0,0,.7)'}
+const fullImageZoomed: CSSProperties = {display:'block',width:'100%',height:'auto',maxWidth:'none',objectFit:'contain',background:'#eee4cf',border:'1px solid #4a5157',boxShadow:'0 20px 60px rgba(0,0,0,.7)'}
 const close: CSSProperties = {position:'fixed',top:16,right:22,width:42,height:42,borderRadius:999,border:'1px solid #555e65',background:'#11171b',color:'#fff',fontSize:28,cursor:'pointer',zIndex:2}
 const arrow: CSSProperties = {position:'fixed',top:'50%',transform:'translateY(-50%)',width:48,height:74,border:'1px solid #555e65',background:'rgba(17,23,27,.9)',color:'#fff',fontSize:48,lineHeight:'48px',cursor:'pointer',zIndex:2}
 const zoomControls: CSSProperties = {position:'fixed',top:16,left:'50%',transform:'translateX(-50%)',zIndex:3,display:'flex',alignItems:'center',gap:6,padding:'6px 8px',border:'1px solid #555e65',background:'rgba(17,23,27,.96)',borderRadius:8,boxShadow:'0 8px 28px rgba(0,0,0,.45)'}
