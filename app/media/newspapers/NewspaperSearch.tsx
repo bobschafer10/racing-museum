@@ -53,9 +53,19 @@ type SearchOptions = {
   pageSize: number
 }
 
-const NEWSPAPER_EXAMPLES = ["Dick Trickle", "Miles Melius", "point standings", "Slinger"]
-const PRINT_EXAMPLES = ["Dick Trickle", "champion", "point standings", "Slinger"]
+const NEWSPAPER_EXAMPLES = ["\"Dick Trickle\"", "\"Miles Melius\"", "\"point standings\"", "Slinger"]
+const PRINT_EXAMPLES = ["\"Dick Trickle\"", "champion", "\"point standings\"", "Slinger"]
 const SEARCH_PARAM_PREFIX = "ocr"
+
+function exactPhraseFromQuery(query: string) {
+  const trimmed = query.trim()
+  if (trimmed.length < 3) return null
+  const straight = trimmed.startsWith('"') && trimmed.endsWith('"')
+  const smart = trimmed.startsWith("“") && trimmed.endsWith("”")
+  if (!straight && !smart) return null
+  const phrase = trimmed.slice(1, -1).trim()
+  return phrase.length >= 2 ? phrase : null
+}
 
 function displayDate(value: string | null) {
   if (!value) return null
@@ -89,13 +99,16 @@ function escapeRegex(value: string) {
 }
 
 function highlightedSearchText(text: string, query: string): ReactNode[] {
-  const terms = Array.from(
-    new Set(
-      [query.trim(), ...query.trim().replace(/["'()]/g, " ").split(/\s+/)]
-        .map((value) => value.trim())
-        .filter((value) => value.length >= 2),
-    ),
-  ).sort((a, b) => b.length - a.length)
+  const exactPhrase = exactPhraseFromQuery(query)
+  const terms = exactPhrase
+    ? [exactPhrase]
+    : Array.from(
+        new Set(
+          [query.trim(), ...query.trim().replace(/["'“”()]/g, " ").split(/\s+/)]
+            .map((value) => value.trim())
+            .filter((value) => value.length >= 2),
+        ),
+      ).sort((a, b) => b.length - a.length)
 
   if (!terms.length) return [text]
   const matcher = new RegExp(`(${terms.map(escapeRegex).join("|")})`, "gi")
@@ -303,6 +316,7 @@ export default function NewspaperSearch({
   const start = total ? (page - 1) * pageSize + 1 : 0
   const end = total ? Math.min(page * pageSize, total) : 0
   const span = yearSpan(searchableYears)
+  const searchedExactPhrase = exactPhraseFromQuery(searchedQuery)
 
   return (
     <div className="ma-ocr-search" aria-busy={loading}>
@@ -337,6 +351,9 @@ export default function NewspaperSearch({
           <button type="submit" disabled={loading}>{loading ? "Searching…" : "Search Archive"}</button>
           {searchedQuery || error ? <button type="button" className="ma-ocr-clear" onClick={clearSearch} disabled={loading}>Clear</button> : null}
         </div>
+        <div className="ma-ocr-search-help">
+          <strong>Exact phrase:</strong> put the words in quotation marks, for example <code>"Tony Strupp"</code>. Without quotes, all words may appear elsewhere on the same page.
+        </div>
         <div className="ma-ocr-examples">
           <span>Try:</span>
           {examples.map((example) => (
@@ -357,6 +374,9 @@ export default function NewspaperSearch({
             <div>
               <strong>{total.toLocaleString()} matching page{total === 1 ? "" : "s"}</strong>
               <span> for “{searchedQuery}”</span>
+              <span className={`ma-ocr-search-mode ${searchedExactPhrase ? "exact" : "broad"}`}>
+                {searchedExactPhrase ? "Exact phrase" : "All words"}
+              </span>
             </div>
             {total > 0 ? <span>Showing {start.toLocaleString()}–{end.toLocaleString()} of {total.toLocaleString()}</span> : null}
           </div>
@@ -410,7 +430,9 @@ export default function NewspaperSearch({
       ) : null}
 
       {!loading && searchedQuery && !error && results.length === 0 ? (
-        <div className="ma-ocr-message">No OCR-indexed pages matched those filters. OCR can miss historical type, so try a shorter name, alternate spelling, another year, or All {isPrint ? "Printed Archive" : "Publications"}.</div>
+        <div className="ma-ocr-message">
+          No OCR-indexed pages matched those filters. {searchedExactPhrase ? "Try removing the quotation marks for a broader all-words search, or " : "Try "}a shorter name, alternate spelling, another year, or All {isPrint ? "Printed Archive" : "Publications"}.
+        </div>
       ) : null}
 
       {results.length ? (
