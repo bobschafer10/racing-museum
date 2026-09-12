@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { FormEvent, ReactNode, useEffect, useMemo, useRef, useState } from "react"
+import { supabase } from "@/lib/supabase"
 
 type Collection = "newspaper" | "print"
 
@@ -53,9 +54,47 @@ type SearchOptions = {
   pageSize: number
 }
 
+type RawSearchRow = {
+  page_id: number
+  document_type: string
+  source_key: string
+  document_slug: string
+  document_title: string
+  publication_year: number | null
+  issue_date: string | null
+  page_label: string | null
+  page_number: number | null
+  storage_path: string
+  avg_confidence: number | null
+  ocr_text: string | null
+  total_count: number
+}
+
+type RawFacetRow = {
+  facet_kind: "total" | "source" | "year"
+  facet_value: string
+  match_count: number
+}
+
 const NEWSPAPER_EXAMPLES = ["\"Dick Trickle\"", "\"Miles Melius\"", "\"point standings\"", "Slinger"]
 const PRINT_EXAMPLES = ["\"Dick Trickle\"", "champion", "\"point standings\"", "Slinger"]
 const SEARCH_PARAM_PREFIX = "ocr"
+const MEDIA_BASE_URL = "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/"
+const SOURCE_NAMES: Record<string, string> = {
+  "midwest-racing-news": "Midwest Racing News",
+  "checkered-flag-racing-news": "Checkered Flag Racing News",
+  "national-speed-sport-news": "National Speed Sport News",
+  "hawkeye-racing-news": "Hawkeye Racing News",
+  "all-the-dirt-racing-news": "All The Dirt Racing News",
+  yearbook: "Yearbooks",
+  program: "Race Programs",
+}
+const SOURCE_ORDER: Record<string, number> = {
+  "midwest-racing-news": 1,
+  "checkered-flag-racing-news": 2,
+  yearbook: 1,
+  program: 2,
+}
 
 function exactPhraseFromQuery(query: string) {
   const trimmed = query.trim()
@@ -128,6 +167,152 @@ function safePage(value: string | null) {
   return Number.isInteger(parsed) && parsed > 0 ? parsed : 1
 }
 
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+function snippet(text: string, query: string) {
+  const clean = text.replace(/===\s*COLUMN\s+\d+\s*===/gi, " ").replace(/\s+/g, " ").trim()
+  if (!clean) return ""
+  const phrase = exactPhraseFromQuery(query)?.toLowerCase() || query.trim().toLowerCase()
+  const terms = query.trim().replace(/["'“”()]/g, " ").split(/\s+/).filter((value) => value.length >= 2)
+  const lower = clean.toLowerCase()
+  let hit = phrase ? lower.indexOf(phrase) : -1
+  if (hit < 0) {
+    for (const term of terms) {
+      const found = lower.indexOf(term.toLowerCase())
+      if (found >= 0 && (hit < 0 || found < hit)) hit = found
+    }
+  }
+  const radius = 180
+  const start = hit > radius ? hit - radius : 0
+  const end = Math.min(clean.length, (hit >= 0 ? hit : 0) + radius + 220)
+  return `${start > 0 ? "…" : ""}${clean.slice(start, end).trim()}${end < clean.length ? "…" : ""}`
+}
+
+function sessionCacheKey(query: string, collection: Collection, options: SearchOptions) {
+  return `umarm-ocr:${JSON.stringify({ query, collection, ...options })}`
+}
+
+function readSessionCache(key: string): SearchResponse | null {
+  if (typeof window === "undefined") return null
+  try {
+    const raw = window.sessionStorage.getItem(key)
+    if (!raw) return null
+    const parsed = JSON.parse(raw) as { savedAt: number; payload: SearchResponse }
+    if (!parsed?.payload || Date.now() - parsed.savedAt > 30 * 60 * 1000) return null
+    return parsed.payload
+  } catch {
+    return null
+  }
+}
+
+function writeSessionCache(key: string, payload: SearchResponse) {
+  if (typeof window === "undefined") return
+  try {
+    window.sessionStorage.setItem(key, JSON.stringify({ savedAt: Date.now(), payload }))
+  } catch {
+    // Search must continue even when browser storage is unavailable.
+  }
+}
+
+async function directSupabaseSearch(query: string, collection: Collection, options: SearchOptions): Promise<SearchResponse> {
+  const source = options.source === "all" ? null : options.source
+  const yearNumber = Number(options.year)
+  const year = options.year !== "all" && Number.isInteger(yearNumber) ? yearNumber : null
+  const offset = (options.page - 1) * options.pageSize
+
+  const { data, error } = await supabase.rpc("search_museum_ocr", {
+    p_query: query,
+    p_collection: collection,
+    p_source: source,
+    p_year: year,
+    p_sort: options.sort,
+    p_limit: options.pageSize,
+    p_offset: offset,
+  })
+  if (error) throw new Error(error.message || "Direct archive search failed.")
+
+  const rows = (data || []) as RawSearchRow[]
+  const total = Number(rows[0]?.total_count || 0)
+  const totalPages = Math.max(1, Math.ceil(total / options.pageSize))
+
+  const facetResponse = await supabase.rpc("search_museum_ocr_facets", {
+    p_query: query,
+    p_collection: collection,
+    p_source: source,
+    p_year: year,
+  })
+  const facets = (facetResponse.error ? [] : facetResponse.data || []) as RawFacetRow[]
+
+  const sources = facets
+    .filter((facet) => facet.facet_kind === "source")
+    .map((facet) => ({
+      key: facet.facet_value,
+      label: SOURCE_NAMES[facet.facet_value] || facet.facet_value,
+      count: Number(facet.match_count),
+    }))
+    .sort((a, b) => (SOURCE_ORDER[a.key] || 99) - (SOURCE_ORDER[b.key] || 99) || a.label.localeCompare(b.label))
+
+  const years = facets
+    .filter((facet) => facet.facet_kind === "year")
+    .map((facet) => ({ year: Number(facet.facet_value), count: Number(facet.match_count) }))
+    .filter((facet) => Number.isFinite(facet.year))
+    .sort((a, b) => b.year - a.year)
+
+  const results = rows.map((row, rowIndex) => {
+    const isNewspaper = row.document_type === "newspaper"
+    const sourceName = SOURCE_NAMES[row.source_key] || row.source_key
+    const documentTitle = isNewspaper ? sourceName : row.document_title
+    const scanUrl = `${MEDIA_BASE_URL}${row.storage_path}`
+    const resultParams = new URLSearchParams()
+    if (row.page_number) resultParams.set("sourcePage", String(row.page_number))
+    resultParams.set("q", query)
+    resultParams.set("sort", options.sort)
+    resultParams.set("source", source || "all")
+    if (year) resultParams.set("year", String(year))
+    resultParams.set("searchIndex", String(offset + rowIndex))
+    resultParams.set("searchTotal", String(total))
+    resultParams.set("pageSize", String(options.pageSize))
+
+    const href = isNewspaper
+      ? `/media/newspapers/${row.document_slug}/${row.issue_date}?${resultParams.toString()}`
+      : row.page_number
+        ? `/media/race-programs/${row.document_slug}?${resultParams.toString()}`
+        : scanUrl
+
+    return {
+      id: `${row.document_type}-${row.page_id}`,
+      documentType: row.document_type,
+      sourceKey: row.source_key,
+      sourceName,
+      documentTitle,
+      publicationYear: row.publication_year,
+      issueDate: row.issue_date,
+      page: row.page_number,
+      pageLabel: row.page_label,
+      snippet: snippet(row.ocr_text || "", query),
+      confidence: row.avg_confidence,
+      href,
+      image: scanUrl,
+    }
+  })
+
+  return {
+    query,
+    total,
+    page: options.page,
+    pageSize: options.pageSize,
+    totalPages,
+    sort: options.sort,
+    source: options.source,
+    year,
+    sources,
+    years,
+    results,
+  }
+}
+
 export default function NewspaperSearch({
   searchablePages,
   searchableYears,
@@ -151,6 +336,7 @@ export default function NewspaperSearch({
   const [sort, setSort] = useState("relevance")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const [warning, setWarning] = useState("")
   const requestController = useRef<AbortController | null>(null)
   const requestSequence = useRef(0)
   const restoredFromUrl = useRef(false)
@@ -211,26 +397,59 @@ export default function NewspaperSearch({
     setPageSize(nextPageSize)
     setLoading(true)
     setError("")
+    setWarning("")
+
+    const params = new URLSearchParams({
+      q,
+      collection,
+      page: String(nextPage),
+      pageSize: String(nextPageSize),
+      sort: nextSort,
+    })
+    if (nextSource !== "all") params.set("source", nextSource)
+    if (nextYear !== "all") params.set("year", nextYear)
+    const cacheKey = sessionCacheKey(q, collection, nextOptions)
 
     try {
-      const params = new URLSearchParams({
-        q,
-        collection,
-        page: String(nextPage),
-        pageSize: String(nextPageSize),
-        sort: nextSort,
-      })
-      if (nextSource !== "all") params.set("source", nextSource)
-      if (nextYear !== "all") params.set("year", nextYear)
+      let payload: SearchResponse | null = null
+      let lastError: Error | null = null
 
-      const response = await fetch(`/api/newspaper-search?${params.toString()}`, {
-        cache: "no-store",
-        signal: controller.signal,
-      })
-      const payload = (await response.json()) as SearchResponse
-      if (!response.ok) throw new Error(payload.error || "Search failed.")
+      for (let attempt = 0; attempt < 3 && !payload; attempt += 1) {
+        try {
+          const response = await fetch(`/api/newspaper-search?${params.toString()}`, {
+            cache: "no-store",
+            signal: controller.signal,
+          })
+          const candidate = (await response.json()) as SearchResponse
+          if (response.ok) {
+            payload = candidate
+            break
+          }
+          lastError = new Error(candidate.error || `Archive search returned ${response.status}.`)
+          if (response.status < 500) break
+        } catch (requestError) {
+          if (requestError instanceof DOMException && requestError.name === "AbortError") throw requestError
+          lastError = requestError instanceof Error ? requestError : new Error("Archive search failed.")
+        }
+        if (attempt < 2) await delay(attempt === 0 ? 250 : 650)
+      }
+
+      if (!payload) {
+        try {
+          payload = await directSupabaseSearch(q, collection, nextOptions)
+        } catch (directError) {
+          const cached = readSessionCache(cacheKey)
+          if (cached) {
+            payload = cached
+            setWarning("Live archive connection was interrupted; showing the last successful results for this exact search.")
+          } else {
+            throw directError instanceof Error ? directError : lastError || new Error("Archive search failed.")
+          }
+        }
+      }
+
       if (sequence !== requestSequence.current) return
-
+      writeSessionCache(cacheKey, payload)
       setResults(payload.results || [])
       setSources(payload.sources || [])
       setYears(payload.years || [])
@@ -250,7 +469,7 @@ export default function NewspaperSearch({
       setYears([])
       setTotal(0)
       setTotalPages(1)
-      setError(searchError instanceof Error ? searchError.message : "Search failed.")
+      setError(searchError instanceof Error ? searchError.message : "Archive search is temporarily unavailable.")
     } finally {
       if (sequence === requestSequence.current) setLoading(false)
     }
@@ -302,6 +521,7 @@ export default function NewspaperSearch({
     setSort("relevance")
     setLoading(false)
     setError("")
+    setWarning("")
     clearSearchUrl()
   }
 
@@ -366,6 +586,7 @@ export default function NewspaperSearch({
         {loading ? `Searching for ${query.trim() || "matches"}…` : searchedQuery && !error ? `${total.toLocaleString()} matching page${total === 1 ? "" : "s"} found.` : ""}
       </div>
 
+      {warning ? <div className="ma-ocr-message">{warning}</div> : null}
       {error ? <div className="ma-ocr-message error">{error}</div> : null}
 
       {!loading && searchedQuery && !error ? (
