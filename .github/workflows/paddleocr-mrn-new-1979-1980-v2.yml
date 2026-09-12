@@ -1,0 +1,208 @@
+name: Refresh New Newspapers and OCR 1979-1980 v2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [paddleocr-mrn-pilot]
+    paths: ['.github/workflows/paddleocr-mrn-new-1979-1980-v2.yml']
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  refresh-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          path: tools
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+          token: ${{ github.token }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install newspaper manager dependencies
+        working-directory: tools/museum-newspaper-manager
+        run: npm install --no-audit --no-fund
+      - name: Rebuild newspaper manifest from Supabase Storage
+        working-directory: tools/museum-newspaper-manager
+        run: node rebuild-manifest-from-storage.js
+      - name: Copy and verify rebuilt manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p site/public/data site/museum-newspaper-manager/public/data
+          cp tools/public/data/newspapers-manifest.json site/public/data/newspapers-manifest.json
+          cp tools/museum-newspaper-manager/public/data/newspapers-manifest.json site/museum-newspaper-manager/public/data/newspapers-manifest.json
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          rows=json.loads(Path('site/public/data/newspapers-manifest.json').read_text(encoding='utf-8'))
+          c=Counter((x.get('publicationSlug'),int(x.get('year') or 0)) for x in rows)
+          for key in [('midwest-racing-news',1979),('midwest-racing-news',1980),('checkered-flag-racing-news',1979)]:
+              print(key,c[key])
+              if c[key] < 1: raise SystemExit(f'Missing {key}')
+          PY
+      - name: Commit manifest to main
+        working-directory: site
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'UMARM OCR Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add public/data/newspapers-manifest.json museum-newspaper-manager/public/data/newspapers-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh newspaper manifest for MRN 1979-1980 and CFRN 1979'
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: newspaper-manifest-1979-1980-v2
+          path: site/public/data/newspapers-manifest.json
+          retention-days: 7
+
+  prepare:
+    needs: refresh-manifest
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      page_count: ${{ steps.matrix.outputs.page_count }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: newspaper-manifest-1979-1980-v2
+          path: manifest
+      - name: Build OCR matrix
+        id: matrix
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - "$GITHUB_OUTPUT" <<'PY'
+          import json,re,sys
+          from collections import Counter
+          from pathlib import Path
+          from urllib.parse import unquote,urlparse
+          rows=json.loads(Path('manifest/newspapers-manifest.json').read_text(encoding='utf-8'))
+          targets={('midwest-racing-news',1979):'mrn',('midwest-racing-news',1980):'mrn',('checkered-flag-racing-news',1979):'cfrn'}
+          image_re=re.compile(r'.+\.(?:jpg|jpeg|png|webp)$',re.I)
+          out=[]; counts=Counter(); total=0
+          for issue in rows:
+              pub=str(issue.get('publicationSlug') or ''); year=int(issue.get('year') or 0); key=(pub,year)
+              if key not in targets: continue
+              date=str(issue.get('issueDate') or issue.get('slug') or '')
+              pages=[]; seen=set()
+              for url in issue.get('pages') or []:
+                  if not isinstance(url,str) or not url: continue
+                  name=unquote(urlparse(url).path.split('/')[-1]); low=name.lower()
+                  if low in {'front-cover.jpg','back-cover.jpg','thumbnail.jpg'}: continue
+                  if not image_re.fullmatch(name): continue
+                  if '/' in name or '\\' in name or name in {'.','..'}: raise SystemExit(f'Unsafe page {name!r}')
+                  if name not in seen: seen.add(name); pages.append(name)
+              if not pages: raise SystemExit(f'No source pages for {pub} {date}')
+              out.append({'publication':pub,'pub_short':targets[key],'year':year,'issue':date,'pages_json':json.dumps(pages,separators=(',',':'))})
+              counts[key]+=1; total+=len(pages)
+          out.sort(key=lambda x:(x['publication'],x['year'],x['issue']))
+          for key in targets:
+              print(key,counts[key])
+              if counts[key] < 1: raise SystemExit(f'No issues for {key}')
+          print('issues',len(out),'pages',total)
+          with open(sys.argv[1],'a',encoding='utf-8') as f:
+              f.write('matrix='+json.dumps({'include':out},separators=(',',':'))+'\n')
+              f.write(f'page_count={total}\n')
+          PY
+
+  ocr:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PaddleOCR CPU runtime
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+      - name: OCR issue
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: ${{ matrix.publication }}
+          MRN_ISSUE_DATE: ${{ matrix.issue }}
+          MRN_PAGES_JSON: ${{ matrix.pages_json }}
+          MRN_OUTPUT_ROOT: audit/newspapers-1979-1980/${{ matrix.pub_short }}/${{ matrix.issue }}
+        run: python museum-newspaper-manager/paddleocr-mrn-runner.py
+      - name: Upload OCR artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-v2-${{ matrix.pub_short }}-${{ matrix.issue }}
+          path: audit/newspapers-1979-1980/${{ matrix.pub_short }}/${{ matrix.issue }}
+          if-no-files-found: warn
+          retention-days: 14
+
+  ingest:
+    needs: [prepare,ocr]
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: news-v2-*
+          path: collected
+          merge-multiple: false
+      - name: Get OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          TOKEN="$(curl -fsSL -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+      - name: Ingest OCR pages and standings candidates
+        env:
+          EXPECTED_PAGES: ${{ needs.prepare.outputs.page_count }}
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          total=0; candidate_total=0
+          while IFS= read -r summary; do
+            dir="$(dirname "$summary")"; issue="$(jq -r '.issue_date' "$summary")"; pub="$(jq -r '.publication' "$summary")"; year="${issue:0:4}"
+            python - "$dir" "$year" "$pub" > /tmp/ocr-payload.json <<'PY'
+          import json,sys
+          from pathlib import Path
+          root=Path(sys.argv[1]); year=int(sys.argv[2]); pub=sys.argv[3]
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          pages=[]
+          for meta in summary.get('pages',[]):
+              page=str(meta['page']); stem=Path(page).stem
+              text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+              pages.append({'page':page,'text':text,'meta':meta})
+          print(json.dumps({'publication':pub,'year':year,'issue':summary['issue_date'],'summary':summary,'pages':pages,'candidates':candidates},separators=(',',':')))
+          PY
+            response="$(curl -fsSL -X POST -H "Authorization: Bearer ${OIDC_TOKEN}" -H 'Content-Type: application/json' --data-binary @/tmp/ocr-payload.json 'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+            echo "$pub $issue: $response"
+            total=$((total + $(echo "$response" | jq -r '.updated // 0')))
+            candidate_total=$((candidate_total + $(echo "$response" | jq -r '.candidates_saved // 0')))
+          done < <(find collected -name summary.json -print | sort)
+          echo "Imported searchable pages: $total / $EXPECTED_PAGES"
+          echo "Saved standings candidates: $candidate_total"
+          test "$total" -eq "$EXPECTED_PAGES"
