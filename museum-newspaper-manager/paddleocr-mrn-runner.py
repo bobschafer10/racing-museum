@@ -68,7 +68,7 @@ TEXT_DIR = ROOT / "text"
 for folder in (INPUT, PREPARED, JSON_DIR, TEXT_DIR):
     folder.mkdir(parents=True, exist_ok=True)
 
-USER_AGENT = "UMARM newspaper OCR research/1.4"
+USER_AGENT = "UMARM newspaper OCR research/1.5"
 KEYWORD_RE = re.compile(
     r"\b(final\s+point(?:s|\s+standings)?|final\s+standings|point\s+standings|"
     r"season\s+standings|championship\s+points?|points?\s+leaders?|standings)\b",
@@ -177,6 +177,29 @@ def extract_lines(payloads: list[dict]) -> list[dict]:
                 "xc": sum(xs) / len(xs), "yc": sum(ys) / len(ys),
             })
     return lines
+
+
+def compact_line_layout(lines: list[dict], prepared_size: tuple[int, int]) -> dict:
+    """Persist normalized OCR line boxes so the website can highlight source scans."""
+    width, height = prepared_size
+    if width <= 0 or height <= 0:
+        return {"space": "normalized", "source": "prepared_image", "lines": []}
+
+    layout = []
+    for line in lines:
+        x0 = max(0.0, min(float(width), float(line["x0"])))
+        y0 = max(0.0, min(float(height), float(line["y0"])))
+        x1 = max(x0, min(float(width), float(line["x1"])))
+        y1 = max(y0, min(float(height), float(line["y1"])))
+        layout.append({
+            "t": line["text"],
+            "x": round(x0 / width, 6),
+            "y": round(y0 / height, 6),
+            "w": round((x1 - x0) / width, 6),
+            "h": round((y1 - y0) / height, 6),
+            "s": round(float(line["score"]), 4) if line["score"] is not None else None,
+        })
+    return {"space": "normalized", "source": "prepared_image", "lines": layout}
 
 
 def assign_columns(lines: list[dict], page_width: int) -> list[list[dict]]:
@@ -312,6 +335,7 @@ def main() -> None:
             "minimum_recognition_score": round(min(scores), 4) if scores else None,
             "standings_candidates": len(hits),
             "ocr_seconds": elapsed,
+            "line_layout": compact_line_layout(lines, prep_meta[page]["prepared_size"]),
         }
         summary_pages.append(page_summary)
         print(
