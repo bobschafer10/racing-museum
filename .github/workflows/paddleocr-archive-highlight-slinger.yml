@@ -1,0 +1,99 @@
+name: PaddleOCR Archive Highlight Backfill - Slinger
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-archive-highlight-slinger.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: paddleocr-archive-highlight-slinger
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Check out archive OCR runner
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-archive-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR Slinger history book with line boxes
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          ARCHIVE_DOCUMENT_TYPE: yearbook
+          ARCHIVE_DOCUMENT_SLUG: 1948-slinger-speedway-wi-yearbook
+          ARCHIVE_DOCUMENT_TITLE: 1948-1981 That Sunday Night Tradition Book
+          ARCHIVE_PUBLICATION_YEAR: '1948'
+          ARCHIVE_COLUMN_COUNT: '2'
+          ARCHIVE_PAGES_JSON: '["002.jpg","004.jpg","006.jpg","008.jpg","010.jpg","012.jpg","014.jpg","016.jpg","018.jpg","020.jpg","022.jpg","024.jpg","026.jpg","028.jpg","030.jpg","032.jpg","034.jpg","back-cover.jpg","front-cover.jpg"]'
+          ARCHIVE_OUTPUT_ROOT: audit/paddleocr-archive-highlight/1948-slinger-speedway-wi-yearbook
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-archive-runner.py
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-archive-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest OCR text and highlight boxes
+        shell: bash
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          set -euo pipefail
+          payload='audit/paddleocr-archive-highlight/1948-slinger-speedway-wi-yearbook/payload.json'
+          response="$(curl -fsSL \
+            --retry 3 \
+            --retry-delay 3 \
+            --retry-all-errors \
+            -X POST \
+            -H "Authorization: Bearer ${OIDC_TOKEN}" \
+            -H 'Content-Type: application/json' \
+            --data-binary "@${payload}" \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/archive-ocr-import')"
+          echo "$response"
+          test "$(echo "$response" | jq -r '.ok')" = 'true'
+          test "$(echo "$response" | jq -r '.updated')" -eq 19
+
+      - name: Upload audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-highlight-slinger
+          path: audit/paddleocr-archive-highlight/1948-slinger-speedway-wi-yearbook
+          if-no-files-found: warn
+          retention-days: 7
