@@ -207,7 +207,13 @@ export async function GET(request: NextRequest) {
       const resultParams = new URLSearchParams({
         sourcePage: String(row.page_number),
         q: query,
+        sort,
+        source: source || "all",
+        searchIndex: String(offset + rowIndex),
+        searchTotal: String(total),
+        pageSize: String(pageSize),
       })
+      if (year) resultParams.set("year", String(year))
       href = `/media/race-programs/${row.document_slug}?${resultParams.toString()}`
     } else {
       href = scanUrl
