@@ -34,6 +34,8 @@ const SOURCE_ORDER: Record<string, number> = {
   program: 2,
 }
 
+const MEDIA_BASE_URL = "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/"
+
 type SearchRow = {
   page_id: number
   document_type: string
@@ -187,6 +189,7 @@ export async function GET(request: NextRequest) {
     const isNewspaper = row.document_type === "newspaper"
     const sourceName = SOURCE_NAMES[row.source_key] || row.source_key
     const documentTitle = isNewspaper ? sourceName : row.document_title
+    const scanUrl = `${MEDIA_BASE_URL}${row.storage_path}`
 
     let href: string
     if (isNewspaper) {
@@ -201,7 +204,10 @@ export async function GET(request: NextRequest) {
       resultParams.set("pageSize", String(pageSize))
       href = `/media/newspapers/${row.document_slug}/${row.issue_date}?${resultParams.toString()}`
     } else {
-      href = `/media/race-programs/${row.document_slug}${row.page_number ? `#scan-page-${row.page_number}` : ""}`
+      // OCR results for programs/yearbooks represent one exact scanned page.
+      // Open that scan directly instead of dropping the researcher at the top
+      // of the entire publication and forcing them to locate the match again.
+      href = scanUrl
     }
 
     return {
@@ -217,7 +223,7 @@ export async function GET(request: NextRequest) {
       snippet: makeSnippet(row.ocr_text || "", query),
       confidence: row.avg_confidence,
       href,
-      image: `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`,
+      image: scanUrl,
     }
   })
 
