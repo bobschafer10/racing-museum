@@ -8,10 +8,31 @@ function scanPageNumber(image: string) {
   return match ? Number(match[1]) : null
 }
 
-export default async function RaceProgramDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params
+function firstParam(value: string | string[] | undefined) {
+  if (Array.isArray(value)) return value[0]
+  return value
+}
+
+type RaceProgramDetailProps = {
+  params: Promise<{ slug: string }>
+  searchParams: Promise<{
+    sourcePage?: string | string[]
+    q?: string | string[]
+  }>
+}
+
+export default async function RaceProgramDetailPage({ params, searchParams }: RaceProgramDetailProps) {
+  const [{ slug }, resolvedSearchParams] = await Promise.all([params, searchParams])
   const program = await getRaceProgramBySlug(slug)
   if (!program) notFound()
+
+  const rawSourcePage = firstParam(resolvedSearchParams.sourcePage)
+  const requestedSourcePage = rawSourcePage && /^\d+$/.test(rawSourcePage) ? Number(rawSourcePage) : null
+  const searchQuery = firstParam(resolvedSearchParams.q)?.trim() || null
+  const matchedImage = requestedSourcePage
+    ? program.images.find((image) => scanPageNumber(image) === requestedSourcePage) || null
+    : null
+  const focusedSearchMatch = Boolean(requestedSourcePage && matchedImage)
 
   const heroImage = program.coverImage || program.images[0] || null
   const pageCount = program.images.length
@@ -35,10 +56,13 @@ export default async function RaceProgramDetailPage({ params }: { params: Promis
                 {[program.year, program.track, program.type].filter(Boolean).join(' • ')}
               </div>
               <p className="ma-lede">
-                {program.description || program.subtitle || 'A digitized race program preserved by the Upper Midwest Auto Racing Museum. Browse the complete surviving publication below.'}
+                {focusedSearchMatch
+                  ? `OCR search match${searchQuery ? ` for “${searchQuery}”` : ''}. The exact scanned page containing the match is shown below.`
+                  : program.description || program.subtitle || 'A digitized race program preserved by the Upper Midwest Auto Racing Museum. Browse the complete surviving publication below.'}
               </p>
               <div className="ma-actions">
                 <Link href="/media/race-programs" className="ma-button">Back to Program Archive</Link>
+                {focusedSearchMatch ? <Link href={`/media/race-programs/${program.slug}`} className="ma-button-ghost">View Complete Publication</Link> : null}
                 {program.track_slug ? <Link href={`/tracks/${program.track_slug}`} className="ma-button-ghost">Open Track Archive</Link> : null}
                 {program.series_slug ? <Link href={`/series/${program.series_slug}`} className="ma-button-ghost">Open Series Archive</Link> : null}
               </div>
@@ -58,35 +82,59 @@ export default async function RaceProgramDetailPage({ params }: { params: Promis
         </div>
       </section>
 
-      <section className="ma-section">
-        <div className="ma-section-head">
-          <div><div className="ma-kicker">Complete Publication</div><h2 className="ma-h2">Scanned Pages</h2></div>
-          <div className="ma-note">Select any page to open the full-resolution scan in a new tab.</div>
-        </div>
-
-        {pageCount === 0 ? (
-          <div className="ma-source">No scanned pages are currently attached to this publication.</div>
-        ) : (
-          <div className="ma-scan-grid">
-            {program.images.map((image, index) => {
-              const sourcePage = scanPageNumber(image)
-              return (
-                <figure
-                  className="ma-scan-frame"
-                  key={image}
-                  id={sourcePage ? `scan-page-${sourcePage}` : undefined}
-                  style={{ scrollMarginTop: 90 }}
-                >
-                  <a href={image} target="_blank" rel="noreferrer">
-                    <img src={image} alt={`${program.title} page ${index + 1}`} loading={index < 4 ? 'eager' : 'lazy'} />
-                  </a>
-                  <figcaption>{index === 0 ? 'Front Cover' : index === pageCount - 1 && program.backCoverImage ? 'Back Cover' : `Page ${index + 1} of ${pageCount}`}</figcaption>
-                </figure>
-              )
-            })}
+      {focusedSearchMatch && matchedImage && requestedSourcePage ? (
+        <section className="ma-section">
+          <div className="ma-section-head">
+            <div>
+              <div className="ma-kicker">OCR Search Match</div>
+              <h2 className="ma-h2">Scanned Page {requestedSourcePage}</h2>
+            </div>
+            <div className="ma-note">
+              {searchQuery ? <>Match for “{searchQuery}”. </> : null}
+              Select the scan to open the full-resolution page in a new tab.
+            </div>
           </div>
-        )}
-      </section>
+
+          <div className="ma-scan-grid" style={{ gridTemplateColumns: 'minmax(0, 1100px)', justifyContent: 'center' }}>
+            <figure className="ma-scan-frame">
+              <a href={matchedImage} target="_blank" rel="noreferrer">
+                <img src={matchedImage} alt={`${program.title} scanned page ${requestedSourcePage}`} loading="eager" />
+              </a>
+              <figcaption>Page {requestedSourcePage} • Exact OCR Search Match</figcaption>
+            </figure>
+          </div>
+        </section>
+      ) : (
+        <section className="ma-section">
+          <div className="ma-section-head">
+            <div><div className="ma-kicker">Complete Publication</div><h2 className="ma-h2">Scanned Pages</h2></div>
+            <div className="ma-note">Select any page to open the full-resolution scan in a new tab.</div>
+          </div>
+
+          {pageCount === 0 ? (
+            <div className="ma-source">No scanned pages are currently attached to this publication.</div>
+          ) : (
+            <div className="ma-scan-grid">
+              {program.images.map((image, index) => {
+                const sourcePage = scanPageNumber(image)
+                return (
+                  <figure
+                    className="ma-scan-frame"
+                    key={image}
+                    id={sourcePage ? `scan-page-${sourcePage}` : undefined}
+                    style={{ scrollMarginTop: 90 }}
+                  >
+                    <a href={image} target="_blank" rel="noreferrer">
+                      <img src={image} alt={`${program.title} page ${index + 1}`} loading={index < 4 ? 'eager' : 'lazy'} />
+                    </a>
+                    <figcaption>{index === 0 ? 'Front Cover' : index === pageCount - 1 && program.backCoverImage ? 'Back Cover' : `Page ${index + 1} of ${pageCount}`}</figcaption>
+                  </figure>
+                )
+              })}
+            </div>
+          )}
+        </section>
+      )}
 
       <section className="ma-section">
         <div className="ma-footer-links">
