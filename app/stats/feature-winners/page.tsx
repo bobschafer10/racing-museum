@@ -208,14 +208,14 @@ const activeDriverSlugs = new Set(
   }
 
   const { data: lastUpdateData } = await supabase
-    .from('stats_feature_winners_rollup')
-    .select('last_win_date')
-    .order('last_win_date', { ascending: false })
+    .from('global_results_view')
+    .select('race_date')
+    .order('race_date', { ascending: false })
     .limit(1)
     .maybeSingle()
 
-  const lastResultsUpdate = lastUpdateData?.last_win_date
-    ? formatDate(lastUpdateData.last_win_date)
+  const lastResultsUpdate = lastUpdateData?.race_date
+    ? formatDate(lastUpdateData.race_date)
     : 'Update date unavailable'
 
   return (
