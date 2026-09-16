@@ -63,6 +63,7 @@ const completedSeries = new Set([
 const specialEventSeriesSlugs = new Set([
   'clash-at-the-creek',
   'usa-nationals',
+  'dick-trickle-99',
   'wissota-100-late-model-division',
   'wissota-100-modified-division',
   'wissota-100-super-stock-division',
