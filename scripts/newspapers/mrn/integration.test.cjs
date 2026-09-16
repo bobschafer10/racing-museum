@@ -42,7 +42,7 @@ test('interrupted ingestion resumes without duplicate objects/rows/entries; veri
     }
     if(u.pathname.startsWith('/storage/v1/object/media/')){
       const k=u.pathname.split('/object/media/')[1];assert(k.startsWith('newspapers/midwest-racing-news/1984-'),'Prior storage write attempted');assert.equal(init.headers['x-upsert'],'false');
-      if(stopSecondPage&&k.endsWith('/2.jpg'))return json({error:'simulated interruption'},400);
+      if(stopSecondPage&&k.endsWith('/2.jpg')){while(!storage.has(k.replace('/2.jpg','/1.jpg')))await new Promise(resolve=>setImmediate(resolve));return json({error:'simulated interruption'},400);}
       assert(!storage.has(k),'Duplicate storage insert attempted');storage.set(k,Buffer.from(init.body));writes.push(k);return json({});
     }
     if(u.pathname==='/rest/v1/newspaper_ocr_pages'){
@@ -68,6 +68,7 @@ test('interrupted ingestion resumes without duplicate objects/rows/entries; veri
   const argv=['--year','1984','--project-root',project,'--source-root',source,'--state-root',state];
   try{
     for(const number of [1,2])await sharp({create:{width:40,height:40,channels:3,background:number===1?'white':'black'}}).jpeg().toFile(path.join(folder,number+'.jpg'));
+    fs.writeFileSync(path.join(folder,'Thumbs.db'),'Windows thumbnail cache fixture');
     await assert.rejects(()=>main(argv,{fetch:fakeFetch,childProcess}),/HTTP 400/);assert(storage.has('newspapers/midwest-racing-news/1984-04-05/1.jpg'));assert.equal(ocr.size,0);assert.equal(gitWrites.length,0);
     stopSecondPage=false;await assert.rejects(()=>main(argv,{fetch:fakeFetch,childProcess}),/OCR failures remain/);assert.equal(storage.size,2);assert.equal(ocr.size,2);assert.equal(gitWrites.length,0);const failed=JSON.parse(fs.readFileSync(path.join(state,'1984/latest-report.json')));assert.equal(failed.failed_ocr_pages.length,1);assert.equal(failed.blank_ocr_pages.length,1);
     failSecondOcr=false;const resumed=await main(argv,{fetch:fakeFetch,childProcess});assert(resumed.completed);assert.equal(resumed.proposed_changes.page_uploads,0);assert.equal(resumed.proposed_changes.ocr_pages,1);assert.equal(resumed.ocr_complete_page_count,2);assert.equal(ocr.size,2);assert.equal(storage.size,7);assert.equal(manifest.length,2);assert.equal(JSON.stringify(manifest[0]),originalPrior);assert.deepEqual(gitWrites,['commit','push']);assert.equal(writes.filter(k=>k==='ocr:newspapers/midwest-racing-news/1984-04-05/1.jpg').length,1);

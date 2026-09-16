@@ -66,7 +66,11 @@ async function main(argv=process.argv.slice(2),dependencies={}) {
     for(const child of children) {
       assert(child.isDirectory()&&!child.isSymbolicLink(),`Unexpected year-level item: ${child.name}; source must contain issue folders`);
       const parsed=parseIssue(child.name,year),issueFolder=path.join(folder,child.name);
-      const files=fs.readdirSync(issueFolder,{withFileTypes:true});
+      const allFiles=fs.readdirSync(issueFolder,{withFileTypes:true});
+      const files=allFiles.filter(f=>{
+        if(f.isFile()&&!f.isSymbolicLink()&&f.name.toLowerCase()==='thumbs.db'){log('ignored_windows_thumbnail_cache',{path:path.join(issueFolder,f.name)});return false;}
+        return true;
+      });
       assert(files.every(f=>f.isFile()&&!f.isSymbolicLink()&&/^\d+\.jpe?g$/i.test(f.name)),`Unexpected files in ${child.name}; numbered JPEG pages required, no source files are silently ignored`);
       const pages=files.map(f=>({number:Number(path.parse(f.name).name),source_filename:f.name,source_path:path.join(issueFolder,f.name),key:`${PREFIX}/${parsed.date}/${Number(path.parse(f.name).name)}.jpg`,issue_date:parsed.date})).sort((a,b)=>a.number-b.number);
       issues.push({...parsed,name:child.name,source_folder:issueFolder,pages});
