@@ -1,0 +1,33 @@
+{
+  "source_issues": 26,
+  "source_pages": 468,
+  "live_manifest_issues": 26,
+  "live_manifest_pages": 468,
+  "unique_page_paths": 468,
+  "prior_manifest_entries_unchanged": 826,
+  "source_dates_and_pages_match": true,
+  "public_page_urls_verified": 468,
+  "missing_public_pages": [],
+  "production_manifest_commit": "105143df1aef2a4926c9abf5ead17a385f04872b",
+  "deployments": [
+    {
+      "context": "Vercel – racing-museum-r786",
+      "state": "pending",
+      "url": "https://vercel.com/robert-schafer-s-projects/racing-museum-r786/BvzPc4wdf72Jm1nAAqyWM3SJ4ngj"
+    },
+    {
+      "context": "Vercel – racing-museum",
+      "state": "success",
+      "url": "https://vercel.com/robert-schafer-s-projects/racing-museum/2j6XSrjXtoUV6g6Sdh2G1DRqUX1k"
+    }
+  ],
+  "public_archive_status": 200,
+  "public_search_status": 200,
+  "public_search_matches": 241,
+  "public_search_results_returned": 25,
+  "missing_issues": [],
+  "duplicate_dates": [],
+  "manifest_architecture_changed": false,
+  "deployment_architecture_changed": false,
+  "year_1983_started": false
+}

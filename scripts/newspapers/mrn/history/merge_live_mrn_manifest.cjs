@@ -1,0 +1,12 @@
+const fs=require('fs'),assert=require('assert');
+const filename='C:/Users/schaf/Desktop/PHOTOS II/mrn-site-1981/public/data/newspapers-manifest.json';
+const old=JSON.parse(fs.readFileSync(filename));
+const entries=JSON.parse(fs.readFileSync('mrn-prepared-1981/1981-manifest-entries.json'));
+const preserved=old.filter(x=>!(x.year===1981&&x.publicationSlug==='midwest-racing-news'));
+const next=[...preserved,...entries];
+assert.deepStrictEqual(next.filter(x=>!(x.year===1981&&x.publicationSlug==='midwest-racing-news')),preserved);
+assert.equal(new Set(entries.map(x=>x.issueDate)).size,26);
+assert.equal(entries.reduce((n,x)=>n+x.pages.length,0),492);
+fs.writeFileSync(filename,JSON.stringify(next,null,2)+'\n');
+fs.writeFileSync('mrn-prepared-1981/manifest-preservation-check.json',JSON.stringify({unchanged_existing_entries:preserved.length,added_1981_issues:26,added_1981_pages:492}));
+console.log({preserved:preserved.length,added:entries.length});

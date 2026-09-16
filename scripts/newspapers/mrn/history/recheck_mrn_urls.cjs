@@ -1,0 +1,5 @@
+const fs=require('fs');const file='mrn-prepared-1981/final-deployment-verification.json';const report=JSON.parse(fs.readFileSync(file));const initial=report.missing_public_pages;
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function main(){let errors=[];let i=0;for(const p of initial){let status;for(let attempt=0;attempt<3;attempt++){await sleep(attempt?2500:800);status=(await fetch('https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/'+p.path,{method:'HEAD',signal:AbortSignal.timeout(30000)})).status;if(status!==429)break;}if(status!==200)errors.push({path:p.path,status});if(++i%10===0)console.log({rechecked:i,remaining:initial.length-i,errors:errors.length});}
+report.initial_rate_limited_page_checks=initial;report.missing_public_pages=errors;report.public_page_urls_successfully_verified=492-errors.length;fs.writeFileSync(file,JSON.stringify(report,null,2));console.log({verified:report.public_page_urls_successfully_verified,unresolved:errors});if(errors.length)process.exitCode=1;}
+main().catch(e=>{console.error(e.message);process.exitCode=1});

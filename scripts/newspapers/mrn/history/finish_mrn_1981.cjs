@@ -1,0 +1,25 @@
+const fs=require('fs'),path=require('path');
+const sharp=require('C:/Users/schaf/racing-museum/museum-newspaper-manager/node_modules/sharp');
+const base='C:/Users/schaf/Desktop/PHOTOS II/mrn-prepared-1981';
+const env=fs.readFileSync('C:/Users/schaf/racing-museum/.env.local','utf8');
+const val=k=>env.match(new RegExp('^'+k+'=(.*)$','m'))?.[1].trim().replace(/^['"]|['"]$/g,'');
+const url=val('NEXT_PUBLIC_SUPABASE_URL'),key=val('SUPABASE_SERVICE_ROLE_KEY');
+if(!url.includes('szvkleurojiwqkkztxtr'))throw Error('Wrong project');
+const audit=JSON.parse(fs.readFileSync(base+'/audit.json'));
+async function request(route,method,body,type='application/json',extra={}){for(let i=0;i<3;i++){try{const r=await fetch(url+route,{method,headers:{apikey:key,Authorization:'Bearer '+key,'Content-Type':type,...extra},body,signal:AbortSignal.timeout(120000)});const t=await r.text();if(r.ok)return t;if(r.status<500)throw Error(t);if(i===2)throw Error(t);}catch(e){if(i===2)throw e;}}}
+async function upload(k,body,type){if(!/^newspapers\/midwest-racing-news\/1981-\d\d-\d\d\//.test(k))throw Error('Out-of-scope storage write');await request('/storage/v1/object/media/'+k,'POST',body,type,{'x-upsert':'true'});fs.appendFileSync(base+'/ingestion-log.jsonl',JSON.stringify({time:new Date().toISOString(),action:'storage_upload',key:k})+'\n');}
+async function syncOcr(){const records=fs.readdirSync(base+'/page-ocr').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync(base+'/page-ocr/'+x))).map(x=>({...x,processed_at:new Date().toISOString(),updated_at:new Date().toISOString()}));for(const r of records)if(!r.issue_date.startsWith('1981-')||!r.storage_path.startsWith('newspapers/midwest-racing-news/1981-'))throw Error('Out-of-scope OCR');for(let i=0;i<records.length;i+=20)await request('/rest/v1/newspaper_ocr_pages?on_conflict=storage_path','POST',JSON.stringify(records.slice(i,i+20)),'application/json',{Prefer:'resolution=merge-duplicates,return=minimal'});console.log('OCR database records synchronized:',records.length);return records;}
+async function main(){const mode=process.argv[2];if(mode==='sync'){await syncOcr();return;}
+const template=JSON.parse(fs.readFileSync(base+'/template-1980-04-03.json'));
+const entries=[];let records=[];
+if(mode==='final'){records=await syncOcr();if(records.length!==audit.pages.length||records.some(x=>!x.ocr_text.trim()||x.status!=='complete'))throw Error('OCR not complete');}
+for(const issue of audit.issues){const date=issue.issue_date,folder='newspapers/midwest-racing-news/'+date;const pages=audit.pages.filter(x=>x.issue_date===date).sort((a,b)=>a.page_number-b.page_number);const publicUrl=k=>url+'/storage/v1/object/public/media/'+k;const title=new Date(date+'T12:00:00Z').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'});
+const meta={...template,slug:date,title,year:1981,issueDate:date,summary:`This ${title} issue of Midwest Racing News preserves regional short-track racing coverage from the Upper Midwest, including race reports, photographs, schedules, advertisements, and period racing news from the season.`,ocrTextPath:publicUrl(folder+'/ocr.txt'),coverImage:publicUrl(folder+'/front-cover.jpg'),backCoverImage:publicUrl(folder+'/back-cover.jpg'),thumbnail:publicUrl(folder+'/thumbnail.jpg'),pages:pages.map(p=>publicUrl(p.object_key)),generatedBy:'Museum Newspaper Manager v1.2.2 compatible 1981 ingestion',generatedAt:new Date().toISOString(),originalFolderName:path.basename(issue.source_folder),normalizedFolder:'midwest-racing-news/'+date,number:path.basename(issue.source_folder).split('-')[3],volume:'XXIII'};
+if(mode==='assets'){for(const [name,file,width,quality] of [['front-cover.jpg',pages[0].output_path,null,88],['back-cover.jpg',pages.at(-1).output_path,null,88],['thumbnail.jpg',pages[0].output_path,520,82]]){let im=sharp(file);if(width)im=im.resize({width,withoutEnlargement:true});await upload(folder+'/'+name,await im.jpeg({quality}).toBuffer(),'image/jpeg');}}
+if(mode==='final'){const texts=records.filter(x=>x.issue_date===date).sort((a,b)=>parseInt(a.page_label)-parseInt(b.page_label));meta.ocrSourceCount=texts.length;await upload(folder+'/ocr.txt',Buffer.from(texts.map(x=>'--- '+x.page_label+' ---\n'+x.ocr_text).join('\n\n')),'text/plain; charset=utf-8');}
+await upload(folder+'/newspaper.json',Buffer.from(JSON.stringify(meta,null,2)),'application/json');entries.push(meta);console.log('Issue metadata:',date);}
+fs.writeFileSync(base+'/1981-manifest-entries.json',JSON.stringify(entries,null,2));
+const manifest=JSON.parse(fs.readFileSync('C:/Users/schaf/racing-museum/public/data/newspapers-manifest.json'));
+for(const e of entries){const index=manifest.findIndex(x=>x.publicationSlug===e.publicationSlug&&x.issueDate===e.issueDate);if(index>=0)manifest[index]={...manifest[index],...e};else manifest.push(e);}
+fs.writeFileSync(base+'/newspapers-manifest.updated.json',JSON.stringify(manifest,null,2));console.log('Manifest prepared; existing years preserved');}
+main().catch(e=>{console.error(e.message);process.exitCode=1});

@@ -1,0 +1,16 @@
+{
+  "tool_local_tests_passed": 10,
+  "1981": {
+    "status": "passed",
+    "issues": 26,
+    "pages": 492,
+    "changes_proposed": 0,
+    "report": "history/verification/1981-tool-dry-run.json"
+  },
+  "1982": {
+    "status": "not_run",
+    "reason": "Paused for handoff; original 1982 ingestion is fully verified."
+  },
+  "1983_started": false,
+  "tool_sha256": "8fb918ea9a431b94b9a1723c3c7dbed5a1946f2a7b8983f34a036616f9da1aa5"
+}

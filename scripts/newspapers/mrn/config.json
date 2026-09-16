@@ -1,0 +1,15 @@
+{
+  "productionUrl": "https://racing-museum.vercel.app",
+  "expectedSupabaseProject": "szvkleurojiwqkkztxtr",
+  "bucket": "media",
+  "manifestPath": "public/data/newspapers-manifest.json",
+  "productionBranch": "main",
+  "deploymentContext": "Vercel – racing-museum",
+  "templateIssue": "1981-04-02",
+  "protectedThroughYear": 1982,
+  "imageWorkers": 2,
+  "imageDelayMs": 900,
+  "ocrWorkers": 4,
+  "ocrTimeoutMs": 180000,
+  "deploymentTimeoutMs": 1800000
+}
