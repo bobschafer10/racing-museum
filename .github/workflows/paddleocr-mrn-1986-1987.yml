@@ -1,0 +1,231 @@
+name: PaddleOCR MRN 1986-1987
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-mrn-1986-1987.yml'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      issue_count: ${{ steps.matrix.outputs.issue_count }}
+      page_count: ${{ steps.matrix.outputs.page_count }}
+    steps:
+      - name: Build verified 1986-1987 issue matrix
+        id: matrix
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - "$GITHUB_OUTPUT" <<'PY'
+          import json, sys
+          from pathlib import Path
+
+          raw = '''
+          1986-01-16,12
+          1986-02-06,12
+          1986-03-13,20
+          1986-04-17,20
+          1986-04-24,12
+          1986-05-01,16
+          1986-05-08,16
+          1986-05-15,20
+          1986-05-22,16
+          1986-05-29,20
+          1986-06-05,20
+          1986-06-12,20
+          1986-06-19,16
+          1986-06-26,20
+          1986-07-03,24
+          1986-07-10,24
+          1986-07-17,20
+          1986-07-24,20
+          1986-07-31,24
+          1986-08-07,20
+          1986-08-14,24
+          1986-08-21,24
+          1986-08-28,24
+          1986-09-04,20
+          1986-09-11,20
+          1986-09-18,16
+          1986-09-25,12
+          1986-10-16,20
+          1986-11-13,24
+          1986-12-11,40
+          1987-01-15,16
+          1987-02-05,16
+          1987-03-12,20
+          1987-04-16,16
+          1987-04-23,16
+          1987-04-30,16
+          1987-05-07,16
+          1987-05-14,20
+          1987-05-21,20
+          1987-05-28,20
+          1987-06-04,24
+          1987-06-11,20
+          1987-06-18,20
+          1987-06-25,20
+          1987-07-02,24
+          1987-07-09,20
+          1987-07-16,20
+          1987-07-23,20
+          1987-07-30,20
+          1987-08-06,20
+          1987-08-13,20
+          1987-08-20,20
+          1987-08-27,24
+          1987-09-03,24
+          1987-09-10,20
+          1987-09-17,20
+          1987-09-24,16
+          1987-10-15,16
+          1987-11-12,24
+          1987-12-10,40
+          '''
+
+          rows=[]
+          total_pages=0
+          for line in raw.splitlines():
+              line=line.strip()
+              if not line:
+                  continue
+              issue, count_s = line.split(',')
+              count=int(count_s)
+              year=int(issue[:4])
+              pages=[f'{n:03d}.jpg' for n in range(1, count + 1)]
+              rows.append({
+                  'year': year,
+                  'issue': issue,
+                  'pages_json': json.dumps(pages, separators=(',', ':')),
+                  'page_count': count,
+              })
+              total_pages += count
+
+          if len(rows) != 60 or total_pages != 1204:
+              raise SystemExit(f'Control matrix mismatch: {len(rows)} issues / {total_pages} pages')
+          if sum(r['page_count'] for r in rows if r['year'] == 1986) != 596:
+              raise SystemExit('1986 control total mismatch')
+          if sum(r['page_count'] for r in rows if r['year'] == 1987) != 608:
+              raise SystemExit('1987 control total mismatch')
+
+          matrix=json.dumps({'include':rows}, separators=(',', ':'))
+          print(f'MRN 1986-1987: {len(rows)} issues / {total_pages} verified numbered pages')
+          out=Path(sys.argv[1])
+          with out.open('a', encoding='utf-8') as f:
+              f.write(f'issue_count={len(rows)}\n')
+              f.write(f'page_count={total_pages}\n')
+              f.write(f'matrix={matrix}\n')
+          PY
+
+  ocr_and_ingest:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Check out OCR runner only
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR ${{ matrix.issue }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: midwest-racing-news
+          MRN_ISSUE_DATE: ${{ matrix.issue }}
+          MRN_PAGES_JSON: ${{ matrix.pages_json }}
+          MRN_OUTPUT_ROOT: audit/paddleocr-mrn-1986-1987/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest searchable OCR and standings candidates
+        shell: bash
+        env:
+          YEAR: ${{ matrix.year }}
+          ISSUE: ${{ matrix.issue }}
+          EXPECTED_PAGES: ${{ matrix.page_count }}
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+          ISSUE_DIR: audit/paddleocr-mrn-1986-1987/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python - "$ISSUE_DIR" "$YEAR" > /tmp/ocr-payload.json <<'PY'
+          import json, sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          year=int(sys.argv[2])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          pages=[]
+          for meta in summary.get('pages',[]):
+              page=str(meta['page'])
+              stem=Path(page).stem
+              text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+              pages.append({'page':page,'text':text,'meta':meta})
+          print(json.dumps({
+              'publication':'midwest-racing-news',
+              'year':year,
+              'issue':summary['issue_date'],
+              'summary':summary,
+              'pages':pages,
+              'candidates':candidates,
+          }, separators=(',',':')))
+          PY
+          response="$(curl -fsSL -X POST \
+            -H "Authorization: Bearer ${OIDC_TOKEN}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/ocr-payload.json \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+          echo "$ISSUE: $response"
+          updated="$(echo "$response" | jq -r '.updated // 0')"
+          test "$updated" -eq "$EXPECTED_PAGES"
+
+      - name: Upload OCR artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-${{ matrix.issue }}
+          path: audit/paddleocr-mrn-1986-1987/${{ matrix.issue }}
+          if-no-files-found: warn
+          retention-days: 14
