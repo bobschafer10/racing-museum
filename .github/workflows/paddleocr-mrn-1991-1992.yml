@@ -2,6 +2,11 @@ name: PaddleOCR MRN 1991-1992
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-mrn-1991-1992.yml'
 
 permissions:
   contents: read
