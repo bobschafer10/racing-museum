@@ -1,0 +1,268 @@
+name: PaddleOCR MRN 1983-1985
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Midwest Racing News year to OCR'
+        required: false
+        default: '1983'
+        type: string
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-mrn-1983-1985.yml'
+
+permissions:
+  actions: write
+  contents: read
+  id-token: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      year: ${{ steps.matrix.outputs.year }}
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      issue_count: ${{ steps.matrix.outputs.issue_count }}
+      page_count: ${{ steps.matrix.outputs.page_count }}
+    steps:
+      - name: Build issue matrix from museum newspaper manifest
+        id: matrix
+        env:
+          INPUT_YEAR: ${{ inputs.year }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          YEAR="${INPUT_YEAR:-1983}"
+          if [[ ! "$YEAR" =~ ^198[3-5]$ ]]; then
+            echo "Year $YEAR is outside configured MRN OCR range 1983-1985" >&2
+            exit 1
+          fi
+
+          curl -fsSL \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/public/data/newspapers-manifest.json" \
+            -o /tmp/newspapers-manifest.json
+
+          python - "$YEAR" "$GITHUB_OUTPUT" <<'PY'
+          import json, re, sys
+          from pathlib import Path
+          from urllib.parse import unquote, urlparse
+
+          year = int(sys.argv[1])
+          output = Path(sys.argv[2])
+          issues = json.loads(Path('/tmp/newspapers-manifest.json').read_text(encoding='utf-8'))
+          expected = {
+              1983: (28, 500),
+              1984: (30, 596),
+              1985: (30, 556),
+          }
+          rows = []
+          total_pages = 0
+          image_re = re.compile(r'.+\.(?:jpg|jpeg|png|webp)$', re.I)
+          numbered_re = re.compile(r'^\d{3}\.(?:jpg|jpeg|png|webp)$', re.I)
+
+          for issue in issues:
+              if issue.get('publicationSlug') != 'midwest-racing-news' or int(issue.get('year') or 0) != year:
+                  continue
+              issue_date = str(issue.get('issueDate') or issue.get('slug') or '')
+              if not issue_date.startswith(f'{year}-'):
+                  continue
+
+              all_urls = []
+              for value in [issue.get('coverImage'), *(issue.get('pages') or []), issue.get('backCoverImage')]:
+                  if isinstance(value, str) and value:
+                      all_urls.append(value)
+
+              filenames = []
+              seen = set()
+              for url in all_urls:
+                  filename = unquote(urlparse(url).path.split('/')[-1])
+                  low = filename.lower()
+                  if low in {'thumbnail.jpg', 'thumbnail.jpeg', 'thumbnail.png', 'thumbnail.webp'}:
+                      continue
+                  if not image_re.fullmatch(filename) or filename in seen:
+                      continue
+                  seen.add(filename)
+                  filenames.append(filename)
+
+              pages = [name for name in filenames if numbered_re.fullmatch(name)]
+              if not pages:
+                  pages = [name for name in filenames if name.lower() not in {'front-cover.jpg', 'back-cover.jpg'}]
+              if not pages:
+                  raise SystemExit(f'No OCR page images found in manifest for {issue_date}')
+
+              rows.append({
+                  'issue': issue_date,
+                  'pages_json': json.dumps(pages, separators=(',', ':')),
+                  'page_count': len(pages),
+              })
+              total_pages += len(pages)
+
+          rows.sort(key=lambda r: r['issue'])
+          expected_issues, expected_pages = expected[year]
+          if len(rows) != expected_issues or total_pages != expected_pages:
+              raise SystemExit(
+                  f'MRN {year} manifest mismatch: {len(rows)} issues / {total_pages} pages; '
+                  f'expected {expected_issues} / {expected_pages}'
+              )
+
+          matrix = json.dumps({'include': rows}, separators=(',', ':'))
+          print(f'MRN {year}: {len(rows)} issues / {total_pages} canonical numbered pages')
+          for row in rows:
+              print(f"  {row['issue']}: {row['page_count']} pages")
+          with output.open('a', encoding='utf-8') as f:
+              f.write(f'year={year}\n')
+              f.write(f'issue_count={len(rows)}\n')
+              f.write(f'page_count={total_pages}\n')
+              f.write(f'matrix={matrix}\n')
+          PY
+
+  ocr:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Check out OCR runner only
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR ${{ matrix.issue }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: midwest-racing-news
+          MRN_ISSUE_DATE: ${{ matrix.issue }}
+          MRN_PAGES_JSON: ${{ matrix.pages_json }}
+          MRN_OUTPUT_ROOT: audit/paddleocr-mrn-1983-1985/${{ needs.prepare.outputs.year }}/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Upload OCR artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrn-${{ needs.prepare.outputs.year }}-${{ matrix.issue }}
+          path: audit/paddleocr-mrn-1983-1985/${{ needs.prepare.outputs.year }}/${{ matrix.issue }}
+          if-no-files-found: warn
+          retention-days: 14
+
+  ingest:
+    needs: [prepare, ocr]
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Download issue artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: mrn-${{ needs.prepare.outputs.year }}-*
+          path: collected
+          merge-multiple: false
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest OCR pages and standings candidates
+        shell: bash
+        env:
+          YEAR: ${{ needs.prepare.outputs.year }}
+          EXPECTED_ISSUES: ${{ needs.prepare.outputs.issue_count }}
+          EXPECTED_PAGES: ${{ needs.prepare.outputs.page_count }}
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          set -euo pipefail
+          total=0
+          candidate_total=0
+          issues=0
+          while IFS= read -r summary; do
+            issue_dir="$(dirname "$summary")"
+            issue="$(jq -r '.issue_date' "$summary")"
+            python - "$issue_dir" "$YEAR" > /tmp/ocr-payload.json <<'PY'
+          import json, sys
+          from pathlib import Path
+          root = Path(sys.argv[1])
+          year = int(sys.argv[2])
+          summary = json.loads((root / 'summary.json').read_text(encoding='utf-8'))
+          candidates = json.loads((root / 'candidates.json').read_text(encoding='utf-8')) if (root / 'candidates.json').exists() else []
+          pages = []
+          for meta in summary.get('pages', []):
+              page = str(meta['page'])
+              stem = Path(page).stem
+              text = (root / 'text' / f'{stem}-columns.txt').read_text(encoding='utf-8')
+              pages.append({'page': page, 'text': text, 'meta': meta})
+          print(json.dumps({
+              'publication': 'midwest-racing-news',
+              'year': year,
+              'issue': summary['issue_date'],
+              'summary': summary,
+              'pages': pages,
+              'candidates': candidates,
+          }, separators=(',', ':')))
+          PY
+            response="$(curl -fsSL -X POST \
+              -H "Authorization: Bearer ${OIDC_TOKEN}" \
+              -H 'Content-Type: application/json' \
+              --data-binary @/tmp/ocr-payload.json \
+              'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+            echo "$issue: $response"
+            updated="$(echo "$response" | jq -r '.updated // 0')"
+            saved_candidates="$(echo "$response" | jq -r '.candidates_saved // 0')"
+            total=$((total + updated))
+            candidate_total=$((candidate_total + saved_candidates))
+            issues=$((issues + 1))
+          done < <(find collected -name summary.json -print | sort)
+
+          echo "Ingested issues: $issues / $EXPECTED_ISSUES"
+          echo "Imported searchable pages: $total / $EXPECTED_PAGES"
+          echo "Saved automated standings candidates: $candidate_total"
+          test "$issues" -eq "$EXPECTED_ISSUES"
+          test "$total" -eq "$EXPECTED_PAGES"
+
+      - name: Queue next MRN year after success
+        if: ${{ fromJSON(needs.prepare.outputs.year) < 1985 }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          YEAR: ${{ needs.prepare.outputs.year }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          next=$((YEAR + 1))
+          echo "Dispatching MRN $next after successful $YEAR ingest"
+          gh workflow run paddleocr-mrn-1983-1985.yml \
+            --repo "$GH_REPO" \
+            --ref paddleocr-mrn-pilot \
+            -f year="$next"
