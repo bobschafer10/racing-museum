@@ -1,0 +1,51 @@
+name: temp-series-logo-batch3c
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Retrieve Batch 3C assets
+        run: |
+          cat > /tmp/b3c.py <<'PY'
+          
+          import requests, io, csv, shutil
+          from pathlib import Path
+          from PIL import Image
+          ROOT=Path("batch3c"); ROOT.mkdir(exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          assets=[
+          ("aaa-contest-board-1904-1955","https://static.wikia.nocookie.net/iracing/images/6/62/AAAcontestboard19041955logo.png/revision/latest?cb=20251212033703","Period AAA Contest Board mark"),
+          ("asa-1968-1991","https://static.wikia.nocookie.net/iracing/images/f/fb/ASAlogo196819912022present.png/revision/latest?cb=20251223070215","Period ASA sanctioning mark covering 1968-1973"),
+          ("imca-1915-1961","https://static.wikia.nocookie.net/iracing/images/3/38/IMCAlogo19151961.png/revision/latest?cb=20260422151854","Period IMCA sanctioning mark"),
+          ("gatr-poster-candidate","https://i.etsystatic.com/22980510/r/il/f32125/5958676690/il_680x540.5958676690_te38.jpg","Period 1979 GATR/Bobtail 200 poster candidate")
+          ]
+          rows=[]
+          for stem,url,note in assets:
+              try:
+                  r=S.get(url,timeout=40,allow_redirects=True); r.raise_for_status()
+                  data=r.content
+                  im=Image.open(io.BytesIO(data)); im.load()
+                  ext={"PNG":".png","JPEG":".jpg","WEBP":".webp","GIF":".gif"}.get(im.format,".png")
+                  p=ROOT/(stem+ext); p.write_bytes(data)
+                  rows.append([stem,url,note,p.name,f"{im.width}x{im.height}","ok"])
+              except Exception as e: rows.append([stem,url,note,"","",repr(e)])
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f);w.writerow(["stem","url","note","file","size","status"]);w.writerows(rows)
+          shutil.make_archive("UMARM_batch3c","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/b3c.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-batch3c
+          path: UMARM_batch3c.zip
+          retention-days: 7
