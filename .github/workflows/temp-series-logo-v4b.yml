@@ -1,0 +1,106 @@
+name: temp-series-logo-v4b
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Build v4b
+        run: |
+          cat > /tmp/v4b.py <<'PY'
+          
+          import requests, io, os, csv, shutil, urllib.parse, re
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw
+          
+          ROOT=Path("v4b"); ROOT.mkdir(exist_ok=True)
+          EXACT=ROOT/"exact"; CAND=ROOT/"vores_candidates"
+          EXACT.mkdir(exist_ok=True); CAND.mkdir(exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM logo research"})
+          
+          assets=[
+           ("american-racing-series","https://usmark.s3.amazonaws.com/73683056","USPTO trademark image mirrored by TrademarkElite"),
+           ("irl-indy-pro-series","https://usmark.s3.amazonaws.com/78943742","USPTO trademark image mirrored by TrademarkElite"),
+           ("menards-irl-infiniti-pro-series","https://wikipedia.nlaha.com/content/wikipedia_en_all_maxi_2024-01/I/Menards_Infiniti_Pro_Series_color.png.webp","Historical Menards Infiniti Pro Series logo mirror of Wikipedia image"),
+          ]
+          rows=[]
+          def dl(url,stem,out):
+              try:
+                  r=S.get(url,timeout=30,allow_redirects=True,verify=False); r.raise_for_status()
+                  data=r.content
+                  im=Image.open(io.BytesIO(data)); im.load()
+                  fmt=(im.format or "PNG").lower()
+                  ext={"jpeg":".jpg","jpg":".jpg","png":".png","webp":".webp","gif":".gif"}.get(fmt,".png")
+                  p=out/(stem+ext); p.write_bytes(data)
+                  return p, f"{im.width}x{im.height}"
+              except Exception as e:
+                  return None,repr(e)
+          for stem,url,note in assets:
+              p,info=dl(url,stem,EXACT)
+              rows.append([stem,url,note,str(p or ""),info])
+          
+          # Official Vores site images from TinyFish discovery.
+          vores=[
+          "https://nebula.wsimg.com/a02627e2cf196ec1fd1d475e2e8c478f?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/65fcbd85cae9f58ded838734ad7d1493?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/e2771a9c4bab4f5e54a85d39538cba93?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/8014cd0a08b7e5108a4496c2eff4274a?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/6f91dccceb766dc28462bd90937a6017?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/4fa9f44adbf466a1dcd0d63c4b65afed?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/ac287d22d74b6110692316fe6b9ab4ab?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/8a6b405333d838f763849e6524e03161?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/3f2b632d3247917ff3c35cceb3d0a6e5?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/0c94781f121922b748cecbe9950958e8?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/beeedb792591e32bc1e39168d2f4ad21?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/6d9a2792f72b934de1e752dc31d9ea54?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/78f260be3e4c6d3a28092a575fdd9498?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/24040cf97dcb3d97865df82e396c435b?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/40376afded953a87c39be40ddf4692b5?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/a35c2086a52c167a71890be7ecbbf816?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/444c0309053057e47cb24702011a96e2?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/a3df025112c1ac06552fd1f0cea23568?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/74247fe6f986a6ba1fc9017b12391c5b?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1",
+          "https://nebula.wsimg.com/a5903f28b2e493448a6289c8a5badef3?AccessKeyId=8FB981597775F0B7414E&disposition=0&alloworigin=1"
+          ]
+          for i,u in enumerate(vores):
+              p,info=dl(u,f"vores_{i:02d}",CAND)
+              rows.append([f"vores_{i:02d}",u,"official Vores site image candidate",str(p or ""),info])
+          
+          # contact sheets
+          def sheet(files,out,title):
+              ims=[]
+              for p in files:
+                  try: ims.append((p,Image.open(p).convert("RGBA")))
+                  except: pass
+              cols=4; tw=420; th=300; top=55
+              rr=max(1,(len(ims)+cols-1)//cols)
+              canvas=Image.new("RGB",(cols*tw,top+rr*th),"white")
+              d=ImageDraw.Draw(canvas); d.text((15,15),title,fill="black")
+              for i,(p,im) in enumerate(ims):
+                  bg=Image.new("RGBA",im.size,"white"); bg.alpha_composite(im)
+                  sh=ImageOps.contain(bg.convert("RGB"),(380,210))
+                  x=(i%cols)*tw; y=top+(i//cols)*th
+                  canvas.paste(sh,(x+(tw-sh.width)//2,y+5+(210-sh.height)//2))
+                  d.text((x+10,y+225),p.name[:55],fill="black")
+              canvas.save(out,"JPEG",quality=90)
+          sheet(sorted(EXACT.iterdir()),ROOT/"CONTACT_EXACT_B.jpg","V4B exact")
+          sheet(sorted(CAND.iterdir()),ROOT/"CONTACT_VORES.jpg","Vores official-site image candidates")
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f);w.writerow(["key","url","note","file","info"]);w.writerows(rows)
+          shutil.make_archive("UMARM_logo_v4b","zip",ROOT)
+          print(rows[:5])
+          
+          PY
+          python /tmp/v4b.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-logo-v4b
+          path: UMARM_logo_v4b.zip
+          retention-days: 7
