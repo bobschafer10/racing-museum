@@ -302,10 +302,10 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
                   {hasRankedStandings ? (
                     <div className={styles.standingsHeader}><span>Pos</span><span>Driver</span><span>Pts</span><span>Wins</span></div>
                   ) : (
-                    <div className={styles.standingsHeader}><span>Driver</span><span>Starts</span><span>Wins</span><span>Top 5</span></div>
+                    <div className={`${styles.standingsHeader} ${styles.standingsUnranked}`}><span>Driver</span><span>Starts</span><span>Wins</span><span>Top 5</span></div>
                   )}
                   {previewRows.map((row: any) => (
-                    <div className={styles.standingsRow} key={row.id}>
+                    <div className={`${styles.standingsRow} ${hasRankedStandings ? '' : styles.standingsUnranked}`} key={row.id}>
                       {hasRankedStandings ? (
                         <>
                           <span>{row.position_label || row.finishing_position || '—'}</span>
