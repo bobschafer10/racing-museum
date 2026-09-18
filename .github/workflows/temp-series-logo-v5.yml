@@ -1,0 +1,83 @@
+name: temp-series-logo-v5
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Build V5 candidates
+        run: |
+          cat > /tmp/v5.py <<'PY'
+          
+          import requests, io, csv, shutil, os
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw
+          
+          ROOT=Path("v5_candidates"); ROOT.mkdir(exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          
+          assets=[
+          ("great-northern-sportsman-series","https://tomahspartaspeedway.com/wp-content/uploads/2022/12/great-north-sportsman-logo.png","Tomah-Sparta Speedway historical GNSS page"),
+          ("scca-coors-racetruck-challenge","https://static.wikia.nocookie.net/logopedia/images/1/1e/Coorsracetruckchallenge19871989.png/revision/latest?cb=20260910201744","Exact 1987-1989 Coors RaceTruck Challenge mark"),
+          ("american-stockcar-league-patch","https://i.ebayimg.com/images/g/peEAAOSwfmFfuYTi/s-l500.webp","Period American Stockcar League racing patch"),
+          ("wdlma-lucky7-archive","https://static.wikia.nocookie.net/iracing/images/4/40/Screenshot_2025-12-10_231252.png/revision/latest?cb=20251211051958","Archive candidate tied to WDLMA Lucky 7 search"),
+          ("gatr-pin-1","https://treasurevalleyantiques.com/cdn/shop/files/20240806_141922_1200x1200.jpg?v=1723180388","Period GATR Great American Truck Racing lapel pin"),
+          ("gatr-pin-2","https://treasurevalleyantiques.com/cdn/shop/files/20240806_141910_1200x1200.jpg?v=1723180388","Period GATR lapel pin alternate"),
+          ("gatr-pin-3","https://treasurevalleyantiques.com/cdn/shop/files/20240806_141928_1200x1200.jpg?v=1723180388","Period GATR lapel pin alternate"),
+          ("usar-game-1","https://www.myabandonware.com/media/screenshots/u/usar-hooters-pro-cup-racing-1glf/usar-hooters-pro-cup-racing_1.png","Licensed USAR Hooters Pro Cup Racing title/screenshot"),
+          ("usar-game-2","https://www.myabandonware.com/media/screenshots/u/usar-hooters-pro-cup-racing-1glf/usar-hooters-pro-cup-racing_2.png","Licensed USAR Hooters Pro Cup Racing title/screenshot"),
+          ("usar-game-3","https://www.myabandonware.com/media/screenshots/u/usar-hooters-pro-cup-racing-1glf/usar-hooters-pro-cup-racing_3.png","Licensed USAR Hooters Pro Cup Racing title/screenshot"),
+          ("usar-game-4","https://www.myabandonware.com/media/screenshots/u/usar-hooters-pro-cup-racing-1glf/usar-hooters-pro-cup-racing_4.png","Licensed USAR Hooters Pro Cup Racing title/screenshot"),
+          ("usar-game-5","https://www.myabandonware.com/media/screenshots/u/usar-hooters-pro-cup-racing-1glf/usar-hooters-pro-cup-racing_5.png","Licensed USAR Hooters Pro Cup Racing title/screenshot"),
+          ("usar-game-6","https://www.myabandonware.com/media/screenshots/u/usar-hooters-pro-cup-racing-1glf/usar-hooters-pro-cup-racing_6.png","Licensed USAR Hooters Pro Cup Racing title/screenshot"),
+          ("midwest-truck-series-lineage","http://www.thethirdturn.com/w/images/9/9f/Midwest_Truck_Series.jpg","Same series lineage as ASA Oregon Chain Truck Tour"),
+          ]
+          rows=[]
+          for stem,url,note in assets:
+              try:
+                  r=S.get(url,timeout=35,allow_redirects=True); r.raise_for_status()
+                  data=r.content
+                  if len(data)<400: raise RuntimeError("too small")
+                  im=Image.open(io.BytesIO(data)); im.load()
+                  ext={"PNG":".png","JPEG":".jpg","WEBP":".webp","GIF":".gif"}.get(im.format,".png")
+                  p=ROOT/(stem+ext); p.write_bytes(data)
+                  rows.append([stem,url,note,str(p),f"{im.width}x{im.height}","ok"])
+              except Exception as e:
+                  rows.append([stem,url,note,"","",repr(e)])
+          
+          # Contact sheet
+          files=[]
+          for p in ROOT.iterdir():
+              if p.suffix.lower() in [".png",".jpg",".jpeg",".webp",".gif"]:
+                  try: files.append((p,Image.open(p).convert("RGBA")))
+                  except: pass
+          cols=4; tw=420; th=300; top=60
+          rr=max(1,(len(files)+cols-1)//cols)
+          sheet=Image.new("RGB",(cols*tw,top+rr*th),"white")
+          d=ImageDraw.Draw(sheet); d.text((15,20),"UMARM V5 candidates",fill="black")
+          for i,(p,im) in enumerate(files):
+              bg=Image.new("RGBA",im.size,"white"); bg.alpha_composite(im)
+              sh=ImageOps.contain(bg.convert("RGB"),(380,210))
+              x=(i%cols)*tw; y=top+(i//cols)*th
+              sheet.paste(sh,(x+(tw-sh.width)//2,y+5+(210-sh.height)//2))
+              d.text((x+10,y+225),p.name[:58],fill="black")
+          sheet.save(ROOT/"CONTACT.jpg","JPEG",quality=92)
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f); w.writerow(["stem","url","note","file","size","status"]); w.writerows(rows)
+          shutil.make_archive("UMARM_logo_v5_candidates","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/v5.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-logo-v5-candidates
+          path: UMARM_logo_v5_candidates.zip
+          retention-days: 7
