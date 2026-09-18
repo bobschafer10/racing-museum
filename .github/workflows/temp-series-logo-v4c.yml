@@ -1,0 +1,70 @@
+name: temp-series-logo-v4c
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow pymupdf
+      - name: Build V4C
+        run: |
+          cat > /tmp/v4c.py <<'PY'
+          
+          import requests, io, csv, shutil
+          from pathlib import Path
+          from PIL import Image
+          import fitz
+          
+          ROOT=Path("v4c")
+          IMG=ROOT/"images"; IMG.mkdir(parents=True,exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          
+          assets=[
+          ("ecar-scca-formula-atlantic-championship","https://static.wikia.nocookie.net/logopedia/images/3/3c/CARTToyotaAtlantic1987logo.png/revision/latest?cb=20250908001624","Formula Atlantic Championship 1987-1990 period mark"),
+          ("toyota-atlantic-championship_1997-2000","https://static.wikia.nocookie.net/logopedia/images/4/4e/CARTToyotaAtlantic1997logo.png/revision/latest?cb=20250908000935","Toyota Atlantic 1997-2000 mark"),
+          ("toyota-atlantic-championship_2001-2002","https://static.wikia.nocookie.net/logopedia/images/e/e0/CARTToyotaAtlantic2001logo.png/revision/latest?cb=20250908000936","Toyota Atlantic 2001-2002 mark"),
+          ("united-states-road-racing-championship_1963-1968","https://static.wikia.nocookie.net/iracing/images/2/2a/SCCAUSRRC19631968.png/revision/latest?cb=20250803153327","SCCA USRRC 1963-1968 mark"),
+          ("united-states-road-racing-championship_1998-1999","https://static.wikia.nocookie.net/iracing/images/0/0c/USRoadRacingChampionshiplogo.png/revision/latest?cb=20250802043841","US Road Racing Championship 1998-1999 mark"),
+          ("usac-champ-car-series_1976-1978","https://static.wikia.nocookie.net/iracing/images/4/44/Usacnationalchampionshipseries19761978.png/revision/latest?cb=20260204015729","USAC National Championship Series 1976-1978 period mark"),
+          ]
+          rows=[]
+          for stem,url,note in assets:
+              try:
+                  r=S.get(url,timeout=30); r.raise_for_status()
+                  im=Image.open(io.BytesIO(r.content)); im.load()
+                  p=IMG/(stem+".png")
+                  im.convert("RGBA").save(p,"PNG",optimize=True)
+                  rows.append([stem,url,note,str(p),f"{im.width}x{im.height}","ok"])
+              except Exception as e:
+                  rows.append([stem,url,note,"","",repr(e)])
+          
+          # Star Mazda: render the first page of a period 2008 series PDF so the logo can be visually isolated.
+          pdfurl="https://allcarcentral.com/ALM_pdf/2008%20Star%20Mazda%20Championship.pdf"
+          try:
+              r=S.get(pdfurl,timeout=60); r.raise_for_status()
+              pdf=ROOT/"star_mazda_2008.pdf"; pdf.write_bytes(r.content)
+              doc=fitz.open(pdf)
+              pix=doc[0].get_pixmap(matrix=fitz.Matrix(2.5,2.5),alpha=False)
+              page=ROOT/"star_mazda_page1.png"; pix.save(page)
+              rows.append(["star-mazda-page1",pdfurl,"Period 2008 Star Mazda Championship PDF page 1",str(page),f"{pix.width}x{pix.height}","candidate"])
+          except Exception as e:
+              rows.append(["star-mazda-page1",pdfurl,"Period 2008 Star Mazda Championship PDF","","",repr(e)])
+          
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f); w.writerow(["stem","url","note","file","size","status"]); w.writerows(rows)
+          shutil.make_archive("UMARM_logo_v4c","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/v4c.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-logo-v4c
+          path: UMARM_logo_v4c.zip
+          retention-days: 7
