@@ -343,24 +343,44 @@ export default async function SeriesSeasonPage({
                   <div className={styles.tableWrap}>
                     <div className={styles.standingsTable}>
                       <div className={styles.standingsHeader}>
-                        <span>Pos</span><span>Driver</span><span>Points</span><span>Starts</span><span>Wins</span><span>Top 5</span><span>Top 10</span>
+                        {seasonInProgress && !hasRankedStandings ? (
+                          <><span>Driver</span><span>Starts</span><span>Wins</span><span>Top 5</span><span>Top 10</span></>
+                        ) : (
+                          <><span>Pos</span><span>Driver</span><span>Points</span><span>Starts</span><span>Wins</span><span>Top 5</span><span>Top 10</span></>
+                        )}
                       </div>
                       {group.rows.map((row: any) => {
                         const driverSlug = row.driver_id ? driverSlugById.get(Number(row.driver_id)) || '' : ''
                         const driverName = row.driver_name || 'Unknown driver'
                         return (
                           <div key={row.id} className={styles.standingsRow}>
-                            <span className={styles.standingsPos}>{row.position_label || row.finishing_position || '—'}</span>
-                            {driverSlug ? (
-                              <Link href={`/drivers/${driverSlug}`} className={styles.driverLink}>{driverName}</Link>
+                            {seasonInProgress && !hasRankedStandings ? (
+                              <>
+                                {driverSlug ? (
+                                  <Link href={`/drivers/${driverSlug}`} className={styles.driverLink}>{driverName}</Link>
+                                ) : (
+                                  <span>{driverName}</span>
+                                )}
+                                <span>{row.starts || '—'}</span>
+                                <span>{row.wins || '—'}</span>
+                                <span>{row.top5 || '—'}</span>
+                                <span>{row.top10 || '—'}</span>
+                              </>
                             ) : (
-                              <span>{driverName}</span>
+                              <>
+                                <span className={styles.standingsPos}>{row.position_label || row.finishing_position || '—'}</span>
+                                {driverSlug ? (
+                                  <Link href={`/drivers/${driverSlug}`} className={styles.driverLink}>{driverName}</Link>
+                                ) : (
+                                  <span>{driverName}</span>
+                                )}
+                                <span className={styles.points}>{row.points || '—'}</span>
+                                <span>{row.starts || '—'}</span>
+                                <span>{row.wins || '—'}</span>
+                                <span>{row.top5 || '—'}</span>
+                                <span>{row.top10 || '—'}</span>
+                              </>
                             )}
-                            <span className={styles.points}>{row.points || '—'}</span>
-                            <span>{row.starts || '—'}</span>
-                            <span>{row.wins || '—'}</span>
-                            <span>{row.top5 || '—'}</span>
-                            <span>{row.top10 || '—'}</span>
                           </div>
                         )
                       })}
