@@ -1,0 +1,53 @@
+name: temp-series-logo-batch3b
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Retrieve Batch 3B assets
+        run: |
+          cat > /tmp/b3b.py <<'PY'
+          
+          import requests, io, csv, shutil
+          from pathlib import Path
+          from PIL import Image
+          ROOT=Path("batch3b"); ROOT.mkdir(exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          assets=[
+          ("usar-hooters-pro-cup-series","https://static.wikia.nocookie.net/nascar/images/6/63/Hooters_ProCup_Racing_Logo.jpg/revision/latest?cb=20091107040638","Historical Hooters ProCup series logo"),
+          ("usar-hooters-pro-cup-south","https://static.wikia.nocookie.net/nascar/images/5/5f/Hooters_ProCup_Racing_South.jpg/revision/latest?cb=20091012034802","Historical Hooters ProCup South logo"),
+          ("dick-trickle-99_candidate","https://static.wikia.nocookie.net/nascar/images/c/c3/99LogoScorbord-3.jpg/revision/latest?cb=20090711050719","Historical racing logo candidate"),
+          ("aaa-stock-car-series_sanctioning","https://static.wikia.nocookie.net/nascar/images/e/e0/AAA_logo.gif/revision/latest?cb=20060829151641","AAA sanctioning-body mark"),
+          ("asa-stock-car-series_sanctioning","https://static.wikia.nocookie.net/nascar/images/d/d3/ASALogo.png/revision/latest?cb=20091023155201","ASA sanctioning-body mark"),
+          ("usar-cars-history-logos","https://www.carsracingtour.com/wp-content/uploads/sites/61/2024/03/15/logos-1.png","CARS official history logo collage candidate")
+          ]
+          rows=[]
+          for stem,url,note in assets:
+              try:
+                  r=S.get(url,timeout=40,allow_redirects=True); r.raise_for_status()
+                  data=r.content
+                  im=Image.open(io.BytesIO(data)); im.load()
+                  ext={"PNG":".png","JPEG":".jpg","WEBP":".webp","GIF":".gif"}.get(im.format,".png")
+                  p=ROOT/(stem+ext); p.write_bytes(data)
+                  rows.append([stem,url,note,p.name,f"{im.width}x{im.height}","ok"])
+              except Exception as e: rows.append([stem,url,note,"","",repr(e)])
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f);w.writerow(["stem","url","note","file","size","status"]);w.writerows(rows)
+          shutil.make_archive("UMARM_batch3b","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/b3b.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-batch3b
+          path: UMARM_batch3b.zip
+          retention-days: 7
