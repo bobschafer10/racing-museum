@@ -1,0 +1,47 @@
+name: temp-series-logo-v6
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests pillow
+      - run: |
+          cat > /tmp/v6.py <<'PY'
+          
+          import requests, io, shutil
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw
+          ROOT=Path("v6"); ROOT.mkdir(exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          assets=[
+          ("usar-hooters-pro-cup-decal","https://i.ebayimg.com/images/g/kr8AAeSwQixqOYd6/s-l500.jpg"),
+          ("badgerland-slinger-2017","https://slingersuperspeedway.com/content/images/size/w1200/2025/05/7-16-17-v2_webbox.jpg")
+          ]
+          for stem,url in assets:
+              r=S.get(url,timeout=30,allow_redirects=True); r.raise_for_status()
+              im=Image.open(io.BytesIO(r.content)); im.load()
+              ext={"PNG":".png","JPEG":".jpg","WEBP":".webp"}.get(im.format,".png")
+              (ROOT/(stem+ext)).write_bytes(r.content)
+          # sheet
+          files=[p for p in ROOT.iterdir() if p.suffix.lower() in ('.png','.jpg','.jpeg','.webp')]
+          canvas=Image.new("RGB",(840,340),"white"); d=ImageDraw.Draw(canvas)
+          for i,p in enumerate(files):
+              im=Image.open(p).convert("RGBA"); bg=Image.new("RGBA",im.size,"white");bg.alpha_composite(im)
+              sh=ImageOps.contain(bg.convert("RGB"),(390,250)); x=i*420
+              canvas.paste(sh,(x+(420-sh.width)//2,10+(250-sh.height)//2)); d.text((x+10,270),p.name,fill="black")
+          canvas.save(ROOT/"CONTACT.jpg","JPEG",quality=92)
+          shutil.make_archive("UMARM_logo_v6","zip",ROOT)
+          
+          PY
+          python /tmp/v6.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-logo-v6
+          path: UMARM_logo_v6.zip
+          retention-days: 7
