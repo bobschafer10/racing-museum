@@ -1,0 +1,60 @@
+name: temp-series-logo-batch4-dick99
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow pymupdf
+      - name: Extract Dick Trickle 99 logo candidates
+        run: |
+          cat > /tmp/b4.py <<'PY'
+          
+          import requests, fitz, io, csv, shutil
+          from pathlib import Path
+          from PIL import Image
+          
+          ROOT=Path("batch4_dick99"); ROOT.mkdir(exist_ok=True)
+          url="https://oktoberfestraceweekend.com/wp-content/uploads/2025/08/2025-FEST-FAN-GUIDE-WEB.pdf"
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          r=S.get(url,timeout=60); r.raise_for_status()
+          pdf=ROOT/"fan_guide.pdf"; pdf.write_bytes(r.content)
+          doc=fitz.open(pdf)
+          page=doc[7]
+          # render page 8 at high resolution
+          pix=page.get_pixmap(matrix=fitz.Matrix(3,3),alpha=False)
+          pix.save(ROOT/"page8.png")
+          # extract page images as candidates
+          rows=[]
+          seen=set()
+          for im in page.get_images(full=True):
+              xref=im[0]
+              if xref in seen: continue
+              seen.add(xref)
+              try:
+                  obj=doc.extract_image(xref)
+                  data=obj["image"]; ext=obj["ext"]
+                  p=ROOT/f"xref{xref}.{ext}"
+                  p.write_bytes(data)
+                  pil=Image.open(io.BytesIO(data))
+                  rows.append([xref,p.name,pil.width,pil.height])
+              except Exception:
+                  pass
+          with open(ROOT/"images.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f); w.writerow(["xref","file","width","height"]);w.writerows(rows)
+          shutil.make_archive("UMARM_batch4_dick99","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/b4.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-batch4-dick99
+          path: UMARM_batch4_dick99.zip
+          retention-days: 7
