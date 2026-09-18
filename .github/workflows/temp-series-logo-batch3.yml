@@ -1,0 +1,79 @@
+name: temp-series-logo-batch3
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Retrieve Batch 3 logo candidates
+        shell: bash
+        run: |
+          cat > /tmp/b3.py <<'PY'
+          
+          import requests, io, csv, shutil
+          from pathlib import Path
+          from PIL import Image
+          
+          ROOT=Path("batch3_downloads")
+          ROOT.mkdir(exist_ok=True)
+          S=requests.Session()
+          S.headers.update({"User-Agent":"Mozilla/5.0 (compatible; UMARMLogoResearch/5.0)"})
+          
+          assets=[
+           ("great-northern-sportsman-series",
+            "https://tomahspartaspeedway.com/wp-content/uploads/2022/12/great-north-sportsman-logo.png",
+            "Tomah-Sparta Speedway exact GNSS logo"),
+           ("asa-oregon-chain-truck-tour_lineage",
+            "https://static.wixstatic.com/media/2df242_424198ffe2264ae79d0fd9be94ea2bfb~mv2.png/v1/fill/w_764,h_320,al_c,q_95,enc_auto/Updated%20Logo.png",
+            "Official Midwest Truck Series current lineage logo"),
+           ("usar-hooters-pro-cup-series",
+            "https://www.carsracingtour.com/wp-content/uploads/sites/61/2024/05/16/Timeline-HootersPro2.jpg",
+            "CARS Tour official history timeline image for Hooters Pro Cup"),
+           ("american-stockcar-league_patch",
+            "https://i.ebayimg.com/thumbs/images/g/peEAAOSwfmFfuYTi/s-l500.jpg",
+            "Period American Stockcar League patch"),
+           ("american-stockcar-league_patch2",
+            "https://i.ebayimg.com/images/g/peEAAOSwfmFfuYTi/s-l500.webp",
+            "Period American Stockcar League patch alternate image"),
+           ("scca-coors-racetruck-challenge_candidate",
+            "https://cdn.connectsites.net/user_files/scca/articles/002/014/168/original.jpg?1599577971&height=1200&width=1200",
+            "Official SCCA retrospective article hero"),
+          ]
+          
+          rows=[]
+          for stem,url,note in assets:
+              try:
+                  r=S.get(url,timeout=40,allow_redirects=True)
+                  r.raise_for_status()
+                  data=r.content
+                  if len(data)<700: raise RuntimeError("response too small")
+                  im=Image.open(io.BytesIO(data)); im.load()
+                  ext={"PNG":".png","JPEG":".jpg","WEBP":".webp","GIF":".gif"}.get(im.format,".png")
+                  p=ROOT/(stem+ext)
+                  p.write_bytes(data)
+                  rows.append([stem,url,note,p.name,f"{im.width}x{im.height}","ok"])
+              except Exception as e:
+                  rows.append([stem,url,note,"","",repr(e)])
+          
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f)
+              w.writerow(["stem","url","note","file","size","status"])
+              w.writerows(rows)
+          
+          shutil.make_archive("UMARM_batch3_downloads","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/b3.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-batch3-downloads
+          path: UMARM_batch3_downloads.zip
+          retention-days: 7
