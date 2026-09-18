@@ -57,6 +57,19 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
     : { data: [] as any[] }
 
   const standingRows = latestStandings || []
+  const standingsAreFinal =
+    standingRows.length > 0 && standingRows.every((row: any) => row.is_final === true)
+  const hasRankedStandings = standingRows.some(
+    (row: any) => row.finishing_position != null || String(row.position_label || '').trim(),
+  )
+  const hasDeclaredChampion = Boolean(latestSeason?.champion_name)
+  const seasonInProgress = Boolean(latestSeason) && !hasDeclaredChampion && !standingsAreFinal
+  const scheduledRaceCount = Number(latestSeason?.races || 0)
+  const snapshotRaceLabel = latestSeason
+    ? scheduledRaceCount > latestSeasonEvents.length
+      ? `${latestSeasonEvents.length} completed of ${scheduledRaceCount} scheduled`
+      : `${latestSeasonEvents.length || scheduledRaceCount} recorded races`
+    : ''
   const latestStandingsGroups = groupStandingsByDivision(standingRows)
   const hasMultipleStandingsGroups = latestStandingsGroups.length > 1
   const previewRows = hasMultipleStandingsGroups
@@ -238,12 +251,22 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
                   <div className={styles.panelBody}>
                     <div className={styles.snapshotHeader}>
                       <div>
-                        <div className={styles.snapshotLabel}>{hasMultipleStandingsGroups ? 'Division Champions' : 'Champion'}</div>
+                        <div className={styles.snapshotLabel}>
+                          {hasMultipleStandingsGroups && standingsAreFinal
+                            ? 'Division Champions'
+                            : seasonInProgress
+                              ? 'Season Status'
+                              : 'Champion'}
+                        </div>
                         <div className={styles.snapshotChampion}>
-                          {hasMultipleStandingsGroups ? `${latestStandingsGroups.length} divisions` : latestSeason.champion_name || previewRows[0]?.driver_name || 'Champion TBD'}
+                          {hasMultipleStandingsGroups && standingsAreFinal
+                            ? `${latestStandingsGroups.length} divisions`
+                            : seasonInProgress
+                              ? 'In progress'
+                              : latestSeason.champion_name || 'Champion TBD'}
                         </div>
                       </div>
-                      <div className={styles.snapshotMeta}>{latestSeason.races || latestSeasonEvents.length || 0} recorded races</div>
+                      <div className={styles.snapshotMeta}>{snapshotRaceLabel}</div>
                     </div>
 
                     {latestSeasonEvents.length > 0 ? (
@@ -269,20 +292,38 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
             {latestSeason && standingRows.length > 0 ? (
               <section>
                 <div className={styles.sectionHeading}>
-                  <div><span>Championship Chase</span><h2>{latestSeason.year} Standings Preview</h2></div>
-                  {hasMultipleStandingsGroups ? <p>Division champions</p> : null}
+                  <div>
+                    <span>{seasonInProgress ? 'Active Season' : 'Championship Chase'}</span>
+                    <h2>{seasonInProgress && !hasRankedStandings ? `${latestSeason.year} Season Stats` : `${latestSeason.year} Standings Preview`}</h2>
+                  </div>
+                  {hasMultipleStandingsGroups && standingsAreFinal ? <p>Division champions</p> : null}
                 </div>
                 <div className={styles.panel}>
-                  <div className={styles.standingsHeader}><span>Pos</span><span>Driver</span><span>Pts</span><span>Wins</span></div>
+                  {hasRankedStandings ? (
+                    <div className={styles.standingsHeader}><span>Pos</span><span>Driver</span><span>Pts</span><span>Wins</span></div>
+                  ) : (
+                    <div className={styles.standingsHeader}><span>Driver</span><span>Starts</span><span>Wins</span><span>Top 5</span></div>
+                  )}
                   {previewRows.map((row: any) => (
                     <div className={styles.standingsRow} key={row.id}>
-                      <span>{row.position_label || row.finishing_position || '—'}</span>
-                      <span className={styles.standingsDriver}>{hasMultipleStandingsGroups && row.source_division_name ? `${row.source_division_name} — ` : ''}{row.driver_name}</span>
-                      <span>{row.points || '—'}</span>
-                      <span>{row.wins || '—'}</span>
+                      {hasRankedStandings ? (
+                        <>
+                          <span>{row.position_label || row.finishing_position || '—'}</span>
+                          <span className={styles.standingsDriver}>{hasMultipleStandingsGroups && row.source_division_name ? `${row.source_division_name} — ` : ''}{row.driver_name}</span>
+                          <span>{row.points || '—'}</span>
+                          <span>{row.wins || '—'}</span>
+                        </>
+                      ) : (
+                        <>
+                          <span className={styles.standingsDriver}>{row.driver_name}</span>
+                          <span>{row.starts || '—'}</span>
+                          <span>{row.wins || '—'}</span>
+                          <span>{row.top5 || '—'}</span>
+                        </>
+                      )}
                     </div>
                   ))}
-                  <div className={styles.panelBody}><div className={styles.panelAction}><Link href={`/series/${slug}/${latestSeason.year}`} className={styles.textLink}>View Complete Standings →</Link></div></div>
+                  <div className={styles.panelBody}><div className={styles.panelAction}><Link href={`/series/${slug}/${latestSeason.year}`} className={styles.textLink}>{hasRankedStandings ? 'View Complete Standings' : 'View Full Season Stats'} →</Link></div></div>
                 </div>
               </section>
             ) : null}
