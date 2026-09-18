@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import SeriesLogo from '../SeriesLogo'
 import TrackLogo from '../../../tracks/[slug]/TrackLogo'
@@ -20,6 +20,10 @@ export default async function SeriesSeasonPage({
 }) {
   const { slug, year } = await params
   const seasonYear = Number(year)
+
+  if (slug === 'mid-american-stock-car-series') {
+    redirect(`/series/mid-american-racing-series/${year}`)
+  }
 
   const { data: series } = await supabase
     .from('Series')

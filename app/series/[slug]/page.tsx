@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import { getRacePrograms } from '@/lib/race-programs'
 import { supabase } from '@/lib/supabase'
 import SeriesLogo from './SeriesLogo'
@@ -24,6 +24,10 @@ type PhotoRow = {
 
 export default async function SeriesProfilePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
+
+  if (slug === 'mid-american-stock-car-series') {
+    redirect('/series/mid-american-racing-series')
+  }
 
   const { data: series, error: seriesError } = await supabase
     .from('Series')
