@@ -54,7 +54,7 @@ export default async function SeriesSeasonPage({
   const eventRows = events || []
   const standingRows = standings || []
   const standingsAreFinal =
-    standingRows.length > 0 && standingRows.every((row: any) => row.is_final === true)
+    standingRows.length > 0 && !standingRows.some((row: any) => row.is_final === false)
   const hasRankedStandings = standingRows.some(
     (row: any) => row.finishing_position != null || String(row.position_label || '').trim(),
   )
@@ -64,7 +64,9 @@ export default async function SeriesSeasonPage({
   const divisionChampions = standingsGroups
     .map((group) => ({
       division: group.label,
-      row: group.rows.find((row: any) => Number(row.finishing_position) === 1),
+      row:
+        group.rows.find((row: any) => Number(row.finishing_position) === 1) ||
+        (standingsAreFinal ? group.rows[0] : undefined),
     }))
     .filter((item) => item.row)
 
