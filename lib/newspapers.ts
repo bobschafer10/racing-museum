@@ -1,5 +1,6 @@
 import { promises as fs } from "fs"
 import path from "path"
+import { supabase } from "@/lib/supabase"
 
 export type NewspaperIssue = {
   slug: string
@@ -98,6 +99,63 @@ function titleFromIsoDate(issueDate: string) {
   })
 }
 
+type OcrArchiveRow = {
+  issue_date: string
+  page_label: string
+  storage_path: string
+}
+
+async function getOcrBackedMrnIssues(afterIssueDate: string): Promise<NewspaperIssue[]> {
+  const rows: OcrArchiveRow[] = []
+  const pageSize = 1000
+
+  // The checked-in manifest is the durable historical baseline. Pull newer,
+  // fully OCR-complete MRN pages from Supabase so newly processed years appear
+  // on the museum without requiring a giant manifest rebuild after every batch.
+  for (let offset = 0; ; offset += pageSize) {
+    const { data, error } = await supabase
+      .from("newspaper_ocr_pages")
+      .select("issue_date,page_label,storage_path")
+      .eq("publication_code", "midwest-racing-news")
+      .eq("status", "complete")
+      .gt("issue_date", afterIssueDate)
+      .order("issue_date", { ascending: true })
+      .order("page_label", { ascending: true })
+      .range(offset, offset + pageSize - 1)
+
+    if (error) throw error
+
+    const batch = (data || []) as OcrArchiveRow[]
+    rows.push(...batch)
+    if (batch.length < pageSize) break
+  }
+
+  const byIssue = new Map<string, OcrArchiveRow[]>()
+  for (const row of rows) {
+    const issueRows = byIssue.get(row.issue_date) || []
+    issueRows.push(row)
+    byIssue.set(row.issue_date, issueRows)
+  }
+
+  return Array.from(byIssue.entries()).map(([issueDate, issueRows]) => ({
+    slug: issueDate,
+    title: titleFromIsoDate(issueDate),
+    publication: "Midwest Racing News",
+    publicationSlug: "midwest-racing-news",
+    year: Number(issueDate.slice(0, 4)),
+    issueDate,
+    description: null,
+    coverImage: `${MRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,
+    backCoverImage: `${MRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,
+    thumbnail: `${MRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,
+    pages: issueRows.map(
+      (row) =>
+        `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`
+    ),
+    featured: false,
+  }))
+}
+
 function mrn1978Pages(issueDate: string, count: number) {
   // The July 20 scan is numbered 001-015 and 020 in Storage.
   const pageNumbers =
@@ -170,9 +228,26 @@ export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
       merged.set(`${issue.publicationSlug}__${issue.slug}`, issue)
     }
 
+    const latestMrnManifestDate =
+      manifestIssues
+        .filter((issue) => issue.publicationSlug === "midwest-racing-news")
+        .map((issue) => issue.issueDate)
+        .sort()
+        .at(-1) || "1900-01-01"
+
+    let ocrBackedMrnIssues: NewspaperIssue[] = []
+    try {
+      ocrBackedMrnIssues = await getOcrBackedMrnIssues(latestMrnManifestDate)
+    } catch (error) {
+      // Never let a temporary Supabase problem blank the newspaper archive.
+      // The checked-in manifest remains the fallback source of truth.
+      console.error("MRN OCR ARCHIVE BRIDGE ERROR:", error)
+    }
+
     for (const issue of [
       ...getMrn1978StorageIssues(),
       ...getCfrn1976StorageIssues(),
+      ...ocrBackedMrnIssues,
     ]) {
       const key = `${issue.publicationSlug}__${issue.slug}`
       if (!merged.has(key)) merged.set(key, issue)
