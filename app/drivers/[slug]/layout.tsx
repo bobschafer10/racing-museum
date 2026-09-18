@@ -1,9 +1,76 @@
 import type { ReactNode } from 'react'
 import DriverProfileGalleryEnhancer from './DriverProfileGalleryEnhancer'
+import DriverReportUtility from './DriverReportUtility'
 
 const galleryStyles = `
 #photos:has([class*="photoGrid"] > article:nth-child(31)):not([data-gallery-expanded="true"]) [class*="photoGrid"] > article:nth-child(n+25) {
   display: none;
+}
+
+.driver-report-utility {
+  border-bottom: 1px solid rgba(198, 161, 91, 0.26);
+  background: #0b0d0f;
+}
+
+.driver-report-utility-inner {
+  width: min(1380px, calc(100% - 40px));
+  min-height: 44px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.driver-report-utility-inner span {
+  color: #9ea4a7;
+  font-size: 0.61rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.driver-report-utility-inner a {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 11px;
+  border: 1px solid rgba(198, 161, 91, 0.54);
+  background: #6d171d;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.61rem;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.driver-report-utility-inner a:hover {
+  background: #8f1c24;
+  border-color: #c6a15b;
+}
+
+.driver-feature-report-action {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border: 1px solid rgba(198, 161, 91, 0.68);
+  background: rgba(75, 55, 27, 0.82);
+  color: #f3dfb4;
+  text-decoration: none;
+  font-size: 0.66rem;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.driver-feature-report-action:hover {
+  border-color: #d8b66f;
+  background: rgba(106, 75, 30, 0.96);
+  color: #fff;
 }
 
 .driver-photo-gallery-controls {
@@ -83,6 +150,24 @@ const galleryStyles = `
 }
 
 @media (max-width: 720px) {
+  .driver-report-utility-inner {
+    width: min(1380px, calc(100% - 24px));
+    min-height: 50px;
+    justify-content: space-between;
+  }
+
+  .driver-report-utility-inner span {
+    font-size: 0.56rem;
+  }
+
+  .driver-report-utility-inner a {
+    font-size: 0.56rem;
+  }
+
+  .driver-feature-report-action {
+    width: 100%;
+  }
+
   .driver-photo-gallery-controls {
     align-items: flex-start;
     flex-direction: column;
@@ -98,12 +183,20 @@ const galleryStyles = `
     width: 100%;
   }
 }
+
+@media print {
+  .driver-report-utility,
+  .driver-feature-report-action {
+    display: none !important;
+  }
+}
 `
 
 export default function DriverProfileLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <style>{galleryStyles}</style>
+      <DriverReportUtility />
       {children}
       <DriverProfileGalleryEnhancer />
     </>
