@@ -342,7 +342,7 @@ export default async function SeriesSeasonPage({
                   ) : null}
                   <div className={styles.tableWrap}>
                     <div className={styles.standingsTable}>
-                      <div className={styles.standingsHeader}>
+                      <div className={`${styles.standingsHeader} ${seasonInProgress && !hasRankedStandings ? styles.standingsUnranked : ''}`}>
                         {seasonInProgress && !hasRankedStandings ? (
                           <><span>Driver</span><span>Starts</span><span>Wins</span><span>Top 5</span><span>Top 10</span></>
                         ) : (
@@ -353,7 +353,7 @@ export default async function SeriesSeasonPage({
                         const driverSlug = row.driver_id ? driverSlugById.get(Number(row.driver_id)) || '' : ''
                         const driverName = row.driver_name || 'Unknown driver'
                         return (
-                          <div key={row.id} className={styles.standingsRow}>
+                          <div key={row.id} className={`${styles.standingsRow} ${seasonInProgress && !hasRankedStandings ? styles.standingsUnranked : ''}`}>
                             {seasonInProgress && !hasRankedStandings ? (
                               <>
                                 {driverSlug ? (
