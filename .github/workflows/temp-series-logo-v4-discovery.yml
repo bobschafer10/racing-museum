@@ -1,0 +1,229 @@
+name: temp-series-logo-v4-discovery
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 pillow pymupdf
+      - name: Research V4 logo candidates
+        shell: bash
+        run: |
+          cat > /tmp/v4.py <<'PY'
+          
+          import os, re, csv, io, json, urllib.parse, shutil
+          from pathlib import Path
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image, ImageOps, ImageDraw
+          import fitz
+          
+          ROOT=Path("logo_v4_discovery")
+          EXACT=ROOT/"exact"
+          CAND=ROOT/"candidates"
+          for d in (EXACT,CAND): d.mkdir(parents=True,exist_ok=True)
+          S=requests.Session()
+          S.headers.update({"User-Agent":"Mozilla/5.0 (compatible; UMARMLogoResearch/4.0)"})
+          
+          direct = [
+           ("american-racing-series","https://trademarks.justia.com/media/image.php?serial=73683056","Justia/USPTO exact series trademark"),
+           ("irl-indy-pro-series","https://trademarks.justia.com/media/image.php?serial=78943742","Justia/USPTO exact INDY PRO SERIES trademark"),
+           ("indy-nxt-by-firestone","https://indynxt-cdn.azureedge.net/-/media/IndyCar/Logos/INDY-NXT-Dark.png?vs=1&d=20221027T145552Z","Official INDY NXT site exact logo"),
+           ("united-states-super-trucks-national-championship-series","https://www.thethirdturn.com/w/images/b/b5/United_States_Super_Trucks_National_Championship_Series.jpg","The Third Turn exact historical series image"),
+           ("usac-stock-car-series","https://thethirdturn.com/w/images/1/19/USAC_Stock_Car_Series.jpg","The Third Turn exact historical series image"),
+          ]
+          rows=[]
+          
+          def save_image(url,deststem,outdir=EXACT,note=""):
+              try:
+                  r=S.get(url,timeout=30,allow_redirects=True); r.raise_for_status()
+                  data=r.content
+                  ct=(r.headers.get("content-type") or "").lower()
+                  if len(data)<500: raise RuntimeError("too small")
+                  ext=".png"
+                  im=None
+                  try:
+                      im=Image.open(io.BytesIO(data)); im.load()
+                      fmt=(im.format or "PNG").lower()
+                      ext={ "jpeg":".jpg","jpg":".jpg","png":".png","webp":".webp","gif":".gif","bmp":".bmp"}.get(fmt,".png")
+                  except Exception:
+                      if b"<svg" in data[:2000] or "svg" in ct:
+                          ext=".svg"
+                      else:
+                          raise
+                  p=outdir/(deststem+ext); p.write_bytes(data)
+                  rows.append([deststem,str(p),url,note,"ok"])
+                  return p
+              except Exception as e:
+                  rows.append([deststem,"",url,note,"ERROR "+repr(e)])
+                  return None
+          
+          for slug,url,note in direct:
+              save_image(url,slug,EXACT,note)
+          
+          # Menards Infiniti Pro Series: old Wikipedia page still references the historical logo.
+          try:
+              u="https://en.wikipedia.org/wiki/2005_Infiniti_Pro_Series"
+              html=S.get(u,timeout=30).text
+              soup=BeautifulSoup(html,"html.parser")
+              found=[]
+              for im in soup.find_all("img"):
+                  alt=(im.get("alt") or "").lower()
+                  src=im.get("src") or ""
+                  txt=(alt+" "+src).lower()
+                  if "infiniti pro" in txt or "menards" in txt:
+                      found.append(urllib.parse.urljoin(u,src))
+              for i,url in enumerate(dict.fromkeys(found)):
+                  save_image(url,"menards-infiniti-pro-series_candidate_%02d"%i,CAND,"Wikipedia 2005 Infiniti Pro Series logo candidate")
+          except Exception as e:
+              rows.append(["menards-infiniti-pro-series","","","wiki parse",repr(e)])
+          
+          # Vores: harvest the official site images and make them reviewable.
+          vores_urls=[]
+          try:
+              u="https://www.voresracing.com/"
+              html=S.get(u,timeout=30).text
+              soup=BeautifulSoup(html,"html.parser")
+              for tag in soup.find_all(["img","source"]):
+                  for attr in ("src","data-src","srcset","data-srcset"):
+                      v=tag.get(attr)
+                      if not v: continue
+                      # srcset may have several entries
+                      for part in str(v).split(","):
+                          raw=part.strip().split(" ")[0]
+                          if raw:
+                              vores_urls.append(urllib.parse.urljoin(u,raw))
+              # CSS/background URLs in source
+              for m in re.findall(r'url\(["\']?([^"\')]+)',html):
+                  vores_urls.append(urllib.parse.urljoin(u,m))
+          except Exception as e:
+              rows.append(["vores","","","official-page parse",repr(e)])
+          vores_urls=list(dict.fromkeys(vores_urls))
+          vores_saved=[]
+          for i,url in enumerate(vores_urls[:80]):
+              p=save_image(url,"vores_%02d"%i,CAND,"Official Vores site image candidate")
+              if p: vores_saved.append((p,url))
+          
+          # FastLane historical series article's primary graphic candidate.
+          save_image(
+           "https://www.getinthestands.com/uploads/news-pictures/2949-superior-blog-post-image-20230419102220.png",
+           "fastlane-northland-super-stock-series_article-graphic",CAND,
+           "GetInTheStands article by FastLane Northland Super Stock Series"
+          )
+          
+          # NASCAR Convertible official gallery: collect likely title/branding images, not automatically accepted.
+          try:
+              u="https://www.nascar.com/gallery/a-history-of-the-nascar-convertible-series/"
+              html=S.get(u,timeout=30).text
+              soup=BeautifulSoup(html,"html.parser")
+              imgs=[]
+              for im in soup.find_all("img"):
+                  alt=(im.get("alt") or "")
+                  src=im.get("src") or im.get("data-src") or ""
+                  if not src: continue
+                  if "convert" in (alt+" "+src).lower() or "nascar-convertibles" in src.lower():
+                      imgs.append(urllib.parse.urljoin(u,src))
+              for i,url in enumerate(dict.fromkeys(imgs)):
+                  save_image(url,"nascar-convertible_candidate_%02d"%i,CAND,"Official NASCAR archive gallery candidate")
+          except Exception as e:
+              rows.append(["nascar-convertible","","","official-page parse",repr(e)])
+          
+          # Official/authoritative PDFs for historical Road-to-Indy logos.
+          pdfs=[
+           ("firestone","https://www.indycar.com/~/media/Files/2012/10-TOR/10-TOR-SpotterGuide.pdf"),
+           ("menards","https://www.imscdn.com/indycar_media/documents/2013-05-22/B%20-%20FIL%20TRACKSIDE.pdf"),
+           ("roadtoindy2014","https://www.usf2000.com/docs/default-source/marketing/2014-mazda-road-to-indy-press-kit.pdf"),
+          ]
+          for pref,url in pdfs:
+              try:
+                  r=S.get(url,timeout=60); r.raise_for_status()
+                  pdfpath=ROOT/(pref+".pdf"); pdfpath.write_bytes(r.content)
+                  doc=fitz.open(pdfpath)
+                  seen=set(); count=0
+                  for pno in range(min(len(doc),60)):
+                      page=doc[pno]
+                      for img in page.get_images(full=True):
+                          xref=img[0]
+                          if xref in seen: continue
+                          seen.add(xref)
+                          try:
+                              obj=doc.extract_image(xref)
+                              data=obj["image"]; ext=obj["ext"]
+                              im=Image.open(io.BytesIO(data))
+                              w,h=im.size
+                              if w<100 or h<35 or w*h<7000: continue
+                              fn=CAND/f"{pref}_p{pno+1:02d}_xref{xref}_{w}x{h}.{ext}"
+                              fn.write_bytes(data); count+=1
+                              rows.append([pref,str(fn),url,f"PDF embedded image page {pno+1} {w}x{h}","candidate"])
+                          except Exception:
+                              pass
+                  # Render first 12 pages too, useful when logo is vector/text rather than embedded raster.
+                  for pno in range(min(len(doc),12)):
+                      pix=doc[pno].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
+                      fn=CAND/f"{pref}_PAGE_{pno+1:02d}.jpg"
+                      pix.save(fn)
+                      rows.append([pref,str(fn),url,f"Rendered PDF page {pno+1}","candidate-page"])
+              except Exception as e:
+                  rows.append([pref,"",url,"PDF extraction","ERROR "+repr(e)])
+          
+          # IndyCar historical article hero candidates for Pro Mazda / Star Mazda.
+          for slug,url in [
+           ("pro-mazda-announcement","https://www.indycar.com/-/media/IndyCar/News/Standard/2012/12-December/12-7-Star-Mazda-Announcement-Std.jpg"),
+           ("star-mazda-2012","https://www.indycar.com/-/media/IndyCar/News/Standard/2012/03-March/Star-Mazda-joins--Iowa-lineup_Standard.jpg"),
+          ]:
+              save_image(url,slug,CAND,"Official INDYCAR historical article image candidate")
+          
+          # Build contact sheets for exact and candidates, with filenames.
+          def contact(folder,out,title,limit=None):
+              files=[p for p in sorted(folder.iterdir()) if p.suffix.lower() in [".png",".jpg",".jpeg",".webp",".gif",".bmp"]]
+              if limit: files=files[:limit]
+              thumbs=[]
+              for p in files:
+                  try:
+                      im=Image.open(p).convert("RGBA")
+                      bg=Image.new("RGBA",im.size,"white"); bg.alpha_composite(im)
+                      thumbs.append((p,bg.convert("RGB")))
+                  except Exception: pass
+              cols=4; tw=420; th=300; top=60
+              n=len(thumbs); rr=max(1,(n+cols-1)//cols)
+              sheet=Image.new("RGB",(cols*tw,top+rr*th),"white")
+              d=ImageDraw.Draw(sheet); d.text((20,20),title,fill="black")
+              for i,(p,im) in enumerate(thumbs):
+                  show=ImageOps.contain(im,(380,210))
+                  x=(i%cols)*tw; y=top+(i//cols)*th
+                  sheet.paste(show,(x+(tw-show.width)//2,y+8+(210-show.height)//2))
+                  label=p.name
+                  # crude wrap
+                  parts=[label[j:j+52] for j in range(0,len(label),52)]
+                  d.text((x+10,y+225),"\n".join(parts[:3]),fill="black")
+              sheet.save(out,"JPEG",quality=90)
+          
+          contact(EXACT,ROOT/"CONTACT_EXACT.jpg","V4 exact / high-confidence direct assets")
+          # Separate candidate sheets in chunks to keep readable.
+          candfiles=[p for p in sorted(CAND.iterdir()) if p.suffix.lower() in [".png",".jpg",".jpeg",".webp",".gif",".bmp"]]
+          for k in range(0,len(candfiles),32):
+              temp=ROOT/f"_sheet_{k//32:02d}"
+              temp.mkdir(exist_ok=True)
+              for p in candfiles[k:k+32]:
+                  shutil.copy2(p,temp/p.name)
+              contact(temp,ROOT/f"CONTACT_CANDIDATES_{k//32+1:02d}.jpg",f"V4 candidates {k+1}-{min(k+32,len(candfiles))}")
+              shutil.rmtree(temp)
+          
+          with open(ROOT/"DISCOVERY_MANIFEST.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f); w.writerow(["key","file","source_url","note","status"]); w.writerows(rows)
+          shutil.make_archive("UMARM_logo_v4_discovery","zip",ROOT)
+          print("exact",len(list(EXACT.iterdir())),"candidate files",len(candfiles))
+          
+          PY
+          python /tmp/v4.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-logo-v4-discovery
+          path: UMARM_logo_v4_discovery.zip
+          retention-days: 7
