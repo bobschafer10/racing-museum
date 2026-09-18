@@ -325,6 +325,10 @@
   gap: 8px;
   align-items: center;
 }
+.standingsHeader.standingsUnranked,
+.standingsRow.standingsUnranked {
+  grid-template-columns: minmax(230px,1fr) 80px 70px 70px 70px;
+}
 .standingsHeader {
   min-height: 38px;
   padding: 0 11px;
