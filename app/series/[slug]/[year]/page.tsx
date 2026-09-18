@@ -53,12 +53,20 @@ export default async function SeriesSeasonPage({
 
   const eventRows = events || []
   const standingRows = standings || []
+  const standingsAreFinal =
+    standingRows.length > 0 && !standingRows.some((row: any) => row.is_final === false)
+  const hasRankedStandings = standingRows.some(
+    (row: any) => row.finishing_position != null || String(row.position_label || '').trim(),
+  )
+  const seasonInProgress = !season.champion_name && !standingsAreFinal
   const standingsGroups = groupStandingsByDivision(standingRows)
   const hasMultipleStandingsGroups = standingsGroups.length > 1
   const divisionChampions = standingsGroups
     .map((group) => ({
       division: group.label,
-      row: group.rows.find((row: any) => Number(row.finishing_position) === 1) || group.rows[0],
+      row:
+        group.rows.find((row: any) => Number(row.finishing_position) === 1) ||
+        (standingsAreFinal ? group.rows[0] : undefined),
     }))
     .filter((item) => item.row)
 
@@ -127,8 +135,15 @@ export default async function SeriesSeasonPage({
 
   const championRow = season.champion_driver_id
     ? standingRows.find((row: any) => Number(row.driver_id) === Number(season.champion_driver_id))
-    : !hasMultipleStandingsGroups
-      ? standingRows.find((row: any) => Number(row.finishing_position) === 1) || standingRows[0]
+    : season.champion_name
+      ? standingRows.find(
+          (row: any) =>
+            String(row.driver_name || '').trim().toLowerCase() ===
+            String(season.champion_name || '').trim().toLowerCase(),
+        ) ||
+        (!hasMultipleStandingsGroups
+          ? standingRows.find((row: any) => Number(row.finishing_position) === 1)
+          : null)
       : null
   const championSlug = championRow?.driver_id
     ? driverSlugById.get(Number(championRow.driver_id)) || ''
@@ -199,16 +214,18 @@ export default async function SeriesSeasonPage({
               <div className={styles.eyebrow}>Series Season Archive</div>
               <h1>{seasonYear} {series.series_name}</h1>
               <div className={styles.heroMeta}>
-                {hasMultipleStandingsGroups
+                {hasMultipleStandingsGroups && standingsAreFinal
                   ? `${standingsGroups.length} championship divisions`
                   : season.champion_name
                     ? `Champion: ${season.champion_name}`
-                    : standingRows.length
-                      ? 'Final standings preserved'
-                      : 'Championship season in progress'}
+                    : seasonInProgress
+                      ? 'Season in progress'
+                      : standingsAreFinal
+                        ? 'Final standings preserved'
+                        : 'Championship archive in progress'}
               </div>
               <p className={styles.heroDescription}>
-                Explore the available {seasonYear} season record, including final point standings, recorded race results, associated tracks, and preserved source material for {series.series_name}.
+                Explore the available {seasonYear} season record, including {seasonInProgress ? 'current season statistics' : 'final point standings'}, recorded race results, associated tracks, and preserved source material for {series.series_name}.
               </p>
               <div className={styles.heroActions}>
                 <Link href={`/series/${slug}`} className={styles.secondaryAction}>Series Overview</Link>
@@ -244,11 +261,16 @@ export default async function SeriesSeasonPage({
           <SectionHeader kicker="Season Snapshot" title={`${seasonYear} Championship Archive`} note={seasonRange} />
           <div className={styles.snapshotGrid}>
             <div className={styles.snapshotCard}>
-              <span>{hasMultipleStandingsGroups ? 'Division Champions' : 'Season Champion'}</span>
-              {hasMultipleStandingsGroups ? (
+              <span>{hasMultipleStandingsGroups && standingsAreFinal ? 'Division Champions' : seasonInProgress ? 'Season Status' : 'Season Champion'}</span>
+              {hasMultipleStandingsGroups && standingsAreFinal ? (
                 <>
                   <strong>{divisionChampions.length} champions</strong>
                   <small>{divisionChampions.map(({ division, row }) => `${division}: ${row.driver_name}`).join(' • ')}</small>
+                </>
+              ) : seasonInProgress ? (
+                <>
+                  <strong>In progress</strong>
+                  <small>No champion has been declared; current statistics are shown without inferred rankings.</small>
                 </>
               ) : (
                 <>
@@ -295,9 +317,21 @@ export default async function SeriesSeasonPage({
 
         <section id="standings" className={styles.section}>
           <SectionHeader
-            kicker="Championship History"
-            title="Final Point Standings"
-            note={hasMultipleStandingsGroups ? `${standingRows.length} entries across ${standingsGroups.length} divisions` : `${standingRows.length} drivers listed`}
+            kicker={seasonInProgress ? 'Active Season' : 'Championship History'}
+            title={
+              seasonInProgress
+                ? hasRankedStandings
+                  ? 'Current Point Standings'
+                  : 'Current Season Statistics'
+                : 'Final Point Standings'
+            }
+            note={
+              seasonInProgress && !hasRankedStandings
+                ? `${standingRows.length} drivers listed • official positions and points not yet published`
+                : hasMultipleStandingsGroups
+                  ? `${standingRows.length} entries across ${standingsGroups.length} divisions`
+                  : `${standingRows.length} drivers listed`
+            }
           />
           {standingRows.length ? (
             <>
@@ -335,7 +369,7 @@ export default async function SeriesSeasonPage({
                 </div>
               ))}
             </>
-          ) : <div className={styles.emptyState}>Final standings have not been added for this season yet.</div>}
+          ) : <div className={styles.emptyState}>{seasonInProgress ? 'Current season statistics have not been added yet.' : 'Final standings have not been added for this season yet.'}</div>}
         </section>
 
         <section id="tracks" className={styles.section}>
