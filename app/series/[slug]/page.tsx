@@ -58,7 +58,7 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
 
   const standingRows = latestStandings || []
   const standingsAreFinal =
-    standingRows.length > 0 && standingRows.every((row: any) => row.is_final === true)
+    standingRows.length > 0 && !standingRows.some((row: any) => row.is_final === false)
   const hasRankedStandings = standingRows.some(
     (row: any) => row.finishing_position != null || String(row.position_label || '').trim(),
   )
@@ -271,7 +271,7 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
 
                     {latestSeasonEvents.length > 0 ? (
                       <div className={styles.eventGrid}>
-                        {latestSeasonEvents.slice(0, 6).map((event: any) => (
+                        {latestSeasonEvents.slice(-6).map((event: any) => (
                           <Link key={event.id} href={`/series/${slug}/${latestSeason.year}/${event.race_number}`} className={styles.eventCard}>
                             <div className={styles.eventRaceNo}>Race #{event.race_number}</div>
                             <div className={styles.eventTrack}>{event.track_name || 'Track TBD'}</div>
