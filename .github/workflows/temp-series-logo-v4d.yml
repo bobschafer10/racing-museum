@@ -1,0 +1,53 @@
+name: temp-series-logo-v4d
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Build V4D
+        run: |
+          cat > /tmp/v4d.py <<'PY'
+          
+          import requests, io, csv, shutil
+          from pathlib import Path
+          from PIL import Image
+          ROOT=Path("v4d"); IMG=ROOT/"images"; IMG.mkdir(parents=True,exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          assets=[
+          ("nascar-all-star-series_1985-1988","https://static.wikia.nocookie.net/iracing/images/0/0a/Nascarallstartourlogo19851988.png/revision/latest?cb=20251202055758","NASCAR Busch/Winston All-Star Tour era, 1985-1988"),
+          ("nascar-all-star-series_1989-1999","https://static.wikia.nocookie.net/iracing/images/c/ce/Nascarbuschallstartourlogo19891999.png/revision/latest?cb=20251202055759","NASCAR Busch All-Star Tour/Series era, 1989-1999"),
+          ("nascar-all-star-series_2000-2001","https://static.wikia.nocookie.net/iracing/images/5/5f/Nascaroreillyallstartourlogo20002001.png/revision/latest?cb=20251202055759","NASCAR O'Reilly All-Star Series era, 2000-2001"),
+          ("nascar-short-track-division_1951-1955","https://static.wikia.nocookie.net/iracing/images/6/6c/Nascarshorttracklogo19511955.png/revision/latest?cb=20260112004108","NASCAR Short Track Series 1951-1955"),
+          ("nascar-short-track-division_1956-1959","https://static.wikia.nocookie.net/iracing/images/2/2d/Nascarshorttracklogo19561959.png/revision/latest?cb=20260112004108","NASCAR Short Track Series 1956-1959"),
+          ("cart-indy-lights_1998-1999","https://static.wikia.nocookie.net/iracing/images/1/1e/Screenshot_2023-08-16_120051.png/revision/latest?cb=20230816170119","Indy Lights period logo 1998-1999"),
+          ("cart-indy-lights_2000-2001","https://static.wikia.nocookie.net/iracing/images/a/a6/Daytonindylights20002001alt1.png/revision/latest?cb=20260321180657","Dayton Indy Lights period logo 2000-2001"),
+          ("formula-ford-2000-zetec-championship","https://static.wikia.nocookie.net/iracing/images/a/a6/Formulaford2000logo20022009.png/revision/latest?cb=20250907220428","Formula Ford 2000 / Zetec era logo 2002-2009"),
+          ]
+          rows=[]
+          for stem,url,note in assets:
+              try:
+                  r=S.get(url,timeout=30); r.raise_for_status()
+                  im=Image.open(io.BytesIO(r.content)); im.load()
+                  p=IMG/(stem+".png"); im.convert("RGBA").save(p,"PNG",optimize=True)
+                  rows.append([stem,url,note,f"{im.width}x{im.height}","ok"])
+              except Exception as e: rows.append([stem,url,note,"",repr(e)])
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f);w.writerow(["stem","url","note","size","status"]);w.writerows(rows)
+          shutil.make_archive("UMARM_logo_v4d","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/v4d.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-logo-v4d
+          path: UMARM_logo_v4d.zip
+          retention-days: 7
