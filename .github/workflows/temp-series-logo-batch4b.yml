@@ -1,0 +1,63 @@
+name: temp-series-logo-batch4b
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow pymupdf
+      - name: Retrieve Batch 4B assets
+        run: |
+          cat > /tmp/b4b.py <<'PY'
+          
+          import requests, fitz, shutil, csv
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          ROOT=Path("batch4b"); ROOT.mkdir(exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          rows=[]
+          # Official Trans Am standard current brand
+          try:
+              u="https://www.gotransam.com/img/brand.png"
+              r=S.get(u,timeout=40); r.raise_for_status()
+              p=ROOT/"trans-am-official-brand.png"; p.write_bytes(r.content)
+              im=Image.open(p); rows.append(["trans-am",u,p.name,f"{im.width}x{im.height}","ok"])
+          except Exception as e: rows.append(["trans-am","","","",repr(e)])
+          # Official ARCA brochure: render history page containing the MARC/ARCA logo timeline.
+          try:
+              u="https://www.arcaracing.com/wp-content/uploads/sites/36/2020/05/19/2020-ARCA-Menards-Series-Brochure-Print.pdf"
+              r=S.get(u,timeout=60); r.raise_for_status()
+              pdf=ROOT/"arca-brochure.pdf"; pdf.write_bytes(r.content)
+              doc=fitz.open(pdf)
+              # page 4 in human numbering = zero-index 3
+              page=doc[3]
+              pix=page.get_pixmap(matrix=fitz.Matrix(3,3),alpha=False)
+              pp=ROOT/"arca-history-page4.png"; pix.save(pp)
+              rows.append(["marc-timeline",u,pp.name,f"{pix.width}x{pix.height}","rendered"])
+              # Extract embedded raster images if present.
+              for iminfo in page.get_images(full=True):
+                  xref=iminfo[0]
+                  try:
+                      obj=doc.extract_image(xref)
+                      q=ROOT/f"arca-page4-xref{xref}.{obj['ext']}"
+                      q.write_bytes(obj["image"])
+                  except: pass
+          except Exception as e: rows.append(["marc-timeline","","","",repr(e)])
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f);w.writerow(["key","url","file","size","status"]);w.writerows(rows)
+          shutil.make_archive("UMARM_batch4b","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/b4b.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-batch4b
+          path: UMARM_batch4b.zip
+          retention-days: 7
