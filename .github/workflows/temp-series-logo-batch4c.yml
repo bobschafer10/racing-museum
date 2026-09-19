@@ -1,0 +1,47 @@
+name: temp-series-logo-batch4c
+on:
+  push:
+    branches:
+      - temp/series-logo-pack-20260918
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pillow
+      - name: Retrieve official Trans Am assets
+        run: |
+          cat > /tmp/b4c.py <<'PY'
+          
+          import requests, io, csv, shutil
+          from pathlib import Path
+          from PIL import Image
+          ROOT=Path("batch4c"); ROOT.mkdir(exist_ok=True)
+          S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0 UMARM Logo Research"})
+          assets=[
+          ("trans-am-footer-logo","https://www.gotransam.com/img/footer-logo.png","Official Trans Am footer/logo asset"),
+          ("trans-am-brand","https://www.gotransam.com/img/brand.png","Official Trans Am header brand asset"),
+          ]
+          rows=[]
+          for stem,url,note in assets:
+              try:
+                  r=S.get(url,timeout=40); r.raise_for_status()
+                  p=ROOT/(stem+".png"); p.write_bytes(r.content)
+                  im=Image.open(p)
+                  rows.append([stem,url,note,p.name,f"{im.width}x{im.height}","ok"])
+              except Exception as e: rows.append([stem,url,note,"","",repr(e)])
+          with open(ROOT/"manifest.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.writer(f);w.writerow(["stem","url","note","file","size","status"]);w.writerows(rows)
+          shutil.make_archive("UMARM_batch4c","zip",ROOT)
+          print(rows)
+          
+          PY
+          python /tmp/b4c.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: UMARM-batch4c
+          path: UMARM_batch4c.zip
+          retention-days: 7
