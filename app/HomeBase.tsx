@@ -53,6 +53,17 @@ type PhotoRow = {
   sequence?: number | null
 }
 
+type ActivityRow = {
+  activity_key?: string | null
+  activity_type?: string | null
+  activity_at?: string | null
+  activity_day?: string | null
+  title?: string | null
+  detail?: string | null
+  href?: string | null
+  badge?: string | null
+}
+
 function dailyPick<T>(items: T[]): T | null {
   if (!items.length) return null
   const day = Math.floor(Date.now() / 86_400_000)
@@ -87,6 +98,49 @@ function formatApprox(value?: number | null) {
   return `${number}+`
 }
 
+function formatActivityDate(value?: string | null) {
+  if (!value) return 'LATEST'
+  const [year, month, day] = value.split('-').map(Number)
+  if (!year || !month || !day) return 'LATEST'
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(Date.UTC(year, month - 1, day))).toUpperCase()
+}
+
+function selectHomepageActivities(items: ActivityRow[], limit = 6) {
+  const selected: ActivityRow[] = []
+  const typeCounts = new Map<string, number>()
+  const caps: Record<string, number> = {
+    photo: 2,
+    results: 2,
+    series: 2,
+    standings: 2,
+    driver: 1,
+    track: 1,
+  }
+
+  for (const item of items) {
+    const type = item.activity_type || 'other'
+    const cap = caps[type] ?? 1
+    const count = typeCounts.get(type) || 0
+    if (count >= cap) continue
+
+    selected.push(item)
+    typeCounts.set(type, count + 1)
+    if (selected.length === limit) return selected
+  }
+
+  for (const item of items) {
+    if (selected.includes(item)) continue
+    selected.push(item)
+    if (selected.length === limit) break
+  }
+
+  return selected
+}
+
 function trackYears(track?: TrackRow | null) {
   if (!track?.first_year && !track?.last_year) return 'Historic racing venue'
   return `${track.first_year || '?'}–${track.last_year || 'Present'}`
@@ -100,7 +154,7 @@ function seriesYears(series?: SeriesRow | null) {
 }
 
 export default async function Home() {
-  const [statsResult, driversResult, tracksResult, seriesResult, photosResult] = await Promise.all([
+  const [statsResult, driversResult, tracksResult, seriesResult, photosResult, activityResult] = await Promise.all([
     supabase.from('homepage_stats_view').select('*').single(),
     supabase
       .from('driver_landing_directory_view')
@@ -119,6 +173,11 @@ export default async function Home() {
       .not('track_slug', 'in', '("unknown-track","unknown")')
       .order('sequence', { ascending: false, nullsFirst: false })
       .limit(180),
+    supabase
+      .from('archive_recent_activity_view')
+      .select('activity_key,activity_type,activity_at,activity_day,title,detail,href,badge')
+      .order('activity_at', { ascending: false, nullsFirst: false })
+      .limit(24),
   ])
 
   const stats = (statsResult.data || {}) as StatsRow
@@ -126,6 +185,7 @@ export default async function Home() {
   const tracks = (tracksResult.data || []) as TrackRow[]
   const seriesRows = (seriesResult.data || []) as SeriesRow[]
   const photos = (photosResult.data || []) as PhotoRow[]
+  const activities = (activityResult.data || []) as ActivityRow[]
 
   const featuredDriver = dailyPick(drivers)
   const featuredTrack = dailyPick(tracks)
@@ -154,7 +214,7 @@ export default async function Home() {
   const spotlightPhoto = dailyPick(photos.slice(0, 90))
   const supportPhoto = photos.find((photo) => photo.file_name !== spotlightPhoto?.file_name) || spotlightPhoto
   const gatewayTrackPhoto = featuredTrackPhoto || photos[2] || photos[0] || null
-  const recentAdditions = photos.slice(0, 6)
+  const recentAdditions = selectHomepageActivities(activities)
   const seriesLogo = featuredSeries?.slug ? `/logos/series/${featuredSeries.slug}.jpg` : null
 
   const gateways = [
@@ -325,18 +385,19 @@ export default async function Home() {
             <div className={styles.panel}>
               <div className={styles.panelHeader}>
                 <h3>Recently Added to the Archive</h3>
-                <Link href="/photos">View Latest →</Link>
+                <Link href="/latest">View Latest →</Link>
               </div>
               <div className={styles.recentList}>
-                {recentAdditions.length ? recentAdditions.map((photo, index) => (
-                  <div key={`${photo.file_name}-${index}`} className={styles.recentRow}>
+                {recentAdditions.length ? recentAdditions.map((activity, index) => (
+                  <div key={activity.activity_key || `activity-${index}`} className={styles.recentRow}>
                     <span className={styles.recentDate}>
-                      {photo.sequence ? `#${photo.sequence.toLocaleString('en-US')}` : 'Latest'}
+                      {formatActivityDate(activity.activity_day)}
                     </span>
-                    <span className={styles.recentText}>
-                      New photo: {formatSlugName(photo.driver_slug)} at {formatSlugName(photo.track_slug)}
-                    </span>
-                    <span className={styles.badge}>Photo</span>
+                    <Link href={activity.href || '/latest'} className={styles.recentLink}>
+                      <strong>{activity.title || 'Archive update'}</strong>
+                      {activity.detail ? <span className={styles.recentDetail}>{activity.detail}</span> : null}
+                    </Link>
+                    <span className={styles.badge}>{activity.badge || 'NEW'}</span>
                   </div>
                 )) : (
                   <div className={styles.recentRow}>
@@ -529,7 +590,7 @@ export default async function Home() {
           <div className={styles.footerCell}>
             <h3 className={styles.footerTitle}>Most Recent Additions</h3>
             <p>See what has just been added to the photo and racing-history archive.</p>
-            <p><Link href="/photos">View Latest Additions →</Link></p>
+            <p><Link href="/latest">View Latest Additions →</Link></p>
           </div>
           <div className={styles.footerCell}>
             <h3 className={styles.footerTitle}>What Doors Will Open Next</h3>
