@@ -29,7 +29,7 @@ function formatActivityDate(value?: string | null) {
 
 export default async function LatestArchivePage() {
   const { data } = await supabase
-    .from('archive_recent_activity_view')
+    .from('archive_recent_activity_mv')
     .select('activity_key,activity_type,activity_at,activity_day,title,detail,href,badge')
     .order('activity_at', { ascending: false, nullsFirst: false })
     .limit(100)
