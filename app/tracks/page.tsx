@@ -119,9 +119,29 @@ function formatDate(value?: string | null) {
   })
 }
 
-function trackMatchesPhoto(track: TrackRow, photo: PhotoRow) {
-  const photoTrack = (photo.track_slug || '').toLowerCase()
-  return photoTrack === track.slug.toLowerCase() || photoTrack === baseTrackSlug(track.slug).toLowerCase()
+function hashString(value: string) {
+  let hash = 2166136261
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index)
+    hash = Math.imul(hash, 16777619)
+  }
+  return hash >>> 0
+}
+
+function getCentralDayIndex() {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Chicago',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(new Date())
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]))
+  const year = Number(values.year)
+  const month = Number(values.month)
+  const day = Number(values.day)
+
+  if (!year || !month || !day) return Math.floor(Date.now() / 86_400_000)
+  return Math.floor(Date.UTC(year, month - 1, day) / 86_400_000)
 }
 
 function uniqueTracks(items: Array<TrackRow | null | undefined>) {
@@ -270,29 +290,39 @@ export default async function TracksPage({
     ...featuredGrid,
   ])
 
-  const photoLookupSlugs = Array.from(
-    new Set(discoveryTracks.flatMap((track) => [track.slug, baseTrackSlug(track.slug)])),
-  )
+  const photoPools = new Map<string, PhotoRow[]>()
+  if (discoveryTracks.length > 0) {
+    const photoPoolResults = await Promise.all(
+      discoveryTracks.map(async (track) => {
+        const lookupSlugs = Array.from(new Set([track.slug, baseTrackSlug(track.slug)]))
+        const photoResult = await supabase
+          .from('photos')
+          .select('file_name,track_slug,year,sequence')
+          .in('track_slug', lookupSlugs)
+          .not('file_name', 'is', null)
+          .neq('credit_type', 'unknown')
+          .order('year', { ascending: false, nullsFirst: false })
+          .order('sequence', { ascending: true })
+          .limit(10)
 
-  let photoRows: PhotoRow[] = []
-  if (photoLookupSlugs.length > 0) {
-    const photoResult = await supabase
-      .from('photos')
-      .select('file_name,track_slug,year,sequence')
-      .in('track_slug', photoLookupSlugs)
-      .neq('credit_type', 'unknown')
-      .order('year', { ascending: false, nullsFirst: false })
-      .order('sequence', { ascending: true })
-      .limit(220)
-    photoRows = (photoResult.data ?? []) as PhotoRow[]
+        return [track.slug, (photoResult.data ?? []) as PhotoRow[]] as const
+      }),
+    )
+
+    photoPoolResults.forEach(([slug, photos]) => photoPools.set(slug, photos))
   }
 
-  const photoForTrack = (track?: TrackRow | null) => {
+  const photoRotationDay = getCentralDayIndex()
+  const photoForTrack = (track?: TrackRow | null, slot = 'default') => {
     if (!track) return null
-    return photoRows.find((photo) => trackMatchesPhoto(track, photo)) || null
+    const photos = photoPools.get(track.slug) ?? []
+    if (photos.length === 0) return null
+
+    const startIndex = hashString(`${track.slug}:${slot}`)
+    return photos[(startIndex + photoRotationDay) % photos.length]
   }
 
-  const heroPhotoUrl = getPhotoUrl(photoForTrack(featuredTrack))
+  const heroPhotoUrl = getPhotoUrl(photoForTrack(featuredTrack, 'hero'))
   const totalEvents = allTracks.reduce((sum, track) => sum + Number(track.event_count || 0), 0)
   const firstArchiveYear = Math.min(
     ...allTracks.map((track) => Number(track.first_event_year || 9999)).filter((year) => year < 9999),
@@ -475,7 +505,7 @@ export default async function TracksPage({
           <div className={styles.stateGrid}>
             {primaryStates.map((state, index) => {
               const leader = stateLeaders[index]
-              const imageUrl = getPhotoUrl(photoForTrack(leader))
+              const imageUrl = getPhotoUrl(photoForTrack(leader, `state-${state.code}`))
               return (
                 <Link key={state.code} href={`/tracks/state/${state.code.toLowerCase()}`} className={styles.stateCard}>
                   {imageUrl ? <img src={imageUrl} alt="" className={styles.stateCardImage} /> : null}
@@ -506,7 +536,7 @@ export default async function TracksPage({
         <section className={styles.discoveryGrid} aria-label="Track archive highlights">
           {discoveryCards.map((card) => {
             const track = card.track
-            const imageUrl = getPhotoUrl(photoForTrack(track))
+            const imageUrl = getPhotoUrl(photoForTrack(track, `discovery-${card.label}`))
             return track ? (
               <Link key={card.label} href={`/tracks/${track.slug}`} className={styles.discoveryCard}>
                 <div className={styles.discoveryLabel}>{card.label}</div>
@@ -537,7 +567,7 @@ export default async function TracksPage({
 
           <div className={styles.featuredGrid}>
             {featuredGrid.map((track) => {
-              const imageUrl = getPhotoUrl(photoForTrack(track))
+              const imageUrl = getPhotoUrl(photoForTrack(track, 'featured'))
               return (
                 <Link key={track.slug} href={`/tracks/${track.slug}`} className={styles.trackCard}>
                   <div className={styles.trackCardMedia}>
