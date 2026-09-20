@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 import styles from '../../special-event.module.css'
 
 export const revalidate=300
-const SERIES_IDS=[95,96,98,99,100,101,102,103],MIN_YEAR=1986,MAX_YEAR=2025
+const SERIES_IDS=[95,96,98,99,100,101,102,103],MIN_YEAR=1986,MAX_YEAR=2026
 const divisionNames:Record<number,string>={95:'Late Model Division',96:'Modified Division',98:'Super Stock Division',99:'Street Stock Division',100:'Midwest Modified Division',101:'Mod Four Division',102:'Pure Stock Division',103:'Hornet Division'}
 type ResultRow={id:number;finishing_position:number|null;starting_position:string|null;car_number:string|null;driver_name:string;status:string|null;result_section:string|null}
 type RaceRow={id:number;series_id:number|null;race_date:string|null;track_name:string|null;track_slug:string|null;winner_name:string|null;source_url:string|null;SeriesEventResults:ResultRow[]}
