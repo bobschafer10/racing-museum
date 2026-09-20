@@ -174,7 +174,7 @@ export default async function Home() {
       .order('sequence', { ascending: false, nullsFirst: false })
       .limit(180),
     supabase
-      .from('archive_recent_activity_view')
+      .from('archive_recent_activity_mv')
       .select('activity_key,activity_type,activity_at,activity_day,title,detail,href,badge')
       .order('activity_at', { ascending: false, nullsFirst: false })
       .limit(24),
