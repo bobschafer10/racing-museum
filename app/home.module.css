@@ -443,6 +443,7 @@
   display: grid;
   grid-template-columns: 1fr 1.08fr;
   gap: 18px;
+  align-items: start;
 }
 
 .panel {
