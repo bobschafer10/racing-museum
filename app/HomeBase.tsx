@@ -498,7 +498,7 @@ export default async function Home() {
                 </p>
                 <a
                   className={styles.primaryButton}
-                  href="mailto:autoracinghistory@gmail.com?subject=Museum Information Submission"
+                  href="mailto:autoracingmuseum@gmail.com?subject=Museum Information Submission"
                 >
                   Support the Archive →
                 </a>
@@ -580,7 +580,7 @@ export default async function Home() {
           </div>
           <div className={styles.footerCell}>
             <h3 className={styles.footerTitle}>Contact / Follow</h3>
-            <p><a href="mailto:autoracinghistory@gmail.com">autoracinghistory@gmail.com</a></p>
+            <p><a href="mailto:autoracingmuseum@gmail.com">autoracingmuseum@gmail.com</a></p>
             <p>
               <a href="https://www.facebook.com/uppermidwestautoracingmuseum" target="_blank" rel="noopener noreferrer">
                 Follow the Museum on Facebook
