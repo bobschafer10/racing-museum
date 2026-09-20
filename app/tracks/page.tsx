@@ -303,6 +303,7 @@ export default async function TracksPage({
           .neq('credit_type', 'unknown')
           .order('year', { ascending: false, nullsFirst: false })
           .order('sequence', { ascending: true })
+          .order('file_name', { ascending: true })
           .limit(10)
 
         return [track.slug, (photoResult.data ?? []) as PhotoRow[]] as const
