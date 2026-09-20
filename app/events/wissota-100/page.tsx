@@ -4,7 +4,7 @@ import styles from '../special-event.module.css'
 
 export const dynamic='force-dynamic'
 export const revalidate=300
-const SERIES_IDS=[95,96,98,99,100,101,102,103],FIRST_YEAR=1986,LAST_YEAR=2025
+const SERIES_IDS=[95,96,98,99,100,101,102,103],FIRST_YEAR=1986,LAST_YEAR=2026
 const divisionNames:Record<number,string>={95:'Late Model',96:'Modified',98:'Super Stock',99:'Street Stock',100:'Midwest Modified',101:'Mod Four',102:'Pure Stock',103:'Hornet'}
 type EventRow={series_id:number|null;race_date:string|null;track_slug:string|null}
 function photoUrl(trackSlug:string,fileName?:string|null,year?:string|null){const base=process.env.NEXT_PUBLIC_SUPABASE_URL;return fileName&&base?`${base}/storage/v1/object/public/media/photos/master/${trackSlug}/${year||'unknown-year'}/${fileName}`:''}
@@ -22,7 +22,7 @@ export default async function Wissota100Page(){
    <div className={styles.eyebrow}>Upper Midwest Special Event Archive</div><h1 className={styles.title}>WISSOTA 100</h1><p className={styles.tagline}>Championship Night, Preserved by Division</p>
    <p className={styles.intro}>The Museum links each documented WISSOTA 100 championship division together by year. Late Models and Modifieds form the earliest archive, with Super Stocks, Street Stocks, Midwest Modifieds, Mod Fours, Pure Stocks and Hornets added where documented. Race of Champions and qualifying-night features remain separate.</p>
    <div className={styles.heroActions}><Link href="#years" className={styles.button}>Browse Years</Link><Link href="/events" className={styles.buttonGhost}>All Special Events</Link></div>
-   <div className={styles.stats}><Stat label="Years" value="1986–2025"/><Stat label="Division Events" value={String(events.length)}/><Stat label="Divisions" value="8"/><Stat label="Cancelled Editions" value="2"/></div>
+   <div className={styles.stats}><Stat label="Years" value="1986–2026"/><Stat label="Division Events" value={String(events.length)}/><Stat label="Divisions" value="8"/><Stat label="Cancelled Editions" value="2"/></div>
   </div></section>
   <div className={styles.content}>
    <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>Archive Standard</div><strong>Preserve what survives; never reconstruct missing finishing orders.</strong><p>A full field is used when available. Otherwise top-10, top-four, or winner-only records remain exactly as preserved. The 1987 edition was rained out and the 2020 edition was cancelled during COVID.</p></div></section>
