@@ -41,7 +41,20 @@ export default async function TrackPhotosPage({
 }) {
   const { slug } = await params
   const query = await searchParams
-  const baseSlug = slug.replace(/-(wi|il|mn|mi)$/i, "")
+  const baseSlug = slug.replace(
+    /-(wi|mn|il|mi|in|ia|mo|oh|tn|co|ks|ky|sc|sd|ont)$/i,
+    ""
+  )
+  const photoSlugs = Array.from(
+    new Set([
+      slug,
+      baseSlug,
+      ...(baseSlug === "santa-fe-speedway" ? ["sante-fe-speedway"] : []),
+    ])
+  )
+  const photoTrackFilter = photoSlugs
+    .map((photoSlug) => `track_slug.eq.${photoSlug}`)
+    .join(",")
   const requestedPage = Number(query.page || 1)
   const currentPage = Number.isFinite(requestedPage) && requestedPage > 0
     ? Math.floor(requestedPage)
@@ -56,7 +69,7 @@ export default async function TrackPhotosPage({
     supabase
       .from("photos")
       .select("photo_id", { count: "exact", head: true })
-      .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
+      .or(photoTrackFilter)
       .neq("credit_type", "unknown"),
   ])
 
@@ -71,7 +84,7 @@ export default async function TrackPhotosPage({
   const { data: photos } = await supabase
     .from("photos")
     .select("*")
-    .or(`track_slug.eq.${slug},track_slug.eq.${baseSlug}`)
+    .or(photoTrackFilter)
     .neq("credit_type", "unknown")
     .order("year", { ascending: false, nullsFirst: false })
     .order("sequence", { ascending: true })
