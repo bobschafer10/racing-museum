@@ -170,6 +170,10 @@ const events: EventCollection[] = [
   },
 ]
 
+const eventImageOverrides: Record<string, string> = {
+  'dick-trickle-99': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/lacrosse-interstate-speedway/1981/lacrosse-interstate-speedway_1981_dick-trickle_stan-kalwasinski_photo_555.jpg`,
+}
+
 const highlightDefinitions = [
   { slug: 'national-short-track-championships', label: 'Longest-running archive', stat: '1966–2025' },
   { slug: 'slinger-nationals', label: 'Deepest result archive', stat: '2,185 result rows' },
@@ -324,7 +328,7 @@ export default async function EventsPage({ searchParams }: { searchParams?: Sear
           </div>
           <div className={styles.highlightsGrid}>
             {highlights.map(({ event, label, stat }) => {
-              const image = event.venueTrackSlug ? photoByTrack.get(event.venueTrackSlug) : ''
+              const image = eventImageOverrides[event.slug] || (event.venueTrackSlug ? photoByTrack.get(event.venueTrackSlug) : '')
               return (
                 <Link key={event.slug} href={`/events/${event.slug}`} className={styles.highlightCard}>
                   <div className={styles.highlightImageWrap}>
@@ -355,7 +359,7 @@ export default async function EventsPage({ searchParams }: { searchParams?: Sear
           {filtered.length ? (
             <div className={styles.directoryGrid}>
               {filtered.map((event) => {
-                const image = event.venueTrackSlug ? photoByTrack.get(event.venueTrackSlug) : ''
+                const image = eventImageOverrides[event.slug] || (event.venueTrackSlug ? photoByTrack.get(event.venueTrackSlug) : '')
                 return (
                   <Link key={event.slug} href={`/events/${event.slug}`} className={`${styles.eventCard} ${event.complete ? styles.eventComplete : ''}`}>
                     {event.complete && <div className={styles.completeBadge}>Museum Archive Complete</div>}
