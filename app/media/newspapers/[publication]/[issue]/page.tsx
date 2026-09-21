@@ -7,12 +7,19 @@ import "../../../archive-dark.css"
 
 function scanPageNumber(image: string) {
   const filename = decodeURIComponent(image).split("/").pop() || ""
-  const match = filename.match(/(?:page\s*)?0*(\d+)\.(?:jpg|jpeg|png)$/i)
+  const match = filename.match(/(?:page\s*)?0*(\d+)(?:-\d+)?\.(?:jpg|jpeg|png)$/i)
   return match ? Number(match[1]) : null
 }
 
 function scanFilename(image: string) {
   return decodeURIComponent(image).split("/").pop() || ""
+}
+
+function queryPhrase(query: string) {
+  const trimmed = query.trim()
+  const straight = trimmed.length >= 2 && trimmed.startsWith('"') && trimmed.endsWith('"')
+  const smart = trimmed.length >= 2 && trimmed.startsWith("“") && trimmed.endsWith("”")
+  return straight || smart ? trimmed.slice(1, -1).trim() : trimmed
 }
 
 function matchSnippet(text: string, query: string) {
@@ -23,7 +30,7 @@ function matchSnippet(text: string, query: string) {
   if (!clean || !query) return ""
 
   const lower = clean.toLowerCase()
-  const phrase = query.toLowerCase().trim()
+  const phrase = queryPhrase(query).toLowerCase()
   let hit = lower.indexOf(phrase)
   if (hit < 0) {
     for (const term of phrase.split(/\s+/).filter((value) => value.length >= 2)) {
@@ -79,7 +86,7 @@ function parseOcrLayoutLines(value: unknown): OcrHighlightLine[] {
 }
 
 function matchingOcrLayoutLines(lines: OcrHighlightLine[], query: string) {
-  const phrase = query.trim().toLowerCase()
+  const phrase = queryPhrase(query).toLowerCase()
   const tokens = Array.from(new Set(
     phrase
       .replace(/["'()]/g, " ")
@@ -148,20 +155,34 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
   const issue = await getNewspaperIssue(publication, issueSlug)
   if (!issue) notFound()
 
+  const issuePageImages = (issue.pages || []).filter(Boolean) as string[]
   const orderedImages = Array.from(
     new Set(
-      [issue.coverImage, ...(issue.pages || []), ...(issue.backCoverImage ? [issue.backCoverImage] : [])].filter(Boolean),
+      (issuePageImages.length
+        ? issuePageImages
+        : [issue.coverImage, ...(issue.backCoverImage ? [issue.backCoverImage] : [])]
+      ).filter(Boolean),
     ),
   ) as string[]
-  const pages = orderedImages.map((image, index) => ({
-    label:
-      index === 0
-        ? "Front Cover"
-        : index === orderedImages.length - 1 && issue.backCoverImage === image
-          ? "Back Cover"
-          : `Page ${index + 1}`,
-    image,
-  }))
+  const pages = orderedImages.map((image, index) => {
+    const pageNumber = scanPageNumber(image)
+    const isFirst = index === 0
+    const isLast = index === orderedImages.length - 1
+    return {
+      label: pageNumber
+        ? isFirst
+          ? `Page ${pageNumber} • Front Cover`
+          : isLast
+            ? `Page ${pageNumber} • Back Cover`
+            : `Page ${pageNumber}`
+        : isFirst
+          ? "Front Cover"
+          : isLast
+            ? "Back Cover"
+            : `Page ${index + 1}`,
+      image,
+    }
+  })
   const summary =
     issue.description ||
     issue.summary ||
