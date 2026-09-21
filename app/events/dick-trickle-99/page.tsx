@@ -34,32 +34,18 @@ function formatDate(value: string | null) {
   })
 }
 
-function photoUrl(fileName?: string | null, year?: string | null) {
-  const base = process.env.NEXT_PUBLIC_SUPABASE_URL
-  return fileName && base
-    ? `${base}/storage/v1/object/public/media/photos/master/lacrosse-fairgrounds-wi/${year || 'unknown-year'}/${fileName}`
-    : ''
-}
+const DICK_TRICKLE_HERO = `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/lacrosse-interstate-speedway/1981/lacrosse-interstate-speedway_1981_dick-trickle_stan-kalwasinski_photo_555.jpg`
 
 export default async function DickTrickle99Page() {
-  const [{ data, error }, { data: photos }] = await Promise.all([
-    supabase
-      .from('SeriesEvents')
-      .select(`id,race_date,winner_name,source_url,SeriesEventResults(id,finishing_position,driver_name,car_number,starting_position,laps,status,result_section)`)
-      .eq('series_id', SERIES_ID)
-      .order('race_date', { ascending: false }),
-    supabase
-      .from('photos')
-      .select('file_name,year')
-      .eq('track_slug', 'lacrosse-fairgrounds-wi')
-      .neq('credit_type', 'unknown')
-      .order('year', { ascending: false })
-      .limit(8),
-  ])
+  const { data, error } = await supabase
+    .from('SeriesEvents')
+    .select(`id,race_date,winner_name,source_url,SeriesEventResults(id,finishing_position,driver_name,car_number,starting_position,laps,status,result_section)`)
+    .eq('series_id', SERIES_ID)
+    .order('race_date', { ascending: false })
 
   const events = (data ?? []) as EventRow[]
   const resultCount = events.reduce((sum, event) => sum + event.SeriesEventResults.length, 0)
-  const heroSrc = photoUrl(photos?.[0]?.file_name, photos?.[0]?.year)
+  const heroSrc = DICK_TRICKLE_HERO
 
   return (
     <main className={styles.page}>
