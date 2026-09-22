@@ -4,6 +4,7 @@ import { supabase } from '@/lib/supabase'
 import TrackLogo from '../TrackLogo'
 import profileStyles from '../track-profile.module.css'
 import styles from './results.module.css'
+import RaceNightArchive from './RaceNightArchive'
 
 export const revalidate = 300
 
@@ -178,6 +179,9 @@ export default async function TrackResultsPage({
     const matchesSearch = !normalizedSearch || haystack.includes(normalizedSearch)
     return matchesDivision && matchesSearch
   })
+
+  const raceNightEventIds = Array.from(new Set(safeResults.map((row) => Number(row.race_id)).filter(Boolean)))
+  const raceNightDates = Object.fromEntries(safeResults.map((row) => [Number(row.race_id), row.race_date]))
 
   const grouped = filteredResults.reduce<Record<string, FullTrackResultRow[]>>((acc, row) => {
     if (!acc[row.race_date]) acc[row.race_date] = []
@@ -384,6 +388,8 @@ export default async function TrackResultsPage({
             </div>
           )}
         </section>
+
+        <RaceNightArchive eventIds={raceNightEventIds} raceDates={raceNightDates} />
 
         <section className={styles.footerGrid}>
           <Link href={`/tracks/${slug}`} className={styles.footerCard}><strong>Track Overview</strong><span>Return to the full {track.track_name} archive →</span></Link>
