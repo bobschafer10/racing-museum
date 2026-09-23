@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 import TrackLogo from '../TrackLogo'
 import profileStyles from '../track-profile.module.css'
 import styles from './results.module.css'
-import RaceNightArchive, { type EventRace } from './RaceNightArchive'
+import RaceNightArchive, { type EventRace, type NewspaperClipping } from './RaceNightArchive'
 
 export const revalidate = 300
 
@@ -182,6 +182,7 @@ export default async function TrackResultsPage({
 
   const raceNightEventIds = Array.from(new Set(safeResults.map((row) => Number(row.race_id)).filter(Boolean)))
   let raceNightRaces: EventRace[] = []
+  let newspaperClippings: NewspaperClipping[] = []
   if (raceNightEventIds.length) {
     const { data: raceNightData } = await supabase
       .from('event_races')
@@ -190,6 +191,14 @@ export default async function TrackResultsPage({
       .order('race_number', { ascending: true })
 
     raceNightRaces = (raceNightData ?? []) as unknown as EventRace[]
+
+    const { data: clippingData } = await supabase
+      .from('event_newspaper_clippings')
+      .select('id,event_id,publication_code,publication_name,issue_date,page_label,storage_path,headline,crop_x,crop_y,crop_w,crop_h,display_order')
+      .in('event_id', raceNightEventIds)
+      .order('display_order', { ascending: true })
+
+    newspaperClippings = (clippingData ?? []) as NewspaperClipping[]
   }
 
   const grouped = filteredResults.reduce<Record<string, FullTrackResultRow[]>>((acc, row) => {
@@ -362,12 +371,14 @@ export default async function TrackResultsPage({
               {dateEntries.map(([date, races]) => {
                 const eventIdsForDate = new Set(races.map((race) => Number(race.race_id)))
                 const eventRaces = raceNightRaces.filter((race) => eventIdsForDate.has(race.event_id))
+                const clippings = newspaperClippings.filter((clipping) => eventIdsForDate.has(clipping.event_id))
                 return (
                   <RaceNightArchive
                     key={date}
                     dateLabel={formatRaceDate(date)}
                     featureCount={races.length}
                     eventRaces={eventRaces}
+                    newspaperClippings={clippings}
                   >
                   <div className={styles.resultGridHeader}>
                     <div>Division</div><div>Winner</div><div>2nd</div><div>3rd</div>
