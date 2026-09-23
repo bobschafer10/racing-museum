@@ -12,6 +12,22 @@ export type RaceResult = {
   Drivers: { driver_name: string; slug: string } | { driver_name: string; slug: string }[] | null
 }
 
+export type NewspaperClipping = {
+  id: number
+  event_id: number
+  publication_code: string
+  publication_name: string
+  issue_date: string
+  page_label: string
+  storage_path: string
+  headline: string | null
+  crop_x: number
+  crop_y: number
+  crop_w: number
+  crop_h: number
+  display_order: number
+}
+
 export type EventRace = {
   id: number
   event_id: number
@@ -50,15 +66,21 @@ export default function RaceNightArchive({
   dateLabel,
   featureCount,
   eventRaces,
+  newspaperClippings,
   children,
 }: {
   dateLabel: string
   featureCount: number
   eventRaces: EventRace[]
+  newspaperClippings: NewspaperClipping[]
   children: ReactNode
 }) {
   const [open, setOpen] = useState(false)
+  const [clippingOpen, setClippingOpen] = useState(false)
+  const [activeClipping, setActiveClipping] = useState<NewspaperClipping | null>(null)
   const hasArchive = eventRaces.length > 0
+  const uniqueClippings = Array.from(new Map(newspaperClippings.map((item) => [`${item.publication_code}-${item.issue_date}-${item.page_label}`, item])).values())
+  const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
 
   const groups = eventRaces.reduce<Record<string, EventRace[]>>((acc, race) => {
     ;(acc[race.race_type] ||= []).push(race)
@@ -74,6 +96,15 @@ export default function RaceNightArchive({
           <div className={styles.dateKicker}>Race date</div>
           <div className={styles.dateTitleRow}>
             <h3>{dateLabel}</h3>
+            {uniqueClippings.length ? (
+              <button
+                type="button"
+                className={styles.newspaperButton}
+                onClick={() => { setActiveClipping(uniqueClippings[0]); setClippingOpen(true) }}
+              >
+                Newspaper Coverage <span>{uniqueClippings.length}</span>
+              </button>
+            ) : null}
             {hasArchive ? (
               <button
                 type="button"
@@ -90,6 +121,40 @@ export default function RaceNightArchive({
       </div>
 
       {children}
+
+      {uniqueClippings.length ? (
+        <div className={styles.newspaperStrip}>
+          <span>Original coverage</span>
+          {uniqueClippings.map((clipping) => (
+            <button key={clipping.id} type="button" onClick={() => { setActiveClipping(clipping); setClippingOpen(true) }}>
+              {clipping.publication_code === 'midwest-racing-news' ? 'MRN' : 'CFRN'} · {new Date(clipping.issue_date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+            </button>
+          ))}
+        </div>
+      ) : null}
+
+      {clippingOpen && activeClipping ? (
+        <div className={styles.clippingOverlay} role="dialog" aria-modal="true" aria-label="Newspaper coverage">
+          <div className={styles.clippingModal}>
+            <div className={styles.clippingHeader}>
+              <div><span>{activeClipping.publication_name} · {activeClipping.issue_date} · p. {activeClipping.page_label.replace('.jpg','')}</span><strong>{activeClipping.headline || 'Race coverage'}</strong></div>
+              <button type="button" onClick={() => setClippingOpen(false)}>Close</button>
+            </div>
+            <div className={styles.clippingViewport} style={{ aspectRatio: `${activeClipping.crop_w} / ${activeClipping.crop_h}` }}>
+              <img
+                src={`${baseUrl}/storage/v1/object/public/media/${activeClipping.storage_path}`}
+                alt={activeClipping.headline || 'Original newspaper clipping'}
+                style={{
+                  width: `${100 / activeClipping.crop_w}%`,
+                  maxWidth: 'none',
+                  transform: `translate(-${activeClipping.crop_x * 100}%, -${activeClipping.crop_y * 100}%)`,
+                  transformOrigin: 'top left',
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       {hasArchive && open ? (
         <div className={styles.raceNightBody}>
