@@ -755,3 +755,26 @@
   background: #e8e3d7;
 }
 .clippingViewport img { display: block; }
+
+.clippingLink { display: block; cursor: zoom-in; }
+.clippingActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 12px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: #0b0f12;
+  color: #92989c;
+  font-size: .65rem;
+}
+.clippingActions a {
+  color: #f2dfb7;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.clippingActions a:hover { color: #fff; }
+@media (max-width:520px) {
+  .clippingActions { align-items: flex-start; flex-direction: column; }
+}
