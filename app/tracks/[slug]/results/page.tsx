@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 import TrackLogo from '../TrackLogo'
 import profileStyles from '../track-profile.module.css'
 import styles from './results.module.css'
-import RaceNightArchive from './RaceNightArchive'
+import RaceNightArchive, { type EventRace } from './RaceNightArchive'
 
 export const revalidate = 300
 
@@ -181,7 +181,16 @@ export default async function TrackResultsPage({
   })
 
   const raceNightEventIds = Array.from(new Set(safeResults.map((row) => Number(row.race_id)).filter(Boolean)))
-  const raceNightDates = Object.fromEntries(safeResults.map((row) => [Number(row.race_id), row.race_date]))
+  let raceNightRaces: EventRace[] = []
+  if (raceNightEventIds.length) {
+    const { data: raceNightData } = await supabase
+      .from('event_races')
+      .select('id,event_id,race_type,race_number,race_name,source_publication,source_issue_date,source_page,race_results(finishing_position,car_number,qualifying_time,driver_name_source,Drivers(driver_name,slug))')
+      .in('event_id', raceNightEventIds)
+      .order('race_number', { ascending: true })
+
+    raceNightRaces = (raceNightData ?? []) as unknown as EventRace[]
+  }
 
   const grouped = filteredResults.reduce<Record<string, FullTrackResultRow[]>>((acc, row) => {
     if (!acc[row.race_date]) acc[row.race_date] = []
@@ -350,16 +359,16 @@ export default async function TrackResultsPage({
             </div>
           ) : (
             <div className={styles.dateList}>
-              {dateEntries.map(([date, races]) => (
-                <section key={date} className={styles.dateCard}>
-                  <div className={styles.dateHeader}>
-                    <div>
-                      <div className={styles.dateKicker}>Race date</div>
-                      <h3>{formatRaceDate(date)}</h3>
-                    </div>
-                    <span>{races.length} feature{races.length === 1 ? '' : 's'}</span>
-                  </div>
-
+              {dateEntries.map(([date, races]) => {
+                const eventIdsForDate = new Set(races.map((race) => Number(race.race_id)))
+                const eventRaces = raceNightRaces.filter((race) => eventIdsForDate.has(race.event_id))
+                return (
+                  <RaceNightArchive
+                    key={date}
+                    dateLabel={formatRaceDate(date)}
+                    featureCount={races.length}
+                    eventRaces={eventRaces}
+                  >
                   <div className={styles.resultGridHeader}>
                     <div>Division</div><div>Winner</div><div>2nd</div><div>3rd</div>
                   </div>
@@ -383,13 +392,13 @@ export default async function TrackResultsPage({
                       )
                     })}
                   </div>
-                </section>
-              ))}
+                  </RaceNightArchive>
+                )
+              })}
             </div>
           )}
         </section>
 
-        <RaceNightArchive eventIds={raceNightEventIds} raceDates={raceNightDates} />
 
         <section className={styles.footerGrid}>
           <Link href={`/tracks/${slug}`} className={styles.footerCard}><strong>Track Overview</strong><span>Return to the full {track.track_name} archive →</span></Link>
