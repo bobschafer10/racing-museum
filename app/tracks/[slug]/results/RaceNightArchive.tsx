@@ -81,6 +81,7 @@ export default function RaceNightArchive({
   const hasArchive = eventRaces.length > 0
   const uniqueClippings = Array.from(new Map(newspaperClippings.map((item) => [`${item.publication_code}-${item.issue_date}-${item.page_label}`, item])).values())
   const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+  const fullPageUrl = activeClipping ? `${baseUrl}/storage/v1/object/public/media/${activeClipping.storage_path}` : ''
 
   const groups = eventRaces.reduce<Record<string, EventRace[]>>((acc, race) => {
     ;(acc[race.race_type] ||= []).push(race)
@@ -140,17 +141,23 @@ export default function RaceNightArchive({
               <div><span>{activeClipping.publication_name} · {activeClipping.issue_date} · p. {activeClipping.page_label.replace('.jpg','')}</span><strong>{activeClipping.headline || 'Race coverage'}</strong></div>
               <button type="button" onClick={() => setClippingOpen(false)}>Close</button>
             </div>
-            <div className={styles.clippingViewport} style={{ aspectRatio: `${activeClipping.crop_w} / ${activeClipping.crop_h}` }}>
-              <img
-                src={`${baseUrl}/storage/v1/object/public/media/${activeClipping.storage_path}`}
-                alt={activeClipping.headline || 'Original newspaper clipping'}
-                style={{
-                  width: `${100 / activeClipping.crop_w}%`,
-                  maxWidth: 'none',
-                  transform: `translate(-${activeClipping.crop_x * 100}%, -${activeClipping.crop_y * 100}%)`,
-                  transformOrigin: 'top left',
-                }}
-              />
+            <a className={styles.clippingLink} href={fullPageUrl} target="_blank" rel="noreferrer" title="Open the complete newspaper page">
+              <div className={styles.clippingViewport} style={{ aspectRatio: `${activeClipping.crop_w} / ${activeClipping.crop_h}` }}>
+                <img
+                  src={fullPageUrl}
+                  alt={activeClipping.headline || 'Original newspaper clipping'}
+                  style={{
+                    width: `${100 / activeClipping.crop_w}%`,
+                    maxWidth: 'none',
+                    transform: `translate(-${activeClipping.crop_x * 100}%, -${activeClipping.crop_y * 100}%)`,
+                    transformOrigin: 'top left',
+                  }}
+                />
+              </div>
+            </a>
+            <div className={styles.clippingActions}>
+              <span>Click the clipping to open the complete original newspaper page.</span>
+              <a href={fullPageUrl} target="_blank" rel="noreferrer">Open Full Page ↗</a>
             </div>
           </div>
         </div>
