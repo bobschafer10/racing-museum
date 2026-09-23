@@ -652,3 +652,106 @@
     width: fit-content;
   }
 }
+
+
+.newspaperButton {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 9px;
+  border: 1px solid rgba(223,38,48,.58);
+  background: rgba(189,23,33,.12);
+  color: #fff;
+  font: inherit;
+  font-size: .61rem;
+  font-weight: 950;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.newspaperButton span {
+  display: grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  margin: 0 !important;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff !important;
+  font-size: .58rem !important;
+}
+.newspaperStrip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 9px 13px;
+  border-top: 1px solid rgba(198,161,91,.18);
+  background: #0b0f12;
+}
+.newspaperStrip > span {
+  margin-right: 4px;
+  color: var(--gold);
+  font-size: .6rem;
+  font-weight: 950;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.newspaperStrip button {
+  padding: 5px 8px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: #151a1e;
+  color: #e8e4dc;
+  font: inherit;
+  font-size: .64rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+.newspaperStrip button:hover { border-color: var(--gold); color: #fff; }
+.clippingOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0,0,0,.86);
+}
+.clippingModal {
+  width: min(900px, 96vw);
+  max-height: 94vh;
+  overflow: auto;
+  border: 1px solid rgba(198,161,91,.45);
+  background: #111518;
+  box-shadow: 0 24px 80px rgba(0,0,0,.65);
+}
+.clippingHeader {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  background: #111518;
+}
+.clippingHeader > div { display: grid; gap: 3px; }
+.clippingHeader span { color: var(--gold); font-size: .64rem; font-weight: 900; text-transform: uppercase; }
+.clippingHeader strong { color: #fff; font-size: .86rem; }
+.clippingHeader button {
+  padding: 6px 10px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.clippingViewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #e8e3d7;
+}
+.clippingViewport img { display: block; }
