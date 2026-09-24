@@ -81,7 +81,7 @@ export default function TrackLogo({
 
   // Version parameter prevents browsers/CDNs from reusing a placeholder
   // that was cached before a newly added logo existed.
-  const logoPath = `/api/track-logo/${encodeURIComponent(slug)}?v=2`
+  const logoPath = `/api/track-logo/${encodeURIComponent(slug)}?v=3`
   const showLandingPhoto = pathname === '/tracks' && Boolean(landingPhotoUrl)
   const imageSrc = showLandingPhoto && landingPhotoUrl ? landingPhotoUrl : logoPath
 
