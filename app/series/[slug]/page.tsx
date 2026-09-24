@@ -231,7 +231,7 @@ export default async function SeriesProfilePage({ params }: { params: Promise<{ 
                     <div className={styles.decadeGrid}>
                       {decadeGroups.map((group) => (
                         <div className={styles.decadeCard} key={group.decade}>
-                          <div className={styles.decadeTitle}>{group.decade}s</div>
+                          <div className={styles.decadeTitle}>{group.decade}<span className={styles.decadeSuffix}>s</span></div>
                           <div className={styles.yearChips}>
                             {group.seasons.map((season: any) => (
                               <Link key={season.id} href={`/series/${slug}/${season.year}`} className={styles.yearChip} title={`${season.year}${season.champion_name ? ` — Champion: ${season.champion_name}` : ''}`}>{season.year}</Link>
