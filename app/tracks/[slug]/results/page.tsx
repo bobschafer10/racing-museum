@@ -186,11 +186,31 @@ export default async function TrackResultsPage({
   if (raceNightEventIds.length) {
     const { data: raceNightData } = await supabase
       .from('event_races')
-      .select('id,event_id,race_type,race_number,race_name,source_publication,source_issue_date,source_page,race_results(finishing_position,car_number,qualifying_time,driver_name_source,Drivers(driver_name,slug))')
+      .select('id,event_id,class_id,race_type,race_number,race_name,source_publication,source_issue_date,source_page,race_results(finishing_position,car_number,qualifying_time,driver_name_source,Drivers(driver_name,slug))')
       .in('event_id', raceNightEventIds)
       .order('race_number', { ascending: true })
 
-    raceNightRaces = (raceNightData ?? []) as unknown as EventRace[]
+    const rawRaceNightRaces = (raceNightData ?? []) as unknown as EventRace[]
+    const raceClassIds = Array.from(
+      new Set(rawRaceNightRaces.map((race) => race.class_id).filter((id): id is number => Number.isFinite(id))),
+    )
+
+    let classNameById = new Map<number, string>()
+    if (raceClassIds.length) {
+      const { data: classData } = await supabase
+        .from('Classes')
+        .select('id,name')
+        .in('id', raceClassIds)
+
+      classNameById = new Map(
+        (classData ?? []).map((row: { id: number; name: string }) => [Number(row.id), row.name]),
+      )
+    }
+
+    raceNightRaces = rawRaceNightRaces.map((race) => ({
+      ...race,
+      class_name: race.class_id ? classNameById.get(race.class_id) || null : null,
+    }))
 
     const { data: clippingData } = await supabase
       .from('event_newspaper_clippings')
