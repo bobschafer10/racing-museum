@@ -24,6 +24,20 @@ type SearchParams = Promise<Record<string, string | string[] | undefined>>
 
 const events: EventCollection[] = [
   {
+    slug: 'national-clay-track-championship',
+    title: 'National Clay Track Championship',
+    venue: 'Santa Fe Speedway',
+    venueTrackSlug: 'santa-fe-speedway-il',
+    years: '1953–1995',
+    firstYear: 1953,
+    lastYear: 1995,
+    races: 44,
+    results: 107,
+    status: 'Winner chronology complete — result linkage underway',
+    category: 'Dirt',
+    description: 'Santa Fe Speedway’s annual fall National Clay Track Championship, preserving the complete 1953–1995 winner chronology and linking verified editions to the Museum result archive.',
+  },
+  {
     slug: 'slinger-nationals',
     title: 'Slinger Nationals',
     venue: 'Slinger Speedway',
