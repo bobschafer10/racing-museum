@@ -42,6 +42,7 @@ type PhotoRow = {
   year?: string | number | null
 }
 
+// Series explicitly verified as complete museum archives.
 const completedSeries = new Set([
   'aaa-stock-car-series',
   'american-ethanol-supertruck-series',
