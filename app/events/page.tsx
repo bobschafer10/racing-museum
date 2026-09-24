@@ -32,10 +32,10 @@ const events: EventCollection[] = [
     firstYear: 1953,
     lastYear: 1995,
     races: 44,
-    results: 107,
-    status: 'Winner chronology complete — result linkage underway',
+    results: 414,
+    status: 'Winner chronology complete; MRN result sweep complete',
     category: 'Dirt',
-    description: 'Santa Fe Speedway’s annual fall National Clay Track Championship, preserving the complete 1953–1995 winner chronology and linking verified editions to the Museum result archive.',
+    description: 'Santa Fe Speedway’s long-distance fall championship lineage, with the complete 1953–1995 winner chronology and MRN finishing orders recovered wherever published.',
   },
   {
     slug: 'slinger-nationals',
