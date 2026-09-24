@@ -84,6 +84,15 @@ const specialEventSeriesSlugs = new Set([
   'legendary-100-limited-late-model-division',
 ])
 
+const seriesAliases: Record<string, string[]> = {
+  'nascar-midwest-series': [
+    'NASCAR RE/MAX Challenge Series',
+    'NASCAR Remax Challenge Series',
+    'NASCAR International Truck and Engine Corporation Midwest Series',
+    'NASCAR AutoZone Elite Division Midwest Series',
+  ],
+}
+
 const featuredSlugs = [
   'asa-national-tour',
   'artgo-challenge-series',
@@ -243,7 +252,8 @@ export default async function SeriesPage({
 
   let filtered = rows.filter((row) => {
     if (filters.q) {
-      const haystack = `${row.series_name} ${row.region || ''} ${row.years_active || ''}`.toLowerCase()
+      const aliases = (seriesAliases[row.slug] || []).join(' ')
+      const haystack = `${row.series_name} ${aliases} ${row.region || ''} ${row.years_active || ''}`.toLowerCase()
       if (!haystack.includes(filters.q.toLowerCase())) return false
     }
     if (filters.era && !inEra(row, filters.era)) return false
@@ -302,7 +312,7 @@ export default async function SeriesPage({
             <div className={styles.searchRow}>
               <div className={styles.searchInputWrap}>
                 <span className={styles.searchIcon}>⌕</span>
-                <input className={styles.searchInput} type="search" name="q" defaultValue={filters.q} placeholder="Search series by name, region, or era..." />
+                <input className={styles.searchInput} type="search" name="q" defaultValue={filters.q} placeholder="Search series by name, alias, region, or era..." />
               </div>
               <button className={styles.searchButton} type="submit">Search Series</button>
             </div>
