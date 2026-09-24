@@ -31,7 +31,18 @@ export async function GET(
   const stateCode = safeSlug.match(/-([a-z]{2,3})$/)?.[1] || ''
   const stateFolder = STATE_LOGO_FOLDERS[stateCode]
   const folders = stateFolder ? ['', stateFolder] : ['']
-  const candidates = [safeSlug, ...(TRACK_LOGO_ALIASES[safeSlug] || [])]
+
+  // Some legacy track slugs accidentally contain the state twice
+  // (for example jacksonville-speedway-il--il). Try the cleaned slug too.
+  const normalizedStateSlug = safeSlug.replace(/-([a-z]{2,3})--\1$/, '-$1')
+  const candidates = Array.from(
+    new Set([
+      safeSlug,
+      normalizedStateSlug,
+      ...(TRACK_LOGO_ALIASES[safeSlug] || []),
+      ...(TRACK_LOGO_ALIASES[normalizedStateSlug] || []),
+    ]),
+  )
 
   for (const folder of folders) {
     const folderPrefix = folder ? `${folder}/` : ''
@@ -73,7 +84,7 @@ export async function GET(
     }
   }
 
-  const title = safeSlug
+  const title = normalizedStateSlug
     .replace(/-(wi|il|mn|ia|mi|in|mo|oh|co|ks|tn|ont)$/i, '')
     .split('-')
     .filter(Boolean)
