@@ -43,6 +43,7 @@ type PhotoRow = {
 }
 
 const completedSeries = new Set([
+  'aaa-stock-car-series',
   'american-ethanol-supertruck-series',
   'artgo-challenge-series',
   'asa-national-tour',
