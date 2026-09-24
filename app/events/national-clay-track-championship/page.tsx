@@ -76,6 +76,13 @@ function displayDate(value: string) {
   })
 }
 
+function normalizeName(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/\b(sr|jr|ii|iii)\b/g, '')
+    .replace(/[^a-z0-9]/g, '')
+}
+
 export default async function NationalClayTrackChampionshipPage() {
   const archiveDates = editions.flatMap((edition) => edition.archiveDate ? [edition.archiveDate] : [])
 
@@ -159,8 +166,9 @@ export default async function NationalClayTrackChampionshipPage() {
           <div className={styles.eventStack}>
             {editions.map((edition, index) => {
               const linked = edition.archiveDate ? (rowsByDate.get(edition.archiveDate) || []) : []
-              const className = linked.find((row) => row.finishing_position === 1)?.class_name
-              const resultSet = className ? linked.filter((row) => row.class_name === className) : linked
+              const winnerRow = linked.find((row) => row.finishing_position === 1 && normalizeName(row.driver_name) === normalizeName(edition.winner))
+              const className = winnerRow?.class_name
+              const resultSet = className ? linked.filter((row) => row.class_name === className) : []
               return (
                 <article key={`${edition.year}-${edition.winner}-${index}`} className={styles.eventCard}>
                   <div className={styles.eventHeader}>
