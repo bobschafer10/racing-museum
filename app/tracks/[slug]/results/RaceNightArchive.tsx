@@ -31,6 +31,8 @@ export type NewspaperClipping = {
 export type EventRace = {
   id: number
   event_id: number
+  class_id: number | null
+  class_name: string | null
   race_type: string
   race_number: number | null
   race_name: string | null
@@ -178,10 +180,16 @@ export default function RaceNightArchive({
               <h3>{raceTypeLabel(type)}</h3>
               {group
                 .slice()
-                .sort((a, b) => Number(a.race_number || 0) - Number(b.race_number || 0))
+                .sort((a, b) => {
+                  const classCompare = String(a.class_name || '').localeCompare(String(b.class_name || ''))
+                  if (classCompare !== 0) return classCompare
+                  return Number(a.race_number || 0) - Number(b.race_number || 0)
+                })
                 .map((race) => (
                   <div key={race.id} className={styles.prelimRace}>
-                    <div className={styles.prelimTitle}>{race.race_name || raceTypeLabel(race.race_type)}</div>
+                    <div className={styles.prelimTitle}>
+                      {race.class_name ? `${race.class_name} — ` : ''}{race.race_name || raceTypeLabel(race.race_type)}
+                    </div>
                     <div className={styles.prelimRows}>
                       {[...(race.race_results || [])]
                         .sort((a, b) => Number(a.finishing_position || 999) - Number(b.finishing_position || 999))
