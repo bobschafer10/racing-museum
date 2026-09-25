@@ -57,6 +57,20 @@ export default async function SeriesSeasonPage({
 
   const eventRows = events || []
   const standingRows = standings || []
+
+  const eventIds = eventRows.map((event: any) => Number(event.id)).filter(Number.isFinite)
+  const { data: eventMediaLinks } = eventIds.length
+    ? await supabase
+        .from('SeriesEventMediaLinks')
+        .select('series_event_id')
+        .in('series_event_id', eventIds)
+    : { data: [] }
+
+  const mediaCountByEvent = new Map<number, number>()
+  ;(eventMediaLinks || []).forEach((link: any) => {
+    const eventId = Number(link.series_event_id)
+    mediaCountByEvent.set(eventId, (mediaCountByEvent.get(eventId) || 0) + 1)
+  })
   const standingsAreFinal =
     standingRows.length > 0 && !standingRows.some((row: any) => row.is_final === false)
   const hasRankedStandings = standingRows.some(
@@ -304,17 +318,30 @@ export default async function SeriesSeasonPage({
           <SectionHeader kicker="Race-by-Race Archive" title="Race Schedule & Winners" note={`${eventRows.length} recorded events`} />
           {eventRows.length ? (
             <div className={styles.scheduleGrid}>
-              {eventRows.map((event: any) => (
-                <Link key={event.id} href={`/series/${slug}/${seasonYear}/${event.race_number}`} className={styles.raceCard}>
-                  <div className={styles.raceNo}>#{event.race_number}</div>
-                  <div>
-                    <div className={styles.raceTrack}>{event.track_name || 'Track TBD'}</div>
-                    <div className={styles.raceDate}>{formatDate(event.race_date)}</div>
-                    <div className={styles.raceWinner}>Winner: <strong>{event.winner_name || 'TBD'}</strong></div>
+              {eventRows.map((event: any) => {
+                const mediaCount = mediaCountByEvent.get(Number(event.id)) || 0
+                const eventHref = `/series/${slug}/${seasonYear}/${event.race_number}`
+                return (
+                  <div key={event.id} className={styles.raceCard}>
+                    <Link href={eventHref} className={styles.raceCardMain}>
+                      <div className={styles.raceNo}>#{event.race_number}</div>
+                      <div>
+                        <div className={styles.raceTrack}>{event.track_name || 'Track TBD'}</div>
+                        <div className={styles.raceDate}>{formatDate(event.race_date)}</div>
+                        <div className={styles.raceWinner}>Winner: <strong>{event.winner_name || 'TBD'}</strong></div>
+                      </div>
+                    </Link>
+                    <div className={styles.raceCardActions}>
+                      {mediaCount > 0 ? (
+                        <Link href={`${eventHref}#coverage`} className={styles.newspaperLink}>
+                          Newspaper <span>{mediaCount}</span>
+                        </Link>
+                      ) : null}
+                      <Link href={eventHref} className={styles.raceArrow} aria-label={`Open race ${event.race_number}`}>›</Link>
+                    </div>
                   </div>
-                  <div className={styles.raceArrow}>›</div>
-                </Link>
-              ))}
+                )
+              })}
             </div>
           ) : <div className={styles.emptyState}>No race schedule has been added for this season yet.</div>}
         </section>
