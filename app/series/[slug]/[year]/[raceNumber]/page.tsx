@@ -340,7 +340,7 @@ export default async function SeriesEventPage({
                   </header>
                   <div className={styles.publicationPages}>
                     {group.pages.map((media: any) => {
-                      const mediaPath = media.public_path || media.storage_path
+                      const mediaPath = seriesMediaUrl(media)
                       if (!mediaPath) return null
                       const pageLabel = media.page_number ? `Page ${media.page_number}` : 'Page'
                       const alt = media.headline || `${group.publication} ${pageLabel}`
@@ -389,6 +389,14 @@ function Panel({ id, title, children }: { id?: string; title: string; children: 
       <div className={styles.panelBody}>{children}</div>
     </div>
   )
+}
+
+function seriesMediaUrl(media: any) {
+  if (media?.public_path) return media.public_path
+  if (!media?.storage_path) return ''
+  const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  if (!baseUrl) return ''
+  return `${baseUrl}/storage/v1/object/public/media/${media.storage_path}`
 }
 
 function photoUrl(photo?: PhotoRow) {
