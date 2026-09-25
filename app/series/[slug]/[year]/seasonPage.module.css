@@ -284,17 +284,61 @@
 .raceCard {
   min-height: 132px;
   display: grid;
-  grid-template-columns: 72px minmax(0,1fr) auto;
+  grid-template-columns: minmax(0,1fr) auto;
   gap: 14px;
   align-items: center;
   padding: 14px;
   border: 1px solid var(--line);
   background: #0e1215;
   color: #d6d9da;
-  text-decoration: none;
   transition: transform 150ms ease, border-color 150ms ease, background 150ms ease;
 }
 .raceCard:hover { transform: translateY(-2px); border-color: rgba(198,161,91,.52); background: #12171b; }
+.raceCardMain {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 72px minmax(0,1fr);
+  gap: 14px;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+.raceCardActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.newspaperLink {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid rgba(198,161,91,.42);
+  background: rgba(198,161,91,.08);
+  color: #f0d39a;
+  text-decoration: none;
+  font-size: .63rem;
+  font-weight: 900;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.newspaperLink:hover {
+  border-color: rgba(198,161,91,.72);
+  background: rgba(198,161,91,.14);
+}
+.newspaperLink span {
+  min-width: 20px;
+  height: 20px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: rgba(239,89,97,.16);
+  color: #ff8b91;
+  font-size: .62rem;
+}
 .raceNo {
   width: 58px;
   height: 58px;
@@ -309,7 +353,16 @@
 .raceDate { margin-top: 5px; color: #8f969a; font-size: .67rem; }
 .raceWinner { margin-top: 9px; color: #d6d9da; font-size: .73rem; }
 .raceWinner strong { color: #fff; }
-.raceArrow { color: #ef5961; font-size: 1.25rem; font-weight: 900; }
+ .raceArrow {
+  min-width: 28px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: #ef5961;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
 
 .tableWrap {
   margin-top: 12px;
