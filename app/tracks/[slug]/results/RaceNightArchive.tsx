@@ -20,6 +20,7 @@ export type NewspaperClipping = {
   issue_date: string
   page_label: string
   storage_path: string
+  external_url: string | null
   headline: string | null
   crop_x: number
   crop_y: number
@@ -83,7 +84,16 @@ export default function RaceNightArchive({
   const hasArchive = eventRaces.length > 0
   const uniqueClippings = Array.from(new Map(newspaperClippings.map((item) => [`${item.publication_code}-${item.issue_date}-${item.page_label}`, item])).values())
   const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
-  const fullPageUrl = activeClipping ? `${baseUrl}/storage/v1/object/public/media/${activeClipping.storage_path}` : ''
+  const fullPageUrl = activeClipping && !activeClipping.external_url ? `${baseUrl}/storage/v1/object/public/media/${activeClipping.storage_path}` : ''
+
+  function openCoverage(clipping: NewspaperClipping) {
+    if (clipping.external_url) {
+      window.open(clipping.external_url, '_blank', 'noopener,noreferrer')
+      return
+    }
+    setActiveClipping(clipping)
+    setClippingOpen(true)
+  }
 
   const groups = eventRaces.reduce<Record<string, EventRace[]>>((acc, race) => {
     ;(acc[race.race_type] ||= []).push(race)
@@ -103,9 +113,9 @@ export default function RaceNightArchive({
               <button
                 type="button"
                 className={styles.newspaperButton}
-                onClick={() => { setActiveClipping(uniqueClippings[0]); setClippingOpen(true) }}
+                onClick={() => openCoverage(uniqueClippings[0])}
               >
-                Newspaper Coverage <span>{uniqueClippings.length}</span>
+                Race Coverage <span>{uniqueClippings.length}</span>
               </button>
             ) : null}
             {hasArchive ? (
@@ -127,11 +137,17 @@ export default function RaceNightArchive({
 
       {uniqueClippings.length ? (
         <div className={styles.newspaperStrip}>
-          <span>Original coverage</span>
+          <span>Race coverage</span>
           {uniqueClippings.map((clipping) => (
-            <button key={clipping.id} type="button" onClick={() => { setActiveClipping(clipping); setClippingOpen(true) }}>
-              {clipping.publication_code === 'midwest-racing-news' ? 'MRN' : 'CFRN'} · {new Date(clipping.issue_date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-            </button>
+            clipping.external_url ? (
+              <a key={clipping.id} href={clipping.external_url} target="_blank" rel="noreferrer">
+                MyRacePass Race Report ↗
+              </a>
+            ) : (
+              <button key={clipping.id} type="button" onClick={() => openCoverage(clipping)}>
+                {clipping.publication_code === 'midwest-racing-news' ? 'MRN' : 'CFRN'} · {new Date(clipping.issue_date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </button>
+            )
           ))}
         </div>
       ) : null}
