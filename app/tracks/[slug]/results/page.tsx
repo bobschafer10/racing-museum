@@ -214,7 +214,7 @@ export default async function TrackResultsPage({
 
     const { data: clippingData } = await supabase
       .from('event_newspaper_clippings')
-      .select('id,event_id,publication_code,publication_name,issue_date,page_label,storage_path,headline,crop_x,crop_y,crop_w,crop_h,display_order')
+      .select('id,event_id,publication_code,publication_name,issue_date,page_label,storage_path,external_url,headline,crop_x,crop_y,crop_w,crop_h,display_order')
       .in('event_id', raceNightEventIds)
       .order('display_order', { ascending: true })
 
