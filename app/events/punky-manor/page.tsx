@@ -39,14 +39,14 @@ export default async function PunkyManorPage(){
   const years=Array.from({length:LAST_YEAR-FIRST_YEAR+1},(_,i)=>LAST_YEAR-i)
   return <main className={styles.page}>
     <section className={styles.hero}>
-      <img src="/events/punky-manor/punky-manor-hero-1.webp" alt="Punky Manor number 57 race car" className={styles.heroImage}/>
+      <img src="https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/eau-claire-speedway/unknown-year/eau-claire-speedway_unknown-year_punky-manor_connie-bahr_post_44.jpg" alt="Punky Manor number 57 race car" className={styles.heroImage}/>
       <div className={styles.heroShade}/>
       <div className={styles.heroInner}>
         <div className={styles.breadcrumbs}><Link href="/">Home</Link><span>›</span><Link href="/events">Special Events</Link><span>›</span><span>Punky Manor Challenge of Champions</span></div>
         <div className={styles.eyebrow}>Upper Midwest Special Event Archive</div>
         <h1 className={styles.title}>Punky Manor</h1>
         <p className={styles.tagline}>Challenge of Champions · Red Cedar Speedway</p>
-        <img src="/events/punky-manor/punky-manor-logo.webp" alt="Punky Manor Challenge of Champions logo" style={{width:'min(430px,78vw)',height:'auto',marginTop:'18px',display:'block'}}/>
+        <div className={styles.statusBox} style={{marginTop:'18px',display:'inline-block',padding:'10px 14px'}}><strong>46th Annual Punky Manor Challenge of Champions</strong></div>
         <p className={styles.intro}>The Museum preserves the Punky Manor Challenge of Champions as one multi-division Red Cedar Speedway tradition. The archive begins with the 1980 event and links every documented championship division by year, including the Late Models, Modifieds, Super Stocks, Midwest Modifieds and the support classes that appeared during different eras.</p>
         <div className={styles.heroActions}><Link href="#years" className={styles.button}>Browse Years</Link><Link href="/tracks/red-cedar-speedway-wi" className={styles.buttonGhost}>Open Red Cedar Speedway</Link></div>
         <div className={styles.stats}>
@@ -67,7 +67,7 @@ export default async function PunkyManorPage(){
             <p>The winner chronology is retained even when a complete finishing order has not survived. Modern MyRacePass fields are preserved in full, while older newspaper, Dirt Race Central, Red Cedar Speedway and other verified source records remain partial where that is all the historical evidence supports.</p>
           </div>
           <div className={styles.sourceCard}>
-            <img src="/events/punky-manor/punky-manor-hero-2.webp" alt="Punky Manor number 57 race car at the track" style={{width:'100%',height:'auto',display:'block'}}/>
+            <img src="https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/unknown-track/unknown-year/unknown-track_unknown-year_punky-manor_unknown-photographer_photo_570.jpg" alt="Historic Punky Manor racing image" style={{width:'100%',height:'auto',display:'block'}}/>
           </div>
         </div>
       </section>
