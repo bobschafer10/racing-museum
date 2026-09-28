@@ -38,6 +38,20 @@ const events: EventCollection[] = [
     description: 'Santa Fe Speedway’s long-distance fall championship lineage, with the complete 1953–1995 winner chronology and MRN finishing orders recovered wherever published.',
   },
   {
+    slug: 'punky-manor',
+    title: 'Punky Manor Challenge of Champions',
+    venue: 'Red Cedar Speedway',
+    venueTrackSlug: 'red-cedar-speedway-wi',
+    years: '1980–2026',
+    firstYear: 1980,
+    lastYear: 2026,
+    races: 165,
+    results: 816,
+    status: 'Winner chronology built — historical result enrichment underway',
+    category: 'Dirt',
+    description: 'Red Cedar Speedway’s multi-division fall classic preserved as one event family, with headline winner history and full modern championship fields linked by year.',
+  },
+  {
     slug: 'slinger-nationals',
     title: 'Slinger Nationals',
     venue: 'Slinger Speedway',
@@ -185,6 +199,7 @@ const events: EventCollection[] = [
 ]
 
 const eventImageOverrides: Record<string, string> = {
+  'punky-manor': '/events/punky-manor/punky-manor-hero-1.webp',
   'wissota-100': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wissota-infield_unknown-photographer_photo_001.jpg`,
   'dick-trickle-99': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/lacrosse-interstate-speedway/1981/lacrosse-interstate-speedway_1981_dick-trickle_stan-kalwasinski_photo_555.jpg`,
 }
