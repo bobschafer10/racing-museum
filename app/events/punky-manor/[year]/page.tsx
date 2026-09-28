@@ -45,7 +45,7 @@ export default async function PunkyManorYearPage({params}:{params:Promise<{year:
 
   return <main className={styles.page}>
     <section className={styles.hero}>
-      <img src="/events/punky-manor/punky-manor-hero-1.webp" alt={`${seasonYear} Punky Manor Challenge of Champions`} className={styles.heroImage}/>
+      <img src="https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/eau-claire-speedway/unknown-year/eau-claire-speedway_unknown-year_punky-manor_connie-bahr_post_44.jpg" alt={`${seasonYear} Punky Manor Challenge of Champions`} className={styles.heroImage}/>
       <div className={styles.heroShade}/>
       <div className={styles.heroInner}>
         <div className={styles.breadcrumbs}><Link href="/">Home</Link><span>›</span><Link href="/events">Special Events</Link><span>›</span><Link href="/events/punky-manor">Punky Manor</Link><span>›</span><span>{seasonYear}</span></div>
