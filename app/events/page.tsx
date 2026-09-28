@@ -1,3 +1,4 @@
+// Vercel deployment refresh 2026-09-28
 import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from './events-landing.module.css'
