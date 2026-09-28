@@ -38,6 +38,20 @@ const events: EventCollection[] = [
     description: 'Santa Fe Speedway’s long-distance fall championship lineage, with the complete 1953–1995 winner chronology and MRN finishing orders recovered wherever published.',
   },
   {
+    slug: 'red-clay-classic',
+    title: 'Red Clay Classic',
+    venue: 'ABC Raceway',
+    venueTrackSlug: 'abc-raceway-wi',
+    years: '1976–2026',
+    firstYear: 1976,
+    lastYear: 2026,
+    races: 147,
+    results: 795,
+    status: 'Winner chronology complete through 2025 — 2026 event upcoming',
+    category: 'Dirt',
+    description: 'ABC Raceway’s fall crown jewel preserved from its 1976 beginning through the 50th running in 2025, with the 51st edition scheduled for October 2–3, 2026.',
+  },
+  {
     slug: 'punky-manor',
     title: 'Punky Manor Challenge of Champions',
     venue: 'Red Cedar Speedway',
@@ -199,7 +213,7 @@ const events: EventCollection[] = [
 ]
 
 const eventImageOverrides: Record<string, string> = {
-  'punky-manor': '/events/punky-manor/punky-manor-hero-1.webp',
+  'punky-manor': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/eau-claire-speedway/unknown-year/eau-claire-speedway_unknown-year_punky-manor_connie-bahr_post_44.jpg',
   'wissota-100': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wissota-infield_unknown-photographer_photo_001.jpg`,
   'dick-trickle-99': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/lacrosse-interstate-speedway/1981/lacrosse-interstate-speedway_1981_dick-trickle_stan-kalwasinski_photo_555.jpg`,
 }
