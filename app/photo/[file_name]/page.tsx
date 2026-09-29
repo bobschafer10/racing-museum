@@ -5,7 +5,7 @@ import { getPhotoUrl } from '@/lib/photos'
 import { formatDriverSlugName } from '@/lib/driver-display'
 import '../../media/archive-dark.css'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 300
 
 type PhotoRecord = { photo_id:number; file_name:string; track_slug:string|null; year:string|null; driver_slug:string|null; photographer_slug:string|null; credit_type:string|null }
 
