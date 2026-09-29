@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
+import { getPhotoUrl } from '@/lib/photos'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 300
 
 type PhotoRecord = {
   photo_id: number
@@ -70,8 +71,7 @@ export default async function PhotoDetailPage({
   const storagePath =
     `photos/master/${trackSlug}/${year}/${photo.file_name}`
 
-  const imageUrl =
-    `/api/photo?path=${encodeURIComponent(storagePath)}`
+  const imageUrl = getPhotoUrl(storagePath)
 
   return (
     <main style={pageWrap}>
