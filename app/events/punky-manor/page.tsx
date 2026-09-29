@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const dynamic='force-dynamic'
 export const revalidate=300
 
 const SERIES_IDS=[194,195,196,197,198,199,200,201,202,203,204,205,206]
