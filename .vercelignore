@@ -1,0 +1,24 @@
+# Research / ingestion material not required by the deployed Next.js app
+audit/
+scripts/
+museum-newspaper-manager/
+museum-photo-manager/
+museum-publication-manager/
+museum_photo_scanner/
+
+# Legacy local photo manifests. Live photo pages use Supabase directly.
+public/data/photos/
+
+# Backup-only public manifests
+public/data/newspapers-manifest-BACKUP.json
+public/data/newspapers-manifest.1970-backup.json
+
+# Root maintenance and working files
+BACKGROUND.png
+MRN_INGESTION_HANDOFF.md
+photo-move-log.txt
+photo-safe-fixes.sql
+delete-flat-storage-files.js
+rename-chris-carlson-storage.mjs
+rename-raceway-park-storage.js
+repair-photo-storage-dry-run.js
