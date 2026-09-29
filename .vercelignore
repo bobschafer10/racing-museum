@@ -27,3 +27,5 @@ repair-photo-storage-dry-run.js
 # Keep the one 1975 MRN clipping that is not yet present in storage.
 public/series images/**
 !public/series images/artgo-challenge-series_1975-09-07_grundy-county-speedway_mrn_1975-09-10_002.jpg
+
+# Museum deploys from the single production Vercel project.
