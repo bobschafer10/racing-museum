@@ -22,3 +22,8 @@ delete-flat-storage-files.js
 rename-chris-carlson-storage.mjs
 rename-raceway-park-storage.js
 repair-photo-storage-dry-run.js
+
+# Series newspaper clippings have been migrated to Supabase storage.
+# Keep the one 1975 MRN clipping that is not yet present in storage.
+public/series images/**
+!public/series images/artgo-challenge-series_1975-09-07_grundy-county-speedway_mrn_1975-09-10_002.jpg
