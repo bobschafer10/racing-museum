@@ -54,7 +54,8 @@ function sourceLabel(url:string|null){
   if(url.includes('deercreekspeedway.com'))return'Deer Creek Speedway'
   if(url.includes('racinboys.com'))return'RacinBoys'
   if(url.includes('speedsport.com'))return'SPEED SPORT'
-  if(url.includes('jacksoncountypilot.com'))return'Jackson County Pilot'\n  if(url.includes('thethirdturn.com'))return'The Third Turn'
+  if(url.includes('jacksoncountypilot.com'))return'Jackson County Pilot'
+  if(url.includes('thethirdturn.com'))return'The Third Turn'
   return'Race report'
 }
 
