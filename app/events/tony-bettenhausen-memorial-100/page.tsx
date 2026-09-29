@@ -134,12 +134,12 @@ export default async function TonyBettenhausenMemorialPage(){
 
       <section className={styles.section} id="history">
         <div className={styles.kicker}>Complete 65-Edition Chronology</div>
-        <div className={styles.sectionHead}><h2>1962–2026 Year-by-Year Results</h2><div className={styles.sectionNote}>1962–2012 preserves Kalwasinski's documented top five. Full published fields are preserved for 2013–2015, 2017 and 2022–2026. For 2016 and 2018–2021, the currently recovered reports publish the top six; missing positions are not reconstructed.</div></div>
+        <div className={styles.sectionHead}><h2>1962–2026 Year-by-Year Results</h2><div className={styles.sectionNote}>1962–2012 preserves Kalwasinski's documented top five. Full published fields are preserved for 2013–2015, 2017 and 2019–2026. For 2016 and 2018, the currently recovered reports publish the top six; missing positions are not reconstructed.</div></div>
         {eventError?<div className={styles.empty}>Unable to load the live Tony Bettenhausen Memorial result archive.</div>:
         <div className={styles.eventStack}>{ordered.map(event=>{
           const year=yearBySeason.get(event.season_id||0)
           const rows=[...event.SeriesEventResults].sort((a,b)=>(a.finishing_position??9999)-(b.finishing_position??9999))
-          const isPartialLater=Boolean(year&&[2016,2018,2019,2020,2021].includes(year))
+          const isPartialLater=Boolean(year&&[2016,2018].includes(year))
           const depthLabel=year&&year<=2012?'Top Five Preserved':isPartialLater?'Published Top Six':`Published Finish • ${rows.length} cars`
           const venue=event.track_name||'Venue not listed'
           const dateText=formatDate(event.race_date)
