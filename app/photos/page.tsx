@@ -4,7 +4,8 @@ import { getPhotoUrl } from '@/lib/photos'
 import { formatDriverSlugName } from '@/lib/driver-display'
 import '../media/archive-dark.css'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 300
+
 const PAGE_SIZE = 60
 
 type SearchParams = { q?: string; driver?: string; photographer?: string; track?: string; year?: string; credit?: string; page?: string }
