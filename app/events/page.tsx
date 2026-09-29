@@ -25,6 +25,20 @@ type SearchParams = Promise<Record<string, string | string[] | undefined>>
 
 const events: EventCollection[] = [
   {
+    slug: 'tony-bettenhausen-memorial-100',
+    title: 'Tony Bettenhausen Memorial 100',
+    venue: 'Illiana Motor Speedway',
+    venueTrackSlug: 'illiana-speedway-in',
+    years: '1962–2012',
+    firstYear: 1962,
+    lastYear: 2012,
+    races: 51,
+    results: 255,
+    status: 'Kalwasinski chronology complete through 2012',
+    category: 'Asphalt',
+    description: 'Illiana Motor Speedway’s season-ending late model classic honoring Tony Bettenhausen, with 51 editions and every documented top-five finish preserved from 1962 through 2012.',
+  },
+  {
     slug: 'national-clay-track-championship',
     title: 'National Clay Track Championship',
     venue: 'Santa Fe Speedway',
