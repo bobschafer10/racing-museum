@@ -54,7 +54,7 @@ function sourceLabel(url:string|null){
   if(url.includes('deercreekspeedway.com'))return'Deer Creek Speedway'
   if(url.includes('racinboys.com'))return'RacinBoys'
   if(url.includes('speedsport.com'))return'SPEED SPORT'
-  if(url.includes('jacksoncountypilot.com'))return'Jackson County Pilot'
+  if(url.includes('jacksoncountypilot.com'))return'Jackson County Pilot'\n  if(url.includes('thethirdturn.com'))return'The Third Turn'
   return'Race report'
 }
 
@@ -118,7 +118,7 @@ export default async function FallJamboreePage(){
         <p className={styles.tagline}>USMTS Modified Crown Jewel • 1999–2026</p>
         <p className={styles.intro}>The Fall Jamboree began at Hamilton County Speedway in Webster City, Iowa, in 1999 and moved to Deer Creek Speedway in Spring Valley, Minnesota, in 2002. It has grown into one of the defining multi-night dirt modified weekends in the Upper Midwest and one of the longest-running traditions in USMTS history.</p>
         <div className={styles.heroActions}><Link href="/tracks/deer-creek-speedway-mn" className={styles.button}>Open Deer Creek Archive</Link><a href="https://www.usmts.com/press/2023/article/140561" target="_blank" rel="noreferrer" className={styles.buttonGhost}>USMTS Event History</a><Link href="#champions" className={styles.buttonGhost}>Champions 1999–2026</Link></div>
-        <div className={styles.stats}><Stat label="Annual Editions" value={String(seasons.length)}/><Stat label="Completed Championships" value={String(completed.length)}/><Stat label="Different Champions" value={String(distinctChampions)}/><Stat label="Recent Full-Field Rows" value={formatNumber(resultCount)}/></div>
+        <div className={styles.stats}><Stat label="Annual Editions" value={String(seasons.length)}/><Stat label="Completed Championships" value={String(completed.length)}/><Stat label="Different Champions" value={String(distinctChampions)}/><Stat label="Recovered Result Rows" value={formatNumber(resultCount)}/></div>
       </div>
     </section>
 
@@ -171,7 +171,7 @@ export default async function FallJamboreePage(){
           const rows=[...event.SeriesEventResults].sort((a,b)=>(a.finishing_position??9999)-(b.finishing_position??9999))
           return <article key={event.id} className={styles.eventCard}>
             <div className={styles.eventHeader}>
-              <div><div className={styles.eventYear}>{year||'Year unknown'} • Night {event.race_number||'—'}</div><div className={styles.eventDate}>{formatDate(event.race_date)} • Deer Creek Speedway</div></div>
+              <div><div className={styles.eventYear}>{year||'Year unknown'} • {event.race_number===99?'Championship Feature':'Night '+(event.race_number||'—')}</div><div className={styles.eventDate}>{formatDate(event.race_date)} • Deer Creek Speedway</div></div>
               <div className={styles.winnerBlock}><span className={styles.winnerLabel}>Feature Winner</span><strong className={styles.winnerName}>{event.winner_name||'Not listed'}</strong></div>
             </div>
             <div className={styles.panelBody}>
