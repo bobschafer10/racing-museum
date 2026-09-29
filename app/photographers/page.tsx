@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import '../media/archive-dark.css'
 
-export const dynamic = 'force-dynamic'
 export const revalidate = 300
 
 type SearchParams = Promise<{ q?: string }>
