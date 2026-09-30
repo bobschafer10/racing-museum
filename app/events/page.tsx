@@ -25,6 +25,20 @@ type SearchParams = Promise<Record<string, string | string[] | undefined>>
 
 const events: EventCollection[] = [
   {
+    slug: 'larry-detjens-memorial',
+    title: 'Larry Detjens Memorial Race',
+    venue: 'State Park Speedway / Dells Raceway Park',
+    venueTrackSlug: 'state-park-speedway-wi',
+    years: '1981–2026',
+    firstYear: 1981,
+    lastYear: 2026,
+    races: 46,
+    results: 46,
+    status: '46-edition winner chronology complete through 2026 — full-result enrichment underway',
+    category: 'Asphalt',
+    description: 'Wisconsin’s Larry Detjens memorial late model classic, preserving the museum’s continuous winner chronology from 1981 through the 46th running in 2026.',
+  },
+  {
     slug: 'tony-bettenhausen-memorial-100',
     title: 'Tony Bettenhausen Memorial 100',
     venue: 'Illiana Motor Speedway / Grundy County Speedway',
@@ -256,6 +270,7 @@ const events: EventCollection[] = [
 ]
 
 const eventImageOverrides: Record<string, string> = {
+  'larry-detjens-memorial': '/special-events/larry-detjens-memorial/larry-detjens-25-pits.jpg',
   'punky-manor': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/eau-claire-speedway/unknown-year/eau-claire-speedway_unknown-year_punky-manor_connie-bahr_post_44.jpg',
   'wissota-100': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wissota-infield_unknown-photographer_photo_001.jpg`,
   'dick-trickle-99': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/lacrosse-interstate-speedway/1981/lacrosse-interstate-speedway_1981_dick-trickle_stan-kalwasinski_photo_555.jpg`,
