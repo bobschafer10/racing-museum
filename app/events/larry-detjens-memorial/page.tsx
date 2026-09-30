@@ -117,7 +117,7 @@ export default function LarryDetjensMemorialPage() {
           <div className={styles.heroActions}>
             <a href="#winners" className={styles.button}>View Winner Chronology</a>
             <Link href="/tracks/state-park-speedway-wi" className={styles.buttonGhost}>State Park Speedway</Link>
-            <Link href="/tracks/dells-raceway-park-wi" className={styles.buttonGhost}>Dells Raceway Park</Link>
+            <Link href="/tracks/dells-motor-speedway-wi" className={styles.buttonGhost}>Dells Raceway Park</Link>
           </div>
           <div className={styles.stats}>
             <Stat label="Editions Preserved" value="46" />
