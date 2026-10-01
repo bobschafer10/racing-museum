@@ -223,7 +223,7 @@ const winnerDivisions: WinnerDivision[] = [
       { year: 2023, outcomes: ['Johnny Broking', 'Dan Eischens'] },
       { year: 2024, outcomes: ['Bob Broking', 'Shane Sabraski'] },
       { year: 2025, outcomes: ['Shane Sabraski', 'Shane Sabraski'] },
-      { year: 2026, outcomes: ['Jody Bellefeulle', 'Shane Sabraski'] },
+      { year: 2026, outcomes: ['Jody Bellefeuille', 'Shane Sabraski'] },
     ],
   },
   {
