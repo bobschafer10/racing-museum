@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import styles from '../special-event.module.css'
+import { SpecialEventResults } from '../SpecialEventResults'
+import { getSpecialEventResults, type SpecialEventRaceConfig } from '@/lib/specialEventResults'
 
 export const revalidate = 300
 
@@ -31,10 +33,41 @@ const rows: Row[] = [
   { year: 1991, winner: 'Jim Weber', note: '20th Anniversary; 150-lap ARTGO feature' },
 ]
 
+const resultRaces: SpecialEventRaceConfig[] = [
+  { year: 1972, raceId: 51975, label: '200-lap Late Model feature', venue: 'Dells Motor Speedway' },
+  { year: 1973, raceId: 22122, label: 'Late Model feature', venue: 'Dells Motor Speedway' },
+  { year: 1976, raceId: 23946, label: 'Late Model feature 1', venue: 'Dells Motor Speedway' },
+  { year: 1976, raceId: 47740, label: 'Late Model feature 2', venue: 'Dells Motor Speedway' },
+  { year: 1976, raceId: 75191, label: 'Late Model feature 3', venue: 'Dells Motor Speedway' },
+  { year: 1978, raceId: 47735, label: 'Late Model feature 1', venue: 'Dells Motor Speedway' },
+  { year: 1978, raceId: 69747, label: 'Late Model feature 2', venue: 'Dells Motor Speedway' },
+  { year: 1978, raceId: 23953, label: 'Late Model feature 3', venue: 'Dells Motor Speedway' },
+  { year: 1979, raceId: 37206, label: 'Late Model feature', venue: 'Dells Motor Speedway' },
+  { year: 1982, raceId: 19360, label: 'Weekend feature 1', venue: 'Dells Motor Speedway' },
+  { year: 1982, raceId: 40268, label: 'Weekend feature 2', venue: 'Dells Motor Speedway' },
+  { year: 1982, raceId: 22149, label: 'Weekend feature 3', venue: 'Dells Motor Speedway' },
+  { year: 1983, raceId: 87473, label: 'Weekend feature 1', venue: 'Dells Motor Speedway' },
+  { year: 1983, raceId: 5515, label: 'Weekend feature 2', venue: 'Dells Motor Speedway' },
+  { year: 1983, raceId: 5521, label: 'Weekend feature 3', venue: 'Dells Motor Speedway' },
+  { year: 1984, raceId: 1155, label: 'First 50-lap feature', venue: 'Dells Motor Speedway' },
+  { year: 1984, raceId: 70178, label: 'Second 50-lap feature', venue: 'Dells Motor Speedway' },
+  { year: 1985, raceId: 40250, label: 'Saturday 40-lap Invitational', venue: 'Dells Motor Speedway' },
+  { year: 1986, raceId: 70203, label: 'Saturday 50-lap Invitational', venue: 'Dells Motor Speedway' },
+  { year: 1987, raceId: 60764, label: 'Weekend feature 1', venue: 'Dells Motor Speedway' },
+  { year: 1987, raceId: 1692, label: 'Weekend feature 2', venue: 'Dells Motor Speedway' },
+  { year: 1987, raceId: 69838, label: 'Weekend feature 3', venue: 'Dells Motor Speedway' },
+  { year: 1988, raceId: 70165, label: 'Saturday 100-lap feature', venue: 'Dells Motor Speedway' },
+  { year: 1988, raceId: 69883, label: 'Sunday 100-lap feature', venue: 'Dells Motor Speedway' },
+  { year: 1989, raceId: 74247, label: '100-lap Late Model feature', venue: 'Dells Motor Speedway' },
+  { year: 1990, raceId: 1685, label: '100-lap CWRA Late Model feature', venue: 'Dells Motor Speedway' },
+  { year: 1991, raceId: 52278, label: '150-lap ARTGO feature', venue: 'Dells Motor Speedway' },
+]
+
 const winCounts = rows.reduce((m,row)=>m.set(row.winner,(m.get(row.winner)||0)+1),new Map<string,number>())
 const repeats=[...winCounts.entries()].filter(([,n])=>n>1).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))
 
-export default function DellsMidwestChampionshipsPage(){
+export default async function DellsMidwestChampionshipsPage(){
+  const resultArchive = await getSpecialEventResults(resultRaces)
   return <main className={styles.page}>
     <section className={styles.hero}>
       <img src={hero} alt="Dells Motor Speedway period late model racing" className={styles.heroImage}/>
@@ -74,6 +107,10 @@ export default function DellsMidwestChampionshipsPage(){
           {rows.map(row=><div key={row.year} style={{display:'grid',gridTemplateColumns:'72px minmax(150px,.7fr) minmax(230px,1.3fr)',gap:8,padding:'10px 8px',borderBottom:'1px solid #22282c',fontSize:12,color:'#c9ccce'}}><strong style={{color:'#d0ad63'}}>{row.year}</strong><strong style={{color:'#fff'}}>{row.winner}</strong><span>{row.note||'Midwest Championships headline winner'}</span></div>)}
         </div></article>
       </section>
+      <SpecialEventResults
+        races={resultArchive}
+        note="MRN OCR and museum result records are being expanded year by year; recovered rows are shown without filling unresolved positions by inference."
+      />
       <div className={styles.footerLinks}><Link href="/events" className={styles.footerLink}>Special Events<span>Browse all events →</span></Link><Link href="/tracks/dells-motor-speedway-wi" className={styles.footerLink}>Dells Motor Speedway<span>Open track archive →</span></Link><Link href="/research" className={styles.footerLink}>Research Center<span>Continue research →</span></Link></div>
     </div>
   </main>

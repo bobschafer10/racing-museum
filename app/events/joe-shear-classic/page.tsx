@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import styles from '../special-event.module.css'
+import { SpecialEventResults } from '../SpecialEventResults'
+import { getSpecialEventResults, type SpecialEventRaceConfig } from '@/lib/specialEventResults'
 
 export const revalidate = 300
 
@@ -14,10 +16,33 @@ const winners:Winner[]=[
  {year:2023,winner:'Ty Majeski'},{year:2024,winner:'Ty Majeski'},{year:2025,winner:'Casey Johnson'},
  {year:2026,winner:'Austin Nason'}
 ]
+const resultRaces: SpecialEventRaceConfig[]=[
+ {year:2008,raceId:69813,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2009,raceId:35282,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2010,raceId:109519,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2011,raceId:157581,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2012,raceId:157588,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2013,raceId:157597,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2014,raceId:112704,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2015,raceId:113647,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2016,raceId:114626,label:'Joe Shear Classic',venue:'Madison International Speedway'},
+ {year:2017,raceId:115719,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2018,raceId:116400,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2019,raceId:117052,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2020,raceId:27477,label:'Joe Shear Classic',venue:'Dells Raceway Park'},
+ {year:2021,raceId:49896,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2022,raceId:15323,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2023,raceId:10324,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2024,raceId:27476,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2025,raceId:27487,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+ {year:2026,raceId:153806,label:'Joe Shear Classic 200',venue:'Madison International Speedway'},
+]
+
 const counts=winners.reduce((m,r)=>m.set(r.winner,(m.get(r.winner)||0)+1),new Map<string,number>())
 const repeats=[...counts.entries()].filter(([,n])=>n>1).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))
 
-export default function JoeShearClassicPage(){
+export default async function JoeShearClassicPage(){
+ const resultArchive = await getSpecialEventResults(resultRaces)
  return <main className={styles.page}>
   <section className={styles.hero}><img src={hero} alt="Joe Shear at Capital Super Speedway" className={styles.heroImage}/><div className={styles.heroShade}/><div className={styles.heroInner}>
    <div className={styles.breadcrumbs}><Link href="/">Home</Link><span>›</span><Link href="/events">Special Events</Link><span>›</span><span>Joe Shear Classic</span></div>
@@ -45,6 +70,10 @@ export default function JoeShearClassicPage(){
      {winners.map(row=><div key={row.year} style={{display:'grid',gridTemplateColumns:'72px minmax(180px,1fr) minmax(180px,.8fr)',gap:8,padding:'10px 8px',borderBottom:'1px solid #22282c',fontSize:12,color:'#c9ccce'}}><strong style={{color:'#d0ad63'}}>{row.year}</strong><strong style={{color:'#fff'}}>{row.winner}</strong><span>{row.venue||'Madison International Speedway'}</span></div>)}
     </div></article>
    </section>
+   <SpecialEventResults
+    races={resultArchive}
+    note="Modern Joe Shear Classic fields are already deep in the museum database; early editions will continue to be expanded from archived tour records."
+   />
    <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>Primary Event History</div><strong>Madison International Speedway maintains the official Joe Shear Classic history.</strong><p>The museum chronology follows Madison's published past-winners list through 2025 and the track's 2026 report identifying Austin Nason as the May 3, 2026 winner.</p><a href="https://misracing.com/who-was-joe-shear-a-history-of-the-joe-shear-classic-and-its-namesake/" target="_blank" rel="noreferrer" style={{color:'#d0ad63'}}>Madison International Speedway event history →</a></div></section>
    <div className={styles.footerLinks}><Link href="/events" className={styles.footerLink}>Special Events<span>Browse all events →</span></Link><Link href="/tracks/capital-super-speedway-wi" className={styles.footerLink}>Madison / Capital<span>Open track archive →</span></Link><Link href="/tracks/dells-motor-speedway-wi" className={styles.footerLink}>Dells Raceway Park<span>2020 host →</span></Link></div>
   </div>

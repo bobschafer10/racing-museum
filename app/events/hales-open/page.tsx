@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import styles from '../special-event.module.css'
+import { SpecialEventResults } from '../SpecialEventResults'
+import { getSpecialEventResults, type SpecialEventRaceConfig } from '@/lib/specialEventResults'
 
 export const revalidate = 300
 
@@ -27,11 +29,33 @@ const rows:Row[]=[
  {year:1993,winner:'Russ Scheffler / Whitey Harris',note:'Twin 30-lap late model features'},
 ]
 
+const resultRaces: SpecialEventRaceConfig[] = [
+ {year:1976,raceId:29795,label:'Wally Jors Benefit — 44-lap Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1977,raceId:79060,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1978,raceId:64005,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1979,raceId:54546,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1980,raceId:1240,label:'Hales Open 50-lap Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1981,raceId:9389,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1982,raceId:4264,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1983,raceId:79105,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1984,raceId:56029,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1985,raceId:29092,label:'Hales Open Late Model feature',venue:'Hales Corners Speedway'},
+ {year:1986,raceId:54557,label:'Coors Light Hales Open 50',venue:'Hales Corners Speedway'},
+ {year:1987,raceId:49255,label:'Coors Light Hales Open 50',venue:'Hales Corners Speedway'},
+ {year:1988,raceId:28677,label:'Coors Light Hales Open 50',venue:'Hales Corners Speedway'},
+ {year:1989,raceId:4263,label:'Hales Open 50',venue:'Hales Corners Speedway'},
+ {year:1990,raceId:58877,label:'Coors Light Hales Open 50',venue:'Hales Corners Speedway'},
+ {year:1991,raceId:129256,label:'Miller High Life Open 50',venue:'Hales Corners Speedway'},
+ {year:1993,raceId:27016,label:'Twin 30-lap feature — Russ Scheffler',venue:'Hales Corners Speedway'},
+ {year:1993,raceId:66024,label:'Twin 30-lap feature — Whitey Harris',venue:'Hales Corners Speedway'},
+]
+
 const core=rows.filter(r=>r.year>=1977&&r.year<=1991)
 const counts=core.reduce((m,r)=>m.set(r.winner,(m.get(r.winner)||0)+1),new Map<string,number>())
 const repeats=[...counts.entries()].filter(([,n])=>n>1).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))
 
-export default function HalesOpenPage(){
+export default async function HalesOpenPage(){
+ const resultArchive = await getSpecialEventResults(resultRaces)
  return <main className={styles.page}>
   <section className={styles.hero}><img src={hero} alt="Hales Corners Speedway late model" className={styles.heroImage}/><div className={styles.heroShade}/><div className={styles.heroInner}>
    <div className={styles.breadcrumbs}><Link href="/">Home</Link><span>›</span><Link href="/events">Special Events</Link><span>›</span><span>Hales Open</span></div>
@@ -62,6 +86,10 @@ export default function HalesOpenPage(){
      {rows.map(row=><div key={row.year} style={{display:'grid',gridTemplateColumns:'72px minmax(160px,.8fr) minmax(230px,1.2fr)',gap:8,padding:'10px 8px',borderBottom:'1px solid #22282c',fontSize:12,color:'#c9ccce'}}><strong style={{color:'#d0ad63'}}>{row.year}</strong><strong style={{color:row.open?'#d0ad63':'#fff'}}>{row.winner}</strong><span>{row.note||'Hales Open late model feature'}</span></div>)}
     </div></article>
    </section>
+   <SpecialEventResults
+    races={resultArchive}
+    note="MRN summaries now provide top-ten depth for many editions; ambiguous OCR identities and unrecovered positions remain intentionally blank."
+   />
    <div className={styles.footerLinks}><Link href="/events" className={styles.footerLink}>Special Events<span>Browse all events →</span></Link><Link href="/tracks/hales-corners-speedway-wi" className={styles.footerLink}>Hales Corners Speedway<span>Open track archive →</span></Link><Link href="/research" className={styles.footerLink}>Research Center<span>Continue OCR research →</span></Link></div>
   </div>
  </main>
