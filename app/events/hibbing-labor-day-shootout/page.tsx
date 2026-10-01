@@ -118,6 +118,212 @@ const researchTrail = [
   },
 ]
 
+type WinnerHistoryRow = {
+  year: number
+  outcomes: string[]
+}
+
+type WinnerDivision = {
+  name: string
+  years: string
+  rows: WinnerHistoryRow[]
+}
+
+const winnerDivisions: WinnerDivision[] = [
+  {
+    name: 'Late Models',
+    years: '1979–2026',
+    rows: [
+      { year: 1979, outcomes: ['Leon Plank'] },
+      { year: 1980, outcomes: ['Pete Parker'] },
+      { year: 1981, outcomes: ['Jeff Hinkemeyer'] },
+      { year: 1982, outcomes: ['Tom Nesbitt'] },
+      { year: 1983, outcomes: ['Red Steffen'] },
+      { year: 1984, outcomes: ['Bob Gherardi'] },
+      { year: 1985, outcomes: ['Steve Laursen', 'Mitch Johnson'] },
+      { year: 1986, outcomes: ['Rick Egersdorf'] },
+      { year: 1987, outcomes: ['Steve Laursen', 'Rick Aukland'] },
+      { year: 1988, outcomes: ['Tom Nesbitt', 'Tom Nesbitt'] },
+      { year: 1989, outcomes: ['Tom Nesbitt'] },
+      { year: 1990, outcomes: ['Brent Laursen', 'Harry Hanson'] },
+      { year: 1991, outcomes: ['Rick Egersdorf', 'Steve Egersdorf'] },
+      { year: 1992, outcomes: ['Rick Aukland', 'Rick Aukland'] },
+      { year: 1993, outcomes: ['Mike Chamernick', 'Rick Egersdorf'] },
+      { year: 1994, outcomes: ['Rick Aukland'] },
+      { year: 1995, outcomes: ['Joel Cryderman', 'Rick Egersdorf'] },
+      { year: 1996, outcomes: ['Jimmy Mars', 'Mitch Johnson'] },
+      { year: 1997, outcomes: ['Pat Doar', 'Steve Egersdorf'] },
+      { year: 1998, outcomes: ['Steve Laursen', 'Rick Egersdorf'] },
+      { year: 1999, outcomes: ['Steve Laursen', 'Steve Laursen'] },
+      { year: 2000, outcomes: ['Pete Wohlers', 'Hank Berry'] },
+      { year: 2001, outcomes: ['Brady Smith', 'Mitch Johnson'] },
+      { year: 2002, outcomes: ['Darrell Nelson', 'Rick Egersdorf'] },
+      { year: 2003, outcomes: ['Harry Hanson', 'Brian Strand'] },
+      { year: 2004, outcomes: ['Darrell Nelson'] },
+      { year: 2005, outcomes: ['Joel Cryderman', 'Pat Doar'] },
+      { year: 2006, outcomes: ['Mitch Johnson', 'John Kaanta'] },
+      { year: 2007, outcomes: ['Steve Vesel', 'Harry Hanson'] },
+      { year: 2008, outcomes: ['Pat Doar', 'Steve Laursen'] },
+      { year: 2009, outcomes: ['Gregg Hill', 'Jake Redetzke'] },
+      { year: 2010, outcomes: ['John Kaanta', 'Pat Doar'] },
+      { year: 2011, outcomes: ['Tom Waseleski Jr.', 'Brady Smith'] },
+      { year: 2012, outcomes: ['Justin Fegers', 'Brady Smith'] },
+      { year: 2013, outcomes: ['Brady Smith'] },
+      { year: 2014, outcomes: ['Jake Redetzke', 'Brady Smith'] },
+      { year: 2015, outcomes: ['Rained out'] },
+      { year: 2016, outcomes: ['Harry Hanson', 'Jake Redetzke'] },
+      { year: 2017, outcomes: ['Jeff Provinzino', 'John Kaanta'] },
+      { year: 2018, outcomes: ['Kyle Peterlin', 'Pat Doar'] },
+      { year: 2019, outcomes: ['Kyle Peterlin', 'Pat Doar'] },
+      { year: 2020, outcomes: ['Pat Doar', 'Pat Doar'] },
+      { year: 2021, outcomes: ['Darrell Nelson', 'Jay Kintner'] },
+      { year: 2022, outcomes: ['Darrell Nelson', 'Pat Doar'] },
+      { year: 2023, outcomes: ['Kyle Peterlin', 'Kyle Peterlin'] },
+      { year: 2024, outcomes: ['Kyle Peterlin', 'Cole Searing'] },
+      { year: 2025, outcomes: ['Kevin Eder', 'Kyle Peterlin'] },
+      { year: 2026, outcomes: ['Joel Bennett', 'Skeeter Estey'] },
+    ],
+  },
+  {
+    name: 'Modifieds',
+    years: '1990–2026',
+    rows: [
+      { year: 1990, outcomes: ['Bruce Niemi', 'Steve Vesel'] },
+      { year: 1991, outcomes: ['Ron Jones', 'Rick Aukland'] },
+      { year: 1992, outcomes: ['Brad Hanson', 'Ron Jones'] },
+      { year: 1993, outcomes: ['Mike Chamernick'] },
+      { year: 1995, outcomes: ['Jeff Spacek', 'Ron Schreiner'] },
+      { year: 1996, outcomes: ['Rich Loftus', 'Jeff Ruzich'] },
+      { year: 1997, outcomes: ['Darrell Nelson', 'Don Copp'] },
+      { year: 1998, outcomes: ['Jeff Marshall', 'Eric Pember'] },
+      { year: 1999, outcomes: ['Pat Doar', 'Jerry Hartman'] },
+      { year: 2000, outcomes: ['Brent Prochnow', 'Alan Olafson'] },
+      { year: 2001, outcomes: ['Kelly Estey', 'Bob Broking'] },
+      { year: 2002, outcomes: ['Kelly Estey', 'Danny Pierce'] },
+      { year: 2003, outcomes: ['Brad Hanson', 'Brad Hanson'] },
+      { year: 2004, outcomes: ['Kelly Estey'] },
+      { year: 2005, outcomes: ['Joey Jensen', 'Dave Cain'] },
+      { year: 2006, outcomes: ['Dave Cain', 'Joey Jensen'] },
+      { year: 2007, outcomes: ['Craig Thatcher', 'Kelly Estey'] },
+      { year: 2008, outcomes: ['Robby Bunkelman', 'Joey Jensen'] },
+      { year: 2009, outcomes: ['Craig Thatcher', 'Greg Chesley'] },
+      { year: 2010, outcomes: ['Tim Jackson', 'Bill Byholm'] },
+      { year: 2011, outcomes: ['Dave Cain', 'Kelly Estey'] },
+      { year: 2012, outcomes: ['Brandon Jensen', 'Dave Cain'] },
+      { year: 2013, outcomes: ['Trent Follmer'] },
+      { year: 2014, outcomes: ['Kelly Estey', 'Darrell Nelson'] },
+      { year: 2015, outcomes: ['Rained out'] },
+      { year: 2016, outcomes: ['Jeremy Nelson', 'Steve Stuart'] },
+      { year: 2017, outcomes: ['Johnny Broking', 'Andy Davey'] },
+      { year: 2018, outcomes: ['Bob Broking', 'Jody Bellefeuille'] },
+      { year: 2019, outcomes: ['Jeremy Nelson', 'Johnny Broking'] },
+      { year: 2020, outcomes: ['Al Uotinen', 'Shane Sabraski'] },
+      { year: 2021, outcomes: ['Skeeter Estey', 'Skeeter Estey'] },
+      { year: 2022, outcomes: ['Skeeter Estey', 'Shane Sabraski'] },
+      { year: 2023, outcomes: ['Johnny Broking', 'Dan Eischens'] },
+      { year: 2024, outcomes: ['Bob Broking', 'Shane Sabraski'] },
+      { year: 2025, outcomes: ['Shane Sabraski', 'Shane Sabraski'] },
+      { year: 2026, outcomes: ['Jody Bellefeulle', 'Shane Sabraski'] },
+    ],
+  },
+  {
+    name: 'Super Stocks',
+    years: '1979–2026',
+    rows: [
+      { year: 1979, outcomes: ['Gary Grierson'] },
+      { year: 1980, outcomes: ['Steve Vesel'] },
+      { year: 1981, outcomes: ['Billy Nelson'] },
+      { year: 1982, outcomes: ['Bob Gherardi'] },
+      { year: 1983, outcomes: ['Don Roseen'] },
+      { year: 1990, outcomes: ['Roger Niemi', 'Pete Goodremote'] },
+      { year: 1991, outcomes: ['Pete Wohlers', 'Mike Goodremote'] },
+      { year: 1992, outcomes: ['Dan McMann', 'Scott Hipsher'] },
+      { year: 1993, outcomes: ['Pat Doar'] },
+      { year: 1995, outcomes: ['Darin Meierotto', 'Dale Gangl'] },
+      { year: 1996, outcomes: ['Jay Kintner', 'Ryan Aho'] },
+      { year: 1997, outcomes: ['Jay Kintner', 'Mike Goodremote'] },
+      { year: 1998, outcomes: ['Ryan Aho', 'Ryan Aho'] },
+      { year: 1999, outcomes: ['Jason Miller', 'Dale Gangl'] },
+      { year: 2000, outcomes: ['Chuckie Desmith', 'Ryan Aho'] },
+      { year: 2001, outcomes: ['John Remington', 'Ryan Aho'] },
+      { year: 2002, outcomes: ['Todd Lopac', 'Darin Meierotto'] },
+      { year: 2003, outcomes: ['Rick Jacobson', 'Brandon Jensen'] },
+      { year: 2004, outcomes: ['Ryan Aho'] },
+      { year: 2005, outcomes: ['Steve Thomas', 'Jeff Tardy'] },
+      { year: 2006, outcomes: ['Jay Kintner', 'Ryan Aho'] },
+      { year: 2007, outcomes: ['Jay Kintner', 'Jeff Tardy'] },
+      { year: 2008, outcomes: ['Andy Davey', 'Mike Bellefeuille'] },
+      { year: 2009, outcomes: ['Mike Keller', 'Dave Maas'] },
+      { year: 2010, outcomes: ['Reed Scott', 'Reed Scott'] },
+      { year: 2011, outcomes: ['Zach Wohlers', 'Derek Vesel'] },
+      { year: 2012, outcomes: ['Scott Lawrence', 'Derek Vesel'] },
+      { year: 2013, outcomes: ['Randy Spacek'] },
+      { year: 2014, outcomes: ['Kevin Burdick', 'Derek Vesel'] },
+      { year: 2015, outcomes: ['Rained out'] },
+      { year: 2016, outcomes: ['Kevin Burdick', 'Dave Maas'] },
+      { year: 2017, outcomes: ['Shane Sabraski', 'Shane Sabraski'] },
+      { year: 2018, outcomes: ['Kevin Burdick', 'Kevin Burdick'] },
+      { year: 2019, outcomes: ['Shane Sabraski', 'Kevin Burdick'] },
+      { year: 2020, outcomes: ['Kevin Burdick'] },
+      { year: 2021, outcomes: ['Shane Sabraski'] },
+      { year: 2022, outcomes: ['Shane Sabraski', 'Dave Maas'] },
+      { year: 2023, outcomes: ['Shane Sabraski', 'Shane Sabraski'] },
+      { year: 2024, outcomes: ['Shane Sabraski', 'Tristan LaBarge'] },
+      { year: 2025, outcomes: ['Shane Sabraski', 'Shane Sabraski'] },
+      { year: 2026, outcomes: ['Shane Sabraski', 'Tyler Kintner'] },
+    ],
+  },
+  {
+    name: 'Midwest Modifieds',
+    years: '2010–2026',
+    rows: [
+      { year: 2010, outcomes: ['Rick Jacobson'] },
+      { year: 2011, outcomes: ['Dan Ebert', 'Skeeter Estey'] },
+      { year: 2012, outcomes: ['Charlie Castle', 'Mark Kangas'] },
+      { year: 2013, outcomes: ['Dan Kingsley'] },
+      { year: 2014, outcomes: ['Skeeter Estey', 'Carey LePage'] },
+      { year: 2015, outcomes: ['Rained out', 'Shane Sabraski'] },
+      { year: 2016, outcomes: ['Skeeter Estey', 'Mack Estey'] },
+      { year: 2017, outcomes: ['Skeeter Estey', 'Skeeter Estey'] },
+      { year: 2018, outcomes: ['Skeeter Estey', 'Skeeter Estey'] },
+      { year: 2019, outcomes: ['Skeeter Estey', 'Mack Estey'] },
+      { year: 2020, outcomes: ['Skeeter Estey'] },
+      { year: 2021, outcomes: ['Tyler Vernon'] },
+      { year: 2022, outcomes: ['Tyler Kintner', 'Cody Carlson'] },
+      { year: 2023, outcomes: ['Devin VanHouse', 'Marcus Dunbar'] },
+      { year: 2024, outcomes: ['Mikey Blevins', 'Mervin Castle III'] },
+      { year: 2025, outcomes: ['Tyler Vernon', 'Jake Smith'] },
+      { year: 2026, outcomes: ['David Simpson', 'Mikey Blevins'] },
+    ],
+  },
+  {
+    name: 'Pure Stocks',
+    years: '2018–2022',
+    rows: [
+      { year: 2018, outcomes: ['Michael Blevins'] },
+      { year: 2019, outcomes: ['Cory Jorgensen'] },
+      { year: 2020, outcomes: ['Chad Finckbone'] },
+      { year: 2021, outcomes: ['Chad Finckbone'] },
+      { year: 2022, outcomes: ['No race'] },
+    ],
+  },
+  {
+    name: 'Hornets',
+    years: '2019–2026',
+    rows: [
+      { year: 2019, outcomes: ['Tyler Kachinske'] },
+      { year: 2020, outcomes: ['Aaron Reimers'] },
+      { year: 2021, outcomes: ['Chaston Finckbone'] },
+      { year: 2022, outcomes: ['Michael Egan'] },
+      { year: 2023, outcomes: ['Justin Barsness', 'Justin Barsness'] },
+      { year: 2024, outcomes: ['Justin Schelitzche', 'Justin Schelitzche'] },
+      { year: 2025, outcomes: ['Brody Fosso', 'Brady Fosso'] },
+      { year: 2026, outcomes: ['Nick Ruzich', 'Brady Fosso'] },
+    ],
+  },
+]
+
+
 function laborDayUtc(year: number) {
   const sept1 = new Date(Date.UTC(year, 8, 1))
   const day = sept1.getUTCDay()
@@ -283,10 +489,13 @@ export default async function HibbingLaborDayShootoutPage() {
   const coveredYears = new Set(archives.map((race) => race.year))
   const missingYears = range(1979, 2026).filter((year) => !coveredYears.has(year))
 
+  const lateModelHistory = winnerDivisions.find((division) => division.name === 'Late Models')?.rows || []
   const winnerCounts = new Map<string, number>()
-  for (const race of archives) {
-    if (!race.winner || race.winner === 'Winner not yet identified') continue
-    winnerCounts.set(race.winner, (winnerCounts.get(race.winner) || 0) + 1)
+  for (const row of lateModelHistory) {
+    for (const winner of row.outcomes) {
+      if (winner === 'Rained out' || winner === 'No race') continue
+      winnerCounts.set(winner, (winnerCounts.get(winner) || 0) + 1)
+    }
   }
   const repeatWinners = [...winnerCounts.entries()]
     .filter(([, wins]) => wins > 1)
@@ -314,12 +523,13 @@ export default async function HibbingLaborDayShootoutPage() {
         <p className={styles.intro}>Museum newspaper sources trace Hibbing’s Labor Day-weekend stock-car tradition to at least 1979. Midwest Racing News called the program the Labor Day Invitational through the early 1980s before the Labor Day Shootout name took hold. The modern two-night WISSOTA weekend remains one of northern Minnesota’s major annual dirt-track events.</p>
         <div className={styles.heroActions}>
           <Link href="/tracks/hibbing-raceway-mn" className={styles.button}>Open Hibbing Raceway</Link>
-          <a href="#results" className={styles.buttonGhost}>Recovered Late Model Results</a>
+          <a href="#winners" className={styles.buttonGhost}>Past Winners</a>
+          <a href="#results" className={styles.buttonGhost}>Full Results</a>
           <a href="https://hibbingspeedway.com/" target="_blank" rel="noreferrer" className={styles.buttonGhost}>Hibbing Speedway</a>
         </div>
         <div className={styles.stats}>
           <Stat label="Published Current Running" value="48th • 2026" />
-          <Stat label="Recovered Late Model Nights" value={String(archives.length)} />
+          <Stat label="Past Winner Divisions" value={String(winnerDivisions.length)} />
           <Stat label="Published Finish Positions" value={resultCount.toLocaleString('en-US')} />
           <Stat label="Museum Evidence Span" value="1979–2026" />
         </div>
@@ -357,23 +567,47 @@ export default async function HibbingLaborDayShootoutPage() {
 
       {repeatWinners.length > 0 && <section className={styles.section}>
         <div className={styles.kicker}>Recovered Late Model Winners</div>
-        <div className={styles.sectionHead}><h2>Multiple Race-Night Victories</h2><div className={styles.sectionNote}>Counts reflect the race nights currently attached to the museum archive, not a claim about all-time totals while historical gaps remain.</div></div>
+        <div className={styles.sectionHead}><h2>Multiple Race-Night Victories</h2><div className={styles.sectionNote}>Counts use the full past-winners chronology plus the museum’s 2026 results.</div></div>
         <div className={styles.eraGrid}>
-          {repeatWinners.map(([name, wins]) => <div key={name} className={styles.eraCard}><div className={styles.eraYear}>{wins} wins</div><div className={styles.eraValue}>{name}</div><div className={styles.eraNote}>Recovered Labor Day-weekend Late Model race nights</div></div>)}
+          {repeatWinners.map(([name, wins]) => <div key={name} className={styles.eraCard}><div className={styles.eraYear}>{wins} wins</div><div className={styles.eraValue}>{name}</div><div className={styles.eraNote}>Labor Day Shootout Late Model feature victories</div></div>)}
         </div>
       </section>}
+
+
+      <section className={styles.section} id="winners">
+        <div className={styles.kicker}>Past Winners</div>
+        <div className={styles.sectionHead}><h2>Labor Day Shootout Winner History</h2><div className={styles.sectionNote}>Historical list supplied from the Hibbing past-winners archive through 2025; 2026 winners are added from the museum’s current Hibbing results. Two names in one year indicate two recorded feature winners that weekend.</div></div>
+        <div className={styles.eventStack}>
+          {winnerDivisions.map((division) => <article key={division.name} className={styles.panel}>
+            <div className={styles.panelHeader}>
+              <h3 className={styles.panelTitle}>{division.name}</h3>
+              <div className={styles.panelMeta}>{division.years} • {division.rows.reduce((sum, row) => sum + row.outcomes.filter((name) => name !== 'Rained out' && name !== 'No race').length, 0)} recorded feature winners</div>
+            </div>
+            <div className={styles.panelBody}>
+              <div style={{ display: 'grid', gridTemplateColumns: '86px minmax(0,1fr)', gap: 8, padding: '7px 8px', borderBottom: '1px solid #4a5054', color: '#92989b', fontSize: 9, textTransform: 'uppercase', letterSpacing: '.1em', fontWeight: 900 }}>
+                <span>Year</span><span>Weekend winner(s)</span>
+              </div>
+              {division.rows.map((row) => <div key={division.name + '-' + row.year} style={{ display: 'grid', gridTemplateColumns: '86px minmax(0,1fr)', gap: 8, padding: '8px', borderBottom: '1px solid #22282c', fontSize: 12, color: '#c9ccce', alignItems: 'center' }}>
+                <strong style={{ color: '#fff' }}>{row.year}</strong>
+                <span>{row.outcomes.map((outcome, index) => <span key={row.year + '-' + outcome + '-' + index}>{index ? <span style={{ color: '#d0ad63' }}> • </span> : null}<strong style={{ color: outcome === 'Rained out' || outcome === 'No race' ? '#9ca1a4' : '#fff' }}>{outcome}</strong></span>)}</span>
+              </div>)}
+            </div>
+          </article>)}
+        </div>
+        <p className={styles.note}>Name cleanup applied where the museum driver table provides an unambiguous match: Eric Pember and Ron Schreiner. Obvious copy typos were also normalized to 2014 and Cole Searing. The 2015 Midwest Modified entry is preserved as supplied: one listed rainout plus Shane Sabraski.</p>
+      </section>
 
       <section className={styles.section}>
         <div className={styles.sourceCard}>
           <div className={styles.sourceLabel}>Research Queue</div>
-          <strong>Some editions still need a Late Model result row attached to the museum database.</strong>
-          <p>The current database has no Labor Day-weekend Late Model race row for: {missingYears.join(', ')}. Several of those years already have winner evidence in newspaper, Hall of Fame or video sources, so they remain enrichment targets rather than assumed cancellations.</p>
+          <strong>The winner chronology is much more complete than the full-result archive.</strong>
+          <p>Late Model years still lacking a Labor Day-weekend race row in the museum database are: {missingYears.join(', ')}. Their winners are now preserved above where known; the remaining work is to recover dates, top fives and full finishing orders from MRN/CFRN, Dirt Race Central and other race reports.</p>
         </div>
       </section>
 
       <section className={styles.section} id="results">
         <div className={styles.kicker}>Recovered Result Archive</div>
-        <div className={styles.sectionHead}><h2>Hibbing Labor Day Weekend Late Models</h2><div className={styles.sectionNote}>For duplicate dates, the page automatically uses the deeper WISSOTA series result set when available and falls back to the museum’s legacy track result rows otherwise.</div></div>
+        <div className={styles.sectionHead}><h2>Hibbing Labor Day Weekend Late Models — Full Results</h2><div className={styles.sectionNote}>This section is intentionally stricter than the winner chronology above: it only shows race nights with finishing-position rows already attached to the museum database.</div></div>
         <div className={styles.eventStack}>
           {archives.map((race) => {
             const yearRaces = racesByYear.get(race.year) || []
