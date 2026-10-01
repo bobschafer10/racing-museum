@@ -267,7 +267,7 @@ export default async function Gopher50Page() {
         <div className={styles.sourceCard}>
           <div className={styles.sourceLabel}>Archive Scope</div>
           <strong>The headline full-result archive is complete for every finished Gopher 50 through 2024.</strong>
-          <p>The museum preserves all 47 scheduled editions, all 43 completed headline finishing orders, both completed 2025 preliminary features, and 1,186 result rows. Event-specific Midwest Racing News scans are linked directly to the corresponding editions when the OCR archive contains a verified report, results continuation, photo page, preview, or retrospective.</p>
+          <p>The museum preserves all 47 scheduled editions, all 43 completed headline finishing orders, both completed 2025 preliminary features, and 1,186 result rows. The archive now links 27 verified Midwest Racing News pages across 23 Gopher 50 editions, with race reports, results continuations and photos kept distinct from previews, schedule advertisements and retrospectives.</p>
         </div>
       </section>
 
