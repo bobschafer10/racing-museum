@@ -25,7 +25,7 @@ const rows:Row[]=[
  {year:1989,winner:'Ted Dolhun'},
  {year:1990,winner:'Russ Scheffler',note:'Rain-postponed to Sept. 22'},
  {year:1991,winner:'Mike Melius',note:'Miller High Life Open 50'},
- {year:1992,winner:'Research open',note:'Hales Open name shifted to an IMCA-style Modified 25-lap feature',open:true},
+ {year:1992,winner:'Russ Scheffler',note:'16th annual Miller High Life Open; 50-lap late model feature'},
  {year:1993,winner:'Russ Scheffler / Whitey Harris',note:'Twin 30-lap late model features'},
 ]
 
@@ -46,6 +46,7 @@ const resultRaces: SpecialEventRaceConfig[] = [
  {year:1989,raceId:4263,label:'Hales Open 50',venue:'Hales Corners Speedway'},
  {year:1990,raceId:58877,label:'Coors Light Hales Open 50',venue:'Hales Corners Speedway'},
  {year:1991,raceId:129256,label:'Miller High Life Open 50',venue:'Hales Corners Speedway'},
+ {year:1992,raceId:130364,label:'16th Annual Miller High Life Open 50',venue:'Hales Corners Speedway'},
  {year:1993,raceId:27016,label:'Twin 30-lap feature — Russ Scheffler',venue:'Hales Corners Speedway'},
  {year:1993,raceId:66024,label:'Twin 30-lap feature — Whitey Harris',venue:'Hales Corners Speedway'},
 ]
@@ -79,7 +80,7 @@ export default async function HalesOpenPage(){
    <section className={styles.section}><div className={styles.kicker}>Core-Era Multiple Winners</div><div className={styles.sectionHead}><h2>1977–1991 Hales Open Late Model Winners</h2><div className={styles.sectionNote}>The 1993 twin-feature winners are shown separately below and are not folded into these core-era totals.</div></div><div className={styles.eraGrid}>
     {repeats.map(([name,wins])=><div key={name} className={styles.eraCard}><div className={styles.eraYear}>{wins} wins</div><div className={styles.eraValue}>{name}</div><div className={styles.eraNote}>{core.filter(r=>r.winner===name).map(r=>r.year).join(' • ')}</div></div>)}
    </div></section>
-   <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>Museum Research Note</div><strong>The late-model Hales Open changed shape near the end of the lineage.</strong><p>The traditional late model Open chronology is clear through 1991. In 1992 the Hales Open name appears on an IMCA-style Modified 25-lap special, and the winning driver has not yet been recovered from the OCR archive. In 1993 the High Life Hales Open returned with twin 30-lap late model features won by Russ Scheffler and Whitey Harris. The museum leaves 1992 explicitly open rather than guessing.</p></div></section>
+   <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>Museum Research Note</div><strong>The late-model Hales Open changed shape near the end of the lineage.</strong><p>The traditional late model Open continued in 1992, when Russ Scheffler won the 16th annual Miller High Life Open 50. MRN also advertised a separate IMCA-style Modified race using the Hales Open name later that September. In 1993 the late models used twin 30-lap features won by Russ Scheffler and Whitey Harris.</p></div></section>
    <section className={styles.section} id="chronology"><div className={styles.kicker}>Year-by-Year Lineage</div><div className={styles.sectionHead}><h2>1976–1993</h2><div className={styles.sectionNote}>Open-competition precursor, core late model years, and the later-format editions.</div></div>
     <article className={styles.eventCard}><div className={styles.panelBody}>
      <div style={{display:'grid',gridTemplateColumns:'72px minmax(160px,.8fr) minmax(230px,1.2fr)',gap:8,padding:'7px 8px',borderBottom:'1px solid #4a5054',color:'#92989b',fontSize:9,textTransform:'uppercase',letterSpacing:'.1em',fontWeight:900}}><span>Year</span><span>Winner</span><span>Note</span></div>
@@ -88,7 +89,7 @@ export default async function HalesOpenPage(){
    </section>
    <SpecialEventResults
     races={resultArchive}
-    note="MRN summaries now provide top-ten depth for many editions; ambiguous OCR identities and unrecovered positions remain intentionally blank."
+    note="The 1976–1993 lineage is complete. MRN summaries provide top-ten depth for many editions; unrecovered positions remain intentionally blank rather than reconstructed."
    />
    <div className={styles.footerLinks}><Link href="/events" className={styles.footerLink}>Special Events<span>Browse all events →</span></Link><Link href="/tracks/hales-corners-speedway-wi" className={styles.footerLink}>Hales Corners Speedway<span>Open track archive →</span></Link><Link href="/research" className={styles.footerLink}>Research Center<span>Continue OCR research →</span></Link></div>
   </div>

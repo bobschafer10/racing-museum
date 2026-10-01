@@ -109,7 +109,7 @@ export default async function DellsMidwestChampionshipsPage(){
       </section>
       <SpecialEventResults
         races={resultArchive}
-        note="MRN OCR and museum result records are being expanded year by year; recovered rows are shown without filling unresolved positions by inference."
+        note="The 20-edition winner lineage is complete. Recovered finishing orders are shown to the depth preserved by MRN and museum records; unresolved positions remain blank rather than reconstructed."
       />
       <div className={styles.footerLinks}><Link href="/events" className={styles.footerLink}>Special Events<span>Browse all events →</span></Link><Link href="/tracks/dells-motor-speedway-wi" className={styles.footerLink}>Dells Motor Speedway<span>Open track archive →</span></Link><Link href="/research" className={styles.footerLink}>Research Center<span>Continue research →</span></Link></div>
     </div>

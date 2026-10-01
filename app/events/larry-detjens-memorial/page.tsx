@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import styles from '../special-event.module.css'
+import { SpecialEventResults } from '../SpecialEventResults'
+import { getSpecialEventResults, type SpecialEventRaceConfig } from '@/lib/specialEventResults'
 
 export const revalidate = 300
 
@@ -83,6 +85,54 @@ const gallery = [
   },
 ]
 
+
+const resultRaces: SpecialEventRaceConfig[] = [
+  { year: 1981, raceId: 40148, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1981, raceId: 54743, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1982, raceId: 21894, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1982, raceId: 75256, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1983, raceId: 54756, label: 'Memorial feature', venue: 'State Park Speedway' },
+  { year: 1984, raceId: 23766, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1984, raceId: 21895, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1985, raceId: 50223, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1985, raceId: 29549, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1986, raceId: 58591, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1986, raceId: 75374, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1987, raceId: 78468, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1987, raceId: 61571, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1988, raceId: 1687, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1988, raceId: 75320, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1989, raceId: 10194, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1989, raceId: 78666, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1990, raceId: 10225, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1990, raceId: 10218, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1991, raceId: 78676, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1991, raceId: 7100, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1992, raceId: 39837, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1992, raceId: 51131, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1993, raceId: 46506, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1993, raceId: 92934, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1994, raceId: 68268, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1994, raceId: 75351, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1995, raceId: 55144, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1995, raceId: 46482, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 1997, raceId: 12787, label: 'Memorial feature', venue: 'State Park Speedway' },
+  { year: 1998, raceId: 34846, label: 'Memorial feature', venue: 'State Park Speedway' },
+  { year: 1999, raceId: 78455, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 1999, raceId: 17284, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 2001, raceId: 56398, label: 'Memorial feature 1', venue: 'State Park Speedway' },
+  { year: 2001, raceId: 11853, label: 'Memorial feature 2', venue: 'State Park Speedway' },
+  { year: 2019, raceId: 11333, label: 'Larry Detjens 125', venue: 'State Park Speedway' },
+  { year: 2020, raceId: 15321, label: 'Larry Detjens Memorial 125', venue: 'State Park Speedway' },
+  { year: 2021, raceId: 43471, label: 'Larry Detjens Memorial 125', venue: 'State Park Speedway' },
+  { year: 2022, raceId: 157615, label: 'Larry Detjens Memorial 125', venue: 'State Park Speedway' },
+  { year: 2023, raceId: 37023, label: 'Larry Detjens Memorial', venue: 'State Park Speedway' },
+  { year: 2024, raceId: 60433, label: 'Larry Detjens Memorial', venue: 'State Park Speedway' },
+  { year: 2025, raceId: 14081, label: '45th Annual Detjens Memorial — feature 1', venue: 'Dells Raceway Park' },
+  { year: 2025, raceId: 22227, label: '45th Annual Detjens Memorial — feature 2', venue: 'Dells Raceway Park' },
+  { year: 2026, raceId: 156367, label: '46th Annual Detjens Memorial 125', venue: 'Dells Raceway Park' },
+]
+
 const winCounts = winners.reduce((map, row) => {
   map.set(row.winner, (map.get(row.winner) || 0) + 1)
   return map
@@ -92,7 +142,8 @@ const repeatWinners = [...winCounts.entries()]
   .filter(([, wins]) => wins > 1)
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
 
-export default function LarryDetjensMemorialPage() {
+export default async function LarryDetjensMemorialPage() {
+  const resultArchive = await getSpecialEventResults(resultRaces)
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
@@ -195,7 +246,7 @@ export default function LarryDetjensMemorialPage() {
             <div className={styles.sourceLabel}>Museum Chronology Note</div>
             <strong>This archive preserves the continuous 46-edition lineage from 1981 through 2026.</strong>
             <p>
-              Some later retrospective winner lists differ on four early/middle-era entries. The museum chronology shown here preserves 1988 Wayne Breitenfeldt, 1989 Wayne Lodholz, and Eugene Gregorich Jr. in both 2007 and 2008, while keeping those years flagged for continued source enrichment as full finishing orders are recovered.
+              Some later retrospective winner lists differ on four early/middle-era entries. The museum chronology shown here preserves 1988 Wayne Breitenfeldt, 1989 Wayne Lodholz, and Eugene Gregorich Jr. in both 2007 and 2008. Deeper finishing orders are published only where a reliable surviving source supports them.
             </p>
           </div>
         </section>
@@ -204,7 +255,7 @@ export default function LarryDetjensMemorialPage() {
           <div className={styles.kicker}>Complete Winner Chronology</div>
           <div className={styles.sectionHead}>
             <h2>1981–2026 Winners by Year</h2>
-            <div className={styles.sectionNote}>46 editions • 28 different winners • full-result enrichment remains in progress.</div>
+            <div className={styles.sectionNote}>46 editions • 28 different winners • deeper finishing orders are shown below where preserved.</div>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 12 }}>
             {eras.map((era) => {
@@ -233,6 +284,11 @@ export default function LarryDetjensMemorialPage() {
             })}
           </div>
         </section>
+
+        <SpecialEventResults
+          races={resultArchive}
+          note="Winner chronology is complete. Finishing orders below are shown only to the depth preserved by MRN, tour records, and museum data; years without reliable deeper results remain winner-only."
+        />
 
         <div className={styles.footerLinks}>
           <Link href="/events" className={styles.footerLink}>Special Events<span>Browse all events →</span></Link>

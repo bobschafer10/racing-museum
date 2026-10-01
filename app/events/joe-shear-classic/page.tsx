@@ -72,7 +72,7 @@ export default async function JoeShearClassicPage(){
    </section>
    <SpecialEventResults
     races={resultArchive}
-    note="Modern Joe Shear Classic fields are already deep in the museum database; early editions will continue to be expanded from archived tour records."
+    note="The 2008–2026 winner lineage is complete. Available finishing orders are published to their preserved depth; editions without a reliable full field remain partial rather than inferred."
    />
    <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>Primary Event History</div><strong>Madison International Speedway maintains the official Joe Shear Classic history.</strong><p>The museum chronology follows Madison's published past-winners list through 2025 and the track's 2026 report identifying Austin Nason as the May 3, 2026 winner.</p><a href="https://misracing.com/who-was-joe-shear-a-history-of-the-joe-shear-classic-and-its-namesake/" target="_blank" rel="noreferrer" style={{color:'#d0ad63'}}>Madison International Speedway event history →</a></div></section>
    <div className={styles.footerLinks}><Link href="/events" className={styles.footerLink}>Special Events<span>Browse all events →</span></Link><Link href="/tracks/capital-super-speedway-wi" className={styles.footerLink}>Madison / Capital<span>Open track archive →</span></Link><Link href="/tracks/dells-motor-speedway-wi" className={styles.footerLink}>Dells Raceway Park<span>2020 host →</span></Link></div>
