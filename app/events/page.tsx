@@ -25,6 +25,48 @@ type SearchParams = Promise<Record<string, string | string[] | undefined>>
 
 const events: EventCollection[] = [
   {
+    slug: 'dells-midwest-championships',
+    title: 'Dells Midwest Championships',
+    venue: 'Dells Motor Speedway',
+    venueTrackSlug: 'dells-motor-speedway-wi',
+    years: '1972–1991',
+    firstYear: 1972,
+    lastYear: 1991,
+    races: 20,
+    results: 20,
+    status: '20-edition headline chronology documented from MRN — full-result enrichment underway',
+    category: 'Asphalt',
+    description: 'Dells Motor Speedway’s major fall championship weekend, from the original 200-lap era through the ARTGO and CWRA finale years.',
+  },
+  {
+    slug: 'hales-open',
+    title: 'Hales Open',
+    venue: 'Hales Corners Speedway',
+    venueTrackSlug: 'hales-corners-speedway-wi',
+    years: '1976–1993',
+    firstYear: 1976,
+    lastYear: 1993,
+    races: 18,
+    results: 17,
+    status: 'Post-season open-competition lineage documented — 1992 modified-format winner remains under research',
+    category: 'Dirt',
+    description: 'Hales Corners Speedway’s fall open-competition tradition, famous for outside invaders, liberal rules, wedges, wings, and creative machinery after the point season.',
+  },
+  {
+    slug: 'joe-shear-classic',
+    title: 'Joe Shear Classic',
+    venue: 'Madison International Speedway / Capital Super Speedway',
+    venueTrackSlug: 'capital-super-speedway-wi',
+    years: '2008–2026',
+    firstYear: 2008,
+    lastYear: 2026,
+    races: 19,
+    results: 19,
+    status: 'Winner chronology complete through 2026 — full-field enrichment underway',
+    category: 'Asphalt',
+    description: 'Madison’s spring Super Late Model memorial honoring Joe Shear, contested since 2008 and held at Dells Raceway Park only in 2020.',
+  },
+  {
     slug: 'larry-detjens-memorial',
     title: 'Larry Detjens Memorial Race',
     venue: 'State Park Speedway / Dells Raceway Park',
@@ -270,6 +312,9 @@ const events: EventCollection[] = [
 ]
 
 const eventImageOverrides: Record<string, string> = {
+  'dells-midwest-championships': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/dells-motor-speedway/1979/dells-motor-speedway_1979_dick-trickle_kurt-luoma_photo_001.jpg',
+  'hales-open': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bill-prietzel_dave-olson_photo_001.jpg',
+  'joe-shear-classic': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/capital-super-speedway/1975/capital-super-speedway_1975_joe-shear_mike-napierala_photo_001.jpg',
   'larry-detjens-memorial': '/special-events/larry-detjens-memorial/larry-detjens-25-pits.jpg',
   'punky-manor': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/eau-claire-speedway/unknown-year/eau-claire-speedway_unknown-year_punky-manor_connie-bahr_post_44.jpg',
   'wissota-100': `${process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co'}/storage/v1/object/public/media/photos/master/unknown-track/unknown-year/unknown-track_unknown-year_wissota-infield_unknown-photographer_photo_001.jpg`,
