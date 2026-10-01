@@ -107,6 +107,35 @@ export default async function Gopher50Page() {
 
   const seasons = (seasonData || []) as SeasonRow[]
   const events = (eventData || []) as EventRow[]
+
+  const eventIds = events.map((event) => event.id)
+  const { data: mediaLinkRows } = eventIds.length
+    ? await supabase
+        .from('SeriesEventMediaLinks')
+        .select('series_event_id,media_id,relationship_type,display_order')
+        .in('series_event_id', eventIds)
+        .order('display_order', { ascending: true })
+    : { data: [] }
+
+  const mediaIds = Array.from(new Set((mediaLinkRows || []).map((row: any) => Number(row.media_id)).filter(Number.isFinite)))
+  const { data: mediaRows } = mediaIds.length
+    ? await supabase
+        .from('SeriesEventMedia')
+        .select('id,publication_code,publication_name,issue_date,page_number,storage_path,public_path,headline')
+        .in('id', mediaIds)
+    : { data: [] }
+
+  const mediaById = new Map((mediaRows || []).map((row: any) => [Number(row.id), row]))
+  const mediaByEvent = new Map<number, any[]>()
+  for (const link of mediaLinkRows || []) {
+    const media = mediaById.get(Number((link as any).media_id))
+    if (!media) continue
+    const eventId = Number((link as any).series_event_id)
+    const rows = mediaByEvent.get(eventId) || []
+    rows.push({ ...media, relationship_type: (link as any).relationship_type })
+    mediaByEvent.set(eventId, rows)
+  }
+
   const yearBySeason = new Map(seasons.map((row) => [row.id, row.year]))
   const heroSrc = (heroRows || [])[0]?.image_url || ''
   const completed = seasons.filter((row) => row.champion_name)
@@ -203,12 +232,13 @@ export default async function Gopher50Page() {
 
       <section className={styles.section}>
         <div className={styles.kicker}>Recovered Full Fields</div>
-        <div className={styles.sectionHead}><h2>Preserved Gopher 50 Feature Results</h2><div className={styles.sectionNote}>The inaugural 1980 race, 2022–2024 headline features, and both completed 2025 preliminaries are loaded in this first enrichment pass.</div></div>
+        <div className={styles.sectionHead}><h2>Preserved Gopher 50 Feature Results</h2><div className={styles.sectionNote}>Full finishing orders are preserved for all 43 completed headline Gopher 50s from 1980 through 2024, plus both completed 2025 preliminary features.</div></div>
         {eventError ? <div className={styles.empty}>Unable to load the live Gopher 50 result archive.</div> :
         <div className={styles.eventStack}>{orderedEvents.map((event) => {
           const year = yearBySeason.get(event.season_id || 0)
           const rows = [...event.SeriesEventResults].sort((a, b) => (a.finishing_position ?? 9999) - (b.finishing_position ?? 9999))
           const eventLabel = event.race_number === 99 ? 'Headline Gopher 50' : `Preliminary Night ${event.race_number || '—'}`
+          const archiveMedia = mediaByEvent.get(event.id) || []
           return <article key={event.id} className={styles.eventCard}>
             <div className={styles.eventHeader}>
               <div><div className={styles.eventYear}>{year || 'Year unknown'} • {eventLabel}</div><div className={styles.eventDate}>{formatDate(event.race_date)} • {event.track_name || 'Venue not listed'}</div></div>
@@ -220,6 +250,14 @@ export default async function Gopher50Page() {
                 <div className={styles.compactHeader}><span>Pos.</span><span>Start</span><span>Driver</span><span>Car</span><span>Source</span></div>
                 {rows.map((row) => <div key={row.id} className={styles.compactRow}><strong>{row.finishing_position ?? '—'}</strong><span>{row.starting_position ?? '—'}</span><strong>{row.driver_slug ? <Link href={'/drivers/' + row.driver_slug} style={{ color: 'inherit' }}>{row.driver_name}</Link> : row.driver_name}</strong><span>{row.car_number ?? '—'}</span><span>{sourceLabel(event.source_url)}</span></div>)}
               </div>
+              {archiveMedia.length > 0 && <div className={styles.winnerBar}>
+                <span>MRN Archive • {archiveMedia.length} {archiveMedia.length === 1 ? 'page' : 'pages'}</span>
+                <span>{archiveMedia.map((media: any, index: number) => {
+                  const href = seriesMediaUrl(media)
+                  if (!href) return null
+                  return <span key={media.id}>{index > 0 ? ' • ' : ''}<a href={href} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}><strong>{media.headline || `MRN ${formatDate(media.issue_date)} p.${media.page_number || '—'}`} →</strong></a></span>
+                })}</span>
+              </div>}
             </div>
           </article>
         })}</div>}
@@ -228,8 +266,8 @@ export default async function Gopher50Page() {
       <section className={styles.section}>
         <div className={styles.sourceCard}>
           <div className={styles.sourceLabel}>Archive Scope</div>
-          <strong>The winner chronology is complete; full-field recovery is continuing backward through the middle decades.</strong>
-          <p>This initial museum build preserves all 47 scheduled editions, 43 completed headline winners, the exact modern cancellation history, and 152 verified finishing positions. Dirt on Dirt&apos;s dedicated event history and surviving historical race reports provide a strong path for expanding the remaining 1981–2019 full fields without reconstructing missing positions.</p>
+          <strong>The headline full-result archive is complete for every finished Gopher 50 through 2024.</strong>
+          <p>The museum preserves all 47 scheduled editions, all 43 completed headline finishing orders, both completed 2025 preliminary features, and 1,186 result rows. Event-specific Midwest Racing News scans are linked directly to the corresponding editions when the OCR archive contains a verified report, results continuation, photo page, preview, or retrospective.</p>
         </div>
       </section>
 
@@ -240,6 +278,14 @@ export default async function Gopher50Page() {
       </div>
     </div>
   </main>
+}
+
+function seriesMediaUrl(media: any) {
+  if (media?.public_path) return media.public_path
+  if (!media?.storage_path) return ''
+  const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  if (!baseUrl) return ''
+  return `${baseUrl}/storage/v1/object/public/media/${media.storage_path}`
 }
 
 function Stat({ label, value }: { label: string; value: string }) {
