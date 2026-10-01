@@ -146,7 +146,7 @@ const events: EventCollection[] = [
     lastYear: 2026,
     races: 56,
     results: 828,
-    status: '56 Late Model race nights and 828 published finish positions recovered — historical gaps still being enriched',
+    status: 'Six-division winner history added through 2025, plus 2026 museum winners — 828 Late Model finish positions preserved',
     category: 'Dirt',
     description: 'Northern Minnesota’s Labor Day dirt-track tradition, evolving from the Labor Day Invitational into the modern two-night WISSOTA Shootout at Hibbing.',
   },
