@@ -56,7 +56,7 @@ export default function RoomPolish() {
       )
 
       if (!link) continue
-      if (replacement.newHref) link.href = replacement.newHref
+      if (replacement.newHref) link.setAttribute('href', replacement.newHref)
       link.textContent = replacement.label
       link.setAttribute('aria-label', replacement.label.replace(' →', ''))
     }
