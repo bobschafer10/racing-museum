@@ -12,6 +12,10 @@ const MEDIA_BASE =
   (process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co') +
   '/storage/v1/object/public/media/'
 
+const WEHRS_WATERMARK =
+  MEDIA_BASE +
+  'programs/1980-lacrosse-interstate-speedway-wi-yearbook/1981%20LaCrosse%20Speedway%20program_030.jpg'
+
 type ResultRow = {
   id: number
   finishing_position: number | null
@@ -223,11 +227,28 @@ const programArtifactNotes: Record<string, { label: string; note: string }> = {
   },
 }
 
-const winnerImages: Record<number, { src: string; alt: string; note: string }> = {
+const winnerImages: Record<number, {
+  src: string
+  alt: string
+  note: string
+  crop?: { size: string; position: string }
+}> = {
   1970: {
     src: '/rooms/oktoberfest/1970-tom-reffner.svg',
     alt: 'Tom Reffner in the 1970 Oktoberfest-winning car at LaCrosse Interstate Speedway',
     note: 'Tom Reffner • 1970 Oktoberfest winner',
+  },
+  1971: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1971-10-07/001.jpg',
+    alt: 'Dick Trickle in the winner circle after the 1971 Oktoberfest 200',
+    note: 'Dick Trickle • 1971 winner circle • Midwest Racing News / Gary Schmidt',
+    crop: { size: '255% auto', position: '7% 65%' },
+  },
+  1978: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1978-10-05/002.jpg',
+    alt: 'Dave Watson after winning the 1978 Oktoberfest at LaCrosse Interstate Speedway',
+    note: 'Dave Watson • 1978 Oktoberfest victory • Midwest Racing News / Wayne Mioskowski',
+    crop: { size: '255% auto', position: '7% 13%' },
   },
   1980: {
     src: '/rooms/oktoberfest/1980-mark-martin.svg',
@@ -238,6 +259,12 @@ const winnerImages: Record<number, { src: string; alt: string; note: string }> =
     src: '/rooms/oktoberfest/1981-junior-hanley.svg',
     alt: 'Junior Hanley in victory lane after winning the 1981 Oktoberfest',
     note: 'Junior Hanley • 1981 Oktoberfest winner',
+  },
+  1982: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1982-10-07/1.jpg',
+    alt: 'Jim Back with promoter Larry Wehrs after winning the 1982 Oktoberfest',
+    note: 'Jim Back with Larry Wehrs • 1982 Oktoberfest • Midwest Racing News / Lee Foster',
+    crop: { size: '245% auto', position: '8% 82%' },
   },
   1984: {
     src: '/rooms/oktoberfest/1984-bryan-reffner.svg',
@@ -451,7 +478,12 @@ export default async function OktoberfestLarryWehrsRoom() {
           </figure>
         </section>
 
-        <section className={styles.section} id="year-by-year">
+        <section className={[styles.section, styles.yearByYearSection].join(' ')} id="year-by-year">
+          <div
+            className={styles.wehrsWatermark}
+            style={{ backgroundImage: 'url(' + WEHRS_WATERMARK + ')' }}
+            aria-hidden="true"
+          />
           <div className={styles.sectionHead}>
             <div>
               <div className={styles.kicker}>The Larry Wehrs Years</div>
@@ -476,7 +508,20 @@ export default async function OktoberfestLarryWehrsRoom() {
                   <h3>{event.winner_name || winnerResult?.driver_name || 'Winner not listed'}</h3>
                   {winnerImages[year] ? (
                     <figure className={styles.yearWinnerPhoto}>
-                      <img src={winnerImages[year].src} alt={winnerImages[year].alt} />
+                      {winnerImages[year].crop ? (
+                        <div
+                          className={styles.yearWinnerCrop}
+                          role="img"
+                          aria-label={winnerImages[year].alt}
+                          style={{
+                            backgroundImage: 'url(' + winnerImages[year].src + ')',
+                            backgroundSize: winnerImages[year].crop!.size,
+                            backgroundPosition: winnerImages[year].crop!.position,
+                          }}
+                        />
+                      ) : (
+                        <img src={winnerImages[year].src} alt={winnerImages[year].alt} />
+                      )}
                       <figcaption>{winnerImages[year].note}</figcaption>
                     </figure>
                   ) : null}
