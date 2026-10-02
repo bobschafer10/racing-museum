@@ -34,14 +34,14 @@ export default function NorthernNationalsPage() {
         <div className={styles.eyebrow}>Upper Midwest Special Event Archive</div>
         <h1 className={styles.title}>Northern Nationals</h1>
         <p className={styles.tagline}>Superior's Post-Labor Day Dirt-Track Finale</p>
-        <p className={styles.intro}>The Northern Nationals at Superior Speedway — now Gondik Law Speedway — began in 1989 and reached its 38th annual running in 2026. The multi-division weekend has long paired WISSOTA Late Models, Modifieds and stock-car divisions with major sprint-car appearances, while the Russ Laursen Late Model Classic remains part of the event's deeper Superior tradition.</p>
+        <p className={styles.intro}>The Northern Nationals at Superior Speedway — now Gondik Law Speedway — has a modern annual sequence dating from 1989 that reached its 38th running in 2026. Museum research also documents earlier Northern Late Model Nationals at Superior in 1979 and 1988. The multi-division weekend has long paired WISSOTA Late Models, Modifieds and stock-car divisions with major sprint-car appearances, while the Russ Laursen Late Model Classic remains part of the event's deeper Superior tradition.</p>
         <div className={styles.heroActions}>
           <Link href="/tracks/superior-speedway-wi" className={styles.button}>Open Superior Archive</Link>
           <Link href="#winners" className={styles.buttonGhost}>Late Model Winners</Link>
           <a href="https://www.atdracingnews.com/content/9-9-page-23" target="_blank" rel="noreferrer" className={styles.buttonGhost}>2025 Race Report</a>
         </div>
         <div className={styles.stats}>
-          <Stat label="Annual Run" value="1989–2026"/>
+          <Stat label="Modern Sequence" value="1989–2026"/>
           <Stat label="2026 Edition" value="38th"/>
           <Stat label="Verified Finale Winners" value={String(verified.length)}/>
           <Stat label="Different Winners" value={String(winners.size)}/>
@@ -54,8 +54,8 @@ export default function NorthernNationalsPage() {
         <div className={styles.twoCol}>
           <div className={styles.sourceCard}>
             <div className={styles.sourceLabel}>Northern Nationals Lineage</div>
-            <strong>The annual-number trail establishes 1989 as the first Northern Nationals.</strong>
-            <p>The 29th running was documented in 2017, the 34th in 2022, the 36th in 2024, the 37th in 2025 and the 38th in 2026. Those independent year markers align to a continuous 1989 start.</p>
+            <strong>The annual-number trail establishes 1989 as the start of the modern Northern Nationals sequence.</strong>
+            <p>The 29th running was documented in 2017, the 34th in 2022, the 36th in 2024, the 37th in 2025 and the 38th in 2026. Those year markers align to a 1989 modern sequence. Independent Hall of Fame records also credit Tom Nesbitt with Northern Late Model Nationals victories at Superior in 1979 and 1988, so those years are now treated as documented precursor editions pending newspaper-title verification.</p>
           </div>
           <div className={styles.sourceCard}>
             <div className={styles.sourceLabel}>Russ Laursen Connection</div>
