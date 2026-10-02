@@ -223,6 +223,29 @@ const programArtifactNotes: Record<string, { label: string; note: string }> = {
   },
 }
 
+const winnerImages: Record<number, { src: string; alt: string; note: string }> = {
+  1970: {
+    src: '/rooms/oktoberfest/1970-tom-reffner.svg',
+    alt: 'Tom Reffner in the 1970 Oktoberfest-winning car at LaCrosse Interstate Speedway',
+    note: 'Tom Reffner • 1970 Oktoberfest winner',
+  },
+  1980: {
+    src: '/rooms/oktoberfest/1980-mark-martin.svg',
+    alt: 'Mark Martin with the 1980 Oktoberfest winner sign at LaCrosse Interstate Speedway',
+    note: 'Mark Martin • 1980 Oktoberfest winner',
+  },
+  1981: {
+    src: '/rooms/oktoberfest/1981-junior-hanley.svg',
+    alt: 'Junior Hanley in victory lane after winning the 1981 Oktoberfest',
+    note: 'Junior Hanley • 1981 Oktoberfest winner',
+  },
+  1984: {
+    src: '/rooms/oktoberfest/1984-bryan-reffner.svg',
+    alt: 'Bryan Reffner with his car and winner sign after the 1984 Oktoberfest',
+    note: 'Bryan Reffner • 1984 Oktoberfest winner',
+  },
+}
+
 const programPageArtifacts = [
   {
     year: 1978,
@@ -446,6 +469,12 @@ export default async function OktoberfestLarryWehrsRoom() {
                     <small>{prettyDate(event.race_date)}</small>
                   </div>
                   <h3>{event.winner_name || winnerResult?.driver_name || 'Winner not listed'}</h3>
+                  {winnerImages[year] ? (
+                    <figure className={styles.yearWinnerPhoto}>
+                      <img src={winnerImages[year].src} alt={winnerImages[year].alt} />
+                      <figcaption>{winnerImages[year].note}</figcaption>
+                    </figure>
+                  ) : null}
                   <div className={styles.yearResultDepth}>
                     {event.SeriesEventResults.length
                       ? event.SeriesEventResults.length + ' finishing positions preserved'
