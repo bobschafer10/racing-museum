@@ -70,6 +70,24 @@ const newspaperArtifacts = [
     image: MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1972-12-15/002.jpg',
   },
   {
+    year: 1973,
+    publication: 'Midwest Racing News',
+    date: 'October 4, 1973',
+    title: 'Shear Returns as Defending Oktoberfest Champion',
+    note: 'A period MRN race advertisement promoted Joe Shear, LaCrosse track champion Jim Back, and Milwaukee-area champion Al Schill for the weekend.',
+    href: '/media/newspapers/midwest-racing-news/1973-10-04?sourcePage=7&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1973-10-04/007.jpg',
+  },
+  {
+    year: 1974,
+    publication: 'Midwest Racing News',
+    date: 'October 3, 1974',
+    title: 'Top Canadian Driver in La Crosse Fest',
+    note: 'MRN announced Canadian champion Jerry “The Bear” Makara as the latest entry for the $12,000 two-day Oktoberfest program. He went on to win it.',
+    href: '/media/newspapers/midwest-racing-news/1974-10-03?sourcePage=2&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1974-10-03/002.jpg',
+  },
+  {
     year: 1975,
     publication: 'Midwest Racing News',
     date: 'October 2, 1975',
@@ -113,6 +131,15 @@ const newspaperArtifacts = [
     note: 'The MRN front page captured the two-100 format: Miller won the overall title while Dick Trickle won the second 100-lapper.',
     href: '/media/newspapers/midwest-racing-news/1979-10-04?sourcePage=1&q=Oktoberfest',
     image: MEDIA_BASE + 'newspapers/midwest-racing-news/1979-10-04/001.jpg',
+  },
+  {
+    year: 1980,
+    publication: 'Midwest Racing News',
+    date: 'October 2, 1980',
+    title: 'Rain Interrupts the 1980 Oktoberfest',
+    note: 'MRN preserved the completed Friday and Saturday support-division action while the late-model program waited for its October 12 raindate.',
+    href: '/media/newspapers/midwest-racing-news/1980-10-02?sourcePage=10&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1980-10-02/010.jpg',
   },
   {
     year: 1981,
@@ -220,12 +247,6 @@ function titleize(value?: string | null) {
 function photoUrl(photo: PhotoRow) {
   const year = photo.year ? String(photo.year) : 'unknown-year'
   return MEDIA_BASE + 'photos/master/' + TRACK_PHOTO_SLUG + '/' + year + '/' + photo.file_name
-}
-
-function programYear(program: RaceProgram) {
-  const raw = String(program.year || '')
-  const match = raw.match(/\d{4}/)
-  return match ? Number(match[0]) : null
 }
 
 export default async function OktoberfestLarryWehrsRoom() {
