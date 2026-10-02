@@ -244,6 +244,11 @@ const winnerImages: Record<number, { src: string; alt: string; note: string }> =
     alt: 'Bryan Reffner with his car and winner sign after the 1984 Oktoberfest',
     note: 'Bryan Reffner • 1984 Oktoberfest winner',
   },
+  1986: {
+    src: '/rooms/oktoberfest/1986-rich-bickle-jr.jpg',
+    alt: 'Rich Bickle Jr. in victory lane with the Oktoberfest trophy and checkered flag in 1986',
+    note: 'Rich Bickle Jr. • 1986 Oktoberfest winner',
+  },
 }
 
 const programPageArtifacts = [
