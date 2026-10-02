@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
 export const revalidate = 300
@@ -20,12 +21,45 @@ const continuation = [
   [1987,'Michael Andretti','Miller American 200, in Honor of Rex Mays'],
 ] as const
 
-export default function RexMaysClassicPage() {
+export default async function RexMaysClassicPage() {
   const counts = new Map<string,number>()
   for (const [,name] of winners) {
     for (const driver of name.split(' / ')) counts.set(driver,(counts.get(driver)||0)+1)
   }
   const repeats = [...counts.entries()].filter(([,count])=>count>1).sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0]))
+
+  const { data: raceRows } = await supabase
+    .from('Events')
+    .select('race_id,year,race_date,class_id')
+    .in('track_id', [125, 191])
+    .in('class_id', [16, 38])
+    .gte('race_date', '1950-06-01')
+    .lte('race_date', '1985-06-30')
+    .order('race_date', { ascending: true })
+
+  const juneRaceRows = (raceRows || []).filter((row: any) => {
+    const date = String(row.race_date || '')
+    return date.slice(5, 7) === '06' && Number(row.year) >= 1950 && Number(row.year) <= 1985
+  })
+
+  const raceIds = juneRaceRows.map((row: any) => Number(row.race_id)).filter(Number.isFinite)
+  const { data: resultRows } = raceIds.length
+    ? await supabase.from('Results').select('race_id,driver_id,finishing_position').in('race_id', raceIds).order('finishing_position', { ascending: true })
+    : { data: [] as any[] }
+
+  const driverIds = Array.from(new Set((resultRows || []).map((row: any) => Number(row.driver_id)).filter(Number.isFinite)))
+  const { data: driverRows } = driverIds.length
+    ? await supabase.from('Drivers').select('driver_id,driver_name,slug').in('driver_id', driverIds)
+    : { data: [] as any[] }
+
+  const drivers = new Map((driverRows || []).map((row: any) => [Number(row.driver_id), row]))
+  const fields = juneRaceRows.map((race: any) => ({
+    ...race,
+    finishers: (resultRows || [])
+      .filter((row: any) => Number(row.race_id) === Number(race.race_id))
+      .map((row: any) => ({ ...row, driver: drivers.get(Number(row.driver_id)) }))
+      .filter((row: any) => row.driver),
+  })).filter((race: any) => race.finishers.length)
 
   return <main className={styles.page}>
     <section className={styles.hero}>
@@ -90,6 +124,25 @@ export default function RexMaysClassicPage() {
         <div className={styles.sectionHead}><h2>Rex Mays Classic Winners, 1950–1985</h2><div className={styles.sectionNote}>Year, winning driver and scheduled race distance. The 1969 race is preserved as a shared-drive victory.</div></div>
         <div className={styles.eraGrid}>
           {winners.map(([year,winner,miles]) => <div key={year} className={styles.eraCard}><div className={styles.eraYear}>{year}</div><div className={styles.eraValue}>{winner}</div><div className={styles.eraNote}>{miles} miles • Milwaukee Mile</div></div>)}
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.kicker}>Museum Database Results</div>
+        <div className={styles.sectionHead}><h2>Preserved Finishing Orders</h2><div className={styles.sectionNote}>These are the finishing positions already preserved in the museum database. Short fields are labeled partial rather than presented as complete.</div></div>
+        <div className={styles.eraGrid}>
+          {fields.map((race: any) => <div key={race.race_id} className={styles.eraCard}>
+            <div className={styles.eraYear}>{race.year} • {race.finishers.length >= 20 ? 'Full field' : 'Partial field'}</div>
+            <div className={styles.eraValue}>{race.finishers.length} preserved finishers</div>
+            <div className={styles.eraNote}>
+              {race.finishers.map((row: any) => {
+                const label = `${row.finishing_position}. ${row.driver.driver_name}`
+                return row.driver.slug
+                  ? <span key={row.driver_id}><Link href={`/drivers/${row.driver.slug}`}>{label}</Link>{' • '}</span>
+                  : <span key={row.driver_id}>{label} • </span>
+              })}
+            </div>
+          </div>)}
         </div>
       </section>
 
