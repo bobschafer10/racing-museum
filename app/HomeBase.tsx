@@ -4,6 +4,7 @@ import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 import TrackLogo from './tracks/[slug]/TrackLogo'
 import ThisWeekHistoryRibbon from './ThisWeekHistoryRibbon'
+import MuseumRoomsHomeFeature from './MuseumRoomsHomeFeature'
 import { getThisWeekHistory } from '@/lib/thisWeekHistory'
 import styles from './home.module.css'
 
@@ -320,6 +321,8 @@ export default async function Home() {
       </section>
 
       <ThisWeekHistoryRibbon items={history.items} weekLabel={history.weekLabel} />
+
+      <MuseumRoomsHomeFeature />
 
       <div className={styles.shell}>
         <section className={styles.section}>
