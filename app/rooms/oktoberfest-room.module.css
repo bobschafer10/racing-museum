@@ -280,6 +280,34 @@
   padding: 36px 0 6px;
 }
 
+.yearByYearSection {
+  position: relative;
+  isolation: isolate;
+}
+
+.yearByYearSection > :not(.wehrsWatermark) {
+  position: relative;
+  z-index: 2;
+}
+
+.wehrsWatermark {
+  position: absolute;
+  z-index: 0;
+  top: 88px;
+  right: -24px;
+  width: min(720px, 58vw);
+  height: 78%;
+  opacity: .065;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 185% auto;
+  background-position: 82% 42%;
+  filter: grayscale(1) sepia(.55) contrast(1.08);
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.45) 23%, #000 54%, rgba(0,0,0,.78) 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.45) 23%, #000 54%, rgba(0,0,0,.78) 100%);
+}
+
 .sectionHead,
 .darkSectionHead {
   display: flex;
@@ -363,6 +391,14 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
+}
+
+.yearWinnerCrop {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-repeat: no-repeat;
+  background-color: #d9c8a6;
+  filter: sepia(.1) contrast(1.03);
 }
 
 .yearWinnerPhoto figcaption {
@@ -1126,6 +1162,13 @@
   .paperSection,
   .legacy {
     padding: 20px 16px;
+  }
+
+  .wehrsWatermark {
+    right: -70px;
+    width: 86vw;
+    opacity: .045;
+    background-size: 205% auto;
   }
 
   .roomFooter {
