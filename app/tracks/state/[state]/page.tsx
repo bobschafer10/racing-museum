@@ -22,6 +22,7 @@ type TrackRow = {
   last_event_year?: number | null
   latest_event_date?: string | null
   photo_count?: number | null
+  logo_url?: string | null
 }
 
 type PhotoRow = {
@@ -152,7 +153,7 @@ export default async function StateTracksPage({
 
   const { data, error } = await supabase
     .from('track_landing_directory_view')
-    .select('track_id,track_name,slug,city,state,surface_type,configuration,first_year,last_year,event_count,first_event_year,last_event_year,latest_event_date,photo_count')
+    .select('track_id,track_name,slug,city,state,surface_type,configuration,first_year,last_year,event_count,first_event_year,last_event_year,latest_event_date,photo_count,logo_url')
     .eq('state', state)
     .order('track_name', { ascending: true })
     .range(0, 999)
@@ -379,7 +380,7 @@ export default async function StateTracksPage({
                       <div className={styles.highlightLocation}>{formatLocation(card.track)}</div>
                     </div>
                     <div className={styles.highlightMedia}>
-                      {imageUrl ? <img src={imageUrl} alt={`Racing at ${card.track.track_name}`} /> : <TrackLogo slug={card.track.slug} trackName={card.track.track_name} />}
+                      {imageUrl ? <img src={imageUrl} alt={`Racing at ${card.track.track_name}`} /> : <TrackLogo slug={card.track.slug} trackName={card.track.track_name} logoUrl={card.track.logo_url} />}
                     </div>
                     <div className={styles.highlightMeta}><strong>{card.left}</strong><span>{card.right}</span></div>
                   </Link>
@@ -407,7 +408,7 @@ export default async function StateTracksPage({
                   return (
                     <Link key={track.slug} href={`/tracks/${track.slug}`} className={styles.trackCard}>
                       <div className={styles.trackMedia}>
-                        {imageUrl ? <img src={imageUrl} alt={`Racing at ${track.track_name}`} /> : <TrackLogo slug={track.slug} trackName={track.track_name} />}
+                        {imageUrl ? <img src={imageUrl} alt={`Racing at ${track.track_name}`} /> : <TrackLogo slug={track.slug} trackName={track.track_name} logoUrl={track.logo_url} />}
                       </div>
                       <div className={styles.trackBody}>
                         <div className={styles.trackName}>{track.track_name}</div>
