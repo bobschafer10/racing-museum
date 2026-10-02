@@ -390,6 +390,56 @@
   color: #7b6547;
 }
 
+.fullField {
+  margin-top: 11px;
+  border-top: 1px solid rgba(152,119,73,.32);
+}
+
+.fullField summary {
+  padding: 9px 0 5px;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 850;
+  color: #762a21;
+}
+
+.fullFieldRows {
+  max-height: 290px;
+  margin-top: 4px;
+  overflow: auto;
+  border: 1px solid rgba(152,119,73,.28);
+  background: rgba(255,255,255,.18);
+}
+
+.fullFieldRows > div {
+  display: grid;
+  grid-template-columns: 30px minmax(0,1fr) 52px;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(152,119,73,.2);
+  font-size: 9px;
+}
+
+.fullFieldRows > div:last-child {
+  border-bottom: none;
+}
+
+.fullFieldRows span {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 900;
+  color: #7a2d23;
+}
+
+.fullFieldRows strong {
+  font-size: 9px;
+}
+
+.fullFieldRows small {
+  color: #775f41;
+  text-align: right;
+}
+
 .yearLinks {
   display: flex;
   flex-wrap: wrap;
