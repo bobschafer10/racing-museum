@@ -7,6 +7,7 @@ const TRACK_LOGO_ALIASES: Record<string, string[]> = {
   'capital-super-speedway-wi': ['madison-international-speedway-wi'],
   'dells-motor-speedway-wi': ['dells-raceway-park-wi'],
   'golden-sands-speedway-wi': ['golden-sands-raceway-wi'],
+  'kankakee-county-speedway-il': ['kankakee-speedway-il'],
   'lacrosse-fairgrounds-wi': ['lacrosse-fairgrounds-speedway-wi'],
   'marshfield-speedway-wi': ['marshfield-speedway'],
   'pecatonica-motor-speedway-il': ['pecatonica-speedway-il'],
