@@ -801,6 +801,91 @@
   color: #5a4630;
 }
 
+.artifactPageHead {
+  margin: 28px 0 12px;
+}
+
+.artifactPageHead h3 {
+  margin: 5px 0 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 28px;
+  line-height: 1;
+  color: #342316;
+}
+
+.artifactPageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.artifactPageCard {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 13px;
+  border: 1px solid #b79561;
+  background: rgba(250,241,218,.94);
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.artifactPageImage {
+  height: 310px;
+  overflow: hidden;
+  background: #d9c8a6;
+  border-bottom: 1px solid #b79561;
+}
+
+.artifactPageImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  filter: sepia(.08);
+}
+
+.artifactPageCard > span,
+.artifactPageCard > strong,
+.artifactPageCard > p,
+.artifactPageCard > b {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.artifactPageCard > span {
+  margin-top: 11px;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+  font-size: 8px;
+  font-weight: 900;
+  color: #7a2d23;
+}
+
+.artifactPageCard > strong {
+  margin-top: 5px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.06;
+}
+
+.artifactPageCard > p {
+  flex: 1;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 10px;
+  line-height: 1.45;
+  color: #5a4630;
+}
+
+.artifactPageCard > b {
+  font-size: 8px;
+  color: #762a21;
+}
+
 
 .archiveCallout {
   padding: 24px;
@@ -925,7 +1010,8 @@
   .championsGrid,
   .newspaperGrid,
   .programGrid,
-  .programHighlights {
+  .programHighlights,
+  .artifactPageGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -996,6 +1082,7 @@
   .newspaperGrid,
   .programGrid,
   .programHighlights,
+  .artifactPageGrid,
   .photoGrid {
     grid-template-columns: 1fr;
   }
