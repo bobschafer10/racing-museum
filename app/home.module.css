@@ -1559,3 +1559,247 @@
     scroll-behavior: auto;
   }
 }
+
+
+/* Museum Rooms homepage exhibit */
+.roomsHome {
+  position: relative;
+  z-index: 1;
+  padding: 30px 0;
+  color: #f5e5c4;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255,255,255,.045), transparent 30%),
+    linear-gradient(180deg, #23170f 0%, #332116 55%, #1b110b 100%);
+  border-bottom: 2px solid #805a2d;
+}
+
+.roomsHomeInner {
+  width: min(1320px, calc(100% - 36px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(240px, .58fr) minmax(0, 1.45fr) minmax(250px, .62fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.roomsHomeIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 22px 24px 4px;
+}
+
+.roomsHomeEyebrow {
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: 9px;
+  font-weight: 900;
+  color: #d1ae70;
+}
+
+.roomsHomeIntro h2 {
+  margin: 7px 0 10px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(36px, 3.8vw, 52px);
+  line-height: .95;
+  letter-spacing: -.035em;
+  color: #fff0d1;
+}
+
+.roomsHomeIntro p {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #d8c29d;
+}
+
+.roomsHomeAll {
+  width: fit-content;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid #a34939;
+  background: linear-gradient(180deg, #87362b, #682119);
+  color: #fff0d7;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.roomsHomeFeatured,
+.roomsHomeNext {
+  position: relative;
+  min-height: 315px;
+  overflow: hidden;
+  border: 1px solid #98703d;
+  box-shadow: 4px 5px 0 rgba(0,0,0,.22);
+  background: #25170f;
+}
+
+.roomsHomeFeatured {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.roomsHomeFeaturedImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.roomsHomeFeaturedShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(16,10,6,.9), rgba(16,10,6,.58) 58%, rgba(16,10,6,.28)),
+    linear-gradient(180deg, rgba(16,10,6,.06), rgba(16,10,6,.8));
+}
+
+.roomsHomeNumber {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 14px;
+  display: inline-block;
+  padding: 6px 9px;
+  border: 1px solid #c49a50;
+  background: rgba(31,18,10,.82);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 8px;
+  font-weight: 900;
+  color: #efd297;
+}
+
+.roomsHomeFeaturedCopy {
+  position: relative;
+  z-index: 2;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 54px 24px 24px;
+}
+
+.roomsHomeLogo {
+  width: min(320px, 72%);
+  max-height: 125px;
+  margin-bottom: 9px;
+  object-fit: contain;
+  background: rgba(243,229,200,.91);
+  border: 1px solid rgba(222,185,120,.45);
+  padding: 6px;
+}
+
+.roomsHomeFeaturedCopy strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: .96;
+  color: #fff0d0;
+}
+
+.roomsHomeFeaturedCopy small {
+  max-width: 590px;
+  margin-top: 7px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #dec9a5;
+}
+
+.roomsHomeFeaturedCopy b {
+  margin-top: 12px;
+  padding: 9px 15px;
+  border: 1px solid #a64c3c;
+  background: linear-gradient(180deg, #8a362b, #651f18);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 10px;
+  color: #fff1d8;
+}
+
+.roomsHomeNext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    linear-gradient(180deg, rgba(17,10,6,.32), rgba(17,10,6,.9)),
+    url('/museum-bg.png') center / cover no-repeat;
+}
+
+.roomsHomeNextCopy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: 315px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 52px 19px 21px;
+}
+
+.roomsHomeNextCopy strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 27px;
+  line-height: .98;
+  color: #f6e4c0;
+}
+
+.roomsHomeNextCopy small {
+  margin-top: 7px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 10px;
+  line-height: 1.42;
+  color: #d1bc98;
+}
+
+.roomsHomeNextCopy em {
+  width: fit-content;
+  margin-top: 12px;
+  padding: 6px 9px;
+  border: 1px solid rgba(213,178,112,.34);
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: #dabb7d;
+}
+
+@media (max-width: 1050px) {
+  .roomsHomeInner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .roomsHomeIntro {
+    grid-column: 1 / -1;
+    padding: 0 0 2px;
+  }
+}
+
+@media (max-width: 700px) {
+  .roomsHome {
+    padding: 22px 0;
+  }
+
+  .roomsHomeInner {
+    width: min(100% - 22px, 620px);
+    grid-template-columns: 1fr;
+  }
+
+  .roomsHomeIntro {
+    grid-column: auto;
+  }
+
+  .roomsHomeFeatured,
+  .roomsHomeNext,
+  .roomsHomeFeaturedCopy,
+  .roomsHomeNextCopy {
+    min-height: 285px;
+  }
+
+  .roomsHomeLogo {
+    width: min(285px, 82%);
+  }
+}
