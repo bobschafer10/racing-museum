@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 import TrackLogo from './tracks/[slug]/TrackLogo'
+import ThisWeekHistoryRibbon from './ThisWeekHistoryRibbon'
+import { getThisWeekHistory } from '@/lib/thisWeekHistory'
 import styles from './home.module.css'
 
 export const revalidate = 300
@@ -154,7 +156,7 @@ function seriesYears(series?: SeriesRow | null) {
 }
 
 export default async function Home() {
-  const [statsResult, driversResult, tracksResult, seriesResult, photosResult, activityResult] = await Promise.all([
+  const [statsResult, driversResult, tracksResult, seriesResult, photosResult, activityResult, historyResult] = await Promise.all([
     supabase.from('homepage_stats_view').select('*').single(),
     supabase
       .from('driver_landing_directory_view')
@@ -178,6 +180,7 @@ export default async function Home() {
       .select('activity_key,activity_type,activity_at,activity_day,title,detail,href,badge')
       .order('activity_at', { ascending: false, nullsFirst: false })
       .limit(24),
+    getThisWeekHistory(),
   ])
 
   const stats = (statsResult.data || {}) as StatsRow
@@ -186,6 +189,7 @@ export default async function Home() {
   const seriesRows = (seriesResult.data || []) as SeriesRow[]
   const photos = (photosResult.data || []) as PhotoRow[]
   const activities = (activityResult.data || []) as ActivityRow[]
+  const history = historyResult
 
   const featuredDriver = dailyPick(drivers)
   const featuredTrack = dailyPick(tracks)
@@ -314,6 +318,8 @@ export default async function Home() {
           <div className={styles.statQuote}>Every click opens another piece of racing history.</div>
         </div>
       </section>
+
+      <ThisWeekHistoryRibbon items={history.items} weekLabel={history.weekLabel} />
 
       <div className={styles.shell}>
         <section className={styles.section}>
