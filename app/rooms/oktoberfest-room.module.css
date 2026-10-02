@@ -293,19 +293,19 @@
 .wehrsWatermark {
   position: absolute;
   z-index: 0;
-  top: 88px;
-  right: -24px;
-  width: min(720px, 58vw);
-  height: 78%;
-  opacity: .065;
+  top: 118px;
+  right: -18px;
+  width: min(620px, 52vw);
+  height: 560px;
+  opacity: .07;
   pointer-events: none;
   background-repeat: no-repeat;
-  background-size: 185% auto;
-  background-position: 82% 42%;
-  filter: grayscale(1) sepia(.55) contrast(1.08);
+  background-size: 260% auto;
+  background-position: 12% 39%;
+  filter: grayscale(1) sepia(.6) contrast(1.06);
   mix-blend-mode: multiply;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.45) 23%, #000 54%, rgba(0,0,0,.78) 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.45) 23%, #000 54%, rgba(0,0,0,.78) 100%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, rgba(0,0,0,.62) 58%, transparent 82%);
+  mask-image: radial-gradient(ellipse at center, #000 30%, rgba(0,0,0,.62) 58%, transparent 82%);
 }
 
 .sectionHead,
