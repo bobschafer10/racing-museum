@@ -552,7 +552,7 @@ export default async function TracksPage({
                   {imageUrl ? (
                     <img src={imageUrl} alt={`Racing at ${track.track_name}`} />
                   ) : (
-                    <TrackLogo slug={track.slug} trackName={track.track_name} />
+                    <TrackLogo slug={track.slug} trackName={track.track_name} logoUrl={track.logo_url} />
                   )}
                 </div>
                 <div className={styles.discoveryNote}>{card.note}</div>
@@ -580,7 +580,7 @@ export default async function TracksPage({
                     {imageUrl ? (
                       <img src={imageUrl} alt={`Racing at ${track.track_name}`} />
                     ) : (
-                      <TrackLogo slug={track.slug} trackName={track.track_name} />
+                      <TrackLogo slug={track.slug} trackName={track.track_name} logoUrl={track.logo_url} />
                     )}
                   </div>
                   <div className={styles.trackCardBody}>
