@@ -302,6 +302,20 @@ export default async function OktoberfestLarryWehrsRoom() {
                       ))}
                     </div>
                   ) : null}
+                  {event.SeriesEventResults.length ? (
+                    <details className={styles.fullField}>
+                      <summary>View full preserved field</summary>
+                      <div className={styles.fullFieldRows}>
+                        {event.SeriesEventResults.map((row) => (
+                          <div key={row.id}>
+                            <span>{row.finishing_position || '—'}</span>
+                            <strong>{row.driver_name}</strong>
+                            <small>{row.car_number ? '#' + row.car_number : '—'}</small>
+                          </div>
+                        ))}
+                      </div>
+                    </details>
+                  ) : null}
                   <div className={styles.yearLinks}>
                     <Link href={'/results/' + event.race_date}>Full Race Result →</Link>
                     {winnerResult?.driver_slug ? (
