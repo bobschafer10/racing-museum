@@ -14,6 +14,11 @@ export default function TrackLogo({
 }) {
   const pathname = usePathname()
   const [landingPhotoUrl, setLandingPhotoUrl] = useState<string | null>(null)
+  const [logoCandidateIndex, setLogoCandidateIndex] = useState(0)
+
+  useEffect(() => {
+    setLogoCandidateIndex(0)
+  }, [slug])
 
   useEffect(() => {
     if (pathname !== '/tracks') {
@@ -79,11 +84,21 @@ export default function TrackLogo({
     }
   }, [pathname, slug, trackName])
 
-  // Version parameter prevents browsers/CDNs from reusing a placeholder
-  // that was cached before a newly added logo existed.
-  const logoPath = `/api/track-logo/${encodeURIComponent(slug)}?v=3`
+  const encodedSlug = encodeURIComponent(slug)
+  const logoCandidates = [
+    `/logos/tracks/${encodedSlug}.jpg?v=4`,
+    `/logos/tracks/${encodedSlug}.png?v=4`,
+    `/logos/tracks/${encodedSlug}.jpeg?v=4`,
+    `/logos/tracks/${encodedSlug}.webp?v=4`,
+    `/logos/tracks/${encodedSlug}.svg?v=4`,
+    `/api/track-logo/${encodedSlug}?v=4`,
+  ]
+
   const showLandingPhoto = pathname === '/tracks' && Boolean(landingPhotoUrl)
-  const imageSrc = showLandingPhoto && landingPhotoUrl ? landingPhotoUrl : logoPath
+  const imageSrc =
+    showLandingPhoto && landingPhotoUrl
+      ? landingPhotoUrl
+      : logoCandidates[Math.min(logoCandidateIndex, logoCandidates.length - 1)]
 
   return (
     <div style={showLandingPhoto ? photoWrap : logoWrap}>
@@ -94,6 +109,11 @@ export default function TrackLogo({
         onError={(e) => {
           if (showLandingPhoto) {
             setLandingPhotoUrl(null)
+            return
+          }
+
+          if (logoCandidateIndex < logoCandidates.length - 1) {
+            setLogoCandidateIndex((current) => current + 1)
             return
           }
 
