@@ -62,6 +62,16 @@ function formatNumber(value?: number | null) {
   return Number(value || 0).toLocaleString('en-US')
 }
 
+function formatEventCount(value?: number | null) {
+  const count = Number(value || 0)
+  return count > 0 ? count.toLocaleString('en-US') : 'Researching'
+}
+
+function formatEventLabel(value?: number | null) {
+  const count = Number(value || 0)
+  return count > 0 ? `${count.toLocaleString('en-US')} archived events` : 'Researching events'
+}
+
 function formatSurface(value?: string | null) {
   if (!value) return 'Not listed'
   return value.replaceAll('_', ' ')
@@ -192,7 +202,7 @@ export default async function StateTracksPage({
     deepestTrack ? {
       label: 'Deepest Results Archive',
       track: deepestTrack,
-      left: `${formatNumber(deepestTrack.event_count)} events`,
+      left: formatEventLabel(deepestTrack.event_count),
       right: formatYears(deepestTrack),
     } : null,
     mostPhotographedTrack ? {
@@ -205,13 +215,13 @@ export default async function StateTracksPage({
       label: 'Historic Venue',
       track: historicTrack,
       left: formatYears(historicTrack),
-      right: `${formatNumber(historicTrack.event_count)} events`,
+      right: formatEventLabel(historicTrack.event_count),
     } : null,
     recentTrack ? {
       label: 'Recently Active Archive',
       track: recentTrack,
       left: formatDate(recentTrack.latest_event_date),
-      right: `${formatNumber(recentTrack.event_count)} events`,
+      right: formatEventLabel(recentTrack.event_count),
     } : null,
   ].filter((card): card is NonNullable<typeof card> => Boolean(card))
 
@@ -407,7 +417,7 @@ export default async function StateTracksPage({
                           {track.configuration ? <span>{formatConfiguration(track.configuration)}</span> : null}
                         </div>
                         <div className={styles.trackStats}>
-                          <div><strong>{formatNumber(track.event_count)}</strong><span>events</span></div>
+                          <div><strong>{formatEventCount(track.event_count)}</strong><span>archived events</span></div>
                           <div><strong>{formatNumber(track.photo_count)}</strong><span>photos</span></div>
                         </div>
                         <div className={styles.trackYears}>{formatYears(track)}</div>
