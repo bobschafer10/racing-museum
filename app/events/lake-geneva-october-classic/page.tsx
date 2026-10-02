@@ -87,7 +87,7 @@ export default async function LakeGenevaOctoberClassicPage() {
         <div className={styles.eraGrid}>
           <Era years="1992–1994" title="The new fall tradition" note="Jerry Wood, Conrad Morgan and Terry Baldry won the first three headline 50-lap Super Late Model features."/>
           <Era years="1995–1998" title="O'Doul's October Classic" note="Al Schill Sr., Scott Poritz, Al Schill Jr. and Randy Rodgers headlined the mid-1990s editions."/>
-          <Era years="1999" title="Weather wins" note="The ninth scheduled Classic lost its Sunday headline program to rain and snow. It was not rescheduled, so no headline winner is assigned."/>
+          <Era years="1999" title="Weather wins" note="The eighth scheduled Classic lost its Sunday headline program to rain and snow. It was not rescheduled, so no headline winner is assigned."/>
           <Era years="2000–2004" title="The tradition continues" note="Jeff Storm, Al Schill Sr., Bill Skinner, Erik Darnell and Jamie Wallace carried the headline winner lineage into the new century."/>
           <Era years="2005" title="Fall Classic era" note="The weekend mixed local Late Models with Big 8 and Mid-American racing; Matt Kocourek is preserved as the primary Late Model winner."/>
           <Era years="2006" title="The Final Fall Classic" note="Rich Bickle Jr. won the 75-lap Super Late Model feature during Lake Geneva Raceway's Checkered Flag Season, while Michael Bilderback won the final Big 8 event."/>
