@@ -43,34 +43,159 @@ type WinnerSummary = {
 
 const newspaperArtifacts = [
   {
+    year: 1970,
+    publication: 'Midwest Racing News',
+    date: 'October 1, 1970',
+    title: 'The First Annual Oktoberfest 200',
+    note: 'MRN carried the original race advertisement: 200 laps, 110 miles, a $8,000 purse, $1,000 to win, and the fastest 33 cars starting.',
+    href: '/media/newspapers/midwest-racing-news/1970-10-01?sourcePage=4&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1970-10-01/004.jpg',
+  },
+  {
+    year: 1971,
     publication: 'Midwest Racing News',
     date: 'October 7, 1971',
-    note: 'Contemporary Oktoberfest coverage following Dick Trickle’s victory.',
-    href: '/media/newspapers/midwest-racing-news/1971-10-07',
-    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1971-10-07/front-cover.jpg',
+    title: 'Trickle Best at Oktoberfest',
+    note: 'The MRN front page put Dick Trickle in victory lane after he captured the second Oktoberfest 200.',
+    href: '/media/newspapers/midwest-racing-news/1971-10-07?sourcePage=1&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1971-10-07/001.jpg',
   },
   {
+    year: 1972,
     publication: 'Checkered Flag Racing News',
-    date: 'October 4, 1972',
-    note: 'A period preview of the Oktoberfest 200 and the close of Wisconsin’s late-model season.',
-    href: '/media/newspapers/checkered-flag-racing-news/1972-10-04',
-    image: MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1972-10-04/005.jpg',
+    date: 'December 15, 1972',
+    title: 'One of Shear’s Big Wins',
+    note: 'CFRN revisited Joe Shear’s dominant Oktoberfest run, including the late pit stop, 200-lap finish, and top three.',
+    href: '/media/newspapers/checkered-flag-racing-news/1972-12-15?sourcePage=2&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1972-12-15/002.jpg',
   },
   {
-    publication: 'Checkered Flag Racing News',
-    date: 'October 13, 1976',
-    note: 'Oktoberfest coverage from the year Larry Detjens began his back-to-back run.',
-    href: '/media/newspapers/checkered-flag-racing-news/1976-10-13',
-    image: MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1976-10-13/front-cover.jpg',
+    year: 1975,
+    publication: 'Midwest Racing News',
+    date: 'October 2, 1975',
+    title: 'Sixth Oktoberfest 200 Slated at La Crosse',
+    note: 'MRN previewed a three-day show with roughly 150 expected drivers and a $15,000 purse.',
+    href: '/media/newspapers/midwest-racing-news/1975-10-02?sourcePage=3&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1975-10-02/003.jpg',
   },
   {
+    year: 1976,
+    publication: 'Midwest Racing News',
+    date: 'October 7, 1976',
+    title: 'Detjens Wins Two Mains in La Crosse’s Oktoberfest',
+    note: 'Dick Johnson’s report details Larry Detjens winning a 50-lapper and the 100-lap championship feature.',
+    href: '/media/newspapers/midwest-racing-news/1976-10-07?sourcePage=5&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1976-10-07/005.jpg',
+  },
+  {
+    year: 1977,
+    publication: 'Midwest Racing News',
+    date: 'October 6, 1977',
+    title: 'Detjens Wins at Fest',
+    note: 'MRN documented Detjens holding off Steve Burgess in the 100-lap feature and Dick Trickle’s costly wall contact.',
+    href: '/media/newspapers/midwest-racing-news/1977-10-06?sourcePage=1&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1977-10-06/001.jpg',
+  },
+  {
+    year: 1978,
+    publication: 'Midwest Racing News',
+    date: 'October 5, 1978',
+    title: 'Watson Overcomes Trouble to Win Fest',
+    note: 'Dave Watson survived an engine failure after a 50-lap victory and still claimed the 100-lap championship feature and overall title.',
+    href: '/media/newspapers/midwest-racing-news/1978-10-05?sourcePage=2&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1978-10-05/002.jpg',
+  },
+  {
+    year: 1979,
+    publication: 'Midwest Racing News',
+    date: 'October 4, 1979',
+    title: 'Butch Miller Edges Trickle',
+    note: 'The MRN front page captured the two-100 format: Miller won the overall title while Dick Trickle won the second 100-lapper.',
+    href: '/media/newspapers/midwest-racing-news/1979-10-04?sourcePage=1&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1979-10-04/001.jpg',
+  },
+  {
+    year: 1981,
+    publication: 'Midwest Racing News',
+    date: 'October 1, 1981',
+    title: 'Entries Mount for Oktoberfest',
+    note: 'Joe Shear, Jim Sauter, and Junior Hanley were among the late entries highlighted before the 12th annual weekend.',
+    href: '/media/newspapers/midwest-racing-news/1981-10-01?sourcePage=6&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1981-10-01/6.jpg',
+  },
+  {
+    year: 1982,
+    publication: 'Midwest Racing News',
+    date: 'October 7, 1982',
+    title: 'It Pays Off for Back',
+    note: 'MRN showed Larry Wehrs presenting Jim Back with the victory banner after second- and third-place finishes produced the overall title.',
+    href: '/media/newspapers/midwest-racing-news/1982-10-07?sourcePage=1&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1982-10-07/1.jpg',
+  },
+  {
+    year: 1983,
+    publication: 'Midwest Racing News',
+    date: 'October 20, 1983',
+    title: 'Reffner Wins La Crosse’s Fest 200',
+    note: 'Tom Reffner won the 100-lap championship feature and secured his third overall Oktoberfest title.',
+    href: '/media/newspapers/midwest-racing-news/1983-10-20?sourcePage=5&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1983-10-20/005.jpg',
+  },
+  {
+    year: 1984,
+    publication: 'Midwest Racing News',
+    date: 'October 18, 1984',
+    title: 'Bryan Reffner Snares Close Oktoberfest 100',
+    note: 'At age 20, Bryan Reffner held off Ted Musgrave and father Tom Reffner for the biggest victory of his young career.',
+    href: '/media/newspapers/midwest-racing-news/1984-10-18?sourcePage=9&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1984-10-18/009.jpg',
+  },
+  {
+    year: 1985,
+    publication: 'Midwest Racing News',
+    date: 'October 17, 1985',
+    title: 'Fest Waits on the Weather',
+    note: 'MRN documented the delayed 1985 program and the revised schedule that led into the rescheduled Oktoberfest weekend.',
+    href: '/media/newspapers/midwest-racing-news/1985-10-17?sourcePage=5&q=Oktoberfest',
+    image: MEDIA_BASE + 'newspapers/midwest-racing-news/1985-10-17/005.jpg',
+  },
+  {
+    year: 1986,
     publication: 'Midwest Racing News',
     date: 'October 16, 1986',
-    note: 'Coverage from the final Oktoberfest season of the Larry Wehrs era.',
-    href: '/media/newspapers/midwest-racing-news/1986-10-16',
+    title: 'Bickle Wins La Crosse Fest 100',
+    note: 'Dick Johnson’s report records Rich Bickle Jr. edging Steve Holzhausen in the final Oktoberfest of the Larry Wehrs promotional era.',
+    href: '/media/newspapers/midwest-racing-news/1986-10-16?sourcePage=3&q=Oktoberfest',
     image: MEDIA_BASE + 'newspapers/midwest-racing-news/1986-10-16/003.jpg',
   },
 ]
+
+const featuredProgramSlugs = [
+  '1978-lacrosse-interstate-speedway-wi-yearbook',
+  '1979-lacrosse-interstate-speedway-wi-yearbook',
+  '1981-lacrosse-interstate-speedway-wi-yearbook',
+  '1985-lacrosse-interstate-speedway-wi-yearbook',
+]
+
+const programArtifactNotes: Record<string, { label: string; note: string }> = {
+  '1978-lacrosse-interstate-speedway-wi-yearbook': {
+    label: '1978 Oktoberfest Program',
+    note: 'Includes Larry and Bernadine Wehrs’ welcome, a season review, driver profiles, starting-lineup pages, and Oktoberfest lap-sponsor material.',
+  },
+  '1979-lacrosse-interstate-speedway-wi-yearbook': {
+    label: '10th Annual Oktoberfest',
+    note: 'Preserves the Wehrs welcome, 1970–78 Oktoberfest money-winner tables, track point standings, and the event’s growing statistical record.',
+  },
+  '1981-lacrosse-interstate-speedway-wi-yearbook': {
+    label: '1981 Oktoberfest Program',
+    note: 'Contains a detailed 1980 Mark Martin/Joe Shear recap, a Larry Detjens retrospective, all-time Oktoberfest money totals, and race-weekend material.',
+  },
+  '1985-lacrosse-interstate-speedway-wi-yearbook': {
+    label: '16th Annual Oktoberfest',
+    note: 'Features the 1984 Bryan Reffner victory recap, top-50 Oktoberfest money winners through 1984, biographies, statistics, and contemporary advertising.',
+  },
+}
+
 
 function yearOf(date: string) {
   return Number(date.slice(0, 4))
@@ -101,22 +226,6 @@ function programYear(program: RaceProgram) {
   const raw = String(program.year || '')
   const match = raw.match(/\d{4}/)
   return match ? Number(match[0]) : null
-}
-
-function programMatchesRoom(program: RaceProgram) {
-  const year = programYear(program)
-  if (!year || year < 1970 || year > 1986) return false
-  const haystack = [
-    program.title,
-    program.track,
-    program.track_slug,
-    program.series,
-    program.series_slug,
-  ]
-    .filter(Boolean)
-    .join(' ')
-    .toLowerCase()
-  return haystack.includes('lacrosse') || haystack.includes('oktoberfest')
 }
 
 export default async function OktoberfestLarryWehrsRoom() {
@@ -173,10 +282,9 @@ export default async function OktoberfestLarryWehrsRoom() {
     )
     .slice(0, 10)
 
-  const roomPrograms = programs
-    .filter(programMatchesRoom)
-    .sort((a, b) => (programYear(a) || 9999) - (programYear(b) || 9999))
-    .slice(0, 8)
+  const roomPrograms = featuredProgramSlugs
+    .map((slug) => programs.find((program) => program.slug === slug))
+    .filter((program): program is RaceProgram => Boolean(program))
 
   const heroImage =
     MEDIA_BASE +
@@ -321,6 +429,11 @@ export default async function OktoberfestLarryWehrsRoom() {
                     {winnerResult?.driver_slug ? (
                       <Link href={'/drivers/' + winnerResult.driver_slug}>Winner Profile →</Link>
                     ) : null}
+                    {newspaperArtifacts.find((artifact) => artifact.year === year) ? (
+                      <Link href={newspaperArtifacts.find((artifact) => artifact.year === year)!.href}>
+                        Period Coverage →
+                      </Link>
+                    ) : null}
                   </div>
                 </article>
               )
@@ -381,27 +494,47 @@ export default async function OktoberfestLarryWehrsRoom() {
           <div className={styles.sectionHead}>
             <div>
               <div className={styles.kicker}>From the Newspapers</div>
-              <h2>MRN &amp; Checkered Flag Racing News</h2>
+              <h2>The Contemporary Story of Fest</h2>
             </div>
-            <p>Contemporary reporting lets the races tell their story in the language of the era.</p>
+            <p>
+              Selected MRN and Checkered Flag Racing News pages are linked to the exact scanned page
+              so visitors can move directly from the exhibit into the original coverage.
+            </p>
           </div>
+
+          <div className={styles.archiveStrip}>
+            <div>
+              <strong>{newspaperArtifacts.length}</strong>
+              <span>Curated newspaper artifacts</span>
+            </div>
+            <div>
+              <strong>MRN + CFRN</strong>
+              <span>Two major regional racing publications</span>
+            </div>
+            <div>
+              <strong>1970–1986</strong>
+              <span>Coverage from the Wehrs era</span>
+            </div>
+          </div>
+
           <div className={styles.newspaperGrid}>
             {newspaperArtifacts.map((artifact) => (
               <Link href={artifact.href} className={styles.newspaperCard} key={artifact.href}>
                 <div className={styles.newspaperImageWrap}>
                   <img src={artifact.image} alt={artifact.publication + ' — ' + artifact.date} />
+                  <span className={styles.paperYear}>{artifact.year}</span>
                 </div>
                 <div className={styles.newspaperBody}>
-                  <span>{artifact.date}</span>
-                  <strong>{artifact.publication}</strong>
+                  <span>{artifact.publication} • {artifact.date}</span>
+                  <strong>{artifact.title}</strong>
                   <p>{artifact.note}</p>
-                  <b>Open Issue →</b>
+                  <b>Open Exact Page in the Archive →</b>
                 </div>
               </Link>
             ))}
           </div>
           <div className={styles.centerLink}>
-            <Link href="/media/newspapers">Search the Newspaper OCR Archive →</Link>
+            <Link href="/media/newspapers?q=Oktoberfest">Search All Oktoberfest Newspaper OCR →</Link>
           </div>
         </section>
 
@@ -409,39 +542,84 @@ export default async function OktoberfestLarryWehrsRoom() {
           <div className={styles.sectionHead}>
             <div>
               <div className={styles.kicker}>Programs &amp; Yearbooks</div>
-              <h2>Race Night Preserved on Paper</h2>
+              <h2>The Original Oktoberfest Shelf</h2>
             </div>
-            <p>Scanned publications from LaCrosse and the Oktoberfest era.</p>
+            <p>
+              Four digitized LaCrosse publications currently anchor the room, with the scanned pages
+              and OCR preserving far more than the covers.
+            </p>
           </div>
 
           {roomPrograms.length ? (
             <div className={styles.programGrid}>
-              {roomPrograms.map((program) => (
-                <Link
-                  href={'/media/race-programs/' + program.slug}
-                  className={styles.programCard}
-                  key={program.slug}
-                >
-                  <div className={styles.programCover}>
-                    {program.coverImage ? (
-                      <img src={program.coverImage} alt={program.title} />
-                    ) : (
-                      <div>Cover not available</div>
-                    )}
-                  </div>
-                  <span>{program.year || 'Year unknown'}</span>
-                  <strong>{program.title}</strong>
-                  <small>{program.track || program.series || 'Museum printed archive'}</small>
-                </Link>
-              ))}
+              {roomPrograms.map((program) => {
+                const artifact = programArtifactNotes[program.slug]
+                return (
+                  <Link
+                    href={'/media/race-programs/' + program.slug}
+                    className={styles.programCard}
+                    key={program.slug}
+                  >
+                    <div className={styles.programCover}>
+                      {program.coverImage ? (
+                        <img src={program.coverImage} alt={program.title} />
+                      ) : (
+                        <div>Cover not available</div>
+                      )}
+                    </div>
+                    <span>{artifact?.label || program.year || 'Year unknown'}</span>
+                    <strong>{program.title}</strong>
+                    <p className={styles.programNote}>
+                      {artifact?.note || 'Open the complete digitized publication in the museum archive.'}
+                    </p>
+                    <small>{program.images.length} scanned images • Open publication →</small>
+                  </Link>
+                )
+              })}
             </div>
           ) : (
             <div className={styles.archiveCallout}>
               LaCrosse programs and yearbooks are available through the museum printed archive.
             </div>
           )}
+
+          <div className={styles.programHighlights}>
+            <article>
+              <span>1978</span>
+              <strong>Larry &amp; Bernadine Wehrs Welcome the Fans</strong>
+              <p>
+                The opening program message thanks supporters of both special events and weekly
+                Wednesday-night racing, followed by a season review and Oktoberfest line-up material.
+              </p>
+            </article>
+            <article>
+              <span>1979</span>
+              <strong>Ten Years of Fest in Numbers</strong>
+              <p>
+                The tenth-anniversary book preserves overall money-winner tables dating to 1970,
+                hobby-stock totals from 1974, and the season’s point standings.
+              </p>
+            </article>
+            <article>
+              <span>1981</span>
+              <strong>Martin vs. Shear — The 1980 Story Retold</strong>
+              <p>
+                The next year’s Oktoberfest book explains how Mark Martin and Joe Shear split the
+                two 100-lappers and how qualifying broke the tie for the overall title.
+              </p>
+            </article>
+            <article>
+              <span>1985</span>
+              <strong>Bryan Reffner Joins His Father</strong>
+              <p>
+                The 1985 program looks back at Bryan Reffner’s 1984 breakthrough and preserves an
+                all-time top-50 Oktoberfest money-winner table through the end of 1984.
+              </p>
+            </article>
+          </div>
+
           <div className={styles.centerLink}>
-            <Link href="/media/race-programs">Browse Programs &amp; Yearbooks →</Link>
+            <Link href="/media/race-programs?decade=1970s">Browse the Full Printed Archive →</Link>
           </div>
         </section>
 
