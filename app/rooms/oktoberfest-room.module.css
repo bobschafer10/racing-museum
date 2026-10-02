@@ -573,6 +573,43 @@
   box-shadow: 4px 5px 0 rgba(69,49,29,.09);
 }
 
+.archiveStrip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 18px;
+  border: 1px solid #b18e59;
+  background: rgba(255,255,255,.22);
+}
+
+.archiveStrip > div {
+  min-height: 78px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid rgba(177,142,89,.45);
+}
+
+.archiveStrip > div:last-child {
+  border-right: none;
+}
+
+.archiveStrip strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  color: #5a3a22;
+}
+
+.archiveStrip span {
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  font-size: 8px;
+  font-weight: 800;
+  color: #765f40;
+}
+
 .newspaperGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -589,10 +626,24 @@
 }
 
 .newspaperImageWrap {
+  position: relative;
   height: 265px;
   overflow: hidden;
   background: #e0cfac;
   border-bottom: 1px solid #b18e59;
+}
+
+.paperYear {
+  position: absolute;
+  left: 9px;
+  bottom: 9px;
+  padding: 5px 7px;
+  border: 1px solid rgba(255,239,202,.55);
+  background: rgba(43,26,15,.84);
+  color: #f5ddb0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11px;
+  font-weight: 900;
 }
 
 .newspaperImageWrap img {
@@ -702,6 +753,54 @@
   font-size: 8px;
   color: #715a3d;
 }
+
+.programNote {
+  min-height: 76px;
+  margin: 8px 12px 4px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 10px;
+  line-height: 1.45;
+  color: #5b4630;
+}
+
+.programHighlights {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.programHighlights article {
+  padding: 16px;
+  border: 1px solid #b79561;
+  background: rgba(250,241,218,.72);
+}
+
+.programHighlights span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 9px;
+  font-weight: 900;
+  color: #7a2d23;
+}
+
+.programHighlights strong {
+  display: block;
+  margin: 6px 0 8px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.05;
+}
+
+.programHighlights p {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 10px;
+  line-height: 1.45;
+  color: #5a4630;
+}
+
 
 .archiveCallout {
   padding: 24px;
@@ -825,8 +924,22 @@
 
   .championsGrid,
   .newspaperGrid,
-  .programGrid {
+  .programGrid,
+  .programHighlights {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .archiveStrip {
+    grid-template-columns: 1fr;
+  }
+
+  .archiveStrip > div {
+    border-right: none;
+    border-bottom: 1px solid rgba(177,142,89,.45);
+  }
+
+  .archiveStrip > div:last-child {
+    border-bottom: none;
   }
 
   .photoGrid {
@@ -882,6 +995,7 @@
   .championsGrid,
   .newspaperGrid,
   .programGrid,
+  .programHighlights,
   .photoGrid {
     grid-template-columns: 1fr;
   }
