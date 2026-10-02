@@ -348,6 +348,34 @@
   line-height: 1;
 }
 
+.yearWinnerPhoto {
+  position: relative;
+  margin: 10px 0 11px;
+  overflow: hidden;
+  border: 1px solid #b38e58;
+  background: #ded0b4;
+  box-shadow: inset 0 0 0 4px rgba(255,255,255,.22);
+}
+
+.yearWinnerPhoto img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.yearWinnerPhoto figcaption {
+  padding: 6px 8px;
+  border-top: 1px solid rgba(152,119,73,.38);
+  background: rgba(239,224,194,.92);
+  text-transform: uppercase;
+  letter-spacing: .055em;
+  font-size: 8px;
+  font-weight: 800;
+  color: #6d563a;
+}
+
 .yearResultDepth {
   margin-bottom: 11px;
   font-size: 9px;
