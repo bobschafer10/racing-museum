@@ -13,8 +13,11 @@ const MEDIA_BASE =
   '/storage/v1/object/public/media/'
 
 const WEHRS_WATERMARK =
+  MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1979-10-10/001.jpg'
+
+const PAST_WINNERS_1978 =
   MEDIA_BASE +
-  'programs/1980-lacrosse-interstate-speedway-wi-yearbook/1981%20LaCrosse%20Speedway%20program_030.jpg'
+  'programs/1978-lacrosse-interstate-speedway-wi-yearbook/1978%20-%20LACROSSE%20OKTOBERFEST%20PROGRAM_004.jpg'
 
 type ResultRow = {
   id: number
@@ -243,6 +246,36 @@ const winnerImages: Record<number, {
     alt: 'Dick Trickle in the winner circle after the 1971 Oktoberfest 200',
     note: 'Dick Trickle • 1971 winner circle • Midwest Racing News / Gary Schmidt',
     crop: { size: '255% auto', position: '7% 65%' },
+  },
+  1972: {
+    src: PAST_WINNERS_1978,
+    alt: 'Joe Shear shown in the Oktoberfest past-winners display in the 1978 LaCrosse program',
+    note: 'Joe Shear • 1972 winner • 1978 Oktoberfest program archive',
+    crop: { size: '400% auto', position: '31% 30%' },
+  },
+  1973: {
+    src: PAST_WINNERS_1978,
+    alt: 'Marv Marzofka shown in the Oktoberfest past-winners display in the 1978 LaCrosse program',
+    note: 'Marv Marzofka • 1973 winner • 1978 Oktoberfest program archive',
+    crop: { size: '400% auto', position: '0% 79%' },
+  },
+  1974: {
+    src: PAST_WINNERS_1978,
+    alt: 'Jerry Makara shown in the Oktoberfest past-winners display in the 1978 LaCrosse program',
+    note: 'Jerry “The Bear” Makara • 1974 winner • 1978 Oktoberfest program archive',
+    crop: { size: '400% auto', position: '14% 76%' },
+  },
+  1975: {
+    src: PAST_WINNERS_1978,
+    alt: 'Tom Reffner shown in the Oktoberfest past-winners display in the 1978 LaCrosse program',
+    note: 'Tom Reffner • 1975 winner • 1978 Oktoberfest program archive',
+    crop: { size: '400% auto', position: '18% 31%' },
+  },
+  1976: {
+    src: PAST_WINNERS_1978,
+    alt: 'Larry Detjens shown in the Oktoberfest past-winners display in the 1978 LaCrosse program',
+    note: 'Larry Detjens • 1976 winner • 1978 Oktoberfest program archive',
+    crop: { size: '400% auto', position: '29% 80%' },
   },
   1977: {
     src: MEDIA_BASE + 'newspapers/midwest-racing-news/1977-10-06/003.jpg',
