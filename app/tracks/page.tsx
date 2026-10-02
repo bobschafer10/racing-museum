@@ -83,6 +83,11 @@ function formatNumber(value?: number | null) {
   return Number(value || 0).toLocaleString('en-US')
 }
 
+function formatEventCount(value?: number | null) {
+  const count = Number(value || 0)
+  return count > 0 ? count.toLocaleString('en-US') : 'Researching'
+}
+
 function formatLocation(track?: Pick<TrackRow, 'city' | 'state'> | null) {
   if (!track) return 'Upper Midwest archive'
   return [track.city, track.state].filter(Boolean).join(', ') || 'Location in archive'
@@ -586,7 +591,7 @@ export default async function TracksPage({
                       {track.configuration ? <span>{formatConfiguration(track.configuration)}</span> : null}
                     </div>
                     <div className={styles.trackCardStats}>
-                      <div><strong>{formatNumber(track.event_count)}</strong><span>events</span></div>
+                      <div><strong>{formatEventCount(track.event_count)}</strong><span>archived events</span></div>
                       <div><strong>{formatNumber(track.photo_count)}</strong><span>photos</span></div>
                     </div>
                     <div className={styles.trackCardYears}>{formatYears(track)}</div>
@@ -604,8 +609,13 @@ export default async function TracksPage({
               <h2>Complete Track Directory</h2>
             </div>
             <div className={styles.directorySummary}>
-              {formatNumber(filteredTracks.length)} track{filteredTracks.length === 1 ? '' : 's'}
-              {hasFilters ? ' match the current filters' : ' in the museum archive'}
+              <div>
+                {formatNumber(filteredTracks.length)} track{filteredTracks.length === 1 ? '' : 's'}
+                {hasFilters ? ' match the current filters' : ' in the museum archive'}
+              </div>
+              <div title="Archived Events counts documented museum event records from both track and series archives.">
+                Archived Events includes track + series records; “Researching” means none are loaded yet.
+              </div>
             </div>
           </div>
 
@@ -629,7 +639,7 @@ export default async function TracksPage({
                       <th>State</th>
                       <th>Surface</th>
                       <th>Archive</th>
-                      <th>Events</th>
+                      <th title="Documented museum event records from both track and series archives.">Archived Events</th>
                       <th>Photos</th>
                     </tr>
                   </thead>
@@ -642,7 +652,7 @@ export default async function TracksPage({
                         <td>{track.state || '—'}</td>
                         <td>{formatSurface(track.surface_type)}</td>
                         <td>{formatYears(track)}</td>
-                        <td>{formatNumber(track.event_count)}</td>
+                        <td>{formatEventCount(track.event_count)}</td>
                         <td>{formatNumber(track.photo_count)}</td>
                       </tr>
                     ))}
