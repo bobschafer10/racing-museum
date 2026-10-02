@@ -50,7 +50,7 @@ const events: EventCollection[] = [
     results: 36,
     status: '1970 lineage documented — 38 modern Northern Nationals editions through 2026',
     category: 'Dirt',
-    description: 'Superior’s post-Labor Day dirt-track tradition, tracing the Russ Laursen Classic through the NRC and Superior Classic eras to the Northern Nationals name first documented by MRN in 1989.',
+    description: 'Superior’s post-Labor Day dirt-track tradition, rooted in the 1970 Laursen family benefit, followed by the numbered Russ Laursen Classic beginning in 1971 and the NRC/Superior Classic eras before the Northern Nationals name appeared in 1989.',
   },
   {
     slug: 'dells-midwest-championships',
