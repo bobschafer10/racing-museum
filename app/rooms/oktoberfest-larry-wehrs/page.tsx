@@ -244,11 +244,23 @@ const winnerImages: Record<number, {
     note: 'Dick Trickle • 1971 winner circle • Midwest Racing News / Gary Schmidt',
     crop: { size: '255% auto', position: '7% 65%' },
   },
+  1977: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1977-10-06/003.jpg',
+    alt: 'Larry Detjens with promoter Larry Wehrs after the 1977 Oktoberfest victory',
+    note: 'Larry Detjens with Larry Wehrs • 1977 Oktoberfest • Midwest Racing News / Wayne Mioskowski',
+    crop: { size: '255% auto', position: '7% 14%' },
+  },
   1978: {
     src: MEDIA_BASE + 'newspapers/midwest-racing-news/1978-10-05/002.jpg',
     alt: 'Dave Watson after winning the 1978 Oktoberfest at LaCrosse Interstate Speedway',
     note: 'Dave Watson • 1978 Oktoberfest victory • Midwest Racing News / Wayne Mioskowski',
     crop: { size: '255% auto', position: '7% 13%' },
+  },
+  1979: {
+    src: MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1979-10-10/001.jpg',
+    alt: 'Butch Miller being congratulated by promoter Larry Wehrs as the 1979 Oktoberfest overall winner',
+    note: 'Butch Miller with Larry Wehrs • 1979 overall winner • Checkered Flag Racing News / John Quinn',
+    crop: { size: '260% auto', position: '12% 39%' },
   },
   1980: {
     src: '/rooms/oktoberfest/1980-mark-martin.svg',
