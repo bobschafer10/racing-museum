@@ -1,0 +1,330 @@
+.roomsPage {
+  min-height: 100vh;
+  color: #f4e4c4;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(255,255,255,.04), transparent 30%),
+    linear-gradient(180deg, #1a110b 0%, #2b1c12 45%, #160e09 100%);
+}
+
+.roomsHero {
+  border-bottom: 2px solid #7f5a2e;
+  background:
+    linear-gradient(90deg, rgba(16,10,7,.92), rgba(16,10,7,.6)),
+    url('/museum-bg.png') center 48% / cover no-repeat;
+}
+
+.roomsHeroInner,
+.roomsShell {
+  width: min(1320px, calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.roomsHeroInner {
+  padding: 62px 0 54px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .19em;
+  font-size: 10px;
+  font-weight: 900;
+  color: #d3b376;
+}
+
+.roomsHero h1 {
+  max-width: 760px;
+  margin: 7px 0 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: .94;
+  letter-spacing: -.04em;
+  color: #fff0d0;
+}
+
+.roomsHero p {
+  max-width: 760px;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #dfcaa3;
+}
+
+.roomsShell {
+  padding: 30px 0 60px;
+}
+
+.roomsGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, .72fr);
+  gap: 18px;
+}
+
+.roomCard,
+.roomComingSoon {
+  position: relative;
+  min-height: 440px;
+  overflow: hidden;
+  border: 1px solid #8f6735;
+  box-shadow: 5px 6px 0 rgba(0,0,0,.24);
+  background: #25170f;
+}
+
+.roomCard {
+  color: inherit;
+  text-decoration: none;
+}
+
+.roomCardImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.roomCardShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(20,12,8,.94), rgba(20,12,8,.55) 55%, rgba(20,12,8,.22)),
+    linear-gradient(180deg, rgba(20,12,8,.1), rgba(20,12,8,.76));
+}
+
+.roomCardCopy {
+  position: relative;
+  z-index: 2;
+  width: min(610px, 88%);
+  padding: 34px;
+}
+
+.roomNumber {
+  display: inline-block;
+  padding: 7px 10px;
+  border: 1px solid #c49a50;
+  background: rgba(35,20,11,.78);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 10px;
+  font-weight: 900;
+  color: #f0d49a;
+}
+
+.roomLogo {
+  display: block;
+  width: min(390px, 88%);
+  max-height: 185px;
+  margin: 20px 0 6px;
+  object-fit: contain;
+  object-position: left center;
+  background: rgba(238,222,189,.92);
+  border: 1px solid rgba(224,190,126,.45);
+  padding: 8px;
+}
+
+.roomCardCopy h2,
+.roomComingSoon h2 {
+  margin: 11px 0 6px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(32px, 4vw, 50px);
+  line-height: .96;
+  color: #fff0d0;
+}
+
+.roomCardCopy p,
+.roomComingSoon p {
+  margin: 9px 0 18px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #dec7a0;
+}
+
+.roomCta {
+  display: inline-block;
+  padding: 11px 18px;
+  border: 1px solid #a84b3a;
+  background: linear-gradient(180deg, #8a362b, #652018);
+  color: #fff0d7;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.roomComingSoon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px;
+  background:
+    linear-gradient(rgba(20,12,8,.58), rgba(20,12,8,.9)),
+    url('/museum-bg.png') center / cover no-repeat;
+}
+
+.roomComingSoon .roomNumber {
+  width: fit-content;
+}
+
+.roomComingSoon h2 {
+  font-size: 34px;
+}
+
+.roomsNote {
+  margin-top: 22px;
+  padding: 18px 20px;
+  border: 1px solid rgba(197,159,95,.38);
+  background: rgba(255,255,255,.025);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #d5bf99;
+}
+
+/* Door transition */
+.doorTransition {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  overflow: hidden;
+  background: #100b07;
+}
+
+.doorReveal {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  background: url('/museum-bg.png') center / cover no-repeat;
+}
+
+.doorRevealShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(14,8,5,.36), rgba(14,8,5,.7));
+}
+
+.doorRevealLogo,
+.doorRevealCopy {
+  position: relative;
+  z-index: 1;
+}
+
+.doorRevealLogo {
+  width: min(430px, 70vw);
+  max-height: 220px;
+  object-fit: contain;
+  background: rgba(244,232,205,.9);
+  border: 1px solid rgba(225,190,128,.55);
+  padding: 9px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.42);
+}
+
+.doorRevealCopy {
+  margin-top: 16px;
+  text-align: center;
+  color: #f7e5c2;
+  text-shadow: 0 2px 5px rgba(0,0,0,.7);
+}
+
+.doorRevealCopy span,
+.doorRevealCopy small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: 10px;
+  font-weight: 850;
+  color: #d7b879;
+}
+
+.doorRevealCopy strong {
+  display: block;
+  margin: 5px 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(30px, 5vw, 54px);
+}
+
+.doorPanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50.2%;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.025), transparent 30%),
+    repeating-linear-gradient(90deg, #352216 0 12px, #28180f 12px 24px);
+  border: 3px solid #150d08;
+  box-shadow: inset 0 0 0 7px rgba(118,76,39,.18), inset 0 0 38px rgba(0,0,0,.55);
+}
+
+.doorPanelLeft {
+  left: 0;
+  transform-origin: left center;
+  animation: doorOpenLeft .82s cubic-bezier(.55,.08,.35,1) forwards;
+}
+
+.doorPanelRight {
+  right: 0;
+  transform-origin: right center;
+  animation: doorOpenRight .82s cubic-bezier(.55,.08,.35,1) forwards;
+}
+
+.doorInset {
+  position: absolute;
+  inset: 8% 10%;
+  border: 2px solid rgba(170,113,58,.34);
+  box-shadow:
+    inset 0 0 0 9px rgba(22,13,8,.28),
+    inset 0 0 0 11px rgba(176,118,58,.12);
+}
+
+@keyframes doorOpenLeft {
+  0% { transform: translateX(0) perspective(1000px) rotateY(0deg); }
+  100% { transform: translateX(-96%) perspective(1000px) rotateY(22deg); }
+}
+
+@keyframes doorOpenRight {
+  0% { transform: translateX(0) perspective(1000px) rotateY(0deg); }
+  100% { transform: translateX(96%) perspective(1000px) rotateY(-22deg); }
+}
+
+@media (max-width: 820px) {
+  .roomsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roomCard,
+  .roomComingSoon {
+    min-height: 380px;
+  }
+
+  .roomCardCopy {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .roomsHeroInner,
+  .roomsShell {
+    width: min(100% - 22px, 620px);
+  }
+
+  .roomsHeroInner {
+    padding: 42px 0 36px;
+  }
+
+  .roomCardCopy {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .roomLogo {
+    width: min(300px, 86%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .doorPanelLeft,
+  .doorPanelRight {
+    animation-duration: .01ms;
+  }
+}
