@@ -223,6 +223,37 @@ const programArtifactNotes: Record<string, { label: string; note: string }> = {
   },
 }
 
+const programPageArtifacts = [
+  {
+    year: 1978,
+    title: 'Welcome to the 1978 Oktoberfest 200',
+    note: 'Larry and Bernadine Wehrs welcome the fans and thank them for supporting both the special events and the regular Wednesday-night program.',
+    href: '/media/race-programs/1978-lacrosse-interstate-speedway-wi-yearbook',
+    image: MEDIA_BASE + 'programs/1978-lacrosse-interstate-speedway-wi-yearbook/1978%20-%20LACROSSE%20OKTOBERFEST%20PROGRAM_001.jpg',
+  },
+  {
+    year: 1979,
+    title: 'Oktoberfest Overall Money Winners',
+    note: 'The tenth-anniversary publication tabulates cumulative late-model money winners from 1970 through 1978 and hobby-stock totals beginning in 1974.',
+    href: '/media/race-programs/1979-lacrosse-interstate-speedway-wi-yearbook',
+    image: MEDIA_BASE + 'programs/1979-lacrosse-interstate-speedway-wi-yearbook/Page%2036-37.jpg',
+  },
+  {
+    year: 1981,
+    title: 'Martin and Shear Split the 1980 Hundreds',
+    note: 'The 1981 book retells the rain-delayed 1980 race and explains how Mark Martin won the overall championship on the qualifying tiebreaker.',
+    href: '/media/race-programs/1981-lacrosse-interstate-speedway-wi-yearbook',
+    image: MEDIA_BASE + 'programs/1981-lacrosse-interstate-speedway-wi-yearbook/1981%20-%20LACROSSE%20OKTOBERFEST%20PROGRAM_006.jpg',
+  },
+  {
+    year: 1985,
+    title: 'The All-Time Oktoberfest Money List',
+    note: 'The 1985 program records the top 50 overall late-model money winners through 1984, led by Joe Shear and Tom Reffner.',
+    href: '/media/race-programs/1985-lacrosse-interstate-speedway-wi-yearbook',
+    image: MEDIA_BASE + 'programs/1985-lacrosse-interstate-speedway-wi-yearbook/1985%20-%20LACROSSE%20OKTOBERFEST%20PROGRAM_013.jpg',
+  },
+]
+
 
 function yearOf(date: string) {
   return Number(date.slice(0, 4))
@@ -637,6 +668,24 @@ export default async function OktoberfestLarryWehrsRoom() {
                 all-time top-50 Oktoberfest money-winner table through the end of 1984.
               </p>
             </article>
+          </div>
+
+          <div className={styles.artifactPageHead}>
+            <div className={styles.kicker}>Pages from the Display Case</div>
+            <h3>Open the Original Artifacts</h3>
+          </div>
+          <div className={styles.artifactPageGrid}>
+            {programPageArtifacts.map((artifact) => (
+              <Link href={artifact.href} className={styles.artifactPageCard} key={artifact.title}>
+                <div className={styles.artifactPageImage}>
+                  <img src={artifact.image} alt={artifact.title} />
+                </div>
+                <span>{artifact.year}</span>
+                <strong>{artifact.title}</strong>
+                <p>{artifact.note}</p>
+                <b>Open Complete Publication →</b>
+              </Link>
+            ))}
           </div>
 
           <div className={styles.centerLink}>
