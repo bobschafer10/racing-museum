@@ -6,24 +6,36 @@ $SourceDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 Write-Host "Installing Minnesota track logos..." -ForegroundColor Cyan
 
-$files = @(
-  "north-star-speedway-mn.jpg",
-  "cannon-river-speedway-mn.jpg",
-  "hiawatha-speedway-mn.jpg",
-  "jackson-motorplex-mn.jpg"
-)
+# Automatically include every supported logo image in this state folder.
+# This prevents newer logos from being skipped when they are added later.
+$files = Get-ChildItem -Path $SourceDir -File | Where-Object {
+    $_.Extension.ToLower() -in @(".jpg", ".jpeg", ".png", ".webp", ".svg")
+}
+
+if (-not $files) {
+    throw "No Minnesota track logo image files were found in $SourceDir"
+}
 
 New-Item -ItemType Directory -Force -Path $LogoDir | Out-Null
 
 foreach ($file in $files) {
-    Copy-Item -Force (Join-Path $SourceDir $file) (Join-Path $LogoDir $file)
-    Write-Host "  Installed $file"
+    $destination = Join-Path $LogoDir $file.Name
+    if ($file.FullName -ne $destination) {
+        Copy-Item -Force $file.FullName $destination
+    }
+    Write-Host "  Installed $($file.Name)"
 }
 
 Set-Location $Repo
 git add public/logos/tracks
-git commit -m "Add Minnesota track logos"
-git push origin main
 
-Write-Host ""
-Write-Host "Minnesota track logos pushed to GitHub." -ForegroundColor Green
+$changes = git status --porcelain -- public/logos/tracks
+if ($changes) {
+    git commit -m "Add or update Minnesota track logos"
+    git push origin main
+    Write-Host ""
+    Write-Host "Minnesota track logos pushed to GitHub." -ForegroundColor Green
+} else {
+    Write-Host ""
+    Write-Host "Minnesota track logos are already up to date." -ForegroundColor Green
+}
