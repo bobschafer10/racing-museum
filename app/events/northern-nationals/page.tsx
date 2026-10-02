@@ -34,7 +34,7 @@ const lateModelFinales = [
   [2009,'Adam Hensel'],[2010,'Ashley Anderson'],[2011,'A.J. Diemel'],[2012,'Darrell Nelson'],
   [2013,'Darrell Nelson'],[2014,'Brady Smith'],[2015,'Mike Prochnow'],[2016,'Darrell Nelson'],
   [2017,'Marshall Fegers'],[2018,'Darrell Nelson'],[2019,'Darrell Nelson'],[2020,'Pat Doar'],
-  [2021,'Pat Doar'],[2022,'Darrell Nelson'],[2023,'Late Model result not yet verified'],
+  [2021,'Pat Doar'],[2022,'Darrell Nelson'],[2023,'No Late Model feature documented'],
   [2024,'Ashley Anderson'],[2025,'James Giossi'],[2026,'Kevin Eder'],
 ] as const
 
@@ -45,7 +45,7 @@ const modernMultiNight = [
 ]
 
 export default function NorthernNationalsPage() {
-  const verified = lateModelFinales.filter(([,winner]) => !winner.toLowerCase().includes('archive') && !winner.toLowerCase().includes('not yet'))
+  const verified = lateModelFinales.filter(([,winner]) => !winner.toLowerCase().includes('archive') && !winner.toLowerCase().includes('not yet') && !winner.toLowerCase().includes('no late model'))
   const winners = new Set(verified.map(([,winner]) => winner))
 
   return <main className={styles.page}>
@@ -149,7 +149,7 @@ export default function NorthernNationalsPage() {
         <div className={styles.sourceCard}>
           <div className={styles.sourceLabel}>Research Status</div>
           <strong>The Late Model lineage is now reconstructed from the 1970 benefit through the modern Northern Nationals, with 1985–86 still visibly unresolved.</strong>
-          <p>The next museum pass should determine whether a comparable fall classic was held in 1985 and 1986, recover the 1991 Northern Nationals Late Model result, settle the 2023 Late Model status, and then expand the archive by division — Modified, Super Stock, Midwest Modified/B-Mod, Street Stock/Pure Stock and sprint-car winners — using Superior database records plus MRN/CFRN clippings.</p>
+          <p>The next museum pass should determine whether a comparable fall classic was held in 1985 and 1986 and recover the 1991 Northern Nationals status. For 2023, contemporary coverage documents a four-night, 10-class Northern Nationals, while the preserved Superior results and Friday IRA program show no Late Model feature; the page therefore records the absence rather than assigning a winner. Division-by-division enrichment remains underway.</p>
         </div>
       </section>
 
