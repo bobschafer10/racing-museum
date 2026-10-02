@@ -8,17 +8,44 @@ import { supabase } from '@/lib/supabase'
 export default function TrackLogo({
   slug,
   trackName,
+  logoUrl,
 }: {
   slug: string
   trackName: string
+  logoUrl?: string | null
 }) {
   const pathname = usePathname()
   const [landingPhotoUrl, setLandingPhotoUrl] = useState<string | null>(null)
+  const [databaseLogoUrl, setDatabaseLogoUrl] = useState<string | null>(logoUrl || null)
   const [logoCandidateIndex, setLogoCandidateIndex] = useState(0)
 
   useEffect(() => {
     setLogoCandidateIndex(0)
-  }, [slug])
+    setDatabaseLogoUrl(logoUrl || null)
+  }, [slug, logoUrl])
+
+  useEffect(() => {
+    if (logoUrl) return
+
+    let cancelled = false
+
+    async function loadDatabaseLogo() {
+      const { data } = await supabase
+        .from('track_landing_directory_view')
+        .select('logo_url')
+        .eq('slug', slug)
+        .maybeSingle()
+
+      if (cancelled) return
+      setDatabaseLogoUrl(data?.logo_url || null)
+    }
+
+    void loadDatabaseLogo()
+
+    return () => {
+      cancelled = true
+    }
+  }, [slug, logoUrl])
 
   useEffect(() => {
     if (pathname !== '/tracks') {
@@ -86,6 +113,7 @@ export default function TrackLogo({
 
   const encodedSlug = encodeURIComponent(slug)
   const logoCandidates = [
+    ...(databaseLogoUrl ? [databaseLogoUrl] : []),
     `/logos/tracks/${encodedSlug}.jpg?v=4`,
     `/logos/tracks/${encodedSlug}.png?v=4`,
     `/logos/tracks/${encodedSlug}.jpeg?v=4`,
