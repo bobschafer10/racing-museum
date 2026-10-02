@@ -1,5 +1,3 @@
-$ErrorActionPreference = "Stop"
-
 param(
     [Parameter(Mandatory = $true)]
     [ValidatePattern("^[A-Za-z]{2,3}$")]
@@ -13,6 +11,8 @@ param(
 
     [switch]$PreviewOnly
 )
+
+$ErrorActionPreference = "Stop"
 
 $StateCode = $StateCode.ToLowerInvariant()
 $SourceDir = (Resolve-Path $SourceDir).Path
