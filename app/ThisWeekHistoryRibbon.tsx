@@ -21,27 +21,52 @@ export default function ThisWeekHistoryRibbon({ items, weekLabel }: Props) {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduceMotion) return
 
-    let frame = 0
-    let previous = performance.now()
+    const getMeasurements = () => {
+      const track = scroller.firstElementChild as HTMLElement | null
+      if (!track || track.children.length <= items.length) return null
 
-    const tick = (now: number) => {
-      const elapsed = Math.min(50, now - previous)
-      previous = now
+      const firstCard = track.children[0] as HTMLElement
+      const secondCard = track.children[1] as HTMLElement | undefined
+      const repeatedFirstCard = track.children[items.length] as HTMLElement
 
-      if (!paused && scroller.scrollWidth > scroller.clientWidth) {
-        scroller.scrollLeft += elapsed * 0.026
+      const step = secondCard
+        ? secondCard.offsetLeft - firstCard.offsetLeft
+        : firstCard.offsetWidth
 
-        const halfway = scroller.scrollWidth / 2
-        if (scroller.scrollLeft >= halfway) {
-          scroller.scrollLeft -= halfway
-        }
-      }
+      const duplicateStart = repeatedFirstCard.offsetLeft - firstCard.offsetLeft
 
-      frame = requestAnimationFrame(tick)
+      return { step, duplicateStart }
     }
 
-    frame = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(frame)
+    const normalizeLoop = () => {
+      const measurements = getMeasurements()
+      if (!measurements) return
+
+      const { duplicateStart } = measurements
+      if (scroller.scrollLeft >= duplicateStart - 1) {
+        scroller.scrollLeft -= duplicateStart
+      }
+    }
+
+    const advance = () => {
+      if (paused || scroller.scrollWidth <= scroller.clientWidth) return
+
+      const measurements = getMeasurements()
+      if (!measurements) return
+
+      scroller.scrollBy({
+        left: measurements.step,
+        behavior: 'smooth',
+      })
+    }
+
+    scroller.addEventListener('scroll', normalizeLoop, { passive: true })
+    const interval = window.setInterval(advance, 5500)
+
+    return () => {
+      window.clearInterval(interval)
+      scroller.removeEventListener('scroll', normalizeLoop)
+    }
   }, [items.length, paused])
 
   if (!items.length) return null
@@ -49,8 +74,26 @@ export default function ThisWeekHistoryRibbon({ items, weekLabel }: Props) {
   const repeated = [...items, ...items]
 
   const nudge = (direction: number) => {
-    scrollerRef.current?.scrollBy({
-      left: direction * 380,
+    const scroller = scrollerRef.current
+    if (!scroller) return
+
+    const track = scroller.firstElementChild as HTMLElement | null
+    const firstCard = track?.children[0] as HTMLElement | undefined
+    const secondCard = track?.children[1] as HTMLElement | undefined
+    const repeatedFirstCard = track?.children[items.length] as HTMLElement | undefined
+
+    const step =
+      firstCard && secondCard
+        ? secondCard.offsetLeft - firstCard.offsetLeft
+        : 296
+
+    if (direction < 0 && scroller.scrollLeft <= 1 && firstCard && repeatedFirstCard) {
+      const duplicateStart = repeatedFirstCard.offsetLeft - firstCard.offsetLeft
+      scroller.scrollLeft = duplicateStart
+    }
+
+    scroller.scrollBy({
+      left: direction * step,
       behavior: 'smooth',
     })
   }
