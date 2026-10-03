@@ -1,0 +1,1 @@
+Room 001 approved Oktoberfest image assets. See app/rooms/oktoberfest-larry-wehrs-v2/ROOM001_IMAGE_MANIFEST.md.
