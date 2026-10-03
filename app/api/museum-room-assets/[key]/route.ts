@@ -1,6 +1,6 @@
 const ROOM_ASSETS: Record<string, string> = {
-  'oktoberfest-room001-winner-sprite': '/rooms/oktoberfest/room001-winner-sprite.jpg',
-  'oktoberfest-larry-wehrs-watermark': '/rooms/oktoberfest/larry-wehrs-watermark.jpg',
+  'oktoberfest-room001-winner-sprite': '/rooms/oktoberfest/room001-winner-sprite.avif',
+  'oktoberfest-larry-wehrs-watermark': '/rooms/oktoberfest/larry-wehrs-watermark.avif',
 }
 
 export async function GET(
