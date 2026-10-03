@@ -3,6 +3,12 @@ import RoomPolish from './RoomPolish'
 
 const WEHRS_WATERMARK =
   'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1979-10-10/001.jpg'
+const MEDIA_BASE =
+  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/'
+const PAST_WINNERS_1978 =
+  MEDIA_BASE +
+  'programs/1978-lacrosse-interstate-speedway-wi-yearbook/1978%20-%20LACROSSE%20OKTOBERFEST%20PROGRAM_004.jpg'
+const MRN_1983 = MEDIA_BASE + 'newspapers/midwest-racing-news/1983-10-20/005.jpg'
 
 export default function OktoberfestLarryWehrsLayout({ children }: { children: ReactNode }) {
   return (
@@ -72,6 +78,50 @@ export default function OktoberfestLarryWehrsLayout({ children }: { children: Re
           transform: translateY(-1px);
           border-color: #7c2b22;
           background: #f7e5bc;
+        }
+
+        /* Fill the year cards that were left as dark/pending panels when the bad sprite was removed. */
+        #year-1972 > div:first-child,
+        #year-1973 > div:first-child,
+        #year-1975 > div:first-child,
+        #year-1976 > div:first-child,
+        #year-1983 > div:first-child {
+          background-repeat: no-repeat !important;
+          background-color: #19140f !important;
+          color: transparent !important;
+          overflow: hidden;
+        }
+        #year-1972 > div:first-child *,
+        #year-1973 > div:first-child *,
+        #year-1975 > div:first-child *,
+        #year-1976 > div:first-child *,
+        #year-1983 > div:first-child * {
+          opacity: 0 !important;
+        }
+        #year-1972 > div:first-child {
+          background-image: url("${PAST_WINNERS_1978}") !important;
+          background-size: 400% auto !important;
+          background-position: 31% 30% !important;
+        }
+        #year-1973 > div:first-child {
+          background-image: url("${PAST_WINNERS_1978}") !important;
+          background-size: 400% auto !important;
+          background-position: 0% 79% !important;
+        }
+        #year-1975 > div:first-child {
+          background-image: url("${PAST_WINNERS_1978}") !important;
+          background-size: 400% auto !important;
+          background-position: 18% 31% !important;
+        }
+        #year-1976 > div:first-child {
+          background-image: url("${PAST_WINNERS_1978}") !important;
+          background-size: 400% auto !important;
+          background-position: 29% 80% !important;
+        }
+        #year-1983 > div:first-child {
+          background-image: url("${MRN_1983}") !important;
+          background-size: 235% auto !important;
+          background-position: 50% 32% !important;
         }
 
         @media (max-width: 720px) {
