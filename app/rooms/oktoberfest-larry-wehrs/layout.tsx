@@ -36,10 +36,10 @@ export default function OktoberfestLarryWehrsLayout({ children }: { children: Re
           display: none !important;
         }
 
-        #year-by-year div:has(> a[href^='/results/']) {
+        #year-by-year div:has(> a[href^='/drivers/']) {
           display: grid !important;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-          gap: 7px !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px !important;
           margin-top: 14px !important;
         }
 
@@ -75,7 +75,7 @@ export default function OktoberfestLarryWehrsLayout({ children }: { children: Re
         }
 
         @media (max-width: 720px) {
-          #year-by-year div:has(> a[href^='/results/']) {
+          #year-by-year div:has(> a[href^='/drivers/']) {
             grid-template-columns: 1fr;
           }
         }
