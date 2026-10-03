@@ -11,7 +11,6 @@ const MEDIA_BASE =
   (process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co') +
   '/storage/v1/object/public/media/'
 
-const SPRITE = '/rooms/oktoberfest/room001-winner-sprite.jpg?v=room001-photos-20261003'
 const WEHRS_WATERMARK = '/rooms/oktoberfest/larry-wehrs-watermark.jpg?v=room001-photos-20261003'
 
 const heroImage =
@@ -36,27 +35,49 @@ type EventRow = {
   SeriesEventResults: ResultRow[]
 }
 
-type SpritePosition = { x: number; y: number }
-
-const spritePositions: Record<number, SpritePosition> = {
-  1970: { x: 0, y: 0 },
-  1971: { x: 33.333, y: 0 },
-  1972: { x: 66.667, y: 0 },
-  1974: { x: 100, y: 0 },
-  1975: { x: 0, y: 50 },
-  1976: { x: 33.333, y: 50 },
-  1977: { x: 66.667, y: 50 },
-  1978: { x: 100, y: 50 },
-  1979: { x: 0, y: 100 },
-  1982: { x: 33.333, y: 100 },
-  1983: { x: 66.667, y: 100 },
-  1986: { x: 100, y: 100 },
+type WinnerImage = {
+  src: string
+  position?: string
+  size?: string
 }
 
-const localWinnerImages: Record<number, string> = {
-  1980: '/rooms/oktoberfest/1980-mark-martin.svg',
-  1981: '/rooms/oktoberfest/1981-junior-hanley.svg',
-  1984: '/rooms/oktoberfest/1984-bryan-reffner.svg',
+const winnerImages: Record<number, WinnerImage> = {
+  1970: { src: '/rooms/oktoberfest/1970-tom-reffner.svg' },
+  1971: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1971-10-07/001.jpg',
+    size: '255% auto',
+    position: '7% 65%',
+  },
+  1974: {
+    src:
+      MEDIA_BASE +
+      'photos/master/lacrosse-interstate-speedway/1974/lacrosse-interstate-speedway_1974_jerry-makara_unknown-photographer_photo_001.jpg',
+    position: 'center 35%',
+  },
+  1977: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1977-10-06/003.jpg',
+    size: '255% auto',
+    position: '7% 14%',
+  },
+  1978: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1978-10-05/002.jpg',
+    size: '255% auto',
+    position: '7% 13%',
+  },
+  1979: {
+    src: MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1979-10-10/001.jpg',
+    size: '260% auto',
+    position: '12% 39%',
+  },
+  1980: { src: '/rooms/oktoberfest/1980-mark-martin.svg' },
+  1981: { src: '/rooms/oktoberfest/1981-junior-hanley.svg' },
+  1982: {
+    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1982-10-07/1.jpg',
+    size: '245% auto',
+    position: '8% 82%',
+  },
+  1984: { src: '/rooms/oktoberfest/1984-bryan-reffner.svg' },
+  1986: { src: '/rooms/oktoberfest/1986-rich-bickle-jr.jpg', position: 'center 25%' },
 }
 
 const raceStoryLinks: Record<number, string> = {
@@ -137,24 +158,22 @@ function withRoomReturn(href: string, year: number) {
 }
 
 function WinnerVisual({ year, winner }: { year: number; winner: string }) {
-  const sprite = spritePositions[year]
-  if (sprite) {
+  const image = winnerImages[year]
+
+  if (image) {
     return (
       <div
-        className={styles.spritePhoto}
+        className={styles.winnerPhoto}
         role="img"
         aria-label={`${winner}, ${year} Oktoberfest winner`}
         style={{
-          backgroundImage: `url("${SPRITE}")`,
-          backgroundPosition: `${sprite.x}% ${sprite.y}%`,
+          backgroundImage: `url("${image.src}")`,
+          backgroundPosition: image.position || 'center',
+          backgroundSize: image.size || 'cover',
+          backgroundRepeat: 'no-repeat',
         }}
       />
     )
-  }
-
-  const localImage = localWinnerImages[year]
-  if (localImage) {
-    return <img className={styles.winnerPhoto} src={localImage} alt={`${winner}, ${year} Oktoberfest winner`} />
   }
 
   return (
@@ -343,12 +362,14 @@ export default async function OktoberfestLarryWehrsRoom() {
           </div>
           <div>
             <div
-              className={styles.spritePhoto}
+              className={styles.winnerPhoto}
               role="img"
               aria-label="Rich Bickle Jr. in victory lane after the 1986 Oktoberfest"
               style={{
-                backgroundImage: `url("${SPRITE}")`,
-                backgroundPosition: '100% 100%',
+                backgroundImage: 'url("/rooms/oktoberfest/1986-rich-bickle-jr.jpg")',
+                backgroundPosition: 'center 25%',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
               }}
             />
             <div className={styles.photoCaption}>Rich Bickle Jr. • 1986 Oktoberfest winner</div>
