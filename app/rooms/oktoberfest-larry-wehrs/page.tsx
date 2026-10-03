@@ -11,8 +11,8 @@ const MEDIA_BASE =
   (process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://szvkleurojiwqkkztxtr.supabase.co') +
   '/storage/v1/object/public/media/'
 
-const SPRITE = '/api/museum-room-assets/oktoberfest-room001-winner-sprite'
-const WEHRS_WATERMARK = '/api/museum-room-assets/oktoberfest-larry-wehrs-watermark'
+const SPRITE = '/rooms/oktoberfest/room001-winner-sprite.jpg?v=room001-photos-20261003'
+const WEHRS_WATERMARK = '/rooms/oktoberfest/larry-wehrs-watermark.jpg?v=room001-photos-20261003'
 
 const heroImage =
   MEDIA_BASE +
