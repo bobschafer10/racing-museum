@@ -4,20 +4,17 @@ import styles from '../special-event.module.css'
 
 export const revalidate=300
 const SERIES_ID=166
+const HERO_SRC='/special-events/jmck-63/john-mckarns.svg'
 
 type ResultRow={id:number;finishing_position:number|null;driver_name:string;car_number:string|null;starting_position:string|null;laps:string|null;status:string|null;result_section:string|null}
 type EventRow={id:number;race_date:string|null;winner_name:string|null;source_url:string|null;SeriesEventResults:ResultRow[]}
 function formatDate(value:string|null){if(!value)return'Date not listed';const [y,m,d]=value.split('-');return new Date(Number(y),Number(m)-1,Number(d)).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}
-function photoUrl(fileName?:string|null,year?:string|null){const base=process.env.NEXT_PUBLIC_SUPABASE_URL;return fileName&&base?`${base}/storage/v1/object/public/media/photos/master/lacrosse-fairgrounds-wi/${year||'unknown-year'}/${fileName}`:''}
 
 export default async function Jmck63Page(){
- const [{data,error},{data:photos}]=await Promise.all([
-  supabase.from('SeriesEvents').select(`id,race_date,winner_name,source_url,SeriesEventResults(id,finishing_position,driver_name,car_number,starting_position,laps,status,result_section)`).eq('series_id',SERIES_ID).order('race_date',{ascending:false}),
-  supabase.from('photos').select('file_name,year').eq('track_slug','lacrosse-fairgrounds-wi').neq('credit_type','unknown').order('year',{ascending:false}).limit(8),
- ])
- const events=(data??[]) as EventRow[];const resultCount=events.reduce((sum,event)=>sum+event.SeriesEventResults.length,0);const heroSrc=photoUrl(photos?.[0]?.file_name,photos?.[0]?.year)
+ const {data,error}=await supabase.from('SeriesEvents').select(`id,race_date,winner_name,source_url,SeriesEventResults(id,finishing_position,driver_name,car_number,starting_position,laps,status,result_section)`).eq('series_id',SERIES_ID).order('race_date',{ascending:false})
+ const events=(data??[]) as EventRow[];const resultCount=events.reduce((sum,event)=>sum+event.SeriesEventResults.length,0)
  return <main className={styles.page}>
-  <section className={styles.hero}>{heroSrc?<img src={heroSrc} alt="JMcK 63 at LaCrosse" className={styles.heroImage}/>:null}<div className={styles.heroShade}/><div className={styles.heroInner}>
+  <section className={styles.hero}><img src={HERO_SRC} alt="John McKarns" className={styles.heroImage}/><div className={styles.heroShade}/><div className={styles.heroInner}>
    <div className={styles.breadcrumbs}><Link href="/">Home</Link><span>›</span><Link href="/events">Special Events</Link><span>›</span><span>JMcK 63</span></div>
    <div className={styles.eyebrow}>Upper Midwest Special Event Archive</div><h1 className={styles.title}>JMcK 63</h1><p className={styles.tagline}>Three Segments. Sixty-Three Laps. One Memorial.</p>
    <p className={styles.intro}>Contested from 2010 through 2018 during Oktoberfest Race Weekend, the John McKarns memorial invitational used three 21-lap segments with the overall winner determined by cumulative finishing points.</p>
