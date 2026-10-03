@@ -42,40 +42,17 @@ type WinnerImage = {
 }
 
 const winnerImages: Record<number, WinnerImage> = {
+  // Winner Wall rule: only verified standalone winner photographs belong here.
+  // Newspaper/program page crops are intentionally excluded.
   1970: { src: '/rooms/oktoberfest/1970-tom-reffner.svg' },
-  1971: {
-    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1971-10-07/001.jpg',
-    size: '255% auto',
-    position: '7% 65%',
-  },
   1974: {
     src:
       MEDIA_BASE +
       'photos/master/lacrosse-interstate-speedway/1974/lacrosse-interstate-speedway_1974_jerry-makara_unknown-photographer_photo_001.jpg',
     position: 'center 35%',
   },
-  1977: {
-    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1977-10-06/003.jpg',
-    size: '255% auto',
-    position: '7% 14%',
-  },
-  1978: {
-    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1978-10-05/002.jpg',
-    size: '255% auto',
-    position: '7% 13%',
-  },
-  1979: {
-    src: MEDIA_BASE + 'newspapers/checkered-flag-racing-news/1979-10-10/001.jpg',
-    size: '260% auto',
-    position: '12% 39%',
-  },
   1980: { src: '/rooms/oktoberfest/1980-mark-martin.svg' },
   1981: { src: '/rooms/oktoberfest/1981-junior-hanley.svg' },
-  1982: {
-    src: MEDIA_BASE + 'newspapers/midwest-racing-news/1982-10-07/1.jpg',
-    size: '245% auto',
-    position: '8% 82%',
-  },
   1984: { src: '/rooms/oktoberfest/1984-bryan-reffner.svg' },
   1986: { src: '/rooms/oktoberfest/1986-rich-bickle-jr.jpg', position: 'center 25%' },
 }
