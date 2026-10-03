@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node --check museum-room-manager/server.js && node --check museum-room-manager/public/app.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
