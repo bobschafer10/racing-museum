@@ -1,8 +1,4 @@
-import Link from 'next/link'
 import styles from './rooms.module.css'
-
-const OKTOBERFEST_IMAGE =
-  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/lacrosse-interstate-speedway/1981/lacrosse-interstate-speedway_1981_dick-trickle_stan-kalwasinski_photo_555.jpg'
 
 export default function MuseumRoomsPage() {
   return (
@@ -20,25 +16,6 @@ export default function MuseumRoomsPage() {
 
       <div className={styles.roomsShell}>
         <div className={styles.roomsGrid}>
-          <Link className={styles.roomCard} href="/rooms/oktoberfest-larry-wehrs">
-            <img
-              className={styles.roomCardImage}
-              src={OKTOBERFEST_IMAGE}
-              alt="Historic racing at LaCrosse Interstate Speedway"
-            />
-            <span className={styles.roomCardShade} aria-hidden="true" />
-            <div className={styles.roomCardCopy}>
-              <span className={styles.roomNumber}>Room 001 • Now Showing</span>
-              <img
-                className={styles.roomLogo}
-                src="/logos/series/oktoberfest-race-weekend.jpg"
-                alt="Oktoberfest Race Weekend"
-              />
-              <h2>The Larry Wehrs Years</h2>
-              <p>1970–1986 • Seventeen falls that helped define Midwest short-track racing.</p>
-              <span className={styles.roomCta}>Enter the Room →</span>
-            </div>
-          </Link>
 
           <article className={styles.roomComingSoon}>
             <span className={styles.roomNumber}>Room 002 • In Development</span>
