@@ -14,6 +14,7 @@ import "./hall-of-fame.css";
 import Link from "next/link"
 import ResearchCenterNav from "@/components/ResearchCenterNav"
 import FeatureWinnersPdfEnhancer from "@/components/FeatureWinnersPdfEnhancer"
+import MuseumRoomReturn from "@/components/MuseumRoomReturn"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -69,6 +70,7 @@ export default function RootLayout({
 
         <ResearchCenterNav />
         <FeatureWinnersPdfEnhancer />
+        <MuseumRoomReturn />
 
         <main style={{ flex: 1 }}>
           {children}
