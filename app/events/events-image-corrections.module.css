@@ -1,76 +1,164 @@
 .scope { display: contents; }
 
 /*
- * Special Events landing image corrections.
- * These rules intentionally affect only the landing-page cards for the named
- * events.  They replace generic track hero art with event/division-correct
- * imagery without changing any event data or the rest of the page layout.
+ * Temporary logo mode for the Special Events landing page.
+ * Every special-event card uses a track or event logo instead of race-car photography.
+ * This keeps the directory consistent until event-specific images are added manually.
  */
 
-.scope :global(a[href="/events/usa-nationals"] [class*="ImageWrap"]) {
-  background-image: url("https://dirtvision.asset.viewlift.com/images/2025/04/15/7-31-25_LM-1744731757496.png?h=1080&impolicy=resize&w=1920");
-  background-size: cover;
-  background-position: center 57%;
-  background-repeat: no-repeat;
+.scope :global(a[href^="/events/"] [class*="ImageWrap"]) {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #101316 !important;
+}
+
+.scope :global(a[href^="/events/"] [class*="ImageWrap"] > img),
+.scope :global(a[href^="/events/"] [class*="ImageWrap"] > [class*="Fallback"]),
+.scope :global(a[href^="/events/"] [class*="ImageWrap"] > [class*="ImageShade"]) {
+  opacity: 0 !important;
+}
+
+.scope :global(a[href="/events/rex-mays-classic"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/milwaukee-mile-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/northern-nationals"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/superior-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/dells-midwest-championships"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/dells-motor-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/hales-open"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/hales-corners-speedway-wi.jpg") !important;
 }
 
 .scope :global(a[href="/events/wilmot-open-sprints"] [class*="ImageWrap"]) {
-  background-image: url("https://dy5vgx5yyjho5.cloudfront.net/images/v2/1200x1200-hY5N6ubD8Wx944895.jpg");
-  background-size: cover;
-  background-position: center 48%;
-  background-repeat: no-repeat;
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/wilmot-raceway-wi.jpg") !important;
 }
 
-.scope :global(a[href="/events/norway-speedway-stateline-challenge"] [class*="ImageWrap"]) {
-  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/norway-speedway/2026/norway-speedway_2026_dan-lindsley_unknown-photographer_photo_334.jpg");
-  background-size: cover;
-  background-position: center 46%;
-  background-repeat: no-repeat;
+.scope :global(a[href="/events/rockford-all-star-100"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/rockford-speedway-il.jpg") !important;
 }
 
-.scope :global(a[href="/events/mighty-axe-nationals"] [class*="ImageWrap"]) {
-  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/north-central-speedway-mn.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #101316;
+.scope :global(a[href="/events/lake-geneva-october-classic"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/lake-geneva-raceway-wi.jpg") !important;
 }
 
-.scope :global(a[href="/events/jmck-63"] [class*="ImageWrap"]) {
-  background-image: url("/special-events/jmck-63/john-mckarns.svg");
-  background-size: cover;
-  background-position: center 30%;
-  background-repeat: no-repeat;
+.scope :global(a[href="/events/thunderstruck-93"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/elko-speedway-mn.jpg") !important;
 }
 
 .scope :global(a[href="/events/street-stock-little-dream"] [class*="ImageWrap"]) {
-  background-image: url("/special-events/street-stock-little-dream/rice-lake-wissota-street-stock.svg");
-  background-size: cover;
-  background-position: center 50%;
-  background-repeat: no-repeat;
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/rice-lake-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/wayne-carter-classic"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/grundy-county-speedway-il.jpg") !important;
+}
+
+.scope :global(a[href="/events/firemens-nationals-pepsi-nationals"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/angell-park-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/joe-shear-classic"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/capital-super-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/larry-detjens-memorial"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/state-park-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/tony-bettenhausen-memorial-100"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/illiana-speedway-in.jpg") !important;
+}
+
+.scope :global(a[href="/events/norway-speedway-stateline-challenge"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/norway-speedway-mi.jpg") !important;
+}
+
+.scope :global(a[href="/events/mighty-axe-nationals"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/north-central-speedway-mn.jpg") !important;
+}
+
+.scope :global(a[href="/events/fall-jamboree"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/deer-creek-speedway-mn.jpg") !important;
+}
+
+.scope :global(a[href="/events/gopher-50"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/deer-creek-speedway-mn.jpg") !important;
+}
+
+.scope :global(a[href="/events/hibbing-labor-day-shootout"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/hibbing-raceway-mn.jpg") !important;
+}
+
+.scope :global(a[href="/events/national-clay-track-championship"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/santa-fe-speedway-il.jpg") !important;
+}
+
+.scope :global(a[href="/events/red-clay-classic"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/abc-raceway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/punky-manor"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/red-cedar-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/slinger-nationals"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/slinger-nationals.jpg") !important;
+}
+
+.scope :global(a[href="/events/silver-1000"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/proctor-speedway-mn.jpg") !important;
+}
+
+.scope :global(a[href="/events/legendary-100"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/cedar-lake-speedway-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/usa-nationals"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/cedar-lake-speedway-wi.jpg") !important;
 }
 
 .scope :global(a[href="/events/clash-at-the-creek"] [class*="ImageWrap"]) {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/IMCA_Modifieds_doing_Delaware_Style_restart.jpg");
-  background-size: cover;
-  background-position: center 48%;
-  background-repeat: no-repeat;
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/141-speedway-wi.jpg") !important;
 }
 
-/* Hide the generic image/fallback beneath each corrected card image. */
-.scope :global(a[href="/events/usa-nationals"] [class*="ImageWrap"] > img),
-.scope :global(a[href="/events/wilmot-open-sprints"] [class*="ImageWrap"] > img),
-.scope :global(a[href="/events/norway-speedway-stateline-challenge"] [class*="ImageWrap"] > img),
-.scope :global(a[href="/events/mighty-axe-nationals"] [class*="ImageWrap"] > img),
-.scope :global(a[href="/events/jmck-63"] [class*="ImageWrap"] > img),
-.scope :global(a[href="/events/street-stock-little-dream"] [class*="ImageWrap"] > img),
-.scope :global(a[href="/events/clash-at-the-creek"] [class*="ImageWrap"] > img),
-.scope :global(a[href="/events/usa-nationals"] [class*="ImageWrap"] > [class*="Fallback"]),
-.scope :global(a[href="/events/wilmot-open-sprints"] [class*="ImageWrap"] > [class*="Fallback"]),
-.scope :global(a[href="/events/norway-speedway-stateline-challenge"] [class*="ImageWrap"] > [class*="Fallback"]),
-.scope :global(a[href="/events/mighty-axe-nationals"] [class*="ImageWrap"] > [class*="Fallback"]),
-.scope :global(a[href="/events/jmck-63"] [class*="ImageWrap"] > [class*="Fallback"]),
-.scope :global(a[href="/events/street-stock-little-dream"] [class*="ImageWrap"] > [class*="Fallback"]),
-.scope :global(a[href="/events/clash-at-the-creek"] [class*="ImageWrap"] > [class*="Fallback"]) {
-  opacity: 0 !important;
+.scope :global(a[href="/events/oktoberfest"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/lacrosse-fairgrounds-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/dick-trickle-99"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/lacrosse-fairgrounds-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/national-short-track-championships"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/rockford-speedway-il.jpg") !important;
+}
+
+.scope :global(a[href="/events/jmck-63"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/lacrosse-fairgrounds-wi.jpg") !important;
+}
+
+.scope :global(a[href="/events/wissota-100"] [class*="ImageWrap"]) {
+  background-image: none !important;
+  position: relative;
+}
+
+.scope :global(a[href="/events/wissota-100"] [class*="ImageWrap"]::before) {
+  content: "WISSOTA 100";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  color: #f4f0e7;
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
 }
