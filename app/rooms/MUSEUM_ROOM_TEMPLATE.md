@@ -10,6 +10,16 @@ The Museum Room system is an exhibit layer, not a database dump. Every future ro
 4. **The Display Case** — no more than four featured artifacts on the main room page. Newspaper scans, programs, yearbooks, and other primary sources live one level deeper in their archive pages.
 5. **Legacy / Exit** — concise closing interpretation and links to the related track/event/next chapter.
 
+## Image asset contract
+
+- A Room is not ready for review until every approved hero, timeline, winner, and artifact image has been persisted in GitHub or museum storage. Images that exist only in a ChatGPT conversation are not part of the Room.
+- Each approved historical photograph must have one explicit, stable asset path. The Room page should reference that asset directly rather than silently substituting a newspaper page, program crop, generic track photo, or generated placeholder.
+- Keep one image manifest/map for the Room so the approved image for every timeline item is obvious and auditable.
+- If an approved image has not yet been persisted, show the designed year plaque until the correct source file is available. Do not fall back to a different historical image merely to fill the space.
+- Historical photographs may be cropped for presentation when needed, but they should not be reconstructed, colorized, or materially altered unless the user explicitly requests that treatment for that image.
+- Preserve source/photographer credit with the asset whenever known.
+- Before replacing an image, verify the year, subject, and event assignment against the Room manifest. A layout rebuild must reuse the approved manifest rather than recreating image choices from memory.
+
 ## Year/timeline exhibit behavior
 
 - Main wall shows year, subject/winner, and one strong image.
