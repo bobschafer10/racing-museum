@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import RoomDoorLink from './rooms/RoomDoorLink'
 import styles from './home.module.css'
 
 export default function MuseumRoomsHomeFeature() {
