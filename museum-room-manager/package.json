@@ -1,0 +1,16 @@
+{
+  "name": "museum-room-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-only Museum Room asset and publishing manager",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}
