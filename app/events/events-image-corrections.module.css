@@ -1,0 +1,76 @@
+.scope { display: contents; }
+
+/*
+ * Special Events landing image corrections.
+ * These rules intentionally affect only the landing-page cards for the named
+ * events.  They replace generic track hero art with event/division-correct
+ * imagery without changing any event data or the rest of the page layout.
+ */
+
+.scope :global(a[href="/events/usa-nationals"] [class*="ImageWrap"]) {
+  background-image: url("https://dirtvision.asset.viewlift.com/images/2025/04/15/7-31-25_LM-1744731757496.png?h=1080&impolicy=resize&w=1920");
+  background-size: cover;
+  background-position: center 57%;
+  background-repeat: no-repeat;
+}
+
+.scope :global(a[href="/events/wilmot-open-sprints"] [class*="ImageWrap"]) {
+  background-image: url("https://dy5vgx5yyjho5.cloudfront.net/images/v2/1200x1200-hY5N6ubD8Wx944895.jpg");
+  background-size: cover;
+  background-position: center 48%;
+  background-repeat: no-repeat;
+}
+
+.scope :global(a[href="/events/norway-speedway-stateline-challenge"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/norway-speedway/2026/norway-speedway_2026_dan-lindsley_unknown-photographer_photo_334.jpg");
+  background-size: cover;
+  background-position: center 46%;
+  background-repeat: no-repeat;
+}
+
+.scope :global(a[href="/events/mighty-axe-nationals"] [class*="ImageWrap"]) {
+  background-image: url("https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/north-central-speedway-mn.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #101316;
+}
+
+.scope :global(a[href="/events/jmck-63"] [class*="ImageWrap"]) {
+  background-image: url("/special-events/jmck-63/john-mckarns.svg");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+.scope :global(a[href="/events/street-stock-little-dream"] [class*="ImageWrap"]) {
+  background-image: url("/special-events/street-stock-little-dream/rice-lake-wissota-street-stock.svg");
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+
+.scope :global(a[href="/events/clash-at-the-creek"] [class*="ImageWrap"]) {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/IMCA_Modifieds_doing_Delaware_Style_restart.jpg");
+  background-size: cover;
+  background-position: center 48%;
+  background-repeat: no-repeat;
+}
+
+/* Hide the generic image/fallback beneath each corrected card image. */
+.scope :global(a[href="/events/usa-nationals"] [class*="ImageWrap"] > img),
+.scope :global(a[href="/events/wilmot-open-sprints"] [class*="ImageWrap"] > img),
+.scope :global(a[href="/events/norway-speedway-stateline-challenge"] [class*="ImageWrap"] > img),
+.scope :global(a[href="/events/mighty-axe-nationals"] [class*="ImageWrap"] > img),
+.scope :global(a[href="/events/jmck-63"] [class*="ImageWrap"] > img),
+.scope :global(a[href="/events/street-stock-little-dream"] [class*="ImageWrap"] > img),
+.scope :global(a[href="/events/clash-at-the-creek"] [class*="ImageWrap"] > img),
+.scope :global(a[href="/events/usa-nationals"] [class*="ImageWrap"] > [class*="Fallback"]),
+.scope :global(a[href="/events/wilmot-open-sprints"] [class*="ImageWrap"] > [class*="Fallback"]),
+.scope :global(a[href="/events/norway-speedway-stateline-challenge"] [class*="ImageWrap"] > [class*="Fallback"]),
+.scope :global(a[href="/events/mighty-axe-nationals"] [class*="ImageWrap"] > [class*="Fallback"]),
+.scope :global(a[href="/events/jmck-63"] [class*="ImageWrap"] > [class*="Fallback"]),
+.scope :global(a[href="/events/street-stock-little-dream"] [class*="ImageWrap"] > [class*="Fallback"]),
+.scope :global(a[href="/events/clash-at-the-creek"] [class*="ImageWrap"] > [class*="Fallback"]) {
+  opacity: 0 !important;
+}
