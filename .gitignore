@@ -1,10 +1,13 @@
-
 public/media
 public/photos
 newspaper_staging
 .next
 node_modules
-.env.local
+
+# Never commit local credentials
+.env
+.env.*
+!.env.example
 
 # Museum Data Pipeline & Local Assets Exclusions
 public/photos 4.29.2026/
@@ -21,4 +24,4 @@ AGENTS.md
 CLAUDE.md
 upload.photos.js
 museum-newspaper-manager/newspaper-upload-batch/
-museum-newspaper-manager/newspaper-upload-batch/
+museum-room-manager/uploads/

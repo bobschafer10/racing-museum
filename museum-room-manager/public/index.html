@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Museum Room Manager</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-kicker">Upper Midwest Auto Racing Museum</span>
+        <strong>Museum Room Manager</strong>
+        <small>Local-only exhibit builder</small>
+      </div>
+      <div class="connection" id="connectionStatus">Checking Supabase…</div>
+      <div class="sidebar-head">
+        <span>Rooms</span>
+        <button id="newRoomButton" type="button">+ New</button>
+      </div>
+      <div id="roomList" class="room-list"></div>
+      <div class="sidebar-note">
+        <b>Safe by design</b>
+        <span>Images upload directly to Supabase Storage. Credentials stay on this computer.</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div id="emptyState" class="empty-state">
+        <h1>Select a Museum Room</h1>
+        <p>Choose a Room on the left to manage its images, timeline and publication status.</p>
+      </div>
+
+      <div id="roomWorkspace" class="workspace hidden">
+        <header class="workspace-header">
+          <div>
+            <span id="roomEyebrow" class="eyebrow"></span>
+            <h1 id="roomTitle"></h1>
+            <p id="roomSubtitle"></p>
+          </div>
+          <div class="header-actions">
+            <button id="previewButton" class="secondary" type="button">Preview Wall</button>
+            <button id="saveRoomButton" type="button">Save Room</button>
+          </div>
+        </header>
+
+        <section class="panel room-settings">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Room Settings</span>
+              <h2>Identity & publication</h2>
+            </div>
+            <span id="saveMessage" class="save-message"></span>
+          </div>
+          <div class="settings-grid">
+            <label>Title<input id="titleInput" type="text" /></label>
+            <label>Subtitle<input id="subtitleInput" type="text" /></label>
+            <label>Years label<input id="yearsInput" type="text" /></label>
+            <label>Status
+              <select id="statusInput">
+                <option value="draft">Draft — hidden</option>
+                <option value="preview">Preview — hidden</option>
+                <option value="published">Published — public</option>
+              </select>
+            </label>
+          </div>
+          <div class="publication-note" id="publicationNote"></div>
+        </section>
+
+        <section class="panel quick-import">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Fast Import</span>
+              <h2>Drop the whole image batch here</h2>
+              <p>Files named with a year are automatically assigned to that winner slot. A file containing “watermark” becomes the Room watermark.</p>
+            </div>
+          </div>
+          <label id="batchDrop" class="batch-drop">
+            <input id="batchInput" type="file" accept="image/*" multiple />
+            <span class="drop-icon">＋</span>
+            <strong>Choose or drop Room images</strong>
+            <small>Example: “1978 - Dave Watson.png” → 1978 winner</small>
+          </label>
+          <div id="batchProgress" class="batch-progress hidden"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Room Identity</span>
+              <h2>Hero & exhibit images</h2>
+              <p>These establish the Room before the visitor reaches the year-by-year wall.</p>
+            </div>
+          </div>
+          <div id="identityGrid" class="asset-grid identity-grid"></div>
+        </section>
+
+        <section class="panel winners-panel">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Timeline</span>
+              <h2 id="winnerWallTitle">Winner Wall</h2>
+              <p>Only approved photographs are shown. Empty years become a clean year plaque—never a random substitute.</p>
+            </div>
+            <span id="coverageCount" class="coverage"></span>
+          </div>
+          <div id="winnerGrid" class="winner-grid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Additional Material</span>
+              <h2>Artifacts & display-case images</h2>
+              <p>Programs, newspaper scans, memorabilia and supporting photographs can be added without crowding the main wall.</p>
+            </div>
+            <button id="addArtifactButton" class="secondary" type="button">+ Add artifact</button>
+          </div>
+          <div id="artifactGrid" class="asset-grid"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="previewDialog" class="preview-dialog">
+    <div class="preview-toolbar">
+      <div>
+        <span>Room preview</span>
+        <strong id="previewTitle"></strong>
+      </div>
+      <button id="closePreviewButton" type="button">Close</button>
+    </div>
+    <div id="previewContent" class="preview-content"></div>
+  </dialog>
+
+  <dialog id="newRoomDialog" class="form-dialog">
+    <form id="newRoomForm" method="dialog">
+      <span class="eyebrow">New exhibit</span>
+      <h2>Create a Museum Room</h2>
+      <label>Room number<input name="room_number" placeholder="002" required /></label>
+      <label>Title<input name="title" placeholder="The Numbers of Dick Trickle" required /></label>
+      <label>Slug<input name="slug" placeholder="numbers-of-dick-trickle" /></label>
+      <label>Subtitle<input name="subtitle" placeholder="Cars, numbers, owners and victories" /></label>
+      <label>Years label<input name="years_label" placeholder="1958–2002" /></label>
+      <div class="dialog-actions">
+        <button value="cancel" class="secondary" type="button" id="cancelNewRoom">Cancel</button>
+        <button value="default" type="submit">Create Room</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/app.js"></script>
+</body>
+</html>
