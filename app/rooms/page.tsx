@@ -1,8 +1,4 @@
-import RoomDoorLink from './RoomDoorLink'
 import styles from './rooms.module.css'
-
-const HERO =
-  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/lacrosse-interstate-speedway/1981/lacrosse-interstate-speedway_1981_dick-trickle_stan-kalwasinski_photo_555.jpg'
 
 export default function MuseumRoomsPage() {
   return (
@@ -20,21 +16,14 @@ export default function MuseumRoomsPage() {
 
       <div className={styles.roomsShell}>
         <div className={styles.roomsGrid}>
-          <RoomDoorLink href="/rooms/oktoberfest-larry-wehrs" className={styles.roomCard}>
-            <img src={HERO} alt="Historic LaCrosse Interstate Speedway racing" className={styles.roomCardImage} />
-            <span className={styles.roomCardShade} aria-hidden="true" />
-            <span className={styles.roomCardCopy}>
-              <span className={styles.roomNumber}>Room 001 • Now Showing</span>
-              <img
-                src="/logos/series/oktoberfest-race-weekend.jpg"
-                alt="Oktoberfest Race Weekend"
-                className={styles.roomLogo}
-              />
-              <h2>The Larry Wehrs Years</h2>
-              <p>Oktoberfest Race Weekend • 1970–1986</p>
-              <span className={styles.roomCta}>Enter the Room →</span>
-            </span>
-          </RoomDoorLink>
+          <article className={styles.roomComingSoon}>
+            <span className={styles.roomNumber}>Room 001 • In Development</span>
+            <h2>Oktoberfest Race Weekend</h2>
+            <p>
+              The Larry Wehrs Years exhibit is being rebuilt before it returns to the museum floor.
+            </p>
+            <span className={styles.roomCta}>Temporarily Closed</span>
+          </article>
 
           <article className={styles.roomComingSoon}>
             <span className={styles.roomNumber}>Room 002 • In Development</span>
@@ -48,8 +37,7 @@ export default function MuseumRoomsPage() {
         </div>
 
         <div className={styles.roomsNote}>
-          Rooms remain permanently available after leaving the homepage. New exhibits will rotate
-          into the museum entrance while earlier rooms stay open here for visitors to revisit.
+          Museum Rooms open only after their exhibit material and presentation have been fully reviewed.
         </div>
       </div>
     </main>
