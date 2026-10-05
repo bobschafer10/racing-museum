@@ -1,0 +1,85 @@
+.aliasBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.aliasLabel {
+  color: #9da3a7;
+  font-size: 0.61rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.aliasNames {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 9px;
+  align-items: center;
+}
+
+.aliasItem {
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.aliasWordmark {
+  color: #e6cf9b;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.08;
+  text-transform: uppercase;
+  text-shadow: 0 1px 8px rgba(0,0,0,.35);
+}
+
+.aliasYears {
+  color: #92989c;
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+}
+
+.aliasLogo {
+  display: block;
+  width: auto;
+  max-width: 150px;
+  height: auto;
+  max-height: 34px;
+  object-fit: contain;
+}
+
+.cardAlias {
+  margin-top: 7px;
+  padding: 7px 9px;
+  border-left: 2px solid rgba(198,161,91,.56);
+  background: rgba(198,161,91,.055);
+}
+
+.directoryAlias {
+  margin-top: 6px;
+  white-space: normal;
+}
+
+.directoryAlias .aliasLabel {
+  font-size: 0.57rem;
+}
+
+.directoryAlias .aliasWordmark {
+  font-size: 0.87rem;
+}
+
+@media (max-width: 760px) {
+  .aliasWordmark {
+    font-size: 0.92rem;
+  }
+
+  .aliasLogo {
+    max-width: 130px;
+    max-height: 30px;
+  }
+}
