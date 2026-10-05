@@ -55,7 +55,7 @@ export default async function RedClayClassicPage(){
           <Stat label="History" value="1976–2026"/>
           <Stat label="Division Events" value={String(events.length)}/>
           <Stat label="Result Rows" value={resultCount.toLocaleString('en-US')}/>
-          <Stat label="51st Edition" value="Oct. 2–3, 2026"/>
+          <Stat label="51st Edition" value="Oct. 4, 2026"/>
         </div>
       </div>
     </section>
@@ -65,8 +65,8 @@ export default async function RedClayClassicPage(){
         <div className={styles.twoCol}>
           <div className={styles.sourceCard}>
             <div className={styles.sourceLabel}>Red Clay Classic Tradition</div>
-            <strong>The event began in 1976 and reached its 50th running in 2025.</strong>
-            <p>ABC Raceway&apos;s official champions archive is the chronology standard. Historical finishing orders are displayed only where they survive in the Museum record, while modern official ABC Raceway race reports preserve complete feature fields from 2019 and 2021–2025.</p>
+            <strong>The event began in 1976; the 51st edition was completed October 4, 2026.</strong>
+            <p>ABC Raceway&apos;s official champions archive is the chronology standard. Historical finishing orders are displayed only where they survive in the Museum record. The 2026 championship program was postponed by rain on October 3 and completed on October 4, with full feature fields preserved for all four divisions.</p>
           </div>
           {secondarySrc?<div className={styles.sourceCard}><img src={secondarySrc} alt="Historic racing at ABC Raceway" style={{width:'100%',height:'auto',display:'block'}}/></div>:null}
         </div>
@@ -91,7 +91,7 @@ export default async function RedClayClassicPage(){
             const divisions=yearMap.get(year)
             const cancelLabel=cancelledYears[year]
             const count=divisions?.size??0
-            const status=year===2026?'Upcoming · Oct. 2–3':cancelLabel||(count?`${count} Division${count===1?'':'s'}`:'Researching')
+            const status=year===2026&&count?`Completed Oct. 4 · ${count} Divisions`:cancelLabel||(count?`${count} Division${count===1?'':'s'}`:'Researching')
             return <Link key={year} href={`/events/red-clay-classic/${year}`} className={styles.yearCard}><div className={styles.yearNumber}>{year}</div><div className={styles.yearStatus}>{status}</div></Link>
           })}
         </div>
