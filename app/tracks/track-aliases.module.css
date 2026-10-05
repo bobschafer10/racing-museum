@@ -73,6 +73,41 @@
   font-size: 0.87rem;
 }
 
+.profileAlias {
+  width: fit-content;
+  max-width: min(100%, 760px);
+  margin-top: 10px;
+  padding: 10px 13px 11px;
+  border-left: 3px solid rgba(198,161,91,.72);
+  background: linear-gradient(90deg, rgba(198,161,91,.12), rgba(198,161,91,.025));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+.profileAlias .aliasLabel {
+  color: #b8ab8c;
+  font-size: 0.65rem;
+}
+
+.profileAlias .aliasNames {
+  gap: 7px 14px;
+}
+
+.profileAlias .aliasWordmark {
+  color: #efd9a5;
+  font-size: clamp(1.05rem, 2vw, 1.32rem);
+  letter-spacing: 0.045em;
+}
+
+.profileAlias .aliasYears {
+  color: #b1b5b7;
+  font-size: 0.68rem;
+}
+
+.profileAlias .aliasLogo {
+  max-width: 210px;
+  max-height: 48px;
+}
+
 @media (max-width: 760px) {
   .aliasWordmark {
     font-size: 0.92rem;
@@ -81,5 +116,20 @@
   .aliasLogo {
     max-width: 130px;
     max-height: 30px;
+  }
+
+  .profileAlias {
+    width: 100%;
+    margin-top: 8px;
+    padding: 9px 11px 10px;
+  }
+
+  .profileAlias .aliasWordmark {
+    font-size: 1.03rem;
+  }
+
+  .profileAlias .aliasLogo {
+    max-width: 170px;
+    max-height: 40px;
   }
 }
