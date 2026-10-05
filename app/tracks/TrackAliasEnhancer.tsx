@@ -24,11 +24,65 @@ function formatAliasYears(alias: TrackAlias) {
   return ''
 }
 
+function buildAliasBlock(
+  trackAliases: TrackAlias[],
+  variant: 'card' | 'directory' | 'profile',
+) {
+  const block = document.createElement('div')
+  block.className = `${styles.aliasBlock} ${
+    variant === 'directory'
+      ? styles.directoryAlias
+      : variant === 'profile'
+        ? styles.profileAlias
+        : styles.cardAlias
+  }`
+  block.setAttribute('aria-label', 'Historic or alternate track names')
+
+  const label = document.createElement('span')
+  label.className = styles.aliasLabel
+  label.textContent = trackAliases.length === 1 ? 'Also known as' : 'Historic names'
+  block.appendChild(label)
+
+  const names = document.createElement('span')
+  names.className = styles.aliasNames
+
+  trackAliases.forEach((alias) => {
+    const item = document.createElement('span')
+    item.className = styles.aliasItem
+
+    if (alias.alias_logo_url) {
+      const image = document.createElement('img')
+      image.src = alias.alias_logo_url
+      image.alt = alias.alias_name
+      image.className = styles.aliasLogo
+      item.appendChild(image)
+    } else {
+      const wordmark = document.createElement('span')
+      wordmark.className = styles.aliasWordmark
+      wordmark.textContent = alias.alias_name
+      item.appendChild(wordmark)
+    }
+
+    const years = formatAliasYears(alias)
+    if (years) {
+      const yearSpan = document.createElement('span')
+      yearSpan.className = styles.aliasYears
+      yearSpan.textContent = years
+      item.appendChild(yearSpan)
+    }
+
+    names.appendChild(item)
+  })
+
+  block.appendChild(names)
+  return block
+}
+
 export default function TrackAliasEnhancer({ aliases }: { aliases: TrackAlias[] }) {
   const pathname = usePathname()
 
   useEffect(() => {
-    if (pathname !== '/tracks' || aliases.length === 0) return
+    if (aliases.length === 0) return
 
     const aliasesBySlug = new Map<string, TrackAlias[]>()
     aliases.forEach((alias) => {
@@ -39,80 +93,62 @@ export default function TrackAliasEnhancer({ aliases }: { aliases: TrackAlias[] 
 
     const insertedBlocks: HTMLElement[] = []
     const touchedLinks: HTMLAnchorElement[] = []
-    const trackLinks = Array.from(
-      document.querySelectorAll<HTMLAnchorElement>('a[href^="/tracks/"]'),
-    )
 
-    trackLinks.forEach((link) => {
-      const href = link.getAttribute('href') || ''
-      const slug = href.startsWith('/tracks/') ? href.slice('/tracks/'.length).split(/[?#]/)[0] : ''
-      const trackAliases = aliasesBySlug.get(slug)
-
-      if (!trackAliases?.length || link.dataset.trackAliasEnhanced === 'true') return
-
-      const cardName = link.querySelector<HTMLElement>(
-        '[class*="trackCardName"], [class*="discoveryName"]',
+    if (pathname === '/tracks') {
+      const trackLinks = Array.from(
+        document.querySelectorAll<HTMLAnchorElement>('a[href^="/tracks/"]'),
       )
-      const tableCell = link.closest('td')
 
-      if (!cardName && !tableCell) return
+      trackLinks.forEach((link) => {
+        const href = link.getAttribute('href') || ''
+        const slug = href.startsWith('/tracks/') ? href.slice('/tracks/'.length).split(/[?#]/)[0] : ''
+        const trackAliases = aliasesBySlug.get(slug)
 
-      const block = document.createElement('div')
-      block.className = `${styles.aliasBlock} ${tableCell ? styles.directoryAlias : styles.cardAlias}`
-      block.setAttribute('aria-label', 'Historic or alternate track names')
+        if (!trackAliases?.length || link.dataset.trackAliasEnhanced === 'true') return
 
-      const label = document.createElement('span')
-      label.className = styles.aliasLabel
-      label.textContent = trackAliases.length === 1 ? 'Also known as' : 'Historic names'
-      block.appendChild(label)
+        const cardName = link.querySelector<HTMLElement>(
+          '[class*="trackCardName"], [class*="discoveryName"]',
+        )
+        const tableCell = link.closest('td')
 
-      const names = document.createElement('span')
-      names.className = styles.aliasNames
+        if (!cardName && !tableCell) return
 
-      trackAliases.forEach((alias) => {
-        const item = document.createElement('span')
-        item.className = styles.aliasItem
+        const block = buildAliasBlock(trackAliases, tableCell ? 'directory' : 'card')
 
-        if (alias.alias_logo_url) {
-          const image = document.createElement('img')
-          image.src = alias.alias_logo_url
-          image.alt = alias.alias_name
-          image.className = styles.aliasLogo
-          item.appendChild(image)
+        if (cardName) {
+          cardName.insertAdjacentElement('afterend', block)
         } else {
-          const wordmark = document.createElement('span')
-          wordmark.className = styles.aliasWordmark
-          wordmark.textContent = alias.alias_name
-          item.appendChild(wordmark)
+          link.insertAdjacentElement('afterend', block)
         }
 
-        const years = formatAliasYears(alias)
-        if (years) {
-          const yearSpan = document.createElement('span')
-          yearSpan.className = styles.aliasYears
-          yearSpan.textContent = years
-          item.appendChild(yearSpan)
-        }
-
-        names.appendChild(item)
+        link.dataset.trackAliasEnhanced = 'true'
+        touchedLinks.push(link)
+        insertedBlocks.push(block)
       })
+    } else {
+      const segments = pathname.split('/').filter(Boolean)
+      const slug = segments[0] === 'tracks' && segments[1] && segments[1] !== 'state'
+        ? segments[1]
+        : ''
+      const trackAliases = slug ? aliasesBySlug.get(slug) : undefined
 
-      block.appendChild(names)
-
-      if (cardName) {
-        cardName.insertAdjacentElement('afterend', block)
-      } else {
-        link.insertAdjacentElement('afterend', block)
+      if (trackAliases?.length) {
+        const title = document.querySelector<HTMLElement>('h1[class*="title"]')
+        if (title && title.dataset.trackAliasEnhanced !== 'true') {
+          const block = buildAliasBlock(trackAliases, 'profile')
+          title.insertAdjacentElement('afterend', block)
+          title.dataset.trackAliasEnhanced = 'true'
+          insertedBlocks.push(block)
+        }
       }
-
-      link.dataset.trackAliasEnhanced = 'true'
-      touchedLinks.push(link)
-      insertedBlocks.push(block)
-    })
+    }
 
     return () => {
       insertedBlocks.forEach((block) => block.remove())
       touchedLinks.forEach((link) => delete link.dataset.trackAliasEnhanced)
+      document
+        .querySelectorAll<HTMLElement>('[data-track-alias-enhanced="true"]')
+        .forEach((element) => delete element.dataset.trackAliasEnhanced)
     }
   }, [aliases, pathname])
 
