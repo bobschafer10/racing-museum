@@ -16,6 +16,9 @@ const cancelledYears:Record<number,{title:string;note:string}>={
   2009:{title:'Rained Out',note:'Rain prevented the 2009 Red Clay Classic from being run.'},
   2020:{title:'Event Cancelled',note:'The 2020 Red Clay Classic was cancelled because of COVID-19 restrictions and the weather forecast.'}
 }
+const editionNotes:Record<number,string>={
+  2026:'Originally scheduled for October 3, the championship program was postponed by rain and completed on October 4, 2026.'
+}
 
 type SeasonRow={id:number;series_id:number|null;year:number}
 type ResultRow={id:number;finishing_position:number|null;starting_position:string|null;car_number:string|null;driver_name:string;status:string|null;result_section:string|null}
@@ -41,7 +44,8 @@ export default async function RedClayClassicYearPage({params}:{params:Promise<{y
   const grouped=new Map<number,RaceRow[]>()
   for(const race of races){if(!race.series_id)continue;if(!grouped.has(race.series_id))grouped.set(race.series_id,[]);grouped.get(race.series_id)!.push(race)}
   const cancelled=cancelledYears[seasonYear]
-  const upcoming=seasonYear===2026
+  const upcoming=seasonYear===2026&&races.length===0
+  const completed2026=seasonYear===2026&&races.length>0
   const previousYear=seasonYear>MIN_YEAR?seasonYear-1:null
   const nextYear=seasonYear<MAX_YEAR?seasonYear+1:null
   const resultRows=races.reduce((sum,r)=>sum+(r.SeriesEventResults?.length??0),0)
@@ -55,7 +59,7 @@ export default async function RedClayClassicYearPage({params}:{params:Promise<{y
         <div className={styles.breadcrumbs}><Link href="/">Home</Link><span>›</span><Link href="/events">Special Events</Link><span>›</span><Link href="/events/red-clay-classic">Red Clay Classic</Link><span>›</span><span>{seasonYear}</span></div>
         <div className={styles.eyebrow}>Red Clay Classic Edition Archive</div>
         <h1 className={styles.title}>{seasonYear} Red Clay Classic</h1>
-        <p className={styles.tagline}>{upcoming?'51st Annual · October 2–3':cancelled?cancelled.title:races.length?`${grouped.size} Championship Division${grouped.size===1?'':'s'}`:'Archive Record Pending'}</p>
+        <p className={styles.tagline}>{upcoming?'51st Annual · October 3':completed2026?'51st Annual · Completed October 4':cancelled?cancelled.title:races.length?`${grouped.size} Championship Division${grouped.size===1?'':'s'}`:'Archive Record Pending'}</p>
         <div className={styles.stats}>
           <Stat label="Edition" value={String(seasonYear)}/>
           <Stat label="Divisions" value={upcoming||cancelled?'—':String(grouped.size)}/>
@@ -73,13 +77,16 @@ export default async function RedClayClassicYearPage({params}:{params:Promise<{y
       </div>
 
       {upcoming?
-        <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>51st Annual Red Clay Classic</div><strong>October 2–3, 2026 · ABC Raceway</strong><p>The scheduled championship program includes WISSOTA Late Models, Modifieds, Super Stocks and Midwest Modifieds. Results will be added after the event is completed.</p></div></section>
+        <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>51st Annual Red Clay Classic</div><strong>October 3, 2026 · ABC Raceway</strong><p>The scheduled championship program includes WISSOTA Late Models, Modifieds, Super Stocks and Midwest Modifieds. Results will be added after the event is completed.</p></div></section>
         :cancelled?
         <section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>{seasonYear} Edition</div><strong>{cancelled.title}</strong><p>{cancelled.note} No finishing order is reconstructed.</p></div></section>
         :error?
         <div className={styles.empty}>Unable to load this Red Clay Classic year from the Museum database.</div>
         :races.length?
-        SERIES_IDS.filter(id=>grouped.has(id)).map(id=><DivisionSection key={id} title={divisionNames[id]} races={grouped.get(id)??[]}/>)
+        <>
+          {editionNotes[seasonYear]?<section className={styles.section}><div className={styles.sourceCard}><div className={styles.sourceLabel}>{seasonYear} Edition Note</div><strong>Completed October 4, 2026 · ABC Raceway</strong><p>{editionNotes[seasonYear]}</p></div></section>:null}
+          {SERIES_IDS.filter(id=>grouped.has(id)).map(id=><DivisionSection key={id} title={divisionNames[id]} races={grouped.get(id)??[]}/>)}
+        </>
         :<div className={styles.empty}>No Red Clay Classic championship result is currently documented for this year.</div>}
 
       <div className={styles.footerLinks}>
