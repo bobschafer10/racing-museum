@@ -1,0 +1,111 @@
+name: PaddleOCR CFRN 1990 Ingest Resume
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - .github/workflows/paddleocr-cfrn-1990-ingest.yml
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+  id-token: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Download completed CFRN 1990 OCR artifacts
+        uses: actions/download-artifact@v4
+        with:
+          repository: bobschafer10/racing-museum
+          run-id: '37835188891'
+          github-token: ${{ github.token }}
+          pattern: cfrn-1990-*
+          path: collected
+          merge-multiple: false
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest OCR in small page chunks
+        shell: bash
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+          EXPECTED_PAGES: '444'
+        run: |
+          set -euo pipefail
+          total=0
+          candidate_total=0
+          rm -rf /tmp/cfrn-chunks
+          mkdir -p /tmp/cfrn-chunks
+
+          while IFS= read -r summary; do
+            issue_dir="$(dirname "$summary")"
+            issue="$(jq -r '.issue_date' "$summary")"
+            issue_chunks="/tmp/cfrn-chunks/$issue"
+            mkdir -p "$issue_chunks"
+
+            python - "$issue_dir" "$issue_chunks" <<'PY'
+          import json, sys
+          from pathlib import Path
+
+          root=Path(sys.argv[1])
+          out=Path(sys.argv[2])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          metas=list(summary.get('pages',[]))
+          chunk_size=4
+
+          for start in range(0,len(metas),chunk_size):
+              chunk_metas=metas[start:start+chunk_size]
+              page_names={str(meta['page']) for meta in chunk_metas}
+              pages=[]
+              for meta in chunk_metas:
+                  page=str(meta['page'])
+                  stem=Path(page).stem
+                  text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+                  pages.append({'page':page,'text':text,'meta':meta})
+              chunk_summary=dict(summary)
+              chunk_summary['pages']=chunk_metas
+              chunk_summary['page_count']=len(chunk_metas)
+              payload={
+                  'publication':'checkered-flag-racing-news',
+                  'year':1990,
+                  'issue':summary['issue_date'],
+                  'summary':chunk_summary,
+                  'pages':pages,
+                  'candidates':[c for c in candidates if str(c.get('page','')) in page_names],
+              }
+              target=out/f'{start//chunk_size:03d}.json'
+              target.write_text(json.dumps(payload,separators=(',',':')),encoding='utf-8')
+          PY
+
+            for payload in "$issue_chunks"/*.json; do
+              response="$(curl -fsSL --retry 3 --retry-all-errors --retry-delay 2 --max-time 90 -X POST \
+                -H "Authorization: Bearer ${OIDC_TOKEN}" \
+                -H 'Content-Type: application/json' \
+                --data-binary @"$payload" \
+                'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+              updated="$(echo "$response" | jq -r '.updated // 0')"
+              saved_candidates="$(echo "$response" | jq -r '.candidates_saved // 0')"
+              total=$((total + updated))
+              candidate_total=$((candidate_total + saved_candidates))
+              echo "$issue $(basename "$payload"): $updated pages, $saved_candidates candidates"
+            done
+          done < <(find collected -name summary.json -print | sort)
+
+          echo "Imported/verified searchable scans: $total / $EXPECTED_PAGES"
+          echo "Saved automated standings candidates: $candidate_total"
+          test "$total" -eq "$EXPECTED_PAGES"
