@@ -11,7 +11,7 @@ export default async function EventsPage({ searchParams }: { searchParams?: Sear
     <div className={imageFixes.scope}>
       <div style={{background:'#0b0f12',borderBottom:'1px solid #343a3e',padding:'10px 22px',textAlign:'center',fontFamily:'Arial,Helvetica,sans-serif'}}>
         <Link href="/events/paul-bunyan-stampede" style={{color:'#f5f2e9',textDecoration:'none',fontSize:'12px',fontWeight:900,letterSpacing:'.08em',textTransform:'uppercase'}}>
-          New Archive Addition — Paul Bunyan Stampede • Bemidji Speedway • October 3–4, 2026 →
+          Expanded Archive — Paul Bunyan Stampede • Probable 1980 lineage • Recovered history + 2017–2026 results →
         </Link>
       </div>
       <OriginalEventsPage searchParams={searchParams} />
