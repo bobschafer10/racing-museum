@@ -28,10 +28,10 @@
 
 .aliasWordmark {
   color: #e6cf9b;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
-  font-weight: 900;
-  letter-spacing: 0.035em;
+  font-weight: 700;
+  letter-spacing: 0.045em;
   line-height: 1.08;
   text-transform: uppercase;
   text-shadow: 0 1px 8px rgba(0,0,0,.35);
