@@ -112,6 +112,10 @@ type OcrArchivePublication = {
   storageRoot: string
 }
 
+function ocrPageUrl(row: OcrArchiveRow) {
+  return `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`
+}
+
 async function getOcrBackedIssues(
   afterIssueDate: string,
   config: OcrArchivePublication
@@ -147,23 +151,26 @@ async function getOcrBackedIssues(
     byIssue.set(row.issue_date, issueRows)
   }
 
-  return Array.from(byIssue.entries()).map(([issueDate, issueRows]) => ({
-    slug: issueDate,
-    title: titleFromIsoDate(issueDate),
-    publication: config.publication,
-    publicationSlug: config.publicationSlug,
-    year: Number(issueDate.slice(0, 4)),
-    issueDate,
-    description: null,
-    coverImage: `${config.storageRoot}/${issueDate}/front-cover.jpg`,
-    backCoverImage: `${config.storageRoot}/${issueDate}/back-cover.jpg`,
-    thumbnail: `${config.storageRoot}/${issueDate}/thumbnail.jpg`,
-    pages: issueRows.map(
-      (row) =>
-        `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`
-    ),
-    featured: false,
-  }))
+  return Array.from(byIssue.entries()).map(([issueDate, issueRows]) => {
+    const pages = issueRows.map(ocrPageUrl)
+    return {
+      slug: issueDate,
+      title: titleFromIsoDate(issueDate),
+      publication: config.publication,
+      publicationSlug: config.publicationSlug,
+      year: Number(issueDate.slice(0, 4)),
+      issueDate,
+      description: null,
+      // OCR-backed batches do not always include convenience copies such as
+      // front-cover.jpg/thumbnail.jpg. The first and last preserved scans are
+      // authoritative and always exist when an OCR-backed issue is returned.
+      coverImage: pages[0] || "",
+      backCoverImage: pages.at(-1) || pages[0] || null,
+      thumbnail: pages[0] || null,
+      pages,
+      featured: false,
+    }
+  })
 }
 
 function mrn1978Pages(issueDate: string, count: number) {
