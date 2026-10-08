@@ -1,0 +1,170 @@
+name: PaddleOCR CFRN 1990 Storage
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - .github/workflows/paddleocr-cfrn-1990-storage.yml
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+  id-token: write
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        include:
+          - { issue: '1990-02-07', page_count: 32 }
+          - { issue: '1990-04-11', page_count: 16 }
+          - { issue: '1990-04-18', page_count: 16 }
+          - { issue: '1990-04-25', page_count: 20 }
+          - { issue: '1990-05-02', page_count: 24 }
+          - { issue: '1990-05-09', page_count: 24 }
+          - { issue: '1990-05-16', page_count: 28 }
+          - { issue: '1990-05-23', page_count: 24 }
+          - { issue: '1990-06-27', page_count: 32 }
+          - { issue: '1990-07-04', page_count: 28 }
+          - { issue: '1990-08-29', page_count: 32 }
+          - { issue: '1990-09-05', page_count: 28 }
+          - { issue: '1990-09-12', page_count: 24 }
+          - { issue: '1990-09-19', page_count: 24 }
+          - { issue: '1990-10-17', page_count: 20 }
+          - { issue: '1990-11-14', page_count: 20 }
+          - { issue: '1990-11-15', page_count: 20 }
+          - { issue: '1990-12-12', page_count: 32 }
+    steps:
+      - name: Check out OCR runner only
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: Build page list
+        id: pages
+        shell: bash
+        env:
+          PAGE_COUNT: ${{ matrix.page_count }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          n=int(os.environ['PAGE_COUNT'])
+          print('json='+json.dumps([f'{i:03d}.jpg' for i in range(1,n+1)],separators=(',',':')))
+          PY
+
+      - name: OCR ${{ matrix.issue }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: checkered-flag-racing-news
+          MRN_ISSUE_DATE: ${{ matrix.issue }}
+          MRN_PAGES_JSON: ${{ steps.pages.outputs.json }}
+          MRN_OUTPUT_ROOT: audit/paddleocr-cfrn-1990/${{ matrix.issue }}
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Upload OCR artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfrn-1990-${{ matrix.issue }}
+          path: audit/paddleocr-cfrn-1990/${{ matrix.issue }}
+          if-no-files-found: warn
+          retention-days: 14
+
+  ingest:
+    needs: ocr
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Download issue artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: cfrn-1990-*
+          path: collected
+          merge-multiple: false
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest OCR pages and standings candidates
+        shell: bash
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+          EXPECTED_PAGES: '444'
+        run: |
+          set -euo pipefail
+          total=0
+          candidate_total=0
+          while IFS= read -r summary; do
+            issue_dir="$(dirname "$summary")"
+            issue="$(jq -r '.issue_date' "$summary")"
+            python - "$issue_dir" > /tmp/ocr-payload.json <<'PY'
+          import json, sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          pages=[]
+          for meta in summary.get('pages',[]):
+              page=str(meta['page'])
+              stem=Path(page).stem
+              text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+              pages.append({'page':page,'text':text,'meta':meta})
+          payload={
+              'publication':'checkered-flag-racing-news',
+              'year':1990,
+              'issue':summary['issue_date'],
+              'summary':summary,
+              'pages':pages,
+              'candidates':candidates,
+          }
+          print(json.dumps(payload,separators=(',',':')))
+          PY
+            response="$(curl -fsSL -X POST \
+              -H "Authorization: Bearer ${OIDC_TOKEN}" \
+              -H 'Content-Type: application/json' \
+              --data-binary @/tmp/ocr-payload.json \
+              'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+            echo "$issue: $response"
+            updated="$(echo "$response" | jq -r '.updated // 0')"
+            saved_candidates="$(echo "$response" | jq -r '.candidates_saved // 0')"
+            total=$((total + updated))
+            candidate_total=$((candidate_total + saved_candidates))
+          done < <(find collected -name summary.json -print | sort)
+          echo "Imported searchable scans: $total / $EXPECTED_PAGES"
+          echo "Saved automated standings candidates: $candidate_total"
+          test "$total" -eq "$EXPECTED_PAGES"
