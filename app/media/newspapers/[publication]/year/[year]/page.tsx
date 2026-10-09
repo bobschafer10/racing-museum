@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 import { getNewspaperIssues } from "@/lib/newspapers"
 import "../../../../archive-dark.css"
 
-const CFRN_PARTIAL_ARCHIVE_YEARS = new Set(["1990", "1992", "1995", "1996", "1997", "1998"])
+const CFRN_PARTIAL_ARCHIVE_YEARS = new Set(["1990", "1992", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2003", "2004", "2005"])
 
 export default async function NewspaperYearPage({ params }: { params: Promise<{ publication: string; year: string }> }) {
   const { publication, year } = await params
