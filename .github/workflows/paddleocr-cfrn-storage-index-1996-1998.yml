@@ -15,6 +15,11 @@ jobs:
   index:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        year: [1996, 1997, 1998]
     steps:
       - name: Obtain short-lived GitHub OIDC token
         id: oidc
@@ -27,22 +32,24 @@ jobs:
           test -n "$TOKEN"
           echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
 
-      - name: Parse stored OCR and populate searchable index
+      - name: Parse stored OCR and populate searchable index for ${{ matrix.year }}
         shell: bash
         env:
           OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+          YEAR: ${{ matrix.year }}
         run: |
           set -euo pipefail
           python - <<'PY'
-          import json, os, re, urllib.request, urllib.error
+          import json, os, re, time, urllib.request, urllib.error
 
           PROJECT = "szvkleurojiwqkkztxtr"
           PUBLICATION = "checkered-flag-racing-news"
           STORAGE = f"https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{PUBLICATION}"
           IMPORT = f"https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-import"
           TOKEN = os.environ["OIDC_TOKEN"]
+          YEAR = int(os.environ["YEAR"])
 
-          issues = {
+          all_issues = {
               "1996-02-07": 24, "1996-03-06": 20, "1996-04-03": 28,
               "1996-04-10": 16, "1996-04-17": 20, "1996-04-24": 24,
               "1996-05-08": 28, "1996-05-15": 28, "1996-05-22": 32,
@@ -54,13 +61,34 @@ jobs:
               "1998-09-02": 36, "1998-09-23": 28, "1998-10-07": 20,
               "1998-10-21": 24,
           }
+          issues = {issue: count for issue, count in all_issues.items() if issue.startswith(f"{YEAR}-")}
+          if not issues:
+              raise RuntimeError(f"No configured CFRN issues for {YEAR}")
 
           old_header = re.compile(r"(?m)^---\s+([^\r\n]+?\.jpe?g)\s+---\s*$", re.I)
           page_header = re.compile(r"(?im)^\s*(?:={2,}\s*)?(?:page|pg\.?)[ #:.-]*(\d{1,3})(?:\s*(?:of|/)\s*\d{1,3})?\s*(?:={2,})?\s*$")
 
-          def fetch_text(url):
-              req = urllib.request.Request(url, headers={"User-Agent": "UMARM CFRN stored OCR indexer/1.1"})
-              with urllib.request.urlopen(req, timeout=30) as r:
+          def request_with_retry(req, timeout, label):
+              last = None
+              for attempt in range(1, 5):
+                  try:
+                      return urllib.request.urlopen(req, timeout=timeout)
+                  except urllib.error.HTTPError as e:
+                      detail = e.read().decode("utf-8", "replace")
+                      if e.code not in (408, 409, 429) and e.code < 500:
+                          raise RuntimeError(f"{label} failed HTTP {e.code}: {detail}") from e
+                      last = RuntimeError(f"{label} failed HTTP {e.code}: {detail}")
+                  except (urllib.error.URLError, TimeoutError) as e:
+                      last = e
+                  if attempt < 4:
+                      delay = attempt * 3
+                      print(f"{label}: transient failure on attempt {attempt}; retrying in {delay}s", flush=True)
+                      time.sleep(delay)
+              raise RuntimeError(f"{label} failed after retries: {last}")
+
+          def fetch_text(url, issue):
+              req = urllib.request.Request(url, headers={"User-Agent": "UMARM CFRN stored OCR indexer/1.2"})
+              with request_with_retry(req, 60, f"{issue} OCR fetch") as r:
                   return r.read().decode("utf-8", "replace")
 
           def row(page, body, mode):
@@ -77,7 +105,6 @@ jobs:
           def parse_issue(text, expected):
               text = text.replace("\r\n", "\n").replace("\r", "\n")
 
-              # Museum legacy page separators.
               matches = list(old_header.finditer(text))
               if matches:
                   pages = []
@@ -94,13 +121,11 @@ jobs:
                   if [p["page"] for p in pages] == expected_names:
                       return pages, "legacy-page-headers"
 
-              # Many OCR tools preserve page boundaries with form-feed characters.
               ff = [chunk.strip() for chunk in text.split("\f")]
               ff = [chunk for chunk in ff if chunk]
               if len(ff) == expected:
                   return [row(f"{i:03d}.jpg", body, "form-feed") for i, body in enumerate(ff, 1)], "form-feed"
 
-              # Handle explicit PAGE 1 / PAGE 2 style headings if present.
               matches = list(page_header.finditer(text))
               if matches and len(matches) == expected:
                   pages = []
@@ -115,8 +140,6 @@ jobs:
                   if [p["page"] for p in pages] == expected_names:
                       return pages, "page-headings"
 
-              # If the uploaded OCR is one continuous issue stream, index it once on
-              # the first scan. The storage bridge still supplies all page images.
               body = text.strip()
               if not body:
                   raise RuntimeError("ocr.txt is empty")
@@ -127,12 +150,11 @@ jobs:
           issue_level_issues = 0
 
           for issue, expected in issues.items():
-              year = int(issue[:4])
-              text = fetch_text(f"{STORAGE}/{issue}/ocr.txt")
+              text = fetch_text(f"{STORAGE}/{issue}/ocr.txt", issue)
               pages, mode = parse_issue(text, expected)
               payload = {
                   "publication": PUBLICATION,
-                  "year": year,
+                  "year": YEAR,
                   "issue": issue,
                   "summary": {
                       "engine": "Stored OCR text import",
@@ -148,15 +170,11 @@ jobs:
                   headers={
                       "Authorization": f"Bearer {TOKEN}",
                       "Content-Type": "application/json",
-                      "User-Agent": "UMARM CFRN stored OCR indexer/1.1",
+                      "User-Agent": "UMARM CFRN stored OCR indexer/1.2",
                   },
               )
-              try:
-                  with urllib.request.urlopen(req, timeout=60) as r:
-                      response = json.loads(r.read().decode())
-              except urllib.error.HTTPError as e:
-                  detail = e.read().decode("utf-8", "replace")
-                  raise RuntimeError(f"{issue} import failed HTTP {e.code}: {detail}") from e
+              with request_with_retry(req, 120, f"{issue} index import") as r:
+                  response = json.loads(r.read().decode())
               if not response.get("ok") or int(response.get("updated", 0)) != len(pages):
                   raise RuntimeError(f"{issue} importer verification failed: {response}")
               indexed_rows += len(pages)
@@ -164,14 +182,15 @@ jobs:
                   page_level_issues += 1
               else:
                   issue_level_issues += 1
-              print(f"{issue}: mode={mode}, indexed_rows={len(pages)}, scans={expected}")
+              print(f"{issue}: mode={mode}, indexed_rows={len(pages)}, scans={expected}", flush=True)
 
           print(json.dumps({
               "ok": True,
+              "year": YEAR,
               "issues": len(issues),
               "scan_pages": sum(issues.values()),
               "indexed_rows": indexed_rows,
               "page_level_issues": page_level_issues,
               "issue_level_issues": issue_level_issues,
-          }, indent=2))
+          }, indent=2), flush=True)
           PY
