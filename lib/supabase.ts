@@ -33,6 +33,7 @@ const PUBLIC_READ_REVALIDATE_MS = PUBLIC_READ_REVALIDATE_SECONDS * 1_000
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 250_000
 const MAX_CACHE_ENTRIES = 750
+const IS_RENDER = process.env.RENDER === 'true'
 
 const homepageStatsFallback = {
   drivers_count: 32081,
@@ -47,15 +48,16 @@ function requestDetails(input: RequestInfo | URL, init?: RequestInit) {
   const url = request?.url || String(input)
   const method = (init?.method || request?.method || 'GET').toUpperCase()
   const headers = new Headers(request?.headers || init?.headers)
+  const accept = headers.get('accept') || ''
   const key = [
     method,
     url,
-    headers.get('accept') || '',
+    accept,
     headers.get('range') || '',
     headers.get('prefer') || '',
   ].join('|')
 
-  return { url, method, key }
+  return { url, method, key, accept }
 }
 
 function responseFromSnapshot(snapshot: CachedResponse) {
@@ -103,11 +105,35 @@ function seededHomepageStats(url: string) {
   })
 }
 
+function renderQuarantineResponse(url: string, method: string, accept: string) {
+  const seeded = seededHomepageStats(url)
+  if (seeded) return seeded
+
+  const wantsObject = accept.includes('application/vnd.pgrst.object')
+  return new Response(method === 'HEAD' ? null : wantsObject ? '{}' : '[]', {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8',
+      'Content-Range': '*/0',
+      'X-UMARM-Data-Source': 'render-quarantine',
+    },
+  })
+}
+
 const resilientFetch: typeof fetch = async (input, init) => {
-  const { url, method, key } = requestDetails(input, init)
+  const { url, method, key, accept } = requestDetails(input, init)
   const isPublicRestRead = method === 'GET' && url.includes('/rest/v1/')
   const isOcrSearchRpc = method === 'POST' && url.includes('/rest/v1/rpc/search_museum_ocr')
   const timeoutMs = isOcrSearchRpc ? OCR_SEARCH_TIMEOUT_MS : REQUEST_TIMEOUT_MS
+
+  // The museum's authoritative public deployment is Vercel. A legacy Render
+  // deployment is still connected to this repository and has been generating
+  // extremely high Supabase traffic during builds/crawler visits. On Render only,
+  // never fan public REST/RPC reads into the production database. The Render web
+  // endpoint is redirected to the canonical Vercel site by proxy.ts.
+  if (IS_RENDER && url.includes('/rest/v1/')) {
+    return renderQuarantineResponse(url, method, accept)
+  }
 
   const timeoutSignal = !init?.signal && typeof AbortSignal !== 'undefined' && 'timeout' in AbortSignal
     ? AbortSignal.timeout(timeoutMs)
