@@ -35,6 +35,7 @@ jobs:
           YEAR = int(os.environ['YEAR'])
           OIDC_URL = os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
           OIDC_REQUEST_TOKEN = os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
+          PAGE_BATCH = 2
 
           all_issues = {
             '1999-01-20':24,'1999-03-03':20,'1999-03-17':20,'1999-04-07':20,'1999-04-21':20,
@@ -74,7 +75,7 @@ jobs:
           def fetch_ocr(issue):
               req = urllib.request.Request(
                   f'{STORAGE}/{issue}/ocr.txt',
-                  headers={'User-Agent':'UMARM CFRN page indexer/1.1'},
+                  headers={'User-Agent':'UMARM CFRN page indexer/1.2'},
               )
               with open_with_retry(req, 30, 3) as r:
                   return r.read().decode('utf-8','replace')
@@ -93,7 +94,7 @@ jobs:
                   url,
                   headers={
                       'Authorization': f'bearer {OIDC_REQUEST_TOKEN}',
-                      'User-Agent': 'UMARM CFRN page indexer/1.1',
+                      'User-Agent': 'UMARM CFRN page indexer/1.2',
                   },
               )
               with open_with_retry(req, 20, 3) as r:
@@ -102,27 +103,7 @@ jobs:
                   raise RuntimeError('GitHub OIDC token response did not contain value')
               return token
 
-          total_pages = 0
-          total_chars = 0
-          for issue, count in issues:
-              text = fetch_ocr(issue)
-              chunks = split_pages(text, count, issue)
-              chars = sum(len(c) for c in chunks)
-              print(f'VALIDATED {issue}: {count} scans / {len(chunks)} OCR page blocks / {chars} chars', flush=True)
-
-              pages = [
-                  {
-                      'page': f'{n:03d}.jpg',
-                      'text': body,
-                      'meta': {
-                          'source': 'stored-ocr.txt',
-                          'import_mode': 'blank-line-page-blocks',
-                          'scan_position': n,
-                          'line_layout': {'lines': []},
-                      },
-                  }
-                  for n, body in enumerate(chunks, 1)
-              ]
+          def import_batch(issue, pages):
               payload = {
                   'publication': PUBLICATION,
                   'year': YEAR,
@@ -134,27 +115,77 @@ jobs:
                   'pages': pages,
                   'candidates': [],
               }
+              data = json.dumps(payload, separators=(',',':')).encode()
+              last = None
+              for attempt in range(1, 7):
+                  token = fresh_oidc_token()
+                  req = urllib.request.Request(
+                      IMPORT,
+                      data=data,
+                      method='POST',
+                      headers={
+                          'Authorization': f'Bearer {token}',
+                          'Content-Type': 'application/json',
+                          'User-Agent': 'UMARM CFRN page indexer/1.2',
+                      },
+                  )
+                  try:
+                      with urllib.request.urlopen(req, timeout=150) as r:
+                          response = json.loads(r.read().decode())
+                      if response.get('ok') and int(response.get('updated', 0)) == len(pages):
+                          return response
+                      last = RuntimeError(f'importer verification failed: {response}')
+                  except urllib.error.HTTPError as e:
+                      detail = e.read().decode('utf-8','replace')
+                      last = RuntimeError(f'HTTP {e.code}: {detail}')
+                      if e.code < 500 and e.code not in (408,409,429):
+                          raise last
+                  except (urllib.error.URLError, TimeoutError) as e:
+                      last = e
+                  if attempt < 6:
+                      delay = min(attempt * 4, 20)
+                      print(f'{issue} batch retry {attempt}/6 after {last}; sleeping {delay}s', flush=True)
+                      time.sleep(delay)
+              raise RuntimeError(f'{issue} batch failed after fresh-token retries: {last}')
 
-              token = fresh_oidc_token()
-              req = urllib.request.Request(
-                  IMPORT,
-                  data=json.dumps(payload, separators=(',',':')).encode(),
-                  method='POST',
-                  headers={
-                      'Authorization': f'Bearer {token}',
-                      'Content-Type': 'application/json',
-                      'User-Agent': 'UMARM CFRN page indexer/1.1',
-                  },
-              )
-              with open_with_retry(req, 120, 4) as r:
-                  response = json.loads(r.read().decode())
-              if not response.get('ok') or int(response.get('updated', 0)) != count:
-                  raise RuntimeError(f'{issue}: importer verification failed: {response}')
+          total_pages = 0
+          total_chars = 0
+          for issue, count in issues:
+              text = fetch_ocr(issue)
+              chunks = split_pages(text, count, issue)
+              chars = sum(len(c) for c in chunks)
+              print(f'VALIDATED {issue}: {count} scans / {len(chunks)} OCR page blocks / {chars} chars', flush=True)
 
+              indexed_this_issue = 0
+              for start in range(0, count, PAGE_BATCH):
+                  stop = min(start + PAGE_BATCH, count)
+                  pages = [
+                      {
+                          'page': f'{n:03d}.jpg',
+                          'text': chunks[n-1],
+                          'meta': {
+                              'source': 'stored-ocr.txt',
+                              'import_mode': 'blank-line-page-blocks',
+                              'scan_position': n,
+                              'line_layout': {'lines': []},
+                          },
+                      }
+                      for n in range(start + 1, stop + 1)
+                  ]
+                  response = import_batch(issue, pages)
+                  indexed_this_issue += len(pages)
+                  print(
+                      f'INDEXED {issue} scans {start+1:03d}-{stop:03d}: '
+                      f'{len(pages)} rows (skipped_existing={response.get("skipped_page_write")})',
+                      flush=True,
+                  )
+                  time.sleep(0.25)
+
+              if indexed_this_issue != count:
+                  raise RuntimeError(f'{issue}: indexed {indexed_this_issue}, expected {count}')
               total_pages += count
               total_chars += chars
-              print(f'INDEXED {issue}: {count} searchable page rows (skipped_existing={response.get("skipped_page_write")})', flush=True)
-              time.sleep(1)
+              print(f'ISSUE COMPLETE {issue}: {indexed_this_issue} searchable page rows', flush=True)
 
           print(json.dumps({
               'ok': True,
