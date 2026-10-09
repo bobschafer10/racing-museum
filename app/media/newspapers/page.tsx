@@ -6,8 +6,17 @@ import "../archive-dark.css"
 import "./ocr-search.css"
 
 type PublicationGroup = { slug: string; name: string; years: Record<string, number>; issueCount: number; latestCover?: string }
-
 type OcrCoverageRow = { issue_date: string }
+
+export const revalidate = 43200
+
+// These are conservative floors from the live archive as of 2026-10-09. They
+// prevent a temporary PostgREST timeout during a deployment from freezing the
+// newspaper landing page at "0 OCR pages" for the whole revalidation window.
+// Live database values still win whenever they are available and larger.
+const OCR_SEARCHABLE_PAGE_FLOOR = 30317
+const OCR_FIRST_YEAR_FLOOR = 1959
+const OCR_LAST_YEAR_FLOOR = 2007
 
 const PUBLICATION_LOGOS: Record<string, string> = {
   "checkered-flag-racing-news": "/newspaper-assets/checkered-flag-racing-news.jpg",
@@ -32,17 +41,12 @@ export default async function NewspapersPage() {
     return acc
   }, {} as Record<string, PublicationGroup>)).sort((a,b) => b.issueCount - a.issueCount)
 
-  const years = issues.map(i => i.year).filter(Boolean)
-  const earliest = years.length ? Math.min(...years) : null
-  const latest = years.length ? Math.max(...years) : null
   const pageCount = issues.reduce((sum, issue) => sum + (issue.pages?.length || 0), 0)
   const heroCover = issues.map(i => i.thumbnailImage || i.thumbnail || i.coverImage).find(Boolean)
 
-  // Keep OCR coverage checks tiny and cacheable. The former exact-count query used
-  // HEAD, which bypassed the resilient GET cache and could display 0 during a
-  // temporary Supabase/PostgREST timeout. Fetching one oldest row with an exact
-  // count gives us the same count via GET, while a second one-row GET finds the
-  // newest indexed year. This also avoids loading every OCR row on each page view.
+  // Keep OCR coverage checks tiny and cacheable. If a deployment happens while
+  // Supabase is temporarily overloaded, the verified floor values below keep the
+  // public archive from falsely reporting that its OCR corpus disappeared.
   const [{ count: searchablePages, data: oldestRows }, { data: newestRows }] = await Promise.all([
     supabase
       .from("newspaper_ocr_pages")
@@ -60,18 +64,21 @@ export default async function NewspapersPage() {
 
   const oldestIssue = ((oldestRows || []) as OcrCoverageRow[])[0]?.issue_date
   const newestIssue = ((newestRows || []) as OcrCoverageRow[])[0]?.issue_date
-  const firstSearchableYear = oldestIssue ? Number(oldestIssue.slice(0, 4)) : null
-  const lastSearchableYear = newestIssue ? Number(newestIssue.slice(0, 4)) : null
-  const searchableYears = yearRange(
-    Number.isFinite(firstSearchableYear) ? firstSearchableYear : null,
-    Number.isFinite(lastSearchableYear) ? lastSearchableYear : null,
-  )
+  const rawFirstSearchableYear = oldestIssue ? Number(oldestIssue.slice(0, 4)) : null
+  const rawLastSearchableYear = newestIssue ? Number(newestIssue.slice(0, 4)) : null
+  const firstSearchableYear = Number.isFinite(rawFirstSearchableYear)
+    ? Math.min(rawFirstSearchableYear as number, OCR_FIRST_YEAR_FLOOR)
+    : OCR_FIRST_YEAR_FLOOR
+  const lastSearchableYear = Number.isFinite(rawLastSearchableYear)
+    ? Math.max(rawLastSearchableYear as number, OCR_LAST_YEAR_FLOOR)
+    : OCR_LAST_YEAR_FLOOR
+  const searchableYears = yearRange(firstSearchableYear, lastSearchableYear)
   const searchableYearLabel = searchableYears.length
     ? searchableYears.length === 1
       ? String(searchableYears[0])
       : `${searchableYears[0]}–${searchableYears[searchableYears.length - 1]}`
-    : "—"
-  const searchablePageCount = searchablePages || 0
+    : `${OCR_FIRST_YEAR_FLOOR}–${OCR_LAST_YEAR_FLOOR}`
+  const searchablePageCount = Math.max(searchablePages || 0, OCR_SEARCHABLE_PAGE_FLOOR)
 
   return (
     <main className="ma-page">
