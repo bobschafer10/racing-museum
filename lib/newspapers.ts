@@ -133,6 +133,43 @@ const CFRN_1995_PAGE_COUNTS: Record<string, number> = {
   "1995-10-18": 24,
 }
 
+const CFRN_1996_PAGE_COUNTS: Record<string, number> = {
+  "1996-02-07": 24,
+  "1996-03-06": 20,
+  "1996-04-03": 28,
+  "1996-04-10": 16,
+  "1996-04-17": 20,
+  "1996-04-24": 24,
+  "1996-05-08": 28,
+  "1996-05-15": 28,
+  "1996-05-22": 32,
+  "1996-06-05": 27,
+  "1996-06-19": 32,
+  "1996-07-17": 31,
+  "1996-09-04": 32,
+  "1996-10-02": 20,
+  "1996-12-11": 32,
+}
+
+const CFRN_1997_PAGE_COUNTS: Record<string, number> = {
+  "1997-10-01": 24,
+  "1997-10-15": 24,
+  "1997-12-10": 32,
+}
+
+const CFRN_1998_PAGE_COUNTS: Record<string, number> = {
+  "1998-04-15": 16,
+  "1998-04-22": 24,
+  "1998-04-29": 24,
+  "1998-06-24": 36,
+  "1998-07-15": 36,
+  "1998-07-29": 36,
+  "1998-09-02": 36,
+  "1998-09-23": 28,
+  "1998-10-07": 20,
+  "1998-10-21": 24,
+}
+
 function titleFromIsoDate(issueDate: string) {
   const [year, month, day] = issueDate.split("-").map(Number)
   return new Date(year, month - 1, day).toLocaleDateString("en-US", {
@@ -304,6 +341,35 @@ function getCfrn1995StorageIssues(): NewspaperIssue[] {
   }))
 }
 
+function getCfrnStorageIssues(year: number, pageCounts: Record<string, number>): NewspaperIssue[] {
+  return Object.entries(pageCounts).map(([issueDate, pageCount]) => ({
+    slug: issueDate,
+    title: titleFromIsoDate(issueDate),
+    publication: "Checkered Flag Racing News",
+    publicationSlug: "checkered-flag-racing-news",
+    year,
+    issueDate,
+    description: null,
+    coverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,
+    backCoverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,
+    thumbnail: `${CFRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,
+    pages: cfrn1976Pages(issueDate, 1, pageCount),
+    featured: false,
+  }))
+}
+
+function getCfrn1996StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(1996, CFRN_1996_PAGE_COUNTS)
+}
+
+function getCfrn1997StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(1997, CFRN_1997_PAGE_COUNTS)
+}
+
+function getCfrn1998StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(1998, CFRN_1998_PAGE_COUNTS)
+}
+
 export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
   try {
     const manifestPath = path.join(
@@ -367,6 +433,9 @@ export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
       ...getCfrn1976StorageIssues(),
       ...getCfrn1992StorageIssues(),
       ...getCfrn1995StorageIssues(),
+      ...getCfrn1996StorageIssues(),
+      ...getCfrn1997StorageIssues(),
+      ...getCfrn1998StorageIssues(),
       ...ocrBackedMrnIssues,
       ...ocrBackedCfrnIssues,
     ]) {
