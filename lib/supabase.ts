@@ -33,7 +33,7 @@ const PUBLIC_READ_REVALIDATE_MS = PUBLIC_READ_REVALIDATE_SECONDS * 1_000
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 250_000
 const MAX_CACHE_ENTRIES = 750
-const IS_RENDER = process.env.RENDER === 'true'
+const IS_RENDER = process.env.RENDER === 'true' || process.env.UMARM_RENDER_QUARANTINE === 'true'
 
 const homepageStatsFallback = {
   drivers_count: 32081,
@@ -158,15 +158,9 @@ const resilientFetch: typeof fetch = async (input, init) => {
   }
 
   if (isPublicRestRead) {
-    // Do not rely only on the hosting platform's fetch cache. Keep a process-level
-    // 12-hour cache as well so Render/Vercel workers do not repeatedly ask
-    // Supabase for identical public data during page regeneration or crawler bursts.
     const fresh = cachedResponse(key, PUBLIC_READ_REVALIDATE_MS)
     if (fresh) return fresh
 
-    // If the same URL is already being fetched, wait for that request instead of
-    // starting another one. This is especially important for newspaper pagination,
-    // where many pages can request the same 1,000-row slice at the same time.
     const existingRequest = readInFlight.get(key)
     if (existingRequest) {
       try {
@@ -235,17 +229,11 @@ const resilientFetch: typeof fetch = async (input, init) => {
 
       throw error
     } finally {
-      // Only delete our own promise. A future request may already have installed
-      // a replacement after this one completed.
       if (readInFlight.get(key) === requestPromise) readInFlight.delete(key)
     }
   }
 
-  try {
-    return await fetch(input, fetchInit)
-  } catch (error) {
-    throw error
-  }
+  return await fetch(input, fetchInit)
 }
 
 export const supabase = createClient(
