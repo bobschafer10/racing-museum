@@ -18,7 +18,7 @@ const OCR_SEARCHABLE_PAGE_FLOOR = 30317
 const OCR_FIRST_YEAR_FLOOR = 1959
 const OCR_LAST_YEAR_FLOOR = 2007
 
-const CFRN_PARTIAL_ARCHIVE_YEARS = new Set(["1990", "1992", "1995", "1996", "1997", "1998"])
+const CFRN_PARTIAL_ARCHIVE_YEARS = new Set(["1990", "1992", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2003", "2004", "2005"])
 
 const PUBLICATION_LOGOS: Record<string, string> = {
   "checkered-flag-racing-news": "/newspaper-assets/checkered-flag-racing-news.jpg",
