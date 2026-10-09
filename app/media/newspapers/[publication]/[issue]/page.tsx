@@ -217,7 +217,7 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
     ? Math.max(0, Number(searchTotalParam))
     : null
 
-  let initialPageIndex = requestedIndex !== null && requestedIndex >= 0 ? requestedIndex : null
+  let initialPageIndex = requestedIndex !== null && requestedIndex >= 0 ? requestedIndex : pages.length ? 0 : null
   let searchSnippet: string | null = null
   let highlightLines: OcrHighlightLine[] = []
   let matchPosition: number | null = searchIndex !== null ? searchIndex + 1 : null
