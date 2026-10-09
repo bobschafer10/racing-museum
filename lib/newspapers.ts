@@ -90,6 +90,26 @@ const CFRN_1976_PAGE_RANGES: Record<string, [number, number]> = {
   "1976-12-08": [1, 16],
 }
 
+const CFRN_1992_PAGE_COUNTS: Record<string, number> = {
+  "1992-01-08": 16,
+  "1992-02-05": 20,
+  "1992-03-18": 16,
+  "1992-04-08": 36,
+  "1992-04-15": 16,
+  "1992-04-22": 20,
+  "1992-04-29": 24,
+  "1992-05-06": 28,
+  "1992-06-17": 36,
+  "1992-07-01": 40,
+  "1992-07-15": 28,
+  "1992-08-19": 36,
+  "1992-08-26": 36,
+  "1992-09-09": 32,
+  "1992-09-30": 20,
+  "1992-10-07": 20,
+  "1992-12-09": 19,
+}
+
 function titleFromIsoDate(issueDate: string) {
   const [year, month, day] = issueDate.split("-").map(Number)
   return new Date(year, month - 1, day).toLocaleDateString("en-US", {
@@ -227,6 +247,23 @@ function getCfrn1976StorageIssues(): NewspaperIssue[] {
   )
 }
 
+function getCfrn1992StorageIssues(): NewspaperIssue[] {
+  return Object.entries(CFRN_1992_PAGE_COUNTS).map(([issueDate, pageCount]) => ({
+    slug: issueDate,
+    title: titleFromIsoDate(issueDate),
+    publication: "Checkered Flag Racing News",
+    publicationSlug: "checkered-flag-racing-news",
+    year: 1992,
+    issueDate,
+    description: null,
+    coverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,
+    backCoverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,
+    thumbnail: `${CFRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,
+    pages: cfrn1976Pages(issueDate, 1, pageCount),
+    featured: false,
+  }))
+}
+
 export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
   try {
     const manifestPath = path.join(
@@ -288,6 +325,7 @@ export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
     for (const issue of [
       ...getMrn1978StorageIssues(),
       ...getCfrn1976StorageIssues(),
+      ...getCfrn1992StorageIssues(),
       ...ocrBackedMrnIssues,
       ...ocrBackedCfrnIssues,
     ]) {
