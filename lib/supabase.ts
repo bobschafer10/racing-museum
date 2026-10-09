@@ -13,14 +13,23 @@ declare global {
   // Supabase API/PostgREST outage does not blank the museum website.
   // eslint-disable-next-line no-var
   var __umarmSupabaseReadCache: Map<string, CachedResponse> | undefined
+  // Collapse identical concurrent public reads into one upstream request. This
+  // prevents a page/build burst from sending the same Supabase query dozens of
+  // times before the first response has had a chance to populate the cache.
+  // eslint-disable-next-line no-var
+  var __umarmSupabaseReadInFlight: Map<string, Promise<CachedResponse>> | undefined
 }
 
 const readCache = globalThis.__umarmSupabaseReadCache ?? new Map<string, CachedResponse>()
 globalThis.__umarmSupabaseReadCache = readCache
 
+const readInFlight = globalThis.__umarmSupabaseReadInFlight ?? new Map<string, Promise<CachedResponse>>()
+globalThis.__umarmSupabaseReadInFlight = readInFlight
+
 const REQUEST_TIMEOUT_MS = 8_000
 const OCR_SEARCH_TIMEOUT_MS = 20_000
 const PUBLIC_READ_REVALIDATE_SECONDS = 43_200
+const PUBLIC_READ_REVALIDATE_MS = PUBLIC_READ_REVALIDATE_SECONDS * 1_000
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 2_000_000
 
@@ -48,19 +57,26 @@ function requestDetails(input: RequestInfo | URL, init?: RequestInit) {
   return { url, method, key }
 }
 
-function cachedResponse(key: string) {
+function responseFromSnapshot(snapshot: CachedResponse) {
+  return new Response(snapshot.body, {
+    status: snapshot.status,
+    statusText: snapshot.statusText,
+    headers: snapshot.headers,
+  })
+}
+
+function cachedResponse(key: string, maxAgeMs = MAX_STALE_MS) {
   const cached = readCache.get(key)
   if (!cached) return null
-  if (Date.now() - cached.savedAt > MAX_STALE_MS) {
+
+  const ageMs = Date.now() - cached.savedAt
+  if (ageMs > MAX_STALE_MS) {
     readCache.delete(key)
     return null
   }
+  if (ageMs > maxAgeMs) return null
 
-  return new Response(cached.body, {
-    status: cached.status,
-    statusText: cached.statusText,
-    headers: cached.headers,
-  })
+  return responseFromSnapshot(cached)
 }
 
 function seededHomepageStats(url: string) {
@@ -103,41 +119,70 @@ const resilientFetch: typeof fetch = async (input, init) => {
     fetchInit.cache = 'no-store'
   }
 
-  try {
-    const response = await fetch(input, fetchInit)
+  if (isPublicRestRead) {
+    // Do not rely only on the hosting platform's fetch cache. Keep a process-level
+    // 12-hour cache as well so Render/Vercel workers do not repeatedly ask
+    // Supabase for identical public data during page regeneration or crawler bursts.
+    const fresh = cachedResponse(key, PUBLIC_READ_REVALIDATE_MS)
+    if (fresh) return fresh
 
-    if (isPublicRestRead && response.ok) {
-      const clone = response.clone()
-      const body = await clone.text()
+    // If the same URL is already being fetched, wait for that request instead of
+    // starting another one. This is especially important for newspaper pagination,
+    // where many pages can request the same 1,000-row slice at the same time.
+    const existingRequest = readInFlight.get(key)
+    if (existingRequest) {
+      try {
+        return responseFromSnapshot(await existingRequest)
+      } catch (error) {
+        const stale = cachedResponse(key)
+        if (stale) return stale
 
-      if (body.length <= MAX_CACHE_BODY_BYTES) {
-        readCache.set(key, {
-          body,
-          status: response.status,
-          statusText: response.statusText,
-          headers: Array.from(response.headers.entries()),
-          savedAt: Date.now(),
-        })
+        const seeded = seededHomepageStats(url)
+        if (seeded) return seeded
+
+        throw error
       }
     }
 
-    if (isPublicRestRead && response.status >= 500) {
-      const stale = cachedResponse(key)
-      if (stale) {
-        console.warn(`[UMARM] Supabase REST ${response.status}; serving last-known-good response for ${url}`)
-        return stale
+    const requestPromise = (async (): Promise<CachedResponse> => {
+      const response = await fetch(input, fetchInit)
+      const body = await response.text()
+      const snapshot: CachedResponse = {
+        body,
+        status: response.status,
+        statusText: response.statusText,
+        headers: Array.from(response.headers.entries()),
+        savedAt: Date.now(),
       }
 
-      const seeded = seededHomepageStats(url)
-      if (seeded) {
-        console.warn(`[UMARM] Supabase REST ${response.status}; serving seeded homepage stats`)
-        return seeded
+      if (response.ok && body.length <= MAX_CACHE_BODY_BYTES) {
+        readCache.set(key, snapshot)
       }
-    }
 
-    return response
-  } catch (error) {
-    if (isPublicRestRead) {
+      return snapshot
+    })()
+
+    readInFlight.set(key, requestPromise)
+
+    try {
+      const snapshot = await requestPromise
+
+      if (snapshot.status >= 500) {
+        const stale = cachedResponse(key)
+        if (stale) {
+          console.warn(`[UMARM] Supabase REST ${snapshot.status}; serving last-known-good response for ${url}`)
+          return stale
+        }
+
+        const seeded = seededHomepageStats(url)
+        if (seeded) {
+          console.warn(`[UMARM] Supabase REST ${snapshot.status}; serving seeded homepage stats`)
+          return seeded
+        }
+      }
+
+      return responseFromSnapshot(snapshot)
+    } catch (error) {
       const stale = cachedResponse(key)
       if (stale) {
         console.warn(`[UMARM] Supabase REST unavailable; serving last-known-good response for ${url}`)
@@ -149,8 +194,18 @@ const resilientFetch: typeof fetch = async (input, init) => {
         console.warn('[UMARM] Supabase REST unavailable; serving seeded homepage stats')
         return seeded
       }
-    }
 
+      throw error
+    } finally {
+      // Only delete our own promise. A future request may already have installed
+      // a replacement after this one completed.
+      if (readInFlight.get(key) === requestPromise) readInFlight.delete(key)
+    }
+  }
+
+  try {
+    return await fetch(input, fetchInit)
+  } catch (error) {
     throw error
   }
 }
