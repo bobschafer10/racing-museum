@@ -5,7 +5,7 @@ import SeriesLogo from '../../SeriesLogo'
 import TrackLogo from '../../../../tracks/[slug]/TrackLogo'
 import styles from './eventPage.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type PhotoRow = {
   file_name?: string | null

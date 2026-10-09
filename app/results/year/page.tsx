@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import '../results-archive.css'
 
-export const revalidate=300
+export const revalidate=43200
 
 const DESCRIPTIONS:Record<string,string>={
 '1900s':'The earliest surviving records from Midwestern auto racing.','1910s':'County fairgrounds, dirt tracks, and early organized racing.','1920s':'Expanding competition throughout the Midwest racing circuit.','1930s':'Racing through the Depression-era years.','1940s':'Postwar racing returns across the region.','1950s':'The postwar boom in short-track racing.','1960s':'Weekly racing and regional touring stars accelerate.','1970s':'A defining era of Upper Midwest short-track competition.','1980s':'Touring series, super late models, and growing media coverage.','1990s':'Regional series growth and modern short-track competition.','2000s':'The modern archive era begins to take shape.','2010s':'Contemporary racing preserved season by season.','2020s':'Current-day racing history and ongoing museum documentation.'}

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const revalidate=300
+export const revalidate=43200
 const LATE_MODEL_SERIES_ID=93, MODIFIED_SERIES_ID=94, FIRST_YEAR=1973, LAST_YEAR=2025, MODIFIED_FIRST_YEAR=1988
 function photoUrl(fileName?:string|null,year?:string|null){const base=process.env.NEXT_PUBLIC_SUPABASE_URL;return fileName&&base?`${base}/storage/v1/object/public/media/photos/master/proctor-speedway-mn/${year||'unknown-year'}/${fileName}`:''}
 

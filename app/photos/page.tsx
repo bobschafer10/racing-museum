@@ -4,7 +4,7 @@ import { getPhotoUrl } from '@/lib/photos'
 import { formatDriverSlugName } from '@/lib/driver-display'
 import '../media/archive-dark.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const PAGE_SIZE = 60
 

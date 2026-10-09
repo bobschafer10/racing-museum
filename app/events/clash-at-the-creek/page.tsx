@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const SERIES_ID = 97
 const HERO_IMAGE = 'https://upload.wikimedia.org/wikipedia/commons/e/ee/IMCA_Modifieds_doing_Delaware_Style_restart.jpg'

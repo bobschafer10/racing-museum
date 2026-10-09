@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import styles from '../../special-event.module.css'
 
-export const revalidate=300
+export const revalidate=43200
 const SERIES_IDS=[194,195,196,197,198,199,200,201,202,203,204,205,206]
 const MIN_YEAR=1980,MAX_YEAR=2026
 const divisionNames:Record<number,string>={

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type EventRow = { id:number; race_date:string; class_id:number }
 type ResultRow = { race_id:number; driver_id:number|null; finishing_position:number|null }

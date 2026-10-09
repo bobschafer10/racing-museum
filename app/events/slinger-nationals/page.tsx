@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const SERIES_ID = 38
 const mrnYears = [1981, 1982, 1983, 1987, 1999]

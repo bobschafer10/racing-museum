@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from './latest.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type ActivityRow = {
   activity_key?: string | null

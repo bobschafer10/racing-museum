@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const revalidate=300
+export const revalidate=43200
 const SERIES_IDS=[95,96,98,99,100,101,102,103],FIRST_YEAR=1986,LAST_YEAR=2026
 const divisionNames:Record<number,string>={95:'Late Model',96:'Modified',98:'Super Stock',99:'Street Stock',100:'Midwest Modified',101:'Mod Four',102:'Pure Stock',103:'Hornet'}
 type EventRow={series_id:number|null;race_date:string|null;track_slug:string|null}

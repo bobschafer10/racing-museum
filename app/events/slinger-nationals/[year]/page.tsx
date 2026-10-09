@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 import { getSlingerNationalsMrnStandings } from '@/lib/special-events/slingerNationals'
 import styles from '../../special-event.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 const SERIES_ID=38, MIN_YEAR=1980, MAX_YEAR=2026
 const mrnYears=new Set([1981,1982,1983,1987,1999])
 

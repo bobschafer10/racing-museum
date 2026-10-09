@@ -7,7 +7,7 @@ import ThisWeekHistoryRibbon from './ThisWeekHistoryRibbon'
 import { getThisWeekHistory } from '@/lib/thisWeekHistory'
 import styles from './home.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type StatsRow = {
   drivers_count?: number | null

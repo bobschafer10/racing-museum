@@ -4,7 +4,7 @@ import { getNewspaperIssues, type NewspaperIssue } from '@/lib/newspapers'
 import { supabase } from '@/lib/supabase'
 import styles from './media-archive.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type FeaturedArtifact = {
   key: string

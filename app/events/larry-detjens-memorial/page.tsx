@@ -3,7 +3,7 @@ import styles from '../special-event.module.css'
 import { SpecialEventResults } from '../SpecialEventResults'
 import { getSpecialEventResults, type SpecialEventRaceConfig } from '@/lib/specialEventResults'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type Winner = { year: number; winner: string }
 

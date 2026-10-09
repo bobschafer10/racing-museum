@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const winners = [
   [1950,'Tony Bettenhausen',100],[1951,'Tony Bettenhausen',100],[1952,'Mike Nazaruk',100],[1953,'Jack McGrath',100],

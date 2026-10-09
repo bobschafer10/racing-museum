@@ -5,7 +5,7 @@ import ArchiveSearch from "../newspapers/NewspaperSearch"
 import "../archive-dark.css"
 import "../newspapers/ocr-search.css"
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type SearchParams = Promise<{ decade?: string; type?: string }>
 type RaceProgramWithCover = RaceProgram & { coverImage: string }

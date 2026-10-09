@@ -8,7 +8,7 @@ import styles from './series-profile.module.css'
 const SUPABASE_PHOTO_BASE =
   'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type TrackRef = {
   id: number

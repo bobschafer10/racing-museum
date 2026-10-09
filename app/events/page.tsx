@@ -2,7 +2,7 @@ import Link from 'next/link'
 import OriginalEventsPage from './EventsPageOriginal'
 import imageFixes from './events-image-corrections.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>
 

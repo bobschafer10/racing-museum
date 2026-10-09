@@ -3,7 +3,7 @@ import styles from '../special-event.module.css'
 import { SpecialEventResults } from '../SpecialEventResults'
 import { getSpecialEventResults, type SpecialEventRaceConfig } from '@/lib/specialEventResults'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type Winner={year:number;winner:string;venue?:string}
 const hero='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/capital-super-speedway/1975/capital-super-speedway_1975_joe-shear_mike-napierala_photo_001.jpg'

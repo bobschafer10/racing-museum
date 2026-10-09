@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from '../special-event.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const HIBBING_TRACK_ID = 80
 const LATE_MODEL_CLASS_ID = 46

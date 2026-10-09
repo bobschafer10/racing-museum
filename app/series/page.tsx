@@ -3,7 +3,7 @@ import { supabase } from '@/lib/supabase'
 import SeriesLogo from './[slug]/SeriesLogo'
 import styles from './series-landing.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type SeriesRow = {
   id: number

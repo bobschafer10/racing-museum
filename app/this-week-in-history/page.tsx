@@ -6,7 +6,7 @@ import {
 } from '@/lib/thisWeekHistory'
 import styles from '../home.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 function safeReferenceDate(value?: string) {
   return value && /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : centralTodayIso()

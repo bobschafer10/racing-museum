@@ -6,7 +6,7 @@ import profileStyles from '../track-profile.module.css'
 import styles from './results.module.css'
 import RaceNightArchive, { type EventRace, type NewspaperClipping } from './RaceNightArchive'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type Track = {
   track_name: string

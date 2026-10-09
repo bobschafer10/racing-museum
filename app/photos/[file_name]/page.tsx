@@ -3,7 +3,7 @@ import type { CSSProperties } from 'react'
 import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type PhotoRecord = {
   photo_id: number

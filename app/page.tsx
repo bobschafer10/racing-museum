@@ -4,7 +4,7 @@ import HomeBase from './HomeBase'
 import styles from './home.module.css'
 import searchStyles from './homeSearchFix.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 function HallOfFameHomeFeature() {
   return (

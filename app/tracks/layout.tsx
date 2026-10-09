@@ -1,7 +1,7 @@
 import { supabase } from '@/lib/supabase'
 import TrackAliasEnhancer from './TrackAliasEnhancer'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type TrackAliasRow = {
   track_slug: string

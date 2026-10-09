@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import styles from '../../special-event.module.css'
 
-export const revalidate=300
+export const revalidate=43200
 const LATE_MODEL_SERIES_ID=93,MODIFIED_SERIES_ID=94,MIN_YEAR=1973,MAX_YEAR=2025,MODIFIED_FIRST_YEAR=1988
 
 type ResultRow={id:number;finishing_position:number|null;starting_position:number|null;car_number:string|null;driver_name:string;status:string|null;result_section:string|null}

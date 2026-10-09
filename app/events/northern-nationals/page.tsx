@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../special-event.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const precursorLateModels = [
   [1970,'Phil Prusak','Laursen family benefit — not part of the numbered Classic sequence'],

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from './drivers-landing.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type DriverRow = {
   driver_id?: number | null

@@ -3,7 +3,7 @@ import styles from '../special-event.module.css'
 import { SpecialEventResults } from '../SpecialEventResults'
 import { getSpecialEventResults, type SpecialEventRaceConfig } from '@/lib/specialEventResults'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type Row={year:number;winner:string;note?:string;open?:boolean}
 const hero='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/hales-corners-speedway/unknown-year/hales-corners-speedway_unknown-year_bill-prietzel_dave-olson_photo_001.jpg'

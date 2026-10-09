@@ -5,7 +5,7 @@ import TrackLogo from '../../[slug]/TrackLogo'
 import StateMark from './StateMark'
 import styles from './state-tracks.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type TrackRow = {
   track_id?: number | null

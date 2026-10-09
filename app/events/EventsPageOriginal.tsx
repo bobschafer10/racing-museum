@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from './events-landing.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type EventCollection = {
   slug: string

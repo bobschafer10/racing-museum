@@ -5,7 +5,7 @@ import TrackLogo from "../TrackLogo"
 import profileStyles from "../track-profile.module.css"
 import styles from "./standings.module.css"
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const PAGE_SIZE = 1000
 

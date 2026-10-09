@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 import PhotoLightboxImage from '@/components/PhotoLightboxImage'
 import styles from './photo-archive.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const PAGE_SIZE = 60
 const PHOTO_BASE =

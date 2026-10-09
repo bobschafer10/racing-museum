@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import './results-archive.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 function formatDate(value:string){return new Date(`${value}T12:00:00`).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}
 function fmt(value:number|null|undefined){return value==null?'—':value.toLocaleString()}

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import '../media/archive-dark.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type SearchParams = Promise<{ q?: string }>
 

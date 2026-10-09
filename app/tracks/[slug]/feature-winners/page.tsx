@@ -5,7 +5,7 @@ import TrackLogo from '../TrackLogo'
 import profileStyles from '../track-profile.module.css'
 import styles from '../archive-list.module.css'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 type Track = {
   track_name: string

@@ -33,7 +33,7 @@ type CareerHeadlineRow = {
   accomplishment_type: string
 }
 
-export const revalidate = 300
+export const revalidate = 43200
 
 const SUPABASE_PHOTO_BASE =
   'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
