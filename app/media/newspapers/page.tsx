@@ -18,6 +18,8 @@ const OCR_SEARCHABLE_PAGE_FLOOR = 30317
 const OCR_FIRST_YEAR_FLOOR = 1959
 const OCR_LAST_YEAR_FLOOR = 2007
 
+const CFRN_PARTIAL_ARCHIVE_YEARS = new Set(["1990", "1992", "1995", "1996", "1997", "1998"])
+
 const PUBLICATION_LOGOS: Record<string, string> = {
   "checkered-flag-racing-news": "/newspaper-assets/checkered-flag-racing-news.jpg",
   "midwest-racing-news": "/newspaper-assets/midwest-racing-news.jpg",
@@ -29,6 +31,10 @@ const PUBLICATION_LOGOS: Record<string, string> = {
 function yearRange(first: number | null, last: number | null) {
   if (!first || !last || last < first) return []
   return Array.from({ length: last - first + 1 }, (_, index) => first + index)
+}
+
+function isPartialArchiveYear(publicationSlug: string, year: string) {
+  return publicationSlug === "checkered-flag-racing-news" && CFRN_PARTIAL_ARCHIVE_YEARS.has(year)
 }
 
 export default async function NewspapersPage() {
@@ -130,7 +136,7 @@ export default async function NewspapersPage() {
           {publications.map(pub => <div className="ma-panel" key={pub.slug}>
             <div className="ma-card-label">{pub.name}</div>
             <div className="ma-card-title">{pub.issueCount} Archived Issues</div>
-            <div className="ma-year-grid">{Object.keys(pub.years).sort((a,b)=>Number(b)-Number(a)).map(year => <Link className="ma-year" key={year} href={`/media/newspapers/${pub.slug}/year/${year}`}><strong>{year}</strong><span>{pub.years[year]} issue{pub.years[year]===1?'':'s'}</span></Link>)}</div>
+            <div className="ma-year-grid">{Object.keys(pub.years).sort((a,b)=>Number(b)-Number(a)).map(year => <Link className="ma-year" key={year} href={`/media/newspapers/${pub.slug}/year/${year}`}><strong>{year}</strong><span>{pub.years[year]} issue{pub.years[year]===1?'':'s'}</span>{isPartialArchiveYear(pub.slug, year) ? <span className="ma-year-status">Partial Archive</span> : null}</Link>)}</div>
           </div>)}
         </div>
       </section>
