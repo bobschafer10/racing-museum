@@ -1,9 +1,26 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { getNewspaperIssue } from "@/lib/newspapers"
 import { supabase } from "@/lib/supabase"
 import NewspaperPageViewer from "./NewspaperPageViewer"
 import "../../../archive-dark.css"
+
+// Keep newspaper issue pages searchable as research pages, but tell Google not
+// to index the multi-megabyte scan images themselves. The scans remain available
+// to visitors who open a page in the viewer; this only removes the incentive for
+// Google Image to crawl every full-resolution Supabase object.
+export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
+}
 
 function scanPageNumber(image: string) {
   const filename = decodeURIComponent(image).split("/").pop() || ""
@@ -184,136 +201,106 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
       image,
     }
   })
-  const summary =
-    issue.description ||
-    issue.summary ||
-    `This issue of ${issue.publication}, published on ${issue.title}, preserves race coverage, photographs, schedules, advertising, results, and period news from the regional racing scene.`
 
-  const sourcePage = Number(firstParam(search.sourcePage))
-  const sourceIndex =
-    Number.isFinite(sourcePage) && sourcePage > 0
-      ? orderedImages.findIndex((image) => scanPageNumber(image) === sourcePage)
-      : -1
-  const initialPageIndex = sourceIndex >= 0 ? sourceIndex : null
-  const searchQuery = firstParam(search.q)?.trim() || ""
-  const requestedSort = (firstParam(search.sort) || "relevance").toLowerCase()
-  const searchSort = ["relevance", "oldest", "newest"].includes(requestedSort) ? requestedSort : "relevance"
-  const sourceParam = (firstParam(search.source) || "all").trim().toLowerCase()
-  const searchSource = sourceParam === "all" ? null : sourceParam
-  const searchYearValue = Number(firstParam(search.year))
-  const searchYear = Number.isInteger(searchYearValue) && searchYearValue >= 1800 && searchYearValue <= 2200 ? searchYearValue : null
-  const searchIndexValue = Number(firstParam(search.searchIndex))
-  const searchIndex = Number.isInteger(searchIndexValue) && searchIndexValue >= 0 ? searchIndexValue : null
-  const searchTotalValue = Number(firstParam(search.searchTotal))
-  const searchTotal = Number.isInteger(searchTotalValue) && searchTotalValue > 0 ? searchTotalValue : null
-  const pageSizeValue = Number(firstParam(search.pageSize))
-  const searchPageSize = [25, 50, 100].includes(pageSizeValue) ? pageSizeValue : 50
+  const sourcePageParam = firstParam(search.sourcePage)
+  const requestedPage = sourcePageParam ? Number(sourcePageParam) : null
+  const requestedIndex = requestedPage && Number.isFinite(requestedPage)
+    ? Math.max(0, pages.findIndex((page) => scanPageNumber(page.image) === requestedPage))
+    : null
+  const query = firstParam(search.q)?.trim() || ""
+  const searchIndexParam = firstParam(search.searchIndex)
+  const searchIndex = searchIndexParam && Number.isFinite(Number(searchIndexParam))
+    ? Math.max(0, Number(searchIndexParam))
+    : null
+  const searchTotalParam = firstParam(search.searchTotal)
+  const searchTotal = searchTotalParam && Number.isFinite(Number(searchTotalParam))
+    ? Math.max(0, Number(searchTotalParam))
+    : null
 
-  const { count: indexedPages } = await supabase
-    .from("newspaper_ocr_pages")
-    .select("id", { count: "exact", head: true })
-    .eq("publication_code", publication)
-    .eq("issue_date", issue.issueDate)
-    .eq("status", "complete")
-  const isSearchable = (indexedPages || 0) > 0
+  let initialPageIndex = requestedIndex !== null && requestedIndex >= 0 ? requestedIndex : null
+  let searchSnippet: string | null = null
+  let highlightLines: OcrHighlightLine[] = []
+  let matchPosition: number | null = searchIndex !== null ? searchIndex + 1 : null
+  let matchTotal: number | null = searchTotal
 
-  let searchSnippet = ""
-  let searchHighlightLines: OcrHighlightLine[] = []
-  if (searchQuery && initialPageIndex !== null) {
-    const pageLabel = scanFilename(orderedImages[initialPageIndex])
-    const { data: ocrPage } = await supabase
-      .from("newspaper_ocr_pages")
-      .select("ocr_text,ocr_json")
-      .eq("publication_code", publication)
-      .eq("issue_date", issue.issueDate)
-      .eq("page_label", pageLabel)
-      .eq("status", "complete")
-      .maybeSingle()
-    searchSnippet = matchSnippet(ocrPage?.ocr_text || "", searchQuery)
-    searchHighlightLines = matchingOcrLayoutLines(parseOcrLayoutLines(ocrPage?.ocr_json), searchQuery)
+  if (query && searchIndex !== null) {
+    const sortParam = firstParam(search.sort)?.toLowerCase()
+    const sort = sortParam === "oldest" || sortParam === "newest" ? sortParam : "relevance"
+    const sourceParam = firstParam(search.source)?.toLowerCase()
+    const source = sourceParam && sourceParam !== "all" ? sourceParam : null
+    const yearParam = firstParam(search.year)
+    const yearValue = yearParam ? Number(yearParam) : null
+    const year = yearValue && Number.isInteger(yearValue) ? yearValue : null
+
+    const { data } = await supabase.rpc("get_newspaper_ocr_match_detail", {
+      p_query: query,
+      p_source: source,
+      p_year: year,
+      p_sort: sort,
+      p_offset: searchIndex,
+    })
+    const row = (data?.[0] || null) as SearchMatchRow & {
+      storage_path?: string
+      ocr_text?: string | null
+      ocr_json?: unknown
+      page_label?: string | null
+    } | null
+
+    if (row?.storage_path) {
+      const imageUrl = `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`
+      let index = pages.findIndex((page) => page.image === imageUrl)
+      if (index < 0 && row.page_number) index = pages.findIndex((page) => scanPageNumber(page.image) === row.page_number)
+      if (index >= 0) initialPageIndex = index
+      searchSnippet = matchSnippet(row.ocr_text || "", query)
+      highlightLines = matchingOcrLayoutLines(parseOcrLayoutLines(row.ocr_json), query)
+    }
   }
 
-  let previousMatchHref: string | null = null
-  let nextMatchHref: string | null = null
-
-  if (searchQuery && searchIndex !== null) {
-    const baseArgs = {
-      p_query: searchQuery,
-      p_collection: "newspaper",
-      p_source: searchSource,
-      p_year: searchYear,
-      p_sort: searchSort,
-      p_limit: 1,
+  if (query && requestedPage && initialPageIndex !== null && !searchSnippet) {
+    const page = pages[initialPageIndex]
+    if (page) {
+      const pageLabel = scanFilename(page.image)
+      const { data } = await supabase
+        .from("newspaper_ocr_pages")
+        .select("ocr_text,ocr_json")
+        .eq("publication_code", publication)
+        .eq("issue_date", issue.issueDate)
+        .eq("page_label", pageLabel)
+        .maybeSingle()
+      const row = data as { ocr_text?: string | null; ocr_json?: unknown } | null
+      if (row?.ocr_text) searchSnippet = matchSnippet(row.ocr_text, query)
+      highlightLines = matchingOcrLayoutLines(parseOcrLayoutLines(row?.ocr_json), query)
     }
-
-    const [previousResponse, nextResponse] = await Promise.all([
-      searchIndex > 0
-        ? supabase.rpc("search_museum_ocr", { ...baseArgs, p_offset: searchIndex - 1 })
-        : Promise.resolve({ data: null, error: null }),
-      searchTotal === null || searchIndex + 1 < searchTotal
-        ? supabase.rpc("search_museum_ocr", { ...baseArgs, p_offset: searchIndex + 1 })
-        : Promise.resolve({ data: null, error: null }),
-    ])
-
-    const buildMatchHref = (row: SearchMatchRow | undefined, index: number) => {
-      if (!row?.issue_date || !row.document_slug) return null
-      const params = new URLSearchParams()
-      if (row.page_number) params.set("sourcePage", String(row.page_number))
-      params.set("q", searchQuery)
-      params.set("sort", searchSort)
-      params.set("source", searchSource || "all")
-      if (searchYear) params.set("year", String(searchYear))
-      params.set("searchIndex", String(index))
-      if (searchTotal) params.set("searchTotal", String(searchTotal))
-      params.set("pageSize", String(searchPageSize))
-      return `/media/newspapers/${row.document_slug}/${row.issue_date}?${params.toString()}`
-    }
-
-    previousMatchHref = buildMatchHref(
-      (previousResponse.data?.[0] || undefined) as SearchMatchRow | undefined,
-      searchIndex - 1,
-    )
-    nextMatchHref = buildMatchHref(
-      (nextResponse.data?.[0] || undefined) as SearchMatchRow | undefined,
-      searchIndex + 1,
-    )
   }
-
-  const matchPosition = searchIndex !== null ? searchIndex + 1 : null
 
   return <main className="ma-page">
     <section className="ma-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.98),rgba(5,8,10,.84) 50%,rgba(5,8,10,.48)),url(${issueThumb})`,backgroundSize:'cover',backgroundPosition:'center 15%'}}>
       <div className="ma-hero-inner">
         <div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><Link href="/media/newspapers">Newspapers</Link><span>›</span><Link href={`/media/newspapers/${publication}`}>{issue.publication}</Link><span>›</span><span>{issue.title}</span></div>
         <div className="ma-hero-grid">
-          <div>
-            <div className="ma-eyebrow">Digitized Newspaper Issue</div>
-            <h1 className="ma-title">{issue.publication}</h1>
-            <div className="ma-subtitle">{issue.title}</div>
-            <p className="ma-lede">{summary}</p>
-            <div className="ma-actions">
-              <Link href={`/media/newspapers/${publication}`} className="ma-button">Back to Publication</Link>
-              <Link href={`/media/newspapers/${publication}/year/${issue.year}`} className="ma-button-ghost">Browse {issue.year}</Link>
-              <Link href="/media/newspapers#newspaper-search" className="ma-button-ghost">Search Newspapers</Link>
-            </div>
-          </div>
+          <div><div className="ma-eyebrow">Digitized Newspaper Issue</div><h1 className="ma-title">{issue.publication}</h1><div className="ma-subtitle">{issue.title}</div><p className="ma-lede">Read the complete preserved issue page by page. Full-resolution scans open only when selected so the archive stays fast and bandwidth-efficient.</p><div className="ma-actions"><Link href={`/media/newspapers/${publication}/year/${issue.year}`} className="ma-button">Back to {issue.year}</Link><Link href="/media/newspapers#newspaper-search" className="ma-button-ghost">Search Newspapers</Link></div></div>
           <div className="ma-hero-media"><img src={issueThumb} alt={`${issue.publication} ${issue.title}`} className="ma-cover" /></div>
         </div>
         <div className="ma-stats">
           <div className="ma-stat"><strong>{issue.year}</strong><span>Publication Year</span></div>
-          <div className="ma-stat"><strong>{pages.length}</strong><span>Digitized Pages</span></div>
-          <div className="ma-stat"><strong>{issue.volume || '—'}</strong><span>Volume</span></div>
-          <div className="ma-stat"><strong>{issue.number || '—'}</strong><span>Issue Number</span></div>
-          <div className="ma-stat"><strong>{isSearchable ? 'OCR' : 'SCAN'}</strong><span>{isSearchable ? 'Searchable' : 'Digitized'}</span></div>
+          <div className="ma-stat"><strong>{pages.length}</strong><span>Preserved Pages</span></div>
+          <div className="ma-stat"><strong>{issue.volume || "—"}</strong><span>Volume</span></div>
+          <div className="ma-stat"><strong>{issue.number || "—"}</strong><span>Issue Number</span></div>
         </div>
       </div>
     </section>
 
-    {searchQuery && initialPageIndex !== null ? <section className="ma-section"><div className="ma-source ma-search-source"><strong className="ma-gold">Opened from OCR search:</strong> “{searchQuery}” matched source page {sourcePage}. {matchPosition && searchTotal ? `Match ${matchPosition.toLocaleString()} of ${searchTotal.toLocaleString()}.` : ''} The original scan is opened below for verification.</div></section> : null}
-
-    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Complete Issue</div><h2 className="ma-h2">Issue Pages</h2></div><div className="ma-note">Select any page for a full-screen viewer. Use arrow keys to move through the issue.</div></div><NewspaperPageViewer pages={pages} initialPageIndex={initialPageIndex} searchQuery={searchQuery || null} searchSnippet={searchSnippet || null} highlightLines={searchHighlightLines} previousMatchHref={previousMatchHref} nextMatchHref={nextMatchHref} matchPosition={matchPosition} matchTotal={searchTotal} /></section>
-
-    <section className="ma-section"><div className="ma-source"><strong className="ma-gold">Museum research note:</strong> digitized issues are preserved as archival source material. {isSearchable ? 'This issue has searchable OCR text; OCR may contain transcription errors, so use the scanned page as the final source.' : 'This issue is digitized but is not yet part of the full-text OCR search index.'}</div></section>
-    <section className="ma-section"><div className="ma-footer-links"><Link href={`/media/newspapers/${publication}/year/${issue.year}`} className="ma-footer-link">{issue.year} Archive<span>All issues from this year →</span></Link><Link href={`/media/newspapers/${publication}`} className="ma-footer-link">{issue.publication}<span>Publication archive →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
+    <section className="ma-section">
+      <div className="ma-section-head"><div><div className="ma-kicker">Page-by-Page Archive</div><h2 className="ma-h2">Full Issue</h2></div><div className="ma-note">Select a page to load the original scan. Full-resolution pages are not preloaded.</div></div>
+      <NewspaperPageViewer
+        pages={pages}
+        initialPageIndex={initialPageIndex}
+        searchQuery={query || null}
+        searchSnippet={searchSnippet}
+        highlightLines={highlightLines}
+        matchPosition={matchPosition}
+        matchTotal={matchTotal}
+      />
+    </section>
   </main>
 }
