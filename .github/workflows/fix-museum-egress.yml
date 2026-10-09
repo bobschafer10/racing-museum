@@ -1,0 +1,121 @@
+name: Fix Museum Egress Hotspots
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-museum-egress.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch database cache and newspaper viewer
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          def patch(path, replacements):
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              original = text
+              for old, new, required in replacements:
+                  count = text.count(old)
+                  if required and count == 0:
+                      raise RuntimeError(f'Expected pattern not found in {path}: {old[:120]!r}')
+                  text = text.replace(old, new)
+              if text != original:
+                  p.write_text(text, encoding='utf-8')
+                  print('patched', path)
+
+          # Keep the process-level REST cache useful under crawler traffic without
+          # allowing thousands of unique driver/archive queries to grow memory forever.
+          p = Path('lib/supabase.ts')
+          text = p.read_text(encoding='utf-8')
+          text = text.replace(
+              'const MAX_CACHE_BODY_BYTES = 2_000_000',
+              'const MAX_CACHE_BODY_BYTES = 250_000\nconst MAX_CACHE_ENTRIES = 750',
+          )
+          text = text.replace(
+              '        readCache.set(key, snapshot)\n',
+              '        rememberCachedResponse(key, snapshot)\n',
+          )
+          marker = 'function seededHomepageStats(url: string) {'
+          helper = '''function rememberCachedResponse(key: string, snapshot: CachedResponse) {\n  if (readCache.has(key)) readCache.delete(key)\n  readCache.set(key, snapshot)\n\n  while (readCache.size > MAX_CACHE_ENTRIES) {\n    const oldestKey = readCache.keys().next().value as string | undefined\n    if (!oldestKey) break\n    readCache.delete(oldestKey)\n  }\n}\n\n'''
+          if helper not in text:
+              if marker not in text:
+                  raise RuntimeError('Supabase cache insertion marker missing')
+              text = text.replace(marker, helper + marker)
+          p.write_text(text, encoding='utf-8')
+          print('patched lib/supabase.ts')
+
+          # The issue page grid used full-resolution originals as thumbnails. Bots
+          # therefore downloaded every multi-megabyte newspaper page merely by
+          # crawling an issue. Show lightweight scan cards and load the original only
+          # after a visitor opens a page. Also stop preloading neighboring OCR matches.
+          viewer = 'app/media/newspapers/[publication]/[issue]/NewspaperPageViewer.tsx'
+          patch(viewer, [
+              ('import Image from "next/image"\n', '', True),
+              ('''    if (typeof window !== "undefined") {\n      const preload = new window.Image()\n      preload.decoding = "async"\n      preload.src = image\n      if (!preloadOnly && "decode" in preload) {\n        try { await preload.decode() } catch { /* browser will still render the image */ }\n      }\n    }''', '''    if (!preloadOnly && typeof window !== "undefined") {\n      const preload = new window.Image()\n      preload.decoding = "async"\n      preload.src = image\n      if ("decode" in preload) {\n        try { await preload.decode() } catch { /* browser will still render the image */ }\n      }\n    }''', True),
+              ('''  const warmAdjacent = useCallback((centerIndex: number) => {\n    if (!searchQuery || !matchTotal) return\n    const next = centerIndex + 1\n    const previous = centerIndex - 1\n    if (next < matchTotal && !matchCache.current.has(next)) void loadMatch(next, true)\n    if (previous >= 0 && !matchCache.current.has(previous)) void loadMatch(previous, true)\n  }, [loadMatch, matchTotal, searchQuery])''', '''  const warmAdjacent = useCallback((_centerIndex: number) => {\n    // Deliberately do not prefetch neighboring OCR matches. A full newspaper\n    // scan can be several megabytes; fetch it only when the visitor navigates there.\n  }, [])''', True),
+              ('<Image src={page.image} alt={page.label} width={320} height={440} unoptimized style={thumbImage}/>', '<div style={thumbPlaceholder} aria-hidden="true"><span style={thumbPlaceholderLabel}>OPEN SCAN</span></div>', True),
+              ("const thumbImage: CSSProperties = {width:'100%',height:'auto',display:'block',background:'#e9dfca'}", "const thumbPlaceholder: CSSProperties = {width:'100%',aspectRatio:'8.5 / 11',display:'flex',alignItems:'center',justifyContent:'center',background:'linear-gradient(135deg,#eee4cf,#d6c8aa)',border:'1px solid rgba(255,255,255,.08)'}\nconst thumbPlaceholderLabel: CSSProperties = {fontSize:10,fontWeight:900,letterSpacing:'.14em',color:'#4a4234'}", True),
+          ])
+
+          # Use the already-generated ~520px issue thumbnail instead of multi-MB
+          # front/back scans anywhere a cover is only decorative/navigation UI.
+          issue_page = 'app/media/newspapers/[publication]/[issue]/page.tsx'
+          patch(issue_page, [
+              ('  if (!issue) notFound()\n\n  const issuePageImages', '  if (!issue) notFound()\n  const issueThumb = issue.thumbnailImage || issue.thumbnail || issue.coverImage\n\n  const issuePageImages', True),
+              ('url(${issue.coverImage})', 'url(${issueThumb})', True),
+              ('<div className="ma-hero-media"><img src={issue.coverImage} alt={`${issue.publication} ${issue.title}`} className="ma-cover" />{issue.backCoverImage ? <img src={issue.backCoverImage} alt={`${issue.publication} back cover`} className="ma-cover" /> : null}</div>', '<div className="ma-hero-media"><img src={issueThumb} alt={`${issue.publication} ${issue.title}`} className="ma-cover" /></div>', True),
+          ])
+
+          year_page = 'app/media/newspapers/[publication]/year/[year]/page.tsx'
+          patch(year_page, [
+              ('const hero = issues[0].coverImage', 'const hero = issues[0].thumbnailImage || issues[0].thumbnail || issues[0].coverImage', True),
+              ('<img src={issue.coverImage} alt={`${issue.publication} ${issue.title}`} />', '<img src={issue.thumbnailImage || issue.thumbnail || issue.coverImage} alt={`${issue.publication} ${issue.title}`} loading="lazy" />', True),
+          ])
+
+          pub_page = 'app/media/newspapers/[publication]/page.tsx'
+          patch(pub_page, [
+              ('const hero = newest[0]?.coverImage', 'const hero = newest[0]?.thumbnailImage || newest[0]?.thumbnail || newest[0]?.coverImage', True),
+              ('<img src={issue.coverImage} alt={`${publicationName} ${issue.title}`} />', '<img src={issue.thumbnailImage || issue.thumbnail || issue.coverImage} alt={`${publicationName} ${issue.title}`} loading="lazy" />', True),
+          ])
+
+          landing = 'app/media/newspapers/page.tsx'
+          patch(landing, [
+              ('latestCover: issue.coverImage', 'latestCover: issue.thumbnailImage || issue.thumbnail || issue.coverImage', True),
+              ('acc[issue.publicationSlug].latestCover = issue.coverImage || acc[issue.publicationSlug].latestCover', 'acc[issue.publicationSlug].latestCover = issue.thumbnailImage || issue.thumbnail || issue.coverImage || acc[issue.publicationSlug].latestCover', True),
+              ('const heroCover = issues.find(i => i.coverImage)?.coverImage', 'const heroCover = issues.map(i => i.thumbnailImage || i.thumbnail || i.coverImage).find(Boolean)', True),
+          ])
+
+          media = 'app/media/page.tsx'
+          patch(media, [
+              ('''  const newspaperCover = [...issues]\n    .reverse()\n    .find((issue) => Boolean(issue.coverImage))?.coverImage''', '''  const newspaperCover = [...issues]\n    .reverse()\n    .map((issue) => issue.thumbnailImage || issue.thumbnail || issue.coverImage)\n    .find(Boolean)''', True),
+              ('    image: issue.coverImage,', '    image: issue.thumbnailImage || issue.thumbnail || issue.coverImage,', True),
+          ])
+          PY
+
+      - name: Commit fixes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add lib/supabase.ts app/media
+          if git diff --cached --quiet; then
+            echo 'No egress changes needed.'
+            exit 0
+          fi
+          git commit -m 'Stop newspaper scan crawler egress and bound API cache'
+          git push origin HEAD:main
