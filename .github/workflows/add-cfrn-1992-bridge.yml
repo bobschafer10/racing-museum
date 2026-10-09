@@ -1,0 +1,43 @@
+name: Add CFRN 1992 Archive Bridge
+on:
+  push:
+    paths:
+      - '.github/workflows/add-cfrn-1992-bridge.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Patch newspaper archive bridge
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('lib/newspapers.ts')
+          s = p.read_text()
+          marker = 'function titleFromIsoDate(issueDate: string) {'
+          block = '''const CFRN_1992_PAGE_COUNTS: Record<string, number> = {\n  "1992-01-08": 16,\n  "1992-02-05": 20,\n  "1992-03-18": 16,\n  "1992-04-08": 36,\n  "1992-04-15": 16,\n  "1992-04-22": 20,\n  "1992-04-29": 24,\n  "1992-05-06": 28,\n  "1992-06-17": 36,\n  "1992-07-01": 40,\n  "1992-07-15": 28,\n  "1992-08-19": 36,\n  "1992-08-26": 36,\n  "1992-09-09": 32,\n  "1992-09-30": 20,\n  "1992-10-07": 20,\n  "1992-12-09": 19,\n}\n\n'''
+          if 'CFRN_1992_PAGE_COUNTS' not in s:
+              s = s.replace(marker, block + marker)
+
+          func_marker = 'export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {'
+          func = '''function getCfrn1992StorageIssues(): NewspaperIssue[] {\n  return Object.entries(CFRN_1992_PAGE_COUNTS).map(([issueDate, pageCount]) => ({\n    slug: issueDate,\n    title: titleFromIsoDate(issueDate),\n    publication: "Checkered Flag Racing News",\n    publicationSlug: "checkered-flag-racing-news",\n    year: 1992,\n    issueDate,\n    description: null,\n    coverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,\n    backCoverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,\n    thumbnail: `${CFRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,\n    pages: cfrn1976Pages(issueDate, 1, pageCount),\n    featured: false,\n  }))\n}\n\n'''
+          if 'function getCfrn1992StorageIssues' not in s:
+              s = s.replace(func_marker, func + func_marker)
+
+          merge_marker = '      ...getCfrn1976StorageIssues(),\n'
+          if '...getCfrn1992StorageIssues(),' not in s:
+              s = s.replace(merge_marker, merge_marker + '      ...getCfrn1992StorageIssues(),\n')
+
+          p.write_text(s)
+          PY
+      - name: Commit change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/newspapers.ts
+          git commit -m "Expose CFRN 1992 issues from Supabase storage" || exit 0
+          git push
