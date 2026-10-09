@@ -1,0 +1,163 @@
+name: Index CFRN stored OCR by page 1996-2005
+
+on:
+  push:
+    paths:
+      - '.github/workflows/paddleocr-cfrn-storage-page-index-1996-2005.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  index:
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        year: [1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Validate page boundaries and populate searchable index for ${{ matrix.year }}
+        shell: bash
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+          YEAR: ${{ matrix.year }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, re, time, urllib.request, urllib.error
+
+          PROJECT = 'szvkleurojiwqkkztxtr'
+          PUBLICATION = 'checkered-flag-racing-news'
+          STORAGE = f'https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{PUBLICATION}'
+          IMPORT = f'https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-import'
+          TOKEN = os.environ['OIDC_TOKEN']
+          YEAR = int(os.environ['YEAR'])
+
+          all_issues = {
+            '1996-02-07':24,'1996-03-06':20,'1996-04-03':28,'1996-04-10':16,'1996-04-17':20,
+            '1996-04-24':24,'1996-05-08':28,'1996-05-15':28,'1996-05-22':32,'1996-06-05':27,
+            '1996-06-19':32,'1996-07-17':31,'1996-09-04':32,'1996-10-02':20,'1996-12-11':32,
+            '1997-10-01':24,'1997-10-15':24,'1997-12-10':32,
+            '1998-04-15':16,'1998-04-22':24,'1998-04-29':24,'1998-06-24':36,'1998-07-15':36,
+            '1998-07-29':36,'1998-09-02':36,'1998-09-23':28,'1998-10-07':20,'1998-10-21':24,
+            '1999-01-20':24,'1999-03-03':20,'1999-03-17':20,'1999-04-07':20,'1999-04-21':20,
+            '1999-05-19':24,'1999-05-26':28,'1999-06-02':28,'1999-07-28':36,'1999-09-22':28,
+            '1999-09-29':28,'1999-10-20':24,
+            '2000-01-19':24,'2000-02-09':24,'2000-03-01':20,'2000-03-15':16,'2000-04-05':32,
+            '2000-04-12':16,'2000-04-19':20,'2000-04-26':20,'2000-09-27':19,'2000-10-04':16,
+            '2000-12-06':24,
+            '2001-01-17':16,'2001-02-07':16,'2001-02-28':20,'2001-03-14':16,'2001-04-04':28,
+            '2001-04-11':16,'2001-04-18':16,'2001-04-25':16,'2001-05-02':20,'2001-05-09':20,
+            '2001-05-16':20,'2001-06-06':24,'2001-07-25':28,'2001-08-15':28,
+            '2003-08-20':28,'2003-09-03':24,
+            '2004-05-05':20,'2004-07-21':28,
+            '2005-01-19':16,'2005-02-09':20,'2005-06-15':23,'2005-06-22':22,'2005-06-29':22,
+            '2005-07-06':24,'2005-07-13':24,
+          }
+          issues = [(issue, count) for issue, count in all_issues.items() if issue.startswith(f'{YEAR}-')]
+          if not issues:
+              raise RuntimeError(f'No configured issues for {YEAR}')
+
+          def request(req, timeout=90, attempts=4):
+              last = None
+              for attempt in range(1, attempts + 1):
+                  try:
+                      return urllib.request.urlopen(req, timeout=timeout)
+                  except urllib.error.HTTPError as e:
+                      detail = e.read().decode('utf-8','replace')
+                      last = RuntimeError(f'HTTP {e.code}: {detail}')
+                      if e.code < 500 and e.code not in (408,409,429):
+                          raise last
+                  except (urllib.error.URLError, TimeoutError) as e:
+                      last = e
+                  if attempt < attempts:
+                      time.sleep(attempt * 3)
+              raise RuntimeError(f'failed after retries: {last}')
+
+          def fetch_text(issue):
+              req = urllib.request.Request(f'{STORAGE}/{issue}/ocr.txt', headers={'User-Agent':'UMARM CFRN page indexer/1.0'})
+              with request(req, 60) as r:
+                  return r.read().decode('utf-8','replace')
+
+          def page_chunks(text, expected, issue):
+              normalized = text.replace('\r\n','\n').replace('\r','\n').strip()
+              chunks = [chunk.strip() for chunk in re.split(r'\n\s*\n+', normalized) if chunk.strip()]
+              if len(chunks) != expected:
+                  # The prepared CFRN files normally contain one OCR block per scan separated by a blank line.
+                  # Refuse to guess if any issue differs; no database write occurs for this year until validation passes.
+                  raise RuntimeError(f'{issue}: expected {expected} page OCR blocks, found {len(chunks)}')
+              return chunks
+
+          prepared = []
+          total_chars = 0
+          for issue, count in issues:
+              text = fetch_text(issue)
+              chunks = page_chunks(text, count, issue)
+              total_chars += sum(len(c) for c in chunks)
+              prepared.append((issue, count, chunks))
+              print(f'VALIDATED {issue}: {count} scans / {len(chunks)} OCR blocks', flush=True)
+
+          print(f'YEAR {YEAR} VALIDATION COMPLETE: {len(prepared)} issues, {sum(c for _,c,_ in prepared)} pages, {total_chars} OCR chars', flush=True)
+
+          for issue, count, chunks in prepared:
+              pages = []
+              for n, body in enumerate(chunks, 1):
+                  pages.append({
+                      'page': f'{n:03d}.jpg',
+                      'text': body,
+                      'meta': {
+                          'source': 'stored-ocr.txt',
+                          'import_mode': 'blank-line-page-blocks',
+                          'scan_position': n,
+                          'line_layout': {'lines': []},
+                      },
+                  })
+              payload = {
+                  'publication': PUBLICATION,
+                  'year': YEAR,
+                  'issue': issue,
+                  'summary': {
+                      'engine': 'Stored OCR text import',
+                      'recognition_model': 'prepared CFRN OCR page blocks',
+                  },
+                  'pages': pages,
+                  'candidates': [],
+              }
+              req = urllib.request.Request(
+                  IMPORT,
+                  data=json.dumps(payload, separators=(',',':')).encode(),
+                  method='POST',
+                  headers={
+                      'Authorization': f'Bearer {TOKEN}',
+                      'Content-Type': 'application/json',
+                      'User-Agent': 'UMARM CFRN page indexer/1.0',
+                  },
+              )
+              with request(req, 120) as r:
+                  response = json.loads(r.read().decode())
+              if not response.get('ok') or int(response.get('updated', 0)) != count:
+                  raise RuntimeError(f'{issue}: importer verification failed: {response}')
+              print(f'INDEXED {issue}: {count} page rows (skipped_existing={response.get("skipped_page_write")})', flush=True)
+
+          print(json.dumps({
+              'ok': True,
+              'year': YEAR,
+              'issues': len(prepared),
+              'pages': sum(c for _,c,_ in prepared),
+              'characters': total_chars,
+          }, indent=2), flush=True)
+          PY
