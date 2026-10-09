@@ -3,7 +3,8 @@ import { NextRequest, NextResponse } from 'next/server'
 const CANONICAL_MUSEUM = 'https://racing-museum.vercel.app'
 
 export function proxy(request: NextRequest) {
-  if (process.env.RENDER !== 'true') return NextResponse.next()
+  const quarantined = process.env.RENDER === 'true' || process.env.UMARM_RENDER_QUARANTINE === 'true'
+  if (!quarantined) return NextResponse.next()
 
   // Keep Render's lightweight health probe local so the legacy service stays
   // stable while every public request is sent to the authoritative Vercel site.
