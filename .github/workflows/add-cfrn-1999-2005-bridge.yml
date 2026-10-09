@@ -1,0 +1,59 @@
+name: Add CFRN 1999-2005 Archive Bridge
+
+on:
+  push:
+    paths:
+      - '.github/workflows/add-cfrn-1999-2005-bridge.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Patch CFRN storage bridge
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('lib/newspapers.ts')
+          s = p.read_text()
+
+          marker = 'function titleFromIsoDate(issueDate: string) {'
+          block = '''const CFRN_1999_PAGE_COUNTS: Record<string, number> = {\n  "1999-01-20": 24,\n  "1999-03-03": 20,\n  "1999-03-17": 20,\n  "1999-04-07": 20,\n  "1999-04-21": 20,\n  "1999-05-19": 24,\n  "1999-05-26": 28,\n  "1999-06-02": 28,\n  "1999-07-28": 36,\n  "1999-09-22": 28,\n  "1999-09-29": 28,\n  "1999-10-20": 24,\n}\n\nconst CFRN_2000_PAGE_COUNTS: Record<string, number> = {\n  "2000-01-19": 24,\n  "2000-02-09": 24,\n  "2000-03-01": 20,\n  "2000-03-15": 16,\n  "2000-04-05": 32,\n  "2000-04-12": 16,\n  "2000-04-19": 20,\n  "2000-04-26": 20,\n  "2000-09-27": 19,\n  "2000-10-04": 16,\n  "2000-12-06": 24,\n}\n\nconst CFRN_2001_PAGE_COUNTS: Record<string, number> = {\n  "2001-01-17": 16,\n  "2001-02-07": 16,\n  "2001-02-28": 20,\n  "2001-03-14": 16,\n  "2001-04-04": 28,\n  "2001-04-11": 16,\n  "2001-04-18": 16,\n  "2001-04-25": 16,\n  "2001-05-02": 20,\n  "2001-05-09": 20,\n  "2001-05-16": 20,\n  "2001-06-06": 24,\n  "2001-07-25": 28,\n  "2001-08-15": 28,\n}\n\nconst CFRN_2003_PAGE_COUNTS: Record<string, number> = {\n  "2003-08-20": 28,\n  "2003-09-03": 24,\n}\n\nconst CFRN_2004_PAGE_COUNTS: Record<string, number> = {\n  "2004-05-05": 20,\n  "2004-07-21": 28,\n}\n\nconst CFRN_2005_PAGE_COUNTS: Record<string, number> = {\n  "2005-01-19": 16,\n  "2005-02-09": 20,\n  "2005-06-15": 23,\n  "2005-06-22": 22,\n  "2005-06-29": 22,\n  "2005-07-06": 24,\n  "2005-07-13": 24,\n}\n\nconst CFRN_STORAGE_NOTES: Record<string, string> = {\n  "2000-09-27": "Partial issue: printed page 19 is absent from the supplied scans; all available scans are retained.",\n  "2005-06-15": "Partial issue: printed page 21 is absent from the supplied scans; all available scans are retained.",\n  "2005-06-22": "Partial issue: printed pages 10-11 are absent from the supplied scans; all available scans are retained.",\n  "2005-06-29": "Partial issue: printed pages 13-14 are absent from the supplied scans; all available scans are retained.",\n}\n\n'''
+          if 'CFRN_1999_PAGE_COUNTS' not in s:
+              s = s.replace(marker, block + marker)
+
+          old_generic = '''function getCfrnStorageIssues(year: number, pageCounts: Record<string, number>): NewspaperIssue[] {\n  return Object.entries(pageCounts).map(([issueDate, pageCount]) => ({\n    slug: issueDate,\n    title: titleFromIsoDate(issueDate),\n    publication: "Checkered Flag Racing News",\n    publicationSlug: "checkered-flag-racing-news",\n    year,\n    issueDate,\n    description: null,\n'''
+          new_generic = '''function getCfrnStorageIssues(year: number, pageCounts: Record<string, number>): NewspaperIssue[] {\n  return Object.entries(pageCounts).map(([issueDate, pageCount]) => ({\n    slug: issueDate,\n    title: titleFromIsoDate(issueDate),\n    publication: "Checkered Flag Racing News",\n    publicationSlug: "checkered-flag-racing-news",\n    year,\n    issueDate,\n    description: CFRN_STORAGE_NOTES[issueDate] ?? null,\n'''
+          if 'description: CFRN_STORAGE_NOTES[issueDate] ?? null,' not in s:
+              if old_generic not in s:
+                  raise SystemExit('generic CFRN storage issue function marker not found')
+              s = s.replace(old_generic, new_generic, 1)
+
+          func_marker = 'export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {'
+          funcs = '''function getCfrn1999StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(1999, CFRN_1999_PAGE_COUNTS)\n}\n\nfunction getCfrn2000StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(2000, CFRN_2000_PAGE_COUNTS)\n}\n\nfunction getCfrn2001StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(2001, CFRN_2001_PAGE_COUNTS)\n}\n\nfunction getCfrn2003StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(2003, CFRN_2003_PAGE_COUNTS)\n}\n\nfunction getCfrn2004StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(2004, CFRN_2004_PAGE_COUNTS)\n}\n\nfunction getCfrn2005StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(2005, CFRN_2005_PAGE_COUNTS)\n}\n\n'''
+          if 'function getCfrn1999StorageIssues' not in s:
+              s = s.replace(func_marker, funcs + func_marker)
+
+          merge_marker = '      ...getCfrn1998StorageIssues(),\n'
+          additions = '''      ...getCfrn1999StorageIssues(),\n      ...getCfrn2000StorageIssues(),\n      ...getCfrn2001StorageIssues(),\n      ...getCfrn2003StorageIssues(),\n      ...getCfrn2004StorageIssues(),\n      ...getCfrn2005StorageIssues(),\n'''
+          if '...getCfrn1999StorageIssues(),' not in s:
+              if merge_marker not in s:
+                  raise SystemExit('merge marker not found')
+              s = s.replace(merge_marker, merge_marker + additions, 1)
+
+          p.write_text(s)
+          PY
+
+      - name: Commit bridge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/newspapers.ts
+          git commit -m "Expose CFRN 1999-2005 issues from Supabase storage" || exit 0
+          git push
