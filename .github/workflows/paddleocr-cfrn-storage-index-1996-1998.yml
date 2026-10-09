@@ -1,0 +1,157 @@
+name: Index stored CFRN 1996-1998 OCR
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-cfrn-storage-index-1996-1998.yml'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Parse stored OCR and populate searchable page index
+        shell: bash
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, re, urllib.request, urllib.error
+
+          PROJECT = "szvkleurojiwqkkztxtr"
+          PUBLICATION = "checkered-flag-racing-news"
+          STORAGE = f"https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{PUBLICATION}"
+          IMPORT = f"https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-import"
+          TOKEN = os.environ["OIDC_TOKEN"]
+
+          issues = {
+              "1996-02-07": 24,
+              "1996-03-06": 20,
+              "1996-04-03": 28,
+              "1996-04-10": 16,
+              "1996-04-17": 20,
+              "1996-04-24": 24,
+              "1996-05-08": 28,
+              "1996-05-15": 28,
+              "1996-05-22": 32,
+              "1996-06-05": 27,
+              "1996-06-19": 32,
+              "1996-07-17": 31,
+              "1996-09-04": 32,
+              "1996-10-02": 20,
+              "1996-12-11": 32,
+              "1997-10-01": 24,
+              "1997-10-15": 24,
+              "1997-12-10": 32,
+              "1998-04-15": 16,
+              "1998-04-22": 24,
+              "1998-04-29": 24,
+              "1998-06-24": 36,
+              "1998-07-15": 36,
+              "1998-07-29": 36,
+              "1998-09-02": 36,
+              "1998-09-23": 28,
+              "1998-10-07": 20,
+              "1998-10-21": 24,
+          }
+
+          header = re.compile(r"(?m)^---\s+([^\r\n]+?\.jpe?g)\s+---\s*$", re.I)
+
+          def fetch_text(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "UMARM CFRN stored OCR indexer/1.0"})
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return r.read().decode("utf-8", "replace")
+
+          def parse_issue(text, expected):
+              matches = list(header.finditer(text))
+              if not matches:
+                  raise RuntimeError("ocr.txt has no page separator headers")
+              pages = []
+              for i, m in enumerate(matches):
+                  raw_name = m.group(1).strip()
+                  body_start = m.end()
+                  body_end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+                  body = text[body_start:body_end].strip()
+                  stem = re.search(r"(\d+)(?=\.jpe?g$)", raw_name, re.I)
+                  if not stem:
+                      raise RuntimeError(f"Unrecognized page label: {raw_name}")
+                  number = int(stem.group(1))
+                  page = f"{number:03d}.jpg"
+                  if not body:
+                      raise RuntimeError(f"Blank OCR text for {page}")
+                  pages.append({
+                      "page": page,
+                      "text": body,
+                      "meta": {
+                          "source": "stored-ocr.txt",
+                          "line_layout": {"lines": []},
+                      },
+                  })
+              expected_names = [f"{n:03d}.jpg" for n in range(1, expected + 1)]
+              actual_names = [p["page"] for p in pages]
+              if actual_names != expected_names:
+                  raise RuntimeError(f"OCR page sequence mismatch: expected {expected_names}, got {actual_names}")
+              return pages
+
+          total_pages = 0
+          results = []
+          for issue, expected in issues.items():
+              year = int(issue[:4])
+              text = fetch_text(f"{STORAGE}/{issue}/ocr.txt")
+              pages = parse_issue(text, expected)
+              payload = {
+                  "publication": PUBLICATION,
+                  "year": year,
+                  "issue": issue,
+                  "summary": {
+                      "engine": "Stored OCR text import",
+                      "recognition_model": "existing issue-level ocr.txt",
+                  },
+                  "pages": pages,
+                  "candidates": [],
+              }
+              body = json.dumps(payload, separators=(",", ":")).encode()
+              req = urllib.request.Request(
+                  IMPORT,
+                  data=body,
+                  method="POST",
+                  headers={
+                      "Authorization": f"Bearer {TOKEN}",
+                      "Content-Type": "application/json",
+                      "User-Agent": "UMARM CFRN stored OCR indexer/1.0",
+                  },
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=60) as r:
+                      response = json.loads(r.read().decode())
+              except urllib.error.HTTPError as e:
+                  detail = e.read().decode("utf-8", "replace")
+                  raise RuntimeError(f"{issue} import failed HTTP {e.code}: {detail}") from e
+              if not response.get("ok") or int(response.get("updated", 0)) != expected:
+                  raise RuntimeError(f"{issue} importer verification failed: {response}")
+              total_pages += expected
+              results.append({"issue": issue, "pages": expected, "response": response})
+              print(f"{issue}: indexed {expected} pages")
+
+          if total_pages != 754:
+              raise RuntimeError(f"Expected 754 pages, indexed {total_pages}")
+          print(json.dumps({"ok": True, "issues": len(results), "pages": total_pages}, indent=2))
+          PY
