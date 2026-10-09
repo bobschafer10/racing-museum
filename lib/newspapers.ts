@@ -170,6 +170,79 @@ const CFRN_1998_PAGE_COUNTS: Record<string, number> = {
   "1998-10-21": 24,
 }
 
+const CFRN_1999_PAGE_COUNTS: Record<string, number> = {
+  "1999-01-20": 24,
+  "1999-03-03": 20,
+  "1999-03-17": 20,
+  "1999-04-07": 20,
+  "1999-04-21": 20,
+  "1999-05-19": 24,
+  "1999-05-26": 28,
+  "1999-06-02": 28,
+  "1999-07-28": 36,
+  "1999-09-22": 28,
+  "1999-09-29": 28,
+  "1999-10-20": 24,
+}
+
+const CFRN_2000_PAGE_COUNTS: Record<string, number> = {
+  "2000-01-19": 24,
+  "2000-02-09": 24,
+  "2000-03-01": 20,
+  "2000-03-15": 16,
+  "2000-04-05": 32,
+  "2000-04-12": 16,
+  "2000-04-19": 20,
+  "2000-04-26": 20,
+  "2000-09-27": 19,
+  "2000-10-04": 16,
+  "2000-12-06": 24,
+}
+
+const CFRN_2001_PAGE_COUNTS: Record<string, number> = {
+  "2001-01-17": 16,
+  "2001-02-07": 16,
+  "2001-02-28": 20,
+  "2001-03-14": 16,
+  "2001-04-04": 28,
+  "2001-04-11": 16,
+  "2001-04-18": 16,
+  "2001-04-25": 16,
+  "2001-05-02": 20,
+  "2001-05-09": 20,
+  "2001-05-16": 20,
+  "2001-06-06": 24,
+  "2001-07-25": 28,
+  "2001-08-15": 28,
+}
+
+const CFRN_2003_PAGE_COUNTS: Record<string, number> = {
+  "2003-08-20": 28,
+  "2003-09-03": 24,
+}
+
+const CFRN_2004_PAGE_COUNTS: Record<string, number> = {
+  "2004-05-05": 20,
+  "2004-07-21": 28,
+}
+
+const CFRN_2005_PAGE_COUNTS: Record<string, number> = {
+  "2005-01-19": 16,
+  "2005-02-09": 20,
+  "2005-06-15": 23,
+  "2005-06-22": 22,
+  "2005-06-29": 22,
+  "2005-07-06": 24,
+  "2005-07-13": 24,
+}
+
+const CFRN_STORAGE_NOTES: Record<string, string> = {
+  "2000-09-27": "Partial issue: printed page 19 is absent from the supplied scans; all available scans are retained.",
+  "2005-06-15": "Partial issue: printed page 21 is absent from the supplied scans; all available scans are retained.",
+  "2005-06-22": "Partial issue: printed pages 10-11 are absent from the supplied scans; all available scans are retained.",
+  "2005-06-29": "Partial issue: printed pages 13-14 are absent from the supplied scans; all available scans are retained.",
+}
+
 function titleFromIsoDate(issueDate: string) {
   const [year, month, day] = issueDate.split("-").map(Number)
   return new Date(year, month - 1, day).toLocaleDateString("en-US", {
@@ -349,7 +422,7 @@ function getCfrnStorageIssues(year: number, pageCounts: Record<string, number>):
     publicationSlug: "checkered-flag-racing-news",
     year,
     issueDate,
-    description: null,
+    description: CFRN_STORAGE_NOTES[issueDate] ?? null,
     coverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,
     backCoverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,
     thumbnail: `${CFRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,
@@ -368,6 +441,30 @@ function getCfrn1997StorageIssues(): NewspaperIssue[] {
 
 function getCfrn1998StorageIssues(): NewspaperIssue[] {
   return getCfrnStorageIssues(1998, CFRN_1998_PAGE_COUNTS)
+}
+
+function getCfrn1999StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(1999, CFRN_1999_PAGE_COUNTS)
+}
+
+function getCfrn2000StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(2000, CFRN_2000_PAGE_COUNTS)
+}
+
+function getCfrn2001StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(2001, CFRN_2001_PAGE_COUNTS)
+}
+
+function getCfrn2003StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(2003, CFRN_2003_PAGE_COUNTS)
+}
+
+function getCfrn2004StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(2004, CFRN_2004_PAGE_COUNTS)
+}
+
+function getCfrn2005StorageIssues(): NewspaperIssue[] {
+  return getCfrnStorageIssues(2005, CFRN_2005_PAGE_COUNTS)
 }
 
 export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
@@ -436,6 +533,12 @@ export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
       ...getCfrn1996StorageIssues(),
       ...getCfrn1997StorageIssues(),
       ...getCfrn1998StorageIssues(),
+      ...getCfrn1999StorageIssues(),
+      ...getCfrn2000StorageIssues(),
+      ...getCfrn2001StorageIssues(),
+      ...getCfrn2003StorageIssues(),
+      ...getCfrn2004StorageIssues(),
+      ...getCfrn2005StorageIssues(),
       ...ocrBackedMrnIssues,
       ...ocrBackedCfrnIssues,
     ]) {
