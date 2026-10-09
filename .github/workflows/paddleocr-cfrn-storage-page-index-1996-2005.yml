@@ -1,4 +1,4 @@
-name: Index CFRN stored OCR by page 1996-2005
+name: Index CFRN stored OCR by page 1999-2005
 
 on:
   push:
@@ -16,24 +16,12 @@ jobs:
       fail-fast: false
       max-parallel: 1
       matrix:
-        year: [1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005]
+        year: [1999, 2000, 2001, 2003, 2004, 2005]
     runs-on: ubuntu-latest
     steps:
-      - name: Obtain short-lived GitHub OIDC token
-        id: oidc
-        shell: bash
-        run: |
-          set -euo pipefail
-          TOKEN="$(curl -fsSL \
-            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
-            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
-          test -n "$TOKEN"
-          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
-
-      - name: Validate page boundaries and populate searchable index for ${{ matrix.year }}
+      - name: Validate and index stored OCR pages for ${{ matrix.year }}
         shell: bash
         env:
-          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
           YEAR: ${{ matrix.year }}
         run: |
           set -euo pipefail
@@ -44,16 +32,11 @@ jobs:
           PUBLICATION = 'checkered-flag-racing-news'
           STORAGE = f'https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{PUBLICATION}'
           IMPORT = f'https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-import'
-          TOKEN = os.environ['OIDC_TOKEN']
           YEAR = int(os.environ['YEAR'])
+          OIDC_URL = os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
+          OIDC_REQUEST_TOKEN = os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
 
           all_issues = {
-            '1996-02-07':24,'1996-03-06':20,'1996-04-03':28,'1996-04-10':16,'1996-04-17':20,
-            '1996-04-24':24,'1996-05-08':28,'1996-05-15':28,'1996-05-22':32,'1996-06-05':27,
-            '1996-06-19':32,'1996-07-17':31,'1996-09-04':32,'1996-10-02':20,'1996-12-11':32,
-            '1997-10-01':24,'1997-10-15':24,'1997-12-10':32,
-            '1998-04-15':16,'1998-04-22':24,'1998-04-29':24,'1998-06-24':36,'1998-07-15':36,
-            '1998-07-29':36,'1998-09-02':36,'1998-09-23':28,'1998-10-07':20,'1998-10-21':24,
             '1999-01-20':24,'1999-03-03':20,'1999-03-17':20,'1999-04-07':20,'1999-04-21':20,
             '1999-05-19':24,'1999-05-26':28,'1999-06-02':28,'1999-07-28':36,'1999-09-22':28,
             '1999-09-29':28,'1999-10-20':24,
@@ -72,7 +55,7 @@ jobs:
           if not issues:
               raise RuntimeError(f'No configured issues for {YEAR}')
 
-          def request(req, timeout=90, attempts=4):
+          def open_with_retry(req, timeout, attempts=3):
               last = None
               for attempt in range(1, attempts + 1):
                   try:
@@ -88,35 +71,47 @@ jobs:
                       time.sleep(attempt * 3)
               raise RuntimeError(f'failed after retries: {last}')
 
-          def fetch_text(issue):
-              req = urllib.request.Request(f'{STORAGE}/{issue}/ocr.txt', headers={'User-Agent':'UMARM CFRN page indexer/1.0'})
-              with request(req, 60) as r:
+          def fetch_ocr(issue):
+              req = urllib.request.Request(
+                  f'{STORAGE}/{issue}/ocr.txt',
+                  headers={'User-Agent':'UMARM CFRN page indexer/1.1'},
+              )
+              with open_with_retry(req, 30, 3) as r:
                   return r.read().decode('utf-8','replace')
 
-          def page_chunks(text, expected, issue):
+          def split_pages(text, expected, issue):
               normalized = text.replace('\r\n','\n').replace('\r','\n').strip()
               chunks = [chunk.strip() for chunk in re.split(r'\n\s*\n+', normalized) if chunk.strip()]
               if len(chunks) != expected:
-                  # The prepared CFRN files normally contain one OCR block per scan separated by a blank line.
-                  # Refuse to guess if any issue differs; no database write occurs for this year until validation passes.
                   raise RuntimeError(f'{issue}: expected {expected} page OCR blocks, found {len(chunks)}')
               return chunks
 
-          prepared = []
+          def fresh_oidc_token():
+              separator = '&' if '?' in OIDC_URL else '?'
+              url = f'{OIDC_URL}{separator}audience=umarm-newspaper-ocr-import'
+              req = urllib.request.Request(
+                  url,
+                  headers={
+                      'Authorization': f'bearer {OIDC_REQUEST_TOKEN}',
+                      'User-Agent': 'UMARM CFRN page indexer/1.1',
+                  },
+              )
+              with open_with_retry(req, 20, 3) as r:
+                  token = json.loads(r.read().decode()).get('value')
+              if not token:
+                  raise RuntimeError('GitHub OIDC token response did not contain value')
+              return token
+
+          total_pages = 0
           total_chars = 0
           for issue, count in issues:
-              text = fetch_text(issue)
-              chunks = page_chunks(text, count, issue)
-              total_chars += sum(len(c) for c in chunks)
-              prepared.append((issue, count, chunks))
-              print(f'VALIDATED {issue}: {count} scans / {len(chunks)} OCR blocks', flush=True)
+              text = fetch_ocr(issue)
+              chunks = split_pages(text, count, issue)
+              chars = sum(len(c) for c in chunks)
+              print(f'VALIDATED {issue}: {count} scans / {len(chunks)} OCR page blocks / {chars} chars', flush=True)
 
-          print(f'YEAR {YEAR} VALIDATION COMPLETE: {len(prepared)} issues, {sum(c for _,c,_ in prepared)} pages, {total_chars} OCR chars', flush=True)
-
-          for issue, count, chunks in prepared:
-              pages = []
-              for n, body in enumerate(chunks, 1):
-                  pages.append({
+              pages = [
+                  {
                       'page': f'{n:03d}.jpg',
                       'text': body,
                       'meta': {
@@ -125,7 +120,9 @@ jobs:
                           'scan_position': n,
                           'line_layout': {'lines': []},
                       },
-                  })
+                  }
+                  for n, body in enumerate(chunks, 1)
+              ]
               payload = {
                   'publication': PUBLICATION,
                   'year': YEAR,
@@ -137,27 +134,33 @@ jobs:
                   'pages': pages,
                   'candidates': [],
               }
+
+              token = fresh_oidc_token()
               req = urllib.request.Request(
                   IMPORT,
                   data=json.dumps(payload, separators=(',',':')).encode(),
                   method='POST',
                   headers={
-                      'Authorization': f'Bearer {TOKEN}',
+                      'Authorization': f'Bearer {token}',
                       'Content-Type': 'application/json',
-                      'User-Agent': 'UMARM CFRN page indexer/1.0',
+                      'User-Agent': 'UMARM CFRN page indexer/1.1',
                   },
               )
-              with request(req, 120) as r:
+              with open_with_retry(req, 120, 4) as r:
                   response = json.loads(r.read().decode())
               if not response.get('ok') or int(response.get('updated', 0)) != count:
                   raise RuntimeError(f'{issue}: importer verification failed: {response}')
-              print(f'INDEXED {issue}: {count} page rows (skipped_existing={response.get("skipped_page_write")})', flush=True)
+
+              total_pages += count
+              total_chars += chars
+              print(f'INDEXED {issue}: {count} searchable page rows (skipped_existing={response.get("skipped_page_write")})', flush=True)
+              time.sleep(1)
 
           print(json.dumps({
               'ok': True,
               'year': YEAR,
-              'issues': len(prepared),
-              'pages': sum(c for _,c,_ in prepared),
+              'issues': len(issues),
+              'pages': total_pages,
               'characters': total_chars,
           }, indent=2), flush=True)
           PY
