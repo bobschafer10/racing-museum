@@ -1,0 +1,50 @@
+name: Add CFRN 1996-1998 Archive Bridge
+
+on:
+  push:
+    paths:
+      - '.github/workflows/add-cfrn-1996-1998-bridge.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Patch newspaper archive bridge
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('lib/newspapers.ts')
+          s = p.read_text()
+
+          marker = 'function titleFromIsoDate(issueDate: string) {'
+          constants = '''const CFRN_1996_PAGE_COUNTS: Record<string, number> = {\n  "1996-02-07": 24,\n  "1996-03-06": 20,\n  "1996-04-03": 28,\n  "1996-04-10": 16,\n  "1996-04-17": 20,\n  "1996-04-24": 24,\n  "1996-05-08": 28,\n  "1996-05-15": 28,\n  "1996-05-22": 32,\n  "1996-06-05": 27,\n  "1996-06-19": 32,\n  "1996-07-17": 31,\n  "1996-09-04": 32,\n  "1996-10-02": 20,\n  "1996-12-11": 32,\n}\n\nconst CFRN_1997_PAGE_COUNTS: Record<string, number> = {\n  "1997-10-01": 24,\n  "1997-10-15": 24,\n  "1997-12-10": 32,\n}\n\nconst CFRN_1998_PAGE_COUNTS: Record<string, number> = {\n  "1998-04-15": 16,\n  "1998-04-22": 24,\n  "1998-04-29": 24,\n  "1998-06-24": 36,\n  "1998-07-15": 36,\n  "1998-07-29": 36,\n  "1998-09-02": 36,\n  "1998-09-23": 28,\n  "1998-10-07": 20,\n  "1998-10-21": 24,\n}\n\n'''
+          if 'CFRN_1996_PAGE_COUNTS' not in s:
+              s = s.replace(marker, constants + marker)
+
+          func_marker = 'export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {'
+          funcs = '''function getCfrnStorageIssues(year: number, pageCounts: Record<string, number>): NewspaperIssue[] {\n  return Object.entries(pageCounts).map(([issueDate, pageCount]) => ({\n    slug: issueDate,\n    title: titleFromIsoDate(issueDate),\n    publication: "Checkered Flag Racing News",\n    publicationSlug: "checkered-flag-racing-news",\n    year,\n    issueDate,\n    description: null,\n    coverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,\n    backCoverImage: `${CFRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,\n    thumbnail: `${CFRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,\n    pages: cfrn1976Pages(issueDate, 1, pageCount),\n    featured: false,\n  }))\n}\n\nfunction getCfrn1996StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(1996, CFRN_1996_PAGE_COUNTS)\n}\n\nfunction getCfrn1997StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(1997, CFRN_1997_PAGE_COUNTS)\n}\n\nfunction getCfrn1998StorageIssues(): NewspaperIssue[] {\n  return getCfrnStorageIssues(1998, CFRN_1998_PAGE_COUNTS)\n}\n\n'''
+          if 'function getCfrn1996StorageIssues' not in s:
+              s = s.replace(func_marker, funcs + func_marker)
+
+          merge_marker = '      ...getCfrn1995StorageIssues(),\n'
+          additions = '      ...getCfrn1996StorageIssues(),\n      ...getCfrn1997StorageIssues(),\n      ...getCfrn1998StorageIssues(),\n'
+          if '...getCfrn1996StorageIssues(),' not in s:
+              s = s.replace(merge_marker, merge_marker + additions)
+
+          p.write_text(s)
+          PY
+
+      - name: Commit change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/newspapers.ts
+          git commit -m "Expose CFRN 1996-1998 issues from Supabase storage" || exit 0
+          git push
