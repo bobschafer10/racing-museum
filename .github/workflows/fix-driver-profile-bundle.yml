@@ -1,0 +1,63 @@
+name: Consolidate Driver Profile Queries
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-driver-profile-bundle.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Replace driver profile fan-out with one RPC
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('app/drivers/[slug]/page.tsx')
+          text = path.read_text(encoding='utf-8')
+
+          start = text.index("  const { data: driver, error } = await supabase")
+          end = text.index("  const orderedPhotos =", start)
+          replacement = '''  const { data: bundle, error } = await supabase.rpc('driver_profile_bundle', { p_slug: slug })\n  const driver = ((bundle as any)?.driver ?? null) as Driver | null\n\n  if (error || !driver) notFound()\n\n  const safePhotos = (((bundle as any)?.photos ?? []) as Photo[])\n  const safeTopTracks = (bundle as any)?.top_tracks ?? []\n  const flatResultsByYear = Array.isArray((bundle as any)?.results_by_year) ? (bundle as any).results_by_year : []\n  const safeWinsByClass = (bundle as any)?.wins_by_class ?? []\n  const safeRecentResults = (bundle as any)?.recent_results ?? []\n  const safeChampionships = (bundle as any)?.championships ?? []\n  const safeWinRows = (bundle as any)?.win_rows ?? []\n  const seriesChampionshipRows = (bundle as any)?.series_championships ?? []\n  const seriesWinRows = (bundle as any)?.series_wins ?? []\n  const lastWinDate = (bundle as any)?.last_win ?? null\n  const safeCareerHeadlineRows = (((bundle as any)?.career_headlines ?? []) as CareerHeadlineRow[])\n  const winningTrackRows = (bundle as any)?.winning_track_rows ?? []\n  const topSeriesRow = (bundle as any)?.top_series ?? null\n\n'''
+          text = text[:start] + replacement + text[end:]
+
+          old = '''  const { data: winningTrackRows } = winningTrackSlugs.length\n    ? await supabase.from('Tracks').select('slug, state, logo_url').in('slug', winningTrackSlugs)\n    : { data: [] as any[] }\n\n'''
+          if old not in text:
+              raise RuntimeError('winningTrackRows fetch block not found')
+          text = text.replace(old, '')
+
+          pattern = re.compile(r'''  const seriesWinCounts = new Map<number, number>\(\)\n  for \(const row of seriesWinRows \?\? \[\]\) \{\n    const id = Number\(\(row as any\)\.series_id\)\n    if \(id\) seriesWinCounts\.set\(id, \(seriesWinCounts\.get\(id\) \?\? 0\) \+ 1\)\n  \}\n  const topSeriesId = Array\.from\(seriesWinCounts\.entries\(\)\)\.sort\(\(a, b\) => b\[1\] - a\[1\]\)\[0\]\?\.\[0\] \?\? null\n  const \{ data: topSeriesRow \} = topSeriesId\n    \? await supabase\.from\('Series'\)\.select\('series_name, logo_url'\)\.eq\('id', topSeriesId\)\.maybeSingle\(\)\n    : \{ data: null as any \}\n''')
+          text, count = pattern.subn('', text, count=1)
+          if count != 1:
+              raise RuntimeError(f'top series block replacements={count}')
+
+          old_last = '''  const lastFeatureWinDate = (lastWinRows?.[0] as any)?.race_date\n    ? formatRaceDate((lastWinRows?.[0] as any).race_date)\n    : '—'\n'''
+          new_last = '''  const lastFeatureWinDate = lastWinDate\n    ? formatRaceDate(lastWinDate)\n    : '—'\n'''
+          if old_last not in text:
+              raise RuntimeError('last-win block not found')
+          text = text.replace(old_last, new_last)
+
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit change
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'app/drivers/[slug]/page.tsx'
+          git commit -m 'Collapse driver profile Supabase reads into one RPC'
+          git push origin HEAD:main
