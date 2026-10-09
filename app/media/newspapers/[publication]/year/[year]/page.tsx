@@ -11,7 +11,7 @@ export default async function NewspaperYearPage({ params }: { params: Promise<{ 
 
   const publicationName = issues[0].publication
   const pageCount = issues.reduce((sum, issue)=>sum+(issue.pages?.length||0),0)
-  const hero = issues[0].coverImage
+  const hero = issues[0].thumbnailImage || issues[0].thumbnail || issues[0].coverImage
 
   return <main className="ma-page">
     <section className="ma-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.97),rgba(5,8,10,.82) 50%,rgba(5,8,10,.48)),url(${hero})`,backgroundSize:'cover',backgroundPosition:'center top'}}>
@@ -22,7 +22,7 @@ export default async function NewspaperYearPage({ params }: { params: Promise<{ 
       </div>
     </section>
 
-    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Complete Year</div><h2 className="ma-h2">{year} Issues</h2></div><div className="ma-note">Issues are presented in chronological order.</div></div><div className="ma-issue-grid">{issues.map(issue => <Link key={issue.slug} href={`/media/newspapers/${publication}/${issue.slug}`} className="ma-issue"><img src={issue.coverImage} alt={`${issue.publication} ${issue.title}`} /><strong>{issue.title}</strong><div className="ma-card-meta">{issue.pages.length} preserved pages</div><span>Open issue →</span></Link>)}</div></section>
+    <section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Complete Year</div><h2 className="ma-h2">{year} Issues</h2></div><div className="ma-note">Issues are presented in chronological order.</div></div><div className="ma-issue-grid">{issues.map(issue => <Link key={issue.slug} href={`/media/newspapers/${publication}/${issue.slug}`} className="ma-issue"><img src={issue.thumbnailImage || issue.thumbnail || issue.coverImage} alt={`${issue.publication} ${issue.title}`} loading="lazy" /><strong>{issue.title}</strong><div className="ma-card-meta">{issue.pages.length} preserved pages</div><span>Open issue →</span></Link>)}</div></section>
 
     <section className="ma-section"><div className="ma-footer-links"><Link href={`/media/newspapers/${publication}`} className="ma-footer-link">{publicationName}<span>Publication archive →</span></Link><Link href="/media/newspapers" className="ma-footer-link">Newspapers<span>All publications →</span></Link><Link href="/media" className="ma-footer-link">Media Archive<span>Return to media archive →</span></Link></div></section>
   </main>

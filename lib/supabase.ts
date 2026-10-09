@@ -31,7 +31,8 @@ const OCR_SEARCH_TIMEOUT_MS = 20_000
 const PUBLIC_READ_REVALIDATE_SECONDS = 43_200
 const PUBLIC_READ_REVALIDATE_MS = PUBLIC_READ_REVALIDATE_SECONDS * 1_000
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
-const MAX_CACHE_BODY_BYTES = 2_000_000
+const MAX_CACHE_BODY_BYTES = 250_000
+const MAX_CACHE_ENTRIES = 750
 
 const homepageStatsFallback = {
   drivers_count: 32081,
@@ -77,6 +78,17 @@ function cachedResponse(key: string, maxAgeMs = MAX_STALE_MS) {
   if (ageMs > maxAgeMs) return null
 
   return responseFromSnapshot(cached)
+}
+
+function rememberCachedResponse(key: string, snapshot: CachedResponse) {
+  if (readCache.has(key)) readCache.delete(key)
+  readCache.set(key, snapshot)
+
+  while (readCache.size > MAX_CACHE_ENTRIES) {
+    const oldestKey = readCache.keys().next().value as string | undefined
+    if (!oldestKey) break
+    readCache.delete(oldestKey)
+  }
 }
 
 function seededHomepageStats(url: string) {
@@ -156,7 +168,7 @@ const resilientFetch: typeof fetch = async (input, init) => {
       }
 
       if (response.ok && body.length <= MAX_CACHE_BODY_BYTES) {
-        readCache.set(key, snapshot)
+        rememberCachedResponse(key, snapshot)
       }
 
       return snapshot

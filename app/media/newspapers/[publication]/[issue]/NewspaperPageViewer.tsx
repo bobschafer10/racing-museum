@@ -1,7 +1,6 @@
 "use client"
 
 import { useCallback, useEffect, useRef, useState } from "react"
-import Image from "next/image"
 import type { CSSProperties, ReactNode } from "react"
 import { supabase } from "@/lib/supabase"
 
@@ -271,24 +270,21 @@ export default function NewspaperPageViewer({
     matchCache.current.set(targetIndex, match)
     trimCache(targetIndex)
 
-    if (typeof window !== "undefined") {
+    if (!preloadOnly && typeof window !== "undefined") {
       const preload = new window.Image()
       preload.decoding = "async"
       preload.src = image
-      if (!preloadOnly && "decode" in preload) {
+      if ("decode" in preload) {
         try { await preload.decode() } catch { /* browser will still render the image */ }
       }
     }
     return match
   }, [searchQuery, matchTotal, trimCache])
 
-  const warmAdjacent = useCallback((centerIndex: number) => {
-    if (!searchQuery || !matchTotal) return
-    const next = centerIndex + 1
-    const previous = centerIndex - 1
-    if (next < matchTotal && !matchCache.current.has(next)) void loadMatch(next, true)
-    if (previous >= 0 && !matchCache.current.has(previous)) void loadMatch(previous, true)
-  }, [loadMatch, matchTotal, searchQuery])
+  const warmAdjacent = useCallback((_centerIndex: number) => {
+    // Deliberately do not prefetch neighboring OCR matches. A full newspaper
+    // scan can be several megabytes; fetch it only when the visitor navigates there.
+  }, [])
 
   useEffect(() => {
     if (initialSearchMode && activeMatch) warmAdjacent(activeMatch.index)
@@ -398,7 +394,7 @@ export default function NewspaperPageViewer({
         }}
         aria-label={`Open ${page.label}`}
       >
-        <Image src={page.image} alt={page.label} width={320} height={440} unoptimized style={thumbImage}/>
+        <div style={thumbPlaceholder} aria-hidden="true"><span style={thumbPlaceholderLabel}>OPEN SCAN</span></div>
         <figcaption style={caption}>{page.label}</figcaption>
       </button>)}
     </div>
@@ -464,7 +460,8 @@ export default function NewspaperPageViewer({
 }
 
 const buttonReset: CSSProperties = {cursor:'pointer',fontFamily:'Arial,Helvetica,sans-serif',color:'inherit',textAlign:'inherit'}
-const thumbImage: CSSProperties = {width:'100%',height:'auto',display:'block',background:'#e9dfca'}
+const thumbPlaceholder: CSSProperties = {width:'100%',aspectRatio:'8.5 / 11',display:'flex',alignItems:'center',justifyContent:'center',background:'linear-gradient(135deg,#eee4cf,#d6c8aa)',border:'1px solid rgba(255,255,255,.08)'}
+const thumbPlaceholderLabel: CSSProperties = {fontSize:10,fontWeight:900,letterSpacing:'.14em',color:'#4a4234'}
 const caption: CSSProperties = {fontSize:9,textTransform:'uppercase',letterSpacing:'.1em',textAlign:'center',color:'#aeb4b8',padding:'8px 4px 2px',fontWeight:800}
 const overlay: CSSProperties = {position:'fixed',inset:0,zIndex:9999,background:'rgba(3,5,7,.96)',display:'flex',alignItems:'center',justifyContent:'center',padding:24}
 const shell: CSSProperties = {width:'90vw',height:'92vh',display:'flex',flexDirection:'column',alignItems:'center'}

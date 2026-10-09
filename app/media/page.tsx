@@ -72,7 +72,8 @@ export default async function MediaArchivePage() {
 
   const newspaperCover = [...issues]
     .reverse()
-    .find((issue) => Boolean(issue.coverImage))?.coverImage
+    .map((issue) => issue.thumbnailImage || issue.thumbnail || issue.coverImage)
+    .find(Boolean)
 
   const collections = [
     {
@@ -381,7 +382,7 @@ function issueToArtifact(issue: NewspaperIssue): FeaturedArtifact {
     href: `/media/newspapers/${issue.publicationSlug}/${issue.slug}`,
     title: issue.publication,
     meta: `${formatIssueDate(issue.issueDate)} • Newspaper`,
-    image: issue.coverImage,
+    image: issue.thumbnailImage || issue.thumbnail || issue.coverImage,
     badge: issue.publication,
     source: 'newspaper',
     familyKey: issue.publicationSlug,

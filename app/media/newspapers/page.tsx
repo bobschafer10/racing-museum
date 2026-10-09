@@ -25,10 +25,10 @@ function yearRange(first: number | null, last: number | null) {
 export default async function NewspapersPage() {
   const issues = await getNewspaperIssues()
   const publications = Object.values(issues.reduce((acc, issue) => {
-    if (!acc[issue.publicationSlug]) acc[issue.publicationSlug] = { slug: issue.publicationSlug, name: issue.publication, years: {}, issueCount: 0, latestCover: issue.coverImage }
+    if (!acc[issue.publicationSlug]) acc[issue.publicationSlug] = { slug: issue.publicationSlug, name: issue.publication, years: {}, issueCount: 0, latestCover: issue.thumbnailImage || issue.thumbnail || issue.coverImage }
     acc[issue.publicationSlug].years[String(issue.year)] = (acc[issue.publicationSlug].years[String(issue.year)] || 0) + 1
     acc[issue.publicationSlug].issueCount += 1
-    acc[issue.publicationSlug].latestCover = issue.coverImage || acc[issue.publicationSlug].latestCover
+    acc[issue.publicationSlug].latestCover = issue.thumbnailImage || issue.thumbnail || issue.coverImage || acc[issue.publicationSlug].latestCover
     return acc
   }, {} as Record<string, PublicationGroup>)).sort((a,b) => b.issueCount - a.issueCount)
 
@@ -36,7 +36,7 @@ export default async function NewspapersPage() {
   const earliest = years.length ? Math.min(...years) : null
   const latest = years.length ? Math.max(...years) : null
   const pageCount = issues.reduce((sum, issue) => sum + (issue.pages?.length || 0), 0)
-  const heroCover = issues.find(i => i.coverImage)?.coverImage
+  const heroCover = issues.map(i => i.thumbnailImage || i.thumbnail || i.coverImage).find(Boolean)
 
   // Keep OCR coverage checks tiny and cacheable. The former exact-count query used
   // HEAD, which bypassed the resilient GET cache and could display 0 during a
