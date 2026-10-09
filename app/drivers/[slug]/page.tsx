@@ -56,97 +56,24 @@ function number(value: number | null | undefined) {
 export default async function DriverProfilePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
 
-  const { data: driver, error } = await supabase
-    .from('driver_directory_alpha_view')
-    .select('*')
-    .eq('driver_slug', slug)
-    .single<Driver>()
+  const { data: bundle, error } = await supabase.rpc('driver_profile_bundle', { p_slug: slug })
+  const driver = ((bundle as any)?.driver ?? null) as Driver | null
 
   if (error || !driver) notFound()
 
-  const [
-    { data: photos },
-    { data: topTracks },
-    { data: resultsByYear },
-    { data: winsByClass },
-    { data: recentResults },
-    { data: championships },
-    { data: winRows },
-    { data: seriesChampionshipRows },
-    { data: seriesWinRows },
-    { data: lastWinRows },
-    { data: careerHeadlineRows },
-  ] = await Promise.all([
-    supabase
-      .from('photos')
-      .select('photo_id, file_name, year, photographer_slug, credit_type, sequence, track_slug')
-      .eq('driver_slug', slug)
-      .order('year', { ascending: true, nullsFirst: false })
-      .order('sequence', { ascending: true }),
-    supabase
-      .from('driver_wins_by_track_view')
-      .select('track_name, track_slug, wins')
-      .eq('driver_slug', slug)
-      .order('wins', { ascending: false })
-      .limit(10),
-    supabase
-      .from('driver_results_by_year_view')
-      .select('result_year, results_count, wins, top_3s')
-      .eq('driver_slug', slug)
-      .order('result_year', { ascending: false })
-      .limit(60),
-    supabase
-      .from('driver_wins_by_class_view')
-      .select('class_name, wins')
-      .eq('driver_slug', slug)
-      .order('wins', { ascending: false })
-      .limit(10),
-    supabase
-      .from('driver_recent_results_view')
-      .select('race_date, track_name, track_slug, class_name, finishing_position')
-      .eq('driver_slug', slug)
-      .order('race_date', { ascending: false })
-      .limit(10),
-    supabase
-      .from('driver_championships_view')
-      .select('year, track_name, track_slug, class_name')
-      .eq('driver_slug', slug)
-      .order('year', { ascending: false }),
-    supabase
-      .from('driver_full_results_view')
-      .select('track_slug, class_name, race_date')
-      .eq('driver_slug', slug)
-      .eq('finishing_position', 1),
-    supabase
-      .from('SeriesSeasons')
-      .select('id, series_id, year')
-      .eq('champion_driver_id', driver.driver_id),
-    supabase
-      .from('SeriesEvents')
-      .select('series_id')
-      .eq('winner_driver_id', driver.driver_id),
-    supabase
-      .from('driver_full_results_view')
-      .select('race_date')
-      .eq('driver_slug', slug)
-      .eq('finishing_position', 1)
-      .order('race_date', { ascending: false })
-      .limit(1),
-    supabase
-      .from('DriverCareerAccomplishments')
-      .select('accomplishment_type')
-      .eq('driver_slug', slug)
-      .eq('is_published', true),
-  ])
-
-  const safePhotos = (photos ?? []) as Photo[]
-  const safeTopTracks = topTracks ?? []
-  const flatResultsByYear = Array.isArray(resultsByYear ?? []) ? (resultsByYear ?? []) : []
-  const safeWinsByClass = winsByClass ?? []
-  const safeRecentResults = recentResults ?? []
-  const safeChampionships = championships ?? []
-  const safeWinRows = winRows ?? []
-  const safeCareerHeadlineRows = (careerHeadlineRows ?? []) as CareerHeadlineRow[]
+  const safePhotos = (((bundle as any)?.photos ?? []) as Photo[])
+  const safeTopTracks = (bundle as any)?.top_tracks ?? []
+  const flatResultsByYear = Array.isArray((bundle as any)?.results_by_year) ? (bundle as any).results_by_year : []
+  const safeWinsByClass = (bundle as any)?.wins_by_class ?? []
+  const safeRecentResults = (bundle as any)?.recent_results ?? []
+  const safeChampionships = (bundle as any)?.championships ?? []
+  const safeWinRows = (bundle as any)?.win_rows ?? []
+  const seriesChampionshipRows = (bundle as any)?.series_championships ?? []
+  const seriesWinRows = (bundle as any)?.series_wins ?? []
+  const lastWinDate = (bundle as any)?.last_win ?? null
+  const safeCareerHeadlineRows = (((bundle as any)?.career_headlines ?? []) as CareerHeadlineRow[])
+  const winningTrackRows = (bundle as any)?.winning_track_rows ?? []
+  const topSeriesRow = (bundle as any)?.top_series ?? null
 
   const orderedPhotos = [...safePhotos].sort((a, b) => {
     const yearA = normalizedPhotoYear(a.year)
@@ -178,10 +105,6 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   const winningTrackSlugs = Array.from(new Set(
     safeWinRows.map((row: any) => row.track_slug).filter(Boolean),
   )) as string[]
-
-  const { data: winningTrackRows } = winningTrackSlugs.length
-    ? await supabase.from('Tracks').select('slug, state, logo_url').in('slug', winningTrackSlugs)
-    : { data: [] as any[] }
 
   const stateByTrack = new Map<string, string>()
   const logoByTrack = new Map<string, string>()
@@ -226,19 +149,10 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     ? (logoByTrack.get(String(mostSuccessfulTrackSlug)) || `/logos/tracks/${mostSuccessfulTrackSlug}.jpg`)
     : ''
 
-  const seriesWinCounts = new Map<number, number>()
-  for (const row of seriesWinRows ?? []) {
-    const id = Number((row as any).series_id)
-    if (id) seriesWinCounts.set(id, (seriesWinCounts.get(id) ?? 0) + 1)
-  }
-  const topSeriesId = Array.from(seriesWinCounts.entries()).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
-  const { data: topSeriesRow } = topSeriesId
-    ? await supabase.from('Series').select('series_name, logo_url').eq('id', topSeriesId).maybeSingle()
-    : { data: null as any }
   const mostSuccessfulSeries = (topSeriesRow as any)?.series_name || 'No series wins recorded'
   const mostSuccessfulSeriesLogo = (topSeriesRow as any)?.logo_url || ''
-  const lastFeatureWinDate = (lastWinRows?.[0] as any)?.race_date
-    ? formatRaceDate((lastWinRows?.[0] as any).race_date)
+  const lastFeatureWinDate = lastWinDate
+    ? formatRaceDate(lastWinDate)
     : '—'
 
   const bestYear = flatResultsByYear.reduce<any | null>((best, row: any) => {
