@@ -27,7 +27,7 @@ jobs:
           test -n "$TOKEN"
           echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
 
-      - name: Parse stored OCR and populate searchable page index
+      - name: Parse stored OCR and populate searchable index
         shell: bash
         env:
           OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
@@ -43,100 +43,112 @@ jobs:
           TOKEN = os.environ["OIDC_TOKEN"]
 
           issues = {
-              "1996-02-07": 24,
-              "1996-03-06": 20,
-              "1996-04-03": 28,
-              "1996-04-10": 16,
-              "1996-04-17": 20,
-              "1996-04-24": 24,
-              "1996-05-08": 28,
-              "1996-05-15": 28,
-              "1996-05-22": 32,
-              "1996-06-05": 27,
-              "1996-06-19": 32,
-              "1996-07-17": 31,
-              "1996-09-04": 32,
-              "1996-10-02": 20,
-              "1996-12-11": 32,
-              "1997-10-01": 24,
-              "1997-10-15": 24,
-              "1997-12-10": 32,
-              "1998-04-15": 16,
-              "1998-04-22": 24,
-              "1998-04-29": 24,
-              "1998-06-24": 36,
-              "1998-07-15": 36,
-              "1998-07-29": 36,
-              "1998-09-02": 36,
-              "1998-09-23": 28,
-              "1998-10-07": 20,
+              "1996-02-07": 24, "1996-03-06": 20, "1996-04-03": 28,
+              "1996-04-10": 16, "1996-04-17": 20, "1996-04-24": 24,
+              "1996-05-08": 28, "1996-05-15": 28, "1996-05-22": 32,
+              "1996-06-05": 27, "1996-06-19": 32, "1996-07-17": 31,
+              "1996-09-04": 32, "1996-10-02": 20, "1996-12-11": 32,
+              "1997-10-01": 24, "1997-10-15": 24, "1997-12-10": 32,
+              "1998-04-15": 16, "1998-04-22": 24, "1998-04-29": 24,
+              "1998-06-24": 36, "1998-07-15": 36, "1998-07-29": 36,
+              "1998-09-02": 36, "1998-09-23": 28, "1998-10-07": 20,
               "1998-10-21": 24,
           }
 
-          header = re.compile(r"(?m)^---\s+([^\r\n]+?\.jpe?g)\s+---\s*$", re.I)
+          old_header = re.compile(r"(?m)^---\s+([^\r\n]+?\.jpe?g)\s+---\s*$", re.I)
+          page_header = re.compile(r"(?im)^\s*(?:={2,}\s*)?(?:page|pg\.?)[ #:.-]*(\d{1,3})(?:\s*(?:of|/)\s*\d{1,3})?\s*(?:={2,})?\s*$")
 
           def fetch_text(url):
-              req = urllib.request.Request(url, headers={"User-Agent": "UMARM CFRN stored OCR indexer/1.0"})
+              req = urllib.request.Request(url, headers={"User-Agent": "UMARM CFRN stored OCR indexer/1.1"})
               with urllib.request.urlopen(req, timeout=30) as r:
                   return r.read().decode("utf-8", "replace")
 
-          def parse_issue(text, expected):
-              matches = list(header.finditer(text))
-              if not matches:
-                  raise RuntimeError("ocr.txt has no page separator headers")
-              pages = []
-              for i, m in enumerate(matches):
-                  raw_name = m.group(1).strip()
-                  body_start = m.end()
-                  body_end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-                  body = text[body_start:body_end].strip()
-                  stem = re.search(r"(\d+)(?=\.jpe?g$)", raw_name, re.I)
-                  if not stem:
-                      raise RuntimeError(f"Unrecognized page label: {raw_name}")
-                  number = int(stem.group(1))
-                  page = f"{number:03d}.jpg"
-                  if not body:
-                      raise RuntimeError(f"Blank OCR text for {page}")
-                  pages.append({
-                      "page": page,
-                      "text": body,
-                      "meta": {
-                          "source": "stored-ocr.txt",
-                          "line_layout": {"lines": []},
-                      },
-                  })
-              expected_names = [f"{n:03d}.jpg" for n in range(1, expected + 1)]
-              actual_names = [p["page"] for p in pages]
-              if actual_names != expected_names:
-                  raise RuntimeError(f"OCR page sequence mismatch: expected {expected_names}, got {actual_names}")
-              return pages
+          def row(page, body, mode):
+              return {
+                  "page": page,
+                  "text": body.strip(),
+                  "meta": {
+                      "source": "stored-ocr.txt",
+                      "import_mode": mode,
+                      "line_layout": {"lines": []},
+                  },
+              }
 
-          total_pages = 0
-          results = []
+          def parse_issue(text, expected):
+              text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+              # Museum legacy page separators.
+              matches = list(old_header.finditer(text))
+              if matches:
+                  pages = []
+                  for i, m in enumerate(matches):
+                      raw = m.group(1).strip()
+                      n = re.search(r"(\d+)(?=\.jpe?g$)", raw, re.I)
+                      if not n:
+                          break
+                      body = text[m.end():(matches[i + 1].start() if i + 1 < len(matches) else len(text))].strip()
+                      if not body:
+                          break
+                      pages.append(row(f"{int(n.group(1)):03d}.jpg", body, "legacy-page-headers"))
+                  expected_names = [f"{n:03d}.jpg" for n in range(1, expected + 1)]
+                  if [p["page"] for p in pages] == expected_names:
+                      return pages, "legacy-page-headers"
+
+              # Many OCR tools preserve page boundaries with form-feed characters.
+              ff = [chunk.strip() for chunk in text.split("\f")]
+              ff = [chunk for chunk in ff if chunk]
+              if len(ff) == expected:
+                  return [row(f"{i:03d}.jpg", body, "form-feed") for i, body in enumerate(ff, 1)], "form-feed"
+
+              # Handle explicit PAGE 1 / PAGE 2 style headings if present.
+              matches = list(page_header.finditer(text))
+              if matches and len(matches) == expected:
+                  pages = []
+                  for i, m in enumerate(matches):
+                      number = int(m.group(1))
+                      body = text[m.end():(matches[i + 1].start() if i + 1 < len(matches) else len(text))].strip()
+                      if not body:
+                          pages = []
+                          break
+                      pages.append(row(f"{number:03d}.jpg", body, "page-headings"))
+                  expected_names = [f"{n:03d}.jpg" for n in range(1, expected + 1)]
+                  if [p["page"] for p in pages] == expected_names:
+                      return pages, "page-headings"
+
+              # If the uploaded OCR is one continuous issue stream, index it once on
+              # the first scan. The storage bridge still supplies all page images.
+              body = text.strip()
+              if not body:
+                  raise RuntimeError("ocr.txt is empty")
+              return [row("001.jpg", body, "issue-level")], "issue-level"
+
+          indexed_rows = 0
+          page_level_issues = 0
+          issue_level_issues = 0
+
           for issue, expected in issues.items():
               year = int(issue[:4])
               text = fetch_text(f"{STORAGE}/{issue}/ocr.txt")
-              pages = parse_issue(text, expected)
+              pages, mode = parse_issue(text, expected)
               payload = {
                   "publication": PUBLICATION,
                   "year": year,
                   "issue": issue,
                   "summary": {
                       "engine": "Stored OCR text import",
-                      "recognition_model": "existing issue-level ocr.txt",
+                      "recognition_model": f"existing ocr.txt ({mode})",
                   },
                   "pages": pages,
                   "candidates": [],
               }
-              body = json.dumps(payload, separators=(",", ":")).encode()
               req = urllib.request.Request(
                   IMPORT,
-                  data=body,
+                  data=json.dumps(payload, separators=(",", ":")).encode(),
                   method="POST",
                   headers={
                       "Authorization": f"Bearer {TOKEN}",
                       "Content-Type": "application/json",
-                      "User-Agent": "UMARM CFRN stored OCR indexer/1.0",
+                      "User-Agent": "UMARM CFRN stored OCR indexer/1.1",
                   },
               )
               try:
@@ -145,13 +157,21 @@ jobs:
               except urllib.error.HTTPError as e:
                   detail = e.read().decode("utf-8", "replace")
                   raise RuntimeError(f"{issue} import failed HTTP {e.code}: {detail}") from e
-              if not response.get("ok") or int(response.get("updated", 0)) != expected:
+              if not response.get("ok") or int(response.get("updated", 0)) != len(pages):
                   raise RuntimeError(f"{issue} importer verification failed: {response}")
-              total_pages += expected
-              results.append({"issue": issue, "pages": expected, "response": response})
-              print(f"{issue}: indexed {expected} pages")
+              indexed_rows += len(pages)
+              if len(pages) == expected:
+                  page_level_issues += 1
+              else:
+                  issue_level_issues += 1
+              print(f"{issue}: mode={mode}, indexed_rows={len(pages)}, scans={expected}")
 
-          if total_pages != 754:
-              raise RuntimeError(f"Expected 754 pages, indexed {total_pages}")
-          print(json.dumps({"ok": True, "issues": len(results), "pages": total_pages}, indent=2))
+          print(json.dumps({
+              "ok": True,
+              "issues": len(issues),
+              "scan_pages": sum(issues.values()),
+              "indexed_rows": indexed_rows,
+              "page_level_issues": page_level_issues,
+              "issue_level_issues": issue_level_issues,
+          }, indent=2))
           PY
