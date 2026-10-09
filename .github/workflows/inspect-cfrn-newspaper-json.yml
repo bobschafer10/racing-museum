@@ -10,35 +10,34 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect stored JSON shape
+      - name: Inspect stored OCR structure
         shell: bash
         run: |
           python - <<'PY'
-          import json, urllib.request
-          url='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1999-01-20/newspaper.json'
-          req=urllib.request.Request(url,headers={'User-Agent':'UMARM JSON inspector/1.0'})
+          import re, urllib.request
+          base='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1999-01-20'
+          req=urllib.request.Request(base+'/ocr.txt',headers={'User-Agent':'UMARM OCR inspector/1.0'})
           with urllib.request.urlopen(req,timeout=60) as r:
-              data=json.load(r)
-          print('TOP_TYPE',type(data).__name__)
-          if isinstance(data,dict):
-              print('TOP_KEYS',sorted(data.keys()))
-              for k,v in data.items():
-                  if isinstance(v,list):
-                      print('LIST',k,'LEN',len(v))
-                      if v:
-                          print('FIRST_TYPE',type(v[0]).__name__)
-                          if isinstance(v[0],dict):
-                              print('FIRST_KEYS',sorted(v[0].keys()))
-                              for sk,sv in v[0].items():
-                                  if isinstance(sv,(list,dict)):
-                                      print('FIRST_SUB',sk,'TYPE',type(sv).__name__,'LEN',len(sv))
-                                      if isinstance(sv,list) and sv and isinstance(sv[0],dict):
-                                          print('FIRST_SUB_KEYS',sk,sorted(sv[0].keys()))
-                          print('FIRST_SAMPLE',json.dumps(v[0],ensure_ascii=False)[:5000])
-                  elif isinstance(v,dict):
-                      print('DICT',k,'KEYS',sorted(v.keys())[:50])
-                  else:
-                      print('SCALAR',k,repr(v)[:300])
-          else:
-              print('SAMPLE',json.dumps(data,ensure_ascii=False)[:5000])
+              raw=r.read()
+          text=raw.decode('utf-8','replace')
+          print('BYTES',len(raw),'CHARS',len(text),'FORM_FEEDS',text.count('\f'))
+          lines=text.replace('\r\n','\n').replace('\r','\n').split('\n')
+          print('LINES',len(lines))
+          print('FIRST_40_LINES')
+          for i,line in enumerate(lines[:40],1):
+              print(f'{i:03d}: {line[:300]}')
+          pats=[
+              r'(?i)^.*(?:page|scan|image|file).*\b0*1\b.*$',
+              r'(?i)^.*\.jpe?g.*$',
+              r'^[-=]{3,}.*$',
+          ]
+          for pat in pats:
+              hits=[]
+              rx=re.compile(pat)
+              for i,line in enumerate(lines,1):
+                  if rx.search(line.strip()):
+                      hits.append((i,line[:300]))
+                      if len(hits)>=50: break
+              print('PATTERN',pat,'HITS',len(hits))
+              for h in hits[:20]: print(h)
           PY
