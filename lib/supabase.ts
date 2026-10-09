@@ -20,7 +20,7 @@ globalThis.__umarmSupabaseReadCache = readCache
 
 const REQUEST_TIMEOUT_MS = 8_000
 const OCR_SEARCH_TIMEOUT_MS = 20_000
-const PUBLIC_READ_REVALIDATE_SECONDS = 300
+const PUBLIC_READ_REVALIDATE_SECONDS = 43_200
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 2_000_000
 
@@ -85,10 +85,10 @@ const resilientFetch: typeof fetch = async (input, init) => {
     ? AbortSignal.timeout(timeoutMs)
     : init?.signal
 
-  // Landing-page data is refreshed in five-minute windows. Reusing successful
-  // public REST reads across that same window prevents crawlers and page refreshes
-  // from repeatedly executing identical archive queries while keeping imports current.
-  // Explicit caller cache settings are preserved.
+  // Public museum data is refreshed in 12-hour windows. Reusing successful
+  // public REST reads across that window prevents crawlers and page refreshes
+  // from repeatedly executing identical archive queries while still allowing
+  // two scheduled refresh cycles per day. Explicit caller cache settings are preserved.
   const fetchInit = {
     ...init,
     signal: timeoutSignal,
