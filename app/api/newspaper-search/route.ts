@@ -142,10 +142,6 @@ function pageNumberFromLabel(value: string | null) {
   return match ? Number(match[1]) : null
 }
 
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
-}
-
 async function fallbackFullTextSearch({
   query,
   collection,
@@ -293,14 +289,24 @@ export async function GET(request: NextRequest) {
     p_year: year,
   }
 
-  // Run the result search first instead of opening two simultaneous RPC connections.
-  // During OCR indexing the API pool can briefly be busy; a short staggered retry is
-  // substantially more reliable than firing the result and facet RPCs together.
-  let searchResponse = await ocrSupabase.rpc("search_museum_ocr", searchArgs)
-  for (let attempt = 1; searchResponse.error && attempt <= 2; attempt += 1) {
-    console.warn(`MUSEUM OCR SEARCH RETRY ${attempt}`, searchResponse.error)
-    await sleep(200 * attempt)
+  // Facet counts are optional. Fetch them alongside the actual results rather
+  // than making every search wait for a second full-text scan. A short deadline
+  // prevents expensive facet aggregation from holding the result page hostage.
+  const facetController = new AbortController()
+  const facetTimeout = setTimeout(() => facetController.abort(), 4500)
+  const facetPromise = ocrSupabase.rpc("search_museum_ocr_facets", facetArgs)
+    .abortSignal(facetController.signal)
+    .then((response) => response)
+    .catch((error) => ({ data: null, error }))
+
+  const searchController = new AbortController()
+  const searchTimeout = setTimeout(() => searchController.abort(), 12000)
+  let searchResponse: Awaited<ReturnType<typeof ocrSupabase.rpc>>
+  try {
     searchResponse = await ocrSupabase.rpc("search_museum_ocr", searchArgs)
+      .abortSignal(searchController.signal)
+  } finally {
+    clearTimeout(searchTimeout)
   }
 
   let rows: SearchRow[] = []
@@ -308,25 +314,19 @@ export async function GET(request: NextRequest) {
   let searchMode: "ranked" | "fallback" = "ranked"
 
   if (searchResponse.error) {
-    console.error("MUSEUM OCR SEARCH RPC ERROR", searchResponse.error)
+    console.warn("MUSEUM OCR SEARCH RPC ERROR", searchResponse.error)
+    // The fallback is indexed too, but should not retry a timed-out search
+    // repeatedly and multiply database load.
     const fallback = await fallbackFullTextSearch({
-      query,
-      collection,
-      source,
-      year,
-      sort,
-      pageSize,
-      offset,
+      query, collection, source, year, sort, pageSize, offset,
     })
-
     if (fallback.error) {
       console.error("MUSEUM OCR FALLBACK ERROR", fallback.error)
       return NextResponse.json(
         { query, results: [], error: "Archive search is temporarily unavailable." },
-        { status: 500, headers: { "Cache-Control": "no-store" } },
+        { status: 503, headers: { "Cache-Control": "no-store" } },
       )
     }
-
     rows = fallback.rows
     fallbackTotal = fallback.total
     searchMode = "fallback"
@@ -334,18 +334,9 @@ export async function GET(request: NextRequest) {
     rows = (searchResponse.data || []) as SearchRow[]
   }
 
-  // Facets are useful but non-critical. Fetch them only after the result query has
-  // completed so a temporary facet failure can never take down the actual search.
-  let facetResponse = await ocrSupabase.rpc("search_museum_ocr_facets", facetArgs)
-  if (facetResponse.error) {
-    console.warn("MUSEUM OCR FACET RETRY", facetResponse.error)
-    await sleep(150)
-    facetResponse = await ocrSupabase.rpc("search_museum_ocr_facets", facetArgs)
-  }
-  if (facetResponse.error) {
-    console.error("MUSEUM OCR FACET ERROR", facetResponse.error)
-  }
-
+  const facetResponse = await facetPromise
+  clearTimeout(facetTimeout)
+  if (facetResponse.error) console.warn("MUSEUM OCR FACETS UNAVAILABLE", facetResponse.error)
   const facets = (facetResponse.error ? [] : facetResponse.data || []) as FacetRow[]
   const total = Number(
     fallbackTotal ?? rows[0]?.total_count ?? facets.find((facet) => facet.facet_kind === "total")?.match_count ?? 0,
