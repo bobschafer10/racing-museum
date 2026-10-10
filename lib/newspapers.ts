@@ -579,15 +579,70 @@ export async function getNewspaperIssuesByPublication(
   return issues.filter((issue) => issue.publicationSlug === publicationSlug)
 }
 
+// Single-issue pages must not wait for the complete OCR archive to be scanned.
+// Resolve the checked-in manifest and known storage bridges locally first;
+// only newly uploaded, unlisted issues need a narrow indexed Supabase query.
 export async function getNewspaperIssue(
   publicationSlug: string,
   issueSlug: string
 ): Promise<NewspaperIssue | undefined> {
-  const issues = await getNewspaperIssues()
+  const manifestPath = path.join(process.cwd(), "public", "data", "newspapers-manifest.json")
+  try {
+    const manifest = JSON.parse(await fs.readFile(manifestPath, "utf-8")) as NewspaperIssue[]
+    const existing = manifest.find((issue) => issue.publicationSlug === publicationSlug && issue.slug === issueSlug)
+    if (existing) return existing
+  } catch (error) {
+    console.error("NEWSPAPER ISSUE MANIFEST ERROR:", error)
+  }
 
-  return issues.find(
-    (issue) =>
-      issue.publicationSlug === publicationSlug &&
-      issue.slug === issueSlug
-  )
+  const known = [
+    ...getMrn1978StorageIssues(),
+    ...getCfrn1976StorageIssues(),
+    ...getCfrn1992StorageIssues(),
+    ...getCfrn1995StorageIssues(),
+    ...getCfrn1996StorageIssues(),
+    ...getCfrn1997StorageIssues(),
+    ...getCfrn1998StorageIssues(),
+    ...getCfrn1999StorageIssues(),
+    ...getCfrn2000StorageIssues(),
+    ...getCfrn2001StorageIssues(),
+    ...getCfrn2003StorageIssues(),
+    ...getCfrn2004StorageIssues(),
+    ...getCfrn2005StorageIssues(),
+  ].find((issue) => issue.publicationSlug === publicationSlug && issue.slug === issueSlug)
+  if (known) return known
+
+  if (!["midwest-racing-news", "checkered-flag-racing-news"].includes(publicationSlug) ||
+      !/^\d{4}-\d{2}-\d{2}$/.test(issueSlug)) return undefined
+
+  const { data, error } = await supabase
+    .from("newspaper_ocr_pages")
+    .select("issue_date,page_label,storage_path")
+    .eq("publication_code", publicationSlug)
+    .eq("issue_date", issueSlug)
+    .eq("status", "complete")
+    .order("page_label", { ascending: true })
+    .limit(200)
+
+  if (error) {
+    console.error("NEWSPAPER ISSUE LOOKUP ERROR:", error)
+    return undefined
+  }
+  const rows = (data || []) as OcrArchiveRow[]
+  if (!rows.length) return undefined
+  const pages = rows.map(ocrPageUrl)
+  const publication = publicationSlug === "midwest-racing-news" ? "Midwest Racing News" : "Checkered Flag Racing News"
+  return {
+    slug: issueSlug,
+    title: titleFromIsoDate(issueSlug),
+    publication,
+    publicationSlug,
+    year: Number(issueSlug.slice(0, 4)),
+    issueDate: issueSlug,
+    coverImage: pages[0],
+    backCoverImage: pages.at(-1) || null,
+    thumbnail: pages[0],
+    pages,
+    featured: false,
+  }
 }
