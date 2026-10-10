@@ -658,8 +658,8 @@ export default function NewspaperSearch({
             const date = displayDate(result.issueDate)
             return (
               <Link className="ma-ocr-result" href={result.href} key={result.id} aria-label={`Open ${result.documentTitle}, ${result.page ? `page ${result.page}` : result.pageLabel || "matched page"}`}>
-                <div className="ma-ocr-result-thumb">
-                  <img src={result.image} alt={`${result.documentTitle} ${result.pageLabel || "page"}`} loading="lazy" />
+                <div className="ma-ocr-result-thumb" aria-hidden="true" style={{display:"flex",alignItems:"center",justifyContent:"center",fontSize:12,fontWeight:700,textAlign:"center",padding:8}}>
+                  {result.page ? `PAGE ${result.page}` : "OCR MATCH"}
                 </div>
                 <div className="ma-ocr-result-body">
                   <div className="ma-ocr-result-meta">
