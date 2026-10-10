@@ -13,24 +13,26 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect page headers in irregular 1995 issues
+      - name: Map oversized OCR sections in irregular 1995 issues
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
-          import re, urllib.request
+          import re, statistics, urllib.request
           root='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news'
-          for issue in ['1995-07-26','1995-08-02','1995-08-09','1995-08-23']:
+          for issue,want in [('1995-07-26',36),('1995-08-02',36),('1995-08-09',36)]:
               with urllib.request.urlopen(f'{root}/{issue}/ocr.txt',timeout=60) as r:
                   text=r.read().decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n').strip()
-              lines=text.splitlines()
-              markers=[]
-              headers=[]
-              for i,line in enumerate(lines):
-                  s=line.strip()
-                  if re.fullmatch(r'(?i)page\s*\d{1,2}',s): markers.append((i,s))
-                  if 'Checkered Flag Racing News' in s: headers.append((i,s))
-              print('\nISSUE',issue,'lines',len(lines),'page_markers',len(markers),'headers',len(headers))
-              print('PAGE MARKERS',markers[:100])
-              print('HEADERS',headers[:100])
+              chunks=[c.strip() for c in re.split(r'(?<!\n)\n{3}(?!\n)',text) if c.strip()]
+              lengths=[len(c) for c in chunks]
+              med=statistics.median(lengths)
+              print(f'\nISSUE {issue} expected={want} chunks={len(chunks)} median_chars={med}')
+              for idx,c in enumerate(chunks,1):
+                  lines=[x.strip() for x in c.splitlines() if x.strip()]
+                  page_markers=[x for x in lines if re.fullmatch(r'(?i)page\s*\d{1,2}',x)]
+                  ratio=len(c)/med if med else 0
+                  first=' | '.join(lines[:3])[:180]
+                  flag=' ***OVERSIZE***' if ratio>=1.55 else ''
+                  print(f'{idx:02d}: chars={len(c):5d} ratio={ratio:4.2f} markers={page_markers[:4]} first={first}{flag}')
+              print('LARGEST',sorted(enumerate(lengths,1),key=lambda x:x[1],reverse=True)[:12])
           PY
