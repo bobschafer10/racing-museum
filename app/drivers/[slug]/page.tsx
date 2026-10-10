@@ -139,8 +139,13 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   const trackChampionships = safeChampionships.length + externalTrackChampionships
 
   const tracksWonAt = winningTrackSlugs.length
+  // Use the grouped, verified feature-win classes, which also power Top Winning Class.
+  // Individual win rows may omit class_name even when the grouped data has it.
   const classesWonIn = new Set(
-    safeWinRows.map((row: any) => row.class_name).filter(Boolean),
+    safeWinsByClass
+      .filter((row: any) => Number(row.win_count ?? row.wins ?? 1) > 0)
+      .map((row: any) => String(row.class_name || '').trim().replace(/\s+/g, ' ').toLowerCase())
+      .filter(Boolean),
   ).size
   const mostSuccessfulClass = safeWinsByClass[0]?.class_name || '—'
   const mostSuccessfulTrack = safeTopTracks[0]?.track_name || '—'
