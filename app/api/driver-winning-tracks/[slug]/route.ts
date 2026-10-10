@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 
-export const revalidate = 300
+export const revalidate = 43200
 
 export async function GET(
   _request: Request,
@@ -31,6 +31,6 @@ export async function GET(
   const tracks = data ?? []
   return NextResponse.json(
     { count: tracks.length, tracks },
-    { headers: { 'Cache-Control': 'public, max-age=60, s-maxage=300' } },
+    { headers: { 'Cache-Control': 'public, max-age=300, s-maxage=43200, stale-while-revalidate=86400' } },
   )
 }
