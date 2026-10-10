@@ -171,7 +171,6 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
   const search = await searchParams
   const issue = await getNewspaperIssue(publication, issueSlug)
   if (!issue) notFound()
-  const issueThumb = issue.thumbnailImage || issue.thumbnail || issue.coverImage
 
   const issuePageImages = (issue.pages || []).filter(Boolean) as string[]
   const orderedImages = Array.from(
@@ -274,12 +273,12 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
   }
 
   return <main className="ma-page">
-    <section className="ma-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.98),rgba(5,8,10,.84) 50%,rgba(5,8,10,.48)),url(${issueThumb})`,backgroundSize:'cover',backgroundPosition:'center 15%'}}>
+    <section className="ma-hero" style={{background:'linear-gradient(90deg,#05080a,#11171b)'}}>
       <div className="ma-hero-inner">
         <div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><Link href="/media/newspapers">Newspapers</Link><span>›</span><Link href={`/media/newspapers/${publication}`}>{issue.publication}</Link><span>›</span><span>{issue.title}</span></div>
         <div className="ma-hero-grid">
           <div><div className="ma-eyebrow">Digitized Newspaper Issue</div><h1 className="ma-title">{issue.publication}</h1><div className="ma-subtitle">{issue.title}</div><p className="ma-lede">Read the complete preserved issue page by page. Full-resolution scans open only when selected so the archive stays fast and bandwidth-efficient.</p><div className="ma-actions"><Link href={`/media/newspapers/${publication}/year/${issue.year}`} className="ma-button">Back to {issue.year}</Link><Link href="/media/newspapers#newspaper-search" className="ma-button-ghost">Search Newspapers</Link></div></div>
-          <div className="ma-hero-media"><img src={issueThumb} alt={`${issue.publication} ${issue.title}`} className="ma-cover" /></div>
+          <div className="ma-hero-media" aria-hidden="true" style={{display:"flex",alignItems:"center",justifyContent:"center",minHeight:180,border:"1px solid rgba(255,255,255,.08)",borderRadius:8,color:"#c5a86b",fontWeight:800,letterSpacing:".12em",textAlign:"center",padding:24}}>DIGITIZED NEWSPAPER ARCHIVE</div>
         </div>
         <div className="ma-stats">
           <div className="ma-stat"><strong>{issue.year}</strong><span>Publication Year</span></div>
