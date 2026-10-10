@@ -109,16 +109,16 @@ jobs:
                   raise SystemExit('CFRN 1992 function marker not found')
               s = s.replace(func_marker, func_block + func_marker, 1)
 
-          archive_marker = '      ...getCfrn1976StorageIssues(),\n'
+          archive_marker = '\n      ...getCfrn1976StorageIssues(),\n'
           archive_bridge = '      ...getCfrn1980sStorageIssues(),\n'
-          if archive_bridge not in s:
+          if '\n      ...getCfrn1980sStorageIssues(),\n' not in s:
               if archive_marker not in s:
                   raise SystemExit('CFRN 1976 archive marker not found')
               s = s.replace(archive_marker, archive_marker + archive_bridge, 1)
 
-          direct_marker = '    ...getCfrn1976StorageIssues(),\n'
+          direct_marker = '\n    ...getCfrn1976StorageIssues(),\n'
           direct_bridge = '    ...getCfrn1980sStorageIssues(),\n'
-          if direct_bridge not in s:
+          if '\n    ...getCfrn1980sStorageIssues(),\n' not in s:
               if direct_marker not in s:
                   raise SystemExit('CFRN 1976 direct lookup marker not found')
               s = s.replace(direct_marker, direct_marker + direct_bridge, 1)
@@ -135,10 +135,9 @@ jobs:
           s = Path('lib/newspapers.ts').read_text(encoding='utf-8')
           assert 'CFRN_1980S_PAGE_COUNTS' in s
           assert 'function getCfrn1980sStorageIssues' in s
-          count = s.count('...getCfrn1980sStorageIssues(),')
-          if count != 2:
-              raise SystemExit(f'Expected exactly two bridge references; found {count}')
-          print(f'Bridge references verified: {count}')
+          assert '\n      ...getCfrn1980sStorageIssues(),\n' in s
+          assert '\n    ...getCfrn1980sStorageIssues(),\n' in s
+          print('Bridge references verified in archive and direct lookup lists')
           PY
 
       - name: Commit bridge
