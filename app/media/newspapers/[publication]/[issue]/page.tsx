@@ -151,6 +151,7 @@ type SearchMatchRow = {
 type IssuePageProps = {
   params: Promise<{ publication: string; issue: string }>
   searchParams: Promise<{
+    ocrPath?: string | string[]
     sourcePage?: string | string[]
     q?: string | string[]
     sort?: string | string[]
@@ -222,7 +223,28 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
   let matchPosition: number | null = searchIndex !== null ? searchIndex + 1 : null
   let matchTotal: number | null = searchTotal
 
-  if (query && searchIndex !== null) {
+  // Resolve the selected OCR scan directly by its indexed storage path.
+  // The old ranked-match RPC repeated the entire archive search just to fetch
+  // one page's highlight coordinates, and could time out under load.
+  const selectedOcrPath = firstParam(search.ocrPath)
+  if (query && selectedOcrPath && selectedOcrPath.length < 800 && !selectedOcrPath.includes("..")) {
+    const { data: directRows, error: directError } = await supabase
+      .from("newspaper_ocr_search_pages")
+      .select("storage_path,ocr_text,ocr_json,page_label")
+      .eq("storage_path", selectedOcrPath)
+      .eq("publication_code", publication)
+      .limit(1)
+    if (!directError && directRows?.length) {
+      const direct = directRows[0] as {storage_path:string;ocr_text:string|null;ocr_json:unknown;page_label:string|null}
+      const imageUrl = `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${direct.storage_path}`
+      const found = pages.findIndex((page) => page.image === imageUrl)
+      if (found >= 0) initialPageIndex = found
+      searchSnippet = matchSnippet(direct.ocr_text || "", query)
+      highlightLines = matchingOcrLayoutLines(parseOcrLayoutLines(direct.ocr_json), query)
+    }
+  }
+
+  if (query && searchIndex !== null && !searchSnippet) {
     const sortParam = firstParam(search.sort)?.toLowerCase()
     const sort = sortParam === "oldest" || sortParam === "newest" ? sortParam : "relevance"
     const sourceParam = firstParam(search.source)?.toLowerCase()
