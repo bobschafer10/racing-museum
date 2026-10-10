@@ -167,10 +167,6 @@ function safePage(value: string | null) {
   return Number.isInteger(parsed) && parsed > 0 ? parsed : 1
 }
 
-function delay(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
-}
-
 function snippet(text: string, query: string) {
   const clean = text.replace(/===\s*COLUMN\s+\d+\s*===/gi, " ").replace(/\s+/g, " ").trim()
   if (!clean) return ""
@@ -414,24 +410,24 @@ export default function NewspaperSearch({
       let payload: SearchResponse | null = null
       let lastError: Error | null = null
 
-      for (let attempt = 0; attempt < 3 && !payload; attempt += 1) {
+      // Avoid issuing the same expensive archive search three times when the
+      // database is under load. Reuse a successful session result immediately.
+      const saved = readSessionCache(cacheKey)
+      if (saved) {
+        payload = saved
+      } else {
         try {
           const response = await fetch(`/api/newspaper-search?${params.toString()}`, {
             cache: "no-store",
             signal: controller.signal,
           })
           const candidate = (await response.json()) as SearchResponse
-          if (response.ok) {
-            payload = candidate
-            break
-          }
-          lastError = new Error(candidate.error || `Archive search returned ${response.status}.`)
-          if (response.status < 500) break
+          if (response.ok) payload = candidate
+          else lastError = new Error(candidate.error || `Archive search returned ${response.status}.`)
         } catch (requestError) {
           if (requestError instanceof DOMException && requestError.name === "AbortError") throw requestError
           lastError = requestError instanceof Error ? requestError : new Error("Archive search failed.")
         }
-        if (attempt < 2) await delay(attempt === 0 ? 250 : 650)
       }
 
       if (!payload) {
