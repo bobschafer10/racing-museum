@@ -13,7 +13,7 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Audit variable-length 1995 page separators
+      - name: Audit 1995 double and triple newline formats
         shell: bash
         run: |
           set -euo pipefail
@@ -21,19 +21,16 @@ jobs:
           import re, urllib.request
           root='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news'
           expected={
-            '1995-04-05':24,'1995-04-26':24,'1995-05-10':28,'1995-05-17':24,'1995-05-31':28,
-            '1995-06-07':32,'1995-06-14':28,'1995-06-21':36,'1995-06-28':36,'1995-07-05':40,
-            '1995-07-12':36,'1995-07-26':36,'1995-08-02':36,'1995-08-09':36,'1995-08-23':40,
+            '1995-07-26':36,'1995-08-02':36,'1995-08-09':36,'1995-08-23':40,
             '1995-08-30':36,'1995-09-06':36,'1995-09-13':32,'1995-09-27':20,'1995-10-18':24,
           }
-          bad=[]
           for issue,want in expected.items():
               with urllib.request.urlopen(f'{root}/{issue}/ocr.txt',timeout=60) as r:
                   text=r.read().decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n').strip()
-              runs={n:len(re.findall(rf'(?<!\n)\n{{{n}}}(?!\n)',text)) for n in range(3,9)}
-              chunks=[c.strip() for c in re.split(r'\n{3,}',text) if c.strip()]
-              got=len(chunks)
-              print(issue,'expected',want,'3plus',got,'runs',runs,'OK' if got==want else 'MISMATCH')
-              if got!=want: bad.append((issue,want,got,runs))
-          print('MISMATCHES',bad)
+              two=[c.strip() for c in re.split(r'\n{2,}',text) if c.strip()]
+              three=[c.strip() for c in re.split(r'\n{3,}',text) if c.strip()]
+              single_lines=len(text.splitlines())
+              exact2=len(re.findall(r'(?<!\n)\n{2}(?!\n)',text))
+              exact3=len(re.findall(r'(?<!\n)\n{3}(?!\n)',text))
+              print(issue,'expected',want,'2plus',len(two),'3plus',len(three),'exact2',exact2,'exact3',exact3,'lines',single_lines)
           PY
