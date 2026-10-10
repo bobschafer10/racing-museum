@@ -1,0 +1,46 @@
+name: Inspect CFRN 1992 and 1995 OCR format
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-cfrn-ocr-format-1992-1995.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect stored OCR text and manifests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, re, urllib.request
+          root='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news'
+          for issue in ['1992-01-08','1995-04-05']:
+              print('\n===== ISSUE',issue,'=====')
+              with urllib.request.urlopen(f'{root}/{issue}/ocr.txt',timeout=60) as r:
+                  text=r.read().decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n')
+              print('ocr chars',len(text),'lines',len(text.splitlines()))
+              print('FIRST 120 LINES:')
+              for i,line in enumerate(text.splitlines()[:120],1):
+                  print(f'{i:04d}: {line[:300]}')
+              print('MARKER-LIKE LINES:')
+              hits=[]
+              for i,line in enumerate(text.splitlines(),1):
+                  s=line.strip()
+                  if re.search(r'(?i)(page|scan|image|file|001\.jpg|002\.jpg|===|---)',s):
+                      hits.append((i,s[:300]))
+              for h in hits[:100]: print(h)
+              print('marker hit count',len(hits))
+              try:
+                  with urllib.request.urlopen(f'{root}/{issue}/newspaper.json',timeout=60) as r:
+                      manifest=json.loads(r.read().decode('utf-8','replace'))
+                  print('MANIFEST JSON:')
+                  print(json.dumps(manifest,indent=2)[:20000])
+              except Exception as e:
+                  print('manifest error',repr(e))
+          PY
