@@ -1,4 +1,4 @@
-name: Inspect CFRN 1995-07-26 OCR boundary
+name: Inspect CFRN 1995 OCR boundaries
 
 on:
   push:
@@ -13,25 +13,26 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect suspected page 10-11 merge
+      - name: Audit all 1995 page separators
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           import re, urllib.request
-          url='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1995-07-26/ocr.txt'
-          with urllib.request.urlopen(url,timeout=60) as r:
-              text=r.read().decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n').strip()
-          chunks=[c.strip() for c in re.split(r'(?<!\n)\n{3}(?!\n)',text) if c.strip()]
-          c=chunks[9]
-          lines=[x.strip() for x in c.splitlines() if x.strip()]
-          print('SUSPECT CHUNK 10 chars',len(c),'nonblank lines',len(lines))
-          pats=re.compile(r'(?i)(page|july|1995|checkered|flag|racing news|vol\.|watertown|usps|continued|classified)')
-          for i,line in enumerate(lines):
-              if pats.search(line):
-                  lo=max(0,i-4); hi=min(len(lines),i+5)
-                  print(f'--- match at {i}: {line[:240]} ---')
-                  for j in range(lo,hi): print(f'{j:04d}: {lines[j][:240]}')
-          print('--- every 25th line for structure ---')
-          for i in range(0,len(lines),25): print(f'{i:04d}: {lines[i][:240]}')
+          root='https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news'
+          expected={
+            '1995-04-05':24,'1995-04-26':24,'1995-05-10':28,'1995-05-17':24,'1995-05-31':28,
+            '1995-06-07':32,'1995-06-14':28,'1995-06-21':36,'1995-06-28':36,'1995-07-05':40,
+            '1995-07-12':36,'1995-07-26':36,'1995-08-02':36,'1995-08-09':36,'1995-08-23':40,
+            '1995-08-30':36,'1995-09-06':36,'1995-09-13':32,'1995-09-27':20,'1995-10-18':24,
+          }
+          bad=[]
+          for issue,want in expected.items():
+              with urllib.request.urlopen(f'{root}/{issue}/ocr.txt',timeout=60) as r:
+                  text=r.read().decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n').strip()
+              chunks=[c.strip() for c in re.split(r'(?<!\n)\n{3}(?!\n)',text) if c.strip()]
+              got=len(chunks)
+              print(issue,'expected',want,'got',got,'OK' if got==want else 'MISMATCH')
+              if got!=want: bad.append((issue,want,got))
+          print('MISMATCHES',bad)
           PY
