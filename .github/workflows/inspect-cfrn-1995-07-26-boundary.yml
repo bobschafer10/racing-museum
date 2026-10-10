@@ -13,7 +13,7 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Audit all 1995 page separators
+      - name: Audit variable-length 1995 page separators
         shell: bash
         run: |
           set -euo pipefail
@@ -30,9 +30,10 @@ jobs:
           for issue,want in expected.items():
               with urllib.request.urlopen(f'{root}/{issue}/ocr.txt',timeout=60) as r:
                   text=r.read().decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n').strip()
-              chunks=[c.strip() for c in re.split(r'(?<!\n)\n{3}(?!\n)',text) if c.strip()]
+              runs={n:len(re.findall(rf'(?<!\n)\n{{{n}}}(?!\n)',text)) for n in range(3,9)}
+              chunks=[c.strip() for c in re.split(r'\n{3,}',text) if c.strip()]
               got=len(chunks)
-              print(issue,'expected',want,'got',got,'OK' if got==want else 'MISMATCH')
-              if got!=want: bad.append((issue,want,got))
+              print(issue,'expected',want,'3plus',got,'runs',runs,'OK' if got==want else 'MISMATCH')
+              if got!=want: bad.append((issue,want,got,runs))
           print('MISMATCHES',bad)
           PY
