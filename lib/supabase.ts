@@ -32,6 +32,7 @@ const PUBLIC_READ_REVALIDATE_SECONDS = 43_200
 const PUBLIC_READ_REVALIDATE_MS = PUBLIC_READ_REVALIDATE_SECONDS * 1_000
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 250_000
+const MAX_DRIVER_PROFILE_CACHE_BODY_BYTES = 1_500_000
 const MAX_CACHE_ENTRIES = 750
 const IS_RENDER = process.env.RENDER === 'true' || process.env.UMARM_RENDER_QUARANTINE === 'true'
 
@@ -123,6 +124,16 @@ function renderQuarantineResponse(url: string, method: string, accept: string) {
 const resilientFetch: typeof fetch = async (input, init) => {
   const { url, method, key, accept } = requestDetails(input, init)
   const isPublicRestRead = method === 'GET' && url.includes('/rest/v1/')
+  // Cache only the public driver-profile RPC made with the museum's anonymous key.
+  // Other RPCs (including writes and OCR searches) remain uncached.
+  const authorization = new Headers(init?.headers).get('authorization')
+  const isAnonymousRequest = !authorization || authorization === `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`
+  const isPublicDriverProfileRead = method === 'POST'
+    && url.endsWith('/rest/v1/rpc/driver_profile_bundle')
+    && typeof init?.body === 'string'
+    && isAnonymousRequest
+  const cacheKey = isPublicDriverProfileRead ? `${key}|${String(init?.body)}` : key
+  const isCacheablePublicRead = isPublicRestRead || isPublicDriverProfileRead
   const isOcrSearchRpc = method === 'POST' && url.includes('/rest/v1/rpc/search_museum_ocr')
   const timeoutMs = isOcrSearchRpc ? OCR_SEARCH_TIMEOUT_MS : REQUEST_TIMEOUT_MS
 
@@ -148,25 +159,25 @@ const resilientFetch: typeof fetch = async (input, init) => {
     signal: timeoutSignal,
   } as RequestInit & { next?: { revalidate?: number } }
 
-  if (isPublicRestRead && !init?.cache) {
+  if (isCacheablePublicRead && !init?.cache) {
     fetchInit.next = {
       ...(fetchInit.next || {}),
       revalidate: PUBLIC_READ_REVALIDATE_SECONDS,
     }
-  } else if (!isPublicRestRead && !init?.cache) {
+  } else if (!isCacheablePublicRead && !init?.cache) {
     fetchInit.cache = 'no-store'
   }
 
-  if (isPublicRestRead) {
-    const fresh = cachedResponse(key, PUBLIC_READ_REVALIDATE_MS)
+  if (isCacheablePublicRead) {
+    const fresh = cachedResponse(cacheKey, PUBLIC_READ_REVALIDATE_MS)
     if (fresh) return fresh
 
-    const existingRequest = readInFlight.get(key)
+    const existingRequest = readInFlight.get(cacheKey)
     if (existingRequest) {
       try {
         return responseFromSnapshot(await existingRequest)
       } catch (error) {
-        const stale = cachedResponse(key)
+        const stale = cachedResponse(cacheKey)
         if (stale) return stale
 
         const seeded = seededHomepageStats(url)
@@ -187,20 +198,21 @@ const resilientFetch: typeof fetch = async (input, init) => {
         savedAt: Date.now(),
       }
 
-      if (response.ok && body.length <= MAX_CACHE_BODY_BYTES) {
-        rememberCachedResponse(key, snapshot)
+      const maxBodyBytes = isPublicDriverProfileRead ? MAX_DRIVER_PROFILE_CACHE_BODY_BYTES : MAX_CACHE_BODY_BYTES
+      if (response.ok && body.length <= maxBodyBytes) {
+        rememberCachedResponse(cacheKey, snapshot)
       }
 
       return snapshot
     })()
 
-    readInFlight.set(key, requestPromise)
+    readInFlight.set(cacheKey, requestPromise)
 
     try {
       const snapshot = await requestPromise
 
       if (snapshot.status >= 500) {
-        const stale = cachedResponse(key)
+        const stale = cachedResponse(cacheKey)
         if (stale) {
           console.warn(`[UMARM] Supabase REST ${snapshot.status}; serving last-known-good response for ${url}`)
           return stale
@@ -215,7 +227,7 @@ const resilientFetch: typeof fetch = async (input, init) => {
 
       return responseFromSnapshot(snapshot)
     } catch (error) {
-      const stale = cachedResponse(key)
+      const stale = cachedResponse(cacheKey)
       if (stale) {
         console.warn(`[UMARM] Supabase REST unavailable; serving last-known-good response for ${url}`)
         return stale
@@ -229,7 +241,7 @@ const resilientFetch: typeof fetch = async (input, init) => {
 
       throw error
     } finally {
-      if (readInFlight.get(key) === requestPromise) readInFlight.delete(key)
+      if (readInFlight.get(cacheKey) === requestPromise) readInFlight.delete(cacheKey)
     }
   }
 
