@@ -91,6 +91,46 @@ const CFRN_1976_PAGE_RANGES: Record<string, [number, number]> = {
   "1976-12-08": [1, 16],
 }
 
+const CFRN_1980S_PAGE_COUNTS: Record<string, number> = {
+  "1980-01-09": 12,
+  "1980-02-06": 20,
+  "1981-01-14": 12,
+  "1981-03-04": 32,
+  "1981-04-08": 16,
+  "1981-11-11": 17,
+  "1981-12-16": 40,
+  "1982-01-13": 12,
+  "1983-11-09": 20,
+  "1984-01-11": 12,
+  "1984-02-08": 16,
+  "1984-02-29": 28,
+  "1984-03-21": 16,
+  "1984-04-04": 16,
+  "1984-04-11": 12,
+  "1984-04-18": 12,
+  "1984-04-25": 16,
+  "1984-05-02": 16,
+  "1984-12-12": 21,
+  "1985-01-09": 16,
+  "1985-02-27": 20,
+  "1985-03-13": 16,
+  "1985-04-03": 20,
+  "1985-04-10": 12,
+  "1986-01-15": 16,
+  "1986-03-05": 16,
+  "1986-03-19": 20,
+  "1986-04-02": 12,
+  "1986-04-09": 12,
+  "1986-12-10": 32,
+  "1987-09-16": 20,
+  "1987-09-23": 16,
+  "1987-09-30": 16,
+  "1987-10-07": 16,
+  "1987-10-21": 16,
+  "1987-11-11": 16,
+  "1988-10-19": 11,
+}
+
 const CFRN_1992_PAGE_COUNTS: Record<string, number> = {
   "1992-01-08": 16,
   "1992-02-05": 20,
@@ -381,6 +421,34 @@ function getCfrn1976StorageIssues(): NewspaperIssue[] {
   )
 }
 
+function getCfrn1980sStorageIssues(): NewspaperIssue[] {
+  return Object.entries(CFRN_1980S_PAGE_COUNTS).map(([issueDate, pageCount]) => {
+    const isIncomplete1988 = issueDate === "1988-10-19"
+    return {
+      slug: issueDate,
+      title: titleFromIsoDate(issueDate),
+      publication: "Checkered Flag Racing News",
+      publicationSlug: "checkered-flag-racing-news",
+      year: Number(issueDate.slice(0, 4)),
+      issueDate,
+      description: isIncomplete1988
+        ? "Partial supplied issue: 11 scans are preserved; OCR processing is being completed from the available pages."
+        : null,
+      coverImage: isIncomplete1988
+        ? `${CFRN_STORAGE_ROOT}/${issueDate}/001.jpg`
+        : `${CFRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,
+      backCoverImage: isIncomplete1988
+        ? `${CFRN_STORAGE_ROOT}/${issueDate}/${String(pageCount).padStart(3, "0")}.jpg`
+        : `${CFRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,
+      thumbnail: isIncomplete1988
+        ? `${CFRN_STORAGE_ROOT}/${issueDate}/001.jpg`
+        : `${CFRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,
+      pages: cfrn1976Pages(issueDate, 1, pageCount),
+      featured: false,
+    }
+  })
+}
+
 function getCfrn1992StorageIssues(): NewspaperIssue[] {
   return Object.entries(CFRN_1992_PAGE_COUNTS).map(([issueDate, pageCount]) => ({
     slug: issueDate,
@@ -529,6 +597,7 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
     for (const issue of [
       ...getMrn1978StorageIssues(),
       ...getCfrn1976StorageIssues(),
+      ...getCfrn1980sStorageIssues(),
       ...getCfrn1992StorageIssues(),
       ...getCfrn1995StorageIssues(),
       ...getCfrn1996StorageIssues(),
@@ -598,6 +667,7 @@ export async function getNewspaperIssue(
   const known = [
     ...getMrn1978StorageIssues(),
     ...getCfrn1976StorageIssues(),
+    ...getCfrn1980sStorageIssues(),
     ...getCfrn1992StorageIssues(),
     ...getCfrn1995StorageIssues(),
     ...getCfrn1996StorageIssues(),
