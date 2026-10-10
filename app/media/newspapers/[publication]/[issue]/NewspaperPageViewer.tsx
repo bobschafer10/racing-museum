@@ -247,16 +247,23 @@ export default function NewspaperPageViewer({
     if (cached) return cached
 
     const { sort, source, year } = searchSettings()
-    const { data, error } = await supabase.rpc("get_newspaper_ocr_match_detail", {
+    // Fetch one indexed result, not the expensive full match-detail search.
+    const { data, error } = await supabase.rpc("search_museum_ocr", {
       p_query: searchQuery,
+      p_collection: "newspaper",
       p_source: source,
       p_year: year,
       p_sort: sort,
+      p_limit: 1,
       p_offset: targetIndex,
     })
     if (error || !data?.[0]) return null
 
     const row = data[0] as MatchDetailRow
+    const { data: layoutRows } = await supabase.from("newspaper_ocr_search_pages")
+      .select("ocr_json")
+      .eq("storage_path", row.storage_path)
+      .limit(1)
     const image = `${MEDIA_BASE_URL}${row.storage_path}`
     const match: ActiveMatch = {
       index: targetIndex,
@@ -265,7 +272,7 @@ export default function NewspaperPageViewer({
       pageNumber: row.page_number,
       pageLabel: row.page_label,
       snippet: snippet(row.ocr_text || "", searchQuery),
-      highlights: matchingOcrLayoutLines(parseOcrLayoutLines(row.ocr_json), searchQuery),
+      highlights: matchingOcrLayoutLines(parseOcrLayoutLines(layoutRows?.[0]?.ocr_json), searchQuery),
     }
     matchCache.current.set(targetIndex, match)
     trimCache(targetIndex)
