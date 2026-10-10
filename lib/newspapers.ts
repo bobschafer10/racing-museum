@@ -432,7 +432,7 @@ function getCfrn1980sStorageIssues(): NewspaperIssue[] {
       year: Number(issueDate.slice(0, 4)),
       issueDate,
       description: isIncomplete1988
-        ? "Partial supplied issue: 11 scans are preserved; OCR processing is being completed from the available pages."
+        ? "Partial supplied issue: 11 scans are preserved; all available pages are OCR searchable."
         : null,
       coverImage: isIncomplete1988
         ? `${CFRN_STORAGE_ROOT}/${issueDate}/001.jpg`
@@ -632,7 +632,7 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
 // Newspaper manifests and OCR-complete issue lists change only during imports.
 // Avoid rescanning the OCR tables for every individual issue visit.
 // Revalidate at most twice daily, while keeping the checked-in manifest fallback.
-const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v1"], {
+const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v2"], {
   revalidate: 43200,
   tags: ["museum-newspapers"],
 })
