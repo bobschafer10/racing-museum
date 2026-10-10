@@ -1,0 +1,111 @@
+name: Recover CFRN 1988-10-19 OCR
+
+on:
+  push:
+    paths:
+      - '.github/workflows/paddleocr-cfrn-1988-recovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Check out OCR runner
+        uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          filter: blob:none
+          sparse-checkout: |
+            museum-newspaper-manager/paddleocr-mrn-runner.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PaddleOCR CPU runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+
+      - name: OCR 1988-10-19
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          NEWSPAPER_PUBLICATION: checkered-flag-racing-news
+          MRN_ISSUE_DATE: '1988-10-19'
+          MRN_PAGES_JSON: '["001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg","009.jpg","010.jpg","011.jpg"]'
+          MRN_OUTPUT_ROOT: audit/paddleocr-cfrn-1988/1988-10-19
+        run: |
+          set -euo pipefail
+          python museum-newspaper-manager/paddleocr-mrn-runner.py
+
+      - name: Obtain short-lived GitHub OIDC token
+        id: oidc
+        shell: bash
+        run: |
+          set -euo pipefail
+          TOKEN="$(curl -fsSL \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=umarm-newspaper-ocr-import" | jq -r '.value')"
+          test -n "$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Ingest page-level OCR and verify
+        shell: bash
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          set -euo pipefail
+          root='audit/paddleocr-cfrn-1988/1988-10-19'
+          python - "$root" > /tmp/ocr-payload.json <<'PY'
+          import json, sys
+          from pathlib import Path
+          root=Path(sys.argv[1])
+          summary=json.loads((root/'summary.json').read_text(encoding='utf-8'))
+          candidates=json.loads((root/'candidates.json').read_text(encoding='utf-8')) if (root/'candidates.json').exists() else []
+          pages=[]
+          for meta in summary.get('pages',[]):
+              page=str(meta['page'])
+              stem=Path(page).stem
+              text=(root/'text'/f'{stem}-columns.txt').read_text(encoding='utf-8')
+              if not text.strip():
+                  raise SystemExit(f'empty OCR text: {page}')
+              pages.append({'page':page,'text':text,'meta':meta})
+          if len(pages) != 11:
+              raise SystemExit(f'expected 11 OCR pages, got {len(pages)}')
+          print(json.dumps({
+              'publication':'checkered-flag-racing-news',
+              'year':1988,
+              'issue':'1988-10-19',
+              'summary':summary,
+              'pages':pages,
+              'candidates':candidates,
+          },separators=(',',':')))
+          PY
+          response="$(curl -fsSL -X POST \
+            -H "Authorization: Bearer ${OIDC_TOKEN}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/ocr-payload.json \
+            'https://szvkleurojiwqkkztxtr.supabase.co/functions/v1/newspaper-ocr-import')"
+          echo "$response"
+          test "$(echo "$response" | jq -r '.ok')" = 'true'
+          test "$(echo "$response" | jq -r '.updated')" -eq 11
+
+      - name: Upload recovery audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfrn-1988-10-19-recovery
+          path: audit/paddleocr-cfrn-1988/1988-10-19
+          if-no-files-found: warn
+          retention-days: 30
