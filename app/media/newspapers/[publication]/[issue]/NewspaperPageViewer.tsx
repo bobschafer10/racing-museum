@@ -378,25 +378,16 @@ export default function NewspaperPageViewer({
   const displayQuery = searchQuery ? queryPhrase(searchQuery) : ""
 
   return <>
-    <div className="ma-scan-grid">
-      {pages.map((page, index) => <button
-        key={`${page.label}-${page.image}`}
-        type="button"
-        className="ma-scan-frame"
-        style={buttonReset}
-        onClick={() => {
-          requestSequence.current += 1
-          setSearchMode(false)
-          setMatchNavBusy(false)
-          setMatchNavError("")
-          setOpenPageIndex(index)
-          resetZoom()
-        }}
-        aria-label={`Open ${page.label}`}
-      >
-        <div style={thumbPlaceholder} aria-hidden="true"><span style={thumbPlaceholderLabel}>OPEN SCAN</span></div>
-        <figcaption style={caption}>{page.label}</figcaption>
-      </button>)}
+    <div style={{display:'flex',alignItems:'center',gap:16,flexWrap:'wrap',padding:'12px 0 20px'}}>
+      <button type="button" style={openIssueButton} onClick={() => {
+        requestSequence.current += 1
+        setSearchMode(false)
+        setMatchNavBusy(false)
+        setMatchNavError("")
+        setOpenPageIndex(0)
+        resetZoom()
+      }}>Read full newspaper →</button>
+      <span style={{color:'#aeb4b8',fontSize:13}}>{pages.length} preserved pages • Use arrows to turn pages • Zoom available</span>
     </div>
 
     {openPageIndex !== null && displayImage ? <div style={overlay} onClick={closeViewer}>
@@ -459,7 +450,7 @@ export default function NewspaperPageViewer({
   </>
 }
 
-const buttonReset: CSSProperties = {cursor:'pointer',fontFamily:'Arial,Helvetica,sans-serif',color:'inherit',textAlign:'inherit'}
+const openIssueButton: CSSProperties = {cursor:'pointer',padding:'12px 20px',borderRadius:6,border:'1px solid #9b8458',background:'#c5a86b',color:'#101316',fontSize:14,fontWeight:800}\nconst buttonReset: CSSProperties = {cursor:'pointer',fontFamily:'Arial,Helvetica,sans-serif',color:'inherit',textAlign:'inherit'}
 const thumbPlaceholder: CSSProperties = {width:'100%',aspectRatio:'8.5 / 11',display:'flex',alignItems:'center',justifyContent:'center',background:'linear-gradient(135deg,#eee4cf,#d6c8aa)',border:'1px solid rgba(255,255,255,.08)'}
 const thumbPlaceholderLabel: CSSProperties = {fontSize:10,fontWeight:900,letterSpacing:'.14em',color:'#4a4234'}
 const caption: CSSProperties = {fontSize:9,textTransform:'uppercase',letterSpacing:'.1em',textAlign:'center',color:'#aeb4b8',padding:'8px 4px 2px',fontWeight:800}
