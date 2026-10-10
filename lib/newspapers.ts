@@ -1,6 +1,7 @@
 import { promises as fs } from "fs"
 import path from "path"
 import { supabase } from "@/lib/supabase"
+import { unstable_cache } from "next/cache"
 
 export type NewspaperIssue = {
   slug: string
@@ -467,7 +468,7 @@ function getCfrn2005StorageIssues(): NewspaperIssue[] {
   return getCfrnStorageIssues(2005, CFRN_2005_PAGE_COUNTS)
 }
 
-export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
+async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
   try {
     const manifestPath = path.join(
       process.cwd(),
@@ -557,6 +558,18 @@ export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
     console.error("NEWSPAPER MANIFEST ERROR:", error)
     return []
   }
+}
+
+// Newspaper manifests and OCR-complete issue lists change only during imports.
+// Avoid rescanning the OCR tables for every individual issue visit.
+// Revalidate at most twice daily, while keeping the checked-in manifest fallback.
+const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v1"], {
+  revalidate: 43200,
+  tags: ["museum-newspapers"],
+})
+
+export async function getNewspaperIssues(): Promise<NewspaperIssue[]> {
+  return cachedNewspaperIssues()
 }
 
 export async function getNewspaperIssuesByPublication(
