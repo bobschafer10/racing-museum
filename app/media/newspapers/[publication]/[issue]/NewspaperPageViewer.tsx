@@ -451,9 +451,6 @@ export default function NewspaperPageViewer({
 }
 
 const openIssueButton: CSSProperties = {cursor:'pointer',padding:'12px 20px',borderRadius:6,border:'1px solid #9b8458',background:'#c5a86b',color:'#101316',fontSize:14,fontWeight:800}\nconst buttonReset: CSSProperties = {cursor:'pointer',fontFamily:'Arial,Helvetica,sans-serif',color:'inherit',textAlign:'inherit'}
-const thumbPlaceholder: CSSProperties = {width:'100%',aspectRatio:'8.5 / 11',display:'flex',alignItems:'center',justifyContent:'center',background:'linear-gradient(135deg,#eee4cf,#d6c8aa)',border:'1px solid rgba(255,255,255,.08)'}
-const thumbPlaceholderLabel: CSSProperties = {fontSize:10,fontWeight:900,letterSpacing:'.14em',color:'#4a4234'}
-const caption: CSSProperties = {fontSize:9,textTransform:'uppercase',letterSpacing:'.1em',textAlign:'center',color:'#aeb4b8',padding:'8px 4px 2px',fontWeight:800}
 const overlay: CSSProperties = {position:'fixed',inset:0,zIndex:9999,background:'rgba(3,5,7,.96)',display:'flex',alignItems:'center',justifyContent:'center',padding:24}
 const shell: CSSProperties = {width:'90vw',height:'92vh',display:'flex',flexDirection:'column',alignItems:'center'}
 const viewport: CSSProperties = {width:'100%',overflow:'auto',display:'flex',alignItems:'flex-start',justifyContent:'center',padding:'0 8px 72px'}
