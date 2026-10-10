@@ -368,6 +368,7 @@ export async function GET(request: NextRequest) {
     if (isNewspaper) {
       const resultParams = new URLSearchParams()
       if (row.page_number) resultParams.set("sourcePage", String(row.page_number))
+      resultParams.set("ocrPath", row.storage_path)
       resultParams.set("q", query)
       resultParams.set("sort", sort)
       resultParams.set("source", source || "all")
