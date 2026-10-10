@@ -1,0 +1,255 @@
+name: Recover remaining CFRN page-level OCR index
+
+on:
+  push:
+    branches:
+      - paddleocr-mrn-pilot
+    paths:
+      - '.github/workflows/paddleocr-cfrn-recover-remaining-page-index.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  recover-1996-1998:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        year: [1996, 1997, 1998]
+    env:
+      YEAR: ${{ matrix.year }}
+    steps:
+      - name: Validate stored OCR page boundaries and index ${{ matrix.year }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, re, time, urllib.request, urllib.error
+
+          PROJECT='szvkleurojiwqkkztxtr'
+          PUB='checkered-flag-racing-news'
+          YEAR=int(os.environ['YEAR'])
+          ROOT=f'https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{PUB}'
+          IMPORT=f'https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-import'
+          OIDC_URL=os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
+          OIDC_REQ=os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
+
+          issue_counts={
+            1996:{
+              '1996-02-07':24,'1996-03-06':20,'1996-04-03':28,'1996-04-10':16,
+              '1996-04-17':20,'1996-04-24':24,'1996-05-08':28,'1996-05-15':28,
+              '1996-05-22':32,'1996-06-05':27,'1996-06-19':32,'1996-07-17':31,
+              '1996-09-04':32,'1996-10-02':20,'1996-12-11':32,
+            },
+            1997:{'1997-10-01':24,'1997-10-15':24,'1997-12-10':32},
+            1998:{
+              '1998-04-15':16,'1998-04-22':24,'1998-04-29':24,'1998-06-24':36,
+              '1998-07-15':36,'1998-07-29':36,'1998-09-02':36,'1998-09-23':28,
+              '1998-10-07':20,'1998-10-21':24,
+            },
+          }[YEAR]
+
+          old_header=re.compile(r'(?m)^---\s+([^\r\n]+?\.jpe?g)\s+---\s*$',re.I)
+          page_header=re.compile(r'(?im)^\s*(?:={2,}\s*)?(?:page|pg\.?)[ #:.-]*(\d{1,3})(?:\s*(?:of|/)\s*\d{1,3})?\s*(?:={2,})?\s*$')
+
+          def get(url,timeout=90,attempts=5):
+              last=None
+              for a in range(1,attempts+1):
+                  try:
+                      req=urllib.request.Request(url,headers={'User-Agent':'UMARM CFRN remaining page recovery/1.0'})
+                      with urllib.request.urlopen(req,timeout=timeout) as r: return r.read()
+                  except Exception as e:
+                      last=e
+                      if a<attempts: time.sleep(min(a*4,20))
+              raise RuntimeError(f'GET failed {url}: {last}')
+
+          def page_row(n,body,mode):
+              body=body.strip()
+              if len(body)<20: raise RuntimeError(f'suspiciously short page {n} using {mode}')
+              return {'page':f'{n:03d}.jpg','text':body,'meta':{
+                  'source':'stored-ocr.txt','import_mode':mode,'scan_position':n,
+                  'line_layout':{'lines':[]}}}
+
+          def split_stored(issue,expected):
+              raw=get(f'{ROOT}/{issue}/ocr.txt').decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n').strip()
+              if not raw: raise RuntimeError(f'{issue}: empty ocr.txt')
+
+              matches=list(old_header.finditer(raw))
+              if matches:
+                  pieces=[]
+                  for i,m in enumerate(matches):
+                      num=re.search(r'(\d+)(?=\.jpe?g$)',m.group(1).strip(),re.I)
+                      if not num: pieces=[]; break
+                      body=raw[m.end():(matches[i+1].start() if i+1<len(matches) else len(raw))].strip()
+                      if len(body)<20: pieces=[]; break
+                      pieces.append((int(num.group(1)),body))
+                  if len(pieces)==expected and [n for n,_ in pieces]==list(range(1,expected+1)):
+                      return [page_row(n,b,'legacy-page-headers') for n,b in pieces],'legacy-page-headers'
+
+              chunks=[c.strip() for c in raw.split('\f') if c.strip()]
+              if len(chunks)==expected and all(len(c)>=20 for c in chunks):
+                  return [page_row(i,c,'form-feed') for i,c in enumerate(chunks,1)],'form-feed'
+
+              matches=list(page_header.finditer(raw))
+              if len(matches)==expected:
+                  pieces=[]
+                  for i,m in enumerate(matches):
+                      n=int(m.group(1))
+                      body=raw[m.end():(matches[i+1].start() if i+1<len(matches) else len(raw))].strip()
+                      if len(body)<20: pieces=[]; break
+                      pieces.append((n,body))
+                  if [n for n,_ in pieces]==list(range(1,expected+1)):
+                      return [page_row(n,b,'page-headings') for n,b in pieces],'page-headings'
+
+              # Stored CFRN OCR from adjacent years uses blank-line/newline runs as page boundaries.
+              # Try conservative exact newline runs first, then generic blank-line blocks. A method is
+              # accepted only when it produces exactly the known scan count and every page has content.
+              for run in range(8,1,-1):
+                  parts=[c.strip() for c in re.split(rf'(?<!\n)\n{{{run}}}(?!\n)',raw) if c.strip()]
+                  if len(parts)==expected and all(len(c)>=20 for c in parts):
+                      mode=f'exact-{run}-newline-page-sections'
+                      return [page_row(i,c,mode) for i,c in enumerate(parts,1)],mode
+
+              parts=[c.strip() for c in re.split(r'\n[ \t]*\n+',raw) if c.strip()]
+              if len(parts)==expected and all(len(c)>=20 for c in parts):
+                  mode='blank-line-page-sections'
+                  return [page_row(i,c,mode) for i,c in enumerate(parts,1)],mode
+
+              raise RuntimeError(f'{issue}: no safe stored-OCR page split matched expected {expected} scans')
+
+          # Validate the entire year before writing any rows for that year.
+          cache={}
+          for issue,expected in issue_counts.items():
+              pages,mode=split_stored(issue,expected)
+              cache[issue]=(pages,mode)
+              print(f'VALIDATED {issue}: {expected} pages using {mode} / {sum(len(p["text"]) for p in pages)} chars',flush=True)
+          print(f'YEAR VALIDATED {YEAR}: {len(cache)} issues / {sum(issue_counts.values())} pages',flush=True)
+
+          def oidc():
+              sep='&' if '?' in OIDC_URL else '?'
+              req=urllib.request.Request(f'{OIDC_URL}{sep}audience=umarm-newspaper-ocr-import',headers={
+                  'Authorization':f'bearer {OIDC_REQ}','User-Agent':'UMARM CFRN remaining page recovery/1.0'})
+              with urllib.request.urlopen(req,timeout=30) as r: value=json.loads(r.read().decode()).get('value')
+              if not value: raise RuntimeError('OIDC token missing')
+              return value
+
+          def post(issue,pages,mode):
+              body=json.dumps({
+                  'publication':PUB,'year':YEAR,'issue':issue,
+                  'summary':{'engine':'Stored OCR text import','recognition_model':f'validated stored CFRN OCR ({mode})'},
+                  'pages':pages,'candidates':[]
+              },separators=(',',':')).encode()
+              last=None
+              for a in range(1,8):
+                  req=urllib.request.Request(IMPORT,data=body,method='POST',headers={
+                      'Authorization':f'Bearer {oidc()}','Content-Type':'application/json',
+                      'User-Agent':'UMARM CFRN remaining page recovery/1.0'})
+                  try:
+                      with urllib.request.urlopen(req,timeout=180) as r: out=json.loads(r.read().decode())
+                      if out.get('ok') and int(out.get('updated',0))==len(pages): return out
+                      last=RuntimeError(f'bad response {out}')
+                  except urllib.error.HTTPError as e:
+                      detail=e.read().decode('utf-8','replace')
+                      last=RuntimeError(f'HTTP {e.code}: {detail}')
+                      if e.code<500 and e.code not in (408,409,429): raise last
+                  except Exception as e: last=e
+                  if a<7: time.sleep(min(a*5,30))
+              raise RuntimeError(f'{issue} import failed: {last}')
+
+          total=0
+          for issue,(pages,mode) in cache.items():
+              done=0
+              for start in range(0,len(pages),2):
+                  batch=pages[start:start+2]
+                  try:
+                      post(issue,batch,mode)
+                  except Exception:
+                      if len(batch)==1: raise
+                      for p in batch: post(issue,[p],mode)
+                  done+=len(batch)
+                  print(f'INDEXED {issue}: {done}/{len(pages)}',flush=True)
+                  time.sleep(.4)
+              if done!=len(pages): raise RuntimeError(f'{issue}: wrote {done}, expected {len(pages)}')
+              total+=done
+              print(f'ISSUE COMPLETE {issue}: {done} searchable pages',flush=True)
+          if total!=sum(issue_counts.values()): raise RuntimeError(f'{YEAR}: wrote {total}, expected {sum(issue_counts.values())}')
+          print(json.dumps({'ok':True,'year':YEAR,'issues':len(cache),'pages':total},indent=2),flush=True)
+          PY
+
+  recover-2005-07-13:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Validate full stored OCR and fill missing page rows
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, re, time, urllib.request, urllib.error
+
+          PROJECT='szvkleurojiwqkkztxtr'
+          PUB='checkered-flag-racing-news'
+          ISSUE='2005-07-13'
+          EXPECTED=24
+          ROOT=f'https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{PUB}'
+          IMPORT=f'https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-import'
+          OIDC_URL=os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
+          OIDC_REQ=os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
+
+          req=urllib.request.Request(f'{ROOT}/{ISSUE}/ocr.txt',headers={'User-Agent':'UMARM CFRN remaining page recovery/1.0'})
+          with urllib.request.urlopen(req,timeout=90) as r:
+              raw=r.read().decode('utf-8','replace').replace('\r\n','\n').replace('\r','\n').strip()
+          chunks=[c.strip() for c in re.split(r'\n\s*\n+',raw) if c.strip()]
+          if len(chunks)!=EXPECTED: raise RuntimeError(f'{ISSUE}: expected {EXPECTED} page blocks, found {len(chunks)}')
+          if any(len(c)<20 for c in chunks): raise RuntimeError(f'{ISSUE}: suspiciously short OCR page block')
+          print(f'VALIDATED {ISSUE}: {len(chunks)} stored OCR pages / {sum(map(len,chunks))} chars',flush=True)
+
+          def oidc():
+              sep='&' if '?' in OIDC_URL else '?'
+              req=urllib.request.Request(f'{OIDC_URL}{sep}audience=umarm-newspaper-ocr-import',headers={
+                  'Authorization':f'bearer {OIDC_REQ}','User-Agent':'UMARM CFRN remaining page recovery/1.0'})
+              with urllib.request.urlopen(req,timeout=30) as r: value=json.loads(r.read().decode()).get('value')
+              if not value: raise RuntimeError('OIDC token missing')
+              return value
+
+          def post(pages):
+              body=json.dumps({
+                  'publication':PUB,'year':2005,'issue':ISSUE,
+                  'summary':{'engine':'Stored OCR text import','recognition_model':'prepared CFRN OCR blank-line page blocks'},
+                  'pages':pages,'candidates':[]
+              },separators=(',',':')).encode()
+              last=None
+              for a in range(1,7):
+                  req=urllib.request.Request(IMPORT,data=body,method='POST',headers={
+                      'Authorization':f'Bearer {oidc()}','Content-Type':'application/json',
+                      'User-Agent':'UMARM CFRN remaining page recovery/1.0'})
+                  try:
+                      with urllib.request.urlopen(req,timeout=180) as r: out=json.loads(r.read().decode())
+                      if out.get('ok') and int(out.get('updated',0))==len(pages): return
+                      last=RuntimeError(f'bad response {out}')
+                  except urllib.error.HTTPError as e:
+                      detail=e.read().decode('utf-8','replace')
+                      last=RuntimeError(f'HTTP {e.code}: {detail}')
+                      if e.code<500 and e.code not in (408,409,429): raise last
+                  except Exception as e: last=e
+                  if a<6: time.sleep(min(a*5,25))
+              raise RuntimeError(f'{ISSUE} import failed: {last}')
+
+          # Only pages 13-24 are absent from the supplemental page index.
+          missing=[]
+          for n in range(13,25):
+              missing.append({'page':f'{n:03d}.jpg','text':chunks[n-1],'meta':{
+                  'source':'stored-ocr.txt','import_mode':'blank-line-page-blocks','scan_position':n,
+                  'line_layout':{'lines':[]}}})
+          for start in range(0,len(missing),2):
+              batch=missing[start:start+2]
+              post(batch)
+              print(f'INDEXED {ISSUE}: pages {batch[0]["page"]}-{batch[-1]["page"]}',flush=True)
+              time.sleep(.4)
+          print(json.dumps({'ok':True,'issue':ISSUE,'pages_added':len(missing)},indent=2),flush=True)
+          PY
