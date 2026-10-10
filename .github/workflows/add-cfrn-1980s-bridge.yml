@@ -125,9 +125,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          grep -q 'CFRN_1980S_PAGE_COUNTS' lib/newspapers.ts
-          grep -q 'function getCfrn1980sStorageIssues' lib/newspapers.ts
-          test "$(grep -c '\.\.\.getCfrn1980sStorageIssues(),' lib/newspapers.ts)" -eq 2
+          python - <<'PY'
+          from pathlib import Path
+          s = Path('lib/newspapers.ts').read_text(encoding='utf-8')
+          assert 'CFRN_1980S_PAGE_COUNTS' in s
+          assert 'function getCfrn1980sStorageIssues' in s
+          count = s.count('...getCfrn1980sStorageIssues(),')
+          if count < 2:
+              raise SystemExit(f'Expected bridge in both archive lists; found {count}')
+          print(f'Bridge references verified: {count}')
+          PY
 
       - name: Commit bridge
         shell: bash
