@@ -263,6 +263,7 @@ async function directSupabaseSearch(query: string, collection: Collection, optio
     const scanUrl = `${MEDIA_BASE_URL}${row.storage_path}`
     const resultParams = new URLSearchParams()
     if (row.page_number) resultParams.set("sourcePage", String(row.page_number))
+    resultParams.set("ocrPath", row.storage_path)
     resultParams.set("q", query)
     resultParams.set("sort", options.sort)
     resultParams.set("source", source || "all")
