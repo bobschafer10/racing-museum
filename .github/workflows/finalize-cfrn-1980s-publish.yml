@@ -1,0 +1,53 @@
+name: Finalize CFRN 1980s publication
+
+on:
+  push:
+    paths:
+      - '.github/workflows/finalize-cfrn-1980s-publish.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Refresh newspaper cache and finalize 1988 note
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('lib/newspapers.ts')
+          s = p.read_text(encoding='utf-8')
+          old_note = 'Partial supplied issue: 11 scans are preserved; OCR processing is being completed from the available pages.'
+          new_note = 'Partial supplied issue: 11 scans are preserved; all available pages are OCR searchable.'
+          if old_note in s:
+              s = s.replace(old_note, new_note)
+          if 'museum-newspaper-archive-v1' in s:
+              s = s.replace('museum-newspaper-archive-v1', 'museum-newspaper-archive-v2')
+          if new_note not in s:
+              raise SystemExit('Final 1988 archive note was not found after patch')
+          if 'museum-newspaper-archive-v2' not in s:
+              raise SystemExit('Newspaper cache key was not refreshed')
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit publication refresh
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- lib/newspapers.ts; then
+            echo 'Publication refresh already applied'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add lib/newspapers.ts
+          git commit -m 'Finalize CFRN 1980s publication cache'
+          git push origin HEAD:main
