@@ -109,14 +109,19 @@ jobs:
                   raise SystemExit('CFRN 1992 function marker not found')
               s = s.replace(func_marker, func_block + func_marker, 1)
 
-          merge_marker = '      ...getCfrn1976StorageIssues(),\n'
-          if '...getCfrn1980sStorageIssues(),' not in s:
-              if merge_marker not in s:
-                  raise SystemExit('CFRN 1976 merge marker not found')
-              s = s.replace(
-                  merge_marker,
-                  merge_marker + '      ...getCfrn1980sStorageIssues(),\n'
-              )
+          archive_marker = '      ...getCfrn1976StorageIssues(),\n'
+          archive_bridge = '      ...getCfrn1980sStorageIssues(),\n'
+          if archive_bridge not in s:
+              if archive_marker not in s:
+                  raise SystemExit('CFRN 1976 archive marker not found')
+              s = s.replace(archive_marker, archive_marker + archive_bridge, 1)
+
+          direct_marker = '    ...getCfrn1976StorageIssues(),\n'
+          direct_bridge = '    ...getCfrn1980sStorageIssues(),\n'
+          if direct_bridge not in s:
+              if direct_marker not in s:
+                  raise SystemExit('CFRN 1976 direct lookup marker not found')
+              s = s.replace(direct_marker, direct_marker + direct_bridge, 1)
 
           p.write_text(s, encoding='utf-8')
           PY
@@ -131,8 +136,8 @@ jobs:
           assert 'CFRN_1980S_PAGE_COUNTS' in s
           assert 'function getCfrn1980sStorageIssues' in s
           count = s.count('...getCfrn1980sStorageIssues(),')
-          if count < 2:
-              raise SystemExit(f'Expected bridge in both archive lists; found {count}')
+          if count != 2:
+              raise SystemExit(f'Expected exactly two bridge references; found {count}')
           print(f'Bridge references verified: {count}')
           PY
 
