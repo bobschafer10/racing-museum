@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import "./series-mobile.css";
 import "./series-routes-mobile.css";
@@ -15,6 +16,7 @@ import Link from "next/link"
 import ResearchCenterNav from "@/components/ResearchCenterNav"
 import FeatureWinnersPdfEnhancer from "@/components/FeatureWinnersPdfEnhancer"
 import MuseumRoomReturn from "@/components/MuseumRoomReturn"
+import SearchResultAutoScroll from "@/components/SearchResultAutoScroll"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -71,6 +73,9 @@ export default function RootLayout({
         <ResearchCenterNav />
         <FeatureWinnersPdfEnhancer />
         <MuseumRoomReturn />
+        <Suspense fallback={null}>
+          <SearchResultAutoScroll />
+        </Suspense>
 
         <main style={{ flex: 1 }}>
           {children}
