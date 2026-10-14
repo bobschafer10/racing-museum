@@ -2,26 +2,15 @@
 'use strict';
 
 /*
-  CFRN 1984 OCR upgrade
+  CFRN 1984 OCR upgrade - storage-list-free edition
 
-  Purpose
-  - Audits all 1984 Checkered Flag Racing News issues already in Supabase Storage.
-  - OCRs only canonical numeric page images (never front-cover/back-cover/thumbnail aliases).
-  - Rebuilds every page that is missing, blank, failed, or lacks normalized TSV line layout.
-  - Upserts completed per-page OCR into public.newspaper_ocr_pages on storage_path.
-  - Rebuilds issue-level ocr.txt only after every canonical page is complete.
-  - Preserves existing newspaper.json fields while updating OCR summary fields.
-  - Safe to stop/re-run; completed layout-ready pages are skipped unless --force is used.
-
-  Typical Windows use from C:\Users\schaf\racing-museum\museum-newspaper-manager:
-    node .\cfrn-1984-ocr-upgrade.js --dry-run
-    node .\cfrn-1984-ocr-upgrade.js
-
-  Optional:
-    --issue 1984-05-09
-    --workers 4
-    --max-issues 5
-    --force
+  Why this version exists:
+  - Supabase Storage folder listing for the large CFRN publication root can time out.
+  - The 1984 storage inventory was verified directly in Supabase on 2026-10-13.
+  - This script uses that verified issue/page inventory and therefore never calls Storage.list().
+  - Page images are downloaded from the public Storage object URL first, with the SDK as fallback.
+  - Dry-run performs no Storage calls at all; it only checks newspaper_ocr_pages.
+  - Completed OCR pages are upserted immediately so the job is restart-safe page by page.
 */
 
 const fs = require('fs');
@@ -50,10 +39,56 @@ const BUCKET = process.env.SUPABASE_STORAGE_BUCKET || 'media';
 const STORAGE_ROOT = `newspapers/${PUBLICATION}`;
 const WORK_ROOT = path.resolve(process.cwd(), '.ocr-work', 'cfrn-1984');
 const AUDIT_PATH = path.join(WORK_ROOT, 'latest-audit.json');
-const TIMEOUT_MS = Number(process.env.NEWSPAPER_OCR_TIMEOUT_MS || 180000);
+const TESSERACT_TIMEOUT_MS = Number(process.env.NEWSPAPER_OCR_TIMEOUT_MS || 180000);
+const HTTP_TIMEOUT_MS = Number(process.env.NEWSPAPER_DOWNLOAD_TIMEOUT_MS || 120000);
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+function pages(a, b) {
+  const out = [];
+  for (let i = a; i <= b; i++) out.push(`${String(i).padStart(3, '0')}.jpg`);
+  return out;
+}
+
+// Verified from storage.objects in the live UMARM Supabase project on 2026-10-13.
+// 999.jpg staging scans are intentionally excluded.
+const ISSUE_PAGES = Object.freeze({
+  '1984-01-11': pages(1, 12),
+  '1984-02-08': pages(1, 16),
+  '1984-02-29': pages(1, 28),
+  '1984-03-21': pages(1, 16),
+  '1984-04-04': pages(1, 16),
+  '1984-04-11': pages(1, 12),
+  '1984-04-18': pages(1, 12),
+  '1984-04-25': pages(1, 16),
+  '1984-05-02': pages(1, 16),
+  '1984-05-09': pages(1, 20),
+  '1984-05-16': pages(1, 24),
+  '1984-05-23': pages(1, 19),
+  '1984-05-30': pages(2, 20),
+  '1984-06-06': pages(1, 1),
+  '1984-06-13': pages(1, 24),
+  '1984-06-20': pages(1, 20),
+  '1984-06-27': pages(1, 1),
+  '1984-07-04': pages(1, 24),
+  '1984-07-11': pages(1, 32),
+  '1984-07-18': pages(1, 28),
+  '1984-07-25': pages(1, 28),
+  '1984-08-01': [...pages(1, 3), ...pages(6, 24)],
+  '1984-08-08': pages(1, 28),
+  '1984-08-15': pages(1, 24),
+  '1984-08-22': pages(1, 24),
+  '1984-08-29': pages(1, 25),
+  '1984-09-05': pages(1, 20),
+  '1984-09-12': pages(1, 25),
+  '1984-09-19': pages(1, 20),
+  '1984-09-26': pages(1, 1),
+  '1984-10-03': pages(1, 16),
+  '1984-10-10': pages(1, 2),
+  '1984-11-07': pages(1, 24),
+  '1984-12-12': pages(1, 21),
+});
 
 function arg(name, fallback = null) {
   const i = process.argv.indexOf(name);
@@ -61,29 +96,13 @@ function arg(name, fallback = null) {
 }
 function flag(name) { return process.argv.includes(name); }
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
-function pageNumber(name) {
-  const m = path.basename(name).match(/^(\d+)\.(?:jpe?g|png|webp)$/i);
-  return m ? Number(m[1]) : null;
-}
-function isNumericPage(name) { return pageNumber(name) !== null; }
 function hasLayout(row) {
   const lines = row?.ocr_json?.line_layout?.lines;
   return Array.isArray(lines) && lines.length > 0;
 }
-function mimeType(name) {
-  const ext = path.extname(name).toLowerCase();
-  if (ext === '.png') return 'image/png';
-  if (ext === '.webp') return 'image/webp';
-  return 'image/jpeg';
-}
 function sha256(buffer) { return crypto.createHash('sha256').update(buffer).digest('hex'); }
 function publicUrl(storagePath) {
   return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${storagePath}`;
-}
-function storageBasenameFromUrl(value) {
-  if (!value || typeof value !== 'string') return null;
-  try { return decodeURIComponent(new URL(value).pathname.split('/').pop() || ''); }
-  catch { return decodeURIComponent(value.split('?')[0].split('/').pop() || ''); }
 }
 
 async function retry(label, fn, tries = 4) {
@@ -93,7 +112,7 @@ async function retry(label, fn, tries = 4) {
     catch (err) {
       last = err;
       if (i === tries) break;
-      const wait = i * 1250;
+      const wait = i * 1500;
       console.warn(`${label}: ${err.message}; retry ${i}/${tries - 1} in ${wait}ms`);
       await sleep(wait);
     }
@@ -101,30 +120,34 @@ async function retry(label, fn, tries = 4) {
   throw last;
 }
 
-async function listAll(supabase, folder) {
-  const out = [];
-  for (let offset = 0;; offset += 1000) {
-    const rows = await retry(`list ${folder}`, async () => {
-      const { data, error } = await supabase.storage.from(BUCKET).list(folder, {
-        limit: 1000,
-        offset,
-        sortBy: { column: 'name', order: 'asc' },
-      });
-      if (error) throw error;
-      return data || [];
-    });
-    out.push(...rows);
-    if (rows.length < 1000) break;
+async function fetchWithTimeout(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), HTTP_TIMEOUT_MS);
+  try {
+    return await fetch(url, { signal: controller.signal, cache: 'no-store' });
+  } finally {
+    clearTimeout(timer);
   }
-  return out;
 }
 
 async function downloadBuffer(supabase, storagePath) {
-  return retry(`download ${storagePath}`, async () => {
+  // Public object URL avoids the expensive Storage metadata/listing path.
+  try {
+    const response = await retry(`HTTP download ${storagePath}`, async () => {
+      const r = await fetchWithTimeout(publicUrl(storagePath));
+      if (!r.ok) throw new Error(`HTTP ${r.status} ${r.statusText}`);
+      return r;
+    }, 3);
+    return Buffer.from(await response.arrayBuffer());
+  } catch (httpErr) {
+    console.warn(`  Public download fallback for ${storagePath}: ${httpErr.message}`);
+  }
+
+  return retry(`SDK download ${storagePath}`, async () => {
     const { data, error } = await supabase.storage.from(BUCKET).download(storagePath);
     if (error) throw error;
     return Buffer.from(await data.arrayBuffer());
-  });
+  }, 3);
 }
 
 async function uploadBuffer(supabase, storagePath, buffer, contentType) {
@@ -135,7 +158,7 @@ async function uploadBuffer(supabase, storagePath, buffer, contentType) {
       contentType,
     });
     if (error) throw error;
-  });
+  }, 4);
 }
 
 async function loadIssueJson(supabase, issueFolder) {
@@ -146,29 +169,6 @@ async function loadIssueJson(supabase, issueFolder) {
     console.warn(`[${path.basename(issueFolder)}] newspaper.json unavailable: ${err.message}`);
     return null;
   }
-}
-
-function selectCanonicalPages(items, issueJson) {
-  const itemMap = new Map(items.filter(x => isNumericPage(x.name)).map(x => [x.name, x]));
-  const manifestNames = Array.isArray(issueJson?.pages)
-    ? issueJson.pages.map(storageBasenameFromUrl).filter(Boolean).filter(isNumericPage)
-    : [];
-
-  if (manifestNames.length) {
-    const unique = [...new Set(manifestNames)];
-    const matched = unique.filter(name => itemMap.has(name));
-    if (matched.length === unique.length) {
-      return matched
-        .map(name => itemMap.get(name))
-        .sort((a, b) => pageNumber(a.name) - pageNumber(b.name));
-    }
-  }
-
-  // Storage fallback: numeric page files only. 999.jpg has been used as a stray/
-  // staging scan in this archive and is not part of the published page sequence.
-  return [...itemMap.values()]
-    .filter(item => pageNumber(item.name) !== 999)
-    .sort((a, b) => pageNumber(a.name) - pageNumber(b.name));
 }
 
 function resolveTesseract() {
@@ -185,7 +185,7 @@ function runTesseract(executable, sourcePath, outputBase) {
       executable,
       [sourcePath, outputBase, '-l', 'eng', '--psm', '11', 'txt', 'tsv'],
       {
-        timeout: TIMEOUT_MS,
+        timeout: TESSERACT_TIMEOUT_MS,
         maxBuffer: 8 * 1024 * 1024,
         env: { ...process.env, OMP_THREAD_LIMIT: process.env.OMP_THREAD_LIMIT || '1' },
       },
@@ -225,7 +225,10 @@ function parseTsv(tsvText) {
     words.push({
       text,
       conf: Number.isFinite(conf) && conf >= 0 ? conf : null,
-      left, top, width, height,
+      left,
+      top,
+      width,
+      height,
       key: [cols[idx.block_num], cols[idx.par_num], cols[idx.line_num]].join(':'),
     });
   }
@@ -269,20 +272,19 @@ function parseTsv(tsvText) {
   return { lines, avgConfidence };
 }
 
-async function ocrOnePage({ supabase, tesseract, issueDate, issueFolder, item }) {
-  const storagePath = `${issueFolder}/${item.name}`;
+async function ocrOnePage({ supabase, tesseract, issueDate, issueFolder, pageName }) {
+  const storagePath = `${issueFolder}/${pageName}`;
   const buffer = await downloadBuffer(supabase, storagePath);
   const issueWork = path.join(WORK_ROOT, issueDate);
   await fsp.mkdir(issueWork, { recursive: true });
-  const ext = path.extname(item.name) || '.jpg';
-  const stem = path.basename(item.name, ext);
-  const sourcePath = path.join(issueWork, `${stem}.source${ext}`);
-  const outputBase = path.join(issueWork, stem);
+
+  const sourcePath = path.join(issueWork, `${pageName}.source.jpg`);
+  const outputBase = path.join(issueWork, path.basename(pageName, path.extname(pageName)));
+  const txtPath = `${outputBase}.txt`;
+  const tsvPath = `${outputBase}.tsv`;
   await fsp.writeFile(sourcePath, buffer);
 
   await runTesseract(tesseract, sourcePath, outputBase);
-  const txtPath = `${outputBase}.txt`;
-  const tsvPath = `${outputBase}.tsv`;
   const ocrText = (await fsp.readFile(txtPath, 'utf8')).trim();
   const tsvText = await fsp.readFile(tsvPath, 'utf8');
   const parsed = parseTsv(tsvText);
@@ -293,9 +295,9 @@ async function ocrOnePage({ supabase, tesseract, issueDate, issueFolder, item })
   const record = {
     publication_code: PUBLICATION,
     issue_date: issueDate,
-    page_label: item.name,
+    page_label: pageName,
     storage_path: storagePath,
-    mime_type: mimeType(item.name),
+    mime_type: 'image/jpeg',
     status: 'complete',
     ocr_engine: 'Tesseract',
     ocr_model: 'eng --psm 11 TSV',
@@ -309,8 +311,81 @@ async function ocrOnePage({ supabase, tesseract, issueDate, issueFolder, item })
     processed_at: now,
     updated_at: now,
   };
+
   await fsp.writeFile(`${outputBase}.json`, JSON.stringify(record, null, 2), 'utf8');
+  await Promise.allSettled([fsp.unlink(sourcePath), fsp.unlink(txtPath), fsp.unlink(tsvPath)]);
   return record;
+}
+
+async function fetchYearRows(supabase) {
+  return retry('fetch 1984 OCR rows', async () => {
+    const { data, error } = await supabase
+      .from('newspaper_ocr_pages')
+      .select('id,publication_code,issue_date,page_label,storage_path,status,ocr_engine,ocr_model,ocr_text,ocr_json,avg_confidence,error_message')
+      .eq('publication_code', PUBLICATION)
+      .gte('issue_date', '1984-01-01')
+      .lt('issue_date', '1985-01-01')
+      .limit(5000);
+    if (error) throw error;
+    return data || [];
+  });
+}
+
+async function fetchIssueRows(supabase, issueDate) {
+  return retry(`fetch DB ${issueDate}`, async () => {
+    const { data, error } = await supabase
+      .from('newspaper_ocr_pages')
+      .select('id,publication_code,issue_date,page_label,storage_path,status,ocr_engine,ocr_model,ocr_text,ocr_json,avg_confidence,error_message')
+      .eq('publication_code', PUBLICATION)
+      .eq('issue_date', issueDate)
+      .limit(500);
+    if (error) throw error;
+    return data || [];
+  });
+}
+
+async function upsertRecord(supabase, record) {
+  await retry(`upsert ${record.storage_path}`, async () => {
+    const { error } = await supabase
+      .from('newspaper_ocr_pages')
+      .upsert(record, { onConflict: 'storage_path', ignoreDuplicates: false });
+    if (error) throw error;
+  }, 4);
+}
+
+async function finalizeIssue({ supabase, issueDate, issueFolder, pageNames, issueJson }) {
+  const rows = await fetchIssueRows(supabase, issueDate);
+  const byPath = new Map(rows.map(r => [r.storage_path, r]));
+  const ordered = pageNames.map(name => byPath.get(`${issueFolder}/${name}`));
+  const bad = ordered
+    .map((row, i) => ({ row, page: pageNames[i] }))
+    .filter(x => !x.row || x.row.status !== 'complete' || !String(x.row.ocr_text || '').trim() || !hasLayout(x.row));
+  if (bad.length) {
+    throw new Error(`cannot finalize; ${bad.length} page(s) incomplete/layout-missing: ${bad.slice(0, 8).map(x => x.page).join(', ')}`);
+  }
+
+  const combined = ordered.map((row, i) => `--- ${pageNames[i]} ---\n${row.ocr_text.trim()}`).join('\n\n') + '\n';
+  await uploadBuffer(supabase, `${issueFolder}/ocr.txt`, Buffer.from(combined, 'utf8'), 'text/plain; charset=utf-8');
+
+  if (issueJson) {
+    const now = new Date().toISOString();
+    const next = {
+      ...issueJson,
+      ocrTextPath: publicUrl(`${issueFolder}/ocr.txt`),
+      ocrSourceCount: pageNames.length,
+      ocrLayoutReady: true,
+      ocrEngine: 'Tesseract eng --psm 11 TSV',
+      ocrGeneratedAt: now,
+    };
+    await uploadBuffer(
+      supabase,
+      `${issueFolder}/newspaper.json`,
+      Buffer.from(JSON.stringify(next, null, 2), 'utf8'),
+      'application/json',
+    );
+  }
+
+  return { rows: ordered.length, ocrBytes: Buffer.byteLength(combined) };
 }
 
 async function mapLimit(items, limit, fn) {
@@ -327,60 +402,18 @@ async function mapLimit(items, limit, fn) {
   return results;
 }
 
-async function fetchIssueRows(supabase, issueDate) {
-  const { data, error } = await supabase
-    .from('newspaper_ocr_pages')
-    .select('publication_code,issue_date,page_label,storage_path,status,ocr_engine,ocr_model,ocr_text,ocr_json,avg_confidence,error_message')
-    .eq('publication_code', PUBLICATION)
-    .eq('issue_date', issueDate);
-  if (error) throw error;
-  return data || [];
-}
-
-async function upsertRecords(supabase, records) {
-  for (let i = 0; i < records.length; i += 20) {
-    const batch = records.slice(i, i + 20);
-    const { error } = await supabase
-      .from('newspaper_ocr_pages')
-      .upsert(batch, { onConflict: 'storage_path', ignoreDuplicates: false });
-    if (error) throw error;
-  }
-}
-
-async function finalizeIssue({ supabase, issueDate, issueFolder, pages, issueJson }) {
-  const rows = await fetchIssueRows(supabase, issueDate);
-  const byPath = new Map(rows.map(r => [r.storage_path, r]));
-  const ordered = pages.map(page => byPath.get(`${issueFolder}/${page.name}`));
-  const bad = ordered
-    .map((row, i) => ({ row, page: pages[i].name }))
-    .filter(x => !x.row || x.row.status !== 'complete' || !String(x.row.ocr_text || '').trim() || !hasLayout(x.row));
-  if (bad.length) throw new Error(`cannot finalize; ${bad.length} canonical page(s) incomplete/layout-missing: ${bad.slice(0, 8).map(x => x.page).join(', ')}`);
-
-  const combined = ordered.map((row, i) => `--- ${pages[i].name} ---\n${row.ocr_text.trim()}`).join('\n\n') + '\n';
-  await uploadBuffer(supabase, `${issueFolder}/ocr.txt`, Buffer.from(combined, 'utf8'), 'text/plain; charset=utf-8');
-
-  if (issueJson) {
-    const now = new Date().toISOString();
-    const next = {
-      ...issueJson,
-      ocrTextPath: publicUrl(`${issueFolder}/ocr.txt`),
-      ocrSourceCount: pages.length,
-      ocrLayoutReady: true,
-      ocrEngine: 'Tesseract eng --psm 11 TSV',
-      ocrGeneratedAt: now,
-    };
-    await uploadBuffer(supabase, `${issueFolder}/newspaper.json`, Buffer.from(JSON.stringify(next, null, 2), 'utf8'), 'application/json');
-  }
-
-  return { rows: ordered.length, ocrBytes: Buffer.byteLength(combined) };
-}
-
 async function main() {
-  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) throw new Error('Missing Supabase URL/service-role credentials. Expected .env.local/.env in the racing-museum project.');
-  if (!SUPABASE_URL.includes(PROJECT_REF)) throw new Error(`Refusing to run: Supabase URL is not project ${PROJECT_REF}`);
+  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+    throw new Error('Missing Supabase URL/service-role credentials. Expected .env.local/.env in the racing-museum project.');
+  }
+  if (!SUPABASE_URL.includes(PROJECT_REF)) {
+    throw new Error(`Refusing to run: Supabase URL is not project ${PROJECT_REF}`);
+  }
 
   const onlyIssue = arg('--issue');
-  if (onlyIssue && !/^1984-\d{2}-\d{2}$/.test(onlyIssue)) throw new Error('--issue must be YYYY-MM-DD within 1984');
+  if (onlyIssue && !Object.prototype.hasOwnProperty.call(ISSUE_PAGES, onlyIssue)) {
+    throw new Error(`--issue must be one of the verified 1984 issue dates; got ${onlyIssue}`);
+  }
   const workers = Math.max(1, Math.min(8, Number(arg('--workers', '4')) || 4));
   const maxIssues = Math.max(0, Number(arg('--max-issues', '0')) || 0);
   const dryRun = flag('--dry-run');
@@ -392,18 +425,20 @@ async function main() {
   });
   await fsp.mkdir(WORK_ROOT, { recursive: true });
 
-  const rootItems = await listAll(supabase, STORAGE_ROOT);
-  let issues = rootItems.map(x => x.name).filter(x => /^1984-\d{2}-\d{2}$/.test(x)).sort();
-  if (onlyIssue) issues = issues.filter(x => x === onlyIssue);
+  let issues = Object.keys(ISSUE_PAGES).sort();
+  if (onlyIssue) issues = [onlyIssue];
   if (maxIssues) issues = issues.slice(0, maxIssues);
-  if (!issues.length) throw new Error('No 1984 CFRN issue folders found in storage');
 
-  console.log('CFRN 1984 OCR Upgrade');
+  const yearRows = await fetchYearRows(supabase);
+  const byPath = new Map(yearRows.map(row => [row.storage_path, row]));
+
+  console.log('CFRN 1984 OCR Upgrade - storage-list-free');
   console.log(`Supabase: ${PROJECT_REF}`);
   console.log(`Issues discovered: ${issues.length}`);
   console.log(`Mode: ${dryRun ? 'DRY RUN' : 'WRITE'}`);
   console.log(`Workers: ${workers}`);
   console.log(`Force: ${force ? 'YES' : 'NO'}`);
+  console.log(`Existing 1984 OCR rows: ${yearRows.length}`);
   if (!dryRun) console.log(`Tesseract: ${tesseract}`);
 
   const audit = {
@@ -411,6 +446,7 @@ async function main() {
     project: PROJECT_REF,
     publication: PUBLICATION,
     year: YEAR,
+    inventorySource: 'Verified live storage.objects inventory, 2026-10-13',
     dryRun,
     force,
     workers,
@@ -419,49 +455,50 @@ async function main() {
 
   for (const issueDate of issues) {
     const issueFolder = `${STORAGE_ROOT}/${issueDate}`;
-    const items = await listAll(supabase, issueFolder);
-    const issueJson = await loadIssueJson(supabase, issueFolder);
-    const pages = selectCanonicalPages(items, issueJson);
-    if (!pages.length) throw new Error(`[${issueDate}] no canonical numeric page images found`);
-
-    const existing = await fetchIssueRows(supabase, issueDate);
-    const existingByPath = new Map(existing.map(row => [row.storage_path, row]));
-    const needed = pages.filter(page => {
+    const pageNames = ISSUE_PAGES[issueDate];
+    const needed = pageNames.filter(pageName => {
       if (force) return true;
-      const row = existingByPath.get(`${issueFolder}/${page.name}`);
+      const row = byPath.get(`${issueFolder}/${pageName}`);
       return !row || row.status !== 'complete' || !String(row.ocr_text || '').trim() || !hasLayout(row);
     });
 
     const issueAudit = {
       issueDate,
-      canonicalPages: pages.length,
-      existingDbRows: existing.length,
-      layoutReadyBefore: pages.filter(page => hasLayout(existingByPath.get(`${issueFolder}/${page.name}`))).length,
+      canonicalPages: pageNames.length,
+      existingDbRows: pageNames.filter(name => byPath.has(`${issueFolder}/${name}`)).length,
+      layoutReadyBefore: pageNames.filter(name => hasLayout(byPath.get(`${issueFolder}/${name}`))).length,
       pagesNeedingUpgrade: needed.length,
-      pageNames: pages.map(x => x.name),
+      pageNames,
       status: dryRun ? 'planned' : 'running',
     };
     audit.issues.push(issueAudit);
-    console.log(`[${issueDate}] canonical ${pages.length}; existing ${existing.length}; OCR/layout upgrade ${needed.length}`);
+    console.log(`[${issueDate}] canonical ${pageNames.length}; existing ${issueAudit.existingDbRows}; OCR/layout upgrade ${needed.length}`);
 
     if (dryRun) continue;
 
     try {
-      const records = await mapLimit(needed, workers, async (item, index) => {
-        process.stdout.write(`  ${index + 1}/${needed.length} ${item.name} ... `);
+      // Avoid reading newspaper.json during dry-run; in WRITE mode this is one small direct HTTP download.
+      const issueJson = await loadIssueJson(supabase, issueFolder);
+      let completed = 0;
+
+      await mapLimit(needed, workers, async (pageName, index) => {
+        process.stdout.write(`  ${index + 1}/${needed.length} ${pageName} ... `);
         try {
-          const record = await ocrOnePage({ supabase, tesseract, issueDate, issueFolder, item });
+          const record = await ocrOnePage({ supabase, tesseract, issueDate, issueFolder, pageName });
+          await upsertRecord(supabase, record);
+          byPath.set(record.storage_path, record);
+          completed += 1;
           console.log(`OK (${Math.round((record.avg_confidence || 0) * 100)}%, ${record.ocr_json.line_layout.lines.length} lines)`);
-          return record;
+          return true;
         } catch (err) {
           console.log(`FAILED: ${err.message}`);
           throw err;
         }
       });
-      if (records.length) await upsertRecords(supabase, records);
-      const finalized = await finalizeIssue({ supabase, issueDate, issueFolder, pages, issueJson });
+
+      const finalized = await finalizeIssue({ supabase, issueDate, issueFolder, pageNames, issueJson });
       issueAudit.status = 'complete';
-      issueAudit.upgradedPages = records.length;
+      issueAudit.upgradedPages = completed;
       issueAudit.verifiedRows = finalized.rows;
       issueAudit.ocrBytes = finalized.ocrBytes;
     } catch (err) {
