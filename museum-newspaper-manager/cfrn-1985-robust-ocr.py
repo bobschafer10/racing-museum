@@ -11,25 +11,43 @@ IMPORT=f'https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-1985-import'
 OIDC_URL=os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
 OIDC_REQ=os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
 
-def get(url, attempts=4):
+def get(url, attempts=5):
     last=None
     for a in range(1,attempts+1):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'UMARM CFRN 1985 robust OCR/1.0'}),timeout=120) as r:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'UMARM CFRN 1985 robust OCR/2.0'}),timeout=120) as r:
                 return r.read()
         except Exception as e:
             last=e
-            if a<attempts: time.sleep(a*2)
+            if a<attempts: time.sleep(min(a*3,15))
     raise RuntimeError(f'GET failed {url}: {last}')
 
 def oidc():
     sep='&' if '?' in OIDC_URL else '?'
     req=urllib.request.Request(f'{OIDC_URL}{sep}audience=umarm-newspaper-ocr-import',headers={
-        'Authorization':f'bearer {OIDC_REQ}','User-Agent':'UMARM CFRN 1985 robust OCR/1.0'})
+        'Authorization':f'bearer {OIDC_REQ}','User-Agent':'UMARM CFRN 1985 robust OCR/2.0'})
     with urllib.request.urlopen(req,timeout=30) as r:
         token=json.loads(r.read().decode()).get('value')
     if not token: raise RuntimeError('OIDC token missing')
     return token
+
+def api(payload, attempts=7):
+    body=json.dumps(payload,separators=(',',':')).encode()
+    last=None
+    for a in range(1,attempts+1):
+        try:
+            req=urllib.request.Request(IMPORT,data=body,method='POST',headers={
+                'Authorization':f'Bearer {oidc()}','Content-Type':'application/json','User-Agent':'UMARM CFRN 1985 robust OCR/2.0'})
+            with urllib.request.urlopen(req,timeout=300) as r:
+                out=json.loads(r.read().decode())
+            if out.get('ok'): return out
+            last=RuntimeError(f'bad response {out}')
+        except urllib.error.HTTPError as e:
+            last=RuntimeError(f'HTTP {e.code}: {e.read().decode("utf-8","replace")}')
+        except Exception as e:
+            last=e
+        if a<attempts: time.sleep(min(a*8,40))
+    raise RuntimeError(f'API request failed after {attempts} attempts: {last}')
 
 def parse_tsv(tsv):
     words=[]; page_w=page_h=0
@@ -82,27 +100,19 @@ def ocr_page(n):
     return {'page':page,'text':text,'avg_confidence':avg,'meta':{
         'source_sha256':hashlib.sha256(data).hexdigest(),'scan_position':n,'line_layout':{'lines':lines}}}
 
-def post(row, finalize=False):
-    payload=json.dumps({'publication':PUB,'issue':ISSUE,'pages':[row],'finalize':finalize},separators=(',',':')).encode()
-    last=None
-    for a in range(1,6):
-        req=urllib.request.Request(IMPORT,data=payload,method='POST',headers={
-            'Authorization':f'Bearer {oidc()}','Content-Type':'application/json','User-Agent':'UMARM CFRN 1985 robust OCR/1.0'})
-        try:
-            with urllib.request.urlopen(req,timeout=300) as r: out=json.loads(r.read().decode())
-            if out.get('ok'): return out
-            last=RuntimeError(f'bad response {out}')
-        except urllib.error.HTTPError as e:
-            last=RuntimeError(f'HTTP {e.code}: {e.read().decode("utf-8","replace")}')
-        except Exception as e: last=e
-        if a<5: time.sleep(a*5)
-    raise RuntimeError(f'post failed: {last}')
-
-last=None
+state=api({'publication':PUB,'issue':ISSUE,'action':'status'})
+complete=set(state.get('complete_pages') or [])
+print(f'{ISSUE}: {len(complete)}/{PAGE_COUNT} pages already complete; repairing missing pages only',flush=True)
 for n in range(1,PAGE_COUNT+1):
-    row=ocr_page(n); post(row,False); last=row
-    print(f'{ISSUE} {row["page"]}: uploaded {len(row["text"])} chars / {len(row["meta"]["line_layout"]["lines"])} lines',flush=True)
-out=post(last,True)
+    page=f'{n:03d}.jpg'
+    if page in complete:
+        print(f'{ISSUE} {page}: already complete',flush=True)
+        continue
+    row=ocr_page(n)
+    api({'publication':PUB,'issue':ISSUE,'pages':[row],'finalize':False})
+    print(f'{ISSUE} {page}: uploaded {len(row["text"])} chars / {len(row["meta"]["line_layout"]["lines"])} lines',flush=True)
+
+out=api({'publication':PUB,'issue':ISSUE,'action':'finalize'})
 if int(out.get('issue_pages',0)) < PAGE_COUNT:
     raise RuntimeError(f'finalized {out.get("issue_pages")} of {PAGE_COUNT} pages')
 print(json.dumps(out),flush=True)
