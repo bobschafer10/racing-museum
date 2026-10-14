@@ -3,9 +3,12 @@ import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 import { formatDriverSlugName } from '@/lib/driver-display'
+import ResearchPhotoEditor from './ResearchPhotoEditor'
 import '../../media/archive-dark.css'
 
 export const revalidate = 43200
+
+const BOB_SLUGS = ['bob-bergeron', 'bob-bergeronr']
 
 type PhotoRecord = { photo_id:number; file_name:string; track_slug:string|null; year:string|null; driver_slug:string|null; photographer_slug:string|null; credit_type:string|null }
 
@@ -22,16 +25,49 @@ export default async function PhotoDetailPage({ params }: { params: Promise<{ fi
   else if (photo.track_slug) relatedQuery = relatedQuery.eq('track_slug',photo.track_slug)
   const { data: related } = await relatedQuery
 
+  const isBergeron = BOB_SLUGS.includes(photo.photographer_slug || '')
+  let nextUnidentified: { file_name: string; photo_id: number } | null = null
+
+  if (isBergeron) {
+    const { data: forward } = await supabase
+      .from('photos')
+      .select('file_name,photo_id')
+      .in('photographer_slug', BOB_SLUGS)
+      .eq('driver_slug', 'unknown-driver')
+      .neq('photo_id', photo.photo_id)
+      .gt('photo_id', photo.photo_id)
+      .order('photo_id', { ascending: true })
+      .limit(1)
+      .maybeSingle()
+
+    nextUnidentified = forward
+
+    if (!nextUnidentified) {
+      const { data: wrap } = await supabase
+        .from('photos')
+        .select('file_name,photo_id')
+        .in('photographer_slug', BOB_SLUGS)
+        .eq('driver_slug', 'unknown-driver')
+        .neq('photo_id', photo.photo_id)
+        .order('photo_id', { ascending: true })
+        .limit(1)
+        .maybeSingle()
+      nextUnidentified = wrap
+    }
+  }
+
   const driverName = formatDriverSlugName(photo.driver_slug)
   const photographerName = formatSlugName(photo.photographer_slug)
   const trackName = formatSlugName(photo.track_slug)
 
   return <main className="ma-page">
     <section className="ma-hero" style={{backgroundImage:`linear-gradient(90deg,rgba(5,8,10,.98),rgba(5,8,10,.84) 48%,rgba(5,8,10,.48)),url(${imageUrl})`,backgroundSize:'cover',backgroundPosition:'center'}}>
-      <div className="ma-hero-inner"><div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><Link href="/photos">Photos</Link><span>›</span><span>{driverName}</span></div><div className="ma-hero-grid"><div><div className="ma-eyebrow">Museum Photo Archive</div><h1 className="ma-title">{driverName}</h1><div className="ma-subtitle">{photo.year && photo.year!=='unknown-year' ? photo.year : 'Year Unknown'} • {trackName}</div><p className="ma-lede">A preserved racing photograph connected to the museum's driver, track, year, and photographer research indexes.</p><div className="ma-actions"><Link href="/photos" className="ma-button">Browse Photo Archive</Link>{photo.photographer_slug && !isUnknown(photo.photographer_slug)?<Link href={`/photographers/${photo.photographer_slug}`} className="ma-button-ghost">{photographerName} Collection</Link>:null}</div></div></div><div className="ma-stats"><div className="ma-stat"><strong>{photo.year && photo.year!=='unknown-year'?photo.year:'—'}</strong><span>Year</span></div><div className="ma-stat"><strong>{driverName==='Unknown'?'—':driverName.split(' ').slice(-1)[0]}</strong><span>Driver</span></div><div className="ma-stat"><strong>{trackName==='Unknown'?'—':trackName.split(' ')[0]}</strong><span>Track</span></div><div className="ma-stat"><strong>{photographerName==='Unknown'?'—':photographerName.split(' ').slice(-1)[0]}</strong><span>Photographer</span></div><div className="ma-stat"><strong>#{photo.photo_id}</strong><span>Museum Photo ID</span></div></div></div>
+      <div className="ma-hero-inner"><div className="ma-breadcrumbs"><Link href="/">Home</Link><span>›</span><Link href="/media">Media Archive</Link><span>›</span><Link href="/photos">Photos</Link><span>›</span><span>{driverName}</span></div><div className="ma-hero-grid"><div><div className="ma-eyebrow">Museum Photo Archive</div><h1 className="ma-title">{driverName}</h1><div className="ma-subtitle">{photo.year && photo.year!=='unknown-year' ? photo.year : 'Year Unknown'} • {trackName}</div><p className="ma-lede">A preserved racing photograph connected to the museum&apos;s driver, track, year, and photographer research indexes.</p><div className="ma-actions"><Link href="/photos" className="ma-button">Browse Photo Archive</Link>{photo.photographer_slug && !isUnknown(photo.photographer_slug)?<Link href={`/photographers/${photo.photographer_slug}`} className="ma-button-ghost">{photographerName} Collection</Link>:null}{isBergeron?<Link href="/photos?photographer=bob-bergeron&driver=unknown-driver" className="ma-button-ghost">Bergeron Unidentified</Link>:null}</div></div></div><div className="ma-stats"><div className="ma-stat"><strong>{photo.year && photo.year!=='unknown-year'?photo.year:'—'}</strong><span>Year</span></div><div className="ma-stat"><strong>{driverName==='Unknown'?'—':driverName.split(' ').slice(-1)[0]}</strong><span>Driver</span></div><div className="ma-stat"><strong>{trackName==='Unknown'?'—':trackName.split(' ')[0]}</strong><span>Track</span></div><div className="ma-stat"><strong>{photographerName==='Unknown'?'—':photographerName.split(' ').slice(-1)[0]}</strong><span>Photographer</span></div><div className="ma-stat"><strong>#{photo.photo_id}</strong><span>Museum Photo ID</span></div></div></div>
     </section>
 
     <section className="ma-section"><div className="ma-grid-2" style={{gridTemplateColumns:'minmax(0,2fr) minmax(280px,1fr)'}}><div className="ma-panel" style={{display:'grid',placeItems:'center'}}><img src={imageUrl} alt={driverName} style={{width:'100%',maxHeight:'78vh',objectFit:'contain',display:'block'}}/></div><aside className="ma-panel"><div className="ma-kicker">Archive Metadata</div><h2 className="ma-h2" style={{fontSize:28,marginBottom:18}}>Photo Record</h2>{[['Driver',driverName],['Track',trackName],['Year',photo.year&&photo.year!=='unknown-year'?photo.year:'Year Unknown'],['Credit',formatCreditLine(photo.credit_type,photo.photographer_slug)],['File',photo.file_name]].map(([label,value])=><div key={label} style={{borderTop:'1px solid #283036',padding:'12px 0'}}><div className="ma-card-label">{label}</div><div style={{marginTop:5,color:'#fff',fontSize:13,wordBreak:'break-word'}}>{value}</div></div>)}<div className="ma-actions">{photo.driver_slug&&!isUnknown(photo.driver_slug)?<Link href={`/photos?driver=${encodeURIComponent(photo.driver_slug)}`} className="ma-button-ghost">More of This Driver</Link>:null}{photo.track_slug?<Link href={`/photos?track=${encodeURIComponent(photo.track_slug)}`} className="ma-button-ghost">More From This Track</Link>:null}</div></aside></div></section>
+
+    {isBergeron ? <ResearchPhotoEditor photoId={photo.photo_id} currentDriverSlug={photo.driver_slug} currentFileName={photo.file_name} nextFileName={nextUnidentified?.file_name || null} /> : null}
 
     {(related||[]).length>0?<section className="ma-section"><div className="ma-section-head"><div><div className="ma-kicker">Connected Archive</div><h2 className="ma-h2">Related Photographs</h2></div><div className="ma-note">More images tied to the same driver or track.</div></div><div className="ma-grid-4">{(related||[]).map((r:any)=><Link href={`/photo/${encodeURIComponent(r.file_name)}`} className="ma-card" key={r.file_name}><div className="ma-card-media"><img src={photoUrl(r)} alt={formatDriverSlugName(r.driver_slug)}/></div><div className="ma-card-body"><div className="ma-card-label">{r.year||'Year unknown'}</div><div className="ma-card-title">{formatDriverSlugName(r.driver_slug)}</div><div className="ma-card-meta">{formatSlugName(r.track_slug)}</div><span className="ma-card-link">Open photo →</span></div></Link>)}</div></section>:null}
 
