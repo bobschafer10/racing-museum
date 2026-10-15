@@ -1,0 +1,72 @@
+/* Bob Bergeron museum room presentation fixes.
+   Scoped to room section IDs so these rules do not affect other museum pages. */
+
+/* Keep the full later-life portrait visible in the Overview card. */
+#overview figure img[alt="Bob Bergeron at the track"] {
+  display: block !important;
+  width: 100% !important;
+  height: 315px !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  background: #d9ccb0 !important;
+}
+
+/* Replace the old rounded CSS blob with a recognizable Wisconsin silhouette. */
+#tracks [aria-hidden="true"] {
+  width: min(280px, 100%) !important;
+  min-height: 250px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+}
+
+#tracks [aria-hidden="true"] > div {
+  width: 205px !important;
+  height: 225px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  transform: none !important;
+  background: rgba(91, 79, 62, 0.08) !important;
+  clip-path: polygon(
+    16% 5%, 44% 2%, 60% 4%, 69% 9%, 75% 17%, 77% 27%,
+    82% 31%, 86% 28%, 88% 20%, 89% 12%, 93% 9%, 96% 17%,
+    96% 30%, 92% 39%, 88% 44%, 91% 53%, 89% 63%, 84% 72%,
+    82% 83%, 73% 91%, 57% 96%, 41% 96%, 32% 91%, 28% 83%,
+    23% 76%, 19% 68%, 16% 58%, 12% 50%, 13% 40%, 10% 31%,
+    12% 22%, 10% 14%
+  ) !important;
+  filter:
+    drop-shadow(1px 0 0 #5f5547)
+    drop-shadow(-1px 0 0 #5f5547)
+    drop-shadow(0 1px 0 #5f5547)
+    drop-shadow(0 -1px 0 #5f5547) !important;
+  color: rgba(78, 66, 50, 0.34) !important;
+  font-size: 54px !important;
+}
+
+/* Keep the location markers visually tied to the state graphic. */
+#tracks [aria-hidden="true"] i {
+  width: 9px !important;
+  height: 9px !important;
+  z-index: 2 !important;
+}
+
+@media (max-width: 1050px) {
+  #overview figure img[alt="Bob Bergeron at the track"] {
+    height: 260px !important;
+  }
+}
+
+@media (max-width: 720px) {
+  #overview figure img[alt="Bob Bergeron at the track"] {
+    height: 360px !important;
+  }
+
+  #tracks [aria-hidden="true"] {
+    min-height: 235px !important;
+  }
+
+  #tracks [aria-hidden="true"] > div {
+    width: 190px !important;
+    height: 210px !important;
+  }
+}
