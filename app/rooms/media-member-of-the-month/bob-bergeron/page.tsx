@@ -8,7 +8,7 @@ export const revalidate = 43200
 
 export const metadata: Metadata = {
   title: 'Bob Bergeron | Media Member of the Month | Upper Midwest Auto Racing Museum',
-  description: 'A curated museum exhibit honoring photographer and racing-media contributor Bob Bergeron, built from the museum photo and newspaper archives.',
+  description: 'The inaugural Media Member of the Month exhibit honoring photographer, writer, and racing-media contributor Bob Bergeron.',
 }
 
 type PhotoRow = {
@@ -139,14 +139,14 @@ export default async function BobBergeronMediaMemberRoom() {
           </div>
           <div className={styles.kicker}>Media Member of the Month • Inaugural Honoree</div>
           <h1>Bob Bergeron</h1>
-          <p className={styles.heroLine}>Preserving Upper Midwest racing history through the lens — and through the racing press.</p>
+          <p className={styles.heroLine}>Photographer. Writer. A firsthand witness to the Fox Valley racing scene.</p>
           <p className={styles.heroCopy}>
-            This exhibit brings together the Bob Bergeron material already preserved in the museum: photographs,
-            identified drivers, track connections, newspaper bylines, photo credits, and research leads that still need names and dates.
+            Bob Bergeron helped preserve Upper Midwest racing from ground level — photographing drivers and cars,
+            reporting from the tracks, and contributing to the regional racing press. This room brings his surviving museum material together as one growing historical record.
           </p>
           <div className={styles.heroActions}>
             <Link href="/photographers/bob-bergeron" className={styles.primaryButton}>Open Complete Bergeron Archive</Link>
-            <Link href="/photos?photographer=bob-bergeron" className={styles.secondaryButton}>Search His Photos</Link>
+            <Link href="/photos?photographer=bob-bergeron&driver=unknown-driver" className={styles.secondaryButton}>Identify Bergeron Drivers</Link>
           </div>
         </div>
       </section>
@@ -154,19 +154,46 @@ export default async function BobBergeronMediaMemberRoom() {
       <section className={styles.stats} aria-label="Bob Bergeron museum collection statistics">
         <div><strong>{totalItems.toLocaleString()}</strong><span>Archived Bergeron Items</span></div>
         <div><strong>{tracks.length.toLocaleString()}</strong><span>Known Tracks</span></div>
-        <div><strong>{identifiedDrivers.toLocaleString()}</strong><span>Identified Drivers</span></div>
+        <div><strong>{unknownDrivers.toLocaleString()}</strong><span>Drivers Still Unidentified</span></div>
         <div><strong>{earliestYear && latestYear ? `${earliestYear}–${latestYear}` : '—'}</strong><span>Known Dated Range</span></div>
       </section>
 
       <section className={styles.introSection}>
-        <div className={styles.sectionLabel}>The Collection</div>
+        <div className={styles.sectionLabel}>Who Was Bob Bergeron?</div>
+        <div className={styles.introGrid}>
+          <div>
+            <h2>A young photographer already recognized inside the racing world.</h2>
+            <p>
+              A surviving period profile describes Bob Bergeron as the publication&apos;s “ace camera man.” It identifies him as being from Kaukauna, Wisconsin,
+              says he was 20 years old at the time, and credits him with producing much of the publication&apos;s racing photography.
+            </p>
+            <p>
+              The same profile says Bergeron also wrote a weekly column for <em>Racing Wheels</em>, described there as a West Coast paper.
+              It notes that he had photographed nearly every car in the club and invited owners and drivers to find him in the pits for copies and enlargements.
+            </p>
+            <p>
+              That small piece of period writing changes the picture considerably: Bergeron was not simply taking occasional snapshots.
+              He was already functioning as a photographer, writer, and racing-media contributor while still a very young man.
+            </p>
+          </div>
+          <aside className={styles.researchBox}>
+            <div className={styles.researchKicker}>Period Source</div>
+            <strong>“Ace camera man”</strong><span>How Bergeron was described in the surviving profile.</span>
+            <strong>Kaukauna</strong><span>His hometown as identified by the period source.</span>
+            <strong>Age 20</strong><span>His age when that profile was published; the exact issue date is still being verified.</span>
+          </aside>
+        </div>
+      </section>
+
+      <section className={styles.introSection}>
+        <div className={styles.sectionLabel}>The Museum Collection</div>
         <div className={styles.introGrid}>
           <div>
             <h2>A racing-media footprint that reaches beyond a photo credit.</h2>
             <p>
               Bergeron&apos;s museum collection is centered in Wisconsin&apos;s Fox Valley and northeastern Wisconsin racing scene.
-              Leo&apos;s Speedway, Wisconsin International Raceway, Brown County Speedway, Shawano Speedway, and Seymour Speedway
-              account for much of the preserved material, with additional images reaching other Upper Midwest tracks.
+              Leo&apos;s Speedway, Wisconsin International Raceway, Brown County Speedway, Shawano Speedway, Seymour Speedway,
+              and other regional tracks appear throughout the preserved material.
             </p>
             <p>
               The archive is still being identified. That makes this room both an exhibit and an active research project:
@@ -176,7 +203,7 @@ export default async function BobBergeronMediaMemberRoom() {
           <aside className={styles.researchBox}>
             <div className={styles.researchKicker}>Archive Status</div>
             <strong>{explicitPhotos.toLocaleString()}</strong><span>records explicitly typed as photos</span>
-            <strong>{unknownDrivers.toLocaleString()}</strong><span>items still needing a driver identification</span>
+            <strong>{identifiedDrivers.toLocaleString()}</strong><span>different identified drivers represented</span>
             <strong>{unknownYears.toLocaleString()}</strong><span>items still needing a confirmed year</span>
           </aside>
         </div>
@@ -219,22 +246,26 @@ export default async function BobBergeronMediaMemberRoom() {
       <section className={styles.pressSection}>
         <div className={styles.pressLead}>
           <div className={styles.sectionLabel}>The Racing Press</div>
-          <h2>Bob Bergeron in the museum&apos;s newspaper archive</h2>
+          <h2>Writer as well as photographer.</h2>
           <p>
-            The OCR archive establishes Bergeron as more than a name on the back of a photograph. Midwest Racing News
-            carried Bob Bergeron bylines and listed him among its contributing writers, while later Checkered Flag Racing News
-            issues carried Bergeron photo credits.
+            The museum newspaper archive establishes Bergeron as more than a name on the back of a photograph. Midwest Racing News
+            carried Bob Bergeron bylines and listed him among its contributing writers, while later Checkered Flag Racing News issues carried Bergeron photo credits.
+          </p>
+          <p>
+            The museum also now has 1965 Fox Valley Racing News material in its archive. Additional 1966–1969 pages remain to be processed,
+            giving this exhibit a clear path for future expansion as more primary-source material becomes searchable.
           </p>
         </div>
         <div className={styles.timeline}>
+          <article><span>Period profile</span><h3>Photographer and writer</h3><p>Bergeron is described as the publication&apos;s “ace camera man” and as the writer of a weekly column for Racing Wheels.</p></article>
           <article><span>June 30, 1966</span><h3>Midwest Racing News</h3><p>A KK Sports Arena race report appears under the byline “By Bob Bergeron.”</p></article>
           <article><span>July 7, 1966</span><h3>Badger Bulletin</h3><p>Bergeron&apos;s column discusses the Fox Valley Stock Car Club and the northeastern Wisconsin racing scene.</p></article>
-          <article><span>April 16, 1970</span><h3>Fox Valley Racing News lead</h3><p>Checkered Flag Racing News describes KK Sports Arena, Outagamie Speedway, and Leo&apos;s Speedway as tracks formerly covered by the now-discontinued Fox Valley Racing News.</p></article>
+          <article><span>April 16, 1970</span><h3>Fox Valley Racing News</h3><p>Checkered Flag Racing News describes KK Sports Arena, Outagamie Speedway, and Leo&apos;s Speedway as tracks formerly covered by the then-discontinued Fox Valley Racing News.</p></article>
           <article><span>1970–1971</span><h3>Photo credits</h3><p>Checkered Flag Racing News and Midwest Racing News repeatedly identify photographs as Bob Bergeron or Bergeron &amp; Deitz photos.</p></article>
         </div>
         <div className={styles.cautionNote}>
-          <strong>Research note:</strong> The museum also holds a Bergeron-labeled archive item containing “fox-valley-new” in its filename.
-          That is a strong lead, but this room will not state a formal Bob Bergeron / Fox Valley Racing News job title until a primary source confirms it.
+          <strong>Research note:</strong> Fox Valley Racing News is now an important part of the Bergeron research trail, but the museum will distinguish between
+          confirmed Bob Bergeron credits and material that is simply part of the publication until a page, caption, byline, or other primary source identifies his role.
         </div>
       </section>
 
@@ -245,10 +276,10 @@ export default async function BobBergeronMediaMemberRoom() {
               <div className={styles.sectionLabel}>Help Complete the Record</div>
               <h2>Can you identify these drivers?</h2>
             </div>
-            <Link href="/photos?photographer=bob-bergeron">Open advanced search →</Link>
+            <Link href="/photos?photographer=bob-bergeron&driver=unknown-driver">Open all unidentified Bergeron photos →</Link>
           </div>
           <p className={styles.identifyIntro}>
-            Bergeron&apos;s collection still includes unidentified subjects. These images are preserved rather than discarded so future research can reconnect names, tracks, and years.
+            More than one hundred Bergeron-tagged museum images still lack a confirmed driver identification. These photographs are preserved rather than discarded so research can reconnect the people, tracks, and years behind them.
           </p>
           <div className={styles.identifyGrid}>
             {identify.map((photo) => (
@@ -260,6 +291,28 @@ export default async function BobBergeronMediaMemberRoom() {
           </div>
         </section>
       )}
+
+      <section className={styles.introSection}>
+        <div className={styles.sectionLabel}>This Archive Is Still Growing</div>
+        <div className={styles.introGrid}>
+          <div>
+            <h2>The first version of this room is a beginning, not an endpoint.</h2>
+            <p>
+              The museum already holds the Bergeron photo collection and a growing body of racing-publication evidence. The 1965 Fox Valley Racing News material provides another layer,
+              while the 1966–1969 collections remain a future archival project. As those pages are processed, the exhibit can add direct photo credits, bylines, dates, track references, and other primary-source evidence.
+            </p>
+            <p>
+              The same is true of the photographs themselves. Driver identifications made through the museum research workflow will automatically improve the collection behind this room.
+            </p>
+          </div>
+          <aside className={styles.researchBox}>
+            <div className={styles.researchKicker}>Next Research Priorities</div>
+            <strong>1965</strong><span>Audit the Fox Valley Racing News material already uploaded.</span>
+            <strong>1966–1969</strong><span>Process the remaining Fox Valley Racing News pages when resources allow.</span>
+            <strong>{unknownDrivers.toLocaleString()}</strong><span>Bergeron driver identifications still available for review.</span>
+          </aside>
+        </div>
+      </section>
 
       <section className={styles.footerSection}>
         <div>
