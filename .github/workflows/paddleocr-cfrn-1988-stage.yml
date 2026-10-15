@@ -1,0 +1,71 @@
+# Safe CFRN 1988 OCR: stage first, verify full year, then reconcile separately.
+name: Stage CFRN 1988 OCR
+
+on:
+  push:
+    branches: [paddleocr-mrn-pilot]
+    paths: ['.github/workflows/paddleocr-cfrn-1988-stage.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: cfrn-1988-stage
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        include:
+          - {issue: '1988-03-23', page_count: 24}
+          - {issue: '1988-04-06', page_count: 20}
+          - {issue: '1988-04-13', page_count: 16}
+          - {issue: '1988-04-20', page_count: 20}
+          - {issue: '1988-04-27', page_count: 20}
+          - {issue: '1988-05-04', page_count: 20}
+          - {issue: '1988-05-11', page_count: 20}
+          - {issue: '1988-05-18', page_count: 20}
+          - {issue: '1988-05-25', page_count: 20}
+          - {issue: '1988-06-01', page_count: 24}
+          - {issue: '1988-06-08', page_count: 24}
+          - {issue: '1988-06-15', page_count: 28}
+          - {issue: '1988-06-22', page_count: 24}
+          - {issue: '1988-06-29', page_count: 24}
+          - {issue: '1988-07-06', page_count: 28}
+          - {issue: '1988-07-13', page_count: 24}
+          - {issue: '1988-07-20', page_count: 24}
+          - {issue: '1988-07-27', page_count: 24}
+          - {issue: '1988-08-03', page_count: 24}
+          - {issue: '1988-08-10', page_count: 24}
+          - {issue: '1988-08-17', page_count: 24}
+          - {issue: '1988-08-24', page_count: 28}
+          - {issue: '1988-08-31', page_count: 24}
+          - {issue: '1988-09-07', page_count: 24}
+          - {issue: '1988-09-14', page_count: 8}
+          - {issue: '1988-09-28', page_count: 1}
+          - {issue: '1988-10-19', page_count: 16}
+    env:
+      ISSUE: ${{ matrix.issue }}
+      PAGE_COUNT: ${{ matrix.page_count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          sparse-checkout: museum-newspaper-manager/cfrn-1988-staged-ocr.py
+          sparse-checkout-cone-mode: false
+      - name: Ensure Tesseract
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v tesseract >/dev/null 2>&1 || { sudo apt-get update -qq; sudo apt-get install -y -qq tesseract-ocr; }
+          tesseract --version | head -1
+      - name: OCR and stage issue
+        shell: bash
+        run: python museum-newspaper-manager/cfrn-1988-staged-ocr.py
