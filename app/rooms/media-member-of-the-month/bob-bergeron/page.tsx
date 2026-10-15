@@ -2,13 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
+import { BOB_PORTRAIT } from './bobPortrait'
 import styles from './room.module.css'
 
 export const revalidate = 43200
 
 export const metadata: Metadata = {
   title: 'Bob Bergeron | Media Member of the Month | Upper Midwest Auto Racing Museum',
-  description: 'The inaugural Media Member of the Month exhibit honoring photographer, writer, and racing-media contributor Bob Bergeron.',
+  description: 'The inaugural Media Member of the Month room honoring photographer, writer, and racing-media contributor Bob Bergeron.',
 }
 
 type PhotoRow = {
@@ -33,14 +34,14 @@ type TrackSummary = {
 const BOB_SLUGS = ['bob-bergeron', 'bob-bergeronr']
 const HERO_FILE = 'leos-speedway_1967_harlin-krueger_bob-bergeron_photo_001.jpg'
 const FEATURED_FILES = [
-  HERO_FILE,
-  'wisconsin-international-raceway_1981_jim-sauter_bob-bergeron_photo_001.jpg',
-  'brown-county-speedway_1972_jj-smith_bob-bergeron_photo_001.jpg',
-  'outagamie-speedway_1970_leroy-arnold_bob-bergeron_photo_555.png',
-  'shawano-speedway_1970_doug-larson_bob-bergeron_photo_001.jpg',
-  'seymour-speedway_1972_doug-larson_bob-bergeron_photo_001.jpg',
   '141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg',
+  'brown-county-speedway_1972_jj-smith_bob-bergeron_photo_001.jpg',
+  'shawano-speedway_1970_doug-larson_bob-bergeron_photo_001.jpg',
+  'wisconsin-international-raceway_1981_jim-sauter_bob-bergeron_photo_001.jpg',
+  'outagamie-speedway_1970_leroy-arnold_bob-bergeron_photo_555.png',
+  'seymour-speedway_1972_doug-larson_bob-bergeron_photo_001.jpg',
   'oregon-legion-speedway_1965_john-mcfaul_bob-bergeron_photo_44.jpg',
+  HERO_FILE,
 ]
 
 function fmt(value: string | null | undefined, fallback = 'Unknown') {
@@ -78,7 +79,7 @@ function buildTrackSummary(rows: PhotoRow[]): TrackSummary[] {
   return Array.from(map.values()).sort((a, b) => b.count - a.count || a.slug.localeCompare(b.slug))
 }
 
-function GalleryCard({ photo }: { photo: PhotoRow }) {
+function PhotoCard({ photo }: { photo: PhotoRow }) {
   const driverKnown = Boolean(photo.driver_slug && photo.driver_slug !== 'unknown-driver')
   const trackKnown = Boolean(photo.track_slug && photo.track_slug !== 'unknown-track')
 
@@ -88,14 +89,9 @@ function GalleryCard({ photo }: { photo: PhotoRow }) {
         <img src={imageUrl(photo)} alt={`${fmt(photo.driver_slug, 'Unidentified driver')} — ${fmt(photo.track_slug, 'Track unknown')}`} loading="lazy" />
       </Link>
       <div className={styles.photoMeta}>
-        <div className={styles.photoYear}>{isKnownYear(photo.year) ? photo.year : 'Year unknown'}</div>
-        <h3>
-          {driverKnown ? <Link href={`/drivers/${photo.driver_slug}`}>{fmt(photo.driver_slug)}</Link> : 'Unidentified driver'}
-        </h3>
-        <p>
-          {trackKnown ? <Link href={`/tracks/${photo.track_slug}`}>{fmt(photo.track_slug)}</Link> : 'Track unknown'}
-        </p>
-        <span>Photo credit: Bob Bergeron</span>
+        <h3>{driverKnown ? fmt(photo.driver_slug) : 'Unknown Driver'}</h3>
+        <p>{trackKnown ? fmt(photo.track_slug) : 'Track unknown'} <span>•</span> {isKnownYear(photo.year) ? photo.year : 'Unknown Year'}</p>
+        <em>Photo by Bob Bergeron</em>
       </div>
     </article>
   )
@@ -122,209 +118,186 @@ export default async function BobBergeronMediaMemberRoom() {
 
   const featuredByFile = new Map(rows.map((row) => [row.file_name, row]))
   const featured = FEATURED_FILES.map((file) => featuredByFile.get(file)).filter(Boolean) as PhotoRow[]
-  const gallery = featured.length >= 6
-    ? featured
-    : rows.filter((row) => row.driver_slug !== 'unknown-driver' && isKnownYear(row.year)).slice(0, 8)
-  const identify = rows.filter((row) => row.driver_slug === 'unknown-driver').slice(0, 8)
+  const gallery = featured.length >= 4
+    ? featured.slice(0, 4)
+    : rows.filter((row) => row.driver_slug !== 'unknown-driver' && isKnownYear(row.year)).slice(0, 4)
+  const identify = rows.filter((row) => row.driver_slug === 'unknown-driver').slice(0, 4)
+  const filmstrip = rows.filter((row) => isKnownYear(row.year)).slice(0, 10)
+  const range = earliestYear && latestYear ? `${earliestYear} – ${latestYear}` : 'Date range developing'
 
   return (
     <main className={styles.page}>
       <section
         className={styles.hero}
-        style={hero ? { backgroundImage: `linear-gradient(90deg, rgba(12,8,5,.97), rgba(12,8,5,.78) 53%, rgba(12,8,5,.35)), url(${imageUrl(hero)})` } : undefined}
+        style={hero ? { backgroundImage: `linear-gradient(90deg, rgba(5,6,6,.9), rgba(5,6,6,.44) 55%, rgba(5,6,6,.2)), url(${imageUrl(hero)})` } : undefined}
       >
-        <div className={styles.heroInner}>
-          <div className={styles.breadcrumbs}>
-            <Link href="/">Home</Link><span>›</span><Link href="/rooms">Museum Rooms</Link><span>›</span><span>Media Member of the Month</span>
-          </div>
-          <div className={styles.kicker}>Media Member of the Month • Inaugural Honoree</div>
+        <div className={styles.heroPortraitWrap}>
+          <img src={BOB_PORTRAIT} alt="Bob Bergeron" className={styles.heroPortrait} />
+        </div>
+
+        <div className={styles.heroCopyWrap}>
+          <div className={styles.heroRibbon}>Media Member of the Month</div>
           <h1>Bob Bergeron</h1>
-          <p className={styles.heroLine}>Photographer. Writer. A firsthand witness to the Fox Valley racing scene.</p>
-          <p className={styles.heroCopy}>
-            Bob Bergeron helped preserve Upper Midwest racing from ground level — photographing drivers and cars,
-            reporting from the tracks, and contributing to the regional racing press. This room brings his surviving museum material together as one growing historical record.
-          </p>
-          <div className={styles.heroActions}>
-            <Link href="/photographers/bob-bergeron" className={styles.primaryButton}>Open Complete Bergeron Archive</Link>
-            <Link href="/photos?photographer=bob-bergeron&driver=unknown-driver" className={styles.secondaryButton}>Identify Bergeron Drivers</Link>
-          </div>
+          <p>Preserving racing history<br />through the lens</p>
+        </div>
+
+        <div className={styles.heroNote}>
+          <strong>{totalItems.toLocaleString()} Photos</strong>
+          <strong>{tracks.length.toLocaleString()} Tracks</strong>
+          <span>{range}</span>
         </div>
       </section>
 
-      <section className={styles.stats} aria-label="Bob Bergeron museum collection statistics">
-        <div><strong>{totalItems.toLocaleString()}</strong><span>Archived Bergeron Items</span></div>
-        <div><strong>{tracks.length.toLocaleString()}</strong><span>Known Tracks</span></div>
-        <div><strong>{unknownDrivers.toLocaleString()}</strong><span>Drivers Still Unidentified</span></div>
-        <div><strong>{earliestYear && latestYear ? `${earliestYear}–${latestYear}` : '—'}</strong><span>Known Dated Range</span></div>
-      </section>
+      <nav className={styles.roomNav} aria-label="Bob Bergeron room navigation">
+        <a href="#overview">Overview</a>
+        <a href="#featured-photos">Featured Photos</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#identify-drivers">Drivers</a>
+        <a href="#racing-press">Racing Press</a>
+        <a href="#identify-drivers">Identify These Drivers</a>
+        <Link href="/photographers/bob-bergeron">All {totalItems.toLocaleString()} Photos</Link>
+      </nav>
 
-      <section className={styles.introSection}>
-        <div className={styles.sectionLabel}>Who Was Bob Bergeron?</div>
-        <div className={styles.introGrid}>
-          <div>
-            <h2>A young photographer already recognized inside the racing world.</h2>
+      <div className={styles.roomBody}>
+        <section id="overview" className={`${styles.paperPanel} ${styles.overviewPanel}`}>
+          <div className={styles.aboutCopy}>
+            <div className={styles.redHeading}>About Bob Bergeron</div>
             <p>
-              A surviving period profile describes Bob Bergeron as the publication&apos;s “ace camera man.” It identifies him as being from Kaukauna, Wisconsin,
-              says he was 20 years old at the time, and credits him with producing much of the publication&apos;s racing photography.
+              Bob Bergeron was a dedicated racing photographer and writer who helped document the rich history of Upper Midwest short track racing.
+              His photographs capture the cars, drivers, tracks and fans that made this era special, while his writing in the regional racing press gave fans deeper insight into the sport he loved.
             </p>
             <p>
-              The same profile says Bergeron also wrote a weekly column for <em>Racing Wheels</em>, described there as a West Coast paper.
-              It notes that he had photographed nearly every car in the club and invited owners and drivers to find him in the pits for copies and enlargements.
+              A surviving period profile called Bergeron the publication&apos;s <strong>“ace camera man.”</strong> It identified him as being from Kaukauna, Wisconsin,
+              said he was 20 years old at the time, and noted that he also wrote a weekly column for <em>Racing Wheels</em>.
             </p>
             <p>
-              That small piece of period writing changes the picture considerably: Bergeron was not simply taking occasional snapshots.
-              He was already functioning as a photographer, writer, and racing-media contributor while still a very young man.
+              Through hundreds of photographs and numerous articles — including his recurring <em>Badger Bulletin</em> — Bob&apos;s work remains an important part of our region&apos;s racing history.
             </p>
           </div>
-          <aside className={styles.researchBox}>
-            <div className={styles.researchKicker}>Period Source</div>
-            <strong>“Ace camera man”</strong><span>How Bergeron was described in the surviving profile.</span>
-            <strong>Kaukauna</strong><span>His hometown as identified by the period source.</span>
-            <strong>Age 20</strong><span>His age when that profile was published; the exact issue date is still being verified.</span>
-          </aside>
-        </div>
-      </section>
 
-      <section className={styles.introSection}>
-        <div className={styles.sectionLabel}>The Museum Collection</div>
-        <div className={styles.introGrid}>
-          <div>
-            <h2>A racing-media footprint that reaches beyond a photo credit.</h2>
-            <p>
-              Bergeron&apos;s museum collection is centered in Wisconsin&apos;s Fox Valley and northeastern Wisconsin racing scene.
-              Leo&apos;s Speedway, Wisconsin International Raceway, Brown County Speedway, Shawano Speedway, Seymour Speedway,
-              and other regional tracks appear throughout the preserved material.
-            </p>
-            <p>
-              The archive is still being identified. That makes this room both an exhibit and an active research project:
-              every confirmed driver, track, and year strengthens the historical record behind the photographs.
-            </p>
+          <div className={styles.collectionStats}>
+            <div className={styles.blueHeading}>The Collection</div>
+            <div><b>{totalItems.toLocaleString()}</b><span>Photos</span></div>
+            <div><b>{tracks.length.toLocaleString()}</b><span>Tracks</span></div>
+            <div><b>{identifiedDrivers.toLocaleString()}</b><span>Identified Drivers</span></div>
+            <div><b>{range}</b><span>Known Date Range</span></div>
           </div>
-          <aside className={styles.researchBox}>
-            <div className={styles.researchKicker}>Archive Status</div>
-            <strong>{explicitPhotos.toLocaleString()}</strong><span>records explicitly typed as photos</span>
-            <strong>{identifiedDrivers.toLocaleString()}</strong><span>different identified drivers represented</span>
-            <strong>{unknownYears.toLocaleString()}</strong><span>items still needing a confirmed year</span>
-          </aside>
-        </div>
-      </section>
 
-      {gallery.length > 0 && (
-        <section className={styles.gallerySection}>
-          <div className={styles.sectionHeading}>
-            <div>
-              <div className={styles.sectionLabel}>Through Bob Bergeron&apos;s Lens</div>
-              <h2>Featured photographs</h2>
-            </div>
-            <Link href="/photographers/bob-bergeron">View all Bergeron material →</Link>
+          <figure className={styles.portraitCard}>
+            <img src={BOB_PORTRAIT} alt="Bob Bergeron at the track" />
+            <figcaption>Bob Bergeron at the track</figcaption>
+          </figure>
+        </section>
+
+        <section id="featured-photos" className={styles.featureSection}>
+          <div className={styles.sectionTitleRow}>
+            <div className={styles.redBanner}>Featured Photos</div>
+            <Link href="/photographers/bob-bergeron" className={styles.redButton}>View All {totalItems.toLocaleString()} Photos →</Link>
           </div>
-          <div className={styles.galleryGrid}>
-            {gallery.map((photo) => <GalleryCard key={photo.photo_id} photo={photo} />)}
+          <div className={styles.featureGrid}>
+            {gallery.map((photo) => <PhotoCard key={photo.photo_id} photo={photo} />)}
           </div>
         </section>
-      )}
 
-      <section className={styles.trackSection}>
-        <div className={styles.sectionHeading}>
-          <div>
-            <div className={styles.sectionLabel}>Where He Worked</div>
-            <h2>The Bergeron track footprint</h2>
+        <section className={styles.twoColumnSection}>
+          <div id="tracks" className={styles.paperPanel}>
+            <div className={styles.redHeading}>Tracks in the Collection</div>
+            <div className={styles.trackListGrid}>
+              <div className={styles.trackMap} aria-hidden="true">
+                <div className={styles.wisconsinShape}>WI</div>
+                {tracks.slice(0, 10).map((track, index) => <i key={track.slug} style={{ left: `${34 + (index % 4) * 13}%`, top: `${24 + Math.floor(index / 4) * 20 + (index % 2) * 5}%` }} />)}
+              </div>
+              <ul>
+                {tracks.slice(0, 11).map((track) => (
+                  <li key={track.slug}><Link href={`/tracks/${track.slug}`}>{fmt(track.slug)}</Link></li>
+                ))}
+                {tracks.length > 11 ? <li>Other / Unknown</li> : null}
+              </ul>
+            </div>
+            <Link href="/photos?photographer=bob-bergeron" className={styles.redButton}>View Photos by Track →</Link>
           </div>
-        </div>
-        <div className={styles.trackGrid}>
-          {tracks.slice(0, 8).map((track) => (
-            <Link href={`/tracks/${track.slug}`} className={styles.trackCard} key={track.slug}>
-              <span>{track.count.toLocaleString()} archived items</span>
-              <h3>{fmt(track.slug)}</h3>
-              <p>{track.identified.toLocaleString()} identified-driver records • {track.dated.toLocaleString()} dated records</p>
-              <strong>Open track archive →</strong>
+
+          <div id="racing-press" className={styles.paperPanel}>
+            <div className={styles.blueBanner}>Racing Press &amp; Writing</div>
+            <div className={styles.pressMastheads}>
+              <div><strong>Midwest Racing News</strong><span>By Bob Bergeron</span><em>Badger Bulletin</em></div>
+              <div><strong>Checkered Flag Racing News</strong><span>Photos by Bob Bergeron</span></div>
+            </div>
+            <p>
+              Bob Bergeron was a contributing writer for <em>Midwest Racing News</em> in 1966–68, including his recurring <em>Badger Bulletin</em>.
+              By 1970–71, his photographs regularly appeared in both <em>Midwest Racing News</em> and <em>Checkered Flag Racing News</em>.
+            </p>
+            <div className={styles.pressFacts}>
+              <span><b>June 30, 1966</b> — KK Sports Arena report by Bob Bergeron</span>
+              <span><b>July 7, 1966</b> — Badger Bulletin on the Fox Valley Stock Car Club</span>
+              <span><b>1970–71</b> — repeated Bergeron and Bergeron &amp; Deitz photo credits</span>
+            </div>
+            <a href="#press-research" className={styles.redButton}>Read the Full Story →</a>
+          </div>
+        </section>
+
+        <section id="identify-drivers" className={styles.identifyRow}>
+          <div className={styles.paperPanel}>
+            <div className={styles.redHeading}>Can You Identify These Drivers?</div>
+            <div className={styles.identifyTopline}>
+              <p>There are {unknownDrivers.toLocaleString()} Bob Bergeron photos with unidentified drivers. Can you help us put names to these faces and cars?</p>
+              <Link href="/photos?photographer=bob-bergeron&driver=unknown-driver" className={styles.redButton}>View Unidentified Photos →</Link>
+            </div>
+            <div className={styles.identifyGrid}>
+              {identify.map((photo) => (
+                <Link href={`/photo/${encodeURIComponent(photo.file_name)}`} key={photo.photo_id} className={styles.identifyCard}>
+                  <img src={imageUrl(photo)} alt="Unidentified driver from the Bob Bergeron collection" loading="lazy" />
+                  <span>{fmt(photo.track_slug, 'Track unknown')} • {isKnownYear(photo.year) ? photo.year : 'Year unknown'}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <aside className={styles.quotePanel}>
+            <span className={styles.quoteMark}>“</span>
+            <p>
+              Bob&apos;s photographs give us a front-row seat to a special time in Upper Midwest racing. His work not only captured the action, but also the people, places and atmosphere that made our local tracks so unique.
+            </p>
+            <strong>Upper Midwest Racing History Museum</strong>
+            <img src={BOB_PORTRAIT} alt="Bob Bergeron" />
+          </aside>
+        </section>
+
+        <section id="press-research" className={`${styles.paperPanel} ${styles.researchPanel}`}>
+          <div className={styles.redHeading}>Research Notes &amp; Primary Sources</div>
+          <div className={styles.researchColumns}>
+            <div>
+              <h3>Period profile</h3>
+              <p>
+                Bergeron was described as the publication&apos;s “ace camera man,” from Kaukauna, age 20, with photographs of nearly every car in the club.
+                The same profile said he wrote a weekly column for <em>Racing Wheels</em>.
+              </p>
+            </div>
+            <div>
+              <h3>Fox Valley Racing News</h3>
+              <p>
+                Fox Valley Racing News remains an important part of the Bergeron research trail. The museum will continue separating confirmed Bergeron credits from publication material until a byline, caption or other primary source identifies his role.
+              </p>
+            </div>
+            <div>
+              <h3>Archive status</h3>
+              <p>
+                {explicitPhotos.toLocaleString()} records are explicitly typed as photographs, {unknownYears.toLocaleString()} items still need a confirmed year, and the unidentified-driver queue remains active.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {filmstrip.length > 0 ? (
+        <div className={styles.filmstrip} aria-label="Bob Bergeron photo filmstrip">
+          {filmstrip.map((photo) => (
+            <Link href={`/photo/${encodeURIComponent(photo.file_name)}`} key={photo.photo_id}>
+              <img src={imageUrl(photo)} alt={fmt(photo.driver_slug, 'Bob Bergeron archive photo')} loading="lazy" />
             </Link>
           ))}
         </div>
-      </section>
-
-      <section className={styles.pressSection}>
-        <div className={styles.pressLead}>
-          <div className={styles.sectionLabel}>The Racing Press</div>
-          <h2>Writer as well as photographer.</h2>
-          <p>
-            The museum newspaper archive establishes Bergeron as more than a name on the back of a photograph. Midwest Racing News
-            carried Bob Bergeron bylines and listed him among its contributing writers, while later Checkered Flag Racing News issues carried Bergeron photo credits.
-          </p>
-          <p>
-            The museum also now has 1965 Fox Valley Racing News material in its archive. Additional 1966–1969 pages remain to be processed,
-            giving this exhibit a clear path for future expansion as more primary-source material becomes searchable.
-          </p>
-        </div>
-        <div className={styles.timeline}>
-          <article><span>Period profile</span><h3>Photographer and writer</h3><p>Bergeron is described as the publication&apos;s “ace camera man” and as the writer of a weekly column for Racing Wheels.</p></article>
-          <article><span>June 30, 1966</span><h3>Midwest Racing News</h3><p>A KK Sports Arena race report appears under the byline “By Bob Bergeron.”</p></article>
-          <article><span>July 7, 1966</span><h3>Badger Bulletin</h3><p>Bergeron&apos;s column discusses the Fox Valley Stock Car Club and the northeastern Wisconsin racing scene.</p></article>
-          <article><span>April 16, 1970</span><h3>Fox Valley Racing News</h3><p>Checkered Flag Racing News describes KK Sports Arena, Outagamie Speedway, and Leo&apos;s Speedway as tracks formerly covered by the then-discontinued Fox Valley Racing News.</p></article>
-          <article><span>1970–1971</span><h3>Photo credits</h3><p>Checkered Flag Racing News and Midwest Racing News repeatedly identify photographs as Bob Bergeron or Bergeron &amp; Deitz photos.</p></article>
-        </div>
-        <div className={styles.cautionNote}>
-          <strong>Research note:</strong> Fox Valley Racing News is now an important part of the Bergeron research trail, but the museum will distinguish between
-          confirmed Bob Bergeron credits and material that is simply part of the publication until a page, caption, byline, or other primary source identifies his role.
-        </div>
-      </section>
-
-      {identify.length > 0 && (
-        <section className={styles.identifySection}>
-          <div className={styles.sectionHeading}>
-            <div>
-              <div className={styles.sectionLabel}>Help Complete the Record</div>
-              <h2>Can you identify these drivers?</h2>
-            </div>
-            <Link href="/photos?photographer=bob-bergeron&driver=unknown-driver">Open all unidentified Bergeron photos →</Link>
-          </div>
-          <p className={styles.identifyIntro}>
-            More than one hundred Bergeron-tagged museum images still lack a confirmed driver identification. These photographs are preserved rather than discarded so research can reconnect the people, tracks, and years behind them.
-          </p>
-          <div className={styles.identifyGrid}>
-            {identify.map((photo) => (
-              <Link href={`/photo/${encodeURIComponent(photo.file_name)}`} key={photo.photo_id} className={styles.identifyCard}>
-                <img src={imageUrl(photo)} alt="Unidentified driver from the Bob Bergeron collection" loading="lazy" />
-                <div><strong>Driver unidentified</strong><span>{fmt(photo.track_slug, 'Track unknown')} • {isKnownYear(photo.year) ? photo.year : 'Year unknown'}</span></div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section className={styles.introSection}>
-        <div className={styles.sectionLabel}>This Archive Is Still Growing</div>
-        <div className={styles.introGrid}>
-          <div>
-            <h2>The first version of this room is a beginning, not an endpoint.</h2>
-            <p>
-              The museum already holds the Bergeron photo collection and a growing body of racing-publication evidence. The 1965 Fox Valley Racing News material provides another layer,
-              while the 1966–1969 collections remain a future archival project. As those pages are processed, the exhibit can add direct photo credits, bylines, dates, track references, and other primary-source evidence.
-            </p>
-            <p>
-              The same is true of the photographs themselves. Driver identifications made through the museum research workflow will automatically improve the collection behind this room.
-            </p>
-          </div>
-          <aside className={styles.researchBox}>
-            <div className={styles.researchKicker}>Next Research Priorities</div>
-            <strong>1965</strong><span>Audit the Fox Valley Racing News material already uploaded.</span>
-            <strong>1966–1969</strong><span>Process the remaining Fox Valley Racing News pages when resources allow.</span>
-            <strong>{unknownDrivers.toLocaleString()}</strong><span>Bergeron driver identifications still available for review.</span>
-          </aside>
-        </div>
-      </section>
-
-      <section className={styles.footerSection}>
-        <div>
-          <div className={styles.sectionLabel}>A Permanent Museum Series</div>
-          <h2>Media Member of the Month</h2>
-          <p>
-            Bob Bergeron is the inaugural honoree. Future photographers, writers, announcers, publishers,
-            historians, and other media contributors can be featured here while every past honoree remains in the permanent museum archive.
-          </p>
-        </div>
-        <Link href="/rooms" className={styles.primaryButton}>Return to Museum Rooms</Link>
-      </section>
+      ) : null}
     </main>
   )
 }
