@@ -12,6 +12,7 @@ import "./research-center-home-dark.css";
 import "./home-final-polish.css";
 import "./search-visibility.css";
 import "./hall-of-fame.css";
+import "./bob-room-fixes.css";
 import Link from "next/link"
 import ResearchCenterNav from "@/components/ResearchCenterNav"
 import FeatureWinnersPdfEnhancer from "@/components/FeatureWinnersPdfEnhancer"
