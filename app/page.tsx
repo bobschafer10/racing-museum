@@ -3,122 +3,75 @@ import Link from 'next/link'
 import HomeBase from './HomeBase'
 import styles from './home.module.css'
 import searchStyles from './homeSearchFix.module.css'
+import roomStyles from './featuredRoomEntrance.module.css'
+import { getPhotoUrl } from '@/lib/photos'
 
 export const revalidate = 43200
 
-function BobBergeronRoomFeature() {
+type FeaturedRoom = {
+  roomNumber: string
+  category: string
+  title: string
+  description: string
+  roomHref: string
+  queueHref: string
+  portrait: string
+  racePhoto: string
+  periodProfile: string
+}
+
+const FEATURED_ROOM: FeaturedRoom = {
+  roomNumber: '001',
+  category: 'Media Member of the Month',
+  title: 'Bob Bergeron',
+  description:
+    "Enter the inaugural Media Member of the Month room, bringing together Bob Bergeron's racing photography, newspaper work, track connections, and the museum's ongoing effort to identify the people preserved in his images.",
+  roomHref: '/rooms/media-member-of-the-month/bob-bergeron',
+  queueHref: '/photos?photographer=bob-bergeron&driver=unknown-driver',
+  portrait: getPhotoUrl(
+    'photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron_bob-bergeron_photo_444.jpg',
+  ),
+  racePhoto: getPhotoUrl(
+    'photos/master/141-speedway/1972/141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg',
+  ),
+  periodProfile: getPhotoUrl(
+    'photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg',
+  ),
+}
+
+function FeaturedRoomEntrance({ room }: { room: FeaturedRoom }) {
   return (
-    <section
-      aria-labelledby="bob-bergeron-room-title"
-      style={{
-        margin: '0 0 28px',
-        border: '1px solid #8a6b33',
-        borderRadius: 6,
-        overflow: 'hidden',
-        background: 'linear-gradient(135deg, #17120d 0%, #0b0d10 58%, #1e1711 100%)',
-        boxShadow: '0 10px 30px rgba(0,0,0,.28)',
-      }}
-    >
-      <div
-        style={{
-          padding: '28px 30px 30px',
-          display: 'grid',
-          gap: 14,
-        }}
-      >
-        <div
-          style={{
-            fontSize: 11,
-            letterSpacing: '.16em',
-            textTransform: 'uppercase',
-            color: '#d1a651',
-            fontWeight: 700,
-          }}
-        >
-          A New Room in the Museum
-        </div>
+    <section className={roomStyles.feature} aria-labelledby="featured-room-title">
+      <div className={roomStyles.grid}>
+        <div className={roomStyles.copy}>
+          <div className={roomStyles.kicker}>A New Room in the Museum</div>
+          <div className={roomStyles.roomLabel}>Room {room.roomNumber} • {room.category}</div>
+          <h2 id="featured-room-title" className={roomStyles.title}>{room.title}</h2>
+          <p className={roomStyles.description}>{room.description}</p>
 
-        <div style={{ display: 'grid', gap: 5 }}>
-          <div
-            style={{
-              fontSize: 13,
-              textTransform: 'uppercase',
-              letterSpacing: '.12em',
-              color: '#c8b28a',
-            }}
-          >
-            Room 001 • Media Member of the Month
+          <div className={roomStyles.actions}>
+            <Link href={room.roomHref} className={roomStyles.primary}>
+              Enter the {room.title} Room →
+            </Link>
+            <Link href={room.queueHref} className={roomStyles.secondary}>
+              Open Unidentified Driver Queue
+            </Link>
           </div>
-
-          <h2
-            id="bob-bergeron-room-title"
-            style={{
-              margin: 0,
-              fontSize: 38,
-              lineHeight: 1.05,
-              color: '#f4ead7',
-              fontWeight: 800,
-            }}
-          >
-            Bob Bergeron
-          </h2>
         </div>
 
-        <p
-          style={{
-            margin: 0,
-            maxWidth: 930,
-            color: '#d9d2c6',
-            lineHeight: 1.6,
-            fontSize: 18,
-          }}
-        >
-          Enter the inaugural Media Member of the Month room, bringing together Bob Bergeron&apos;s racing photography,
-          newspaper work, track connections, and the museum&apos;s ongoing effort to identify the people preserved in his images.
-        </p>
+        <div className={roomStyles.collage} aria-hidden="true">
+          <img src={room.portrait} alt="" className={roomStyles.mainPortrait} />
+          <img src={room.racePhoto} alt="" className={roomStyles.raceInset} />
+          <img src={room.periodProfile} alt="" className={roomStyles.clippingInset} />
+        </div>
 
-        <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: 12,
-            marginTop: 4,
-          }}
-        >
-          <Link
-            href="/rooms/media-member-of-the-month/bob-bergeron"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '12px 18px',
-              borderRadius: 4,
-              background: '#c89b3c',
-              color: '#111',
-              fontWeight: 800,
-              textDecoration: 'none',
-              border: '1px solid #c89b3c',
-            }}
-          >
-            Enter the Bob Bergeron Room →
-          </Link>
-
-          <Link
-            href="/photos?photographer=bob-bergeron&driver=unknown-driver"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '12px 18px',
-              borderRadius: 4,
-              background: 'transparent',
-              color: '#f0dfb8',
-              fontWeight: 700,
-              textDecoration: 'none',
-              border: '1px solid #8a6b33',
-            }}
-          >
-            Open Unidentified Driver Queue
+        <div className={roomStyles.doorZone}>
+          <span className={roomStyles.nowOpen}>Now Open</span>
+          <div className={roomStyles.galleryGlow} aria-hidden="true" />
+          <Link href={room.roomHref} className={roomStyles.doorLink} aria-label={`Enter Room ${room.roomNumber}: ${room.title}`}>
+            <div className={roomStyles.plaque}>{room.category}<br />{room.title}</div>
+            <img src={room.periodProfile} alt="Bob Bergeron period portrait" className={roomStyles.doorPortrait} />
+            <div className={roomStyles.roomNumber}>ROOM {room.roomNumber}</div>
           </Link>
         </div>
       </div>
@@ -213,7 +166,7 @@ export default async function Home() {
   const shell = mainChildren[shellIndex] as React.ReactElement<any>
   const shellChildren = React.Children.toArray(shell.props.children)
 
-  shellChildren.unshift(<BobBergeronRoomFeature key="bob-bergeron-room-feature" />)
+  shellChildren.unshift(<FeaturedRoomEntrance key="featured-room-entrance" room={FEATURED_ROOM} />)
 
   // Research Center, Explore the Museum, then the Hall of Fame entrance.
   shellChildren.splice(2, 0, <HallOfFameHomeFeature key="hall-of-fame-home-feature" />)
