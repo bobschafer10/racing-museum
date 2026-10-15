@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
-import { BOB_PORTRAIT } from './bobPortrait'
 import styles from './room.module.css'
 
 export const revalidate = 43200
@@ -32,6 +31,7 @@ type TrackSummary = {
 }
 
 const BOB_SLUGS = ['bob-bergeron', 'bob-bergeronr']
+const BOB_PORTRAIT = '/rooms/media-member-of-the-month/bob-bergeron/portrait'
 const HERO_FILE = 'leos-speedway_1967_harlin-krueger_bob-bergeron_photo_001.jpg'
 const FEATURED_FILES = [
   '141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg',
