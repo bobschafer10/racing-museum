@@ -1,9 +1,10 @@
 /* Bob Bergeron museum room presentation fixes.
    Scoped to the Bergeron room section IDs so these rules do not affect other museum pages. */
 
-/* Hero carries the later-life Bob portrait. Use the period portrait in the overview so the top of the room does not repeat the same image. */
+/* Hero carries the later-life Bob portrait. Use the young period portrait in the overview so the top of the room does not repeat the same image. */
 #overview figure a {
   display: block;
+  height: 315px;
   overflow: hidden;
   background: #d9ccb0;
 }
@@ -14,6 +15,8 @@
   height: 315px !important;
   object-fit: cover !important;
   object-position: left center !important;
+  transform: scale(1.55);
+  transform-origin: 6% 50%;
   filter: grayscale(1) sepia(.2) contrast(1.06) !important;
   background: #d9ccb0 !important;
 }
@@ -145,14 +148,24 @@
 }
 
 @media (max-width: 1050px) {
+  #overview figure a,
   #overview figure img[alt="Bob Bergeron period profile"] {
     height: 260px !important;
+  }
+
+  #overview figure img[alt="Bob Bergeron period profile"] {
+    transform: scale(1.42);
   }
 }
 
 @media (max-width: 720px) {
+  #overview figure a,
   #overview figure img[alt="Bob Bergeron period profile"] {
     height: 320px !important;
+  }
+
+  #overview figure img[alt="Bob Bergeron period profile"] {
+    transform: scale(1.35);
   }
 
   #tracks .bob-track-map {
