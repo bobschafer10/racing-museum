@@ -10,14 +10,27 @@ ROOT=f'https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{
 IMPORT=f'https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-1987-import'
 OIDC_URL=os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
 OIDC_REQ=os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
+RUN_NUMBER=os.environ.get('GITHUB_RUN_NUMBER','')
 
 # Safety interlock: run 2 already owns the full 1987 matrix. Run 3 was queued as a
 # rescue while run 2 was still active; letting both write the same issues can create
 # duplicate work and heavy Supabase contention. Make run 3 a no-op. After run 2
 # settles, any genuinely incomplete issues can be repaired in a fresh verified run.
-if os.environ.get('GITHUB_RUN_NUMBER') == '3':
+if RUN_NUMBER == '3':
     print(f'{ISSUE}: safety skip on rescue run 3; primary run 2 owns the 1987 matrix', flush=True)
     sys.exit(0)
+
+# Throttle the still-unstarted heavy tail of run 2 so the museum remains usable while
+# the database clears. Already-running jobs keep their existing process; newly-started
+# September/December repair jobs use a wider write interval and staggered starts.
+HEAVY_TAIL={'1987-09-02','1987-09-09','1987-12-16'}
+PAGE_DELAY=4 if RUN_NUMBER == '2' and ISSUE in HEAVY_TAIL else 1
+START_DELAY=0
+if RUN_NUMBER == '2':
+    START_DELAY={'1987-09-09':180,'1987-12-16':360}.get(ISSUE,0)
+if START_DELAY:
+    print(f'{ISSUE}: throttled start; waiting {START_DELAY}s to protect Supabase', flush=True)
+    time.sleep(START_DELAY)
 
 def get(url, attempts=5):
     last=None
@@ -131,7 +144,7 @@ for n in range(1,PAGE_COUNT+1):
     api({'publication':PUB,'issue':ISSUE,'pages':[row],'finalize':False})
     complete.add(page)
     print(f'{ISSUE} {page}: uploaded {len(row["text"])} chars / {len(row["meta"]["line_layout"]["lines"])} lines',flush=True)
-    time.sleep(1)
+    time.sleep(PAGE_DELAY)
 
 out=api({'publication':PUB,'issue':ISSUE,'action':'finalize'})
 if int(out.get('issue_pages',0)) < PAGE_COUNT:
