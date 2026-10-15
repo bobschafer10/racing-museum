@@ -1,7 +1,7 @@
 /* Bob Bergeron museum room presentation fixes.
    Scoped to the Bergeron room section IDs so these rules do not affect other museum pages. */
 
-/* Hero carries the later-life Bob portrait. Use the young period portrait in the overview so the top of the room does not repeat the same image. */
+/* Hero carries the later-life Bob portrait. Use the young period image in the overview without repeating the same photo. */
 #overview figure a {
   display: block;
   height: 315px;
@@ -15,9 +15,8 @@
   height: 315px !important;
   object-fit: cover !important;
   object-position: left center !important;
-  transform: scale(1.55);
-  transform-origin: 6% 50%;
-  filter: grayscale(1) sepia(.2) contrast(1.06) !important;
+  transform: none !important;
+  filter: grayscale(1) sepia(.18) contrast(1.04) !important;
   background: #d9ccb0 !important;
 }
 
@@ -48,10 +47,10 @@
   bottom: -8%;
   width: 60%;
   height: 58%;
-  opacity: .065;
+  opacity: .075;
   transform: rotate(-5deg);
   background-image:
-    linear-gradient(rgba(234,223,196,.18), rgba(234,223,196,.45)),
+    linear-gradient(rgba(234,223,196,.12), rgba(234,223,196,.4)),
     url('https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/brown-county-speedway/1972/brown-county-speedway_1972_jj-smith_bob-bergeron_photo_001.jpg');
   background-position: center;
 }
@@ -61,10 +60,10 @@
   bottom: 4%;
   width: 54%;
   height: 48%;
-  opacity: .055;
+  opacity: .065;
   transform: rotate(4deg);
   background-image:
-    linear-gradient(rgba(234,223,196,.2), rgba(234,223,196,.5)),
+    linear-gradient(rgba(234,223,196,.16), rgba(234,223,196,.44)),
     url('https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/wisconsin-international-raceway/1981/wisconsin-international-raceway_1981_jim-sauter_bob-bergeron_photo_001.jpg');
   background-position: center;
 }
@@ -84,8 +83,8 @@
   height: auto;
   max-height: 255px;
   object-fit: contain;
-  filter: grayscale(1) sepia(.32) contrast(.88) brightness(.88) drop-shadow(0 2px 2px rgba(0,0,0,.12));
-  opacity: .82;
+  filter: grayscale(1) sepia(.28) contrast(1.08) brightness(.92) drop-shadow(0 2px 2px rgba(0,0,0,.14));
+  opacity: .96;
   mix-blend-mode: multiply;
 }
 
@@ -152,20 +151,12 @@
   #overview figure img[alt="Bob Bergeron period profile"] {
     height: 260px !important;
   }
-
-  #overview figure img[alt="Bob Bergeron period profile"] {
-    transform: scale(1.42);
-  }
 }
 
 @media (max-width: 720px) {
   #overview figure a,
   #overview figure img[alt="Bob Bergeron period profile"] {
     height: 320px !important;
-  }
-
-  #overview figure img[alt="Bob Bergeron period profile"] {
-    transform: scale(1.35);
   }
 
   #tracks .bob-track-map {
