@@ -6,6 +6,41 @@ import searchStyles from './homeSearchFix.module.css'
 
 export const revalidate = 43200
 
+function BobBergeronPreviewAccess() {
+  if (process.env.VERCEL_GIT_COMMIT_REF !== 'feature/media-member-bob-bergeron') return null
+
+  return (
+    <section
+      aria-labelledby="bob-bergeron-preview-title"
+      style={{
+        margin: '0 0 24px',
+        padding: '20px 22px',
+        border: '1px solid #8a6b33',
+        background: 'linear-gradient(135deg, #15191c, #0b0e10)',
+        borderRadius: 4,
+      }}
+    >
+      <div style={{ fontSize: 11, letterSpacing: '.14em', textTransform: 'uppercase', color: '#d1a651', marginBottom: 8 }}>
+        Preview Research Access
+      </div>
+      <h2 id="bob-bergeron-preview-title" style={{ margin: '0 0 8px', fontSize: 28 }}>
+        Bob Bergeron Photo Audit
+      </h2>
+      <p style={{ margin: '0 0 16px', maxWidth: 900, color: '#c6c9cb', lineHeight: 1.55 }}>
+        Vercel authentication can return this preview to the museum home page. Use these links after signing in to jump directly back into the Bergeron exhibit or the unidentified-driver research queue.
+      </p>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+        <Link href="/photos?photographer=bob-bergeron&driver=unknown-driver" className="ma-button">
+          Open Unidentified Driver Queue →
+        </Link>
+        <Link href="/rooms/media-member-of-the-month/bob-bergeron" className="ma-button-ghost">
+          Open Bob Bergeron Exhibit
+        </Link>
+      </div>
+    </section>
+  )
+}
+
 function HallOfFameHomeFeature() {
   return (
     <section className={`${styles.section} hof-home-section`} aria-labelledby="hof-home-title">
@@ -92,6 +127,8 @@ export default async function Home() {
 
   const shell = mainChildren[shellIndex] as React.ReactElement<any>
   const shellChildren = React.Children.toArray(shell.props.children)
+
+  shellChildren.unshift(<BobBergeronPreviewAccess key="bob-bergeron-preview-access" />)
 
   // Research Center, Explore the Museum, then the Hall of Fame entrance.
   shellChildren.splice(2, 0, <HallOfFameHomeFeature key="hall-of-fame-home-feature" />)
