@@ -1,4 +1,4 @@
-# rescue remaining unstarted 1987 issues
+# verified reconciliation of only the incomplete 1987 issues
 name: Complete CFRN 1987 OCR
 
 on:
@@ -17,9 +17,16 @@ jobs:
     timeout-minutes: 90
     strategy:
       fail-fast: false
-      max-parallel: 2
+      max-parallel: 1
       matrix:
         include:
+          - {issue: '1987-07-08', page_count: 24}
+          - {issue: '1987-07-15', page_count: 24}
+          - {issue: '1987-07-22', page_count: 28}
+          - {issue: '1987-07-29', page_count: 24}
+          - {issue: '1987-08-05', page_count: 20}
+          - {issue: '1987-08-12', page_count: 20}
+          - {issue: '1987-08-19', page_count: 24}
           - {issue: '1987-08-26', page_count: 24}
           - {issue: '1987-09-02', page_count: 24}
           - {issue: '1987-09-09', page_count: 20}
