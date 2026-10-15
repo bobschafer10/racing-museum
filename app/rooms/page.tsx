@@ -24,13 +24,13 @@ export default function MuseumRoomsPage() {
             <img src={bergeronHero} alt="Bob Bergeron racing photograph from the museum collection" className={styles.roomCardImage} />
             <div className={styles.roomCardShade} />
             <div className={styles.roomCardCopy}>
-              <span className={styles.roomNumber}>Special Exhibit • Media Member of the Month</span>
+              <span className={styles.roomNumber}>Room 001 • Media Member of the Month</span>
               <h2>Bob Bergeron</h2>
               <p>
-                The inaugural Media Member of the Month: a curated look at Bergeron&apos;s photographs,
+                The inaugural Media Member of the Month: a curated room devoted to Bergeron&apos;s photographs,
                 track connections, newspaper bylines, photo credits, and the Fox Valley racing-media story.
               </p>
-              <span className={styles.roomCta}>Enter Exhibit →</span>
+              <span className={styles.roomCta}>Enter Room →</span>
             </div>
           </Link>
 
