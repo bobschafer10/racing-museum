@@ -1,0 +1,72 @@
+name: Complete CFRN 1987 OCR
+
+on:
+  push:
+    branches: [paddleocr-mrn-pilot]
+    paths: ['.github/workflows/paddleocr-cfrn-1987-repair.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        include:
+          - {issue: '1987-01-14', page_count: 16}
+          - {issue: '1987-02-04', page_count: 16}
+          - {issue: '1987-02-25', page_count: 16}
+          - {issue: '1987-04-08', page_count: 20}
+          - {issue: '1987-04-15', page_count: 16}
+          - {issue: '1987-04-22', page_count: 16}
+          - {issue: '1987-04-29', page_count: 16}
+          - {issue: '1987-05-06', page_count: 20}
+          - {issue: '1987-05-13', page_count: 20}
+          - {issue: '1987-05-20', page_count: 24}
+          - {issue: '1987-05-27', page_count: 24}
+          - {issue: '1987-06-02', page_count: 24}
+          - {issue: '1987-06-10', page_count: 24}
+          - {issue: '1987-06-17', page_count: 24}
+          - {issue: '1987-06-24', page_count: 24}
+          - {issue: '1987-07-01', page_count: 24}
+          - {issue: '1987-07-08', page_count: 24}
+          - {issue: '1987-07-15', page_count: 24}
+          - {issue: '1987-07-22', page_count: 28}
+          - {issue: '1987-07-29', page_count: 24}
+          - {issue: '1987-08-05', page_count: 20}
+          - {issue: '1987-08-12', page_count: 20}
+          - {issue: '1987-08-19', page_count: 24}
+          - {issue: '1987-08-26', page_count: 24}
+          - {issue: '1987-09-02', page_count: 24}
+          - {issue: '1987-09-09', page_count: 20}
+          - {issue: '1987-09-16', page_count: 20}
+          - {issue: '1987-09-23', page_count: 16}
+          - {issue: '1987-09-30', page_count: 16}
+          - {issue: '1987-10-07', page_count: 16}
+          - {issue: '1987-10-21', page_count: 16}
+          - {issue: '1987-11-11', page_count: 16}
+          - {issue: '1987-12-16', page_count: 32}
+    env:
+      ISSUE: ${{ matrix.issue }}
+      PAGE_COUNT: ${{ matrix.page_count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: paddleocr-mrn-pilot
+          sparse-checkout: museum-newspaper-manager/cfrn-1987-robust-ocr.py
+          sparse-checkout-cone-mode: false
+      - name: Ensure Tesseract
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v tesseract >/dev/null 2>&1 || { sudo apt-get update -qq; sudo apt-get install -y -qq tesseract-ocr; }
+          tesseract --version | head -1
+      - name: OCR and finalize issue
+        shell: bash
+        run: python museum-newspaper-manager/cfrn-1987-robust-ocr.py
