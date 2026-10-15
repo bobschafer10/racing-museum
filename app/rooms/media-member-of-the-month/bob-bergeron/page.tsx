@@ -33,6 +33,12 @@ type TrackSummary = {
 
 const BOB_SLUGS = ['bob-bergeron', 'bob-bergeronr']
 const HERO_FILE = 'leos-speedway_1967_harlin-krueger_bob-bergeron_photo_001.jpg'
+const PERIOD_PROFILE_URL = getPhotoUrl(
+  'photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-phot_bob-bergeron_photo_001.jpg',
+)
+const FOX_VALLEY_SOURCE_URL = getPhotoUrl(
+  'photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg',
+)
 const FEATURED_FILES = [
   '141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg',
   'brown-county-speedway_1972_jj-smith_bob-bergeron_photo_001.jpg',
@@ -265,12 +271,47 @@ export default async function BobBergeronMediaMemberRoom() {
 
         <section id="press-research" className={`${styles.paperPanel} ${styles.researchPanel}`}>
           <div className={styles.redHeading}>Research Notes &amp; Primary Sources</div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: 18,
+            margin: '12px 0 20px',
+            alignItems: 'start',
+          }}>
+            <figure style={{ margin: 0, padding: 10, background: '#f5ead0', border: '1px solid #aa9979', boxShadow: '0 3px 8px rgba(0,0,0,.18)' }}>
+              <a href={PERIOD_PROFILE_URL} target="_blank" rel="noreferrer" style={{ display: 'block' }}>
+                <img
+                  src={`${PERIOD_PROFILE_URL}?v=room001-period-profile-20261015`}
+                  alt="Period image of Bob Bergeron from the museum archive"
+                  style={{ display: 'block', width: '100%', maxHeight: 520, objectFit: 'contain', background: '#d9ccb0', filter: 'grayscale(1) sepia(.16) contrast(1.05)' }}
+                />
+              </a>
+              <figcaption style={{ padding: '8px 4px 2px', fontFamily: 'Georgia, Times New Roman, serif', fontSize: 13, fontStyle: 'italic' }}>
+                Bob Bergeron period profile image — click to enlarge.
+              </figcaption>
+            </figure>
+
+            <figure style={{ margin: 0, padding: 10, background: '#f5ead0', border: '1px solid #aa9979', boxShadow: '0 3px 8px rgba(0,0,0,.18)' }}>
+              <a href={FOX_VALLEY_SOURCE_URL} target="_blank" rel="noreferrer" style={{ display: 'block' }}>
+                <img
+                  src={`${FOX_VALLEY_SOURCE_URL}?v=room001-source-20261015`}
+                  alt="Bob Bergeron Fox Valley racing press research source"
+                  style={{ display: 'block', width: '100%', maxHeight: 520, objectFit: 'contain', background: '#d9ccb0' }}
+                />
+              </a>
+              <figcaption style={{ padding: '8px 4px 2px', fontFamily: 'Georgia, Times New Roman, serif', fontSize: 13, fontStyle: 'italic' }}>
+                Related Bob Bergeron / Fox Valley racing press source — click to enlarge.
+              </figcaption>
+            </figure>
+          </div>
+
           <div className={styles.researchColumns}>
             <div>
               <h3>Period profile</h3>
               <p>
                 Bergeron was described as the publication&apos;s “ace camera man,” from Kaukauna, age 20, with photographs of nearly every car in the club.
-                The same profile said he wrote a weekly column for <em>Racing Wheels</em>.
+                The same profile said he wrote a weekly column for <em>Racing Wheels</em>. The original period image is now displayed above as part of the room rather than only being paraphrased in the exhibit text.
               </p>
             </div>
             <div>
