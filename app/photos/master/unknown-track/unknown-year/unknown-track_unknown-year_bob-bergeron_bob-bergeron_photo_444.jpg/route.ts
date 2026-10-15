@@ -1,4 +1,4 @@
-import { BOB_PORTRAIT } from '../../../../../../rooms/media-member-of-the-month/bob-bergeron/bobPortrait'
+import { BOB_PORTRAIT } from '../../../../../rooms/media-member-of-the-month/bob-bergeron/bobPortrait'
 
 export const dynamic = 'force-static'
 
