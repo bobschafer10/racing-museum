@@ -1,0 +1,192 @@
+name: Fairmont Archive OCR 1965-2024
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fairmont-archive-ocr.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        include:
+          - {start: 1965, end: 1969}
+          - {start: 1970, end: 1974}
+          - {start: 1975, end: 1979}
+          - {start: 1980, end: 1984}
+          - {start: 1985, end: 1989}
+          - {start: 1990, end: 1994}
+          - {start: 1995, end: 1999}
+          - {start: 2000, end: 2004}
+          - {start: 2005, end: 2009}
+          - {start: 2010, end: 2014}
+          - {start: 2015, end: 2019}
+          - {start: 2020, end: 2024}
+    steps:
+      - name: Install OCR dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr
+          python -m pip install --quiet requests beautifulsoup4 pillow
+
+      - name: Scrape and OCR Fairmont archive scans
+        env:
+          START_YEAR: ${{ matrix.start }}
+          END_YEAR: ${{ matrix.end }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          python - <<'PY'
+          import json, os, re, subprocess, tempfile, time
+          from pathlib import Path
+          from urllib.parse import unquote, urlparse
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+
+          start=int(os.environ['START_YEAR']); end=int(os.environ['END_YEAR'])
+          session=requests.Session()
+          session.headers.update({'User-Agent':'Mozilla/5.0 (compatible; UMARM-FairmontArchiveRecovery/1.0)'})
+          image_ext=re.compile(r'\.(?:jpg|jpeg|png|webp)(?:$|\?)',re.I)
+          decorative=('checkered-flag-art','fairmont-speedway-logo','logo','favicon')
+
+          def basename(url):
+              return unquote(urlparse(url).path.rsplit('/',1)[-1])
+
+          def width_of(url):
+              m=re.search(r'(?:^|,)w=(\d+)',url)
+              return int(m.group(1)) if m else 0
+
+          def choose_sources(img):
+              vals=[]
+              src=img.get('src')
+              if src: vals.append(src)
+              for attr in ('srcset','data-srcset'):
+                  raw=img.get(attr) or ''
+                  for part in raw.split(','):
+                      u=part.strip().split(' ')[0]
+                      if u: vals.append(u)
+              ds=img.get('data-src')
+              if ds: vals.append(ds)
+              vals=[u for u in vals if u.startswith('http') and image_ext.search(u)]
+              vals=[u for u in vals if 'assets.zyrosite.com' in u]
+              if not vals: return None
+              vals.sort(key=width_of,reverse=True)
+              return vals[0]
+
+          def ocr_image(content, suffix):
+              with tempfile.TemporaryDirectory() as td:
+                  raw=Path(td)/('raw'+suffix)
+                  raw.write_bytes(content)
+                  try:
+                      im=Image.open(raw).convert('L')
+                      # Moderate normalization: preserve tabular text while improving contrast.
+                      im=ImageOps.autocontrast(im)
+                      if im.width < 1800:
+                          scale=1800/im.width
+                          im=im.resize((1800,max(1,int(im.height*scale))),Image.Resampling.LANCZOS)
+                      im=ImageEnhance.Contrast(im).enhance(1.25)
+                      proc=Path(td)/'page.png'
+                      im.save(proc,optimize=True)
+                      best=''
+                      for psm in ('6','4'):
+                          cp=subprocess.run(['tesseract',str(proc),'stdout','-l','eng','--psm',psm,'-c','preserve_interword_spaces=1'],capture_output=True,text=True,timeout=75)
+                          txt=(cp.stdout or '').strip()
+                          if sum(ch.isalnum() for ch in txt) > sum(ch.isalnum() for ch in best): best=txt
+                      return best
+                  except Exception as e:
+                      return f'[[OCR_ERROR: {type(e).__name__}: {e}]]'
+
+          rows=[]
+          for year in range(start,end+1):
+              page_url=f'https://fairmontspeedwayarchives.org/{year}'
+              r=session.get(page_url,timeout=30); r.raise_for_status()
+              soup=BeautifulSoup(r.text,'html.parser')
+              candidates={}
+              for img in soup.find_all('img'):
+                  u=choose_sources(img)
+                  if not u: continue
+                  fn=basename(u)
+                  low=fn.lower()
+                  if any(x in low for x in decorative): continue
+                  # Keep only likely archival result/summary scans. Annual pages are dedicated results pages.
+                  prev=candidates.get(fn)
+                  if prev is None or width_of(u)>width_of(prev): candidates[fn]=u
+              print(f'{year}: {len(candidates)} archival images')
+              for idx,(fn,u) in enumerate(candidates.items(),1):
+                  try:
+                      ir=session.get(u,timeout=45); ir.raise_for_status()
+                      suffix=Path(urlparse(u).path).suffix.lower() or '.jpg'
+                      txt=ocr_image(ir.content,suffix)
+                      rows.append({'year':year,'page_url':page_url,'filename':fn,'image_url':u,'ocr_text':txt})
+                      print(f'  {idx}/{len(candidates)} {fn}: {len(txt)} chars')
+                  except Exception as e:
+                      rows.append({'year':year,'page_url':page_url,'filename':fn,'image_url':u,'ocr_text':'','error':f'{type(e).__name__}: {e}'})
+                      print(f'  ERROR {fn}: {e}')
+                  time.sleep(0.05)
+          out=Path('out')/f'fairmont-ocr-{start}-{end}.json'
+          out.write_text(json.dumps(rows,indent=2,ensure_ascii=False),encoding='utf-8')
+          print(f'Wrote {out} with {len(rows)} scans')
+          PY
+
+      - name: Upload OCR chunk
+        uses: actions/upload-artifact@v4
+        with:
+          name: fairmont-ocr-${{ matrix.start }}-${{ matrix.end }}
+          path: out/fairmont-ocr-${{ matrix.start }}-${{ matrix.end }}.json
+          retention-days: 14
+          if-no-files-found: error
+
+  aggregate:
+    needs: ocr
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Download OCR chunks
+        uses: actions/download-artifact@v4
+        with:
+          pattern: fairmont-ocr-*
+          path: collected
+          merge-multiple: true
+      - name: Build master OCR file
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          rows=[]
+          for p in sorted(Path('collected').glob('fairmont-ocr-*.json')):
+              rows.extend(json.loads(p.read_text(encoding='utf-8')))
+          rows.sort(key=lambda r:(r.get('year',0),r.get('filename','')))
+          Path('fairmont-ocr-1965-2024.json').write_text(json.dumps(rows,indent=2,ensure_ascii=False),encoding='utf-8')
+          summary={}
+          for r in rows:
+              y=str(r['year']); summary.setdefault(y,{'images':0,'ocr_chars':0,'errors':0})
+              summary[y]['images']+=1; summary[y]['ocr_chars']+=len(r.get('ocr_text') or '')
+              summary[y]['errors']+=1 if r.get('error') else 0
+          Path('fairmont-ocr-summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
+          print(f'Master scans: {len(rows)}')
+          print(json.dumps(summary,indent=2))
+          PY
+      - name: Upload master OCR artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fairmont-ocr-1965-2024-master
+          path: |
+            fairmont-ocr-1965-2024.json
+            fairmont-ocr-summary.json
+          retention-days: 30
