@@ -36,6 +36,23 @@ const HERO_FILE = 'leos-speedway_1967_harlin-krueger_bob-bergeron_photo_001.jpg'
 const PERIOD_PROFILE_URL = getPhotoUrl(
   'photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg',
 )
+const WISCONSIN_MAP_URL = 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Wi_outline.png'
+const WISCONSIN_MAP_CREDIT_URL = 'https://commons.wikimedia.org/wiki/File:Wi_outline.png'
+
+const TRACK_MAP_POSITIONS: Record<string, { left: string; top: string }> = {
+  'leos-speedway': { left: '71%', top: '49%' },
+  'wisconsin-international-raceway': { left: '76%', top: '45%' },
+  'brown-county-speedway': { left: '80%', top: '37%' },
+  'shawano-speedway': { left: '65%', top: '34%' },
+  'seymour-speedway': { left: '73%', top: '39%' },
+  'outagamie-speedway': { left: '72%', top: '44%' },
+  'golden-sands-speedway': { left: '53%', top: '51%' },
+  'oregon-legion-speedway': { left: '58%', top: '76%' },
+  '141-speedway': { left: '84%', top: '41%' },
+  'beaver-dam-raceway': { left: '63%', top: '63%' },
+  'shiocton-speedway': { left: '66%', top: '42%' },
+}
+
 const FEATURED_FILES = [
   '141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg',
   'brown-county-speedway_1972_jj-smith_bob-bergeron_photo_001.jpg',
@@ -187,8 +204,13 @@ export default async function BobBergeronMediaMemberRoom() {
           </div>
 
           <figure className={styles.portraitCard}>
-            <img src={BOB_PORTRAIT} alt="Bob Bergeron at the track" />
-            <figcaption>Bob Bergeron at the track</figcaption>
+            <a href={PERIOD_PROFILE_URL} target="_blank" rel="noreferrer">
+              <img
+                src={`${PERIOD_PROFILE_URL}?v=room001-period-portrait-20261015`}
+                alt="Bob Bergeron period profile"
+              />
+            </a>
+            <figcaption>Bob Bergeron, period profile</figcaption>
           </figure>
         </section>
 
@@ -206,9 +228,22 @@ export default async function BobBergeronMediaMemberRoom() {
           <div id="tracks" className={styles.paperPanel}>
             <div className={styles.redHeading}>Tracks in the Collection</div>
             <div className={styles.trackListGrid}>
-              <div className={styles.trackMap} aria-hidden="true">
-                <div className={styles.wisconsinShape}>WI</div>
-                {tracks.slice(0, 10).map((track, index) => <i key={track.slug} style={{ left: `${34 + (index % 4) * 13}%`, top: `${24 + Math.floor(index / 4) * 20 + (index % 2) * 5}%` }} />)}
+              <div className={`${styles.trackMap} bob-track-map`}>
+                <img className="bob-wisconsin-map" src={WISCONSIN_MAP_URL} alt="Outline map of Wisconsin" />
+                <span className="bob-map-state-label" aria-hidden="true">WI</span>
+                {tracks.slice(0, 11).map((track) => {
+                  const position = TRACK_MAP_POSITIONS[track.slug]
+                  if (!position) return null
+                  return (
+                    <span
+                      key={track.slug}
+                      className="bob-map-dot"
+                      style={position}
+                      title={fmt(track.slug)}
+                      aria-hidden="true"
+                    />
+                  )
+                })}
               </div>
               <ul>
                 {tracks.slice(0, 11).map((track) => (
@@ -216,6 +251,9 @@ export default async function BobBergeronMediaMemberRoom() {
                 ))}
                 {tracks.length > 11 ? <li>Other / Unknown</li> : null}
               </ul>
+            </div>
+            <div className="bob-map-credit">
+              <a href={WISCONSIN_MAP_CREDIT_URL} target="_blank" rel="noreferrer">Wisconsin outline: CS-PROS / Wikimedia Commons, CC BY-SA 3.0</a>
             </div>
             <Link href="/photos?photographer=bob-bergeron" className={styles.redButton}>View Photos by Track →</Link>
           </div>
