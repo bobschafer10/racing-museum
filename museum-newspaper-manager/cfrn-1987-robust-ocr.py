@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import csv, hashlib, io, json, os, re, subprocess, tempfile, time, urllib.request, urllib.error
+import csv, hashlib, io, json, os, re, subprocess, sys, tempfile, time, urllib.request, urllib.error
 
 csv.field_size_limit(10_000_000)
 PROJECT='szvkleurojiwqkkztxtr'
@@ -10,6 +10,14 @@ ROOT=f'https://{PROJECT}.supabase.co/storage/v1/object/public/media/newspapers/{
 IMPORT=f'https://{PROJECT}.supabase.co/functions/v1/newspaper-ocr-1987-import'
 OIDC_URL=os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
 OIDC_REQ=os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
+
+# Safety interlock: run 2 already owns the full 1987 matrix. Run 3 was queued as a
+# rescue while run 2 was still active; letting both write the same issues can create
+# duplicate work and heavy Supabase contention. Make run 3 a no-op. After run 2
+# settles, any genuinely incomplete issues can be repaired in a fresh verified run.
+if os.environ.get('GITHUB_RUN_NUMBER') == '3':
+    print(f'{ISSUE}: safety skip on rescue run 3; primary run 2 owns the 1987 matrix', flush=True)
+    sys.exit(0)
 
 def get(url, attempts=5):
     last=None
