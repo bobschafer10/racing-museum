@@ -6,36 +6,121 @@ import searchStyles from './homeSearchFix.module.css'
 
 export const revalidate = 43200
 
-function BobBergeronPreviewAccess() {
-  if (process.env.VERCEL_GIT_COMMIT_REF !== 'feature/media-member-bob-bergeron') return null
-
+function BobBergeronRoomFeature() {
   return (
     <section
-      aria-labelledby="bob-bergeron-preview-title"
+      aria-labelledby="bob-bergeron-room-title"
       style={{
-        margin: '0 0 24px',
-        padding: '20px 22px',
+        margin: '0 0 28px',
         border: '1px solid #8a6b33',
-        background: 'linear-gradient(135deg, #15191c, #0b0e10)',
-        borderRadius: 4,
+        borderRadius: 6,
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #17120d 0%, #0b0d10 58%, #1e1711 100%)',
+        boxShadow: '0 10px 30px rgba(0,0,0,.28)',
       }}
     >
-      <div style={{ fontSize: 11, letterSpacing: '.14em', textTransform: 'uppercase', color: '#d1a651', marginBottom: 8 }}>
-        Preview Research Access
-      </div>
-      <h2 id="bob-bergeron-preview-title" style={{ margin: '0 0 8px', fontSize: 28 }}>
-        Bob Bergeron Photo Audit
-      </h2>
-      <p style={{ margin: '0 0 16px', maxWidth: 900, color: '#c6c9cb', lineHeight: 1.55 }}>
-        Vercel authentication can return this preview to the museum home page. Use these links after signing in to jump directly back into the Bergeron exhibit or the unidentified-driver research queue.
-      </p>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-        <Link href="/photos?photographer=bob-bergeron&driver=unknown-driver" className="ma-button">
-          Open Unidentified Driver Queue →
-        </Link>
-        <Link href="/rooms/media-member-of-the-month/bob-bergeron" className="ma-button-ghost">
-          Open Bob Bergeron Exhibit
-        </Link>
+      <div
+        style={{
+          padding: '28px 30px 30px',
+          display: 'grid',
+          gap: 14,
+        }}
+      >
+        <div
+          style={{
+            fontSize: 11,
+            letterSpacing: '.16em',
+            textTransform: 'uppercase',
+            color: '#d1a651',
+            fontWeight: 700,
+          }}
+        >
+          A New Room in the Museum
+        </div>
+
+        <div style={{ display: 'grid', gap: 5 }}>
+          <div
+            style={{
+              fontSize: 13,
+              textTransform: 'uppercase',
+              letterSpacing: '.12em',
+              color: '#c8b28a',
+            }}
+          >
+            Room 001 • Media Member of the Month
+          </div>
+
+          <h2
+            id="bob-bergeron-room-title"
+            style={{
+              margin: 0,
+              fontSize: 38,
+              lineHeight: 1.05,
+              color: '#f4ead7',
+              fontWeight: 800,
+            }}
+          >
+            Bob Bergeron
+          </h2>
+        </div>
+
+        <p
+          style={{
+            margin: 0,
+            maxWidth: 930,
+            color: '#d9d2c6',
+            lineHeight: 1.6,
+            fontSize: 18,
+          }}
+        >
+          Enter the inaugural Media Member of the Month room, bringing together Bob Bergeron&apos;s racing photography,
+          newspaper work, track connections, and the museum&apos;s ongoing effort to identify the people preserved in his images.
+        </p>
+
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: 12,
+            marginTop: 4,
+          }}
+        >
+          <Link
+            href="/rooms/media-member-of-the-month/bob-bergeron"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '12px 18px',
+              borderRadius: 4,
+              background: '#c89b3c',
+              color: '#111',
+              fontWeight: 800,
+              textDecoration: 'none',
+              border: '1px solid #c89b3c',
+            }}
+          >
+            Enter the Bob Bergeron Room →
+          </Link>
+
+          <Link
+            href="/photos?photographer=bob-bergeron&driver=unknown-driver"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '12px 18px',
+              borderRadius: 4,
+              background: 'transparent',
+              color: '#f0dfb8',
+              fontWeight: 700,
+              textDecoration: 'none',
+              border: '1px solid #8a6b33',
+            }}
+          >
+            Open Unidentified Driver Queue
+          </Link>
+        </div>
       </div>
     </section>
   )
@@ -128,7 +213,7 @@ export default async function Home() {
   const shell = mainChildren[shellIndex] as React.ReactElement<any>
   const shellChildren = React.Children.toArray(shell.props.children)
 
-  shellChildren.unshift(<BobBergeronPreviewAccess key="bob-bergeron-preview-access" />)
+  shellChildren.unshift(<BobBergeronRoomFeature key="bob-bergeron-room-feature" />)
 
   // Research Center, Explore the Museum, then the Hall of Fame entrance.
   shellChildren.splice(2, 0, <HallOfFameHomeFeature key="hall-of-fame-home-feature" />)
