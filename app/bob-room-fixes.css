@@ -81,10 +81,9 @@
   height: auto;
   max-height: 255px;
   object-fit: contain;
-  filter: grayscale(1) sepia(.32) contrast(.88) brightness(.88);
+  filter: grayscale(1) sepia(.32) contrast(.88) brightness(.88) drop-shadow(0 2px 2px rgba(0,0,0,.12));
   opacity: .82;
   mix-blend-mode: multiply;
-  drop-shadow: 0 2px 2px rgba(0,0,0,.12);
 }
 
 #tracks .bob-map-state-label {
