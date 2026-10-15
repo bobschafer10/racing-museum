@@ -18,8 +18,9 @@ function bobPortraitResponse() {
     headers: {
       'Content-Type': 'image/jpeg',
       'Content-Length': String(bytes.byteLength),
-      'Cache-Control': 'public, max-age=300, s-maxage=300',
+      'Cache-Control': 'no-store, max-age=0',
       'X-Content-Type-Options': 'nosniff',
+      'X-UMARM-Bob-Portrait': 'proxy',
     },
   })
 }
