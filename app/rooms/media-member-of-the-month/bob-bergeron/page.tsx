@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { supabase } from '@/lib/supabase'
+import { createClient } from '@supabase/supabase-js'
 import { getPhotoUrl } from '@/lib/photos'
 import styles from './room.module.css'
 import { BOB_PORTRAIT } from './bobPortrait'
 
-export const revalidate = 43200
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
 
 export const metadata: Metadata = {
   title: 'Bob Bergeron | Media Member of the Month | Upper Midwest Auto Racing Museum',
@@ -64,6 +65,21 @@ const FEATURED_FILES = [
   HERO_FILE,
 ]
 
+function roomSupabaseClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL!
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+
+  return createClient(url, key, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+    },
+    global: {
+      fetch: (input, init) => fetch(input, { ...init, cache: 'no-store' }),
+    },
+  })
+}
+
 function fmt(value: string | null | undefined, fallback = 'Unknown') {
   if (!value || value === 'unknown-driver' || value === 'unknown-track' || value === 'unknown-year') return fallback
   return value
@@ -118,11 +134,15 @@ function PhotoCard({ photo }: { photo: PhotoRow }) {
 }
 
 export default async function BobBergeronMediaMemberRoom() {
-  const { data } = await supabase
+  const roomSupabase = roomSupabaseClient()
+  const { data, error } = await roomSupabase
     .from('photos')
     .select('photo_id,file_name,track_slug,driver_slug,year,photographer_slug,credit_type,sequence,needs_review')
     .in('photographer_slug', BOB_SLUGS)
+    .order('photo_id', { ascending: true })
     .limit(1000)
+
+  if (error) console.error('[Bob Bergeron room] photo query failed:', error.message)
 
   const rows = (data || []) as PhotoRow[]
   const totalItems = rows.length
@@ -206,7 +226,7 @@ export default async function BobBergeronMediaMemberRoom() {
           <figure className={styles.portraitCard}>
             <a href={PERIOD_PROFILE_URL} target="_blank" rel="noreferrer">
               <img
-                src={`${PERIOD_PROFILE_URL}?v=room001-period-portrait-20261015`}
+                src={`${PERIOD_PROFILE_URL}?v=room001-period-portrait-20261015b`}
                 alt="Bob Bergeron period profile"
               />
             </a>
