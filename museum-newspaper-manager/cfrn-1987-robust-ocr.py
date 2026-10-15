@@ -12,11 +12,10 @@ OIDC_URL=os.environ['ACTIONS_ID_TOKEN_REQUEST_URL']
 OIDC_REQ=os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']
 RUN_NUMBER=os.environ.get('GITHUB_RUN_NUMBER','')
 
-# Recovery interlock: the overloaded legacy matrix runs (2 and 3) are being drained.
-# Do not let any newly-started jobs from those runs resume database work. A fresh,
-# single-worker reconciliation run will repair only the pages that are truly missing.
-if RUN_NUMBER in {'2','3'}:
-    print(f'{ISSUE}: legacy 1987 run {RUN_NUMBER} drained; fresh reconciliation owns remaining work', flush=True)
+# STOP interlock requested by the user. Drain all currently queued/active 1987 OCR
+# workflow runs without making additional database or storage changes.
+if RUN_NUMBER in {'2','3','4'}:
+    print(f'{ISSUE}: STOP requested; 1987 OCR run {RUN_NUMBER} exits without changes', flush=True)
     sys.exit(0)
 
 def get(url, attempts=5):
