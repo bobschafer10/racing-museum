@@ -131,6 +131,7 @@ const CFRN_1980S_PAGE_COUNTS: Record<string, number> = {
   "1987-10-07": 16,
   "1987-10-21": 16,
   "1987-11-11": 16,
+  "1987-12-16": 32,
   "1988-03-23": 24,
   "1988-04-06": 20,
   "1988-04-13": 16,
@@ -396,6 +397,58 @@ async function getOcrBackedIssues(
   })
 }
 
+async function getHistoricalCfrnOcrIssues(): Promise<NewspaperIssue[]> {
+  const rows: OcrArchiveRow[] = []
+  const pageSize = 1000
+
+  // The 1980-1987 CFRN batches were uploaded after the checked-in manifest had
+  // already advanced into later years. Query this bounded historical window so
+  // those preserved issues are included in the public archive inventory.
+  for (let offset = 0; ; offset += pageSize) {
+    const { data, error } = await supabase
+      .from("newspaper_ocr_search_pages")
+      .select("issue_date,page_label,storage_path")
+      .eq("publication_code", "checkered-flag-racing-news")
+      .eq("status", "complete")
+      .gte("issue_date", "1980-01-01")
+      .lte("issue_date", "1987-12-31")
+      .order("issue_date", { ascending: true })
+      .order("page_label", { ascending: true })
+      .range(offset, offset + pageSize - 1)
+
+    if (error) throw error
+
+    const batch = (data || []) as OcrArchiveRow[]
+    rows.push(...batch)
+    if (batch.length < pageSize) break
+  }
+
+  const byIssue = new Map<string, OcrArchiveRow[]>()
+  for (const row of rows) {
+    const issueRows = byIssue.get(row.issue_date) || []
+    issueRows.push(row)
+    byIssue.set(row.issue_date, issueRows)
+  }
+
+  return Array.from(byIssue.entries()).map(([issueDate, issueRows]) => {
+    const pages = issueRows.map(ocrPageUrl)
+    return {
+      slug: issueDate,
+      title: titleFromIsoDate(issueDate),
+      publication: "Checkered Flag Racing News",
+      publicationSlug: "checkered-flag-racing-news",
+      year: Number(issueDate.slice(0, 4)),
+      issueDate,
+      description: null,
+      coverImage: pages[0] || "",
+      backCoverImage: pages.at(-1) || pages[0] || null,
+      thumbnail: pages[0] || null,
+      pages,
+      featured: false,
+    }
+  })
+}
+
 function mrn1978Pages(issueDate: string, count: number) {
   // The July 20 scan is numbered 001-015 and 020 in Storage.
   const pageNumbers =
@@ -612,6 +665,13 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
       console.error("MRN OCR ARCHIVE BRIDGE ERROR:", error)
     }
 
+    let historicalCfrnIssues: NewspaperIssue[] = []
+    try {
+      historicalCfrnIssues = await getHistoricalCfrnOcrIssues()
+    } catch (error) {
+      console.error("CFRN HISTORICAL OCR ARCHIVE BRIDGE ERROR:", error)
+    }
+
     let ocrBackedCfrnIssues: NewspaperIssue[] = []
     try {
       ocrBackedCfrnIssues = await getOcrBackedIssues(latestCfrnManifestDate, {
@@ -640,6 +700,7 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
       ...getCfrn2004StorageIssues(),
       ...getCfrn2005StorageIssues(),
       ...ocrBackedMrnIssues,
+      ...historicalCfrnIssues,
       ...ocrBackedCfrnIssues,
     ]) {
       const key = `${issue.publicationSlug}__${issue.slug}`
@@ -662,7 +723,7 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
 // Newspaper manifests and OCR-complete issue lists change only during imports.
 // Avoid rescanning the OCR tables for every individual issue visit.
 // Revalidate at most twice daily, while keeping the checked-in manifest fallback.
-const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v3"], {
+const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v4"], {
   revalidate: 43200,
   tags: ["museum-newspapers"],
 })
