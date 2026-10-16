@@ -19,6 +19,7 @@ export type NewspaperIssue = {
   pages: string[]
   pageLabels?: string[]
   partialIssue?: boolean
+  archiveNote?: string
   featured?: boolean
   volume?: string | number | null
   number?: string | number | null
