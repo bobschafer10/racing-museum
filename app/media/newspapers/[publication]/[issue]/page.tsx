@@ -187,7 +187,7 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
     const isFirst = index === 0
     const isLast = index === orderedImages.length - 1
     return {
-      label: pageNumber
+      label: issue.pageLabels?.[index] || (pageNumber
         ? isFirst
           ? `Page ${pageNumber} • Front Cover`
           : isLast
@@ -197,7 +197,7 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
           ? "Front Cover"
           : isLast
             ? "Back Cover"
-            : `Page ${index + 1}`,
+            : `Page ${index + 1}`),
       image,
     }
   })

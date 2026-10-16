@@ -17,6 +17,7 @@ export type NewspaperIssue = {
   thumbnailImage?: string | null
   thumbnail?: string | null
   pages: string[]
+  pageLabels?: string[]
   featured?: boolean
   volume?: string | number | null
   number?: string | number | null
