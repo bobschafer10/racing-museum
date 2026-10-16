@@ -1,0 +1,160 @@
+name: Fix CFRN archive inventory bridge
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/fix-cfrn-archive-inventory.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch CFRN archive inventory
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("lib/newspapers.ts")
+          s = path.read_text()
+
+          # The Dec. 16, 1987 issue is complete in the 1987 OCR staging table but
+          # has not yet been reconciled into the primary OCR search view.
+          if '  "1987-12-16": 32,' not in s:
+              old = '  "1987-11-11": 16,\n  "1988-03-23": 24,'
+              new = '  "1987-11-11": 16,\n  "1987-12-16": 32,\n  "1988-03-23": 24,'
+              if old not in s:
+                  raise SystemExit("CFRN 1987 bridge insertion point not found")
+              s = s.replace(old, new, 1)
+
+          helper_marker = 'async function getHistoricalCfrnOcrIssues(): Promise<NewspaperIssue[]> {'
+          if helper_marker not in s:
+              insert_before = 'function mrn1978Pages(issueDate: string, count: number) {'
+              if insert_before not in s:
+                  raise SystemExit("historical CFRN helper insertion point not found")
+
+              helper = r'''async function getHistoricalCfrnOcrIssues(): Promise<NewspaperIssue[]> {
+  const rows: OcrArchiveRow[] = []
+  const pageSize = 1000
+
+  // The 1980-1987 CFRN batches were uploaded after the checked-in manifest had
+  // already advanced into later years. Query this bounded historical window so
+  // those preserved issues are included in the public archive inventory without
+  // rescanning the entire OCR corpus on every cache refresh.
+  for (let offset = 0; ; offset += pageSize) {
+    const { data, error } = await supabase
+      .from("newspaper_ocr_search_pages")
+      .select("issue_date,page_label,storage_path")
+      .eq("publication_code", "checkered-flag-racing-news")
+      .eq("status", "complete")
+      .gte("issue_date", "1980-01-01")
+      .lte("issue_date", "1987-12-31")
+      .order("issue_date", { ascending: true })
+      .order("page_label", { ascending: true })
+      .range(offset, offset + pageSize - 1)
+
+    if (error) throw error
+
+    const batch = (data || []) as OcrArchiveRow[]
+    rows.push(...batch)
+    if (batch.length < pageSize) break
+  }
+
+  const byIssue = new Map<string, OcrArchiveRow[]>()
+  for (const row of rows) {
+    const issueRows = byIssue.get(row.issue_date) || []
+    issueRows.push(row)
+    byIssue.set(row.issue_date, issueRows)
+  }
+
+  return Array.from(byIssue.entries()).map(([issueDate, issueRows]) => {
+    const pages = issueRows.map(ocrPageUrl)
+    return {
+      slug: issueDate,
+      title: titleFromIsoDate(issueDate),
+      publication: "Checkered Flag Racing News",
+      publicationSlug: "checkered-flag-racing-news",
+      year: Number(issueDate.slice(0, 4)),
+      issueDate,
+      description: null,
+      coverImage: pages[0] || "",
+      backCoverImage: pages.at(-1) || pages[0] || null,
+      thumbnail: pages[0] || null,
+      pages,
+      featured: false,
+    }
+  })
+}
+
+'''
+              s = s.replace(insert_before, helper + insert_before, 1)
+
+          historical_loader_marker = 'let historicalCfrnIssues: NewspaperIssue[] = []'
+          if historical_loader_marker not in s:
+              insert_before = '    let ocrBackedCfrnIssues: NewspaperIssue[] = []\n'
+              if insert_before not in s:
+                  raise SystemExit("CFRN OCR loader insertion point not found")
+
+              loader = '''    let historicalCfrnIssues: NewspaperIssue[] = []
+    try {
+      historicalCfrnIssues = await getHistoricalCfrnOcrIssues()
+    } catch (error) {
+      // Keep the checked-in manifest and explicit storage bridges available if a
+      // temporary Supabase problem occurs while refreshing the archive inventory.
+      console.error("CFRN HISTORICAL OCR ARCHIVE BRIDGE ERROR:", error)
+    }
+
+'''
+              s = s.replace(insert_before, loader + insert_before, 1)
+
+          if '      ...historicalCfrnIssues,\n      ...ocrBackedCfrnIssues,' not in s:
+              old = '      ...ocrBackedMrnIssues,\n      ...ocrBackedCfrnIssues,'
+              new = '      ...ocrBackedMrnIssues,\n      ...historicalCfrnIssues,\n      ...ocrBackedCfrnIssues,'
+              if old not in s:
+                  raise SystemExit("CFRN historical merge insertion point not found")
+              s = s.replace(old, new, 1)
+
+          # Bust the shared Next.js data cache so the corrected inventory appears
+          # immediately on the newly deployed Media pages.
+          s = s.replace('["museum-newspaper-archive-v3"]', '["museum-newspaper-archive-v4"]', 1)
+
+          path.write_text(s)
+          PY
+
+      - name: Verify CFRN bridge wiring
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s = Path("lib/newspapers.ts").read_text()
+          checks = [
+              '"1987-12-16": 32,',
+              'async function getHistoricalCfrnOcrIssues()',
+              '.gte("issue_date", "1980-01-01")',
+              '.lte("issue_date", "1987-12-31")',
+              '...historicalCfrnIssues,',
+              '["museum-newspaper-archive-v4"]',
+          ]
+          missing = [item for item in checks if item not in s]
+          if missing:
+              raise SystemExit(f"Missing expected CFRN archive bridge changes: {missing}")
+          print("CFRN archive inventory bridge verified")
+          PY
+
+      - name: Remove one-time workflow and commit repair
+        shell: bash
+        run: |
+          rm .github/workflows/fix-cfrn-archive-inventory.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/newspapers.ts .github/workflows/fix-cfrn-archive-inventory.yml
+          git commit -m "Fix CFRN media archive issue inventory"
+          git push origin HEAD:main
