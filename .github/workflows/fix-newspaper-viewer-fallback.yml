@@ -17,70 +17,25 @@ jobs:
         with:
           ref: main
 
-      - name: Add non-JavaScript page-opening fallback
+      - name: Add native page-opening fallback
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-
           p = Path('app/media/newspapers/[publication]/[issue]/NewspaperPageViewer.tsx')
           s = p.read_text(encoding='utf-8')
-
-          old = '''    <div style={{display:'flex',alignItems:'center',gap:16,flexWrap:'wrap',padding:'12px 0 20px'}}>
-      <button type="button" style={openIssueButton} onClick={() => {
-        requestSequence.current += 1
-        setSearchMode(false)
-        setMatchNavBusy(false)
-        setMatchNavError("")
-        setOpenPageIndex(0)
-        resetZoom()
-      }}>Read full newspaper →</button>
-      <span style={{color:'#aeb4b8',fontSize:13}}>{pages.length} preserved pages • Use arrows to turn pages • Zoom available</span>
-    </div>
-'''
-
-          new = '''    <div style={{display:'flex',alignItems:'center',gap:16,flexWrap:'wrap',padding:'12px 0 20px'}}>
-      <a
-        href={pages[0]?.image || "#"}
-        target="_blank"
-        rel="noreferrer"
-        style={{...openIssueButton,textDecoration:'none',display:'inline-flex',alignItems:'center'}}
-        onClick={(event) => {
-          if (!pages.length) return
-          event.preventDefault()
-          requestSequence.current += 1
-          setSearchMode(false)
-          setMatchNavBusy(false)
-          setMatchNavError("")
-          setOpenPageIndex(0)
-          resetZoom()
-        }}
-      >Read full newspaper →</a>
-      <span style={{color:'#aeb4b8',fontSize:13}}>{pages.length} preserved pages • Use arrows to turn pages • Zoom available</span>
-      <details style={{width:'100%',marginTop:2}}>
-        <summary style={{cursor:'pointer',color:'#c5a86b',fontSize:12,fontWeight:800}}>Direct page links</summary>
-        <div style={{display:'flex',gap:8,flexWrap:'wrap',paddingTop:10}}>
-          {pages.map((page, index) => <a
-            key={`${page.image}-${index}`}
-            href={page.image}
-            target="_blank"
-            rel="noreferrer"
-            style={{display:'inline-flex',alignItems:'center',justifyContent:'center',minWidth:38,height:34,padding:'0 8px',border:'1px solid #555e65',borderRadius:5,color:'#f2d57a',background:'#171d21',textDecoration:'none',fontSize:12,fontWeight:800}}
-          >{index + 1}</a>)}
-        </div>
-      </details>
-    </div>
-'''
-
-          if old not in s:
-              if 'Direct page links' in s:
-                  print('Fallback already installed')
-                  raise SystemExit(0)
-              raise SystemExit('Expected newspaper viewer button block not found')
-
-          s = s.replace(old, new, 1)
-          p.write_text(s, encoding='utf-8')
+          old_open = '<button type="button" style={openIssueButton} onClick={() => {'
+          new_open = '<a href={pages[0]?.image || "#"} target="_blank" rel="noreferrer" style={{...openIssueButton,textDecoration:\'none\',display:\'inline-flex\',alignItems:\'center\'}} onClick={(event) => {\n        if (!pages.length) return\n        event.preventDefault()'
+          old_close = '}}>Read full newspaper →</button>'
+          new_close = '}}>Read full newspaper →</a>'
+          if old_open in s and old_close in s:
+              s = s.replace(old_open, new_open, 1).replace(old_close, new_close, 1)
+              p.write_text(s, encoding='utf-8')
+          elif 'href={pages[0]?.image || "#"}' in s:
+              print('Native fallback already installed')
+          else:
+              raise SystemExit('Expected viewer button markup was not found')
           PY
 
       - name: Commit viewer fallback
@@ -94,5 +49,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add 'app/media/newspapers/[publication]/[issue]/NewspaperPageViewer.tsx'
-          git commit -m 'Make newspaper pages open without client hydration'
+          git commit -m 'Make newspaper viewer open page without hydration'
           git push origin HEAD:main
