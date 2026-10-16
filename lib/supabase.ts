@@ -30,6 +30,7 @@ const REQUEST_TIMEOUT_MS = 8_000
 const OCR_SEARCH_TIMEOUT_MS = 20_000
 const PUBLIC_READ_REVALIDATE_SECONDS = 43_200
 const PUBLIC_READ_REVALIDATE_MS = PUBLIC_READ_REVALIDATE_SECONDS * 1_000
+const RECENT_ACTIVITY_CACHE_MS = 60 * 1_000
 const MAX_STALE_MS = 7 * 24 * 60 * 60 * 1_000
 const MAX_CACHE_BODY_BYTES = 250_000
 const MAX_DRIVER_PROFILE_CACHE_BODY_BYTES = 1_500_000
@@ -124,6 +125,7 @@ function renderQuarantineResponse(url: string, method: string, accept: string) {
 const resilientFetch: typeof fetch = async (input, init) => {
   const { url, method, key, accept } = requestDetails(input, init)
   const isPublicRestRead = method === 'GET' && url.includes('/rest/v1/')
+  const isRecentActivityRead = isPublicRestRead && url.includes('/rest/v1/archive_recent_activity_mv')
   // Cache only the public driver-profile RPC made with the museum's anonymous key.
   // Other RPCs (including writes and OCR searches) remain uncached.
   const authorization = new Headers(init?.headers).get('authorization')
@@ -150,16 +152,18 @@ const resilientFetch: typeof fetch = async (input, init) => {
     ? AbortSignal.timeout(timeoutMs)
     : init?.signal
 
-  // Public museum data is refreshed in 12-hour windows. Reusing successful
-  // public REST reads across that window prevents crawlers and page refreshes
-  // from repeatedly executing identical archive queries while still allowing
-  // two scheduled refresh cycles per day. Explicit caller cache settings are preserved.
+  // Most public museum data is refreshed in 12-hour windows to protect Supabase
+  // from crawler/build bursts. Recent archive activity is intentionally different:
+  // it drives the homepage "Recently Added" box, so bypass Next's long-lived fetch
+  // cache and use only a short in-memory cache while keeping stale-response fallback.
   const fetchInit = {
     ...init,
     signal: timeoutSignal,
   } as RequestInit & { next?: { revalidate?: number } }
 
-  if (isCacheablePublicRead && !init?.cache) {
+  if (isRecentActivityRead && !init?.cache) {
+    fetchInit.cache = 'no-store'
+  } else if (isCacheablePublicRead && !init?.cache) {
     fetchInit.next = {
       ...(fetchInit.next || {}),
       revalidate: PUBLIC_READ_REVALIDATE_SECONDS,
@@ -169,7 +173,8 @@ const resilientFetch: typeof fetch = async (input, init) => {
   }
 
   if (isCacheablePublicRead) {
-    const fresh = cachedResponse(cacheKey, PUBLIC_READ_REVALIDATE_MS)
+    const freshMaxAgeMs = isRecentActivityRead ? RECENT_ACTIVITY_CACHE_MS : PUBLIC_READ_REVALIDATE_MS
+    const fresh = cachedResponse(cacheKey, freshMaxAgeMs)
     if (fresh) return fresh
 
     const existingRequest = readInFlight.get(cacheKey)
