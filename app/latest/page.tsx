@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import styles from './latest.module.css'
 
-export const revalidate = 43200
+export const revalidate = 1800
 
 type ActivityRow = {
   activity_key?: string | null
@@ -42,8 +42,9 @@ export default async function LatestArchivePage() {
         <div className={styles.eyebrow}>Museum Archive Activity</div>
         <h1>Recently Added to the Archive</h1>
         <p>
-          The latest additions across race results, point standings, series, drivers, tracks, and photographs.
-          Bulk research imports are grouped so major archive expansions stay readable.
+          The latest additions across race results, point standings, series, drivers, tracks, photographs,
+          newspapers, programs, yearbooks, and OCR-searchable research material. Bulk imports are grouped
+          so major archive expansions stay readable.
         </p>
         <Link href="/" className={styles.back}>← Museum Home</Link>
       </section>
