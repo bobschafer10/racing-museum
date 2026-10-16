@@ -61,13 +61,13 @@ export default async function NewspapersPage() {
   // public archive from falsely reporting that its OCR corpus disappeared.
   const [{ count: searchablePages, data: oldestRows }, { data: newestRows }] = await Promise.all([
     supabase
-      .from("newspaper_ocr_pages")
+      .from("newspaper_ocr_search_pages")
       .select("issue_date", { count: "exact" })
       .eq("status", "complete")
       .order("issue_date", { ascending: true })
       .limit(1),
     supabase
-      .from("newspaper_ocr_pages")
+      .from("newspaper_ocr_search_pages")
       .select("issue_date")
       .eq("status", "complete")
       .order("issue_date", { ascending: false })

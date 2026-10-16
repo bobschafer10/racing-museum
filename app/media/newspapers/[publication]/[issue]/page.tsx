@@ -282,7 +282,7 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
     if (page) {
       const pageLabel = scanFilename(page.image)
       const { data } = await supabase
-        .from("newspaper_ocr_pages")
+        .from("newspaper_ocr_search_pages")
         .select("ocr_text,ocr_json")
         .eq("publication_code", publication)
         .eq("issue_date", issue.issueDate)

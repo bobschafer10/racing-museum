@@ -206,7 +206,7 @@ async function fallbackFullTextSearch({
     }
 
     let builder: any = ocrSupabase
-      .from("newspaper_ocr_pages")
+      .from("newspaper_ocr_search_pages")
       .select("id,publication_code,issue_date,page_label,storage_path,avg_confidence,ocr_text", { count: "exact" })
       .eq("status", "complete")
       .not("ocr_text", "is", null)

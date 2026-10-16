@@ -128,7 +128,33 @@ const CFRN_1980S_PAGE_COUNTS: Record<string, number> = {
   "1987-10-07": 16,
   "1987-10-21": 16,
   "1987-11-11": 16,
-  "1988-10-19": 11,
+  "1988-03-23": 24,
+  "1988-04-06": 20,
+  "1988-04-13": 16,
+  "1988-04-20": 20,
+  "1988-04-27": 20,
+  "1988-05-04": 20,
+  "1988-05-11": 20,
+  "1988-05-18": 20,
+  "1988-05-25": 20,
+  "1988-06-01": 24,
+  "1988-06-08": 24,
+  "1988-06-15": 28,
+  "1988-06-22": 24,
+  "1988-06-29": 24,
+  "1988-07-06": 28,
+  "1988-07-13": 24,
+  "1988-07-20": 24,
+  "1988-07-27": 24,
+  "1988-08-03": 24,
+  "1988-08-10": 24,
+  "1988-08-17": 24,
+  "1988-08-24": 28,
+  "1988-08-31": 24,
+  "1988-09-07": 24,
+  "1988-09-14": 8,
+  "1988-09-28": 1,
+  "1988-10-19": 16,
 }
 
 const CFRN_1992_PAGE_COUNTS: Record<string, number> = {
@@ -322,7 +348,7 @@ async function getOcrBackedIssues(
   // on the museum without requiring a giant manifest rebuild after every batch.
   for (let offset = 0; ; offset += pageSize) {
     const { data, error } = await supabase
-      .from("newspaper_ocr_pages")
+      .from("newspaper_ocr_search_pages")
       .select("issue_date,page_label,storage_path")
       .eq("publication_code", config.publicationCode)
       .eq("status", "complete")
@@ -423,7 +449,8 @@ function getCfrn1976StorageIssues(): NewspaperIssue[] {
 
 function getCfrn1980sStorageIssues(): NewspaperIssue[] {
   return Object.entries(CFRN_1980S_PAGE_COUNTS).map(([issueDate, pageCount]) => {
-    const isIncomplete1988 = issueDate === "1988-10-19"
+    const isPagesOnly1988 = ["1988-07-20", "1988-09-14", "1988-09-28"].includes(issueDate)
+    const isPartial1988 = ["1988-09-14", "1988-09-28", "1988-10-19"].includes(issueDate)
     return {
       slug: issueDate,
       title: titleFromIsoDate(issueDate),
@@ -431,16 +458,16 @@ function getCfrn1980sStorageIssues(): NewspaperIssue[] {
       publicationSlug: "checkered-flag-racing-news",
       year: Number(issueDate.slice(0, 4)),
       issueDate,
-      description: isIncomplete1988
-        ? "Partial supplied issue: 11 scans are preserved; all available pages are OCR searchable."
+      description: isPartial1988
+        ? "Partial supplied issue: all available scans are preserved and OCR searchable."
         : null,
-      coverImage: isIncomplete1988
+      coverImage: isPagesOnly1988
         ? `${CFRN_STORAGE_ROOT}/${issueDate}/001.jpg`
         : `${CFRN_STORAGE_ROOT}/${issueDate}/front-cover.jpg`,
-      backCoverImage: isIncomplete1988
+      backCoverImage: isPagesOnly1988
         ? `${CFRN_STORAGE_ROOT}/${issueDate}/${String(pageCount).padStart(3, "0")}.jpg`
         : `${CFRN_STORAGE_ROOT}/${issueDate}/back-cover.jpg`,
-      thumbnail: isIncomplete1988
+      thumbnail: isPagesOnly1988
         ? `${CFRN_STORAGE_ROOT}/${issueDate}/001.jpg`
         : `${CFRN_STORAGE_ROOT}/${issueDate}/thumbnail.jpg`,
       pages: cfrn1976Pages(issueDate, 1, pageCount),
@@ -632,7 +659,7 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
 // Newspaper manifests and OCR-complete issue lists change only during imports.
 // Avoid rescanning the OCR tables for every individual issue visit.
 // Revalidate at most twice daily, while keeping the checked-in manifest fallback.
-const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v2"], {
+const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v3"], {
   revalidate: 43200,
   tags: ["museum-newspapers"],
 })
@@ -686,7 +713,7 @@ export async function getNewspaperIssue(
       !/^\d{4}-\d{2}-\d{2}$/.test(issueSlug)) return undefined
 
   const { data, error } = await supabase
-    .from("newspaper_ocr_pages")
+    .from("newspaper_ocr_search_pages")
     .select("issue_date,page_label,storage_path")
     .eq("publication_code", publicationSlug)
     .eq("issue_date", issueSlug)
