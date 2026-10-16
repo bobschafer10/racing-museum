@@ -386,14 +386,16 @@ export default function NewspaperPageViewer({
 
   return <>
     <div style={{display:'flex',alignItems:'center',gap:16,flexWrap:'wrap',padding:'12px 0 20px'}}>
-      <button type="button" style={openIssueButton} onClick={() => {
+      <a href={pages[0]?.image || "#"} target="_blank" rel="noreferrer" style={{...openIssueButton,textDecoration:'none',display:'inline-flex',alignItems:'center'}} onClick={(event) => {
+        if (!pages.length) return
+        event.preventDefault()
         requestSequence.current += 1
         setSearchMode(false)
         setMatchNavBusy(false)
         setMatchNavError("")
         setOpenPageIndex(0)
         resetZoom()
-      }}>Read full newspaper →</button>
+      }}>Read full newspaper →</a>
       <span style={{color:'#aeb4b8',fontSize:13}}>{pages.length} preserved pages • Use arrows to turn pages • Zoom available</span>
     </div>
 
