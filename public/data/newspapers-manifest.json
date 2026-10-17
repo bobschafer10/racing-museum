@@ -41829,7 +41829,8 @@
     "ocrTextPath": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1991-04-03/ocr.txt",
     "missingPrintedPages": [],
     "partialIssue": false,
-    "generatedBy": "CFRN 1991 source reconciliation"
+    "generatedBy": "CFRN 1991 source reconciliation",
+    "archiveNote": "Includes the separately numbered 12-page 1991 Race Fans Guide after printed page 2."
   },
   {
     "slug": "1991-04-10",
@@ -42270,7 +42271,8 @@
     "ocrTextPath": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1991-05-22/ocr.txt",
     "missingPrintedPages": [],
     "partialIssue": false,
-    "generatedBy": "CFRN 1991 source reconciliation"
+    "generatedBy": "CFRN 1991 source reconciliation",
+    "archiveNote": "Printed page 8 carries a May 15 header, but reports May 17–18 races and belongs to the May 22 sequence."
   },
   {
     "slug": "1991-05-29",
@@ -43409,7 +43411,8 @@
     "ocrTextPath": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/newspapers/checkered-flag-racing-news/1991-08-28/ocr.txt",
     "missingPrintedPages": [],
     "partialIssue": false,
-    "generatedBy": "CFRN 1991 source reconciliation"
+    "generatedBy": "CFRN 1991 source reconciliation",
+    "archiveNote": "A loose advertising sheet obscures part of printed page 4 in the original scan; no unobscured capture is supplied."
   },
   {
     "slug": "1991-09-04",
