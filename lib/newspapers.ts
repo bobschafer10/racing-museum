@@ -723,7 +723,7 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
 // Newspaper manifests and OCR-complete issue lists change only during imports.
 // Avoid rescanning the OCR tables for every individual issue visit.
 // Revalidate at most twice daily, while keeping the checked-in manifest fallback.
-const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v4"], {
+const cachedNewspaperIssues = unstable_cache(loadNewspaperIssues, ["museum-newspaper-archive-v5"], {
   revalidate: 43200,
   tags: ["museum-newspapers"],
 })
