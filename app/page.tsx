@@ -6,8 +6,7 @@ import searchStyles from './homeSearchFix.module.css'
 import roomStyles from './featuredRoomEntrance.module.css'
 import { getPhotoUrl } from '@/lib/photos'
 
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
+export const revalidate = 43200
 
 type FeaturedRoom = {
   roomNumber: string
