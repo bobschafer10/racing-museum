@@ -296,7 +296,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
         </section>
 
         <section id="career" className={styles.careerWrap}>
-          <DriverCareerAccomplishments slug={slug} />
+          <DriverCareerAccomplishments slug={slug} seriesWins={seriesWinRows} />
         </section>
 
         <section className={styles.splitSection}>
