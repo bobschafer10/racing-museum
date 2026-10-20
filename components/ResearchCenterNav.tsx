@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 
 const TOOLS = [
   { key: 'feature-wins', label: 'Feature Wins', href: '/stats/feature-winners' },
+  { key: 'annual-leaders', label: 'Annual Leaders', href: '/stats/annual-feature-leaders' },
   { key: 'results', label: 'Results Archive', href: '/results' },
   { key: 'newspapers', label: 'Newspaper OCR', href: '/media/newspapers#newspaper-search' },
   { key: 'standings', label: 'Tracks & Standings', href: '/tracks' },
@@ -14,8 +15,10 @@ export default function ResearchCenterNav() {
   const pathname = usePathname()
 
   const standingsRoute = /^\/tracks\/[^/]+\/standings(?:\/|$)/.test(pathname)
-  const activeKey = pathname.startsWith('/stats/feature-winners')
-    ? 'feature-wins'
+  const activeKey = pathname.startsWith('/stats/annual-feature-leaders')
+    ? 'annual-leaders'
+    : pathname.startsWith('/stats/feature-winners')
+      ? 'feature-wins'
     : pathname.startsWith('/results')
       ? 'results'
       : pathname.startsWith('/media/newspapers')
