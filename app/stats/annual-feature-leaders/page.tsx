@@ -69,9 +69,6 @@ export default async function AnnualFeatureLeadersPage({ searchParams }: PagePro
         </p>
         <div className={styles.heroLinks}>
           <Link href="/stats/feature-winners?scope=full">Explore all feature wins →</Link>
-          <Link href="https://docs.google.com/spreadsheets/d/1vr35GCn2siO23RZ-asl-_S2N2Fx2mwPwYkmvaXPle9s/edit">
-            Open historical audit workbook ↗
-          </Link>
         </div>
       </header>
 
