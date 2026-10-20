@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
+import { isSpecialEventSeriesId } from '@/lib/series-accomplishment-classification'
 import { DriverCareerAccomplishments } from '@/components/DriverCareerAccomplishments'
 import PhotoLightboxImage from '@/components/PhotoLightboxImage'
 import styles from './driver-profile.module.css'
@@ -131,7 +132,9 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
   const externalSeriesChampionships = safeCareerHeadlineRows.filter((row) =>
     SERIES_CHAMPIONSHIP_TYPES.has(row.accomplishment_type),
   ).length
-  const seriesChampionships = (seriesChampionshipRows ?? []).length + externalSeriesChampionships
+  const seriesChampionships = (seriesChampionshipRows ?? []).filter(
+    (row: any) => !isSpecialEventSeriesId(row.series_id),
+  ).length + externalSeriesChampionships
 
   const externalTrackChampionships = safeCareerHeadlineRows.filter((row) =>
     row.accomplishment_type === 'TRACK_CHAMPIONSHIP',
