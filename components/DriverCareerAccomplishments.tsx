@@ -24,7 +24,18 @@ type MuseumSeriesChampionship = {
   series_name: string
 }
 
-export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
+type MuseumSeriesWin = {
+  series_id: number
+  wins: number
+}
+
+export async function DriverCareerAccomplishments({
+  slug,
+  seriesWins = [],
+}: {
+  slug: string
+  seriesWins?: MuseumSeriesWin[]
+}) {
   const [{ data }, { data: driverRow }] = await Promise.all([
     supabase
       .from('DriverCareerAccomplishments')
@@ -44,35 +55,37 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
   const rows = (data ?? []) as CareerAccomplishment[]
   const driverId = Number((driverRow as any)?.driver_id || 0)
 
-  let museumSeriesChampionships: MuseumSeriesChampionship[] = []
-  let museumSpecialEventWins: MuseumSeriesChampionship[] = []
-  if (driverId) {
-    const { data: seasonRows } = await supabase
-      .from('SeriesSeasons')
-      .select('series_id, year')
-      .eq('champion_driver_id', driverId)
-      .order('year', { ascending: true })
+  const { data: seasonRows } = driverId
+    ? await supabase
+        .from('SeriesSeasons')
+        .select('series_id, year')
+        .eq('champion_driver_id', driverId)
+        .order('year', { ascending: true })
+    : { data: [] as Array<{ series_id: number; year: number | null }> }
 
-    const seriesIds = Array.from(new Set(
-      (seasonRows ?? []).map((row: any) => Number(row.series_id)).filter(Boolean),
-    ))
-    const { data: seriesRows } = seriesIds.length
-      ? await supabase.from('Series').select('id, series_name').in('id', seriesIds)
-      : { data: [] as any[] }
+  // Reuse the driver page's already-aggregated SeriesEvents win totals.
+  // Fetch only series names, rather than reloading every individual race.
+  const seriesIds = Array.from(new Set([
+    ...(seasonRows ?? []).map((row: any) => Number(row.series_id)),
+    ...seriesWins.map((row) => Number(row.series_id)),
+  ].filter(Boolean)))
+  const { data: seriesRows } = seriesIds.length
+    ? await supabase.from('Series').select('id, series_name').in('id', seriesIds)
+    : { data: [] as Array<{ id: number; series_name: string }> }
 
-    const seriesNameById = new Map<number, string>()
-    for (const row of seriesRows ?? []) {
-      seriesNameById.set(Number((row as any).id), String((row as any).series_name || 'Series'))
-    }
-
-    const museumSeasonRows = (seasonRows ?? []).map((row: any) => ({
-      year: row.year ?? null,
-      series_id: Number(row.series_id),
-      series_name: seriesNameById.get(Number(row.series_id)) || 'Series',
-    }))
-    museumSeriesChampionships = museumSeasonRows.filter((row) => !isSpecialEventSeriesId(row.series_id))
-    museumSpecialEventWins = museumSeasonRows.filter((row) => isSpecialEventSeriesId(row.series_id))
+  const seriesNameById = new Map<number, string>()
+  for (const row of seriesRows ?? []) {
+    seriesNameById.set(Number((row as any).id), String((row as any).series_name || 'Series'))
   }
+  const museumSeasonRows = (seasonRows ?? []).map((row: any) => ({
+    year: row.year ?? null,
+    series_id: Number(row.series_id),
+    series_name: seriesNameById.get(Number(row.series_id)) || 'Series',
+  }))
+  const museumSeriesChampionships: MuseumSeriesChampionship[] = museumSeasonRows
+    .filter((row) => !isSpecialEventSeriesId(row.series_id))
+  const museumSpecialEventWins: MuseumSeriesChampionship[] = museumSeasonRows
+    .filter((row) => isSpecialEventSeriesId(row.series_id))
 
   if (!rows.length && !museumSeriesChampionships.length && !museumSpecialEventWins.length) return null
 
@@ -84,6 +97,54 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
   const summaries = rows.filter((row) => row.accomplishment_type === 'CAREER_SERIES_SUMMARY')
   const selectedVictories = [...majorVictories, ...outsideWins]
   const championshipItems = mergeSeriesChampionships(museumSeriesChampionships, externalChampionships)
+
+  // Summarize race wins by actual touring/points series. Separate annual
+  // specials (Wayne Carter Classic, All-Star 100, etc.) into Box 3 below.
+  // Include verified outside-area series wins not represented in SeriesEvents.
+  const winsBySeries = new Map<string, { name: string; count: number }>()
+  for (const row of seriesWins) {
+    const seriesId = Number(row.series_id)
+    const count = Number(row.wins)
+    if (isSpecialEventSeriesId(seriesId) || !Number.isFinite(count) || count <= 0) continue
+    const name = seriesNameById.get(seriesId)
+    if (!name) continue
+    const key = normalizeSeriesName(name)
+    const current = winsBySeries.get(key)
+    winsBySeries.set(key, { name, count: (current?.count ?? 0) + count })
+  }
+
+  const outsideWinsBySeries = new Map<string, { name: string; count: number }>()
+  for (const row of selectedVictories) {
+    if (!row.series_name || row.finishing_position !== 1 || row.accomplishment_type !== 'OUTSIDE_AREA_FEATURE_WIN') continue
+    const key = normalizeSeriesName(row.series_name)
+    const current = outsideWinsBySeries.get(key)
+    outsideWinsBySeries.set(key, {
+      name: row.series_name,
+      count: (current?.count ?? 0) + 1,
+    })
+  }
+  for (const [key, outside] of outsideWinsBySeries) {
+    const museum = winsBySeries.get(key)
+    // Do not add the two sets blindly: the same race may exist in both
+    // SeriesEvents and broader-career records.
+    if (!museum || outside.count > museum.count) winsBySeries.set(key, outside)
+  }
+  const rankedSeriesWins = [...winsBySeries.values()].sort(
+    (a, b) => b.count - a.count || a.name.localeCompare(b.name),
+  )
+
+  const additionalCareerSummaries = summaries.filter((row) => {
+    const note = normalizeSeriesName(row.notes || '')
+    if (!note.includes('win')) return true
+    // Imported prose summaries such as "5 ASA National Tour event wins"
+    // should not repeat a sourced, numerical SeriesEvents win total.
+    return !rankedSeriesWins.some(({ name }) => note.includes(normalizeSeriesName(name)))
+  })
+  const seriesSuccessItems = [
+    ...rankedSeriesWins.map(({ name, count }) =>
+      `${count.toLocaleString('en-US')} ${name} ${count === 1 ? 'win' : 'wins'}`),
+    ...[...additionalCareerSummaries, ...majorTop5s].map(formatAccomplishment),
+  ]
 
   // These SeriesSeasons rows are annual-event winners, not season champions.
   // Keep them visible as victories without duplicating a matching imported
@@ -112,8 +173,8 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
 
   const groups = [
     championshipItems.length ? { kicker: 'Championship record', title: 'Series Championships', items: championshipItems } : null,
-    summaries.length || majorTop5s.length
-      ? { kicker: 'Touring & major events', title: 'Major Series Success', items: [...summaries, ...majorTop5s].map(formatAccomplishment) }
+    seriesSuccessItems.length
+      ? { kicker: 'Touring & series records', title: 'Series & Touring Wins', items: seriesSuccessItems }
       : null,
     selectedVictoryItems.length
       ? { kicker: 'Selected victories', title: 'Major & Touring Wins', items: selectedVictoryItems }
