@@ -1,4 +1,5 @@
 import { supabase } from '@/lib/supabase'
+import { isSpecialEventSeriesId } from '@/lib/series-accomplishment-classification'
 import styles from './DriverCareerAccomplishments.module.css'
 
 type CareerAccomplishment = {
@@ -44,6 +45,7 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
   const driverId = Number((driverRow as any)?.driver_id || 0)
 
   let museumSeriesChampionships: MuseumSeriesChampionship[] = []
+  let museumSpecialEventWins: MuseumSeriesChampionship[] = []
   if (driverId) {
     const { data: seasonRows } = await supabase
       .from('SeriesSeasons')
@@ -63,13 +65,16 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
       seriesNameById.set(Number((row as any).id), String((row as any).series_name || 'Series'))
     }
 
-    museumSeriesChampionships = (seasonRows ?? []).map((row: any) => ({
+    const museumSeasonRows = (seasonRows ?? []).map((row: any) => ({
       year: row.year ?? null,
+      series_id: Number(row.series_id),
       series_name: seriesNameById.get(Number(row.series_id)) || 'Series',
     }))
+    museumSeriesChampionships = museumSeasonRows.filter((row) => !isSpecialEventSeriesId(row.series_id))
+    museumSpecialEventWins = museumSeasonRows.filter((row) => isSpecialEventSeriesId(row.series_id))
   }
 
-  if (!rows.length && !museumSeriesChampionships.length) return null
+  if (!rows.length && !museumSeriesChampionships.length && !museumSpecialEventWins.length) return null
 
   const externalChampionships = rows.filter((row) => isSeriesChampionship(row.accomplishment_type))
   const trackChampionships = rows.filter((row) => row.accomplishment_type === 'TRACK_CHAMPIONSHIP')
@@ -80,13 +85,38 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
   const selectedVictories = [...majorVictories, ...outsideWins]
   const championshipItems = mergeSeriesChampionships(museumSeriesChampionships, externalChampionships)
 
+  // These SeriesSeasons rows are annual-event winners, not season champions.
+  // Keep them visible as victories without duplicating a matching imported
+  // accomplishment from DriverCareerAccomplishments.
+  const seenSpecialEventWins = new Set<string>()
+  const additionalEventWins = museumSpecialEventWins.filter((win) => {
+    const key = `${win.year ?? ''}|${normalizeSeriesName(win.series_name)}`
+    if (seenSpecialEventWins.has(key)) return false
+    seenSpecialEventWins.add(key)
+    return !selectedVictories.some((row) =>
+      row.year === win.year &&
+      [row.event_name, row.series_name].some((name) =>
+        name && normalizeSeriesName(name) === normalizeSeriesName(win.series_name),
+      ),
+    )
+  })
+  const selectedVictoryItems = [
+    ...selectedVictories.map((row) => ({ year: row.year, label: formatAccomplishment(row) })),
+    ...additionalEventWins.map((win) => ({
+      year: win.year,
+      label: `${win.year ? `${win.year} ` : ''}${win.series_name} Winner`,
+    })),
+  ]
+    .sort((a, b) => (a.year ?? Number.MAX_SAFE_INTEGER) - (b.year ?? Number.MAX_SAFE_INTEGER))
+    .map((win) => win.label)
+
   const groups = [
     championshipItems.length ? { kicker: 'Championship record', title: 'Series Championships', items: championshipItems } : null,
     summaries.length || majorTop5s.length
       ? { kicker: 'Touring & major events', title: 'Major Series Success', items: [...summaries, ...majorTop5s].map(formatAccomplishment) }
       : null,
-    selectedVictories.length
-      ? { kicker: 'Selected victories', title: 'Major & Touring Wins', items: selectedVictories.map(formatAccomplishment) }
+    selectedVictoryItems.length
+      ? { kicker: 'Selected victories', title: 'Major & Touring Wins', items: selectedVictoryItems }
       : null,
   ].filter(Boolean) as Array<{ kicker: string; title: string; items: string[] }>
 
@@ -121,7 +151,7 @@ export async function DriverCareerAccomplishments({ slug }: { slug: string }) {
       ) : null}
 
       <p className={styles.disclaimer}>
-        Museum series championships and verified broader-career records are merged and deduplicated here. Museum-recorded race results remain in their original event records.
+        Season-long championships are distinguished from major-event victories. Museum-recorded race results remain in their original event records.
       </p>
     </section>
   )
