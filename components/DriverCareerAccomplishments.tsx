@@ -29,12 +29,20 @@ type MuseumSeriesWin = {
   wins: number
 }
 
+type MuseumTrackChampionship = {
+  year: number | string | null
+  track_name: string
+  class_name: string | null
+}
+
 export async function DriverCareerAccomplishments({
   slug,
   seriesWins = [],
+  trackChampionships = [],
 }: {
   slug: string
   seriesWins?: MuseumSeriesWin[]
+  trackChampionships?: MuseumTrackChampionship[]
 }) {
   const [{ data }, { data: driverRow }] = await Promise.all([
     supabase
@@ -87,16 +95,21 @@ export async function DriverCareerAccomplishments({
   const museumSpecialEventWins: MuseumSeriesChampionship[] = museumSeasonRows
     .filter((row) => isSpecialEventSeriesId(row.series_id))
 
-  if (!rows.length && !museumSeriesChampionships.length && !museumSpecialEventWins.length) return null
+  if (!rows.length && !museumSeriesChampionships.length && !museumSpecialEventWins.length && !trackChampionships.length && !seriesWins.length) return null
 
   const externalChampionships = rows.filter((row) => isSeriesChampionship(row.accomplishment_type))
-  const trackChampionships = rows.filter((row) => row.accomplishment_type === 'TRACK_CHAMPIONSHIP')
+  const externalTrackChampionships = rows.filter((row) => row.accomplishment_type === 'TRACK_CHAMPIONSHIP')
   const majorVictories = rows.filter((row) => row.accomplishment_type === 'MAJOR_EVENT_WIN')
   const outsideWins = rows.filter((row) => row.accomplishment_type === 'OUTSIDE_AREA_FEATURE_WIN')
   const majorTop5s = rows.filter((row) => row.accomplishment_type === 'MAJOR_TOP5')
   const summaries = rows.filter((row) => row.accomplishment_type === 'CAREER_SERIES_SUMMARY')
   const selectedVictories = [...majorVictories, ...outsideWins]
-  const championshipItems = mergeSeriesChampionships(museumSeriesChampionships, externalChampionships)
+  const championshipItems = summarizeChampionships(
+    museumSeriesChampionships,
+    externalChampionships,
+    trackChampionships,
+    externalTrackChampionships,
+  )
 
   // Summarize race wins by actual touring/points series. Separate annual
   // specials (Wayne Carter Classic, All-Star 100, etc.) into Box 3 below.
@@ -172,7 +185,7 @@ export async function DriverCareerAccomplishments({
     .map((win) => win.label)
 
   const groups = [
-    championshipItems.length ? { kicker: 'Championship record', title: 'Series Championships', items: championshipItems } : null,
+    championshipItems.length ? { kicker: 'Championship record', title: 'Series & Track Championships', items: championshipItems } : null,
     seriesSuccessItems.length
       ? { kicker: 'Touring & series records', title: 'Series & Touring Wins', items: seriesSuccessItems }
       : null,
@@ -205,12 +218,6 @@ export async function DriverCareerAccomplishments({
         ))}
       </div>
 
-      {trackChampionships.length > 0 ? (
-        <p className={styles.note}>
-          Additional verified track championships are included in the Track Championships total and championship archive below.
-        </p>
-      ) : null}
-
       <p className={styles.disclaimer}>
         Season-long championships are distinguished from major-event victories. Museum-recorded race results remain in their original event records.
       </p>
@@ -219,39 +226,60 @@ export async function DriverCareerAccomplishments({
 }
 
 function isSeriesChampionship(type: string) {
-  return ['SERIES_CHAMPIONSHIP', 'REGIONAL_CHAMPIONSHIP', 'NATIONAL_CHAMPIONSHIP'].includes(type)
+  return ['SERIES_CHAMPIONSHIP', 'REGIONAL_CHAMPIONSHIP', 'NATIONAL_CHAMPIONSHIP', 'STATE_CHAMPIONSHIP'].includes(type)
 }
 
-function mergeSeriesChampionships(museumRows: MuseumSeriesChampionship[], externalRows: CareerAccomplishment[]) {
-  const items: { year: number | null; series: string; label: string }[] = []
-  const seen = new Set<string>()
-
-  for (const row of museumRows) {
-    const key = `${row.year ?? ''}|${normalizeSeriesName(row.series_name)}`
-    if (seen.has(key)) continue
-    seen.add(key)
-    items.push({
-      year: row.year,
-      series: row.series_name,
-      label: `${row.year ? `${row.year} ` : ''}${row.series_name} Champion`,
-    })
+/**
+ * Box 1 summarizes distinct championship seasons. A track + class and a
+ * touring/points series are separate titles; an event victory is neither.
+ * Import duplicates are counted only once per year and championship.
+ */
+function summarizeChampionships(
+  museumSeriesRows: MuseumSeriesChampionship[],
+  externalSeriesRows: CareerAccomplishment[],
+  museumTrackRows: MuseumTrackChampionship[],
+  externalTrackRows: CareerAccomplishment[],
+): string[] {
+  const grouped = new Map<string, { label: string; years: Set<string> }>()
+  const recordTitle = (
+    type: 'series' | 'track',
+    name: string,
+    year: number | string | null,
+    className?: string | null,
+  ) => {
+    const label = type === 'track' && className ? `${name} ${className}` : name
+    const key = `${type}|${normalizeSeriesName(name)}|${type === 'track' ? normalizeSeriesName(className || '') : ''}`
+    const group = grouped.get(key) ?? { label, years: new Set<string>() }
+    group.years.add(String(year ?? 'undated'))
+    grouped.set(key, group)
   }
 
-  for (const row of externalRows) {
-    const series = row.series_name || row.track_name || row.notes || 'Championship'
-    const key = `${row.year ?? ''}|${normalizeSeriesName(series)}`
-    if (seen.has(key)) continue
-    seen.add(key)
-    items.push({
-      year: row.year,
-      series,
-      label: `${row.year ? `${row.year} ` : ''}${series} Champion`,
-    })
+  for (const row of museumSeriesRows) recordTitle('series', row.series_name, row.year)
+  for (const row of externalSeriesRows) {
+    const name = row.series_name || row.track_name || row.notes
+    if (name) recordTitle('series', name, row.year)
   }
 
-  return items
-    .sort((a, b) => (a.year ?? Number.MAX_SAFE_INTEGER) - (b.year ?? Number.MAX_SAFE_INTEGER) || a.series.localeCompare(b.series))
-    .map((item) => item.label)
+  const existingTrackYears = new Set(
+    museumTrackRows.map((row) => `${row.year ?? ''}|${normalizeSeriesName(row.track_name)}`),
+  )
+  for (const row of museumTrackRows) {
+    if (row.track_name) recordTitle('track', row.track_name, row.year, row.class_name)
+  }
+  for (const row of externalTrackRows) {
+    const name = row.track_name || row.series_name
+    if (!name) continue
+    // An external record may omit its division. If the museum already
+    // records that track championship in the same year, don't count twice.
+    const museumKey = `${row.year ?? ''}|${normalizeSeriesName(name)}`
+    if (existingTrackYears.has(museumKey)) continue
+    recordTitle('track', name, row.year)
+  }
+
+  return [...grouped.values()]
+    .map(({ label, years }) => ({ label, count: years.size }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
+    .map(({ label, count }) => `${count} ${label} Championship${count === 1 ? '' : 's'}`)
 }
 
 function normalizeSeriesName(value: string) {
