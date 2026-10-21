@@ -68,10 +68,10 @@ export default async function TrackFeatureWinnersPage({
         .order('win_count', { ascending: false })
         .limit(1000),
       supabase
-        .from('global_results_view')
-        .select('*', { count: 'exact', head: true })
+        .from('track_full_results_view')
+        .select('race_id', { count: 'exact', head: true })
         .eq('track_slug', slug)
-        .eq('finishing_position', 1),
+        .not('first_place_driver', 'is', null),
       supabase
         .from('track_results_year_summary_view')
         .select('result_year')
