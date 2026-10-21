@@ -136,9 +136,9 @@ export default async function TrackProfilePage({
       .limit(1000),
 
     supabase
-      .from("track_recent_results_summary_view")
+      .from("track_full_results_view")
       .select(
-        "track_slug,race_date,class_name,first_place_name,first_place_slug,second_place_name,second_place_slug,third_place_name,third_place_slug"
+        "track_slug,race_date,class_name,first_place_name:first_place_driver,first_place_slug:first_place_driver_slug,second_place_name:second_place_driver,second_place_slug:second_place_driver_slug,third_place_name:third_place_driver,third_place_slug:third_place_driver_slug"
       )
       .eq("track_slug", slug)
       .order("race_date", { ascending: false })
@@ -152,10 +152,10 @@ export default async function TrackProfilePage({
       .order("result_year", { ascending: true }),
 
     supabase
-      .from("global_results_view")
-      .select("*", { count: "exact", head: true })
+      .from("track_full_results_view")
+      .select("race_id", { count: "exact", head: true })
       .eq("track_slug", slug)
-      .eq("finishing_position", 1),
+      .not("first_place_driver", "is", null),
   ])
 
   const programs = (await getRacePrograms())
