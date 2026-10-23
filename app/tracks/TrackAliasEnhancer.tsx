@@ -40,7 +40,9 @@ function buildAliasBlock(
 
   const label = document.createElement('span')
   label.className = styles.aliasLabel
-  label.textContent = trackAliases.length === 1 ? 'Also known as' : 'Historic names'
+  label.textContent = variant === 'directory'
+    ? 'AKA'
+    : trackAliases.length === 1 ? 'Also known as' : 'Historic names'
   block.appendChild(label)
 
   const names = document.createElement('span')
@@ -50,7 +52,8 @@ function buildAliasBlock(
     const item = document.createElement('span')
     item.className = styles.aliasItem
 
-    if (alias.alias_logo_url) {
+    // The complete directory is a textual index, not a second logo gallery.
+    if (alias.alias_logo_url && variant !== 'directory') {
       const image = document.createElement('img')
       image.src = alias.alias_logo_url
       image.alt = alias.alias_name
@@ -67,7 +70,7 @@ function buildAliasBlock(
     if (years) {
       const yearSpan = document.createElement('span')
       yearSpan.className = styles.aliasYears
-      yearSpan.textContent = years
+      yearSpan.textContent = variant === 'directory' ? ` (${years})` : years
       item.appendChild(yearSpan)
     }
 
