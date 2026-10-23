@@ -116,7 +116,13 @@ export default function TrackAliasEnhancer({ aliases }: { aliases: TrackAlias[] 
         const block = buildAliasBlock(trackAliases, tableCell ? 'directory' : 'card')
 
         if (cardName) {
-          cardName.insertAdjacentElement('afterend', block)
+          // Keep the current track name and its location together as the
+          // primary identity; historic names follow as secondary metadata.
+          const location = cardName.parentElement?.querySelector<HTMLElement>(
+            '[class*="trackCardLocation"], [class*="discoveryLocation"]',
+          )
+          const anchor = location ?? cardName
+          anchor.insertAdjacentElement('afterend', block)
         } else {
           link.insertAdjacentElement('afterend', block)
         }
