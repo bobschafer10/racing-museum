@@ -104,35 +104,63 @@
   filter: grayscale(.65);
 }
 
+/* A single, subdued metadata line under the canonical track name in the directory. */
 .directoryAlias {
-  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 5px;
+  row-gap: 0;
+  margin-top: 3px;
   white-space: normal;
+  line-height: 1.35;
 }
 
 .directoryAlias .aliasLabel {
-  font-size: 0.57rem;
+  color: #92999e;
+  font-size: 0.69rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: inherit;
+  text-transform: none;
+}
+
+.directoryAlias .aliasLabel::after {
+  content: ':';
+}
+
+.directoryAlias .aliasNames {
+  display: inline;
+  line-height: inherit;
+}
+
+.directoryAlias .aliasItem {
+  display: inline;
+  line-height: inherit;
+}
+
+.directoryAlias .aliasItem + .aliasItem::before {
+  content: ' · ';
+  color: #7e858a;
 }
 
 .directoryAlias .aliasWordmark {
   color: #aeb5ba;
   font-family: inherit;
   font-size: 0.71rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0;
+  line-height: inherit;
   text-transform: none;
   text-shadow: none;
 }
 
 .directoryAlias .aliasYears {
-  color: #959ca1;
-  font-weight: 500;
-}
-
-.directoryAlias .aliasLogo {
-  max-width: 110px;
-  max-height: 22px;
-  opacity: .8;
-  filter: grayscale(.65);
+  color: #899197;
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .profileAlias {
