@@ -143,6 +143,8 @@ export default async function StateTracksPage({
   const state = rawState.toUpperCase()
   const stateName = stateNames[state]
   if (!stateName) notFound()
+  // Use track logos instead of photo cards on the five core state directories.
+  const logosOnly = coreStates.some((item) => item.code === state)
 
   const queryParams = (await searchParams) ?? {}
   const query = (queryParams.q ?? '').trim()
@@ -380,7 +382,13 @@ export default async function StateTracksPage({
                       <div className={styles.highlightLocation}>{formatLocation(card.track)}</div>
                     </div>
                     <div className={styles.highlightMedia}>
-                      {imageUrl ? <img src={imageUrl} alt={`Racing at ${card.track.track_name}`} /> : <TrackLogo slug={card.track.slug} trackName={card.track.track_name} logoUrl={card.track.logo_url} />}
+                      {logosOnly ? (
+                        <TrackLogo slug={card.track.slug} trackName={card.track.track_name} logoUrl={card.track.logo_url} requireRealLogo />
+                      ) : imageUrl ? (
+                        <img src={imageUrl} alt={`Racing at ${card.track.track_name}`} />
+                      ) : (
+                        <TrackLogo slug={card.track.slug} trackName={card.track.track_name} logoUrl={card.track.logo_url} />
+                      )}
                     </div>
                     <div className={styles.highlightMeta}><strong>{card.left}</strong><span>{card.right}</span></div>
                   </Link>
@@ -408,7 +416,13 @@ export default async function StateTracksPage({
                   return (
                     <Link key={track.slug} href={`/tracks/${track.slug}`} className={styles.trackCard}>
                       <div className={styles.trackMedia}>
-                        {imageUrl ? <img src={imageUrl} alt={`Racing at ${track.track_name}`} /> : <TrackLogo slug={track.slug} trackName={track.track_name} logoUrl={track.logo_url} />}
+                        {logosOnly ? (
+                          <TrackLogo slug={track.slug} trackName={track.track_name} logoUrl={track.logo_url} requireRealLogo />
+                        ) : imageUrl ? (
+                          <img src={imageUrl} alt={`Racing at ${track.track_name}`} />
+                        ) : (
+                          <TrackLogo slug={track.slug} trackName={track.track_name} logoUrl={track.logo_url} />
+                        )}
                       </div>
                       <div className={styles.trackBody}>
                         <div className={styles.trackName}>{track.track_name}</div>

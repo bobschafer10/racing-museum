@@ -9,10 +9,12 @@ export default function TrackLogo({
   slug,
   trackName,
   logoUrl,
+  requireRealLogo = false,
 }: {
   slug: string
   trackName: string
   logoUrl?: string | null
+  requireRealLogo?: boolean
 }) {
   const pathname = usePathname()
   const [landingPhotoUrl, setLandingPhotoUrl] = useState<string | null>(null)
@@ -127,7 +129,7 @@ export default function TrackLogo({
           `/logos/tracks/${encodedSlug}.jpeg?v=4`,
           `/logos/tracks/${encodedSlug}.webp?v=4`,
           `/logos/tracks/${encodedSlug}.svg?v=4`,
-          `/api/track-logo/${encodedSlug}?v=4`,
+          `/api/track-logo/${encodedSlug}?v=4${requireRealLogo ? '&real=1' : ''}`,
         ]
       : []),
   ]
@@ -164,7 +166,7 @@ export default function TrackLogo({
         />
       ) : null}
       <div style={imageSrc ? fallbackStyle : { ...fallbackStyle, display: 'flex' }}>
-        <div style={fallbackLabel}>Track Logo</div>
+        <div style={fallbackLabel}>{requireRealLogo ? 'Logo Needed' : 'Track Logo'}</div>
         <div style={fallbackName}>{trackName}</div>
       </div>
     </div>
