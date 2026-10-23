@@ -19,7 +19,7 @@ const STATE_LOGO_FOLDERS: Record<string, string> = {
 }
 
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params
@@ -83,6 +83,14 @@ export async function GET(
         }
       }
     }
+  }
+
+  // Do not generate text-only images for logo-only state directory cards.
+  if (new URL(request.url).searchParams.get('real') === '1') {
+    return new NextResponse('Track logo not found', {
+      status: 404,
+      headers: { 'Cache-Control': 'no-store' },
+    })
   }
 
   const title = normalizedStateSlug
