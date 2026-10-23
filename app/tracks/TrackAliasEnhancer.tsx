@@ -121,7 +121,8 @@ export default function TrackAliasEnhancer({ aliases }: { aliases: TrackAlias[] 
           const location = cardName.parentElement?.querySelector<HTMLElement>(
             '[class*="trackCardLocation"], [class*="discoveryLocation"]',
           )
-          ;(location ?? cardName).insertAdjacentElement('afterend', block)
+          const anchor = location ?? cardName
+          anchor.insertAdjacentElement('afterend', block)
         } else {
           link.insertAdjacentElement('afterend', block)
         }
