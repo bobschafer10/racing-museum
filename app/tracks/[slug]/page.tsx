@@ -1,3 +1,4 @@
+import { getPhotoUrl as getMuseumPhotoUrl } from '@/lib/photos'
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { supabase } from "@/lib/supabase"
@@ -12,7 +13,7 @@ function getPhotoUrl(photo: any) {
   const trackSlug = photo.track_slug || photo.file_name.split("_")[0]
   const year = photo.year || photo.file_name.split("_")[1] || "unknown-year"
 
-  return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
+  return getMuseumPhotoUrl(`photos/master/${trackSlug}/${year}/${photo.file_name}`)
 }
 
 function formatDate(dateStr?: string | null) {
