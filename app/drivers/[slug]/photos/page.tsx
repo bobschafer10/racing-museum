@@ -2,14 +2,12 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import PhotoLightboxImage from '@/components/PhotoLightboxImage'
+import { getPhotoUrl } from '@/lib/photos'
 import styles from './photo-archive.module.css'
 
 export const revalidate = 43200
 
 const PAGE_SIZE = 60
-const PHOTO_BASE =
-  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
-
 type Driver = {
   driver_name: string
   hometown: string | null
@@ -163,7 +161,7 @@ function buildPhotoUrl(photo: Photo | null | undefined) {
   if (!photo?.file_name) return ''
   const track = String(photo.track_slug || 'unknown-track')
   const year = String(photo.year || 'unknown-year')
-  return `${PHOTO_BASE}/${track}/${year}/${encodeURIComponent(photo.file_name)}`
+  return getPhotoUrl(`photos/master/${track}/${year}/${photo.file_name}`)
 }
 
 function formatPhotoYear(value: Photo['year']) {
