@@ -210,22 +210,22 @@ export default async function DriversPage({
       .from('driver_landing_directory_view')
       .select('driver_name,driver_slug,hometown,state,recorded_results,recorded_wins,recorded_top_3_finishes,wisconsin_feature_wins,photo_count,championship_count')
       .order('recorded_wins', { ascending: false, nullsFirst: false })
-      .limit(8),
+      .limit(20),
     supabase
       .from('driver_landing_directory_view')
       .select('driver_name,driver_slug,hometown,state,recorded_results,recorded_wins,recorded_top_3_finishes,wisconsin_feature_wins,photo_count,championship_count')
       .order('recorded_results', { ascending: false, nullsFirst: false })
-      .limit(8),
+      .limit(20),
     supabase
       .from('driver_landing_directory_view')
       .select('driver_name,driver_slug,hometown,state,recorded_results,recorded_wins,recorded_top_3_finishes,wisconsin_feature_wins,photo_count,championship_count')
       .order('photo_count', { ascending: false, nullsFirst: false })
-      .limit(8),
+      .limit(20),
     supabase
       .from('driver_landing_directory_view')
       .select('driver_name,driver_slug,hometown,state,recorded_results,recorded_wins,recorded_top_3_finishes,wisconsin_feature_wins,photo_count,championship_count')
       .order('championship_count', { ascending: false, nullsFirst: false })
-      .limit(8),
+      .limit(20),
   ])
 
   const directoryRows = (directoryResult.data ?? []) as DriverRow[]
@@ -278,10 +278,14 @@ export default async function DriversPage({
       if (list[index]) featuredCandidates.push(list[index])
     }
   }
-  const featuredDrivers = uniqueDrivers(featuredCandidates).slice(0, 6)
+  // Keep the four archive record holders separate from the featured driver showcase.
+  const highlightedSlugs = new Set(highlightCards.map((item) => item.driver.driver_slug))
+  const featuredPool = uniqueDrivers(featuredCandidates).filter(
+    (driver) => !highlightedSlugs.has(driver.driver_slug),
+  )
 
   const photoSlugs = Array.from(new Set(
-    [...directoryRows, ...featuredDrivers, ...highlightCards.map((item) => item.driver)]
+    [...directoryRows, ...featuredPool, ...highlightCards.map((item) => item.driver)]
       .map((driver) => driver.driver_slug)
       .filter(Boolean),
   ))
@@ -296,6 +300,30 @@ export default async function DriversPage({
   const photoMap = new Map<string, PhotoRow>()
   for (const photo of (photoRows ?? []) as PhotoRow[]) {
     if (photo.driver_slug && !photoMap.has(photo.driver_slug)) photoMap.set(photo.driver_slug, photo)
+  }
+
+  // Rotate the featured showcase weekly, prioritizing drivers with an actual
+  // archive photo and including a mix of states whenever the records allow it.
+  const weekIndex = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000))
+  const rotate = (rows: DriverRow[]) => {
+    if (!rows.length) return []
+    const offset = weekIndex % rows.length
+    return [...rows.slice(offset), ...rows.slice(0, offset)]
+  }
+  const withPhotos = featuredPool.filter((driver) => getPhotoUrl(photoMap.get(driver.driver_slug)))
+  const withoutPhotos = featuredPool.filter((driver) => !getPhotoUrl(photoMap.get(driver.driver_slug)))
+  const remaining = [...rotate(withPhotos), ...rotate(withoutPhotos)]
+  const stateCounts = new Map<string, number>()
+  const featuredDrivers: DriverRow[] = []
+
+  while (featuredDrivers.length < 6 && remaining.length > 0) {
+    const diverseIndex = remaining.findIndex(
+      (driver) => (stateCounts.get(driver.state || 'Unknown') || 0) < 2,
+    )
+    const [driver] = remaining.splice(diverseIndex < 0 ? 0 : diverseIndex, 1)
+    featuredDrivers.push(driver)
+    const state = driver.state || 'Unknown'
+    stateCounts.set(state, (stateCounts.get(state) || 0) + 1)
   }
 
   const heroPhoto = featureHighlight?.driver_slug ? photoMap.get(featureHighlight.driver_slug) : null
