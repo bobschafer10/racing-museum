@@ -6,6 +6,7 @@ import { supabase } from '@/lib/supabase'
 import { isSpecialEventSeriesId } from '@/lib/series-accomplishment-classification'
 import { DriverCareerAccomplishments } from '@/components/DriverCareerAccomplishments'
 import PhotoLightboxImage from '@/components/PhotoLightboxImage'
+import { getPhotoUrl } from '@/lib/photos'
 import styles from './driver-profile.module.css'
 
 type Driver = {
@@ -35,9 +36,6 @@ type CareerHeadlineRow = {
 }
 
 export const revalidate = 43200
-
-const SUPABASE_PHOTO_BASE =
-  'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master'
 
 const COVERAGE_STATES = new Set(['WI', 'MN', 'MI', 'IL'])
 const SERIES_CHAMPIONSHIP_TYPES = new Set([
@@ -179,7 +177,7 @@ export default async function DriverProfilePage({ params }: { params: Promise<{ 
     if (!photoObj?.file_name) return ''
     const track = String(photoObj.track_slug || 'unknown-track')
     const year = String(photoObj.year || 'unknown-year')
-    return `${SUPABASE_PHOTO_BASE}/${track}/${year}/${encodeURIComponent(String(photoObj.file_name))}`
+    return getPhotoUrl(`photos/master/${track}/${year}/${photoObj.file_name}`)
   }
 
   const heroUrl = buildPhotoUrl(heroPhotoItem)
