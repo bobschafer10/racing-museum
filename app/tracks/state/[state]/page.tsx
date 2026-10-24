@@ -1,3 +1,4 @@
+import { getPhotoUrl as getMuseumPhotoUrl } from '@/lib/photos'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
@@ -115,7 +116,7 @@ function getPhotoUrl(photo?: PhotoRow | null) {
   if (!baseUrl) return ''
   const trackSlug = photo.track_slug || photo.slug.replace(/-(wi|mn|il|mi|in|ia|mo|oh|tn|co|ks|ky|sc|sd|ont)$/i, '')
   const year = photo.year || 'unknown-year'
-  return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
+  return getMuseumPhotoUrl(`photos/master/${trackSlug}/${year}/${photo.file_name}`)
 }
 
 function buildPageHref(
