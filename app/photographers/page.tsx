@@ -1,3 +1,4 @@
+import { getPhotoUrl as getMuseumPhotoUrl } from '@/lib/photos'
 import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import '../media/archive-dark.css'
@@ -13,7 +14,7 @@ function getPhotoUrl(photo: any) {
   const rawTrackSlug = photo.track_slug || photo.file_name.split('_')[0]
   const trackSlug = rawTrackSlug.replace(/-(wi|il|mn|mi)$/i, '')
   const year = photo.year || photo.file_name.split('_')[1] || 'unknown-year'
-  return `${baseUrl}/storage/v1/object/public/media/photos/master/${trackSlug}/${year}/${photo.file_name}`
+  return getMuseumPhotoUrl(`photos/master/${trackSlug}/${year}/${photo.file_name}`)
 }
 
 export default async function PhotographersPage({ searchParams }: { searchParams?: SearchParams }) {
