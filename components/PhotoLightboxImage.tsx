@@ -21,6 +21,8 @@ export default function PhotoLightboxImage({
   showZoomBadge = true,
 }: Props) {
   const [open, setOpen] = useState(false)
+  const [failedSrc, setFailedSrc] = useState<string | null>(null)
+  const unavailable = failedSrc === src
 
   useEffect(() => {
     if (!open) return
@@ -35,6 +37,33 @@ export default function PhotoLightboxImage({
       window.removeEventListener('keydown', onKeyDown)
     }
   }, [open])
+
+  if (unavailable) {
+    return (
+      <div
+        role="img"
+        aria-label={`Photograph unavailable: ${alt}`}
+        style={{
+          width: '100%',
+          minHeight: '140px',
+          aspectRatio: '4 / 3',
+          color: '#aeb4b6',
+          background: 'linear-gradient(145deg, #15181a, #0b0d0e)',
+          border: '1px solid #34383a',
+          ...imageStyle,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+          fontSize: '13px',
+          padding: '18px',
+          boxSizing: 'border-box',
+        }}
+      >
+        Photograph not yet available
+      </div>
+    )
+  }
 
   return (
     <>
@@ -53,7 +82,7 @@ export default function PhotoLightboxImage({
           ...buttonStyle,
         }}
       >
-        <img src={src} alt={alt} style={imageStyle} />
+        <img src={src} alt={alt} style={imageStyle} onError={() => setFailedSrc(src)} />
         {showZoomBadge && (
           <span
             aria-hidden="true"
