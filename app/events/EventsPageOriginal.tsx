@@ -494,6 +494,7 @@ const events: EventCollection[] = [
 ]
 
 const eventImageOverrides: Record<string, string> = {
+  'topless-nationals': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/track-logos/ogilvie-raceway-mn.jpg',
   // Rex Mays Classic must always use championship/Indy-car imagery; never inherit the Milwaukee Mile stock-car hero.
   'rex-mays-classic': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/milwaukee-mile/1972/milwaukee-mile_1972_mark-donahue_scott-krueger_photo_888.jpg',
   'dells-midwest-championships': 'https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/photos/master/dells-motor-speedway/1979/dells-motor-speedway_1979_dick-trickle_kurt-luoma_photo_001.jpg',
