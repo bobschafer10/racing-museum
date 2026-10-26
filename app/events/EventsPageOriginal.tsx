@@ -273,7 +273,7 @@ const events: EventCollection[] = [
     races: 0,
     results: 0,
     status: 'Historical Labor Day winner and event reconciliation in progress',
-    category: 'Asphalt',
+    category: 'Dirt',
     description: 'Minnesota State Fair Labor Day stock-car tradition, including the historic Stock Car Classic / Labor Day 300 records. Race classifications and winner history are being reconciled against the museum track archive.',
   },
   {
