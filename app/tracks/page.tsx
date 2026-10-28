@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 import TrackLogo from './[slug]/TrackLogo'
 import styles from './tracks-landing.module.css'
 
-export const revalidate = 43200
+export const revalidate = 300
 
 type TrackRow = {
   track_id?: number | null
