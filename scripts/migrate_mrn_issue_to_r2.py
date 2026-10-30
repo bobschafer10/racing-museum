@@ -15,7 +15,11 @@ if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", ISSUE):
     sys.exit("MRN_ISSUE must be YYYY-MM-DD")
 root = os.environ["SUPABASE_URL"].rstrip("/")
 key = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
-headers = {"apikey": key, "Authorization": f"Bearer {key}"}
+# Modern sb_secret_* keys authenticate via apikey only; legacy JWT service_role
+# keys may also be sent as Bearer tokens.
+headers = {"apikey": key}
+if not key.startswith("sb_secret_"):
+    headers["Authorization"] = f"Bearer {key}"
 r2 = boto3.client(
     "s3",
     endpoint_url=os.environ["R2_ENDPOINT"],
