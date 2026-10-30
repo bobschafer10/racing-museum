@@ -1,0 +1,27 @@
+name: Verify MRN 1980 R2 browser upload (read only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'boto3>=1.35,<2'
+      - name: Read and hash 16 R2 objects (no writes)
+        env:
+          MIGRATION_R2_ENDPOINT: ${{ secrets.MIGRATION_R2_ENDPOINT }}
+          MIGRATION_R2_ACCESS_KEY_ID: ${{ secrets.MIGRATION_R2_ACCESS_KEY_ID }}
+          MIGRATION_R2_SECRET_ACCESS_KEY: ${{ secrets.MIGRATION_R2_SECRET_ACCESS_KEY }}
+        run: python scripts/verify_r2_mrn_1980_pilot.py
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: mrn-1980-04-03-r2-sha256
+          path: r2-pilot-verification/mrn-1980-04-03-r2-sha256.csv
+          retention-days: 30
