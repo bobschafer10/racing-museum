@@ -109,13 +109,14 @@ def r2_digest(path):
     return h.hexdigest()
 
 try:
-    top = storage_list(prefix)
-    issues = sorted(
-        prefix + item["name"].strip("/") + "/"
-        for item in top
-        if item.get("id") is None
-        and re.fullmatch(year + r"-\d{2}-\d{2}", item.get("name", "").strip("/"))
-    )
+    # The newspaper root listing returns HTTP 544 at this archive's scale.
+    # Issue dates come from a read-only Supabase storage.objects SQL inventory.
+    manifest_path = Path("migration-inventory/supabase-newspaper-issue-manifest.json")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    dates = manifest["publications"][publication].get(year, [])
+    if any(not re.fullmatch(year + r"-\\d{2}-\\d{2}", date) for date in dates):
+        raise RuntimeError("Invalid dated issue in manifest")
+    issues = [prefix + date + "/" for date in sorted(set(dates))]
     if not issues:
         raise RuntimeError(f"No dated issue folders found for {publication} {year}")
     start = batch_index * issues_per_batch
