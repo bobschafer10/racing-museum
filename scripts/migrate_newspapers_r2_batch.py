@@ -114,7 +114,7 @@ try:
     manifest_path = Path("migration-inventory/supabase-newspaper-issue-manifest.json")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     dates = manifest["publications"][publication].get(year, [])
-    if any(not re.fullmatch(year + r"-\\d{2}-\\d{2}", date) for date in dates):
+    if any(not re.fullmatch(year + r"-\d{2}-\d{2}", date) for date in dates):
         raise RuntimeError("Invalid dated issue in manifest")
     issues = [prefix + date + "/" for date in sorted(set(dates))]
     if not issues:
