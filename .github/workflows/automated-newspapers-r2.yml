@@ -1,0 +1,51 @@
+name: Automated Supabase newspapers to R2 - verified and resumable
+on:
+  workflow_dispatch:
+    inputs:
+      execute_copy:
+        description: 'Transfer files (unchecked = test only)'
+        required: true
+        type: boolean
+        default: false
+      max_batches:
+        description: 'Maximum batches this run (1-6)'
+        required: true
+        default: '3'
+        type: string
+  schedule:
+    # Runs independently of any personal computer, up to three batches each run.
+    - cron: '17 1,7,13,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: newspapers-r2-verified-migration
+  cancel-in-progress: false
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'boto3>=1.35,<2' 'requests>=2.32,<3'
+      - name: Copy up to three verified batches, or dry run on manual request
+        env:
+          ISSUES_PER_BATCH: '20'
+          MAX_BATCHES: ${{ github.event_name == 'schedule' && '3' || inputs.max_batches }}
+          EXECUTE_COPY: ${{ github.event_name == 'schedule' && 'yes' || (inputs.execute_copy && 'yes' || 'no') }}
+          SUPABASE_URL: ${{ secrets.MIGRATION_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.MIGRATION_SUPABASE_SERVICE_ROLE_KEY }}
+          R2_ENDPOINT: ${{ secrets.MIGRATION_R2_ENDPOINT }}
+          R2_ACCESS_KEY_ID: ${{ secrets.MIGRATION_R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.MIGRATION_R2_SECRET_ACCESS_KEY }}
+        run: python scripts/automate_newspaper_r2_batches.py
+      - name: Preserve migration reports, including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: automated-newspaper-migration-${{ github.run_id }}
+          path: migration-reports/*.json
+          if-no-files-found: warn
+          retention-days: 90
