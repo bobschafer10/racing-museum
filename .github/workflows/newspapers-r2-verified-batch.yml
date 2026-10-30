@@ -1,0 +1,66 @@
+name: Supabase newspapers to R2 - verified batch
+on:
+  workflow_dispatch:
+    inputs:
+      publication:
+        description: 'Newspaper publication'
+        required: true
+        type: choice
+        options:
+          - mrn
+          - cfrn
+      year:
+        description: 'Four-digit issue year, e.g. 1980'
+        required: true
+        type: string
+      batch_index:
+        description: 'Zero-based batch number (0 is first)'
+        required: true
+        default: '0'
+        type: string
+      issues_per_batch:
+        description: 'Issues per batch, 1-30 (default 20)'
+        required: true
+        default: '20'
+        type: string
+      execute_copy:
+        description: 'Actually transfer and SHA-256 verify (unchecked = inventory only)'
+        required: true
+        default: false
+        type: boolean
+permissions:
+  contents: read
+concurrency:
+  group: newspapers-r2-verified-migration
+  cancel-in-progress: false
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'boto3>=1.35,<2' 'requests>=2.32,<3'
+      - name: Inventory or copy one bounded issue batch
+        env:
+          PUBLICATION: ${{ inputs.publication }}
+          YEAR: ${{ inputs.year }}
+          BATCH_INDEX: ${{ inputs.batch_index }}
+          ISSUES_PER_BATCH: ${{ inputs.issues_per_batch }}
+          EXECUTE_COPY: ${{ inputs.execute_copy && 'yes' || 'no' }}
+          SUPABASE_URL: ${{ secrets.MIGRATION_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.MIGRATION_SUPABASE_SERVICE_ROLE_KEY }}
+          R2_ENDPOINT: ${{ secrets.MIGRATION_R2_ENDPOINT }}
+          R2_ACCESS_KEY_ID: ${{ secrets.MIGRATION_R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.MIGRATION_R2_SECRET_ACCESS_KEY }}
+        run: python scripts/migrate_newspapers_r2_batch.py
+      - name: Upload migration report even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newspaper-migration-report-${{ inputs.publication }}-${{ inputs.year }}-${{ inputs.batch_index }}-${{ github.run_id }}
+          path: migration-reports/*.json
+          if-no-files-found: warn
+          retention-days: 90
