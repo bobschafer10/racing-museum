@@ -16,6 +16,7 @@ def main():
     p.add_argument("--source", required=True, help="Directory holding one issue's numbered JPG page files")
     p.add_argument("--issue", required=True, help="ISO issue date YYYY-MM-DD")
     p.add_argument("--execute", action="store_true", help="Upload; otherwise print a local dry run")
+    p.add_argument("--pilot-prefix", default="migration-pilots/mrn", help="Isolated destination prefix (must start migration-pilots/)")
     a = p.parse_args()
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", a.issue):
         p.error("--issue must be YYYY-MM-DD")
@@ -24,6 +25,8 @@ def main():
         date.fromisoformat(a.issue)
     except ValueError:
         p.error("Invalid issue date")
+    if not a.pilot_prefix.startswith("migration-pilots/") or ".." in a.pilot_prefix.split("/"):
+        p.error("Only isolated migration-pilots/ prefixes are allowed")
     src = Path(a.source).expanduser()
     if not src.is_dir():
         p.error(f"Source folder not found: {src}")
@@ -35,6 +38,7 @@ def main():
         p.error("Missing or duplicate numbered pages. Refusing to upload.")
     total = sum(f.stat().st_size for f in pages)
     print(f"Issue: {a.issue}; source: {src}; {len(pages)} pages; {total:,} bytes")
+    print(f"Pilot destination: {a.pilot_prefix.rstrip('/')}/{a.issue}/")
     for f in pages:
         print(f"  {f.name} ({f.stat().st_size:,} bytes)")
     if not a.execute:
@@ -52,7 +56,7 @@ def main():
                       region_name="auto", config=Config(signature_version="s3v4"))
     bucket = os.environ.get("R2_BUCKET", "umarm-newspapers")
     for index, f in enumerate(pages, 1):
-        path = f"newspapers/midwest-racing-news/{a.issue}/{int(f.stem)}.jpg"
+        path = f"{a.pilot_prefix.rstrip('/')}/{a.issue}/{int(f.stem)}.jpg"
         payload = f.read_bytes()
         digest = hashlib.sha256(payload).hexdigest()
         try:
@@ -70,7 +74,13 @@ def main():
                 raise RuntimeError(f"REFUSING to overwrite different existing R2 object: {path}")
             print(f"[{index}/{len(pages)}] Already verified: {path}")
             continue
-        r2.put_object(Bucket=bucket, Key=path, Body=payload, ContentType="image/jpeg", Metadata={"sha256": digest})
+        try:
+            r2.put_object(Bucket=bucket, Key=path, Body=payload, ContentType="image/jpeg",
+                          Metadata={"sha256": digest}, IfNoneMatch="*")
+        except Exception as e:
+            if getattr(e, "response", {}).get("Error", {}).get("Code") in ("PreconditionFailed", "412", "ConditionalRequestConflict", "409"):
+                raise RuntimeError(f"Concurrent object creation; refusing to overwrite: {path}") from e
+            raise
         copied = r2.get_object(Bucket=bucket, Key=path)["Body"].read()
         if hashlib.sha256(copied).hexdigest() != digest:
             raise RuntimeError(f"SHA256 VERIFICATION FAILED: {path}")
