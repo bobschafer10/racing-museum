@@ -24,8 +24,12 @@ This is a local inventory dry run and does not use credentials or the network. A
 python scripts/migrate_local_mrn_issue_to_r2.py --source "C:\path\to\one\issue\folder" --issue 1981-04-08 --execute
 ```
 
-The script checks each existing R2 object byte-for-byte, refuses to overwrite any different file, uploads only missing pages, then downloads and SHA-256 verifies each uploaded page. Reruns are safe.
+The script uses the isolated `migration-pilots/mrn/1981-04-08/` destination by default; it cannot write production `newspapers/` keys. It checks each existing R2 object byte-for-byte, refuses to overwrite any different file, uses conditional `IfNoneMatch='*'` creation to avoid races, uploads only missing pages, then downloads and SHA-256 verifies each uploaded page. Reruns are safe. Check Cloudflare R2 conditional-write support and credentials in the pilot before any broader transfer.
 
 **Important:** This stages only numbered original page JPGs. Cover images, thumbnails, issue JSON, OCR TXT, full inventory reconciliation, public R2 delivery URLs, and website URL migration are separate steps. Do not change the museum's URLs or remove Supabase files yet. A successful one-issue copy is not proof the full newspaper archive has been recovered. CFRN remains untouched.
 
 If the local original for a requested issue is absent, stop and locate a verified backup rather than fabricating a page or marking it migrated.
+
+## Inventory-based April 3, 1980 pilot
+
+Work verified local source `C:\\Users\\schaf\\Desktop\\MRN\\1980\\4-3-80-1` has 16 numbered JPG pages, 83,131,274 bytes. Use `--issue 1980-04-03`; the destination is `migration-pilots/mrn/1980-04-03/`. Re-fetch the latest script from this PR branch; earlier local copies lack the isolated-prefix and conditional-create guards. Run the dry run first, then seek explicit approval before `--execute`. Never print secrets in logs.
