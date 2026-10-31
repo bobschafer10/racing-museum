@@ -17,6 +17,7 @@ on:
     - cron: '17 * * * *'
 permissions:
   contents: read
+  actions: write
 concurrency:
   group: newspapers-r2-verified-migration
   cancel-in-progress: false
@@ -49,3 +50,17 @@ jobs:
           path: migration-reports/*.json
           if-no-files-found: warn
           retention-days: 90
+      - name: Continue with next verified batch set without waiting for the hourly schedule
+        if: ${{ success() && github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || inputs.execute_copy) }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          remaining=$(python -c "import json; print(json.load(open('migration-reports/automation-summary.json'))['remaining_batches'])")
+          echo "Remaining issue batches: $remaining"
+          if [ "$remaining" -gt 0 ]; then
+            gh workflow run automated-newspapers-r2.yml --ref main -f execute_copy=true -f max_batches=6
+            echo "Queued next bounded migration run."
+          else
+            echo "All issue batches in the current manifest are complete. No follow-up queued."
+          fi
