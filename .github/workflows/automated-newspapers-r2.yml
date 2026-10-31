@@ -13,8 +13,8 @@ on:
         default: '3'
         type: string
   schedule:
-    # Runs independently of any personal computer, up to three batches each run.
-    - cron: '17 1,7,13,19 * * *'
+    # Run hourly, up to six batches. Concurrency prevents overlapping runs.
+    - cron: '17 * * * *'
 permissions:
   contents: read
 concurrency:
@@ -30,10 +30,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install 'boto3>=1.35,<2' 'requests>=2.32,<3'
-      - name: Copy up to three verified batches, or dry run on manual request
+      - name: Copy up to six verified batches, or dry run on manual request
         env:
           ISSUES_PER_BATCH: '20'
-          MAX_BATCHES: ${{ github.event_name == 'schedule' && '3' || inputs.max_batches }}
+          MAX_BATCHES: ${{ github.event_name == 'schedule' && '6' || inputs.max_batches }}
           EXECUTE_COPY: ${{ github.event_name == 'schedule' && 'yes' || (inputs.execute_copy && 'yes' || 'no') }}
           SUPABASE_URL: ${{ secrets.MIGRATION_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.MIGRATION_SUPABASE_SERVICE_ROLE_KEY }}
