@@ -53,13 +53,21 @@ def verified_marker(key, expected_issues):
         raise RuntimeError(f"Existing checkpoint does not match current inventory: {key}")
     return True
 
+total_batches = sum(
+    math.ceil(len(set(dates)) / issues_per_batch)
+    for years in manifest["publications"].values()
+    for dates in years.values()
+)
 summary = {"execute": execute, "issues_per_batch": issues_per_batch,
-           "max_batches": max_batches, "skipped_verified_batches": 0,
+           "max_batches": max_batches, "total_batches": total_batches,
+           "skipped_verified_batches": 0,
+           "remaining_batches": total_batches,
            "processed": [], "status": "started"}
 Path("migration-reports").mkdir(exist_ok=True)
 summary_path = Path("migration-reports/automation-summary.json")
 
 def save():
+    summary["remaining_batches"] = max(0, total_batches - summary["skipped_verified_batches"] - len(summary["processed"]))
     summary_path.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
 
 save()
