@@ -2,6 +2,7 @@ import { promises as fs } from "fs"
 import path from "path"
 import { supabase } from "@/lib/supabase"
 import { unstable_cache } from "next/cache"
+import { mapNewspaperIssueImages } from "@/lib/newspaper-image-source"
 
 export type NewspaperIssue = {
   slug: string
@@ -707,7 +708,7 @@ async function loadNewspaperIssues(): Promise<NewspaperIssue[]> {
       if (!merged.has(key)) merged.set(key, issue)
     }
 
-    return Array.from(merged.values()).sort((a, b) => {
+    return Array.from(merged.values()).map(mapNewspaperIssueImages).sort((a, b) => {
       if (a.publicationSlug !== b.publicationSlug) {
         return a.publicationSlug.localeCompare(b.publicationSlug)
       }
@@ -750,7 +751,7 @@ export async function getNewspaperIssue(
   try {
     const manifest = JSON.parse(await fs.readFile(manifestPath, "utf-8")) as NewspaperIssue[]
     const existing = manifest.find((issue) => issue.publicationSlug === publicationSlug && issue.slug === issueSlug)
-    if (existing) return existing
+    if (existing) return mapNewspaperIssueImages(existing)
   } catch (error) {
     console.error("NEWSPAPER ISSUE MANIFEST ERROR:", error)
   }
@@ -771,7 +772,7 @@ export async function getNewspaperIssue(
     ...getCfrn2004StorageIssues(),
     ...getCfrn2005StorageIssues(),
   ].find((issue) => issue.publicationSlug === publicationSlug && issue.slug === issueSlug)
-  if (known) return known
+  if (known) return mapNewspaperIssueImages(known)
 
   if (!["midwest-racing-news", "checkered-flag-racing-news"].includes(publicationSlug) ||
       !/^\d{4}-\d{2}-\d{2}$/.test(issueSlug)) return undefined
@@ -793,7 +794,7 @@ export async function getNewspaperIssue(
   if (!rows.length) return undefined
   const pages = rows.map(ocrPageUrl)
   const publication = publicationSlug === "midwest-racing-news" ? "Midwest Racing News" : "Checkered Flag Racing News"
-  return {
+  return mapNewspaperIssueImages({
     slug: issueSlug,
     title: titleFromIsoDate(issueSlug),
     publication,
@@ -805,5 +806,5 @@ export async function getNewspaperIssue(
     thumbnail: pages[0],
     pages,
     featured: false,
-  }
+  })
 }
