@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import { getNewspaperIssue } from "@/lib/newspapers"
 import { supabase } from "@/lib/supabase"
 import NewspaperPageViewer from "./NewspaperPageViewer"
+import { matchesNewspaperStoragePath } from "@/lib/newspaper-image-source"
 import "../../../archive-dark.css"
 
 // Keep newspaper issue pages searchable as research pages, but tell Google not
@@ -236,8 +237,7 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
       .limit(1)
     if (!directError && directRows?.length) {
       const direct = directRows[0] as {storage_path:string;ocr_text:string|null;ocr_json:unknown;page_label:string|null}
-      const imageUrl = `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${direct.storage_path}`
-      const found = pages.findIndex((page) => page.image === imageUrl)
+      const found = pages.findIndex((page) => matchesNewspaperStoragePath(page.image, direct.storage_path))
       if (found >= 0) initialPageIndex = found
       searchSnippet = matchSnippet(direct.ocr_text || "", query)
       highlightLines = matchingOcrLayoutLines(parseOcrLayoutLines(direct.ocr_json), query)
@@ -268,8 +268,7 @@ export default async function NewspaperIssuePage({ params, searchParams }: Issue
     } | null
 
     if (row?.storage_path) {
-      const imageUrl = `https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/${row.storage_path}`
-      let index = pages.findIndex((page) => page.image === imageUrl)
+      let index = pages.findIndex((page) => matchesNewspaperStoragePath(page.image, row.storage_path!))
       if (index < 0 && row.page_number) index = pages.findIndex((page) => scanPageNumber(page.image) === row.page_number)
       if (index >= 0) initialPageIndex = index
       searchSnippet = matchSnippet(row.ocr_text || "", query)
