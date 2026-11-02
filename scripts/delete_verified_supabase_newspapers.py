@@ -110,7 +110,7 @@ try:
     for pub, years in manifest["publications"].items():
         for year, dates in sorted(years.items()):
             for date in sorted(set(dates)):
-                if not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", date):
+                if len(date) != 10 or date[4] != "-" or date[7] != "-" or not (date[:4] + date[5:7] + date[8:]).isdigit():
                     raise RuntimeError(f"Invalid manifest date: {date}")
                 folder = f"{pubs[pub]}{date}/"
                 issues += 1
