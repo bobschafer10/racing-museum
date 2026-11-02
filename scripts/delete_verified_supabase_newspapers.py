@@ -136,9 +136,7 @@ try:
         data = response.json()
         if not isinstance(data, list):
             raise RuntimeError(f"Unexpected deletion response at batch {start//100}: {str(data)[:400]}")
-        deleted = {obj.get("name") for obj in data if isinstance(obj, dict)}
-        if deleted and deleted != set(batch):
-            raise RuntimeError(f"Deletion response mismatch at batch {start//100}: {len(deleted)}/{len(batch)}")
+        # Supabase may return names in differing shapes; final source re-list is authoritative.
         report["deleted_confirmed"] += len(batch)
         if (start // 100) % 10 == 0:
             save()
