@@ -1,0 +1,35 @@
+name: Delete verified Supabase newspaper originals
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: delete-verified-supabase-newspapers
+  cancel-in-progress: false
+jobs:
+  delete-verified-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'boto3>=1.35,<2' 'requests>=2.32,<3'
+      - name: Preflight verify R2 inventory and delete only matching Supabase originals
+        env:
+          EXECUTE_DELETE: 'yes'
+          SUPABASE_URL: ${{ secrets.MIGRATION_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.MIGRATION_SUPABASE_SERVICE_ROLE_KEY }}
+          R2_ENDPOINT: ${{ secrets.MIGRATION_R2_ENDPOINT }}
+          R2_ACCESS_KEY_ID: ${{ secrets.MIGRATION_R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.MIGRATION_R2_SECRET_ACCESS_KEY }}
+        run: python -u scripts/delete_verified_supabase_newspapers.py
+      - name: Save deletion report, including partial progress on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-supabase-newspaper-deletion-report
+          path: migration-reports/supabase-newspaper-deletion.json
+          if-no-files-found: warn
+          retention-days: 90
