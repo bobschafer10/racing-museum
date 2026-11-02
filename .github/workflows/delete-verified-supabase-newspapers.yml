@@ -1,9 +1,5 @@
 name: Delete verified Supabase newspaper originals
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/delete-verified-supabase-newspapers.yml'
   workflow_dispatch:
 permissions:
   contents: read
