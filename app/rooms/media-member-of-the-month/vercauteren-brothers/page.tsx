@@ -228,7 +228,7 @@ export default async function VercauterenBrothersRoom() {
             <span className={styles.sectionKicker}>The work lived beyond the printed page</span>
             <h2>Wisconsin International Raceway and Mid-American</h2>
             <p>Gary became public-relations director at Wisconsin International Raceway in 1972. He was involved in building the Red, White and Blue State Championship Series and the race programs that gave fans more than statistics. Pete and Gary later founded the Mid-American Stock Car Series in 1993, drawing on the successful grand-national racing formula in northeast Wisconsin.</p>
-            <p>The annual Vercauteren Memorial began in 1990 in honor of their parents, Harold and Regina. Following Gary’s death in October 2005, the memorial became an enduring tribute to three generations of racing-community involvement.</p>
+            <p>The annual Vercauteren Memorial began in 1990 in honor of their parents, Harold and Regina. Following Gary’s death in October 2005, the memorial became an enduring tribute to three generations of racing-community involvement.</p><p><Link href="/series/mid-american-racing-series" className={styles.seriesLink}>Explore the museum’s Mid-American Racing Series history →</Link></p>
           </div>
           <div className={styles.sources}>
             <h3>Historical sources</h3>
@@ -242,7 +242,7 @@ export default async function VercauterenBrothersRoom() {
           <h2>Help complete Room 002</h2>
           <p>The museum is continuing to identify photographs of Gary, Pete and the wider Vercauteren family; original newspaper bylines; early WIR publicity and programs; Mid-American founding artifacts; and the Vercauteren Memorial trophy. We will distinguish original authorship from later reposts or family contributions.</p>
           <div className={styles.researchActions}>
-            <Link href="/photos?photographer=pete-vercauteren&driver=unknown-driver">Review Pete’s unidentified-driver queue ({unidentified.toLocaleString()} combined collection records need review) →</Link>
+            <Link href="/photos?photographer=pete-vercauteren&driver=unknown-driver">Review Pete’s unidentified-driver queue ({unidentified.toLocaleString()} records) →</Link>
             <Link href="/rooms/media-member-of-the-month/bob-bergeron">Revisit Room 001 — Bob Bergeron →</Link>
           </div>
         </section>
