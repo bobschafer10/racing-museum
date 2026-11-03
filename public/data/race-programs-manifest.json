@@ -905,6 +905,7 @@
     "series_slug": null,
     "type": "program",
     "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM_001.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM_002.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM_003.jpg",
@@ -917,10 +918,9 @@
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM_010.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM_011.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM_012.jpg",
-      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/back-cover.jpg",
-      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/front-cover.jpg"
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/back-cover.jpg"
     ],
-    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/front-cover.jpg",
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/1977%20-%20MIDWEST%20SPEEDWAYS%20PROGRAM.jpg",
     "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1977-hales-corners-speedway-wi-yearbook/back-cover.jpg"
   },
   {
@@ -3626,6 +3626,7 @@
     "series_slug": null,
     "type": "yearbook",
     "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/1998%20-%20BADGER%20MIDGET%20YEARBOOK.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/001.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/002.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/003.jpg",
@@ -3637,10 +3638,9 @@
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/009.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/010.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/011.jpg",
-      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/back-cover.jpg",
-      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/front-cover.jpg"
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/back-cover.jpg"
     ],
-    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/front-cover.jpg",
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/1998%20-%20BADGER%20MIDGET%20YEARBOOK.jpg",
     "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1998-badger-midget-auto-racing-association-yearbook/back-cover.jpg"
   },
   {
@@ -4251,11 +4251,11 @@
     "slug": "2024-state-park-speedway-wi-yearbook",
     "title": "2024 State Park Speedway Yearbook",
     "year": 2024,
-    "track": null,
-    "track_slug": null,
+    "track": "State Park Speedway",
+    "track_slug": "state-park-speedway-wi",
     "series": null,
     "series_slug": null,
-    "type": null,
+    "type": "yearbook",
     "images": [
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/back-cover.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/front-cover.jpg",
@@ -4277,7 +4277,10 @@
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_018.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_019.jpg",
       "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_020.jpg",
-      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_023.jpg"
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_023.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_022.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/STATE%20PARK%20SPEEDWAY%202024%20YEARBOOK_024.jpg"
     ],
     "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/front-cover.jpg",
     "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2024-state-park-speedway-wi-yearbook/back-cover.jpg"
@@ -4750,5 +4753,217 @@
     ],
     "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1961-07-16-milwaukee-mile-wi-program/001.jpg",
     "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1961-07-16-milwaukee-mile-wi-program/021.jpg"
+  },
+  {
+    "slug": "1989-cedar-lake-speedway-wi-nationals-program",
+    "title": "1989 Cedar Lake Speedway Nationals Program",
+    "year": 1989,
+    "track": "Cedar Lake Speedway",
+    "track_slug": "cedar-lake-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": null,
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/003.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/004.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/005.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/006.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/007.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/008.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1989-cedar-lake-speedway-wi-nationals-program/008.jpg"
+  },
+  {
+    "slug": "1987-06-24-hales-corners-speedway-wi-sai-challenge-program",
+    "title": "1987 Hales Corners Speedway S.A.I. Challenge Program — June 24",
+    "year": 1987,
+    "track": "Hales Corners Speedway",
+    "track_slug": "hales-corners-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": null,
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/003.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/004.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/005.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/006.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/007.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1987-06-24-hales-corners-speedway-wi-sai-challenge-program/007.jpg"
+  },
+  {
+    "slug": "1997-08-23-shawano-speedway-wi-program",
+    "title": "1997 Shawano Speedway Weekly Program — August 23",
+    "year": 1997,
+    "track": "Shawano Speedway",
+    "track_slug": "shawano-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": null,
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/003.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/004.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/005.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/006.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/007.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/008.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/009.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/010.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/011.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/012.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/013.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/014.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/015.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/016.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/017.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/018.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/019.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1997-08-23-shawano-speedway-wi-program/019.jpg"
+  },
+  {
+    "slug": "2015-06-27-shawano-speedway-wi-weekly-dirt-program",
+    "title": "2015 Shawano Speedway The Weekly Dirt — June 27",
+    "year": 2015,
+    "track": "Shawano Speedway",
+    "track_slug": "shawano-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": null,
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/003.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/004.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/005.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/006.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/007.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/008.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/009.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2015-06-27-shawano-speedway-wi-weekly-dirt-program/009.jpg"
+  },
+  {
+    "slug": "2019-06-01-shawano-speedway-wi-weekly-dirt-program",
+    "title": "2019 Shawano Speedway The Weekly Dirt — June 1",
+    "year": 2019,
+    "track": "Shawano Speedway",
+    "track_slug": "shawano-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": null,
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/003.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/004.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/005.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/006.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/007.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/008.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/009.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-06-01-shawano-speedway-wi-weekly-dirt-program/009.jpg"
+  },
+  {
+    "slug": "2019-shawano-speedway-wi-weekly-dirt-highlights-program",
+    "title": "2019 Shawano Speedway The Weekly Dirt — Highlights (Saved Pages)",
+    "year": 2019,
+    "track": "Shawano Speedway",
+    "track_slug": "shawano-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": "Nine saved highlight scans. A complete issue and front cover were not present in the source set.",
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/003.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/004.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/005.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/006.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/007.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/008.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/009.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2019-shawano-speedway-wi-weekly-dirt-highlights-program/009.jpg"
+  },
+  {
+    "slug": "1992-shawano-speedway-wi-inside-groove-program",
+    "title": "1992 Shawano Speedway The Inside Groove (Saved Pages)",
+    "year": 1992,
+    "track": "Shawano Speedway",
+    "track_slug": "shawano-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": "Three saved scans. Original filenames identify August 1; the front scan prints July 25, 1992.",
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1992-shawano-speedway-wi-inside-groove-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1992-shawano-speedway-wi-inside-groove-program/002.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1992-shawano-speedway-wi-inside-groove-program/003.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1992-shawano-speedway-wi-inside-groove-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1992-shawano-speedway-wi-inside-groove-program/003.jpg"
+  },
+  {
+    "slug": "1993-shawano-speedway-wi-inside-groove-program",
+    "title": "1993 Shawano Speedway The Inside Groove (Saved Pages)",
+    "year": 1993,
+    "track": "Shawano Speedway",
+    "track_slug": "shawano-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": "Two saved scans. Original filenames identify May 22; the front scan prints May 15, 1993.",
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1993-shawano-speedway-wi-inside-groove-program/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1993-shawano-speedway-wi-inside-groove-program/002.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1993-shawano-speedway-wi-inside-groove-program/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1993-shawano-speedway-wi-inside-groove-program/002.jpg"
+  },
+  {
+    "slug": "2004-angell-park-speedway-wi-nationals-program-covers",
+    "title": "2004 Angell Park Speedway Midget Nationals Program (Covers Only)",
+    "year": 2004,
+    "track": "Angell Park Speedway",
+    "track_slug": "angell-park-speedway-wi",
+    "series": null,
+    "series_slug": null,
+    "type": "program",
+    "description": "Only two cover scans were present on the hard drive.",
+    "isNew": true,
+    "images": [
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2004-angell-park-speedway-wi-nationals-program-covers/001.jpg",
+      "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2004-angell-park-speedway-wi-nationals-program-covers/002.jpg"
+    ],
+    "coverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2004-angell-park-speedway-wi-nationals-program-covers/001.jpg",
+    "backCoverImage": "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/2004-angell-park-speedway-wi-nationals-program-covers/002.jpg"
   }
 ]
