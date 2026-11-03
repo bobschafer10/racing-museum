@@ -1,0 +1,107 @@
+name: New Race Programs OCR Recovery 2026-11
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ocr-new-race-programs-2026-11.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    strategy:
+      fail-fast: false
+      max-parallel: 9
+      matrix:
+        include:
+          - {slug: "1987-06-24-hales-corners-speedway-wi-sai-challenge-program", year: 1987, pages: 7, title: "1987 Hales Corners Speedway S.A.I. Challenge Program - June 24"}
+          - {slug: "1989-cedar-lake-speedway-wi-nationals-program", year: 1989, pages: 8, title: "1989 Cedar Lake Speedway Nationals Program"}
+          - {slug: "1992-shawano-speedway-wi-inside-groove-program", year: 1992, pages: 3, title: "1992 Shawano Speedway The Inside Groove (Saved Pages)"}
+          - {slug: "1993-shawano-speedway-wi-inside-groove-program", year: 1993, pages: 2, title: "1993 Shawano Speedway The Inside Groove (Saved Pages)"}
+          - {slug: "1997-08-23-shawano-speedway-wi-program", year: 1997, pages: 19, title: "1997 Shawano Speedway Weekly Program - August 23"}
+          - {slug: "2004-angell-park-speedway-wi-nationals-program-covers", year: 2004, pages: 2, title: "2004 Angell Park Speedway Midget Nationals Program (Covers Only)"}
+          - {slug: "2015-06-27-shawano-speedway-wi-weekly-dirt-program", year: 2015, pages: 9, title: "2015 Shawano Speedway The Weekly Dirt - June 27"}
+          - {slug: "2019-06-01-shawano-speedway-wi-weekly-dirt-program", year: 2019, pages: 9, title: "2019 Shawano Speedway The Weekly Dirt - June 1"}
+          - {slug: "2019-shawano-speedway-wi-weekly-dirt-highlights-program", year: 2019, pages: 9, title: "2019 Shawano Speedway The Weekly Dirt - Highlights (Saved Pages)"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PaddleOCR
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+      - name: OCR original race program scans
+        env:
+          OCR_DOCUMENT_SLUG: ${{ matrix.slug }}
+          OCR_DOCUMENT_YEAR: ${{ matrix.year }}
+          OCR_DOCUMENT_TITLE: ${{ matrix.title }}
+          OCR_DOCUMENT_TYPE: program
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          FLAGS_enable_pir_api: '0'
+        run: python scripts/ocr_catalog_programs.py --start 1 --end ${{ matrix.pages }}
+      - name: Save page OCR including review flags
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-program-ocr-${{ matrix.slug }}
+          path: audit-ocr/
+          retention-days: 30
+          if-no-files-found: warn
+
+  collect:
+    needs: ocr
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: new-program-ocr-*
+          merge-multiple: true
+          path: audit-ocr
+      - name: Preserve complete OCR data and import batches
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          counts=json.loads('{"1987-06-24-hales-corners-speedway-wi-sai-challenge-program":7,"1989-cedar-lake-speedway-wi-nationals-program":8,"1992-shawano-speedway-wi-inside-groove-program":3,"1993-shawano-speedway-wi-inside-groove-program":2,"1997-08-23-shawano-speedway-wi-program":19,"2004-angell-park-speedway-wi-nationals-program-covers":2,"2015-06-27-shawano-speedway-wi-weekly-dirt-program":9,"2019-06-01-shawano-speedway-wi-weekly-dirt-program":9,"2019-shawano-speedway-wi-weekly-dirt-highlights-program":9}')
+          dest=Path('audit/program-ocr')
+          dest.mkdir(parents=True,exist_ok=True)
+          issues=[]
+          for slug,n in counts.items():
+              path=Path('audit-ocr')/slug/'part-001.json'
+              if not path.exists(): issues.append(slug+': artifact missing');continue
+              rows=json.loads(path.read_text(encoding='utf-8'))
+              assert [r['page_number'] for r in rows]==list(range(1,n+1)),slug
+              assert all(r['document_type']=='program' for r in rows),slug
+              (dest/f'{slug}.json').write_text(json.dumps(rows,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+              parts=dest/slug;parts.mkdir(exist_ok=True)
+              for i in range(0,n,5):
+                  batch=rows[i:i+5]
+                  out=parts/f"pages-{batch[0]['page_number']:03d}-{batch[-1]['page_number']:03d}.json"
+                  out.write_text(json.dumps(batch,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+              good=sum(r['status']=='complete' and bool(r['ocr_text'].strip()) for r in rows)
+              print(f'{slug}: {good}/{n} OCR completed',flush=True)
+              if good<n:issues.append(f'{slug}: {n-good} pages need review')
+          (dest/'new-program-issues.json').write_text(json.dumps(issues,indent=2),encoding='utf8')
+          print('ISSUES='+json.dumps(issues),flush=True)
+          assert len([x for x in counts if (dest/f'{x}.json').exists()])==len(counts)
+          PY
+      - name: Commit OCR records after rebasing
+        run: |
+          set -euo pipefail
+          git config user.name museum-ocr-bot
+          git config user.email museum-ocr-bot@users.noreply.github.com
+          git add audit/program-ocr/
+          git commit -m "Preserve OCR for new race programs, Shawano Cedar Lake and Hales Corners" || true
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
