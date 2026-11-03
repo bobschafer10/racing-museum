@@ -1,0 +1,84 @@
+name: OCR 1981 National Late Model Annual
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ocr-1981-national-late-model-annual.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 7
+      matrix:
+        include:
+          - {start: 1, end: 10}
+          - {start: 11, end: 20}
+          - {start: 21, end: 30}
+          - {start: 31, end: 40}
+          - {start: 41, end: 50}
+          - {start: 51, end: 60}
+          - {start: 61, end: 67}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PaddleOCR CPU dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+      - name: OCR original images ${{ matrix.start }}–${{ matrix.end }}
+        shell: bash
+        env:
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          FLAGS_enable_pir_api: '0'
+        run: |
+          set -euo pipefail
+          python scripts/ocr_yearbook_1981.py --start "${{ matrix.start }}" --end "${{ matrix.end }}"
+      - name: Preserve OCR chunk even if recognition fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yearbook-ocr-1981-${{ matrix.start }}
+          path: audit-ocr/part-*.json
+          retention-days: 30
+          if-no-files-found: warn
+
+  index:
+    needs: ocr
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: yearbook-ocr-1981-*
+          merge-multiple: true
+          path: audit-ocr
+      - name: Validate, back up, and index OCR text
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/ocr_yearbook_1981.py --merge
+      - name: Commit original-scan-linked OCR backup
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "museum-ocr-bot"
+          git config user.email "museum-ocr-bot@users.noreply.github.com"
+          git add audit/yearbook-ocr/1981-national-late-model-annual-yearbook.json
+          git commit -m "Archive searchable 1981 National Late Model Annual OCR" || true
+          git push origin HEAD:main
