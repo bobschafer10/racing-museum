@@ -134,12 +134,14 @@ function matchingOcrLayoutLines(lines: OcrLayoutLine[], query: string) {
 type SearchMatchRow = {
   document_slug: string
   page_number: number | null
+  storage_path: string | null
 }
 
 type RaceProgramDetailProps = {
   params: Promise<{ slug: string }>
   searchParams: Promise<{
     sourcePage?: string | string[]
+    ocrPath?: string | string[]
     q?: string | string[]
     sort?: string | string[]
     source?: string | string[]
@@ -157,6 +159,8 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
 
   const rawSourcePage = firstParam(resolvedSearchParams.sourcePage)
   const requestedSourcePage = rawSourcePage && /^\d+$/.test(rawSourcePage) ? Number(rawSourcePage) : null
+  const requestedOcrPath = firstParam(resolvedSearchParams.ocrPath)?.trim() || null
+  const safeOcrPath = requestedOcrPath?.startsWith(`programs/${slug}/`) ? requestedOcrPath : null
   const searchQuery = firstParam(resolvedSearchParams.q)?.trim() || ""
   const requestedSort = (firstParam(resolvedSearchParams.sort) || "relevance").toLowerCase()
   const searchSort = ["relevance", "oldest", "newest"].includes(requestedSort) ? requestedSort : "relevance"
@@ -171,26 +175,38 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
   const pageSizeValue = Number(firstParam(resolvedSearchParams.pageSize))
   const searchPageSize = [25, 50, 100].includes(pageSizeValue) ? pageSizeValue : 50
 
-  const matchedImage = requestedSourcePage
-    ? program.images.find((image) => scanPageNumber(image) === requestedSourcePage) || null
-    : null
-  const focusedSearchMatch = Boolean(requestedSourcePage && matchedImage && searchQuery)
+  // Legacy program scans have descriptive filenames, so a numeric page number is not always available.
+  // The search API already sends ocrPath; use the exact stored scan path when available.
+  const matchedImage = safeOcrPath
+    ? program.images.find((image) => {
+        try {
+          return decodeURIComponent(new URL(image).pathname).endsWith(`/media/${safeOcrPath}`)
+        } catch {
+          return false
+        }
+      }) || null
+    : requestedSourcePage
+      ? program.images.find((image) => scanPageNumber(image) === requestedSourcePage) || null
+      : null
+  const focusedSearchMatch = Boolean(matchedImage && searchQuery)
+  const focusedPageLabel = requestedSourcePage ?? (matchedImage ? program.images.indexOf(matchedImage) + 1 : null)
 
   const heroImage = program.coverImage || program.images[0] || null
   const pageCount = program.images.length
 
   let searchSnippet = ""
   let searchLayoutLines: OcrLayoutLine[] = []
-  if (focusedSearchMatch && requestedSourcePage) {
-    const { data: ocrPage } = await supabase
+  if (focusedSearchMatch) {
+    let ocrQuery = supabase
       .from("archive_ocr_pages")
       .select("ocr_text,ocr_json")
       .eq("document_slug", program.slug)
-      .eq("page_number", requestedSourcePage)
       .eq("status", "complete")
       .in("document_type", ["program", "yearbook"])
       .limit(1)
-      .maybeSingle()
+    if (safeOcrPath) ocrQuery = ocrQuery.eq("storage_path", safeOcrPath)
+    else if (requestedSourcePage !== null) ocrQuery = ocrQuery.eq("page_number", requestedSourcePage)
+    const { data: ocrPage } = await ocrQuery.maybeSingle()
     searchSnippet = matchSnippet(ocrPage?.ocr_text || "", searchQuery)
     searchLayoutLines = matchingOcrLayoutLines(parseOcrLayoutLines(ocrPage?.ocr_json), searchQuery)
   }
@@ -218,15 +234,16 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
     ])
 
     const buildMatchHref = (row: SearchMatchRow | undefined, index: number) => {
-      if (!row?.document_slug || !row.page_number) return null
+      if (!row?.document_slug || (!row.page_number && !row.storage_path)) return null
       const resultParams = new URLSearchParams({
-        sourcePage: String(row.page_number),
         q: searchQuery,
         sort: searchSort,
         source: searchSource || "all",
         searchIndex: String(index),
         pageSize: String(searchPageSize),
       })
+      if (row.page_number) resultParams.set("sourcePage", String(row.page_number))
+      if (row.storage_path) resultParams.set("ocrPath", row.storage_path)
       if (searchYear) resultParams.set("year", String(searchYear))
       if (searchTotal) resultParams.set("searchTotal", String(searchTotal))
       return `/media/race-programs/${row.document_slug}?${resultParams.toString()}`
@@ -298,7 +315,7 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
         </div>
       </section>
 
-      {focusedSearchMatch && matchedImage && requestedSourcePage ? (
+      {focusedSearchMatch && matchedImage ? (
         <section className="ma-section">
           <div
             style={{
@@ -337,7 +354,7 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
           <div className="ma-section-head">
             <div>
               <div className="ma-kicker">OCR Search Match</div>
-              <h2 className="ma-h2">Scanned Page {requestedSourcePage}</h2>
+              <h2 className="ma-h2">Scanned Page {focusedPageLabel}</h2>
             </div>
             <div className="ma-note">
               {searchLayoutLines.length
@@ -373,7 +390,7 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
             <figure className="ma-scan-frame">
               <a href={matchedImage} target="_blank" rel="noreferrer" style={{ display: 'block' }}>
                 <div style={{ position: 'relative', lineHeight: 0 }}>
-                  <img src={matchedImage} alt={`${program.title} scanned page ${requestedSourcePage}`} loading="eager" style={{ display: 'block', width: '100%', height: 'auto' }} />
+                  <img src={matchedImage} alt={`${program.title} scanned page ${focusedPageLabel}`} loading="eager" style={{ display: 'block', width: '100%', height: 'auto' }} />
                   {searchLayoutLines.map((line, index) => (
                     <span
                       key={`${line.text}-${index}`}
@@ -396,7 +413,7 @@ export default async function RaceProgramDetailPage({ params, searchParams }: Ra
                 </div>
               </a>
               <figcaption>
-                Page {requestedSourcePage} • {matchPosition && searchTotal ? `Match ${matchPosition} of ${searchTotal}` : 'Exact OCR Search Match'}
+                Page {focusedPageLabel} • {matchPosition && searchTotal ? `Match ${matchPosition} of ${searchTotal}` : 'Exact OCR Search Match'}
                 {searchLayoutLines.length ? ` • ${searchLayoutLines.length} highlighted OCR line${searchLayoutLines.length === 1 ? '' : 's'}` : ''}
               </figcaption>
             </figure>
