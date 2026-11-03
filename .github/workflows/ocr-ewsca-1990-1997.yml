@@ -1,0 +1,107 @@
+name: Backfill EWSCA Yearbooks 1990-1997 OCR
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ocr-ewsca-1990-1997.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 7
+      matrix:
+        include:
+          - {year: 1990, pages: 45}
+          - {year: 1991, pages: 40}
+          - {year: 1993, pages: 40}
+          - {year: 1994, pages: 43}
+          - {year: 1995, pages: 41}
+          - {year: 1996, pages: 40}
+          - {year: 1997, pages: 37}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned CPU PaddleOCR
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+      - name: Index source scans with normalized line coordinates
+        env:
+          OCR_DOCUMENT_YEAR: ${{ matrix.year }}
+          OCR_DOCUMENT_SLUG: ${{ matrix.year }}-eastern-wisconsin-stock-car-association-yearbook
+          OCR_DOCUMENT_TITLE: ${{ matrix.year }} Eastern Wisconsin Stock Car Association Yearbook
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          FLAGS_enable_pir_api: '0'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/ocr_yearbook_missing.py --start 1 --end "${{ matrix.pages }}"
+      - name: Preserve each year's OCR output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ewsca-ocr-${{ matrix.year }}
+          path: audit-ocr/
+          retention-days: 30
+          if-no-files-found: warn
+
+  prepare:
+    needs: ocr
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ewsca-ocr-*
+          path: audit-ocr
+          merge-multiple: true
+      - name: Validate all page counts and produce permanent audit data
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          counts={1990:45,1991:40,1993:40,1994:43,1995:41,1996:40,1997:37}
+          out=Path('audit/yearbook-ocr');out.mkdir(parents=True,exist_ok=True)
+          for year,expected in counts.items():
+              slug=f'{year}-eastern-wisconsin-stock-car-association-yearbook'
+              file=Path('audit-ocr')/slug/'part-001.json'
+              assert file.exists(),f'Missing OCR artifact {file}'
+              rows=json.loads(file.read_text(encoding='utf-8'))
+              assert [r['page_number'] for r in rows]==list(range(1,expected+1)),slug
+              assert all(r['status']=='complete' and r['ocr_text'].strip() for r in rows),slug
+              (out/f'{slug}.json').write_text(json.dumps(rows,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+              target=out/slug;target.mkdir(parents=True,exist_ok=True)
+              for n in range(0,expected,5):
+                  part=rows[n:n+5]
+                  p=target/f"pages-{part[0]['page_number']:03d}-{part[-1]['page_number']:03d}.json"
+                  p.write_text(json.dumps(part,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+              print(f'VALIDATED: {slug} pages={len(rows)} characters={sum(len(r["ocr_text"]) for r in rows)}',flush=True)
+          PY
+      - name: Preserve validated OCR backups and import batches in GitHub
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "museum-ocr-bot"
+          git config user.email "museum-ocr-bot@users.noreply.github.com"
+          git add audit/yearbook-ocr/
+          git commit -m "Archive complete EWSCA 1990–1997 OCR and import batches" || true
+          git push origin HEAD:main
