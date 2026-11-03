@@ -1,0 +1,41 @@
+name: Verify 1988 EWSCA Page 44 OCR
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ocr-1988-ewsca-page44.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recognize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PaddleOCR
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+      - name: Re-recognize 1988 EWSCA page 044
+        env:
+          OCR_DOCUMENT_YEAR: "1988"
+          OCR_DOCUMENT_SLUG: "1988-eastern-wisconsin-stock-car-association-yearbook"
+          OCR_DOCUMENT_TITLE: "1988 Eastern Wisconsin Stock Car Association Yearbook"
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          FLAGS_enable_pir_api: '0'
+        run: python scripts/ocr_yearbook_missing.py --start 44 --end 44
+      - name: Preserve repair attempt even if no text
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ewsca-1988-page044-ocr-review
+          path: audit-ocr/
+          retention-days: 30
+          if-no-files-found: warn
