@@ -17,7 +17,8 @@ from pathlib import Path
 from urllib.parse import quote
 
 SLUG = os.environ.get("OCR_DOCUMENT_SLUG", "1981-national-late-model-annual-yearbook")
-TITLE = os.environ.get("OCR_DOCUMENT_TITLE", SLUG.replace("-", " ").title())
+from datetime import datetime
+TITLE = os.environ.get("OCR_DOCUMENT_TITLE", "Milwaukee Mile Program — " + datetime.strptime(SLUG[:10], "%Y-%m-%d").strftime("%B %-d, %Y"))
 YEAR = int(os.environ.get("OCR_DOCUMENT_YEAR", SLUG[:4]))
 DOCTYPE = "program"
 BASE = "https://szvkleurojiwqkkztxtr.supabase.co"
