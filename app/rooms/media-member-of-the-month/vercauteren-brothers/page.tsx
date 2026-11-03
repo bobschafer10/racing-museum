@@ -57,6 +57,20 @@ const ARCHIVE_LINKS: ArchiveLink[] = [
     note: 'A race report documenting Gary’s continued WIR coverage.',
   },
 ]
+
+const PROGRAMS = [
+  { slug: '1979-wisconsin-international-raceway-wi-yearbook', path: 'programs/1979-wisconsin-international-raceway-wi-yearbook/5.jpg', year: '1979', title: 'Alan Kulwicki drives faster than he talks', attribution: 'Article by Gary Vercauteren', note: 'A signed driver profile in the WIR yearbook.' },
+  { slug: '1979-wisconsin-international-raceway-wi-yearbook', path: 'programs/1979-wisconsin-international-raceway-wi-yearbook/3.jpg', year: '1979', title: 'Pete Parker profile', attribution: 'Text and photographs credited to Gary Vercauteren', note: 'A driver story from the northeastern Wisconsin late-model era.' },
+  { slug: '1982-wisconsin-international-raceway-wi-yearbook', path: 'programs/1982-wisconsin-international-raceway-wi-yearbook/1982 - WIR PROGRAM 1_003.jpg', year: '1982', title: 'Larry Detjens remembered', attribution: 'Article by Gary Vercauteren', note: 'A contemporary tribute in the WIR annual.' },
+  { slug: '1982-wisconsin-international-raceway-wi-yearbook', path: 'programs/1982-wisconsin-international-raceway-wi-yearbook/1982 - WIR PROGRAM 1_005.jpg', year: '1982', title: 'Marv Marzofka profile', attribution: 'Article by Gary; photograph credited to Jim Vercauteren', note: 'An example of the family’s combined newspaper and photo work.' },
+  { slug: '1986-wisconsin-international-raceway-wi-yearbook', path: 'programs/1986-wisconsin-international-raceway-wi-yearbook/1986 - WIR PROGRAM 1_008.jpg', year: '1986', title: 'Red, White and Blue preview', attribution: 'Photo credited to Pete Vercauteren', note: 'Pete’s photo credit survives in a WIR publication.' },
+  { slug: '1993-artgo-challenge-series-yearbook', path: 'programs/1993-artgo-challenge-series-yearbook/019.jpg', year: '1993', title: 'Mid-American’s rising profile', attribution: 'ARTGO yearbook', note: 'The source identifies Gary as president of the Mid-American Stock Car Series.' },
+]
+
+function programUrl(program: (typeof PROGRAMS)[number]): string {
+  return '/media/race-programs/' + program.slug + '?ocrPath=' + encodeURIComponent(program.path) + '&q=Vercauteren'
+}
+
 const TIMELINE = [
   { year: 'The beginning', title: 'Growing up beside the race track', description: 'Gary and Pete grew up near the Brown County Fairgrounds in De Pere. Racing was part of family life, long before their names appeared in the press.' },
   { year: '1970', title: 'Bylines in the racing papers', description: 'Surviving Midwest Racing News issues carry separate Pete and Gary bylines on Shawano, Seymour, and De Pere racing.' },
@@ -163,6 +177,7 @@ export default async function VercauterenBrothersRoom() {
         <a href="#timeline">Timeline</a>
         <a href="#photographs">Photography</a>
         <a href="#newsroom">Racing Press</a>
+        <a href="#programs">Yearbooks</a>
         <a href="#legacy">Legacy &amp; Sources</a>
       </nav>
 
@@ -221,6 +236,22 @@ export default async function VercauterenBrothersRoom() {
             </Link>)}
           </div>
           <p className={styles.archiveNote}>These examples are the first curated selection, not the full inventory. The surname appears on thousands of OCR pages, including repeated mastheads; those mentions must be separated from actual authored pieces and photo credits.</p>
+        </section>
+
+
+        <section id="programs" className={styles.programSection}>
+          <span className={styles.sectionKicker}>The press box, preserved in print</span>
+          <h2>Programs &amp; yearbooks</h2>
+          <p>Original programs carry the brothers’ writing and photo credits. The museum’s OCR search currently identifies Vercauteren-name matches on 50 pages across 18 yearbooks; these are selected, verified examples, not a complete publication credit list.</p>
+          <div className={styles.programGrid}>
+            {PROGRAMS.map((program) => <Link key={program.path} href={programUrl(program)} className={styles.programCard}>
+              <span>{program.year} · ORIGINAL YEARBOOK</span>
+              <strong>{program.title}</strong>
+              <small>{program.attribution}</small>
+              <p>{program.note}</p>
+              <em>View original scanned page →</em>
+            </Link>)}
+          </div>
         </section>
 
         <section id="legacy" className={styles.legacySection}>
