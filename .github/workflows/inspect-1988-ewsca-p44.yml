@@ -1,0 +1,26 @@
+name: Inspect 1988 EWSCA Page 44 Scan
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-1988-ewsca-p44.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download original image for visual audit only
+        shell: bash
+        run: |
+          mkdir -p out
+          curl -fLsS --retry 3 "https://szvkleurojiwqkkztxtr.supabase.co/storage/v1/object/public/media/programs/1988-eastern-wisconsin-stock-car-association-yearbook/044.jpg" -o out/page-044.jpg
+          file out/page-044.jpg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ewsca-1988-original-page-044
+          path: out/page-044.jpg
+          retention-days: 7
