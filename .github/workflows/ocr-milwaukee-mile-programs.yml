@@ -1,0 +1,129 @@
+name: Milwaukee Mile 15 Race Programs OCR
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ocr-milwaukee-mile-programs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include:
+          - {date: "1956-08-23", pages: 13}
+          - {date: "1956-08-25", pages: 13}
+          - {date: "1960-07-24", pages: 15}
+          - {date: "1961-06-04", pages: 20}
+          - {date: "1961-07-16", pages: 21}
+          - {date: "1962-08-16", pages: 18}
+          - {date: "1964-06-07", pages: 15}
+          - {date: "1965-08-21", pages: 17}
+          - {date: "1967-08-17", pages: 15}
+          - {date: "1968-06-09", pages: 15}
+          - {date: "1968-08-18", pages: 15}
+          - {date: "1970-08-20", pages: 15}
+          - {date: "1972-06-04", pages: 15}
+          - {date: "1978-05-07", pages: 13}
+          - {date: "1982-06-13", pages: 24}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned PaddleOCR models
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==3.2.0 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+          python -m pip install paddleocr==3.5.0 pillow
+      - name: Recognize all scans (preserve originals)
+        shell: bash
+        env:
+          OCR_DOCUMENT_SLUG: ${{ matrix.date }}-milwaukee-mile-wi-program
+          OCR_DOCUMENT_YEAR: ${{ matrix.date }}
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: 'True'
+          FLAGS_enable_pir_api: '0'
+        run: |
+          set -euo pipefail
+          export OCR_DOCUMENT_YEAR="${OCR_DOCUMENT_YEAR:0:4}"
+          python scripts/ocr_milwaukee_programs.py --start 1 --end "${{ matrix.pages }}"
+      - name: Preserve all OCR outcomes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mile-ocr-${{ matrix.date }}
+          path: audit-ocr/
+          retention-days: 30
+          if-no-files-found: warn
+
+  collect:
+    needs: ocr
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: mile-ocr-*
+          path: audit-ocr
+          merge-multiple: true
+      - name: Preserve validated OCR and segmented import files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          counts=json.loads('{"1956-08-23":13,"1956-08-25":13,"1960-07-24":15,"1961-06-04":20,"1961-07-16":21,"1962-08-16":18,"1964-06-07":15,"1965-08-21":17,"1967-08-17":15,"1968-06-09":15,"1968-08-18":15,"1970-08-20":15,"1972-06-04":15,"1978-05-07":13,"1982-06-13":24}')
+          dest=Path('audit/program-ocr')
+          dest.mkdir(parents=True,exist_ok=True)
+          all_issues=[]
+          for date,count in counts.items():
+              slug=f'{date}-milwaukee-mile-wi-program'
+              path=Path('audit-ocr')/slug/'part-001.json'
+              if not path.exists():
+                  all_issues.append(f'{slug}: job artifact missing')
+                  continue
+              data=json.loads(path.read_text(encoding='utf-8'))
+              if len(data)!=count or [p['page_number'] for p in data]!=list(range(1,count+1)):
+                  all_issues.append(f'{slug}: wrong or missing page inventory')
+                  continue
+              assert all(p['document_type']=='program' and p['document_slug']==slug for p in data),slug
+              (dest/f'{slug}.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+              chunk=dest/slug
+              chunk.mkdir(exist_ok=True)
+              for start in range(0,len(data),5):
+                  pages=data[start:start+5]
+                  filename=f"pages-{pages[0]['page_number']:03d}-{pages[-1]['page_number']:03d}.json"
+                  (chunk/filename).write_text(json.dumps(pages,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+              n_good=sum(x['status']=='complete' and bool(x['ocr_text'].strip()) for x in data)
+              n_bad=count-n_good
+              print(f'{slug}: {n_good}/{count} text-recognized; {n_bad} review-needed; characters={sum(len(x["ocr_text"]) for x in data)}',flush=True)
+              if n_bad:
+                  all_issues.append(f'{slug}: {n_bad} pages require visual review')
+          (dest/'issues.json').write_text(json.dumps(all_issues,indent=2),encoding='utf-8')
+          print('ISSUES='+json.dumps(all_issues),flush=True)
+          assert len(list(dest.glob('*-milwaukee-mile-wi-program.json')))==len(counts),"One or more program artifacts missing"
+          PY
+      - name: Archive OCR files with safe rebase
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name museum-ocr-bot
+          git config user.email museum-ocr-bot@users.noreply.github.com
+          git add audit/program-ocr/
+          git commit -m "Preserve full Milwaukee Mile race program OCR and import pages" || true
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
