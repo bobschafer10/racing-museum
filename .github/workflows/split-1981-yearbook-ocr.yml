@@ -1,0 +1,45 @@
+name: Split 1981 Yearbook OCR for Database Import
+
+on:
+  push:
+    paths:
+      - '.github/workflows/split-1981-yearbook-ocr.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Split validated OCR JSON into independently importable sections
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('audit/yearbook-ocr/1981-national-late-model-annual-yearbook.json')
+          rows=json.loads(p.read_text(encoding='utf-8'))
+          assert len(rows)==67
+          assert [r['page_number'] for r in rows]==list(range(1,68))
+          out=Path('audit/yearbook-ocr/1981-national-late-model-annual-yearbook')
+          out.mkdir(parents=True,exist_ok=True)
+          for i in range(0,len(rows),5):
+              part=rows[i:i+5]
+              name=f"pages-{part[0]['page_number']:03d}-{part[-1]['page_number']:03d}.json"
+              path=out/name
+              path.write_text(json.dumps(part,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+              print(name,path.stat().st_size,flush=True)
+          PY
+      - name: Commit OCR import chunks
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "museum-ocr-bot"
+          git config user.email "museum-ocr-bot@users.noreply.github.com"
+          git add audit/yearbook-ocr/1981-national-late-model-annual-yearbook/
+          git commit -m "Split validated 1981 yearbook OCR into importable page batches" || true
+          git push origin HEAD:main
