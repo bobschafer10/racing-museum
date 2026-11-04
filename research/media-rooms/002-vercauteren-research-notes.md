@@ -164,3 +164,11 @@ https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermei
 - Preview URL for the previously tested build: https://racing-museum-odsctx5y8-robert-schafer-s-projects.vercel.app/rooms/media-member-of-the-month/vercauteren-brothers
 - Browser rendering at the protected preview was not independently inspected; this remains the outstanding visual QA task.
 - No production merge, no update to the homepage current-month feature, and no production Supabase writes were performed.
+
+## Visual source research — Pete headshots and both brothers' original columns
+- Joe Verdegan original caption confirms Pete Vercauteren **at left with father Harold**, holding Midwest Racing News. Image URL: https://joeverdegan.com/wp-content/uploads/2020/09/Pete-Vercauteren.jpg . Article: https://joeverdegan.com/pete-vercauteren/ . Not Gary and Pete together; reproduction permission not established.
+- Hansen Family Funeral obituary identifies Pete in a portrait: https://cdn.f1connect.net/photo/tributes/t/8/r/207x207/7903305/Peter-Pete-Vercauteren-1732645088.jpg . Source: https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren/ . Link only pending rights.
+- Gary's original MRN obituary: Oct 19 2005 p5, headline "Gary Vercauteren, founder of Mid-America Racing Series and ASL, dead at 55". It includes his career history; possible portrait is not independently established. Link: https://www.uppermidwestautoracingmuseum.org/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren
+- **Critical original 1972 same-page dual bylines:** MRN April 27 1972 p8, N.E. Wis. Race News by Pete (title x=.097,y=.038; byline x=.185,y=.065); Wisconsin Review by Gary (title x=.660,y=.041; byline x=.753,y=.069). Original R2 image: https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/1972-04-27/008.jpg
+- Additional primary clip: Pete Apr 26 1973 MRN p9 (title x=.137,y=.110 and byline x=.218,y=.138), and Gary Aug 20 1970 MRN p14 "Capacity De Pere Crowd" (headline x=.210,y=.416 and byline x=.246,y=.464).
+- Added CSS-windowed unaltered archive scans in Room 002 with full uncropped page links. No image pixels have been AI-generated. Preview alignment still requires browser visual checking.
