@@ -317,7 +317,7 @@ export default async function VercauterenBrothersRoom() {
             {ARCHIVE_LINKS.map((article) => <Link key={article.publication + article.date + article.page} href={newspaperUrl(article)} className={styles.newspaperCard}>
               <span>{article.publication === 'midwest-racing-news' ? 'MIDWEST RACING NEWS' : 'CHECKERED FLAG RACING NEWS'}</span>
               <strong>{article.headline}</strong>
-              <small>{article.date} · Page {article.page} · By {article.author}</small>
+              <small>{article.date} · Page {article.page} · {article.author === 'Gary Vercauteren' || article.author === 'Pete Vercauteren' ? 'By ' + article.author : article.author}</small>
               <p>{article.note}</p>
               <em>Open original newspaper page →</em>
             </Link>)}
