@@ -116,3 +116,18 @@ https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermei
 - Local historical accounts and Keith's family statement describe the Mid-American tour as formed/launched for **1993**. A contemporary 2005 obituary notice says it was **created in 1992**. Present 1993 as the **launch/inaugural racing season**; distinguish conception/organization from the first racing season if supported by future primary evidence.
 - Pete's 2020 oral history names brother **Jim** as a main photographer; original WIR program captions carry Jim's distinct credits. Do not attribute every Vercauteren photo to Gary or Pete.
 - The 2011 source explicitly says Pete served as vice president of Mid-American in its early years. This provides a basis for a future "Pete the organizer" section, alongside the better documented "Gary the PR director" section.
+
+
+### New 1993 contemporary founding/PR sources
+- **MRN January 14, 1993, p.10:** Gary's Wisconsin Shortracks column recalls receiving a telephone call from newly crowned NASCAR champion Alan Kulwicki and reflects on Kulwicki's racing days in Wisconsin. This complements Gary's earlier 1979 WIR yearbook profile of Kulwicki.
+- **MRN February 11, 1993, p.15:** an original news item quotes Gary as *Mid-American Series President*, reports the Vercauteren Memorial's move from Chilton to WIR, and announces the Rockford opener planned for April 3–4. Contemporary primary documentary evidence for the series' formation and the memorial's evolution.
+- **MRN February 11, 1993, p.5:** Rockford Speedway advertisement introduces the ShopKo Mid-American Series and supplies Gary as the entry contact. Store/use as a publicity item, not as an independently authored Gary article.
+- **MRN May 6, 1993, p.8:** a Mid-American/WIR memorial race advertisement names Harold and Regina. Do not misclassify the promotional advertisement as a signed Gary article.
+- **MRN May 13, 1993, p.14:** program coverage promotes the Mid-American "Dirt Devil National Championship 25" honoring Harold and Regina as part of WIR Spring Nationals.
+- Relevant later secondary source: 2005 Jayski notice says the organization was *created in 1992*, while contemporary references record the **inaugural 1993 racing season**. Maintain precise distinction between organizing a series and first racing season.
+
+### Later QA checkpoints
+- **16** newspaper cards in draft, plus **8** WIR/ARTGO program cards. All 13 earlier newspaper paths and all 8 program paths were verified as exact 1:1 records in Supabase. The three newly added 1993 newspaper paths also appeared directly in the search results; these should be included in the next exact-link SQL check.
+- 1979 WIR, 1982 WIR, 1986 WIR and 1993 ARTGO source documents have **29 matched pages total** with Vercauteren surname, all 29 in `complete` OCR status and carrying usable text.
+- **6 real photograph binaries** checked against `storage.objects` in the `media` bucket: hero image (Bob Bennett 1972 / Pete credit); Al Schill 1973 (Pete); Pete Parker 1974 (Pete); Dale Earnhardt 1987 Slinger (Pete); Dick Trickle 1984 Rockford (Gary); Tim Nooner 1987 WIR (Gary). All six canonical photo paths exist.
+- From the byline index: **1,462 distinct page rows across 715 (publication, issue) combinations**. These represent OCR candidate pages, NOT 1,462 visually validated authored articles.
