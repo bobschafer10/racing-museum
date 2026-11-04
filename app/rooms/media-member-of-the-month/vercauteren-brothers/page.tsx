@@ -268,8 +268,8 @@ export default async function VercauterenBrothersRoom() {
           <div>
             <span className={styles.sectionKicker}>From the Brown County Fairgrounds to the Midwest</span>
             <h2>More than a pair of names in a photo credit.</h2>
-            <p>Gary and Pete grew up within sight of the racing at De Pere. The family became a fixture in regional racing media: their father Harold sold <em>Midwest Racing News</em>, their mother Regina sold photographs, and the brothers documented the racing with reporting, pictures, driver features and track publicity.</p>
-            <p>At a time before instant racing updates, their work helped fans follow the rivalries, fast cars and personalities at De Pere, Shawano, Seymour, and beyond. In later decades they also helped shape the racing itself.</p>
+            <p>Gary and Pete grew up within sight of the racing at De Pere. Their work became a family enterprise: their father Harold sold <em>Midwest Racing News</em>, their mother Regina sold photographs, and the brothers — both students at St. Norbert College — documented racing through results, pictures, driver features and track publicity. Brother Jim also developed a significant photographic role, with credits preserved in the WIR programs.</p>
+            <p>At a time before instant racing updates, the family reported selling as many as 1,200–1,500 copies of Midwest Racing News over a racing weekend. Their coverage helped fans follow the rivalries, cars and personalities at De Pere, Shawano, Seymour, and beyond. In later decades they also helped shape the racing itself.</p>
           </div>
           <aside className={styles.stats}>
             <div><strong>{photos.toLocaleString()}</strong><span>Records typed as photographs</span></div>
@@ -308,6 +308,11 @@ export default async function VercauterenBrothersRoom() {
           <span className={styles.sectionKicker}>Original pages • Original bylines</span>
           <h2>The newsroom: MRN &amp; CFRN</h2>
           <p>These selected pages were located in the museum’s searchable newspaper OCR. Each link opens the original issue and page; OCR text may contain transcription errors.</p>
+          <div className={styles.pressInventory} aria-label="Research index overview">
+            <div><strong>1,462</strong><span>Distinct newspaper pages with Gary or Pete byline patterns</span></div>
+            <div><strong>715</strong><span>Publication-and-issue combinations represented</span></div>
+            <div><strong>16</strong><span>Selected print artifacts linked below</span></div>
+          </div>
           <div className={styles.newspaperGrid}>
             {ARCHIVE_LINKS.map((article) => <Link key={article.publication + article.date + article.page} href={newspaperUrl(article)} className={styles.newspaperCard}>
               <span>{article.publication === 'midwest-racing-news' ? 'MIDWEST RACING NEWS' : 'CHECKERED FLAG RACING NEWS'}</span>
