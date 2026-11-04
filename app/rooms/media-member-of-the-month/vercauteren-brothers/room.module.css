@@ -140,3 +140,16 @@
 .authenticPhoto small{display:block;margin-top:6px;font:11px/1.45 Arial,sans-serif;color:#71543b}
 @media(max-width:940px){.authenticGallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.peopleGrid{grid-template-columns:1fr}.personCard{padding:23px 21px}.authenticGallery{gap:10px}.authenticPhoto img{height:145px}}
+
+
+.artifactShelf{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:25px 0 33px}
+.artifactFrame{display:flex;flex-direction:column;min-width:0;border:7px solid #cab188;background:#f7e5c3;text-decoration:none;color:#392518;box-shadow:0 7px 15px #0006;transition:transform .16s ease}
+.artifactFrame:hover{transform:translateY(-3px);box-shadow:0 11px 20px #0007}
+.artifactImage{display:flex;align-items:center;justify-content:center;background:#4a3e2f;height:252px;overflow:hidden}
+.artifactImage img{display:block;max-width:100%;max-height:100%;height:auto;width:auto;object-fit:contain}
+.artifactCaption{padding:11px 13px 13px;flex:1}
+.artifactCaption small{display:block;font:900 9px/1.5 Arial,sans-serif;color:#823326;letter-spacing:.08em}
+.artifactCaption strong{display:block;font:700 17px/1.18 Georgia,serif;margin-top:5px}
+.artifactCaption span{display:block;font:700 11px Arial,sans-serif;color:#7c3526;margin-top:12px}
+@media(max-width:1000px){.artifactShelf{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.artifactShelf{gap:10px}.artifactFrame{border-width:4px}.artifactImage{height:185px}.artifactCaption{padding:9px}.artifactCaption strong{font-size:14px}}
