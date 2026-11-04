@@ -113,3 +113,5 @@
 .publisherSource strong{font-size:19px;color:#edcf93;margin-bottom:12px}
 .publisherSource a{padding:13px 0;color:#efc384;font-size:14px;text-decoration:underline;border-bottom:1px solid #5c472f}
 @media(max-width:850px){.publisherSection{grid-template-columns:1fr}}
+
+.memorialWinner small{margin-top:5px;font:700 10px/1.2 Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#c4a47b}
