@@ -104,3 +104,12 @@
 .memorialPresent p{font-size:15px;line-height:1.6;color:#dfcbaa;max-width:850px}
 @media(max-width:950px){.memorialGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:650px){.memorialGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.memorialWinner strong{font-size:17px}}
+
+.publisherSection{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,.72fr);gap:32px;align-items:start;margin:0 0 72px;padding:30px;border:1px solid #9d7945;background:linear-gradient(120deg,#221b15,#33251c)}
+.publisherCopy h2{margin-top:12px}
+.publisherCopy p{font-size:16px;color:#d0bda1}
+.publisherSource{border-left:3px solid #ad8045;padding:7px 0 10px 19px}
+.publisherSource strong,.publisherSource a{display:block}
+.publisherSource strong{font-size:19px;color:#edcf93;margin-bottom:12px}
+.publisherSource a{padding:13px 0;color:#efc384;font-size:14px;text-decoration:underline;border-bottom:1px solid #5c472f}
+@media(max-width:850px){.publisherSection{grid-template-columns:1fr}}
