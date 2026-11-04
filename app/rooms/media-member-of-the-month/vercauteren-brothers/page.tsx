@@ -109,9 +109,9 @@ function programUrl(program: (typeof PROGRAMS)[number]): string {
 }
 
 const MEMORIAL_WINNERS = [
-  { year: 1990, winner: 'Wayne Strand' },
-  { year: 1991, winner: 'Larry Richards' },
-  { year: 1992, winner: 'Jerry Wenzel' },
+  { year: 1990, winner: 'Wayne Strand', venue: 'Chilton' },
+  { year: 1991, winner: 'Larry Richards', venue: 'Chilton' },
+  { year: 1992, winner: 'Jerry Wenzel', venue: 'Chilton' },
   { year: 1993, winner: 'Eddie Hoffman' },
   { year: 1994, winner: 'Brian Lambie' },
   { year: 1995, winner: 'Eddie Hoffman' },
@@ -126,8 +126,10 @@ const MEMORIAL_WINNERS = [
   { year: 2004, winner: 'Bill Prietzel' },
   { year: 2005, winner: 'Brett Piontek' },
   { year: 2006, winner: 'James Swan' },
-  { year: 2007, winner: 'Kevin Damrow' },
+  { year: 2007, winner: 'Kevin Damrow', venue: '141 Speedway' },
   { year: 2008, winner: 'Jake Finney' },
+  { year: 2009, winner: 'Greg Haese', venue: '141 Speedway' },
+  { year: 2010, winner: 'Bill Prietzel', venue: 'Road America' },
 ]
 
 const TIMELINE = [
@@ -141,6 +143,7 @@ const TIMELINE = [
 const SOURCES = [
   { title: 'Pete Vercauteren — oral history', author: 'Joe Verdegan, September 30, 2020', href: 'https://joeverdegan.com/pete-vercauteren/', description: 'Family origins, the Tri-track circuit, race photography, MRN distribution and the people who made northeastern Wisconsin racing.' },
   { title: 'Gary Vercauteren Memorial, 2026', author: 'Mid-Am Racing Series, May 17, 2026', href: 'https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermeir-wins-gary-vercauteren-memorial', description: 'The contemporary series records Cameron Vandermeir’s 2026 memorial victory at WIR and the family’s continuing place in the series.' },
+  { title: 'Memorial travels to Norway in 2011', author: 'Matt Panure, Mid-American Stock Car Series, August 3, 2011', href: 'https://www.carsandracingstuff.com/library/articles/24935.php', description: 'The memorial’s first 21 winners, original traveling trophy, and Pete’s role as an early series vice president.' },
   { title: 'Vercauteren Memorial returns to WIR', author: 'Keith Vercauteren, April 30, 2014', href: 'https://www.carsandracingstuff.com/library/articles/24845.php', description: 'Family perspective on Gary’s WIR years, 1972 publicity work, the memorial and the founding of Mid-American.' },
   { title: 'Pete Vercauteren with father Harold — captioned period photograph', author: 'Photo reproduced in Joe Verdegan’s oral history', href: 'https://joeverdegan.com/pete-vercauteren/', description: 'A source-captioned photo of Pete beside Harold and a copy of Midwest Racing News; permission for museum reproduction not yet established.' },
   { title: 'The Vercauteren Memorial history', author: 'Mid-American Stock Car Series, 2009', href: 'https://www.carsandracingstuff.com/library/articles/25038.php', description: 'Chronology of the traveling trophy and recorded memorial winners.' },
@@ -337,7 +340,7 @@ export default async function VercauterenBrothersRoom() {
           <div className={styles.legacyCopy}>
             <span className={styles.sectionKicker}>The work lived beyond the printed page</span>
             <h2>Wisconsin International Raceway and Mid-American</h2>
-            <p>Gary became public-relations director at Wisconsin International Raceway in 1972. He was involved in building the Red, White and Blue State Championship Series and the race programs that gave fans more than statistics. Pete and Gary later founded the Mid-American Stock Car Series in 1993, drawing on the successful grand-national racing formula in northeast Wisconsin.</p>
+            <p>Gary became public-relations director at Wisconsin International Raceway in 1972. He was involved in building the Red, White and Blue State Championship Series and the race programs that gave fans more than statistics. Pete and Gary later launched the Mid-American Stock Car Series for the 1993 racing season, drawing on the successful grand-national racing formula in northeast Wisconsin.</p>
             <p>The annual Vercauteren Memorial began in 1990 in honor of their parents, Harold and Regina. Following Gary’s death in October 2005, the memorial became an enduring tribute to three generations of racing-community involvement.</p><p><Link href="/series/mid-american-racing-series" className={styles.seriesLink}>Explore the museum’s Mid-American Racing Series history →</Link></p>
           </div>
           <div className={styles.sources}>
@@ -352,10 +355,10 @@ export default async function VercauterenBrothersRoom() {
           <span className={styles.sectionKicker}>The traveling trophy and its keepers</span>
           <h2>The Vercauteren Memorial</h2>
           <p>The race began at Chilton in 1990 in memory of Harold and Regina Vercauteren. When Gary and Pete created Mid-American in 1993, the memorial and its traveling trophy joined the new pavement series. After Gary died in 2005, the family’s tradition came to honor him as well.</p>
-          <p>The historical winners below are transcribed from a 2009 <a href="https://www.carsandracingstuff.com/library/articles/25038.php" target="_blank" rel="noreferrer">Mid-American series account</a>. They represent this particular memorial race, not all Mid-American feature winners. Event-level links to museum results will be added after checking each race and venue.</p>
+          <p>The 1990–2008 winners below are transcribed from a 2009 <a href="https://www.carsandracingstuff.com/library/articles/25038.php" target="_blank" rel="noreferrer">Mid-American series account</a>; 2009 and 2010 are confirmed in a <a href="https://www.carsandracingstuff.com/library/articles/24935.php" target="_blank" rel="noreferrer">2011 series account</a>. They represent this particular memorial race, not all Mid-American feature winners. Event-level links to museum results will be added after checking each race and venue.</p>
           <div className={styles.memorialGrid}>
             {MEMORIAL_WINNERS.map((item) => <div className={styles.memorialWinner} key={item.year}>
-              <span>{item.year}</span><strong>{item.winner}</strong>
+              <span>{item.year}</span><strong>{item.winner}</strong>{'venue' in item ? <small>{item.venue}</small> : null}
             </div>)}
           </div>
           <div className={styles.memorialPresent}>
