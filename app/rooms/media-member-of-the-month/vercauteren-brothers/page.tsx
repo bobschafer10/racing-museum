@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { createClient } from '@supabase/supabase-js'
+import { supabase } from '@/lib/supabase'
 import { getPhotoUrl } from '@/lib/photos'
 import styles from './room.module.css'
 
@@ -153,9 +153,13 @@ const TIMELINE = [
   { year: '1972', title: 'Gary takes a role at WIR', description: 'Gary was appointed public-relations director at Wisconsin International Raceway, where he helped develop the Red, White and Blue State Championship Series.' },
   { year: '1990', title: 'The Vercauteren Memorial begins', description: 'The original memorial race honored the brothers’ parents, Harold and Regina Vercauteren, beginning at Chilton.' },
   { year: '1993', title: 'Founding Mid-American', description: 'Gary and Pete launched the Mid-American Stock Car Series, taking a Wisconsin grand-national-inspired concept to paved tracks across the Midwest.' },
-  { year: '2005 and beyond', title: 'A lasting family legacy', description: 'After Gary’s death in October 2005, the annual memorial also became a tribute to his life and influence on the sport.' },
+  { year: '2005', title: 'Remembering Gary', description: 'Gary died in October 2005, aged 55. The Vercauteren Memorial continued as a tribute to his parents and to Gary’s influence on regional racing.' },
+  { year: '2024', title: 'Remembering Pete', description: 'Pete died on November 25, 2024, aged 75. His extensive eyewitness account of the De Pere–Shawano–Seymour racing scene remains a remarkable firsthand record.' },
 ]
 const SOURCES = [
+  { title: 'Pete Vercauteren — life and obituary', author: 'Hansen Family Funeral & Cremation Services, November 2024', href: 'https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren', description: 'Confirms Pete’s December 30, 1948 birth and November 25, 2024 death. Includes family photo and tribute leads; reproduction rights not yet established.' },
+  { title: 'Gary Vercauteren, in his own words: W.I.R. — Joe’s Challenge', author: 'Gary Vercauteren; republished by Mid-American, August 2006', href: 'https://www.carsandracingstuff.com/library/articles/24973.php', description: 'A firsthand account recalling his 1972 meeting with Joe Van Daalwyk and the development of Wisconsin International Raceway.' },
+  { title: 'Roger Van Daalwyk on Gary’s WIR contributions', author: 'Interview by Joe Verdegan, November 23, 2022', href: 'https://joeverdegan.com/roger-van-daalwyk-became-wirs-gm-at-18-years-old/', description: 'Independent recollections of Gary’s public-relations work and the creation of the Red, White and Blue Series.' },
   { title: 'Pete Vercauteren — oral history', author: 'Joe Verdegan, September 30, 2020', href: 'https://joeverdegan.com/pete-vercauteren/', description: 'Family origins, the Tri-track circuit, race photography, MRN distribution and the people who made northeastern Wisconsin racing.' },
   { title: 'Gary Vercauteren Memorial, 2026', author: 'Mid-Am Racing Series, May 17, 2026', href: 'https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermeir-wins-gary-vercauteren-memorial', description: 'The contemporary series records Cameron Vandermeir’s 2026 memorial victory at WIR and the family’s continuing place in the series.' },
   { title: 'Memorial travels to Norway in 2011', author: 'Matt Panure, Mid-American Stock Car Series, August 3, 2011', href: 'https://www.carsandracingstuff.com/library/articles/24935.php', description: 'The memorial’s first 21 winners, original traveling trophy, and Pete’s role as an early series vice president.' },
@@ -213,11 +217,6 @@ function PhotoCard({ photo }: { photo: PhotoRecord }) {
 }
 
 export default async function VercauterenBrothersRoom() {
-  const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    { auth: { persistSession: false, autoRefreshToken: false } },
-  )
   const { data, error } = await supabase.from('photos')
     .select('photo_id,file_name,track_slug,driver_slug,photographer_slug,credit_type,year')
     .in('photographer_slug', [...PETE_SLUGS, GARY_SLUG])
@@ -234,6 +233,16 @@ export default async function VercauterenBrothersRoom() {
   const garyGallery = galleryFor(rows, 'gary')
   const hero = rows.find((row) => row.file_name === 'brown-county-speedway_1972_bob-bennett_pete-vercauteren_photo_001.jpg') || peteGallery[0] || garyGallery[0]
   const heroPhoto = hero ? photoUrl(hero) : null
+  const authenticatedSpotlights = [
+    { file: 'brown-county-speedway_1973_al-schill_pete-vercauteren_photo_001.jpg', title: 'Al Schill · De Pere, 1973', caption: 'Photograph credited to Pete Vercauteren' },
+    { file: 'seymour-speedway_1974_pete-parker_pete-vercauteren_photo_001.jpg', title: 'Pete Parker · Seymour, 1974', caption: 'Photograph credited to Pete Vercauteren' },
+    { file: 'rockford-speedway_1984_dick-trickle_gary-vercauteren_photo_001.jpg', title: 'Dick Trickle · Rockford, 1984', caption: 'Photograph credited to Gary Vercauteren' },
+    { file: 'wisconsin-international-raceway_1987_tim-nooner_gary-vercauteren_photo_555.jpg', title: 'Tim Nooner · WIR, 1987', caption: 'Photograph credited to Gary Vercauteren' },
+  ].flatMap((item) => {
+    const photo = rows.find((row) => row.file_name === item.file)
+    return photo ? [{ ...item, photo }] : []
+  })
+
 
   return (
     <main className={styles.page}>
@@ -254,6 +263,7 @@ export default async function VercauterenBrothersRoom() {
 
       <nav className={styles.navigation} aria-label="Room 002 sections">
         <a href="#the-story">Their Story</a>
+        <a href="#the-brothers">Their Lives</a>
         <a href="#timeline">Timeline</a>
         <a href="#photographs">Photography</a>
         <a href="#newsroom">Racing Press</a>
@@ -280,6 +290,35 @@ export default async function VercauterenBrothersRoom() {
           </aside>
         </section>
 
+        <section id="the-brothers" className={styles.peopleSection}>
+          <span className={styles.sectionKicker}>Two brothers. Distinct voices. A shared purpose.</span>
+          <h2>Gary and Pete: the people behind the racing pages</h2>
+          <div className={styles.peopleGrid}>
+            <article className={styles.personCard}>
+              <span className={styles.personLabel}>Gary Vercauteren · 1950–2005</span>
+              <h3>The writer, publicist and series builder</h3>
+              <p>Gary covered De Pere, Shawano and Wisconsin International Raceway, becoming WIR’s public-relations director in 1972. His reporting, original driver profiles, promotional work and the Red, White and Blue State Championship Series helped put Wisconsin short-track racing before a much wider audience.</p>
+              <p>In <em>W.I.R. — Joe’s Challenge</em>, Gary recalled meeting Joe Van Daalwyk in March 1972 as the speedway was being rebuilt from the troubled KK Sports Arena era. His own account is an especially important source for this room.</p>
+              <p>Gary became president of the Mid-American Stock Car Series, whose first season was 1993. He died in October 2005.</p>
+              <a href="https://www.carsandracingstuff.com/library/articles/24973.php" rel="noreferrer" target="_blank">Read Gary’s account of WIR’s early years →</a>
+            </article>
+            <article className={styles.personCard}>
+              <span className={styles.personLabel}>Pete Vercauteren · 1948–2024</span>
+              <h3>The eyewitness to northeast Wisconsin racing</h3>
+              <p>Pete helped chronicle the De Pere–Shawano–Seymour circuit through race reports, feature stories, photography and his <em>N.E. Wis. Race News</em> column. His memories preserve the drivers, crowded grandstands, lively rivalries and grassroots culture of the era.</p>
+              <p>With his family, Pete helped distribute <em>Midwest Racing News</em> and make local racing information available to fans every week. He later helped Gary launch Mid-American and served in the organization’s early leadership.</p>
+              <p>Pete died November 25, 2024, at age 75. His 2020 interview with historian Joe Verdegan remains an essential oral-history source.</p>
+              <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">Read Pete’s racing memories →</a>
+              <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren" rel="noreferrer" target="_blank">Pete’s family obituary and tribute →</a>
+            </article>
+          </div>
+          <div className={styles.portraitNotice}>
+            <strong>Portrait research</strong>
+            <p>Joe Verdegan’s interview includes a captioned period image identifying Pete beside his father Harold with a copy of Midwest Racing News. The family obituary is another photographic lead. Authenticated portraits are being sourced for the exhibit; until reuse permission is confirmed, the museum is featuring racing photographs credited to the brothers rather than presenting imagined portraits as historical evidence.</p>
+            <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">View the source-captioned Pete and Harold photograph →</a>
+          </div>
+        </section>
+
         <section id="timeline" className={styles.timelineSection}>
           <span className={styles.sectionKicker}>A family on both sides of the press box</span>
           <h2>Milestones in their racing history</h2>
@@ -294,6 +333,16 @@ export default async function VercauterenBrothersRoom() {
           <span className={styles.sectionKicker}>From the original museum collection</span>
           <h2>Through their lenses</h2>
           <p>These are racing photographs credited to the brothers — not portraits of Gary or Pete. Each photograph opens its museum record and preserved attribution.</p>
+          {authenticatedSpotlights.length > 0 ? (
+            <div className={styles.authenticGallery} aria-label="Verified museum racing photographs">
+              {authenticatedSpotlights.map(({ photo, file, title, caption }) => (
+                <Link key={file} href={'/photo/' + encodeURIComponent(file)} className={styles.authenticPhoto}>
+                  <img loading="lazy" src={photoUrl(photo)} alt={title + ', ' + caption} />
+                  <span><strong>{title}</strong><small>{caption}</small></span>
+                </Link>
+              ))}
+            </div>
+          ) : null}
           <div className={styles.collectionHead}>
             <h3>Pete Vercauteren</h3><Link href="/photographers/pete-vercauteren">Browse Pete’s collection →</Link>
           </div>
