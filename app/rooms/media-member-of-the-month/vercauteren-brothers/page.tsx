@@ -27,6 +27,41 @@ const PETE_SLUGS = ['pete-vercauteren', 'pete-vercauteran']
 const GARY_SLUG = 'gary-vercauteren'
 const ARCHIVE_LINKS: ArchiveLink[] = [
   {
+    publication: 'midwest-racing-news', date: '1970-09-10', page: 8,
+    headline: 'Derr wins the IMCA Badger 100 at Marshfield', author: 'Gary Vercauteren',
+    note: 'A 1970 national stock-car event report beyond the northeast Wisconsin circuit.',
+  },
+  {
+    publication: 'midwest-racing-news', date: '1972-05-11', page: 6,
+    headline: 'Shawano opener stopped by drivers’ strike', author: 'Gary Vercauteren',
+    note: 'A primary report showing that the brothers documented the difficult moments as well as the victories.',
+  },
+  {
+    publication: 'checkered-flag-racing-news', date: '1972-05-31', page: 1,
+    headline: 'Entries arrive for the first Red race', author: 'Gary Vercauteren',
+    note: 'The first season of WIR’s Red, White and Blue championship was being promoted in real time.',
+  },
+  {
+    publication: 'midwest-racing-news', date: '1972-06-29', page: 2,
+    headline: 'Trickle edges Rank in the inaugural Red race', author: 'Gary Vercauteren',
+    note: 'One of the exhibit’s most important historical links: the first Red event in 1972.',
+  },
+  {
+    publication: 'midwest-racing-news', date: '1973-04-26', page: 9,
+    headline: 'N.E. Wis. Race News: looking toward 1973', author: 'Pete Vercauteren',
+    note: 'A surviving example of Pete’s recurring regional column.',
+  },
+  {
+    publication: 'midwest-racing-news', date: '1973-06-14', page: 6,
+    headline: 'Roger Paul sweeps at De Pere', author: 'Pete Vercauteren',
+    note: 'Brown County Fairgrounds late-model reporting from the height of the circuit.',
+  },
+  {
+    publication: 'midwest-racing-news', date: '1973-06-21', page: 7,
+    headline: 'Kleinschmit repeats at Leo’s', author: 'Pete Vercauteren',
+    note: 'Pete’s coverage extended to the Oshkosh track and the wider Fox Valley.',
+  },
+  {
     publication: 'midwest-racing-news', date: '1970-07-30', page: 11,
     headline: 'Shawano sweep for J. J. Smith', author: 'Pete Vercauteren',
     note: 'A contemporary race report carrying Pete’s byline.',
@@ -71,6 +106,28 @@ function programUrl(program: (typeof PROGRAMS)[number]): string {
   return '/media/race-programs/' + program.slug + '?ocrPath=' + encodeURIComponent(program.path) + '&q=Vercauteren'
 }
 
+const MEMORIAL_WINNERS = [
+  { year: 1990, winner: 'Wayne Strand' },
+  { year: 1991, winner: 'Larry Richards' },
+  { year: 1992, winner: 'Jerry Wenzel' },
+  { year: 1993, winner: 'Eddie Hoffman' },
+  { year: 1994, winner: 'Brian Lambie' },
+  { year: 1995, winner: 'Eddie Hoffman' },
+  { year: 1996, winner: 'Pat Kelly' },
+  { year: 1997, winner: 'Bill Prietzel' },
+  { year: 1998, winner: 'Pat Kelly' },
+  { year: 1999, winner: 'Gregg Haese' },
+  { year: 2000, winner: 'Mark Pluer' },
+  { year: 2001, winner: 'Peter Hernandez' },
+  { year: 2002, winner: 'Peter Hernandez' },
+  { year: 2003, winner: 'Jeremy Spoonmore' },
+  { year: 2004, winner: 'Bill Prietzel' },
+  { year: 2005, winner: 'Brett Piontek' },
+  { year: 2006, winner: 'James Swan' },
+  { year: 2007, winner: 'Kevin Damrow' },
+  { year: 2008, winner: 'Jake Finney' },
+]
+
 const TIMELINE = [
   { year: 'The beginning', title: 'Growing up beside the race track', description: 'Gary and Pete grew up near the Brown County Fairgrounds in De Pere. Racing was part of family life, long before their names appeared in the press.' },
   { year: '1970', title: 'Bylines in the racing papers', description: 'Surviving Midwest Racing News issues carry separate Pete and Gary bylines on Shawano, Seymour, and De Pere racing.' },
@@ -81,8 +138,11 @@ const TIMELINE = [
 ]
 const SOURCES = [
   { title: 'Pete Vercauteren — oral history', author: 'Joe Verdegan, September 30, 2020', href: 'https://joeverdegan.com/pete-vercauteren/', description: 'Family origins, the Tri-track circuit, race photography, MRN distribution and the people who made northeastern Wisconsin racing.' },
+  { title: 'Gary Vercauteren Memorial, 2026', author: 'Mid-Am Racing Series, May 17, 2026', href: 'https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermeir-wins-gary-vercauteren-memorial', description: 'The contemporary series records Cameron Vandermeir’s 2026 memorial victory at WIR and the family’s continuing place in the series.' },
   { title: 'Vercauteren Memorial returns to WIR', author: 'Keith Vercauteren, April 30, 2014', href: 'https://www.carsandracingstuff.com/library/articles/24845.php', description: 'Family perspective on Gary’s WIR years, 1972 publicity work, the memorial and the founding of Mid-American.' },
+  { title: 'Pete Vercauteren with father Harold — captioned period photograph', author: 'Photo reproduced in Joe Verdegan’s oral history', href: 'https://joeverdegan.com/pete-vercauteren/', description: 'A source-captioned photo of Pete beside Harold and a copy of Midwest Racing News; permission for museum reproduction not yet established.' },
   { title: 'The Vercauteren Memorial history', author: 'Mid-American Stock Car Series, 2009', href: 'https://www.carsandracingstuff.com/library/articles/25038.php', description: 'Chronology of the traveling trophy and recorded memorial winners.' },
+  { title: 'WIR and the birth of Red, White and Blue', author: 'Joe Verdegan', href: 'https://joeverdegan.com/1972-the-birth-of-wirs-red-white-blue-state-championship-series/', description: 'Retrospective with Dave Watson crediting Gary with promotion of the new state championship.' },
   { title: 'Larry Richards and the grand nationals', author: 'Joe Verdegan', href: 'https://joeverdegan.com/larry-richards-an-original-grand-national-outlaw/', description: 'Context on the Chilton grand national class and the origins of Mid-American.' },
 ]
 
@@ -179,6 +239,7 @@ export default async function VercauterenBrothersRoom() {
         <a href="#newsroom">Racing Press</a>
         <a href="#programs">Yearbooks</a>
         <a href="#legacy">Legacy &amp; Sources</a>
+        <a href="#memorial">The Memorial</a>
       </nav>
 
       <div className={styles.content}>
@@ -242,7 +303,7 @@ export default async function VercauterenBrothersRoom() {
         <section id="programs" className={styles.programSection}>
           <span className={styles.sectionKicker}>The press box, preserved in print</span>
           <h2>Programs &amp; yearbooks</h2>
-          <p>Original programs carry the brothers’ writing and photo credits. The museum’s OCR search currently identifies Vercauteren-name matches on 50 pages across 18 yearbooks; these are selected, verified examples, not a complete publication credit list.</p>
+          <p>Original programs carry the brothers’ writing and photo credits. The museum’s OCR search currently identifies Vercauteren-name matches on 50 pages across 18 yearbooks; these are selected source-linked examples, not a complete publication credit list. Each should be checked against the original scan before final publication.</p>
           <div className={styles.programGrid}>
             {PROGRAMS.map((program) => <Link key={program.path} href={programUrl(program)} className={styles.programCard}>
               <span>{program.year} · ORIGINAL YEARBOOK</span>
@@ -266,6 +327,23 @@ export default async function VercauterenBrothersRoom() {
             {SOURCES.map((source) => <a key={source.href} href={source.href} target="_blank" rel="noreferrer">
               <strong>{source.title}</strong><small>{source.author}</small><span>{source.description}</span>
             </a>)}
+          </div>
+        </section>
+
+        <section id="memorial" className={styles.memorialSection}>
+          <span className={styles.sectionKicker}>The traveling trophy and its keepers</span>
+          <h2>The Vercauteren Memorial</h2>
+          <p>The race began at Chilton in 1990 in memory of Harold and Regina Vercauteren. When Gary and Pete created Mid-American in 1993, the memorial and its traveling trophy joined the new pavement series. After Gary died in 2005, the family’s tradition came to honor him as well.</p>
+          <p>The historical winners below are transcribed from a 2009 <a href="https://www.carsandracingstuff.com/library/articles/25038.php" target="_blank" rel="noreferrer">Mid-American series account</a>. They represent this particular memorial race, not all Mid-American feature winners. Event-level links to museum results will be added after checking each race and venue.</p>
+          <div className={styles.memorialGrid}>
+            {MEMORIAL_WINNERS.map((item) => <div className={styles.memorialWinner} key={item.year}>
+              <span>{item.year}</span><strong>{item.winner}</strong>
+            </div>)}
+          </div>
+          <div className={styles.memorialPresent}>
+            <strong>The legacy continues</strong>
+            <p>The official Mid-Am Racing Series reported Cameron Vandermeir winning the 2026 Gary Vercauteren Memorial at Wisconsin International Raceway. This modern event illustrates the lasting connection between the brothers’ work and present-day racing.</p>
+            <a href="https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermeir-wins-gary-vercauteren-memorial" target="_blank" rel="noreferrer">Read the 2026 race report →</a>
           </div>
         </section>
 
