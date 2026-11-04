@@ -153,6 +153,63 @@ const MEMORIAL_WINNERS = [
   { year: 2010, winner: 'Bill Prietzel', venue: 'Road America' },
 ]
 
+
+type NewspaperClipping = {
+  id: string
+  date: string
+  page: number
+  title: string
+  author: string
+  caption: string
+  rect: { x: number; y: number; w: number; h: number }
+  original: { w: number; h: number }
+}
+const NEWSPAPER_CLIPPINGS: NewspaperClipping[] = [
+  { id: 'pete-1972', date: '1972-04-27', page: 8, title: 'N.E. Wis. Race News', author: 'Pete Vercauteren',
+    caption: 'Pete’s column, printed beside his brother Gary’s column in the same issue.',
+    rect: { x: .067, y: .029, w: .355, h: .335 }, original: { w: 3151, h: 4692 } },
+  { id: 'gary-1972', date: '1972-04-27', page: 8, title: 'Wisconsin Review', author: 'Gary Vercauteren',
+    caption: 'Gary’s recurring column on the right side of the same original MRN page.',
+    rect: { x: .634, y: .029, w: .347, h: .335 }, original: { w: 3151, h: 4692 } },
+  { id: 'pete-1973', date: '1973-04-26', page: 9, title: 'N.E. Wis. Race News', author: 'Pete Vercauteren',
+    caption: 'A second byline from Pete’s northeastern Wisconsin racing column.',
+    rect: { x: .094, y: .101, w: .315, h: .33 }, original: { w: 3328, h: 4845 } },
+  { id: 'gary-1970', date: '1970-08-20', page: 14, title: 'Capacity De Pere Crowd', author: 'Gary Vercauteren',
+    caption: 'One of Gary’s early reports from Brown County Fairgrounds Speedway.',
+    rect: { x: .193, y: .405, w: .386, h: .245 }, original: { w: 3151, h: 4666 } },
+]
+function NewspaperClippingCard({ clipping }: { clipping: NewspaperClipping }) {
+  const { rect, original } = clipping
+  // Coordinates from the original image's OCR line_layout, preserving source pixels.
+  const src = 'https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/'
+    + clipping.date + '/' + String(clipping.page).padStart(3, '0') + '.jpg'
+  const href = '/media/newspapers/midwest-racing-news/' + clipping.date
+    + '?sourcePage=' + clipping.page + '&q=Vercauteren'
+  return (
+    <Link href={href} className={styles.clippingCard}>
+      <div className={styles.clippingViewport} style={{aspectRatio: (original.w * rect.w) + ' / ' + (original.h * rect.h)}}>
+        <img src={src} loading="lazy" decoding="async"
+          alt={'Authentic Midwest Racing News clipping: ' + clipping.title + ', by ' + clipping.author}
+          style={{
+            position: 'absolute',
+            width: (100 / rect.w) + '%',
+            maxWidth: 'none',
+            left: (-100 * rect.x / rect.w) + '%',
+            top: (-100 * rect.y / rect.h) + '%',
+          }}
+        />
+      </div>
+      <div className={styles.clippingCopy}>
+        <small>ORIGINAL MIDWEST RACING NEWS · {clipping.date} · P. {clipping.page}</small>
+        <strong>{clipping.title}</strong>
+        <span>By {clipping.author}</span>
+        <p>{clipping.caption}</p>
+        <em>Open uncropped newspaper scan →</em>
+      </div>
+    </Link>
+  )
+}
+
 const TIMELINE = [
   { year: 'The beginning', title: 'Growing up beside the race track', description: 'Gary and Pete grew up near the Brown County Fairgrounds in De Pere. Racing was part of family life, long before their names appeared in the press.' },
   { year: '1970', title: 'Bylines in the racing papers', description: 'Surviving Midwest Racing News issues carry separate Pete and Gary bylines on Shawano, Seymour, and De Pere racing.' },
@@ -270,6 +327,7 @@ export default async function VercauterenBrothersRoom() {
       <nav className={styles.navigation} aria-label="Room 002 sections">
         <a href="#the-story">Their Story</a>
         <a href="#the-brothers">Their Lives</a>
+        <a href="#original-columns">Original Columns</a>
         <a href="#timeline">Timeline</a>
         <a href="#photographs">Photography</a>
         <a href="#newsroom">Racing Press</a>
@@ -322,6 +380,20 @@ export default async function VercauterenBrothersRoom() {
             <strong>Portrait research</strong>
             <p>Joe Verdegan’s interview includes a captioned period image identifying Pete beside his father Harold with a copy of Midwest Racing News. The family obituary is another photographic lead. Authenticated portraits are being sourced for the exhibit; until reuse permission is confirmed, the museum is featuring racing photographs credited to the brothers rather than presenting imagined portraits as historical evidence.</p>
             <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">View the source-captioned Pete and Harold photograph →</a>
+          </div>
+        </section>
+
+        <section id="original-columns" className={styles.columnSection}>
+          <span className={styles.sectionKicker}>Original MRN clippings · 1970–1973</span>
+          <h2>Their names in print</h2>
+          <p>These are authentic cropped views of the museum’s original newspaper scans, not retyped or AI-created headlines. On April 27, 1972, the brothers’ columns appeared <strong>on the same page</strong>. Select any clipping to inspect the uncropped source in the museum viewer.</p>
+          <div className={styles.columnGrid}>
+            {NEWSPAPER_CLIPPINGS.map((clipping) => <NewspaperClippingCard key={clipping.id} clipping={clipping} />)}
+          </div>
+          <div className={styles.columnContext}>
+            <strong>Also discovered: Gary’s MRN obituary</strong>
+            <p>The October 19, 2005 MRN issue contains a substantial tribute to Gary, documenting his Chilton Times-Journal work, WIR race programs and the establishment of Mid-American. Whether this page holds a usable portrait still needs visual confirmation.</p>
+            <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Open the 2005 MRN tribute →</Link>
           </div>
         </section>
 
