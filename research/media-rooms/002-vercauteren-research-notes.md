@@ -131,3 +131,36 @@ https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermei
 - 1979 WIR, 1982 WIR, 1986 WIR and 1993 ARTGO source documents have **29 matched pages total** with Vercauteren surname, all 29 in `complete` OCR status and carrying usable text.
 - **6 real photograph binaries** checked against `storage.objects` in the `media` bucket: hero image (Bob Bennett 1972 / Pete credit); Al Schill 1973 (Pete); Pete Parker 1974 (Pete); Dale Earnhardt 1987 Slinger (Pete); Dick Trickle 1984 Rockford (Gary); Tim Nooner 1987 WIR (Gary). All six canonical photo paths exist.
 - From the byline index: **1,462 distinct page rows across 715 (publication, issue) combinations**. These represent OCR candidate pages, NOT 1,462 visually validated authored articles.
+
+
+## Room 002 continuation — verified life dates, photographed artifacts and preview
+
+### Pete's obituary and historical accuracy
+- Pete Vercauteren's funeral-home tribute is the strongest sourced confirmation of his passing: Peter James Vercauteren, born **December 30, 1948**; died at home **November 25, 2024**, aged 75. The 2020 Joe Verdegan oral history was published before Pete's death, so its "retired and lives with Donna" wording must not be repeated as current information.
+- Obituary source: https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren
+- Gary died in October 2005 aged 55; 2005 NASCAR trade reporting and 2014 family account provide corroboration. Specific February 1950 birth details need independent primary confirmation before adding the exact birth day.
+- The room now has distinct biographical display panels for Gary (publicity and series leadership) and Pete (race reporting, eyewitness stories and early Mid-American leadership), with separate memorial milestones for 2005 and 2024.
+
+### Original Gary narrative: "W.I.R. — Joe's Challenge"
+- A 2006 Mid-American historical item republishes Gary's earlier first-person article recalling his March 1972 meeting with WIR owner Joe Van Daalwyk. It names the old KK Sports Arena and illustrates the work that became the Red/White/Blue series. Source: https://www.carsandracingstuff.com/library/articles/24973.php
+- Joe Verdegan's Roger Van Daalwyk interview independently attests to Gary handling WIR marketing/public relations in 1972, WIR's 1970–1971 ownership transition, and the development of Red/White/Blue. Source: https://joeverdegan.com/roger-van-daalwyk-became-wirs-gm-at-18-years-old/
+- Page links to the historical articles without reproducing extended copyrighted text.
+
+### Authenticated image lead and artifact rights
+- Joe Verdegan's Pete oral history includes a genuine, captioned photograph identifying **Pete with father Harold**, holding Midwest Racing News. Do not present this as a picture of Gary and Pete together. Its reuse/licensing was not established; keep it linked at the source until permission is obtained.
+- Hansen Family Funeral's 2024 tribute may contain more authentic Pete portraits, but those also need permission before copying into the museum.
+- Existing hero and gallery art in the draft consists of genuinely archived **race-car photographs credited to Pete or Gary**; never imply those photographs show the brothers.
+- Four photo spotlights were selected from live photo records and source files verified in Supabase storage: Pete's Al Schill (1973 Brown County) and Pete Parker (1974 Seymour); Gary's Dick Trickle (1984 Rockford) and Tim Nooner (1987 WIR). The existing Bob Bennett (1972 Brown County) hero is Pete-credited and stored in the public media bucket.
+
+### Authentic original page visuals
+- New exhibit shelf displays four **genuine scanned page images** selected from eight primary archive artifacts: 1979 WIR Alan Kulwicki profile (Gary), 1982 WIR Larry Detjens memorial story (Gary), 1986 WIR image with a Pete photo credit, and a 1993 ARTGO yearbook source identifying Gary's Mid-American leadership.
+- **All eight** linked program page paths exist as binaries under Supabase Storage bucket `media`. The Next.js museum viewer uses the same source program assets. Images are lazy-loaded in Room 002 to reduce unnecessary page load.
+- All sixteen newspaper artifact links remain exact matching OCR-index entries.
+
+### Vercel development status
+- Room branch: `feature/media-room-002-vercauteren-brothers`; draft PR #45: https://github.com/bobschafer10/racing-museum/pull/45
+- Vercel automatically built commit `9ba058ef15fc0135c29cbf6d04c0f9c46a0a90b2` as a **READY** preview with the new biographies and museum photos. Its build log explicitly lists the Room 002 dynamic route.
+- Two subsequent commits added the four scanned-page exhibit shelf and CSS. Confirm their latest Vercel build result separately before claiming the entire artifact shelf has passed.
+- Preview URL for the previously tested build: https://racing-museum-odsctx5y8-robert-schafer-s-projects.vercel.app/rooms/media-member-of-the-month/vercauteren-brothers
+- Browser rendering at the protected preview was not independently inspected; this remains the outstanding visual QA task.
+- No production merge, no update to the homepage current-month feature, and no production Supabase writes were performed.
