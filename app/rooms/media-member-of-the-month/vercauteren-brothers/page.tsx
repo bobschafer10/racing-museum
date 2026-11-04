@@ -99,6 +99,8 @@ const PROGRAMS = [
   { slug: '1982-wisconsin-international-raceway-wi-yearbook', path: 'programs/1982-wisconsin-international-raceway-wi-yearbook/1982 - WIR PROGRAM 1_003.jpg', year: '1982', title: 'Larry Detjens remembered', attribution: 'Article by Gary Vercauteren', note: 'A contemporary tribute in the WIR annual.' },
   { slug: '1982-wisconsin-international-raceway-wi-yearbook', path: 'programs/1982-wisconsin-international-raceway-wi-yearbook/1982 - WIR PROGRAM 1_005.jpg', year: '1982', title: 'Marv Marzofka profile', attribution: 'Article by Gary; photograph credited to Jim Vercauteren', note: 'An example of the family’s combined newspaper and photo work.' },
   { slug: '1986-wisconsin-international-raceway-wi-yearbook', path: 'programs/1986-wisconsin-international-raceway-wi-yearbook/1986 - WIR PROGRAM 1_008.jpg', year: '1986', title: 'Red, White and Blue preview', attribution: 'Photo credited to Pete Vercauteren', note: 'Pete’s photo credit survives in a WIR publication.' },
+  { slug: '1982-wisconsin-international-raceway-wi-yearbook', path: 'programs/1982-wisconsin-international-raceway-wi-yearbook/1982 - WIR PROGRAM 1_008.jpg', year: '1982', title: 'Vercauteren Publishing advertisement', attribution: 'Original publishing-company advertisement', note: 'An archival clue connecting the family to Chilton printing and area newspapers.' },
+  { slug: '1993-artgo-challenge-series-yearbook', path: 'programs/1993-artgo-challenge-series-yearbook/002.jpg', year: '1993', title: 'ARTGO’s publishing and direct-mail credits', attribution: 'ARTGO yearbook', note: 'A contemporary program identifies Vercauteren Publishing as part of racing marketing operations.' },
   { slug: '1993-artgo-challenge-series-yearbook', path: 'programs/1993-artgo-challenge-series-yearbook/019.jpg', year: '1993', title: 'Mid-American’s rising profile', attribution: 'ARTGO yearbook', note: 'The source identifies Gary as president of the Mid-American Stock Car Series.' },
 ]
 
@@ -238,6 +240,7 @@ export default async function VercauterenBrothersRoom() {
         <a href="#photographs">Photography</a>
         <a href="#newsroom">Racing Press</a>
         <a href="#programs">Yearbooks</a>
+        <a href="#publisher">Publishing</a>
         <a href="#legacy">Legacy &amp; Sources</a>
         <a href="#memorial">The Memorial</a>
       </nav>
@@ -313,6 +316,21 @@ export default async function VercauterenBrothersRoom() {
               <em>View original scanned page →</em>
             </Link>)}
           </div>
+        </section>
+
+        <section id="publisher" className={styles.publisherSection}>
+          <div className={styles.publisherCopy}>
+            <span className={styles.sectionKicker}>The business behind the race program</span>
+            <h2>Vercauteren Publishing</h2>
+            <p>Gary and Pete’s work reached beyond the photographers’ pit gate and the newspaper byline. An advertisement in the museum’s <strong>1982 Wisconsin International Raceway program</strong> names Vercauteren Publishing, Inc. of Chilton and connects its printing business to area publications. The <strong>1993 ARTGO program</strong> names the publisher in racing’s direct-mail and sponsor network.</p>
+            <p>Keith Vercauteren’s family account describes the hours spent preparing event flyers and WIR race programs in Chilton. The printed artifacts now provide a tangible counterpart to that recollection. The program scans also contain credits for <strong>Jim Vercauteren</strong>; his photographs should be attributed separately from Gary’s and Pete’s.</p>
+          </div>
+          <aside className={styles.publisherSource}>
+            <strong>Primary evidence in the museum</strong>
+            <Link href={'/media/race-programs/1982-wisconsin-international-raceway-wi-yearbook?ocrPath=' + encodeURIComponent('programs/1982-wisconsin-international-raceway-wi-yearbook/1982 - WIR PROGRAM 1_008.jpg') + '&q=Vercauteren'}>1982 WIR publishing-company advertisement →</Link>
+            <Link href={'/media/race-programs/1993-artgo-challenge-series-yearbook?ocrPath=' + encodeURIComponent('programs/1993-artgo-challenge-series-yearbook/002.jpg') + '&q=Vercauteren'}>1993 ARTGO advertising and mailing credits →</Link>
+            <a href="https://www.carsandracingstuff.com/library/articles/24845.php" rel="noreferrer" target="_blank">Keith Vercauteren’s family account →</a>
+          </aside>
         </section>
 
         <section id="legacy" className={styles.legacySection}>
