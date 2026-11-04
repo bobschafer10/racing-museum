@@ -173,3 +173,5 @@
 .columnContext p{font-size:14px;color:#ccb69a;line-height:1.55;margin:7px 0 10px}
 .columnContext a{font:800 13px Arial,sans-serif;color:#e4ad60;text-decoration:underline}
 @media(max-width:700px){.columnGrid{grid-template-columns:1fr;gap:15px}.clippingCard{border-width:5px}}
+
+.portraitLeads{display:flex;flex-direction:column;align-items:start;gap:10px;margin-top:14px}.portraitLeads a{display:inline-block;color:#e8b86b;font:700 13px/1.5 Arial,sans-serif;text-decoration:underline}
