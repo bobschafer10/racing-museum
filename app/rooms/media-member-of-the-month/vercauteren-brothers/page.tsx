@@ -87,6 +87,21 @@ const ARCHIVE_LINKS: ArchiveLink[] = [
     note: 'An example of Gary’s recurring regional racing column.',
   },
   {
+    publication: 'midwest-racing-news', date: '1993-01-14', page: 10,
+    headline: 'Gary reflects on Alan Kulwicki’s championship', author: 'Gary Vercauteren',
+    note: 'Gary’s Wisconsin Shortracks column recalls a call from Kulwicki after the 1992 NASCAR title.',
+  },
+  {
+    publication: 'midwest-racing-news', date: '1993-02-11', page: 15,
+    headline: 'Mid-American president announces memorial plans', author: 'Contemporary news report quoting Gary',
+    note: 'A crucial early series document: the memorial’s move to WIR and Rockford’s planned April series opener.',
+  },
+  {
+    publication: 'midwest-racing-news', date: '1993-05-06', page: 8,
+    headline: 'Mid-American memorial event advertisement', author: 'Series publicity / paid event advertisement',
+    note: 'The printed advertisement names Harold and Regina Vercauteren; presented as publicity, not an article by Gary.',
+  },
+  {
     publication: 'midwest-racing-news', date: '1992-05-07', page: 2,
     headline: 'Weber wins WIR Spring Classic', author: 'Gary Vercauteren',
     note: 'A race report documenting Gary’s continued WIR coverage.',
@@ -355,6 +370,7 @@ export default async function VercauterenBrothersRoom() {
           <span className={styles.sectionKicker}>The traveling trophy and its keepers</span>
           <h2>The Vercauteren Memorial</h2>
           <p>The race began at Chilton in 1990 in memory of Harold and Regina Vercauteren. When Gary and Pete created Mid-American in 1993, the memorial and its traveling trophy joined the new pavement series. After Gary died in 2005, the family’s tradition came to honor him as well.</p>
+          <p><strong>Documented in the racing press:</strong> <Link href="/media/newspapers/midwest-racing-news/1993-02-11?sourcePage=15&q=Vercauteren">Read the February 11, 1993 MRN report</Link>, which quotes Gary as series president and announces the memorial’s planned move to WIR.</p>
           <p>The 1990–2008 winners below are transcribed from a 2009 <a href="https://www.carsandracingstuff.com/library/articles/25038.php" target="_blank" rel="noreferrer">Mid-American series account</a>; 2009 and 2010 are confirmed in a <a href="https://www.carsandracingstuff.com/library/articles/24935.php" target="_blank" rel="noreferrer">2011 series account</a>. They represent this particular memorial race, not all Mid-American feature winners. Event-level links to museum results will be added after checking each race and venue.</p>
           <div className={styles.memorialGrid}>
             {MEMORIAL_WINNERS.map((item) => <div className={styles.memorialWinner} key={item.year}>
