@@ -394,11 +394,11 @@ export default async function VercauterenBrothersRoom() {
           </div>
           <div className={styles.portraitNotice}>
             <strong>Portrait research</strong>
-            <p>Joe Verdegan’s interview includes a captioned period image identifying Pete beside his father Harold with a copy of Midwest Racing News. The family obituary is another photographic lead. Authenticated portraits are being sourced for the exhibit; until reuse permission is confirmed, the museum is featuring racing photographs credited to the brothers rather than presenting imagined portraits as historical evidence.</p>
+            <p>Joe Verdegan’s interview includes a captioned period image identifying Pete beside his father Harold with a copy of Midwest Racing News. The family obituary is another photographic lead. The original October 19, 2005 MRN obituary contains a portrait printed beside Gary’s life story, and that source photograph now appears in his biography. Pete's sourced historical family photograph and obituary portrait are linked here, pending permission to reproduce them in the museum. No imagined portraits are used.</p>
             <div className={styles.portraitLeads}>
               <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">Period image: Pete with father Harold and Midwest Racing News →</a>
               <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren/" rel="noreferrer" target="_blank">Pete’s obituary portrait: Hansen Family Funeral →</a>
-              <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Gary’s October 2005 MRN obituary and possible portrait lead →</Link>
+              <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Gary’s original 2005 MRN obituary and portrait →</Link>
             </div>
           </div>
         </section>
@@ -412,7 +412,7 @@ export default async function VercauterenBrothersRoom() {
           </div>
           <div className={styles.columnContext}>
             <strong>Also discovered: Gary’s MRN obituary</strong>
-            <p>The October 19, 2005 MRN page contains Gary’s original obituary. We have preserved the relevant clipping above; whether it contains an identifiable portrait still requires visual confirmation.</p>
+            <p>The October 19, 2005 MRN page contains Gary’s original obituary with a photograph printed alongside the biographical text. A non-AI crop from the museum’s scan now appears with Gary’s individual biography.</p>
             <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Open the 2005 MRN tribute →</Link>
           </div>
         </section>
