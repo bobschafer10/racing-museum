@@ -115,3 +115,5 @@
 @media(max-width:850px){.publisherSection{grid-template-columns:1fr}}
 
 .memorialWinner small{margin-top:5px;font:700 10px/1.2 Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#c4a47b}
+
+.pressInventory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0 24px}.pressInventory div{padding:14px;background:#f8eed8;border:1px solid #b99a64;text-align:center}.pressInventory strong{display:block;font-size:34px;color:#742b20}.pressInventory span{display:block;color:#5f4a30;font:700 11px/1.45 Arial,sans-serif;text-transform:uppercase;letter-spacing:.03em}@media(max-width:650px){.pressInventory{grid-template-columns:1fr}.pressInventory div{padding:8px}}
