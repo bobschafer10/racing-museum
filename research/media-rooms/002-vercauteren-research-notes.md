@@ -172,3 +172,12 @@ https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermei
 - **Critical original 1972 same-page dual bylines:** MRN April 27 1972 p8, N.E. Wis. Race News by Pete (title x=.097,y=.038; byline x=.185,y=.065); Wisconsin Review by Gary (title x=.660,y=.041; byline x=.753,y=.069). Original R2 image: https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/1972-04-27/008.jpg
 - Additional primary clip: Pete Apr 26 1973 MRN p9 (title x=.137,y=.110 and byline x=.218,y=.138), and Gary Aug 20 1970 MRN p14 "Capacity De Pere Crowd" (headline x=.210,y=.416 and byline x=.246,y=.464).
 - Added CSS-windowed unaltered archive scans in Room 002 with full uncropped page links. No image pixels have been AI-generated. Preview alignment still requires browser visual checking.
+
+
+### Important update: Gary headshot found and visually inspected
+An authenticated image of Gary **is present in the museum's original MRN obituary**, October 19, 2005, page 5. The portrait is printed at upper-left of an article headed "Gary Vercauteren, founder of Mid-America Racing Series and ASL, dead at 55". The article text names him and documents his life, making source context strong. The scan was opened and the relevant area visually inspected; Gary's face is printed in halftone, with relatively low contrast, but is suitable as a small archival portrait.
+
+Image: https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/2005-10-19/005.jpg
+Original scan approx 2103x2530 pixels, photo bounded around normalized x=.515 to .66 and y=.081 to .223. Room 002 now uses a CSS crop of this original image, with no altered pixels. Retain link to the full obituary.
+
+Joe Verdegan's historical image was also visually inspected: source photo 393x714 px; it shows Pete at left beside father Harold, with Harold holding MRN by the folding newspaper sales stand. The Hansen Funeral obituary's headshot is 207x207 px; both depict Pete in different eras and are strong research leads, but the room should not publicly reproduce external originals without permission.
