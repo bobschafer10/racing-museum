@@ -363,6 +363,18 @@ export default async function VercauterenBrothersRoom() {
           <div className={styles.peopleGrid}>
             <article className={styles.personCard}>
               <span className={styles.personLabel}>Gary Vercauteren · 1950–2005</span>
+              <figure className={styles.garyHeadshot}>
+                <div className={styles.garyHeadshotCrop} style={{aspectRatio: (2103 * .146) + ' / ' + (2530 * .142)}}>
+                  <img
+                    src="https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/2005-10-19/005.jpg"
+                    loading="lazy" decoding="async"
+                    alt="Historical photograph printed beside Gary Vercauteren's obituary in Midwest Racing News, October 19, 2005"
+                    style={{position:'absolute', width:(100/.146)+'%', maxWidth:'none', left:(-100*.515/.146)+'%', top:(-100*.081/.142)+'%'}}
+                  />
+                </div>
+                <figcaption>Gary Vercauteren — original 2005 MRN obituary portrait. <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">View scan</Link></figcaption>
+              </figure>
+
               <h3>The writer, publicist and series builder</h3>
               <p>Gary covered De Pere, Shawano and Wisconsin International Raceway, becoming WIR’s public-relations director in 1972. His reporting, original driver profiles, promotional work and the Red, White and Blue State Championship Series helped put Wisconsin short-track racing before a much wider audience.</p>
               <p>In <em>W.I.R. — Joe’s Challenge</em>, Gary recalled meeting Joe Van Daalwyk in March 1972 as the speedway was being rebuilt from the troubled KK Sports Arena era. His own account is an especially important source for this room.</p>
@@ -375,6 +387,7 @@ export default async function VercauterenBrothersRoom() {
               <p>Pete helped chronicle the De Pere–Shawano–Seymour circuit through race reports, feature stories, photography and his <em>N.E. Wis. Race News</em> column. His memories preserve the drivers, crowded grandstands, lively rivalries and grassroots culture of the era.</p>
               <p>With his family, Pete helped distribute <em>Midwest Racing News</em> and make local racing information available to fans every week. He later helped Gary launch Mid-American and served in the organization’s early leadership.</p>
               <p>Pete died November 25, 2024, at age 75. His 2020 interview with historian Joe Verdegan remains an essential oral-history source.</p>
+              <p><strong>Images located:</strong> a period photograph showing Pete and his father Harold selling Midwest Racing News, and a later funeral-home obituary portrait. Both remain externally sourced pending permission for museum reproduction.</p>
               <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">Read Pete’s racing memories →</a>
               <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren" rel="noreferrer" target="_blank">Pete’s family obituary and tribute →</a>
             </article>
