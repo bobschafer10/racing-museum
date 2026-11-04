@@ -119,6 +119,12 @@ const PROGRAMS = [
   { slug: '1993-artgo-challenge-series-yearbook', path: 'programs/1993-artgo-challenge-series-yearbook/019.jpg', year: '1993', title: 'Mid-American’s rising profile', attribution: 'ARTGO yearbook', note: 'The source identifies Gary as president of the Mid-American Stock Car Series.' },
 ]
 
+function programScanUrl(storagePath: string): string {
+  const base = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+  const encoded = storagePath.split('/').map(encodeURIComponent).join('/')
+  return base + '/storage/v1/object/public/media/' + encoded
+}
+
 function programUrl(program: (typeof PROGRAMS)[number]): string {
   return '/media/race-programs/' + program.slug + '?ocrPath=' + encodeURIComponent(program.path) + '&q=Vercauteren'
 }
@@ -379,6 +385,20 @@ export default async function VercauterenBrothersRoom() {
           <span className={styles.sectionKicker}>The press box, preserved in print</span>
           <h2>Programs &amp; yearbooks</h2>
           <p>Original programs carry the brothers’ writing and photo credits. The museum’s OCR search currently identifies Vercauteren-name matches on 50 pages across 18 yearbooks; these are selected source-linked examples, not a complete publication credit list. Each should be checked against the original scan before final publication.</p>
+          <div className={styles.artifactShelf} aria-label="Authentic scanned program and yearbook pages">
+            {[PROGRAMS[0], PROGRAMS[2], PROGRAMS[4], PROGRAMS[7]].map((item) => (
+              <Link className={styles.artifactFrame} href={programUrl(item)} key={item.path}>
+                <div className={styles.artifactImage}>
+                  <img loading="lazy" decoding="async" src={programScanUrl(item.path)} alt={'Original ' + item.year + ' archival page: ' + item.title} />
+                </div>
+                <div className={styles.artifactCaption}>
+                  <small>ORIGINAL SCANNED PAGE · {item.year}</small>
+                  <strong>{item.title}</strong>
+                  <span>View in the museum archive →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
           <div className={styles.programGrid}>
             {PROGRAMS.map((program) => <Link key={program.path} href={programUrl(program)} className={styles.programCard}>
               <span>{program.year} · ORIGINAL YEARBOOK</span>
