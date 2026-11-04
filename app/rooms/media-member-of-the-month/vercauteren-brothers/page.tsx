@@ -382,7 +382,11 @@ export default async function VercauterenBrothersRoom() {
           <div className={styles.portraitNotice}>
             <strong>Portrait research</strong>
             <p>Joe Verdegan’s interview includes a captioned period image identifying Pete beside his father Harold with a copy of Midwest Racing News. The family obituary is another photographic lead. Authenticated portraits are being sourced for the exhibit; until reuse permission is confirmed, the museum is featuring racing photographs credited to the brothers rather than presenting imagined portraits as historical evidence.</p>
-            <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">View the source-captioned Pete and Harold photograph →</a>
+            <div className={styles.portraitLeads}>
+              <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">Period image: Pete with father Harold and Midwest Racing News →</a>
+              <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren/" rel="noreferrer" target="_blank">Pete’s obituary portrait: Hansen Family Funeral →</a>
+              <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Gary’s October 2005 MRN obituary and possible portrait lead →</Link>
+            </div>
           </div>
         </section>
 
