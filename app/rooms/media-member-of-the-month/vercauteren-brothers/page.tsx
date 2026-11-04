@@ -177,6 +177,9 @@ const NEWSPAPER_CLIPPINGS: NewspaperClipping[] = [
   { id: 'gary-1970', date: '1970-08-20', page: 14, title: 'Capacity De Pere Crowd', author: 'Gary Vercauteren',
     caption: 'One of Gary’s early reports from Brown County Fairgrounds Speedway.',
     rect: { x: .193, y: .405, w: .386, h: .245 }, original: { w: 3151, h: 4666 } },
+  { id: 'gary-tribute-2005', date: '2005-10-19', page: 5, title: 'Gary Vercauteren remembered', author: 'Midwest Racing News editors',
+    caption: 'Original MRN obituary. The article summarizes his work at the Chilton Times-Journal, WIR and Mid-American.',
+    rect: { x: .521, y: .023, w: .463, h: .365 }, original: { w: 2103, h: 2530 } },
 ]
 function NewspaperClippingCard({ clipping }: { clipping: NewspaperClipping }) {
   const { rect, original } = clipping
@@ -384,7 +387,7 @@ export default async function VercauterenBrothersRoom() {
         </section>
 
         <section id="original-columns" className={styles.columnSection}>
-          <span className={styles.sectionKicker}>Original MRN clippings · 1970–1973</span>
+          <span className={styles.sectionKicker}>Original MRN clippings · 1970s and Gary’s 2005 tribute</span>
           <h2>Their names in print</h2>
           <p>These are authentic cropped views of the museum’s original newspaper scans, not retyped or AI-created headlines. On April 27, 1972, the brothers’ columns appeared <strong>on the same page</strong>. Select any clipping to inspect the uncropped source in the museum viewer.</p>
           <div className={styles.columnGrid}>
@@ -392,7 +395,7 @@ export default async function VercauterenBrothersRoom() {
           </div>
           <div className={styles.columnContext}>
             <strong>Also discovered: Gary’s MRN obituary</strong>
-            <p>The October 19, 2005 MRN issue contains a substantial tribute to Gary, documenting his Chilton Times-Journal work, WIR race programs and the establishment of Mid-American. Whether this page holds a usable portrait still needs visual confirmation.</p>
+            <p>The October 19, 2005 MRN page contains Gary’s original obituary. We have preserved the relevant clipping above; whether it contains an identifiable portrait still requires visual confirmation.</p>
             <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Open the 2005 MRN tribute →</Link>
           </div>
         </section>
