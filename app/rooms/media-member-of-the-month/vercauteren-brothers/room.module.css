@@ -175,3 +175,12 @@
 @media(max-width:700px){.columnGrid{grid-template-columns:1fr;gap:15px}.clippingCard{border-width:5px}}
 
 .portraitLeads{display:flex;flex-direction:column;align-items:start;gap:10px;margin-top:14px}.portraitLeads a{display:inline-block;color:#e8b86b;font:700 13px/1.5 Arial,sans-serif;text-decoration:underline}
+
+
+.garyHeadshot{float:left;max-width:178px;width:38%;margin:4px 19px 12px 0;background:#d4c4a0;border:5px solid #a78d63;box-shadow:2px 3px 0 #9b8159}
+.garyHeadshotCrop{position:relative;width:100%;overflow:hidden;background:#ddc6a0}
+.garyHeadshotCrop img{height:auto;max-height:none;display:block;pointer-events:none}
+.garyHeadshot figcaption{padding:7px 8px;color:#513920;font:11px/1.4 Arial,sans-serif}
+.garyHeadshot figcaption a{display:inline;color:#7e2c23;font:700 11px Arial,sans-serif}
+.personCard::after{content:'';display:block;clear:both}
+@media(max-width:470px){.garyHeadshot{float:none;max-width:220px;width:100%;margin-bottom:16px}}
