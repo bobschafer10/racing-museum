@@ -81,3 +81,38 @@ Specific verified primary-source leads:
 5. Consider a Vercauteren Publishing / Chilton Times-Journal section using archival advertising and surviving publication documents.
 6. Review 63 Pete items currently tagged unknown-track and just 2 explicit unknown-driver records; deduplicate and avoid overriding attribution evidence.
 7. When editorial review is complete, merge/deploy the feature branch, then switch homepage featured media room from Bob's Room 001 to Room 002 while keeping the Room 001 link permanent.
+
+
+## Research continuation — November 3, 2026 (evening)
+
+### Primary-source chapter discoveries
+- **The first Red / White / Blue series, 1972:** CFRN 1972-05-31 p.1 carries Gary Vercauteren's coverage of early entrants for the June 25 inaugural Red event. MRN 1972-06-29 p.2 has Gary's "Trickle Edges Rank" coverage of the inaugural Red event. See also Joe Verdegan, "1972 — The Birth of WIR’s Red, White & Blue State Championship Series" and Roger Van Daalwyk interview at joeverdegan.com.
+- **Pete's weekly regional column:** MRN 1973-04-26 p.9 has "N.E. Wis. Race News" by Pete. MRN 1973-06-14 p.6 and 1973-06-21 p.7 carry Pete's De Pere and Leo's Speedway coverage.
+- **Gary beyond the Tri-track:** MRN 1970-09-10 p.8 carries his "Derr Holds Off Mueller to Take IMCA 'Badger 100' at Marshfield" article.
+- **An important object/story:** 1982 WIR yearbook scan `1982 - WIR PROGRAM 1_008.jpg` names Vercauteren Publishing, Inc. and its Chilton operations. A separate 1993 ARTGO yearbook scan `002.jpg` names Vercauteren Publishing in the direct-mail / promotion operation. Keith's 2014 family essay remembers the hours spent laying out WIR race programs and event flyers.
+- **Historical family photograph:** Joe Verdegan's Pete interview reproduces an explicitly captioned picture of Pete with father Harold holding MRN. This is an excellent lead for an authentic period photo of Pete, but the museum has **not** secured reuse permission, and it is not a confirmed portrait of Gary.
+- **Early series roles:** A 2011 Mid-American press release identifies Pete as vice president in the early years, and relates that Gary helped reopen 141 Speedway in 1998.
+
+### Memorial winner source and event identity warning
+Verified published winners from the Mid-American 2009 announcement (1990–2008) plus the 2011 announcement (2009–2010). The room now contains **21 memorial winners for 1990–2010**, with documented special venues: Chilton in 1990–1992, 141 in 2007 and 2009, Road America in 2010. Sources:
+- https://www.carsandracingstuff.com/library/articles/25038.php
+- https://www.carsandracingstuff.com/library/articles/24935.php
+- https://www.carsandracingstuff.com/library/articles/24845.php
+
+**Critical:** A Mid-American race winner is not automatically a Vercauteren Memorial winner. Current Supabase series ID 18 contains sparse results for some years and no event `slug` explicitly identifying "Vercauteren" memorial. For example, its 2008 Milwaukee Mile series event is not evidence that its winner won the memorial. Do not import or compare year-only winners blindly; match date, track, source and event.
+
+A May 17, 2026 official Mid-Am story records Cameron Vandermeir winning that year's Gary Vercauteren Memorial at WIR:
+https://www.midamracing.com/post/from-victory-lane-to-graduation-stage-vandermeir-wins-gary-vercauteren-memorial
+
+### Article / program QA performed
+- The current exhibit has 13 specifically selected newspaper article cards. Every (publication, issue date, numeric page label) has **one matching row** in `newspaper_ocr_search_pages` verified by SQL.
+- The current exhibit has 8 specific yearbook/program cards. Every exact `document_slug + storage_path` has **one matching OCR row** in `archive_ocr_pages`.
+- The currently used 1972 Brown County Bob Bennett race-photo hero is present in `photos` as photo ID 30582, credited to Pete; `credit_type` is null (not an explicit `photo` code), so do not classify that row incorrectly.
+- Three nonnumeric cover labels in the 1,462-row byline CSV generated invalid `sourcePage=NaN` URL query strings; those URLs were repaired to link the issue directly without a numeric page.
+- No HTTP/viewer runtime preview or full Next.js build completed in this stage; link existence in DB is verified, browser rendering needs QA in a preview environment.
+- No Supabase production data was inserted, edited or deleted. The room is a draft PR only, and the homepage Room 001 entrance was not replaced.
+
+### Editorial nuance
+- Local historical accounts and Keith's family statement describe the Mid-American tour as formed/launched for **1993**. A contemporary 2005 obituary notice says it was **created in 1992**. Present 1993 as the **launch/inaugural racing season**; distinguish conception/organization from the first racing season if supported by future primary evidence.
+- Pete's 2020 oral history names brother **Jim** as a main photographer; original WIR program captions carry Jim's distinct credits. Do not attribute every Vercauteren photo to Gary or Pete.
+- The 2011 source explicitly says Pete served as vice president of Mid-American in its early years. This provides a basis for a future "Pete the organizer" section, alongside the better documented "Gary the PR director" section.
