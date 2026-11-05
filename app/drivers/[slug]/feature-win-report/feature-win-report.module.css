@@ -1,0 +1,389 @@
+.page {
+  min-height: 100vh;
+  padding: 28px 18px 60px;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(198, 161, 91, 0.08), transparent 28rem),
+    #090b0d;
+  color: #171717;
+}
+
+.screenOnly {
+  width: min(980px, 100%);
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.backLink {
+  color: #e8e1d5;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.backLink:hover {
+  color: #fff;
+}
+
+.printButton {
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid #d6b06c;
+  background: #8e171f;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.printButton:hover {
+  background: #ad1b25;
+}
+
+.report {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 48px 52px 54px;
+  box-sizing: border-box;
+  background: #fffdf8;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+  color: #191919;
+}
+
+.reportHeader {
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  gap: 22px;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #2c2117;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.kicker {
+  margin: 0 0 5px;
+  color: #8d641f;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.reportHeader h1 {
+  margin: 0;
+  color: #17130e;
+  font-size: 2.15rem;
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.driverLine {
+  margin: 8px 0 0;
+  color: #5d5144;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.generated {
+  margin: 8px 0 0;
+  color: #7c746c;
+  font-size: 0.7rem;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 20px 0 24px;
+}
+
+.statCard {
+  min-height: 86px;
+  display: grid;
+  align-content: center;
+  padding: 12px;
+  border: 1px solid #d6c7ad;
+  background: #f6f0e5;
+}
+
+.statCard strong {
+  display: block;
+  color: #6e181c;
+  font-size: 1.65rem;
+  line-height: 1;
+  font-weight: 950;
+}
+
+.statCard span {
+  display: block;
+  margin-top: 7px;
+  color: #62594f;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #2c2117;
+}
+
+.sectionHeading h2 {
+  margin: 0;
+  color: #211810;
+  font-size: 1rem;
+  font-weight: 950;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.sectionHeading span {
+  color: #796b5c;
+  font-size: 0.66rem;
+  font-weight: 750;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.summaryBlock {
+  min-width: 0;
+}
+
+.summaryBlock h3 {
+  margin: 0 0 7px;
+  color: #6f181c;
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.compactTable,
+.historyTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compactTable th,
+.compactTable td,
+.historyTable th,
+.historyTable td {
+  padding: 6px 7px;
+  border-bottom: 1px solid #ddd3c3;
+  vertical-align: top;
+  text-align: left;
+}
+
+.compactTable th,
+.historyTable th {
+  background: #eee4d3;
+  color: #3c3329;
+  font-size: 0.59rem;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.compactTable td {
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+.compactTable td:last-child,
+.compactTable th:last-child {
+  width: 54px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.historyTable {
+  font-size: 0.71rem;
+}
+
+.historyTable thead {
+  display: table-header-group;
+}
+
+.historyTable tr {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.historyTable td:first-child {
+  width: 92px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.historyTable td:nth-child(2) {
+  width: 38%;
+  font-weight: 800;
+}
+
+.broaderList {
+  display: grid;
+  gap: 8px;
+}
+
+.broaderItem {
+  padding: 9px 10px;
+  border: 1px solid #ddd3c3;
+  background: #faf6ee;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.broaderItem strong {
+  display: block;
+  color: #361e16;
+  font-size: 0.74rem;
+}
+
+.broaderItem span,
+.broaderItem p {
+  display: block;
+  margin: 3px 0 0;
+  color: #635a50;
+  font-size: 0.67rem;
+  line-height: 1.4;
+}
+
+.broaderItem a {
+  color: #6f181c;
+}
+
+.empty {
+  padding: 16px;
+  border: 1px solid #ddd3c3;
+  background: #faf6ee;
+  color: #6d645b;
+  font-size: 0.75rem;
+}
+
+.reportFooter {
+  margin-top: 28px;
+  padding-top: 12px;
+  border-top: 1px solid #cfc2ae;
+  color: #71685e;
+  font-size: 0.64rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .report {
+    padding: 28px 22px 34px;
+  }
+
+  .reportHeader {
+    grid-template-columns: 78px 1fr;
+  }
+
+  .logo {
+    width: 74px;
+    height: 74px;
+  }
+
+  .reportHeader h1 {
+    font-size: 1.55rem;
+  }
+
+  .statGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .historyTable {
+    font-size: 0.62rem;
+  }
+}
+
+@page {
+  size: Letter portrait;
+  margin: 0.45in;
+}
+
+@media print {
+  :global(.site-nav-bar) {
+    display: none !important;
+  }
+
+  .page {
+    min-height: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  .screenOnly {
+    display: none !important;
+  }
+
+  .report {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .reportHeader h1 {
+    font-size: 1.85rem;
+  }
+
+  .statGrid {
+    margin-top: 16px;
+  }
+
+  .section {
+    margin-top: 18px;
+  }
+
+  .historyTable,
+  .compactTable {
+    font-size: 8pt;
+  }
+
+  .historyTable th,
+  .historyTable td,
+  .compactTable th,
+  .compactTable td {
+    padding: 4px 5px;
+  }
+
+  .reportFooter {
+    font-size: 7.5pt;
+  }
+}
