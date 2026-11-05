@@ -297,8 +297,8 @@ export default async function VercauterenBrothersRoom() {
   const tracks = new Set(rows.map((row) => row.track_slug).filter((slug) => slug && slug !== 'unknown-track')).size
   const peteGallery = galleryFor(rows, 'pete')
   const garyGallery = galleryFor(rows, 'gary')
-  const hero = rows.find((row) => row.file_name === 'brown-county-speedway_1972_bob-bennett_pete-vercauteren_photo_001.jpg') || peteGallery[0] || garyGallery[0]
-  const heroPhoto = hero ? photoUrl(hero) : null
+  const heroRacePhoto = rows.find((row) => row.file_name === 'brown-county-speedway_1972_bob-bennett_pete-vercauteren_photo_001.jpg') || peteGallery[0] || garyGallery[0]
+  const heroRacePhotoUrl = heroRacePhoto ? photoUrl(heroRacePhoto) : null
   const authenticatedSpotlights = [
     { file: 'brown-county-speedway_1973_al-schill_pete-vercauteren_photo_001.jpg', title: 'Al Schill · De Pere, 1973', caption: 'Photograph credited to Pete Vercauteren' },
     { file: 'seymour-speedway_1974_pete-parker_pete-vercauteren_photo_001.jpg', title: 'Pete Parker · Seymour, 1974', caption: 'Photograph credited to Pete Vercauteren' },
@@ -312,19 +312,90 @@ export default async function VercauterenBrothersRoom() {
 
   return (
     <main className={styles.page}>
-      <header className={styles.hero} style={heroPhoto ? { backgroundImage: 'linear-gradient(90deg, rgba(10,7,5,.98), rgba(10,7,5,.84) 49%, rgba(10,7,5,.4)), url("' + heroPhoto + '")' } : undefined}>
-        <div className={styles.heroInner}>
-          <Link href="/rooms" className={styles.back}>← Museum Rooms</Link>
-          <div className={styles.kicker}>Room 002 · Media Member of the Month</div>
-          <h1>The Vercauteren<br /><span>Brothers</span></h1>
-          <p className={styles.heroNames}>Gary &amp; Pete Vercauteren</p>
-          <p className={styles.heroLead}>The people who brought the racing stories home — from the northeastern Wisconsin dirt tracks to the pages of the racing press, Wisconsin International Raceway, and the Mid-American Stock Car Series.</p>
-          <div className={styles.heroLinks}>
-            <a href="#the-story">Explore their story</a>
-            <a href="#newsroom">Read the newspaper archive</a>
+      <header className={styles.hero} style={heroRacePhotoUrl ? {
+        backgroundImage: 'linear-gradient(90deg, rgba(9,7,5,.98) 0%, rgba(9,7,5,.97) 39%, rgba(9,7,5,.89) 69%, rgba(9,7,5,.80)), url("' + heroRacePhotoUrl + '")',
+      } : undefined}>
+        <div className={styles.heroLayout}>
+          <div className={styles.heroInner}>
+            <Link href="/rooms" className={styles.back}>← Museum Rooms</Link>
+            <div className={styles.kicker}>A new room in the museum</div>
+            <p className={styles.heroRoomLine}>ROOM 002 · MEDIA MEMBER OF THE MONTH</p>
+            <h1>The Vercauteren<br /><span>Brothers</span></h1>
+            <p className={styles.heroNames}>Gary &amp; Pete Vercauteren</p>
+            <p className={styles.heroLead}>Two voices behind the racing news: photographers, writers and promoters who documented northeast Wisconsin's golden age of short-track racing.</p>
+            <div className={styles.heroLinks}>
+              <a href="#the-story">Enter Room 002 →</a>
+              <a href="#original-columns">Read their original 1972 columns →</a>
+            </div>
+            <p className={styles.heroOriginalLabel}>Original photographs and newspaper scans — no reconstructed faces or articles.</p>
+          </div>
+          <div className={styles.heroArchive} aria-label="Original portraits and newspaper columns of Gary and Pete Vercauteren">
+            <div className={styles.heroArchiveHeading}>
+              <span>FROM THE MUSEUM ARCHIVE</span>
+              <strong>THE PEOPLE BEHIND THE BYLINES</strong>
+            </div>
+            <div className={styles.heroPortraitRow}>
+              <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren" className={styles.heroPortraitCard}>
+                <div className={styles.heroPortraitImage}>
+                  <div className={styles.heroGaryFace}>
+                    <img
+                      src="https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/2005-10-19/005.jpg"
+                      alt="Gary Vercauteren in his original October 19, 2005 Midwest Racing News obituary"
+                      style={{position:'absolute', width:(100/.146)+'%', maxWidth:'none', left:(-100*.515/.146)+'%', top:(-100*.081/.142)+'%'}}
+                    />
+                  </div>
+                </div>
+                <div className={styles.heroPortraitCaption}>
+                  <strong>GARY VERCAUTEREN</strong>
+                  <small>2005 · Midwest Racing News portrait</small>
+                </div>
+              </Link>
+              <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren/" target="_blank" rel="noreferrer" className={styles.heroPortraitCard}>
+                <div className={styles.heroPortraitImage}>
+                  <img className={styles.heroPeteFace}
+                    src="https://cdn.f1connect.net/photo/tributes/t/8/r/207x207/7903305/Peter-Pete-Vercauteren-1732645088.jpg"
+                    alt="Pete Vercauteren in a later portrait published with his 2024 obituary" />
+                </div>
+                <div className={styles.heroPortraitCaption}>
+                  <strong>PETE VERCAUTEREN</strong>
+                  <small>2024 · Hansen Family Funeral portrait</small>
+                </div>
+              </a>
+            </div>
+            <div className={styles.heroColumnHeading}>
+              <span>APRIL 27, 1972 · MIDWEST RACING NEWS · PAGE 8</span>
+              <strong>Two brothers. One newspaper page.</strong>
+            </div>
+            <div className={styles.heroColumnRow}>
+              {NEWSPAPER_CLIPPINGS.slice(0,2).map((clipping) => {
+                const { rect, original } = clipping
+                const src = 'https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/' + clipping.date + '/008.jpg'
+                return (
+                  <Link key={clipping.id}
+                    href={'/media/newspapers/midwest-racing-news/' + clipping.date + '?sourcePage=8&q=Vercauteren'}
+                    className={styles.heroColumnCard}>
+                    <div className={styles.heroColumnScan} style={{aspectRatio:(original.w * rect.w) + ' / ' + (original.h * rect.h)}}>
+                      <img src={src}
+                        alt={'Original 1972 Midwest Racing News ' + clipping.title + ' column by ' + clipping.author}
+                        style={{
+                          position:'absolute', width:(100/rect.w)+'%', maxWidth:'none',
+                          left:(-100*rect.x/rect.w)+'%', top:(-100*rect.y/rect.h)+'%',
+                        }} />
+                    </div>
+                    <div className={styles.heroColumnCaption}>
+                      <strong>{clipping.title}</strong>
+                      <small>By {clipping.author}</small>
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+            <p className={styles.heroSourceNote}>
+              Gary: museum MRN scan · Pete: Hansen Family Funeral (external portrait; reuse permission pending).
+              Both columns: original MRN, April 27, 1972.
+            </p>
           </div>
         </div>
-        <div className={styles.heroStamp}><span>Media Room</span><strong>002</strong><small>Research exhibit</small></div>
       </header>
 
       <nav className={styles.navigation} aria-label="Room 002 sections">
