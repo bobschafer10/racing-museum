@@ -508,7 +508,7 @@ export default async function VercauterenBrothersRoom() {
           </figure>
           <p>Gary’s work was not confined to writing race results. This candid photograph captures the interviews and personal stories that helped build short-track racing’s community.</p>
           <div className={styles.interviewLinks}>
-            <Link href="/tracks/wisconsin-international-raceway">Wisconsin International Raceway history →</Link>
+            <Link href="/tracks/wisconsin-international-raceway-wi">Wisconsin International Raceway history →</Link>
             <a href="https://www.carsandracingstuff.com/library/articles/24973.php" target="_blank" rel="noreferrer">Gary’s own story of WIR and the Red, White and Blue Series →</a>
           </div>
         </section>
@@ -637,8 +637,8 @@ export default async function VercauterenBrothersRoom() {
             <Link href="/photographers/gary-vercauteren"><strong>Gary’s photo collection</strong><span>Original photography indexed by driver and track →</span></Link>
             <Link href="/media/newspapers/midwest-racing-news/1972-04-27?sourcePage=8&q=Vercauteren"><strong>April 1972 original columns</strong><span>Both brothers’ bylines and period portraits →</span></Link>
             <Link href="/media/newspapers/midwest-racing-news/1971-04-29?sourcePage=6&q=Vercauteren"><strong>Gary’s 1971 column</strong><span>Earlier headshot and N.E. Wisconsin coverage →</span></Link>
-            <Link href="/tracks/wisconsin-international-raceway"><strong>Wisconsin International Raceway</strong><span>Race results and track history →</span></Link>
-            <Link href="/tracks/brown-county-speedway"><strong>Brown County Speedway</strong><span>De Pere racing history and events →</span></Link>
+            <Link href="/tracks/wisconsin-international-raceway-wi"><strong>Wisconsin International Raceway</strong><span>Race results and track history →</span></Link>
+            <Link href="/tracks/brown-county-speedway-wi"><strong>Brown County Speedway</strong><span>De Pere racing history and events →</span></Link>
             <Link href="/series/mid-american-racing-series"><strong>Mid-American Racing Series</strong><span>Series seasons, results, standings and history →</span></Link>
             <Link href="/series/mid-american-truck-series"><strong>Mid-American Truck Series</strong><span>Gary’s related touring-series legacy →</span></Link>
             <a href="https://joeverdegan.com/pete-vercauteren/" target="_blank" rel="noreferrer"><strong>Pete’s oral history</strong><span>Joe Verdegan’s in-depth account →</span></a>
