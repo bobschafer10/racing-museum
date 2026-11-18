@@ -21,22 +21,16 @@ type FeaturedRoom = {
 }
 
 const FEATURED_ROOM: FeaturedRoom = {
-  roomNumber: '001',
+  roomNumber: '002',
   category: 'Media Member of the Month',
-  title: 'Bob Bergeron',
+  title: 'The Vercauteren Brothers',
   description:
-    "Enter the inaugural Media Member of the Month room, bringing together Bob Bergeron's racing photography, newspaper work, track connections, and the museum's ongoing effort to identify the people preserved in his images.",
-  roomHref: '/rooms/media-member-of-the-month/bob-bergeron',
-  queueHref: '/photos?photographer=bob-bergeron&driver=unknown-driver',
-  portrait: getPhotoUrl(
-    'photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron_bob-bergeron_photo_444.jpg',
-  ),
-  racePhoto: getPhotoUrl(
-    'photos/master/141-speedway/1972/141-speedway_1972_ron-van-roy_bob-bergeron_photo_001.jpg',
-  ),
-  periodProfile: getPhotoUrl(
-    'photos/master/unknown-track/unknown-year/unknown-track_unknown-year_bob-bergeron-fox-valley-new_bob-bergeron_post_001.jpg',
-  ),
+    "Meet Gary and Pete Vercauteren, whose newspapers, photographs, racing coverage and promotion helped preserve generations of Upper Midwest racing. Explore their original Midwest Racing News columns, family history and the Mid-American legacy.",
+  roomHref: '/rooms/media-member-of-the-month/vercauteren-brothers',
+  queueHref: '/photos?photographer=pete-vercauteren&driver=unknown-driver',
+  portrait: '/exhibits/vercauteren-brothers/gary-vercauteren.webp',
+  racePhoto: '/exhibits/vercauteren-brothers/pete-vercauteren.webp',
+  periodProfile: '/exhibits/vercauteren-brothers/gary-interviews-dave-watson.webp',
 }
 
 function FeaturedRoomEntrance({ room }: { room: FeaturedRoom }) {
@@ -70,7 +64,7 @@ function FeaturedRoomEntrance({ room }: { room: FeaturedRoom }) {
           <div className={roomStyles.galleryGlow} aria-hidden="true" />
           <Link href={room.roomHref} className={roomStyles.doorLink} aria-label={`Enter Room ${room.roomNumber}: ${room.title}`}>
             <div className={roomStyles.plaque}>{room.category}<br />{room.title}</div>
-            <img src={room.periodProfile} alt="Bob Bergeron period portrait" className={roomStyles.doorPortrait} />
+            <img src={room.racePhoto} alt={room.title + ' museum portrait'} className={roomStyles.doorPortrait} />
             <div className={roomStyles.roomNumber}>ROOM {room.roomNumber}</div>
           </Link>
         </div>
