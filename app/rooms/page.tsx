@@ -25,7 +25,7 @@ export default function MuseumRoomsPage() {
             <img src={vercauterenHero} alt="A 1972 Brown County Speedway racing photograph credited to Pete Vercauteren" className={styles.roomCardImage} />
             <div className={styles.roomCardShade} />
             <div className={styles.roomCardCopy}>
-              <span className={styles.roomNumber}>Media Room 002 • Research Exhibit</span>
+              <span className={styles.roomNumber}>Room 002 • Media Member of the Month • November 2026</span>
               <h2>The Vercauteren Brothers</h2>
               <p>
                 Gary and Pete Vercauteren: the De Pere roots, the Midwest Racing News
@@ -40,7 +40,7 @@ export default function MuseumRoomsPage() {
             <img src={bergeronHero} alt="Bob Bergeron racing photograph from the museum collection" className={styles.roomCardImage} />
             <div className={styles.roomCardShade} />
             <div className={styles.roomCardCopy}>
-              <span className={styles.roomNumber}>Media Room 001 • October</span>
+              <span className={styles.roomNumber}>Room 001 • Inaugural Media Member • October 2026</span>
               <h2>Bob Bergeron</h2>
               <p>
                 Revisit the inaugural Media Member of the Month: photography,

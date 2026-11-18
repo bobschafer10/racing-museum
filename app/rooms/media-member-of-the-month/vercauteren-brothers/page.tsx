@@ -26,6 +26,12 @@ type ArchiveLink = { publication: string; date: string; page: number; headline: 
 const PETE_SLUGS = ['pete-vercauteren', 'pete-vercauteran']
 const GARY_SLUG = 'gary-vercauteren'
 const ARCHIVE_LINKS: ArchiveLink[] = [
+  { publication: 'midwest-racing-news', date: '1971-04-29', page: 6,
+    headline: 'N.E. Wis. Race News — Gary’s early column and photograph', author: 'Gary Vercauteren',
+    note: 'An original 1971 column with Gary’s period headshot beside the printed byline.' },
+  { publication: 'midwest-racing-news', date: '1972-04-27', page: 8,
+    headline: 'Pete and Gary’s columns on the same page', author: 'Gary and Pete Vercauteren',
+    note: 'Page 8 contains both N.E. Wis. Race News by Pete and Wisconsin Review by Gary, with separate period headshots.' },
   {
     publication: 'midwest-racing-news', date: '1970-09-10', page: 8,
     headline: 'Derr wins the IMCA Badger 100 at Marshfield', author: 'Gary Vercauteren',
@@ -165,6 +171,9 @@ type NewspaperClipping = {
   original: { w: number; h: number }
 }
 const NEWSPAPER_CLIPPINGS: NewspaperClipping[] = [
+  { id: 'gary-1971', date: '1971-04-29', page: 6, title: 'N.E. Wis. Race News', author: 'Gary Vercauteren',
+    caption: 'April 29, 1971: Gary’s early column and original period portrait.',
+    rect: { x: .607, y: .028, w: .375, h: .31 }, original: { w: 3123, h: 4681 } },
   { id: 'pete-1972', date: '1972-04-27', page: 8, title: 'N.E. Wis. Race News', author: 'Pete Vercauteren',
     caption: 'Pete’s column, printed beside his brother Gary’s column in the same issue.',
     rect: { x: .067, y: .029, w: .355, h: .335 }, original: { w: 3151, h: 4692 } },
@@ -335,30 +344,26 @@ export default async function VercauterenBrothersRoom() {
               <strong>THE PEOPLE BEHIND THE BYLINES</strong>
             </div>
             <div className={styles.heroPortraitRow}>
-              <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren" className={styles.heroPortraitCard}>
+              <a href="#the-brothers" className={styles.heroPortraitCard}>
                 <div className={styles.heroPortraitImage}>
-                  <div className={styles.heroGaryFace}>
-                    <img
-                      src="https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/2005-10-19/005.jpg"
-                      alt="Gary Vercauteren in his original October 19, 2005 Midwest Racing News obituary"
-                      style={{position:'absolute', width:(100/.146)+'%', maxWidth:'none', left:(-100*.515/.146)+'%', top:(-100*.081/.142)+'%'}}
-                    />
-                  </div>
+                  <img className={styles.heroGaryFace}
+                    src="/exhibits/vercauteren-brothers/gary-vercauteren.webp"
+                    alt="Authentic photograph of Gary Vercauteren smiling in his red Mid-Am shirt" />
                 </div>
                 <div className={styles.heroPortraitCaption}>
                   <strong>GARY VERCAUTEREN</strong>
-                  <small>2005 · Midwest Racing News portrait</small>
+                  <small>Original color photograph · provided for this exhibit</small>
                 </div>
-              </Link>
-              <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren/" target="_blank" rel="noreferrer" className={styles.heroPortraitCard}>
+              </a>
+              <a href="#the-brothers" className={styles.heroPortraitCard}>
                 <div className={styles.heroPortraitImage}>
                   <img className={styles.heroPeteFace}
-                    src="https://cdn.f1connect.net/photo/tributes/t/8/r/207x207/7903305/Peter-Pete-Vercauteren-1732645088.jpg"
-                    alt="Pete Vercauteren in a later portrait published with his 2024 obituary" />
+                    src="/exhibits/vercauteren-brothers/pete-vercauteren.webp"
+                    alt="Authentic photograph of Pete Vercauteren wearing a navy racing cap at a fairground" />
                 </div>
                 <div className={styles.heroPortraitCaption}>
                   <strong>PETE VERCAUTEREN</strong>
-                  <small>2024 · Hansen Family Funeral portrait</small>
+                  <small>Original color photograph · provided for this exhibit</small>
                 </div>
               </a>
             </div>
@@ -367,7 +372,7 @@ export default async function VercauterenBrothersRoom() {
               <strong>Two brothers. One newspaper page.</strong>
             </div>
             <div className={styles.heroColumnRow}>
-              {NEWSPAPER_CLIPPINGS.slice(0,2).map((clipping) => {
+              {NEWSPAPER_CLIPPINGS.filter((clipping) => clipping.date === '1972-04-27').map((clipping) => {
                 const { rect, original } = clipping
                 const src = 'https://newspapers.uppermidwestautoracingmuseum.org/newspapers/midwest-racing-news/' + clipping.date + '/008.jpg'
                 return (
@@ -391,8 +396,8 @@ export default async function VercauterenBrothersRoom() {
               })}
             </div>
             <p className={styles.heroSourceNote}>
-              Gary: museum MRN scan · Pete: Hansen Family Funeral (external portrait; reuse permission pending).
-              Both columns: original MRN, April 27, 1972.
+              Gary and Pete portrait photographs: contributed for this room.
+              Their period headshots and both columns: original MRN, April 27, 1972.
             </p>
           </div>
         </div>
@@ -402,12 +407,14 @@ export default async function VercauterenBrothersRoom() {
         <a href="#the-story">Their Story</a>
         <a href="#the-brothers">Their Lives</a>
         <a href="#original-columns">Original Columns</a>
+        <a href="#wir-interview">Gary at WIR</a>
         <a href="#timeline">Timeline</a>
         <a href="#photographs">Photography</a>
         <a href="#newsroom">Racing Press</a>
         <a href="#programs">Yearbooks</a>
         <a href="#publisher">Publishing</a>
         <a href="#legacy">Legacy &amp; Sources</a>
+        <a href="#museum-connections">Museum Links</a>
         <a href="#memorial">The Memorial</a>
       </nav>
 
@@ -458,18 +465,20 @@ export default async function VercauterenBrothersRoom() {
               <p>Pete helped chronicle the De Pere–Shawano–Seymour circuit through race reports, feature stories, photography and his <em>N.E. Wis. Race News</em> column. His memories preserve the drivers, crowded grandstands, lively rivalries and grassroots culture of the era.</p>
               <p>With his family, Pete helped distribute <em>Midwest Racing News</em> and make local racing information available to fans every week. He later helped Gary launch Mid-American and served in the organization’s early leadership.</p>
               <p>Pete died November 25, 2024, at age 75. His 2020 interview with historian Joe Verdegan remains an essential oral-history source.</p>
-              <p><strong>Images located:</strong> a period photograph showing Pete and his father Harold selling Midwest Racing News, and a later funeral-home obituary portrait. Both remain externally sourced pending permission for museum reproduction.</p>
+              <p><strong>Authentic portraits:</strong> the room now includes Pete’s original color portrait and Gary’s red Mid-Am shirt portrait, both provided for this museum exhibit. The April 27, 1972 newspaper scan also preserves their younger faces beside their own columns.</p>
               <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">Read Pete’s racing memories →</a>
               <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren" rel="noreferrer" target="_blank">Pete’s family obituary and tribute →</a>
             </article>
           </div>
           <div className={styles.portraitNotice}>
             <strong>Portrait research</strong>
-            <p>Joe Verdegan’s interview includes a captioned period image identifying Pete beside his father Harold with a copy of Midwest Racing News. The family obituary is another photographic lead. The original October 19, 2005 MRN obituary contains a portrait printed beside Gary’s life story, and that source photograph now appears in his biography. Pete's sourced historical family photograph and obituary portrait are linked here, pending permission to reproduce them in the museum. No imagined portraits are used.</p>
+            <p>Gary’s red-shirt portrait, Pete’s fairground portrait, and the historic photograph of Gary interviewing Dave Watson are original photographs supplied for this exhibit. The April 27, 1972 MRN page contains both brothers’ younger portraits beside their bylines; the April 29, 1971 issue also contains an early Gary portrait. Gary’s October 19, 2005 MRN obituary and Pete’s family obituary remain linked for historical context. No AI-created portraits are used.</p>
             <div className={styles.portraitLeads}>
               <a href="https://joeverdegan.com/pete-vercauteren/" rel="noreferrer" target="_blank">Period image: Pete with father Harold and Midwest Racing News →</a>
               <a href="https://www.hansenfuneralservice.com/obituaries/Peter-Pete-Vercauteren/" rel="noreferrer" target="_blank">Pete’s obituary portrait: Hansen Family Funeral →</a>
               <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Gary’s original 2005 MRN obituary and portrait →</Link>
+              <Link href="/media/newspapers/midwest-racing-news/1971-04-29?sourcePage=6&q=Vercauteren">Gary’s April 1971 column and period portrait →</Link>
+              <Link href="/media/newspapers/midwest-racing-news/1972-04-27?sourcePage=8&q=Vercauteren">Both brothers’ April 1972 original headshots and columns →</Link>
             </div>
           </div>
         </section>
@@ -485,6 +494,22 @@ export default async function VercauterenBrothersRoom() {
             <strong>Also discovered: Gary’s MRN obituary</strong>
             <p>The October 19, 2005 MRN page contains Gary’s original obituary with a photograph printed alongside the biographical text. A non-AI crop from the museum’s scan now appears with Gary’s individual biography.</p>
             <Link href="/media/newspapers/midwest-racing-news/2005-10-19?sourcePage=5&q=Vercauteren">Open the 2005 MRN tribute →</Link>
+          </div>
+        </section>
+
+        <section id="wir-interview" className={styles.interviewSection}>
+          <span className={styles.sectionKicker}>From the original family racing photographs</span>
+          <h2>Gary reporting from Wisconsin International Raceway</h2>
+          <figure className={styles.interviewFigure}>
+            <img loading="lazy" src="/exhibits/vercauteren-brothers/gary-interviews-dave-watson.webp"
+              alt="Gary Vercauteren interviewing race driver Dave Watson beside his race car and a trophy at Wisconsin International Raceway" />
+            <figcaption><strong>Gary Vercauteren interviewing Dave Watson at Wisconsin International Raceway.</strong>
+              <span>Original archival photograph contributed to the museum; date not yet confirmed.</span></figcaption>
+          </figure>
+          <p>Gary’s work was not confined to writing race results. This candid photograph captures the interviews and personal stories that helped build short-track racing’s community.</p>
+          <div className={styles.interviewLinks}>
+            <Link href="/tracks/wisconsin-international-raceway">Wisconsin International Raceway history →</Link>
+            <a href="https://www.carsandracingstuff.com/library/articles/24973.php" target="_blank" rel="noreferrer">Gary’s own story of WIR and the Red, White and Blue Series →</a>
           </div>
         </section>
 
@@ -529,7 +554,7 @@ export default async function VercauterenBrothersRoom() {
           <div className={styles.pressInventory} aria-label="Research index overview">
             <div><strong>1,462</strong><span>Distinct newspaper pages with Gary or Pete byline patterns</span></div>
             <div><strong>715</strong><span>Publication-and-issue combinations represented</span></div>
-            <div><strong>16</strong><span>Selected print artifacts linked below</span></div>
+            <div><strong>{ARCHIVE_LINKS.length}</strong><span>Selected print artifacts linked below</span></div>
           </div>
           <div className={styles.newspaperGrid}>
             {ARCHIVE_LINKS.map((article) => <Link key={article.publication + article.date + article.page} href={newspaperUrl(article)} className={styles.newspaperCard}>
@@ -600,6 +625,24 @@ export default async function VercauterenBrothersRoom() {
             {SOURCES.map((source) => <a key={source.href} href={source.href} target="_blank" rel="noreferrer">
               <strong>{source.title}</strong><small>{source.author}</small><span>{source.description}</span>
             </a>)}
+          </div>
+        </section>
+
+        <section id="museum-connections" className={styles.connectionsSection}>
+          <span className={styles.sectionKicker}>Follow the stories, photographs and race records</span>
+          <h2>Explore their museum connections</h2>
+          <p>Room 002 is an entrance into the museum’s underlying archive. These destinations connect the brothers’ names with original photographs, reporting, tracks, series and race programs.</p>
+          <div className={styles.connectionsGrid}>
+            <Link href="/photographers/pete-vercauteren"><strong>Pete’s photo collection</strong><span>Racing images and individual credits →</span></Link>
+            <Link href="/photographers/gary-vercauteren"><strong>Gary’s photo collection</strong><span>Original photography indexed by driver and track →</span></Link>
+            <Link href="/media/newspapers/midwest-racing-news/1972-04-27?sourcePage=8&q=Vercauteren"><strong>April 1972 original columns</strong><span>Both brothers’ bylines and period portraits →</span></Link>
+            <Link href="/media/newspapers/midwest-racing-news/1971-04-29?sourcePage=6&q=Vercauteren"><strong>Gary’s 1971 column</strong><span>Earlier headshot and N.E. Wisconsin coverage →</span></Link>
+            <Link href="/tracks/wisconsin-international-raceway"><strong>Wisconsin International Raceway</strong><span>Race results and track history →</span></Link>
+            <Link href="/tracks/brown-county-speedway"><strong>Brown County Speedway</strong><span>De Pere racing history and events →</span></Link>
+            <Link href="/series/mid-american-racing-series"><strong>Mid-American Racing Series</strong><span>Series seasons, results, standings and history →</span></Link>
+            <Link href="/series/mid-american-truck-series"><strong>Mid-American Truck Series</strong><span>Gary’s related touring-series legacy →</span></Link>
+            <a href="https://joeverdegan.com/pete-vercauteren/" target="_blank" rel="noreferrer"><strong>Pete’s oral history</strong><span>Joe Verdegan’s in-depth account →</span></a>
+            <Link href="/media/race-programs/1979-wisconsin-international-raceway-wi-yearbook"><strong>WIR yearbooks and programs</strong><span>Original published stories and photo credits →</span></Link>
           </div>
         </section>
 

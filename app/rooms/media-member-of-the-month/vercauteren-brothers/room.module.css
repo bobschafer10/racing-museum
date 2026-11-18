@@ -205,9 +205,8 @@
 .heroPortraitCard{display:flex;flex-direction:column;text-decoration:none;background:#e8d9b5;color:#332417;border:5px solid #b69a67;box-shadow:0 4px 12px #0009;min-width:0;transition:transform .15s ease}
 .heroPortraitCard:hover,.heroColumnCard:hover{transform:translateY(-3px)}
 .heroPortraitImage{height:157px;background:#d9cbb0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.heroGaryFace{position:relative;overflow:hidden;height:100%;aspect-ratio:307 / 359;background:#c5ba9d}
-.heroGaryFace img{display:block;height:auto;pointer-events:none}
-.heroPeteFace{max-width:100%;max-height:100%;object-fit:contain;display:block;image-rendering:auto}
+.heroGaryFace{display:block;height:100%;width:100%;object-fit:cover;object-position:center 21%;background:#c5ba9d}
+.heroPeteFace{display:block;height:100%;width:100%;object-fit:cover;object-position:center 39%;background:#c5ba9d}
 .heroPortraitCaption{padding:9px 10px 11px;text-align:center}
 .heroPortraitCaption strong{display:block;font:900 14px/1.25 Arial,sans-serif;color:#492b1e;letter-spacing:.055em}
 .heroPortraitCaption small{display:block;font:11px/1.45 Arial,sans-serif;color:#725236;margin-top:4px}
@@ -249,3 +248,22 @@
   .heroColumnHeading strong{font-size:14px}
   .heroLayout .heroLinks a{font-size:12px}
 }
+
+/* Source-authentic Gary / Dave Watson interview and museum reference directory. */
+.interviewSection{margin:0 0 76px}
+.interviewSection>p{max-width:900px;color:#d9c5a3}
+.interviewFigure{margin:20px 0 19px;max-width:1010px;background:#e5d3af;border:8px solid #bfa475;box-shadow:8px 10px 0 #0006}
+.interviewFigure img{display:block;width:100%;height:auto;object-fit:contain}
+.interviewFigure figcaption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:15px 20px;color:#3d2b1c}
+.interviewFigure figcaption strong{font-size:18px}
+.interviewFigure figcaption span{font:12px/1.45 Arial,sans-serif;color:#6f4b2e}
+.interviewLinks{display:flex;flex-wrap:wrap;gap:15px}
+.interviewLinks a{color:#eab96c;text-decoration:underline;font:700 14px Arial,sans-serif}
+.connectionsSection{margin:0 0 75px;border-top:2px solid #9d793f;padding-top:34px}
+.connectionsSection>p{max-width:880px;color:#d2bea0}
+.connectionsGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:25px}
+.connectionsGrid a{display:flex;flex-direction:column;gap:7px;color:#f6e2ba;background:linear-gradient(110deg,#322219,#201912);border:1px solid #916c3a;padding:20px;text-decoration:none}
+.connectionsGrid a:hover{background:#4c3020;border-color:#dbb275}
+.connectionsGrid strong{font:700 21px/1.2 Georgia,'Times New Roman',serif}
+.connectionsGrid span{font:13px/1.45 Arial,sans-serif;color:#c8ab7f}
+@media(max-width:700px){.connectionsGrid{grid-template-columns:1fr}.interviewFigure{border-width:5px}.interviewFigure figcaption{padding:11px}}
