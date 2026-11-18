@@ -204,9 +204,9 @@
 .heroPortraitRow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
 .heroPortraitCard{display:flex;flex-direction:column;text-decoration:none;background:#e8d9b5;color:#332417;border:5px solid #b69a67;box-shadow:0 4px 12px #0009;min-width:0;transition:transform .15s ease}
 .heroPortraitCard:hover,.heroColumnCard:hover{transform:translateY(-3px)}
-.heroPortraitImage{height:157px;background:#d9cbb0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.heroGaryFace{display:block;height:100%;width:100%;object-fit:cover;object-position:center 21%;background:#c5ba9d}
-.heroPeteFace{display:block;height:100%;width:100%;object-fit:cover;object-position:center 39%;background:#c5ba9d}
+.heroPortraitImage{height:210px;background:#d9cbb0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.heroGaryFace{display:block;height:100%;width:100%;object-fit:cover;object-position:center top;background:#c5ba9d}
+.heroPeteFace{display:block;height:100%;width:100%;object-fit:cover;object-position:center top;background:#c5ba9d}
 .heroPortraitCaption{padding:9px 10px 11px;text-align:center}
 .heroPortraitCaption strong{display:block;font:900 14px/1.25 Arial,sans-serif;color:#492b1e;letter-spacing:.055em}
 .heroPortraitCaption small{display:block;font:11px/1.45 Arial,sans-serif;color:#725236;margin-top:4px}
@@ -224,7 +224,7 @@
 @media(max-width:1050px){
   .heroLayout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;width:calc(100% - 40px)}
   .heroLayout h1{font-size:clamp(47px,5.1vw,65px)}
-  .heroPortraitImage{height:142px}
+  .heroPortraitImage{height:185px}
   .heroArchive{padding:12px}
 }
 @media(max-width:780px){
@@ -233,14 +233,14 @@
   .heroLayout h1{font-size:clamp(49px,10vw,72px)}
   .heroLayout .back{margin-bottom:20px}
   .heroLayout .heroLead{font-size:17px}
-  .heroPortraitImage{height:175px}
+  .heroPortraitImage{height:220px}
   .heroArchive{max-width:680px;width:100%;margin:0 auto}
 }
 @media(max-width:480px){
   .heroArchiveHeading strong{font-size:11px}
   .heroPortraitRow,.heroColumnRow{gap:8px}
   .heroPortraitCard,.heroColumnCard{border-width:3px}
-  .heroPortraitImage{height:125px}
+  .heroPortraitImage{height:145px}
   .heroPortraitCaption strong{font-size:11px}
   .heroPortraitCaption small{font-size:9px}
   .heroColumnCaption strong{font-size:13px}
