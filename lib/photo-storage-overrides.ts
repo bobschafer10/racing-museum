@@ -63,4 +63,10 @@ export const PHOTO_STORAGE_OVERRIDES: Readonly<Record<string, string>> = {
   "thunder-city-speedway_2025_trey-hess_thunder-city-speedway_post_44.jpg": "photos/master/thunder-city-speedway/2025/thunder-city-speedway_2025_trey-hess_thunder-city-speedway_post_44.jpg",
   "thunder-city-speedway_2025_tyler-vernon_thunder-city-speedway_post_44.jpg": "photos/master/thunder-city-speedway/2025/thunder-city-speedway_2025_tyler-vernon_thunder-city-speedway_post_44.jpg",
   "thunder-city-speedway_2025_unknown-driver_thunder-city-speedway_post_44.jpg": "photos/master/thunder-city-speedway/2025/thunder-city-speedway_2025_unknown-driver_thunder-city-speedway_post_44.jpg"
+  // Storage-only images reconciled to the museum photo table on 2026-11-20.
+  "golden-sands-speedway_1997_david-duckworth-95-danny-heinritz_unknown-photographer_photo_001.jpg": "golden-sands-speedway_1997_david-duckworth-95-danny-heinritz_unknown-photographer_photo_001.jpg",
+  "unknown-track_unknown-year_earl-ness_unknown-photographer_photo_001.jpg": "unknown-track_unknown-year_earl-ness_unknown-photographer_photo_001.jpg",
+  "unknown-track_unknown-year_dave-valentyne_unknown-photographer_photo_1005.jpg": "unknown-track_unknown-year_dave-valentyne_unknown-photographer_photo_1005.jpg",
+  "wisconsin-international-raceway_unknown-year-dick-lucht_dennis-satorius_post_333.jpg": "photos/master/wisconsin-international-raceway/unknown-year-dick-lucht/wisconsin-international-raceway_unknown-year-dick-lucht_dennis-satorius_post_333.jpg",
+
 }
